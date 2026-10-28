@@ -1,22 +1,34 @@
-# Naiv RAG baseline — Formula 1 korpusz (GraphRAG kurzus, 1. hét)
+# Naiv RAG baseline + gráf — Formula 1 korpusz (GraphRAG kurzus, 1–2. hét)
 
-Egy szándékosan egyszerű, jól dokumentált **naiv RAG baseline**, amihez a
-következő hetekben a GraphRAG-os megoldást hasonlítjuk. A cél nem a jó
-teljesítmény, hanem a naiv RAG korlátainak láthatóvá tétele — a rossz válaszokat
-ezért **nem javítottam**.
+Egy szándékosan egyszerű, jól dokumentált **naiv RAG baseline** (1. hét), amihez
+a következő hetekben a GraphRAG-os megoldást hasonlítjuk, és a ráépülő
+**Neo4j gráfréteg** (2. hét): séma-terv, kitalált seed-adat és a valódi korpusz
+dokumentum-gráfja. A cél nem a jó teljesítmény, hanem a naiv RAG korlátainak
+láthatóvá tétele — a rossz válaszokat ezért **nem javítottam**.
 
 **Stack:** Python 3.11 · `uv` · LangChain · OpenAI (`gpt-4o-mini`,
-`text-embedding-3-small`) · Qdrant (helyi, lemezre perzisztáló) · FastAPI.
+`text-embedding-3-small`) · Qdrant (helyi, lemezre perzisztáló) · Neo4j 5.26
+(Docker Compose) · FastAPI.
 
 ## Gyors indulás
 
 ```bash
 uv sync                               # környezet + függőségek
 cp .env.example .env                  # majd írd be az OPENAI_API_KEY-t
+
+# 1. hét — naiv RAG
 uv run naive-rag ingest               # korpusz -> chunkok -> embedding -> Qdrant
 uv run naive-rag ask "Who won the 2021 Formula One World Drivers' Championship?"
 uv run naive-rag baseline             # mind a 13 kérdés -> baseline/
 uv run naive-rag serve                # FastAPI: http://127.0.0.1:8000/docs
+
+# 2. hét — gráf (nem kell hozzá OPENAI_API_KEY)
+uv run naive-rag graph up             # Neo4j indítása compose-ból, egészségesre várva
+uv run naive-rag graph init           # megszorítások + indexek
+uv run naive-rag graph seed           # kitalált szakterületi gráf
+uv run naive-rag graph load           # a valódi korpusz: Document / Section / Chunk
+uv run naive-rag graph query          # 8 Cypher -> graph/query-results.md
+uv run naive-rag graph stats          # mi van bent (címkék, élek, alakzatok)
 ```
 
 Chunk-méret kipróbálása kódszerkesztés nélkül:
@@ -230,15 +242,154 @@ magabiztos, de nem alátámasztott válaszot jelent. Az eredmény érzékeny a
 chunk-összetételre; 13 kérdéses, egyszeri futásnál a különbségeket nem szabad
 statisztikailag megbízhatónak tekinteni.
 
+## 6. A gráfréteg (2. hét)
+
+### Neo4j a projektben
+
+A [`compose.yaml`](compose.yaml) egy Neo4j 5.26 Community konténert indít
+(APOC-kal, Browser a 7474-en, Bolt a 7687-en, named volume-okkal). A
+hitelesítő adatokat és a portokat **ugyanabból a `.env`-ből** olvassa, amit a
+Python is (`NEO4J_USER`, `NEO4J_PASSWORD`, `NEO4J_URI`, `NEO4J_*_PORT`), így a
+konténer és a driver nem tud szétcsúszni egymástól. Indítás: `docker compose up
+-d neo4j`, vagy `uv run naive-rag graph up`, ami meg is várja, amíg a
+healthcheck zöld lesz (ezt a `graph init` utáni azonnali `MERGE`-ök megkívánják).
+
+A kód a [`src/naive_rag/graph.py`](src/naive_rag/graph.py)-n keresztül éri el az
+adatbázist, és **minden lekérdezés paraméterezett**: a `query()` és a
+`write_batched()` csak Cypher + paraméterszótár párt fogad, érték soha nem
+kerül f-stringgel a lekérdezésbe. Ez ugyanaz a felállás, mint a
+`vectorstore.py`-nál: egy modul birtokolja a tárat.
+
+### Séma-terv
+
+A teljes séma-terv indoklásokkal: [`docs/graph-schema.md`](docs/graph-schema.md).
+Röviden, a korpusz saját fogalmaival (nem `PERSON/ORG/GEO`):
+
+- **Dokumentum-gráf (valódi adat, extrakció nélkül):** `Corpus`, `Document`,
+  `Section`, `Chunk`, köztük `HAS_DOCUMENT`, `CONTAINS`, `HAS_SECTION`,
+  `NEXT_CHUNK`.
+- **Szakterületi gráf (kitalált seed):** `Driver`, `Team`, `Season`,
+  `GrandPrix`, `Circuit`, `Car`, `PowerUnit`, `Title`, `RaceResult`, köztük
+  `DROVE_FOR`, `TEAMMATE_OF`, `FIELDED`, `POWERED_BY`, `RACED_IN`, `ENTERED`,
+  `ROUND_OF`, `HELD_AT`, `ACHIEVED`, `AT_RACE`, `FOR_TEAM`, `WON`, `AWARDED_IN`.
+
+A három legfontosabb modellezési döntés:
+
+1. **`RaceResult` külön csomópont (reifikált n-áris kapcsolat).** Egy helyezés
+   a *pilóta × futam × csapat* hármas tulajdonsága, éllel nem leírható. Ettől
+   lesz a Q8 aggregálás egyáltalán lehetséges.
+2. **`Section` külön csomópont, pedig az 1. héten chunk-tulajdonság volt.**
+   Sok chunk osztozik rajta, és a 3. héten az extrakció ide fogja az
+   entitásokat felakasztani. A `section` útvonal **a chunkon is megmarad**, mert a
+   forrásmegjelölés (`rag.py`) egyetlen mezőt vár — tudatos redundancia.
+3. **`DROVE_FOR` éltulajdonsággal, nem `Contract` csomóponttal.** Csak két
+   dolgot köt össze, tehát elfér élen; de a `from_year` **része a kulcsnak**,
+   mert egy pilóta visszatérhet egy csapathoz, és az új szerepvállalás, nem a
+   régi felülírása.
+
+Az él iránya ott hordoz jelentést, ahol a reláció aszimmetrikus:
+`(:Chunk)-[:NEXT_CHUNK]->(:Chunk)` sorrend, `(:Driver)-[:DROVE_FOR]->(:Team)`
+„versenyez neki". A szimmetrikus `TEAMMATE_OF` egy irányban van tárolva (kisebb
+`driver_id` → nagyobb), és a lekérdezés **nyíl nélkül** járja be.
+
+### Seed adat
+
+[`graph/seed/f1-seed.json`](graph/seed/f1-seed.json) — 21 fogalmi csomópont
+(4 pilóta, 3 csapat, 2 szezon, 3 nagydíj, 2 pálya, 3 autó, 2 erőforrás,
+2 bajnoki cím) + 8 reifikált `RaceResult`, egyetlen összefüggő komponensben.
+Minden név kitalált, és minden seed-csomópont **extra `:Seed` címkét** kap:
+a 3. heti extrakció ugyanezekre a címkékre fog *valódi* entitásokat tenni, és a
+kettőt meg kell tudni különböztetni (`graph clear seed`).
+
+Az adat JSON-ban van, a sémára képezés a
+[`src/naive_rag/graph_seed.py`](src/naive_rag/graph_seed.py)-ben — így a JSON
+adatként marad átnézhető, a Cypher pedig paraméterezett. A `TEAMMATE_OF` és az
+`ENTERED` él **levezetett** (a `DROVE_FOR` idősávok metszetéből, illetve a
+`FIELDED`+`RACED_IN` párosból), és minden `graph seed` újraszámolja.
+
+**Idempotencia:** minden címkének pontosan egy üzleti kulcsa van
+(`graph_schema.py :: UNIQUE_KEYS`), és minden betöltő erre `MERGE`-öl, tehát a
+duplikálást nem a szkript ellenőrzése, hanem az adatbázis-megszorítás zárja ki.
+Ellenőrizve: a `graph seed` és a `graph load` kétszer lefuttatva **betűre
+ugyanazokat a számokat** adja.
+
+### Dokumentum-gráf
+
+`graph load` ugyanazt a `ingest.load_and_chunk()`-ot hívja, mint a vektoros
+indexelés, tehát **ugyanaz a splitter és ugyanazok a `chunk_id`-k** kerülnek a
+gráfba, mint a Qdrantba (3832 chunk mindkettőben). Ez szándékos: egy
+vektortalálat `chunk_id`-ja leképezési tábla nélkül megkereshető a gráfban, ami
+a későbbi hibrid visszakeresés előfeltétele.
+
+Betöltve: **1 `Corpus`, 23 `Document`, 691 `Section`, 3832 `Chunk`**, és
+3809 `NEXT_CHUNK` él (= 3832 − 23, dokumentumonként egy lánc). A chunk
+metaadata: `source` (URL vagy fájlnév), `page` (PDF), `section` (DOCX/HTML/TXT/
+XLSX), `ordinal` (sorszám a dokumentumon belül), `start_index`, `n_chars`,
+`n_words`.
+
+A `Document.n_chars` a **forrásszövegen** mért hossz, nem a chunkok összege —
+különben a 75 karakteres overlap duplán számolna (a Q2 `overlap_overhead_pct`
+oszlopa épp ezt a különbséget mutatja).
+
+**Elavult adat kezelése:** a `graph load` *mark-and-sweep* — minden csomópont
+megkapja a futás `run_id`-ját, és a végén törlődik minden régi bélyegű
+`Document`/`Section`/`Chunk`. Erre azért van szükség, mert más chunk-mérettel
+újratöltve a `chunk_id`-k halmaza *megváltozik*, és a puszta `MERGE` a régieket
+bent hagyná — pontosan az a hiba, ami az 1. héten a Qdranttal megtörtént.
+Ellenőrizve: `graph load --chunk-size 1000 --chunk-overlap 150` után 2146 chunk
+maradt és **1686 elavult csomópont törlődött** (3832 − 2146 = 1686).
+
+### Cypher a saját adaton
+
+8 lekérdezés, a kimenetükkel együtt:
+[`graph/query-results.md`](graph/query-results.md) (generált), a statement-ek
+[`graph/cypher/queries.cypher`](graph/cypher/queries.cypher)-ben (paraméterezve,
+Neo4j Browserbe beilleszthető formában). Futtatás: `graph query`, egy darab:
+`graph query --only Q4`.
+
+| # | Mit kérdez | Mit adott |
+|---|---|---|
+| Q1 | formátumonkénti áttekintés + hely-metaadat lefedettség (**aggregáló**) | 3832 chunk; HTML/PDF/XLSX 100%, TXT 96,5%, DOCX 95,9% — ez a gráfból **visszaigazolja** az 1. heti 96–100%-os mérést |
+| Q2 | hány chunk tartozik a leghosszabb dokumentumhoz | `driver-kimi-raikkonen` (88 573 karakter) → **282 chunk** |
+| Q3 | a legrövidebb dokumentumok | az XLSX bajnoklista (1403 karakter, 5 chunk); két dokumentumban **1 karakteres** a legrövidebb chunk |
+| Q4 | üres vagy szemét chunkok a betöltés után | **415 chunk (10,8%)**: 31 betű nélküli, 263 ötnél kevesebb szavas, 121 csak címsor |
+| Q5 | ép-e a `NEXT_CHUNK` olvasási sorrend | 23/23 dokumentum ép (3809 él, mindegyik lánc egy fejnél kezdődik) |
+| Q6 | seed, **2 hop**: kik voltak a csapattársak | `Driver -> Team <- Driver`, a közös évek metszetével; egyezik a levezetett `TEAMMATE_OF` éllel |
+| Q7 | seed, **3 hop**: pilótától az erőforrásig | `Driver -> Team -> Car -> PowerUnit`, 7 út |
+| Q8 | seed, **aggregáló**: konstruktőri tabella az eredményekből | Vertex Racing 83 pont — pontosan annyi, amennyi a `Title` csomóponton áll |
+
+A legtanulságosabb a **Q4**: a chunkok 10,8%-a önmagában megválaszolhatatlan
+(üres sor, táblázat-maradék, magányos címsor), és ezek a betöltés után
+ugyanúgy benne vannak a vektorindexben, tehát **elfoglalnak egy top-k helyet**.
+Ez az 1. heti kiértékelés „hiányos aggregálás" tünetének (Q10: 6-ból 3 pilóta)
+egy mérhető, strukturális oka — a naiv futásból ez nem látszott, a gráfból egy
+lekérdezéssel kijött.
+
+### Hibatanulságok
+
+- A Neo4j konténer némán újraindult körben, amíg a healthcheck el nem bukott.
+  Ok: a compose környezeti változó `NEO4J_server_memory_pagecache__size` volt,
+  ami a `server.memory.pagecache_size` **nem létező** beállításra képződik le.
+  A szabály: `.` → `_`, a *valódi* `_` → `__`; helyesen
+  `NEO4J_server_memory_pagecache_size` (viszont `heap_initial__size`, mert ott
+  az alsóvonás valódi). A `docker compose logs neo4j` mondta ki.
+- A `graph query --only Q6` eleinte felülírta a teljes riportot egyetlen
+  lekérdezés kimenetével. Ma a `--only` csak a terminálra ír, a
+  `graph/query-results.md`-t kizárólag a teljes futás írja újra.
+
 ## Mappaszerkezet
 
 ```
 naive-rag-baseline/
 ├─ README.md · questions.md · pyproject.toml · uv.lock · .env.example · .gitignore
+├─ compose.yaml     Neo4j 5.26 (2. hét) — ugyanabból a .env-ből konfigurálva
 ├─ run.py           belépési pont ékezetes útvonalú klónokhoz (lásd 2. pont)
 ├─ src/naive_rag/   config · loaders · models · vectorstore · ingest · rag · cli · api
+│                   graph · graph_schema · graph_ingest · graph_seed · graph_queries
 ├─ scripts/         download_corpus.py · convert_formats.py
 ├─ corpus/          23 dokumentum (pdf/docx/html/txt/xlsx) + metadata.json
+├─ docs/            graph-schema.md (a séma-terv indoklásokkal)
+├─ graph/           seed/f1-seed.json · cypher/queries.cypher · query-results.md
 └─ baseline/        answers.md · answers.json (v2) · v1-plain-loaders-500-75/
 ```
 
@@ -254,6 +405,17 @@ naive-rag-baseline/
   nem teljes szemantikai ellenőrzés.
 - A helyi Qdrant egyszerre egy folyamatot enged; a `serve` és az `ingest`
   ne fusson egyszerre (szerver módhoz állítsd be a `QDRANT_URL`-t).
+- A gráf **két rétege nincs összekötve**: a dokumentumok valódiak, a
+  szakterületi entitások kitaláltak, ezért egy `(:Document)-[:MENTIONS]->(:Driver)`
+  él hamis állítás lenne. Ezt a 3. heti extrakció hozza.
+- A `graph load` 3832 chunkot ír Neo4j-be, teljes szöveggel; a `graph query`
+  ennek megfelelően pár másodperc. Nagyobb korpusznál a `Chunk.text`
+  tárolását újra kellene gondolni.
+- A `graph query` a riportot mindig felülírja; nincs `--tag`-elt verziózás,
+  mint a `baseline`-nál.
+- A gráf adatai Docker named volume-ban élnek (`docker compose down -v`
+  törli). A repóból csak a *betöltés* reprodukálható, maga az adat nincs
+  verziózva.
 
 ### A betöltő (`loaders.py`) a saját korpuszunkra van szabva
 

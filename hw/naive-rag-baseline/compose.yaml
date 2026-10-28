@@ -1,0 +1,52 @@
+# Neo4j for the GraphRAG project (week 2).
+#
+#   docker compose up -d neo4j     start (Browser: http://localhost:7474)
+#   docker compose ps              state / health
+#   docker compose down            stop, keep data
+#   docker compose down -v         stop and WIPE the graph
+#
+# Credentials and ports come from the same .env the Python code reads, so
+# compose and `naive-rag graph ...` can never drift apart. The defaults below
+# are the fallback when .env is missing.
+
+services:
+  neo4j:
+    image: neo4j:5.26-community # LTS
+    container_name: f1-graphrag-neo4j
+    ports:
+      - "${NEO4J_HTTP_PORT:-7474}:7474" # Browser UI
+      - "${NEO4J_BOLT_PORT:-7687}:7687" # Bolt (the Python driver)
+    environment:
+      # Password must be at least 8 characters, else the container won't boot.
+      NEO4J_AUTH: "${NEO4J_USER:-neo4j}/${NEO4J_PASSWORD:-graphrag123}"
+      NEO4J_PLUGINS: '["apoc"]'
+      NEO4J_apoc_export_file_enabled: "true"
+      NEO4J_apoc_import_file_enabled: "true"
+      # Small, laptop-friendly footprint; this corpus is ~4k chunks.
+      NEO4J_server_memory_heap_initial__size: 512M
+      NEO4J_server_memory_heap_max__size: 1G
+      # Name mapping: '.' -> '_', literal '_' -> '__'. So this is
+      # server.memory.pagecache.size, while heap.initial_size needs '__'.
+      NEO4J_server_memory_pagecache_size: 512M
+    volumes:
+      - neo4j_data:/data
+      - neo4j_logs:/logs
+      # Not used by the Python loaders (they write over Bolt), but makes
+      # `LOAD CSV`/apoc import possible without touching the compose file.
+      - ./graph/import:/import
+    healthcheck:
+      # The Python CLI waits for this, so "up -d" + "graph init" is safe.
+      test:
+        [
+          "CMD-SHELL",
+          "wget -q -O /dev/null http://localhost:7474 || exit 1",
+        ]
+      interval: 5s
+      timeout: 5s
+      retries: 30
+      start_period: 20s
+    restart: unless-stopped
+
+volumes:
+  neo4j_data:
+  neo4j_logs:

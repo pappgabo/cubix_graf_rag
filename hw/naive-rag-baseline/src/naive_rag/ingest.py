@@ -42,8 +42,14 @@ def split_by_headings(docs: list[Document]) -> list[Document]:
     return out
 
 
-def chunk_documents(chunk_size: int | None = None,
-                    chunk_overlap: int | None = None) -> list[Document]:
+def load_and_chunk(chunk_size: int | None = None,
+                   chunk_overlap: int | None = None,
+                   ) -> tuple[list[Document], list[Document]]:
+    """Load the corpus and split it: returns (source documents, chunks).
+
+    The graph loader needs the *sources* too, to record true document length
+    (summing chunk lengths would double-count the overlap).
+    """
     s = get_settings()
     size = chunk_size or s.chunk_size
     overlap = s.chunk_overlap if chunk_overlap is None else chunk_overlap
@@ -53,7 +59,8 @@ def chunk_documents(chunk_size: int | None = None,
         separators=["\n\n", "\n", ". ", " ", ""],
         add_start_index=True,
     )
-    chunks = splitter.split_documents(split_by_headings(load_corpus()))
+    sources = load_corpus()
+    chunks = splitter.split_documents(split_by_headings(sources))
     counters: dict[str, int] = {}
     for c in chunks:
         doc_id = c.metadata.get("doc_id", "doc")
@@ -61,7 +68,15 @@ def chunk_documents(chunk_size: int | None = None,
         counters[doc_id] = n + 1
         # Stable, human-readable id used for source citation.
         c.metadata["chunk_id"] = f"{doc_id}#{n}"
-    return chunks
+        # Position of the chunk inside its document (the graph's NEXT_CHUNK
+        # chain and the `sorszám` metadata both rely on it).
+        c.metadata["ordinal"] = n
+    return sources, chunks
+
+
+def chunk_documents(chunk_size: int | None = None,
+                    chunk_overlap: int | None = None) -> list[Document]:
+    return load_and_chunk(chunk_size, chunk_overlap)[1]
 
 
 def run_ingest(chunk_size: int | None = None,

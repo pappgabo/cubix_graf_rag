@@ -1,0 +1,171 @@
+{
+  "_about": [
+    "Fictional data that follows docs/graph-schema.md and imitates the shape of",
+    "the real corpus (drivers, teams, seasons, races, cars, titles) without",
+    "colliding with it: every name here is invented, and every node also gets",
+    "the :Seed label so it can be told apart from week 3's extracted entities.",
+    "21 concept nodes + 8 reified RaceResult nodes, one connected component."
+  ],
+
+  "seasons": [
+    { "year": 2031, "rounds": 2, "regulation_era": "2031 ground-effect rules" },
+    { "year": 2032, "rounds": 1, "regulation_era": "2031 ground-effect rules" }
+  ],
+
+  "power_units": [
+    { "name": "Hinode RA-31", "manufacturer": "Hinode Heavy Industries", "layout": "V6 turbo-hybrid" },
+    { "name": "Brennan BD-9", "manufacturer": "Brennan Dynamics", "layout": "V6 turbo-hybrid" }
+  ],
+
+  "teams": [
+    {
+      "team_id": "vertex-racing",
+      "name": "Vertex Racing",
+      "base": "Gyor, Hungary",
+      "founded": 2026,
+      "principal": "Ilona Baranyi"
+    },
+    {
+      "team_id": "lumina-motorsport",
+      "name": "Lumina Motorsport",
+      "base": "Leuven, Belgium",
+      "founded": 2029,
+      "principal": "Pieter Haesen"
+    },
+    {
+      "team_id": "castellan-corse",
+      "name": "Castellan Corse",
+      "base": "Modena, Italy",
+      "founded": 2024,
+      "principal": "Giulia Ferranti"
+    }
+  ],
+
+  "cars": [
+    {
+      "car_id": "vertex-vx31",
+      "model": "Vertex VX-31",
+      "year": 2031,
+      "team": "vertex-racing",
+      "power_unit": "Hinode RA-31"
+    },
+    {
+      "car_id": "lumina-lm31",
+      "model": "Lumina LM-31",
+      "year": 2031,
+      "team": "lumina-motorsport",
+      "power_unit": "Brennan BD-9"
+    },
+    {
+      "car_id": "castellan-cc31",
+      "model": "Castellan CC-31",
+      "year": 2031,
+      "team": "castellan-corse",
+      "power_unit": "Brennan BD-9"
+    }
+  ],
+
+  "drivers": [
+    {
+      "driver_id": "mateo-varga",
+      "name": "Mateo Varga",
+      "nationality": "Hungarian",
+      "born": 2004,
+      "race_number": 27
+    },
+    {
+      "driver_id": "nina-kovac",
+      "name": "Nina Kovac",
+      "nationality": "Slovenian",
+      "born": 2007,
+      "race_number": 51
+    },
+    {
+      "driver_id": "elias-strom",
+      "name": "Elias Strom",
+      "nationality": "Swedish",
+      "born": 2001,
+      "race_number": 8
+    },
+    {
+      "driver_id": "rafael-duarte",
+      "name": "Rafael Duarte",
+      "nationality": "Brazilian",
+      "born": 1999,
+      "race_number": 14
+    }
+  ],
+
+  "circuits": [
+    {
+      "circuit_id": "pannonia-ring",
+      "name": "Pannonia Ring",
+      "country": "Hungary",
+      "length_km": 4.81,
+      "turns": 14
+    },
+    {
+      "circuit_id": "costa-verde",
+      "name": "Costa Verde Street Circuit",
+      "country": "Portugal",
+      "length_km": 5.32,
+      "turns": 19
+    }
+  ],
+
+  "grands_prix": [
+    {
+      "gp_id": "2031-pannonia",
+      "name": "2031 Pannonia Grand Prix",
+      "season": 2031,
+      "round": 1,
+      "date": "2031-04-13",
+      "circuit": "pannonia-ring",
+      "laps": 66
+    },
+    {
+      "gp_id": "2031-costa-verde",
+      "name": "2031 Costa Verde Grand Prix",
+      "season": 2031,
+      "round": 2,
+      "date": "2031-05-25",
+      "circuit": "costa-verde",
+      "laps": 58
+    },
+    {
+      "gp_id": "2032-pannonia",
+      "name": "2032 Pannonia Grand Prix",
+      "season": 2032,
+      "round": 1,
+      "date": "2032-04-11",
+      "circuit": "pannonia-ring",
+      "laps": 66
+    }
+  ],
+
+  "drove_for": [
+    { "driver": "mateo-varga", "team": "vertex-racing", "from_year": 2031, "to_year": null, "role": "race driver" },
+    { "driver": "nina-kovac", "team": "vertex-racing", "from_year": 2031, "to_year": 2031, "role": "race driver" },
+    { "driver": "nina-kovac", "team": "lumina-motorsport", "from_year": 2032, "to_year": null, "role": "race driver" },
+    { "driver": "elias-strom", "team": "lumina-motorsport", "from_year": 2029, "to_year": 2031, "role": "race driver" },
+    { "driver": "elias-strom", "team": "castellan-corse", "from_year": 2032, "to_year": null, "role": "race driver" },
+    { "driver": "rafael-duarte", "team": "castellan-corse", "from_year": 2030, "to_year": 2031, "role": "race driver" },
+    { "driver": "rafael-duarte", "team": "vertex-racing", "from_year": 2032, "to_year": null, "role": "reserve driver" }
+  ],
+
+  "titles": [
+    { "title_id": "wdc-2031", "type": "WDC", "season": 2031, "driver": "mateo-varga", "points": 50 },
+    { "title_id": "wcc-2031", "type": "WCC", "season": 2031, "team": "vertex-racing", "points": 83 }
+  ],
+
+  "results": [
+    { "gp": "2031-pannonia", "driver": "mateo-varga", "team": "vertex-racing", "grid": 2, "position": 1, "points": 25, "status": "Finished", "fastest_lap": false },
+    { "gp": "2031-pannonia", "driver": "elias-strom", "team": "lumina-motorsport", "grid": 1, "position": 2, "points": 18, "status": "Finished", "fastest_lap": true },
+    { "gp": "2031-pannonia", "driver": "nina-kovac", "team": "vertex-racing", "grid": 4, "position": 3, "points": 15, "status": "Finished", "fastest_lap": false },
+    { "gp": "2031-pannonia", "driver": "rafael-duarte", "team": "castellan-corse", "grid": 3, "position": null, "points": 0, "status": "Retired (gearbox)", "fastest_lap": false },
+    { "gp": "2031-costa-verde", "driver": "mateo-varga", "team": "vertex-racing", "grid": 1, "position": 1, "points": 25, "status": "Finished", "fastest_lap": true },
+    { "gp": "2031-costa-verde", "driver": "nina-kovac", "team": "vertex-racing", "grid": 5, "position": 2, "points": 18, "status": "Finished", "fastest_lap": false },
+    { "gp": "2031-costa-verde", "driver": "rafael-duarte", "team": "castellan-corse", "grid": 3, "position": 3, "points": 15, "status": "Finished", "fastest_lap": false },
+    { "gp": "2031-costa-verde", "driver": "elias-strom", "team": "lumina-motorsport", "grid": 2, "position": null, "points": 0, "status": "Accident", "fastest_lap": false }
+  ]
+}

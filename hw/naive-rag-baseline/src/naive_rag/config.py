@@ -41,6 +41,16 @@ class Settings(BaseSettings):
     qdrant_api_key: str | None = None
     collection_name: str = "f1_naive_rag"
 
+    # --- Graph store (Neo4j, week 2) --------------------------------------
+    # Same variables are consumed by compose.yaml, so the container and the
+    # driver cannot drift apart. Default matches the compose defaults.
+    neo4j_uri: str = "bolt://localhost:7687"
+    neo4j_user: str = "neo4j"
+    neo4j_password: str = "graphrag123"
+    neo4j_database: str = "neo4j"
+    # Root node that every real document hangs off (handy for global queries).
+    corpus_name: str = "f1-wikipedia"
+
     # --- Chunking (deliberately NOT default) ------------------------------
     # Measured on this corpus: paragraphs are short (median 121 chars,
     # p90 721, 83% <= 500 chars). 500 chars therefore keeps most paragraphs
@@ -64,6 +74,7 @@ class Settings(BaseSettings):
     baseline_dir: Path = Field(default=PROJECT_ROOT / "baseline")
     qdrant_path: Path = Field(default=PROJECT_ROOT / ".qdrant")
     index_info_file: Path = Field(default=PROJECT_ROOT / ".index_info.json")
+    graph_dir: Path = Field(default=PROJECT_ROOT / "graph")
 
 
 @lru_cache

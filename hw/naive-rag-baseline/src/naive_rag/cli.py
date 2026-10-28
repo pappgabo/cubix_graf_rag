@@ -4,6 +4,7 @@
   uv run naive-rag ask "your question"
   uv run naive-rag baseline [--tag NAME]
   uv run naive-rag serve [--port 8000]
+  uv run naive-rag graph up | init | load | seed | query | stats | clear
 """
 
 from __future__ import annotations
@@ -11,12 +12,16 @@ from __future__ import annotations
 import argparse
 import json
 import re
+import shutil
+import subprocess
 import sys
+import time
 from datetime import datetime, timezone
 from pathlib import Path
 
-from .config import get_settings
+from .config import PROJECT_ROOT, get_settings
 from .dependencies import MissingDependency
+from .graph import GraphUnavailable
 
 TYPE_ORDER = ["simple", "multi-hop", "global"]
 
@@ -30,6 +35,12 @@ _INSTALL_HINTS = {
         "default": "See https://pandoc.org/installing.html",
     },
 }
+
+
+_GRAPH_HINT = ("Start it from the repo:  docker compose up -d neo4j\n"
+               "or let the CLI do it:    uv run naive-rag graph up\n"
+               "Check NEO4J_URI / NEO4J_USER / NEO4J_PASSWORD in .env "
+               "(compose.yaml reads the same values).")
 
 
 def _install_hint(name: str) -> str:
@@ -132,6 +143,103 @@ def cmd_serve(args) -> None:
     uvicorn.run("naive_rag.api:app", host=args.host, port=args.port)
 
 
+# --- graph (week 2) -------------------------------------------------------
+
+def _report(title: str, stats: dict) -> None:
+    print(title)
+    width = max(len(k) for k in stats)
+    for key, value in stats.items():
+        print(f"  {key:<{width}} {value}")
+
+
+def cmd_graph_up(args) -> None:
+    """`docker compose up -d neo4j`, then wait until the container is healthy."""
+    if not shutil.which("docker"):
+        raise MissingDependency("docker", "running Neo4j from compose.yaml")
+    subprocess.run(["docker", "compose", "up", "-d", "neo4j"],
+                   cwd=PROJECT_ROOT, check=True)
+    print("Waiting for Neo4j to become healthy ...", end="", flush=True)
+    deadline = time.monotonic() + args.timeout
+    while time.monotonic() < deadline:
+        out = subprocess.run(
+            ["docker", "inspect", "-f", "{{.State.Health.Status}}",
+             "f1-graphrag-neo4j"],
+            capture_output=True, text=True, check=False)
+        if out.stdout.strip() == "healthy":
+            s = get_settings()
+            print(f" ok.\nBolt: {s.neo4j_uri}   Browser: http://localhost:7474")
+            return
+        print(".", end="", flush=True)
+        time.sleep(2)
+    raise SystemExit(f"\nerror: Neo4j did not become healthy in "
+                     f"{args.timeout}s. Try: docker compose logs neo4j")
+
+
+def cmd_graph_init(args) -> None:
+    from .graph_schema import apply_schema
+    _report("Schema applied.", apply_schema())
+
+
+def cmd_graph_load(args) -> None:
+    from .graph_ingest import load_document_graph
+    _report("Document graph loaded.",
+            load_document_graph(args.chunk_size, args.chunk_overlap))
+
+
+def cmd_graph_seed(args) -> None:
+    from .graph_seed import load_seed_graph
+    _report("Seed graph loaded (rows merged per section).", load_seed_graph())
+
+
+def cmd_graph_query(args) -> None:
+    from .graph_queries import render_table, run_queries, write_report
+    results = run_queries(args.only)
+    if args.only:
+        # A single query prints to the terminal; the report file is only
+        # rewritten by a full run, so it always contains all 8 queries.
+        for r in results:
+            print(f"\n{r['id']} — {r['title']}\n")
+            print(render_table(r["rows"]))
+        return
+    for r in results:
+        print(f"  {r['id']} — {r['title']}: {len(r['rows'])} row(s)")
+    print(f"Saved to {write_report(results)}")
+
+
+def cmd_graph_stats(args) -> None:
+    from .graph import counts_by_label
+    from .graph_schema import describe_schema
+    rows = counts_by_label()
+    if not rows:
+        print("The graph is empty. Run: graph init, graph load, graph seed")
+        return
+    _report("Nodes per label:",
+            {r["name"]: r["count"] for r in rows if r["kind"] == "node"})
+    _report("Relationships per type:",
+            {r["name"]: r["count"] for r in rows if r["kind"] == "rel"})
+    print("Shapes present in the data:")
+    for t in describe_schema():
+        print(f"  (:{t['from_label']})-[:{t['rel']}]->(:{t['to_label']})"
+              f"  x{t['count']}")
+
+
+def cmd_graph_clear(args) -> None:
+    from .graph import query
+    from .graph_seed import clear_seed_graph
+    if args.what == "seed":
+        print(f"Deleted {clear_seed_graph()} :Seed nodes.")
+        return
+    if args.what == "corpus":
+        n = query("MATCH (n) WHERE n:Corpus OR n:Document OR n:Section "
+                  "OR n:Chunk DETACH DELETE n "
+                  "RETURN count(*) AS deleted")[0]["deleted"]
+        print(f"Deleted {n} document-graph nodes.")
+        return
+    n = query("MATCH (n) DETACH DELETE n RETURN count(*) AS deleted"
+              )[0]["deleted"]
+    print(f"Deleted all {n} nodes (the schema is kept).")
+
+
 def main() -> None:
     p = argparse.ArgumentParser(prog="naive-rag")
     sub = p.add_subparsers(dest="cmd", required=True)
@@ -156,11 +264,43 @@ def main() -> None:
     sp.add_argument("--port", type=int, default=8000)
     sp.set_defaults(fn=cmd_serve)
 
+    sp = sub.add_parser("graph", help="Neo4j: schema, data loading, Cypher")
+    gsub = sp.add_subparsers(dest="graph_cmd", required=True)
+
+    g = gsub.add_parser("up", help="start Neo4j (docker compose) and wait")
+    g.add_argument("--timeout", type=int, default=120)
+    g.set_defaults(fn=cmd_graph_up)
+
+    g = gsub.add_parser("init", help="create constraints and indexes")
+    g.set_defaults(fn=cmd_graph_init)
+
+    g = gsub.add_parser("load", help="load the real corpus as Document/Chunk")
+    g.add_argument("--chunk-size", type=int)
+    g.add_argument("--chunk-overlap", type=int)
+    g.set_defaults(fn=cmd_graph_load)
+
+    g = gsub.add_parser("seed", help="load graph/seed/f1-seed.json")
+    g.set_defaults(fn=cmd_graph_seed)
+
+    g = gsub.add_parser("query", help="run cypher/queries.cypher -> report")
+    g.add_argument("--only", help="run a single query by id (e.g. Q4)")
+    g.set_defaults(fn=cmd_graph_query)
+
+    g = gsub.add_parser("stats", help="node/relationship counts and shapes")
+    g.set_defaults(fn=cmd_graph_stats)
+
+    g = gsub.add_parser("clear", help="delete data (the schema is kept)")
+    g.add_argument("what", choices=["all", "seed", "corpus"], default="all",
+                   nargs="?")
+    g.set_defaults(fn=cmd_graph_clear)
+
     args = p.parse_args()
     try:
         args.fn(args)
     except MissingDependency as e:
         raise SystemExit(f"error: {e}\n{_install_hint(e.name)}") from None
+    except GraphUnavailable as e:
+        raise SystemExit(f"error: {e}\n{_GRAPH_HINT}") from None
 
 
 if __name__ == "__main__":

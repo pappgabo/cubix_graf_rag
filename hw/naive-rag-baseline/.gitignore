@@ -29,6 +29,11 @@ qdrant_storage/
 *.faiss
 chroma/
 
+# --- Neo4j (data lives in a docker volume; these are only local scratch) ---
+neo4j/
+graph/import/*
+!graph/import/.gitkeep
+
 # --- Tooling caches --------------------------------------------------------
 .pytest_cache/
 .mypy_cache/
