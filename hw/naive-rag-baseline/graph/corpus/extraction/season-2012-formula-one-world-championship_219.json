@@ -1,0 +1,40 @@
+{
+  "chunk_id": "season-2012-formula-one-world-championship#219",
+  "doc_id": "season-2012-formula-one-world-championship",
+  "document_title": "2012 Formula One World Championship",
+  "section": "Race summaries > Post-season controversy",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/2012_Formula_One_World_Championship",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "9acec9c89369e93b1bf4b83e7e9e9802c26249d8c153dc5af67741c1f17a2606",
+  "status": "error",
+  "error": "ExtractionValidationError: WON does not allow Driver -> Season",
+  "candidate_result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Sebastian Vettel",
+        "entity_type": "Driver",
+        "description": "Intense media speculation suggested that the challenge threatened Vettel's championship because as the race finished behind the safety car, any post-race penalty had the potential to demote him in the race standings, and Vettel would not have enough points to secure the title."
+      },
+      {
+        "local_id": "e2",
+        "name": "2012 Formula One World Championship",
+        "entity_type": "Season",
+        "description": "The championship year in which the controversy occurred."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "WON",
+        "description": "Vettel's championship win was threatened by the challenge due to potential penalties affecting his points.",
+        "from_year": 2012,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

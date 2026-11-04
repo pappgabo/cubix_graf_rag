@@ -1,0 +1,93 @@
+{
+  "chunk_id": "driver-lewis-hamilton#62",
+  "doc_id": "driver-lewis-hamilton",
+  "document_title": "Lewis Hamilton",
+  "section": null,
+  "page": 6,
+  "source": "https://en.wikipedia.org/wiki/Lewis_Hamilton",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "433e0b3678d068cc15b075128f4e1f4391de22daae4f9ce984d83451278dab2b",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Lewis Hamilton",
+        "entity_type": "Driver",
+        "description": "A Formula One driver who has not secured a race win or a pole position in the 2022 season."
+      },
+      {
+        "local_id": "e2",
+        "name": "George Russell",
+        "entity_type": "Driver",
+        "description": "A Formula One driver who partnered with Lewis Hamilton in the 2022 season."
+      },
+      {
+        "local_id": "e3",
+        "name": "Mercedes",
+        "entity_type": "Team",
+        "description": "The Formula One team that Lewis Hamilton drives for."
+      },
+      {
+        "local_id": "e4",
+        "name": "2022",
+        "entity_type": "Season",
+        "description": "The Formula One season in which Hamilton did not secure a race win or a pole position."
+      },
+      {
+        "local_id": "e5",
+        "name": "W13",
+        "entity_type": "Car",
+        "description": "The car model fielded by Mercedes in the 2022 season."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e3",
+        "relationship_type": "DROVE_FOR",
+        "description": "Lewis Hamilton drove for Mercedes during the 2022 season.",
+        "from_year": 2022,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Lewis Hamilton was teammates with George Russell in the 2022 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e4",
+        "relationship_type": "ENTERED",
+        "description": "Mercedes entered the 2022 Formula One season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e4",
+        "relationship_type": "RACED_IN",
+        "description": "The W13 car raced in the 2022 Formula One season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e5",
+        "relationship_type": "FIELDED",
+        "description": "Mercedes fielded the W13 car in the 2022 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

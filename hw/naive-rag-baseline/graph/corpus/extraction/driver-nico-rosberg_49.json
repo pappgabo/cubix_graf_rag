@@ -1,0 +1,70 @@
+{
+  "chunk_id": "driver-nico-rosberg#49",
+  "doc_id": "driver-nico-rosberg",
+  "document_title": "Nico Rosberg",
+  "section": "Nico Rosberg > 2008–2009",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/Nico_Rosberg",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "5bfd6e8f75a4cf6ae7696e5390c97ba183fb9d2e67cb79340b9ed550500d75e1",
+  "status": "error",
+  "error": "ExtractionValidationError: DROVE_FOR does not allow Driver -> Season",
+  "candidate_result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Nico Rosberg",
+        "entity_type": "Driver",
+        "description": "A Formula One driver who raced for Williams and later Mercedes."
+      },
+      {
+        "local_id": "e2",
+        "name": "Kazuki Nakajima",
+        "entity_type": "Driver",
+        "description": "A Formula One driver who raced for Williams."
+      },
+      {
+        "local_id": "e3",
+        "name": "2009",
+        "entity_type": "Season",
+        "description": "The Formula One season in which Rosberg raced."
+      },
+      {
+        "local_id": "e4",
+        "name": "Williams",
+        "entity_type": "Team",
+        "description": "A Formula One team that Rosberg raced for."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Rosberg was partnered with Nakajima for the 2009 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e3",
+        "relationship_type": "ENTERED",
+        "description": "Williams took part in the 2009 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e3",
+        "relationship_type": "DROVE_FOR",
+        "description": "Rosberg drove for Williams in the 2009 season.",
+        "from_year": 2009,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

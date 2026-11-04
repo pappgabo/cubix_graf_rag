@@ -1,0 +1,133 @@
+{
+  "chunk_id": "team-mercedes-benz-in-formula-one#31",
+  "doc_id": "team-mercedes-benz-in-formula-one",
+  "document_title": "Mercedes-Benz in Formula One",
+  "section": "Mercedes-Benz in Formula One > Mercedes-AMG Petronas Formula One Team (2010–present)",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/Mercedes-Benz_in_Formula_One",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "c2ea9d4558220609b473aa8e5b5372ad5d6eab02011127c78d45cc35522e257e",
+  "status": "error",
+  "error": "ExtractionValidationError: ACHIEVED does not allow Driver -> GrandPrix",
+  "candidate_result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Michael Schumacher",
+        "entity_type": "Driver",
+        "description": "A driver who set the fastest time in qualifying at the 2012 Monaco Grand Prix."
+      },
+      {
+        "local_id": "e2",
+        "name": "Bruno Senna",
+        "entity_type": "Driver",
+        "description": "A driver involved in an incident with Michael Schumacher during the Spanish Grand Prix."
+      },
+      {
+        "local_id": "e3",
+        "name": "Nico Rosberg",
+        "entity_type": "Driver",
+        "description": "The first German driver to win a Grand Prix driving a German vehicle since Hermann Lang."
+      },
+      {
+        "local_id": "e4",
+        "name": "2012",
+        "entity_type": "Season",
+        "description": "The championship year in which the events occurred."
+      },
+      {
+        "local_id": "e5",
+        "name": "Monaco Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The Grand Prix where Michael Schumacher set the fastest time in qualifying."
+      },
+      {
+        "local_id": "e6",
+        "name": "Spanish Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The previous round before the Monaco Grand Prix where the incident occurred."
+      },
+      {
+        "local_id": "e7",
+        "name": "Mercedes-AMG Petronas Formula One Team",
+        "entity_type": "Team",
+        "description": "The Formula One team associated with the events."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e5",
+        "relationship_type": "ACHIEVED",
+        "description": "Michael Schumacher set the fastest time in qualifying at the Monaco Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e7",
+        "relationship_type": "DROVE_FOR",
+        "description": "Michael Schumacher drove for the Mercedes-AMG Petronas Formula One Team.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e1",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Bruno Senna was a teammate of Michael Schumacher during the incident.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e4",
+        "relationship_type": "WON",
+        "description": "Nico Rosberg won a Grand Prix in 2012.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e4",
+        "relationship_type": "ACHIEVED",
+        "description": "Nico Rosberg became the first German driver to win a Grand Prix driving a German vehicle since Hermann Lang.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e7",
+        "relationship_type": "DROVE_FOR",
+        "description": "Nico Rosberg drove for the Mercedes-AMG Petronas Formula One Team.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e6",
+        "target_id": "e4",
+        "relationship_type": "ROUND_OF",
+        "description": "The Spanish Grand Prix is a round of the 2012 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e4",
+        "relationship_type": "ROUND_OF",
+        "description": "The Monaco Grand Prix is a round of the 2012 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

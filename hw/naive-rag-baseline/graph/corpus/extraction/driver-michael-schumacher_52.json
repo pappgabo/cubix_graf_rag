@@ -1,0 +1,60 @@
+{
+  "chunk_id": "driver-michael-schumacher#52",
+  "doc_id": "driver-michael-schumacher",
+  "document_title": "Michael Schumacher",
+  "section": null,
+  "page": 5,
+  "source": "https://en.wikipedia.org/wiki/Michael_Schumacher",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "de45f8b851a963ea5b101697c0701fae4cd637f3f6546da595d024a70362c531",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Michael Schumacher",
+        "entity_type": "Driver",
+        "description": "A Formula One driver who won five races in a season."
+      },
+      {
+        "local_id": "e2",
+        "name": "Ferrari",
+        "entity_type": "Team",
+        "description": "The team for which Michael Schumacher raced."
+      },
+      {
+        "local_id": "e3",
+        "name": "European Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The race at which Michael Schumacher entered the season's finale."
+      },
+      {
+        "local_id": "e4",
+        "name": "Jerez Circuit",
+        "entity_type": "Circuit",
+        "description": "The circuit where the European Grand Prix was held."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Michael Schumacher drove for Ferrari.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e4",
+        "relationship_type": "HELD_AT",
+        "description": "The European Grand Prix was held at the Jerez Circuit.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

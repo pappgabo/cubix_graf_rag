@@ -1,0 +1,70 @@
+{
+  "chunk_id": "driver-lewis-hamilton#80",
+  "doc_id": "driver-lewis-hamilton",
+  "document_title": "Lewis Hamilton",
+  "section": null,
+  "page": 7,
+  "source": "https://en.wikipedia.org/wiki/Lewis_Hamilton",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "a0640e20aa4f6acb928f987cbbcf730b8e0ada4869de9ecac88206b0d93b813a",
+  "status": "error",
+  "error": "ExtractionValidationError: ACHIEVED does not allow Driver -> GrandPrix",
+  "candidate_result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Lewis Hamilton",
+        "entity_type": "Driver",
+        "description": "Regarded as one of the best wet-weather drivers in the sport."
+      },
+      {
+        "local_id": "e2",
+        "name": "Nick Heidfeld",
+        "entity_type": "Driver",
+        "description": "Finished second in the 2008 British Grand Prix."
+      },
+      {
+        "local_id": "e3",
+        "name": "2008",
+        "entity_type": "Season",
+        "description": "The season in which the British Grand Prix took place."
+      },
+      {
+        "local_id": "e4",
+        "name": "British Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A race in which Hamilton bested Heidfeld by over a minute."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e4",
+        "relationship_type": "ACHIEVED",
+        "description": "Hamilton achieved a notable performance in the British Grand Prix.",
+        "from_year": 2008,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e4",
+        "relationship_type": "AT_RACE",
+        "description": "Heidfeld's result belongs to the British Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e1",
+        "relationship_type": "ACHIEVED",
+        "description": "Heidfeld finished second in the British Grand Prix behind Hamilton.",
+        "from_year": 2008,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

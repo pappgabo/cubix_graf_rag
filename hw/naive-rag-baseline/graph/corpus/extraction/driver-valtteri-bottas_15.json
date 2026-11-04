@@ -1,0 +1,139 @@
+{
+  "chunk_id": "driver-valtteri-bottas#15",
+  "doc_id": "driver-valtteri-bottas",
+  "document_title": "Valtteri Bottas",
+  "section": "Formula One career > Williams (2010–2016) > 2010–2012: Test and reserve driver",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/Valtteri_Bottas",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "4116c0d1aa4ceee4cf43c5144d4d3397256228ae5c9172cc3236ce6ad05d4f78",
+  "status": "error",
+  "error": "ExtractionValidationError: ACHIEVED does not allow Driver -> GrandPrix",
+  "candidate_result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Valtteri Bottas",
+        "entity_type": "Driver",
+        "description": "A Finnish racing driver who served as a test and reserve driver for Williams."
+      },
+      {
+        "local_id": "e2",
+        "name": "Williams",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that Bottas drove for as a test and reserve driver."
+      },
+      {
+        "local_id": "e3",
+        "name": "FW33",
+        "entity_type": "Car",
+        "description": "The car model driven by Bottas during his testing."
+      },
+      {
+        "local_id": "e4",
+        "name": "Malaysian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The Grand Prix where Bottas made his debut."
+      },
+      {
+        "local_id": "e5",
+        "name": "Yas Marina Circuit",
+        "entity_type": "Circuit",
+        "description": "The circuit where Bottas participated in the post-season young drivers' test."
+      },
+      {
+        "local_id": "e6",
+        "name": "2010",
+        "entity_type": "Season",
+        "description": "The season when Bottas continued in his role as a test and reserve driver."
+      },
+      {
+        "local_id": "e7",
+        "name": "2011",
+        "entity_type": "Season",
+        "description": "The season when Bottas took part in his first full test."
+      },
+      {
+        "local_id": "e8",
+        "name": "2012",
+        "entity_type": "Season",
+        "description": "The season when Bottas's role was expanded after his GP3 Series victory."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e2",
+        "target_id": "e3",
+        "relationship_type": "FIELDED",
+        "description": "Williams entered the FW33 car.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e6",
+        "relationship_type": "RACED_IN",
+        "description": "The FW33 took part in the 2010 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e7",
+        "relationship_type": "RACED_IN",
+        "description": "The FW33 took part in the 2011 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e8",
+        "relationship_type": "RACED_IN",
+        "description": "The FW33 took part in the 2012 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Valtteri Bottas served as a test and reserve driver for Williams.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e4",
+        "relationship_type": "ACHIEVED",
+        "description": "Valtteri Bottas made his Grand Prix weekend debut at the Malaysian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e8",
+        "relationship_type": "ROUND_OF",
+        "description": "The Malaysian Grand Prix is a round of the 2012 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e4",
+        "relationship_type": "HELD_AT",
+        "description": "The Malaysian Grand Prix is held at Yas Marina Circuit.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

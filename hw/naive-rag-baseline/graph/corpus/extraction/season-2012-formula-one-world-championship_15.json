@@ -1,0 +1,70 @@
+{
+  "chunk_id": "season-2012-formula-one-world-championship#15",
+  "doc_id": "season-2012-formula-one-world-championship",
+  "document_title": "2012 Formula One World Championship",
+  "section": "Teams and drivers > Team changes",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/2012_Formula_One_World_Championship",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "c8f74e1a8dfcee7118b89333b3e33c50b87258def0b83adf5ee94245ec93c4a5",
+  "status": "error",
+  "error": "ExtractionValidationError: DROVE_FOR does not allow Team -> Team",
+  "candidate_result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Marussia",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that underwent a restructuring."
+      },
+      {
+        "local_id": "e2",
+        "name": "Virgin Racing",
+        "entity_type": "Team",
+        "description": "The former name of Marussia before restructuring."
+      },
+      {
+        "local_id": "e3",
+        "name": "McLaren",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that entered a technical partnership with Marussia."
+      },
+      {
+        "local_id": "e4",
+        "name": "Wirth Research",
+        "entity_type": "Team",
+        "description": "A technical partner that Marussia split with mid-season."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Marussia was formerly known as Virgin Racing.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e3",
+        "relationship_type": "DROVE_FOR",
+        "description": "Marussia announced a technical partnership with McLaren.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e4",
+        "relationship_type": "DROVE_FOR",
+        "description": "Marussia split with Wirth Research mid-season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

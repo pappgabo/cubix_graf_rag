@@ -1,0 +1,106 @@
+{
+  "chunk_id": "driver-nico-rosberg#34",
+  "doc_id": "driver-nico-rosberg",
+  "document_title": "Nico Rosberg",
+  "section": "Nico Rosberg > 2005",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/Nico_Rosberg",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "9031cd30f2045389291d0706addc7b4b1d1adaf2a22bd4c4b82c5f6593fba814",
+  "status": "error",
+  "error": "ExtractionValidationError: ACHIEVED does not allow Driver -> GrandPrix",
+  "candidate_result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Nico Rosberg",
+        "entity_type": "Driver",
+        "description": "A Formula One driver signed by Williams as its second test driver in April 2005."
+      },
+      {
+        "local_id": "e2",
+        "name": "Williams",
+        "entity_type": "Team",
+        "description": "A Formula One team that signed Nico Rosberg as its second test driver."
+      },
+      {
+        "local_id": "e3",
+        "name": "Nelson Piquet Jr.",
+        "entity_type": "Driver",
+        "description": "A fellow driver who was analysed alongside Nico Rosberg before Rosberg was selected by Williams."
+      },
+      {
+        "local_id": "e4",
+        "name": "Antônio Pizzonia",
+        "entity_type": "Driver",
+        "description": "Williams's test and reserve driver who worked with Nico Rosberg."
+      },
+      {
+        "local_id": "e5",
+        "name": "Japanese Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A race where Nico Rosberg was shortlisted as a potential replacement for Nick Heidfeld."
+      },
+      {
+        "local_id": "e6",
+        "name": "Chinese Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A race where Nico Rosberg was shortlisted as a potential replacement for Nick Heidfeld."
+      },
+      {
+        "local_id": "e7",
+        "name": "GP2 Series",
+        "entity_type": "Season",
+        "description": "A racing series that Nico Rosberg continued to focus on."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Nico Rosberg was signed by Williams as its second test driver.",
+        "from_year": 2005,
+        "to_year": null,
+        "role": "test driver"
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e5",
+        "relationship_type": "ACHIEVED",
+        "description": "Nico Rosberg was shortlisted as a potential replacement for Nick Heidfeld for the Japanese Grand Prix.",
+        "from_year": 2005,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e6",
+        "relationship_type": "ACHIEVED",
+        "description": "Nico Rosberg was shortlisted as a potential replacement for Nick Heidfeld for the Chinese Grand Prix.",
+        "from_year": 2005,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e2",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Nelson Piquet Jr. was analysed alongside Nico Rosberg before Rosberg was selected by Williams.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e2",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Antônio Pizzonia worked with Nico Rosberg at Williams.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

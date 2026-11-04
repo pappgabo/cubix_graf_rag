@@ -1,0 +1,100 @@
+{
+  "chunk_id": "driver-sebastian-vettel#110",
+  "doc_id": "driver-sebastian-vettel",
+  "document_title": "Sebastian Vettel",
+  "section": "2021: Final podium",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/Sebastian_Vettel",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "f51a42249e51a778cbd3850df52add8de2481db351d94d39c0876a30b3e26c3b",
+  "status": "error",
+  "error": "ExtractionValidationError: FOR_TEAM does not allow Driver -> Driver",
+  "candidate_result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Sebastian Vettel",
+        "entity_type": "Driver",
+        "description": "A Formula One driver who joined Aston Martin for the 2021 season."
+      },
+      {
+        "local_id": "e2",
+        "name": "Aston Martin",
+        "entity_type": "Team",
+        "description": "A Formula One team that Vettel joined for the 2021 season."
+      },
+      {
+        "local_id": "e3",
+        "name": "2021",
+        "entity_type": "Season",
+        "description": "The Formula One season in which Vettel joined Aston Martin."
+      },
+      {
+        "local_id": "e4",
+        "name": "Bahrain Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The debut race weekend for Vettel in the 2021 season."
+      },
+      {
+        "local_id": "e5",
+        "name": "Esteban Ocon",
+        "entity_type": "Driver",
+        "description": "A Formula One driver who collided with Vettel during the Bahrain Grand Prix."
+      },
+      {
+        "local_id": "e6",
+        "name": "15th place",
+        "entity_type": "RaceResult",
+        "description": "Vettel's finishing position in the Bahrain Grand Prix."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Vettel joined Aston Martin for the 2021 season.",
+        "from_year": 2021,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e3",
+        "relationship_type": "ROUND_OF",
+        "description": "The Bahrain Grand Prix is a round of the 2021 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e6",
+        "relationship_type": "ACHIEVED",
+        "description": "Vettel finished in 15th place in the Bahrain Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e6",
+        "target_id": "e4",
+        "relationship_type": "AT_RACE",
+        "description": "The race result belongs to the Bahrain Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e5",
+        "relationship_type": "FOR_TEAM",
+        "description": "Vettel had a collision with Esteban Ocon during the Bahrain Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

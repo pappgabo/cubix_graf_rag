@@ -1,0 +1,100 @@
+{
+  "chunk_id": "driver-michael-schumacher#18",
+  "doc_id": "driver-michael-schumacher",
+  "document_title": "Michael Schumacher",
+  "section": null,
+  "page": 2,
+  "source": "https://en.wikipedia.org/wiki/Michael_Schumacher",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "f975c078edd3f434bbd370f65cab09335e770eee7ffd2228019deb2eced76e21",
+  "status": "error",
+  "error": "ExtractionValidationError: ACHIEVED does not allow Driver -> GrandPrix",
+  "candidate_result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Michael Schumacher",
+        "entity_type": "Driver",
+        "description": "A German racing driver who made his Formula One debut with the Jordan-Ford team."
+      },
+      {
+        "local_id": "e2",
+        "name": "Jochen Mass",
+        "entity_type": "Driver",
+        "description": "A German racing driver and teammate of Michael Schumacher."
+      },
+      {
+        "local_id": "e3",
+        "name": "Jordan",
+        "entity_type": "Team",
+        "description": "The Irish Formula One team that Schumacher debuted with."
+      },
+      {
+        "local_id": "e4",
+        "name": "Belgian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The race where Schumacher made his Formula One debut."
+      },
+      {
+        "local_id": "e5",
+        "name": "Jordan-Ford",
+        "entity_type": "Car",
+        "description": "The car driven by Schumacher during his debut."
+      },
+      {
+        "local_id": "e6",
+        "name": "Mercedes",
+        "entity_type": "PowerUnit",
+        "description": "The engine supplier for Schumacher during his debut."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e3",
+        "relationship_type": "DROVE_FOR",
+        "description": "Schumacher drove for the Jordan team during his debut.",
+        "from_year": 1991,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e4",
+        "relationship_type": "ACHIEVED",
+        "description": "Schumacher achieved a debut at the Belgian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e3",
+        "relationship_type": "FIELDED",
+        "description": "Jordan team fielded the Jordan-Ford car.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e6",
+        "relationship_type": "POWERED_BY",
+        "description": "The Jordan-Ford car was powered by Mercedes.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e3",
+        "relationship_type": "HELD_AT",
+        "description": "The Belgian Grand Prix was held at the Jordan team.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

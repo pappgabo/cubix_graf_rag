@@ -1,0 +1,84 @@
+{
+  "chunk_id": "season-2016-formula-one-world-championship#29",
+  "doc_id": "season-2016-formula-one-world-championship",
+  "document_title": "2016 Formula One World Championship",
+  "section": "Calendar changes",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/2016_Formula_One_World_Championship",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "5920bda39e714c0c18b415315c24a992baec9f7917e24bc0445984c01a1a3082",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "European Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The European Grand Prix returned to the calendar after a three-year absence, held at a brand-new street circuit in Baku, Azerbaijan."
+      },
+      {
+        "local_id": "e2",
+        "name": "Baku",
+        "entity_type": "Circuit",
+        "description": "The capital of Azerbaijan, where the European Grand Prix was held."
+      },
+      {
+        "local_id": "e3",
+        "name": "German Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The German Grand Prix returned to the calendar, taking place at the Hockenheimring."
+      },
+      {
+        "local_id": "e4",
+        "name": "Hockenheimring",
+        "entity_type": "Circuit",
+        "description": "The circuit where the German Grand Prix took place."
+      },
+      {
+        "local_id": "e5",
+        "name": "2016",
+        "entity_type": "Season",
+        "description": "The season of the 2016 Formula One World Championship."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e5",
+        "relationship_type": "ROUND_OF",
+        "description": "The European Grand Prix is a round of the 2016 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "HELD_AT",
+        "description": "The European Grand Prix was held at the Baku circuit.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e5",
+        "relationship_type": "ROUND_OF",
+        "description": "The German Grand Prix is a round of the 2016 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e4",
+        "relationship_type": "HELD_AT",
+        "description": "The German Grand Prix was held at the Hockenheimring.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

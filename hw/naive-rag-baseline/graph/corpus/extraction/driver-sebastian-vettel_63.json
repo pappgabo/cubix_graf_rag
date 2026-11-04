@@ -1,0 +1,100 @@
+{
+  "chunk_id": "driver-sebastian-vettel#63",
+  "doc_id": "driver-sebastian-vettel",
+  "document_title": "Sebastian Vettel",
+  "section": "2013: Record-breaking season earns fourth world title",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/Sebastian_Vettel",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "3a4f54ef3c6a3e8b65f767e80bb6b36b98250e2d3ecef41b79a7c32b660e49f6",
+  "status": "error",
+  "error": "ExtractionValidationError: WON does not allow Driver -> Season",
+  "candidate_result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Sebastian Vettel",
+        "entity_type": "Driver",
+        "description": "A Formula One driver who won four world titles."
+      },
+      {
+        "local_id": "e2",
+        "name": "2013",
+        "entity_type": "Season",
+        "description": "The Formula One season in which Sebastian Vettel won his fourth world title."
+      },
+      {
+        "local_id": "e3",
+        "name": "Indian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The race where Sebastian Vettel sealed his fourth world title."
+      },
+      {
+        "local_id": "e4",
+        "name": "13",
+        "entity_type": "RaceResult",
+        "description": "The total number of wins Sebastian Vettel achieved by the end of the 2013 season."
+      },
+      {
+        "local_id": "e5",
+        "name": "155",
+        "entity_type": "RaceResult",
+        "description": "The then-record points total achieved by Sebastian Vettel in the 2013 season."
+      },
+      {
+        "local_id": "e6",
+        "name": "Fernando Alonso",
+        "entity_type": "Driver",
+        "description": "The runner-up in the 2013 Formula One season."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "WON",
+        "description": "Sebastian Vettel won the 2013 Formula One season title.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e3",
+        "relationship_type": "ROUND_OF",
+        "description": "The Indian Grand Prix is a round of the 2013 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e4",
+        "relationship_type": "ACHIEVED",
+        "description": "Sebastian Vettel achieved 13 wins in the 2013 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e5",
+        "relationship_type": "ACHIEVED",
+        "description": "Sebastian Vettel achieved a then-record 155 points in the 2013 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e6",
+        "target_id": "e2",
+        "relationship_type": "ACHIEVED",
+        "description": "Fernando Alonso was the runner-up in the 2013 Formula One season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

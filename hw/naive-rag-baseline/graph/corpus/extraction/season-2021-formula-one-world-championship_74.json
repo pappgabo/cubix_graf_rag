@@ -1,0 +1,85 @@
+{
+  "chunk_id": "season-2021-formula-one-world-championship#74",
+  "doc_id": "season-2021-formula-one-world-championship",
+  "document_title": "2021 Formula One World Championship",
+  "section": null,
+  "page": 7,
+  "source": "https://en.wikipedia.org/wiki/2021_Formula_One_World_Championship",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "dce052754b5b80b02ea8c574ea4eb91488d27f07bf3f29b895a8ed72e1dd92bf",
+  "status": "error",
+  "error": "ExtractionValidationError: ACHIEVED does not allow Driver -> Driver",
+  "candidate_result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Kimi Räikkönen",
+        "entity_type": "Driver",
+        "description": "A driver who was released into Nikita Mazepin's path, putting Mazepin out of the race."
+      },
+      {
+        "local_id": "e2",
+        "name": "Nikita Mazepin",
+        "entity_type": "Driver",
+        "description": "A driver who was put out of the race by Kimi Räikkönen."
+      },
+      {
+        "local_id": "e3",
+        "name": "Esteban Ocon",
+        "entity_type": "Driver",
+        "description": "The newly promoted driver who held his lead until the end to take his first Formula 1 victory."
+      },
+      {
+        "local_id": "e4",
+        "name": "Sebastian Vettel",
+        "entity_type": "Driver",
+        "description": "A driver who finished behind Esteban Ocon."
+      },
+      {
+        "local_id": "e5",
+        "name": "Lewis Hamilton",
+        "entity_type": "Driver",
+        "description": "A driver who battled his way back up the classification."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e3",
+        "target_id": "e1",
+        "relationship_type": "ACHIEVED",
+        "description": "Esteban Ocon took his first Formula 1 victory ahead of Kimi Räikkönen.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e4",
+        "relationship_type": "ACHIEVED",
+        "description": "Esteban Ocon took his first Formula 1 victory ahead of Sebastian Vettel.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e5",
+        "relationship_type": "ACHIEVED",
+        "description": "Esteban Ocon took his first Formula 1 victory ahead of Lewis Hamilton.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "ACHIEVED",
+        "description": "Kimi Räikkönen was released into Nikita Mazepin's path, putting Mazepin out of the race.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

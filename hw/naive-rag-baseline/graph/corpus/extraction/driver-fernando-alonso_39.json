@@ -1,0 +1,142 @@
+{
+  "chunk_id": "driver-fernando-alonso#39",
+  "doc_id": "driver-fernando-alonso",
+  "document_title": "Fernando Alonso",
+  "section": "McLaren and second stint with Renault (2007–2009)",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/Fernando_Alonso",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "de4b070828afeff7fe5e12dd1c3177227c3ea674892efac5522bc48591ded7b2",
+  "status": "error",
+  "error": "ExtractionValidationError: TEAMMATE_OF does not allow Driver -> Team",
+  "candidate_result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Fernando Alonso",
+        "entity_type": "Driver",
+        "description": "A Formula One driver who raced for McLaren and Renault."
+      },
+      {
+        "local_id": "e2",
+        "name": "McLaren",
+        "entity_type": "Team",
+        "description": "A Formula One team that Alonso drove for."
+      },
+      {
+        "local_id": "e3",
+        "name": "Renault",
+        "entity_type": "Team",
+        "description": "A Formula One team that Alonso drove for."
+      },
+      {
+        "local_id": "e4",
+        "name": "Lewis Hamilton",
+        "entity_type": "Driver",
+        "description": "A Formula One driver who was Alonso's teammate at McLaren."
+      },
+      {
+        "local_id": "e5",
+        "name": "Ferrari",
+        "entity_type": "Team",
+        "description": "A Formula One team that had Räikkönen as a driver."
+      },
+      {
+        "local_id": "e6",
+        "name": "Malaysia",
+        "entity_type": "GrandPrix",
+        "description": "A Grand Prix where Alonso achieved a victory."
+      },
+      {
+        "local_id": "e7",
+        "name": "Monaco",
+        "entity_type": "GrandPrix",
+        "description": "A Grand Prix where Alonso achieved a victory."
+      },
+      {
+        "local_id": "e8",
+        "name": "Europe",
+        "entity_type": "GrandPrix",
+        "description": "A Grand Prix where Alonso achieved a victory."
+      },
+      {
+        "local_id": "e9",
+        "name": "Italy",
+        "entity_type": "GrandPrix",
+        "description": "A Grand Prix where Alonso achieved a victory."
+      },
+      {
+        "local_id": "e10",
+        "name": "2007",
+        "entity_type": "Season",
+        "description": "The Formula One season during which Alonso raced."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Alonso drove for McLaren.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e3",
+        "relationship_type": "DROVE_FOR",
+        "description": "Alonso drove for Renault.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e2",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Hamilton was Alonso's teammate at McLaren.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e6",
+        "target_id": "e10",
+        "relationship_type": "ROUND_OF",
+        "description": "The Malaysia Grand Prix is a round of the 2007 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e7",
+        "target_id": "e10",
+        "relationship_type": "ROUND_OF",
+        "description": "The Monaco Grand Prix is a round of the 2007 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e8",
+        "target_id": "e10",
+        "relationship_type": "ROUND_OF",
+        "description": "The Europe Grand Prix is a round of the 2007 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e9",
+        "target_id": "e10",
+        "relationship_type": "ROUND_OF",
+        "description": "The Italy Grand Prix is a round of the 2007 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

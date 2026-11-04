@@ -1,0 +1,94 @@
+{
+  "chunk_id": "driver-sebastian-vettel#38",
+  "doc_id": "driver-sebastian-vettel",
+  "document_title": "Sebastian Vettel",
+  "section": "2010: Youngest World Champion",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/Sebastian_Vettel",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "7f97dcf476a86731f172fcdf149faaaf46200e5dd7c135a94ee06bd4db9e2505",
+  "status": "error",
+  "error": "ExtractionValidationError: ACHIEVED does not allow Driver -> GrandPrix",
+  "candidate_result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Sebastian Vettel",
+        "entity_type": "Driver",
+        "description": "A Formula One driver who became the youngest World Champion."
+      },
+      {
+        "local_id": "e2",
+        "name": "2010",
+        "entity_type": "Season",
+        "description": "The championship year in which Sebastian Vettel became the youngest World Champion."
+      },
+      {
+        "local_id": "e3",
+        "name": "Bahrain Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The first race of the 2010 season where Vettel took pole position."
+      },
+      {
+        "local_id": "e4",
+        "name": "Australian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The race where Vettel was appointed as a director of the Grand Prix Drivers' Association."
+      },
+      {
+        "local_id": "e5",
+        "name": "Malaysia",
+        "entity_type": "GrandPrix",
+        "description": "The race where Vettel took his first win of the 2010 season."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e3",
+        "relationship_type": "ACHIEVED",
+        "description": "Vettel took pole position at the Bahrain Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e4",
+        "relationship_type": "ACHIEVED",
+        "description": "Vettel was appointed as a director of the Grand Prix Drivers' Association at the Australian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e5",
+        "relationship_type": "ACHIEVED",
+        "description": "Vettel took his first win of the season in Malaysia.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "WON",
+        "description": "Vettel became the youngest World Champion in 2010.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e2",
+        "relationship_type": "AWARDED_IN",
+        "description": "The title of youngest World Champion was awarded in the 2010 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

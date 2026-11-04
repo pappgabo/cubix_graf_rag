@@ -1,0 +1,124 @@
+{
+  "chunk_id": "team-mercedes-benz-in-formula-one#12",
+  "doc_id": "team-mercedes-benz-in-formula-one",
+  "document_title": "Mercedes-Benz in Formula One",
+  "section": "Mercedes-Benz in Formula One > Daimler-Benz AG (1954–1955)",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/Mercedes-Benz_in_Formula_One",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "21a6b0dda812d1292f19f0ff8b00c27e63e609a358bd8949cddf4ac710458bcc",
+  "status": "error",
+  "error": "ExtractionValidationError: FIELDED is not temporal; from_year, to_year and role must be null",
+  "candidate_result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Mercedes-Benz",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that entered cars."
+      },
+      {
+        "local_id": "e2",
+        "name": "Juan Manuel Fangio",
+        "entity_type": "Driver",
+        "description": "A driver who raced for Mercedes-Benz and won four races in 1955."
+      },
+      {
+        "local_id": "e3",
+        "name": "Stirling Moss",
+        "entity_type": "Driver",
+        "description": "A driver who raced for Mercedes-Benz and won the British Grand Prix in 1955."
+      },
+      {
+        "local_id": "e4",
+        "name": "1955",
+        "entity_type": "Season",
+        "description": "The championship year in which Mercedes-Benz dominated."
+      },
+      {
+        "local_id": "e5",
+        "name": "W196",
+        "entity_type": "Car",
+        "description": "The car developed by Mercedes-Benz throughout the 1955 season."
+      },
+      {
+        "local_id": "e6",
+        "name": "British Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A race won by Stirling Moss in 1955."
+      },
+      {
+        "local_id": "e7",
+        "name": "Championship",
+        "entity_type": "Title",
+        "description": "The championship title for the 1955 season."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e5",
+        "relationship_type": "FIELDED",
+        "description": "Mercedes-Benz entered the W196 car.",
+        "from_year": 1955,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e1",
+        "relationship_type": "DROVE_FOR",
+        "description": "Juan Manuel Fangio raced for Mercedes-Benz.",
+        "from_year": 1954,
+        "to_year": 1955,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e1",
+        "relationship_type": "DROVE_FOR",
+        "description": "Stirling Moss raced for Mercedes-Benz.",
+        "from_year": 1955,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e7",
+        "relationship_type": "WON",
+        "description": "Juan Manuel Fangio won the championship title.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e6",
+        "relationship_type": "ACHIEVED",
+        "description": "Stirling Moss recorded a result in the British Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e6",
+        "target_id": "e4",
+        "relationship_type": "ROUND_OF",
+        "description": "The British Grand Prix is a round of the 1955 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e4",
+        "relationship_type": "ENTERED",
+        "description": "Mercedes-Benz took part in the 1955 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

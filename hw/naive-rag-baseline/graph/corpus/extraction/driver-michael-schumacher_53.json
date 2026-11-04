@@ -1,0 +1,55 @@
+{
+  "chunk_id": "driver-michael-schumacher#53",
+  "doc_id": "driver-michael-schumacher",
+  "document_title": "Michael Schumacher",
+  "section": null,
+  "page": 5,
+  "source": "https://en.wikipedia.org/wiki/Michael_Schumacher",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "c899b15d0605eafae1f42610878c98cc3819405a92edc93e1a9183021fa0443e",
+  "status": "error",
+  "error": "ExtractionValidationError: ACHIEVED does not allow Driver -> Driver",
+  "candidate_result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Michael Schumacher",
+        "entity_type": "Driver",
+        "description": "A Formula One driver who retired from a race after colliding with Jacques Villeneuve."
+      },
+      {
+        "local_id": "e2",
+        "name": "Jacques Villeneuve",
+        "entity_type": "Driver",
+        "description": "A Formula One driver who scored four points to take the championship."
+      },
+      {
+        "local_id": "e3",
+        "name": "Williams",
+        "entity_type": "Team",
+        "description": "The team for which Jacques Villeneuve raced."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "ACHIEVED",
+        "description": "Schumacher collided with Villeneuve during the race.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e3",
+        "relationship_type": "DROVE_FOR",
+        "description": "Villeneuve raced for Williams.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

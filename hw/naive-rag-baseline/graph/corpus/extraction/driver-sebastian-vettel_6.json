@@ -1,0 +1,136 @@
+{
+  "chunk_id": "driver-sebastian-vettel#6",
+  "doc_id": "driver-sebastian-vettel",
+  "document_title": "Sebastian Vettel",
+  "section": null,
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/Sebastian_Vettel",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "577365cdf31cf1aad2788b7e8441cd5f4ecf3bf5f8afa7eed358bb6e3f6800b3",
+  "status": "error",
+  "error": "ExtractionValidationError: ACHIEVED does not allow Driver -> GrandPrix",
+  "candidate_result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Sebastian Vettel",
+        "entity_type": "Driver",
+        "description": "A Formula One driver who partnered with Charles Leclerc for 2019 and took his final win at the Singapore Grand Prix."
+      },
+      {
+        "local_id": "e2",
+        "name": "Charles Leclerc",
+        "entity_type": "Driver",
+        "description": "A Formula One driver who partnered with Sebastian Vettel for the 2019 season."
+      },
+      {
+        "local_id": "e3",
+        "name": "Ferrari",
+        "entity_type": "Team",
+        "description": "A Formula One team that Sebastian Vettel drove for until the end of the 2020 season."
+      },
+      {
+        "local_id": "e4",
+        "name": "Aston Martin",
+        "entity_type": "Team",
+        "description": "A Formula One team that Sebastian Vettel joined in 2021."
+      },
+      {
+        "local_id": "e5",
+        "name": "Singapore Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The race where Sebastian Vettel took the final win of his career."
+      },
+      {
+        "local_id": "e6",
+        "name": "Azerbaijan Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The race where Sebastian Vettel scored his final podium finish."
+      },
+      {
+        "local_id": "e7",
+        "name": "2019",
+        "entity_type": "Season",
+        "description": "The season when Sebastian Vettel partnered with Charles Leclerc."
+      },
+      {
+        "local_id": "e8",
+        "name": "2020",
+        "entity_type": "Season",
+        "description": "The season when Sebastian Vettel left Ferrari."
+      },
+      {
+        "local_id": "e9",
+        "name": "2021",
+        "entity_type": "Season",
+        "description": "The season when Sebastian Vettel joined Aston Martin."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e3",
+        "relationship_type": "DROVE_FOR",
+        "description": "Sebastian Vettel drove for Ferrari until the end of the 2020 season.",
+        "from_year": null,
+        "to_year": 2020,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e4",
+        "relationship_type": "DROVE_FOR",
+        "description": "Sebastian Vettel joined Aston Martin in 2021.",
+        "from_year": 2021,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e5",
+        "relationship_type": "ACHIEVED",
+        "description": "Sebastian Vettel took the final win of his career at the Singapore Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e7",
+        "relationship_type": "ROUND_OF",
+        "description": "The Singapore Grand Prix is a round of the 2019 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e6",
+        "relationship_type": "ACHIEVED",
+        "description": "Sebastian Vettel scored his final podium finish at the Azerbaijan Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e6",
+        "target_id": "e9",
+        "relationship_type": "ROUND_OF",
+        "description": "The Azerbaijan Grand Prix is a round of the 2021 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Sebastian Vettel was partnered by Charles Leclerc for the 2019 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

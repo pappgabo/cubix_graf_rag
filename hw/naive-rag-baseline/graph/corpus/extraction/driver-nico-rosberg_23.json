@@ -1,0 +1,94 @@
+{
+  "chunk_id": "driver-nico-rosberg#23",
+  "doc_id": "driver-nico-rosberg",
+  "document_title": "Nico Rosberg",
+  "section": "Nico Rosberg > Junior car career (2001–2005)",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/Nico_Rosberg",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "29034770a9846cd18beaff353a15a30ab8077df93f754d910c25e519bb083022",
+  "status": "error",
+  "error": "ExtractionValidationError: HELD_AT does not allow Circuit -> Car",
+  "candidate_result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Nico Rosberg",
+        "entity_type": "Driver",
+        "description": "A driver who progressed to the higher-tier Formula 3 Euro Series in 2003."
+      },
+      {
+        "local_id": "e2",
+        "name": "Team Rosberg",
+        "entity_type": "Team",
+        "description": "The team Nico Rosberg drove for in the 2003 Formula 3 Euro Series."
+      },
+      {
+        "local_id": "e3",
+        "name": "2003",
+        "entity_type": "Season",
+        "description": "The season in which Nico Rosberg competed in the Formula 3 Euro Series."
+      },
+      {
+        "local_id": "e4",
+        "name": "Dallara F303-Opel",
+        "entity_type": "Car",
+        "description": "The car driven by Nico Rosberg in the 2003 Formula 3 Euro Series."
+      },
+      {
+        "local_id": "e5",
+        "name": "Bugatti Circuit",
+        "entity_type": "Circuit",
+        "description": "The circuit where Nico Rosberg won a race in the 2003 Formula 3 Euro Series."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Nico Rosberg drove for Team Rosberg in the 2003 Formula 3 Euro Series.",
+        "from_year": 2003,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e4",
+        "relationship_type": "FIELDED",
+        "description": "Team Rosberg fielded the Dallara F303-Opel car in the 2003 Formula 3 Euro Series.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e3",
+        "relationship_type": "RACED_IN",
+        "description": "The Dallara F303-Opel car raced in the 2003 Formula 3 Euro Series.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e4",
+        "relationship_type": "HELD_AT",
+        "description": "The Bugatti Circuit is where the Dallara F303-Opel car won a race in the 2003 Formula 3 Euro Series.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e3",
+        "relationship_type": "ROUND_OF",
+        "description": "The Bugatti Circuit was a round of the 2003 Formula 3 Euro Series.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

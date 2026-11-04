@@ -1,0 +1,91 @@
+{
+  "chunk_id": "team-mercedes-benz-in-formula-one#78",
+  "doc_id": "team-mercedes-benz-in-formula-one",
+  "document_title": "Mercedes-Benz in Formula One",
+  "section": "Mercedes-Benz in Formula One > Junior team",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/Mercedes-Benz_in_Formula_One",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "7bbd59d629fd68725e5b068f75e4f0104aeaac7913a3edc3b15e45ee4ab10fb3",
+  "status": "error",
+  "error": "ExtractionValidationError: ACHIEVED does not allow Driver -> Season",
+  "candidate_result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Pascal Wehrlein",
+        "entity_type": "Driver",
+        "description": "First graduate of the Mercedes junior team to race in F1 from 2016 to 2017."
+      },
+      {
+        "local_id": "e2",
+        "name": "George Russell",
+        "entity_type": "Driver",
+        "description": "Driver for Mercedes since 2022."
+      },
+      {
+        "local_id": "e3",
+        "name": "Kimi Antonelli",
+        "entity_type": "Driver",
+        "description": "Driver for Mercedes starting in 2025."
+      },
+      {
+        "local_id": "e4",
+        "name": "Esteban Ocon",
+        "entity_type": "Driver",
+        "description": "Former driver participating in the 2026 season."
+      },
+      {
+        "local_id": "e5",
+        "name": "Mercedes",
+        "entity_type": "Team",
+        "description": "Formula One team associated with the junior team."
+      },
+      {
+        "local_id": "e6",
+        "name": "2026",
+        "entity_type": "Season",
+        "description": "Season in which Esteban Ocon is participating."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e5",
+        "relationship_type": "DROVE_FOR",
+        "description": "Pascal Wehrlein drove for Mercedes.",
+        "from_year": 2016,
+        "to_year": 2017,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e5",
+        "relationship_type": "DROVE_FOR",
+        "description": "George Russell has driven for Mercedes since 2022.",
+        "from_year": 2022,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e5",
+        "relationship_type": "DROVE_FOR",
+        "description": "Kimi Antonelli started driving for Mercedes in 2025.",
+        "from_year": 2025,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e6",
+        "relationship_type": "ACHIEVED",
+        "description": "Esteban Ocon is participating in the 2026 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

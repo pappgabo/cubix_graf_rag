@@ -1,0 +1,40 @@
+{
+  "chunk_id": "season-2012-formula-one-world-championship#10",
+  "doc_id": "season-2012-formula-one-world-championship",
+  "document_title": "2012 Formula One World Championship",
+  "section": "Teams and drivers > Team changes",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/2012_Formula_One_World_Championship",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "4b1c804596b0d989c15c2413a0a4775be601dc7559f964f31556218b38eb5a37",
+  "status": "error",
+  "error": "ExtractionValidationError: DROVE_FOR does not allow Team -> Team",
+  "candidate_result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Lotus",
+        "entity_type": "Team",
+        "description": "Lotus became known as Caterham, reflecting team principal Tony Fernandes's purchase of Caterham Cars."
+      },
+      {
+        "local_id": "e2",
+        "name": "Caterham",
+        "entity_type": "Team",
+        "description": "Caterham is the new name for the team formerly known as Lotus."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Lotus changed its name to Caterham.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

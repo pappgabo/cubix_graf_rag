@@ -1,0 +1,70 @@
+{
+  "chunk_id": "season-2012-formula-one-world-championship#85",
+  "doc_id": "season-2012-formula-one-world-championship",
+  "document_title": "2012 Formula One World Championship",
+  "section": "Race summaries > Round 2 – Malaysia Sepang International Circuit",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/2012_Formula_One_World_Championship",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "4da6535049b9be01ea868c8885719021686855930c43cd784ab87454885d585f",
+  "status": "error",
+  "error": "ExtractionValidationError: ACHIEVED does not allow Driver -> Season",
+  "candidate_result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Bruno Senna",
+        "entity_type": "Driver",
+        "description": "Finished in sixth, scoring more points in a single race than his team scored in 2011."
+      },
+      {
+        "local_id": "e2",
+        "name": "Sebastian Vettel",
+        "entity_type": "Driver",
+        "description": "Finished outside the points after making contact with Karthikeyan and developing a puncture."
+      },
+      {
+        "local_id": "e3",
+        "name": "Malaysia Sepang International Circuit",
+        "entity_type": "Circuit",
+        "description": "The circuit where Round 2 of the 2012 Formula One World Championship took place."
+      },
+      {
+        "local_id": "e4",
+        "name": "2012",
+        "entity_type": "Season",
+        "description": "The season of the Formula One World Championship."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e4",
+        "relationship_type": "ACHIEVED",
+        "description": "Bruno Senna scored points in the race during the 2012 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e4",
+        "relationship_type": "ACHIEVED",
+        "description": "Sebastian Vettel finished outside the points in the race during the 2012 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e4",
+        "relationship_type": "ROUND_OF",
+        "description": "Malaysia Sepang International Circuit is a round of the 2012 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "chunk_id": "driver-nico-rosberg#2",
+  "doc_id": "driver-nico-rosberg",
+  "document_title": "Nico Rosberg",
+  "section": "Nico Rosberg",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/Nico_Rosberg",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "f37eab380746777e46b8842325b0333f92ee5bbbf92c277f807d5f62f3b80079",
+  "status": "error",
+  "error": "ExtractionValidationError: ENTERED is not temporal; from_year, to_year and role must be null",
+  "candidate_result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Nico Rosberg",
+        "entity_type": "Driver",
+        "description": "A driver who raced in Formula One."
+      },
+      {
+        "local_id": "e2",
+        "name": "Team Rosberg",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that entered cars."
+      },
+      {
+        "local_id": "e3",
+        "name": "GP2 Series",
+        "entity_type": "Season",
+        "description": "A championship year named in the text."
+      },
+      {
+        "local_id": "e4",
+        "name": "ART Grand Prix",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that entered cars."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Nico Rosberg drove for Team Rosberg.",
+        "from_year": 2003,
+        "to_year": 2004,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e3",
+        "relationship_type": "ENTERED",
+        "description": "ART Grand Prix entered the GP2 Series championship.",
+        "from_year": 2005,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

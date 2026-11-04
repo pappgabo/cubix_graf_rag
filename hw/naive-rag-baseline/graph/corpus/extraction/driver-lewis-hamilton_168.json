@@ -1,0 +1,70 @@
+{
+  "chunk_id": "driver-lewis-hamilton#168",
+  "doc_id": "driver-lewis-hamilton",
+  "document_title": "Lewis Hamilton",
+  "section": null,
+  "page": 14,
+  "source": "https://en.wikipedia.org/wiki/Lewis_Hamilton",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "2ad46d0a2025f427829f5649232a81555530ebee9e7e97c647c6eff401754c81",
+  "status": "error",
+  "error": "ExtractionValidationError: ENTERED is not temporal; from_year, to_year and role must be null",
+  "candidate_result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Lewis Hamilton",
+        "entity_type": "Driver",
+        "description": "A British racing driver currently competing in Formula One."
+      },
+      {
+        "local_id": "e2",
+        "name": "Team X44",
+        "entity_type": "Team",
+        "description": "A racing team launched by Lewis Hamilton to compete in Extreme E."
+      },
+      {
+        "local_id": "e3",
+        "name": "Extreme E",
+        "entity_type": "Season",
+        "description": "An all-electric SUV off-road racing series."
+      },
+      {
+        "local_id": "e4",
+        "name": "2022 Championship",
+        "entity_type": "Title",
+        "description": "The championship title won by Team X44 in 2022."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e2",
+        "target_id": "e3",
+        "relationship_type": "ENTERED",
+        "description": "Team X44 entered the Extreme E series.",
+        "from_year": 2021,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e4",
+        "relationship_type": "WON",
+        "description": "Team X44 won the 2022 Championship.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e3",
+        "relationship_type": "AWARDED_IN",
+        "description": "The 2022 Championship title belongs to the Extreme E season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

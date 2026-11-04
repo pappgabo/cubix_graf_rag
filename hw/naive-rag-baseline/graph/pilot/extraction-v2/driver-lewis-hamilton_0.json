@@ -1,0 +1,54 @@
+{
+  "chunk_id": "driver-lewis-hamilton#0",
+  "doc_id": "driver-lewis-hamilton",
+  "document_title": "Lewis Hamilton",
+  "section": null,
+  "page": 1,
+  "source": "https://en.wikipedia.org/wiki/Lewis_Hamilton",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-2",
+  "input_hash": "5ad648350b3749626b240a595c7092231beda5fbf18917edbc0f58e3e22fb72c",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Lewis Hamilton",
+        "entity_type": "Driver",
+        "description": "Sir Lewis Carl Davidson Hamilton is a British racing driver who competes in Formula One."
+      },
+      {
+        "local_id": "e2",
+        "name": "Ferrari",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that Lewis Hamilton competes for."
+      },
+      {
+        "local_id": "e3",
+        "name": "Title",
+        "entity_type": "Title",
+        "description": "Seven Formula One World Drivers' Championship titles."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Lewis Hamilton competes for Ferrari in Formula One.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e3",
+        "relationship_type": "WON",
+        "description": "Lewis Hamilton has won seven Formula One World Drivers' Championship titles.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

@@ -1,0 +1,91 @@
+{
+  "chunk_id": "driver-lewis-hamilton#105",
+  "doc_id": "driver-lewis-hamilton",
+  "document_title": "Lewis Hamilton",
+  "section": null,
+  "page": 9,
+  "source": "https://en.wikipedia.org/wiki/Lewis_Hamilton",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "48230ed1afe0875d6aa633cf5424983d6068678d9ea3f0ad68fcd841cabdae09",
+  "status": "error",
+  "error": "ExtractionValidationError: DROVE_FOR does not allow Driver -> Driver",
+  "candidate_result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Lewis Hamilton",
+        "entity_type": "Driver",
+        "description": "A Formula One driver known for his special helmet designs and tribute to Ayrton Senna."
+      },
+      {
+        "local_id": "e2",
+        "name": "Mercedes",
+        "entity_type": "Team",
+        "description": "A Formula One team that Lewis Hamilton drives for."
+      },
+      {
+        "local_id": "e3",
+        "name": "Niki Lauda",
+        "entity_type": "Driver",
+        "description": "Three-time world champion and Mercedes team personnel who influenced Hamilton's career."
+      },
+      {
+        "local_id": "e4",
+        "name": "Ayrton Senna",
+        "entity_type": "Driver",
+        "description": "A legendary Formula One driver whom Hamilton pays tribute to with special helmet designs."
+      },
+      {
+        "local_id": "e5",
+        "name": "2019",
+        "entity_type": "Season",
+        "description": "The season during which Hamilton wore a special helmet design in tribute to Niki Lauda."
+      },
+      {
+        "local_id": "e6",
+        "name": "Monaco Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula One race where Hamilton wore a special helmet design in tribute to Niki Lauda."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Lewis Hamilton drives for Mercedes.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e4",
+        "relationship_type": "DROVE_FOR",
+        "description": "Lewis Hamilton pays tribute to Ayrton Senna with special helmet designs.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Niki Lauda was part of the Mercedes team personnel.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e6",
+        "target_id": "e5",
+        "relationship_type": "ROUND_OF",
+        "description": "The Monaco Grand Prix is a round of the 2019 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

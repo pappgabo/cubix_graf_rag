@@ -1,0 +1,145 @@
+{
+  "chunk_id": "driver-lewis-hamilton#185",
+  "doc_id": "driver-lewis-hamilton",
+  "document_title": "Lewis Hamilton",
+  "section": null,
+  "page": 16,
+  "source": "https://en.wikipedia.org/wiki/Lewis_Hamilton",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "8265fd86f18f34d4c2a92a35d58353b31ed48f2815a70472b42f7b07874fe71f",
+  "status": "error",
+  "error": "ExtractionValidationError: WON does not allow Driver -> Season",
+  "candidate_result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Lewis Hamilton",
+        "entity_type": "Driver",
+        "description": "A British racing driver, known for being one of the highest-paid athletes and the best-paid driver in Formula One history."
+      },
+      {
+        "local_id": "e2",
+        "name": "Mercedes",
+        "entity_type": "Team",
+        "description": "A Formula One team that Lewis Hamilton drives for."
+      },
+      {
+        "local_id": "e3",
+        "name": "2008",
+        "entity_type": "Season",
+        "description": "The season in which Lewis Hamilton won his first Formula One World Drivers' Championship."
+      },
+      {
+        "local_id": "e4",
+        "name": "2014",
+        "entity_type": "Season",
+        "description": "The season in which Lewis Hamilton won his second Formula One World Drivers' Championship."
+      },
+      {
+        "local_id": "e5",
+        "name": "2015",
+        "entity_type": "Season",
+        "description": "The season in which Lewis Hamilton won his third Formula One World Drivers' Championship."
+      },
+      {
+        "local_id": "e6",
+        "name": "2017",
+        "entity_type": "Season",
+        "description": "The season in which Lewis Hamilton won his fourth Formula One World Drivers' Championship."
+      },
+      {
+        "local_id": "e7",
+        "name": "2018",
+        "entity_type": "Season",
+        "description": "The season in which Lewis Hamilton won his fifth Formula One World Drivers' Championship."
+      },
+      {
+        "local_id": "e8",
+        "name": "2019",
+        "entity_type": "Season",
+        "description": "The season in which Lewis Hamilton won his sixth Formula One World Drivers' Championship."
+      },
+      {
+        "local_id": "e9",
+        "name": "2020",
+        "entity_type": "Season",
+        "description": "The season in which Lewis Hamilton won his seventh Formula One World Drivers' Championship."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Lewis Hamilton drives for Mercedes.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e3",
+        "relationship_type": "WON",
+        "description": "Lewis Hamilton won the Formula One World Drivers' Championship in 2008.",
+        "from_year": 2008,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e4",
+        "relationship_type": "WON",
+        "description": "Lewis Hamilton won the Formula One World Drivers' Championship in 2014.",
+        "from_year": 2014,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e5",
+        "relationship_type": "WON",
+        "description": "Lewis Hamilton won the Formula One World Drivers' Championship in 2015.",
+        "from_year": 2015,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e6",
+        "relationship_type": "WON",
+        "description": "Lewis Hamilton won the Formula One World Drivers' Championship in 2017.",
+        "from_year": 2017,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e7",
+        "relationship_type": "WON",
+        "description": "Lewis Hamilton won the Formula One World Drivers' Championship in 2018.",
+        "from_year": 2018,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e8",
+        "relationship_type": "WON",
+        "description": "Lewis Hamilton won the Formula One World Drivers' Championship in 2019.",
+        "from_year": 2019,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e9",
+        "relationship_type": "WON",
+        "description": "Lewis Hamilton won the Formula One World Drivers' Championship in 2020.",
+        "from_year": 2020,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

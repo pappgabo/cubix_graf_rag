@@ -1,0 +1,46 @@
+{
+  "chunk_id": "driver-michael-schumacher#114",
+  "doc_id": "driver-michael-schumacher",
+  "document_title": "Michael Schumacher",
+  "section": null,
+  "page": 10,
+  "source": "https://en.wikipedia.org/wiki/Michael_Schumacher",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "167d3e3ead44e6a20d09b0eada43ea8ae805a2ae6b399a8751cd09db815d54cb",
+  "status": "error",
+  "error": "ExtractionValidationError: ACHIEVED does not allow Driver -> GrandPrix",
+  "candidate_result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Michael Schumacher",
+        "entity_type": "Driver",
+        "description": "Finished 12th in a race and was found guilty of dangerous driving."
+      },
+      {
+        "local_id": "e2",
+        "name": "Belgian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "Race where Schumacher finished seventh after starting 21st due to a grid penalty."
+      },
+      {
+        "local_id": "e3",
+        "name": "Abu Dhabi Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "Mentioned in the context but no results provided."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "ACHIEVED",
+        "description": "Schumacher finished seventh at the Belgian Grand Prix after starting 21st due to a grid penalty.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

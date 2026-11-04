@@ -1,0 +1,79 @@
+{
+  "chunk_id": "driver-michael-schumacher#75",
+  "doc_id": "driver-michael-schumacher",
+  "document_title": "Michael Schumacher",
+  "section": null,
+  "page": 7,
+  "source": "https://en.wikipedia.org/wiki/Michael_Schumacher",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "9e35a20cc49ccf5b7254c31c7e876256e2554b91597c1c704b00aa31bab0d0a4",
+  "status": "error",
+  "error": "ExtractionValidationError: DROVE_FOR does not allow Team -> Driver",
+  "candidate_result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Michael Schumacher",
+        "entity_type": "Driver",
+        "description": "A driver who won six World Championships and broke records in Formula One."
+      },
+      {
+        "local_id": "e2",
+        "name": "Ferrari",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that won 15 out of 17 races in a season."
+      },
+      {
+        "local_id": "e3",
+        "name": "null",
+        "entity_type": "Season",
+        "description": "A championship year in which Schumacher won the title."
+      },
+      {
+        "local_id": "e4",
+        "name": "null",
+        "entity_type": "Title",
+        "description": "A championship title won by Schumacher."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e4",
+        "relationship_type": "WON",
+        "description": "Schumacher won the title with six races remaining in the season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e3",
+        "relationship_type": "ENTERED",
+        "description": "Ferrari entered the season in which Schumacher won the title.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e1",
+        "relationship_type": "DROVE_FOR",
+        "description": "Schumacher drove for Ferrari during the season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e3",
+        "relationship_type": "ACHIEVED",
+        "description": "Schumacher achieved a record of winning 11 races in the season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

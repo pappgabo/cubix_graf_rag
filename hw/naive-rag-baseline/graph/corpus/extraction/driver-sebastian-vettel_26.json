@@ -1,0 +1,115 @@
+{
+  "chunk_id": "driver-sebastian-vettel#26",
+  "doc_id": "driver-sebastian-vettel",
+  "document_title": "Sebastian Vettel",
+  "section": "2007–2008: Maiden race win and rise to prominence",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/Sebastian_Vettel",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "6a2d29f049e1d37e390e7b1306192d19a0481aeb8281ed28097a82ea8c3e035a",
+  "status": "error",
+  "error": "ExtractionValidationError: ENTERED is not temporal; from_year, to_year and role must be null",
+  "candidate_result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Sebastian Vettel",
+        "entity_type": "Driver",
+        "description": "A Formula One driver who raced for Toro Rosso."
+      },
+      {
+        "local_id": "e2",
+        "name": "Red Bull's Scuderia Toro Rosso",
+        "entity_type": "Team",
+        "description": "A Formula One team that Vettel joined in 2007."
+      },
+      {
+        "local_id": "e3",
+        "name": "2007",
+        "entity_type": "Season",
+        "description": "The Formula One season during which Vettel joined Toro Rosso."
+      },
+      {
+        "local_id": "e4",
+        "name": "2008",
+        "entity_type": "Season",
+        "description": "The Formula One season during which Vettel raced for Toro Rosso."
+      },
+      {
+        "local_id": "e5",
+        "name": "Scott Speed",
+        "entity_type": "Driver",
+        "description": "A Formula One driver who was replaced by Vettel at Toro Rosso."
+      },
+      {
+        "local_id": "e6",
+        "name": "Sébastien Bourdais",
+        "entity_type": "Driver",
+        "description": "A Formula One driver who raced alongside Vettel at Toro Rosso in 2008."
+      },
+      {
+        "local_id": "e7",
+        "name": "2007 Hungarian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The race at which Vettel began driving for Toro Rosso."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Vettel joined Toro Rosso replacing Scott Speed.",
+        "from_year": 2007,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e3",
+        "relationship_type": "ENTERED",
+        "description": "Toro Rosso participated in the 2007 season.",
+        "from_year": 2007,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e4",
+        "relationship_type": "ENTERED",
+        "description": "Toro Rosso participated in the 2008 season.",
+        "from_year": 2008,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e6",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Vettel raced alongside Bourdais at Toro Rosso in 2008.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e5",
+        "relationship_type": "DROVE_FOR",
+        "description": "Vettel replaced Scott Speed at Toro Rosso.",
+        "from_year": 2007,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e7",
+        "target_id": "e2",
+        "relationship_type": "HELD_AT",
+        "description": "The 2007 Hungarian Grand Prix was held at the Toro Rosso team.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

@@ -1,0 +1,154 @@
+{
+  "chunk_id": "team-mercedes-benz-in-formula-one#75",
+  "doc_id": "team-mercedes-benz-in-formula-one",
+  "document_title": "Mercedes-Benz in Formula One",
+  "section": "Mercedes-Benz in Formula One > Engine supplier",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/Mercedes-Benz_in_Formula_One",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "6897dd12cf2e19fc7ddaa4edc789500ffc1356fd61fc85397656e038ba2aaf56",
+  "status": "error",
+  "error": "ExtractionValidationError: POWERED_BY does not allow Team -> Season",
+  "candidate_result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Brawn GP",
+        "entity_type": "Team",
+        "description": "Supplied by Mercedes in 2009, later acquired to become the Mercedes-Benz factory team."
+      },
+      {
+        "local_id": "e2",
+        "name": "Force India",
+        "entity_type": "Team",
+        "description": "Supplied by Mercedes until the 2025 season, later known as Racing Point and eventually Aston Martin F1."
+      },
+      {
+        "local_id": "e3",
+        "name": "Williams",
+        "entity_type": "Team",
+        "description": "Added to the supplying program in 2014."
+      },
+      {
+        "local_id": "e4",
+        "name": "McLaren",
+        "entity_type": "Team",
+        "description": "20-year long partnership with Mercedes ended in advance of the 2015 season, before resuming in 2021."
+      },
+      {
+        "local_id": "e5",
+        "name": "Lotus F1 Team",
+        "entity_type": "Team",
+        "description": "Supplied by Mercedes for one season in 2015."
+      },
+      {
+        "local_id": "e6",
+        "name": "Manor",
+        "entity_type": "Team",
+        "description": "Supplied by Mercedes for one season in 2016."
+      },
+      {
+        "local_id": "e7",
+        "name": "2025",
+        "entity_type": "Season",
+        "description": "The season until which Mercedes supplied Force India."
+      },
+      {
+        "local_id": "e8",
+        "name": "2015",
+        "entity_type": "Season",
+        "description": "The season in which Mercedes supplied engines to Lotus F1 Team."
+      },
+      {
+        "local_id": "e9",
+        "name": "2016",
+        "entity_type": "Season",
+        "description": "The season in which Mercedes supplied engines to Manor."
+      },
+      {
+        "local_id": "e10",
+        "name": "2014",
+        "entity_type": "Season",
+        "description": "The season in which Williams was added to the supplying program."
+      },
+      {
+        "local_id": "e11",
+        "name": "2015",
+        "entity_type": "Season",
+        "description": "The season when the partnership with McLaren ended."
+      },
+      {
+        "local_id": "e12",
+        "name": "2021",
+        "entity_type": "Season",
+        "description": "The season when the partnership with McLaren resumed."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e7",
+        "relationship_type": "POWERED_BY",
+        "description": "Mercedes supplied engines to Brawn GP until the 2025 season.",
+        "from_year": 2009,
+        "to_year": 2025,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e7",
+        "relationship_type": "POWERED_BY",
+        "description": "Mercedes supplied engines to Force India until the 2025 season.",
+        "from_year": null,
+        "to_year": 2025,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e10",
+        "relationship_type": "POWERED_BY",
+        "description": "Mercedes added Williams to the supplying program in 2014.",
+        "from_year": 2014,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e11",
+        "relationship_type": "POWERED_BY",
+        "description": "Mercedes partnership with McLaren ended in advance of the 2015 season.",
+        "from_year": null,
+        "to_year": 2015,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e12",
+        "relationship_type": "POWERED_BY",
+        "description": "Mercedes partnership with McLaren resumed in 2021.",
+        "from_year": 2021,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e8",
+        "relationship_type": "POWERED_BY",
+        "description": "Mercedes supplied engines to Lotus F1 Team for one season in 2015.",
+        "from_year": 2015,
+        "to_year": 2015,
+        "role": null
+      },
+      {
+        "source_id": "e6",
+        "target_id": "e9",
+        "relationship_type": "POWERED_BY",
+        "description": "Mercedes supplied engines to Manor for one season in 2016.",
+        "from_year": 2016,
+        "to_year": 2016,
+        "role": null
+      }
+    ]
+  }
+}

@@ -1,0 +1,91 @@
+{
+  "chunk_id": "driver-nico-rosberg#24",
+  "doc_id": "driver-nico-rosberg",
+  "document_title": "Nico Rosberg",
+  "section": "Nico Rosberg > Junior car career (2001–2005)",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/Nico_Rosberg",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "279ecc22b98e7c3e04e2b244bc81b850fbb2b7c45c8635a2110a9408b81310a1",
+  "status": "error",
+  "error": "ExtractionValidationError: HELD_AT does not allow Team -> GrandPrix",
+  "candidate_result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Nico Rosberg",
+        "entity_type": "Driver",
+        "description": "A Formula One driver who raced for Williams."
+      },
+      {
+        "local_id": "e2",
+        "name": "Carlin Motorsport",
+        "entity_type": "Team",
+        "description": "A racing team that entered cars in various competitions."
+      },
+      {
+        "local_id": "e3",
+        "name": "Macau Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A prestigious motor race held in Macau."
+      },
+      {
+        "local_id": "e4",
+        "name": "Korea Super Prix",
+        "entity_type": "GrandPrix",
+        "description": "A motor race held in South Korea."
+      },
+      {
+        "local_id": "e5",
+        "name": "FW25A",
+        "entity_type": "Car",
+        "description": "A modified car model used by Williams."
+      },
+      {
+        "local_id": "e6",
+        "name": "Circuit de Catalunya",
+        "entity_type": "Circuit",
+        "description": "A racing circuit located in Spain."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e2",
+        "target_id": "e3",
+        "relationship_type": "HELD_AT",
+        "description": "The Macau Grand Prix is held at a circuit in Macau.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e4",
+        "relationship_type": "HELD_AT",
+        "description": "The Korea Super Prix is held at a circuit in South Korea.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e5",
+        "relationship_type": "FIELDED",
+        "description": "Carlin Motorsport entered the FW25A car.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e6",
+        "relationship_type": "POWERED_BY",
+        "description": "The FW25A car was tested at the Circuit de Catalunya.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

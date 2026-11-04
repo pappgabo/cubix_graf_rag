@@ -1,0 +1,40 @@
+{
+  "chunk_id": "team-scuderia-ferrari#1",
+  "doc_id": "team-scuderia-ferrari",
+  "document_title": "Scuderia Ferrari",
+  "section": null,
+  "page": 1,
+  "source": "https://en.wikipedia.org/wiki/Scuderia_Ferrari",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "74c77cb3e06d62cbb68932092beff364d4d5579993a8e398cddf2ae92b3a39c3",
+  "status": "error",
+  "error": "ExtractionValidationError: ENTERED is not temporal; from_year, to_year and role must be null",
+  "candidate_result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Scuderia Ferrari",
+        "entity_type": "Team",
+        "description": "oldest surviving and most successful Formula One team, having competed in every World Championship since 1950."
+      },
+      {
+        "local_id": "e2",
+        "name": "1950",
+        "entity_type": "Season",
+        "description": "the year when Scuderia Ferrari began competing in the World Championship."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "ENTERED",
+        "description": "Scuderia Ferrari took part in the World Championship",
+        "from_year": 1950,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

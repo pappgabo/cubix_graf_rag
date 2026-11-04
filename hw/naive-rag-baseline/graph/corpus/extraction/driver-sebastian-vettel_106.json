@@ -1,0 +1,109 @@
+{
+  "chunk_id": "driver-sebastian-vettel#106",
+  "doc_id": "driver-sebastian-vettel",
+  "document_title": "Sebastian Vettel",
+  "section": "2019–2020: Decline and departure from Ferrari",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/Sebastian_Vettel",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "a24cdfa0d3370b0f1466cee836a809c095fe3c806da38773b33cc8f8b9dcac35",
+  "status": "error",
+  "error": "ExtractionValidationError: FIELDED is not temporal; from_year, to_year and role must be null",
+  "candidate_result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Sebastian Vettel",
+        "entity_type": "Driver",
+        "description": "A Formula One driver who raced for Ferrari."
+      },
+      {
+        "local_id": "e2",
+        "name": "Ferrari",
+        "entity_type": "Team",
+        "description": "A Formula One team that entered cars."
+      },
+      {
+        "local_id": "e3",
+        "name": "Austria",
+        "entity_type": "GrandPrix",
+        "description": "The opening race of the season."
+      },
+      {
+        "local_id": "e4",
+        "name": "Styrian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The second race of the season."
+      },
+      {
+        "local_id": "e5",
+        "name": "SF1000",
+        "entity_type": "Car",
+        "description": "The car model fielded by Ferrari in the 2020 season."
+      },
+      {
+        "local_id": "e6",
+        "name": "2020",
+        "entity_type": "Season",
+        "description": "The Formula One season in which Vettel raced."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e2",
+        "target_id": "e5",
+        "relationship_type": "FIELDED",
+        "description": "Ferrari entered the SF1000 car.",
+        "from_year": 2020,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e6",
+        "relationship_type": "RACED_IN",
+        "description": "The SF1000 took part in the 2020 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e6",
+        "relationship_type": "ROUND_OF",
+        "description": "The Austria Grand Prix is a round of the 2020 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e6",
+        "relationship_type": "ROUND_OF",
+        "description": "The Styrian Grand Prix is a round of the 2020 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e3",
+        "relationship_type": "ACHIEVED",
+        "description": "Vettel finished the Austria Grand Prix in 10th place.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e4",
+        "relationship_type": "ACHIEVED",
+        "description": "Vettel retired in the Styrian Grand Prix due to a collision.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "chunk_id": "driver-michael-schumacher#73",
+  "doc_id": "driver-michael-schumacher",
+  "document_title": "Michael Schumacher",
+  "section": null,
+  "page": 6,
+  "source": "https://en.wikipedia.org/wiki/Michael_Schumacher",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "f61e4b67ec12c02282d40f430859005a75fa39fb2f609eaa23090884b7f2e27f",
+  "status": "error",
+  "error": "ExtractionValidationError: RACED_IN does not allow Driver -> Season",
+  "candidate_result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Michael Schumacher",
+        "entity_type": "Driver",
+        "description": "A Formula One driver who finished the championship with 123 points."
+      },
+      {
+        "local_id": "e2",
+        "name": "Coulthard",
+        "entity_type": "Driver",
+        "description": "Runner-up in the championship."
+      },
+      {
+        "local_id": "e3",
+        "name": "Spanish Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A race where Michael Schumacher won after Häkkinen retired."
+      },
+      {
+        "local_id": "e4",
+        "name": "null",
+        "entity_type": "Season",
+        "description": "Season with four races yet to run."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e4",
+        "relationship_type": "RACED_IN",
+        "description": "Michael Schumacher raced in the season with four races yet to run.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e4",
+        "relationship_type": "ROUND_OF",
+        "description": "Spanish Grand Prix is a round of the season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

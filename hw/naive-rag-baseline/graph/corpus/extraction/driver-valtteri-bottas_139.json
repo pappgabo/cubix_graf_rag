@@ -1,0 +1,85 @@
+{
+  "chunk_id": "driver-valtteri-bottas#139",
+  "doc_id": "driver-valtteri-bottas",
+  "document_title": "Valtteri Bottas",
+  "section": "Other racing > Race of Champions",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/Valtteri_Bottas",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "1b9f47bdf0963b43f834945e991296a82c3f191c51bb15087f5b28fc681d09f4",
+  "status": "error",
+  "error": "ExtractionValidationError: RACED_IN does not allow Driver -> Season",
+  "candidate_result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Valtteri Bottas",
+        "entity_type": "Driver",
+        "description": "Bottas was set to make his Race of Champions debut in 2022, partnering two-time Formula One champion Mika Häkkinen. However, he dropped out of the event last minute. Bottas then competed at the 2023 edition of the event alongside Häkkinen."
+      },
+      {
+        "local_id": "e2",
+        "name": "Mika Häkkinen",
+        "entity_type": "Driver",
+        "description": "Partnered with Valtteri Bottas in the Race of Champions."
+      },
+      {
+        "local_id": "e3",
+        "name": "2022",
+        "entity_type": "Season",
+        "description": "Bottas was set to make his Race of Champions debut."
+      },
+      {
+        "local_id": "e4",
+        "name": "2023",
+        "entity_type": "Season",
+        "description": "Bottas competed at the 2023 edition of the Race of Champions."
+      },
+      {
+        "local_id": "e5",
+        "name": "Team eROC",
+        "entity_type": "Team",
+        "description": "The team that knocked out Bottas and Häkkinen in the Nations Cup tournament."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e3",
+        "relationship_type": "RACED_IN",
+        "description": "Bottas was set to make his Race of Champions debut in 2022.",
+        "from_year": 2022,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e4",
+        "relationship_type": "RACED_IN",
+        "description": "Bottas competed at the 2023 edition of the Race of Champions.",
+        "from_year": 2023,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Bottas partnered with Häkkinen in the Race of Champions.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e4",
+        "relationship_type": "ENTERED",
+        "description": "Team eROC participated in the 2023 Race of Champions.",
+        "from_year": 2023,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

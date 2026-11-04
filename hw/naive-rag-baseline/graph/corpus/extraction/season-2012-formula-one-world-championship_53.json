@@ -1,0 +1,34 @@
+{
+  "chunk_id": "season-2012-formula-one-world-championship#53",
+  "doc_id": "season-2012-formula-one-world-championship",
+  "document_title": "2012 Formula One World Championship",
+  "section": "Changes > Rule changes > Technical regulations",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/2012_Formula_One_World_Championship",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "91b419bdb481f9667289b1b6fed6a1fd8a13340259fac0e28934e5243dcb01b1",
+  "status": "error",
+  "error": "ExtractionValidationError: RACED_IN does not allow Season -> Season",
+  "candidate_result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "2012",
+        "entity_type": "Season",
+        "description": "The 2012 Formula One season."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e1",
+        "relationship_type": "RACED_IN",
+        "description": "All cars were required to pass their mandatory FIA crash tests before being allowed to take part in pre-season testing in the 2012 season.",
+        "from_year": 2012,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

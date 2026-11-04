@@ -1,0 +1,115 @@
+{
+  "chunk_id": "season-2012-formula-one-world-championship#194",
+  "doc_id": "season-2012-formula-one-world-championship",
+  "document_title": "2012 Formula One World Championship",
+  "section": "Race summaries > Round 18 – Abu Dhabi Yas Marina Circuit",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/2012_Formula_One_World_Championship",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "ad6b1c1dc9f6d65593cb3c444b4cd8de46b6f616c6e3f7f0f052863903cd9565",
+  "status": "error",
+  "error": "ExtractionValidationError: ACHIEVED does not allow Driver -> GrandPrix",
+  "candidate_result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Alonso",
+        "entity_type": "Driver",
+        "description": "Finished second in the Abu Dhabi Grand Prix."
+      },
+      {
+        "local_id": "e2",
+        "name": "Vettel",
+        "entity_type": "Driver",
+        "description": "Finished third in the Abu Dhabi Grand Prix and maintained a ten-point championship lead."
+      },
+      {
+        "local_id": "e3",
+        "name": "Button",
+        "entity_type": "Driver",
+        "description": "Finished fourth in the Abu Dhabi Grand Prix."
+      },
+      {
+        "local_id": "e4",
+        "name": "Räikkönen",
+        "entity_type": "Driver",
+        "description": "Won the Abu Dhabi Grand Prix."
+      },
+      {
+        "local_id": "e5",
+        "name": "2012",
+        "entity_type": "Season",
+        "description": "The championship year for the 2012 Formula One World Championship."
+      },
+      {
+        "local_id": "e6",
+        "name": "Abu Dhabi Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "Round 18 of the 2012 Formula One World Championship."
+      },
+      {
+        "local_id": "e7",
+        "name": "Yas Marina Circuit",
+        "entity_type": "Circuit",
+        "description": "The circuit where the Abu Dhabi Grand Prix was held."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e4",
+        "target_id": "e6",
+        "relationship_type": "ACHIEVED",
+        "description": "Räikkönen won the Abu Dhabi Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e6",
+        "relationship_type": "ACHIEVED",
+        "description": "Alonso finished second in the Abu Dhabi Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e6",
+        "relationship_type": "ACHIEVED",
+        "description": "Vettel finished third in the Abu Dhabi Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e6",
+        "relationship_type": "ACHIEVED",
+        "description": "Button finished fourth in the Abu Dhabi Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e6",
+        "target_id": "e5",
+        "relationship_type": "ROUND_OF",
+        "description": "The Abu Dhabi Grand Prix is a round of the 2012 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e6",
+        "target_id": "e7",
+        "relationship_type": "HELD_AT",
+        "description": "The Abu Dhabi Grand Prix was held at Yas Marina Circuit.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

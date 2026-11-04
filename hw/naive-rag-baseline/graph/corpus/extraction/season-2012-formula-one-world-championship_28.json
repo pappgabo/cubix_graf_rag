@@ -1,0 +1,109 @@
+{
+  "chunk_id": "season-2012-formula-one-world-championship#28",
+  "doc_id": "season-2012-formula-one-world-championship",
+  "document_title": "2012 Formula One World Championship",
+  "section": "Teams and drivers > Driver changes",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/2012_Formula_One_World_Championship",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "77e778179374265a24a058f2cea6654b706e521823fe63abbaa65cfbaf971b8b",
+  "status": "error",
+  "error": "ExtractionValidationError: FIELDED does not allow Driver -> Car",
+  "candidate_result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Vitantonio Liuzzi",
+        "entity_type": "Driver",
+        "description": "Drove for HRT in 2011 and was confirmed as one of the team's testing and reserve drivers."
+      },
+      {
+        "local_id": "e2",
+        "name": "HRT",
+        "entity_type": "Team",
+        "description": "Formula 1 team that Liuzzi drove for in 2011."
+      },
+      {
+        "local_id": "e3",
+        "name": "Dani Clos",
+        "entity_type": "Driver",
+        "description": "Former GP2 Series driver confirmed as a testing and reserve driver for HRT."
+      },
+      {
+        "local_id": "e4",
+        "name": "Ma Qinghua",
+        "entity_type": "Driver",
+        "description": "First ever Chinese driver to step into a Formula 1 car, confirmed as a testing and reserve driver for HRT."
+      },
+      {
+        "local_id": "e5",
+        "name": "2012",
+        "entity_type": "Season",
+        "description": "The season of the 2012 Formula One World Championship."
+      },
+      {
+        "local_id": "e6",
+        "name": "HRT F112",
+        "entity_type": "Car",
+        "description": "Car launched by HRT in March."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Liuzzi drove for HRT in 2011.",
+        "from_year": 2011,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e6",
+        "relationship_type": "FIELDED",
+        "description": "HRT entered the HRT F112 car.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e5",
+        "relationship_type": "ENTERED",
+        "description": "HRT took part in the 2012 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e6",
+        "relationship_type": "FIELDED",
+        "description": "Liuzzi was confirmed as a testing and reserve driver for the HRT F112.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e2",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Dani Clos was a teammate of Liuzzi at HRT.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e2",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Ma Qinghua was a teammate of Liuzzi at HRT.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

@@ -1,0 +1,206 @@
+{
+  "processed": 10,
+  "ok": 7,
+  "error": 3,
+  "empty_ok": 3,
+  "other_status": 0,
+  "entities_per_chunk": [
+    {
+      "chunk_id": "driver-lewis-hamilton#0",
+      "entities": 2,
+      "relationships": 1,
+      "status": "ok"
+    },
+    {
+      "chunk_id": "driver-lewis-hamilton#1",
+      "entities": 2,
+      "relationships": 0,
+      "status": "ok"
+    },
+    {
+      "chunk_id": "driver-nico-rosberg#64",
+      "entities": 0,
+      "relationships": 0,
+      "status": "ok"
+    },
+    {
+      "chunk_id": "driver-sebastian-vettel#75",
+      "entities": 0,
+      "relationships": 0,
+      "status": "ok"
+    },
+    {
+      "chunk_id": "season-2021-formula-one-world-championship#0",
+      "entities": 2,
+      "relationships": 1,
+      "status": "ok"
+    },
+    {
+      "chunk_id": "season-2021-formula-one-world-championship#1",
+      "entities": 0,
+      "relationships": 0,
+      "status": "error"
+    },
+    {
+      "chunk_id": "team-mercedes-benz-in-formula-one#1",
+      "entities": 0,
+      "relationships": 0,
+      "status": "error"
+    },
+    {
+      "chunk_id": "team-mercedes-benz-in-formula-one#2",
+      "entities": 0,
+      "relationships": 0,
+      "status": "ok"
+    },
+    {
+      "chunk_id": "team-scuderia-ferrari#0",
+      "entities": 1,
+      "relationships": 0,
+      "status": "ok"
+    },
+    {
+      "chunk_id": "team-scuderia-ferrari#1",
+      "entities": 0,
+      "relationships": 0,
+      "status": "error"
+    }
+  ],
+  "dense_chunk": {
+    "chunk_id": "driver-lewis-hamilton#0",
+    "status": "ok",
+    "entities": 2,
+    "relationships": 1,
+    "text": "Lewis Hamilton\nSir Lewis Carl Davidson Hamilton (born 7 January 1985) is a British racing driver who competes in Formula One for\nFerrari.  Hamilton  has  won  a  joint-record  seven  Formula  One  World  Drivers'  Championship  titles—tied  with  Michael\nSchumacher—and  holds  the  records  for  most  wins  (106),  pole  positions  (104),  and  podium  finishes  (208),  among\nothers.",
+    "result": {
+      "entities": [
+        {
+          "local_id": "e1",
+          "name": "Lewis Hamilton",
+          "entity_type": "Driver",
+          "description": "Sir Lewis Carl Davidson Hamilton is a British racing driver who competes in Formula One."
+        },
+        {
+          "local_id": "e2",
+          "name": "Ferrari",
+          "entity_type": "Team",
+          "description": "A Formula 1 team that Lewis Hamilton competes for."
+        }
+      ],
+      "relationships": [
+        {
+          "source_id": "e1",
+          "target_id": "e2",
+          "relationship_type": "DROVE_FOR",
+          "description": "Lewis Hamilton competes for Ferrari in Formula One.",
+          "from_year": null,
+          "to_year": null,
+          "role": null
+        }
+      ]
+    }
+  },
+  "rare_chunk": {
+    "chunk_id": "driver-nico-rosberg#64",
+    "status": "ok",
+    "entities": 0,
+    "relationships": 0,
+    "text": "## 2013–2016",
+    "result": {
+      "entities": [],
+      "relationships": []
+    }
+  },
+  "entity_types": {
+    "Driver": 2,
+    "Team": 3,
+    "Season": 1,
+    "GrandPrix": 1
+  },
+  "relationship_types": {
+    "DROVE_FOR": 1,
+    "ROUND_OF": 1
+  },
+  "outside_schema": {},
+  "rejected": [
+    {
+      "chunk_id": "season-2021-formula-one-world-championship#1",
+      "error": "ExtractionValidationError: DROVE_FOR does not allow Team -> Driver",
+      "candidate_types": [
+        "Driver",
+        "Team",
+        "Season",
+        "Title",
+        "WON",
+        "ENTERED",
+        "DROVE_FOR",
+        "AWARDED_IN"
+      ],
+      "quote": "for the titles of World Drivers' Champion and World Constructors' Champion, respectively. Max Verstappen of Red Bull Racing-Honda won the Drivers' Championship for the first time in his career, having claimed 10 race wins across the season. Verstappen became the first-ever driver from the Netherlands, the first Honda-powered driver since Ayrton Senna in 1991, the first Red Bull driver since Sebast..."
+    },
+    {
+      "chunk_id": "team-mercedes-benz-in-formula-one#1",
+      "error": "ExtractionValidationError: ENTERED is not temporal; from_year, to_year and role must be null",
+      "candidate_types": [
+        "Team",
+        "Team",
+        "Season",
+        "ENTERED",
+        "ENTERED"
+      ],
+      "quote": "Mercedes-Benz, a German automotive brand of the Mercedes-Benz Group, has been involved in Formula One as both team owner and engine manufacturer for various periods since 1954. The current Mercedes-Benz Grand Prix Limited, competing as Mercedes-AMG Petronas Formula One Team, is based in Brackley, England, and holds a German racing licence"
+    },
+    {
+      "chunk_id": "team-scuderia-ferrari#1",
+      "error": "ExtractionValidationError: ENTERED is not temporal; from_year, to_year and role must be null",
+      "candidate_types": [
+        "Team",
+        "Season",
+        "ENTERED"
+      ],
+      "quote": "oldest surviving and most successful Formula One team, having competed in every World Championship since 1950. The team was founded by Enzo Ferrari in 1929, initially to race cars produced by Alfa Romeo. By 1947, Ferrari had begun building its own cars. Among its important achievements outside Formula One are winning the FIA World Endurance Championship, World Sportscar Championship, 24 Hours of L..."
+    }
+  ],
+  "singleton_entities": 5,
+  "highest_degree": {
+    "entity_keys": [
+      "Driver:lewis hamilton",
+      "GrandPrix:grand prix",
+      "Season:2021 formula one world championship",
+      "Team:ferrari"
+    ],
+    "degree": 1,
+    "edges": [
+      {
+        "rel_type": "DROVE_FOR",
+        "source": "Driver:lewis hamilton",
+        "target": "Team:ferrari",
+        "rel_key": "[\"Driver:lewis hamilton\",\"DROVE_FOR\",\"Team:ferrari\",null,null,null]"
+      },
+      {
+        "rel_type": "ROUND_OF",
+        "source": "GrandPrix:grand prix",
+        "target": "Season:2021 formula one world championship",
+        "rel_key": "[\"GrandPrix:grand prix\",\"ROUND_OF\",\"Season:2021 formula one world championship\",null,null,null]"
+      }
+    ],
+    "meaning": "Az összevont szakterületi élek iránya nélküli száma. A szám nem igazolja, hogy az extrakció szemantikailag helyes."
+  },
+  "before": {
+    "kind": "occurrence",
+    "nodes": 7,
+    "edges": 2,
+    "largest_weak_component_nodes": 2,
+    "component_meaning": "Az irányított szakterületi gráf legnagyobb gyengén összefüggő komponense: az irány nem számít, a méret a csomópontok száma. A seed, a dokumentumgráf és a MENTIONS élek nincsenek benne."
+  },
+  "after": {
+    "kind": "merged",
+    "nodes": 6,
+    "edges": 2,
+    "largest_weak_component_nodes": 2,
+    "component_meaning": "Az irányított szakterületi gráf legnagyobb gyengén összefüggő komponense: az irány nem számít, a méret a csomópontok száma. A seed, a dokumentumgráf és a MENTIONS élek nincsenek benne."
+  },
+  "alias_map": {},
+  "component_meaning": "Az irányított szakterületi gráf legnagyobb gyengén összefüggő komponense: az irány nem számít, a méret a csomópontok száma. A seed, a dokumentumgráf és a MENTIONS élek nincsenek benne.",
+  "note": "status ok is structural validity, not semantic correctness. An empty chunk is an accepted extraction with no entities."
+}

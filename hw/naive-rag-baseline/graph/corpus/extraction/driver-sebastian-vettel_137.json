@@ -1,0 +1,73 @@
+{
+  "chunk_id": "driver-sebastian-vettel#137",
+  "doc_id": "driver-sebastian-vettel",
+  "document_title": "Sebastian Vettel",
+  "section": "Awards and honours",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/Sebastian_Vettel",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "fc9cb9b64858632408e2a4a3986c1abee8f40170b3bc8d2330601c9d833786d8",
+  "status": "error",
+  "error": "ExtractionValidationError: WON is not temporal; from_year, to_year and role must be null",
+  "candidate_result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Sebastian Vettel",
+        "entity_type": "Driver",
+        "description": "A Formula One driver known for his achievements and awards."
+      },
+      {
+        "local_id": "e2",
+        "name": "Red Bull Racing",
+        "entity_type": "Team",
+        "description": "A Formula One team that has been successful in the sport."
+      },
+      {
+        "local_id": "e3",
+        "name": "Infiniti FX",
+        "entity_type": "Car",
+        "description": "A model of SUV that was released in a special edition for Sebastian Vettel."
+      },
+      {
+        "local_id": "e4",
+        "name": "The Perfect World Foundation Award",
+        "entity_type": "Title",
+        "description": "An award received by Sebastian Vettel for his environmental efforts."
+      },
+      {
+        "local_id": "e5",
+        "name": "2026",
+        "entity_type": "Season",
+        "description": "The year when Sebastian Vettel received The Perfect World Foundation Award."
+      },
+      {
+        "local_id": "e6",
+        "name": "2012",
+        "entity_type": "Season",
+        "description": "The year when the Sebastian Vettel edition of the Infiniti FX SUV was released."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e4",
+        "relationship_type": "WON",
+        "description": "Sebastian Vettel received The Perfect World Foundation Award.",
+        "from_year": 2026,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e3",
+        "relationship_type": "FIELDED",
+        "description": "Red Bull Racing released a special edition of the Infiniti FX SUV for Sebastian Vettel.",
+        "from_year": 2012,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

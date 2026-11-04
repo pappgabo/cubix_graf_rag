@@ -1,0 +1,60 @@
+{
+  "chunk_id": "driver-valtteri-bottas#148",
+  "doc_id": "driver-valtteri-bottas",
+  "document_title": "Valtteri Bottas",
+  "section": "Other ventures > Philanthropy",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/Valtteri_Bottas",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "a570f3d2d16d8fb5c8bb8b2c457146fcc4703f79a332ca953a61293c96c61b47",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Valtteri Bottas",
+        "entity_type": "Driver",
+        "description": "A Formula One driver known for his philanthropic efforts."
+      },
+      {
+        "local_id": "e2",
+        "name": "Care for Wild Rhino sanctuary",
+        "entity_type": "Team",
+        "description": "A sanctuary that benefits from funds raised by Bottas' postcard sales."
+      },
+      {
+        "local_id": "e3",
+        "name": "2026",
+        "entity_type": "Season",
+        "description": "The year in which Bottas launched the postcard for World Rhino Day."
+      },
+      {
+        "local_id": "e4",
+        "name": "2026 Azerbaijan Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The race during which Bottas wore the custom special edition rhino-themed helmet."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Bottas supports Care for Wild Rhino sanctuary through his philanthropic efforts.",
+        "from_year": 2026,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e3",
+        "relationship_type": "ROUND_OF",
+        "description": "The 2026 Azerbaijan Grand Prix is a round of the 2026 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

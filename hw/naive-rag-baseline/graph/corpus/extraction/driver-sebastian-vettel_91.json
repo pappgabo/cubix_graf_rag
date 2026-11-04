@@ -1,0 +1,103 @@
+{
+  "chunk_id": "driver-sebastian-vettel#91",
+  "doc_id": "driver-sebastian-vettel",
+  "document_title": "Sebastian Vettel",
+  "section": "2017–2018: Title battles versus Hamilton",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/Sebastian_Vettel",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "046116428ba8fbde0e4f84ff6c5868ca696e4cfb35df9e81fcf7ef9ca405c60f",
+  "status": "error",
+  "error": "ExtractionValidationError: ACHIEVED does not allow Driver -> GrandPrix",
+  "candidate_result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Sebastian Vettel",
+        "entity_type": "Driver",
+        "description": "A Formula One driver who won the Canadian Grand Prix for the third time in 2018."
+      },
+      {
+        "local_id": "e2",
+        "name": "Canadian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula One race where Vettel won for the third time in 2018."
+      },
+      {
+        "local_id": "e3",
+        "name": "France",
+        "entity_type": "GrandPrix",
+        "description": "The following race after the Canadian Grand Prix where Vettel lost the championship lead."
+      },
+      {
+        "local_id": "e4",
+        "name": "Great Britain",
+        "entity_type": "GrandPrix",
+        "description": "The race where Vettel bounced back and took victory after passing Bottas."
+      },
+      {
+        "local_id": "e5",
+        "name": "2018",
+        "entity_type": "Season",
+        "description": "The Formula One season during which Vettel won the Canadian Grand Prix for the third time."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "ACHIEVED",
+        "description": "Vettel won the Canadian Grand Prix.",
+        "from_year": 2018,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e3",
+        "relationship_type": "ACHIEVED",
+        "description": "Vettel lost the championship lead in France after a collision with Bottas.",
+        "from_year": 2018,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e4",
+        "relationship_type": "ACHIEVED",
+        "description": "Vettel took victory in Great Britain after passing Bottas.",
+        "from_year": 2018,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e5",
+        "relationship_type": "ROUND_OF",
+        "description": "The Canadian Grand Prix is a round of the 2018 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e5",
+        "relationship_type": "ROUND_OF",
+        "description": "The French Grand Prix is a round of the 2018 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e5",
+        "relationship_type": "ROUND_OF",
+        "description": "The British Grand Prix is a round of the 2018 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

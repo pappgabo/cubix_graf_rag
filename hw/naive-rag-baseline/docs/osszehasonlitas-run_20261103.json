@@ -1,0 +1,288 @@
+[
+  {
+    "id": "Q01",
+    "model_called": true,
+    "anchors": [
+      {
+        "entity_key": "Driver:lewis hamilton",
+        "score": 0.6297932792922305
+      },
+      {
+        "entity_key": "Title:world drivers' championship",
+        "score": 0.6221785758859621
+      },
+      {
+        "entity_key": "Driver:fernando alonso",
+        "score": 0.5294499267392452
+      }
+    ],
+    "prompt": "A válasz csak a Forrásszövegek szakaszból származhat. Nevet vagy számot csak akkor írj, ha az a forrásszövegben szerepel. Az entitásnevek és a kapcsolatok szerkezete nem helyettesíti a forrásszöveget. Ha a forrásszövegek nem támasztják alá, a válasz pontosan ez legyen, más szöveg nélkül: A rendelkezésre álló részgráf nem támasztja alá a választ.\n\nKérdés: How many World Drivers' Championships has Lewis Hamilton won?\n\nKontextus:\nEntitások:\n- Driver:lewis hamilton\n- Title:world drivers' championship\n- Driver:fernando alonso\n- Driver:valtteri bottas\n- Title:2005 f1 world championship\n- Title:drivers' championship\n- Title:title\n- Title:world championship\nKapcsolatok:\n- Driver:lewis hamilton -WON-> Title:world drivers' championship years=None-None | chunks=driver-lewis-hamilton#31,driver-lewis-hamilton#50\n- Driver:lewis hamilton -WON-> Title:drivers' championship years=None-None | chunks=team-mercedes-benz-in-formula-one#42\n- Driver:lewis hamilton -WON-> Title:world championship years=None-None | chunks=driver-lewis-hamilton#95\n- Driver:lewis hamilton -WON-> Title:title years=None-None | chunks=driver-lewis-hamilton#51\n- Driver:valtteri bottas -WON-> Title:world drivers' championship years=None-None | chunks=driver-valtteri-bottas#75\n- Driver:lewis hamilton -TEAMMATE_OF-> Driver:fernando alonso years=None-None | chunks=driver-fernando-alonso#48,driver-lewis-hamilton#107,driver-lewis-hamilton#112,driver-lewis-hamilton#114\n- Driver:fernando alonso -WON-> Title:2005 f1 world championship years=None-None | chunks=driver-fernando-alonso#142\n- Driver:fernando alonso -WON-> Title:title years=None-None | chunks=driver-fernando-alonso#35\nForrásszövegek:\n- [driver-lewis-hamilton#114] donuts.\nTeammates  Hamilton  and  Alonso  won  eight  of  17  races  held.  Both  drivers  achieved  four  victories  and  12  podium\nfinishes, whilst Hamilton outqualified Alonso ten of 17 times. At the end of their season as teammates, the pair were tied\non 109 points, with Hamilton placing second and Alonso third in the World Drivers' Championship by virtue of Hamilton\nhaving more second-place finishes.\nNico Rosberg\n- [driver-lewis-hamilton#50] championship  lead  for  the  first  time  of  the  season.  Registering  a  total  of  11  pole  positions,  nine  race  victories,  and\nequalling the record for most grand slams in a season (3), Hamilton won his fourth World Drivers' title at the Mexican\nGrand Prix with two races to spare.\nIn 2018, whilst Ferrari once again held the upper hand, Hamilton and Vettel engaged in a much closer battle for their fifth\n- [driver-lewis-hamilton#31] then-youngest World Drivers' Champion, and deny race-winner Massa the title by one point. Hamilton also became the\nfirst British driver to win the World Drivers' Championship since Damon Hill in 1996.\n2009–2012: Unsuccessful title bids and departure from McLaren\nDuring  his  veering  final  years  with  McLaren—a  period  largely  dominated  by  Red  Bull—Hamilton  continued  to  score\n- [driver-lewis-hamilton#51] title—widely billed as the \"Fight for Five\"—they exchanged the championship lead several times until the half-way point\nof  the  season.  Beginning  from  the  German  Grand  Prix—where  Vettel  made  an  error  while  leading  and  retired,  and\nHamilton won starting from 14th on the grid—Vettel's season unravelled with a number of driver errors in the following\nraces. Meanwhile, Hamilton repeated his run of consecutive wins to clinch his fifth title at the Mexican Grand Prix for a",
+    "raw_answer": "A rendelkezésre álló részgráf nem támasztja alá a választ.",
+    "answer": "A rendelkezésre álló részgráf nem támasztja alá a választ.",
+    "refused": true
+  },
+  {
+    "id": "Q02",
+    "model_called": true,
+    "anchors": [
+      {
+        "entity_key": "Driver:sebastian vettel",
+        "score": 0.610132514845486
+      },
+      {
+        "entity_key": "Title:world drivers' champion",
+        "score": 0.569173304819655
+      },
+      {
+        "entity_key": "Driver:fabian vettel",
+        "score": 0.5216070631774595
+      }
+    ],
+    "prompt": "A válasz csak a Forrásszövegek szakaszból származhat. Nevet vagy számot csak akkor írj, ha az a forrásszövegben szerepel. Az entitásnevek és a kapcsolatok szerkezete nem helyettesíti a forrásszöveget. Ha a forrásszövegek nem támasztják alá, a válasz pontosan ez legyen, más szöveg nélkül: A rendelkezésre álló részgráf nem támasztja alá a választ.\n\nKérdés: How old was Sebastian Vettel when he became the youngest Formula One World Champion?\n\nKontextus:\nEntitások:\n- Driver:sebastian vettel\n- Title:world drivers' champion\n- Driver:fabian vettel\n- Driver:fernando alonso\n- Team:bmw sauber\n- Title:2004 formula bmw adac championship\n- Title:triple world champion\n- Title:world constructors' championship\nKapcsolatok:\n- Driver:sebastian vettel -WON-> Title:triple world champion years=None-None | chunks=driver-sebastian-vettel#58\n- Driver:sebastian vettel -DROVE_FOR-> Team:bmw sauber years=2006-None | chunks=driver-sebastian-vettel#22\n- Driver:sebastian vettel -WON-> Title:2004 formula bmw adac championship years=None-None | chunks=driver-sebastian-vettel#14\n- Driver:sebastian vettel -WON-> Title:world constructors' championship years=None-None | chunks=driver-sebastian-vettel#50\n- Driver:fernando alonso -TEAMMATE_OF-> Driver:sebastian vettel years=None-None | chunks=season-2012-formula-one-world-championship#181\n- Driver:fernando alonso -WON-> Title:world drivers' champion years=None-None | chunks=driver-fernando-alonso#3,driver-fernando-alonso#33\n- Driver:sebastian vettel -TEAMMATE_OF-> Driver:fernando alonso years=None-None | chunks=driver-fernando-alonso#48\nForrásszövegek:\n- [driver-fernando-alonso#3] . After a non-scoring rookie season, he joined Renault as a test driver before his promotion to a full-time seat in 2003; he became the then-youngest polesitter and race winner at the Malaysian and Hungarian Grands Prix, respectively, before achieving several podiums across his 2004 campaign. Alonso won his maiden title after winning seven Grands Prix in 2005, becoming the first World Drivers' Champion from Spain and the then-youngest in Formula One history, aged 24\n- [driver-sebastian-vettel#22] Vettel became BMW Sauber's third driver at the 2006 Turkish Grand Prix, when former incumbent Robert Kubica replaced Jacques Villeneuve as second driver for the 2006 Hungarian Grand Prix. On his testing debut, Vettel set the fastest time in the second Friday free practice. Vettel became the then-youngest Formula One driver to participate in a Grand Prix weekend at 19 years and 53 days\n- [driver-sebastian-vettel#58] . On the opening lap, Vettel spun after an incident with Bruno Senna. Following changing weather conditions, Vettel climbed up to finish in sixth place to win the championship by three points and to become the youngest ever triple world champion. He also became the third driver to acquire three consecutive championships, after Juan Manuel Fangio and Schumacher.\n- [driver-fernando-alonso#33] . Alonso's car was more reliable than Räikkönen's albeit lacking in speed. Alonso eclipsed Emerson Fittipaldi as the youngest World Drivers' Champion, having won seven victories, six pole positions and fourteen podium finishes for 133 points altogether.",
+    "raw_answer": "A rendelkezésre álló részgráf nem támasztja alá a választ.",
+    "answer": "A rendelkezésre álló részgráf nem támasztja alá a választ.",
+    "refused": true
+  },
+  {
+    "id": "Q03",
+    "model_called": true,
+    "anchors": [
+      {
+        "entity_key": "Season:drivers' championship",
+        "score": 0.6500429130375142
+      },
+      {
+        "entity_key": "Season:2021 formula one world championship",
+        "score": 0.6491172410265741
+      },
+      {
+        "entity_key": "Title:world drivers' championship",
+        "score": 0.6403634559005434
+      }
+    ],
+    "prompt": "A válasz csak a Forrásszövegek szakaszból származhat. Nevet vagy számot csak akkor írj, ha az a forrásszövegben szerepel. Az entitásnevek és a kapcsolatok szerkezete nem helyettesíti a forrásszöveget. Ha a forrásszövegek nem támasztják alá, a válasz pontosan ez legyen, más szöveg nélkül: A rendelkezésre álló részgráf nem támasztja alá a választ.\n\nKérdés: Who won the 2021 Formula One World Drivers' Championship?\n\nKontextus:\nEntitások:\n- Season:drivers' championship\n- Season:2021 formula one world championship\n- Title:world drivers' championship\n- Car:red bull rb16b\n- Driver:lewis hamilton\n- GrandPrix:belgian grand prix\n- GrandPrix:emilia romagna grand prix\n- Team:mercedes\nKapcsolatok:\n- Driver:lewis hamilton -WON-> Title:world drivers' championship years=None-None | chunks=driver-lewis-hamilton#31,driver-lewis-hamilton#50\n- Driver:lewis hamilton -DROVE_FOR-> Team:mercedes years=2013-2024 | chunks=driver-lewis-hamilton#39\n- Car:red bull rb16b -RACED_IN-> Season:2021 formula one world championship years=None-None | chunks=season-2021-formula-one-world-championship#41\n- GrandPrix:belgian grand prix -ROUND_OF-> Season:2021 formula one world championship years=None-None | chunks=season-2021-formula-one-world-championship#41\n- GrandPrix:emilia romagna grand prix -ROUND_OF-> Season:2021 formula one world championship years=None-None | chunks=season-2021-formula-one-world-championship#15\nForrásszövegek:\n- [driver-lewis-hamilton#31] then-youngest World Drivers' Champion, and deny race-winner Massa the title by one point. Hamilton also became the\nfirst British driver to win the World Drivers' Championship since Damon Hill in 1996.\n2009–2012: Unsuccessful title bids and departure from McLaren\nDuring  his  veering  final  years  with  McLaren—a  period  largely  dominated  by  Red  Bull—Hamilton  continued  to  score\n- [driver-lewis-hamilton#50] championship  lead  for  the  first  time  of  the  season.  Registering  a  total  of  11  pole  positions,  nine  race  victories,  and\nequalling the record for most grand slams in a season (3), Hamilton won his fourth World Drivers' title at the Mexican\nGrand Prix with two races to spare.\nIn 2018, whilst Ferrari once again held the upper hand, Hamilton and Vettel engaged in a much closer battle for their fifth\n- [season-2021-formula-one-world-championship#41] the Spanish Grand Prix, that the rear wing of the Red Bull RB16B flexed significantly at high speed and load, allowing\ngreater top speeds. Under 2021 Formula One regulations wings must be immobile and rigidly attached to the bodywork.\nFrom  the  Belgian  Grand  Prix  onwards  a  new  technical  directive  was  enforced  surrounding  pit  stop  equipment  after\nconcerns teams were flouting the article 12.8.4 of Formula One technical regulations that state that pit equipment may\n- [season-2021-formula-one-world-championship#15] expand beyond the planned twenty-two races of the 2020 calendar. The sporting regulations were amended to allow for\na maximum of twenty-five Grands Prix per year.\nThe  Emilia  Romagna  Grand  Prix  at  the  Autodromo  Internazionale  Enzo  e  Dino  Ferrari  in  Imola,  which  was  originally\nintended to be held as a one-off event in 2020, was the second round of the championship.",
+    "raw_answer": "A rendelkezésre álló részgráf nem támasztja alá a választ.",
+    "answer": "A rendelkezésre álló részgráf nem támasztja alá a választ.",
+    "refused": true
+  },
+  {
+    "id": "Q04",
+    "model_called": true,
+    "anchors": [
+      {
+        "entity_key": "Title:formula one world drivers' championship",
+        "score": 0.5882334649944333
+      },
+      {
+        "entity_key": "Driver:fernando alonso",
+        "score": 0.5875652993236317
+      },
+      {
+        "entity_key": "Season:2016",
+        "score": 0.5759059516866328
+      }
+    ],
+    "prompt": "A válasz csak a Forrásszövegek szakaszból származhat. Nevet vagy számot csak akkor írj, ha az a forrásszövegben szerepel. Az entitásnevek és a kapcsolatok szerkezete nem helyettesíti a forrásszöveget. Ha a forrásszövegek nem támasztják alá, a válasz pontosan ez legyen, más szöveg nélkül: A rendelkezésre álló részgráf nem támasztja alá a választ.\n\nKérdés: Who was the teammate of the 2016 World Drivers' Champion at his team that season?\n\nKontextus:\nEntitások:\n- Title:formula one world drivers' championship\n- Driver:fernando alonso\n- Season:2016\n- Driver:lewis hamilton\n- Driver:nico rosberg\n- RaceResult:10th\n- Team:alfa romeo\n- Team:mercedes\nKapcsolatok:\n- Driver:lewis hamilton -TEAMMATE_OF-> Driver:nico rosberg years=None-None | chunks=driver-lewis-hamilton#115,driver-lewis-hamilton#116,driver-lewis-hamilton#119,driver-lewis-hamilton#121,driver-lewis-hamilton#39,team-mercedes-benz-in-formula-one#42\n- RaceResult:10th -FOR_TEAM-> Team:alfa romeo years=None-None | chunks=driver-valtteri-bottas#114\n- Driver:lewis hamilton -DROVE_FOR-> Team:mercedes years=2013-2024 | chunks=driver-lewis-hamilton#39\n- Driver:nico rosberg -DROVE_FOR-> Team:mercedes years=2006-2016 | chunks=driver-nico-rosberg#0\n- Title:formula one world drivers' championship -AWARDED_IN-> Season:2016 years=None-None | chunks=driver-nico-rosberg#0\n- Driver:nico rosberg -WON-> Title:formula one world drivers' championship years=None-None | chunks=driver-nico-rosberg#0\n- Driver:lewis hamilton -TEAMMATE_OF-> Driver:fernando alonso years=None-None | chunks=driver-fernando-alonso#48,driver-lewis-hamilton#107,driver-lewis-hamilton#112,driver-lewis-hamilton#114\n- Driver:nico rosberg -TEAMMATE_OF-> Driver:lewis hamilton years=None-None | chunks=driver-nico-rosberg#18\nForrásszövegek:\n- [driver-nico-rosberg#18] Rosberg's father asked CRG executive Dino Chiesa in late 1999 to establish a separate karting team for his son and fellow driver Lewis Hamilton for a period of two to three years. Rosberg raced for TeamMBM.com (Mercedes-Benz McLaren) for the 2000 season. In Formula A, he was runner-up in the CIK-FIA European Championship and finished ninth in the World Cup. In 2001, Rosberg was tenth in the South Garda Winter Cup and sixteenth in the Formula Super A World Championship\n- [driver-lewis-hamilton#114] donuts.\nTeammates  Hamilton  and  Alonso  won  eight  of  17  races  held.  Both  drivers  achieved  four  victories  and  12  podium\nfinishes, whilst Hamilton outqualified Alonso ten of 17 times. At the end of their season as teammates, the pair were tied\non 109 points, with Hamilton placing second and Alonso third in the World Drivers' Championship by virtue of Hamilton\nhaving more second-place finishes.\nNico Rosberg\n- [driver-nico-rosberg#0] # Nico Rosberg  \nNico Erik Rosberg ( NEE-koh ROZ-burg; born 27 June 1985) is a German and Finnish former racing driver, entrepreneur, and broadcaster who competed under the German flag in Formula One from 2006 to 2016. Rosberg won the Formula One World Drivers' Championship in 2016 with Mercedes, and won 23 Grands Prix across 11 seasons.\n- [team-mercedes-benz-in-formula-one#42] For the 2015 season, the team retained both Hamilton and Rosberg. At the 2015 Russian Grand Prix the team won their second Constructors' Championship as a works team and Hamilton won his second consecutive Drivers' Championship at the 2015 United States Grand Prix, finishing 59 points ahead of Rosberg. Mercedes continued their domination in this second year of the V6 turbo era, improving on their impressive numbers from 2014 with 18 pole positions, 16 wins and 12 1–2s in 19 races",
+    "raw_answer": "Nico Rosberg",
+    "answer": "Nico Rosberg",
+    "refused": false
+  },
+  {
+    "id": "Q05",
+    "model_called": true,
+    "anchors": [
+      {
+        "entity_key": "Team:mercedes",
+        "score": 0.5468180528197141
+      },
+      {
+        "entity_key": "Season:2013",
+        "score": 0.5266410494235735
+      },
+      {
+        "entity_key": "Driver:fernando alonso",
+        "score": 0.5115058544722536
+      }
+    ],
+    "prompt": "A válasz csak a Forrásszövegek szakaszból származhat. Nevet vagy számot csak akkor írj, ha az a forrásszövegben szerepel. Az entitásnevek és a kapcsolatok szerkezete nem helyettesíti a forrásszöveget. Ha a forrásszövegek nem támasztják alá, a válasz pontosan ez legyen, más szöveg nélkül: A rendelkezésre álló részgráf nem támasztja alá a választ.\n\nKérdés: Which team did the 2012 World Drivers' Champion leave his team for, and in which year did the move take effect?\n\nKontextus:\nEntitások:\n- Team:mercedes\n- Season:2013\n- Driver:fernando alonso\n- GrandPrix:canada\n- RaceResult:11th\n- Season:2012\n- Title:triple world champion\n- Title:world drivers' champion\nKapcsolatok:\n- RaceResult:11th -FOR_TEAM-> Team:mercedes years=None-None | chunks=driver-valtteri-bottas#79\n- Title:triple world champion -AWARDED_IN-> Season:2012 years=None-None | chunks=driver-sebastian-vettel#58\n- Driver:fernando alonso -WON-> Title:world drivers' champion years=None-None | chunks=driver-fernando-alonso#3,driver-fernando-alonso#33\n- GrandPrix:canada -ROUND_OF-> Season:2012 years=None-None | chunks=season-2012-formula-one-world-championship#119\n- Team:mercedes -ENTERED-> Season:2012 years=None-None | chunks=driver-nico-rosberg#60,season-2012-formula-one-world-championship#39\nForrásszövegek:\n- [driver-fernando-alonso#3] . After a non-scoring rookie season, he joined Renault as a test driver before his promotion to a full-time seat in 2003; he became the then-youngest polesitter and race winner at the Malaysian and Hungarian Grands Prix, respectively, before achieving several podiums across his 2004 campaign. Alonso won his maiden title after winning seven Grands Prix in 2005, becoming the first World Drivers' Champion from Spain and the then-youngest in Formula One history, aged 24\n- [driver-fernando-alonso#33] . Alonso's car was more reliable than Räikkönen's albeit lacking in speed. Alonso eclipsed Emerson Fittipaldi as the youngest World Drivers' Champion, having won seven victories, six pole positions and fourteen podium finishes for 133 points altogether.\n- [driver-sebastian-vettel#58] . On the opening lap, Vettel spun after an incident with Bruno Senna. Following changing weather conditions, Vettel climbed up to finish in sixth place to win the championship by three points and to become the youngest ever triple world champion. He also became the third driver to acquire three consecutive championships, after Juan Manuel Fangio and Schumacher.\n- [driver-nico-rosberg#60] The press linked Rosberg to replace the poor performing Felipe Massa at Ferrari for 2012. In November 2011, he signed a contract extension to remain at Mercedes until after 2013. An important factor in Rosberg's decision was the Mercedes team undergoing a technical restructure, which saw the appointments of Bob Bell as technical director and Geoff Willis as head of technology in mid-2011",
+    "raw_answer": "A rendelkezésre álló részgráf nem támasztja alá a választ.",
+    "answer": "A rendelkezésre álló részgráf nem támasztja alá a választ.",
+    "refused": true
+  },
+  {
+    "id": "Q06",
+    "model_called": true,
+    "anchors": [
+      {
+        "entity_key": "Title:world championships",
+        "score": 0.6432881349501011
+      },
+      {
+        "entity_key": "Driver:michael schumacher",
+        "score": 0.5649177412775402
+      },
+      {
+        "entity_key": "Title:world drivers' championship",
+        "score": 0.5275412278347964
+      }
+    ],
+    "prompt": "A válasz csak a Forrásszövegek szakaszból származhat. Nevet vagy számot csak akkor írj, ha az a forrásszövegben szerepel. Az entitásnevek és a kapcsolatok szerkezete nem helyettesíti a forrásszöveget. Ha a forrásszövegek nem támasztják alá, a válasz pontosan ez legyen, más szöveg nélkül: A rendelkezésre álló részgráf nem támasztja alá a választ.\n\nKérdés: Which two drivers in the corpus hold the record of seven World Championships, and with which teams did each of them win their titles?\n\nKontextus:\nEntitások:\n- Title:world championships\n- Driver:michael schumacher\n- Title:world drivers' championship\n- Driver:lewis hamilton\n- RaceResult:11th\n- Season:2017\n- Season:2019\n- Team:mercedes\nKapcsolatok:\n- RaceResult:11th -FOR_TEAM-> Team:mercedes years=None-None | chunks=driver-valtteri-bottas#79\n- Driver:lewis hamilton -WON-> Title:world drivers' championship years=None-None | chunks=driver-lewis-hamilton#31,driver-lewis-hamilton#50\n- Title:world drivers' championship -AWARDED_IN-> Season:2017 years=None-None | chunks=driver-lewis-hamilton#50\n- Title:world drivers' championship -AWARDED_IN-> Season:2019 years=None-None | chunks=driver-valtteri-bottas#75\n- Driver:michael schumacher -WON-> Title:world championships years=None-None | chunks=driver-michael-schumacher#178\nForrásszövegek:\n- [driver-lewis-hamilton#50] championship  lead  for  the  first  time  of  the  season.  Registering  a  total  of  11  pole  positions,  nine  race  victories,  and\nequalling the record for most grand slams in a season (3), Hamilton won his fourth World Drivers' title at the Mexican\nGrand Prix with two races to spare.\nIn 2018, whilst Ferrari once again held the upper hand, Hamilton and Vettel engaged in a much closer battle for their fifth\n- [driver-lewis-hamilton#31] then-youngest World Drivers' Champion, and deny race-winner Massa the title by one point. Hamilton also became the\nfirst British driver to win the World Drivers' Championship since Damon Hill in 1996.\n2009–2012: Unsuccessful title bids and departure from McLaren\nDuring  his  veering  final  years  with  McLaren—a  period  largely  dominated  by  Red  Bull—Hamilton  continued  to  score\n- [driver-michael-schumacher#178] Formula One records\nSchumacher came to hold most major Formula One records by 2004, and by 2006 his name was inscribed in almost all\nof Formula One's record books, including for most World Championships (7), most wins (91), most podiums (155), most\npole positions (68), and most fastest laps (77), the latter a record he still holds. Although several of his records were\nlater equalled or beaten, such as the most wins in a season at 13 (a record he first broke in 1995 and then equalled in\n- [driver-valtteri-bottas#75] Bottas finished the season in second place in the World Drivers' Championship with 326 points to Hamilton's 413. He recorded four wins, fifteen podium finishes, five pole positions and three fastest laps, making 2019 his most successful year at Mercedes. He was rated the fourth-best driver of the season in a poll of the Formula One team principals",
+    "raw_answer": "A rendelkezésre álló részgráf nem támasztja alá a választ.",
+    "answer": "A rendelkezésre álló részgráf nem támasztja alá a választ.",
+    "refused": true
+  },
+  {
+    "id": "Q07",
+    "model_called": true,
+    "anchors": [
+      {
+        "entity_key": "Team:mclaren",
+        "score": 0.601817603560726
+      },
+      {
+        "entity_key": "Season:2013",
+        "score": 0.5911185846091219
+      },
+      {
+        "entity_key": "Season:2010",
+        "score": 0.5788357131489426
+      }
+    ],
+    "prompt": "A válasz csak a Forrásszövegek szakaszból származhat. Nevet vagy számot csak akkor írj, ha az a forrásszövegben szerepel. Az entitásnevek és a kapcsolatok szerkezete nem helyettesíti a forrásszöveget. Ha a forrásszövegek nem támasztják alá, a válasz pontosan ez legyen, más szöveg nélkül: A rendelkezésre álló részgráf nem támasztja alá a választ.\n\nKérdés: Fernando Alonso and Lewis Hamilton were teammates once. At which team and in which season, and what was the outcome of that season's championship?\n\nKontextus:\nEntitások:\n- Team:mclaren\n- Season:2013\n- Season:2010\n- Driver:fernando alonso\n- Driver:george russell\n- Driver:lewis hamilton\n- RaceResult:11th\n- Team:mercedes\nKapcsolatok:\n- Driver:lewis hamilton -TEAMMATE_OF-> Driver:fernando alonso years=None-None | chunks=driver-fernando-alonso#48,driver-lewis-hamilton#107,driver-lewis-hamilton#112,driver-lewis-hamilton#114\n- RaceResult:11th -FOR_TEAM-> Team:mercedes years=None-None | chunks=driver-valtteri-bottas#79\n- Driver:lewis hamilton -TEAMMATE_OF-> Driver:george russell years=None-None | chunks=driver-lewis-hamilton#62\n- Driver:lewis hamilton -DROVE_FOR-> Team:mercedes years=2013-None | chunks=driver-lewis-hamilton#115,driver-lewis-hamilton#38,driver-lewis-hamilton#70,driver-michael-schumacher#120\n- Driver:lewis hamilton -DROVE_FOR-> Team:mercedes years=2022-None | chunks=driver-lewis-hamilton#62\n- Driver:lewis hamilton -DROVE_FOR-> Team:mercedes years=None-None | chunks=driver-lewis-hamilton#130,driver-lewis-hamilton#41,driver-lewis-hamilton#58,driver-lewis-hamilton#65,driver-lewis-hamilton#68,driver-lewis-hamilton#95,driver-nico-rosberg#65,reference-list-of-formula-one-world-drivers-champions#1,team-mercedes-benz-in-formula-one#42\n- Team:mclaren -ENTERED-> Season:2010 years=None-None | chunks=driver-lewis-hamilton#33\n- Driver:fernando alonso -DROVE_FOR-> Team:mclaren years=2018-2018 | chunks=season-2021-formula-one-world-championship#9\n- Driver:fernando alonso -DROVE_FOR-> Team:mclaren years=None-None | chunks=driver-fernando-alonso#63,driver-lewis-hamilton#107,reference-list-of-formula-one-world-drivers-champions#1\n- Driver:lewis hamilton -DROVE_FOR-> Team:mclaren years=2007-2012 | chunks=driver-lewis-hamilton#24\n- Driver:lewis hamilton -DROVE_FOR-> Team:mclaren years=None-None | chunks=driver-lewis-hamilton#107,driver-lewis-hamilton#25,driver-lewis-hamilton#33,driver-lewis-hamilton#34,driver-lewis-hamilton#39,reference-list-of-formula-one-world-drivers-champions#1,season-2012-formula-one-world-championship#81\n- Team:mercedes -ENTERED-> Season:2010 years=None-None | chunks=driver-michael-schumacher#106\nForrásszövegek:\n- [driver-lewis-hamilton#114] donuts.\nTeammates  Hamilton  and  Alonso  won  eight  of  17  races  held.  Both  drivers  achieved  four  victories  and  12  podium\nfinishes, whilst Hamilton outqualified Alonso ten of 17 times. At the end of their season as teammates, the pair were tied\non 109 points, with Hamilton placing second and Alonso third in the World Drivers' Championship by virtue of Hamilton\nhaving more second-place finishes.\nNico Rosberg\n- [driver-fernando-alonso#48] . McLaren's Hamilton and Button and Red Bull's of Sebastian Vettel and Mark Webber were Alonso's main championship competition. He won five races that season and entered the season-ending Abu Dhabi Grand Prix leading by eight points after being 47 behind mid-season following errors. Alonso finished runner-up to Vettel after finishing seventh thereby losing nineteen points to Vettel who won the race.\n- [driver-lewis-hamilton#112] Luca  di  Montezemolo  regarding  a  Ferrari  drive  for  2008.  The  rivalry  between  the  pair  led  to  speculation  that  either\nHamilton or Alonso would leave McLaren at the end of the season; Alonso and McLaren terminated their contract by\nmutual consent in November that year, ending his and Hamilton's time as teammates. In subsequent years, tensions\nbetween  the  pair  dissipated,  and  the  mutual  respect  has  grown,  with  Alonso  praising  Hamilton  in  2017  saying\n- [driver-lewis-hamilton#68] \"looking  forward  to  the  end  [of  the  season]\",  Hamilton  ended  the  season  a  career-lowest  seventh  in  the\nchampionship—22  points  behind  teammate  Russell—marking  the  end  of  his  Mercedes  career,  which  was  the  most\nsuccessful driver–constructor partnership in Formula One history by several metrics.\nFerrari (2025–present)\n2025–present: First season acclimations and return to form",
+    "raw_answer": "A rendelkezésre álló részgráf nem támasztja alá a választ.",
+    "answer": "A rendelkezésre álló részgráf nem támasztja alá a választ.",
+    "refused": true
+  },
+  {
+    "id": "Q08",
+    "model_called": true,
+    "anchors": [
+      {
+        "entity_key": "Driver:nico rosberg",
+        "score": 0.7267200068104622
+      },
+      {
+        "entity_key": "Team:mercedes",
+        "score": 0.6372709633661844
+      },
+      {
+        "entity_key": "Team:mercedes-benz mclaren",
+        "score": 0.5992182609646248
+      }
+    ],
+    "prompt": "A válasz csak a Forrásszövegek szakaszból származhat. Nevet vagy számot csak akkor írj, ha az a forrásszövegben szerepel. Az entitásnevek és a kapcsolatok szerkezete nem helyettesíti a forrásszöveget. Ha a forrásszövegek nem támasztják alá, a válasz pontosan ez legyen, más szöveg nélkül: A rendelkezésre álló részgráf nem támasztja alá a választ.\n\nKérdés: Which driver replaced Nico Rosberg at Mercedes after his retirement, and which team did that driver come from?\n\nKontextus:\nEntitások:\n- Driver:nico rosberg\n- Team:mercedes\n- Team:mercedes-benz mclaren\n- Driver:lewis hamilton\n- Driver:michael schumacher\n- RaceResult:11th\n- Team:teammbm.com (mercedes-benz mclaren)\n- Team:williams\nKapcsolatok:\n- RaceResult:11th -FOR_TEAM-> Team:mercedes years=None-None | chunks=driver-valtteri-bottas#79\n- Driver:nico rosberg -DROVE_FOR-> Team:mercedes years=2006-2016 | chunks=driver-nico-rosberg#0\n- Driver:nico rosberg -DROVE_FOR-> Team:mercedes years=None-None | chunks=driver-nico-rosberg#103,driver-nico-rosberg#57,driver-nico-rosberg#58,driver-nico-rosberg#60,driver-nico-rosberg#63,driver-nico-rosberg#65,driver-nico-rosberg#79,reference-list-of-formula-one-world-drivers-champions#1,team-mercedes-benz-in-formula-one#42\n- Driver:nico rosberg -DROVE_FOR-> Team:mercedes-benz mclaren years=None-None | chunks=driver-lewis-hamilton#116\n- Driver:lewis hamilton -DROVE_FOR-> Team:mercedes years=2013-None | chunks=driver-lewis-hamilton#115,driver-lewis-hamilton#38,driver-lewis-hamilton#70,driver-michael-schumacher#120\n- Driver:lewis hamilton -TEAMMATE_OF-> Driver:nico rosberg years=None-None | chunks=driver-lewis-hamilton#115,driver-lewis-hamilton#116,driver-lewis-hamilton#119,driver-lewis-hamilton#121,driver-lewis-hamilton#39,team-mercedes-benz-in-formula-one#42\n- Driver:michael schumacher -TEAMMATE_OF-> Driver:nico rosberg years=None-None | chunks=driver-michael-schumacher#105\n- Driver:nico rosberg -DROVE_FOR-> Team:teammbm.com (mercedes-benz mclaren) years=2000-None | chunks=driver-nico-rosberg#18\n- Driver:nico rosberg -DROVE_FOR-> Team:williams years=2006-None | chunks=driver-nico-rosberg#37\n- Driver:nico rosberg -TEAMMATE_OF-> Driver:michael schumacher years=None-None | chunks=driver-nico-rosberg#103\n- Driver:michael schumacher -DROVE_FOR-> Team:mercedes years=None-None | chunks=driver-michael-schumacher#107,driver-michael-schumacher#24,driver-nico-rosberg#65\n- Driver:nico rosberg -DROVE_FOR-> Team:williams years=2006-None | chunks=driver-nico-rosberg#38\nForrásszövegek:\n- [driver-michael-schumacher#105] a  motorcycle  accident  earlier  in  the  year.  Instead,  Massa's  place  was  first  filled  by  Luca  Badoer  and  later  on  by\nFisichella. Schumacher described this aborted return to Formula One as his \"toughest moment\".\nMercedes (2010–2012)\nIn December 2009, Schumacher announced his return to Formula One for the 2010 season alongside fellow German\ndriver  and  24-year-old  Nico  Rosberg  in  the  new  Mercedes  GP  team.  The  2009  season  had  ended  with  Brawn  GP\n- [driver-michael-schumacher#120] second driver in history (after  Barrichello) to race in 300 Grands Prix; he took seventh place after starting 13th.\nSchumacher's indecision over his future plans led to him being replaced by Lewis Hamilton at Mercedes for the 2013\nseason. In October 2012, days before the Japanese Grand Prix, Schumacher announced he would retire for a second\ntime, stating: \"There were times in the past few months in which I didn't want to deal with Formula One or prepare for the\n- [driver-nico-rosberg#0] # Nico Rosberg  \nNico Erik Rosberg ( NEE-koh ROZ-burg; born 27 June 1985) is a German and Finnish former racing driver, entrepreneur, and broadcaster who competed under the German flag in Formula One from 2006 to 2016. Rosberg won the Formula One World Drivers' Championship in 2016 with Mercedes, and won 23 Grands Prix across 11 seasons.\n- [driver-nico-rosberg#18] Rosberg's father asked CRG executive Dino Chiesa in late 1999 to establish a separate karting team for his son and fellow driver Lewis Hamilton for a period of two to three years. Rosberg raced for TeamMBM.com (Mercedes-Benz McLaren) for the 2000 season. In Formula A, he was runner-up in the CIK-FIA European Championship and finished ninth in the World Cup. In 2001, Rosberg was tenth in the South Garda Winter Cup and sixteenth in the Formula Super A World Championship",
+    "raw_answer": "A rendelkezésre álló részgráf nem támasztja alá a választ.",
+    "answer": "A rendelkezésre álló részgráf nem támasztja alá a választ.",
+    "refused": true
+  },
+  {
+    "id": "Q09",
+    "model_called": true,
+    "anchors": [
+      {
+        "entity_key": "Season:drivers' championship",
+        "score": 0.5640259573974301
+      },
+      {
+        "entity_key": "Driver:michael schumacher",
+        "score": 0.5639807284919695
+      },
+      {
+        "entity_key": "Title:world drivers' championship",
+        "score": 0.5502157250263039
+      }
+    ],
+    "prompt": "A válasz csak a Forrásszövegek szakaszból származhat. Nevet vagy számot csak akkor írj, ha az a forrásszövegben szerepel. Az entitásnevek és a kapcsolatok szerkezete nem helyettesíti a forrásszöveget. Ha a forrásszövegek nem támasztják alá, a válasz pontosan ez legyen, más szöveg nélkül: A rendelkezésre álló részgráf nem támasztja alá a választ.\n\nKérdés: Across all the drivers covered in this corpus, who has won the most World Drivers' Championships, and how many?\n\nKontextus:\nEntitások:\n- Season:drivers' championship\n- Driver:michael schumacher\n- Title:world drivers' championship\n- Driver:lewis hamilton\n- Driver:nico rosberg\n- Driver:valtteri bottas\n- Title:drivers' championship\n- Title:formula one world drivers' championship\nKapcsolatok:\n- Driver:lewis hamilton -WON-> Title:world drivers' championship years=None-None | chunks=driver-lewis-hamilton#31,driver-lewis-hamilton#50\n- Driver:valtteri bottas -WON-> Title:world drivers' championship years=None-None | chunks=driver-valtteri-bottas#75\n- Driver:nico rosberg -WON-> Title:formula one world drivers' championship years=None-None | chunks=driver-nico-rosberg#0\n- Driver:michael schumacher -WON-> Title:drivers' championship years=None-None | chunks=driver-michael-schumacher#38,driver-michael-schumacher#68,driver-michael-schumacher#74,driver-michael-schumacher#80,driver-michael-schumacher#87\n- Driver:lewis hamilton -WON-> Title:drivers' championship years=None-None | chunks=team-mercedes-benz-in-formula-one#42\nForrásszövegek:\n- [driver-lewis-hamilton#50] championship  lead  for  the  first  time  of  the  season.  Registering  a  total  of  11  pole  positions,  nine  race  victories,  and\nequalling the record for most grand slams in a season (3), Hamilton won his fourth World Drivers' title at the Mexican\nGrand Prix with two races to spare.\nIn 2018, whilst Ferrari once again held the upper hand, Hamilton and Vettel engaged in a much closer battle for their fifth\n- [driver-michael-schumacher#68] in the world, he is also the best number two in the world.\" In the last race of the season, the Japanese Grand Prix,\nHäkkinen won his second consecutive title after he beat him off the line. Schumacher later said that Häkkinen was \"the\nbest opponent I've had\" and the one he respected the most.\n2000–2004: Five consecutive World Championships\nIn 2000, Schumacher won his third Drivers' Championship, his first with Ferrari, after a year-long battle with Häkkinen.\n- [driver-nico-rosberg#0] # Nico Rosberg  \nNico Erik Rosberg ( NEE-koh ROZ-burg; born 27 June 1985) is a German and Finnish former racing driver, entrepreneur, and broadcaster who competed under the German flag in Formula One from 2006 to 2016. Rosberg won the Formula One World Drivers' Championship in 2016 with Mercedes, and won 23 Grands Prix across 11 seasons.\n- [driver-valtteri-bottas#75] Bottas finished the season in second place in the World Drivers' Championship with 326 points to Hamilton's 413. He recorded four wins, fifteen podium finishes, five pole positions and three fastest laps, making 2019 his most successful year at Mercedes. He was rated the fourth-best driver of the season in a poll of the Formula One team principals",
+    "raw_answer": "A rendelkezésre álló részgráf nem támasztja alá a választ.",
+    "answer": "A rendelkezésre álló részgráf nem támasztja alá a választ.",
+    "refused": true
+  },
+  {
+    "id": "Q10",
+    "model_called": true,
+    "anchors": [
+      {
+        "entity_key": "Team:ferrari",
+        "score": 0.5001934936878973
+      },
+      {
+        "entity_key": "Driver:fernando alonso",
+        "score": 0.496803672219778
+      },
+      {
+        "entity_key": "Team:scuderia ferrari",
+        "score": 0.4906148794263559
+      }
+    ],
+    "prompt": "A válasz csak a Forrásszövegek szakaszból származhat. Nevet vagy számot csak akkor írj, ha az a forrásszövegben szerepel. Az entitásnevek és a kapcsolatok szerkezete nem helyettesíti a forrásszöveget. Ha a forrásszövegek nem támasztják alá, a válasz pontosan ez legyen, más szöveg nélkül: A rendelkezésre álló részgráf nem támasztja alá a választ.\n\nKérdés: Which drivers in this corpus have driven for Scuderia Ferrari at some point in their career?\n\nKontextus:\nEntitások:\n- Team:ferrari\n- Driver:fernando alonso\n- Team:scuderia ferrari\n- Driver:charles leclerc\n- Driver:felipe massa\n- Team:grand prix drivers' association\n- Team:renault\n- Title:world drivers' champion\nKapcsolatok:\n- Driver:fernando alonso -DROVE_FOR-> Team:ferrari years=2010-2014 | chunks=driver-fernando-alonso#48,driver-fernando-alonso#54\n- Driver:fernando alonso -DROVE_FOR-> Team:ferrari years=2010-None | chunks=driver-fernando-alonso#47\n- Driver:fernando alonso -DROVE_FOR-> Team:ferrari years=None-None | chunks=season-2012-formula-one-world-championship#197,season-2012-formula-one-world-championship#2\n- Driver:charles leclerc -DROVE_FOR-> Team:ferrari years=None-None | chunks=reference-list-of-formula-one-world-drivers-champions#2\n- Driver:felipe massa -DROVE_FOR-> Team:ferrari years=None-None | chunks=season-2012-formula-one-world-championship#197\n- Driver:fernando alonso -DROVE_FOR-> Team:grand prix drivers' association years=2006-2010 | chunks=driver-fernando-alonso#137\n- Driver:fernando alonso -DROVE_FOR-> Team:renault years=None-None | chunks=driver-fernando-alonso#28,driver-fernando-alonso#3,driver-fernando-alonso#35,driver-fernando-alonso#44,reference-list-of-formula-one-world-drivers-champions#1\n- Driver:fernando alonso -WON-> Title:world drivers' champion years=None-None | chunks=driver-fernando-alonso#3,driver-fernando-alonso#33\nForrásszövegek:\n- [reference-list-of-formula-one-world-drivers-champions#1] Sheet: Drivers in corpus\nDriver | Nationality | World titles (as of 2024) | Main constructors\nLewis Hamilton | British | 7 | McLaren; Mercedes\nMax Verstappen | Dutch | 4 | Red Bull Racing\nSebastian Vettel | German | 4 | Red Bull Racing; Ferrari\nFernando Alonso | Spanish | 2 | Renault; McLaren\nMichael Schumacher | German | 7 | Benetton; Ferrari\nKimi Räikkönen | Finnish | 1 | McLaren; Ferrari\nNico Rosberg | German | 1 | Williams; Mercedes\nJenson Button | British | 1 | BAR/Honda; Brawn; McLaren\n- [driver-fernando-alonso#35] . An Fédération Internationale de l'Automobile (FIA; F1's governing body)-imposed ban on Renault's tuned mass damper device to slow Alonso and an increase of development into Schumacher's Ferrari for competitiveness saw the two tied on points entering the season's penultimate round, the Japanese Grand Prix. Alonso won the race as Schumacher retired due to an engine failure whilst leading. He needed to score one point at the season-ending Brazilian Grand Prix for a second title\n- [season-2012-formula-one-world-championship#197] . Amid concerns that drivers starting from even-numbered grid slots would suffer from a lack of grip as they were located off the racing line, Ferrari deliberately broke the seal on Felipe Massa's gearbox, thereby giving him a five-place grid penalty and promoting Alonso to seventh and the clean side of the grid. Ferrari's fears were not without merit as the drivers starting from even-number spaces fell behind at the start of the race\n- [driver-fernando-alonso#137] Alonso was appointed director of the Grand Prix Drivers' Association (GPDA) along with Mark Webber and Ralf Schumacher. He held that post from 2006 to 2010.",
+    "raw_answer": "Fernando Alonso, Charles Leclerc, Felipe Massa, Sebastian Vettel, Michael Schumacher, Kimi Räikkönen.",
+    "answer": "Fernando Alonso, Charles Leclerc, Felipe Massa, Sebastian Vettel, Michael Schumacher, Kimi Räikkönen.",
+    "refused": false
+  },
+  {
+    "id": "Q11",
+    "model_called": true,
+    "anchors": [
+      {
+        "entity_key": "Title:constructors' championship",
+        "score": 0.6406609561649997
+      },
+      {
+        "entity_key": "Season:constructors' championship",
+        "score": 0.6149238434749613
+      },
+      {
+        "entity_key": "Title:drivers' title",
+        "score": 0.5807665858245382
+      }
+    ],
+    "prompt": "A válasz csak a Forrásszövegek szakaszból származhat. Nevet vagy számot csak akkor írj, ha az a forrásszövegben szerepel. Az entitásnevek és a kapcsolatok szerkezete nem helyettesíti a forrásszöveget. Ha a forrásszövegek nem támasztják alá, a válasz pontosan ez legyen, más szöveg nélkül: A rendelkezésre álló részgráf nem támasztja alá a választ.\n\nKérdés: Which constructor has won the most Drivers' Championships according to the documents, and how many titles is that?\n\nKontextus:\nEntitások:\n- Title:constructors' championship\n- Season:constructors' championship\n- Title:drivers' title\n- Driver:michael schumacher\n- Team:mercedes\n- Title:drivers' championship\n- Title:world championship\n- Title:world championships\nKapcsolatok:\n- Driver:michael schumacher -WON-> Title:drivers' championship years=None-None | chunks=driver-michael-schumacher#38,driver-michael-schumacher#68,driver-michael-schumacher#74,driver-michael-schumacher#80,driver-michael-schumacher#87\n- Driver:michael schumacher -WON-> Title:drivers' title years=None-None | chunks=driver-michael-schumacher#84,driver-michael-schumacher#98\n- Driver:michael schumacher -WON-> Title:world championship years=None-None | chunks=driver-michael-schumacher#136,driver-michael-schumacher#72\n- Driver:michael schumacher -WON-> Title:world championships years=None-None | chunks=driver-michael-schumacher#178\n- Team:mercedes -WON-> Title:constructors' championship years=None-None | chunks=team-mercedes-benz-in-formula-one#42\nForrásszövegek:\n- [driver-michael-schumacher#68] in the world, he is also the best number two in the world.\" In the last race of the season, the Japanese Grand Prix,\nHäkkinen won his second consecutive title after he beat him off the line. Schumacher later said that Häkkinen was \"the\nbest opponent I've had\" and the one he respected the most.\n2000–2004: Five consecutive World Championships\nIn 2000, Schumacher won his third Drivers' Championship, his first with Ferrari, after a year-long battle with Häkkinen.\n- [driver-michael-schumacher#72] was far stronger than the raw statistics suggest\" and that the Adrian Newey-designed McLaren was \"the fastest car in F1\nfor the third straight year\". Benson also hailed Schumacher as \"unquestionably the greatest driver of his era\".\nIn  2001,  Schumacher  took  his  fourth  Drivers'  title.  Four  other  drivers  won  races  but  none  sustained  a  season-long\nchallenge  for  the  championship.  Schumacher  scored  a  record-tying  nine  wins  and  clinched  the  World  Championship\n- [driver-michael-schumacher#98] sums up his career\".\nDuring the following weeks, Schumacher, Brawn, Byrne, and Todt were credited for turning the struggling Ferrari team\ninto the most successful team in Formula One history, with Schumacher winning 72 Grands Prix and five consecutive\nDrivers' titles there. At the end of 2006, Schumacher's 91 wins were 40 more than his nearest rival Prost. Schumacher\nheld at least 31 records, including for most championship titles (7), consecutive titles (5), race victories (91), consecutive\n- [driver-michael-schumacher#38] a result, Schumacher won the Drivers' Championship, the first German to do so—Jochen Rindt (the only posthumous\nDrivers' Champion) was German but raced under the Austrian flag, and whose domination in 1970 was later equalled by\nSchumacher. The race stewards judged it as a racing accident and took no action against either driver. Although the\nDrivers' Championship had been decided in a similar manner in 1989 and 1990, public opinion was divided over the",
+    "raw_answer": "A rendelkezésre álló részgráf nem támasztja alá a választ.",
+    "answer": "A rendelkezésre álló részgráf nem támasztja alá a választ.",
+    "refused": true
+  },
+  {
+    "id": "Q12",
+    "model_called": true,
+    "anchors": [
+      {
+        "entity_key": "Season:2016 formula one world championship",
+        "score": 0.4356384695357535
+      },
+      {
+        "entity_key": "Season:2012",
+        "score": 0.43532667264625496
+      },
+      {
+        "entity_key": "Season:drivers' championship",
+        "score": 0.4322192972605841
+      }
+    ],
+    "prompt": "A válasz csak a Forrásszövegek szakaszból származhat. Nevet vagy számot csak akkor írj, ha az a forrásszövegben szerepel. Az entitásnevek és a kapcsolatok szerkezete nem helyettesíti a forrásszöveget. Ha a forrásszövegek nem támasztják alá, a válasz pontosan ez legyen, más szöveg nélkül: A rendelkezésre álló részgráf nem támasztja alá a választ.\n\nKérdés: Group the World Champions among the corpus drivers by decade (2000s, 2010s, 2020s).\n\nKontextus:\nEntitások:\n- Season:2016 formula one world championship\n- Season:2012\n- Season:drivers' championship\n- Driver:lewis hamilton\n- Driver:valtteri bottas\n- Team:mclaren\n- Team:williams\n- Title:triple world champion\nKapcsolatok:\n- Driver:valtteri bottas -DROVE_FOR-> Team:williams years=2010-None | chunks=driver-valtteri-bottas#14\n- Title:triple world champion -AWARDED_IN-> Season:2012 years=None-None | chunks=driver-sebastian-vettel#58\n- Driver:lewis hamilton -DROVE_FOR-> Team:mclaren years=2007-2012 | chunks=driver-lewis-hamilton#24\n- Driver:valtteri bottas -DROVE_FOR-> Team:williams years=2010-2016 | chunks=driver-valtteri-bottas#19,driver-valtteri-bottas#23,driver-valtteri-bottas#34,driver-valtteri-bottas#35,driver-valtteri-bottas#36,driver-valtteri-bottas#43,driver-valtteri-bottas#44\nForrásszövegek:\n- [driver-sebastian-vettel#58] . On the opening lap, Vettel spun after an incident with Bruno Senna. Following changing weather conditions, Vettel climbed up to finish in sixth place to win the championship by three points and to become the youngest ever triple world champion. He also became the third driver to acquire three consecutive championships, after Juan Manuel Fangio and Schumacher.\n- [driver-valtteri-bottas#14] Bottas was signed as the official Formula One test driver for the Williams team in January 2010 after his first year in the Formula 3 Euro Series. Team principal Frank Williams praised Bottas's record in the junior categories and expressed his hope that the role would \"provide him with another step in his development\". He conducted straight-line aerodynamic testing in the team's FW32 during the year\n- [driver-valtteri-bottas#34] . He qualified fourth behind Massa at the British Grand Prix and the two drivers progressed to first and second place in the opening laps. Bottas later commented that he \"would have been able to pull a gap\" had Massa conceded his position, but the two ultimately dropped back to fourth and fifth by the end. Despite this, the result promoted Bottas to fourth place in the World Drivers' Championship.",
+    "raw_answer": "A rendelkezésre álló részgráf nem támasztja alá a választ.",
+    "answer": "A rendelkezésre álló részgráf nem támasztja alá a választ.",
+    "refused": true
+  },
+  {
+    "id": "Q13",
+    "model_called": true,
+    "anchors": [
+      {
+        "entity_key": "Team:red bull",
+        "score": 0.5187828312810077
+      },
+      {
+        "entity_key": "Team:ferrari",
+        "score": 0.48505455420158006
+      },
+      {
+        "entity_key": "Team:red bull racing",
+        "score": 0.47884220766322966
+      }
+    ],
+    "prompt": "A válasz csak a Forrásszövegek szakaszból származhat. Nevet vagy számot csak akkor írj, ha az a forrásszövegben szerepel. Az entitásnevek és a kapcsolatok szerkezete nem helyettesíti a forrásszöveget. Ha a forrásszövegek nem támasztják alá, a válasz pontosan ez legyen, más szöveg nélkül: A rendelkezésre álló részgráf nem támasztja alá a választ.\n\nKérdés: What common factors explain why specific teams such as Ferrari, Mercedes and Red Bull dominated particular eras of Formula One?\n\nKontextus:\nEntitások:\n- Team:red bull\n- Team:ferrari\n- Team:red bull racing\n- Driver:lewis hamilton\n- Driver:sebastian vettel\n- Season:2002\n- Season:2004\n- Season:2012\nKapcsolatok:\n- Team:red bull -ENTERED-> Season:2012 years=None-None | chunks=season-2012-formula-one-world-championship#119\n- Driver:lewis hamilton -DROVE_FOR-> Team:ferrari years=None-None | chunks=driver-lewis-hamilton#0\n- Driver:sebastian vettel -DROVE_FOR-> Team:red bull years=2009-None | chunks=driver-sebastian-vettel#123,driver-sebastian-vettel#3\n- Team:ferrari -ENTERED-> Season:2002 years=None-None | chunks=driver-michael-schumacher#101\n- Team:ferrari -ENTERED-> Season:2004 years=None-None | chunks=driver-michael-schumacher#101\n- Driver:sebastian vettel -DROVE_FOR-> Team:red bull racing years=None-None | chunks=driver-sebastian-vettel#27,driver-sebastian-vettel#40,driver-sebastian-vettel#50,reference-list-of-formula-one-world-drivers-champions#1,season-2012-formula-one-world-championship#159,season-2012-formula-one-world-championship#190\n- Driver:sebastian vettel -DROVE_FOR-> Team:red bull years=None-None | chunks=driver-sebastian-vettel#29\n- Team:red bull racing -ENTERED-> Season:2012 years=None-None | chunks=season-2012-formula-one-world-championship#159\n- Driver:lewis hamilton -DROVE_FOR-> Team:ferrari years=2025-None | chunks=driver-lewis-hamilton#102\n- Driver:lewis hamilton -DROVE_FOR-> Team:ferrari years=None-2027 | chunks=driver-lewis-hamilton#137\n- Driver:sebastian vettel -DROVE_FOR-> Team:ferrari years=None-2020 | chunks=driver-sebastian-vettel#104,season-2021-formula-one-world-championship#9\n- Driver:sebastian vettel -DROVE_FOR-> Team:ferrari years=None-None | chunks=driver-sebastian-vettel#101,driver-sebastian-vettel#85,driver-sebastian-vettel#94,reference-list-of-formula-one-world-drivers-champions#1\nForrásszövegek:\n- [driver-sebastian-vettel#123] After switching to Red Bull in 2009, Vettel regularly used a variety of new helmet designs. Some designs were small changes to his original Red Bull design, while others were completely new designs, such as the one he used at the 2010 Japanese Grand Prix: Vettel had a special white-red helmet design, with black kanji and hiragana for \"gives you wings\". Several of his helmet designs also featured his team members\n- [driver-sebastian-vettel#85] . Mercedes dominated after the summer break and Vettel lost the championship lead at the Italian Grand Prix, which was followed by a first-lap retirement in Singapore after collision with Räikkönen and Verstappen. It was the first time in Formula One history that both Ferraris retired from the first lap of a Grand Prix. His title hopes were dealt another blow in Malaysia, as he started last following a turbo problem in qualifying\n- [reference-list-of-formula-one-world-drivers-champions#1] Sheet: Drivers in corpus\nDriver | Nationality | World titles (as of 2024) | Main constructors\nLewis Hamilton | British | 7 | McLaren; Mercedes\nMax Verstappen | Dutch | 4 | Red Bull Racing\nSebastian Vettel | German | 4 | Red Bull Racing; Ferrari\nFernando Alonso | Spanish | 2 | Renault; McLaren\nMichael Schumacher | German | 7 | Benetton; Ferrari\nKimi Räikkönen | Finnish | 1 | McLaren; Ferrari\nNico Rosberg | German | 1 | Williams; Mercedes\nJenson Button | British | 1 | BAR/Honda; Brawn; McLaren\n- [season-2012-formula-one-world-championship#119] One week before the Canadian Grand Prix, the FIA declared the floor used by Red Bull in Monaco to be illegal, forcing the team to change the offending parts for the Canadian Grand Prix. Despite the ruling, the team's results were kept intact. The team was also forced to change the design of their axles, after FIA Race Director Charlie Whiting felt that holes in the axles contravened the technical regulations",
+    "raw_answer": "A rendelkezésre álló részgráf nem támasztja alá a választ.",
+    "answer": "A rendelkezésre álló részgráf nem támasztja alá a választ.",
+    "refused": true
+  }
+]

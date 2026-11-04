@@ -1,0 +1,91 @@
+{
+  "chunk_id": "driver-fernando-alonso#23",
+  "doc_id": "driver-fernando-alonso",
+  "document_title": "Fernando Alonso",
+  "section": "Junior racing career",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/Fernando_Alonso",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "35ec862a3bf8ae77763a55e0e9db362980101dd07a2176d5bb9c4d3328bf1b17",
+  "status": "error",
+  "error": "ExtractionValidationError: ENTERED is not temporal; from_year, to_year and role must be null",
+  "candidate_result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Fernando Alonso",
+        "entity_type": "Driver",
+        "description": "Aged seventeen, Alonso made his car racing debut in the 1999 Euro Open by Nissan with Campos Motorsport, winning the title from Manuel Gião at the final race of the season with six wins and nine pole positions."
+      },
+      {
+        "local_id": "e2",
+        "name": "Campos Motorsport",
+        "entity_type": "Team",
+        "description": "Team that Alonso made his car racing debut with in the 1999 Euro Open by Nissan."
+      },
+      {
+        "local_id": "e3",
+        "name": "1999",
+        "entity_type": "Season",
+        "description": "The season in which Alonso made his car racing debut and won the Euro Open by Nissan title."
+      },
+      {
+        "local_id": "e4",
+        "name": "International Formula 3000 Championship",
+        "entity_type": "Car",
+        "description": "The higher-tier championship Alonso progressed to in 2000."
+      },
+      {
+        "local_id": "e5",
+        "name": "Team Astromega",
+        "entity_type": "Team",
+        "description": "The team Alonso joined for the International Formula 3000 Championship."
+      },
+      {
+        "local_id": "e6",
+        "name": "2000",
+        "entity_type": "Season",
+        "description": "The season in which Alonso progressed to the International Formula 3000 Championship."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Alonso made his car racing debut with Campos Motorsport.",
+        "from_year": 1999,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e3",
+        "relationship_type": "ENTERED",
+        "description": "Campos Motorsport entered the 1999 Euro Open by Nissan season.",
+        "from_year": 1999,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e4",
+        "relationship_type": "DROVE_FOR",
+        "description": "Alonso progressed to the International Formula 3000 Championship.",
+        "from_year": 2000,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e6",
+        "relationship_type": "ENTERED",
+        "description": "Team Astromega entered the International Formula 3000 Championship in 2000.",
+        "from_year": 2000,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

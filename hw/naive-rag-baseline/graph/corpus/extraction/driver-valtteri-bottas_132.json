@@ -1,0 +1,94 @@
+{
+  "chunk_id": "driver-valtteri-bottas#132",
+  "doc_id": "driver-valtteri-bottas",
+  "document_title": "Valtteri Bottas",
+  "section": "Formula One career > Cadillac (2026)",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/Valtteri_Bottas",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "1fd40a9798fce20c47aa663a2c416770bf3d80a53d3f697e89c7fbceb3ac8247",
+  "status": "error",
+  "error": "ExtractionValidationError: ENTERED is not temporal; from_year, to_year and role must be null",
+  "candidate_result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Valtteri Bottas",
+        "entity_type": "Driver",
+        "description": "A driver who signed with Cadillac for the 2026 season."
+      },
+      {
+        "local_id": "e2",
+        "name": "Cadillac",
+        "entity_type": "Team",
+        "description": "A Formula 1 team making its debut in 2026."
+      },
+      {
+        "local_id": "e3",
+        "name": "Sergio Pérez",
+        "entity_type": "Driver",
+        "description": "A six-time Grand Prix winner who will race alongside Bottas at Cadillac."
+      },
+      {
+        "local_id": "e4",
+        "name": "2026",
+        "entity_type": "Season",
+        "description": "The Formula One season in which Cadillac debuts."
+      },
+      {
+        "local_id": "e5",
+        "name": "Australian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The first race of Cadillac's debut season."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Bottas signed with Cadillac for the 2026 season.",
+        "from_year": 2026,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e4",
+        "relationship_type": "ENTERED",
+        "description": "Cadillac took part in the 2026 season.",
+        "from_year": 2026,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e4",
+        "relationship_type": "ROUND_OF",
+        "description": "The Australian Grand Prix is a round of the 2026 season.",
+        "from_year": 2026,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e5",
+        "relationship_type": "ACHIEVED",
+        "description": "Bottas qualified for the Australian Grand Prix.",
+        "from_year": 2026,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e2",
+        "relationship_type": "HELD_AT",
+        "description": "The Australian Grand Prix is held at the circuit where it takes place.",
+        "from_year": 2026,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

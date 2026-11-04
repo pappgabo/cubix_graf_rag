@@ -1,0 +1,4010 @@
+# Q01-Q08 kor
+
+status ok is structural validity, not semantic correctness. An empty chunk is an accepted extraction with no entities.
+
+A gráfmutatók az extrahált szakterületi gráfra vonatkoznak. A dokumentumgráf, a seed és a MENTIONS élek nincsenek benne.
+
+- Feldolgozott chunk: 1565
+- Sikeres (strukturálisan érvényes): 880
+- Hibás: 685
+- Üres, sikeres chunk: 517
+- Más státusz: 0
+
+## Entitások chunkonként
+
+- `driver-fernando-alonso#0`: status=error, entitás=0, kapcsolat=0
+- `driver-fernando-alonso#1`: status=ok, entitás=1, kapcsolat=0
+- `driver-fernando-alonso#10`: status=ok, entitás=1, kapcsolat=0
+- `driver-fernando-alonso#100`: status=error, entitás=0, kapcsolat=0
+- `driver-fernando-alonso#101`: status=ok, entitás=0, kapcsolat=0
+- `driver-fernando-alonso#102`: status=ok, entitás=0, kapcsolat=0
+- `driver-fernando-alonso#103`: status=ok, entitás=4, kapcsolat=0
+- `driver-fernando-alonso#104`: status=ok, entitás=0, kapcsolat=0
+- `driver-fernando-alonso#105`: status=error, entitás=0, kapcsolat=0
+- `driver-fernando-alonso#106`: status=ok, entitás=0, kapcsolat=0
+- `driver-fernando-alonso#107`: status=error, entitás=0, kapcsolat=0
+- `driver-fernando-alonso#108`: status=ok, entitás=0, kapcsolat=0
+- `driver-fernando-alonso#109`: status=ok, entitás=0, kapcsolat=0
+- `driver-fernando-alonso#11`: status=ok, entitás=0, kapcsolat=0
+- `driver-fernando-alonso#110`: status=ok, entitás=1, kapcsolat=0
+- `driver-fernando-alonso#111`: status=ok, entitás=2, kapcsolat=0
+- `driver-fernando-alonso#112`: status=ok, entitás=3, kapcsolat=0
+- `driver-fernando-alonso#113`: status=ok, entitás=1, kapcsolat=0
+- `driver-fernando-alonso#114`: status=ok, entitás=0, kapcsolat=0
+- `driver-fernando-alonso#115`: status=ok, entitás=0, kapcsolat=0
+- `driver-fernando-alonso#116`: status=ok, entitás=0, kapcsolat=0
+- `driver-fernando-alonso#117`: status=ok, entitás=1, kapcsolat=0
+- `driver-fernando-alonso#118`: status=error, entitás=0, kapcsolat=0
+- `driver-fernando-alonso#119`: status=error, entitás=0, kapcsolat=0
+- `driver-fernando-alonso#12`: status=ok, entitás=0, kapcsolat=0
+- `driver-fernando-alonso#120`: status=ok, entitás=0, kapcsolat=0
+- `driver-fernando-alonso#121`: status=ok, entitás=3, kapcsolat=1
+- `driver-fernando-alonso#122`: status=error, entitás=0, kapcsolat=0
+- `driver-fernando-alonso#123`: status=error, entitás=0, kapcsolat=0
+- `driver-fernando-alonso#124`: status=ok, entitás=0, kapcsolat=0
+- `driver-fernando-alonso#125`: status=ok, entitás=1, kapcsolat=0
+- `driver-fernando-alonso#126`: status=ok, entitás=0, kapcsolat=0
+- `driver-fernando-alonso#127`: status=ok, entitás=2, kapcsolat=0
+- `driver-fernando-alonso#128`: status=ok, entitás=0, kapcsolat=0
+- `driver-fernando-alonso#129`: status=ok, entitás=0, kapcsolat=0
+- `driver-fernando-alonso#13`: status=ok, entitás=0, kapcsolat=0
+- `driver-fernando-alonso#130`: status=ok, entitás=1, kapcsolat=0
+- `driver-fernando-alonso#131`: status=ok, entitás=4, kapcsolat=0
+- `driver-fernando-alonso#132`: status=ok, entitás=0, kapcsolat=0
+- `driver-fernando-alonso#133`: status=ok, entitás=0, kapcsolat=0
+- `driver-fernando-alonso#134`: status=ok, entitás=0, kapcsolat=0
+- `driver-fernando-alonso#135`: status=ok, entitás=6, kapcsolat=0
+- `driver-fernando-alonso#136`: status=ok, entitás=0, kapcsolat=0
+- `driver-fernando-alonso#137`: status=ok, entitás=4, kapcsolat=3
+- `driver-fernando-alonso#138`: status=error, entitás=0, kapcsolat=0
+- `driver-fernando-alonso#139`: status=ok, entitás=2, kapcsolat=0
+- `driver-fernando-alonso#14`: status=ok, entitás=1, kapcsolat=0
+- `driver-fernando-alonso#140`: status=ok, entitás=0, kapcsolat=0
+- `driver-fernando-alonso#141`: status=ok, entitás=6, kapcsolat=4
+- `driver-fernando-alonso#142`: status=ok, entitás=3, kapcsolat=2
+- `driver-fernando-alonso#143`: status=error, entitás=0, kapcsolat=0
+- `driver-fernando-alonso#144`: status=ok, entitás=0, kapcsolat=0
+- `driver-fernando-alonso#145`: status=ok, entitás=0, kapcsolat=0
+- `driver-fernando-alonso#146`: status=ok, entitás=0, kapcsolat=0
+- `driver-fernando-alonso#147`: status=ok, entitás=0, kapcsolat=0
+- `driver-fernando-alonso#148`: status=ok, entitás=0, kapcsolat=0
+- `driver-fernando-alonso#149`: status=ok, entitás=0, kapcsolat=0
+- `driver-fernando-alonso#15`: status=ok, entitás=6, kapcsolat=0
+- `driver-fernando-alonso#150`: status=ok, entitás=0, kapcsolat=0
+- `driver-fernando-alonso#151`: status=ok, entitás=0, kapcsolat=0
+- `driver-fernando-alonso#152`: status=ok, entitás=0, kapcsolat=0
+- `driver-fernando-alonso#153`: status=ok, entitás=0, kapcsolat=0
+- `driver-fernando-alonso#154`: status=ok, entitás=0, kapcsolat=0
+- `driver-fernando-alonso#155`: status=ok, entitás=0, kapcsolat=0
+- `driver-fernando-alonso#156`: status=ok, entitás=0, kapcsolat=0
+- `driver-fernando-alonso#157`: status=ok, entitás=0, kapcsolat=0
+- `driver-fernando-alonso#158`: status=ok, entitás=0, kapcsolat=0
+- `driver-fernando-alonso#159`: status=ok, entitás=0, kapcsolat=0
+- `driver-fernando-alonso#16`: status=ok, entitás=0, kapcsolat=0
+- `driver-fernando-alonso#160`: status=ok, entitás=0, kapcsolat=0
+- `driver-fernando-alonso#161`: status=ok, entitás=0, kapcsolat=0
+- `driver-fernando-alonso#162`: status=ok, entitás=0, kapcsolat=0
+- `driver-fernando-alonso#163`: status=ok, entitás=0, kapcsolat=0
+- `driver-fernando-alonso#164`: status=ok, entitás=0, kapcsolat=0
+- `driver-fernando-alonso#165`: status=ok, entitás=0, kapcsolat=0
+- `driver-fernando-alonso#17`: status=error, entitás=0, kapcsolat=0
+- `driver-fernando-alonso#18`: status=error, entitás=0, kapcsolat=0
+- `driver-fernando-alonso#19`: status=error, entitás=0, kapcsolat=0
+- `driver-fernando-alonso#2`: status=error, entitás=0, kapcsolat=0
+- `driver-fernando-alonso#20`: status=ok, entitás=2, kapcsolat=0
+- `driver-fernando-alonso#21`: status=ok, entitás=0, kapcsolat=0
+- `driver-fernando-alonso#22`: status=ok, entitás=0, kapcsolat=0
+- `driver-fernando-alonso#23`: status=error, entitás=0, kapcsolat=0
+- `driver-fernando-alonso#24`: status=error, entitás=0, kapcsolat=0
+- `driver-fernando-alonso#25`: status=ok, entitás=0, kapcsolat=0
+- `driver-fernando-alonso#26`: status=ok, entitás=0, kapcsolat=0
+- `driver-fernando-alonso#27`: status=error, entitás=0, kapcsolat=0
+- `driver-fernando-alonso#28`: status=ok, entitás=6, kapcsolat=5
+- `driver-fernando-alonso#29`: status=error, entitás=0, kapcsolat=0
+- `driver-fernando-alonso#3`: status=ok, entitás=6, kapcsolat=5
+- `driver-fernando-alonso#30`: status=error, entitás=0, kapcsolat=0
+- `driver-fernando-alonso#31`: status=ok, entitás=5, kapcsolat=3
+- `driver-fernando-alonso#32`: status=error, entitás=0, kapcsolat=0
+- `driver-fernando-alonso#33`: status=ok, entitás=3, kapcsolat=2
+- `driver-fernando-alonso#34`: status=error, entitás=0, kapcsolat=0
+- `driver-fernando-alonso#35`: status=ok, entitás=6, kapcsolat=5
+- `driver-fernando-alonso#36`: status=ok, entitás=3, kapcsolat=2
+- `driver-fernando-alonso#37`: status=ok, entitás=0, kapcsolat=0
+- `driver-fernando-alonso#38`: status=error, entitás=0, kapcsolat=0
+- `driver-fernando-alonso#39`: status=error, entitás=0, kapcsolat=0
+- `driver-fernando-alonso#4`: status=error, entitás=0, kapcsolat=0
+- `driver-fernando-alonso#40`: status=error, entitás=0, kapcsolat=0
+- `driver-fernando-alonso#41`: status=error, entitás=0, kapcsolat=0
+- `driver-fernando-alonso#42`: status=ok, entitás=3, kapcsolat=2
+- `driver-fernando-alonso#43`: status=ok, entitás=5, kapcsolat=3
+- `driver-fernando-alonso#44`: status=ok, entitás=3, kapcsolat=2
+- `driver-fernando-alonso#45`: status=error, entitás=0, kapcsolat=0
+- `driver-fernando-alonso#46`: status=ok, entitás=0, kapcsolat=0
+- `driver-fernando-alonso#47`: status=ok, entitás=3, kapcsolat=2
+- `driver-fernando-alonso#48`: status=ok, entitás=8, kapcsolat=6
+- `driver-fernando-alonso#49`: status=error, entitás=0, kapcsolat=0
+- `driver-fernando-alonso#5`: status=error, entitás=0, kapcsolat=0
+- `driver-fernando-alonso#50`: status=error, entitás=0, kapcsolat=0
+- `driver-fernando-alonso#51`: status=error, entitás=0, kapcsolat=0
+- `driver-fernando-alonso#52`: status=error, entitás=0, kapcsolat=0
+- `driver-fernando-alonso#53`: status=error, entitás=0, kapcsolat=0
+- `driver-fernando-alonso#54`: status=ok, entitás=7, kapcsolat=5
+- `driver-fernando-alonso#55`: status=ok, entitás=0, kapcsolat=0
+- `driver-fernando-alonso#56`: status=error, entitás=0, kapcsolat=0
+- `driver-fernando-alonso#57`: status=error, entitás=0, kapcsolat=0
+- `driver-fernando-alonso#58`: status=error, entitás=0, kapcsolat=0
+- `driver-fernando-alonso#59`: status=ok, entitás=1, kapcsolat=0
+- `driver-fernando-alonso#6`: status=error, entitás=0, kapcsolat=0
+- `driver-fernando-alonso#60`: status=error, entitás=0, kapcsolat=0
+- `driver-fernando-alonso#61`: status=error, entitás=0, kapcsolat=0
+- `driver-fernando-alonso#62`: status=error, entitás=0, kapcsolat=0
+- `driver-fernando-alonso#63`: status=ok, entitás=4, kapcsolat=3
+- `driver-fernando-alonso#64`: status=ok, entitás=0, kapcsolat=0
+- `driver-fernando-alonso#65`: status=error, entitás=0, kapcsolat=0
+- `driver-fernando-alonso#66`: status=error, entitás=0, kapcsolat=0
+- `driver-fernando-alonso#67`: status=error, entitás=0, kapcsolat=0
+- `driver-fernando-alonso#68`: status=error, entitás=0, kapcsolat=0
+- `driver-fernando-alonso#69`: status=error, entitás=0, kapcsolat=0
+- `driver-fernando-alonso#7`: status=error, entitás=0, kapcsolat=0
+- `driver-fernando-alonso#70`: status=ok, entitás=3, kapcsolat=2
+- `driver-fernando-alonso#71`: status=error, entitás=0, kapcsolat=0
+- `driver-fernando-alonso#72`: status=error, entitás=0, kapcsolat=0
+- `driver-fernando-alonso#73`: status=ok, entitás=2, kapcsolat=1
+- `driver-fernando-alonso#74`: status=error, entitás=0, kapcsolat=0
+- `driver-fernando-alonso#75`: status=error, entitás=0, kapcsolat=0
+- `driver-fernando-alonso#76`: status=error, entitás=0, kapcsolat=0
+- `driver-fernando-alonso#77`: status=ok, entitás=3, kapcsolat=0
+- `driver-fernando-alonso#78`: status=error, entitás=0, kapcsolat=0
+- `driver-fernando-alonso#79`: status=error, entitás=0, kapcsolat=0
+- `driver-fernando-alonso#8`: status=ok, entitás=4, kapcsolat=2
+- `driver-fernando-alonso#80`: status=error, entitás=0, kapcsolat=0
+- `driver-fernando-alonso#81`: status=error, entitás=0, kapcsolat=0
+- `driver-fernando-alonso#82`: status=error, entitás=0, kapcsolat=0
+- `driver-fernando-alonso#83`: status=error, entitás=0, kapcsolat=0
+- `driver-fernando-alonso#84`: status=ok, entitás=5, kapcsolat=5
+- `driver-fernando-alonso#85`: status=error, entitás=0, kapcsolat=0
+- `driver-fernando-alonso#86`: status=ok, entitás=2, kapcsolat=1
+- `driver-fernando-alonso#87`: status=error, entitás=0, kapcsolat=0
+- `driver-fernando-alonso#88`: status=ok, entitás=0, kapcsolat=0
+- `driver-fernando-alonso#89`: status=error, entitás=0, kapcsolat=0
+- `driver-fernando-alonso#9`: status=ok, entitás=0, kapcsolat=0
+- `driver-fernando-alonso#90`: status=ok, entitás=0, kapcsolat=0
+- `driver-fernando-alonso#91`: status=ok, entitás=0, kapcsolat=0
+- `driver-fernando-alonso#92`: status=ok, entitás=6, kapcsolat=5
+- `driver-fernando-alonso#93`: status=ok, entitás=6, kapcsolat=6
+- `driver-fernando-alonso#94`: status=ok, entitás=3, kapcsolat=0
+- `driver-fernando-alonso#95`: status=error, entitás=0, kapcsolat=0
+- `driver-fernando-alonso#96`: status=ok, entitás=0, kapcsolat=0
+- `driver-fernando-alonso#97`: status=ok, entitás=0, kapcsolat=0
+- `driver-fernando-alonso#98`: status=ok, entitás=6, kapcsolat=0
+- `driver-fernando-alonso#99`: status=ok, entitás=6, kapcsolat=0
+- `driver-lewis-hamilton#0`: status=ok, entitás=2, kapcsolat=1
+- `driver-lewis-hamilton#1`: status=ok, entitás=2, kapcsolat=0
+- `driver-lewis-hamilton#10`: status=ok, entitás=0, kapcsolat=0
+- `driver-lewis-hamilton#100`: status=ok, entitás=3, kapcsolat=0
+- `driver-lewis-hamilton#101`: status=ok, entitás=1, kapcsolat=0
+- `driver-lewis-hamilton#102`: status=ok, entitás=3, kapcsolat=2
+- `driver-lewis-hamilton#103`: status=error, entitás=0, kapcsolat=0
+- `driver-lewis-hamilton#104`: status=ok, entitás=0, kapcsolat=0
+- `driver-lewis-hamilton#105`: status=error, entitás=0, kapcsolat=0
+- `driver-lewis-hamilton#106`: status=error, entitás=0, kapcsolat=0
+- `driver-lewis-hamilton#107`: status=ok, entitás=4, kapcsolat=4
+- `driver-lewis-hamilton#108`: status=ok, entitás=0, kapcsolat=0
+- `driver-lewis-hamilton#109`: status=ok, entitás=2, kapcsolat=0
+- `driver-lewis-hamilton#11`: status=ok, entitás=0, kapcsolat=0
+- `driver-lewis-hamilton#110`: status=ok, entitás=0, kapcsolat=0
+- `driver-lewis-hamilton#111`: status=error, entitás=0, kapcsolat=0
+- `driver-lewis-hamilton#112`: status=ok, entitás=4, kapcsolat=2
+- `driver-lewis-hamilton#113`: status=ok, entitás=3, kapcsolat=0
+- `driver-lewis-hamilton#114`: status=ok, entitás=2, kapcsolat=1
+- `driver-lewis-hamilton#115`: status=ok, entitás=3, kapcsolat=2
+- `driver-lewis-hamilton#116`: status=ok, entitás=3, kapcsolat=3
+- `driver-lewis-hamilton#117`: status=ok, entitás=0, kapcsolat=0
+- `driver-lewis-hamilton#118`: status=ok, entitás=2, kapcsolat=0
+- `driver-lewis-hamilton#119`: status=ok, entitás=2, kapcsolat=1
+- `driver-lewis-hamilton#12`: status=ok, entitás=2, kapcsolat=0
+- `driver-lewis-hamilton#120`: status=ok, entitás=0, kapcsolat=0
+- `driver-lewis-hamilton#121`: status=ok, entitás=2, kapcsolat=1
+- `driver-lewis-hamilton#122`: status=ok, entitás=2, kapcsolat=0
+- `driver-lewis-hamilton#123`: status=error, entitás=0, kapcsolat=0
+- `driver-lewis-hamilton#124`: status=ok, entitás=3, kapcsolat=0
+- `driver-lewis-hamilton#125`: status=ok, entitás=2, kapcsolat=0
+- `driver-lewis-hamilton#126`: status=error, entitás=0, kapcsolat=0
+- `driver-lewis-hamilton#127`: status=ok, entitás=0, kapcsolat=0
+- `driver-lewis-hamilton#128`: status=ok, entitás=0, kapcsolat=0
+- `driver-lewis-hamilton#129`: status=ok, entitás=2, kapcsolat=0
+- `driver-lewis-hamilton#13`: status=ok, entitás=2, kapcsolat=0
+- `driver-lewis-hamilton#130`: status=ok, entitás=3, kapcsolat=2
+- `driver-lewis-hamilton#131`: status=ok, entitás=0, kapcsolat=0
+- `driver-lewis-hamilton#132`: status=ok, entitás=1, kapcsolat=0
+- `driver-lewis-hamilton#133`: status=ok, entitás=0, kapcsolat=0
+- `driver-lewis-hamilton#134`: status=ok, entitás=0, kapcsolat=0
+- `driver-lewis-hamilton#135`: status=ok, entitás=0, kapcsolat=0
+- `driver-lewis-hamilton#136`: status=ok, entitás=0, kapcsolat=0
+- `driver-lewis-hamilton#137`: status=ok, entitás=2, kapcsolat=1
+- `driver-lewis-hamilton#138`: status=ok, entitás=0, kapcsolat=0
+- `driver-lewis-hamilton#139`: status=error, entitás=0, kapcsolat=0
+- `driver-lewis-hamilton#14`: status=ok, entitás=0, kapcsolat=0
+- `driver-lewis-hamilton#140`: status=ok, entitás=0, kapcsolat=0
+- `driver-lewis-hamilton#141`: status=ok, entitás=2, kapcsolat=0
+- `driver-lewis-hamilton#142`: status=ok, entitás=0, kapcsolat=0
+- `driver-lewis-hamilton#143`: status=ok, entitás=0, kapcsolat=0
+- `driver-lewis-hamilton#144`: status=ok, entitás=0, kapcsolat=0
+- `driver-lewis-hamilton#145`: status=ok, entitás=0, kapcsolat=0
+- `driver-lewis-hamilton#146`: status=ok, entitás=0, kapcsolat=0
+- `driver-lewis-hamilton#147`: status=ok, entitás=0, kapcsolat=0
+- `driver-lewis-hamilton#148`: status=ok, entitás=0, kapcsolat=0
+- `driver-lewis-hamilton#149`: status=ok, entitás=0, kapcsolat=0
+- `driver-lewis-hamilton#15`: status=ok, entitás=2, kapcsolat=0
+- `driver-lewis-hamilton#150`: status=ok, entitás=0, kapcsolat=0
+- `driver-lewis-hamilton#151`: status=ok, entitás=0, kapcsolat=0
+- `driver-lewis-hamilton#152`: status=ok, entitás=0, kapcsolat=0
+- `driver-lewis-hamilton#153`: status=ok, entitás=0, kapcsolat=0
+- `driver-lewis-hamilton#154`: status=ok, entitás=0, kapcsolat=0
+- `driver-lewis-hamilton#155`: status=ok, entitás=0, kapcsolat=0
+- `driver-lewis-hamilton#156`: status=ok, entitás=0, kapcsolat=0
+- `driver-lewis-hamilton#157`: status=ok, entitás=0, kapcsolat=0
+- `driver-lewis-hamilton#158`: status=ok, entitás=0, kapcsolat=0
+- `driver-lewis-hamilton#159`: status=ok, entitás=0, kapcsolat=0
+- `driver-lewis-hamilton#16`: status=error, entitás=0, kapcsolat=0
+- `driver-lewis-hamilton#160`: status=ok, entitás=0, kapcsolat=0
+- `driver-lewis-hamilton#161`: status=ok, entitás=0, kapcsolat=0
+- `driver-lewis-hamilton#162`: status=ok, entitás=0, kapcsolat=0
+- `driver-lewis-hamilton#163`: status=ok, entitás=0, kapcsolat=0
+- `driver-lewis-hamilton#164`: status=ok, entitás=0, kapcsolat=0
+- `driver-lewis-hamilton#165`: status=ok, entitás=0, kapcsolat=0
+- `driver-lewis-hamilton#166`: status=ok, entitás=0, kapcsolat=0
+- `driver-lewis-hamilton#167`: status=ok, entitás=0, kapcsolat=0
+- `driver-lewis-hamilton#168`: status=error, entitás=0, kapcsolat=0
+- `driver-lewis-hamilton#169`: status=ok, entitás=0, kapcsolat=0
+- `driver-lewis-hamilton#17`: status=ok, entitás=5, kapcsolat=0
+- `driver-lewis-hamilton#170`: status=ok, entitás=0, kapcsolat=0
+- `driver-lewis-hamilton#171`: status=ok, entitás=0, kapcsolat=0
+- `driver-lewis-hamilton#172`: status=ok, entitás=3, kapcsolat=0
+- `driver-lewis-hamilton#173`: status=ok, entitás=4, kapcsolat=0
+- `driver-lewis-hamilton#174`: status=ok, entitás=1, kapcsolat=0
+- `driver-lewis-hamilton#175`: status=ok, entitás=0, kapcsolat=0
+- `driver-lewis-hamilton#176`: status=ok, entitás=0, kapcsolat=0
+- `driver-lewis-hamilton#177`: status=ok, entitás=1, kapcsolat=0
+- `driver-lewis-hamilton#178`: status=ok, entitás=3, kapcsolat=0
+- `driver-lewis-hamilton#179`: status=ok, entitás=0, kapcsolat=0
+- `driver-lewis-hamilton#18`: status=error, entitás=0, kapcsolat=0
+- `driver-lewis-hamilton#180`: status=ok, entitás=0, kapcsolat=0
+- `driver-lewis-hamilton#181`: status=ok, entitás=0, kapcsolat=0
+- `driver-lewis-hamilton#182`: status=ok, entitás=0, kapcsolat=0
+- `driver-lewis-hamilton#183`: status=ok, entitás=0, kapcsolat=0
+- `driver-lewis-hamilton#184`: status=error, entitás=0, kapcsolat=0
+- `driver-lewis-hamilton#185`: status=error, entitás=0, kapcsolat=0
+- `driver-lewis-hamilton#186`: status=ok, entitás=0, kapcsolat=0
+- `driver-lewis-hamilton#187`: status=ok, entitás=0, kapcsolat=0
+- `driver-lewis-hamilton#188`: status=ok, entitás=0, kapcsolat=0
+- `driver-lewis-hamilton#189`: status=ok, entitás=0, kapcsolat=0
+- `driver-lewis-hamilton#19`: status=ok, entitás=4, kapcsolat=2
+- `driver-lewis-hamilton#190`: status=ok, entitás=0, kapcsolat=0
+- `driver-lewis-hamilton#191`: status=ok, entitás=1, kapcsolat=0
+- `driver-lewis-hamilton#192`: status=error, entitás=0, kapcsolat=0
+- `driver-lewis-hamilton#193`: status=ok, entitás=0, kapcsolat=0
+- `driver-lewis-hamilton#194`: status=ok, entitás=0, kapcsolat=0
+- `driver-lewis-hamilton#195`: status=ok, entitás=0, kapcsolat=0
+- `driver-lewis-hamilton#196`: status=ok, entitás=0, kapcsolat=0
+- `driver-lewis-hamilton#197`: status=ok, entitás=0, kapcsolat=0
+- `driver-lewis-hamilton#198`: status=ok, entitás=0, kapcsolat=0
+- `driver-lewis-hamilton#2`: status=error, entitás=0, kapcsolat=0
+- `driver-lewis-hamilton#20`: status=ok, entitás=6, kapcsolat=0
+- `driver-lewis-hamilton#21`: status=error, entitás=0, kapcsolat=0
+- `driver-lewis-hamilton#22`: status=ok, entitás=0, kapcsolat=0
+- `driver-lewis-hamilton#23`: status=error, entitás=0, kapcsolat=0
+- `driver-lewis-hamilton#24`: status=ok, entitás=5, kapcsolat=3
+- `driver-lewis-hamilton#25`: status=ok, entitás=5, kapcsolat=6
+- `driver-lewis-hamilton#26`: status=error, entitás=0, kapcsolat=0
+- `driver-lewis-hamilton#27`: status=ok, entitás=2, kapcsolat=0
+- `driver-lewis-hamilton#28`: status=error, entitás=0, kapcsolat=0
+- `driver-lewis-hamilton#29`: status=error, entitás=0, kapcsolat=0
+- `driver-lewis-hamilton#3`: status=error, entitás=0, kapcsolat=0
+- `driver-lewis-hamilton#30`: status=error, entitás=0, kapcsolat=0
+- `driver-lewis-hamilton#31`: status=ok, entitás=4, kapcsolat=2
+- `driver-lewis-hamilton#32`: status=error, entitás=0, kapcsolat=0
+- `driver-lewis-hamilton#33`: status=ok, entitás=5, kapcsolat=4
+- `driver-lewis-hamilton#34`: status=ok, entitás=9, kapcsolat=7
+- `driver-lewis-hamilton#35`: status=error, entitás=0, kapcsolat=0
+- `driver-lewis-hamilton#36`: status=error, entitás=0, kapcsolat=0
+- `driver-lewis-hamilton#37`: status=error, entitás=0, kapcsolat=0
+- `driver-lewis-hamilton#38`: status=ok, entitás=3, kapcsolat=2
+- `driver-lewis-hamilton#39`: status=ok, entitás=5, kapcsolat=3
+- `driver-lewis-hamilton#4`: status=error, entitás=0, kapcsolat=0
+- `driver-lewis-hamilton#40`: status=error, entitás=0, kapcsolat=0
+- `driver-lewis-hamilton#41`: status=ok, entitás=4, kapcsolat=3
+- `driver-lewis-hamilton#42`: status=error, entitás=0, kapcsolat=0
+- `driver-lewis-hamilton#43`: status=error, entitás=0, kapcsolat=0
+- `driver-lewis-hamilton#44`: status=error, entitás=0, kapcsolat=0
+- `driver-lewis-hamilton#45`: status=error, entitás=0, kapcsolat=0
+- `driver-lewis-hamilton#46`: status=error, entitás=0, kapcsolat=0
+- `driver-lewis-hamilton#47`: status=error, entitás=0, kapcsolat=0
+- `driver-lewis-hamilton#48`: status=error, entitás=0, kapcsolat=0
+- `driver-lewis-hamilton#49`: status=error, entitás=0, kapcsolat=0
+- `driver-lewis-hamilton#5`: status=error, entitás=0, kapcsolat=0
+- `driver-lewis-hamilton#50`: status=ok, entitás=4, kapcsolat=3
+- `driver-lewis-hamilton#51`: status=ok, entitás=7, kapcsolat=3
+- `driver-lewis-hamilton#52`: status=error, entitás=0, kapcsolat=0
+- `driver-lewis-hamilton#53`: status=error, entitás=0, kapcsolat=0
+- `driver-lewis-hamilton#54`: status=error, entitás=0, kapcsolat=0
+- `driver-lewis-hamilton#55`: status=error, entitás=0, kapcsolat=0
+- `driver-lewis-hamilton#56`: status=error, entitás=0, kapcsolat=0
+- `driver-lewis-hamilton#57`: status=error, entitás=0, kapcsolat=0
+- `driver-lewis-hamilton#58`: status=ok, entitás=4, kapcsolat=2
+- `driver-lewis-hamilton#59`: status=ok, entitás=0, kapcsolat=0
+- `driver-lewis-hamilton#6`: status=error, entitás=0, kapcsolat=0
+- `driver-lewis-hamilton#60`: status=ok, entitás=0, kapcsolat=0
+- `driver-lewis-hamilton#61`: status=ok, entitás=0, kapcsolat=0
+- `driver-lewis-hamilton#62`: status=ok, entitás=5, kapcsolat=5
+- `driver-lewis-hamilton#63`: status=ok, entitás=4, kapcsolat=1
+- `driver-lewis-hamilton#64`: status=error, entitás=0, kapcsolat=0
+- `driver-lewis-hamilton#65`: status=ok, entitás=4, kapcsolat=2
+- `driver-lewis-hamilton#66`: status=ok, entitás=0, kapcsolat=0
+- `driver-lewis-hamilton#67`: status=error, entitás=0, kapcsolat=0
+- `driver-lewis-hamilton#68`: status=ok, entitás=5, kapcsolat=4
+- `driver-lewis-hamilton#69`: status=error, entitás=0, kapcsolat=0
+- `driver-lewis-hamilton#7`: status=ok, entitás=2, kapcsolat=0
+- `driver-lewis-hamilton#70`: status=ok, entitás=4, kapcsolat=2
+- `driver-lewis-hamilton#71`: status=ok, entitás=5, kapcsolat=3
+- `driver-lewis-hamilton#72`: status=ok, entitás=0, kapcsolat=0
+- `driver-lewis-hamilton#73`: status=ok, entitás=0, kapcsolat=0
+- `driver-lewis-hamilton#74`: status=error, entitás=0, kapcsolat=0
+- `driver-lewis-hamilton#75`: status=ok, entitás=2, kapcsolat=0
+- `driver-lewis-hamilton#76`: status=ok, entitás=0, kapcsolat=0
+- `driver-lewis-hamilton#77`: status=ok, entitás=2, kapcsolat=0
+- `driver-lewis-hamilton#78`: status=ok, entitás=2, kapcsolat=1
+- `driver-lewis-hamilton#79`: status=ok, entitás=0, kapcsolat=0
+- `driver-lewis-hamilton#8`: status=ok, entitás=2, kapcsolat=0
+- `driver-lewis-hamilton#80`: status=error, entitás=0, kapcsolat=0
+- `driver-lewis-hamilton#81`: status=error, entitás=0, kapcsolat=0
+- `driver-lewis-hamilton#82`: status=error, entitás=0, kapcsolat=0
+- `driver-lewis-hamilton#83`: status=ok, entitás=2, kapcsolat=0
+- `driver-lewis-hamilton#84`: status=ok, entitás=3, kapcsolat=1
+- `driver-lewis-hamilton#85`: status=ok, entitás=5, kapcsolat=0
+- `driver-lewis-hamilton#86`: status=ok, entitás=1, kapcsolat=0
+- `driver-lewis-hamilton#87`: status=ok, entitás=1, kapcsolat=0
+- `driver-lewis-hamilton#88`: status=ok, entitás=0, kapcsolat=0
+- `driver-lewis-hamilton#89`: status=ok, entitás=1, kapcsolat=0
+- `driver-lewis-hamilton#9`: status=ok, entitás=0, kapcsolat=0
+- `driver-lewis-hamilton#90`: status=error, entitás=0, kapcsolat=0
+- `driver-lewis-hamilton#91`: status=ok, entitás=0, kapcsolat=0
+- `driver-lewis-hamilton#92`: status=ok, entitás=2, kapcsolat=0
+- `driver-lewis-hamilton#93`: status=ok, entitás=3, kapcsolat=0
+- `driver-lewis-hamilton#94`: status=ok, entitás=7, kapcsolat=0
+- `driver-lewis-hamilton#95`: status=ok, entitás=5, kapcsolat=4
+- `driver-lewis-hamilton#96`: status=ok, entitás=3, kapcsolat=2
+- `driver-lewis-hamilton#97`: status=error, entitás=0, kapcsolat=0
+- `driver-lewis-hamilton#98`: status=error, entitás=0, kapcsolat=0
+- `driver-lewis-hamilton#99`: status=ok, entitás=1, kapcsolat=0
+- `driver-michael-schumacher#0`: status=ok, entitás=2, kapcsolat=0
+- `driver-michael-schumacher#1`: status=error, entitás=0, kapcsolat=0
+- `driver-michael-schumacher#10`: status=ok, entitás=0, kapcsolat=0
+- `driver-michael-schumacher#100`: status=ok, entitás=0, kapcsolat=0
+- `driver-michael-schumacher#101`: status=ok, entitás=8, kapcsolat=7
+- `driver-michael-schumacher#102`: status=error, entitás=0, kapcsolat=0
+- `driver-michael-schumacher#103`: status=ok, entitás=0, kapcsolat=0
+- `driver-michael-schumacher#104`: status=ok, entitás=0, kapcsolat=0
+- `driver-michael-schumacher#105`: status=ok, entitás=4, kapcsolat=3
+- `driver-michael-schumacher#106`: status=ok, entitás=3, kapcsolat=2
+- `driver-michael-schumacher#107`: status=ok, entitás=2, kapcsolat=1
+- `driver-michael-schumacher#108`: status=ok, entitás=0, kapcsolat=0
+- `driver-michael-schumacher#109`: status=error, entitás=0, kapcsolat=0
+- `driver-michael-schumacher#11`: status=ok, entitás=0, kapcsolat=0
+- `driver-michael-schumacher#110`: status=ok, entitás=0, kapcsolat=0
+- `driver-michael-schumacher#111`: status=error, entitás=0, kapcsolat=0
+- `driver-michael-schumacher#112`: status=ok, entitás=0, kapcsolat=0
+- `driver-michael-schumacher#113`: status=error, entitás=0, kapcsolat=0
+- `driver-michael-schumacher#114`: status=error, entitás=0, kapcsolat=0
+- `driver-michael-schumacher#115`: status=error, entitás=0, kapcsolat=0
+- `driver-michael-schumacher#116`: status=error, entitás=0, kapcsolat=0
+- `driver-michael-schumacher#117`: status=error, entitás=0, kapcsolat=0
+- `driver-michael-schumacher#118`: status=error, entitás=0, kapcsolat=0
+- `driver-michael-schumacher#119`: status=error, entitás=0, kapcsolat=0
+- `driver-michael-schumacher#12`: status=error, entitás=0, kapcsolat=0
+- `driver-michael-schumacher#120`: status=ok, entitás=5, kapcsolat=3
+- `driver-michael-schumacher#121`: status=error, entitás=0, kapcsolat=0
+- `driver-michael-schumacher#122`: status=ok, entitás=1, kapcsolat=0
+- `driver-michael-schumacher#123`: status=ok, entitás=0, kapcsolat=0
+- `driver-michael-schumacher#124`: status=error, entitás=0, kapcsolat=0
+- `driver-michael-schumacher#125`: status=ok, entitás=1, kapcsolat=0
+- `driver-michael-schumacher#126`: status=ok, entitás=5, kapcsolat=1
+- `driver-michael-schumacher#127`: status=ok, entitás=1, kapcsolat=0
+- `driver-michael-schumacher#128`: status=ok, entitás=0, kapcsolat=0
+- `driver-michael-schumacher#129`: status=ok, entitás=1, kapcsolat=0
+- `driver-michael-schumacher#13`: status=error, entitás=0, kapcsolat=0
+- `driver-michael-schumacher#130`: status=ok, entitás=3, kapcsolat=2
+- `driver-michael-schumacher#131`: status=ok, entitás=2, kapcsolat=0
+- `driver-michael-schumacher#132`: status=ok, entitás=0, kapcsolat=0
+- `driver-michael-schumacher#133`: status=ok, entitás=1, kapcsolat=0
+- `driver-michael-schumacher#134`: status=ok, entitás=3, kapcsolat=0
+- `driver-michael-schumacher#135`: status=error, entitás=0, kapcsolat=0
+- `driver-michael-schumacher#136`: status=ok, entitás=3, kapcsolat=2
+- `driver-michael-schumacher#137`: status=ok, entitás=0, kapcsolat=0
+- `driver-michael-schumacher#138`: status=ok, entitás=0, kapcsolat=0
+- `driver-michael-schumacher#139`: status=ok, entitás=0, kapcsolat=0
+- `driver-michael-schumacher#14`: status=ok, entitás=4, kapcsolat=3
+- `driver-michael-schumacher#140`: status=error, entitás=0, kapcsolat=0
+- `driver-michael-schumacher#141`: status=ok, entitás=4, kapcsolat=2
+- `driver-michael-schumacher#142`: status=ok, entitás=3, kapcsolat=0
+- `driver-michael-schumacher#143`: status=ok, entitás=2, kapcsolat=0
+- `driver-michael-schumacher#144`: status=ok, entitás=2, kapcsolat=0
+- `driver-michael-schumacher#145`: status=error, entitás=0, kapcsolat=0
+- `driver-michael-schumacher#146`: status=ok, entitás=2, kapcsolat=0
+- `driver-michael-schumacher#147`: status=ok, entitás=1, kapcsolat=0
+- `driver-michael-schumacher#148`: status=ok, entitás=4, kapcsolat=0
+- `driver-michael-schumacher#149`: status=ok, entitás=0, kapcsolat=0
+- `driver-michael-schumacher#15`: status=error, entitás=0, kapcsolat=0
+- `driver-michael-schumacher#150`: status=ok, entitás=0, kapcsolat=0
+- `driver-michael-schumacher#151`: status=error, entitás=0, kapcsolat=0
+- `driver-michael-schumacher#152`: status=ok, entitás=0, kapcsolat=0
+- `driver-michael-schumacher#153`: status=error, entitás=0, kapcsolat=0
+- `driver-michael-schumacher#154`: status=ok, entitás=0, kapcsolat=0
+- `driver-michael-schumacher#155`: status=ok, entitás=0, kapcsolat=0
+- `driver-michael-schumacher#156`: status=ok, entitás=0, kapcsolat=0
+- `driver-michael-schumacher#157`: status=ok, entitás=0, kapcsolat=0
+- `driver-michael-schumacher#158`: status=ok, entitás=0, kapcsolat=0
+- `driver-michael-schumacher#159`: status=ok, entitás=0, kapcsolat=0
+- `driver-michael-schumacher#16`: status=error, entitás=0, kapcsolat=0
+- `driver-michael-schumacher#160`: status=ok, entitás=0, kapcsolat=0
+- `driver-michael-schumacher#161`: status=ok, entitás=0, kapcsolat=0
+- `driver-michael-schumacher#162`: status=ok, entitás=0, kapcsolat=0
+- `driver-michael-schumacher#163`: status=ok, entitás=0, kapcsolat=0
+- `driver-michael-schumacher#164`: status=ok, entitás=0, kapcsolat=0
+- `driver-michael-schumacher#165`: status=ok, entitás=0, kapcsolat=0
+- `driver-michael-schumacher#166`: status=ok, entitás=0, kapcsolat=0
+- `driver-michael-schumacher#167`: status=ok, entitás=0, kapcsolat=0
+- `driver-michael-schumacher#168`: status=ok, entitás=0, kapcsolat=0
+- `driver-michael-schumacher#169`: status=ok, entitás=0, kapcsolat=0
+- `driver-michael-schumacher#17`: status=ok, entitás=0, kapcsolat=0
+- `driver-michael-schumacher#170`: status=error, entitás=0, kapcsolat=0
+- `driver-michael-schumacher#171`: status=error, entitás=0, kapcsolat=0
+- `driver-michael-schumacher#172`: status=error, entitás=0, kapcsolat=0
+- `driver-michael-schumacher#173`: status=ok, entitás=0, kapcsolat=0
+- `driver-michael-schumacher#174`: status=ok, entitás=0, kapcsolat=0
+- `driver-michael-schumacher#175`: status=ok, entitás=0, kapcsolat=0
+- `driver-michael-schumacher#176`: status=ok, entitás=0, kapcsolat=0
+- `driver-michael-schumacher#177`: status=ok, entitás=0, kapcsolat=0
+- `driver-michael-schumacher#178`: status=ok, entitás=4, kapcsolat=3
+- `driver-michael-schumacher#179`: status=error, entitás=0, kapcsolat=0
+- `driver-michael-schumacher#18`: status=error, entitás=0, kapcsolat=0
+- `driver-michael-schumacher#180`: status=ok, entitás=4, kapcsolat=0
+- `driver-michael-schumacher#181`: status=error, entitás=0, kapcsolat=0
+- `driver-michael-schumacher#182`: status=ok, entitás=5, kapcsolat=3
+- `driver-michael-schumacher#183`: status=ok, entitás=3, kapcsolat=0
+- `driver-michael-schumacher#184`: status=ok, entitás=1, kapcsolat=0
+- `driver-michael-schumacher#185`: status=ok, entitás=4, kapcsolat=3
+- `driver-michael-schumacher#186`: status=ok, entitás=0, kapcsolat=0
+- `driver-michael-schumacher#187`: status=ok, entitás=0, kapcsolat=0
+- `driver-michael-schumacher#188`: status=ok, entitás=0, kapcsolat=0
+- `driver-michael-schumacher#189`: status=ok, entitás=0, kapcsolat=0
+- `driver-michael-schumacher#19`: status=ok, entitás=4, kapcsolat=0
+- `driver-michael-schumacher#190`: status=ok, entitás=0, kapcsolat=0
+- `driver-michael-schumacher#191`: status=ok, entitás=0, kapcsolat=0
+- `driver-michael-schumacher#2`: status=error, entitás=0, kapcsolat=0
+- `driver-michael-schumacher#20`: status=error, entitás=0, kapcsolat=0
+- `driver-michael-schumacher#21`: status=error, entitás=0, kapcsolat=0
+- `driver-michael-schumacher#22`: status=error, entitás=0, kapcsolat=0
+- `driver-michael-schumacher#23`: status=error, entitás=0, kapcsolat=0
+- `driver-michael-schumacher#24`: status=ok, entitás=5, kapcsolat=3
+- `driver-michael-schumacher#25`: status=error, entitás=0, kapcsolat=0
+- `driver-michael-schumacher#26`: status=error, entitás=0, kapcsolat=0
+- `driver-michael-schumacher#27`: status=error, entitás=0, kapcsolat=0
+- `driver-michael-schumacher#28`: status=error, entitás=0, kapcsolat=0
+- `driver-michael-schumacher#29`: status=error, entitás=0, kapcsolat=0
+- `driver-michael-schumacher#3`: status=error, entitás=0, kapcsolat=0
+- `driver-michael-schumacher#30`: status=error, entitás=0, kapcsolat=0
+- `driver-michael-schumacher#31`: status=ok, entitás=4, kapcsolat=2
+- `driver-michael-schumacher#32`: status=error, entitás=0, kapcsolat=0
+- `driver-michael-schumacher#33`: status=ok, entitás=0, kapcsolat=0
+- `driver-michael-schumacher#34`: status=error, entitás=0, kapcsolat=0
+- `driver-michael-schumacher#35`: status=error, entitás=0, kapcsolat=0
+- `driver-michael-schumacher#36`: status=ok, entitás=0, kapcsolat=0
+- `driver-michael-schumacher#37`: status=error, entitás=0, kapcsolat=0
+- `driver-michael-schumacher#38`: status=ok, entitás=3, kapcsolat=2
+- `driver-michael-schumacher#39`: status=error, entitás=0, kapcsolat=0
+- `driver-michael-schumacher#4`: status=error, entitás=0, kapcsolat=0
+- `driver-michael-schumacher#40`: status=error, entitás=0, kapcsolat=0
+- `driver-michael-schumacher#41`: status=error, entitás=0, kapcsolat=0
+- `driver-michael-schumacher#42`: status=error, entitás=0, kapcsolat=0
+- `driver-michael-schumacher#43`: status=ok, entitás=3, kapcsolat=2
+- `driver-michael-schumacher#44`: status=error, entitás=0, kapcsolat=0
+- `driver-michael-schumacher#45`: status=ok, entitás=0, kapcsolat=0
+- `driver-michael-schumacher#46`: status=ok, entitás=5, kapcsolat=4
+- `driver-michael-schumacher#47`: status=error, entitás=0, kapcsolat=0
+- `driver-michael-schumacher#48`: status=error, entitás=0, kapcsolat=0
+- `driver-michael-schumacher#49`: status=error, entitás=0, kapcsolat=0
+- `driver-michael-schumacher#5`: status=error, entitás=0, kapcsolat=0
+- `driver-michael-schumacher#50`: status=error, entitás=0, kapcsolat=0
+- `driver-michael-schumacher#51`: status=error, entitás=0, kapcsolat=0
+- `driver-michael-schumacher#52`: status=ok, entitás=4, kapcsolat=2
+- `driver-michael-schumacher#53`: status=error, entitás=0, kapcsolat=0
+- `driver-michael-schumacher#54`: status=error, entitás=0, kapcsolat=0
+- `driver-michael-schumacher#55`: status=ok, entitás=0, kapcsolat=0
+- `driver-michael-schumacher#56`: status=error, entitás=0, kapcsolat=0
+- `driver-michael-schumacher#57`: status=error, entitás=0, kapcsolat=0
+- `driver-michael-schumacher#58`: status=error, entitás=0, kapcsolat=0
+- `driver-michael-schumacher#59`: status=ok, entitás=4, kapcsolat=2
+- `driver-michael-schumacher#6`: status=error, entitás=0, kapcsolat=0
+- `driver-michael-schumacher#60`: status=error, entitás=0, kapcsolat=0
+- `driver-michael-schumacher#61`: status=ok, entitás=0, kapcsolat=0
+- `driver-michael-schumacher#62`: status=ok, entitás=4, kapcsolat=2
+- `driver-michael-schumacher#63`: status=error, entitás=0, kapcsolat=0
+- `driver-michael-schumacher#64`: status=error, entitás=0, kapcsolat=0
+- `driver-michael-schumacher#65`: status=ok, entitás=4, kapcsolat=0
+- `driver-michael-schumacher#66`: status=ok, entitás=0, kapcsolat=0
+- `driver-michael-schumacher#67`: status=error, entitás=0, kapcsolat=0
+- `driver-michael-schumacher#68`: status=ok, entitás=4, kapcsolat=3
+- `driver-michael-schumacher#69`: status=error, entitás=0, kapcsolat=0
+- `driver-michael-schumacher#7`: status=ok, entitás=0, kapcsolat=0
+- `driver-michael-schumacher#70`: status=error, entitás=0, kapcsolat=0
+- `driver-michael-schumacher#71`: status=error, entitás=0, kapcsolat=0
+- `driver-michael-schumacher#72`: status=ok, entitás=3, kapcsolat=2
+- `driver-michael-schumacher#73`: status=error, entitás=0, kapcsolat=0
+- `driver-michael-schumacher#74`: status=ok, entitás=7, kapcsolat=5
+- `driver-michael-schumacher#75`: status=error, entitás=0, kapcsolat=0
+- `driver-michael-schumacher#76`: status=error, entitás=0, kapcsolat=0
+- `driver-michael-schumacher#77`: status=error, entitás=0, kapcsolat=0
+- `driver-michael-schumacher#78`: status=error, entitás=0, kapcsolat=0
+- `driver-michael-schumacher#79`: status=ok, entitás=0, kapcsolat=0
+- `driver-michael-schumacher#8`: status=ok, entitás=1, kapcsolat=0
+- `driver-michael-schumacher#80`: status=ok, entitás=3, kapcsolat=2
+- `driver-michael-schumacher#81`: status=ok, entitás=4, kapcsolat=1
+- `driver-michael-schumacher#82`: status=error, entitás=0, kapcsolat=0
+- `driver-michael-schumacher#83`: status=error, entitás=0, kapcsolat=0
+- `driver-michael-schumacher#84`: status=ok, entitás=6, kapcsolat=4
+- `driver-michael-schumacher#85`: status=error, entitás=0, kapcsolat=0
+- `driver-michael-schumacher#86`: status=error, entitás=0, kapcsolat=0
+- `driver-michael-schumacher#87`: status=ok, entitás=3, kapcsolat=2
+- `driver-michael-schumacher#88`: status=ok, entitás=0, kapcsolat=0
+- `driver-michael-schumacher#89`: status=error, entitás=0, kapcsolat=0
+- `driver-michael-schumacher#9`: status=ok, entitás=0, kapcsolat=0
+- `driver-michael-schumacher#90`: status=ok, entitás=3, kapcsolat=0
+- `driver-michael-schumacher#91`: status=ok, entitás=4, kapcsolat=2
+- `driver-michael-schumacher#92`: status=ok, entitás=0, kapcsolat=0
+- `driver-michael-schumacher#93`: status=error, entitás=0, kapcsolat=0
+- `driver-michael-schumacher#94`: status=error, entitás=0, kapcsolat=0
+- `driver-michael-schumacher#95`: status=error, entitás=0, kapcsolat=0
+- `driver-michael-schumacher#96`: status=ok, entitás=2, kapcsolat=0
+- `driver-michael-schumacher#97`: status=error, entitás=0, kapcsolat=0
+- `driver-michael-schumacher#98`: status=ok, entitás=4, kapcsolat=3
+- `driver-michael-schumacher#99`: status=ok, entitás=2, kapcsolat=1
+- `driver-nico-rosberg#0`: status=ok, entitás=5, kapcsolat=3
+- `driver-nico-rosberg#1`: status=error, entitás=0, kapcsolat=0
+- `driver-nico-rosberg#10`: status=ok, entitás=0, kapcsolat=0
+- `driver-nico-rosberg#100`: status=ok, entitás=0, kapcsolat=0
+- `driver-nico-rosberg#101`: status=ok, entitás=0, kapcsolat=0
+- `driver-nico-rosberg#102`: status=ok, entitás=0, kapcsolat=0
+- `driver-nico-rosberg#103`: status=ok, entitás=3, kapcsolat=2
+- `driver-nico-rosberg#104`: status=ok, entitás=1, kapcsolat=0
+- `driver-nico-rosberg#105`: status=ok, entitás=0, kapcsolat=0
+- `driver-nico-rosberg#106`: status=ok, entitás=0, kapcsolat=0
+- `driver-nico-rosberg#107`: status=error, entitás=0, kapcsolat=0
+- `driver-nico-rosberg#108`: status=ok, entitás=0, kapcsolat=0
+- `driver-nico-rosberg#109`: status=ok, entitás=0, kapcsolat=0
+- `driver-nico-rosberg#11`: status=ok, entitás=0, kapcsolat=0
+- `driver-nico-rosberg#110`: status=ok, entitás=0, kapcsolat=0
+- `driver-nico-rosberg#111`: status=ok, entitás=0, kapcsolat=0
+- `driver-nico-rosberg#112`: status=ok, entitás=0, kapcsolat=0
+- `driver-nico-rosberg#113`: status=error, entitás=0, kapcsolat=0
+- `driver-nico-rosberg#114`: status=ok, entitás=0, kapcsolat=0
+- `driver-nico-rosberg#115`: status=ok, entitás=0, kapcsolat=0
+- `driver-nico-rosberg#116`: status=error, entitás=0, kapcsolat=0
+- `driver-nico-rosberg#117`: status=error, entitás=0, kapcsolat=0
+- `driver-nico-rosberg#118`: status=ok, entitás=0, kapcsolat=0
+- `driver-nico-rosberg#119`: status=error, entitás=0, kapcsolat=0
+- `driver-nico-rosberg#12`: status=ok, entitás=0, kapcsolat=0
+- `driver-nico-rosberg#120`: status=ok, entitás=0, kapcsolat=0
+- `driver-nico-rosberg#121`: status=ok, entitás=0, kapcsolat=0
+- `driver-nico-rosberg#122`: status=ok, entitás=0, kapcsolat=0
+- `driver-nico-rosberg#123`: status=ok, entitás=0, kapcsolat=0
+- `driver-nico-rosberg#124`: status=ok, entitás=0, kapcsolat=0
+- `driver-nico-rosberg#125`: status=ok, entitás=0, kapcsolat=0
+- `driver-nico-rosberg#126`: status=ok, entitás=0, kapcsolat=0
+- `driver-nico-rosberg#127`: status=ok, entitás=0, kapcsolat=0
+- `driver-nico-rosberg#128`: status=ok, entitás=0, kapcsolat=0
+- `driver-nico-rosberg#129`: status=ok, entitás=0, kapcsolat=0
+- `driver-nico-rosberg#13`: status=ok, entitás=0, kapcsolat=0
+- `driver-nico-rosberg#130`: status=ok, entitás=0, kapcsolat=0
+- `driver-nico-rosberg#131`: status=ok, entitás=0, kapcsolat=0
+- `driver-nico-rosberg#14`: status=ok, entitás=2, kapcsolat=0
+- `driver-nico-rosberg#15`: status=ok, entitás=0, kapcsolat=0
+- `driver-nico-rosberg#16`: status=error, entitás=0, kapcsolat=0
+- `driver-nico-rosberg#17`: status=error, entitás=0, kapcsolat=0
+- `driver-nico-rosberg#18`: status=ok, entitás=4, kapcsolat=2
+- `driver-nico-rosberg#19`: status=ok, entitás=0, kapcsolat=0
+- `driver-nico-rosberg#2`: status=error, entitás=0, kapcsolat=0
+- `driver-nico-rosberg#20`: status=ok, entitás=0, kapcsolat=0
+- `driver-nico-rosberg#21`: status=error, entitás=0, kapcsolat=0
+- `driver-nico-rosberg#22`: status=ok, entitás=0, kapcsolat=0
+- `driver-nico-rosberg#23`: status=error, entitás=0, kapcsolat=0
+- `driver-nico-rosberg#24`: status=error, entitás=0, kapcsolat=0
+- `driver-nico-rosberg#25`: status=error, entitás=0, kapcsolat=0
+- `driver-nico-rosberg#26`: status=error, entitás=0, kapcsolat=0
+- `driver-nico-rosberg#27`: status=ok, entitás=0, kapcsolat=0
+- `driver-nico-rosberg#28`: status=ok, entitás=4, kapcsolat=2
+- `driver-nico-rosberg#29`: status=error, entitás=0, kapcsolat=0
+- `driver-nico-rosberg#3`: status=error, entitás=0, kapcsolat=0
+- `driver-nico-rosberg#30`: status=error, entitás=0, kapcsolat=0
+- `driver-nico-rosberg#31`: status=ok, entitás=0, kapcsolat=0
+- `driver-nico-rosberg#32`: status=ok, entitás=0, kapcsolat=0
+- `driver-nico-rosberg#33`: status=ok, entitás=0, kapcsolat=0
+- `driver-nico-rosberg#34`: status=error, entitás=0, kapcsolat=0
+- `driver-nico-rosberg#35`: status=ok, entitás=0, kapcsolat=0
+- `driver-nico-rosberg#36`: status=ok, entitás=0, kapcsolat=0
+- `driver-nico-rosberg#37`: status=ok, entitás=2, kapcsolat=1
+- `driver-nico-rosberg#38`: status=ok, entitás=3, kapcsolat=2
+- `driver-nico-rosberg#39`: status=error, entitás=0, kapcsolat=0
+- `driver-nico-rosberg#4`: status=ok, entitás=2, kapcsolat=0
+- `driver-nico-rosberg#40`: status=error, entitás=0, kapcsolat=0
+- `driver-nico-rosberg#41`: status=error, entitás=0, kapcsolat=0
+- `driver-nico-rosberg#42`: status=error, entitás=0, kapcsolat=0
+- `driver-nico-rosberg#43`: status=error, entitás=0, kapcsolat=0
+- `driver-nico-rosberg#44`: status=ok, entitás=4, kapcsolat=3
+- `driver-nico-rosberg#45`: status=ok, entitás=2, kapcsolat=1
+- `driver-nico-rosberg#46`: status=ok, entitás=0, kapcsolat=0
+- `driver-nico-rosberg#47`: status=error, entitás=0, kapcsolat=0
+- `driver-nico-rosberg#48`: status=error, entitás=0, kapcsolat=0
+- `driver-nico-rosberg#49`: status=error, entitás=0, kapcsolat=0
+- `driver-nico-rosberg#5`: status=error, entitás=0, kapcsolat=0
+- `driver-nico-rosberg#50`: status=ok, entitás=6, kapcsolat=5
+- `driver-nico-rosberg#51`: status=error, entitás=0, kapcsolat=0
+- `driver-nico-rosberg#52`: status=ok, entitás=0, kapcsolat=0
+- `driver-nico-rosberg#53`: status=ok, entitás=0, kapcsolat=0
+- `driver-nico-rosberg#54`: status=ok, entitás=0, kapcsolat=0
+- `driver-nico-rosberg#55`: status=error, entitás=0, kapcsolat=0
+- `driver-nico-rosberg#56`: status=ok, entitás=3, kapcsolat=0
+- `driver-nico-rosberg#57`: status=ok, entitás=6, kapcsolat=4
+- `driver-nico-rosberg#58`: status=ok, entitás=4, kapcsolat=3
+- `driver-nico-rosberg#59`: status=error, entitás=0, kapcsolat=0
+- `driver-nico-rosberg#6`: status=ok, entitás=0, kapcsolat=0
+- `driver-nico-rosberg#60`: status=ok, entitás=3, kapcsolat=2
+- `driver-nico-rosberg#61`: status=ok, entitás=0, kapcsolat=0
+- `driver-nico-rosberg#62`: status=error, entitás=0, kapcsolat=0
+- `driver-nico-rosberg#63`: status=ok, entitás=4, kapcsolat=3
+- `driver-nico-rosberg#64`: status=ok, entitás=0, kapcsolat=0
+- `driver-nico-rosberg#65`: status=ok, entitás=6, kapcsolat=5
+- `driver-nico-rosberg#66`: status=error, entitás=0, kapcsolat=0
+- `driver-nico-rosberg#67`: status=error, entitás=0, kapcsolat=0
+- `driver-nico-rosberg#68`: status=ok, entitás=0, kapcsolat=0
+- `driver-nico-rosberg#69`: status=error, entitás=0, kapcsolat=0
+- `driver-nico-rosberg#7`: status=ok, entitás=0, kapcsolat=0
+- `driver-nico-rosberg#70`: status=error, entitás=0, kapcsolat=0
+- `driver-nico-rosberg#71`: status=error, entitás=0, kapcsolat=0
+- `driver-nico-rosberg#72`: status=error, entitás=0, kapcsolat=0
+- `driver-nico-rosberg#73`: status=ok, entitás=0, kapcsolat=0
+- `driver-nico-rosberg#74`: status=error, entitás=0, kapcsolat=0
+- `driver-nico-rosberg#75`: status=error, entitás=0, kapcsolat=0
+- `driver-nico-rosberg#76`: status=error, entitás=0, kapcsolat=0
+- `driver-nico-rosberg#77`: status=error, entitás=0, kapcsolat=0
+- `driver-nico-rosberg#78`: status=ok, entitás=3, kapcsolat=2
+- `driver-nico-rosberg#79`: status=ok, entitás=4, kapcsolat=3
+- `driver-nico-rosberg#8`: status=ok, entitás=4, kapcsolat=0
+- `driver-nico-rosberg#80`: status=error, entitás=0, kapcsolat=0
+- `driver-nico-rosberg#81`: status=error, entitás=0, kapcsolat=0
+- `driver-nico-rosberg#82`: status=error, entitás=0, kapcsolat=0
+- `driver-nico-rosberg#83`: status=error, entitás=0, kapcsolat=0
+- `driver-nico-rosberg#84`: status=error, entitás=0, kapcsolat=0
+- `driver-nico-rosberg#85`: status=ok, entitás=0, kapcsolat=0
+- `driver-nico-rosberg#86`: status=error, entitás=0, kapcsolat=0
+- `driver-nico-rosberg#87`: status=error, entitás=0, kapcsolat=0
+- `driver-nico-rosberg#88`: status=error, entitás=0, kapcsolat=0
+- `driver-nico-rosberg#89`: status=ok, entitás=1, kapcsolat=0
+- `driver-nico-rosberg#9`: status=ok, entitás=0, kapcsolat=0
+- `driver-nico-rosberg#90`: status=ok, entitás=1, kapcsolat=0
+- `driver-nico-rosberg#91`: status=ok, entitás=0, kapcsolat=0
+- `driver-nico-rosberg#92`: status=error, entitás=0, kapcsolat=0
+- `driver-nico-rosberg#93`: status=ok, entitás=6, kapcsolat=4
+- `driver-nico-rosberg#94`: status=ok, entitás=0, kapcsolat=0
+- `driver-nico-rosberg#95`: status=error, entitás=0, kapcsolat=0
+- `driver-nico-rosberg#96`: status=error, entitás=0, kapcsolat=0
+- `driver-nico-rosberg#97`: status=ok, entitás=0, kapcsolat=0
+- `driver-nico-rosberg#98`: status=ok, entitás=0, kapcsolat=0
+- `driver-nico-rosberg#99`: status=ok, entitás=0, kapcsolat=0
+- `driver-sebastian-vettel#0`: status=error, entitás=0, kapcsolat=0
+- `driver-sebastian-vettel#1`: status=error, entitás=0, kapcsolat=0
+- `driver-sebastian-vettel#10`: status=ok, entitás=0, kapcsolat=0
+- `driver-sebastian-vettel#100`: status=error, entitás=0, kapcsolat=0
+- `driver-sebastian-vettel#101`: status=ok, entitás=2, kapcsolat=1
+- `driver-sebastian-vettel#102`: status=error, entitás=0, kapcsolat=0
+- `driver-sebastian-vettel#103`: status=ok, entitás=1, kapcsolat=0
+- `driver-sebastian-vettel#104`: status=ok, entitás=3, kapcsolat=2
+- `driver-sebastian-vettel#105`: status=ok, entitás=0, kapcsolat=0
+- `driver-sebastian-vettel#106`: status=error, entitás=0, kapcsolat=0
+- `driver-sebastian-vettel#107`: status=error, entitás=0, kapcsolat=0
+- `driver-sebastian-vettel#108`: status=ok, entitás=0, kapcsolat=0
+- `driver-sebastian-vettel#109`: status=ok, entitás=0, kapcsolat=0
+- `driver-sebastian-vettel#11`: status=ok, entitás=0, kapcsolat=0
+- `driver-sebastian-vettel#110`: status=error, entitás=0, kapcsolat=0
+- `driver-sebastian-vettel#111`: status=error, entitás=0, kapcsolat=0
+- `driver-sebastian-vettel#112`: status=error, entitás=0, kapcsolat=0
+- `driver-sebastian-vettel#113`: status=ok, entitás=4, kapcsolat=2
+- `driver-sebastian-vettel#114`: status=ok, entitás=0, kapcsolat=0
+- `driver-sebastian-vettel#115`: status=error, entitás=0, kapcsolat=0
+- `driver-sebastian-vettel#116`: status=ok, entitás=4, kapcsolat=0
+- `driver-sebastian-vettel#117`: status=error, entitás=0, kapcsolat=0
+- `driver-sebastian-vettel#118`: status=ok, entitás=0, kapcsolat=0
+- `driver-sebastian-vettel#119`: status=error, entitás=0, kapcsolat=0
+- `driver-sebastian-vettel#12`: status=error, entitás=0, kapcsolat=0
+- `driver-sebastian-vettel#120`: status=ok, entitás=0, kapcsolat=0
+- `driver-sebastian-vettel#121`: status=ok, entitás=0, kapcsolat=0
+- `driver-sebastian-vettel#122`: status=ok, entitás=0, kapcsolat=0
+- `driver-sebastian-vettel#123`: status=ok, entitás=4, kapcsolat=2
+- `driver-sebastian-vettel#124`: status=error, entitás=0, kapcsolat=0
+- `driver-sebastian-vettel#125`: status=error, entitás=0, kapcsolat=0
+- `driver-sebastian-vettel#126`: status=ok, entitás=0, kapcsolat=0
+- `driver-sebastian-vettel#127`: status=error, entitás=0, kapcsolat=0
+- `driver-sebastian-vettel#128`: status=error, entitás=0, kapcsolat=0
+- `driver-sebastian-vettel#129`: status=error, entitás=0, kapcsolat=0
+- `driver-sebastian-vettel#13`: status=ok, entitás=0, kapcsolat=0
+- `driver-sebastian-vettel#130`: status=error, entitás=0, kapcsolat=0
+- `driver-sebastian-vettel#131`: status=ok, entitás=1, kapcsolat=0
+- `driver-sebastian-vettel#132`: status=ok, entitás=0, kapcsolat=0
+- `driver-sebastian-vettel#133`: status=error, entitás=0, kapcsolat=0
+- `driver-sebastian-vettel#134`: status=error, entitás=0, kapcsolat=0
+- `driver-sebastian-vettel#135`: status=error, entitás=0, kapcsolat=0
+- `driver-sebastian-vettel#136`: status=ok, entitás=2, kapcsolat=0
+- `driver-sebastian-vettel#137`: status=error, entitás=0, kapcsolat=0
+- `driver-sebastian-vettel#138`: status=error, entitás=0, kapcsolat=0
+- `driver-sebastian-vettel#139`: status=error, entitás=0, kapcsolat=0
+- `driver-sebastian-vettel#14`: status=ok, entitás=3, kapcsolat=2
+- `driver-sebastian-vettel#140`: status=error, entitás=0, kapcsolat=0
+- `driver-sebastian-vettel#141`: status=ok, entitás=0, kapcsolat=0
+- `driver-sebastian-vettel#142`: status=ok, entitás=0, kapcsolat=0
+- `driver-sebastian-vettel#143`: status=ok, entitás=4, kapcsolat=0
+- `driver-sebastian-vettel#144`: status=error, entitás=0, kapcsolat=0
+- `driver-sebastian-vettel#145`: status=ok, entitás=0, kapcsolat=0
+- `driver-sebastian-vettel#146`: status=error, entitás=0, kapcsolat=0
+- `driver-sebastian-vettel#147`: status=ok, entitás=0, kapcsolat=0
+- `driver-sebastian-vettel#148`: status=ok, entitás=0, kapcsolat=0
+- `driver-sebastian-vettel#149`: status=ok, entitás=0, kapcsolat=0
+- `driver-sebastian-vettel#15`: status=error, entitás=0, kapcsolat=0
+- `driver-sebastian-vettel#150`: status=error, entitás=0, kapcsolat=0
+- `driver-sebastian-vettel#151`: status=error, entitás=0, kapcsolat=0
+- `driver-sebastian-vettel#152`: status=ok, entitás=0, kapcsolat=0
+- `driver-sebastian-vettel#153`: status=ok, entitás=0, kapcsolat=0
+- `driver-sebastian-vettel#154`: status=ok, entitás=0, kapcsolat=0
+- `driver-sebastian-vettel#155`: status=ok, entitás=0, kapcsolat=0
+- `driver-sebastian-vettel#156`: status=ok, entitás=0, kapcsolat=0
+- `driver-sebastian-vettel#157`: status=ok, entitás=0, kapcsolat=0
+- `driver-sebastian-vettel#158`: status=ok, entitás=0, kapcsolat=0
+- `driver-sebastian-vettel#159`: status=ok, entitás=0, kapcsolat=0
+- `driver-sebastian-vettel#16`: status=error, entitás=0, kapcsolat=0
+- `driver-sebastian-vettel#160`: status=ok, entitás=0, kapcsolat=0
+- `driver-sebastian-vettel#161`: status=ok, entitás=0, kapcsolat=0
+- `driver-sebastian-vettel#162`: status=ok, entitás=0, kapcsolat=0
+- `driver-sebastian-vettel#163`: status=ok, entitás=0, kapcsolat=0
+- `driver-sebastian-vettel#164`: status=ok, entitás=0, kapcsolat=0
+- `driver-sebastian-vettel#17`: status=error, entitás=0, kapcsolat=0
+- `driver-sebastian-vettel#18`: status=error, entitás=0, kapcsolat=0
+- `driver-sebastian-vettel#19`: status=ok, entitás=0, kapcsolat=0
+- `driver-sebastian-vettel#2`: status=error, entitás=0, kapcsolat=0
+- `driver-sebastian-vettel#20`: status=ok, entitás=0, kapcsolat=0
+- `driver-sebastian-vettel#21`: status=ok, entitás=0, kapcsolat=0
+- `driver-sebastian-vettel#22`: status=ok, entitás=4, kapcsolat=2
+- `driver-sebastian-vettel#23`: status=error, entitás=0, kapcsolat=0
+- `driver-sebastian-vettel#24`: status=error, entitás=0, kapcsolat=0
+- `driver-sebastian-vettel#25`: status=ok, entitás=0, kapcsolat=0
+- `driver-sebastian-vettel#26`: status=error, entitás=0, kapcsolat=0
+- `driver-sebastian-vettel#27`: status=ok, entitás=7, kapcsolat=5
+- `driver-sebastian-vettel#28`: status=ok, entitás=0, kapcsolat=0
+- `driver-sebastian-vettel#29`: status=ok, entitás=5, kapcsolat=3
+- `driver-sebastian-vettel#3`: status=ok, entitás=3, kapcsolat=2
+- `driver-sebastian-vettel#30`: status=ok, entitás=5, kapcsolat=3
+- `driver-sebastian-vettel#31`: status=ok, entitás=0, kapcsolat=0
+- `driver-sebastian-vettel#32`: status=error, entitás=0, kapcsolat=0
+- `driver-sebastian-vettel#33`: status=ok, entitás=0, kapcsolat=0
+- `driver-sebastian-vettel#34`: status=ok, entitás=2, kapcsolat=0
+- `driver-sebastian-vettel#35`: status=ok, entitás=0, kapcsolat=0
+- `driver-sebastian-vettel#36`: status=error, entitás=0, kapcsolat=0
+- `driver-sebastian-vettel#37`: status=error, entitás=0, kapcsolat=0
+- `driver-sebastian-vettel#38`: status=error, entitás=0, kapcsolat=0
+- `driver-sebastian-vettel#39`: status=error, entitás=0, kapcsolat=0
+- `driver-sebastian-vettel#4`: status=error, entitás=0, kapcsolat=0
+- `driver-sebastian-vettel#40`: status=ok, entitás=6, kapcsolat=4
+- `driver-sebastian-vettel#41`: status=error, entitás=0, kapcsolat=0
+- `driver-sebastian-vettel#42`: status=error, entitás=0, kapcsolat=0
+- `driver-sebastian-vettel#43`: status=ok, entitás=0, kapcsolat=0
+- `driver-sebastian-vettel#44`: status=ok, entitás=0, kapcsolat=0
+- `driver-sebastian-vettel#45`: status=error, entitás=0, kapcsolat=0
+- `driver-sebastian-vettel#46`: status=error, entitás=0, kapcsolat=0
+- `driver-sebastian-vettel#47`: status=error, entitás=0, kapcsolat=0
+- `driver-sebastian-vettel#48`: status=ok, entitás=4, kapcsolat=2
+- `driver-sebastian-vettel#49`: status=ok, entitás=3, kapcsolat=2
+- `driver-sebastian-vettel#5`: status=error, entitás=0, kapcsolat=0
+- `driver-sebastian-vettel#50`: status=ok, entitás=6, kapcsolat=8
+- `driver-sebastian-vettel#51`: status=error, entitás=0, kapcsolat=0
+- `driver-sebastian-vettel#52`: status=error, entitás=0, kapcsolat=0
+- `driver-sebastian-vettel#53`: status=error, entitás=0, kapcsolat=0
+- `driver-sebastian-vettel#54`: status=error, entitás=0, kapcsolat=0
+- `driver-sebastian-vettel#55`: status=error, entitás=0, kapcsolat=0
+- `driver-sebastian-vettel#56`: status=error, entitás=0, kapcsolat=0
+- `driver-sebastian-vettel#57`: status=error, entitás=0, kapcsolat=0
+- `driver-sebastian-vettel#58`: status=ok, entitás=3, kapcsolat=2
+- `driver-sebastian-vettel#59`: status=ok, entitás=0, kapcsolat=0
+- `driver-sebastian-vettel#6`: status=error, entitás=0, kapcsolat=0
+- `driver-sebastian-vettel#60`: status=error, entitás=0, kapcsolat=0
+- `driver-sebastian-vettel#61`: status=ok, entitás=3, kapcsolat=0
+- `driver-sebastian-vettel#62`: status=error, entitás=0, kapcsolat=0
+- `driver-sebastian-vettel#63`: status=error, entitás=0, kapcsolat=0
+- `driver-sebastian-vettel#64`: status=ok, entitás=0, kapcsolat=0
+- `driver-sebastian-vettel#65`: status=error, entitás=0, kapcsolat=0
+- `driver-sebastian-vettel#66`: status=error, entitás=0, kapcsolat=0
+- `driver-sebastian-vettel#67`: status=error, entitás=0, kapcsolat=0
+- `driver-sebastian-vettel#68`: status=error, entitás=0, kapcsolat=0
+- `driver-sebastian-vettel#69`: status=error, entitás=0, kapcsolat=0
+- `driver-sebastian-vettel#7`: status=ok, entitás=2, kapcsolat=0
+- `driver-sebastian-vettel#70`: status=ok, entitás=0, kapcsolat=0
+- `driver-sebastian-vettel#71`: status=error, entitás=0, kapcsolat=0
+- `driver-sebastian-vettel#72`: status=error, entitás=0, kapcsolat=0
+- `driver-sebastian-vettel#73`: status=ok, entitás=0, kapcsolat=0
+- `driver-sebastian-vettel#74`: status=error, entitás=0, kapcsolat=0
+- `driver-sebastian-vettel#75`: status=ok, entitás=0, kapcsolat=0
+- `driver-sebastian-vettel#76`: status=error, entitás=0, kapcsolat=0
+- `driver-sebastian-vettel#77`: status=error, entitás=0, kapcsolat=0
+- `driver-sebastian-vettel#78`: status=ok, entitás=2, kapcsolat=0
+- `driver-sebastian-vettel#79`: status=ok, entitás=0, kapcsolat=0
+- `driver-sebastian-vettel#8`: status=ok, entitás=0, kapcsolat=0
+- `driver-sebastian-vettel#80`: status=error, entitás=0, kapcsolat=0
+- `driver-sebastian-vettel#81`: status=error, entitás=0, kapcsolat=0
+- `driver-sebastian-vettel#82`: status=error, entitás=0, kapcsolat=0
+- `driver-sebastian-vettel#83`: status=ok, entitás=0, kapcsolat=0
+- `driver-sebastian-vettel#84`: status=error, entitás=0, kapcsolat=0
+- `driver-sebastian-vettel#85`: status=ok, entitás=7, kapcsolat=4
+- `driver-sebastian-vettel#86`: status=error, entitás=0, kapcsolat=0
+- `driver-sebastian-vettel#87`: status=ok, entitás=0, kapcsolat=0
+- `driver-sebastian-vettel#88`: status=error, entitás=0, kapcsolat=0
+- `driver-sebastian-vettel#89`: status=error, entitás=0, kapcsolat=0
+- `driver-sebastian-vettel#9`: status=ok, entitás=2, kapcsolat=0
+- `driver-sebastian-vettel#90`: status=error, entitás=0, kapcsolat=0
+- `driver-sebastian-vettel#91`: status=error, entitás=0, kapcsolat=0
+- `driver-sebastian-vettel#92`: status=error, entitás=0, kapcsolat=0
+- `driver-sebastian-vettel#93`: status=error, entitás=0, kapcsolat=0
+- `driver-sebastian-vettel#94`: status=ok, entitás=5, kapcsolat=4
+- `driver-sebastian-vettel#95`: status=error, entitás=0, kapcsolat=0
+- `driver-sebastian-vettel#96`: status=ok, entitás=0, kapcsolat=0
+- `driver-sebastian-vettel#97`: status=error, entitás=0, kapcsolat=0
+- `driver-sebastian-vettel#98`: status=error, entitás=0, kapcsolat=0
+- `driver-sebastian-vettel#99`: status=error, entitás=0, kapcsolat=0
+- `driver-valtteri-bottas#0`: status=error, entitás=0, kapcsolat=0
+- `driver-valtteri-bottas#1`: status=error, entitás=0, kapcsolat=0
+- `driver-valtteri-bottas#10`: status=error, entitás=0, kapcsolat=0
+- `driver-valtteri-bottas#100`: status=ok, entitás=2, kapcsolat=1
+- `driver-valtteri-bottas#101`: status=error, entitás=0, kapcsolat=0
+- `driver-valtteri-bottas#102`: status=ok, entitás=6, kapcsolat=5
+- `driver-valtteri-bottas#103`: status=error, entitás=0, kapcsolat=0
+- `driver-valtteri-bottas#104`: status=ok, entitás=5, kapcsolat=3
+- `driver-valtteri-bottas#105`: status=ok, entitás=6, kapcsolat=4
+- `driver-valtteri-bottas#106`: status=ok, entitás=9, kapcsolat=8
+- `driver-valtteri-bottas#107`: status=ok, entitás=6, kapcsolat=4
+- `driver-valtteri-bottas#108`: status=error, entitás=0, kapcsolat=0
+- `driver-valtteri-bottas#109`: status=ok, entitás=3, kapcsolat=2
+- `driver-valtteri-bottas#11`: status=error, entitás=0, kapcsolat=0
+- `driver-valtteri-bottas#110`: status=ok, entitás=0, kapcsolat=0
+- `driver-valtteri-bottas#111`: status=error, entitás=0, kapcsolat=0
+- `driver-valtteri-bottas#112`: status=ok, entitás=8, kapcsolat=5
+- `driver-valtteri-bottas#113`: status=error, entitás=0, kapcsolat=0
+- `driver-valtteri-bottas#114`: status=ok, entitás=8, kapcsolat=7
+- `driver-valtteri-bottas#115`: status=ok, entitás=6, kapcsolat=4
+- `driver-valtteri-bottas#116`: status=error, entitás=0, kapcsolat=0
+- `driver-valtteri-bottas#117`: status=error, entitás=0, kapcsolat=0
+- `driver-valtteri-bottas#118`: status=ok, entitás=0, kapcsolat=0
+- `driver-valtteri-bottas#119`: status=ok, entitás=5, kapcsolat=3
+- `driver-valtteri-bottas#12`: status=error, entitás=0, kapcsolat=0
+- `driver-valtteri-bottas#120`: status=error, entitás=0, kapcsolat=0
+- `driver-valtteri-bottas#121`: status=ok, entitás=5, kapcsolat=4
+- `driver-valtteri-bottas#122`: status=error, entitás=0, kapcsolat=0
+- `driver-valtteri-bottas#123`: status=error, entitás=0, kapcsolat=0
+- `driver-valtteri-bottas#124`: status=ok, entitás=5, kapcsolat=5
+- `driver-valtteri-bottas#125`: status=error, entitás=0, kapcsolat=0
+- `driver-valtteri-bottas#126`: status=ok, entitás=3, kapcsolat=0
+- `driver-valtteri-bottas#127`: status=ok, entitás=4, kapcsolat=0
+- `driver-valtteri-bottas#128`: status=ok, entitás=0, kapcsolat=0
+- `driver-valtteri-bottas#129`: status=error, entitás=0, kapcsolat=0
+- `driver-valtteri-bottas#13`: status=ok, entitás=0, kapcsolat=0
+- `driver-valtteri-bottas#130`: status=error, entitás=0, kapcsolat=0
+- `driver-valtteri-bottas#131`: status=ok, entitás=0, kapcsolat=0
+- `driver-valtteri-bottas#132`: status=error, entitás=0, kapcsolat=0
+- `driver-valtteri-bottas#133`: status=error, entitás=0, kapcsolat=0
+- `driver-valtteri-bottas#134`: status=ok, entitás=0, kapcsolat=0
+- `driver-valtteri-bottas#135`: status=ok, entitás=0, kapcsolat=0
+- `driver-valtteri-bottas#136`: status=error, entitás=0, kapcsolat=0
+- `driver-valtteri-bottas#137`: status=error, entitás=0, kapcsolat=0
+- `driver-valtteri-bottas#138`: status=ok, entitás=0, kapcsolat=0
+- `driver-valtteri-bottas#139`: status=error, entitás=0, kapcsolat=0
+- `driver-valtteri-bottas#14`: status=ok, entitás=4, kapcsolat=3
+- `driver-valtteri-bottas#140`: status=ok, entitás=2, kapcsolat=1
+- `driver-valtteri-bottas#141`: status=ok, entitás=0, kapcsolat=0
+- `driver-valtteri-bottas#142`: status=ok, entitás=4, kapcsolat=2
+- `driver-valtteri-bottas#143`: status=ok, entitás=0, kapcsolat=0
+- `driver-valtteri-bottas#144`: status=error, entitás=0, kapcsolat=0
+- `driver-valtteri-bottas#145`: status=ok, entitás=0, kapcsolat=0
+- `driver-valtteri-bottas#146`: status=ok, entitás=0, kapcsolat=0
+- `driver-valtteri-bottas#147`: status=ok, entitás=0, kapcsolat=0
+- `driver-valtteri-bottas#148`: status=ok, entitás=4, kapcsolat=2
+- `driver-valtteri-bottas#149`: status=ok, entitás=0, kapcsolat=0
+- `driver-valtteri-bottas#15`: status=error, entitás=0, kapcsolat=0
+- `driver-valtteri-bottas#150`: status=ok, entitás=0, kapcsolat=0
+- `driver-valtteri-bottas#151`: status=ok, entitás=0, kapcsolat=0
+- `driver-valtteri-bottas#152`: status=error, entitás=0, kapcsolat=0
+- `driver-valtteri-bottas#153`: status=error, entitás=0, kapcsolat=0
+- `driver-valtteri-bottas#154`: status=ok, entitás=0, kapcsolat=0
+- `driver-valtteri-bottas#155`: status=ok, entitás=0, kapcsolat=0
+- `driver-valtteri-bottas#156`: status=ok, entitás=0, kapcsolat=0
+- `driver-valtteri-bottas#157`: status=ok, entitás=0, kapcsolat=0
+- `driver-valtteri-bottas#158`: status=ok, entitás=0, kapcsolat=0
+- `driver-valtteri-bottas#159`: status=ok, entitás=0, kapcsolat=0
+- `driver-valtteri-bottas#16`: status=ok, entitás=0, kapcsolat=0
+- `driver-valtteri-bottas#160`: status=ok, entitás=0, kapcsolat=0
+- `driver-valtteri-bottas#161`: status=ok, entitás=0, kapcsolat=0
+- `driver-valtteri-bottas#162`: status=ok, entitás=0, kapcsolat=0
+- `driver-valtteri-bottas#17`: status=error, entitás=0, kapcsolat=0
+- `driver-valtteri-bottas#18`: status=error, entitás=0, kapcsolat=0
+- `driver-valtteri-bottas#19`: status=ok, entitás=6, kapcsolat=4
+- `driver-valtteri-bottas#2`: status=error, entitás=0, kapcsolat=0
+- `driver-valtteri-bottas#20`: status=error, entitás=0, kapcsolat=0
+- `driver-valtteri-bottas#21`: status=ok, entitás=0, kapcsolat=0
+- `driver-valtteri-bottas#22`: status=error, entitás=0, kapcsolat=0
+- `driver-valtteri-bottas#23`: status=ok, entitás=5, kapcsolat=3
+- `driver-valtteri-bottas#24`: status=error, entitás=0, kapcsolat=0
+- `driver-valtteri-bottas#25`: status=error, entitás=0, kapcsolat=0
+- `driver-valtteri-bottas#26`: status=error, entitás=0, kapcsolat=0
+- `driver-valtteri-bottas#27`: status=error, entitás=0, kapcsolat=0
+- `driver-valtteri-bottas#28`: status=error, entitás=0, kapcsolat=0
+- `driver-valtteri-bottas#29`: status=error, entitás=0, kapcsolat=0
+- `driver-valtteri-bottas#3`: status=error, entitás=0, kapcsolat=0
+- `driver-valtteri-bottas#30`: status=ok, entitás=0, kapcsolat=0
+- `driver-valtteri-bottas#31`: status=ok, entitás=0, kapcsolat=0
+- `driver-valtteri-bottas#32`: status=ok, entitás=5, kapcsolat=3
+- `driver-valtteri-bottas#33`: status=error, entitás=0, kapcsolat=0
+- `driver-valtteri-bottas#34`: status=ok, entitás=4, kapcsolat=2
+- `driver-valtteri-bottas#35`: status=ok, entitás=6, kapcsolat=4
+- `driver-valtteri-bottas#36`: status=ok, entitás=6, kapcsolat=4
+- `driver-valtteri-bottas#37`: status=error, entitás=0, kapcsolat=0
+- `driver-valtteri-bottas#38`: status=error, entitás=0, kapcsolat=0
+- `driver-valtteri-bottas#39`: status=ok, entitás=0, kapcsolat=0
+- `driver-valtteri-bottas#4`: status=error, entitás=0, kapcsolat=0
+- `driver-valtteri-bottas#40`: status=error, entitás=0, kapcsolat=0
+- `driver-valtteri-bottas#41`: status=error, entitás=0, kapcsolat=0
+- `driver-valtteri-bottas#42`: status=error, entitás=0, kapcsolat=0
+- `driver-valtteri-bottas#43`: status=ok, entitás=8, kapcsolat=5
+- `driver-valtteri-bottas#44`: status=ok, entitás=6, kapcsolat=4
+- `driver-valtteri-bottas#45`: status=ok, entitás=4, kapcsolat=2
+- `driver-valtteri-bottas#46`: status=ok, entitás=3, kapcsolat=1
+- `driver-valtteri-bottas#47`: status=error, entitás=0, kapcsolat=0
+- `driver-valtteri-bottas#48`: status=error, entitás=0, kapcsolat=0
+- `driver-valtteri-bottas#49`: status=error, entitás=0, kapcsolat=0
+- `driver-valtteri-bottas#5`: status=ok, entitás=1, kapcsolat=0
+- `driver-valtteri-bottas#50`: status=error, entitás=0, kapcsolat=0
+- `driver-valtteri-bottas#51`: status=error, entitás=0, kapcsolat=0
+- `driver-valtteri-bottas#52`: status=ok, entitás=6, kapcsolat=4
+- `driver-valtteri-bottas#53`: status=error, entitás=0, kapcsolat=0
+- `driver-valtteri-bottas#54`: status=ok, entitás=7, kapcsolat=6
+- `driver-valtteri-bottas#55`: status=error, entitás=0, kapcsolat=0
+- `driver-valtteri-bottas#56`: status=ok, entitás=0, kapcsolat=0
+- `driver-valtteri-bottas#57`: status=ok, entitás=7, kapcsolat=5
+- `driver-valtteri-bottas#58`: status=error, entitás=0, kapcsolat=0
+- `driver-valtteri-bottas#59`: status=ok, entitás=5, kapcsolat=3
+- `driver-valtteri-bottas#6`: status=ok, entitás=3, kapcsolat=0
+- `driver-valtteri-bottas#60`: status=ok, entitás=5, kapcsolat=3
+- `driver-valtteri-bottas#61`: status=error, entitás=0, kapcsolat=0
+- `driver-valtteri-bottas#62`: status=ok, entitás=5, kapcsolat=3
+- `driver-valtteri-bottas#63`: status=error, entitás=0, kapcsolat=0
+- `driver-valtteri-bottas#64`: status=error, entitás=0, kapcsolat=0
+- `driver-valtteri-bottas#65`: status=ok, entitás=2, kapcsolat=0
+- `driver-valtteri-bottas#66`: status=ok, entitás=0, kapcsolat=0
+- `driver-valtteri-bottas#67`: status=error, entitás=0, kapcsolat=0
+- `driver-valtteri-bottas#68`: status=error, entitás=0, kapcsolat=0
+- `driver-valtteri-bottas#69`: status=ok, entitás=4, kapcsolat=2
+- `driver-valtteri-bottas#7`: status=error, entitás=0, kapcsolat=0
+- `driver-valtteri-bottas#70`: status=ok, entitás=8, kapcsolat=4
+- `driver-valtteri-bottas#71`: status=error, entitás=0, kapcsolat=0
+- `driver-valtteri-bottas#72`: status=ok, entitás=5, kapcsolat=3
+- `driver-valtteri-bottas#73`: status=error, entitás=0, kapcsolat=0
+- `driver-valtteri-bottas#74`: status=error, entitás=0, kapcsolat=0
+- `driver-valtteri-bottas#75`: status=ok, entitás=4, kapcsolat=3
+- `driver-valtteri-bottas#76`: status=ok, entitás=4, kapcsolat=0
+- `driver-valtteri-bottas#77`: status=ok, entitás=5, kapcsolat=3
+- `driver-valtteri-bottas#78`: status=error, entitás=0, kapcsolat=0
+- `driver-valtteri-bottas#79`: status=ok, entitás=5, kapcsolat=4
+- `driver-valtteri-bottas#8`: status=error, entitás=0, kapcsolat=0
+- `driver-valtteri-bottas#80`: status=ok, entitás=4, kapcsolat=2
+- `driver-valtteri-bottas#81`: status=ok, entitás=6, kapcsolat=4
+- `driver-valtteri-bottas#82`: status=error, entitás=0, kapcsolat=0
+- `driver-valtteri-bottas#83`: status=error, entitás=0, kapcsolat=0
+- `driver-valtteri-bottas#84`: status=error, entitás=0, kapcsolat=0
+- `driver-valtteri-bottas#85`: status=ok, entitás=5, kapcsolat=3
+- `driver-valtteri-bottas#86`: status=error, entitás=0, kapcsolat=0
+- `driver-valtteri-bottas#87`: status=error, entitás=0, kapcsolat=0
+- `driver-valtteri-bottas#88`: status=ok, entitás=0, kapcsolat=0
+- `driver-valtteri-bottas#89`: status=error, entitás=0, kapcsolat=0
+- `driver-valtteri-bottas#9`: status=ok, entitás=0, kapcsolat=0
+- `driver-valtteri-bottas#90`: status=ok, entitás=6, kapcsolat=4
+- `driver-valtteri-bottas#91`: status=error, entitás=0, kapcsolat=0
+- `driver-valtteri-bottas#92`: status=error, entitás=0, kapcsolat=0
+- `driver-valtteri-bottas#93`: status=error, entitás=0, kapcsolat=0
+- `driver-valtteri-bottas#94`: status=error, entitás=0, kapcsolat=0
+- `driver-valtteri-bottas#95`: status=error, entitás=0, kapcsolat=0
+- `driver-valtteri-bottas#96`: status=ok, entitás=5, kapcsolat=3
+- `driver-valtteri-bottas#97`: status=error, entitás=0, kapcsolat=0
+- `driver-valtteri-bottas#98`: status=error, entitás=0, kapcsolat=0
+- `driver-valtteri-bottas#99`: status=error, entitás=0, kapcsolat=0
+- `reference-list-of-formula-one-world-drivers-champions#0`: status=error, entitás=0, kapcsolat=0
+- `reference-list-of-formula-one-world-drivers-champions#1`: status=ok, entitás=16, kapcsolat=15
+- `reference-list-of-formula-one-world-drivers-champions#2`: status=ok, entitás=10, kapcsolat=7
+- `reference-list-of-formula-one-world-drivers-champions#3`: status=ok, entitás=0, kapcsolat=0
+- `reference-list-of-formula-one-world-drivers-champions#4`: status=ok, entitás=0, kapcsolat=0
+- `season-2012-formula-one-world-championship#0`: status=ok, entitás=3, kapcsolat=2
+- `season-2012-formula-one-world-championship#1`: status=ok, entitás=4, kapcsolat=3
+- `season-2012-formula-one-world-championship#10`: status=error, entitás=0, kapcsolat=0
+- `season-2012-formula-one-world-championship#100`: status=ok, entitás=0, kapcsolat=0
+- `season-2012-formula-one-world-championship#101`: status=ok, entitás=0, kapcsolat=0
+- `season-2012-formula-one-world-championship#102`: status=error, entitás=0, kapcsolat=0
+- `season-2012-formula-one-world-championship#103`: status=ok, entitás=4, kapcsolat=0
+- `season-2012-formula-one-world-championship#104`: status=error, entitás=0, kapcsolat=0
+- `season-2012-formula-one-world-championship#105`: status=ok, entitás=0, kapcsolat=0
+- `season-2012-formula-one-world-championship#106`: status=ok, entitás=0, kapcsolat=0
+- `season-2012-formula-one-world-championship#107`: status=error, entitás=0, kapcsolat=0
+- `season-2012-formula-one-world-championship#108`: status=error, entitás=0, kapcsolat=0
+- `season-2012-formula-one-world-championship#109`: status=error, entitás=0, kapcsolat=0
+- `season-2012-formula-one-world-championship#11`: status=error, entitás=0, kapcsolat=0
+- `season-2012-formula-one-world-championship#110`: status=error, entitás=0, kapcsolat=0
+- `season-2012-formula-one-world-championship#111`: status=ok, entitás=0, kapcsolat=0
+- `season-2012-formula-one-world-championship#112`: status=error, entitás=0, kapcsolat=0
+- `season-2012-formula-one-world-championship#113`: status=ok, entitás=6, kapcsolat=3
+- `season-2012-formula-one-world-championship#114`: status=error, entitás=0, kapcsolat=0
+- `season-2012-formula-one-world-championship#115`: status=error, entitás=0, kapcsolat=0
+- `season-2012-formula-one-world-championship#116`: status=error, entitás=0, kapcsolat=0
+- `season-2012-formula-one-world-championship#117`: status=error, entitás=0, kapcsolat=0
+- `season-2012-formula-one-world-championship#118`: status=ok, entitás=0, kapcsolat=0
+- `season-2012-formula-one-world-championship#119`: status=ok, entitás=4, kapcsolat=3
+- `season-2012-formula-one-world-championship#12`: status=ok, entitás=0, kapcsolat=0
+- `season-2012-formula-one-world-championship#120`: status=ok, entitás=6, kapcsolat=2
+- `season-2012-formula-one-world-championship#121`: status=ok, entitás=6, kapcsolat=2
+- `season-2012-formula-one-world-championship#122`: status=error, entitás=0, kapcsolat=0
+- `season-2012-formula-one-world-championship#123`: status=ok, entitás=6, kapcsolat=0
+- `season-2012-formula-one-world-championship#124`: status=ok, entitás=0, kapcsolat=0
+- `season-2012-formula-one-world-championship#125`: status=error, entitás=0, kapcsolat=0
+- `season-2012-formula-one-world-championship#126`: status=error, entitás=0, kapcsolat=0
+- `season-2012-formula-one-world-championship#127`: status=error, entitás=0, kapcsolat=0
+- `season-2012-formula-one-world-championship#128`: status=error, entitás=0, kapcsolat=0
+- `season-2012-formula-one-world-championship#129`: status=error, entitás=0, kapcsolat=0
+- `season-2012-formula-one-world-championship#13`: status=error, entitás=0, kapcsolat=0
+- `season-2012-formula-one-world-championship#130`: status=ok, entitás=0, kapcsolat=0
+- `season-2012-formula-one-world-championship#131`: status=ok, entitás=0, kapcsolat=0
+- `season-2012-formula-one-world-championship#132`: status=ok, entitás=8, kapcsolat=2
+- `season-2012-formula-one-world-championship#133`: status=error, entitás=0, kapcsolat=0
+- `season-2012-formula-one-world-championship#134`: status=error, entitás=0, kapcsolat=0
+- `season-2012-formula-one-world-championship#135`: status=ok, entitás=0, kapcsolat=0
+- `season-2012-formula-one-world-championship#136`: status=error, entitás=0, kapcsolat=0
+- `season-2012-formula-one-world-championship#137`: status=error, entitás=0, kapcsolat=0
+- `season-2012-formula-one-world-championship#138`: status=error, entitás=0, kapcsolat=0
+- `season-2012-formula-one-world-championship#139`: status=ok, entitás=7, kapcsolat=3
+- `season-2012-formula-one-world-championship#14`: status=ok, entitás=0, kapcsolat=0
+- `season-2012-formula-one-world-championship#140`: status=ok, entitás=0, kapcsolat=0
+- `season-2012-formula-one-world-championship#141`: status=error, entitás=0, kapcsolat=0
+- `season-2012-formula-one-world-championship#142`: status=ok, entitás=0, kapcsolat=0
+- `season-2012-formula-one-world-championship#143`: status=error, entitás=0, kapcsolat=0
+- `season-2012-formula-one-world-championship#144`: status=error, entitás=0, kapcsolat=0
+- `season-2012-formula-one-world-championship#145`: status=ok, entitás=5, kapcsolat=3
+- `season-2012-formula-one-world-championship#146`: status=error, entitás=0, kapcsolat=0
+- `season-2012-formula-one-world-championship#147`: status=ok, entitás=0, kapcsolat=0
+- `season-2012-formula-one-world-championship#148`: status=ok, entitás=11, kapcsolat=2
+- `season-2012-formula-one-world-championship#149`: status=error, entitás=0, kapcsolat=0
+- `season-2012-formula-one-world-championship#15`: status=error, entitás=0, kapcsolat=0
+- `season-2012-formula-one-world-championship#150`: status=error, entitás=0, kapcsolat=0
+- `season-2012-formula-one-world-championship#151`: status=error, entitás=0, kapcsolat=0
+- `season-2012-formula-one-world-championship#152`: status=ok, entitás=6, kapcsolat=4
+- `season-2012-formula-one-world-championship#153`: status=ok, entitás=0, kapcsolat=0
+- `season-2012-formula-one-world-championship#154`: status=error, entitás=0, kapcsolat=0
+- `season-2012-formula-one-world-championship#155`: status=ok, entitás=6, kapcsolat=2
+- `season-2012-formula-one-world-championship#156`: status=error, entitás=0, kapcsolat=0
+- `season-2012-formula-one-world-championship#157`: status=error, entitás=0, kapcsolat=0
+- `season-2012-formula-one-world-championship#158`: status=error, entitás=0, kapcsolat=0
+- `season-2012-formula-one-world-championship#159`: status=ok, entitás=6, kapcsolat=5
+- `season-2012-formula-one-world-championship#16`: status=ok, entitás=4, kapcsolat=0
+- `season-2012-formula-one-world-championship#160`: status=error, entitás=0, kapcsolat=0
+- `season-2012-formula-one-world-championship#161`: status=ok, entitás=0, kapcsolat=0
+- `season-2012-formula-one-world-championship#162`: status=ok, entitás=5, kapcsolat=2
+- `season-2012-formula-one-world-championship#163`: status=error, entitás=0, kapcsolat=0
+- `season-2012-formula-one-world-championship#164`: status=error, entitás=0, kapcsolat=0
+- `season-2012-formula-one-world-championship#165`: status=error, entitás=0, kapcsolat=0
+- `season-2012-formula-one-world-championship#166`: status=error, entitás=0, kapcsolat=0
+- `season-2012-formula-one-world-championship#167`: status=ok, entitás=0, kapcsolat=0
+- `season-2012-formula-one-world-championship#168`: status=error, entitás=0, kapcsolat=0
+- `season-2012-formula-one-world-championship#169`: status=error, entitás=0, kapcsolat=0
+- `season-2012-formula-one-world-championship#17`: status=error, entitás=0, kapcsolat=0
+- `season-2012-formula-one-world-championship#170`: status=error, entitás=0, kapcsolat=0
+- `season-2012-formula-one-world-championship#171`: status=error, entitás=0, kapcsolat=0
+- `season-2012-formula-one-world-championship#172`: status=ok, entitás=0, kapcsolat=0
+- `season-2012-formula-one-world-championship#173`: status=error, entitás=0, kapcsolat=0
+- `season-2012-formula-one-world-championship#174`: status=error, entitás=0, kapcsolat=0
+- `season-2012-formula-one-world-championship#175`: status=ok, entitás=0, kapcsolat=0
+- `season-2012-formula-one-world-championship#176`: status=error, entitás=0, kapcsolat=0
+- `season-2012-formula-one-world-championship#177`: status=error, entitás=0, kapcsolat=0
+- `season-2012-formula-one-world-championship#178`: status=error, entitás=0, kapcsolat=0
+- `season-2012-formula-one-world-championship#179`: status=error, entitás=0, kapcsolat=0
+- `season-2012-formula-one-world-championship#18`: status=ok, entitás=3, kapcsolat=0
+- `season-2012-formula-one-world-championship#180`: status=ok, entitás=0, kapcsolat=0
+- `season-2012-formula-one-world-championship#181`: status=ok, entitás=7, kapcsolat=5
+- `season-2012-formula-one-world-championship#182`: status=error, entitás=0, kapcsolat=0
+- `season-2012-formula-one-world-championship#183`: status=error, entitás=0, kapcsolat=0
+- `season-2012-formula-one-world-championship#184`: status=error, entitás=0, kapcsolat=0
+- `season-2012-formula-one-world-championship#185`: status=ok, entitás=8, kapcsolat=2
+- `season-2012-formula-one-world-championship#186`: status=error, entitás=0, kapcsolat=0
+- `season-2012-formula-one-world-championship#187`: status=ok, entitás=0, kapcsolat=0
+- `season-2012-formula-one-world-championship#188`: status=ok, entitás=9, kapcsolat=2
+- `season-2012-formula-one-world-championship#189`: status=error, entitás=0, kapcsolat=0
+- `season-2012-formula-one-world-championship#19`: status=ok, entitás=3, kapcsolat=2
+- `season-2012-formula-one-world-championship#190`: status=ok, entitás=7, kapcsolat=4
+- `season-2012-formula-one-world-championship#191`: status=error, entitás=0, kapcsolat=0
+- `season-2012-formula-one-world-championship#192`: status=error, entitás=0, kapcsolat=0
+- `season-2012-formula-one-world-championship#193`: status=error, entitás=0, kapcsolat=0
+- `season-2012-formula-one-world-championship#194`: status=error, entitás=0, kapcsolat=0
+- `season-2012-formula-one-world-championship#195`: status=ok, entitás=0, kapcsolat=0
+- `season-2012-formula-one-world-championship#196`: status=error, entitás=0, kapcsolat=0
+- `season-2012-formula-one-world-championship#197`: status=ok, entitás=5, kapcsolat=3
+- `season-2012-formula-one-world-championship#198`: status=error, entitás=0, kapcsolat=0
+- `season-2012-formula-one-world-championship#199`: status=ok, entitás=3, kapcsolat=0
+- `season-2012-formula-one-world-championship#2`: status=ok, entitás=8, kapcsolat=6
+- `season-2012-formula-one-world-championship#20`: status=ok, entitás=0, kapcsolat=0
+- `season-2012-formula-one-world-championship#200`: status=error, entitás=0, kapcsolat=0
+- `season-2012-formula-one-world-championship#201`: status=error, entitás=0, kapcsolat=0
+- `season-2012-formula-one-world-championship#202`: status=error, entitás=0, kapcsolat=0
+- `season-2012-formula-one-world-championship#203`: status=error, entitás=0, kapcsolat=0
+- `season-2012-formula-one-world-championship#204`: status=error, entitás=0, kapcsolat=0
+- `season-2012-formula-one-world-championship#205`: status=ok, entitás=0, kapcsolat=0
+- `season-2012-formula-one-world-championship#206`: status=ok, entitás=8, kapcsolat=2
+- `season-2012-formula-one-world-championship#207`: status=error, entitás=0, kapcsolat=0
+- `season-2012-formula-one-world-championship#208`: status=error, entitás=0, kapcsolat=0
+- `season-2012-formula-one-world-championship#209`: status=error, entitás=0, kapcsolat=0
+- `season-2012-formula-one-world-championship#21`: status=ok, entitás=4, kapcsolat=3
+- `season-2012-formula-one-world-championship#210`: status=error, entitás=0, kapcsolat=0
+- `season-2012-formula-one-world-championship#211`: status=error, entitás=0, kapcsolat=0
+- `season-2012-formula-one-world-championship#212`: status=error, entitás=0, kapcsolat=0
+- `season-2012-formula-one-world-championship#213`: status=error, entitás=0, kapcsolat=0
+- `season-2012-formula-one-world-championship#214`: status=error, entitás=0, kapcsolat=0
+- `season-2012-formula-one-world-championship#215`: status=error, entitás=0, kapcsolat=0
+- `season-2012-formula-one-world-championship#216`: status=ok, entitás=0, kapcsolat=0
+- `season-2012-formula-one-world-championship#217`: status=error, entitás=0, kapcsolat=0
+- `season-2012-formula-one-world-championship#218`: status=error, entitás=0, kapcsolat=0
+- `season-2012-formula-one-world-championship#219`: status=error, entitás=0, kapcsolat=0
+- `season-2012-formula-one-world-championship#22`: status=error, entitás=0, kapcsolat=0
+- `season-2012-formula-one-world-championship#220`: status=ok, entitás=0, kapcsolat=0
+- `season-2012-formula-one-world-championship#221`: status=error, entitás=0, kapcsolat=0
+- `season-2012-formula-one-world-championship#222`: status=ok, entitás=0, kapcsolat=0
+- `season-2012-formula-one-world-championship#223`: status=ok, entitás=0, kapcsolat=0
+- `season-2012-formula-one-world-championship#224`: status=ok, entitás=0, kapcsolat=0
+- `season-2012-formula-one-world-championship#225`: status=ok, entitás=3, kapcsolat=0
+- `season-2012-formula-one-world-championship#226`: status=ok, entitás=0, kapcsolat=0
+- `season-2012-formula-one-world-championship#227`: status=ok, entitás=0, kapcsolat=0
+- `season-2012-formula-one-world-championship#228`: status=ok, entitás=0, kapcsolat=0
+- `season-2012-formula-one-world-championship#23`: status=ok, entitás=6, kapcsolat=5
+- `season-2012-formula-one-world-championship#24`: status=ok, entitás=3, kapcsolat=2
+- `season-2012-formula-one-world-championship#25`: status=error, entitás=0, kapcsolat=0
+- `season-2012-formula-one-world-championship#26`: status=error, entitás=0, kapcsolat=0
+- `season-2012-formula-one-world-championship#27`: status=error, entitás=0, kapcsolat=0
+- `season-2012-formula-one-world-championship#28`: status=error, entitás=0, kapcsolat=0
+- `season-2012-formula-one-world-championship#29`: status=error, entitás=0, kapcsolat=0
+- `season-2012-formula-one-world-championship#3`: status=error, entitás=0, kapcsolat=0
+- `season-2012-formula-one-world-championship#30`: status=ok, entitás=7, kapcsolat=5
+- `season-2012-formula-one-world-championship#31`: status=ok, entitás=5, kapcsolat=4
+- `season-2012-formula-one-world-championship#32`: status=ok, entitás=3, kapcsolat=2
+- `season-2012-formula-one-world-championship#33`: status=ok, entitás=0, kapcsolat=0
+- `season-2012-formula-one-world-championship#34`: status=error, entitás=0, kapcsolat=0
+- `season-2012-formula-one-world-championship#35`: status=ok, entitás=0, kapcsolat=0
+- `season-2012-formula-one-world-championship#36`: status=ok, entitás=0, kapcsolat=0
+- `season-2012-formula-one-world-championship#37`: status=ok, entitás=0, kapcsolat=0
+- `season-2012-formula-one-world-championship#38`: status=ok, entitás=0, kapcsolat=0
+- `season-2012-formula-one-world-championship#39`: status=ok, entitás=3, kapcsolat=2
+- `season-2012-formula-one-world-championship#4`: status=error, entitás=0, kapcsolat=0
+- `season-2012-formula-one-world-championship#40`: status=ok, entitás=0, kapcsolat=0
+- `season-2012-formula-one-world-championship#41`: status=ok, entitás=0, kapcsolat=0
+- `season-2012-formula-one-world-championship#42`: status=ok, entitás=4, kapcsolat=3
+- `season-2012-formula-one-world-championship#43`: status=ok, entitás=0, kapcsolat=0
+- `season-2012-formula-one-world-championship#44`: status=ok, entitás=0, kapcsolat=0
+- `season-2012-formula-one-world-championship#45`: status=ok, entitás=0, kapcsolat=0
+- `season-2012-formula-one-world-championship#46`: status=ok, entitás=2, kapcsolat=0
+- `season-2012-formula-one-world-championship#47`: status=ok, entitás=0, kapcsolat=0
+- `season-2012-formula-one-world-championship#48`: status=ok, entitás=0, kapcsolat=0
+- `season-2012-formula-one-world-championship#49`: status=ok, entitás=0, kapcsolat=0
+- `season-2012-formula-one-world-championship#5`: status=error, entitás=0, kapcsolat=0
+- `season-2012-formula-one-world-championship#50`: status=ok, entitás=0, kapcsolat=0
+- `season-2012-formula-one-world-championship#51`: status=ok, entitás=2, kapcsolat=1
+- `season-2012-formula-one-world-championship#52`: status=ok, entitás=0, kapcsolat=0
+- `season-2012-formula-one-world-championship#53`: status=error, entitás=0, kapcsolat=0
+- `season-2012-formula-one-world-championship#54`: status=ok, entitás=0, kapcsolat=0
+- `season-2012-formula-one-world-championship#55`: status=ok, entitás=0, kapcsolat=0
+- `season-2012-formula-one-world-championship#56`: status=error, entitás=0, kapcsolat=0
+- `season-2012-formula-one-world-championship#57`: status=ok, entitás=0, kapcsolat=0
+- `season-2012-formula-one-world-championship#58`: status=error, entitás=0, kapcsolat=0
+- `season-2012-formula-one-world-championship#59`: status=ok, entitás=0, kapcsolat=0
+- `season-2012-formula-one-world-championship#6`: status=error, entitás=0, kapcsolat=0
+- `season-2012-formula-one-world-championship#60`: status=ok, entitás=0, kapcsolat=0
+- `season-2012-formula-one-world-championship#61`: status=error, entitás=0, kapcsolat=0
+- `season-2012-formula-one-world-championship#62`: status=ok, entitás=2, kapcsolat=1
+- `season-2012-formula-one-world-championship#63`: status=ok, entitás=0, kapcsolat=0
+- `season-2012-formula-one-world-championship#64`: status=ok, entitás=0, kapcsolat=0
+- `season-2012-formula-one-world-championship#65`: status=ok, entitás=0, kapcsolat=0
+- `season-2012-formula-one-world-championship#66`: status=error, entitás=0, kapcsolat=0
+- `season-2012-formula-one-world-championship#67`: status=ok, entitás=0, kapcsolat=0
+- `season-2012-formula-one-world-championship#68`: status=ok, entitás=0, kapcsolat=0
+- `season-2012-formula-one-world-championship#69`: status=ok, entitás=0, kapcsolat=0
+- `season-2012-formula-one-world-championship#7`: status=error, entitás=0, kapcsolat=0
+- `season-2012-formula-one-world-championship#70`: status=ok, entitás=3, kapcsolat=0
+- `season-2012-formula-one-world-championship#71`: status=ok, entitás=4, kapcsolat=0
+- `season-2012-formula-one-world-championship#72`: status=ok, entitás=0, kapcsolat=0
+- `season-2012-formula-one-world-championship#73`: status=error, entitás=0, kapcsolat=0
+- `season-2012-formula-one-world-championship#74`: status=ok, entitás=6, kapcsolat=5
+- `season-2012-formula-one-world-championship#75`: status=ok, entitás=0, kapcsolat=0
+- `season-2012-formula-one-world-championship#76`: status=error, entitás=0, kapcsolat=0
+- `season-2012-formula-one-world-championship#77`: status=error, entitás=0, kapcsolat=0
+- `season-2012-formula-one-world-championship#78`: status=error, entitás=0, kapcsolat=0
+- `season-2012-formula-one-world-championship#79`: status=error, entitás=0, kapcsolat=0
+- `season-2012-formula-one-world-championship#8`: status=ok, entitás=0, kapcsolat=0
+- `season-2012-formula-one-world-championship#80`: status=ok, entitás=0, kapcsolat=0
+- `season-2012-formula-one-world-championship#81`: status=ok, entitás=9, kapcsolat=8
+- `season-2012-formula-one-world-championship#82`: status=ok, entitás=8, kapcsolat=2
+- `season-2012-formula-one-world-championship#83`: status=error, entitás=0, kapcsolat=0
+- `season-2012-formula-one-world-championship#84`: status=error, entitás=0, kapcsolat=0
+- `season-2012-formula-one-world-championship#85`: status=error, entitás=0, kapcsolat=0
+- `season-2012-formula-one-world-championship#86`: status=ok, entitás=0, kapcsolat=0
+- `season-2012-formula-one-world-championship#87`: status=error, entitás=0, kapcsolat=0
+- `season-2012-formula-one-world-championship#88`: status=ok, entitás=7, kapcsolat=2
+- `season-2012-formula-one-world-championship#89`: status=ok, entitás=7, kapcsolat=2
+- `season-2012-formula-one-world-championship#9`: status=ok, entitás=0, kapcsolat=0
+- `season-2012-formula-one-world-championship#90`: status=error, entitás=0, kapcsolat=0
+- `season-2012-formula-one-world-championship#91`: status=ok, entitás=0, kapcsolat=0
+- `season-2012-formula-one-world-championship#92`: status=error, entitás=0, kapcsolat=0
+- `season-2012-formula-one-world-championship#93`: status=ok, entitás=0, kapcsolat=0
+- `season-2012-formula-one-world-championship#94`: status=error, entitás=0, kapcsolat=0
+- `season-2012-formula-one-world-championship#95`: status=error, entitás=0, kapcsolat=0
+- `season-2012-formula-one-world-championship#96`: status=error, entitás=0, kapcsolat=0
+- `season-2012-formula-one-world-championship#97`: status=error, entitás=0, kapcsolat=0
+- `season-2012-formula-one-world-championship#98`: status=error, entitás=0, kapcsolat=0
+- `season-2012-formula-one-world-championship#99`: status=error, entitás=0, kapcsolat=0
+- `season-2016-formula-one-world-championship#0`: status=ok, entitás=1, kapcsolat=0
+- `season-2016-formula-one-world-championship#1`: status=error, entitás=0, kapcsolat=0
+- `season-2016-formula-one-world-championship#10`: status=ok, entitás=0, kapcsolat=0
+- `season-2016-formula-one-world-championship#100`: status=ok, entitás=0, kapcsolat=0
+- `season-2016-formula-one-world-championship#101`: status=ok, entitás=0, kapcsolat=0
+- `season-2016-formula-one-world-championship#102`: status=ok, entitás=0, kapcsolat=0
+- `season-2016-formula-one-world-championship#103`: status=ok, entitás=0, kapcsolat=0
+- `season-2016-formula-one-world-championship#104`: status=ok, entitás=0, kapcsolat=0
+- `season-2016-formula-one-world-championship#105`: status=ok, entitás=0, kapcsolat=0
+- `season-2016-formula-one-world-championship#11`: status=error, entitás=0, kapcsolat=0
+- `season-2016-formula-one-world-championship#12`: status=error, entitás=0, kapcsolat=0
+- `season-2016-formula-one-world-championship#13`: status=error, entitás=0, kapcsolat=0
+- `season-2016-formula-one-world-championship#14`: status=error, entitás=0, kapcsolat=0
+- `season-2016-formula-one-world-championship#15`: status=ok, entitás=0, kapcsolat=0
+- `season-2016-formula-one-world-championship#16`: status=error, entitás=0, kapcsolat=0
+- `season-2016-formula-one-world-championship#17`: status=error, entitás=0, kapcsolat=0
+- `season-2016-formula-one-world-championship#18`: status=ok, entitás=4, kapcsolat=2
+- `season-2016-formula-one-world-championship#19`: status=error, entitás=0, kapcsolat=0
+- `season-2016-formula-one-world-championship#2`: status=ok, entitás=6, kapcsolat=5
+- `season-2016-formula-one-world-championship#20`: status=ok, entitás=3, kapcsolat=2
+- `season-2016-formula-one-world-championship#21`: status=error, entitás=0, kapcsolat=0
+- `season-2016-formula-one-world-championship#22`: status=ok, entitás=0, kapcsolat=0
+- `season-2016-formula-one-world-championship#23`: status=ok, entitás=0, kapcsolat=0
+- `season-2016-formula-one-world-championship#24`: status=error, entitás=0, kapcsolat=0
+- `season-2016-formula-one-world-championship#25`: status=error, entitás=0, kapcsolat=0
+- `season-2016-formula-one-world-championship#26`: status=error, entitás=0, kapcsolat=0
+- `season-2016-formula-one-world-championship#27`: status=error, entitás=0, kapcsolat=0
+- `season-2016-formula-one-world-championship#28`: status=ok, entitás=0, kapcsolat=0
+- `season-2016-formula-one-world-championship#29`: status=ok, entitás=5, kapcsolat=4
+- `season-2016-formula-one-world-championship#3`: status=error, entitás=0, kapcsolat=0
+- `season-2016-formula-one-world-championship#30`: status=ok, entitás=0, kapcsolat=0
+- `season-2016-formula-one-world-championship#31`: status=ok, entitás=5, kapcsolat=3
+- `season-2016-formula-one-world-championship#32`: status=ok, entitás=3, kapcsolat=2
+- `season-2016-formula-one-world-championship#33`: status=ok, entitás=0, kapcsolat=0
+- `season-2016-formula-one-world-championship#34`: status=ok, entitás=0, kapcsolat=0
+- `season-2016-formula-one-world-championship#35`: status=ok, entitás=0, kapcsolat=0
+- `season-2016-formula-one-world-championship#36`: status=ok, entitás=0, kapcsolat=0
+- `season-2016-formula-one-world-championship#37`: status=ok, entitás=0, kapcsolat=0
+- `season-2016-formula-one-world-championship#38`: status=ok, entitás=0, kapcsolat=0
+- `season-2016-formula-one-world-championship#39`: status=error, entitás=0, kapcsolat=0
+- `season-2016-formula-one-world-championship#4`: status=error, entitás=0, kapcsolat=0
+- `season-2016-formula-one-world-championship#40`: status=ok, entitás=0, kapcsolat=0
+- `season-2016-formula-one-world-championship#41`: status=ok, entitás=0, kapcsolat=0
+- `season-2016-formula-one-world-championship#42`: status=ok, entitás=0, kapcsolat=0
+- `season-2016-formula-one-world-championship#43`: status=ok, entitás=0, kapcsolat=0
+- `season-2016-formula-one-world-championship#44`: status=ok, entitás=0, kapcsolat=0
+- `season-2016-formula-one-world-championship#45`: status=ok, entitás=0, kapcsolat=0
+- `season-2016-formula-one-world-championship#46`: status=ok, entitás=0, kapcsolat=0
+- `season-2016-formula-one-world-championship#47`: status=ok, entitás=0, kapcsolat=0
+- `season-2016-formula-one-world-championship#48`: status=ok, entitás=0, kapcsolat=0
+- `season-2016-formula-one-world-championship#49`: status=ok, entitás=0, kapcsolat=0
+- `season-2016-formula-one-world-championship#5`: status=error, entitás=0, kapcsolat=0
+- `season-2016-formula-one-world-championship#50`: status=ok, entitás=1, kapcsolat=0
+- `season-2016-formula-one-world-championship#51`: status=ok, entitás=4, kapcsolat=3
+- `season-2016-formula-one-world-championship#52`: status=ok, entitás=0, kapcsolat=0
+- `season-2016-formula-one-world-championship#53`: status=ok, entitás=0, kapcsolat=0
+- `season-2016-formula-one-world-championship#54`: status=ok, entitás=0, kapcsolat=0
+- `season-2016-formula-one-world-championship#55`: status=ok, entitás=0, kapcsolat=0
+- `season-2016-formula-one-world-championship#56`: status=ok, entitás=4, kapcsolat=0
+- `season-2016-formula-one-world-championship#57`: status=error, entitás=0, kapcsolat=0
+- `season-2016-formula-one-world-championship#58`: status=ok, entitás=0, kapcsolat=0
+- `season-2016-formula-one-world-championship#59`: status=ok, entitás=0, kapcsolat=0
+- `season-2016-formula-one-world-championship#6`: status=error, entitás=0, kapcsolat=0
+- `season-2016-formula-one-world-championship#60`: status=error, entitás=0, kapcsolat=0
+- `season-2016-formula-one-world-championship#61`: status=error, entitás=0, kapcsolat=0
+- `season-2016-formula-one-world-championship#62`: status=ok, entitás=3, kapcsolat=2
+- `season-2016-formula-one-world-championship#63`: status=error, entitás=0, kapcsolat=0
+- `season-2016-formula-one-world-championship#64`: status=error, entitás=0, kapcsolat=0
+- `season-2016-formula-one-world-championship#65`: status=error, entitás=0, kapcsolat=0
+- `season-2016-formula-one-world-championship#66`: status=error, entitás=0, kapcsolat=0
+- `season-2016-formula-one-world-championship#67`: status=error, entitás=0, kapcsolat=0
+- `season-2016-formula-one-world-championship#68`: status=error, entitás=0, kapcsolat=0
+- `season-2016-formula-one-world-championship#69`: status=error, entitás=0, kapcsolat=0
+- `season-2016-formula-one-world-championship#7`: status=ok, entitás=1, kapcsolat=0
+- `season-2016-formula-one-world-championship#70`: status=error, entitás=0, kapcsolat=0
+- `season-2016-formula-one-world-championship#71`: status=error, entitás=0, kapcsolat=0
+- `season-2016-formula-one-world-championship#72`: status=error, entitás=0, kapcsolat=0
+- `season-2016-formula-one-world-championship#73`: status=error, entitás=0, kapcsolat=0
+- `season-2016-formula-one-world-championship#74`: status=ok, entitás=3, kapcsolat=2
+- `season-2016-formula-one-world-championship#75`: status=error, entitás=0, kapcsolat=0
+- `season-2016-formula-one-world-championship#76`: status=ok, entitás=2, kapcsolat=0
+- `season-2016-formula-one-world-championship#77`: status=error, entitás=0, kapcsolat=0
+- `season-2016-formula-one-world-championship#78`: status=error, entitás=0, kapcsolat=0
+- `season-2016-formula-one-world-championship#79`: status=error, entitás=0, kapcsolat=0
+- `season-2016-formula-one-world-championship#8`: status=ok, entitás=0, kapcsolat=0
+- `season-2016-formula-one-world-championship#80`: status=error, entitás=0, kapcsolat=0
+- `season-2016-formula-one-world-championship#81`: status=ok, entitás=4, kapcsolat=2
+- `season-2016-formula-one-world-championship#82`: status=error, entitás=0, kapcsolat=0
+- `season-2016-formula-one-world-championship#83`: status=ok, entitás=0, kapcsolat=0
+- `season-2016-formula-one-world-championship#84`: status=error, entitás=0, kapcsolat=0
+- `season-2016-formula-one-world-championship#85`: status=error, entitás=0, kapcsolat=0
+- `season-2016-formula-one-world-championship#86`: status=error, entitás=0, kapcsolat=0
+- `season-2016-formula-one-world-championship#87`: status=error, entitás=0, kapcsolat=0
+- `season-2016-formula-one-world-championship#88`: status=error, entitás=0, kapcsolat=0
+- `season-2016-formula-one-world-championship#89`: status=ok, entitás=3, kapcsolat=2
+- `season-2016-formula-one-world-championship#9`: status=ok, entitás=0, kapcsolat=0
+- `season-2016-formula-one-world-championship#90`: status=ok, entitás=0, kapcsolat=0
+- `season-2016-formula-one-world-championship#91`: status=error, entitás=0, kapcsolat=0
+- `season-2016-formula-one-world-championship#92`: status=error, entitás=0, kapcsolat=0
+- `season-2016-formula-one-world-championship#93`: status=error, entitás=0, kapcsolat=0
+- `season-2016-formula-one-world-championship#94`: status=ok, entitás=4, kapcsolat=1
+- `season-2016-formula-one-world-championship#95`: status=error, entitás=0, kapcsolat=0
+- `season-2016-formula-one-world-championship#96`: status=error, entitás=0, kapcsolat=0
+- `season-2016-formula-one-world-championship#97`: status=ok, entitás=0, kapcsolat=0
+- `season-2016-formula-one-world-championship#98`: status=ok, entitás=0, kapcsolat=0
+- `season-2016-formula-one-world-championship#99`: status=ok, entitás=0, kapcsolat=0
+- `season-2021-formula-one-world-championship#0`: status=ok, entitás=2, kapcsolat=1
+- `season-2021-formula-one-world-championship#1`: status=error, entitás=0, kapcsolat=0
+- `season-2021-formula-one-world-championship#10`: status=error, entitás=0, kapcsolat=0
+- `season-2021-formula-one-world-championship#100`: status=ok, entitás=0, kapcsolat=0
+- `season-2021-formula-one-world-championship#101`: status=ok, entitás=0, kapcsolat=0
+- `season-2021-formula-one-world-championship#102`: status=ok, entitás=0, kapcsolat=0
+- `season-2021-formula-one-world-championship#103`: status=ok, entitás=0, kapcsolat=0
+- `season-2021-formula-one-world-championship#104`: status=ok, entitás=0, kapcsolat=0
+- `season-2021-formula-one-world-championship#105`: status=ok, entitás=0, kapcsolat=0
+- `season-2021-formula-one-world-championship#11`: status=error, entitás=0, kapcsolat=0
+- `season-2021-formula-one-world-championship#12`: status=error, entitás=0, kapcsolat=0
+- `season-2021-formula-one-world-championship#13`: status=ok, entitás=7, kapcsolat=5
+- `season-2021-formula-one-world-championship#14`: status=ok, entitás=0, kapcsolat=0
+- `season-2021-formula-one-world-championship#15`: status=ok, entitás=3, kapcsolat=2
+- `season-2021-formula-one-world-championship#16`: status=ok, entitás=5, kapcsolat=4
+- `season-2021-formula-one-world-championship#17`: status=ok, entitás=5, kapcsolat=4
+- `season-2021-formula-one-world-championship#18`: status=ok, entitás=3, kapcsolat=2
+- `season-2021-formula-one-world-championship#19`: status=ok, entitás=3, kapcsolat=2
+- `season-2021-formula-one-world-championship#2`: status=error, entitás=0, kapcsolat=0
+- `season-2021-formula-one-world-championship#20`: status=ok, entitás=1, kapcsolat=0
+- `season-2021-formula-one-world-championship#21`: status=ok, entitás=4, kapcsolat=3
+- `season-2021-formula-one-world-championship#22`: status=ok, entitás=0, kapcsolat=0
+- `season-2021-formula-one-world-championship#23`: status=ok, entitás=0, kapcsolat=0
+- `season-2021-formula-one-world-championship#24`: status=ok, entitás=0, kapcsolat=0
+- `season-2021-formula-one-world-championship#25`: status=ok, entitás=0, kapcsolat=0
+- `season-2021-formula-one-world-championship#26`: status=ok, entitás=0, kapcsolat=0
+- `season-2021-formula-one-world-championship#27`: status=ok, entitás=0, kapcsolat=0
+- `season-2021-formula-one-world-championship#28`: status=ok, entitás=5, kapcsolat=4
+- `season-2021-formula-one-world-championship#29`: status=ok, entitás=6, kapcsolat=5
+- `season-2021-formula-one-world-championship#3`: status=error, entitás=0, kapcsolat=0
+- `season-2021-formula-one-world-championship#30`: status=ok, entitás=0, kapcsolat=0
+- `season-2021-formula-one-world-championship#31`: status=ok, entitás=0, kapcsolat=0
+- `season-2021-formula-one-world-championship#32`: status=ok, entitás=0, kapcsolat=0
+- `season-2021-formula-one-world-championship#33`: status=ok, entitás=0, kapcsolat=0
+- `season-2021-formula-one-world-championship#34`: status=ok, entitás=0, kapcsolat=0
+- `season-2021-formula-one-world-championship#35`: status=ok, entitás=0, kapcsolat=0
+- `season-2021-formula-one-world-championship#36`: status=ok, entitás=4, kapcsolat=3
+- `season-2021-formula-one-world-championship#37`: status=ok, entitás=0, kapcsolat=0
+- `season-2021-formula-one-world-championship#38`: status=ok, entitás=0, kapcsolat=0
+- `season-2021-formula-one-world-championship#39`: status=ok, entitás=0, kapcsolat=0
+- `season-2021-formula-one-world-championship#4`: status=error, entitás=0, kapcsolat=0
+- `season-2021-formula-one-world-championship#40`: status=ok, entitás=4, kapcsolat=2
+- `season-2021-formula-one-world-championship#41`: status=ok, entitás=5, kapcsolat=4
+- `season-2021-formula-one-world-championship#42`: status=ok, entitás=0, kapcsolat=0
+- `season-2021-formula-one-world-championship#43`: status=ok, entitás=0, kapcsolat=0
+- `season-2021-formula-one-world-championship#44`: status=ok, entitás=0, kapcsolat=0
+- `season-2021-formula-one-world-championship#45`: status=ok, entitás=0, kapcsolat=0
+- `season-2021-formula-one-world-championship#46`: status=ok, entitás=0, kapcsolat=0
+- `season-2021-formula-one-world-championship#47`: status=ok, entitás=0, kapcsolat=0
+- `season-2021-formula-one-world-championship#48`: status=ok, entitás=0, kapcsolat=0
+- `season-2021-formula-one-world-championship#49`: status=ok, entitás=0, kapcsolat=0
+- `season-2021-formula-one-world-championship#5`: status=ok, entitás=0, kapcsolat=0
+- `season-2021-formula-one-world-championship#50`: status=ok, entitás=0, kapcsolat=0
+- `season-2021-formula-one-world-championship#51`: status=ok, entitás=0, kapcsolat=0
+- `season-2021-formula-one-world-championship#52`: status=ok, entitás=0, kapcsolat=0
+- `season-2021-formula-one-world-championship#53`: status=ok, entitás=3, kapcsolat=0
+- `season-2021-formula-one-world-championship#54`: status=ok, entitás=4, kapcsolat=1
+- `season-2021-formula-one-world-championship#55`: status=ok, entitás=6, kapcsolat=0
+- `season-2021-formula-one-world-championship#56`: status=error, entitás=0, kapcsolat=0
+- `season-2021-formula-one-world-championship#57`: status=ok, entitás=0, kapcsolat=0
+- `season-2021-formula-one-world-championship#58`: status=error, entitás=0, kapcsolat=0
+- `season-2021-formula-one-world-championship#59`: status=error, entitás=0, kapcsolat=0
+- `season-2021-formula-one-world-championship#6`: status=error, entitás=0, kapcsolat=0
+- `season-2021-formula-one-world-championship#60`: status=error, entitás=0, kapcsolat=0
+- `season-2021-formula-one-world-championship#61`: status=error, entitás=0, kapcsolat=0
+- `season-2021-formula-one-world-championship#62`: status=error, entitás=0, kapcsolat=0
+- `season-2021-formula-one-world-championship#63`: status=error, entitás=0, kapcsolat=0
+- `season-2021-formula-one-world-championship#64`: status=ok, entitás=5, kapcsolat=2
+- `season-2021-formula-one-world-championship#65`: status=error, entitás=0, kapcsolat=0
+- `season-2021-formula-one-world-championship#66`: status=error, entitás=0, kapcsolat=0
+- `season-2021-formula-one-world-championship#67`: status=error, entitás=0, kapcsolat=0
+- `season-2021-formula-one-world-championship#68`: status=error, entitás=0, kapcsolat=0
+- `season-2021-formula-one-world-championship#69`: status=error, entitás=0, kapcsolat=0
+- `season-2021-formula-one-world-championship#7`: status=error, entitás=0, kapcsolat=0
+- `season-2021-formula-one-world-championship#70`: status=error, entitás=0, kapcsolat=0
+- `season-2021-formula-one-world-championship#71`: status=ok, entitás=0, kapcsolat=0
+- `season-2021-formula-one-world-championship#72`: status=error, entitás=0, kapcsolat=0
+- `season-2021-formula-one-world-championship#73`: status=error, entitás=0, kapcsolat=0
+- `season-2021-formula-one-world-championship#74`: status=error, entitás=0, kapcsolat=0
+- `season-2021-formula-one-world-championship#75`: status=error, entitás=0, kapcsolat=0
+- `season-2021-formula-one-world-championship#76`: status=error, entitás=0, kapcsolat=0
+- `season-2021-formula-one-world-championship#77`: status=error, entitás=0, kapcsolat=0
+- `season-2021-formula-one-world-championship#78`: status=error, entitás=0, kapcsolat=0
+- `season-2021-formula-one-world-championship#79`: status=error, entitás=0, kapcsolat=0
+- `season-2021-formula-one-world-championship#8`: status=ok, entitás=5, kapcsolat=0
+- `season-2021-formula-one-world-championship#80`: status=ok, entitás=0, kapcsolat=0
+- `season-2021-formula-one-world-championship#81`: status=error, entitás=0, kapcsolat=0
+- `season-2021-formula-one-world-championship#82`: status=error, entitás=0, kapcsolat=0
+- `season-2021-formula-one-world-championship#83`: status=error, entitás=0, kapcsolat=0
+- `season-2021-formula-one-world-championship#84`: status=ok, entitás=6, kapcsolat=1
+- `season-2021-formula-one-world-championship#85`: status=error, entitás=0, kapcsolat=0
+- `season-2021-formula-one-world-championship#86`: status=error, entitás=0, kapcsolat=0
+- `season-2021-formula-one-world-championship#87`: status=error, entitás=0, kapcsolat=0
+- `season-2021-formula-one-world-championship#88`: status=error, entitás=0, kapcsolat=0
+- `season-2021-formula-one-world-championship#89`: status=error, entitás=0, kapcsolat=0
+- `season-2021-formula-one-world-championship#9`: status=ok, entitás=9, kapcsolat=8
+- `season-2021-formula-one-world-championship#90`: status=ok, entitás=5, kapcsolat=1
+- `season-2021-formula-one-world-championship#91`: status=error, entitás=0, kapcsolat=0
+- `season-2021-formula-one-world-championship#92`: status=ok, entitás=5, kapcsolat=0
+- `season-2021-formula-one-world-championship#93`: status=error, entitás=0, kapcsolat=0
+- `season-2021-formula-one-world-championship#94`: status=ok, entitás=0, kapcsolat=0
+- `season-2021-formula-one-world-championship#95`: status=ok, entitás=0, kapcsolat=0
+- `season-2021-formula-one-world-championship#96`: status=ok, entitás=0, kapcsolat=0
+- `season-2021-formula-one-world-championship#97`: status=ok, entitás=0, kapcsolat=0
+- `season-2021-formula-one-world-championship#98`: status=ok, entitás=3, kapcsolat=2
+- `season-2021-formula-one-world-championship#99`: status=ok, entitás=0, kapcsolat=0
+- `team-mercedes-benz-in-formula-one#0`: status=ok, entitás=0, kapcsolat=0
+- `team-mercedes-benz-in-formula-one#1`: status=error, entitás=0, kapcsolat=0
+- `team-mercedes-benz-in-formula-one#10`: status=error, entitás=0, kapcsolat=0
+- `team-mercedes-benz-in-formula-one#100`: status=ok, entitás=0, kapcsolat=0
+- `team-mercedes-benz-in-formula-one#101`: status=ok, entitás=0, kapcsolat=0
+- `team-mercedes-benz-in-formula-one#11`: status=error, entitás=0, kapcsolat=0
+- `team-mercedes-benz-in-formula-one#12`: status=error, entitás=0, kapcsolat=0
+- `team-mercedes-benz-in-formula-one#13`: status=error, entitás=0, kapcsolat=0
+- `team-mercedes-benz-in-formula-one#14`: status=error, entitás=0, kapcsolat=0
+- `team-mercedes-benz-in-formula-one#15`: status=ok, entitás=0, kapcsolat=0
+- `team-mercedes-benz-in-formula-one#16`: status=error, entitás=0, kapcsolat=0
+- `team-mercedes-benz-in-formula-one#17`: status=ok, entitás=0, kapcsolat=0
+- `team-mercedes-benz-in-formula-one#18`: status=error, entitás=0, kapcsolat=0
+- `team-mercedes-benz-in-formula-one#19`: status=error, entitás=0, kapcsolat=0
+- `team-mercedes-benz-in-formula-one#2`: status=ok, entitás=0, kapcsolat=0
+- `team-mercedes-benz-in-formula-one#20`: status=ok, entitás=0, kapcsolat=0
+- `team-mercedes-benz-in-formula-one#21`: status=error, entitás=0, kapcsolat=0
+- `team-mercedes-benz-in-formula-one#22`: status=error, entitás=0, kapcsolat=0
+- `team-mercedes-benz-in-formula-one#23`: status=error, entitás=0, kapcsolat=0
+- `team-mercedes-benz-in-formula-one#24`: status=ok, entitás=0, kapcsolat=0
+- `team-mercedes-benz-in-formula-one#25`: status=error, entitás=0, kapcsolat=0
+- `team-mercedes-benz-in-formula-one#26`: status=error, entitás=0, kapcsolat=0
+- `team-mercedes-benz-in-formula-one#27`: status=error, entitás=0, kapcsolat=0
+- `team-mercedes-benz-in-formula-one#28`: status=error, entitás=0, kapcsolat=0
+- `team-mercedes-benz-in-formula-one#29`: status=error, entitás=0, kapcsolat=0
+- `team-mercedes-benz-in-formula-one#3`: status=error, entitás=0, kapcsolat=0
+- `team-mercedes-benz-in-formula-one#30`: status=error, entitás=0, kapcsolat=0
+- `team-mercedes-benz-in-formula-one#31`: status=error, entitás=0, kapcsolat=0
+- `team-mercedes-benz-in-formula-one#32`: status=error, entitás=0, kapcsolat=0
+- `team-mercedes-benz-in-formula-one#33`: status=ok, entitás=0, kapcsolat=0
+- `team-mercedes-benz-in-formula-one#34`: status=ok, entitás=0, kapcsolat=0
+- `team-mercedes-benz-in-formula-one#35`: status=error, entitás=0, kapcsolat=0
+- `team-mercedes-benz-in-formula-one#36`: status=ok, entitás=4, kapcsolat=2
+- `team-mercedes-benz-in-formula-one#37`: status=ok, entitás=0, kapcsolat=0
+- `team-mercedes-benz-in-formula-one#38`: status=error, entitás=0, kapcsolat=0
+- `team-mercedes-benz-in-formula-one#39`: status=error, entitás=0, kapcsolat=0
+- `team-mercedes-benz-in-formula-one#4`: status=error, entitás=0, kapcsolat=0
+- `team-mercedes-benz-in-formula-one#40`: status=error, entitás=0, kapcsolat=0
+- `team-mercedes-benz-in-formula-one#41`: status=ok, entitás=0, kapcsolat=0
+- `team-mercedes-benz-in-formula-one#42`: status=ok, entitás=8, kapcsolat=8
+- `team-mercedes-benz-in-formula-one#43`: status=ok, entitás=0, kapcsolat=0
+- `team-mercedes-benz-in-formula-one#44`: status=error, entitás=0, kapcsolat=0
+- `team-mercedes-benz-in-formula-one#45`: status=error, entitás=0, kapcsolat=0
+- `team-mercedes-benz-in-formula-one#46`: status=error, entitás=0, kapcsolat=0
+- `team-mercedes-benz-in-formula-one#47`: status=error, entitás=0, kapcsolat=0
+- `team-mercedes-benz-in-formula-one#48`: status=error, entitás=0, kapcsolat=0
+- `team-mercedes-benz-in-formula-one#49`: status=error, entitás=0, kapcsolat=0
+- `team-mercedes-benz-in-formula-one#5`: status=error, entitás=0, kapcsolat=0
+- `team-mercedes-benz-in-formula-one#50`: status=error, entitás=0, kapcsolat=0
+- `team-mercedes-benz-in-formula-one#51`: status=error, entitás=0, kapcsolat=0
+- `team-mercedes-benz-in-formula-one#52`: status=error, entitás=0, kapcsolat=0
+- `team-mercedes-benz-in-formula-one#53`: status=error, entitás=0, kapcsolat=0
+- `team-mercedes-benz-in-formula-one#54`: status=error, entitás=0, kapcsolat=0
+- `team-mercedes-benz-in-formula-one#55`: status=ok, entitás=0, kapcsolat=0
+- `team-mercedes-benz-in-formula-one#56`: status=error, entitás=0, kapcsolat=0
+- `team-mercedes-benz-in-formula-one#57`: status=error, entitás=0, kapcsolat=0
+- `team-mercedes-benz-in-formula-one#58`: status=error, entitás=0, kapcsolat=0
+- `team-mercedes-benz-in-formula-one#59`: status=error, entitás=0, kapcsolat=0
+- `team-mercedes-benz-in-formula-one#6`: status=ok, entitás=0, kapcsolat=0
+- `team-mercedes-benz-in-formula-one#60`: status=error, entitás=0, kapcsolat=0
+- `team-mercedes-benz-in-formula-one#61`: status=error, entitás=0, kapcsolat=0
+- `team-mercedes-benz-in-formula-one#62`: status=error, entitás=0, kapcsolat=0
+- `team-mercedes-benz-in-formula-one#63`: status=error, entitás=0, kapcsolat=0
+- `team-mercedes-benz-in-formula-one#64`: status=error, entitás=0, kapcsolat=0
+- `team-mercedes-benz-in-formula-one#65`: status=error, entitás=0, kapcsolat=0
+- `team-mercedes-benz-in-formula-one#66`: status=error, entitás=0, kapcsolat=0
+- `team-mercedes-benz-in-formula-one#67`: status=ok, entitás=5, kapcsolat=2
+- `team-mercedes-benz-in-formula-one#68`: status=ok, entitás=0, kapcsolat=0
+- `team-mercedes-benz-in-formula-one#69`: status=error, entitás=0, kapcsolat=0
+- `team-mercedes-benz-in-formula-one#7`: status=ok, entitás=0, kapcsolat=0
+- `team-mercedes-benz-in-formula-one#70`: status=error, entitás=0, kapcsolat=0
+- `team-mercedes-benz-in-formula-one#71`: status=error, entitás=0, kapcsolat=0
+- `team-mercedes-benz-in-formula-one#72`: status=ok, entitás=0, kapcsolat=0
+- `team-mercedes-benz-in-formula-one#73`: status=ok, entitás=0, kapcsolat=0
+- `team-mercedes-benz-in-formula-one#74`: status=error, entitás=0, kapcsolat=0
+- `team-mercedes-benz-in-formula-one#75`: status=error, entitás=0, kapcsolat=0
+- `team-mercedes-benz-in-formula-one#76`: status=error, entitás=0, kapcsolat=0
+- `team-mercedes-benz-in-formula-one#77`: status=ok, entitás=0, kapcsolat=0
+- `team-mercedes-benz-in-formula-one#78`: status=error, entitás=0, kapcsolat=0
+- `team-mercedes-benz-in-formula-one#79`: status=ok, entitás=0, kapcsolat=0
+- `team-mercedes-benz-in-formula-one#8`: status=ok, entitás=4, kapcsolat=3
+- `team-mercedes-benz-in-formula-one#80`: status=ok, entitás=0, kapcsolat=0
+- `team-mercedes-benz-in-formula-one#81`: status=ok, entitás=0, kapcsolat=0
+- `team-mercedes-benz-in-formula-one#82`: status=error, entitás=0, kapcsolat=0
+- `team-mercedes-benz-in-formula-one#83`: status=error, entitás=0, kapcsolat=0
+- `team-mercedes-benz-in-formula-one#84`: status=error, entitás=0, kapcsolat=0
+- `team-mercedes-benz-in-formula-one#85`: status=error, entitás=0, kapcsolat=0
+- `team-mercedes-benz-in-formula-one#86`: status=ok, entitás=0, kapcsolat=0
+- `team-mercedes-benz-in-formula-one#87`: status=ok, entitás=0, kapcsolat=0
+- `team-mercedes-benz-in-formula-one#88`: status=error, entitás=0, kapcsolat=0
+- `team-mercedes-benz-in-formula-one#89`: status=error, entitás=0, kapcsolat=0
+- `team-mercedes-benz-in-formula-one#9`: status=ok, entitás=0, kapcsolat=0
+- `team-mercedes-benz-in-formula-one#90`: status=ok, entitás=0, kapcsolat=0
+- `team-mercedes-benz-in-formula-one#91`: status=error, entitás=0, kapcsolat=0
+- `team-mercedes-benz-in-formula-one#92`: status=error, entitás=0, kapcsolat=0
+- `team-mercedes-benz-in-formula-one#93`: status=ok, entitás=0, kapcsolat=0
+- `team-mercedes-benz-in-formula-one#94`: status=error, entitás=0, kapcsolat=0
+- `team-mercedes-benz-in-formula-one#95`: status=ok, entitás=0, kapcsolat=0
+- `team-mercedes-benz-in-formula-one#96`: status=error, entitás=0, kapcsolat=0
+- `team-mercedes-benz-in-formula-one#97`: status=ok, entitás=0, kapcsolat=0
+- `team-mercedes-benz-in-formula-one#98`: status=ok, entitás=0, kapcsolat=0
+- `team-mercedes-benz-in-formula-one#99`: status=ok, entitás=0, kapcsolat=0
+
+## Sűrű és ritka chunk
+
+### Sűrű: `reference-list-of-formula-one-world-drivers-champions#1`
+
+Státusz: ok. Entitás: 16. Kapcsolat: 15. A ritka vagy üres eredmény nem hibás extrakció.
+
+Forrásszöveg:
+
+```
+Sheet: Drivers in corpus
+Driver | Nationality | World titles (as of 2024) | Main constructors
+Lewis Hamilton | British | 7 | McLaren; Mercedes
+Max Verstappen | Dutch | 4 | Red Bull Racing
+Sebastian Vettel | German | 4 | Red Bull Racing; Ferrari
+Fernando Alonso | Spanish | 2 | Renault; McLaren
+Michael Schumacher | German | 7 | Benetton; Ferrari
+Kimi Räikkönen | Finnish | 1 | McLaren; Ferrari
+Nico Rosberg | German | 1 | Williams; Mercedes
+Jenson Button | British | 1 | BAR/Honda; Brawn; McLaren
+```
+
+Extrakció:
+
+```json
+{
+  "entities": [
+    {
+      "local_id": "e1",
+      "name": "Lewis Hamilton",
+      "entity_type": "Driver",
+      "description": "British driver with 7 world titles."
+    },
+    {
+      "local_id": "e2",
+      "name": "Max Verstappen",
+      "entity_type": "Driver",
+      "description": "Dutch driver with 4 world titles."
+    },
+    {
+      "local_id": "e3",
+      "name": "Sebastian Vettel",
+      "entity_type": "Driver",
+      "description": "German driver with 4 world titles."
+    },
+    {
+      "local_id": "e4",
+      "name": "Fernando Alonso",
+      "entity_type": "Driver",
+      "description": "Spanish driver with 2 world titles."
+    },
+    {
+      "local_id": "e5",
+      "name": "Michael Schumacher",
+      "entity_type": "Driver",
+      "description": "German driver with 7 world titles."
+    },
+    {
+      "local_id": "e6",
+      "name": "Kimi Räikkönen",
+      "entity_type": "Driver",
+      "description": "Finnish driver with 1 world title."
+    },
+    {
+      "local_id": "e7",
+      "name": "Nico Rosberg",
+      "entity_type": "Driver",
+      "description": "German driver with 1 world title."
+    },
+    {
+      "local_id": "e8",
+      "name": "Jenson Button",
+      "entity_type": "Driver",
+      "description": "British driver with 1 world title."
+    },
+    {
+      "local_id": "e9",
+      "name": "McLaren",
+      "entity_type": "Team",
+      "description": "Constructor associated with Lewis Hamilton, Fernando Alonso, and Kimi Räikkönen."
+    },
+    {
+      "local_id": "e10",
+      "name": "Mercedes",
+      "entity_type": "Team",
+      "description": "Constructor associated with Lewis Hamilton and Nico Rosberg."
+    },
+    {
+      "local_id": "e11",
+      "name": "Red Bull Racing",
+      "entity_type": "Team",
+      "description": "Constructor associated with Max Verstappen and Sebastian Vettel."
+    },
+    {
+      "local_id": "e12",
+      "name": "Renault",
+      "entity_type": "Team",
+      "description": "Constructor associated with Fernando Alonso."
+    },
+    {
+      "local_id": "e13",
+      "name": "Ferrari",
+      "entity_type": "Team",
+      "description": "Constructor associated with Sebastian Vettel and Kimi Räikkönen."
+    },
+    {
+      "local_id": "e14",
+      "name": "Williams",
+      "entity_type": "Team",
+      "description": "Constructor associated with Nico Rosberg."
+    },
+    {
+      "local_id": "e15",
+      "name": "BAR/Honda",
+      "entity_type": "Team",
+      "description": "Constructor associated with Jenson Button."
+    },
+    {
+      "local_id": "e16",
+      "name": "Brawn",
+      "entity_type": "Team",
+      "description": "Constructor associated with Jenson Button."
+    }
+  ],
+  "relationships": [
+    {
+      "source_id": "e1",
+      "target_id": "e9",
+      "relationship_type": "DROVE_FOR",
+      "description": "Lewis Hamilton drove for McLaren.",
+      "from_year": null,
+      "to_year": null,
+      "role": null
+    },
+    {
+      "source_id": "e1",
+      "target_id": "e10",
+      "relationship_type": "DROVE_FOR",
+      "description": "Lewis Hamilton drove for Mercedes.",
+      "from_year": null,
+      "to_year": null,
+      "role": null
+    },
+    {
+      "source_id": "e2",
+      "target_id": "e11",
+      "relationship_type": "DROVE_FOR",
+      "description": "Max Verstappen drove for Red Bull Racing.",
+      "from_year": null,
+      "to_year": null,
+      "role": null
+    },
+    {
+      "source_id": "e3",
+      "target_id": "e11",
+      "relationship_type": "DROVE_FOR",
+      "description": "Sebastian Vettel drove for Red Bull Racing.",
+      "from_year": null,
+      "to_year": null,
+      "role": null
+    },
+    {
+      "source_id": "e3",
+      "target_id": "e13",
+      "relationship_type": "DROVE_FOR",
+      "description": "Sebastian Vettel drove for Ferrari.",
+      "from_year": null,
+      "to_year": null,
+      "role": null
+    },
+    {
+      "source_id": "e4",
+      "target_id": "e12",
+      "relationship_type": "DROVE_FOR",
+      "description": "Fernando Alonso drove for Renault.",
+      "from_year": null,
+      "to_year": null,
+      "role": null
+    },
+    {
+      "source_id": "e4",
+      "target_id": "e9",
+      "relationship_type": "DROVE_FOR",
+      "description": "Fernando Alonso drove for McLaren.",
+      "from_year": null,
+      "to_year": null,
+      "role": null
+    },
+    {
+      "source_id": "e5",
+      "target_id": "e9",
+      "relationship_type": "DROVE_FOR",
+      "description": "Michael Schumacher drove for McLaren.",
+      "from_year": null,
+      "to_year": null,
+      "role": null
+    },
+    {
+      "source_id": "e5",
+      "target_id": "e13",
+      "relationship_type": "DROVE_FOR",
+      "description": "Michael Schumacher drove for Ferrari.",
+      "from_year": null,
+      "to_year": null,
+      "role": null
+    },
+    {
+      "source_id": "e6",
+      "target_id": "e9",
+      "relationship_type": "DROVE_FOR",
+      "description": "Kimi Räikkönen drove for McLaren.",
+      "from_year": null,
+      "to_year": null,
+      "role": null
+    },
+    {
+      "source_id": "e6",
+      "target_id": "e13",
+      "relationship_type": "DROVE_FOR",
+      "description": "Kimi Räikkönen drove for Ferrari.",
+      "from_year": null,
+      "to_year": null,
+      "role": null
+    },
+    {
+      "source_id": "e7",
+      "target_id": "e14",
+      "relationship_type": "DROVE_FOR",
+      "description": "Nico Rosberg drove for Williams.",
+      "from_year": null,
+      "to_year": null,
+      "role": null
+    },
+    {
+      "source_id": "e7",
+      "target_id": "e10",
+      "relationship_type": "DROVE_FOR",
+      "description": "Nico Rosberg drove for Mercedes.",
+      "from_year": null,
+      "to_year": null,
+      "role": null
+    },
+    {
+      "source_id": "e8",
+      "target_id": "e15",
+      "relationship_type": "DROVE_FOR",
+      "description": "Jenson Button drove for BAR/Honda.",
+      "from_year": null,
+      "to_year": null,
+      "role": null
+    },
+    {
+      "source_id": "e8",
+      "target_id": "e16",
+      "relationship_type": "DROVE_FOR",
+      "description": "Jenson Button drove for Brawn.",
+      "from_year": null,
+      "to_year": null,
+      "role": null
+    }
+  ]
+}
+```
+
+### Ritka vagy üres: `driver-fernando-alonso#101`
+
+Státusz: ok. Entitás: 0. Kapcsolat: 0. A ritka vagy üres eredmény nem hibás extrakció.
+
+Forrásszöveg:
+
+```
+## McLaren Racing (2019)
+```
+
+Extrakció:
+
+```json
+{
+  "entities": [],
+  "relationships": []
+}
+```
+
+
+## Típusok
+
+Entitáselőfordulások:
+- Car: 36
+- Circuit: 70
+- Driver: 515
+- GrandPrix: 227
+- PowerUnit: 5
+- RaceResult: 8
+- Season: 267
+- Team: 273
+- Title: 41
+
+Kapcsolatelőfordulások:
+- ACHIEVED: 5
+- AT_RACE: 5
+- AWARDED_IN: 34
+- DROVE_FOR: 215
+- ENTERED: 79
+- FIELDED: 22
+- FOR_TEAM: 2
+- HELD_AT: 44
+- POWERED_BY: 3
+- RACED_IN: 20
+- ROUND_OF: 214
+- TEAMMATE_OF: 45
+- WON: 38
+
+Sémán kívüli típus: nincs
+
+## Elutasított jelöltek
+
+- `driver-fernando-alonso#0`: ExtractionValidationError: WON does not allow Driver -> Team
+  - Jelölt típusok: Driver, Team, Team, Season, Season, RaceResult, Season, DROVE_FOR, WON, AWARDED_IN, AWARDED_IN, ACHIEVED, RACED_IN
+  - Forrásidézet: Fernando Alonso Díaz (Spanish pronunciation: \[feɾˈnando aˈlonso ˈði.aθ\] ; born 29 July 1981) is a Spanish racing driver who competes in Formula One for Aston Martin. Alonso has won two Formula One World Drivers' Championship titles, which he won in 2005 and 2006 with Renault, and has won 32 Grands Prix across 23 seasons
+- `driver-fernando-alonso#100`: ExtractionValidationError: ACHIEVED does not allow Driver -> GrandPrix
+  - Jelölt típusok: Driver, Team, Season, GrandPrix, Car, PowerUnit, FIELDED, POWERED_BY, RACED_IN, ENTERED, ROUND_OF, ACHIEVED, DROVE_FOR
+  - Forrásidézet: Driving the No. 29 McLaren-Honda-Andretti Dallara DW12, Alonso completed a three-stage rookie orientation programme at the Indianapolis Motor Speedway on 3 May. Alonso advanced to the Fast Nine shootout in qualifying and set the fifth-fastest four-lap average speed; in the race, he led four times for a total of 27 laps before his engine failed with 21 laps to go. Alonso was classified 24th.
+- `driver-fernando-alonso#105`: ExtractionValidationError: ACHIEVED does not allow Driver -> GrandPrix
+  - Jelölt típusok: Driver, Team, Season, GrandPrix, DROVE_FOR, ENTERED, ROUND_OF, ACHIEVED, FOR_TEAM
+  - Forrásidézet: ## Arrow McLaren SP (2020) Alonso entered the 2020 Indianapolis 500 with Arrow McLaren SP after an agreement with Andretti Autosports fell through. He had a crash during practice and qualified 26th. He did manage to finish the race. He started 26th, was running fifteenth halfway through the race, and then ended up 21st and one lap down because of a clutch issue causing the team to manually start t...
+- `driver-fernando-alonso#107`: ExtractionValidationError: ACHIEVED does not allow Driver -> GrandPrix
+  - Jelölt típusok: Driver, Team, Season, GrandPrix, Driver, GrandPrix, GrandPrix, DROVE_FOR, ROUND_OF, ROUND_OF, ROUND_OF, ACHIEVED, TEAMMATE_OF
+  - Forrásidézet: Alonso entered the Dakar Rally with Toyota in 2020 following a five-month testing programme in Africa, Europe and the Middle East and driving a series of races to better himself. He raced in the Lichtenburg 400 in South Africa, the Rally du Maroc in Morocco and the Al Ula–Neom Rally in Saudi Arabia, with the five-time Dakar Rally bike class winner Marc Coma his co-driver. Alonso was third at the A...
+- `driver-fernando-alonso#118`: ExtractionValidationError: RACED_IN does not allow Driver -> GrandPrix
+  - Jelölt típusok: Driver, GrandPrix, GrandPrix, GrandPrix, Season, RACED_IN, RACED_IN, RACED_IN, ACHIEVED
+  - Forrásidézet: For three successive Monaco Grand Prix from 2011 to 2013 and at the 2011 Singapore Grand Prix, he wore a gold and white coloured helmet to replace the blue and yellow. At the following 2013 Indian Grand Prix, Alonso sported a white helmet to celebrate his total number of career points scored up to the preceding Japanese Grand Prix of 1571 and with the words "F1 points World Record" accompanied wit...
+- `driver-fernando-alonso#119`: ExtractionValidationError: HELD_AT does not allow Team -> GrandPrix
+  - Jelölt típusok: Driver, Team, Season, GrandPrix, Season, GrandPrix, GrandPrix, HELD_AT, ENTERED, ROUND_OF, ROUND_OF
+  - Forrásidézet: Alonso's final event for Ferrari at the 2014 Abu Dhabi Grand Prix saw him wear a helmet with a picture depicting a pit stop in that year in the colour red, signature of various team members and the flag of Italy in the centre. At the 2017 Indianapolis 500 and the 2017 United States Grand Prix, Alonso sported a black helmet with red, yellow and blue stripes around it and his race number
+- `driver-fernando-alonso#122`: ExtractionValidationError: RACED_IN does not allow Driver -> Season
+  - Jelölt típusok: Driver, Season, RACED_IN
+  - Forrásidézet: For the 2014 season, the FIA created a new regulation allowing drivers to select specific car numbers for use throughout their F1 career. Alonso requested the number 14 for it has been his lucky number since his world karting championship victory in a kart with number 14, at the age of 14, on 14 July 1996.
+- `driver-fernando-alonso#123`: ExtractionValidationError: FIELDED does not allow Team -> Driver
+  - Jelölt típusok: Driver, Team, Driver, Driver, Driver, Driver, Driver, Driver, Driver, Driver, Driver, Driver, DROVE_FOR, FIELDED, FIELDED, FIELDED, FIELDED, FIELDED, FIELDED, FIELDED, FIELDED, FIELDED, FIELDED
+  - Forrásidézet: ## Driver management Alonso operates a driver management company, A14 Management. A14 Management manages a portfolio of young drivers across several motorsport disciplines. As of 2025, this included Maximilian Günther, Clément Novalak, Nikola Tsolov, Gabriel Bortoleto, Pepe Martí, Sebastián Montoya, Chloe Chambers, Cenyu Han, Andrés Cárdenas, and Carl Bennett.
+- `driver-fernando-alonso#138`: ExtractionValidationError: DROVE_FOR does not allow Team -> Team
+  - Jelölt típusok: Driver, Team, Team, Team, Season, Season, Team, DROVE_FOR, DROVE_FOR, TEAMMATE_OF, FIELDED, FIELDED, DROVE_FOR
+  - Forrásidézet: In November 2017, Alonso established the FA Racing G2 Logitech G eSports racing team of which he is the team principal and competes in virtual online racing championships on multiple platforms. The team dissolved in 2018 and launched another in partnership with FA Racing and Veloce Esports in March 2019. Alonso's team has also competed in the F4 Spanish Championship, Formula Renault Eurocup and ka...
+- `driver-fernando-alonso#143`: ExtractionValidationError: WON is not temporal; from_year, to_year and role must be null
+  - Jelölt típusok: Driver, Title, Title, Title, Title, WON, WON, WON, WON
+  - Forrásidézet: Alonso was named the 2006 Autosport International Racing Driver of the Year. Alonso was voted the Indianapolis 500 Rookie of the Year for his performance in the 2017 Indianapolis 500. He was inducted into the FIA Hall of Fame in 2017 for being a F1 World Champion and again as a FIA World Endurance Champion in 2019. This made Alonso the first driver to have been inducted into the FIA Hall of Fame t...
+- `driver-fernando-alonso#17`: ExtractionValidationError: WON does not allow Driver -> Season
+  - Jelölt típusok: Driver, Team, Season, Season, Season, WON, ACHIEVED, DROVE_FOR
+  - Forrásidézet: Alonso won the 1990 Asturias and the Basque Country Cadet Championship and finished second in the 1991 Spanish Cadet National Championship. The local karting federation allowed him to enter the 100cc class because he was deemed underage to drive more powerful machinery. At a Catalan Karting Championship meet in Móra d'Ebre, Marcó asked Alonso if he wanted to enter the Spanish Karting Championship....
+- `driver-fernando-alonso#18`: ExtractionValidationError: ACHIEVED does not allow Driver -> Season
+  - Jelölt típusok: Driver, Team, Season, Season, Season, DROVE_FOR, ACHIEVED, ACHIEVED, ACHIEVED
+  - Forrásidézet: . Wilson mentored Alonso; he joined the IAME works team in 1993. Alonso won three successive Spanish Junior Championships from 1993 to 1995.
+- `driver-fernando-alonso#19`: ExtractionValidationError: WON does not allow Driver -> Season
+  - Jelölt típusok: Driver, Season, WON
+  - Forrásidézet: The results allowed him to progress to the world championships. Alonso was third at the 1995 CIK-FIA Rainbow Trophy. Alonso was a mechanic to younger kart drivers to earn money. He won his fourth Spanish Junior Championship, the Trofeo Estival, the Marlboro Masters, and the CIK-FIA Five Continents Cup at Genk in 1996
+- `driver-fernando-alonso#2`: ExtractionValidationError: HELD_AT does not allow GrandPrix -> Team
+  - Jelölt típusok: Driver, Team, Season, GrandPrix, DROVE_FOR, ROUND_OF, HELD_AT
+  - Forrásidézet: Born and raised in Oviedo to a working-class family, Alonso began kart racing aged seven and won the CIK-FIA Five Continents Cup in 1996. He progressed to junior formulae aged 17, winning the Euro Open by Nissan in 1999 before finishing fourth in International Formula 3000. Alonso signed for Minardi in 2001, making his Formula One debut at the Australian Grand Prix
+- `driver-fernando-alonso#23`: ExtractionValidationError: ENTERED is not temporal; from_year, to_year and role must be null
+  - Jelölt típusok: Driver, Team, Season, Car, Team, Season, DROVE_FOR, ENTERED, DROVE_FOR, ENTERED
+  - Forrásidézet: Aged seventeen, Alonso made his car racing debut in the 1999 Euro Open by Nissan with Campos Motorsport, winning the title from Manuel Gião at the final race of the season with six wins and nine pole positions. For 2000, he progressed to the higher-tier International Formula 3000 Championship with the Minardi-backed Team Astromega, after a sponsorship agreement with driver Robert Lechner fell thro...
+- `driver-fernando-alonso#24`: ExtractionValidationError: ACHIEVED does not allow Driver -> Circuit
+  - Jelölt típusok: Driver, Circuit, Circuit, Season, ACHIEVED, ACHIEVED
+  - Forrásidézet: . Alonso finished second at the Hungaroring and won the season-ending round at Circuit de Spa-Francorchamps for fourth overall with seventeen points.
+- `driver-fernando-alonso#27`: ExtractionValidationError: ENTERED is not temporal; from_year, to_year and role must be null
+  - Jelölt típusok: Driver, Team, Circuit, Season, DROVE_FOR, ENTERED
+  - Forrásidézet: Cesare Fiorio, the sports director, gave Alonso a test in a Formula One (F1) car at the Circuito de Jerez in December 1999, as part of the Euro Open by Nissan's organising company RPM's agreement to give its series champion an opportunity to test at a higher level. He was Minardi's test and reserve driver in 2000 before joining its race team in 2001
+- `driver-fernando-alonso#29`: ExtractionValidationError: FIELDED does not allow Car -> Team
+  - Jelölt típusok: Driver, Team, Circuit, Season, Car, DROVE_FOR, RACED_IN, FIELDED, HELD_AT
+  - Forrásidézet: Alonso signed as Renault's test driver for 2002 per the orders of manager Flavio Briatore to familiarise himself with the team and improve himself for the future. Alonso worked with the engineering department to improve Giancarlo Fisichella's and Jenson Button's performance, and tested in Spain and the United Kingdom. He drove a Jaguar in an evaluation session against test drivers André Lotterer a...
+- `driver-fernando-alonso#30`: ExtractionValidationError: ACHIEVED does not allow Driver -> GrandPrix
+  - Jelölt típusok: Driver, Team, Season, GrandPrix, GrandPrix, DROVE_FOR, ROUND_OF, ROUND_OF, ACHIEVED, ACHIEVED
+  - Forrásidézet: . Alonso was promoted to the Renault race team for 2003. He went on to break the records of youngest driver to win a pole position at the season's second race, the Malaysian Grand Prix, and broke Bruce McLaren's record as the youngest F1 race winner at the Hungarian Grand Prix later in the year. He achieved four podium finishes in 2003 and was sixth in the World Drivers' Championship with 55 point...
+- `driver-fernando-alonso#32`: ExtractionValidationError: WON does not allow Driver -> Season
+  - Jelölt típusok: Driver, Team, Season, Driver, DROVE_FOR, WON, ENTERED, DROVE_FOR
+  - Forrásidézet: . Alonso stayed at Renault for 2005. He duelled with McLaren driver Kimi Räikkönen for the World Championship in 2005 due to regulation changes prohibiting teams from changing tyres during a race and requiring engines to last for two races before they could be changed. Alonso's car was more reliable than Räikkönen's albeit lacking in speed
+- `driver-fernando-alonso#34`: ExtractionValidationError: WON does not allow Driver -> Season
+  - Jelölt típusok: Driver, Team, Season, Driver, DROVE_FOR, WON, ENTERED, TEAMMATE_OF
+  - Forrásidézet: Alonso signed a contract extension with Renault for 2006 in April 2005. Bookmakers installed Alonso as the favourite to retain the Drivers' Championship. His primary competition was Ferrari driver Michael Schumacher. Alonso won six of the first nine races and finished no lower than second to lead the championship with 84 out of a possible 90 points
+- `driver-fernando-alonso#38`: ExtractionValidationError: ENTERED is not temporal; from_year, to_year and role must be null
+  - Jelölt típusok: Driver, Team, Season, DROVE_FOR, ENTERED
+  - Forrásidézet: Alonso and McLaren team owner Ron Dennis met secretly in Japan after Dennis talked to Alonso about driving for the team in the future and Alonso expressed interest in the idea. Both men agreed to a three-year contract for Alonso to drive for McLaren starting from 2007. Alonso's contract with Renault expired on 31 December 2006, and he was not granted an early release for sponsorship reasons
+- `driver-fernando-alonso#39`: ExtractionValidationError: TEAMMATE_OF does not allow Driver -> Team
+  - Jelölt típusok: Driver, Team, Team, Driver, Team, GrandPrix, GrandPrix, GrandPrix, GrandPrix, Season, DROVE_FOR, DROVE_FOR, TEAMMATE_OF, ROUND_OF, ROUND_OF, ROUND_OF, ROUND_OF
+  - Forrásidézet: . Renault allowed Alonso to make his first appearance for McLaren in a test session at the Circuito de Jerez in November 2006. His main competitors in 2007 were his teammate Lewis Hamilton and Räikkönen at Ferrari. Alonso achieved four Grand Prix victories in Malaysia, Monaco, Europe and Italy and led the championship until Hamilton overtook him
+- `driver-fernando-alonso#4`: ExtractionValidationError: WON does not allow Driver -> Season
+  - Jelölt típusok: Driver, Team, Team, Season, Season, Season, Season, GrandPrix, WON, DROVE_FOR, DROVE_FOR, ENTERED, ENTERED, ACHIEVED, ROUND_OF, RACED_IN
+  - Forrásidézet: . He successfully defended his title from Michael Schumacher in 2006. Alonso moved to McLaren for 2007, finishing one point behind champion Kimi Räikkönen and returning to Renault amidst inter-team tensions. He won multiple races in 2008—including the controversial Singapore Grand Prix—before enduring a winless 2009 campaign.
+- `driver-fernando-alonso#40`: ExtractionValidationError: ACHIEVED does not allow Driver -> GrandPrix
+  - Jelölt típusok: Driver, Driver, Driver, GrandPrix, Season, ACHIEVED, RACED_IN, RACED_IN, RACED_IN
+  - Forrásidézet: . Prior to the season's final round, the Brazilian Grand Prix, he had 103 championship points to Räikkönen's 100 and Hamilton's 107, and needed to win the race and for his teammate to finish third or lower for his third title. Alonso finished the event third for third overall with 109 points. He had the same number of points as Hamilton; the tie was broken on count-back as Hamilton finished second...
+- `driver-fernando-alonso#41`: ExtractionValidationError: TEAMMATE_OF does not allow Driver -> Team
+  - Jelölt típusok: Driver, Driver, Team, GrandPrix, Season, DROVE_FOR, TEAMMATE_OF, ROUND_OF
+  - Forrásidézet: Throughout the season, Alonso and Hamilton were involved in a number of incidents, such as the espionage scandal and the flare-up during qualifying for the Hungarian Grand Prix when Hamilton disobeyed a team instruction, thus disadvantaging Alonso, and Alonso responded by delaying Hamilton in the pit lane. The tensions culminated in Alonso and McLaren terminating their contract by mutual consent i...
+- `driver-fernando-alonso#45`: ExtractionValidationError: ACHIEVED does not allow Driver -> GrandPrix
+  - Jelölt típusok: Driver, GrandPrix, GrandPrix, Season, ACHIEVED, ACHIEVED, ROUND_OF, ROUND_OF
+  - Forrásidézet: . He scored points in eight races and achieved one podium finish: a third place at the Singapore Grand Prix. Alonso won pole position for the Hungarian Grand Prix and led the first twelve laps before he retired following an incorrectly fitted right-front wheel. Alonso was ninth in the Drivers' Championship with 26 points, his lowest placing since he came sixth in 2003; he maintained his reputation...
+- `driver-fernando-alonso#49`: ExtractionValidationError: FIELDED is not temporal; from_year, to_year and role must be null
+  - Jelölt típusok: Driver, Team, Season, GrandPrix, GrandPrix, Car, DROVE_FOR, FIELDED, RACED_IN, ROUND_OF, ROUND_OF, ACHIEVED, ACHIEVED
+  - Forrásidézet: Alonso's 2011 season was mixed: his car was built conservatively and lacked aerodynamic grip and tyre handling in qualifying. He extracted additional pace from his car to claim ten podium finishes and win the British Grand Prix after a strategy error from Red Bull. His best qualification of the year was a second at the Canadian Grand Prix and he out-qualified his teammate Massa fifteen times over ...
+- `driver-fernando-alonso#5`: ExtractionValidationError: FIELDED is not temporal; from_year, to_year and role must be null
+  - Jelölt típusok: Driver, Team, Team, Team, Car, Car, Season, Season, Season, Season, Season, Season, DROVE_FOR, DROVE_FOR, FIELDED, FIELDED, RACED_IN, RACED_IN, ACHIEVED, ACHIEVED, ACHIEVED, ACHIEVED, ENTERED, ROUND_OF
+  - Forrásidézet: Alonso signed for Ferrari in 2010, finishing runner-up to Sebastian Vettel by four points in the third-placed F10. He took a single victory in 2011 as Red Bull consolidated their advantage, before finishing runner-up to Vettel again in 2012 and 2013—the former by three points and the latter in the third-placed F138. After a winless 2014 season amidst new engine regulations, Alonso returned to McLa...
+- `driver-fernando-alonso#50`: ExtractionValidationError: ACHIEVED does not allow Driver -> Season
+  - Jelölt típusok: Driver, Season, GrandPrix, ACHIEVED, ROUND_OF
+  - Forrásidézet: . Alonso was fourth overall with 257 points; he was in contention to finish second to eventual champion Vettel following a series of strong finishes until Webber won the season-ending Brazilian Grand Prix.
+- `driver-fernando-alonso#51`: ExtractionValidationError: WON does not allow Driver -> Season
+  - Jelölt típusok: Driver, Team, Season, DROVE_FOR, ENTERED, WON
+  - Forrásidézet: Ahead of 2012, Alonso extended his contract with Ferrari until 2016. His main competition for the title in 2012 was Vettel. Wins in Malaysia, Valencia and Germany and consistent points-scoring finishes allowed him to build a 40-point lead in the Drivers' Championship. Thereafter start-line collisions, a mechanical failure and an improved performance for Vettel eliminated Alonso's points lead
+- `driver-fernando-alonso#52`: ExtractionValidationError: RACED_IN does not allow Driver -> Season
+  - Jelölt típusok: Driver, GrandPrix, Season, RaceResult, RACED_IN, ROUND_OF, ACHIEVED, AT_RACE, WON
+  - Forrásidézet: . Alonso entered the season-ending Brazilian Grand Prix 13 points behind Vettel and needed to finish third and for Vettel not to score points for a third championship. He was second and Vettel finished fourth, despite spinning on the opening lap, resigning Alonso to be runner-up for the second time in his career on 278 points.
+- `driver-fernando-alonso#53`: ExtractionValidationError: ACHIEVED does not allow Driver -> Season
+  - Jelölt típusok: Driver, Team, Season, GrandPrix, GrandPrix, DROVE_FOR, ACHIEVED, ACHIEVED, ACHIEVED, ENTERED
+  - Forrásidézet: To begin 2013, Alonso drove an aggressively designed car allowing him to win in China and Spain and consistently scored points. He was slower than Vettel after a change of tyre compound at the German Grand Prix and front and rear bodywork components intended to improve his car's performance were ineffective. With 242 points, Alonso was second for the third time in his career. His relationship with...
+- `driver-fernando-alonso#56`: ExtractionValidationError: HELD_AT does not allow Circuit -> GrandPrix
+  - Jelölt típusok: Driver, Team, Season, Circuit, Driver, GrandPrix, DROVE_FOR, HELD_AT, TEAMMATE_OF, ENTERED
+  - Forrásidézet: Alonso had severe disagreements with team principal Marco Mattiacci in 2014 and left Ferrari after contract negotiations to remain at the team fell through. He rejoined McLaren on a three-year contract from 2015 to 2017 with no opt-out clauses. An accident during a pre-season test session at Spain's Circuit de Barcelona-Catalunya in February 2015 saw Alonso sustain a concussion and he was replaced...
+- `driver-fernando-alonso#57`: ExtractionValidationError: RACED_IN does not allow Driver -> Season
+  - Jelölt típusok: Driver, Team, Season, GrandPrix, GrandPrix, DROVE_FOR, RACED_IN, ACHIEVED, ROUND_OF, ACHIEVED, ROUND_OF
+  - Forrásidézet: . He endured a difficult season: his car's Honda engine was under-powered and overall speed leaving him vulnerable to being passed. Alonso scored points twice in 2015: a tenth in the British Grand Prix and a fifth in the Hungarian Grand Prix for seventeenth in the Drivers' Championship with eleven points. He was dissatisfied with a slow pace, which became evident after multiple radio complaints th...
+- `driver-fernando-alonso#58`: ExtractionValidationError: ENTERED is not temporal; from_year, to_year and role must be null
+  - Jelölt típusok: Driver, Team, Season, GrandPrix, GrandPrix, GrandPrix, GrandPrix, Driver, Driver, DROVE_FOR, ENTERED, ROUND_OF, ROUND_OF, ROUND_OF, ROUND_OF, TEAMMATE_OF, TEAMMATE_OF
+  - Forrásidézet: Despite the unreliable and noncompetitive car, Alonso remained with McLaren for 2016. Injuries from a heavy crash with Esteban Gutiérrez at the season-opening Australian Grand Prix caused him to miss the Bahrain Grand Prix on medical grounds and was replaced by reserve driver Stoffel Vandoorne. He qualified better than teammate Button fifteen times and scored points nine times, which included two ...
+- `driver-fernando-alonso#6`: ExtractionValidationError: ACHIEVED does not allow Driver -> GrandPrix
+  - Jelölt típusok: Driver, Team, Season, GrandPrix, DROVE_FOR, ROUND_OF, ACHIEVED, FOR_TEAM
+  - Forrásidézet: . He remained with the team until the end of 2018, resulting in limited success, before his first retirement. Alonso then moved into sportscar racing with Toyota, winning the FIA World Endurance Championship, and the 24 Hours of Le Mans twice. He returned to Formula One in 2021 with Alpine, recording his first podium in seven years at the Qatar Grand Prix, and breaking the record for most career s...
+- `driver-fernando-alonso#60`: ExtractionValidationError: ACHIEVED does not allow Driver -> GrandPrix
+  - Jelölt típusok: Driver, Team, Season, GrandPrix, DROVE_FOR, ROUND_OF, ACHIEVED
+  - Forrásidézet: Alonso stayed at McLaren in 2017, but poor reliability affected his season, particularly during the early rounds, and his best finish was a sixth place in the Hungarian Grand Prix. After three consecutive top-ten finishes, Alonso finished fifteenth in the Drivers' Championship with seventeen points.
+- `driver-fernando-alonso#61`: ExtractionValidationError: ENTERED is not temporal; from_year, to_year and role must be null
+  - Jelölt típusok: Driver, Team, Season, GrandPrix, Driver, DROVE_FOR, ENTERED, ROUND_OF, ACHIEVED, TEAMMATE_OF
+  - Forrásidézet: Following contract negotiations with the McLaren CEO Zak Brown, Alonso signed a multi-year extension with McLaren on 19 October 2017. He finished fifth at the season-opening 2018 Australian Grand Prix and took nine top-ten finishes. Alonso out-qualified his teammate Stoffel Vandoorne at every race and drove quickly and aggressively. He became increasingly annoyed with certain drivers and his commi...
+- `driver-fernando-alonso#62`: ExtractionValidationError: DROVE_FOR does not allow Driver -> Season
+  - Jelölt típusok: Driver, Season, DROVE_FOR
+  - Forrásidézet: . Alonso was eleventh in the Drivers' Championship with fifty points, and left the sport as a driver at the end of the 2018 season, citing a perceived lack of on-track racing, the predictability of results and felt discussions away from racing about the broadcast of radio transmissions and polemics harmed the series.
+- `driver-fernando-alonso#65`: ExtractionValidationError: FIELDED does not allow Car -> Team
+  - Jelölt típusok: Driver, Team, Season, GrandPrix, Car, Car, DROVE_FOR, ENTERED, ROUND_OF, FIELDED, FIELDED
+  - Forrásidézet: Alonso was signed to drive for Alpine F1 Team for the 2021 season, alongside Esteban Ocon, with Renault having rebranded the team under its new name. In preparation for his F1 return, Alonso performed four testing days driving the Renault R.S.18 and was quickest in the post-2020 season young driver's test driving the Renault R.S.20 for Renault. In his first race with Alpine at the 2021 Bahrain Gra...
+- `driver-fernando-alonso#66`: ExtractionValidationError: ACHIEVED does not allow Driver -> GrandPrix
+  - Jelölt típusok: Driver, Driver, Team, Season, GrandPrix, DROVE_FOR, ACHIEVED, ROUND_OF, TEAMMATE_OF
+  - Forrásidézet: . At the 2021 Emilia Romagna Grand Prix he finished in eleventh after qualifying fifteenth, with teammate Ocon finishing ahead in tenth, but both were upgraded one position after Kimi Räikkönen was penalised, giving Alonso his first points of the season.
+- `driver-fernando-alonso#67`: ExtractionValidationError: ENTERED is not temporal; from_year, to_year and role must be null
+  - Jelölt típusok: Driver, Team, Season, Season, GrandPrix, Driver, Driver, DROVE_FOR, ENTERED, ENTERED, ROUND_OF, ACHIEVED, FOR_TEAM, AT_RACE, TEAMMATE_OF
+  - Forrásidézet: In Hungary, Alonso temporarily led the race before he made a pit stop and fell to fourth, ahead of Lewis Hamilton. Teammate Ocon credited Alonso's defence against Hamilton with enabling him to achieve his first race victory. In August 2021, Alonso invoked an option to extend his contract for the 2022 season
+- `driver-fernando-alonso#68`: ExtractionValidationError: ACHIEVED does not allow Driver -> GrandPrix
+  - Jelölt típusok: Driver, Team, Season, Season, GrandPrix, GrandPrix, GrandPrix, GrandPrix, GrandPrix, DROVE_FOR, ACHIEVED, ACHIEVED, ACHIEVED, ACHIEVED, AT_RACE
+  - Forrásidézet: . Alonso scored points in multiple races following the summer break, finishing sixth in the Netherlands, eighth in Italy, sixth in Russia, having run in third in Russia before being forced to pit under wet conditions, and third in Qatar. His third place finish at Qatar was his first podium finish since the 2014 Hungarian Grand Prix.
+- `driver-fernando-alonso#69`: ExtractionValidationError: ACHIEVED does not allow RaceResult -> GrandPrix
+  - Jelölt típusok: Driver, Team, Season, GrandPrix, RaceResult, RaceResult, RaceResult, DROVE_FOR, ROUND_OF, ACHIEVED, ACHIEVED, ACHIEVED
+  - Forrásidézet: For the 2022 season, Alonso remained with Alpine. Alonso achieved his highest start driving for Alpine during wet qualifying for the Canadian Grand Prix, starting in second, but had to endure questionable strategies and an engine issue that developed during the race. He dropped down to seventh, and furthermore, received a post-race time penalty that dropped him down to ninth.
+- `driver-fernando-alonso#7`: ExtractionValidationError: WON does not allow Driver -> Season
+  - Jelölt típusok: Driver, Team, Season, GrandPrix, Season, DROVE_FOR, WON, ACHIEVED, ROUND_OF, RACED_IN
+  - Forrásidézet: . Alonso moved to Aston Martin for his 2023 campaign, achieving several podiums as he finished fourth in the World Drivers' Championship; he scored his 100th career podium at the Saudi Arabian Grand Prix. In 2024, he became the first driver to contest 400 Grands Prix.
+- `driver-fernando-alonso#71`: ExtractionValidationError: ACHIEVED does not allow Driver -> GrandPrix
+  - Jelölt típusok: Driver, Team, Season, GrandPrix, Car, Season, GrandPrix, GrandPrix, FIELDED, RACED_IN, ROUND_OF, ACHIEVED, FOR_TEAM, ROUND_OF, ROUND_OF
+  - Forrásidézet: On his Aston Martin debut at the 2023 Bahrain Grand Prix, Alonso, benefitting from the much-improved machinery of the Aston Martin AMR23, recovered from a first-lap contact with his teammate Lance Stroll without any damage and went on to finish in third place, securing a podium finish and Aston's first since Sebastian Vettel's podium at the 2021 Azerbaijan Grand Prix (the German would finish secon...
+- `driver-fernando-alonso#72`: ExtractionValidationError: ACHIEVED does not allow Driver -> GrandPrix
+  - Jelölt típusok: Driver, Team, Season, GrandPrix, DROVE_FOR, ROUND_OF, ACHIEVED
+  - Forrásidézet: . Despite having to serve a penalty due to his car being off-position at the starting grid, he finished in third again at the following race at the 2023 Saudi Arabian Grand Prix; this marked his 100th podium, making him the sixth driver to have scored one-hundred podiums in his career
+- `driver-fernando-alonso#74`: ExtractionValidationError: ACHIEVED does not allow Driver -> Driver
+  - Jelölt típusok: Driver, Team, Season, GrandPrix, Driver, DROVE_FOR, ROUND_OF, ACHIEVED, ACHIEVED
+  - Forrásidézet: Alonso finished in third once again after a chaotic Australian Grand Prix; the third and final restart of the session saw his car make contact with the Ferrari of Carlos Sainz Jr., causing the latter driver to receive a five-second penalty; due to this, Sainz would be classified in last place out of the finishing cars. Alonso's car was undamaged. Alonso agreed with Sainz's criticisms of the penalt...
+- `driver-fernando-alonso#75`: ExtractionValidationError: ACHIEVED does not allow GrandPrix -> Driver
+  - Jelölt típusok: Driver, Team, GrandPrix, DROVE_FOR, ACHIEVED, ACHIEVED, HELD_AT, ROUND_OF
+  - Forrásidézet: . The Aston Martins were plagued with DRS issues during qualification of the Azerbaijan Grand Prix, going on to qualify eighth in the new "sprint shootout" qualification and sixth for the main qualification session; he would finish sixth in the sprint race, and fourth in the main race
+- `driver-fernando-alonso#76`: ExtractionValidationError: ENTERED is not temporal; from_year, to_year and role must be null
+  - Jelölt típusok: Driver, Team, Season, GrandPrix, GrandPrix, GrandPrix, DROVE_FOR, ENTERED, ROUND_OF, ROUND_OF, ROUND_OF
+  - Forrásidézet: . It was at this point in time the car had dropped in performance, failing to secure podiums on a consistent basis, though he took two podium finishes at Zandvoort, where he recorded his first fastest lap since the 2017 Hungarian Grand Prix, and São Paulo; the latter instance edging out Sergio Pérez by 0.053 seconds. After a seventh-place finish at the Abu Dhabi Grand Prix, Alonso ended the season...
+- `driver-fernando-alonso#78`: ExtractionValidationError: ENTERED is not temporal; from_year, to_year and role must be null
+  - Jelölt típusok: Driver, Team, Season, GrandPrix, GrandPrix, DROVE_FOR, ENTERED, ROUND_OF, ROUND_OF
+  - Forrásidézet: Alonso remained with Aston Martin for the 2024 season. He secured his best finish of the season at the 2024 Saudi Arabian Grand Prix, where he qualified fourth and finished fifth. At the following race in Australia, he was issued a 20-second post-race penalty for potentially dangerous driving while defending against George Russell on the penultimate lap
+- `driver-fernando-alonso#79`: ExtractionValidationError: HELD_AT does not allow GrandPrix -> Team
+  - Jelölt típusok: Driver, Team, GrandPrix, DROVE_FOR, HELD_AT
+  - Forrásidézet: . The stewards ruled that Alonso had lifted and braked unusually early into Turn 6 causing a massive closing speed that caused Russell to lose control and crash. The penalty dropped Alonso to eighth. At the Chinese Grand Prix Alonso retired from the sprint race following a puncture from contact with Carlos Sainz. Stewards again deemed Alonso at fault, handing him a ten-second penalty and three pen...
+- `driver-fernando-alonso#80`: ExtractionValidationError: RACED_IN does not allow Driver -> Season
+  - Jelölt típusok: Driver, Team, Season, GrandPrix, DROVE_FOR, ROUND_OF, RACED_IN
+  - Forrásidézet: . At the 2024 Mexico City Grand Prix, Alonso competed in his four-hundredth Grand Prix weekend, becoming the first driver to reach this number of races. Alonso finished the season 9th in the standings, scoring 70 points against Stroll's 24.
+- `driver-fernando-alonso#81`: ExtractionValidationError: ENTERED is not temporal; from_year, to_year and role must be null
+  - Jelölt típusok: Driver, Team, Season, GrandPrix, Car, Driver, DROVE_FOR, ENTERED, ROUND_OF, ACHIEVED, DROVE_FOR, ACHIEVED
+  - Forrásidézet: On his third season with Aston Martin at the 2025 Australian Grand Prix, Alonso’s campaign began poorly as the AMR25 struggled for pace. Alonso retired after crashing on lap 34 while his teammate Lance Stroll secured a sixth-place finish. This difficult start persisted through the early rounds of the season where the car lacked the performance of its predecessor, leaving Alonso scoreless and sitti...
+- `driver-fernando-alonso#82`: ExtractionValidationError: RACED_IN does not allow Circuit -> Season
+  - Jelölt típusok: Driver, Team, Season, GrandPrix, GrandPrix, Circuit, Circuit, GrandPrix, GrandPrix, DROVE_FOR, ROUND_OF, ROUND_OF, ROUND_OF, ROUND_OF, RACED_IN, RACED_IN
+  - Forrásidézet: . A significant upgrade package introduced at the Emilia Romagna Grand Prix began to turn his season around as Alonso qualified 5th but finished 11th courtesy of a poorly-timed virtual safety car. At the Hungarian Grand Prix, he finished in fifth place, his highest result of the 2025 campaign. This momentum carried into the second half of the season, where he scored in most rounds from Zandvoort t...
+- `driver-fernando-alonso#83`: ExtractionValidationError: ACHIEVED does not allow Driver -> GrandPrix
+  - Jelölt típusok: Driver, Team, Season, GrandPrix, DROVE_FOR, ROUND_OF, ACHIEVED
+  - Forrásidézet: . In both Singapore and Qatar Alonso finished in seventh. Despite the car’s early-season deficit Alonso’s pace allowed him to achieve a 24–0 qualifying clean sweep over Stroll, maintaining a gap of nearly four-tenths of a second on average. After a P7 finish at the 2025 Abu Dhabi Grand Prix, Alonso ended the 2025 season 10th in the Drivers' Championship with 56 points compared to Stroll’s 33.
+- `driver-fernando-alonso#85`: ExtractionValidationError: ACHIEVED does not allow Driver -> GrandPrix
+  - Jelölt típusok: Driver, Team, Season, GrandPrix, GrandPrix, DROVE_FOR, ROUND_OF, ROUND_OF, ACHIEVED, ACHIEVED
+  - Forrásidézet: . Alonso was able to score Aston Martin's first points of the season at the 2026 Monaco Grand Prix, after Nico Hülkenberg and Sergio Pérez both received a ten-second penalty, which resulted in Alonso's promotion to tenth place. Alonso scored two further points with a ninth place finish at the 2026 Dutch Grand Prix.
+- `driver-fernando-alonso#87`: ExtractionValidationError: FIELDED does not allow Driver -> Car
+  - Jelölt típusok: Driver, Driver, Driver, Driver, Car, GrandPrix, Team, FIELDED, RACED_IN, HELD_AT, TEAMMATE_OF, TEAMMATE_OF, TEAMMATE_OF
+  - Forrásidézet: ## Endurance racing Alonso made his sports car endurance racing debut at the 1999 24 Hours of Barcelona. Paired with Antonio García, Salvi Delmuns and the journalist Pedro Fermín Flores, the quartet finished third in the M10 class and tenth overall in a Hyundai Accent. Alonso was due to enter the 2015 24 Hours of Le Mans with Porsche's Le Mans Prototype 1 team before Honda blocked it.
+- `driver-fernando-alonso#89`: ExtractionValidationError: RACED_IN does not allow Driver -> Car
+  - Jelölt típusok: Driver, Team, Car, Team, Car, Season, Season, FIELDED, DROVE_FOR, RACED_IN, DROVE_FOR, FIELDED, RACED_IN
+  - Forrásidézet: Alonso drove a Ligier JS P217 entered by United Autosports in the 2018 24 Hours of Daytona as preparation for the 24 Hours of Le Mans. Alonso, Philip Hanson and McLaren reserve driver Lando Norris qualified thirteenth and finished 38th after multiple mechanical issues affected the car during the race. Alonso returned to race in the 2019 24 Hours of Daytona with Wayne Taylor Racing. He shared a Cad...
+- `driver-fernando-alonso#95`: ExtractionValidationError: WON is not temporal; from_year, to_year and role must be null
+  - Jelölt típusok: Driver, Driver, Driver, Driver, Driver, Driver, Title, Season, Season, WON, AWARDED_IN, AWARDED_IN, TEAMMATE_OF, TEAMMATE_OF, TEAMMATE_OF, TEAMMATE_OF, TEAMMATE_OF, TEAMMATE_OF
+  - Forrásidézet: . He, Buemi and Nakajima won the LMP1 Drivers' Championship with five victories including the 2018 24 Hours of Le Mans and the 2019 24 Hours of Le Mans over the eight round season, though this was enhanced by their teammates Mike Conway, Kamui Kobayashi and José María López suffering a sensor issue while leading the 2019 6 Hours of Spa and then suffering a puncture while comfortably leading the 20...
+- `driver-lewis-hamilton#103`: ExtractionValidationError: WON does not allow Driver -> Season
+  - Jelölt típusok: Driver, Season, GrandPrix, Team, Team, WON, ROUND_OF, HELD_AT, ENTERED
+  - Forrásidézet: his Formula One career, featuring yellow as the base colour along with red accents and championship stars, complemented by the Ferrari emblem replacing the Mercedes logo. Hamilton has used several one-off helmet designs across his career. Hamilton sported gold helmets for season finales three times in his career. After winning his fourth title in 2017, he entered the 2017 Abu Dhabi Grand Prix in a...
+- `driver-lewis-hamilton#105`: ExtractionValidationError: DROVE_FOR does not allow Driver -> Driver
+  - Jelölt típusok: Driver, Team, Driver, Driver, Season, GrandPrix, DROVE_FOR, DROVE_FOR, DROVE_FOR, ROUND_OF
+  - Forrásidézet: special helmet designs to Brazilian Grands Prix, in tribute to Ayrton Senna. Prior to the 2019 Monaco Grand Prix, three-time world champion and Mercedes team personnel Niki Lauda, who played pivotal role in Hamilton's move to Mercedes, died. In tribute, Hamilton wore a special helmet design featuring Lauda's classic red-and-white palette with his name printed on the back, honoring the influence La...
+- `driver-lewis-hamilton#106`: ExtractionValidationError: RACED_IN does not allow Driver -> Season
+  - Jelölt típusok: Driver, Driver, Season, Season, Season, GrandPrix, GrandPrix, GrandPrix, GrandPrix, RACED_IN, RACED_IN, RACED_IN, ROUND_OF, ROUND_OF, ROUND_OF, ROUND_OF, ROUND_OF, TEAMMATE_OF
+  - Forrásidézet: rainbow helmet designs—used during the Qatar, Saudi Arabian and Abu Dhabi Grands Prix of 2021—in support of LGBTQ rights in the Middle East. Hamilton used unique designs for the Japanese Grand Prix in 2022 and 2023, designed by Japanese artists Takashi Murakami and Hajime Sorayama, respectively. Rivalries Fernando Alonso Hamilton's debut season saw him partner two-time and defending World Champion...
+- `driver-lewis-hamilton#111`: ExtractionValidationError: TEAMMATE_OF is not temporal; from_year, to_year and role must be null
+  - Jelölt típusok: Driver, Driver, Season, TEAMMATE_OF
+  - Forrásidézet: "[led] Dennis to throw his headphones on the pit wall in disgust: a gesture that was misinterpreted by many to be in reaction to Alonso's pole"; however, McLaren later issued a statement on behalf of Hamilton that denied the use of any profanity. As a result of the events over the 2007 season, the relationship between Hamilton and Alonso reportedly collapsed, with the pair not on speaking terms fo...
+- `driver-lewis-hamilton#123`: ExtractionValidationError: WON does not allow Driver -> Season
+  - Jelölt típusok: Driver, Driver, Team, Team, Season, Season, GrandPrix, ENTERED, ENTERED, ENTERED, ENTERED, WON, WON, ROUND_OF, ROUND_OF, TEAMMATE_OF
+  - Forrásidézet: fighting for the championship in 2017 and 2018. Vettel, who was then driving for Ferrari, enjoyed an early lead on points, but Mercedes and Hamilton fought back to reduce point deficits and ultimately won the championships in both seasons. While there were some on-track flash points, most notably the 2017 Azerbaijan Grand Prix, when Vettel accused Hamilton of brake checking and drove into Hamilton...
+- `driver-lewis-hamilton#126`: ExtractionValidationError: RACED_IN does not allow Circuit -> Season
+  - Jelölt típusok: Driver, Season, GrandPrix, Circuit, RACED_IN, ROUND_OF
+  - Forrásidézet: Grand Prix. In 2008, Hamilton was heckled and otherwise abused during pre-season testing at the Circuit de Catalunya by several Spanish spectators who wore black face paint and black wigs, as well as shirts bearing the words "Hamilton's familly [sic]". The FIA warned Spanish authorities about the repetition of such behaviour, and launched a "Race Against Racism" campaign. Shortly before the 2008 B...
+- `driver-lewis-hamilton#139`: ExtractionValidationError: RACED_IN does not allow Driver -> Season
+  - Jelölt típusok: Driver, Season, RACED_IN
+  - Forrásidézet: what Ali G says." In 2018, Hamilton criticised the lack of diversity in Formula One, stating "nothing's changed" in the 11 years since his debut. As part of the U.S. national anthem protests, Hamilton took the knee before every Grand Prix he entered in 2020, in support of Black Lives Matter, and wore t-shirts promoting racial justice. Following the murder of George Floyd in May 2020, Hamilton crit...
+- `driver-lewis-hamilton#16`: ExtractionValidationError: TEAMMATE_OF is not temporal; from_year, to_year and role must be null
+  - Jelölt típusok: Driver, Driver, Team, Team, Season, Season, TEAMMATE_OF, DROVE_FOR, DROVE_FOR
+  - Forrásidézet: TeamMBM.com, his teammate was Nico Rosberg, who would later drive for the Williams and Mercedes teams in Formula One; they would later team up again for Mercedes from 2013 to 2016. Following his karting successes, the British Racing Drivers' Club made him a "Rising Star" Member in 2000. In 2001, Michael Schumacher made a one-off return to karts and competed against Hamilton along with other future...
+- `driver-lewis-hamilton#168`: ExtractionValidationError: ENTERED is not temporal; from_year, to_year and role must be null
+  - Jelölt típusok: Driver, Team, Season, Title, ENTERED, WON, AWARDED_IN
+  - Forrásidézet: In September 2020, Hamilton launched Team X44 to compete in the all-electric SUV off-road racing series Extreme E from the 2021 season on. The X44 team finished 2nd in the inaugural Extreme E championship, behind Nico Rosberg's RXR team. In January 2022, X44 were crowned inaugural winners of Extreme E Sustainability Award. The team won the 2022 Championship in the final race of the season, beating...
+- `driver-lewis-hamilton#18`: ExtractionValidationError: WON does not allow Driver -> Season
+  - Jelölt típusok: Driver, Team, Season, DROVE_FOR, WON, ENTERED
+  - Forrásidézet: in the Formula Renault Eurocup amidst only competing for four rounds. He remained with Manor for another year in Formula Renault UK, winning the championship in a dominant fashion ahead of Alex Lloyd, as he registered 10 wins from 15 races. Having clinched the championship, Hamilton missed the last two races of the season to make his debut in the season finale of the British Formula 3 Championship...
+- `driver-lewis-hamilton#184`: ExtractionValidationError: ENTERED is not temporal; from_year, to_year and role must be null
+  - Jelölt típusok: Driver, Team, Season, Season, GrandPrix, DROVE_FOR, ENTERED, ENTERED, ROUND_OF
+  - Forrásidézet: million, making him the richest British sports star in the history of the Sunday Times Rich List. By 2026 that figure had increased to £435 million. Ahead of the 2015 Monaco Grand Prix weekend, Hamilton signed a contract to stay with Mercedes until the end of the 2018 season in a deal reportedly worth more than £100 million over the three years, making him one of the best-paid drivers in Formula O...
+- `driver-lewis-hamilton#185`: ExtractionValidationError: WON does not allow Driver -> Season
+  - Jelölt típusok: Driver, Team, Season, Season, Season, Season, Season, Season, Season, DROVE_FOR, WON, WON, WON, WON, WON, WON, WON
+  - Forrásidézet: with Mercedes, reported to be worth up to £40 million per year, making him the best-paid driver in the history of Formula One. According to Forbes, Hamilton was one of the highest-paid athletes of the 2010s decade, and also the highest-paid Formula One driver from 2013 to 2021. Awards and honours Formula One Formula One World Drivers' Championship: 2008, 2014, 2015, 2017, 2018, 2019, 2020 DHL Fast...
+- `driver-lewis-hamilton#192`: ExtractionValidationError: WON is not temporal; from_year, to_year and role must be null
+  - Jelölt típusok: Driver, Season, Season, Title, WON, AWARDED_IN, WON, AWARDED_IN
+  - Forrásidézet: and championship points (5,232.5). With his victory at the 2008 World Drivers' Championship, Hamilton became the then-youngest driver to win the title, aged 23 years and 301 days. Hamilton won his seventh title in 2020, tying the all-time record set by Michael Schumacher. Notes References Further reading Hamilton, Lewis (2007). Lewis Hamilton: My Story (hardback ed.). London: HarperSport. p. 320. ...
+- `driver-lewis-hamilton#2`: ExtractionValidationError: WON does not allow Driver -> Season
+  - Jelölt típusok: Driver, Team, Season, GrandPrix, Driver, Driver, DROVE_FOR, WON, ENTERED, ROUND_OF, ACHIEVED, TEAMMATE_OF, TEAMMATE_OF, TEAMMATE_OF
+  - Forrásidézet: where his successes included winning the Formula 3 Euro Series and the GP2 Series. He subsequently signed for McLaren in 2007, becoming the first black driver to compete in Formula One at the Australian Grand Prix. In his rookie season, Hamilton won four Grands Prix and set several records as he finished runner-up to Kimi Räikkönen by one point and tied with his teammate Fernando Alonso. Hamilton ...
+- `driver-lewis-hamilton#21`: ExtractionValidationError: RACED_IN does not allow Circuit -> Driver
+  - Jelölt típusok: Driver, Team, Season, Circuit, DROVE_FOR, ENTERED, RACED_IN
+  - Forrásidézet: season, with his father pushing for him to move up to GP2 for 2005, while Whitmarsh felt that he should remain in Formula 3 for a second season, culminating in Whitmarsh tearing up Hamilton's contract; however, Hamilton called Whitmarsh six weeks later and re-signed with the team. Hamilton had his first Formula One test with McLaren in late 2004 at Silverstone. He moved to the reigning Euro Series
+- `driver-lewis-hamilton#23`: ExtractionValidationError: ENTERED is not temporal; from_year, to_year and role must be null
+  - Jelölt típusok: Driver, Team, Season, Circuit, Circuit, Title, DROVE_FOR, ENTERED, ROUND_OF, ROUND_OF, WON, AWARDED_IN
+  - Forrásidézet: GP2 Hamilton moved to ASM's sister GP2 team, ART Grand Prix, for the 2006 season. Hamilton won the GP2 championship at his first attempt, beating Nelson Piquet Jr. He secured a dominant win at the Nürburgring, amidst a penalty for speeding in the pit lane. At his home race in Silverstone, Hamilton overtook two rivals at Becketts, a series of
+- `driver-lewis-hamilton#26`: ExtractionValidationError: ACHIEVED does not allow Driver -> GrandPrix
+  - Jelölt típusok: Driver, Driver, Team, Season, Season, GrandPrix, DROVE_FOR, ACHIEVED, ROUND_OF, TEAMMATE_OF
+  - Forrásidézet: 2007–2008: Record-breaking debut seasons Hamilton's maiden season in Formula One saw him partner two-time defending World Drivers' Champion Fernando Alonso at McLaren. At the season-opening Australian Grand Prix, Hamilton became the first—and, as of 2026, only—black driver to race in the series. After finishing third on debut, Hamilton went on to set several records, including
+- `driver-lewis-hamilton#28`: ExtractionValidationError: WON does not allow Driver -> Driver
+  - Jelölt típusok: Driver, Driver, Driver, Team, GrandPrix, TEAMMATE_OF, WON, HELD_AT
+  - Forrásidézet: retirement at the Chinese Grand Prix, Hamilton's 12-point advantage in the standings evanesced. He finished runner-up in the championship to Räikkönen by one point, classified ahead of teammate Alonso whilst finishing level on points. Throughout the season, Hamilton and Alonso were involved in several incidents, which resulted in inter-team tensions, culminating in Alonso and McLaren terminating t...
+- `driver-lewis-hamilton#29`: ExtractionValidationError: RACED_IN does not allow Driver -> Season
+  - Jelölt típusok: Driver, Driver, Season, GrandPrix, TEAMMATE_OF, RACED_IN, ROUND_OF, ACHIEVED, WON
+  - Forrásidézet: to stay with the team until the end of 2012. Partnering Heikki Kovalainen for 2008, Hamilton's winning form continued as he amassed five race victories and 10 podium finishes. Ferrari drivers, along with BMW's Robert Kubica, emerged as his closest rivals, as they engaged in a close battle for the title with Hamilton during the first half of the season. At the rain-affected British Grand Prix, he w...
+- `driver-lewis-hamilton#3`: ExtractionValidationError: ENTERED is not temporal; from_year, to_year and role must be null
+  - Jelölt típusok: Driver, Team, Team, Season, DROVE_FOR, DROVE_FOR, ENTERED, ENTERED
+  - Forrásidézet: the last lap of the last race of the season to become the then-youngest World Drivers' Champion. The Red Bull–Renault combination prevailed throughout his remaining four seasons at McLaren, with Hamilton achieving multiple race wins in each, including his involvement in a four-way title battle in 2010. Hamilton signed for Mercedes in 2013 to partner his old karting teammate Nico Rosberg, ending hi...
+- `driver-lewis-hamilton#30`: ExtractionValidationError: WON does not allow Driver -> GrandPrix
+  - Jelölt típusok: Driver, Driver, Driver, GrandPrix, Season, WON, ROUND_OF, ACHIEVED
+  - Forrásidézet: by over a minute from second-placed Nick Heidfeld, which was widely acclaimed as one of the greatest wet-weather performances in Formula One history. As the season progressed towards the closing rounds, the championship became a clear two-way fight between Hamilton and Ferrari's Felipe Massa. Hamilton won his maiden title at the season-ending Brazilian Grand Prix, overtaking Timo Glock for fifth-p...
+- `driver-lewis-hamilton#32`: ExtractionValidationError: ENTERED is not temporal; from_year, to_year and role must be null
+  - Jelölt típusok: Driver, Team, Season, GrandPrix, ENTERED, ROUND_OF
+  - Forrásidézet: podium finishes and race victories, and challenged for titles. Major technical regulation changes in 2009 led to a challenging start for McLaren. Often qualifying outside of the top ten, and struggling to finish consistently on points, Hamilton's chances of defending his title became unfeasible. Major upgrades at the German Grand Prix saw a dramatic
+- `driver-lewis-hamilton#35`: ExtractionValidationError: AWARDED_IN does not allow Season -> Title
+  - Jelölt típusok: Driver, Driver, Season, Title, WON, WON, AWARDED_IN
+  - Forrásidézet: season, and took the championship lead after winning the race. Hamilton's latter half of the season unravelled with a number of misfortunes, including race-ending collisions and mechanical failures, culminated in him losing vital points to his rivals, and ultimately, the championship lead. He entered the final round of the season with an outside chance of winning the title, but finished fourth in ...
+- `driver-lewis-hamilton#36`: ExtractionValidationError: ACHIEVED does not allow Driver -> Season
+  - Jelölt típusok: Driver, Driver, Season, GrandPrix, Driver, TEAMMATE_OF, ACHIEVED, ACHIEVED, ACHIEVED
+  - Forrásidézet: 2011 was a challenging year for Hamilton, marking the first season he had been out-scored by a teammate, as Button finished runner-up to Vettel. Setbacks in his private life, as well as on-track collisions culminating in multiple run-ins with the stewards, contributed to his inconsistent performances throughout the season. Hamilton finished fifth in the standings with three race wins; he secured t...
+- `driver-lewis-hamilton#37`: ExtractionValidationError: RACED_IN does not allow Driver -> Season
+  - Jelölt típusok: Driver, Team, Season, ENTERED, DROVE_FOR, RACED_IN
+  - Forrásidézet: and vowed he would return to form. In 2012, McLaren emerged as contenders for the title, with Hamilton remaining in title contention during the first half of the season. Akin to the 2010 season, he endured a challenging latter half of the season, with inconsistent results and a series of mechanical failures. Across those ten races, Hamilton encountered five retirements, three whilst leading.
+- `driver-lewis-hamilton#4`: ExtractionValidationError: WON does not allow Driver -> Season
+  - Jelölt típusok: Driver, Team, Season, Season, GrandPrix, DROVE_FOR, WON, WON, ROUND_OF, ROUND_OF
+  - Forrásidézet: with McLaren. Following his maiden victory with the team at the Hungarian Grand Prix, new engine regulations the following season saw Mercedes emerge as the dominant force in Formula One. Over the next three seasons, Hamilton and Rosberg won 51 of 59 Grands Prix amidst their fierce rivalry, with Hamilton winning the former titles in 2014 and 2015, and Rosberg winning the latter. After Rosberg's re...
+- `driver-lewis-hamilton#40`: ExtractionValidationError: ACHIEVED does not allow Driver -> GrandPrix
+  - Jelölt típusok: Driver, Team, GrandPrix, DROVE_FOR, ACHIEVED, HELD_AT
+  - Forrásidézet: surprise by pundits and the public, with some describing the move to Mercedes—a team with no recent history of success—as a gamble. In his first season with the Brackley-based team—amidst Mercedes W04's tyre management struggles—Hamilton finished fourth in the standings, securing five podium finishes and pole positions, with only one converted into a race victory at the Hungarian Grand Prix. Whils...
+- `driver-lewis-hamilton#42`: ExtractionValidationError: ACHIEVED does not allow Driver -> GrandPrix
+  - Jelölt típusok: Driver, Driver, GrandPrix, TEAMMATE_OF, ACHIEVED, AT_RACE
+  - Forrásidézet: career-best 11 victories as he prevailed in a season-long duel for the title against teammate Rosberg. After securing a streak of wins and acquiring the championship lead, Hamilton endured a number of misfortunes mid-season, including mechanical failures and a collision with Rosberg which culminated in a retirement from the Belgian Grand Prix, saw him trailing Rosberg by 29 points in the standings...
+- `driver-lewis-hamilton#43`: ExtractionValidationError: WON does not allow Driver -> Season
+  - Jelölt típusok: Driver, Season, GrandPrix, Team, WON, ROUND_OF, ENTERED, DROVE_FOR
+  - Forrásidézet: season, Hamilton clinched his second World Drivers' Championship at the final round in Abu Dhabi, and declared it was "the greatest day of [his] life" over team radio. Opting to continue racing with his old karting number 44, Hamilton fended off Rosberg's challenge for the title for a second year running in 2015, winning 10 races from a then-joint record 17 podium finishes, scoring 11 pole positio...
+- `driver-lewis-hamilton#44`: ExtractionValidationError: WON does not allow Driver -> Season
+  - Jelölt típusok: Driver, Team, Season, GrandPrix, DROVE_FOR, ROUND_OF, WON, AWARDED_IN
+  - Forrásidézet: the first 12 races, and leading the championship throughout the season, he achieved his first back-to-back championships. His rivalry with Rosberg intensified, climaxing in a heated battle at the United States Grand Prix, where Hamilton clinched the title with three races to spare. Hamilton extended his contract with Mercedes for three additional years in a deal reportedly worth more than £100 mil...
+- `driver-lewis-hamilton#45`: ExtractionValidationError: WON does not allow Driver -> Season
+  - Jelölt típusok: Driver, Driver, Team, Season, WON, WON, ENTERED
+  - Forrásidézet: keep his championship-winning cars and trophies. After another season-long duel for the title in 2016, Hamilton finished runner-up in the championship to Rosberg by five points. He endured a challenging start to the season, as a succession of poor race-starts and mechanical failures culminated in him being marginally behind Rosberg in the standings. Mercedes's policy of letting the pair fight free...
+- `driver-lewis-hamilton#46`: ExtractionValidationError: ACHIEVED does not allow Driver -> GrandPrix
+  - Jelölt típusok: Driver, GrandPrix, GrandPrix, GrandPrix, ACHIEVED, ACHIEVED, ACHIEVED
+  - Forrásidézet: to several acrimonious exchanges on-track, culminating in collisions at the Spanish and Austrian Grands Prix. Hamilton won six of seven races mid-season, including the Hungarian Grand Prix, where he overtook his teammate to the championship lead for the first time of the season. After a crucial engine blowout in Malaysia, Hamilton secured a hat-trick of wins—including his 50th race victory in the ...
+- `driver-lewis-hamilton#47`: ExtractionValidationError: ACHIEVED does not allow Driver -> Season
+  - Jelölt típusok: Driver, Driver, Season, GrandPrix, ACHIEVED, WON, ROUND_OF
+  - Forrásidézet: season-ending Abu Dhabi Grand Prix, 12 points adrift of Rosberg. In Abu Dhabi, Hamilton defied team orders—deliberately slowing Rosberg into the chasing pack at the end of the race, in an unsuccessful bid to encourage other drivers to overtake his teammate. Rosberg took the title before announcing his shock retirement from the sport, immediately after beating his rival. Finishing runner-up in the ...
+- `driver-lewis-hamilton#48`: ExtractionValidationError: WON does not allow Driver -> Season
+  - Jelölt típusok: Driver, Driver, Team, Season, Season, Season, Season, TEAMMATE_OF, WON, WON, WON, WON, RACED_IN
+  - Forrásidézet: a season without becoming the champion, securing a season-highest 10 race victories, in addition to the record for most career points of all-time. 2017–2020: Four titles in a row Following Rosberg's retirement, Hamilton was partnered by Valtteri Bottas in 2017. With Ferrari emerging as the team to beat after the major overhaul in aerodynamics regulations, Vettel became Hamilton's closest rival, as...
+- `driver-lewis-hamilton#49`: ExtractionValidationError: ACHIEVED does not allow Driver -> GrandPrix
+  - Jelölt típusok: Driver, GrandPrix, ACHIEVED
+  - Forrásidézet: standings throughout the first half of the season ahead of Hamilton. Following the summer break, benefitting from Vettel's misfortunes and Mercedes's resurgence, Hamilton dominated the subsequent races, winning five in six, including the Italian Grand Prix where he broke the record for all-time most pole positions, and overtook Vettel for the
+- `driver-lewis-hamilton#5`: ExtractionValidationError: WON does not allow Driver -> Season
+  - Jelölt típusok: Driver, Driver, Team, Driver, Season, Season, Season, Season, Season, Season, Season, GrandPrix, WON, WON, WON, WON, ACHIEVED, ACHIEVED, TEAMMATE_OF
+  - Forrásidézet: Sebastian Vettel of Ferrari to claim his fourth and fifth titles in 2017 and 2018. Hamilton won his sixth title in 2019, before breaking several records across his 2020 campaign—including the all-time win record at the Portuguese Grand Prix—to claim his record-equalling seventh. Hamilton became the first driver to surpass 100 race wins and pole positions in 2021, ending runner-up to Max Verstappen...
+- `driver-lewis-hamilton#52`: ExtractionValidationError: WON does not allow Driver -> Season
+  - Jelölt típusok: Driver, Team, Season, DROVE_FOR, ENTERED, WON, AWARDED_IN
+  - Forrásidézet: second year running. Securing a total of 11 pole positions and race victories from 17 podium finishes, he set a new record for most points scored in a season (408). During the season, Hamilton signed a two-year contract extension with Mercedes, reported to be worth up to £40 million per year, making him the best-paid Formula One driver in history. Hamilton led the championship standings for the ma...
+- `driver-lewis-hamilton#53`: ExtractionValidationError: WON does not allow Driver -> Season
+  - Jelölt típusok: Driver, Driver, Season, GrandPrix, GrandPrix, TEAMMATE_OF, WON, ACHIEVED, ROUND_OF, ACHIEVED, ROUND_OF
+  - Forrásidézet: performances during the first half of the season, he fended off title challenges from teammate Bottas, and remained unchallenged amidst Ferrari's sturdy performances following the summer break. Hamilton clinched his sixth title at the United States Grand Prix with two races remaining. After scoring his sixth career grand slam at the Abu Dhabi Grand Prix, the season finale, Hamilton ended the seaso...
+- `driver-lewis-hamilton#54`: ExtractionValidationError: WON is not temporal; from_year, to_year and role must be null
+  - Jelölt típusok: Driver, Driver, Season, Title, WON, AWARDED_IN, TEAMMATE_OF
+  - Forrásidézet: fourth time), and broke his own record for most points by scoring a total of 413 points, 87 points clear of second-placed Bottas. Hamilton dominated the 2020 season to win his seventh Drivers' title, equalling the record for most titles set by Schumacher, in a season heavily impacted by the COVID-19 pandemic. Over the shortened seventeen-race season, Hamilton secured ten pole positions and eleven ...
+- `driver-lewis-hamilton#55`: ExtractionValidationError: WON is not temporal; from_year, to_year and role must be null
+  - Jelölt típusok: Driver, GrandPrix, Season, Title, GrandPrix, GrandPrix, Driver, WON, AWARDED_IN, ACHIEVED, ACHIEVED, ACHIEVED, FOR_TEAM
+  - Forrásidézet: fewer races) including one from the Portuguese Grand Prix, where he achieved his 92nd career win and broke the record for all-time most wins. Hamilton missed the Sakhir Grand Prix after contracting COVID-19, his first race absence since his debut in 2007. Providing one of his greatest performances, Hamilton clinched the title at the rain-affected Turkish Grand Prix with three rounds to spare, and ...
+- `driver-lewis-hamilton#56`: ExtractionValidationError: WON does not allow Driver -> Season
+  - Jelölt típusok: Driver, Driver, Season, TEAMMATE_OF, WON, WON
+  - Forrásidézet: 2021: Title battle vs. Verstappen Regulation changes for the 2021 season saw Red Bull make performance gains on Mercedes, winning five consecutive races and acquiring the championship lead, Red Bull's Max Verstappen and Hamilton emerged as title favourites early on in the season. Amidst their intense battle for the title, the pair engaged in several on-track battles—culminating in
+- `driver-lewis-hamilton#57`: ExtractionValidationError: ACHIEVED does not allow Driver -> GrandPrix
+  - Jelölt típusok: Driver, GrandPrix, GrandPrix, GrandPrix, Season, ACHIEVED, ACHIEVED, ACHIEVED, ROUND_OF
+  - Forrásidézet: collisions in Britain, Italy and Saudi Arabia—and finished 1–2 at 14 of 22 Grands Prix. Hamilton achieved his 100th pole position and race win at the Spanish and Russian Grands Prix, respectively, becoming the first driver to achieve either feat. Securing a hat-trick of wins in the penultimate rounds, including a recovery drive at the São Paulo Grand Prix—which was acclaimed as one of his greatest...
+- `driver-lewis-hamilton#6`: ExtractionValidationError: WON does not allow Season -> Season
+  - Jelölt típusok: Driver, Team, Team, Season, Season, Season, DROVE_FOR, DROVE_FOR, WON, ROUND_OF
+  - Forrásidézet: took his record ninth British Grand Prix victory in 2024, his final season with Mercedes. Hamilton signed for Ferrari in 2025, contracted to remain until at least the end of 2027. Hamilton has been credited with furthering Formula One's global following by appealing to a broader audience outside the sport, in part due to his high-profile lifestyle, amongst his environmental and social activism. He...
+- `driver-lewis-hamilton#64`: ExtractionValidationError: RACED_IN does not allow Driver -> Season
+  - Jelölt típusok: Driver, Team, Season, DROVE_FOR, ENTERED, RACED_IN
+  - Forrásidézet: one lap led. The season also marked the first time Hamilton finished behind his teammate in the standings since 2016, finishing sixth, 35 points behind Russell in fourth. Mercedes once again faced concerns over their car's competitiveness ahead of the 2023 season. Hamilton endured another winless campaign amidst Red Bull dominance, securing several podium finishes throughout and finishing third
+- `driver-lewis-hamilton#67`: ExtractionValidationError: ACHIEVED does not allow Driver -> GrandPrix
+  - Jelölt típusok: Driver, Team, GrandPrix, GrandPrix, GrandPrix, DROVE_FOR, ACHIEVED, ACHIEVED, ACHIEVED
+  - Forrásidézet: performances, resulting in another challenging season. Mercedes's resurgence during the mid-season enabled him to deliver his ninth British Grand Prix victory, ending his 31-month winless drought; he broke the record for most wins at the same Grand Prix and became the first driver to win beyond their 300th start. Hamilton secured his 200th podium finish in Hungary, and another victory at the Belgi...
+- `driver-lewis-hamilton#69`: ExtractionValidationError: ENTERED is not temporal; from_year, to_year and role must be null
+  - Jelölt típusok: Driver, Team, Season, DROVE_FOR, ENTERED
+  - Forrásidézet: 2025–present: First season acclimations and return to form Following the announcement of his departure from Mercedes, Ferrari announced they had reached a multi-year agreement with Hamilton to join the team in 2025, on a contract reported to be worth £41 million per year, replacing Carlos Sainz Jr. as teammate to Charles Leclerc. Hamilton stated it had been a "childhood dream" to drive for Ferrari...
+- `driver-lewis-hamilton#74`: ExtractionValidationError: ACHIEVED does not allow Driver -> GrandPrix
+  - Jelölt típusok: Driver, Team, Team, GrandPrix, GrandPrix, GrandPrix, GrandPrix, ACHIEVED, ACHIEVED, ACHIEVED, ACHIEVED, DROVE_FOR, DROVE_FOR
+  - Forrásidézet: emerged among the frontrunners, trailing the dominant Mercedes in terms of car performance. Hamilton secured his first podium finish with the team at the Chinese Grand Prix, followed by consecutive podiums at the Canadian and Monaco Grands Prix, before achieving his maiden race victory with Ferrari at the inaugural Barcelona-Catalunya Grand Prix. These strong performances led Hamilton into title c...
+- `driver-lewis-hamilton#80`: ExtractionValidationError: ACHIEVED does not allow Driver -> GrandPrix
+  - Jelölt típusok: Driver, Driver, Season, GrandPrix, ACHIEVED, AT_RACE, ACHIEVED
+  - Forrásidézet: mistakes he makes, how complete he is and clean ... he just never makes a mistake [in] wheel-to-wheel combat [or] in qualifying ... He just doesn't fade, mentally or physically." Hamilton is regarded as one of the best wet-weather drivers in the sport, with some of his best performances occurring in those conditions. In the 2008 British Grand Prix, Hamilton bested second-place Nick Heidfeld by ove...
+- `driver-lewis-hamilton#81`: ExtractionValidationError: WON does not allow Driver -> Season
+  - Jelölt típusok: Driver, Driver, Season, GrandPrix, GrandPrix, GrandPrix, GrandPrix, WON, ACHIEVED, RACED_IN, RACED_IN, ROUND_OF
+  - Forrásidézet: largest margin of victory recorded since the 1995 Australian Grand Prix. During the turbo-hybrid era, Hamilton remained unbeaten in every race affected by wet weather from the 2014 Japanese Grand Prix up to the 2019 German Grand Prix, where his almost five-year streak was broken by Max Verstappen. His wet weather drive at the 2020 Turkish Grand Prix where he clinched his seventh world title was wi...
+- `driver-lewis-hamilton#82`: ExtractionValidationError: TEAMMATE_OF does not allow Team -> Driver
+  - Jelölt típusok: Driver, Team, Driver, DROVE_FOR, TEAMMATE_OF
+  - Forrásidézet: performances". Qualifying sixth for the race after Mercedes struggled with tyre temperatures and a track that lacked grip after being recently resurfaced, during the race he gambled on a one-stop strategy in mixed conditions whilst his rivals chose to change their tyres for a second time, enabling him to take the lead and win by over 30 seconds. His performance was contrasted with that of his team...
+- `driver-lewis-hamilton#90`: ExtractionValidationError: ACHIEVED does not allow GrandPrix -> Driver
+  - Jelölt típusok: Driver, Team, GrandPrix, GrandPrix, DROVE_FOR, ACHIEVED, ACHIEVED, HELD_AT, HELD_AT
+  - Forrásidézet: 2018 where, after winning the Italian Grand Prix, Hamilton flew to Shanghai and New York where he released his own designer clothing line with Tommy Hilfiger, before flying immediately back to, and winning, the next race in Singapore. His Mercedes team-boss Toto Wolff has been vocal in his support for Hamilton's off-track pursuits, explaining how freedom allows Hamilton to function at his best.
+- `driver-lewis-hamilton#97`: ExtractionValidationError: WON is not temporal; from_year, to_year and role must be null
+  - Jelölt típusok: Driver, Season, Title, WON, AWARDED_IN
+  - Forrásidézet: among the greats of the sport became firmly established in the opinions of experts, rivals, and teammates alike, including among others Fernando Alonso, Carlos Sainz Jr., Felipe Massa, Gerhard Berger, and Ross Brawn. Some journalists and pundits also consider the possibility of Hamilton being the greatest Formula One driver of all time. Following Hamilton clinching a sixth World Drivers' Champions...
+- `driver-lewis-hamilton#98`: ExtractionValidationError: WON is not temporal; from_year, to_year and role must be null
+  - Jelölt típusok: Driver, Season, Title, WON, AWARDED_IN
+  - Forrásidézet: Johnny Herbert acclaimed Hamilton as the greatest driver ever, while Formula One staff writer Greg Stuart described Hamilton as "arguably the most complete Formula [One] driver ever". After Hamilton won his seventh title in 2020, John
+- `driver-michael-schumacher#1`: ExtractionValidationError: WON is not temporal; from_year, to_year and role must be null
+  - Jelölt típusok: Driver, Title, Season, GrandPrix, Season, Season, Season, WON, WON, ACHIEVED, RACED_IN, ROUND_OF, AWARDED_IN
+  - Forrásidézet: Born in Hürth to a working-class family, Schumacher began competitive kart racing at age four in a pedal kart built from discarded parts. After a successful karting career—culminating in his victory at the European Championship in 1987—Schumacher graduated to junior formulae. He dominated Formula König in his debut season, before graduating to German Formula Three in 1989, where he finished third....
+- `driver-michael-schumacher#102`: ExtractionValidationError: ENTERED is not temporal; from_year, to_year and role must be null
+  - Jelölt típusok: Driver, Team, Season, Season, Circuit, DROVE_FOR, ENTERED, ENTERED, HELD_AT
+  - Forrásidézet: 2007–2009: New roles at Ferrari, motorcycle racing, and injury During the 2007 season, Schumacher acted as Ferrari's adviser and Jean Todt's super assistant. Schumacher also helped Ferrari with their development programme at the Jerez Circuit. He focused on testing electronics and tyres for the 2008 season. During 2008, Schumacher also competed in motorcycle racing in the IDM Superbike series. At ...
+- `driver-michael-schumacher#109`: ExtractionValidationError: ACHIEVED does not allow Driver -> GrandPrix
+  - Jelölt típusok: Driver, GrandPrix, Driver, Season, ACHIEVED, TEAMMATE_OF, ROUND_OF, DROVE_FOR
+  - Forrásidézet: Fangio, Formula One's oldest champion who was 46 when he won his fifth title. 2010: Return from retirement After having impressed in the free practices, Schumacher finished sixth in the first race of the season at the Bahrain Grand Prix, 1,239 days after his previous Formula One race. He finished behind teammate Rosberg in each of the first four qualifying sessions and races; former driver Stirlin...
+- `driver-michael-schumacher#111`: ExtractionValidationError: ENTERED does not allow Team -> GrandPrix
+  - Jelölt típusok: Driver, Team, GrandPrix, GrandPrix, Driver, ENTERED, ENTERED, ACHIEVED, ACHIEVED, ACHIEVED
+  - Forrásidézet: have contributed to Schumacher's difficulties. Mercedes upgraded their car for the Spanish Grand Prix where Schumacher finished fourth. At the Monaco Grand Prix, Schumacher finished sixth after passing Ferrari's Fernando Alonso on the final corner before the finish line when the safety car returned to the pits. Mercedes held that "the combination of the race control messages 'Safety Car in this la...
+- `driver-michael-schumacher#113`: ExtractionValidationError: ACHIEVED does not allow Driver -> GrandPrix
+  - Jelölt típusok: Driver, GrandPrix, GrandPrix, GrandPrix, ACHIEVED, ACHIEVED, ACHIEVED
+  - Forrásidézet: sought to clarify the regulations post-race, as the new and old rules appeared to be in conflict. At the Turkish Grand Prix, Schumacher qualified fifth and finished fourth in the race, both his best results since his return. At the European Grand Prix in Valencia, Schumacher finished 15th, the lowest recorded finish in his career. At the Hungarian Grand Prix, Barrichello attempted to pass Schumach...
+- `driver-michael-schumacher#114`: ExtractionValidationError: ACHIEVED does not allow Driver -> GrandPrix
+  - Jelölt típusok: Driver, GrandPrix, GrandPrix, ACHIEVED
+  - Forrásidézet: closed the inside line to force Barrichello onto the outside; Barrichello persisted on the inside at 180 mph (290 km/h) despite the close proximity of a concrete wall and Schumacher leaving him only inches to spare. Schumacher, who finished 12th, was found guilty of dangerous driving and was demoted ten places on the grid for the following race, the Belgian Grand Prix, where he finished seventh de...
+- `driver-michael-schumacher#115`: ExtractionValidationError: RACED_IN does not allow Driver -> Season
+  - Jelölt típusok: Driver, Season, GrandPrix, RACED_IN, ROUND_OF
+  - Forrásidézet: Schumacher was involved in a major accident on the first lap, after Vitantonio Liuzzi's car collided with Schumacher's, barely missing his head. Schumacher finished the season in ninth place with 72 points. For the first time since 1991, Schumacher finished a year without a win, pole position, podium, or fastest lap. 2011–2012: Final podium and second retirement After starting the 2011 season with...
+- `driver-michael-schumacher#116`: ExtractionValidationError: ACHIEVED does not allow Driver -> GrandPrix
+  - Jelölt típusok: Driver, GrandPrix, GrandPrix, GrandPrix, GrandPrix, ACHIEVED, ACHIEVED, ACHIEVED, ACHIEVED
+  - Forrásidézet: where he finished ninth. Schumacher later came sixth at the Spanish Grand Prix, and he took fourth place at the Canadian Grand Prix, after running as high as second in a wet race; his Canadian race was seen at the time as his most convincing performance since he came out of retirement. Despite starting last at the Belgian Grand Prix, twenty years after his debut, Schumacher finished fifth. The Jap...
+- `driver-michael-schumacher#117`: ExtractionValidationError: ENTERED is not temporal; from_year, to_year and role must be null
+  - Jelölt típusok: Driver, Driver, Team, Season, DROVE_FOR, DROVE_FOR, ENTERED
+  - Forrásidézet: marking the first time he had led a race since 2006. In doing so, he became the oldest driver to lead a race since Jack Brabham in 1970. Schumacher finished the season in eighth place in the Drivers' Championship, with 76 points. Schumacher was again partnered by Rosberg at Mercedes for the 2012 season. After qualifying fourth in what was his best qualifying since his return, he retired from the s...
+- `driver-michael-schumacher#118`: ExtractionValidationError: ACHIEVED does not allow Driver -> GrandPrix
+  - Jelölt típusok: Driver, GrandPrix, GrandPrix, GrandPrix, GrandPrix, ACHIEVED, ACHIEVED, ACHIEVED, ACHIEVED
+  - Forrásidézet: second round at the Malaysian Grand Prix with intermittent rain, after qualifying third. At the Chinese Grand Prix, Schumacher started on the front row but retired due to a loose wheel after a mechanic's error during a pit stop. After causing a collision with Bruno Senna at the Spanish Grand Prix, Schumacher received a five-place grid penalty for the Monaco Grand Prix. Twenty-one years into his ca...
+- `driver-michael-schumacher#119`: ExtractionValidationError: ACHIEVED does not allow Driver -> GrandPrix
+  - Jelölt típusok: Driver, GrandPrix, GrandPrix, GrandPrix, ACHIEVED, ACHIEVED
+  - Forrásidézet: sixth owing to his penalty. He later retired from seventh place in the race. At the European Grand Prix, Schumacher finished third, his only podium finish since his return to Formula One. At 43 years and 173 days, he became the oldest driver to achieve a podium since 1970, when Brabham finished second at the British Grand Prix. At the German Grand Prix, Schumacher set the fastest lap for the 77th ...
+- `driver-michael-schumacher#12`: ExtractionValidationError: WON does not allow Driver -> Season
+  - Jelölt típusok: Driver, Team, Season, DROVE_FOR, ENTERED, WON, AWARDED_IN
+  - Forrásidézet: to top-level karting in 1996, winning both the Monaco Kart Cup in Formula A and the Masters of Paris-Bercy. Lower formulae and sportscar racing In 1988, Schumacher moved into single-seat car racing by participating in the German Formula Ford and Formula König series, winning the latter. In 1989, Schumacher signed with Willi Weber's WTS Formula Three team. Funded by Weber, he competed in the German...
+- `driver-michael-schumacher#121`: ExtractionValidationError: ACHIEVED does not allow Driver -> GrandPrix
+  - Jelölt típusok: Driver, GrandPrix, Season, ACHIEVED, RACED_IN
+  - Forrásidézet: next Grand Prix." Schumacher finished seventh at the Brazilian Grand Prix, his 308th and final entry and 306th race start, to end his season. This was also the starting position for his debut Formula One race. During the race, he symbolically pulled over for fellow German Sebastian Vettel en route to his then third Drivers' Championship. Schumacher finished 13th in the 2012 Drivers' Championship. ...
+- `driver-michael-schumacher#124`: ExtractionValidationError: ENTERED is not temporal; from_year, to_year and role must be null
+  - Jelölt típusok: Team, Driver, Driver, Driver, Team, Season, Season, Season, Season, Season, Season, Season, Season, Driver, ENTERED, ENTERED, ENTERED, ENTERED, ENTERED, ENTERED, ENTERED, ENTERED, FIELDED, FIELDED, FIELDED, FIELDED, FIELDED, FIELDED, FIELDED, FIELDED
+  - Forrásidézet: responsible for his lack of form second time around than age or length of absence." From 2014 to 2021, Mercedes went on to win a record-breaking (of Schumacher's Ferrari from 1999 to 2004) eight Constructors' Championships under Hamilton, Rosberg, and Valtteri Bottas. Brawn said that "Michael's contribution to our development and the future of our team has been significant", and observed: "In my o...
+- `driver-michael-schumacher#13`: ExtractionValidationError: WON does not allow Driver -> GrandPrix
+  - Jelölt típusok: Driver, Driver, Season, GrandPrix, WON, AWARDED_IN, AT_RACE
+  - Forrásidézet: also won the 1990 Macau Grand Prix under controversial circumstances. He placed second behind Mika Häkkinen in the first heat, three seconds behind. When the second heat began, he passed Häkkinen, who needed to finish within three seconds of Schumacher to win the race overall. In the closing laps, Schumacher made a mistake, allowing Häkkinen to attempt to overtake. As soon as Schumacher changed hi...
+- `driver-michael-schumacher#135`: ExtractionValidationError: WON does not allow Driver -> Season
+  - Jelölt típusok: Driver, Driver, Season, Season, Season, Season, WON, WON, WON, WON
+  - Forrásidézet: missing six races after a leg injury, and future 2016 World Champion Rosberg when he was in his 40s. Schumacher was also noted for outperforming his cars and for his ability to operate at his peak on every lap, having won significant more races than he had either pole positions or fastest laps. Apart from dominating the 1995, 2001, 2002, and 2004 World Championships (with 2002 and 2004 being the s...
+- `driver-michael-schumacher#140`: ExtractionValidationError: ACHIEVED does not allow Driver -> Driver
+  - Jelölt típusok: Driver, Driver, Driver, Season, ACHIEVED, ACHIEVED, WON, AWARDED_IN
+  - Forrásidézet: team's first Drivers' Championship since the 1979 season, and Alonso, who ended Schumacher's five-consecutive titles in the 2000s. Despite only facing him during Schumacher's brief comeback in the 2010s, Hamilton is also seen a rival due to their similar achievements and driving styles, and cited Schumacher as an inspiration. Helmet Schumacher, in conjunction with Schuberth, helped develop the fir...
+- `driver-michael-schumacher#145`: ExtractionValidationError: WON does not allow Driver -> Season
+  - Jelölt típusok: Driver, Team, Season, DROVE_FOR, WON, ENTERED
+  - Forrásidézet: in 1994. Schumacher has also often been credited with popularising Formula One worldwide, especially in Germany, where it was formerly considered a fringe sport. When Schumacher first retired in 2006, three of the top ten drivers in that year's Drivers' standings were German, more than any other nationality. Younger German drivers, such as Vettel, felt Schumacher was key in them becoming Formula O...
+- `driver-michael-schumacher#15`: ExtractionValidationError: HELD_AT does not allow Circuit -> Season
+  - Jelölt típusok: Driver, Car, Season, Circuit, RACED_IN, HELD_AT
+  - Forrásidézet: most of Schumacher's contemporaries competed in Formula 3000 on the way to Formula One. Weber advised Schumacher that being exposed to professional press conferences and driving powerful cars in long-distance races would help his career. In the 1990 World Sportscar Championship season, Schumacher won the season finale at the Autódromo Hermanos Rodríguez in a Sauber–Mercedes C11, and finished fifth...
+- `driver-michael-schumacher#151`: ExtractionValidationError: DROVE_FOR does not allow Driver -> Season
+  - Jelölt típusok: Driver, Driver, Season, Team, Season, DROVE_FOR, DROVE_FOR
+  - Forrásidézet: racing drivers. Ralf competed in Formula One for ten years, starting from 1997 until the end of 2007. Mick became the third Schumacher to race in Formula One, making his debut with Haas in the 2021 season. Before his skiing accident in 2013, Schumacher's main hobbies included horse riding, motorcycle racing, sky diving, and playing football for his local team FC Echichens. Schumacher appeared in s...
+- `driver-michael-schumacher#153`: ExtractionValidationError: WON does not allow Driver -> Car
+  - Jelölt típusok: Driver, Car, Car, WON
+  - Forrásidézet: him a miniature replica of the Ferrari F2004, the car in which Schumacher won his seventh world title. Months later, Pope Benedict XVI was presented with the steering wheel of the F2004, which was autographed by Schumacher. Archbishop Georg Gänswein visited Schumacher in mid-2018. In 2006, Schumacher voiced a Ferrari F430 in the Disney/Pixar film Cars, and cameoed as a chariot driver in the French
+- `driver-michael-schumacher#16`: ExtractionValidationError: HELD_AT does not allow Car -> Circuit
+  - Jelölt típusok: Driver, Car, Season, Circuit, GrandPrix, RACED_IN, HELD_AT, ROUND_OF
+  - Forrásidézet: nine races. He continued with the team in the 1991 World Sportscar Championship season, winning again at the final race of the season at Autopolis in Japan with a Sauber–Mercedes-Benz C291, leading to a ninth-place finish in the Drivers' Championship. He also competed at the 1991 24 Hours of Le Mans, finishing fifth in a car shared with Wendlinger and Fritz Kreutzpointner. He further competed in o...
+- `driver-michael-schumacher#170`: ExtractionValidationError: WON is not temporal; from_year, to_year and role must be null
+  - Jelölt típusok: Driver, Title, Season, Season, WON, WON, WON
+  - Forrásidézet: Fischer and Steffi Graf to the accolade. For his sports achievements and his commitment to road safety, Schumacher was awarded Germany's highest sporting accolade, the Silbernes Lorbeerblatt, in 1997. In 2002, for his contributions to sport and his contributions in raising awareness of child education, Schumacher was named as one of the UNESCO Champions for Sport. Schumacher won the Laureus World ...
+- `driver-michael-schumacher#171`: ExtractionValidationError: WON does not allow Driver -> Season
+  - Jelölt típusok: Driver, Season, Season, Season, Season, WON, WON, WON, AWARDED_IN
+  - Forrásidézet: 2001, was named L'Équipe Champion of Champions three times (from 2001 to 2003), won the Gazzetta World Sports Award twice (2001 and 2002), and won the 2003 Lorenzo Bandini Trophy. In honour of Schumacher's racing career and his efforts to improve road safety and the sport, he was awarded an FIA Gold Medal for Motor Sport in 2006. The same year, ahead of his final race for Ferrari in Brazil on 22 O...
+- `driver-michael-schumacher#172`: ExtractionValidationError: TEAMMATE_OF is not temporal; from_year, to_year and role must be null
+  - Jelölt típusok: Driver, Driver, GrandPrix, Circuit, Circuit, Title, TEAMMATE_OF, WON, AWARDED_IN, WON, WON
+  - Forrásidézet: Award" to Schumacher. In 2007, he received the Prince of Asturias Award for Sport for his sporting prowess and his humanitarian record. Together with Vettel, Schumacher won the Race of Champions Nations' Cup six times in a row for Germany, from 2007 to 2012. In 2017, Schumacher was inducted into the FIA Hall of Fame and Germany's Sports Hall of Fame. In 2020, Todt honoured Schumacher with the FIA ...
+- `driver-michael-schumacher#179`: ExtractionValidationError: TEAMMATE_OF is not temporal; from_year, to_year and role must be null
+  - Jelölt típusok: Driver, Team, Season, Season, Season, Driver, DROVE_FOR, TEAMMATE_OF, ENTERED, ENTERED, ENTERED
+  - Forrásidézet: 2000 and 2001, and further improved in 2002 and 2004), others remain his, such as his 100% podium finish in 2002 (17), which included eleven wins, five second places, and one third place. In 2006, Schumacher had made the most starts with the same engine manufacturer and constructor (both Ferrari, 180 starts). As teammates, he and Barrichello had the most starts (102, 2000–2005) and most 1–2 finish...
+- `driver-michael-schumacher#18`: ExtractionValidationError: ACHIEVED does not allow Driver -> GrandPrix
+  - Jelölt típusok: Driver, Driver, Team, GrandPrix, Car, PowerUnit, DROVE_FOR, ACHIEVED, FIELDED, POWERED_BY, HELD_AT
+  - Forrásidézet: with Schumacher, and his teammate Jochen Mass and several mechanics intervened to prevent Warwick from physically assaulting Schumacher. Formula One career Jordan (1991) Schumacher made his Formula One debut with the Irish Jordan-Ford team at the Belgian Grand Prix, driving car number 32 as a replacement for the imprisoned Bertrand Gachot. Schumacher, still a contracted Mercedes driver, was signed...
+- `driver-michael-schumacher#181`: ExtractionValidationError: ACHIEVED does not allow Driver -> GrandPrix
+  - Jelölt típusok: Driver, Season, GrandPrix, ACHIEVED, ROUND_OF
+  - Forrásidézet: France). He set the record for the fastest-ever race winning average speed of 247.586 km/h (153.843 mph) at the 2003 Italian Grand Prix. By 2006, he had led 141 races and spent a record 5,108 laps in the lead. In addition, he had the most consecutive points-finishing races (24, from 2001 to 2003), the most front-row starts (115), the most points (1,369 before the point system was overhauled in 201...
+- `driver-michael-schumacher#2`: ExtractionValidationError: ACHIEVED does not allow Driver -> GrandPrix
+  - Jelölt típusok: Driver, Team, GrandPrix, Team, GrandPrix, GrandPrix, Title, Season, Season, Season, DROVE_FOR, ACHIEVED, ENTERED, WON, AWARDED_IN, WON
+  - Forrásidézet: and becoming a race-winner in the World Sportscar Championship with Sauber Mercedes. Schumacher made his debut Formula One appearance with Jordan at the Belgian Grand Prix in 1991; his qualifying performance saw Benetton sign him for the remainder of the season. In 1992, he achieved his maiden victory in Belgium amongst several podiums, which he repeated at the Portuguese Grand Prix in 1993. Schum...
+- `driver-michael-schumacher#20`: ExtractionValidationError: DROVE_FOR does not allow Driver -> Car
+  - Jelölt típusok: Driver, Car, DROVE_FOR
+  - Forrásidézet: Andrea de Cesaris could not show Schumacher the circuit because he was delayed by contract negotiations. Schumacher then rode a foldable bike around the track to become familiar with it on his own. Schumacher impressed the paddock in his debut, qualifying seventh in the midfield Jordan 191 car, which he tested for half a day, at a circuit where he had never raced. This also matched the team's seas...
+- `driver-michael-schumacher#21`: ExtractionValidationError: ACHIEVED does not allow GrandPrix -> Driver
+  - Jelölt típusok: Driver, Team, GrandPrix, DROVE_FOR, ACHIEVED
+  - Forrásidézet: Schumacher outqualified de Cesaris. Motor Sport journalist Joe Saward reported that, after qualifying, "clumps of German journalists were talking about 'the best talent since Stefan Bellof'". Schumacher retired on the race's first lap with clutch problems. Benetton (1991–1995) Following his Belgian Grand Prix debut, despite an agreement in principle between Jordan and Schumacher's Mercedes
+- `driver-michael-schumacher#22`: ExtractionValidationError: FIELDED does not allow Team -> Season
+  - Jelölt típusok: Driver, Team, Season, DROVE_FOR, ENTERED, FIELDED
+  - Forrásidézet: management that would see the German race for the Irish team for the remainder of the season, Schumacher was engaged by Benetton-Ford for the next race. Jordan applied for an injunction in the British courts to prevent Schumacher driving for Benetton but lost the case as they had not yet signed a final contract. 1991–1993: Maiden points, podiums, and wins Schumacher finished the 1991 season with f...
+- `driver-michael-schumacher#23`: ExtractionValidationError: ENTERED is not temporal; from_year, to_year and role must be null
+  - Jelölt típusok: Driver, Driver, Team, PowerUnit, Season, GrandPrix, TEAMMATE_OF, ENTERED, ROUND_OF, POWERED_BY
+  - Forrásidézet: Italian Grand Prix, in which he finished ahead of his teammate and three-time World Champion Nelson Piquet. He also outqualified Piquet four times out of five in the season run-in, scoring only half a point less than him during their time together. At the start of the 1992 season the Sauber team, planning their Formula One debut with Mercedes backing for the
+- `driver-michael-schumacher#25`: ExtractionValidationError: ACHIEVED does not allow Driver -> GrandPrix
+  - Jelölt típusok: Driver, Car, GrandPrix, GrandPrix, Circuit, ACHIEVED, ACHIEVED, HELD_AT, FIELDED
+  - Forrásidézet: and active suspension to control the car's ride height. In the conventional Benetton B192, Schumacher finished third in the Mexican Grand Prix, his first podium finish. Through what has been described as a tactical masterstroke, he went on to take his first victory at the Belgian Grand Prix, in a wet race at the Spa-Francorchamps Circuit, which by 2003 he would call "far and away my favourite trac...
+- `driver-michael-schumacher#26`: ExtractionValidationError: ENTERED is not temporal; from_year, to_year and role must be null
+  - Jelölt típusok: Driver, Team, Season, GrandPrix, GrandPrix, Driver, Driver, DROVE_FOR, ENTERED, ROUND_OF, ROUND_OF, TEAMMATE_OF
+  - Forrásidézet: sporting a H-pattern manual gearbox. From the 1992 Portuguese Grand Prix to the 1998 Monaco Grand Prix, Schumacher was not beaten by his teammate when both cars finished. The year 1992 was also the first of many times that Schumacher beat his teammate through a full season, and Martin Brundle was fired as a result. Benetton team boss Flavio Briatore later regretted this decision,
+- `driver-michael-schumacher#27`: ExtractionValidationError: WON does not allow Driver -> Season
+  - Jelölt típusok: Driver, Driver, Driver, Season, WON, WON
+  - Forrásidézet: saying that he had underestimated the ability of both his drivers. Schumacher finished third in the Drivers' Championship in 1992 with 53 points, three points behind runner-up Patrese and three in front of the Brazilian Ayrton Senna. According to Jo Ramírez, a close friend of Senna, the Brazilian considered Schumacher "the next big threat, way ahead of all the other drivers around at the time".
+- `driver-michael-schumacher#28`: ExtractionValidationError: ACHIEVED does not allow Driver -> GrandPrix
+  - Jelölt típusok: Driver, Team, GrandPrix, Season, Driver, Driver, DROVE_FOR, ENTERED, ROUND_OF, ACHIEVED, WON, TEAMMATE_OF, TEAMMATE_OF
+  - Forrásidézet: other drivers around at the time". The Williams FW15C of Damon Hill and Alain Prost dominated the 1993 season as well. Benetton introduced their own active suspension and traction control early in the season, last of the frontrunning teams to do so. Schumacher won one race, the Portuguese Grand Prix where he beat Prost, and had nine podium finishes; he retired in seven of the other 16
+- `driver-michael-schumacher#29`: ExtractionValidationError: DROVE_FOR does not allow Driver -> Car
+  - Jelölt típusok: Driver, Car, Season, Driver, Driver, DROVE_FOR, WON, AWARDED_IN, TEAMMATE_OF
+  - Forrásidézet: races. He finished the season in fourth, with 52 points, beating Patrese as teammate, so much so that Briatore and his team thought that Patrese was washed up and that they had no problem with their car. 1994–1995: Back-to-back World Championships Schumacher won his first Drivers' Championship in 1994. Driving the Benetton B194, which has been called the worst car to have won a Formula One World C...
+- `driver-michael-schumacher#3`: ExtractionValidationError: WON does not allow Driver -> Season
+  - Jelölt típusok: Driver, Team, Season, Season, Season, Season, Season, WON, WON, DROVE_FOR, TEAMMATE_OF, TEAMMATE_OF
+  - Forrásidézet: with eight victories in 1994, following a collision with his rival Damon Hill at the last race of the season. He won a further nine Grands Prix as he defended his title in 1995. Schumacher moved to the struggling Ferrari for his 1996 campaign, where he took several victories and finished third overall. He was involved in title battles in 1997 and 1998, being disqualified from the former for a coll...
+- `driver-michael-schumacher#30`: ExtractionValidationError: ACHIEVED does not allow Driver -> GrandPrix
+  - Jelölt típusok: Driver, GrandPrix, GrandPrix, Season, Driver, Driver, Driver, ACHIEVED, ACHIEVED, TEAMMATE_OF, TEAMMATE_OF, TEAMMATE_OF
+  - Forrásidézet: different teammates (JJ Lehto, Jos Verstappen, and Johnny Herbert) due to crashes, Schumacher won the first four races and finished the season with eight wins. He won six of the first seven races, including the Brazilian Grand Prix in which he lapped the entire field, and was leading the Spanish Grand Prix, before a gearbox failure left him stuck in fifth
+- `driver-michael-schumacher#32`: ExtractionValidationError: AT_RACE does not allow GrandPrix -> Driver
+  - Jelölt típusok: Driver, Team, GrandPrix, DROVE_FOR, AT_RACE, FOR_TEAM
+  - Forrásidézet: Formula One season involving several teams, most particularly Schumacher's Benetton, having allegedly broken the sport's technical regulations. Following the San Marino Grand Prix, the Benetton, Ferrari, and McLaren teams were investigated on suspicion of breaking the FIA-imposed ban on electronic aids. Benetton and McLaren initially refused to hand over their source code
+- `driver-michael-schumacher#34`: ExtractionValidationError: ACHIEVED does not allow GrandPrix -> Driver
+  - Jelölt típusok: Driver, Team, GrandPrix, DROVE_FOR, ACHIEVED, HELD_AT
+  - Forrásidézet: outlawed by the regulations; Benetton and Willem Toet, a Formula One aerodynamicist for over thirty years who worked at Benetton until 1994, stated that traction control was legally achieved through rotational inertia. There was no evidence to suggest the software was used. At the British Grand Prix, Schumacher was penalised for overtaking Hill on the formation lap. He and Benetton then
+- `driver-michael-schumacher#35`: ExtractionValidationError: ACHIEVED does not allow GrandPrix -> Driver
+  - Jelölt típusok: Driver, Team, GrandPrix, DROVE_FOR, ACHIEVED, HELD_AT
+  - Forrásidézet: ignored the penalty and the subsequent black flag, which indicates that the driver must immediately return to the pits, for which he was disqualified and later given a two-race ban. Benetton blamed the incident on a communication error between the stewards and the team. Schumacher was also disqualified after winning the Belgian Grand Prix, after his
+- `driver-michael-schumacher#37`: ExtractionValidationError: AT_RACE does not allow Driver -> GrandPrix
+  - Jelölt típusok: Driver, GrandPrix, AT_RACE
+  - Forrásidézet: feud with the FIA, with Schumacher being a victim and the FIA trying to deny him his first World Championship. These incidents helped Hill close the points gap, and Schumacher led by a single point going into the final race at the Australian Grand Prix. On lap 36, Schumacher hit the guardrail on the outside of the track while leading. Hill attempted to pass but as Schumacher's car returned to the ...
+- `driver-michael-schumacher#39`: ExtractionValidationError: POWERED_BY does not allow Team -> PowerUnit
+  - Jelölt típusok: Driver, Team, Season, PowerUnit, Team, DROVE_FOR, POWERED_BY, ENTERED, ENTERED, WON, RACED_IN
+  - Forrásidézet: incident, and Schumacher was vilified in the British media. At the FIA conference after the race, Schumacher dedicated his title to Senna. In 1995, Schumacher successfully defended his title with Benetton, which now had the same Renault engine as Williams; according to observers, including Peter Wright, Benetton had the better team while Williams had the superior car. Schumacher accumulated 33 mor...
+- `driver-michael-schumacher#4`: ExtractionValidationError: WON is not temporal; from_year, to_year and role must be null
+  - Jelölt típusok: Driver, Team, Season, Season, Season, Title, DROVE_FOR, WON, AWARDED_IN, WON, AWARDED_IN, WON, AWARDED_IN
+  - Forrásidézet: Villeneuve and finishing runner-up to Mika Häkkinen in the latter. His rivalry with Häkkinen continued into 1999, when Schumacher broke his leg following a brake failure whilst second in the championship. He returned to beat Häkkinen to his first title with Ferrari in 2000, their first in 21 years, which he successfully defended in 2001. His 2002 campaign—during which he won a then-record 11 Grand...
+- `driver-michael-schumacher#40`: ExtractionValidationError: WON does not allow Driver -> Season
+  - Jelölt típusok: Driver, Team, Team, Season, GrandPrix, GrandPrix, WON, ENTERED, ENTERED, ACHIEVED, ACHIEVED
+  - Forrásidézet: its first Constructors' Championship, breaking the dominance of McLaren and Williams, and became the youngest two-time World Champion in Formula One history. The season was marred by several collisions with Hill, in particular an overtaking manoeuvre by Hill took them both out of the British Grand Prix on lap 45, and again on lap 23 of the Italian
+- `driver-michael-schumacher#41`: ExtractionValidationError: ACHIEVED does not allow Driver -> GrandPrix
+  - Jelölt típusok: Driver, GrandPrix, GrandPrix, GrandPrix, Season, ACHIEVED, ACHIEVED, ACHIEVED, WON, ROUND_OF, ROUND_OF, ROUND_OF
+  - Forrásidézet: Grand Prix; it also saw one of his career's best overtakes, with the one over Jean Alesi giving him the win at the European Grand Prix, after he reduced the half a minute gap in the final dozen laps. Schumacher won 9 of the 17 races, including the French Grand Prix, and finished on the podium 11 times. It was only once that he qualify worse than fourth; at the Belgian Grand Prix, he qualified 16th...
+- `driver-michael-schumacher#42`: ExtractionValidationError: ACHIEVED does not allow Driver -> GrandPrix
+  - Jelölt típusok: Driver, Driver, GrandPrix, Season, TEAMMATE_OF, ACHIEVED, ROUND_OF
+  - Forrásidézet: wet-dry race, finishing 16 seconds ahead of Hill, with whom he had ferocious wheel-to-wheel racing and involved some crucial strategic calls. His bad qualifying was a result of a crash he had in the final free practice, and by the time his car was rebuilt, it had started to rain; this ended his 56-race streak of outqualifying his teammates that started in 1992, after he missed a gear in qualifying...
+- `driver-michael-schumacher#44`: ExtractionValidationError: DROVE_FOR does not allow Team -> Team
+  - Jelölt típusok: Driver, Team, Team, Season, Season, DROVE_FOR, DROVE_FOR, ENTERED, ENTERED
+  - Forrásidézet: expired; he later cited the team's damaging actions in 1994 as his reason for opting out of his deal. In 1997, Schumacher lured Benetton employees Rory Byrne (designer) and Ross Brawn (technical director) to Ferrari. Ferrari had previously come close to the championship in 1982 and 1990. The team had suffered a disastrous downturn in the early 1990s, partially as its famous V12 engine was no longe...
+- `driver-michael-schumacher#47`: ExtractionValidationError: DROVE_FOR does not allow Driver -> Car
+  - Jelölt típusok: Driver, Team, Car, Season, Title, DROVE_FOR, WON, AWARDED_IN, ENTERED
+  - Forrásidézet: driven it." During winter testing, Schumacher first drove a Ferrari, their 1995 Ferrari 412 T2, and was two seconds faster than former regulars Alesi and Gerhard Berger had been. Alesi and Berger were allowed to drive Schumacher's Benetton B195 with which he won the World Championship in 1995, and they could not believe how Schumacher had won with it, calling it "the ugly duckling" for being so te...
+- `driver-michael-schumacher#48`: ExtractionValidationError: ENTERED is not temporal; from_year, to_year and role must be null
+  - Jelölt típusok: Driver, Team, Team, Season, GrandPrix, DROVE_FOR, ENTERED, ENTERED, ROUND_OF
+  - Forrásidézet: 1996–1999: World Championship challenges and injury In 1996, Schumacher finished third in the Drivers' Championship and helped Ferrari to second place in the Constructors' Championship ahead of his old team Benetton. During the season, the car had reliability problems; Schumacher did not finish in 7 of the 16 races. At the French Grand Prix, Schumacher took pole position but suffered engine failur...
+- `driver-michael-schumacher#49`: ExtractionValidationError: ACHIEVED does not allow Driver -> GrandPrix
+  - Jelölt típusok: Driver, Team, GrandPrix, DROVE_FOR, ACHIEVED, HELD_AT
+  - Forrásidézet: formation lap. He won three races, more than the team's total tally for the period from 1991 to 1995, despite a poor chassis. He took his first win for Ferrari at the Spanish Grand Prix, where he lapped the entire field up to third place in the wet. After a bad start, which saw him dropping from third to sixth place, before taking the lead on lap 19, he
+- `driver-michael-schumacher#5`: ExtractionValidationError: WON does not allow Driver -> Season
+  - Jelölt típusok: Driver, Driver, Driver, Driver, Season, Season, Team, WON, WON, DROVE_FOR, TEAMMATE_OF, TEAMMATE_OF, TEAMMATE_OF
+  - Forrásidézet: unparalleled perfect podium rate. He then claimed his unprecedented sixth and seventh titles in 2003 and 2004, holding off Kimi Räikkönen and Juan Pablo Montoya in the former before winning 13 of 18 Grands Prix during the latter, breaking several further records. After dropping to third in 2005 and narrowly finishing runner-up to Fernando Alonso in 2006, Schumacher announced his retirement from Fo...
+- `driver-michael-schumacher#50`: ExtractionValidationError: ACHIEVED does not allow Driver -> GrandPrix
+  - Jelölt típusok: Driver, Driver, GrandPrix, GrandPrix, Season, ACHIEVED, ACHIEVED, TEAMMATE_OF, RACED_IN, RACED_IN
+  - Forrásidézet: consistently lapped five seconds faster than the rest of the field in the difficult conditions. At the Belgian Grand Prix, he used well-timed pit stops to fend off Williams' Jacques Villeneuve. He also won in front of the tifosi (Ferrari fans) at the Italian Grand Prix. Schumacher and Villeneuve competed for the title in 1997, despite never sharing a podium and almost never battling
+- `driver-michael-schumacher#51`: ExtractionValidationError: ACHIEVED does not allow Driver -> GrandPrix
+  - Jelölt típusok: Driver, Car, GrandPrix, ACHIEVED, POWERED_BY
+  - Forrásidézet: directly on the track, in what has been described as the sport's most dramatic and controversial season finale. Villeneuve, driving the superior Williams FW19, led the championship in the early part of the season. Schumacher's first win of the season came at the wet Monaco Grand Prix, in which he took a six-second lead after one lap. By mid-season, despite possibly driving not even the second-fast...
+- `driver-michael-schumacher#53`: ExtractionValidationError: ACHIEVED does not allow Driver -> Driver
+  - Jelölt típusok: Driver, Driver, Team, ACHIEVED, DROVE_FOR
+  - Forrásidézet: might not finish the race. As Villeneuve approached to pass his rival on lap 48, Schumacher turned in to the corner earlier than expected, hit the side of Villeneuve's Williams car and slid off the track into the gravel trap, retiring from the race. Villeneuve went on and scored four points to take the championship. Despite public outcry, the race stewards did
+- `driver-michael-schumacher#54`: ExtractionValidationError: WON does not allow Driver -> Season
+  - Jelölt típusok: Driver, Season, WON
+  - Forrásidézet: not initially award any penalty, as they had deemed it a racing incident; two weeks after the race, in an unprecedented move, Schumacher was disqualified from the entire 1997 Drivers' Championship after an FIA disciplinary hearing found that his "manoeuvre was an instinctive reaction and although deliberate not made with malice or premeditation, it was a serious error." Initially feeling wronged, ...
+- `driver-michael-schumacher#56`: ExtractionValidationError: FIELDED does not allow Driver -> Car
+  - Jelölt típusok: Driver, Driver, Season, Car, FIELDED, RACED_IN, DROVE_FOR
+  - Forrásidézet: 2009 that if he could have his career over again, he would "do some things differently", citing Jerez 1997 as something that he would have changed in his career. In 1998, Finnish driver Mika Häkkinen became Schumacher's main title rival. Driving the superior McLaren MP4/13, Häkkinen won the first two races of the season, gaining a 16-point advantage over Schumacher, who then won the
+- `driver-michael-schumacher#57`: ExtractionValidationError: ACHIEVED does not allow GrandPrix -> Driver
+  - Jelölt típusok: Driver, Team, GrandPrix, GrandPrix, DROVE_FOR, ACHIEVED, ACHIEVED
+  - Forrásidézet: Argentine Grand Prix. With the Ferrari improving significantly in the second half of the season, Schumacher took six victories and had five other podium finishes. One of his victories was at the Hungarian Grand Prix, a track where overtaking is difficult and that favoured McLaren; Schumacher drove 19 consecutive qualifying-like laps to make race
+- `driver-michael-schumacher#58`: ExtractionValidationError: ACHIEVED does not allow Driver -> GrandPrix
+  - Jelölt típusok: Driver, Driver, Driver, Team, GrandPrix, Season, ACHIEVED, FOR_TEAM, FOR_TEAM, FIELDED, FIELDED
+  - Forrásidézet: engineer Ross Brawn's alternative three-stop strategy work and to go from third to first place. Brawn had told him: "Michael, you have 19 laps to pull out 25 seconds. We need 19 qualifying laps from you." Schumacher ultimately came nine seconds ahead of David Coulthard. Häkkinen, who started on pole, achieved only a point due to reliability issues. Ferrari took a 1–2 finish at the French Grand Pri...
+- `driver-michael-schumacher#6`: ExtractionValidationError: ACHIEVED does not allow Driver -> GrandPrix
+  - Jelölt típusok: Driver, GrandPrix, Season, Season, Season, ACHIEVED, ROUND_OF, ROUND_OF, ROUND_OF
+  - Forrásidézet: 2010 to 2012, claiming his final podium at the latter European Grand Prix, and has been credited with elevating the project to championship-winning form. Schumacher was noted for pushing his machinery to the limit for sustained periods, as well as his pioneering fitness regimen, win-at-all-costs mentality, and ability to galvanise teams around him. Appointed a UNESCO Champion for
+- `driver-michael-schumacher#60`: ExtractionValidationError: ACHIEVED does not allow Driver -> GrandPrix
+  - Jelölt típusok: Driver, Team, GrandPrix, DROVE_FOR, ACHIEVED, AT_RACE, FOR_TEAM
+  - Forrásidézet: when he was handed a ten-second stop-go penalty just three laps from the finish, which was a result of overtaking the lapped car of Alexander Wurz during a safety car period. As regulations stated that a penalty must be served within three racing laps of its being handed out, Schumacher and Ferrari decided to serve the penalty on the last lap when he turned into the pit lane, crossed the start-fin...
+- `driver-michael-schumacher#63`: ExtractionValidationError: DROVE_FOR does not allow Driver -> Driver
+  - Jelölt típusok: Driver, Driver, GrandPrix, DROVE_FOR, AT_RACE, AT_RACE
+  - Forrásidézet: him. Coulthard admitted five years later that the accident had been his mistake. From a possible three-point lead, Schumacher was still seven points behind Häkkinen. Heading into the final race, the Japanese Grand Prix, Häkkinen held a four-point advantage over Schumacher, who started on pole but stalled and caused the start to be aborted, which meant he had to start from the back of the field. He...
+- `driver-michael-schumacher#64`: ExtractionValidationError: WON is not temporal; from_year, to_year and role must be null
+  - Jelölt típusok: Driver, Team, Season, Title, Title, ENTERED, WON, DROVE_FOR, WON, RACED_IN
+  - Forrásidézet: accident. Häkkinen won the Drivers' Championship by winning the final two races despite Schumacher being the polesitter both times, continuing Ferrari's longest World Championship drought. In 1999, Schumacher's efforts helped Ferrari win the Constructors' Championship, the team's first title since 1983. He lost his chance to win the Drivers' Championship at the British Grand Prix at the high-speed...
+- `driver-michael-schumacher#67`: ExtractionValidationError: AT_RACE does not allow GrandPrix -> Driver
+  - Jelölt típusok: Driver, Team, GrandPrix, DROVE_FOR, AT_RACE, HELD_AT
+  - Forrásidézet: with a car." After missing six races, he made his return at the inaugural Malaysian Grand Prix, qualifying in pole position with his career's greatest pole margin, with his time faster than Irvine by almost a second. He then assumed the role of second driver, helping Irvine to victory and assisting his teammate's bid to win the Drivers' Championship for Ferrari, with Irvine leading the championshi...
+- `driver-michael-schumacher#69`: ExtractionValidationError: WON does not allow Driver -> Season
+  - Jelölt típusok: Driver, Driver, GrandPrix, Season, WON, ROUND_OF
+  - Forrásidézet: Schumacher won the first three races of the season and five of the first eight. Midway through the year, Schumacher's chances suffered with three consecutive non-finishes, allowing Häkkinen to close the gap in the standings. At the German Grand Prix qualifying session, which was largely decided in the opening 10 minutes of semi-dry weather, Schumacher was able to improve his time in the final seco...
+- `driver-michael-schumacher#70`: ExtractionValidationError: WON does not allow Driver -> GrandPrix
+  - Jelölt típusok: Driver, Driver, Driver, GrandPrix, GrandPrix, WON, ROUND_OF
+  - Forrásidézet: out at the start, as his new teammate Rubens Barrichello took his maiden win from 18th. Häkkinen then took another two victories, before Schumacher won at the Italian Grand Prix, his 41st career win. At the post-race press conference, after equalling the number of wins won by his idol Ayrton Senna, Schumacher broke into tears. The championship fight came down to the penultimate race of the season,...
+- `driver-michael-schumacher#71`: ExtractionValidationError: AWARDED_IN does not allow Team -> Title
+  - Jelölt típusok: Driver, Team, Season, Title, WON, AWARDED_IN, ENTERED
+  - Forrásidézet: position, Schumacher lost the lead to Häkkinen at the start. After his second pit stop, Schumacher came out ahead of Häkkinen and went on to win the race and the Drivers' Championship, the first for Ferrari since 1979, ending a 21-year drought; he later described it as the fight of his life. Although Schumacher won more than twice as many Grands Prix as Häkkinen, BBC Sport journalist Andrew Benson...
+- `driver-michael-schumacher#73`: ExtractionValidationError: RACED_IN does not allow Driver -> Season
+  - Jelölt típusok: Driver, Driver, GrandPrix, Season, RACED_IN, ROUND_OF
+  - Forrásidézet: with four races yet to run. He finished the championship with 123 points, 58 ahead of runner-up Coulthard. Season highlights included the Spanish Grand Prix, where he won after Häkkinen retired on the last lap due to his car's clutch
+- `driver-michael-schumacher#75`: ExtractionValidationError: DROVE_FOR does not allow Team -> Driver
+  - Jelölt típusok: Driver, Team, Season, Title, WON, ENTERED, DROVE_FOR, ACHIEVED
+  - Forrásidézet: set by Juan Manuel Fangio of five World Championships. Ferrari won 15 out of 17 races, and Schumacher won the title with six races remaining in the season, which is still the earliest point in the season for a driver to be crowned World Champion. Schumacher broke his own record, shared with Mansell, of nine race wins in a season, by winning 11 times and finishing every race on the podium, the latt...
+- `driver-michael-schumacher#76`: ExtractionValidationError: ACHIEVED does not allow Driver -> GrandPrix
+  - Jelölt típusok: Driver, Driver, Season, GrandPrix, TEAMMATE_OF, ACHIEVED, ACHIEVED, ROUND_OF
+  - Forrásidézet: points, a record-breaking 67 points ahead of the runner-up, his teammate Barrichello. This pair finished nine of the 17 races in the first two places. During the 2002 season, there was some controversy at the Austrian Grand Prix, where Barrichello was leading but in the final metres of the race, under team orders, slowed down to allow Schumacher to win the race. Although the
+- `driver-michael-schumacher#77`: ExtractionValidationError: HELD_AT does not allow Team -> GrandPrix
+  - Jelölt típusok: Driver, Team, GrandPrix, Season, HELD_AT, ROUND_OF, DROVE_FOR
+  - Forrásidézet: switching of positions did not break any actual sporting or technical regulation, as Ferrari did the same at the Austrian Grand Prix the previous year where Schumacher finished second and Barrichello third, it angered fans and it was claimed that the team's actions showed a lack of sportsmanship and respect to the spectators. Many argued that Schumacher did not need to be given wins in only the si...
+- `driver-michael-schumacher#78`: ExtractionValidationError: DROVE_FOR does not allow Team -> Driver
+  - Jelölt típusok: Driver, Driver, Team, TEAMMATE_OF, DROVE_FOR, DROVE_FOR
+  - Forrásidézet: view also shared by Jean Todt and Brawn in retrospect, particularly given that he had already won four of the previous five Grands Prix, and that Barrichello had dominated the race weekend up to that point. At the podium ceremony, Schumacher pushed Barrichello onto the top step, and the Ferrari team incurred a $1 million fine for this disturbance. Schumacher vowed to pay back Barrichello, and late...
+- `driver-michael-schumacher#82`: ExtractionValidationError: ACHIEVED does not allow Driver -> GrandPrix
+  - Jelölt típusok: Driver, Driver, GrandPrix, GrandPrix, GrandPrix, Team, Driver, Driver, ACHIEVED, DROVE_FOR, DROVE_FOR
+  - Forrásidézet: San Marino Grand Prix despite losing the first position going into turn one. Schumacher won the next two races and closed within two points of Räikkönen. Aside from Schumacher's victory at the Canadian Grand Prix and Barrichello's victory at the British Grand Prix, the mid-season was dominated by Williams drivers Ralf Schumacher and Juan Pablo Montoya, who each claimed two victories. After the Hun...
+- `driver-michael-schumacher#83`: ExtractionValidationError: ACHIEVED does not allow Driver -> GrandPrix
+  - Jelölt típusok: Driver, Driver, Driver, GrandPrix, PowerUnit, PowerUnit, Team, Team, GrandPrix, ACHIEVED, ACHIEVED, POWERED_BY, POWERED_BY, POWERED_BY
+  - Forrásidézet: Schumacher led Montoya and Räikkönen by only one and two points, respectively. Ahead of the next race, the FIA announced changes to the way tyre widths were to be measured: this forced Michelin, supplier to Williams and McLaren among others, to rapidly redesign their tyres before the Italian Grand Prix. Schumacher, running on Bridgestone tyres, won the next two races. After Montoya was penalised i...
+- `driver-michael-schumacher#85`: ExtractionValidationError: WON is not temporal; from_year, to_year and role must be null
+  - Jelölt típusok: Driver, Team, Season, GrandPrix, GrandPrix, Title, WON, AWARDED_IN, ENTERED, FIELDED, ACHIEVED, ACHIEVED
+  - Forrásidézet: with the Japanese Grand Prix as his last win of the season, only failing to finish in Monaco after an accident with Montoya during a safety car period. In August 2004, Schumacher's win at the Hungarian Grand Prix contributed to Ferrari's sixth consecutive Constructors' Championship, and he later clinched a seventh Drivers' Championship at the
+- `driver-michael-schumacher#86`: ExtractionValidationError: WON is not temporal; from_year, to_year and role must be null
+  - Jelölt típusok: Driver, Driver, Driver, GrandPrix, GrandPrix, Season, Season, Title, WON, WON, WON, ACHIEVED, ACHIEVED, TEAMMATE_OF
+  - Forrásidézet: Belgian Grand Prix. Earlier in July at the French Grand Prix, Schumacher beat polesitter Fernando Alonso with a four-stop strategy. He finished the season with a record 148 points, 34 points ahead of the runner-up Barrichello, and set a new record of 13 race wins out of a possible 18, surpassing his previous best of 11 wins from the 2002 season. Between 2000 and 2004, Schumacher achieved five Driv...
+- `driver-michael-schumacher#89`: ExtractionValidationError: HELD_AT does not allow Car -> GrandPrix
+  - Jelölt típusok: Driver, Driver, Car, GrandPrix, GrandPrix, Season, TEAMMATE_OF, HELD_AT, ROUND_OF, WON, AWARDED_IN
+  - Forrásidézet: Schumacher was his battle with Renault R25 driver Fernando Alonso at the San Marino Grand Prix, where he started 13th and finished only 0.2 seconds behind Alonso. Less than halfway through the season, Schumacher stated: "I don't think I can count myself in this battle any more. It was like trying to fight with a blunted weapon. If your weapons are weak you don't have a chance." Schumacher's sole w...
+- `driver-michael-schumacher#93`: ExtractionValidationError: FIELDED does not allow Car -> Team
+  - Jelölt típusok: Driver, Team, Car, GrandPrix, Circuit, GrandPrix, Circuit, Season, DROVE_FOR, ENTERED, FIELDED, ROUND_OF, HELD_AT, ROUND_OF, ROUND_OF
+  - Forrásidézet: Renault R26 suddenly no longer as competitive. By the Canadian Grand Prix, the ninth race of the season, Schumacher was 25 points behind Alonso; he then won the following three races, including at Hockenheim, to reduce his disadvantage to 11, and to 10 by Turkey. Since Canada, Ferrari won six out of seven races, including at the Monza Circuit, with Schumacher winning in five of them. After further
+- `driver-michael-schumacher#94`: ExtractionValidationError: WON does not allow Driver -> Season
+  - Jelölt típusok: Driver, Team, Season, GrandPrix, GrandPrix, WON, ACHIEVED, ACHIEVED, DROVE_FOR, ROUND_OF, ROUND_OF
+  - Forrásidézet: victories at the Italian Grand Prix, where he announced his retirement at the end of the season, and at the Chinese Grand Prix, in what would be his 91st and final career win, Schumacher led in the championship standings for the first time during the season. After his win in Italy, Ferrari issued a press release stating that Schumacher would retire from racing at the end of the 2006 season but wou...
+- `driver-michael-schumacher#95`: ExtractionValidationError: ACHIEVED does not allow Driver -> GrandPrix
+  - Jelölt típusok: Driver, GrandPrix, Season, Car, PowerUnit, Title, RaceResult, ACHIEVED, ROUND_OF
+  - Forrásidézet: not always take to Schumacher's relatively cold public persona, displayed an affectionate response after he announced his retirement. After qualifying second, Schumacher led the Japanese Grand Prix in what could have seen him heading into the season finale with two points ahead of Alonso. With only 16 laps to go, his car suffered an engine failure for the first time since the French Grand Prix in ...
+- `driver-michael-schumacher#97`: ExtractionValidationError: ACHIEVED does not allow Driver -> Driver
+  - Jelölt típusok: Driver, Driver, Driver, Driver, TEAMMATE_OF, ACHIEVED, ACHIEVED
+  - Forrásidézet: caused by the front wing of Giancarlo Fisichella's Renault. Schumacher fell to 19th place, 70 seconds behind teammate and race leader Felipe Massa. Schumacher recovered and overtook both Fisichella and Räikkönen, his successor at Ferrari following his retirement, to secure fourth place. His performance was praised, as he had the pace to win the race by a lap, and was variously classified in the pr...
+- `driver-nico-rosberg#1`: ExtractionValidationError: WON is not temporal; from_year, to_year and role must be null
+  - Jelölt típusok: Driver, Driver, Title, Team, WON, FIELDED, DROVE_FOR
+  - Forrásidézet: The only child of Finnish 1982 Formula One World Champion Keke Rosberg and his German wife, he was born in Wiesbaden but was raised primarily in Monaco. Rosberg began competitive kart racing at the age of six and achieved early success, winning regional and national French championships, before moving to European-based series and world championships. At the age of 16, he progressed to car racing, ...
+- `driver-nico-rosberg#107`: ExtractionValidationError: RACED_IN does not allow Driver -> Season
+  - Jelölt típusok: Driver, Season, RACED_IN
+  - Forrásidézet: ## Helmet design and car number For the 2014 season, the FIA created a new sporting regulation to allow a driver to select a unique car number for use throughout their Formula One career. Rosberg selected number six because it was his wife and father's lucky number. He also changed the colour of his helmet after eight years from yellow to dark grey. The overall design included chrome, some Buddhis...
+- `driver-nico-rosberg#113`: ExtractionValidationError: RACED_IN does not allow Driver -> Season
+  - Jelölt típusok: Driver, Season, GrandPrix, GrandPrix, RACED_IN, ROUND_OF, ROUND_OF
+  - Forrásidézet: . Rosberg accumulated €160,900 for the Laureus Sport for Good Foundation as part of a campaign called #DriveForGood in which €100 was donated for every kilometre he led in a Formula One race from the 2015 Chinese Grand Prix to the season-ending 2015 Abu Dhabi Grand Prix.
+- `driver-nico-rosberg#116`: ExtractionValidationError: WON is not temporal; from_year, to_year and role must be null
+  - Jelölt típusok: Driver, Title, Title, Title, Season, Season, WON, WON, WON, AWARDED_IN, AWARDED_IN
+  - Forrásidézet: ## Achievements and recognition On 5 June 2011, Rosberg received the Lorenzo Bandini Trophy, which honours a recipient "for their dedication to motor racing, spirit of competition and achievements". At the 2014 Brazilian Grand Prix, he won the inaugural FIA Pole Trophy for winning more pole positions than any other driver during the 2014 season with 11. Rosberg won the DHL Fastest Lap Award becaus...
+- `driver-nico-rosberg#117`: ExtractionValidationError: WON is not temporal; from_year, to_year and role must be null
+  - Jelölt típusok: Driver, Title, Title, Title, Title, Title, Title, Title, Circuit, WON, WON, WON, WON, WON, WON, WON, HELD_AT
+  - Forrásidézet: Rosberg won the Bambi Best Sportsman Award in 2014, the Sport Bild Special Award 2014, the 2016 BRDC Johnny Wakefield Trophy for "setting the fastest race lap of the season on the Silverstone Grand Prix Circuit", the Autosport International Racing Driver Award in the same year, the 2016 ADAC Motorsportsman of the Year Award, the 2017 Laureus World Sports Award for Breakthrough of the Year, the DMS...
+- `driver-nico-rosberg#119`: ExtractionValidationError: WON is not temporal; from_year, to_year and role must be null
+  - Jelölt típusok: Driver, Title, WON
+  - Forrásidézet: . Rosberg was inducted into the FIA Hall of Fame in December 2017.
+- `driver-nico-rosberg#16`: ExtractionValidationError: WON is not temporal; from_year, to_year and role must be null
+  - Jelölt típusok: Driver, Title, Title, Title, Title, Title, Season, WON, WON, WON, ACHIEVED, ACHIEVED, RACED_IN
+  - Forrásidézet: In 1996, Rosberg won the Côte d'Azur Mini-Kart Regional Championship, and the Trophee Jérôme Bernard and the Trophee de France in 1997. Aged 12, he was the youngest champion of a French national karting series. Rosberg finished second in the French Manufacturers' Trophy and the Côte d'Azur Regional Championship in the same year. He progressed to the European karting championships for 1998 after mo...
+- `driver-nico-rosberg#17`: ExtractionValidationError: FIELDED does not allow Driver -> Car
+  - Jelölt típusok: Driver, Car, GrandPrix, GrandPrix, GrandPrix, GrandPrix, GrandPrix, FIELDED, ACHIEVED, ACHIEVED, ACHIEVED, ACHIEVED, ACHIEVED
+  - Forrásidézet: . Competing in the 100 Junior category in a CRG kart, Rosberg finished fifth at the 28° Torneo Industrie, seventh in the Andrea Margutti Trophy, and crashed out in the 1998 CIK-FIA Green Helmet Trophy. In 1999, he was runner-up in the Italian Junior Karting Championship and was fourth in the ICA Junior CIK-FIA European Championship, again driving a CRG.
+- `driver-nico-rosberg#2`: ExtractionValidationError: ENTERED is not temporal; from_year, to_year and role must be null
+  - Jelölt típusok: Driver, Team, Season, Team, DROVE_FOR, ENTERED
+  - Forrásidézet: . He subsequently moved to the higher-tier Formula 3 Euro Series with Team Rosberg in 2003 and 2004 before winning the inaugural GP2 Series championship with ART Grand Prix in 2005.
+- `driver-nico-rosberg#21`: ExtractionValidationError: ENTERED is not temporal; from_year, to_year and role must be null
+  - Jelölt típusok: Driver, Team, Season, Car, Circuit, DROVE_FOR, ENTERED, RACED_IN, HELD_AT, WON, AWARDED_IN
+  - Forrásidézet: At the age of 16, Rosberg progressed to car racing, competing in three races for the 2001 Formula BMW Junior Cup Iberia finishing in 18th in the Drivers' Championship with 38 points. For his first full season of car racing, he drove for VIVA Racing in the 2002 Formula BMW ADAC Championship, winning the drivers' title with nine victories from twenty races and amassing 264 points. For winning the ti...
+- `driver-nico-rosberg#23`: ExtractionValidationError: HELD_AT does not allow Circuit -> Car
+  - Jelölt típusok: Driver, Team, Season, Car, Circuit, DROVE_FOR, FIELDED, RACED_IN, HELD_AT, ROUND_OF
+  - Forrásidézet: The 2003 season saw Rosberg progress to the higher-tier Formula 3 Euro Series with Team Rosberg. Driving a Dallara F303-Opel car, he won once at the Bugatti Circuit and took five podium finishes for eighth in the Drivers' Championship with 45 points. He was second in the Rookie Cup to Christian Klien. In November 2003, Rosberg was given a test in a Formula 3000 car at the Circuito de Jerez by Paol...
+- `driver-nico-rosberg#24`: ExtractionValidationError: HELD_AT does not allow Team -> GrandPrix
+  - Jelölt típusok: Driver, Team, GrandPrix, GrandPrix, Car, Circuit, HELD_AT, HELD_AT, FIELDED, POWERED_BY
+  - Forrásidézet: . That same month, he entered the Macau Grand Prix and the Korea Super Prix with Carlin Motorsport, finishing 11th in Korea. Rosberg tested twice more for Williams in a modified FW25A car at the Circuit de Catalunya in December and January 2004 for them to evaluate his ability as a test driver.
+- `driver-nico-rosberg#25`: ExtractionValidationError: ENTERED is not temporal; from_year, to_year and role must be null
+  - Jelölt típusok: Driver, Team, Season, Circuit, Circuit, Circuit, DROVE_FOR, ENTERED, ACHIEVED, ACHIEVED, ACHIEVED, RACED_IN
+  - Forrásidézet: Rosberg remained with Team Rosberg for the 2004 Formula 3 Euro Series. Before that, Rosberg won two rounds of the Spanish Formula 3 Winter Series at the Circuito de Albacete as preparation. He won the season's first two races at the Hockenheimring and his campaign faltered through incidents and accidents: he took one other victory at the Nürburgring and three podium finishes. Rosberg finished four...
+- `driver-nico-rosberg#26`: ExtractionValidationError: ACHIEVED does not allow Driver -> GrandPrix
+  - Jelölt típusok: Driver, GrandPrix, GrandPrix, ACHIEVED, ACHIEVED
+  - Forrásidézet: . He later crashed from the lead of the Macau Grand Prix in November and was second at the Bahrain Superprix a month later.
+- `driver-nico-rosberg#29`: ExtractionValidationError: ACHIEVED does not allow Driver -> Circuit
+  - Jelölt típusok: Driver, Circuit, Circuit, Circuit, Circuit, Driver, ACHIEVED, ACHIEVED, ACHIEVED, ACHIEVED, TEAMMATE_OF
+  - Forrásidézet: Rosberg achieved his first series victory in the sprint race at the Circuit de Nevers Magny-Cours and won the feature races at Silverstone Circuit and the Hockenheimring from pole position. He took the Drivers' Championship lead with a third-place finish in the feature race at the Circuit de Spa-Francorchamps when previous leader Heikki Kovalainen took eighth
+- `driver-nico-rosberg#3`: ExtractionValidationError: TEAMMATE_OF is not temporal; from_year, to_year and role must be null
+  - Jelölt típusok: Driver, Team, Team, Season, GrandPrix, Season, Driver, Driver, Season, Title, DROVE_FOR, DROVE_FOR, TEAMMATE_OF, WON, AWARDED_IN, ACHIEVED, AT_RACE, FIELDED, ENTERED, ENTERED
+  - Forrásidézet: Rosberg first drove in Formula One with Williams from 2006 to 2009 and achieved two podium finishes for the team in 2008. For 2010, he moved to Mercedes, partnering fellow German and seven-time World Drivers' Champion Michael Schumacher. Rosberg took his first career win at the 2012 Chinese Grand Prix. He was the teammate of former karting friend, Lewis Hamilton, from 2013 to 2016, twice finishing...
+- `driver-nico-rosberg#30`: ExtractionValidationError: ROUND_OF does not allow Title -> Circuit
+  - Jelölt típusok: Driver, Title, Circuit, Season, WON, AWARDED_IN, ROUND_OF
+  - Forrásidézet: . Rosberg maintained the points lead during the season-ending Bahrain International Circuit round, winning both races to claim the first GP2 Series title with 120 points.
+- `driver-nico-rosberg#34`: ExtractionValidationError: ACHIEVED does not allow Driver -> GrandPrix
+  - Jelölt típusok: Driver, Team, Driver, Driver, GrandPrix, GrandPrix, Season, DROVE_FOR, ACHIEVED, ACHIEVED, TEAMMATE_OF, TEAMMATE_OF
+  - Forrásidézet: In April 2005, Rosberg was signed by Williams as its second test driver. He and fellow driver Nelson Piquet Jr. were analysed extensively before Rosberg was selected. He worked with Williams's test and reserve driver Antônio Pizzonia and continued to focus on the GP2 Series. After race driver Nick Heidfeld was injured in a bicycle accident in September, Rosberg was shortlisted by Williams as his p...
+- `driver-nico-rosberg#39`: ExtractionValidationError: RACED_IN does not allow Driver -> Season
+  - Jelölt típusok: Driver, Team, Season, DROVE_FOR, RACED_IN
+  - Forrásidézet: Rosberg was paid £500,000 by Williams and was the first son of a former world champion in Formula One since Damon Hill in 1999. To prepare for the season, he achieved the highest score ever in Williams's Engineering Aptitude Test, which tests a new driver's knowledge of car mechanics and engineering aspects of Formula One, and ceased reading the news to avoid becoming angered by negative publicity...
+- `driver-nico-rosberg#40`: ExtractionValidationError: ACHIEVED does not allow Driver -> GrandPrix
+  - Jelölt típusok: Driver, GrandPrix, GrandPrix, ACHIEVED, ACHIEVED
+  - Forrásidézet: . Tony Ross was assigned as his race engineer. At the season-opening Bahrain Grand Prix, Rosberg scored his first career points with a seventh-place finish and set the race's fastest lap, becoming at the time the youngest fastest lap setter in history, aged 20 years, 8 months and 13 days. One week later, at the Malaysian Grand Prix, he achieved a season-best start of third before his engine failed...
+- `driver-nico-rosberg#41`: ExtractionValidationError: ACHIEVED does not allow Driver -> GrandPrix
+  - Jelölt típusok: Driver, Driver, Season, Season, GrandPrix, Title, TEAMMATE_OF, ACHIEVED, ACHIEVED, AWARDED_IN, AWARDED_IN
+  - Forrásidézet: . He scored points once more during the season with a seventh at the European Grand Prix as he made driver errors from inexperience and drove an unreliable car. Rosberg was outpaced by his teammate Mark Webber, with whom he had a good relationship. He finished with four points for 17th in the World Drivers' Championship (WDC).
+- `driver-nico-rosberg#42`: ExtractionValidationError: FIELDED is not temporal; from_year, to_year and role must be null
+  - Jelölt típusok: Driver, Team, Car, Season, Driver, DROVE_FOR, FIELDED, RACED_IN, TEAMMATE_OF
+  - Forrásidézet: For 2007, Rosberg was partnered by the more experienced Alexander Wurz. He and his father mutually agreed to stop working with each other, and began working with a sports psychologist. Rosberg's performances improved greatly from 2006 due to Williams restructuring itself and employing more experienced and capable personnel, making his FW29 car reliable and more efficient with the installation of a...
+- `driver-nico-rosberg#43`: ExtractionValidationError: RACED_IN does not allow Driver -> Season
+  - Jelölt típusok: Driver, Season, GrandPrix, Title, RACED_IN, ACHIEVED, ACHIEVED
+  - Forrásidézet: . He had more confidence in setting up the car to his liking, extracting additional speed and balance consistently. Rosberg also gained experience in controlling his emotions without losing speed, frequently qualified ahead of Wurz and took points seven times with a season-best of fourth at the season-ending Brazilian Grand Prix. Rosberg scored 20 points for ninth in the WDC.
+- `driver-nico-rosberg#47`: ExtractionValidationError: ENTERED is not temporal; from_year, to_year and role must be null
+  - Jelölt típusok: Driver, Team, Season, GrandPrix, Car, DROVE_FOR, ENTERED, ROUND_OF, FIELDED, ACHIEVED, HELD_AT
+  - Forrásidézet: The 2008 season was the first in which Rosberg was the more experienced driver on his team, being partnered by Williams test driver Kazuki Nakajima. He began the season by finishing third at the Australian Grand Prix, the first podium finish of his career. Afterwards, his campaign faltered because the FW30 car lacked outright performance and Williams did not develop the car fast enough for it to b...
+- `driver-nico-rosberg#48`: ExtractionValidationError: ACHIEVED does not allow Driver -> GrandPrix
+  - Jelölt típusok: Driver, Driver, Season, Season, GrandPrix, RaceResult, ACHIEVED, RACED_IN, RACED_IN
+  - Forrásidézet: . Rosberg was occasionally outperformed by Nakajima, and driver errors lost him chances to score more points; he was able to adapt to a ban on traction control from Formula One. He improved the best result of his career with a second at the inaugural Singapore Grand Prix 14 races later, and finished 13th in the WDC with 17 points.
+- `driver-nico-rosberg#49`: ExtractionValidationError: DROVE_FOR does not allow Driver -> Season
+  - Jelölt típusok: Driver, Driver, Season, Team, TEAMMATE_OF, ENTERED, DROVE_FOR
+  - Forrásidézet: Rosberg was again partnered with Nakajima for the 2009 season. He lost five percent of his body weight to compensate for the introduction of the kinetic energy recovery systems increasing the car's minimum weight limit to 605 kg (1,334 lb)
+- `driver-nico-rosberg#5`: ExtractionValidationError: WON: unknown target_id 'e2'
+  - Jelölt típusok: Driver, WON, AWARDED_IN
+  - Forrásidézet: Rosberg announced his retirement from motor racing five days after clinching the title, citing wanting to spend more time with his family and not wanting his driving ability to atrophy as the main factors behind his decision. Overall, he started 206 Grands Prix, achieving 23 wins, 30 pole positions, 20 fastest laps and 57 podium finishes. In retirement, Rosberg moved into driver management, televi...
+- `driver-nico-rosberg#51`: ExtractionValidationError: RACED_IN does not allow Driver -> Season
+  - Jelölt típusok: Driver, Season, GrandPrix, GrandPrix, GrandPrix, RACED_IN, ACHIEVED, ACHIEVED, ACHIEVED, ROUND_OF, ROUND_OF, ROUND_OF
+  - Forrásidézet: . He finished 16 of 17 rounds; the exception was the Brazilian Grand Prix. Rosberg was consistent in finishing in the points-paying positions, achieving a season-best result of fourth at the German Grand Prix and the following Hungarian Grand Prix. He scored 34.5 points for seventh in the WDC.
+- `driver-nico-rosberg#55`: ExtractionValidationError: DROVE_FOR does not allow Team -> Driver
+  - Jelölt típusok: Driver, Team, Team, Team, Car, Driver, DROVE_FOR, DROVE_FOR, FIELDED, FIELDED, TEAMMATE_OF
+  - Forrásidézet: . On 29 October, he confirmed his departure from Williams at the conclusion of the season and was officially released from his contract with the team on 1 January 2010. One week later Mercedes purchased 75 percent of Brawn GP and entered Formula One under its own name, employing Rosberg to drive for the team. He was partnered with the seven-time world champion Michael Schumacher and was assigned c...
+- `driver-nico-rosberg#59`: ExtractionValidationError: ENTERED is not temporal; from_year, to_year and role must be null
+  - Jelölt típusok: Driver, Team, Season, GrandPrix, GrandPrix, Car, DROVE_FOR, ENTERED, FIELDED, RACED_IN, ROUND_OF, ROUND_OF
+  - Forrásidézet: Rosberg remained with Mercedes for 2011 and was again joined by Schumacher. He had a mixed season: he led the Chinese Grand Prix and the Belgian Grand Prix, but the MGP W02 wore the Pirelli tyres quickly, making the car noncompetitive. Rosberg was able to maintain a consistent performance in every qualifying session and began higher than his teammate Schumacher sixteen times to three. He finished ...
+- `driver-nico-rosberg#62`: ExtractionValidationError: ACHIEVED does not allow Driver -> GrandPrix
+  - Jelölt típusok: Driver, Driver, Season, GrandPrix, GrandPrix, Driver, ACHIEVED, ACHIEVED, WON, TEAMMATE_OF, TEAMMATE_OF, RACED_IN
+  - Forrásidézet: Three-time world champion Niki Lauda began to advise Rosberg. At the Chinese Grand Prix, the season's third round, he took the first pole position of his career and his maiden career victory. He then challenged Red Bull's Mark Webber for the victory at the Monaco Grand Prix three races later before he settled for a second-place finish. Rosberg had accumulated more championship points than any othe...
+- `driver-nico-rosberg#66`: ExtractionValidationError: ACHIEVED does not allow Driver -> GrandPrix
+  - Jelölt típusok: Driver, Team, Season, GrandPrix, DROVE_FOR, ROUND_OF, ACHIEVED, ENTERED, WON, HELD_AT
+  - Forrásidézet: Rosberg challenged his teammate Hamilton during the season qualifying higher eight times and finishing more often. At the Malaysian Grand Prix, the season's second race, a minor controversy came about when Mercedes invoked team orders on him to stay behind Hamilton. Unhappy with the decision, Rosberg led every lap from pole position to win the Monaco Grand Prix and became the first son of a world ...
+- `driver-nico-rosberg#67`: ExtractionValidationError: ACHIEVED does not allow Driver -> GrandPrix
+  - Jelölt típusok: Driver, GrandPrix, Season, GrandPrix, GrandPrix, ACHIEVED, ROUND_OF, ROUND_OF, ROUND_OF
+  - Forrásidézet: . He then won the British Grand Prix for his third career victory after Red Bull driver Sebastian Vettel suffered a broken gearbox. Thereafter, Rosberg earned points in nine of the season's ten final rounds with consecutive podium finishes— second at the Indian Grand Prix and third at the Abu Dhabi Grand Prix. He finished sixth in the WDC with 171 points and three pole positions. Rosberg's results...
+- `driver-nico-rosberg#69`: ExtractionValidationError: FIELDED does not allow Car -> Team
+  - Jelölt típusok: Driver, Team, Car, Season, Circuit, Circuit, Driver, DROVE_FOR, ENTERED, FIELDED, RACED_IN, TEAMMATE_OF
+  - Forrásidézet: Rosberg continued to drive for Mercedes in 2014 with Lewis Hamilton again as his teammate. He was regarded as a favourite for the WDC because of the team's development of the F1 W05 Hybrid car and adaptation to the technical regulations mandating the use of turbo-hybrid engines in pre-season testing at the Bahrain International Circuit and the Circuit de Barcelona-Catalunya
+- `driver-nico-rosberg#70`: ExtractionValidationError: ACHIEVED does not allow Driver -> GrandPrix
+  - Jelölt típusok: Driver, GrandPrix, GrandPrix, Season, ACHIEVED, ACHIEVED, ROUND_OF, ROUND_OF
+  - Forrásidézet: . Rosberg won the Australian Grand Prix to take the lead of the WDC and finished second in the next four races but Hamilton's four straight victories lost Rosberg the championship lead. Rosberg won the Monaco Grand Prix for the second year in succession to regain the points lead after qualifying on pole position in contentious circumstances
+- `driver-nico-rosberg#71`: ExtractionValidationError: ACHIEVED does not allow Driver -> GrandPrix
+  - Jelölt típusok: Driver, Season, GrandPrix, GrandPrix, ACHIEVED, AT_RACE, ROUND_OF
+  - Forrásidézet: . Victories in Austria, Germany, followed by contact with Hamilton in Belgium made it appear he would win the championship, until a short circuit on his car in Singapore nullified his points lead. Rosberg took four consecutive podium finishes and won the Brazilian Grand Prix to ensure the championship would be decided at the season-ending Abu Dhabi Grand Prix. To win the title, he needed to win th...
+- `driver-nico-rosberg#72`: ExtractionValidationError: WON does not allow Driver -> Season
+  - Jelölt típusok: Driver, Season, WON, AWARDED_IN
+  - Forrásidézet: . To win the title, he needed to win the race with Hamilton third or lower. Hamilton was already ahead of Rosberg on track and leading the race when an energy recovery system failure meant Rosberg scored no points for second in the WDC with 317 points.
+- `driver-nico-rosberg#74`: ExtractionValidationError: ENTERED is not temporal; from_year, to_year and role must be null
+  - Jelölt típusok: Driver, Team, Season, DROVE_FOR, ENTERED
+  - Forrásidézet: Having signed a contract worth a reported €55 million with Mercedes that was due to expire at the conclusion of 2016, Rosberg continued to drive for the team in 2015. During the off-season he sought to correct a body deficiency, which caused him to hold his breath against g-forces in high-speed corners, since he did not want to limit the flow of oxygen to his brain and muscles
+- `driver-nico-rosberg#75`: ExtractionValidationError: RACED_IN does not allow Driver -> Season
+  - Jelölt típusok: Driver, Season, RACED_IN
+  - Forrásidézet: . After four top-three podium finishes in the first four races, he won in Spain, Monaco and Austria, which came as his overall performance lowered from focusing more on the race than on qualifying; Vettel threatened Rosberg's hold on second overall
+- `driver-nico-rosberg#76`: ExtractionValidationError: WON does not allow Driver -> Season
+  - Jelölt típusok: Driver, Season, GrandPrix, GrandPrix, GrandPrix, WON, ROUND_OF, ROUND_OF, ROUND_OF
+  - Forrásidézet: . Retirements in Italy and Russia and two errors on a wet track at the United States Grand Prix stopped him from taking the championship, but wins in the final three races in Mexico, Brazil and Abu Dhabi and six consecutive pole positions placed him runner-up overall with 322 points.
+- `driver-nico-rosberg#77`: ExtractionValidationError: WON is not temporal; from_year, to_year and role must be null
+  - Jelölt típusok: Driver, Season, Title, WON, AWARDED_IN
+  - Forrásidézet: ## 2016: Champion at last in final Formula One season
+- `driver-nico-rosberg#80`: ExtractionValidationError: WON does not allow Driver -> Season
+  - Jelölt típusok: Driver, Driver, Season, GrandPrix, WON, AWARDED_IN, ROUND_OF, TEAMMATE_OF
+  - Forrásidézet: Rosberg carried over his form from end of the 2015 season, winning the first four races to lead Hamilton by 43 championship points although Hamilton suffered reliability issues in two of those first four races. Rosberg and Hamilton made high-speed contact at the Spanish Grand Prix after which Hamilton took the championship lead from Rosberg over the next eight races after sub-par results from the ...
+- `driver-nico-rosberg#81`: ExtractionValidationError: WON does not allow Driver -> Season
+  - Jelölt típusok: Driver, Team, Season, Driver, DROVE_FOR, WON, AWARDED_IN
+  - Forrásidézet: . During the mid-season interval, Mercedes non-executive chairman Niki Lauda paid a special visit to Rosberg's home in Ibiza, to help Rosberg regain his confidence and to bounce back. Rosberg changed his diet to remove sugars from his body and abstained from alcohol. Rosberg mulled over how to further improve his performance; to avoid the strain of starting a diet, he refrained from cycling, losin...
+- `driver-nico-rosberg#82`: ExtractionValidationError: WON does not allow Driver -> Season
+  - Jelölt típusok: Driver, Season, GrandPrix, GrandPrix, GrandPrix, GrandPrix, WON, ROUND_OF, ROUND_OF, ROUND_OF, ROUND_OF
+  - Forrásidézet: . He went on to win in Belgium, Singapore and Japan, and achieved three-second-place finishes in a row to enter the season-ending Abu Dhabi Grand Prix leading Hamilton by 12 points.
+- `driver-nico-rosberg#83`: ExtractionValidationError: WON is not temporal; from_year, to_year and role must be null
+  - Jelölt típusok: Driver, Season, Title, WON, AWARDED_IN
+  - Forrásidézet: To win the championship, Rosberg needed to finish no worse than third, even if Hamilton won. He won the WDC by five points with a second-place finish after withstanding Hamilton's attempts to back him into the chasing pack and encourage drivers to pass Rosberg to claim the title for himself. Rosberg became the second son of a former world champion to win the title since Damon Hill replicated his f...
+- `driver-nico-rosberg#84`: ExtractionValidationError: WON is not temporal; from_year, to_year and role must be null
+  - Jelölt típusok: Driver, Season, Title, WON, AWARDED_IN
+  - Forrásidézet: . He published a limited-edition book entitled Finally about the 2016 season on 24 December 2016. Overall, Rosberg competed in 206 races: he won 23, achieved 30 pole positions, gained 57 podium finishes, and scored 1594.5 championship points.
+- `driver-nico-rosberg#86`: ExtractionValidationError: WON does not allow Driver -> Season
+  - Jelölt típusok: Driver, Team, Season, DROVE_FOR, WON, AWARDED_IN
+  - Forrásidézet: Rosberg, who had signed a two-year contract extension with Mercedes to 2018 in mid-2016, began to contemplate retirement from motor racing when he considered the possibility of a championship win after the 2016 Japanese Grand Prix. He discussed it twice with his wife Vivian before the Abu Dhabi Grand Prix, and decided to commit to retiring before the race commenced
+- `driver-nico-rosberg#87`: ExtractionValidationError: WON is not temporal; from_year, to_year and role must be null
+  - Jelölt típusok: Driver, Team, Season, Title, WON, AWARDED_IN, DROVE_FOR
+  - Forrásidézet: . Afterwards, Rosberg told Vivian and manager Georg Noite that he would retire before telephoning the Mercedes team principal Toto Wolff about it. He did not tell Wolff in person because he was apprehensive about Wolff's reaction. At an FIA Prize Giving Ceremony in Vienna on 2 December 2016, five days after winning the championship, he made public his decision to retire
+- `driver-nico-rosberg#88`: ExtractionValidationError: TEAMMATE_OF does not allow Team -> Driver
+  - Jelölt típusok: Driver, Team, Driver, Driver, Season, DROVE_FOR, TEAMMATE_OF, WON, WON
+  - Forrásidézet: . Rosberg said he had reached the "pinnacle" of his career; he did not want his driving skills to atrophy, and wished to spend more time with his young family. He was the first reigning champion to retire from Formula One since Alain Prost in 1993. Williams driver Valtteri Bottas replaced Rosberg at Mercedes.
+- `driver-nico-rosberg#92`: ExtractionValidationError: DROVE_FOR does not allow Driver -> Driver
+  - Jelölt típusok: Driver, Team, Driver, DROVE_FOR, DROVE_FOR
+  - Forrásidézet: In October 2017, Rosberg joined Team Rosberg as an adviser for its ADAC GT Masters sports car championship team in 2018. He also joined the management team of the racing driver Robert Kubica that September. Rosberg assisted in Kubica's desire to return to Formula One after a severe 2011 rally accident left the latter with partial movement in his right arm. He reduced his involvement with Kubica in...
+- `driver-nico-rosberg#95`: ExtractionValidationError: ENTERED is not temporal; from_year, to_year and role must be null
+  - Jelölt típusok: Driver, Team, Season, Driver, Driver, Title, ENTERED, WON, TEAMMATE_OF, TEAMMATE_OF
+  - Forrásidézet: In late 2020, Rosberg established Rosberg X Racing (RXR) formed on parts of the structure of his father's DTM team to compete in the all-electric SUV off-road racing series Extreme E from the 2021 season on. He entered the series because of its promised racing action and wanted to help combat some of climate change's effects collectively. RXR won the inaugural Extreme E constructors' title with dr...
+- `driver-nico-rosberg#96`: ExtractionValidationError: ENTERED does not allow Team -> Circuit
+  - Jelölt típusok: Driver, Team, Season, Circuit, Circuit, Team, ENTERED, DROVE_FOR, ROUND_OF
+  - Forrásidézet: . The team narrowly missed out on retaining the constructors' title in 2022 by two points to Lewis Hamilton's Team X44. In December 2024, Rosberg announced that RXR would cease operations in Extreme E as the racing series will be replaced as Extreme H for 2025.
+- `driver-sebastian-vettel#0`: ExtractionValidationError: WON does not allow Driver -> Season
+  - Jelölt típusok: Driver, Team, Season, Season, Season, Season, DROVE_FOR, WON, WON, WON, WON
+  - Forrásidézet: Sebastian Vettel (German pronunciation: \[zeˈbasti̯a(ː)n ˈfɛtl̩\] ; born 3 July 1987) is a German former racing driver who competed in Formula One from 2007 to 2022. Vettel won four Formula One World Drivers' Championship titles, which he won consecutively from 2010 to 2013 with Red Bull, and remains the youngest-ever World Drivers' Champion; he won 53 Grands Prix across 16 seasons.
+- `driver-sebastian-vettel#1`: ExtractionValidationError: RACED_IN is not temporal; from_year, to_year and role must be null
+  - Jelölt típusok: Driver, Car, Car, Season, Season, RACED_IN, RACED_IN
+  - Forrásidézet: Born and raised in Heppenheim, Vettel began competitive kart racing aged eight. After a successful karting career—culminating in his victory at the junior European Championship in 2001—Vettel graduated to junior formulae. He started his career in Formula BMW ADAC, dominating the championship in 2004 with 18 wins from 20 races. Vettel then progressed to the Formula 3 Euro Series in 2005, taking sev...
+- `driver-sebastian-vettel#100`: ExtractionValidationError: ACHIEVED does not allow Driver -> GrandPrix
+  - Jelölt típusok: Driver, Team, GrandPrix, Season, Team, Driver, DROVE_FOR, ACHIEVED, RACED_IN, DROVE_FOR
+  - Forrásidézet: In Italy, Vettel spun at the Ascari chicane and when he re-entered the track, he made contact with Racing Point's Stroll. Vettel received a 10-second stop-go penalty and finished in 13th place. At the Singapore Grand Prix, Vettel won on a circuit Ferrari were expected to struggle at. For the first time, Vettel had won five times at the same track. The following race, in Russia, Vettel went from th...
+- `driver-sebastian-vettel#102`: ExtractionValidationError: ACHIEVED does not allow Driver -> GrandPrix
+  - Jelölt típusok: Driver, Team, Season, GrandPrix, GrandPrix, Driver, Driver, DROVE_FOR, ACHIEVED, ACHIEVED, ACHIEVED, ACHIEVED
+  - Forrásidézet: Vettel took pole position in Japan, but an abrupt start off the line caused him to momentarily stop before getting away, which allowed Bottas to take the lead; Vettel was not penalized for his jump start. After running in third at the Brazilian Grand Prix for the majority of the race, a safety car allowed Red Bull's Alexander Albon and an aggressive Leclerc to overtake him. He tried to pass his te...
+- `driver-sebastian-vettel#106`: ExtractionValidationError: FIELDED is not temporal; from_year, to_year and role must be null
+  - Jelölt típusok: Driver, Team, GrandPrix, GrandPrix, Car, Season, FIELDED, RACED_IN, ROUND_OF, ROUND_OF, ACHIEVED, ACHIEVED
+  - Forrásidézet: The SF1000 lacked pace as Vettel finished the season's opening race in Austria in 10th place. During the weekend, he was also given a warning for breaching the FIA's COVID-19 protocols after he was seen mixing with members of his former team Red Bull. The following race, at the Styrian Grand Prix, Vettel retired on the opening lap with rear wing damage following a collision with Leclerc
+- `driver-sebastian-vettel#107`: ExtractionValidationError: ACHIEVED does not allow Driver -> Season
+  - Jelölt típusok: Driver, Team, Season, GrandPrix, ACHIEVED, ACHIEVED, ENTERED
+  - Forrásidézet: . He ended the season in a disappointing 13th place in the Drivers' standings, with a third place in Turkey as his best result. Ferrari only finished sixth in the Constructors' standings, their worst result since 1980, while Vettel's total of 33 points was the lowest in a full campaign in his Formula One career.
+- `driver-sebastian-vettel#110`: ExtractionValidationError: FOR_TEAM does not allow Driver -> Driver
+  - Jelölt típusok: Driver, Team, Season, GrandPrix, Driver, RaceResult, DROVE_FOR, ROUND_OF, ACHIEVED, AT_RACE, FOR_TEAM
+  - Forrásidézet: Vettel joined Aston Martin for the 2021 season, replacing Sergio Pérez. In his debut race weekend in Bahrain, he received a grid penalty in qualifying, forcing him to start last. While Vettel started well, he had a collision with Esteban Ocon, giving him a time penalty and ended up finishing in 15th place. He received five penalty points on his superlicence
+- `driver-sebastian-vettel#111`: ExtractionValidationError: ACHIEVED does not allow Driver -> Car
+  - Jelölt típusok: Driver, Team, Season, GrandPrix, Car, DROVE_FOR, ENTERED, ROUND_OF, ACHIEVED, AT_RACE, FIELDED
+  - Forrásidézet: . He received five penalty points on his superlicence. Aston Martin team principal Otmar Szafnauer reported no concerns, owing to this being a very different car from the Ferrari, lack of laps in pre-season testing and a very impressive race start. In the fifth race of the season, Vettel scored his first points for the team with a fifth-place finish in Monaco. At the following race, the Azerbaijan...
+- `driver-sebastian-vettel#112`: ExtractionValidationError: ACHIEVED does not allow Driver -> GrandPrix
+  - Jelölt típusok: Driver, Driver, Season, GrandPrix, Team, DROVE_FOR, TEAMMATE_OF, ROUND_OF, ENTERED, ACHIEVED, HELD_AT
+  - Forrásidézet: . Vettel also finished second in Hungary, but was later disqualified, after his car failed to provide the one litre sample of fuel required. He ended the season in 12th place in the Drivers' standings, ahead of teammate Stroll. During the season, Vettel made 132 overtakes—the most of any driver—and won the inaugural Overtake Award.
+- `driver-sebastian-vettel#115`: ExtractionValidationError: ACHIEVED does not allow Driver -> GrandPrix
+  - Jelölt típusok: Driver, Driver, Season, GrandPrix, ACHIEVED, ROUND_OF
+  - Forrásidézet: ## Comparison to Michael Schumacher Vettel's unexpected win at the 2008 Italian Grand Prix led the media to dub him the "Baby Schumi". He was not just dubbed this for his nationality but also because of his driving style, his concentration and the hands-on role he plays behind the scenes with his team of engineers. Vettel played down the comparison stating he wanted to be the "New Vettel".
+- `driver-sebastian-vettel#117`: ExtractionValidationError: WON does not allow Driver -> Season
+  - Jelölt típusok: Driver, Driver, Season, WON, TEAMMATE_OF
+  - Forrásidézet: After winning his first championship in 2010, and being hailed as the "Next Schumacher", Vettel stated he did not want to aim for Schumacher's record after learning how hard it was to get one championship under his belt, though he would like to win more. In 2011, Pirelli director Paul Hembery was impressed when Vettel was the only driver to take the time to visit the factory and talk to the tyre m...
+- `driver-sebastian-vettel#119`: ExtractionValidationError: ACHIEVED does not allow Driver -> Season
+  - Jelölt típusok: Driver, Driver, Team, Season, DROVE_FOR, ACHIEVED
+  - Forrásidézet: After Schumacher was severely injured in a skiing accident in late 2013, Vettel was on hand to collect the Millennium-Bambi Award for Schumacher's life achievements on his behalf in 2014. In 2014, Vettel cited Schumacher as one of his inspirations in becoming a Scuderia Ferrari driver: "When I was a kid, Michael Schumacher in the red car was my greatest idol and now it's an incredible honour to fi...
+- `driver-sebastian-vettel#12`: ExtractionValidationError: RACED_IN does not allow Driver -> Season
+  - Jelölt típusok: Driver, Team, Title, Season, Season, DROVE_FOR, WON, AWARDED_IN, RACED_IN
+  - Forrásidézet: ## Karting (1995–2002) Vettel began karting at the age of three, and began racing in karts series in 1995 at the age of eight. He was accepted into the Red Bull Junior Team in 1998, and won various titles, such as the Junior Monaco Kart Cup in 2001.
+- `driver-sebastian-vettel#124`: ExtractionValidationError: RACED_IN does not allow Driver -> Season
+  - Jelölt típusok: Driver, Season, Season, RACED_IN, RACED_IN
+  - Forrásidézet: . Several of his helmet designs also featured his team members. At the 2012 Italian Grand Prix, Vettel celebrated his 50th helmet design with a 'rusty' matte look and 50 tallies, indicating his 50 helmet designs in Formula One. Vettel started his 2013 campaign with a design in honour of Felix Baumgartner, for his world record Red Bull Stratos space jump in October 2012. By the end of the 2013 seas...
+- `driver-sebastian-vettel#125`: ExtractionValidationError: ACHIEVED does not allow Driver -> GrandPrix
+  - Jelölt típusok: Driver, GrandPrix, GrandPrix, GrandPrix, ACHIEVED, ACHIEVED, ACHIEVED
+  - Forrásidézet: For the 2017 Italian Grand Prix he changed the German flag stripe on his helmet to an Italian flag stripe in celebration of Ferrari's home race. Following the death of Niki Lauda, Vettel wore a special helmet based on Lauda's final Ferrari helmet at the 2019 Monaco Grand Prix. Vettel carried the German flag stripe design over to his helmet designs during his time at Aston Martin, with his final de...
+- `driver-sebastian-vettel#127`: ExtractionValidationError: ACHIEVED does not allow Driver -> GrandPrix
+  - Jelölt típusok: Driver, Team, Car, Team, Car, GrandPrix, GrandPrix, DROVE_FOR, FIELDED, DROVE_FOR, FIELDED, ACHIEVED, ROUND_OF, ROUND_OF
+  - Forrásidézet: The car Vettel drove during his first full season in 2008—the Toro Rosso STR3—was named Julie, with which he took his maiden victory at the Italian Grand Prix. Upon moving to Red Bull in 2009, he initially named the RB5 Kate, but renamed it to Kate's Dirty Sister following his collision with Robert Kubica at the season-opening Australian Grand Prix
+- `driver-sebastian-vettel#128`: ExtractionValidationError: FIELDED does not allow Car -> Car
+  - Jelölt típusok: Car, Car, Car, Car, FIELDED, FIELDED, FIELDED, FIELDED
+  - Forrásidézet: . The RB6 in 2010 was Vettel's first championship-winning car, at first called Luscious Liz before a chassis change saw its renaming to Randy Mandy from the Turkish Grand Prix onwards. Vettel's further three consecutive championship-winning machines were named Kinky Kylie (2011), Abbey (2012) and Hungry Heidi (2013), the latter of which saw Vettel equal Michael Schumacher's single-season win recor...
+- `driver-sebastian-vettel#129`: ExtractionValidationError: FIELDED is not temporal; from_year, to_year and role must be null
+  - Jelölt típusok: Car, Team, FIELDED
+  - Forrásidézet: . 2014's RB10 was named Suzie, the only car he did not win with at Red Bull.
+- `driver-sebastian-vettel#130`: ExtractionValidationError: FIELDED is not temporal; from_year, to_year and role must be null
+  - Jelölt típusok: Driver, Team, Team, Car, Car, Car, Car, Car, Car, Car, DROVE_FOR, FIELDED, FIELDED, FIELDED, FIELDED, FIELDED, FIELDED, DROVE_FOR, FIELDED
+  - Forrásidézet: Vettel continued this tradition with Ferrari, naming the SF15-T Eva in 2015. His subsequent Ferrari challengers were named Margherita (2016), Gina (2017), Loria (2018), Lina (2019) and Lucilla (2020). In 2021, Vettel named his Aston Martin AMR21 after Honey Ryder, the love interest from the James Bond film Dr. No (1962), in a nod to Aston Martin's longstanding relationship with the franchise
+- `driver-sebastian-vettel#133`: ExtractionValidationError: WON does not allow Driver -> Season
+  - Jelölt típusok: Driver, Season, Season, Season, Circuit, WON, WON, WON, WON
+  - Forrásidézet: Vettel was named Rookie of the Year at the 2008 Autosport Awards. In 2009, Vettel was awarded the Lorenzo Bandini Trophy, for his achievements in the 2008 season. He was also awarded the 2009 British Racing Drivers' Club Johnny Wakefield Trophy for "setting the fastest race lap of the season on the Silverstone Grand Prix Circuit". In 2010, Vettel was voted German Sportspersonality of the Year and ...
+- `driver-sebastian-vettel#134`: ExtractionValidationError: WON is not temporal; from_year, to_year and role must be null
+  - Jelölt típusok: Driver, Title, Title, Title, Title, Season, Season, Season, Season, WON, WON, WON, WON, WON, WON, WON, WON
+  - Forrásidézet: . In January 2012, Vettel was honoured with the Grands Prix de l'Academie des Sports, and in February, he was further honoured with the Silbernes Lorbeerblatt, in recognition of his world titles and his "exemplary character". Vettel was voted Formula One driver of the year in 2009, 2011 and 2013 by the team principals, initiated by the Autosport magazine. He additionally won the DHL Fastest Lap Aw...
+- `driver-sebastian-vettel#135`: ExtractionValidationError: WON is not temporal; from_year, to_year and role must be null
+  - Jelölt típusok: Driver, Title, Title, Title, Title, Title, WON, WON, WON, WON, WON
+  - Forrásidézet: . He additionally won the DHL Fastest Lap Award in 2009, 2012 and 2013. He was named European Sportsperson of the Year by the International Sports Press Association in 2010, and by the Polish Press Agency in 2012 and 2013. Furthermore, Vettel was named the BBC Overseas Sports Personality of the Year in 2013. He was named Sportsman of the Year at the 2014 Laureus World Sports Awards. In 2015, he re...
+- `driver-sebastian-vettel#137`: ExtractionValidationError: WON is not temporal; from_year, to_year and role must be null
+  - Jelölt típusok: Driver, Team, Car, Title, Season, Season, WON, FIELDED
+  - Forrásidézet: In 2026, he received The Perfect World Foundation Award in Sweden, recognising his efforts to raise global awareness of environmental and biodiversity challenges. Red Bull Racing sponsor Infiniti released a Sebastian Vettel edition of the Infiniti FX SUV for 2012. It featured increased engine power, revised bodywork and lower suspension than the standard model.
+- `driver-sebastian-vettel#138`: ExtractionValidationError: TEAMMATE_OF is not temporal; from_year, to_year and role must be null
+  - Jelölt típusok: Driver, Driver, Title, Season, Season, TEAMMATE_OF, WON, AWARDED_IN, WON
+  - Forrásidézet: ## Race of Champions Vettel competed in the 2007 Race of Champions at Wembley Stadium, representing the German team alongside Michael Schumacher, winning the Nations' Cup title. He also teamed up with Schumacher from 2008 to 2012, winning the Cup on every occasion.
+- `driver-sebastian-vettel#139`: ExtractionValidationError: WON does not allow Driver -> Season
+  - Jelölt típusok: Driver, Driver, Driver, Driver, Season, Season, WON, WON, TEAMMATE_OF, ACHIEVED, TEAMMATE_OF
+  - Forrásidézet: Vettel returned to the 2015 Race of Champions, representing Germany together with Nico Hülkenberg. He won his first individual Race of Champions title that year, beating Tom Kristensen in the final. Vettel and Hülkenberg finished runner-up in the Nations Cup. In 2017, Vettel was eliminated in the first heat for the individual competition, but went on to win the Nations' Cup for Germany by himself ...
+- `driver-sebastian-vettel#140`: ExtractionValidationError: ACHIEVED does not allow Driver -> Season
+  - Jelölt típusok: Driver, Driver, Driver, Driver, Driver, Season, Season, Season, Season, TEAMMATE_OF, ACHIEVED, ACHIEVED, RACED_IN, RACED_IN
+  - Forrásidézet: In the 2019 event, Vettel teamed up with Mick Schumacher, where they finished runners-up in the Nations' Cup to the Nordic team of Kristensen and Johan Kristoffersson. Vettel was eliminated in the group stages of the individual competition, although he won the ROC Skills Challenge. He reached the individual final in 2022 but was beaten by Sébastien Loeb. He also competed into the 2023 and 2025 edi...
+- `driver-sebastian-vettel#144`: ExtractionValidationError: HELD_AT does not allow Driver -> GrandPrix
+  - Jelölt típusok: Driver, Season, GrandPrix, GrandPrix, HELD_AT, HELD_AT, ROUND_OF, ROUND_OF
+  - Forrásidézet: . Furthermore, Vettel has been critical of how F1 races are scheduled, stating that races that are geographically proximate to each other should be held on consecutive weekends to reduce emissions from travelling. He also held an all-women karting event during the weekend of the 2021 Saudi Arabian Grand Prix, and wore the pride flag at the 2021 Hungarian Grand Prix despite being reprimanded
+- `driver-sebastian-vettel#146`: ExtractionValidationError: ACHIEVED does not allow Driver -> GrandPrix
+  - Jelölt típusok: Driver, Season, GrandPrix, ACHIEVED, ROUND_OF
+  - Forrásidézet: In May 2022, Vettel appeared on the BBC One political topical debate programme Question Time to discuss a variety of issues including climate change, energy dependency, and Brexit. The following month, Vettel appeared on the cover of Attitude, voicing support for an LGBTQ driver competing in Formula One. In June 2022, while participating in the Canadian Grand Prix, Vettel denounced Canada's mining...
+- `driver-sebastian-vettel#15`: ExtractionValidationError: ENTERED is not temporal; from_year, to_year and role must be null
+  - Jelölt típusok: Driver, Team, Season, DROVE_FOR, ENTERED
+  - Forrásidézet: ## 2005–2007: Formula Three and Formula Renault Vettel drove for ASL Mücke Motorsport in the 2005 Formula 3 Euro Series. He was placed fifth in the final standings with 63 points and won the Rookie Cup. He tested for the Williams Formula One team later that year as a reward for his Formula BMW success. Vettel then went on to test for the BMW Sauber Formula One team.
+- `driver-sebastian-vettel#150`: ExtractionValidationError: TEAMMATE_OF is not temporal; from_year, to_year and role must be null
+  - Jelölt típusok: Driver, Driver, TEAMMATE_OF
+  - Forrásidézet: Vettel married childhood friend Hanna Prater at a private ceremony in early 2019; they have three children. In 2016, Forbes estimated that his annual income was \$41 million. Kimi Räikkönen, his teammate from 2015 to 2018, is a close friend. Besides his native German, Vettel speaks English, French, and Italian. In July 2022, he created his Instagram account, having long eschewed social media
+- `driver-sebastian-vettel#151`: ExtractionValidationError: DROVE_FOR does not allow Driver -> Season
+  - Jelölt típusok: Driver, Season, DROVE_FOR
+  - Forrásidézet: . Vettel's first Instagram post was to announce his retirement from Formula One at the end of the 2022 season.
+- `driver-sebastian-vettel#16`: ExtractionValidationError: HELD_AT does not allow Circuit -> Car
+  - Jelölt típusok: Driver, Team, Season, Car, Car, Circuit, DROVE_FOR, RACED_IN, RACED_IN, HELD_AT
+  - Forrásidézet: Vettel was promoted to test driver for BMW Sauber in 2006, and participated in the 2006 Formula 3 Euro Series, finishing as runner-up. He also competed in the 2006 Formula Renault 3.5 Series, where he finished first and second at Misano in his first two races. In the next round at Spa-Francorchamps, his finger was almost sliced off by flying debris following an accident, and he was expected to be ...
+- `driver-sebastian-vettel#17`: ExtractionValidationError: ACHIEVED does not allow Driver -> GrandPrix
+  - Jelölt típusok: Driver, Season, GrandPrix, Circuit, ACHIEVED, ROUND_OF, HELD_AT
+  - Forrásidézet: . Nevertheless, he managed to compete in the 2006 Masters of Formula 3 at Zandvoort the following weekend, where he finished in sixth place.
+- `driver-sebastian-vettel#18`: ExtractionValidationError: ACHIEVED does not allow Driver -> Circuit
+  - Jelölt típusok: Driver, Team, Season, Circuit, Car, RACED_IN, ENTERED, DROVE_FOR, ACHIEVED, ROUND_OF
+  - Forrásidézet: Vettel competed in the 2007 Formula Renault 3.5 Series, and took his first win at the Nürburgring. He led the championship when he was called up permanently by the BMW Sauber Formula One team.
+- `driver-sebastian-vettel#2`: ExtractionValidationError: ENTERED is not temporal; from_year, to_year and role must be null
+  - Jelölt típusok: Driver, Team, Season, Season, GrandPrix, DROVE_FOR, ENTERED, ENTERED, ACHIEVED, ROUND_OF
+  - Forrásidézet: . A test driver for BMW Sauber since 2006, Vettel made his Formula One debut at the 2007 United States Grand Prix. Vettel replaced Scott Speed at Toro Rosso after the European Grand Prix for the remainder of the 2007 season, as part of the Red Bull Junior Team. Retaining his seat for 2008, Vettel achieved his maiden pole position and victory at the Italian Grand Prix to become the then-youngest dr...
+- `driver-sebastian-vettel#23`: ExtractionValidationError: DROVE_FOR does not allow Driver -> Season
+  - Jelölt típusok: Driver, Season, GrandPrix, DROVE_FOR, ROUND_OF
+  - Forrásidézet: . He also set a record for the shortest time before first career fine, collecting his first fine in nine seconds by exceeding the pitlane speed limit on the way to the track. In his second testing session at the 2006 Italian Grand Prix, he set the fastest time in both Friday practice sessions.
+- `driver-sebastian-vettel#24`: ExtractionValidationError: ENTERED is not temporal; from_year, to_year and role must be null
+  - Jelölt típusok: Driver, Team, Season, GrandPrix, GrandPrix, Car, PowerUnit, DROVE_FOR, ENTERED, ROUND_OF, ROUND_OF, ACHIEVED, FOR_TEAM, AT_RACE
+  - Forrásidézet: ## 2007: Debut Vettel was confirmed as BMW's test driver for 2007. Following Kubica's crash at the 2007 Canadian Grand Prix, Vettel was named his replacement at the 2007 United States Grand Prix. He started in seventh position and finished in eighth to become the then-youngest driver to score a point in Formula One.
+- `driver-sebastian-vettel#26`: ExtractionValidationError: ENTERED is not temporal; from_year, to_year and role must be null
+  - Jelölt típusok: Driver, Team, Season, Season, Driver, Driver, GrandPrix, DROVE_FOR, ENTERED, ENTERED, TEAMMATE_OF, DROVE_FOR, HELD_AT
+  - Forrásidézet: ## 2007–2008: Maiden race win and rise to prominence BMW released him in July 2007 to join Red Bull's Scuderia Toro Rosso, replacing Scott Speed from the 2007 Hungarian Grand Prix onwards, as Vettel was already under contract to Red Bull Racing. It was also announced that he would drive for Toro Rosso in 2008 alongside Sébastien Bourdais.
+- `driver-sebastian-vettel#32`: ExtractionValidationError: HELD_AT does not allow GrandPrix -> Car
+  - Jelölt típusok: Driver, Team, GrandPrix, Season, Car, PowerUnit, Title, DROVE_FOR, ROUND_OF, HELD_AT, ACHIEVED, FOR_TEAM
+  - Forrásidézet: At the wet Italian Grand Prix, Vettel became the youngest driver in history to win a Formula One Grand Prix, aged 21 years and 74 days. He led for the majority of the Grand Prix and crossed the finish line 12.5 seconds ahead of McLaren's Heikki Kovalainen. It would also be Toro Rosso's only win. Earlier in the weekend, he had already become the youngest pole-sitter. Toro Rosso team boss Gerhard Be...
+- `driver-sebastian-vettel#36`: ExtractionValidationError: ACHIEVED does not allow Driver -> GrandPrix
+  - Jelölt típusok: Driver, Team, Season, GrandPrix, GrandPrix, DROVE_FOR, ENTERED, ROUND_OF, ROUND_OF, ACHIEVED, FOR_TEAM
+  - Forrásidézet: ## 2009: Championship contender At the start of the 2009 season, Vettel replaced the retired David Coulthard at Red Bull Racing. He began strongly at the Australian Grand Prix, running in second for the majority of the race. However, a clash with Robert Kubica over second place in the latter stages forced both to retire. He went on to take pole position and the race win at Chinese Grand Prix; Red ...
+- `driver-sebastian-vettel#37`: ExtractionValidationError: WON does not allow Driver -> Season
+  - Jelölt típusok: Driver, Driver, Driver, Season, GrandPrix, GrandPrix, WON, ROUND_OF, ROUND_OF, TEAMMATE_OF, WON
+  - Forrásidézet: Further wins followed in Great Britain, Japan and Abu Dhabi. He won the Japanese Grand Prix from pole position, leading every lap. Vettel won the inaugural Abu Dhabi Grand Prix, the first ever day-night race, to finish second in the World Drivers' Championship standings behind Jenson Button. He also scored his third fastest lap of the year, drawing him level with teammate Mark Webber. However, as ...
+- `driver-sebastian-vettel#38`: ExtractionValidationError: ACHIEVED does not allow Driver -> GrandPrix
+  - Jelölt típusok: Driver, Season, GrandPrix, GrandPrix, GrandPrix, ACHIEVED, ACHIEVED, ACHIEVED, WON, AWARDED_IN
+  - Forrásidézet: ## 2010: Youngest World Champion Vettel took the first pole position of the 2010 season at the Bahrain Grand Prix. He led most of the race but as a result of a spark plug failure, Vettel finished in fourth place. At the Australian Grand Prix, Vettel was appointed as a director of the Grand Prix Drivers' Association. He took his first win of the season in Malaysia.
+- `driver-sebastian-vettel#39`: ExtractionValidationError: HELD_AT does not allow GrandPrix -> Team
+  - Jelölt típusok: Driver, Team, GrandPrix, GrandPrix, DROVE_FOR, HELD_AT, HELD_AT
+  - Forrásidézet: In Monaco, Vettel made it a Red Bull 1–2 with him second and Webber first. Both were equal on points in the standings, with Webber first based on total wins. At the Turkish Grand Prix, Vettel was running second behind Webber when he made a passing move on his teammate. The two collided, putting Vettel out of the race, with neither driver accepting responsibility for the collision.
+- `driver-sebastian-vettel#4`: ExtractionValidationError: WON is not temporal; from_year, to_year and role must be null
+  - Jelölt típusok: Driver, Team, Season, Season, Season, Season, GrandPrix, Title, DROVE_FOR, WON, AWARDED_IN, WON, AWARDED_IN, WON, AWARDED_IN, WON, AWARDED_IN, ROUND_OF
+  - Forrásidézet: After winning the title-deciding Abu Dhabi Grand Prix in 2010, Vettel became the youngest-ever Formula One World Drivers' Champion, aged 23. He won his second and third championships in 2011 and 2012, dominating the former and winning the latter amidst a close title battle with Fernando Alonso. Vettel set several records in 2013, winning 13 Grands Prix—including a then-record nine consecutive vict...
+- `driver-sebastian-vettel#41`: ExtractionValidationError: ACHIEVED does not allow Driver -> GrandPrix
+  - Jelölt típusok: Driver, GrandPrix, Driver, ACHIEVED, FOR_TEAM
+  - Forrásidézet: . Aged 23 years and 98 days, Vettel became the youngest Grand Prix driver to win at the same track on two occasions. At the inaugural Korean Grand Prix, Vettel led the first 45 laps before retiring with engine failure, handing victory to championship rival Fernando Alonso.
+- `driver-sebastian-vettel#42`: ExtractionValidationError: WON is not temporal; from_year, to_year and role must be null
+  - Jelölt típusok: Driver, Driver, Team, Season, GrandPrix, GrandPrix, Title, Title, WON, WON, ROUND_OF, ROUND_OF, ACHIEVED, TEAMMATE_OF
+  - Forrásidézet: With the 1–2 finish at the Brazilian Grand Prix, Vettel and Webber secured Red Bull Racing's first World Constructors' Championship. Vettel went into the final race of the season in Abu Dhabi with a 15-point deficit to Alonso and a 7-point gap to Webber. He won the Grand Prix from pole to become the youngest World Drivers' Champion in the sport's history, as Alonso only finished in seventh place
+- `driver-sebastian-vettel#45`: ExtractionValidationError: RACED_IN does not allow GrandPrix -> Season
+  - Jelölt típusok: Driver, Team, Season, GrandPrix, GrandPrix, GrandPrix, GrandPrix, DROVE_FOR, RACED_IN, RACED_IN, RACED_IN, RACED_IN
+  - Forrásidézet: Vettel started the 2011 season with wins in Australia and Malaysia, before a second-place finish at the Chinese Grand Prix due to poor tyre management, possibly related to his inability to properly communicate with his team, as his radio was broken. In Monaco, Vettel led the race but due to another radio malfunction, the Red Bull pit crew was not prepared when he came in. The pit stop was slow and...
+- `driver-sebastian-vettel#46`: ExtractionValidationError: ACHIEVED does not allow Driver -> GrandPrix
+  - Jelölt típusok: Driver, Season, GrandPrix, ACHIEVED, ROUND_OF
+  - Forrásidézet: . Vettel switched to a one-stop strategy and stuck with one set of soft tyres for 56 laps. He was caught by Alonso and Button as his tyres deteriorated, but neither were able to pass him. The race was red-flagged with few laps remaining, which allowed teams to change their tyres; when the race was restarted under the safety car, Vettel was able to retain the lead and win.
+- `driver-sebastian-vettel#47`: ExtractionValidationError: ACHIEVED does not allow Driver -> GrandPrix
+  - Jelölt típusok: Driver, GrandPrix, Circuit, Season, ACHIEVED, ROUND_OF, HELD_AT, WON
+  - Forrásidézet: At the European Grand Prix, the Fédération Internationale de l'Automobile (FIA) enforced a ban on engine mappings. It was believed by some in the press that this was an attempt by the FIA to thwart Vettel's early domination. Nevertheless, he took pole with the fastest qualifying lap in Valencia Street Circuit's history. Vettel dominated with his first hat-trick of 2011, and won his sixth race out ...
+- `driver-sebastian-vettel#5`: ExtractionValidationError: WON does not allow Driver -> Season
+  - Jelölt típusok: Driver, Team, Driver, Season, Season, DROVE_FOR, TEAMMATE_OF, WON, WON
+  - Forrásidézet: . After a winless 2014 campaign, Vettel signed for Ferrari, replacing Alonso to partner Kimi Räikkönen; he took several wins in his debut season, finishing third in the standings. Following another winless season in 2016, Vettel emerged as the closest challenger to Mercedes and Lewis Hamilton, finishing runner-up in 2017 and 2018 after achieving several victories across both campaigns
+- `driver-sebastian-vettel#51`: ExtractionValidationError: WON does not allow Driver -> Season
+  - Jelölt típusok: Driver, Season, WON, AWARDED_IN
+  - Forrásidézet: . Vettel broke the record for the most pole positions in a season at the season finale in Brazil, after he clinched his 15th pole of the year. He completed the year with 15 poles, 11 victories, and 17 podiums from 19 races; Vettel also earned a record total of 392 points.
+- `driver-sebastian-vettel#52`: ExtractionValidationError: WON does not allow Driver -> Season
+  - Jelölt típusok: Driver, Season, WON, AWARDED_IN
+  - Forrásidézet: ## 2012: Triple World Champion following Alonso title duel
+- `driver-sebastian-vettel#53`: ExtractionValidationError: ACHIEVED does not allow Driver -> GrandPrix
+  - Jelölt típusok: Driver, Team, Season, GrandPrix, GrandPrix, GrandPrix, DROVE_FOR, ROUND_OF, ROUND_OF, ROUND_OF, ACHIEVED, ACHIEVED, ACHIEVED
+  - Forrásidézet: Vettel started the 2012 season with a second place at the Australian Grand Prix, before he finished outside the points in Malaysia following a collision with backmarker Narain Karthikeyan. Vettel and Horner criticised Karthikeyan's driving, with Vettel calling him an "idiot", and a "cucumber". Karthikeyan hit back, calling Vettel a "cry baby". Vettel crossed the line in first place at the Bahrain ...
+- `driver-sebastian-vettel#54`: ExtractionValidationError: ACHIEVED does not allow Driver -> GrandPrix
+  - Jelölt típusok: Driver, Driver, Season, GrandPrix, GrandPrix, ACHIEVED, ACHIEVED, TEAMMATE_OF, ROUND_OF, ROUND_OF
+  - Forrásidézet: . Three races without a podium place followed, before he retired at the European Grand Prix after an alternator failure, dropping him to fourth in the standings. In Germany, Vettel finished second behind Alonso but received a 20-second time penalty after the race, as he was off the track when he overtook Button; Vettel dropped back to fifth. He started in 10th place but finished second in Belgium ...
+- `driver-sebastian-vettel#55`: ExtractionValidationError: WON does not allow Driver -> Season
+  - Jelölt típusok: Driver, Driver, GrandPrix, GrandPrix, Season, WON, ROUND_OF, ROUND_OF, TEAMMATE_OF
+  - Forrásidézet: . Vettel then retired at the Italian Grand Prix due to an alternator failure, which saw the gap to leader Alonso grow to 39 points with seven races remaining. He won next race in Singapore, as he kept the lead until the 2-hour race limit was reached. At the Japanese Grand Prix he took his second career grand slam and coupled with Alonso's retirement, he cut the gap down to just four points
+- `driver-sebastian-vettel#56`: ExtractionValidationError: ACHIEVED does not allow Driver -> GrandPrix
+  - Jelölt típusok: Driver, GrandPrix, GrandPrix, Season, ACHIEVED, ACHIEVED, ROUND_OF, ROUND_OF, WON
+  - Forrásidézet: . After winning at the Korean Grand Prix, the Indian Grand Prix brought another victory, as Vettel topped all three practice sessions before taking pole position and leading every lap of the race to win.
+- `driver-sebastian-vettel#57`: ExtractionValidationError: ACHIEVED does not allow Driver -> GrandPrix
+  - Jelölt típusok: Driver, GrandPrix, GrandPrix, Season, ACHIEVED, ROUND_OF, ROUND_OF
+  - Forrásidézet: During qualifying at the Abu Dhabi Grand Prix, Vettel was told to stop the car due to a fuel pump issue; he was forced to start from the pit lane. From last place, Vettel fought his way back to finish in third place. He started the last race in Brazil with a 13-point cushion against Alonso. On the opening lap, Vettel spun after an incident with Bruno Senna
+- `driver-sebastian-vettel#6`: ExtractionValidationError: ACHIEVED does not allow Driver -> GrandPrix
+  - Jelölt típusok: Driver, Driver, Team, Team, GrandPrix, GrandPrix, Season, Season, Season, DROVE_FOR, DROVE_FOR, ACHIEVED, ROUND_OF, ACHIEVED, ROUND_OF, TEAMMATE_OF
+  - Forrásidézet: . Partnered by Charles Leclerc for 2019, Vettel took the final win of his career at the Singapore Grand Prix before leaving Ferrari at the end of the 2020 season. Vettel joined the recently established Aston Martin in 2021, where he scored his final podium finish at the Azerbaijan Grand Prix.
+- `driver-sebastian-vettel#60`: ExtractionValidationError: ACHIEVED does not allow Driver -> GrandPrix
+  - Jelölt típusok: Driver, Driver, Season, GrandPrix, TEAMMATE_OF, ACHIEVED, ROUND_OF
+  - Forrásidézet: Vettel started the first two races of the 2013 season on pole position, and at the Malaysian Grand Prix, he lapped over 2.5 seconds faster than teammate Webber in qualifying during a wet session. He won the race, though not without controversy. Vettel ignored the team orders and passed Webber for the lead. Webber was furious after the race and said that Vettel "will have protection as usual and th...
+- `driver-sebastian-vettel#62`: ExtractionValidationError: WON does not allow Driver -> Season
+  - Jelölt típusok: Driver, Season, GrandPrix, GrandPrix, GrandPrix, GrandPrix, GrandPrix, GrandPrix, GrandPrix, WON, ROUND_OF, ROUND_OF, ROUND_OF, ROUND_OF, ROUND_OF, ROUND_OF, ROUND_OF
+  - Forrásidézet: Following wins in Bahrain and Canada, his championship lead was cut at the British Grand Prix as he was denied a likely win due to gearbox failure. Vettel bounced back to win his home race in Germany for the first time. After he finished third in Hungary, Vettel won the last nine races of the season, including grand slams in Singapore and Korea
+- `driver-sebastian-vettel#63`: ExtractionValidationError: WON does not allow Driver -> Season
+  - Jelölt típusok: Driver, Season, GrandPrix, RaceResult, RaceResult, Driver, WON, ROUND_OF, ACHIEVED, ACHIEVED, ACHIEVED
+  - Forrásidézet: . Vettel set the then-record for most consecutive race wins with nine and he became only the third man after Alberto Ascari and Jim Clark to take consecutive grand slams. He sealed his fourth world title at the Indian Grand Prix; before the race weekend, Formula One CEO Bernie Ecclestone stated that Vettel was "probably the best \[driver\] we've ever had". Vettel totalled 13 wins by the end of the...
+- `driver-sebastian-vettel#65`: ExtractionValidationError: ROUND_OF does not allow Team -> Season
+  - Jelölt típusok: Driver, Team, Season, DROVE_FOR, ENTERED, ROUND_OF
+  - Forrásidézet: ## 2014: Winless year and departure from Red Bull For the 2014 season and beyond, drivers picked a unique car number to use for the remainder of their Formula One career; Vettel chose the number five. However, as reigning World Drivers' Champion, he carried number one throughout the season. Webber left the sport and was replaced by Daniel Ricciardo, who was promoted from Toro Rosso.
+- `driver-sebastian-vettel#66`: ExtractionValidationError: RACED_IN does not allow Driver -> Season
+  - Jelölt típusok: Driver, Season, GrandPrix, GrandPrix, GrandPrix, GrandPrix, GrandPrix, GrandPrix, GrandPrix, GrandPrix, GrandPrix, RACED_IN, ACHIEVED, ROUND_OF, ACHIEVED, ROUND_OF, ACHIEVED, ROUND_OF, ACHIEVED, ROUND_OF, ACHIEVED, ROUND_OF, ACHIEVED, ROUND_OF, ACHIEVED, ROUND_OF, ACHIEVED, ROUND_OF, ACHIEVED, ROUND_OF
+  - Forrásidézet: Vettel struggled with reliability issues throughout winter testing, which forced him to retire at the opening Australian Grand Prix. Reliability problems also forced Vettel to retire at the Monaco and Austrian Grands Prix. Vettel qualified on the front-row for the races in Malaysia, Great Britain and Hungary, and finished on the podium in Malaysia, Canada, Singapore and Japan
+- `driver-sebastian-vettel#67`: ExtractionValidationError: FIELDED does not allow Car -> Team
+  - Jelölt típusok: Driver, Team, Season, GrandPrix, Car, DROVE_FOR, FIELDED, RACED_IN, ROUND_OF
+  - Forrásidézet: . After the Russian Grand Prix, he had been outqualified by a teammate over a season for the first time in his Formula One career. In addition to suffering reliability problems, throughout 2014 Vettel struggled to get to grips with the Red Bull RB10, and the Pirelli tyres. He signed off the year by becoming the first defending champion to fail to win a race during a season since Jacques Villeneuve...
+- `driver-sebastian-vettel#68`: ExtractionValidationError: TEAMMATE_OF does not allow Team -> Driver
+  - Jelölt típusok: Driver, Team, Team, Driver, Driver, DROVE_FOR, DROVE_FOR, TEAMMATE_OF, TEAMMATE_OF
+  - Forrásidézet: In October, Red Bull had announced that Vettel would be leaving the team at the end of the season to join Scuderia Ferrari, one year before his contract was due to expire. Daniil Kvyat was later selected as his replacement. Vettel replaced Alonso and partnered his friend Kimi Räikkönen. Vettel mentioned he would like to drive for Ferrari at some point in his career and was already rumoured in 2012...
+- `driver-sebastian-vettel#69`: ExtractionValidationError: HELD_AT does not allow Circuit -> Team
+  - Jelölt típusok: Driver, Team, Team, Season, Circuit, Car, DROVE_FOR, ENTERED, RACED_IN, HELD_AT
+  - Forrásidézet: . He was denied an early release from his Red Bull contract to test the 2014 Ferrari car in Abu Dhabi. In spite of this, Vettel was present at the Ferrari test – although not driving the car – but Red Bull did not enforce any sanctions. Vettel instead made his first appearance in November, completing nearly 100 laps in the 2012 car around the test track of Fiorano.
+- `driver-sebastian-vettel#71`: ExtractionValidationError: ACHIEVED does not allow Driver -> GrandPrix
+  - Jelölt típusok: Driver, Team, Season, GrandPrix, GrandPrix, DROVE_FOR, ROUND_OF, ROUND_OF, ACHIEVED, FOR_TEAM, WON, ENTERED
+  - Forrásidézet: ## 2015: Returning to the top step Vettel made his Ferrari debut by finishing third in the Australian Grand Prix. He followed that up with winning the Malaysian Grand Prix, his first race victory for over a year and the first win for Ferrari for almost two years. After the race, an emotional Vettel paid tribute to Schumacher, saying that his hero's achievements with Ferrari made the first win all ...
+- `driver-sebastian-vettel#72`: ExtractionValidationError: ACHIEVED does not allow Driver -> GrandPrix
+  - Jelölt típusok: Driver, GrandPrix, Season, Driver, Team, ACHIEVED, WON, ROUND_OF, DROVE_FOR
+  - Forrásidézet: He won the Hungarian Grand Prix to remain a championship contender after he started from third on the grid. He dedicated his victory to the driver Jules Bianchi, who died the week prior from injuries sustained in 2014. At the halfway point of the season, Vettel was 42 points behind championship leader and Mercedes driver Hamilton. Vettel was in third place in Belgium when his right rear blew at hi...
+- `driver-sebastian-vettel#74`: ExtractionValidationError: HELD_AT does not allow Team -> GrandPrix
+  - Jelölt típusok: Driver, Team, Season, GrandPrix, GrandPrix, DROVE_FOR, HELD_AT, HELD_AT, ACHIEVED, ROUND_OF, ROUND_OF
+  - Forrásidézet: Vettel came home second in the Italian Grand Prix, his first race with Ferrari at the team's home soil. He then took his first pole with the team at the Singapore Grand Prix, Ferrari's first pole for three years. Vettel went on to win the race, and with Hamilton retiring, he closed to within 49 points with seven races remaining. Vettel ended the season in third place, however, with three wins and ...
+- `driver-sebastian-vettel#76`: ExtractionValidationError: ACHIEVED does not allow Driver -> GrandPrix
+  - Jelölt típusok: Driver, Driver, Season, GrandPrix, GrandPrix, Circuit, Driver, ACHIEVED, ACHIEVED, ACHIEVED, ROUND_OF, ROUND_OF, FOR_TEAM
+  - Forrásidézet: After a third-place finish at the 2016 Australian Grand Prix, Vettel's participation in Bahrain ended without starting as his car broke down on the formation lap. At the Chinese Grand Prix, Vettel collided with teammate Räikkönen on the first lap, but both were able to continue. He blamed Red Bull driver Daniil Kvyat for the collision, labelling him a "madman" and described his overtaking manoeuvr...
+- `driver-sebastian-vettel#77`: ExtractionValidationError: ACHIEVED does not allow Driver -> GrandPrix
+  - Jelölt típusok: Driver, GrandPrix, GrandPrix, Driver, Driver, ACHIEVED, ACHIEVED, TEAMMATE_OF, TEAMMATE_OF
+  - Forrásidézet: . At the Russian Grand Prix, Vettel retired on the first lap after two consecutive collisions with Kvyat. At the Mexican Grand Prix, Vettel attempted to overtake Red Bull driver Max Verstappen, but after Verstappen ran off the track and rejoined ahead of him, Vettel verbally attacked him and race director Charlie Whiting, for which he later apologised. Vettel then blocked Red Bull's Ricciardo by m...
+- `driver-sebastian-vettel#80`: ExtractionValidationError: ACHIEVED does not allow Driver -> GrandPrix
+  - Jelölt típusok: Driver, Team, Season, GrandPrix, GrandPrix, GrandPrix, GrandPrix, GrandPrix, GrandPrix, GrandPrix, Driver, DROVE_FOR, ENTERED, ACHIEVED, ACHIEVED, ACHIEVED, ACHIEVED, ACHIEVED, ACHIEVED, TEAMMATE_OF
+  - Forrásidézet: His third season at Ferrari started with victory in Australia, his first in 18 months. The early form continued the following races, winning in Bahrain and Monaco, and finishing second in China, Russia and Spain. In Russia, Vettel took his first pole position in 18 months and with Räikkönen alongside him, Ferrari had their first front row lock out since the 2008 French Grand Prix
+- `driver-sebastian-vettel#81`: ExtractionValidationError: HELD_AT does not allow Team -> GrandPrix
+  - Jelölt típusok: Driver, Team, GrandPrix, Season, HELD_AT, ROUND_OF
+  - Forrásidézet: . Vettel's lead at the top of the standings increased to 25 points after the Monaco Grand Prix, Ferrari's first victory at the circuit since Schumacher won there in 2001.
+- `driver-sebastian-vettel#82`: ExtractionValidationError: AT_RACE does not allow GrandPrix -> Driver
+  - Jelölt típusok: Driver, Driver, GrandPrix, TEAMMATE_OF, AT_RACE, AT_RACE
+  - Forrásidézet: In Azerbaijan, Vettel collided into the rear of race leader Hamilton under the safety car, accusing Hamilton of brake testing him. Moments later, Vettel pulled alongside and hit his Mercedes as they prepared for a restart, for which he received a ten-second stop-go penalty. The FIA investigated the Vettel-Hamilton incident further, but Vettel received no punishment
+- `driver-sebastian-vettel#84`: ExtractionValidationError: ACHIEVED does not allow Driver -> GrandPrix
+  - Jelölt típusok: Driver, Season, GrandPrix, GrandPrix, ACHIEVED, ACHIEVED, ROUND_OF, ROUND_OF
+  - Forrásidézet: Vettel's championship lead was cut to only a single point in Great Britain, as he suffered a puncture on the penultimate lap and dropped to seventh place. Vettel started from pole in Hungary and maintained the lead. He overcame steering issues and held on for victory, which gave him a 14-point lead over Hamilton
+- `driver-sebastian-vettel#86`: ExtractionValidationError: ENTERED does not allow Season -> Team
+  - Jelölt típusok: Driver, Team, Driver, Driver, Season, Season, DROVE_FOR, TEAMMATE_OF, TEAMMATE_OF, ENTERED, ENTERED, WON, WON
+  - Forrásidézet: . He finished in fourth place, but crashed with Williams' Lance Stroll on the cool-down lap; neither would be penalised. More reliability issues befell Ferrari in Japan as Vettel retired due to a spark plug failure. In Mexico, Vettel became the fourth driver in Formula One history to claim 50 pole positions. Verstappen took the lead from Vettel at the start, before Vettel collided with Hamilton, a...
+- `driver-sebastian-vettel#88`: ExtractionValidationError: WON does not allow Driver -> Season
+  - Jelölt típusok: Driver, Season, GrandPrix, WON, ROUND_OF, ACHIEVED, FOR_TEAM
+  - Forrásidézet: The 2018 season was dubbed the "Fight For Five" by the media, as for the first time in Formula One history, two quadruple world champions lined up at the start of a season. For the second consecutive year, Vettel began the season with victory in Australia, after he took the lead while pitting under the virtual safety car. It was his 100th podium, while he also became only the third man in Formula ...
+- `driver-sebastian-vettel#89`: ExtractionValidationError: ACHIEVED does not allow Driver -> GrandPrix
+  - Jelölt típusok: Driver, Driver, Driver, GrandPrix, GrandPrix, Season, ACHIEVED, ACHIEVED, TEAMMATE_OF, TEAMMATE_OF, ROUND_OF, ROUND_OF
+  - Forrásidézet: . In Bahrain, Vettel maintained the lead from pole through the first round of pit stops and held off Mercedes' Valtteri Bottas despite being on old soft tyres to take a fourth victory at the circuit. At the Chinese Grand Prix, he was hit by Verstappen in the latter stages of the race, which caused both to spin. Vettel limped home in eighth place, with his championship lead reduced to nine points
+- `driver-sebastian-vettel#90`: ExtractionValidationError: ACHIEVED does not allow Driver -> GrandPrix
+  - Jelölt típusok: Driver, GrandPrix, ACHIEVED, AT_RACE
+  - Forrásidézet: . For the first time since 2013, Vettel took three consecutive pole positions as he qualified in first place in Azerbaijan. It was the 23rd different Grand Prix at which he had taken pole position, equalling Hamilton's then-record.
+- `driver-sebastian-vettel#91`: ExtractionValidationError: ACHIEVED does not allow Driver -> GrandPrix
+  - Jelölt típusok: Driver, GrandPrix, GrandPrix, GrandPrix, Season, ACHIEVED, ACHIEVED, ACHIEVED, ROUND_OF, ROUND_OF, ROUND_OF
+  - Forrásidézet: At the Canadian Grand Prix, Vettel won for the third time in 2018 and for the 50th time in his career, becoming only the fourth man to reach a half-century of wins. The following race in France, Vettel lost the championship lead following a collision with Bottas. He bounced back in Great Britain, after he passed Bottas in the last laps to take victory
+- `driver-sebastian-vettel#92`: ExtractionValidationError: ACHIEVED does not allow Driver -> GrandPrix
+  - Jelölt típusok: Driver, GrandPrix, Season, ACHIEVED, RACED_IN, ROUND_OF
+  - Forrásidézet: . Vettel led his home race until he slid off the track and hit the wall in the latter stages as rain started to fall, as he had clipped the sausage curb a few laps before, breaking a part of his front wing, causing understeer and loss of downforce; he won in Belgium, however, in which he passed Hamilton for the race victory
+- `driver-sebastian-vettel#93`: ExtractionValidationError: RACED_IN does not allow Driver -> Season
+  - Jelölt típusok: Driver, Driver, Season, Season, TEAMMATE_OF, RACED_IN, RACED_IN, RACED_IN, RACED_IN
+  - Forrásidézet: . Contact on the opening lap with Hamilton in Italy saw Vettel damage his front wing and drop to the back of the field, but he recovered to cross the finishing line in fourth place. It left Vettel 30 points behind the Mercedes driver with seven races left
+- `driver-sebastian-vettel#95`: ExtractionValidationError: WON does not allow Driver -> Driver
+  - Jelölt típusok: Driver, Driver, Season, Season, GrandPrix, Team, WON, AWARDED_IN, ACHIEVED, ROUND_OF, ENTERED, ENTERED
+  - Forrásidézet: . Vettel claimed his first ever podium in Mexico but the World Drivers' Championship went to Hamilton for a second consecutive year. Although Mercedes had been the more consistent and better team, fans and pundits criticised Vettel for making too many mistakes during the season.
+- `driver-sebastian-vettel#97`: ExtractionValidationError: RACED_IN does not allow Driver -> Season
+  - Jelölt típusok: Driver, Driver, Team, Season, DROVE_FOR, DROVE_FOR, ENTERED, RACED_IN, RACED_IN
+  - Forrásidézet: After showing impressive pace throughout pre-season testing in Barcelona, Vettel and his new teammate Charles Leclerc headed to Australia with many pundits believing they had the car to beat for the 2019 season. The opening weekend proved to be difficult, however, as Vettel qualified some seven tenths off pole position in third and finished the race in fourth place. Third-place finishes in China a...
+- `driver-sebastian-vettel#98`: ExtractionValidationError: ACHIEVED does not allow Driver -> GrandPrix
+  - Jelölt típusok: Driver, Team, Season, GrandPrix, DROVE_FOR, ROUND_OF, ACHIEVED, FOR_TEAM
+  - Forrásidézet: . Vettel took pole position in Canada; his first pole in 17 races. Midway through the race, a snap of oversteer caused him to run wide onto the grass. Vettel received a five-second time penalty from the stewards, who believed he had returned to the track "in an unsafe manner and forced \[Hamilton\] off track". Vettel crossed the line in first place but lost his victory as a result of the penalty
+- `driver-sebastian-vettel#99`: ExtractionValidationError: ACHIEVED does not allow Driver -> GrandPrix
+  - Jelölt típusok: Driver, Team, GrandPrix, Season, Car, PowerUnit, ACHIEVED, FOR_TEAM, ROUND_OF
+  - Forrásidézet: . After the race, he swapped the number one and two signs in front of Hamilton's Mercedes and the empty spot that was supposed for his own car, as Vettel parked his car at the start of the pit entry. At the German Grand Prix, Vettel was unable to qualify after a turbo issue, which meant he would start in last place. During a race with mixed weather conditions, Vettel climbed up to second place.
+- `driver-valtteri-bottas#0`: ExtractionValidationError: WON does not allow Driver -> Season
+  - Jelölt típusok: Driver, Team, Team, Season, Season, DROVE_FOR, DROVE_FOR, WON, WON
+  - Forrásidézet: Valtteri Viktor Bottas (Finnish pronunciation: [ˈʋɑltːeri ˈbotːɑs]; born 28 August 1989) is a Finnish racing driver who competes in Formula One for Cadillac. Bottas has twice finished runner-up in the World Drivers' Championship in 2019 and 2020 with Mercedes, and has won 10 Grands Prix across 13 seasons.
+- `driver-valtteri-bottas#1`: ExtractionValidationError: WON does not allow Driver -> Season
+  - Jelölt típusok: Driver, Team, Team, Season, Season, Season, Season, DROVE_FOR, DROVE_FOR, WON, WON, WON, WON, WON
+  - Forrásidézet: Born and raised in Nastola, Bottas began kart racing aged six. After studying automotive engineering and completing mandatory military service, Bottas progressed to junior formulae in 2007. He won his first championship at the Formula Renault NEC in 2008, also winning the Formula Renault Eurocup by three points to Daniel Ricciardo, both with Motopark. He then won the Masters of Formula 3 back-to-b...
+- `driver-valtteri-bottas#10`: ExtractionValidationError: ENTERED is not temporal; from_year, to_year and role must be null
+  - Jelölt típusok: Driver, Team, Season, GrandPrix, DROVE_FOR, ENTERED, ROUND_OF, ACHIEVED
+  - Forrásidézet: Bottas moved up into the Formula Three Euroseries for the 2009 season, competing for reigning champions ART Grand Prix. Despite not winning a race, Bottas set two pole positions on his way to third in the championship, edging out future BMW i Andretti Motorsport driver Alexander Sims at the final race. In June 2009, Bottas won the 2009 Masters of Formula 3, also claiming the pole position and sett...
+- `driver-valtteri-bottas#101`: ExtractionValidationError: ENTERED is not temporal; from_year, to_year and role must be null
+  - Jelölt típusok: Driver, Team, Season, ENTERED
+  - Forrásidézet: ### Alfa Romeo / Sauber (2022–2024) #### 2022
+- `driver-valtteri-bottas#103`: ExtractionValidationError: FIELDED does not allow Car -> Team
+  - Jelölt típusok: Driver, Team, Season, GrandPrix, GrandPrix, GrandPrix, Car, DROVE_FOR, FIELDED, ROUND_OF, ROUND_OF, ROUND_OF, ACHIEVED, ACHIEVED, ACHIEVED
+  - Forrásidézet: . He qualified 12th at the Australian Grand Prix, ending his streak of 103 consecutive Q3 appearances, but scored points by finishing the race eighth. He set a target of a top-five finish at the Emilia Romagna Grand Prix, a result he achieved after qualifying eighth and gaining positions in the sprint and race to finish fifth despite a slow pit stop. At the Miami Grand Prix, Bottas qualified fifth...
+- `driver-valtteri-bottas#108`: ExtractionValidationError: ENTERED is not temporal; from_year, to_year and role must be null
+  - Jelölt típusok: Driver, Team, Season, DROVE_FOR, ENTERED, ROUND_OF
+  - Forrásidézet: Bottas ended the season 10th in the World Drivers' Championship, scoring 49 points to teammate Zhou's six points and helping Alfa Romeo achieve sixth place in the World Constructors' Championship, the Hinwil-based team's best result since also finishing sixth in 2012. He described his season as "probably the most enjoyable so far", citing the security of his long-term contract and the more "relaxe...
+- `driver-valtteri-bottas#11`: ExtractionValidationError: WON is not temporal; from_year, to_year and role must be null
+  - Jelölt típusok: Driver, Title, Season, WON, AWARDED_IN
+  - Forrásidézet: . By winning the event again in 2010, he became the first driver to win the F3 Masters title for the second time.
+- `driver-valtteri-bottas#111`: ExtractionValidationError: ENTERED is not temporal; from_year, to_year and role must be null
+  - Jelölt típusok: Driver, Team, Driver, GrandPrix, GrandPrix, GrandPrix, Season, DROVE_FOR, TEAMMATE_OF, ENTERED, ROUND_OF, ROUND_OF, ROUND_OF, ACHIEVED, ACHIEVED, ACHIEVED
+  - Forrásidézet: Bottas continued driving for Alfa Romeo with Zhou for 2023. He started the season by qualifying 12th and finishing eighth at the Bahrain Grand Prix. Damage from debris produced an 18th-place finish at the Saudi Arabian Grand Prix. He started from the pit lane and benefited from eight drivers' retirements at the Australian Grand Prix, but scored no points in 11th place
+- `driver-valtteri-bottas#113`: ExtractionValidationError: ENTERED is not temporal; from_year, to_year and role must be null
+  - Jelölt típusok: Driver, Team, Season, GrandPrix, Circuit, ENTERED, ROUND_OF, ACHIEVED, DROVE_FOR
+  - Forrásidézet: . His car broke down in qualifying at the British Grand Prix and he was later disqualified from the session for an insufficient fuel sample. He recovered from 20th on the grid to 12th in the race. After the race, Bottas reflected "we're not meeting the targets we've set ourselves" with the team demoted to ninth in the Constructors' Championship.
+- `driver-valtteri-bottas#116`: ExtractionValidationError: ACHIEVED does not allow RaceResult -> Driver
+  - Jelölt típusok: Driver, Team, GrandPrix, Season, Driver, Driver, RaceResult, DROVE_FOR, AT_RACE, ACHIEVED, ROUND_OF, TEAMMATE_OF, TEAMMATE_OF
+  - Forrásidézet: . He started seventh at the Las Vegas Grand Prix, but a lap-one collision with Sergio Pérez and Fernando Alonso left him with damage and he went on to finish 17th.
+- `driver-valtteri-bottas#117`: ExtractionValidationError: ACHIEVED does not allow Driver -> Season
+  - Jelölt típusok: Driver, Team, Season, ACHIEVED, ENTERED
+  - Forrásidézet: Bottas ended the season 15th in the World Drivers' Championship, scoring ten points to Zhou's six, with Alfa Romeo finishing ninth of the ten teams in the World Constructors' Championship. He qualified ahead of Zhou at 15 of the 22 races, but described the season as a "tough ride" and remarked that the team had made "steady progress but that's not enough".
+- `driver-valtteri-bottas#12`: ExtractionValidationError: ENTERED is not temporal; from_year, to_year and role must be null
+  - Jelölt típusok: Driver, Season, Team, Driver, DROVE_FOR, ENTERED, WON, TEAMMATE_OF
+  - Forrásidézet: In 2011, Bottas contested the GP3 Series, remaining with F3 squad ART. After a tough start to the season, he claimed a win in each of the last four race weekends and secured the title by winning the penultimate race ahead of his teammate and future Jaguar Racing driver James Calado.
+- `driver-valtteri-bottas#120`: ExtractionValidationError: ENTERED is not temporal; from_year, to_year and role must be null
+  - Jelölt típusok: Driver, Team, Season, GrandPrix, GrandPrix, ENTERED, ROUND_OF, ROUND_OF
+  - Forrásidézet: . Pit stop issues for Zhou at the following Saudi Arabian Grand Prix led Bottas to comment that the team's poor start to the season "needs to be a wake-up call" However, the issues continued at the Australian Grand Prix when a wheel nut problem cost Bottas 28 seconds in the pits and the team was fined €5,000 on safety grounds
+- `driver-valtteri-bottas#122`: ExtractionValidationError: FIELDED is not temporal; from_year, to_year and role must be null
+  - Jelölt típusok: Driver, Team, Car, Season, GrandPrix, FIELDED, RACED_IN, ROUND_OF
+  - Forrásidézet: Bottas was eliminated in Q1 at the following four races. He commented that the team "still [has] work to do" and that small upgrades for the C44 were scheduled for the Spanish Grand Prix with the hope of returning to Q2. He achieved this by qualifying 12th in Spain, however he was unable to convert the starting position into a points finish
+- `driver-valtteri-bottas#123`: ExtractionValidationError: ROUND_OF does not allow GrandPrix -> Team
+  - Jelölt típusok: Driver, Driver, Team, GrandPrix, GrandPrix, GrandPrix, DROVE_FOR, DROVE_FOR, ROUND_OF, ROUND_OF, ROUND_OF, TEAMMATE_OF
+  - Forrásidézet: . Further Q2 appearances came at the Hungarian and Belgian Grands Prix, however this was followed by the Dutch Grand Prix, where Bottas and teammate Zhou finished 19th and 20th respectively. Bottas described the race as the team's weakest of the year and remarked that the team's issues were "long-term".
+- `driver-valtteri-bottas#125`: ExtractionValidationError: HELD_AT does not allow Team -> GrandPrix
+  - Jelölt típusok: Driver, Driver, Team, GrandPrix, GrandPrix, GrandPrix, DROVE_FOR, TEAMMATE_OF, HELD_AT, HELD_AT, HELD_AT
+  - Forrásidézet: . The second seat was ultimately taken by Formula 2 graduate Gabriel Bortoleto. Sauber's performance improved in the final races of the year; Bottas qualified 11th at the São Paulo Grand Prix, finished 11th at the Qatar Grand Prix with teammate Zhou scoring the team's only points of the season in eighth place, and reached Q3 at the Abu Dhabi Grand Prix, but went on to retire with collision damage....
+- `driver-valtteri-bottas#129`: ExtractionValidationError: ENTERED is not temporal; from_year, to_year and role must be null
+  - Jelölt típusok: Driver, Team, Season, DROVE_FOR, ENTERED
+  - Forrásidézet: In December 2024, it was announced that Bottas would be re-joining Mercedes as a reserve driver for 2025. He described the move as "like coming back home" and stated his goal was to return to a full-time seat in 2026. He revealed that he was offered a seat in the IndyCar Series, but chose to reject the offer due to his concerns about struggling to adapt to a new category after twelve years in Form...
+- `driver-valtteri-bottas#130`: ExtractionValidationError: DROVE_FOR does not allow Team -> Team
+  - Jelölt típusok: Driver, Team, Team, Car, DROVE_FOR, FIELDED
+  - Forrásidézet: . In March, he undertook a private test in the McLaren MCL60 as part of a reserve driver sharing arrangement between Mercedes and McLaren.
+- `driver-valtteri-bottas#132`: ExtractionValidationError: ENTERED is not temporal; from_year, to_year and role must be null
+  - Jelölt típusok: Driver, Team, Driver, Season, GrandPrix, DROVE_FOR, ENTERED, ROUND_OF, ACHIEVED, HELD_AT
+  - Forrásidézet: In August 2025, Cadillac announced that Bottas had signed for their debut 2026 campaign alongside six-time Grand Prix winner Sergio Pérez; he described being part of a new project as "incredibly special" and thanked Mercedes for facilitating the move. In Cadillac's first race, the Australian Grand Prix, Bottas qualified 19th and last of the drivers who set a time. He retired from the race with a m...
+- `driver-valtteri-bottas#133`: ExtractionValidationError: ACHIEVED does not allow Driver -> GrandPrix
+  - Jelölt típusok: Driver, Team, Season, GrandPrix, GrandPrix, GrandPrix, GrandPrix, GrandPrix, GrandPrix, ENTERED, ACHIEVED, ACHIEVED, ACHIEVED, ACHIEVED, ACHIEVED, ACHIEVED
+  - Forrásidézet: . He retired from the race with a mechanical issue. He later continued to finish 13th and 19th in Chinese and Japanese Grand Prix respectively whereas he finished 18th in the Miami Grand Prix. During the European leg of the season, Bottas did not finish at three races. He retired from the Monaco Grand Prix due to brake issues, retired during the seventeenth lap at Barcelona due to an overheating i...
+- `driver-valtteri-bottas#136`: ExtractionValidationError: ACHIEVED does not allow Driver -> GrandPrix
+  - Jelölt típusok: Driver, GrandPrix, GrandPrix, GrandPrix, Car, Car, Driver, Driver, ACHIEVED, WON, ACHIEVED, ACHIEVED, POWERED_BY, ACHIEVED, TEAMMATE_OF, TEAMMATE_OF
+  - Forrásidézet: In January 2019, Bottas took part in the Arctic Rally, recording a stage win and finishing fifth overall. In December 2019, he won the Paul Ricard-based Rallycircuit Côte d'Azur. In 2020, Bottas again participated in the Arctic Lapland Rally, where he drove a Citroën DS3 WRC car and finished ninth. He later partook in an Extreme E test in October 2020, alongside Jean-Éric Vergne and Sébastien Loeb...
+- `driver-valtteri-bottas#137`: ExtractionValidationError: ACHIEVED does not allow Driver -> GrandPrix
+  - Jelölt típusok: Driver, Season, GrandPrix, ACHIEVED, ROUND_OF
+  - Forrásidézet: . In January 2021, Bottas competed in his third Arctic Lapland Rally. He scored a class podium and finished sixth overall.
+- `driver-valtteri-bottas#139`: ExtractionValidationError: RACED_IN does not allow Driver -> Season
+  - Jelölt típusok: Driver, Driver, Season, Season, Team, RACED_IN, RACED_IN, TEAMMATE_OF, ENTERED
+  - Forrásidézet: Bottas was set to make his Race of Champions debut in 2022, partnering two-time Formula One champion Mika Häkkinen. However, he dropped out of the event last minute. Bottas then competed at the 2023 edition of the event alongside Häkkinen. Representing Finland in the Nations Cup tournament, Bottas and Häkkinen were knocked out by the Team eROC pair of Jarno Opmeer and Lucas Blakeley, having drawn ...
+- `driver-valtteri-bottas#144`: ExtractionValidationError: ACHIEVED does not allow Driver -> GrandPrix
+  - Jelölt típusok: Driver, Team, GrandPrix, Circuit, Season, DROVE_FOR, ACHIEVED, ROUND_OF, HELD_AT
+  - Forrásidézet: Bottas is a co-founder and partner of FNLD GRVL, a gravel cycling event in Lahti, Finland, which he organises alongside his girlfriend Tiffany Cromwell and American cyclist Amy Charity of SBT GRVL. In 2024, Bottas raced in the men's 35–39 age category race at the UCI Gravel World Championships in Flemish Brabant, Belgium. He finished in 134th place out of 233 entries
+- `driver-valtteri-bottas#15`: ExtractionValidationError: ACHIEVED does not allow Driver -> GrandPrix
+  - Jelölt típusok: Driver, Team, Car, GrandPrix, Circuit, Season, Season, Season, FIELDED, RACED_IN, RACED_IN, RACED_IN, DROVE_FOR, ACHIEVED, ROUND_OF, HELD_AT
+  - Forrásidézet: . He continued in the role for 2011 and took part in his first full test in November, driving the FW33 in the post-season young drivers' test at Yas Marina Circuit. His role was expanded in 2012 after his GP3 Series victory; he took part in fifteen Friday practice sessions, making his Grand Prix weekend debut at the Malaysian Grand Prix.
+- `driver-valtteri-bottas#152`: ExtractionValidationError: WON does not allow Driver -> Season
+  - Jelölt típusok: Driver, Season, Season, Season, WON, WON, WON, WON
+  - Forrásidézet: ## Awards and honours ### Formula One Formula One World Drivers' Championship runner-up: 2019, 2020 DHL Fastest Lap Award: 2018 Lorenzo Bandini Trophy: 2018
+- `driver-valtteri-bottas#153`: ExtractionValidationError: WON is not temporal; from_year, to_year and role must be null
+  - Jelölt típusok: Driver, Title, Title, Title, WON, WON, WON
+  - Forrásidézet: ### Other awards Sky Sports Award for Most Improved Driver: 2014 Confartigianato Motori Driver of the Year: 2017 AKK-Motorsport Driver of the Year: 2019
+- `driver-valtteri-bottas#17`: ExtractionValidationError: ACHIEVED does not allow Driver -> GrandPrix
+  - Jelölt típusok: Driver, Team, Season, GrandPrix, GrandPrix, DROVE_FOR, ACHIEVED, ACHIEVED, ROUND_OF, ROUND_OF
+  - Forrásidézet: In November 2012, it was announced that Bottas would replace Bruno Senna and partner Pastor Maldonado as a full-time Williams race driver for the 2013 season. He qualified 16th, ahead of Maldonado, and finished 14th at his debut race, the Australian Grand Prix. He improved from 18th on the grid to 11th at the finish at the Malaysian Grand Prix, 1.5 seconds behind a points-paying position
+- `driver-valtteri-bottas#18`: ExtractionValidationError: ACHIEVED does not allow RaceResult -> Driver
+  - Jelölt típusok: Driver, Team, Season, GrandPrix, RaceResult, DROVE_FOR, AT_RACE, ACHIEVED, ENTERED, ROUND_OF
+  - Forrásidézet: . He qualified third at the Canadian Grand Prix behind Sebastian Vettel and Lewis Hamilton, the first time a Williams car had qualified in the top ten that year. He was unable to hold the position in the race and dropped to 14th at the finish line. He later stated that "the car pace was just not there" and that he believed the result would have been the same regardless of the team's strategy
+- `driver-valtteri-bottas#2`: ExtractionValidationError: ENTERED is not temporal; from_year, to_year and role must be null
+  - Jelölt típusok: Driver, Team, Season, GrandPrix, Season, GrandPrix, DROVE_FOR, ENTERED, ROUND_OF, ACHIEVED, ACHIEVED, ROUND_OF, ACHIEVED
+  - Forrásidézet: . After two years as a test driver, Bottas signed for Williams in 2013 to partner Pastor Maldonado, making his Formula One debut at the Australian Grand Prix. In 2014, he finished fourth in the championship, taking his maiden career podium at the Austrian Grand Prix. Across four seasons at Williams, Bottas finished on the podium nine times.
+- `driver-valtteri-bottas#20`: ExtractionValidationError: RACED_IN does not allow Driver -> Season
+  - Jelölt típusok: Driver, Team, Season, GrandPrix, GrandPrix, DROVE_FOR, RACED_IN, ROUND_OF, ROUND_OF
+  - Forrásidézet: Bottas ended his debut season 17th in the World Drivers' Championship, scoring four of Williams's five points. He qualified ahead of Maldonado at twelve of the nineteen races and was praised for his performances at the Canadian and United States Grands Prix.
+- `driver-valtteri-bottas#22`: ExtractionValidationError: ENTERED is not temporal; from_year, to_year and role must be null
+  - Jelölt típusok: Driver, Team, Season, GrandPrix, RaceResult, DROVE_FOR, ENTERED, ROUND_OF, ACHIEVED, AT_RACE, FOR_TEAM
+  - Forrásidézet: Bottas was retained by Williams for the 2014 season, partnering Felipe Massa who was signed from Ferrari. At the season-opening Australian Grand Prix, Bottas started fifteenth due to a gearbox change penalty and clipped the wall causing a tyre puncture in the race, but recovered to sixth at the finish and was later promoted to fifth after Daniel Ricciardo's disqualification
+- `driver-valtteri-bottas#24`: ExtractionValidationError: FIELDED does not allow Car -> Team
+  - Jelölt típusok: Driver, Team, Car, Season, GrandPrix, GrandPrix, DROVE_FOR, RACED_IN, FIELDED, ROUND_OF, ROUND_OF
+  - Forrásidézet: . He praised the team's updates to his FW36 after finishing fifth at the Spanish Grand Prix and felt that the team now had the third-fastest car, however this was followed by 13th place in qualifying and an engine failure at the Monaco Grand Prix.
+- `driver-valtteri-bottas#25`: ExtractionValidationError: ACHIEVED does not allow Driver -> Season
+  - Jelölt típusok: Driver, Team, Season, GrandPrix, GrandPrix, Car, PowerUnit, DROVE_FOR, ACHIEVED, ACHIEVED, ROUND_OF, ACHIEVED, ROUND_OF
+  - Forrásidézet: At the Austrian Grand Prix, Bottas qualified second behind teammate Massa, his then-best grid position in Formula One and Williams's first front-row lockout since the 2003 German Grand Prix. Both drivers were passed by the Mercedes cars during the race, but Bottas held on to third place to achieve his first podium in the sport. Despite starting 14th at the British Grand Prix, Bottas made overtakes...
+- `driver-valtteri-bottas#26`: ExtractionValidationError: ACHIEVED does not allow Driver -> GrandPrix
+  - Jelölt típusok: Driver, Team, Season, GrandPrix, GrandPrix, GrandPrix, GrandPrix, Driver, DROVE_FOR, ACHIEVED, ACHIEVED, ACHIEVED, ACHIEVED, FOR_TEAM, ROUND_OF, ROUND_OF, ROUND_OF, ROUND_OF
+  - Forrásidézet: . He then qualified and finished second at the German Grand Prix despite a late challenge from Lewis Hamilton, his third consecutive podium. He was in second place on the opening lap of the Hungarian Grand Prix, but lost positions due to unfortunate safety car timing and a slow pit stop. This was followed by another podium at the Belgian Grand Prix after passing Kimi Räikkönen for third place in t...
+- `driver-valtteri-bottas#27`: ExtractionValidationError: ACHIEVED does not allow Driver -> GrandPrix
+  - Jelölt típusok: Driver, Team, Season, GrandPrix, GrandPrix, GrandPrix, Car, PowerUnit, Title, RaceResult, DROVE_FOR, ACHIEVED, ACHIEVED, ACHIEVED, ROUND_OF, ROUND_OF, ROUND_OF
+  - Forrásidézet: . Bottas qualified third at the Italian Grand Prix. Wheelspin dropped him to 11th at the start, but he recovered to fourth place at the finish. Tyre wear dropped him outside the points positions at the Singapore Grand Prix, the only time in 2014 he would finish a race outside the top ten. Another podium came at the Russian Grand Prix where Bottas started and finished third, as well as setting the ...
+- `driver-valtteri-bottas#28`: ExtractionValidationError: ACHIEVED does not allow Driver -> GrandPrix
+  - Jelölt típusok: Driver, Team, Season, GrandPrix, GrandPrix, DROVE_FOR, ROUND_OF, ROUND_OF, ACHIEVED, FOR_TEAM, WON
+  - Forrásidézet: . He qualified fourth at the Brazilian Grand Prix but two slow pit stops relegated him to tenth place. He finished third behind Massa at the season-ending Abu Dhabi Grand Prix, Williams's first double-podium since the 2005 Monaco Grand Prix.
+- `driver-valtteri-bottas#29`: ExtractionValidationError: WON does not allow Driver -> Season
+  - Jelölt típusok: Driver, Team, Season, Title, Title, WON, WON
+  - Forrásidézet: The 2014 season ended with Bottas fourth in the World Drivers' Championship, ahead of world champions Sebastian Vettel and Fernando Alonso. He claimed six podium finishes and scored 186 points to Massa's 134, securing Williams third place in the World Constructors' Championship (the team's best result since 2003), and qualified ahead of Massa at thirteen of the nineteen races
+- `driver-valtteri-bottas#3`: ExtractionValidationError: ACHIEVED does not allow Driver -> Season
+  - Jelölt típusok: Driver, Team, Season, Season, Season, GrandPrix, GrandPrix, GrandPrix, GrandPrix, DROVE_FOR, ROUND_OF, ROUND_OF, ROUND_OF, ROUND_OF, ACHIEVED, ACHIEVED
+  - Forrásidézet: Bottas signed for Mercedes in 2017, replacing the retiring Nico Rosberg to partner Lewis Hamilton. He took his maiden pole position in Bahrain and his maiden win in Russia, finishing third in the championship following further victories in Austria and Abu Dhabi. After a winless 2018 campaign, Bottas finished runner-up to Hamilton in both the 2019 and 2020 seasons
+- `driver-valtteri-bottas#33`: ExtractionValidationError: ACHIEVED does not allow Driver -> GrandPrix
+  - Jelölt típusok: Driver, Team, Season, GrandPrix, GrandPrix, GrandPrix, GrandPrix, GrandPrix, Driver, DROVE_FOR, ACHIEVED, ACHIEVED, ACHIEVED, ACHIEVED, ACHIEVED, TEAMMATE_OF
+  - Forrásidézet: . He returned to racing at the Malaysian Grand Prix where he started ninth and recovered from a poor start to finish fifth. He scored points at the following three races including fourth-place finishes at the Bahrain and Spanish Grands Prix, but failed to score at the Monaco Grand Prix after qualifying 17th. His first of two podiums in 2015 came at the Canadian Grand Prix, where he qualified fourt...
+- `driver-valtteri-bottas#37`: ExtractionValidationError: ACHIEVED does not allow RaceResult -> GrandPrix
+  - Jelölt típusok: Driver, Team, Season, GrandPrix, GrandPrix, RaceResult, DROVE_FOR, ACHIEVED, ROUND_OF, ACHIEVED, ROUND_OF
+  - Forrásidézet: . At the Mexican Grand Prix, a DRS fault caused Bottas to crash in practice. He qualified sixth and made up places to finish third, his second and final podium of the season. A collision with Jenson Button in the pit lane at the Abu Dhabi Grand Prix dropped Bottas outside the points, having started sixth.
+- `driver-valtteri-bottas#38`: ExtractionValidationError: WON does not allow Driver -> Season
+  - Jelölt típusok: Driver, Team, Season, WON, ENTERED
+  - Forrásidézet: Bottas ended his third year in Formula One fifth in the World Drivers' Championship, scoring 136 points to Massa's 121 and helping Williams retain third place in the World Constructors' Championship. An Autosport poll of the Formula One team principals ranked him the seventh-best driver of the year.
+- `driver-valtteri-bottas#4`: ExtractionValidationError: FIELDED does not allow Team -> GrandPrix
+  - Jelölt típusok: Driver, Team, GrandPrix, Team, Team, Team, Season, Season, Season, Season, Season, FIELDED, DROVE_FOR, DROVE_FOR, DROVE_FOR, DROVE_FOR, ENTERED, ENTERED, ENTERED, ROUND_OF
+  - Forrásidézet: . He took his final win for Mercedes at the Turkish Grand Prix in 2021, leaving at the end of the season after contributing to five consecutive World Constructors' Championships. He joined Alfa Romeo in 2022, retaining his seat for his 2023 campaign. After a non-scoring 2024 season at the re-branded Sauber, Bottas returned to Mercedes as a reserve driver. He became a full-time driver again for the...
+- `driver-valtteri-bottas#40`: ExtractionValidationError: ACHIEVED does not allow Driver -> GrandPrix
+  - Jelölt típusok: Driver, Driver, Team, Season, GrandPrix, GrandPrix, Car, TEAMMATE_OF, DROVE_FOR, ROUND_OF, ROUND_OF, ACHIEVED, ACHIEVED, FIELDED
+  - Forrásidézet: Bottas and Massa remained teammates at Williams for the 2016 season. A gearbox penalty required him to start the season-opening Australian Grand Prix from 16th place, but he recovered to score points in the race. He was judged to have caused a lap-one collision with Lewis Hamilton at the Bahrain Grand Prix and received a drive-through penalty; he started sixth and finished ninth
+- `driver-valtteri-bottas#41`: ExtractionValidationError: RACED_IN does not allow Driver -> Season
+  - Jelölt típusok: Driver, Driver, Season, GrandPrix, GrandPrix, RACED_IN, ACHIEVED, ACHIEVED, TEAMMATE_OF
+  - Forrásidézet: . He scored more points at the following three races and achieved his best qualifying performance of the season at the Russian Grand Prix, starting third and finishing fourth. This made Bottas and Massa the only two drivers to score points in each of the first five races of the season. This streak ended at the Monaco Grand Prix, where Bottas started and finished 11th but was demoted to 12th for ca...
+- `driver-valtteri-bottas#42`: ExtractionValidationError: ENTERED is not temporal; from_year, to_year and role must be null
+  - Jelölt típusok: Driver, Team, Season, GrandPrix, ENTERED, ROUND_OF, ACHIEVED, DROVE_FOR
+  - Forrásidézet: . He claimed the team's only podium finish of 2016 at the Canadian Grand Prix; he qualified seventh but executed a one-stop strategy and climbed to third at the finish.
+- `driver-valtteri-bottas#47`: ExtractionValidationError: ENTERED is not temporal; from_year, to_year and role must be null
+  - Jelölt típusok: Driver, Team, Season, DROVE_FOR, ENTERED
+  - Forrásidézet: #### 2017: Maiden race win Bottas was set to remain at Williams for a fifth year, with the team announcing a 2017 lineup of Bottas and Lance Stroll in November 2016. Following reigning champion Nico Rosberg's shock retirement from the sport, Mercedes announced in January 2017 that they had signed Bottas to partner Lewis Hamilton at the team. Williams deputy team principal Claire Williams commented...
+- `driver-valtteri-bottas#48`: ExtractionValidationError: ACHIEVED does not allow Driver -> GrandPrix
+  - Jelölt típusok: Driver, Team, Season, GrandPrix, GrandPrix, GrandPrix, DROVE_FOR, ACHIEVED, ACHIEVED, ACHIEVED, ROUND_OF, ROUND_OF, ROUND_OF
+  - Forrásidézet: Bottas qualified and finished third in his first race as a Mercedes driver, the Australian Grand Prix, behind Sebastian Vettel and Lewis Hamilton. At the Chinese Grand Prix, he spun behind the safety car and fell from fifth to 12th but recovered to sixth place by the finish. He qualified fastest ahead of Hamilton at the Bahrain Grand Prix, marking his first career pole position. Tyre pressure issu...
+- `driver-valtteri-bottas#49`: ExtractionValidationError: ACHIEVED does not allow Driver -> GrandPrix
+  - Jelölt típusok: Driver, Team, Season, GrandPrix, GrandPrix, DROVE_FOR, ROUND_OF, ROUND_OF, ACHIEVED, ACHIEVED
+  - Forrásidézet: . He qualified third behind the two Ferraris of Vettel and Räikkönen at the Russian Grand Prix, but overtook both on the opening lap and went on to claim his first Grand Prix victory, making him the fifth Finnish driver to do so. He was able to continue after a first-lap collision with Räikkönen and Max Verstappen at the Spanish Grand Prix, but later retired from third place with an engine failure
+- `driver-valtteri-bottas#50`: ExtractionValidationError: ACHIEVED does not allow Driver -> GrandPrix
+  - Jelölt típusok: Driver, Team, Season, GrandPrix, GrandPrix, Driver, Driver, Driver, Driver, DROVE_FOR, ACHIEVED, ACHIEVED, ACHIEVED, ACHIEVED, ACHIEVED, FOR_TEAM
+  - Forrásidézet: . He benefited from damage to Vettel's car to finish second behind Hamilton at the Canadian Grand Prix and followed this with a recovery drive at the Azerbaijan Grand Prix; a first-lap collision with Räikkönen had put him a lap behind but the red-flag period and multiple safety cars allowed him to catch up and pass Lance Stroll for second place metres before the finish line.
+- `driver-valtteri-bottas#51`: ExtractionValidationError: ACHIEVED does not allow Driver -> GrandPrix
+  - Jelölt típusok: Driver, Team, Season, GrandPrix, GrandPrix, Team, Driver, Driver, ACHIEVED, DROVE_FOR, ROUND_OF, ROUND_OF, ACHIEVED, FIELDED, TEAMMATE_OF, TEAMMATE_OF
+  - Forrásidézet: Bottas took pole and victory at the Austrian Grand Prix after holding off Vettel towards the end of the race, placing him only 15 points behind Hamilton in the championship. Having started the British Grand Prix ninth following a grid penalty for a new gearbox, he made his way into third place and was promoted to second behind Hamilton after a late-race tyre failure for Räikkönen's Ferrari
+- `driver-valtteri-bottas#53`: ExtractionValidationError: WON is not temporal; from_year, to_year and role must be null
+  - Jelölt típusok: Driver, Team, GrandPrix, GrandPrix, Season, Title, WON, ENTERED, ROUND_OF, ACHIEVED, DROVE_FOR
+  - Forrásidézet: Bottas qualified sixth at the Singapore Grand Prix and gained from strategy and the four-car collision on the first lap to finish third. He finished off the podium for the next three races while Hamilton claimed two wins and a second place, but his performances helped Mercedes clinch their fourth consecutive Constructors' Championship at the United States Grand Prix
+- `driver-valtteri-bottas#55`: ExtractionValidationError: ROUND_OF does not allow Season -> Season
+  - Jelölt típusok: Driver, Team, Season, DROVE_FOR, ENTERED, ROUND_OF
+  - Forrásidézet: Bottas finished third overall in the World Drivers' Championship with 305 points, compared to 363 for teammate and champion Hamilton, and qualified ahead of Hamilton at six of the nineteen races. He was praised for his performances early in the season, but Martin Brundle commented that he "went on the missing list after August" and Bottas described his own season as "disappointing".
+- `driver-valtteri-bottas#58`: ExtractionValidationError: ACHIEVED does not allow Driver -> GrandPrix
+  - Jelölt típusok: Driver, Team, GrandPrix, GrandPrix, GrandPrix, GrandPrix, DROVE_FOR, ACHIEVED, ACHIEVED, ACHIEVED, ACHIEVED
+  - Forrásidézet: . He again qualified third ahead of Hamilton at the Chinese Grand Prix and overtook both Ferraris to lead the race, but was ultimately passed by Daniel Ricciardo, who used a safety car period to pit for fresh tyres. He was leading the Azerbaijan Grand Prix with two laps remaining but ran over a piece of debris, causing a puncture and forcing him into retirement. Further podiums came with second-pl...
+- `driver-valtteri-bottas#61`: ExtractionValidationError: HELD_AT does not allow GrandPrix -> Team
+  - Jelölt típusok: Driver, Team, GrandPrix, PowerUnit, DROVE_FOR, HELD_AT, ACHIEVED, ROUND_OF
+  - Forrásidézet: . Bottas commented that the description was hurtful and that he would discuss the situation with team management. He started 17th at the Belgian Grand Prix due to a power unit components penalty but recovered to fourth place in the race.
+- `driver-valtteri-bottas#63`: ExtractionValidationError: ENTERED is not temporal; from_year, to_year and role must be null
+  - Jelölt típusok: Driver, Team, Season, GrandPrix, ENTERED, ROUND_OF, ACHIEVED, DROVE_FOR
+  - Forrásidézet: . The Japanese Grand Prix was his eighth and final podium finish of the year, and he finished fifth at each of the remaining four races.
+- `driver-valtteri-bottas#64`: ExtractionValidationError: RACED_IN does not allow Driver -> Season
+  - Jelölt típusok: Driver, Team, Season, Driver, DROVE_FOR, RACED_IN, WON, AWARDED_IN
+  - Forrásidézet: Bottas became the first Mercedes driver to finish a season without a win since Michael Schumacher in 2012, and set a record for the most second-place finishes (seven) in a season without a win. He finished fifth overall in the World Drivers' Championship with 247 points, whilst teammate Hamilton won his fifth world title with 408 points
+- `driver-valtteri-bottas#67`: ExtractionValidationError: FIELDED is not temporal; from_year, to_year and role must be null
+  - Jelölt típusok: Driver, Team, Season, GrandPrix, Car, DROVE_FOR, FIELDED, RACED_IN, ROUND_OF, ACHIEVED, FOR_TEAM
+  - Forrásidézet: In July 2018, Bottas signed a contract extension with Mercedes for the 2019 season with an option for 2020, continuing alongside Hamilton. He qualified second behind Hamilton at the Australian Grand Prix but overtook Hamilton at the first corner. Bottas went on to win the race by over 20 seconds ahead of Hamilton, his fourth Grand Prix victory
+- `driver-valtteri-bottas#68`: ExtractionValidationError: ACHIEVED does not allow Driver -> Season
+  - Jelölt típusok: Driver, Team, GrandPrix, GrandPrix, Season, Season, DROVE_FOR, ROUND_OF, ROUND_OF, ACHIEVED
+  - Forrásidézet: . After crossing the finish line, he exclaimed over the radio "to whom it may concern, fuck you", which he later explained was aimed at both himself and the critics of his 2018 performance. He finished second behind Hamilton at the Bahrain Grand Prix after race leader Charles Leclerc slowed with engine issues and dropped behind the Mercedes drivers. He took pole position at the Chinese Grand Prix ...
+- `driver-valtteri-bottas#7`: ExtractionValidationError: RACED_IN does not allow PowerUnit -> Season
+  - Jelölt típusok: Driver, Team, Car, PowerUnit, Season, FIELDED, POWERED_BY, RACED_IN, RACED_IN, DROVE_FOR, ACHIEVED
+  - Forrásidézet: ## Junior racing career ### Karting Bottas's interest in motorsport was sparked at the age of six by a chance visit to a karting event that he had seen advertised at his local supermarket while shopping with his grandfather. His racing hero while growing up was compatriot Mika Häkkinen. Bottas finished eighth in the 2005 Karting World Cup for the P.D.B. Racing Team, using a Gillard chassis and Par...
+- `driver-valtteri-bottas#71`: ExtractionValidationError: ACHIEVED does not allow Driver -> GrandPrix
+  - Jelölt típusok: Driver, Team, Season, GrandPrix, GrandPrix, GrandPrix, GrandPrix, Driver, DROVE_FOR, ACHIEVED, ACHIEVED, ACHIEVED, ACHIEVED, TEAMMATE_OF
+  - Forrásidézet: . He qualified sixth and finished off the podium at the Canadian Grand Prix and placed second behind Hamilton at the French Grand Prix. He finished third at the Austrian Grand Prix, ahead of Hamilton for the first time since Azerbaijan, but failed to convert pole position into victory at the British Grand Prix after Hamilton took advantage of a safety car to jump ahead of Bottas in the pit stop ph...
+- `driver-valtteri-bottas#73`: ExtractionValidationError: ENTERED is not temporal; from_year, to_year and role must be null
+  - Jelölt típusok: Driver, Team, Season, GrandPrix, GrandPrix, GrandPrix, GrandPrix, Title, DROVE_FOR, ENTERED, ROUND_OF, ROUND_OF, ROUND_OF, ROUND_OF, WON
+  - Forrásidézet: Further podiums came at the Belgian, Italian (where he finished less than a second behind winner Leclerc) and Russian Grands Prix before he claimed his sixth Formula One victory at the Japanese Grand Prix, having started the race behind both Ferraris. This result helped Mercedes clinch their sixth consecutive World Constructors' Championship. He crashed heavily in qualifying at the Mexican Grand P...
+- `driver-valtteri-bottas#74`: ExtractionValidationError: ACHIEVED does not allow Driver -> GrandPrix
+  - Jelölt típusok: Driver, Team, Season, GrandPrix, GrandPrix, GrandPrix, PowerUnit, DROVE_FOR, ROUND_OF, ROUND_OF, ROUND_OF, ACHIEVED, ACHIEVED, ACHIEVED
+  - Forrásidézet: . He claimed victory from pole at the United States Grand Prix, however this was insufficient to prevent race runner-up Hamilton from mathematically securing the championship with two races remaining. Bottas retired from fifth place with an engine failure at the Brazilian Grand Prix and ended the season with a fourth-place finish at the Abu Dhabi Grand Prix after starting from the back of the grid...
+- `driver-valtteri-bottas#78`: ExtractionValidationError: ACHIEVED does not allow Driver -> GrandPrix
+  - Jelölt típusok: Driver, Team, GrandPrix, GrandPrix, Season, Season, DROVE_FOR, ACHIEVED, ROUND_OF, ROUND_OF, ACHIEVED, ROUND_OF, ROUND_OF
+  - Forrásidézet: . Before the Styrian Grand Prix, it was revealed that Bottas was under FIA investigation for potentially breaching COVID-19 safety protocols after he returned home to Monaco, but was eventually cleared of wrongdoing. Bottas qualified fourth in wet conditions for the Styrian Grand Prix and went on to finish second in the race behind Hamilton. Bottas qualified second behind Hamilton at the Hungarian...
+- `driver-valtteri-bottas#8`: ExtractionValidationError: FIELDED does not allow Driver -> Car
+  - Jelölt típusok: Driver, Season, Car, Car, Car, FIELDED, FIELDED, FIELDED, ACHIEVED
+  - Forrásidézet: ### Lower formulae Bottas won both the 2008 Formula Renault Eurocup and the 2008 Formula Renault Northern European Cup. In doing so, he repeated the feat of Filipe Albuquerque, who won both the NEC and Eurocup in the same season, in 2006. Bottas would have also won the 2007 Formula Renault UK Winter Series, had he been holding an MSA-registered licence for the championship. This did not stop him f...
+- `driver-valtteri-bottas#82`: ExtractionValidationError: ACHIEVED does not allow Driver -> GrandPrix
+  - Jelölt típusok: Driver, Team, GrandPrix, GrandPrix, Season, Title, DROVE_FOR, ACHIEVED, ACHIEVED, ROUND_OF, AWARDED_IN, WON
+  - Forrásidézet: . At the Tuscan Grand Prix, Bottas took the lead from pole-sitter Hamilton on the first lap. The race was red-flagged on lap seven after a multi-car accident, and Bottas lost the lead to Hamilton shortly after the restart and finished second. He qualified third behind Hamilton and Verstappen for the Russian Grand Prix, but benefited from penalties issued to Hamilton to claim the ninth Grand Prix v...
+- `driver-valtteri-bottas#83`: ExtractionValidationError: ACHIEVED does not allow Driver -> GrandPrix
+  - Jelölt típusok: Driver, Team, GrandPrix, GrandPrix, GrandPrix, Season, DROVE_FOR, ACHIEVED, AT_RACE, ACHIEVED, AT_RACE, ACHIEVED, AT_RACE, ROUND_OF
+  - Forrásidézet: . Bottas took pole position for the Eifel Grand Prix but was overtaken by Hamilton after a mistake on lap 13. He later retired from third place with power loss, extending Hamilton's championship lead to 69 points. Bottas finished second at both the Portuguese and Emilia Romagna Grands Prix. He claimed pole position at the latter, but took damage from debris in the early laps and fell to third befo...
+- `driver-valtteri-bottas#84`: ExtractionValidationError: ENTERED is not temporal; from_year, to_year and role must be null
+  - Jelölt típusok: Driver, Team, GrandPrix, Driver, Title, Season, ENTERED, WON, WON, ACHIEVED, ROUND_OF, DROVE_FOR
+  - Forrásidézet: Both Mercedes cars struggled for pace during the wet Turkish Grand Prix qualifying session, with Bottas qualifying ninth. The rain continued during the race and Bottas spun six times after damaging his front wing due to contact with the Renault of Esteban Ocon, finishing a lap behind race-winner Hamilton in 14th place. This gave Hamilton an unassailable 110-point lead over Bottas in the Drivers' C...
+- `driver-valtteri-bottas#86`: ExtractionValidationError: ACHIEVED does not allow Driver -> GrandPrix
+  - Jelölt típusok: Driver, Team, GrandPrix, Season, Season, DROVE_FOR, ACHIEVED, ROUND_OF
+  - Forrásidézet: . He lost positions in the closing laps to cars on fresher tyres and finished eighth. At the season-ending Abu Dhabi Grand Prix, Bottas qualified and finished second ahead of Hamilton.
+- `driver-valtteri-bottas#87`: ExtractionValidationError: WON does not allow Driver -> Season
+  - Jelölt típusok: Driver, Driver, Season, WON, WON
+  - Forrásidézet: Bottas ended the year second in the World Drivers' Championship with 223 points to Hamilton's 347, recording two wins, five pole positions, eleven podiums, and two fastest laps. He reflected that again finishing second to Hamilton "can't be that satisfying", but Hamilton commented that the points gap between the two was exaggerated by Bottas's misfortune.
+- `driver-valtteri-bottas#89`: ExtractionValidationError: RACED_IN does not allow Driver -> Season
+  - Jelölt típusok: Driver, Team, Season, GrandPrix, GrandPrix, Driver, DROVE_FOR, RACED_IN, ROUND_OF, ROUND_OF, ACHIEVED, ACHIEVED, TEAMMATE_OF
+  - Forrásidézet: Bottas extended his contract with Mercedes into 2021. He started and finished third at the season-opening Bahrain Grand Prix. He qualified eighth and was unable to gain ground at the Emilia Romagna Grand Prix before being involved in a high-speed collision with George Russell. Both drivers blamed each other for the incident, but Russell later apologised
+- `driver-valtteri-bottas#91`: ExtractionValidationError: ACHIEVED does not allow Driver -> GrandPrix
+  - Jelölt típusok: Driver, Team, Season, GrandPrix, Car, PowerUnit, DROVE_FOR, ROUND_OF, RACED_IN, POWERED_BY, ACHIEVED, FOR_TEAM
+  - Forrásidézet: . He qualified 10th at the Azerbaijan Grand Prix; despite being disadvantaged by red flags, he had "no explanation" for his lack of pace and suspected that something was wrong with his car. He went on to finish 12th, leaving him sixth in the Drivers' Championship.
+- `driver-valtteri-bottas#92`: ExtractionValidationError: ACHIEVED does not allow Driver -> GrandPrix
+  - Jelölt típusok: Driver, Team, GrandPrix, GrandPrix, GrandPrix, GrandPrix, DROVE_FOR, ACHIEVED, ACHIEVED, ACHIEVED, ACHIEVED
+  - Forrásidézet: Bottas qualified third at the French Grand Prix, but lost the podium position to Sergio Pérez in the latter stages of the race and criticised the team's one-stop strategy after being left out on old tyres. He returned to the podium at the Styrian Grand Prix, finishing third despite a grid penalty for spinning in the pit lane during practice. He started fifth at the Austrian Grand Prix but recovere...
+- `driver-valtteri-bottas#93`: ExtractionValidationError: ACHIEVED does not allow Driver -> GrandPrix
+  - Jelölt típusok: Driver, GrandPrix, GrandPrix, GrandPrix, ACHIEVED, ACHIEVED, ACHIEVED
+  - Forrásidézet: . He qualified second for the Hungarian Grand Prix but triggered a first-corner crash that eliminated multiple drivers from the race, for which he received a grid penalty. He regained third place in the Drivers' Championship with a podium at the Dutch Grand Prix, and followed this by setting the fastest qualifying time and winning the sprint qualifying session at the Italian Grand Prix
+- `driver-valtteri-bottas#94`: ExtractionValidationError: ACHIEVED does not allow RaceResult -> Season
+  - Jelölt típusok: Driver, Team, Season, RaceResult, DROVE_FOR, ACHIEVED
+  - Forrásidézet: . Power unit component changes meant he started the race from the back of the grid, but he recovered to fourth place and was promoted to the podium after Pérez received a penalty.
+- `driver-valtteri-bottas#95`: ExtractionValidationError: ACHIEVED does not allow Driver -> GrandPrix
+  - Jelölt típusok: Driver, Team, Season, GrandPrix, GrandPrix, DROVE_FOR, ROUND_OF, ROUND_OF, ACHIEVED, ACHIEVED, FOR_TEAM, AT_RACE, ACHIEVED
+  - Forrásidézet: Bottas qualified seventh at the Russian Grand Prix but was again demoted to the back after another engine change. A well-timed pitstop for intermediate tyres on the rapidly dampening track promoted him to fifth place at the end. He qualified second at the Turkish Grand Prix but started on pole after Hamilton incurred a grid penalty. He went on to claim his first and only victory of the year by pas...
+- `driver-valtteri-bottas#97`: ExtractionValidationError: ACHIEVED does not allow Driver -> Driver
+  - Jelölt típusok: Driver, Team, Season, GrandPrix, GrandPrix, GrandPrix, Driver, DROVE_FOR, ROUND_OF, ROUND_OF, ROUND_OF, ACHIEVED, FOR_TEAM
+  - Forrásidézet: . He qualified third at the São Paulo Grand Prix and benefited from Hamilton's disqualification and an overtake on Verstappen to win the sprint qualifying session, but ultimately dropped behind both drivers in the race. He received a grid penalty at the Qatar Grand Prix for a yellow-flag infringement and ultimately retired from the race with puncture damage, but followed this with a podium finish ...
+- `driver-valtteri-bottas#98`: ExtractionValidationError: FOR_TEAM does not allow RaceResult -> Driver
+  - Jelölt típusok: Driver, Team, Season, GrandPrix, RaceResult, DROVE_FOR, AT_RACE, FOR_TEAM, RACED_IN
+  - Forrásidézet: . He ended the season by qualifying and finishing sixth at the Abu Dhabi Grand Prix.
+- `driver-valtteri-bottas#99`: ExtractionValidationError: WON does not allow Team -> Season
+  - Jelölt típusok: Driver, Team, Season, DROVE_FOR, ENTERED, WON, WON
+  - Forrásidézet: Bottas ended the season third in the World Drivers' Championship with 226 points compared to 387.5 for Hamilton, helping Mercedes to achieve an eighth consecutive World Constructors' Championship. It was announced in September that 2021 would be Bottas's final year with Mercedes, the team replacing him with George Russell
+- `reference-list-of-formula-one-world-drivers-champions#0`: ExtractionValidationError: WON does not allow Driver -> Team
+  - Jelölt típusok: Driver, Driver, Driver, Driver, Team, Team, Team, Season, Season, Season, Season, Season, WON, WON, WON, WON, WON, ENTERED, ENTERED, ENTERED, ENTERED, ENTERED
+  - Forrásidézet: Sheet: Champions by season Season | World Champion | Constructor | Points 2008 | Lewis Hamilton | McLaren | 98 2012 | Sebastian Vettel | Red Bull Racing | 281 2016 | Nico Rosberg | Mercedes | 385 2020 | Lewis Hamilton | Mercedes | 347 2021 | Max Verstappen | Red Bull Racing | 395.5
+- `season-2012-formula-one-world-championship#10`: ExtractionValidationError: DROVE_FOR does not allow Team -> Team
+  - Jelölt típusok: Team, Team, DROVE_FOR
+  - Forrásidézet: ### Team changes At the November 2011 meeting of the Formula One Commission in Geneva, several teams were given permission to change their constructor names – the name recognised by the FIA as the entity that effectively owns the team, and to which all results for that team are credited – with final approval from the World Motor Sport Council granted in December of that year: Lotus became known as...
+- `season-2012-formula-one-world-championship#102`: ExtractionValidationError: RACED_IN does not allow Circuit -> Season
+  - Jelölt típusok: Circuit, Team, Season, ENTERED, RACED_IN
+  - Forrásidézet: Starting on 1 May, the teams conducted a three-day test at the Mugello Circuit in Italy ahead of the Spanish Grand Prix. The test gave teams the opportunity to assess major aerodynamic upgrades before racing them. HRT elected not to take part in the test, instead choosing to concentrate on establishing themselves at their new headquarters in Madrid
+- `season-2012-formula-one-world-championship#104`: ExtractionValidationError: DROVE_FOR does not allow Team -> Driver
+  - Jelölt típusok: Driver, Team, Team, Driver, Driver, DROVE_FOR, DROVE_FOR, DROVE_FOR, DROVE_FOR
+  - Forrásidézet: . Petrov's comments came shortly after Fernando Alonso crashed on the final morning of the test. Red Bull Racing and Lotus team principals Christian Horner and Éric Boullier were also critical of the test as they felt that the costs of conducting in-season testing outweighed any benefits, with Horner stating his opposition to continuing mid-season testing in the future.
+- `season-2012-formula-one-world-championship#107`: ExtractionValidationError: ROUND_OF does not allow Circuit -> Season
+  - Jelölt típusok: Driver, Driver, Driver, Team, Season, Circuit, DROVE_FOR, DROVE_FOR, DROVE_FOR, ENTERED, ROUND_OF
+  - Forrásidézet: . Lewis Hamilton took his third pole of the season, edging out Williams driver Pastor Maldonado by half a second, while Maldonado's team-mate Bruno Senna was eliminated early when he spun. Hamilton was later excluded from the qualifying results after his car did not have enough fuel to return to the pits for scrutineering, promoting Maldonado to pole position and moving Hamilton to the back of the...
+- `season-2012-formula-one-world-championship#108`: ExtractionValidationError: RACED_IN does not allow Driver -> Season
+  - Jelölt típusok: Driver, Driver, Driver, Season, Circuit, RACED_IN, RACED_IN, RACED_IN, ROUND_OF, HELD_AT, HELD_AT, HELD_AT
+  - Forrásidézet: . Fernando Alonso took the lead of the race at the first corner, but Maldonado reclaimed it during the second round of pit stops, when his team forced Ferrari to pit early while Alonso was held up by the Marussia of Charles Pic. Maldonado maintained a lead of seven seconds over Alonso, but a mistake by his crew during the third pit stop cost him time and left him vulnerable to the Ferrari driver i...
+- `season-2012-formula-one-world-championship#109`: ExtractionValidationError: ACHIEVED does not allow Driver -> GrandPrix
+  - Jelölt típusok: Driver, Driver, Driver, Season, GrandPrix, Circuit, ACHIEVED, ACHIEVED, ACHIEVED, ROUND_OF, HELD_AT
+  - Forrásidézet: . Meanwhile, third-placed Kimi Räikkönen moved to an ambitious strategy that would see him attempt to force Maldonado and Alonso to race beyond the life expectancy of their tyres, allowing him to swoop in at the last minute to steal first place. Räikkönen's strategy failed as Maldonado withstood pressure from Alonso for fifteen laps, winning the race by three seconds and becoming the first Venezue...
+- `season-2012-formula-one-world-championship#11`: ExtractionValidationError: DROVE_FOR does not allow Team -> Team
+  - Jelölt típusok: Team, Team, Team, Team, DROVE_FOR, DROVE_FOR
+  - Forrásidézet: Renault changed its constructor name to Lotus after Lotus Cars expanded its title sponsorship program to include teams in Formula One and support series GP2 and GP3. Virgin became Marussia, following increased ownership of the team by Russian sports car manufacturer Marussia Motors.
+- `season-2012-formula-one-world-championship#110`: ExtractionValidationError: ENTERED does not allow Team -> GrandPrix
+  - Jelölt típusok: Team, Driver, Driver, Driver, Driver, Season, GrandPrix, Circuit, ENTERED, ROUND_OF, HELD_AT, ACHIEVED, ACHIEVED, ACHIEVED, DROVE_FOR, WON
+  - Forrásidézet: . It was Williams's first win in one hundred and thirty Grand Prix starts; their previous race win was Juan Pablo Montoya's victory at the 2004 Brazilian Grand Prix. Lewis Hamilton recovered from twenty-fourth on the grid to finish eighth, while Sebastian Vettel overcame a drive-through penalty and an unscheduled stop for a technical fault that forced his team to replace his front wing to make a l...
+- `season-2012-formula-one-world-championship#112`: ExtractionValidationError: ROUND_OF does not allow Circuit -> Season
+  - Jelölt típusok: Driver, Circuit, Season, ROUND_OF, RACED_IN
+  - Forrásidézet: For the second consecutive race, the fastest driver in qualifying did not start the race from pole. Michael Schumacher set the fastest time, but a five-place grid penalty left him sixth overall
+- `season-2012-formula-one-world-championship#114`: ExtractionValidationError: ROUND_OF does not allow Circuit -> Season
+  - Jelölt típusok: Driver, Driver, Driver, Circuit, Season, ROUND_OF
+  - Forrásidézet: . Horner ultimately chose the latter option, and Mark Webber started from pole, establishing an early lead over Nico Rosberg as a first-corner accident eliminated four cars. The race was run under the constant threat of rain, with drivers trying to extend the life of their tyres to avoid being forced to make an additional stop and falling down the order. The rain never materialised, though Jean-Ér...
+- `season-2012-formula-one-world-championship#115`: ExtractionValidationError: ACHIEVED does not allow Driver -> GrandPrix
+  - Jelölt típusok: Driver, Driver, Driver, Driver, Circuit, Season, GrandPrix, ACHIEVED, ROUND_OF, HELD_AT, WON, ACHIEVED, ACHIEVED
+  - Forrásidézet: . The variety of strategies used by the front-runners resulted in the last ten laps being contested with the top six cars running nose-to-tail. Webber visibly faded in the final laps, but held on when the following cars were momentarily pinned behind the slow-moving Heikki Kovalainen. Webber won the race – his second on the streets of Monaco – with Rosberg second and Fernando Alonso third, the res...
+- `season-2012-formula-one-world-championship#116`: ExtractionValidationError: ACHIEVED does not allow Driver -> GrandPrix
+  - Jelölt típusok: Team, Team, Team, Driver, Driver, Season, GrandPrix, Circuit, ENTERED, ENTERED, ENTERED, ACHIEVED, RACED_IN, HELD_AT, ROUND_OF
+  - Forrásidézet: . Red Bull Racing maintained their lead in the Constructors' Championship as rival teams chose not to follow through on the threat of their pre-race protest, while Kovalainen finished thirteenth to see Caterham overtake Marussia for tenth place. Elsewhere, Spanish Grand Prix winner Pastor Maldonado was given a ten-place grid penalty for an incident that saw him clip Sergio Pérez
+- `season-2012-formula-one-world-championship#117`: ExtractionValidationError: ROUND_OF does not allow Circuit -> Season
+  - Jelölt típusok: Driver, Circuit, Season, ROUND_OF, AT_RACE
+  - Forrásidézet: . Combined with a five-place penalty for changing his gearbox, Maldonado started from the back row of the grid where he was eliminated in the first-corner accident.
+- `season-2012-formula-one-world-championship#122`: ExtractionValidationError: ACHIEVED does not allow Driver -> GrandPrix
+  - Jelölt típusok: Driver, Driver, Driver, Driver, Driver, Team, Team, Season, Circuit, GrandPrix, ACHIEVED, FOR_TEAM, ROUND_OF, HELD_AT, ENTERED, ENTERED
+  - Forrásidézet: . Hamilton's next target was Alonso, whose tyres lost all grip and he fell victim to Hamilton, Romain Grosjean, Sergio Pérez and Vettel in quick succession. Hamilton won the race, becoming the seventh winner in seven races and taking a two-point lead in the championship. Grosjean's second place saw Lotus take third place in the Constructors' Championship from Ferrari
+- `season-2012-formula-one-world-championship#125`: ExtractionValidationError: WON does not allow Driver -> GrandPrix
+  - Jelölt típusok: Driver, GrandPrix, Circuit, Season, WON, ROUND_OF, HELD_AT
+  - Forrásidézet: Fernando Alonso became the first man to win two races in 2012 at the European Grand Prix in Valencia, scoring his first home win since the 2006 Spanish Grand Prix. Starting eleventh, he was forced to navigate his way through traffic, narrowly avoiding early contact between Bruno Senna and Kamui Kobayashi as Sebastian Vettel broke free of the field to establish a twenty-second lead by the first rou...
+- `season-2012-formula-one-world-championship#126`: ExtractionValidationError: RACED_IN does not allow Driver -> Season
+  - Jelölt típusok: Driver, Driver, Driver, Driver, Driver, Season, Circuit, RACED_IN, RACED_IN, RACED_IN, RACED_IN, RACED_IN, ROUND_OF, HELD_AT, HELD_AT, HELD_AT, HELD_AT
+  - Forrásidézet: . Vettel's lead was quashed when Heikki Kovalainen and Jean-Éric Vergne made contact, triggering the deployment of the safety car to clear debris from the circuit. Alonso found himself third at the restart and pounced on a mistake by second-placed Romain Grosjean to lead the chase against Vettel. Vettel pulled away once more, but his lead was short-lived as he lost drive and his engine shut down o...
+- `season-2012-formula-one-world-championship#127`: ExtractionValidationError: ACHIEVED does not allow Driver -> Driver
+  - Jelölt típusok: Driver, Driver, Driver, Driver, Driver, Season, Circuit, ACHIEVED, ROUND_OF, ROUND_OF, ROUND_OF, ROUND_OF, ENTERED, HELD_AT
+  - Forrásidézet: . Grosjean attempted to challenge Alonso, but was forced out of the race with an alternator problem seven laps later, leaving Alonso in the lead, four seconds clear of Lewis Hamilton and Kimi Räikkönen. As the race entered the final laps, Räikkönen forced his way past Hamilton to secure second place, but Pastor Maldonado's attempts to take third place ended with Hamilton in the barrier and a broke...
+- `season-2012-formula-one-world-championship#128`: ExtractionValidationError: ACHIEVED does not allow Driver -> GrandPrix
+  - Jelölt típusok: Driver, Driver, Driver, Driver, Driver, Season, Circuit, GrandPrix, ROUND_OF, HELD_AT, ACHIEVED, ACHIEVED, ACHIEVED, ACHIEVED, ACHIEVED
+  - Forrásidézet: . Maldonado finished tenth, but was given a post-race drive-through penalty and was classified twelfth. Meanwhile, Michael Schumacher and Mark Webber had started to carve their way through the field by virtue of a late pit stop and easily picked off the minor points positions and taking advantage of the Maldonado—Hamilton collision to finish third and fourth behind Alonso and Räikkönen. It was Sch...
+- `season-2012-formula-one-world-championship#129`: ExtractionValidationError: WON does not allow Driver -> Season
+  - Jelölt típusok: Driver, Driver, Driver, Season, Circuit, WON, ROUND_OF
+  - Forrásidézet: . It was Schumacher's first podium since the 2006 Chinese Grand Prix. Alonso's win cemented a twenty-point lead in the championship, whilst Vettel's retirement relegated him to fourth overall, twenty-six points behind Alonso.
+- `season-2012-formula-one-world-championship#13`: ExtractionValidationError: POWERED_BY does not allow Team -> PowerUnit
+  - Jelölt típusok: Team, PowerUnit, Season, Season, Season, Title, Title, POWERED_BY, ENTERED, ENTERED, WON, WON, FIELDED
+  - Forrásidézet: Williams announced that they would be using Renault engines for the 2012 and 2013 seasons, with an option to use Renault engines again in 2014 under the next generation of engine regulations. Renault had previously supplied engines to Williams from 1989 to 1997, when the team won four World Drivers' Championships and five World Constructors' Championships
+- `season-2012-formula-one-world-championship#133`: ExtractionValidationError: RACED_IN does not allow Driver -> Season
+  - Jelölt típusok: Driver, Driver, Driver, Driver, Season, Circuit, GrandPrix, TEAMMATE_OF, RACED_IN, RACED_IN, ROUND_OF, HELD_AT
+  - Forrásidézet: . Perez's teammate Kamui Kobayashi also ran into trouble, locking his tyres as he entered his pit box and hitting three members of his pit crew, though none were seriously injured. The race was ultimately decided by the choice of tyre in the first stint as Alonso moved onto the softer option and Webber onto the harder prime for the final phase of the race. Webber caught Alonso with five laps to go...
+- `season-2012-formula-one-world-championship#134`: ExtractionValidationError: WON does not allow Driver -> Season
+  - Jelölt típusok: Driver, Driver, Driver, Driver, Season, Team, Team, Team, GrandPrix, Circuit, WON, ROUND_OF, HELD_AT, ENTERED, ENTERED, ENTERED
+  - Forrásidézet: . Webber held on for his second win of the season, with Vettel third and Felipe Massa in fourth, his best result since achieving a podium in South Korea in 2010. The result meant Webber closed to within thirteen points of Alonso's championship lead, with both drivers breaking away from third-placed Vettel. After showing early promise in the wet conditions, McLaren went backwards in the dry, losing...
+- `season-2012-formula-one-world-championship#136`: ExtractionValidationError: WON is not temporal; from_year, to_year and role must be null
+  - Jelölt típusok: Driver, Circuit, Season, Title, WON, AWARDED_IN, ROUND_OF
+  - Forrásidézet: Limited running in practice and a wet qualifying session meant that teams had to improvise their strategies at the Hockenheimring. Fernando Alonso controlled much of the race from pole position, only relinquishing the lead when he pitted, and he went on to take his third victory of the season
+- `season-2012-formula-one-world-championship#137`: ExtractionValidationError: ACHIEVED does not allow Driver -> GrandPrix
+  - Jelölt típusok: Driver, GrandPrix, Season, ROUND_OF, ACHIEVED
+  - Forrásidézet: . Lewis Hamilton's one hundredth Grand Prix started with a disaster when he picked up a puncture on the third lap and spent most of the race at the tail end of the field before retiring on lap 56 with a suspension problem. Confusion briefly reigned when Hamilton, in seventeenth place at the time, began lapping faster than the leaders and sought to unlap himself
+- `season-2012-formula-one-world-championship#138`: ExtractionValidationError: TEAMMATE_OF does not allow Driver -> Team
+  - Jelölt típusok: Driver, Team, Driver, Driver, Driver, Team, Circuit, Season, DROVE_FOR, TEAMMATE_OF, TEAMMATE_OF, TEAMMATE_OF, DROVE_FOR, ENTERED, ENTERED, ROUND_OF
+  - Forrásidézet: . Sebastian Vettel later claimed that this was a ploy by McLaren to force both him and Alonso to drive defensively against Hamilton, slowing them down enough to allow team-mate Jenson Button to leap-frog them at the second round of stops; Vettel lost a position to Button, but Alonso was unaffected, as Ferrari pitted him before Hamilton could interfere with his race
+- `season-2012-formula-one-world-championship#141`: ExtractionValidationError: ACHIEVED does not allow Driver -> GrandPrix
+  - Jelölt típusok: Driver, Driver, Season, GrandPrix, ACHIEVED, ACHIEVED, ROUND_OF
+  - Forrásidézet: . With Button promoted to second, Kimi Räikkönen inherited third place and Kamui Kobayashi was classified a then season-best fourth.
+- `season-2012-formula-one-world-championship#143`: ExtractionValidationError: RACED_IN does not allow Driver -> Season
+  - Jelölt típusok: Driver, Driver, Driver, Driver, Season, GrandPrix, Circuit, Team, RACED_IN, RACED_IN, RACED_IN, RACED_IN, ROUND_OF, HELD_AT, ENTERED
+  - Forrásidézet: As the championship moved into the second half of the season, Fernando Alonso maintained a thirty-four-point lead over his nearest rival, Mark Webber, with Sebastian Vettel a further ten points behind. Alonso's outlook for the race was dour, qualifying sixth and pinning his hopes on a wet race as Lewis Hamilton continued McLaren's mid-season resurgence, returning to pole position for the first tim...
+- `season-2012-formula-one-world-championship#144`: ExtractionValidationError: ROUND_OF does not allow Circuit -> Season
+  - Jelölt típusok: Driver, Driver, Driver, Team, Circuit, Season, ENTERED, ROUND_OF, DROVE_FOR, DROVE_FOR, DROVE_FOR
+  - Forrásidézet: . Following an aborted start triggered by Michael Schumacher lining up in the wrong grid position and then shutting his engine off in the confusion, Hamilton and Grosjean lead the field away. After prematurely moving Jenson Button onto a three-stop strategy, McLaren gave Hamilton the order to hold position as the tight confines of the Hungaroring circuit forced the teams to try to make up position...
+- `season-2012-formula-one-world-championship#146`: ExtractionValidationError: ACHIEVED does not allow Driver -> GrandPrix
+  - Jelölt típusok: Driver, Driver, Driver, Driver, Driver, Season, GrandPrix, Circuit, ACHIEVED, WON, ROUND_OF, HELD_AT
+  - Forrásidézet: . Hamilton won the race, the nineteenth of his career, with Räikkönen second and Grosjean in third. Hamilton's victory brought with it twenty-five points that put him back in championship contention, while a late decision by Red Bull to move Mark Webber onto a three-stop strategy saw the Australian slip further behind Fernando Alonso, as the Spaniard extended his championship lead to forty points.
+- `season-2012-formula-one-world-championship#149`: ExtractionValidationError: RACED_IN does not allow Driver -> Season
+  - Jelölt típusok: Driver, Driver, Driver, Driver, Driver, Driver, Circuit, Season, RACED_IN, RACED_IN, RACED_IN, RACED_IN, RACED_IN, RACED_IN, ROUND_OF
+  - Forrásidézet: . Grosjean was later given a one-race ban for causing the collision, becoming the first driver in eighteen years to be banned from racing. Maldonado retired shortly after the restart with a broken front wing after making contact with Timo Glock, while Narain Karthikeyan spun off at Stavelot mid-way through the race when his wheel came loose. Button controlled the race from the front and was unchal...
+- `season-2012-formula-one-world-championship#15`: ExtractionValidationError: DROVE_FOR does not allow Team -> Team
+  - Jelölt típusok: Team, Team, Team, Team, DROVE_FOR, DROVE_FOR, DROVE_FOR
+  - Forrásidézet: . Likewise, Marussia (then known as Virgin Racing) underwent a restructuring, splitting with Wirth Research mid-season after a technical review by Marussia Motors and the board of directors. The team also announced a technical partnership with McLaren that granted them access to McLaren's testing facilities as well as the purchase of Wirth Research facilities.
+- `season-2012-formula-one-world-championship#150`: ExtractionValidationError: ACHIEVED does not allow Driver -> GrandPrix
+  - Jelölt típusok: Driver, Driver, GrandPrix, Circuit, Season, ACHIEVED, ACHIEVED, ROUND_OF, HELD_AT
+  - Forrásidézet: . Kimi Räikkönen started and finished third, let down by a conservative pit strategy that forced him to make a second stop late in the race in order to use both compounds of tyre as per the rules – even when it became apparent that Button and Vettel were racing on a one-stop strategy – and Nico Hülkenberg finished in a career-best fourth place
+- `season-2012-formula-one-world-championship#151`: ExtractionValidationError: ACHIEVED does not allow Driver -> GrandPrix
+  - Jelölt típusok: Driver, Driver, Driver, Team, Driver, Driver, Season, GrandPrix, Circuit, ACHIEVED, FOR_TEAM, ACHIEVED, ACHIEVED, ENTERED, TEAMMATE_OF, ACHIEVED, ACHIEVED, HELD_AT, ROUND_OF
+  - Forrásidézet: . Button's win allowed him to regain precious ground on the championship fight, while Alonso's retirement from the race and Vettel's second place moved the reigning World Champion to within twenty-four points of the championship lead. Scuderia Toro Rosso scored their first points since the Malaysian Grand Prix, with Jean-Éric Vergne and Daniel Ricciardo finishing eighth and ninth respectively
+- `season-2012-formula-one-world-championship#154`: ExtractionValidationError: ACHIEVED does not allow Driver -> Season
+  - Jelölt típusok: Driver, Driver, Driver, Team, Season, GrandPrix, Circuit, DROVE_FOR, DROVE_FOR, ACHIEVED, ROUND_OF, HELD_AT
+  - Forrásidézet: The final race in Europe took place at Monza. Ferrari's early bid to put Fernando Alonso on pole position by way of using Felipe Massa to offer him a slipstream ended in disaster when Alonso's rear anti-roll bar failed in the final period of qualifying, leaving the championship leader marooned in tenth while Lewis Hamilton took pole
+- `season-2012-formula-one-world-championship#156`: ExtractionValidationError: ACHIEVED does not allow Driver -> GrandPrix
+  - Jelölt típusok: Driver, Driver, Team, Season, GrandPrix, Circuit, ACHIEVED, ROUND_OF, HELD_AT, ACHIEVED, FOR_TEAM, FOR_TEAM
+  - Forrásidézet: . Starting outside the top ten, Pérez elected to start on the harder compound tyres and complete one stop, producing fastest lap after fastest lap as McLaren's confidence was broken when Jenson Button's car was paralysed by a fuel pressure problem. Hamilton would ultimately prevail, but he was forced to push in the final few laps to maintain his lead, and won the race by four seconds as Pérez clai...
+- `season-2012-formula-one-world-championship#157`: ExtractionValidationError: ACHIEVED does not allow Driver -> GrandPrix
+  - Jelölt típusok: Driver, Driver, Driver, Driver, Driver, Season, GrandPrix, Circuit, ACHIEVED, FOR_TEAM, FOR_TEAM, FOR_TEAM, FOR_TEAM, ROUND_OF, HELD_AT
+  - Forrásidézet: . Alonso went on to finish third, benefiting from Button's retirement and a drive-through penalty for Sebastian Vettel when the reigning World Champion forced him so wide through the Curva Grande that Alonso was forced off the circuit. Bruno Senna later criticised the race stewards for not penalising Paul di Resta for a similar altercation on the approach to the Variante della Roggia early in the ...
+- `season-2012-formula-one-world-championship#158`: ExtractionValidationError: DROVE_FOR does not allow Team -> Driver
+  - Jelölt típusok: Driver, Driver, Team, Season, GrandPrix, Circuit, DROVE_FOR, RACED_IN, ROUND_OF, HELD_AT, ACHIEVED
+  - Forrásidézet: . Meanwhile, with Romain Grosjean serving his suspension, Lotus enlisted former Marussia F1 driver Jérôme d'Ambrosio as their second driver for the weekend. He qualified sixteenth, and went on to finish thirteenth overall.
+- `season-2012-formula-one-world-championship#160`: ExtractionValidationError: WON does not allow Driver -> Season
+  - Jelölt típusok: Driver, Driver, Team, Team, Season, WON, ENTERED, ENTERED
+  - Forrásidézet: . This allowed Hamilton to leapfrog both drivers and Kimi Räikkönen – who finished the race fifth – to take second place in the World Drivers' Championship, with the result enabling McLaren to close the gap to Red Bull in the World Constructors' Championship.
+- `season-2012-formula-one-world-championship#163`: ExtractionValidationError: ACHIEVED does not allow Driver -> GrandPrix
+  - Jelölt típusok: Driver, Driver, Circuit, Season, GrandPrix, ACHIEVED, ACHIEVED, HELD_AT, ROUND_OF
+  - Forrásidézet: . Just as the drivers established a rhythm, Hamilton's gearbox failed, forcing him out of the race and handing the lead to Sebastian Vettel. The race was shortened by two laps to fit the two-hour time limit for a Grand Prix following a pair of lengthy safety car interventions; first, Narain Karthikeyan understeered into the barriers under the grandstands on lap 30, forcing the safety car to be dep...
+- `season-2012-formula-one-world-championship#164`: ExtractionValidationError: ROUND_OF does not allow Circuit -> Season
+  - Jelölt típusok: Driver, Driver, Season, Circuit, TEAMMATE_OF, ROUND_OF
+  - Forrásidézet: . The drivers had little opportunity to get comfortable on the restart, as Michael Schumacher misjudged his braking point at the end of the Esplanade Bridge, careening into the back of Jean-Éric Vergne and triggering the safety car for the second time in an accident that was a near mirror-image of his collision with Sergio Pérez in 2011. He was later given a ten-place grid penalty for the Japanese...
+- `season-2012-formula-one-world-championship#165`: ExtractionValidationError: ACHIEVED does not allow Driver -> GrandPrix
+  - Jelölt típusok: Driver, Driver, Driver, Driver, Season, GrandPrix, Circuit, ACHIEVED, ROUND_OF, HELD_AT
+  - Forrásidézet: . He was later given a ten-place grid penalty for the Japanese Grand Prix. Vettel controlled the race from the second restart, beating Jenson Button to the line, for his second win of the season and his first since the Bahrain Grand Prix five months previously. Alonso completed the podium, retaining his championship lead after defending from Paul di Resta late in the race
+- `season-2012-formula-one-world-championship#166`: ExtractionValidationError: ACHIEVED does not allow Driver -> Circuit
+  - Jelölt típusok: Driver, Driver, Driver, Driver, Driver, Driver, Team, Team, Season, Circuit, ACHIEVED, ACHIEVED, ACHIEVED, ACHIEVED, ACHIEVED, ACHIEVED, ENTERED, ENTERED
+  - Forrásidézet: . Elsewhere, a string of retirements – including a late engine problem for Bruno Senna, which left the Brazilian with minor burns to his back – and a series of altercations involving Mark Webber, Nico Hülkenberg, Kamui Kobayashi and Sergio Pérez as they fought over the minor points positions allowed Timo Glock to finish twelfth, the result seeing Marussia retake tenth position in the World Constru...
+- `season-2012-formula-one-world-championship#168`: ExtractionValidationError: DROVE_FOR does not allow Driver -> Driver
+  - Jelölt típusok: Driver, Driver, Driver, Driver, Season, Circuit, DROVE_FOR, DROVE_FOR, ROUND_OF
+  - Forrásidézet: Fernando Alonso was the victim of a dramatic first corner clash, spinning out when he made contact with Kimi Räikkönen and paving the way for his championship rivals to make considerable inroads into his twenty-nine-point championship lead. Mark Webber was also caught up in the opening lap melee when he was hit by Romain Grosjean; Webber was forced to pit straight away, while Grosjean was given a ...
+- `season-2012-formula-one-world-championship#169`: ExtractionValidationError: ACHIEVED does not allow Driver -> Driver
+  - Jelölt típusok: Driver, Driver, Driver, Driver, Season, Circuit, ACHIEVED, HELD_AT, HELD_AT, ROUND_OF
+  - Forrásidézet: . Bruno Senna also ran afoul of the stewards, hitting Nico Rosberg whilst trying to avoid Grosjean and Webber and earning a drive-through penalty for his troubles while Rosberg retired on the spot. Sergio Pérez added his name to the growing list of early retirements when he slid off at the hairpin under brakes and into the gravel trap whilst trying to force his way past a struggling Lewis Hamilton
+- `season-2012-formula-one-world-championship#17`: ExtractionValidationError: DROVE_FOR does not allow Team -> Team
+  - Jelölt típusok: Team, Team, DROVE_FOR
+  - Forrásidézet: . Mercedes GP also changed the name of their team, announcing that they were to become known as Mercedes AMG. The new name originates from AMG, Mercedes-Benz's performance and luxury road car brand.
+- `season-2012-formula-one-world-championship#170`: ExtractionValidationError: ACHIEVED does not allow Driver -> GrandPrix
+  - Jelölt típusok: Driver, Driver, Driver, Driver, GrandPrix, Circuit, Season, ACHIEVED, ACHIEVED, ACHIEVED, ACHIEVED, HELD_AT, ROUND_OF
+  - Forrásidézet: . Sebastian Vettel won the race from pole position, having led every lap of the race and setting the fastest lap time in the process to complete his second Grand Chelem. Felipe Massa finished second, his first podium result since the 2010 Korean Grand Prix, whilst Kamui Kobayashi claimed the first podium of his career – and the first podium for a Japanese driver at the Suzuka Circuit since Aguri S...
+- `season-2012-formula-one-world-championship#171`: ExtractionValidationError: ACHIEVED does not allow Driver -> GrandPrix
+  - Jelölt típusok: Driver, Driver, Season, GrandPrix, Circuit, ACHIEVED, ROUND_OF, HELD_AT
+  - Forrásidézet: With Alonso retiring and Vettel taking a full twenty-five points for victory, the championship fight became as close as it had been all season long.
+- `season-2012-formula-one-world-championship#173`: ExtractionValidationError: ACHIEVED does not allow Driver -> GrandPrix
+  - Jelölt típusok: Driver, Driver, Season, Circuit, GrandPrix, ACHIEVED, ACHIEVED, ROUND_OF, HELD_AT
+  - Forrásidézet: Sebastian Vettel's momentum continued one week later in Korea, winning his third consecutive race and taking a six-point championship lead as Fernando Alonso finished third
+- `season-2012-formula-one-world-championship#174`: ExtractionValidationError: ACHIEVED does not allow Driver -> Season
+  - Jelölt típusok: Driver, Driver, Driver, Driver, Driver, Season, Circuit, TEAMMATE_OF, ACHIEVED, ACHIEVED, ROUND_OF, HELD_AT
+  - Forrásidézet: . Vettel overcame pole-sitter Mark Webber at the start, and was aided in building up a lead by first-lap contact between Jenson Button, Nico Rosberg and Kamui Kobayashi that saw Button and Rosberg retire with damage from the collision; Rosberg pulled over on the approach to the third turn, forcing a protracted yellow flag period as marshalls attempted to retrieve his car
+- `season-2012-formula-one-world-championship#176`: ExtractionValidationError: WON is not temporal; from_year, to_year and role must be null
+  - Jelölt típusok: Driver, Driver, Circuit, Season, Title, WON, FOR_TEAM, ACHIEVED, ACHIEVED, HELD_AT, ROUND_OF
+  - Forrásidézet: . Vettel ignored six radio calls from his pit wall cautioning him that a tyre failure was imminent, only backing off just enough in the final few laps to secure victory over Webber by six seconds. The team later denied that there had ever been a problem with Vettel's tyres
+- `season-2012-formula-one-world-championship#177`: ExtractionValidationError: ROUND_OF does not allow Season -> Circuit
+  - Jelölt típusok: Driver, Driver, Driver, Team, Season, Circuit, DROVE_FOR, DROVE_FOR, DROVE_FOR, ENTERED, ROUND_OF
+  - Forrásidézet: . Further down the order, Scuderia Toro Rosso's Jean-Éric Vergne and Daniel Ricciardo fought their way from sixteenth and twenty-first on the grid to finish eighth and ninth, while Romain Grosjean drove a conservative race to finish seventh, having been warned beforehand by the stewards that another first-lap altercation would likely result in his disqualification from the race
+- `season-2012-formula-one-world-championship#178`: ExtractionValidationError: ACHIEVED does not allow RaceResult -> Driver
+  - Jelölt típusok: Driver, Team, Season, Circuit, Driver, RaceResult, DROVE_FOR, ACHIEVED, AT_RACE, ENTERED, ROUND_OF
+  - Forrásidézet: . Lewis Hamilton's day went from bad to worse when an anti-roll bar on his McLaren failed, while the car handled its tyres so poorly that he was forced to make an unscheduled stop in order to make it to the finish, only to tear up a length of astroturf that wreaked havoc on his downforce and he slid down to tenth place, narrowly fending off an opportunistic charge from Sergio Pérez to take the fin...
+- `season-2012-formula-one-world-championship#179`: ExtractionValidationError: DROVE_FOR does not allow Team -> Team
+  - Jelölt típusok: Team, Team, Driver, Season, DROVE_FOR, WON, AWARDED_IN
+  - Forrásidézet: . Button's retirement and Hamilton's single point meant that McLaren lost second place in the World Constructors' Championship to Ferrari, and Hamilton admitted that his bid to be the 2012 World Drivers' Champion was over.
+- `season-2012-formula-one-world-championship#182`: ExtractionValidationError: ACHIEVED does not allow Driver -> GrandPrix
+  - Jelölt típusok: Driver, Driver, Driver, Season, GrandPrix, Circuit, ROUND_OF, HELD_AT, ACHIEVED, ACHIEVED, ACHIEVED
+  - Forrásidézet: . Vettel dominated the weekend, setting the fastest time in every practice session before qualifying on pole, and leading every lap of the sixty-lap race, though he was denied his third Grand Chelem when Jenson Button set the fastest lap of the race on the final lap. Fernando Alonso finished second, conceding another seven championship points to Vettel
+- `season-2012-formula-one-world-championship#183`: ExtractionValidationError: DROVE_FOR does not allow Driver -> Season
+  - Jelölt típusok: Team, Driver, Driver, Season, Circuit, ENTERED, DROVE_FOR, DROVE_FOR, ROUND_OF
+  - Forrásidézet: . The Ferrari driver rounded up both McLaren drivers at the start of the race and proceeded to chase down Mark Webber for second, only overtaking the Australian on the long back straight when his car developed a KERS fault fifteen laps from the end that it never recovered from. Webber held off a late challenge from Lewis Hamilton to complete the podium
+- `season-2012-formula-one-world-championship#184`: ExtractionValidationError: ACHIEVED does not allow Driver -> Season
+  - Jelölt típusok: Driver, Driver, Driver, Season, Circuit, TEAMMATE_OF, ACHIEVED, AT_RACE, ROUND_OF
+  - Forrásidézet: . Further down the order, Kimi Räikkönen finished seventh after spending most of the race trapped behind Felipe Massa, and later claimed that mistakes on Saturday had robbed him of a podium on Sunday, while Pedro de la Rosa retired from the race when he suffered a brake failure that saw him spin into the barriers at Turn 4
+- `season-2012-formula-one-world-championship#186`: ExtractionValidationError: RACED_IN does not allow Driver -> Season
+  - Jelölt típusok: Driver, Driver, Circuit, Season, RACED_IN, RACED_IN, ROUND_OF
+  - Forrásidézet: retirement; and Pastor Maldonado also had a tyre punctured when he and Kamui Kobayashi touched at speed on the approach to Turn 5, forcing the Venezuelan to run wide onto the tarmac run-off, but suffering no lasting damage.
+- `season-2012-formula-one-world-championship#189`: ExtractionValidationError: ROUND_OF does not allow Circuit -> Season
+  - Jelölt típusok: Driver, Driver, Driver, Driver, Season, Circuit, TEAMMATE_OF, TEAMMATE_OF, ROUND_OF
+  - Forrásidézet: . Vettel began to round up the HRTs, Marussias and Caterhams, but his early progress came at the expense of his front wing endplate when he made contact with Senna at Turn 8 switchback. He chose not to pit for the time being, as the race was interrupted by the intervention of the safety car. Nico Rosberg, who had been forced to pit with damage to his front wing, was in the process of overtaking Na...
+- `season-2012-formula-one-world-championship#191`: ExtractionValidationError: ACHIEVED does not allow Driver -> GrandPrix
+  - Jelölt típusok: Driver, Driver, Driver, Driver, Season, GrandPrix, Circuit, ACHIEVED, ACHIEVED, ACHIEVED, ACHIEVED, ROUND_OF, HELD_AT
+  - Forrásidézet: . Meanwhile, Hamilton suffered another mechanical failure while leading the race, and was once again forced out, handing the lead to Kimi Räikkönen while Fernando Alonso inherited second. Vettel began to work his way through the field again, but was forced to make a second stop when his tyres started losing grip
+- `season-2012-formula-one-world-championship#192`: ExtractionValidationError: ACHIEVED does not allow Driver -> Driver
+  - Jelölt típusok: Driver, Driver, Driver, Season, Circuit, ACHIEVED, ACHIEVED
+  - Forrásidézet: . He was saved by the second appearance of the safety car moments later, brought about when di Resta forced Sergio Pérez wide; as Pérez rejoined the circuit, he cut back across the front of Grosjean and the two made contact, which in turn forced Grosjean into the path of Mark Webber. Grosjean and Webber retired, whilst Pérez was given a stop-go penalty
+- `season-2012-formula-one-world-championship#193`: ExtractionValidationError: WON does not allow Driver -> GrandPrix
+  - Jelölt típusok: Driver, Driver, Driver, Driver, Team, Season, GrandPrix, Circuit, DROVE_FOR, ENTERED, ROUND_OF, HELD_AT, WON, AWARDED_IN
+  - Forrásidézet: . Grosjean and Webber retired, whilst Pérez was given a stop-go penalty. When racing resumed, Räikkönen began to rebuild his lead over Alonso, who was being harried by Jenson Button; Button himself was being harried by Vettel in fourth. Button and Vettel's duel allowed Alonso to break free, and he started chasing down Räikkönen in the last five laps. Räikkönen held on to secure his – and Lotus F1'...
+- `season-2012-formula-one-world-championship#194`: ExtractionValidationError: ACHIEVED does not allow Driver -> GrandPrix
+  - Jelölt típusok: Driver, Driver, Driver, Driver, Season, GrandPrix, Circuit, ACHIEVED, ACHIEVED, ACHIEVED, ACHIEVED, ROUND_OF, HELD_AT
+  - Forrásidézet: . Alonso was second, while Vettel caught and passed Button to complete the podium, keeping a ten-point championship lead in the process. With both Alonso and Vettel finishing on the podium with him, Räikkönen's win was not enough to keep him in contention for the World Drivers' Championship, leaving the title to be fought out between Alonso and Vettel over the final two races of the season.
+- `season-2012-formula-one-world-championship#196`: ExtractionValidationError: RACED_IN does not allow Circuit -> Season
+  - Jelölt típusok: Driver, Driver, Driver, Circuit, Season, GrandPrix, RACED_IN, ROUND_OF, ACHIEVED, ACHIEVED, ACHIEVED
+  - Forrásidézet: Despite its troubled construction period, the Circuit of the Americas passed its final FIA inspection on 25 September, allowing the race to go ahead. Sebastian Vettel took his sixth pole position of the season, whilst Alonso struggled throughout qualifying to start the race ninth, which became eighth when Romain Grosjean received a grid penalty for an unscheduled gearbox change
+- `season-2012-formula-one-world-championship#198`: ExtractionValidationError: ACHIEVED does not allow Driver -> GrandPrix
+  - Jelölt típusok: Driver, Driver, Driver, Season, GrandPrix, Circuit, ACHIEVED, ACHIEVED, ACHIEVED, ROUND_OF, HELD_AT
+  - Forrásidézet: . Vettel quickly converted pole position into a steady race lead as Lewis Hamilton fought to regain second place from Mark Webber. Moments after Hamilton caught him on lap 17, the Australian suffered yet another alternator problem, and coasted to a halt
+- `season-2012-formula-one-world-championship#200`: ExtractionValidationError: ACHIEVED does not allow Driver -> Driver
+  - Jelölt típusok: Driver, Driver, Season, GrandPrix, ACHIEVED, FOR_TEAM, FOR_TEAM, ROUND_OF
+  - Forrásidézet: . With Webber now out of the running, Hamilton then turned his attentions on Vettel and steadily closed the gap to the lead, overtaking the World Championship leader on lap 42 when Vettel got caught behind Narain Karthikeyan in the meandering first sector, which allowed Hamilton to pass Vettel along the long back straight
+- `season-2012-formula-one-world-championship#201`: ExtractionValidationError: ACHIEVED does not allow Driver -> GrandPrix
+  - Jelölt típusok: Driver, Driver, Driver, Season, GrandPrix, Circuit, ACHIEVED, ROUND_OF, HELD_AT, ACHIEVED, ACHIEVED
+  - Forrásidézet: . Hamilton held onto the lead for the final fourteen laps, but with Vettel never more than a second and a half behind him, Hamilton could not afford to relax, and he won the race by just six-tenths of a second. Alonso recovered from seventh to finish third – marking the first time that he, Hamilton and Vettel had stood on the podium together in the one hundred races all three had contested togethe...
+- `season-2012-formula-one-world-championship#202`: ExtractionValidationError: ACHIEVED does not allow Driver -> GrandPrix
+  - Jelölt típusok: Driver, Driver, GrandPrix, Season, ACHIEVED, ACHIEVED, ROUND_OF
+  - Forrásidézet: . Further down the order, Massa overcame his gearbox penalty to finish fourth, while Jenson Button fell from twelfth on the grid to sixteenth at the end of the first lap, using an alternative strategy to claw his way back up to fifth
+- `season-2012-formula-one-world-championship#203`: ExtractionValidationError: RACED_IN does not allow Driver -> Season
+  - Jelölt típusok: Driver, Driver, Driver, Team, Season, GrandPrix, Circuit, DROVE_FOR, RACED_IN, RACED_IN, RACED_IN, ROUND_OF, HELD_AT
+  - Forrásidézet: . Michael Schumacher, on the other hand, went backwards; after qualifying fifth, his Mercedes chewed through its tyres, forcing him to make a second stop that sent him plummeting down the order to finish sixteenth, and a clutch problem during his stop deprived Kimi Räikkönen of the chance to compete with Alonso for the final podium place
+- `season-2012-formula-one-world-championship#204`: ExtractionValidationError: TEAMMATE_OF does not allow Team -> Team
+  - Jelölt típusok: Team, Team, Driver, Driver, Driver, Driver, Team, Title, Season, TEAMMATE_OF, TEAMMATE_OF, TEAMMATE_OF, WON, AWARDED_IN
+  - Forrásidézet: . Both Marussia drivers out-qualified the Caterhams for the first time, only for Timo Glock and Charles Pic be out-raced by Heikki Kovalainen and Vitaly Petrov, but the Russian team held onto tenth place in the World Constructors' Championship. Despite losing Webber to an alternator failure, Red Bull collected enough points to secure their third consecutive World Constructors' Championship title.
+- `season-2012-formula-one-world-championship#207`: ExtractionValidationError: RACED_IN does not allow Driver -> Season
+  - Jelölt típusok: Driver, Driver, Driver, Driver, Driver, Driver, Driver, Circuit, Season, RACED_IN, RACED_IN, RACED_IN, RACED_IN, RACED_IN, RACED_IN, RACED_IN, ROUND_OF
+  - Forrásidézet: . The race was one of attrition, with Pastor Maldonado and Romain Grosjean also crashing out early. Button seized the lead from Hamilton, but soon found himself under pressure from Nico Hülkenberg and lost the lead to the German driver on lap 18, and second place to Hamilton shortly thereafter. The field stabilised themselves after the first round of stops, with Vettel in the lower points and Fern...
+- `season-2012-formula-one-world-championship#208`: ExtractionValidationError: ACHIEVED does not allow Driver -> Driver
+  - Jelölt típusok: Driver, Driver, Driver, Circuit, Season, Team, ACHIEVED, FOR_TEAM, FOR_TEAM, ROUND_OF
+  - Forrásidézet: . Hülkenberg spun on lap 48 and lost the lead to Hamilton, but caught the McLaren on lap 54 as they encountered lapped traffic. The two made contact in the first corner, forcing Hamilton out of the race and earning Hülkenberg a drive-through penalty for causing an avoidable accident. In the wake of their collision, Button re-took the lead and held on to the end of the race. Meanwhile, the rain int...
+- `season-2012-formula-one-world-championship#209`: ExtractionValidationError: ACHIEVED does not allow Driver -> Season
+  - Jelölt típusok: Driver, Driver, Driver, Season, Circuit, TEAMMATE_OF, ACHIEVED, FOR_TEAM, ACHIEVED, ROUND_OF, HELD_AT
+  - Forrásidézet: . Meanwhile, the rain intensified, prompting teams to scramble for tyres. Hülkenberg's penalty and Hamilton's retirement promoted Alonso to the podium, which became second place when team-mate Felipe Massa yielded for him. A slow stop for Vettel relegated him to twelfth and swinging the balance of power in Alonso's favour
+- `season-2012-formula-one-world-championship#210`: ExtractionValidationError: WON does not allow Driver -> Season
+  - Jelölt típusok: Driver, Driver, Season, Circuit, WON, ROUND_OF
+  - Forrásidézet: . In the last ten laps of the race, Vettel began to make his way back up the order until he was seventh, just enough to secure the title, but leaving him vulnerable if the damage he received on the first lap – which by now had left a long crack running along the floor of his car – got worse. Vettel's seventh became sixth when Michael Schumacher moved aside to let Vettel through
+- `season-2012-formula-one-world-championship#211`: ExtractionValidationError: WON does not allow Driver -> Season
+  - Jelölt típusok: Driver, Driver, Driver, Driver, Driver, Season, GrandPrix, WON, WON, ROUND_OF, HELD_AT
+  - Forrásidézet: . Two laps from the end of the race, Paul di Resta crashed heavily as he came onto the main straight, forcing the deployment of the safety car. Button won the race, with Alonso second and Massa third, but Vettel's sixth place was enough to secure his third consecutive World Drivers' Championship
+- `season-2012-formula-one-world-championship#212`: ExtractionValidationError: ACHIEVED does not allow Driver -> Season
+  - Jelölt típusok: Driver, Season, Circuit, ACHIEVED, ROUND_OF
+  - Forrásidézet: . Kimi Räikkönen finished the season third overall, having benefited from Hamilton's retirement to hold onto the place following a bizarre incident in which he left the circuit and attempted to rejoin by taking to the support paddock pit lane, only to find the way blocked and forcing him to double back and find another way onto the circuit
+- `season-2012-formula-one-world-championship#213`: ExtractionValidationError: ACHIEVED does not allow Driver -> Season
+  - Jelölt típusok: Driver, Season, Circuit, ACHIEVED, ROUND_OF
+  - Forrásidézet: . In his final race in Formula One, Schumacher's seventh place saw him finish the season in thirteenth place overall; his worst performance over a season since he contested six rounds during the 1991 season
+- `season-2012-formula-one-world-championship#214`: ExtractionValidationError: TEAMMATE_OF does not allow Team -> Team
+  - Jelölt típusok: Team, Team, Team, Team, Team, Team, Driver, Season, TEAMMATE_OF, TEAMMATE_OF, TEAMMATE_OF, FOR_TEAM, ENTERED
+  - Forrásidézet: . In the World Constructors' Championship, Ferrari secured second place from McLaren with two cars on the podium, while Kamui Kobayashi's ninth place was not enough for Sauber to take fifth from Mercedes, and Marussia lost tenth place to Caterham when Vitaly Petrov secured the team's best result of the season with eleventh place
+- `season-2012-formula-one-world-championship#215`: ExtractionValidationError: DROVE_FOR does not allow Team -> Driver
+  - Jelölt típusok: Driver, Driver, Driver, Team, Team, Season, DROVE_FOR, DROVE_FOR, TEAMMATE_OF, ENTERED
+  - Forrásidézet: . Nikolai Fomenko, Marussia's director of engineering, later claimed that Charles Pic had deliberately let Petrov through, as Pic had announced his move to Caterham for the 2013 season two days before the race.
+- `season-2012-formula-one-world-championship#217`: ExtractionValidationError: ACHIEVED does not allow Driver -> GrandPrix
+  - Jelölt típusok: Driver, Driver, Team, GrandPrix, Season, ENTERED, ROUND_OF, ACHIEVED, ACHIEVED
+  - Forrásidézet: Three days after the Brazilian Grand Prix, reports began to surface suggesting that Sebastian Vettel's championship was under threat and that Ferrari would be filing a formal protest against the race results. The challenge centred on a pass Vettel made on Jean-Éric Vergne early in the race
+- `season-2012-formula-one-world-championship#218`: ExtractionValidationError: HELD_AT does not allow Driver -> Circuit
+  - Jelölt típusok: Driver, Circuit, Circuit, Driver, Driver, HELD_AT, HELD_AT, TEAMMATE_OF
+  - Forrásidézet: . At the time, the first sector of the circuit was under yellow flag conditions following the spin and retirement of Pastor Maldonado at Curva do Sol, the Interlagos circuit's third corner, which feeds onto the back straight. Vettel overtook Vergne along the straight, which led to claims that the pass was illegal because of the yellow flags
+- `season-2012-formula-one-world-championship#219`: ExtractionValidationError: WON does not allow Driver -> Season
+  - Jelölt típusok: Driver, Season, WON
+  - Forrásidézet: . Intense media speculation suggested that the challenge threatened Vettel's championship because as the race finished behind the safety car, any post-race penalty had the potential to demote him in the race standings, and Vettel would not have enough points to secure the title. Ferrari wrote to the FIA, requesting clarification on the matter
+- `season-2012-formula-one-world-championship#22`: ExtractionValidationError: DROVE_FOR does not allow Driver -> Driver
+  - Jelölt típusok: Driver, Driver, Team, Driver, Team, Driver, Season, DROVE_FOR, DROVE_FOR, DROVE_FOR, DROVE_FOR, ENTERED, ENTERED
+  - Forrásidézet: . Petrov later replaced Jarno Trulli at Caterham; Trulli's replacement meant that the opening race of the season would be the first race since the 1973 German Grand Prix to take place without an Italian driver on the grid. Senna joined Williams, the team having previously attempted to secure Räikkönen for the season. Senna replaced Rubens Barrichello, who left Formula One after a record-breaking n...
+- `season-2012-formula-one-world-championship#221`: ExtractionValidationError: WON does not allow Driver -> Season
+  - Jelölt típusok: Team, Team, Driver, Season, ENTERED, ENTERED, WON
+  - Forrásidézet: . Both Ferrari and Red Bull Racing announced that they were satisfied with the ruling, thereby preserving Vettel's championship.
+- `season-2012-formula-one-world-championship#25`: ExtractionValidationError: DROVE_FOR does not allow Team -> Driver
+  - Jelölt típusok: Team, Driver, Driver, Driver, Driver, Team, Season, DROVE_FOR, DROVE_FOR, DROVE_FOR, DROVE_FOR, DROVE_FOR, DROVE_FOR
+  - Forrásidézet: Scuderia Toro Rosso did not retain Jaime Alguersuari or Sébastien Buemi, instead choosing to replace them with Daniel Ricciardo and 2011 Formula Renault 3.5 Series runner-up Jean-Éric Vergne. Ricciardo had previously served as the team's test and reserve driver before being placed at HRT for the 2011 British Grand Prix, while Vergne had completed a limited testing schedule for the team in the seco...
+- `season-2012-formula-one-world-championship#26`: ExtractionValidationError: POWERED_BY does not allow Driver -> Car
+  - Jelölt típusok: Driver, Team, Team, Team, Driver, Car, DROVE_FOR, POWERED_BY, DROVE_FOR, DROVE_FOR, TEAMMATE_OF
+  - Forrásidézet: . Sébastien Buemi became Red Bull Racing's testing and reserve driver contested the 24 Hours of Le Mans with Toyota, driving a TS030 Hybrid. Alguersuari was offered a seat at HRT, but turned it down and instead joined tyre supplier Pirelli as their test driver, developing tyre compounds for use in racing alongside former Virgin Racing driver Lucas di Grassi.
+- `season-2012-formula-one-world-championship#27`: ExtractionValidationError: DROVE_FOR does not allow Driver -> Driver
+  - Jelölt típusok: Driver, Driver, Team, Team, Team, Driver, Season, Season, Season, GrandPrix, GrandPrix, DROVE_FOR, DROVE_FOR, DROVE_FOR, DROVE_FOR, DROVE_FOR, ACHIEVED, AT_RACE, AT_RACE, ROUND_OF
+  - Forrásidézet: Pedro de la Rosa and Narain Karthikeyan returned to Formula One with HRT. De la Rosa had been without a full-time drive since the 2010 Italian Grand Prix, having spent the majority of the 2011 season as a test driver for McLaren and making one appearance racing for Sauber; Karthikeyan was dropped by the team before the 2011 British Grand Prix in favour of Ricciardo. He, too, made a one-race appear...
+- `season-2012-formula-one-world-championship#28`: ExtractionValidationError: FIELDED does not allow Driver -> Car
+  - Jelölt típusok: Driver, Team, Driver, Driver, Season, Car, DROVE_FOR, FIELDED, ENTERED, FIELDED, TEAMMATE_OF, TEAMMATE_OF
+  - Forrásidézet: . Vitantonio Liuzzi, who drove for HRT in 2011, joined the Indian i1 Super Series. The series was later postponed until 2013, but Liuzzi was unable to retain his seat with the team. At the launch of the HRT F112 in March, Liuzzi was confirmed as one of the team's testing and reserve drivers alongside both former GP2 Series driver Dani Clos and Ma Qinghua, the first ever Chinese driver to step into...
+- `season-2012-formula-one-world-championship#29`: ExtractionValidationError: RACED_IN does not allow Driver -> Season
+  - Jelölt típusok: Driver, Team, Team, Driver, Season, Season, Team, DROVE_FOR, DROVE_FOR, DROVE_FOR, RACED_IN, FIELDED
+  - Forrásidézet: Jérôme d'Ambrosio left Marussia (then known as Virgin Racing) after the 2011 Brazilian Grand Prix. He later joined Lotus F1 as their third driver. Charles Pic – who placed fourth in the 2011 GP2 Series driving for Addax – joined Marussia, replacing d'Ambrosio.
+- `season-2012-formula-one-world-championship#3`: ExtractionValidationError: WON does not allow Driver -> Season
+  - Jelölt típusok: Driver, Driver, Season, WON, WON
+  - Forrásidézet: . However, costly first-lap retirements in Belgium and Japan allowed his rivals to catch up, and defending World Champion Sebastian Vettel – like Alonso, a two-time title winner – took the lead in the sixteenth race of the season
+- `season-2012-formula-one-world-championship#34`: ExtractionValidationError: ROUND_OF: unknown target_id 'e2'
+  - Jelölt típusok: Season, ROUND_OF
+  - Forrásidézet: . The final calendar included the race, with Ecclestone confirming that a new arrangement had been made, and that the event organisers had paid their circuit sanctioning fees for 2012. The race was originally scheduled to be held in June, but was moved back to become the penultimate event of the season in response to concerns over the heat of the Texas summer and its effects on teams, drivers and ...
+- `season-2012-formula-one-world-championship#4`: ExtractionValidationError: ENTERED does not allow Driver -> Season
+  - Jelölt típusok: Driver, Driver, Season, GrandPrix, GrandPrix, GrandPrix, GrandPrix, RaceResult, ENTERED, ENTERED, ROUND_OF, ROUND_OF, ROUND_OF, ROUND_OF, ACHIEVED
+  - Forrásidézet: . Vettel, too, encountered difficulties throughout the season; contact with a backmarker left him to finish outside the points in Malaysia, while alternator failures at the European and Italian Grands Prix cost him valuable points and exclusion from qualifying in Abu Dhabi led him to start from the pit lane. Vettel entered the final race of the season with a thirteen-point lead over Alonso
+- `season-2012-formula-one-world-championship#5`: ExtractionValidationError: WON does not allow Driver -> Season
+  - Jelölt típusok: Driver, Driver, Team, Season, GrandPrix, WON, ENTERED, ROUND_OF, ACHIEVED, FOR_TEAM
+  - Forrásidézet: . Alonso needed a podium finish to stand any chance of becoming World Drivers' Champion, but in a race of attrition that finished under the safety car, Vettel finished in sixth place, scoring enough points to win his third consecutive championship, becoming just the third driver in the sport's sixty-three-year history to do so. In the World Constructors' Championship, Red Bull Racing secured their...
+- `season-2012-formula-one-world-championship#53`: ExtractionValidationError: RACED_IN does not allow Season -> Season
+  - Jelölt típusok: Season, RACED_IN
+  - Forrásidézet: Starting in 2012, all cars were required to pass their mandatory FIA crash tests before being allowed to take part in pre-season testing. Previously, passing the crash tests was only a requirement prior to the first race of the season. Crash tests for the 2012 season will also be more rigorous than in previous years.
+- `season-2012-formula-one-world-championship#56`: ExtractionValidationError: ROUND_OF does not allow Circuit -> Season
+  - Jelölt típusok: Season, Circuit, ROUND_OF
+  - Forrásidézet: #### Sporting regulations After being banned in 2009, in-season testing returned in 2012, with a test held at Mugello on 1 May ahead of the European leg of the 2012 championship. As teams were only permitted to do fifteen days of testing over the course of the season, the pre-season winter testing schedule was cut back to accommodate the Mugello test.
+- `season-2012-formula-one-world-championship#58`: ExtractionValidationError: ENTERED is not temporal; from_year, to_year and role must be null
+  - Jelölt típusok: Team, Season, ENTERED
+  - Forrásidézet: Tyre supplier Pirelli revised their tyre compounds for the 2012 season in an effort to encourage teams to use each of the compounds supplied for individual races. Pirelli predicted that the changes would translate into 0.7 seconds' difference per lap between the harder and softer compounds, down from 1.5 seconds per lap in 2011
+- `season-2012-formula-one-world-championship#6`: ExtractionValidationError: RACED_IN does not allow Season -> Driver
+  - Jelölt típusok: Season, Driver, Driver, Driver, Driver, Driver, Driver, RACED_IN, RACED_IN, RACED_IN, RACED_IN, RACED_IN, RACED_IN
+  - Forrásidézet: In addition to seeing seven different drivers win the first seven races, the 2012 season broke several records. The calendar for the season included twenty races, breaking the previous record of nineteen, which was first set in 2005. Six current or former World Drivers' Champions – Sebastian Vettel, Fernando Alonso, Jenson Button, Lewis Hamilton, Kimi Räikkönen, and Michael Schumacher – started th...
+- `season-2012-formula-one-world-championship#61`: ExtractionValidationError: ENTERED is not temporal; from_year, to_year and role must be null
+  - Jelölt típusok: Team, Team, Season, ENTERED, ENTERED
+  - Forrásidézet: . Under the rules set out in the Sixth Concorde Agreement, several teams have been forced to compete under names that do not necessarily reflect their ownership—such as Sauber competing as "BMW Sauber" in 2010, despite BMW withdrawing from the sport at the end of the 2009 season—in order to preserve their status as a current constructor and their claim to a share of the television rights paid to t...
+- `season-2012-formula-one-world-championship#66`: ExtractionValidationError: ROUND_OF: unknown source_id 'e1'
+  - Jelölt típusok: ROUND_OF, HELD_AT
+  - Forrásidézet: At the 2012 British Grand Prix in July, the FIA disabled the use of the Drag Reduction System (DRS) during a race while yellow flags were being shown in the same sector as the DRS zone. The move followed an incident at the European Grand Prix in which Michael Schumacher was observed to activate his DRS while yellow flags were being shown.
+- `season-2012-formula-one-world-championship#7`: ExtractionValidationError: WON does not allow Driver -> Season
+  - Jelölt típusok: Driver, Season, GrandPrix, WON, ROUND_OF
+  - Forrásidézet: This was the last season for 7-time world champion, Michael Schumacher as he announced his retirement from Formula One for the second time, after the 2012 Brazilian Grand Prix.
+- `season-2012-formula-one-world-championship#73`: ExtractionValidationError: RACED_IN does not allow Circuit -> Season
+  - Jelölt típusok: Season, Circuit, Circuit, RACED_IN, RACED_IN
+  - Forrásidézet: The 2012 season was preceded by three test sessions; one at Jerez de la Frontera and two in Barcelona. These sessions gave the teams and drivers the opportunity to familiarise themselves with their cars, though the teams downplayed the accuracy of testing times as being representative of the running order for the season
+- `season-2012-formula-one-world-championship#76`: ExtractionValidationError: WON is not temporal; from_year, to_year and role must be null
+  - Jelölt típusok: Driver, Driver, Driver, Team, Team, Season, GrandPrix, Circuit, Title, WON, AWARDED_IN, ROUND_OF, HELD_AT, ENTERED, ENTERED, TEAMMATE_OF, ACHIEVED, ACHIEVED, ACHIEVED
+  - Forrásidézet: The season began in Australia. Jenson Button took an early lead from pole-sitter Lewis Hamilton and the Red Bull cars while the rest of the field was bottle-necked by contact in the first corner. Button remained unchallenged throughout, even after a mid-race safety car to retrieve the stricken Caterham of Vitaly Petrov. Button went on to take his third victory at the Melbourne circuit, ahead of Se...
+- `season-2012-formula-one-world-championship#77`: ExtractionValidationError: DROVE_FOR does not allow Driver -> Season
+  - Jelölt típusok: Team, Driver, Driver, Driver, Season, Circuit, ENTERED, DROVE_FOR, DROVE_FOR, DROVE_FOR, ROUND_OF, HELD_AT
+  - Forrásidézet: . McLaren team principal Martin Whitmarsh later admitted that Button was "more than marginal" on fuel after the team made a mistake in calculating their fuel loads for the race, forcing Button to use a "severe fuel-saving mode" from the eighth lap of the race. Hamilton came under threat from Mark Webber in the late stages of the race, but held on to secure third place
+- `season-2012-formula-one-world-championship#78`: ExtractionValidationError: ACHIEVED does not allow Driver -> GrandPrix
+  - Jelölt típusok: Driver, Driver, Driver, Season, GrandPrix, Circuit, ROUND_OF, HELD_AT, ACHIEVED, ACHIEVED, ACHIEVED
+  - Forrásidézet: . Webber finished fourth – his best result in his home Grand Prix – while Fernando Alonso finished fifth, having endured pressure from Pastor Maldonado for the last half of the race. Maldonado's race ended when he crossed onto the astroturf on the final lap and spun into the wall
+- `season-2012-formula-one-world-championship#79`: ExtractionValidationError: ACHIEVED does not allow Driver -> GrandPrix
+  - Jelölt típusok: Driver, Driver, Driver, Team, Driver, Driver, Season, GrandPrix, Circuit, ACHIEVED, FOR_TEAM, ACHIEVED, FOR_TEAM, ACHIEVED, FOR_TEAM, ENTERED, DROVE_FOR, DROVE_FOR, ROUND_OF, HELD_AT
+  - Forrásidézet: . Kimi Räikkönen finished seventh after a poor qualifying session saw him start the race seventeenth, taking advantage of a chaotic final lap to make up two places, while Felipe Massa and Bruno Senna both retired after a bizarre collision that saw their cars tangled up in one another. HRT failed to qualify for the race for the second consecutive season after drivers Pedro de la Rosa and Narain Kar...
+- `season-2012-formula-one-world-championship#83`: ExtractionValidationError: ROUND_OF does not allow Circuit -> Season
+  - Jelölt típusok: Driver, Driver, Team, Circuit, Season, ENTERED, DROVE_FOR, TEAMMATE_OF, ROUND_OF, HELD_AT
+  - Forrásidézet: . As the race wore on, Pérez began to quickly catch Alonso on a drying track. Daniel Ricciardo was the first driver to pit for dry-weather tyres on lap 38, triggering another round of stops. Sauber and Pérez initially looked as if they had left their stop too late when Pérez emerged from the pits five seconds behind Alonso, but he began catching the two-time World Champion at the same rate as he h...
+- `season-2012-formula-one-world-championship#84`: ExtractionValidationError: ACHIEVED does not allow Driver -> GrandPrix
+  - Jelölt típusok: Driver, Driver, Driver, Driver, Driver, Driver, Team, Season, GrandPrix, Circuit, ACHIEVED, ACHIEVED, ACHIEVED, ACHIEVED, ACHIEVED, ACHIEVED, ENTERED, ROUND_OF, HELD_AT
+  - Forrásidézet: . Pérez closed to within half a second with seven laps to go, but ran wide at turn 14 and lost five seconds, later admitting that it was his mistake. He was unable to close the gap, and Alonso went on to win the race by two seconds, the win giving him a five-point lead in the championship. Pérez was second, taking his first podium and Sauber's best ever result as an independent team. Hamilton fini...
+- `season-2012-formula-one-world-championship#85`: ExtractionValidationError: ACHIEVED does not allow Driver -> Season
+  - Jelölt típusok: Driver, Driver, Circuit, Season, ACHIEVED, ACHIEVED, ROUND_OF
+  - Forrásidézet: . Bruno Senna finished in sixth, scoring more points in a single race than his team scored in 2011. Sebastian Vettel finished outside the points after making contact with Karthikeyan and developing a puncture.
+- `season-2012-formula-one-world-championship#87`: ExtractionValidationError: DROVE_FOR does not allow Team -> Driver
+  - Jelölt típusok: Driver, Team, Driver, Driver, Season, Circuit, GrandPrix, DROVE_FOR, AT_RACE, AT_RACE, AT_RACE, TEAMMATE_OF, TEAMMATE_OF, ROUND_OF, HELD_AT
+  - Forrásidézet: The championship resumed three weeks later in China, with the lead-in period to the race marked by Lotus F1 protesting the legality of Mercedes's rear wing design. The FIA rejected the protest, and with Mercedes allowed to continue racing with their car unchanged, Nico Rosberg took his – and the team's – first pole position since their return to Formula One in 2010, while a penalty to Lewis Hamilt...
+- `season-2012-formula-one-world-championship#90`: ExtractionValidationError: HELD_AT does not allow Team -> GrandPrix
+  - Jelölt típusok: Team, Driver, Driver, Driver, Driver, Driver, Season, GrandPrix, Circuit, HELD_AT, ROUND_OF, ACHIEVED, ACHIEVED, ACHIEVED, ACHIEVED
+  - Forrásidézet: . The result was also Mercedes's first win as a constructor since Juan Manuel Fangio won the 1955 Italian Grand Prix. Button was second, with Hamilton scoring his third consecutive third place, giving him a two-point championship lead over Button; Fernando Alonso, who had been leading the championship before the race, finished ninth. After two retirements in the opening rounds of the championship,...
+- `season-2012-formula-one-world-championship#92`: ExtractionValidationError: ROUND_OF: unknown source_id 'e1'
+  - Jelölt típusok: ROUND_OF, HELD_AT
+  - Forrásidézet: In the face of ongoing media speculation and public pressure to cancel the race due to ongoing political instability in Bahrain, the FIA released a statement at the Chinese Grand Prix confirming that the Bahrain Grand Prix would go ahead as planned
+- `season-2012-formula-one-world-championship#94`: ExtractionValidationError: ROUND_OF does not allow Circuit -> Season
+  - Jelölt típusok: Team, Circuit, Season, ENTERED, ROUND_OF
+  - Forrásidézet: . Three days before the race, a group of Force India mechanics travelling in an unmarked hire car were involved in a petrol bombing incident at an impromptu roadblock and were briefly exposed to tear gas fired by security forces. There were no injuries or damage, but two of the mechanics involved chose to leave the country. The team later announced their intentions to race despite the incident.
+- `season-2012-formula-one-world-championship#95`: ExtractionValidationError: ACHIEVED does not allow Driver -> GrandPrix
+  - Jelölt típusok: Driver, Driver, Driver, Team, Circuit, Season, GrandPrix, ACHIEVED, FOR_TEAM, RACED_IN, ACHIEVED, ACHIEVED, ENTERED, ROUND_OF, HELD_AT
+  - Forrásidézet: Sebastian Vettel qualified on pole, his first since the 2011 Brazilian Grand Prix. Heikki Kovalainen qualified sixteenth, the second time Caterham (and its predecessor, Team Lotus) advanced beyond the first qualifying period in dry conditions. Vettel went on to win the race – becoming the fourth winner in as many races – after spending much of the race defending against Kimi Räikkönen. Having star...
+- `season-2012-formula-one-world-championship#96`: ExtractionValidationError: RACED_IN does not allow Driver -> Season
+  - Jelölt típusok: Driver, Driver, Circuit, Season, RACED_IN, RACED_IN, ROUND_OF
+  - Forrásidézet: . His team-mate, Romain Grosjean, finished third. Grosjean had initially shown the pace to challenge Vettel's lead, but unlike Räikkönen, he did not have an extra set of fresh tyres, and lost touch with the reigning World Champion after the first set of stops. Lewis Hamilton finished eighth, once again hampered by slow pit stops
+- `season-2012-formula-one-world-championship#97`: ExtractionValidationError: ROUND_OF does not allow Circuit -> Season
+  - Jelölt típusok: Driver, Driver, Driver, Circuit, Season, Team, DROVE_FOR, DROVE_FOR, ROUND_OF
+  - Forrásidézet: . Lewis Hamilton finished eighth, once again hampered by slow pit stops. He was later involved in an altercation with Nico Rosberg that saw Rosberg referred to the stewards for forcing Hamilton beyond the boundary of the circuit while defending his position, but he escaped without penalty. Hamilton went on to finish eighth, while team-mate Jenson Button was forced to retire two laps from the end o...
+- `season-2012-formula-one-world-championship#98`: ExtractionValidationError: WON does not allow Driver -> Season
+  - Jelölt típusok: Driver, Driver, Driver, Driver, Driver, Season, Circuit, GrandPrix, WON, ROUND_OF, HELD_AT
+  - Forrásidézet: . Daniel Ricciardo was involved in early contact that saw the Australian driver slide down the order from sixth at the start to fifteenth by the end of the race, having spent most of the Grand Prix caught behind Vitaly Petrov. Vettel's win gave him a four-point lead in the championship over Hamilton, while Mark Webber's fourth consecutive fourth place secured third overall
+- `season-2012-formula-one-world-championship#99`: ExtractionValidationError: ENTERED is not temporal; from_year, to_year and role must be null
+  - Jelölt típusok: Team, Team, Team, Season, ENTERED, ENTERED, ENTERED
+  - Forrásidézet: . Red Bull Racing took the lead from McLaren in the World Constructors' Championship, while Lotus's double podium moved them into third overall.
+- `season-2016-formula-one-world-championship#1`: ExtractionValidationError: ENTERED does not allow Season -> Season
+  - Jelölt típusok: Season, GrandPrix, GrandPrix, ROUND_OF, ROUND_OF, ENTERED
+  - Forrásidézet: . Teams and drivers took part in twenty-one Grands Prix—making for the longest season in the sport's history to that point—starting in Australia on 20 March and finishing in Abu Dhabi on 27 November as they competed for the World Drivers' and World Constructors' championships.
+- `season-2016-formula-one-world-championship#11`: ExtractionValidationError: POWERED_BY does not allow Team -> PowerUnit
+  - Jelölt típusok: Team, PowerUnit, Car, Season, POWERED_BY, FIELDED, RACED_IN, ENTERED
+  - Forrásidézet: Several team changes took place before the season began. Haas F1 Team, a team formed by NASCAR Sprint Cup Series team owner Gene Haas, joined the Formula One grid, becoming the first American team to compete since the unrelated Haas Lola team competed in 1986. The team used power units supplied by Ferrari and a chassis developed by Dallara. Dallara had last participated in Formula One as the chass...
+- `season-2016-formula-one-world-championship#12`: ExtractionValidationError: DROVE_FOR does not allow Team -> Team
+  - Jelölt típusok: Team, Team, Season, DROVE_FOR, ENTERED
+  - Forrásidézet: . Renault returned to Formula One as a full factory-supported team after they purchased Lotus from Genii Capital, the venture capital firm they had originally sold the same team to in 2010, and supplied engines to up until the end of 2014. Lotus's participation in the 2016 season was in question pending the resolution of a High Court case brought against the team by HM Revenue and Customs over unp...
+- `season-2016-formula-one-world-championship#13`: ExtractionValidationError: POWERED_BY does not allow Team -> PowerUnit
+  - Jelölt típusok: Team, Team, PowerUnit, PowerUnit, Season, POWERED_BY, POWERED_BY, ENTERED, ENTERED
+  - Forrásidézet: Both Red Bull Racing and Scuderia Toro Rosso underwent changes regarding their power unit supply. The former formally ended their nine-year partnership with engine supplier Renault at the end of the 2015 season, with the team citing the lack of performance from the Renault Energy-F1 2015 engine as a leading factor in the change. The team continued using Renault engines, but they were rebadged as T...
+- `season-2016-formula-one-world-championship#14`: ExtractionValidationError: POWERED_BY does not allow Team -> PowerUnit
+  - Jelölt típusok: Team, PowerUnit, PowerUnit, PowerUnit, Season, POWERED_BY, POWERED_BY, POWERED_BY, ENTERED
+  - Forrásidézet: . Team principal Christian Horner named Renault's partnership with Mario Illien and his company Ilmor as a reason for staying with the manufacturer. Meanwhile, Scuderia Toro Rosso returned to using Ferrari power units, as they had done prior to the start of 2014, after Renault announced that they would no longer supply customer engines. The team used the type 060 power unit used by Ferrari teams i...
+- `season-2016-formula-one-world-championship#16`: ExtractionValidationError: DROVE_FOR does not allow Team -> Team
+  - Jelölt típusok: Team, Team, PowerUnit, PowerUnit, Season, DROVE_FOR, POWERED_BY, POWERED_BY, ENTERED
+  - Forrásidézet: Marussia applied for their team name to be changed to Manor Racing, a request granted in January 2016. The team adopted the formal name of "Manor Racing MRT" and switched from Ferrari to Mercedes power, with the team upgrading to a 2016-specification engine after having used a year-old Ferrari engine in 2015. The team underwent a management reshuffle following the resignation of team principal Joh...
+- `season-2016-formula-one-world-championship#17`: ExtractionValidationError: HELD_AT does not allow Team -> GrandPrix
+  - Jelölt típusok: Team, GrandPrix, Team, Driver, HELD_AT
+  - Forrásidézet: Sauber underwent a change in ownership in the week prior to the Hungarian Grand Prix, with the team being purchased by Longbow Finance. Despite the acquisition and the retirement of team founder Peter Sauber, the team continued to use the Sauber identity.
+- `season-2016-formula-one-world-championship#19`: ExtractionValidationError: DROVE_FOR does not allow Team -> Team
+  - Jelölt típusok: Driver, Team, Driver, Team, Season, DROVE_FOR, DROVE_FOR, DROVE_FOR, ENTERED, ENTERED
+  - Forrásidézet: After having taken over the Lotus team, Renault introduced a new driver-line up. Jolyon Palmer, the 2014 GP2 Series champion, made his race debut in Melbourne. Palmer had previously made regular free practice appearances with the team when it was known as Lotus in 2015. Despite originally having signed a contract with Lotus for 2016, Pastor Maldonado announced he would not be driving for Renault a...
+- `season-2016-formula-one-world-championship#21`: ExtractionValidationError: DROVE_FOR does not allow Team -> Driver
+  - Jelölt típusok: Team, Driver, Driver, Driver, Driver, Season, DROVE_FOR, DROVE_FOR, DROVE_FOR, DROVE_FOR, ENTERED
+  - Forrásidézet: Manor did not retain their 2015 drivers either, opting to sign two rookies for its 2016 campaign: reigning Deutsche Tourenwagen Masters champion Pascal Wehrlein and GP2 Series regular Rio Haryanto, who became the first and, as of 2026, only Indonesian driver to race in the championship. Will Stevens and Roberto Merhi—who drove for the team when it competed as Marussia—were not retained by the team
+- `season-2016-formula-one-world-championship#24`: ExtractionValidationError: RACED_IN does not allow Driver -> Season
+  - Jelölt típusok: Driver, Driver, Team, Season, GrandPrix, GrandPrix, GrandPrix, DROVE_FOR, DROVE_FOR, RACED_IN, ROUND_OF, ROUND_OF, ROUND_OF
+  - Forrásidézet: After suffering broken ribs and a pneumothorax injury as a result of an accident during the Australian Grand Prix, Fernando Alonso was ruled out of the Bahrain Grand Prix as a precaution after medical exams. McLaren reserve driver and reigning GP2 Series champion Stoffel Vandoorne made his Formula One debut, replacing Alonso. Alonso returned to his seat for the Chinese Grand Prix two weeks later
+- `season-2016-formula-one-world-championship#25`: ExtractionValidationError: ACHIEVED does not allow Driver -> GrandPrix
+  - Jelölt típusok: Driver, Driver, Driver, Team, Team, Driver, GrandPrix, GrandPrix, GrandPrix, ACHIEVED, ACHIEVED, DROVE_FOR, DROVE_FOR, TEAMMATE_OF, ACHIEVED
+  - Forrásidézet: . Alonso returned to his seat for the Chinese Grand Prix two weeks later. Daniil Kvyat and Max Verstappen traded places ahead of the Spanish Grand Prix, with Verstappen promoted to Red Bull Racing and Kvyat returning to Scuderia Toro Rosso. Red Bull explained the decision to swap their drivers as being made to relieve pressure on Kvyat following criticism for his role in a first-lap accident in th...
+- `season-2016-formula-one-world-championship#26`: ExtractionValidationError: ACHIEVED does not allow Driver -> GrandPrix
+  - Jelölt típusok: Driver, Driver, Team, Team, GrandPrix, GrandPrix, DROVE_FOR, DROVE_FOR, ACHIEVED, ACHIEVED
+  - Forrásidézet: . at Toro Rosso. Rio Haryanto lost his race seat after the German Grand Prix, when his sponsors were unable to meet their financial obligations to the team. He stayed with the team, filling a testing and reserve role. His race seat was filled by 2015 GP3 Series champion and Renault test driver Esteban Ocon, who made his Formula One debut with MRT at the Belgian Grand Prix.
+- `season-2016-formula-one-world-championship#27`: ExtractionValidationError: ROUND_OF: unknown source_id 'e1'
+  - Jelölt típusok: ROUND_OF
+  - Forrásidézet: ## Calendar The following twenty-one Grands Prix took place in 2016.
+- `season-2016-formula-one-world-championship#3`: ExtractionValidationError: ACHIEVED does not allow Driver -> Season
+  - Jelölt típusok: Driver, Driver, Season, Title, WON, AWARDED_IN, TEAMMATE_OF, ACHIEVED
+  - Forrásidézet: Nico Rosberg won his only World Drivers' Championship title in the final race of the season. With nine wins and seven other podiums, Rosberg beat teammate and defending World Champion Lewis Hamilton by five points, despite Hamilton winning more races than Rosberg throughout the season
+- `season-2016-formula-one-world-championship#39`: ExtractionValidationError: RACED_IN does not allow Season -> Season
+  - Jelölt típusok: Season, RACED_IN
+  - Forrásidézet: ## Schedule Starting in 2016, the number of pre-season tests were reduced from three to two. The FIA formally increased the maximum events allowed in a season from 20 to 21 to accommodate the calendar's approval.
+- `season-2016-formula-one-world-championship#4`: ExtractionValidationError: WON is not temporal; from_year, to_year and role must be null
+  - Jelölt típusok: Driver, Team, Season, Title, WON, AWARDED_IN, ENTERED
+  - Forrásidézet: . In doing so, Rosberg followed the success of his father in 1982 - becoming the second son of a champion to become champion himself, a feat previously achieved by Damon Hill in 1996 and the third title winner for Mercedes. Rosberg announced his retirement from the sport shortly after winning the title, effectively ending the on-track Silver War between the Mercedes duo.
+- `season-2016-formula-one-world-championship#5`: ExtractionValidationError: WON does not allow Team -> Season
+  - Jelölt típusok: Team, Team, Team, Season, WON, ENTERED, ENTERED, ENTERED
+  - Forrásidézet: In the World Constructors' Championship, Mercedes successfully defended their title for the second consecutive year with a then-record points tally of 765 points, beating Red Bull Racing by 297 points. Ferrari finished third overall, a further seventy points behind.
+- `season-2016-formula-one-world-championship#57`: ExtractionValidationError: ENTERED is not temporal; from_year, to_year and role must be null
+  - Jelölt típusok: Team, Driver, Team, Season, ENTERED, ENTERED
+  - Forrásidézet: . Ferrari were fastest on three of the four testing days, with Nico Hülkenberg topping the time sheets for Force India on the third day. A second test, also in Barcelona, was conducted on 1–4 March. Ferrari ended the two tests with the best time set overall on the newly introduced ultra-soft tyres, while Mercedes covered the most distance in testing, almost 5,000 km (3,100 mi)
+- `season-2016-formula-one-world-championship#6`: ExtractionValidationError: DROVE_FOR does not allow Driver -> Season
+  - Jelölt típusok: Driver, Season, Driver, GrandPrix, DROVE_FOR, ENTERED, ACHIEVED, ROUND_OF
+  - Forrásidézet: As of 2026, this is the last championship for a German driver. This was the last season to be held during Bernie Ecclestone's tenure as Chief Executive of the Formula One Group. Ecclestone would be removed from his role on 23 January 2017 after nearly 40 years in the job following Liberty Media's purchase of the sport from CVC Capital Partners. It was the final full season for 2009 World Champion ...
+- `season-2016-formula-one-world-championship#60`: ExtractionValidationError: ENTERED does not allow Team -> GrandPrix
+  - Jelölt típusok: Driver, Driver, Driver, Team, GrandPrix, Season, ENTERED, ROUND_OF, ACHIEVED, ACHIEVED, ACHIEVED, FOR_TEAM, FOR_TEAM, FOR_TEAM
+  - Forrásidézet: The season started with the Australian Grand Prix, and featured the newly introduced elimination-style qualifying format. This format was heavily criticized by teams, drivers, fans and the press, which led to a review of the format before the next race. The race ended with a 1–2 finish for Mercedes with Nico Rosberg taking victory from Lewis Hamilton in second. Sebastian Vettel and Ferrari finishe...
+- `season-2016-formula-one-world-championship#61`: ExtractionValidationError: RACED_IN does not allow Driver -> Season
+  - Jelölt típusok: Driver, Driver, Driver, Team, Season, TEAMMATE_OF, DROVE_FOR, RACED_IN, ENTERED
+  - Forrásidézet: . Teammate Kimi Räikkönen retired with a suspected turbo failure on lap 21. On lap 16, whilst attempting to overtake Esteban Gutiérrez in the new Haas F1 car at turn three, Fernando Alonso crashed at high speed into the outside barrier before barrel-rolling and landing upside-down against the barrier. Gutiérrez ended up in the gravel trap with terminal rear tyre damage, and quickly went over to Al...
+- `season-2016-formula-one-world-championship#63`: ExtractionValidationError: ACHIEVED does not allow Driver -> GrandPrix
+  - Jelölt típusok: Driver, Driver, GrandPrix, Season, ACHIEVED, FOR_TEAM, ROUND_OF
+  - Forrásidézet: At the next race in Bahrain, Alonso was ruled out of taking part on medical grounds and was later revealed to have suffered broken ribs and a pneumothorax as a result of the previous race's collision, and was replaced by rookie Stoffel Vandoorne. Following the widespread criticism of the new qualifying format, the teams voted to abandon it and revert to the system used in 2015
+- `season-2016-formula-one-world-championship#64`: ExtractionValidationError: ACHIEVED does not allow Driver -> Season
+  - Jelölt típusok: Driver, Driver, Driver, Season, Title, WON, AWARDED_IN, TEAMMATE_OF, ACHIEVED, ACHIEVED, ACHIEVED
+  - Forrásidézet: . However, in the week before the race weekend, the sport's Strategy Working Group over-ruled the teams in order to keep the elimination style for 2016. After qualifying, the system once again came under heavy fire with Hamilton securing pole position ahead of Rosberg and Vettel. The race saw Rosberg take his second consecutive victory of 2016 followed by Räikkönen and Hamilton, respectively
+- `season-2016-formula-one-world-championship#65`: ExtractionValidationError: RACED_IN does not allow Driver -> Season
+  - Jelölt típusok: Driver, Driver, Driver, Team, Team, Driver, Season, DROVE_FOR, DROVE_FOR, RACED_IN, RACED_IN
+  - Forrásidézet: . The Ferrari of Sebastian Vettel and the Renault of Jolyon Palmer retired before the race started with engine and hydraulics failures, respectively. Following a first-lap collision with Hamilton, Valtteri Bottas was penalised and given two points on his licence.
+- `season-2016-formula-one-world-championship#66`: ExtractionValidationError: ACHIEVED does not allow Driver -> GrandPrix
+  - Jelölt típusok: Driver, Driver, Season, GrandPrix, Team, DROVE_FOR, DROVE_FOR, ROUND_OF, ACHIEVED, ACHIEVED, WON
+  - Forrásidézet: At the next Grand Prix in China, the elimination style qualifying format was permanently dropped in favour of the previous format used between 2006 and 2015. This yielded Nico Rosberg's first pole position of the year after Hamilton suffered a number of setbacks both in qualifying and during the race itself, eventually finishing in seventh place, with his teammate taking his third consecutive vict...
+- `season-2016-formula-one-world-championship#67`: ExtractionValidationError: ACHIEVED does not allow Driver -> GrandPrix
+  - Jelölt típusok: Driver, Driver, Season, GrandPrix, Circuit, ACHIEVED, ACHIEVED, ROUND_OF
+  - Forrásidézet: . The race finished with no retirements, a feat that has only been achieved six times. The next race in Russia featured a number of incidents on the first lap with Vettel and Kvyat getting involved. Kvyat hit Vettel twice forcing him to retire. Rosberg won the race with his teammate Lewis Hamilton finishing second after starting 10th and Rosberg achieved his first grand slam and extended his champ...
+- `season-2016-formula-one-world-championship#68`: ExtractionValidationError: ACHIEVED does not allow Driver -> GrandPrix
+  - Jelölt típusok: Driver, Driver, Driver, Driver, Team, Team, GrandPrix, Season, DROVE_FOR, DROVE_FOR, ACHIEVED, FOR_TEAM, ROUND_OF
+  - Forrásidézet: ## European rounds Before the race in Spain, Daniil Kvyat and Max Verstappen swapped places with Kvyat going to Toro Rosso and Verstappen to Red Bull. The start of the race saw Hamilton and Rosberg collide, handing the lead to Daniel Ricciardo. The race also saw the youngest race winner as Max Verstappen won the Grand Prix, defending against Kimi Räikkönen after Red Bull committed Ricciardo to an ...
+- `season-2016-formula-one-world-championship#69`: ExtractionValidationError: ACHIEVED does not allow Driver -> GrandPrix
+  - Jelölt típusok: Driver, Driver, Driver, GrandPrix, Season, ACHIEVED, ACHIEVED, ACHIEVED, ROUND_OF
+  - Forrásidézet: At the next round in Monaco, Ricciardo took the first pole position of his career. Helped by the race starting behind the safety car he held the lead for 33 laps, but was unable to convert it to a win after his team made a costly error during his pit-stop. As a result, Lewis Hamilton inherited the lead and went on to win the race, his first of the season. Ricciardo finished second ahead of Sergio ...
+- `season-2016-formula-one-world-championship#70`: ExtractionValidationError: WON does not allow Driver -> GrandPrix
+  - Jelölt típusok: Driver, Driver, Driver, Driver, Driver, GrandPrix, Season, Team, WON, ROUND_OF, HELD_AT
+  - Forrásidézet: . Ricciardo finished second ahead of Sergio Pérez. Hamilton then went on to win the Canadian Grand Prix despite losing the lead to Sebastian Vettel at the start, reclaiming the position with a one-stop strategy while Vettel and Ferrari committed to two stops. Valtteri Bottas finished third, his first podium of the season
+- `season-2016-formula-one-world-championship#71`: ExtractionValidationError: ACHIEVED does not allow Driver -> GrandPrix
+  - Jelölt típusok: Driver, Driver, Driver, Driver, Driver, GrandPrix, Season, ACHIEVED, ACHIEVED, ACHIEVED, ACHIEVED, ACHIEVED, ROUND_OF
+  - Forrásidézet: . Valtteri Bottas finished third, his first podium of the season. Rosberg won the returning European Grand Prix with his second grand slam of the season and of his career, ahead of Sebastian Vettel and Sergio Pérez, while Hamilton finished fifth after struggling with a software issue that limited his engine's ability to harvest energy.
+- `season-2016-formula-one-world-championship#72`: ExtractionValidationError: ACHIEVED does not allow Driver -> GrandPrix
+  - Jelölt típusok: Driver, Driver, Driver, Driver, GrandPrix, Season, ACHIEVED, ACHIEVED, ACHIEVED, ACHIEVED, ROUND_OF
+  - Forrásidézet: Hamilton took pole position at the next round in Austria while Rosberg started sixth after a grid penalty. The two drivers followed opposing strategies to be first and second after the pit stops, with Hamilton on the preferred racing tyre gradually catching Rosberg. The two made contact as Hamilton tried to pass Rosberg on the final lap; Hamilton won the race, while Rosberg broke his front wing an...
+- `season-2016-formula-one-world-championship#73`: ExtractionValidationError: ACHIEVED does not allow Driver -> GrandPrix
+  - Jelölt típusok: Driver, Driver, Driver, GrandPrix, Season, ROUND_OF, ACHIEVED, ACHIEVED, ACHIEVED
+  - Forrásidézet: . A stewards' inquiry found that Rosberg had caused an avoidable collision, and handed him a ten-second penalty, though the race result was not affected. Hamilton reduced the deficit to Rosberg to a single point at the next round in Great Britain, where difficult conditions saw the drivers contend with a drying circuit and varying grip levels. Hamilton established an early lead, while Rosberg and ...
+- `season-2016-formula-one-world-championship#75`: ExtractionValidationError: WON does not allow Driver -> Season
+  - Jelölt típusok: Driver, Driver, Team, GrandPrix, Season, WON, FIELDED, ROUND_OF
+  - Forrásidézet: Lewis Hamilton took the championship lead from Nico Rosberg at the next round in Hungary, leading another Mercedes 1–2 finish to gain a six-point lead in the Drivers' Championship standings. The Grand Prix was marked by controversy: Rosberg secured pole position on a drying circuit in qualifying after McLaren's Fernando Alonso spun in front of him necessitating a double waved yellow flag. Although...
+- `season-2016-formula-one-world-championship#77`: ExtractionValidationError: WON does not allow Driver -> Season
+  - Jelölt típusok: Driver, Driver, Driver, Driver, Season, GrandPrix, WON, ROUND_OF, HELD_AT, FOR_TEAM, FOR_TEAM, FOR_TEAM
+  - Forrásidézet: Following penalties for Rosberg and Button for unauthorised pit-to-car communications in the previous races, the FIA repealed all regulations for the next round in Germany. Hamilton further consolidated his championship lead, beating Rosberg off the line at the start; for his part, Rosberg was caught by the Red Bulls of Daniel Ricciardo and Max Verstappen and was unable to pass them
+- `season-2016-formula-one-world-championship#78`: ExtractionValidationError: DROVE_FOR does not allow Driver -> Driver
+  - Jelölt típusok: Driver, Driver, Driver, Season, DROVE_FOR, DROVE_FOR
+  - Forrásidézet: . Rosberg's race was further complicated by a time penalty for an aggressive pass on Verstappen that forced the Red Bull driver wide. However, Hamilton remained pessimistic about his position as championship leader, as with nine races left in the season, he was anticipating grid penalties for exceeding his engine allocation.
+- `season-2016-formula-one-world-championship#79`: ExtractionValidationError: ACHIEVED does not allow Driver -> GrandPrix
+  - Jelölt típusok: Team, Driver, GrandPrix, Driver, Driver, Driver, Driver, Circuit, Season, ENTERED, DROVE_FOR, ACHIEVED, ROUND_OF, ACHIEVED, ACHIEVED, ACHIEVED, ACHIEVED
+  - Forrásidézet: With Mercedes opting to take a series of grid penalties to build up a stockpile of components, Hamilton was forced to start the next race in Belgium from the back of the grid. He took advantage of first-lap contact between Vettel, Räikkönen and Verstappen to work his way through the field before a heavy accident involving Kevin Magnussen at Eau Rouge forced the race to be temporarily stopped
+- `season-2016-formula-one-world-championship#80`: ExtractionValidationError: DROVE_FOR does not allow Driver -> Season
+  - Jelölt típusok: Driver, Driver, Driver, Driver, Driver, Driver, Driver, Team, Season, DROVE_FOR, DROVE_FOR, DROVE_FOR, DROVE_FOR, DROVE_FOR, DROVE_FOR, DROVE_FOR, ENTERED
+  - Forrásidézet: . When the race resumed, Nico Rosberg led the race until the chequered flag, while Hamilton ultimately finished third after being unable to catch Daniel Ricciardo. Further down the order, Verstappen was subject to increasing criticism over his driving tactics after being caught in several incidents with Räikkönen and Sergio Pérez, while Esteban Ocon finished sixteenth on debut for MRT.
+- `season-2016-formula-one-world-championship#82`: ExtractionValidationError: ACHIEVED does not allow Driver -> Season
+  - Jelölt típusok: Driver, Driver, PowerUnit, Team, Title, Season, ACHIEVED, ACHIEVED, DROVE_FOR, POWERED_BY
+  - Forrásidézet: . Vettel went on to finish third—his first podium finish in five races—with Räikkönen fourth as the team introduced upgrades to the type 061 power unit in the hopes of recovering second place in the World Constructors' Championship from Red Bull.
+- `season-2016-formula-one-world-championship#84`: ExtractionValidationError: WON does not allow Driver -> Season
+  - Jelölt típusok: Driver, Driver, Driver, Driver, GrandPrix, Season, Team, Team, WON, ACHIEVED, FOR_TEAM, FOR_TEAM, ROUND_OF, HELD_AT
+  - Forrásidézet: Rosberg reclaimed the championship lead in Singapore, qualifying on pole while Hamilton was forced to settle for third after struggling with mechanical issues and driving errors. A late pit stop during the race by Mercedes saw Hamilton pass Kimi Räikkönen for third which he held until the end of the race. Red Bull Racing decided to pit Daniel Ricciardo from second to prevent coming under threat fr...
+- `season-2016-formula-one-world-championship#85`: ExtractionValidationError: ACHIEVED does not allow Driver -> GrandPrix
+  - Jelölt típusok: Driver, Driver, Driver, Season, GrandPrix, ACHIEVED, ACHIEVED, ACHIEVED, ROUND_OF
+  - Forrásidézet: . Rosberg decided to stay out because his lead over Ricciardo was not large enough to pit and stay ahead, but was able to hold on to first place to take the win. Ricciardo made late efforts to catch Rosberg from 27 seconds behind, but could not quite catch him, finishing 0.6 seconds behind at the chequered flag. With Hamilton finishing third, Rosberg turned a two-point deficit into an eight-point ...
+- `season-2016-formula-one-world-championship#86`: ExtractionValidationError: ACHIEVED does not allow Driver -> GrandPrix
+  - Jelölt típusok: Team, Driver, Driver, Driver, Driver, GrandPrix, Season, ENTERED, DROVE_FOR, ACHIEVED, ACHIEVED, ACHIEVED, ROUND_OF
+  - Forrásidézet: Mercedes's streak of ten consecutive wins came to an end in Malaysia. Hamilton established an early lead, but retired sixteen laps from the end of the race when his engine failed, leaving Daniel Ricciardo in control of the race. Nico Rosberg was turned around by Sebastian Vettel in a first corner accident that eliminated Vettel and forced Rosberg to work his way up through the field
+- `season-2016-formula-one-world-championship#87`: ExtractionValidationError: ACHIEVED does not allow Driver -> GrandPrix
+  - Jelölt típusok: Driver, Driver, Driver, Driver, Team, Season, GrandPrix, ACHIEVED, DROVE_FOR, DROVE_FOR, ACHIEVED, TEAMMATE_OF
+  - Forrásidézet: . Ricciardo raced Max Verstappen for the lead when Hamilton's retirement triggered a Virtual Safety Car, prompting Red Bull to pit both drivers at the same time. On fresher tyres, Ricciardo was able to withstand pressure from Verstappen to win his first race since the 2014 Belgian Grand Prix. Nico Rosberg finished third despite having ten seconds added to his race time for contact with Kimi Räikkö...
+- `season-2016-formula-one-world-championship#88`: ExtractionValidationError: ACHIEVED does not allow Driver -> GrandPrix
+  - Jelölt típusok: Driver, Driver, Driver, Season, GrandPrix, ACHIEVED, ACHIEVED, ROUND_OF
+  - Forrásidézet: Rosberg further extended his championship lead to thirty-three points in Japan, starting the race from pole and winning it. Meanwhile, Hamilton suffered a poor start, slipping from second on the grid to eighth by the end of the first lap. He was forced to run a race of recovery, using pit strategy to reclaim third place going into the final phase of the race, but was unable to pass Max Verstappen,...
+- `season-2016-formula-one-world-championship#91`: ExtractionValidationError: ACHIEVED does not allow Driver -> GrandPrix
+  - Jelölt típusok: Driver, Driver, Team, Season, GrandPrix, GrandPrix, Driver, Driver, Driver, ENTERED, ROUND_OF, ROUND_OF, DROVE_FOR, DROVE_FOR, ACHIEVED, ACHIEVED, ACHIEVED, ACHIEVED, FOR_TEAM, FOR_TEAM, FOR_TEAM
+  - Forrásidézet: With the championship leaving Asia for the Americas, Hamilton gradually started to erode Rosberg's championship lead. Mercedes scored a 1–2 finish in the United States, with Rosberg taking advantage of a Virtual Safety Car triggered by Max Verstappen to take second place from Daniel Ricciardo. Hamilton led another Mercedes 1–2 in Mexico, with the race overshadowed by a late incident that saw Verst...
+- `season-2016-formula-one-world-championship#92`: ExtractionValidationError: ACHIEVED does not allow Driver -> GrandPrix
+  - Jelölt típusok: Driver, Driver, Driver, Driver, GrandPrix, Team, Season, ROUND_OF, ENTERED, ACHIEVED, ACHIEVED, ACHIEVED, ACHIEVED
+  - Forrásidézet: . Vettel inherited third place when Verstappen was penalised, only to be penalised himself for dangerous driving when defending against Ricciardo. The final amended results saw Ricciardo finish third, ahead of Verstappen and Vettel. Treacherous weather conditions saw the Brazilian Grand Prix subject to several race stoppages—most notably after Kimi Räikkönen crashed on the main straight—but when r...
+- `season-2016-formula-one-world-championship#93`: ExtractionValidationError: ACHIEVED does not allow Driver -> Driver
+  - Jelölt típusok: Driver, Driver, Driver, ACHIEVED, ACHIEVED, ACHIEVED
+  - Forrásidézet: . Hamilton won the race ahead of Rosberg for the third time in as many races, with Max Verstappen completing the podium.
+- `season-2016-formula-one-world-championship#95`: ExtractionValidationError: ACHIEVED does not allow Driver -> GrandPrix
+  - Jelölt típusok: Driver, Driver, Season, Driver, GrandPrix, ACHIEVED, WON, ROUND_OF
+  - Forrásidézet: . Hamilton secured pole ahead of Rosberg and led from the start. In the closing laps of the race, he slowed down in attempt to allow other drivers to catch and pass Rosberg, despite repeated instructions from Mercedes not to risk losing the race to Sebastian Vettel, who used pit strategy to bring himself into contention and was quickly catching up. Hamilton went on to win the race, while Rosberg s...
+- `season-2016-formula-one-world-championship#96`: ExtractionValidationError: WON does not allow Driver -> Season
+  - Jelölt típusok: Driver, Season, Driver, WON, AWARDED_IN
+  - Forrásidézet: Five days after winning the title, Rosberg announced his immediate retirement from the sport at the FIA Prize Giving Ceremony in Vienna. He was the first reigning champion to do so since Alain Prost in 1993.
+- `season-2021-formula-one-world-championship#1`: ExtractionValidationError: DROVE_FOR does not allow Team -> Driver
+  - Jelölt típusok: Driver, Team, Season, Title, WON, ENTERED, DROVE_FOR, AWARDED_IN
+  - Forrásidézet: for the titles of World Drivers' Champion and World Constructors' Champion, respectively. Max Verstappen of Red Bull Racing-Honda won the Drivers' Championship for the first time in his career, having claimed 10 race wins across the season. Verstappen became the first-ever driver from the Netherlands, the first Honda-powered driver since Ayrton Senna in 1991, the first Red Bull driver since Sebast...
+- `season-2021-formula-one-world-championship#10`: ExtractionValidationError: DROVE_FOR does not allow Team -> Team
+  - Jelölt típusok: Driver, Driver, Driver, Team, Team, Team, Season, DROVE_FOR, DROVE_FOR, DROVE_FOR, DROVE_FOR, TEAMMATE_OF
+  - Forrásidézet: Vettel moved to Aston Martin, where he replaced Sergio Pérez. Pérez, who had previously signed a contract to drive for Aston Martin's predecessor, Racing Point, until 2022, moved to Red Bull Racing where he replaced Alexander Albon, who was Red Bull Racing's reserve and test driver for the 2021 season. Pérez became the first driver since Mark Webber in 2007 to join the team without being previousl...
+- `season-2021-formula-one-world-championship#11`: ExtractionValidationError: ROUND_OF does not allow Season -> Season
+  - Jelölt típusok: Driver, Driver, Team, Driver, Driver, Driver, Team, Season, Season, Driver, DROVE_FOR, DROVE_FOR, DROVE_FOR, DROVE_FOR, DROVE_FOR, ROUND_OF
+  - Forrásidézet: Romain Grosjean and Kevin Magnussen, who had raced for Haas since 2016 and 2017 respectively, left the team at the end of 2020. 2020 Formula 2 Champion Mick Schumacher, the son of seven-time World Champion Michael Schumacher, took one of the seats at the team while the other was filled by Nikita Mazepin, who finished fifth in the Formula 2 Championship. Yuki Tsunoda, who finished third in 2020 For...
+- `season-2021-formula-one-world-championship#12`: ExtractionValidationError: DROVE_FOR does not allow Team -> Driver
+  - Jelölt típusok: Team, Driver, Team, Driver, Driver, Team, Driver, GrandPrix, Season, DROVE_FOR, DROVE_FOR, DROVE_FOR, DROVE_FOR, WON
+  - Forrásidézet: AlphaTauri, replacing Daniil Kvyat, who moved to Alpine as their reserve driver. Tsunoda became the first Japanese Formula One driver since Kamui Kobayashi in 2014. Mid-season changes During the Dutch Grand Prix weekend, Kimi Räikkönen tested positive for coronavirus. He was replaced at Alfa Romeo Racing by reserve driver Robert Kubica, who last raced at the 2019 Abu Dhabi Grand Prix, driving for ...
+- `season-2021-formula-one-world-championship#2`: ExtractionValidationError: POWERED_BY does not allow PowerUnit -> Season
+  - Jelölt típusok: Driver, Team, Team, PowerUnit, Season, Title, ENTERED, ENTERED, POWERED_BY, WON, WON
+  - Forrásidézet: non-Mercedes driver in the turbo-hybrid era to win the World Championship. This season saw the return of Aston Martin since 1960 after Lawrence Stroll invested into the British marque. Honda became the second engine supplier in the turbo-hybrid era to power a championship-winning car, after Mercedes. Four-time defending and seven-time champion Lewis Hamilton of Mercedes finished runner-up. Mercede...
+- `season-2021-formula-one-world-championship#3`: ExtractionValidationError: WON is not temporal; from_year, to_year and role must be null
+  - Jelölt típusok: Driver, Driver, Season, Title, WON, WON, AWARDED_IN
+  - Forrásidézet: retained the Constructors' Championship for the eighth consecutive season. The season featured a close year-long battle for the title between Verstappen and Hamilton, with BBC Sport's Andrew Benson describing it as "one of the most intense, hard-fought battles in sporting history". The two drivers exchanged the championship lead multiple times during the season and the title contenders were involv...
+- `season-2021-formula-one-world-championship#4`: ExtractionValidationError: ACHIEVED does not allow Driver -> GrandPrix
+  - Jelölt típusok: Driver, Driver, Season, GrandPrix, GrandPrix, GrandPrix, GrandPrix, GrandPrix, ACHIEVED, WON, WON
+  - Forrásidézet: British and Italian Grands Prix as well as minor collisions at the Emilia Romagna and Saudi Arabian Grands Prix. Both drivers entered the season-ending Abu Dhabi Grand Prix tied on points, which ended with a controversial finish, as it was deemed that race control did not handle a late safety car period fully according to the regulations. Verstappen produced a last lap overtake on Hamilton after a...
+- `season-2021-formula-one-world-championship#56`: ExtractionValidationError: ACHIEVED does not allow Driver -> GrandPrix
+  - Jelölt típusok: Driver, Driver, Driver, Driver, Driver, GrandPrix, Season, ACHIEVED, ACHIEVED, ACHIEVED, ACHIEVED, ACHIEVED, ROUND_OF
+  - Forrásidézet: give the place back because he exceeded track limits. In the end, Hamilton won from Verstappen, and Valtteri Bottas completed the podium. Lando Norris finished in fourth and Pérez, after starting from last, recovered to fifth. At the Emilia Romagna Grand Prix, Hamilton took pole from Pérez and Verstappen. Verstappen went into the lead at turn 1 on lap 1, after it started raining on race day. Mazep...
+- `season-2021-formula-one-world-championship#58`: ExtractionValidationError: ACHIEVED does not allow Driver -> Driver
+  - Jelölt típusok: Driver, Driver, Driver, Driver, Driver, Driver, GrandPrix, Season, TEAMMATE_OF, ACHIEVED, ACHIEVED, ACHIEVED, ROUND_OF
+  - Forrásidézet: minute in the gravel, he rejoined. The moment he did, his teammate Bottas and George Russell had a crash at over 320 km/h (200 mph) on the start-finish straight, bringing out the red flag. After the race restarted, Norris overtook Charles Leclerc for second, but the former was overtaken by Hamilton, resulting in a podium of Verstappen, Hamilton and Norris. Bottas took pole at the Portuguese Grand ...
+- `season-2021-formula-one-world-championship#59`: ExtractionValidationError: ACHIEVED does not allow Driver -> Season
+  - Jelölt típusok: Driver, Driver, Driver, Driver, Driver, Driver, Driver, Season, TEAMMATE_OF, ACHIEVED, ACHIEVED, ACHIEVED, ACHIEVED, ACHIEVED
+  - Forrásidézet: Räikkönen made contact with his teammate, Antonio Giovinazzi, and was forced into retirement, while Giovinazzi could continue. Hamilton eventually overtook Bottas and won with Verstappen in second and Bottas in third. Pérez and Norris came fourth and fifth, respectively. Verstappen took the fastest lap on the last lap but was soon deleted, due to track limits, meaning Bottas was given the fastest ...
+- `season-2021-formula-one-world-championship#6`: ExtractionValidationError: DROVE_FOR does not allow Driver -> Season
+  - Jelölt típusok: Driver, Season, Team, Driver, Driver, DROVE_FOR, ENTERED, DROVE_FOR, DROVE_FOR
+  - Forrásidézet: The season was also the final season in the sport for 2007 World Champion Kimi Räikkönen. Entries All teams competed with tyres supplied by Pirelli. Each team was required to enter at least two drivers, one for each of the two mandatory cars. Free practice drivers Across the season, five drivers drove as a test or third driver in free practice sessions. Callum Ilott and Robert Kubica
+- `season-2021-formula-one-world-championship#60`: ExtractionValidationError: ACHIEVED does not allow Driver -> GrandPrix
+  - Jelölt típusok: Driver, Driver, Driver, Driver, GrandPrix, ACHIEVED, TEAMMATE_OF, TEAMMATE_OF
+  - Forrásidézet: limits, meaning Bottas was given the fastest lap point. Hamilton took his 100th pole position in Spain. On lap 1, Verstappen overtook him at the first turn. Five laps later, Yuki Tsunoda pulled over at the reprofiled turn 10, marking his first Formula One retirement. Hamilton took the lead after Verstappen pitted on lap 23, but Verstappen took it back on lap 28. However, a slow stop and a decision...
+- `season-2021-formula-one-world-championship#61`: ExtractionValidationError: ACHIEVED does not allow Driver -> Season
+  - Jelölt típusok: Driver, Driver, Driver, Driver, Driver, Driver, GrandPrix, Season, ACHIEVED, ACHIEVED, ACHIEVED, ACHIEVED, ACHIEVED, ACHIEVED, ACHIEVED, ROUND_OF
+  - Forrásidézet: lap 59 let Hamilton into the lead until the checkered flag, Verstappen ended up second with Bottas in third place from Leclerc and Pérez. Leclerc took pole at the Monaco Grand Prix despite crashing in the final minutes. The crash caused a driveshaft failure, meaning he was unable to start the race. Verstappen started at the front and led from Bottas and Carlos Sainz Jr. On
+- `season-2021-formula-one-world-championship#62`: ExtractionValidationError: WON does not allow Driver -> Season
+  - Jelölt típusok: Driver, Driver, Driver, Driver, Team, Season, WON, ENTERED, ACHIEVED, ACHIEVED, ACHIEVED
+  - Forrásidézet: lap 30, Bottas was forced into retirement after his front-right tyre would not come off during a routine pitstop. Verstappen took the victory, as well as the championship lead for the first time in his career; Red Bull came away from this race with a one-point lead in the Constructors' Championship. Behind Verstappen, Sainz took his first podium for Ferrari, and Norris took his second podium of th...
+- `season-2021-formula-one-world-championship#63`: ExtractionValidationError: HELD_AT does not allow GrandPrix -> Driver
+  - Jelölt típusok: Driver, Driver, Driver, Driver, Driver, Driver, Season, GrandPrix, ROUND_OF, HELD_AT
+  - Forrásidézet: Norris took his second podium of the season in third place. Leclerc took pole again in Azerbaijan, this time he was able to start the race. He led for one lap before Hamilton got past on lap 2 at turn 1. Hamilton was held up in his pitstop to allow Gasly to pass him in the pitlane, handing Verstappen the net race lead. On lap 30, Lance Stroll crashed out due to a tyre failure and brought out the s...
+- `season-2021-formula-one-world-championship#65`: ExtractionValidationError: RACED_IN does not allow Driver -> Season
+  - Jelölt típusok: Driver, Driver, Driver, Season, RACED_IN, RACED_IN, RACED_IN
+  - Forrásidézet: Formula One, while Gasly took his third career podium. In France, Verstappen got his second pole of the season, only to go wide at the first turn and lose the lead to Hamilton in the first lap. After regaining first with an undercut in his first pit stop, Verstappen found himself under heavy pressure from both Mercedes drivers. Verstappen relinquished his lead to pit a second time, one of two driv...
+- `season-2021-formula-one-world-championship#66`: ExtractionValidationError: FOR_TEAM does not allow Driver -> RaceResult
+  - Jelölt típusok: Driver, Driver, Driver, Season, RaceResult, ACHIEVED, FOR_TEAM, ACHIEVED, AT_RACE
+  - Forrásidézet: to the track 18 seconds behind Hamilton. The speed advantage allowed him to make up the lost time, overtaking Bottas on lap 44 and Hamilton on the penultimate lap, for his third win of the year and his thirteenth win overall. Hamilton, now 12 points behind in the Drivers' Championship, did secure second, and with an overtake on lap 49, Pérez managed to take third place, pushing Bottas to fourth. I...
+- `season-2021-formula-one-world-championship#67`: ExtractionValidationError: ACHIEVED does not allow Driver -> GrandPrix
+  - Jelölt típusok: Driver, Driver, Team, Team, GrandPrix, Circuit, Season, ENTERED, ENTERED, ROUND_OF, ACHIEVED, ACHIEVED, DROVE_FOR, DROVE_FOR
+  - Forrásidézet: position and the fastest lap, and the first race of the season with no retirements. Red Bull extended their lead over Mercedes in the Constructors' Championship to 37 points after the race. Mid-season rounds Max Verstappen took his third season pole at the Styrian Grand Prix, the first of two back-to-back races at the Red Bull Ring. On the first lap, three cars collided at the third turn, forcing ...
+- `season-2021-formula-one-world-championship#68`: ExtractionValidationError: ACHIEVED does not allow Driver -> GrandPrix
+  - Jelölt típusok: Driver, Driver, Driver, GrandPrix, Driver, Driver, Driver, Driver, ACHIEVED
+  - Forrásidézet: Lewis Hamilton, meaning Verstappen extended his title lead to 18 points. Valtteri Bottas came third, taking his first podium since Spain. Verstappen took pole at the Austrian Grand Prix, the last race of the first triple header. On the first lap, Esteban Ocon retired with broken suspension. Lando Norris received a penalty after being judged to have forced Sergio Pérez off track. Pérez later receiv...
+- `season-2021-formula-one-world-championship#69`: ExtractionValidationError: ACHIEVED does not allow Driver -> GrandPrix
+  - Jelölt típusok: Driver, Driver, GrandPrix, Season, ACHIEVED, ACHIEVED, ROUND_OF
+  - Forrásidézet: race from Bottas and Norris. Hamilton finished fourth, after picking up damage to the underside of his car, meaning that Verstappen was able to extend his championship lead to 32 points. Hamilton was fastest in qualifying to start in first place for the first ever sprint in the British Grand Prix. In the sprint, Verstappen made a better start than Hamilton and overtook him before the first corner,...
+- `season-2021-formula-one-world-championship#7`: ExtractionValidationError: DROVE_FOR does not allow Team -> GrandPrix
+  - Jelölt típusok: Team, Team, GrandPrix, Driver, Team, GrandPrix, Team, PowerUnit, PowerUnit, DROVE_FOR, DROVE_FOR, DROVE_FOR, FIELDED, POWERED_BY, POWERED_BY
+  - Forrásidézet: drove for Alfa Romeo Racing at two and three Grands Prix respectively, while Roy Nissany and Jack Aitken drove for Williams at three Grands Prix and at the Abu Dhabi Grand Prix, respectively. Zhou Guanyu drove for Alpine at the Austrian Grand Prix. Team changes McLaren announced that they would change from using Renault power units to ones built by Mercedes, resuming the
+- `season-2021-formula-one-world-championship#70`: ExtractionValidationError: ROUND_OF does not allow Driver -> GrandPrix
+  - Jelölt típusok: Driver, Driver, Driver, Driver, Season, GrandPrix, ROUND_OF, ACHIEVED, ACHIEVED, ACHIEVED, ACHIEVED
+  - Forrásidézet: the sprint with Hamilton second and Bottas third, thus Verstappen started on pole for the Grand Prix itself. On lap five of the sprint, Pérez spun, dropping him to the back of the field, and later retiring, forcing him to start from the pits for the race. On the first lap of the Grand Prix, Verstappen and Hamilton collided at approximately 290 kilometres per hour (180
+- `season-2021-formula-one-world-championship#72`: ExtractionValidationError: ACHIEVED does not allow Driver -> GrandPrix
+  - Jelölt típusok: Driver, Driver, Driver, Driver, Driver, GrandPrix, ACHIEVED, ACHIEVED, TEAMMATE_OF, ACHIEVED, ACHIEVED, ACHIEVED
+  - Forrásidézet: with a ten-second penalty, which he served during his pit stop. Leclerc led most of the Grand Prix, but finished second after Hamilton overtook Norris, Bottas, and Leclerc in the late stages to win the race. Hamilton reduced his gap to Verstappen from 33 points to eight points. Hamilton was again fastest in qualifying to take pole in the Hungarian Grand Prix. Rainy conditions at the start of the
+- `season-2021-formula-one-world-championship#73`: ExtractionValidationError: ACHIEVED does not allow Driver -> Season
+  - Jelölt típusok: Driver, Driver, Driver, Driver, Driver, Driver, Driver, Driver, Driver, Season, TEAMMATE_OF, TEAMMATE_OF, TEAMMATE_OF, TEAMMATE_OF, ACHIEVED, ACHIEVED, ACHIEVED, ACHIEVED
+  - Forrásidézet: race led to Bottas misjudging his braking and sliding into the back of Norris; this escalated into multiple collisions which eventually eliminated five drivers: Bottas, Norris (who only retired on lap 3), Pérez, Lance Stroll and Leclerc. Due to the large amount of debris on the track, the race was red-flagged; at this stage, Hamilton led from Ocon and Sebastian Vettel, with championship leader Ver...
+- `season-2021-formula-one-world-championship#74`: ExtractionValidationError: ACHIEVED does not allow Driver -> Driver
+  - Jelölt típusok: Driver, Driver, Driver, Driver, Driver, ACHIEVED, ACHIEVED, ACHIEVED, ACHIEVED
+  - Forrásidézet: only driver who did not choose to pit for slick tyres at the end of the formation lap, leaving him the only driver on the grid for the restart; this saw him drop to last when he pitted on the next lap. In the pits, Kimi Räikkönen was released into Nikita Mazepin's path, putting Mazepin out of the race. The newly promoted Ocon held his lead until the end to take his first Formula 1 victory, finishi...
+- `season-2021-formula-one-world-championship#75`: ExtractionValidationError: DROVE_FOR does not allow Driver -> Driver
+  - Jelölt típusok: Driver, Driver, Driver, Driver, Driver, Team, Team, Team, Season, DROVE_FOR, ENTERED, ENTERED, ENTERED, ACHIEVED, ACHIEVED
+  - Forrásidézet: Carlos Sainz Jr. Vettel was later disqualified for a fuel sample issue, promoting Hamilton to second and Sainz to third. Hamilton's recovery drive saw him retake the championship lead over Verstappen by eight points, while Mercedes also regained their advantage over Red Bull in the Constructors' standings by twelve points. Meanwhile, Nicholas Latifi and George Russell were classified seventh and e...
+- `season-2021-formula-one-world-championship#76`: ExtractionValidationError: ACHIEVED does not allow Driver -> GrandPrix
+  - Jelölt típusok: Driver, Driver, Driver, GrandPrix, ACHIEVED, ACHIEVED, ACHIEVED, ROUND_OF
+  - Forrásidézet: Verstappen took pole from Russell and Hamilton in the Belgian Grand Prix in a wet qualifying session. The race was heavily affected by rain, which initially saw the start delayed by 25 minutes. After two formation laps behind the safety car, the race start was suspended and red-flagged due to poor conditions and lack of visibility. A nearly three-hour delay followed before the race was resumed. Af...
+- `season-2021-formula-one-world-championship#77`: ExtractionValidationError: WON does not allow Driver -> Season
+  - Jelölt típusok: Driver, Driver, Driver, GrandPrix, Circuit, Season, WON, ACHIEVED, ACHIEVED, ROUND_OF, HELD_AT
+  - Forrásidézet: becoming the shortest race in Formula 1 history and the sixth to award half-points as less than 75% of the race was completed. Verstappen won by default, with Russell in second and Hamilton in third place. It was Russell's first podium in Formula 1. As a result, Hamilton's lead in the championship was cut to three points from Verstappen. Verstappen would again take pole at the first Dutch Grand Pr...
+- `season-2021-formula-one-world-championship#78`: ExtractionValidationError: WON does not allow Driver -> Season
+  - Jelölt típusok: Driver, Driver, Driver, Driver, Driver, GrandPrix, Season, WON, ROUND_OF, ACHIEVED, ACHIEVED, ACHIEVED, ACHIEVED
+  - Forrásidézet: from Hamilton to take the win at his home race, taking over the lead of the championship by three points. Bottas came third, overtaking Norris, who finished tenth, in the standings for third place. Bottas won sprint qualifying at the Italian Grand Prix, but was forced to start from the back of the grid after exceeding the quota of one on his power units' components. Verstappen started at the front...
+- `season-2021-formula-one-world-championship#79`: ExtractionValidationError: WON does not allow Driver -> GrandPrix
+  - Jelölt típusok: Driver, Driver, Driver, Driver, Team, Season, GrandPrix, GrandPrix, WON, ENTERED, WON, WON
+  - Forrásidézet: 1. A slow stop for Verstappen meant that he ended up alongside Hamilton after the latter made his pitstop. Hamilton and Verstappen collided, ending their races prematurely. Ricciardo led to the end to take his first victory since the 2018 Monaco Grand Prix and McLaren's first victory since the 2012 Brazilian Grand Prix. His teammate Norris finished a
+- `season-2021-formula-one-world-championship#81`: ExtractionValidationError: WON does not allow Driver -> Season
+  - Jelölt típusok: Driver, Driver, Driver, Driver, Driver, Season, WON, RACED_IN, RACED_IN, RACED_IN, RACED_IN, RACED_IN
+  - Forrásidézet: power unit components. Norris took his first career pole position, from Sainz (his best qualifying result), and Russell. The running order changed substantially as heavy rain began to fall in the closing laps. Hamilton took his 100th Formula One victory as well as the championship lead, ahead of Verstappen and Sainz. Closing rounds Lewis Hamilton was the fastest in qualifying in Turkey, but was dr...
+- `season-2021-formula-one-world-championship#82`: ExtractionValidationError: ACHIEVED does not allow Driver -> Season
+  - Jelölt típusok: Driver, Driver, Driver, Season, GrandPrix, ACHIEVED, ACHIEVED, ACHIEVED, ACHIEVED, ROUND_OF
+  - Forrásidézet: power unit component change. Valtteri Bottas was promoted to pole position and won the race, his first of 2021. He was followed by Max Verstappen, who re-took the championship lead, and Sergio Pérez, who took his first podium since France. Verstappen continued his momentum in the United States Grand Prix, taking pole position. Despite Hamilton taking the lead in turn 1, Verstappen was able to win ...
+- `season-2021-formula-one-world-championship#83`: ExtractionValidationError: DROVE_FOR does not allow Driver -> Driver
+  - Jelölt típusok: Driver, Driver, Driver, Driver, Driver, Driver, Driver, GrandPrix, Season, DROVE_FOR, ACHIEVED, ACHIEVED, ACHIEVED, ROUND_OF
+  - Forrásidézet: increased Verstappen's lead to 12 points as Hamilton collected an extra Championship point by setting the fastest lap. Bottas took pole in Mexico City, but was spun around at the first corner by Daniel Ricciardo. Another incident behind involving Yuki Tsunoda and Mick Schumacher took both drivers out of the race, calling out the safety car. Verstappen took his second win in a row, increasing his l...
+- `season-2021-formula-one-world-championship#85`: ExtractionValidationError: ACHIEVED does not allow Driver -> GrandPrix
+  - Jelölt típusok: Team, Team, Driver, Driver, Driver, Driver, Driver, Driver, GrandPrix, ACHIEVED, ACHIEVED, ACHIEVED, ACHIEVED, ACHIEVED
+  - Forrásidézet: Ferrari's championship lead over McLaren. Hamilton finished fifth in the sprint from last on the grid, but a five-place grid drop due to taking a new engine relegated him to tenth on the grid for the Grand Prix. On race day, both Verstappen and Pérez were able to overtake Bottas on the first lap. Meanwhile, Lando Norris and Sainz were involved in a separate incident, with Norris getting a puncture...
+- `season-2021-formula-one-world-championship#86`: ExtractionValidationError: ACHIEVED does not allow Driver -> GrandPrix
+  - Jelölt típusok: Driver, Driver, Driver, GrandPrix, Season, ACHIEVED, WON, ROUND_OF, AT_RACE, AT_RACE
+  - Forrásidézet: failed and resulted in both of them going off track. Hamilton tried again on lap 59 and got past. He won the race from Verstappen, decreasing Verstappen's championship lead from 21 points to 14 points, while Bottas completed the podium. Hamilton took pole position in Qatar, while a penalty for failing to respect double waived yellow flags during qualifying
+- `season-2021-formula-one-world-championship#87`: ExtractionValidationError: WON does not allow Driver -> Season
+  - Jelölt típusok: Driver, Driver, Driver, Driver, Driver, Driver, Season, GrandPrix, WON, AWARDED_IN
+  - Forrásidézet: forced Verstappen to start from seventh. Hamilton took the win, leading every lap of the race. Verstappen quickly recovered to second place but was unable to threaten Hamilton's race lead despite setting the fastest lap on the last lap of the race. Fernando Alonso used a one-stop strategy to finish third, less than three seconds ahead of Peréz in fourth, it was Alonso's first podium since the 2014...
+- `season-2021-formula-one-world-championship#88`: ExtractionValidationError: RACED_IN does not allow Driver -> Season
+  - Jelölt típusok: Driver, Team, Driver, Driver, Driver, GrandPrix, Season, RACED_IN, ENTERED, ACHIEVED, ACHIEVED, ACHIEVED, ROUND_OF
+  - Forrásidézet: they and multiple others suffered punctures on track. The result reduced Verstappen's lead in the Driver's Championship to eight points while Mercedes's lead in the Constructors' Championship was reduced to five points. Hamilton took pole position again in the inaugural Saudi Arabian Grand Prix ahead of Bottas and Verstappen, who crashed at the last corner of his final qualifying lap. The race pla...
+- `season-2021-formula-one-world-championship#89`: ExtractionValidationError: ACHIEVED does not allow Driver -> GrandPrix
+  - Jelölt típusok: Driver, Driver, Driver, Driver, GrandPrix, Team, TEAMMATE_OF, ACHIEVED, ACHIEVED, ACHIEVED, TEAMMATE_OF, ENTERED
+  - Forrásidézet: of Schumacher, Pérez, George Russell, Nikita Mazepin, and Sebastian Vettel, with Hamilton, Verstappen, Tsunoda, and Kimi Räikkönen also being involved in collisions during the race. Hamilton won the race from Verstappen, while Bottas overtook Esteban Ocon at the final corner to take third place. The results left Hamilton and Verstappen on equal points in the Drivers' Championship going into the fi...
+- `season-2021-formula-one-world-championship#91`: ExtractionValidationError: DROVE_FOR does not allow Team -> Driver
+  - Jelölt típusok: Driver, Driver, Driver, Team, TEAMMATE_OF, DROVE_FOR, DROVE_FOR
+  - Forrásidézet: The pair settled in their positions until the first round of pit stops, with Hamilton gradually extending his lead. He later lost much of his advantage when Pérez, Verstappen's teammate with Red Bull, and who had yet to make a pit stop, made it difficult for Hamilton to pass him, though Verstappen was unable to capitalise. Later, a virtual safety car period allowed Verstappen to change his tyres w...
+- `season-2021-formula-one-world-championship#93`: ExtractionValidationError: WON does not allow Driver -> Season
+  - Jelölt típusok: Driver, Team, Season, WON, ENTERED
+  - Forrásidézet: Hamilton and held him off for the remainder of the lap to win the race and the championship. Mercedes lodged two separate protests against the race's result. Both protests were dismissed, and Mercedes announced their intention to appeal the dismissal of the protest regarding the handling of the restart following the safety car period. A statement from the FIA acknowledged the controversy, and that...
+- `team-mercedes-benz-in-formula-one#1`: ExtractionValidationError: ENTERED is not temporal; from_year, to_year and role must be null
+  - Jelölt típusok: Team, Team, Season, ENTERED, ENTERED
+  - Forrásidézet: Mercedes-Benz, a German automotive brand of the Mercedes-Benz Group, has been involved in Formula One as both team owner and engine manufacturer for various periods since 1954. The current Mercedes-Benz Grand Prix Limited, competing as Mercedes-AMG Petronas Formula One Team, is based in Brackley, England, and holds a German racing licence
+- `team-mercedes-benz-in-formula-one#10`: ExtractionValidationError: FIELDED is not temporal; from_year, to_year and role must be null
+  - Jelölt típusok: Team, Driver, Car, Season, FIELDED, RACED_IN
+  - Forrásidézet: In 1954, Mercedes-Benz returned to what was now known as Formula One (a World Championship having been established in 1950) under the leadership of Alfred Neubauer, using the technologically advanced Mercedes-Benz W196. The car was run in both the conventional open-wheeled configuration and a streamlined form, which featured covered wheels and wider bodywork
+- `team-mercedes-benz-in-formula-one#11`: ExtractionValidationError: HELD_AT does not allow GrandPrix -> Driver
+  - Jelölt típusok: Driver, Team, Season, GrandPrix, Driver, Driver, Title, DROVE_FOR, ENTERED, ROUND_OF, WON, AWARDED_IN, TEAMMATE_OF, HELD_AT
+  - Forrásidézet: . Juan Manuel Fangio, the 1951 champion, transferred mid-season from Maserati to Mercedes-Benz for their debut at the French Grand Prix on 4 July 1954. The team had immediate success and recorded a 1–2 victory with Fangio and Karl Kling, as well as the fastest lap (Hans Herrmann). Fangio went on to win three more races in 1954, winning the championship.
+- `team-mercedes-benz-in-formula-one#12`: ExtractionValidationError: FIELDED is not temporal; from_year, to_year and role must be null
+  - Jelölt típusok: Team, Driver, Driver, Season, Car, GrandPrix, Title, FIELDED, DROVE_FOR, DROVE_FOR, WON, ACHIEVED, ROUND_OF, ENTERED
+  - Forrásidézet: The success continued into the 1955 season, with Mercedes-Benz developing the W196 throughout the year. Mercedes-Benz again dominated the season, with Fangio taking four races, and his new teammate Stirling Moss winning the British Grand Prix. Fangio and Moss finished first and second in that year's championship
+- `team-mercedes-benz-in-formula-one#13`: ExtractionValidationError: WON does not allow Driver -> Season
+  - Jelölt típusok: Team, Driver, Driver, Season, GrandPrix, Driver, WON, ACHIEVED, ENTERED, ROUND_OF
+  - Forrásidézet: . Fangio and Moss finished first and second in that year's championship. The 1955 disaster at the 24 Hours of Le Mans on 11 June, which killed Mercedes-Benz sportscar driver Pierre Levegh and more than 80 spectators led to the cancellations of the French, German, Spanish, and Swiss Grands Prix. At the end of the season, the team withdrew from motor sport, including Formula One
+- `team-mercedes-benz-in-formula-one#14`: ExtractionValidationError: ENTERED is not temporal; from_year, to_year and role must be null
+  - Jelölt típusok: Team, Car, Season, Season, GrandPrix, GrandPrix, GrandPrix, FIELDED, ENTERED, ENTERED, ROUND_OF, ROUND_OF, ROUND_OF, ACHIEVED, ACHIEVED, ACHIEVED
+  - Forrásidézet: . During this first period of the team's participation in Formula One, Mercedes won 9 races in total, including three Grands Prix (the 1954 French Grand Prix, the 1954 Italian Grand Prix and the 1955 Italian Grand Prix) won by the streamlined "Type Monza", making them the only three races won by a closed-wheel car in Formula One history.
+- `team-mercedes-benz-in-formula-one#16`: ExtractionValidationError: ENTERED is not temporal; from_year, to_year and role must be null
+  - Jelölt típusok: Team, Season, ENTERED
+  - Forrásidézet: Before the start of the 2010 season Mercedes-Benz's parent company Daimler AG bought a minority stake (45.1%) in the Brawn GP team with Aabar Investments purchasing 30% on 16 November 2009. Following the purchase of the team, as well as a sponsorship deal with Petronas, the team was rebranded as Mercedes GP Petronas Formula One Team, and Mercedes would now compete in the constructors' championship...
+- `team-mercedes-benz-in-formula-one#18`: ExtractionValidationError: DROVE_FOR does not allow Team -> Team
+  - Jelölt típusok: Team, Team, Team, Season, Season, DROVE_FOR, DROVE_FOR, ENTERED, ENTERED
+  - Forrásidézet: The team has a complex history and its entry can be traced back to Tyrrell Racing, who competed as a constructor from 1970 until 1998, until being bought by British American Tobacco at the end of 1997 so its entry could be transferred to the then new constructor British American Racing (BAR) in 1999. BAR, who had formed a partnership with Honda, eventually became Honda Racing F1 Team in 2006 when ...
+- `team-mercedes-benz-in-formula-one#19`: ExtractionValidationError: WON is not temporal; from_year, to_year and role must be null
+  - Jelölt típusok: Team, Driver, Season, Title, Title, WON, WON, ENTERED, ACHIEVED
+  - Forrásidézet: . It again changed hands in 2008, when Honda withdrew, and was purchased by the team's management, naming it Brawn GP after team principal Ross Brawn. Brawn used engines from Mercedes-Benz High Performance Engines, and despite running on a low budget, Jenson Button won six of the first seven races and ultimately the 2009 Drivers' Championship, while Brawn won the Constructors' Championship. It was...
+- `team-mercedes-benz-in-formula-one#21`: ExtractionValidationError: DROVE_FOR does not allow Team -> Driver
+  - Jelölt típusok: Team, Driver, Driver, Driver, Driver, Driver, Team, Team, Team, DROVE_FOR, DROVE_FOR, DROVE_FOR, DROVE_FOR, DROVE_FOR
+  - Forrásidézet: Team Mercedes GP hired German drivers Nico Rosberg, and seven-time world champion Michael Schumacher, who returned to Formula One after a three-year absence, and Nick Heidfeld as the test and reserve driver. Of Brawn's 2009 drivers, Jenson Button signed for McLaren, whilst Rubens Barrichello moved to Rosberg's former seat with Williams team for 2010
+- `team-mercedes-benz-in-formula-one#22`: ExtractionValidationError: ACHIEVED does not allow Driver -> GrandPrix
+  - Jelölt típusok: Team, Driver, Season, GrandPrix, GrandPrix, GrandPrix, ENTERED, DROVE_FOR, ACHIEVED, ACHIEVED, ACHIEVED
+  - Forrásidézet: . With the acquisition of Brawn, the team ended its involvement with McLaren, parent company Daimler AG sold back the 40% shareholding in the McLaren Group, while continuing to supply engines to the team. The team's performance during 2010 was not so competitive as under Brawn, with the team behind the leading three teams of Ferrari, McLaren, and Red Bull. Their best results came from Rosberg fini...
+- `team-mercedes-benz-in-formula-one#23`: ExtractionValidationError: FOR_TEAM does not allow Driver -> Team
+  - Jelölt típusok: Driver, Driver, Team, Season, FOR_TEAM, FOR_TEAM, ENTERED
+  - Forrásidézet: . Rosberg eventually finished in seventh place, but Schumacher had a disappointing return, being beaten by his teammate and finishing the season without a single race win, podium, pole position, or fastest lap for the first time since his début season in 1991. He also was involved in a controversy in Hungary after nearly squeezing former Ferrari teammate Rubens Barrichello into the wall at 180 mph...
+- `team-mercedes-benz-in-formula-one#25`: ExtractionValidationError: FIELDED is not temporal; from_year, to_year and role must be null
+  - Jelölt típusok: Team, Car, Season, GrandPrix, GrandPrix, FIELDED, RACED_IN, ROUND_OF, ROUND_OF
+  - Forrásidézet: Prior to the start of the 2011 season, Daimler and Aabar purchased the remaining 24.9% stake owned by the team management in February 2011. Using the new MGP W02, the Australian Grand Prix ended when Schumacher and Rosberg both retired due to crash damage on laps 19 and 22 respectively. In Malaysia, Rosberg qualified ninth and Schumacher again failed to make Q3, qualifying eleventh
+- `team-mercedes-benz-in-formula-one#26`: ExtractionValidationError: ENTERED is not temporal; from_year, to_year and role must be null
+  - Jelölt típusok: Driver, Driver, Team, Season, DROVE_FOR, DROVE_FOR, ENTERED
+  - Forrásidézet: . Schumacher scored the team's first points of the season with a ninth-place finish, whereas Rosberg had a quiet race and finished twelfth. In China, Rosberg and Schumacher showed strong form, with Rosberg finishing fifth as well as leading fourteen laps during the race, while Schumacher ended the race in eighth place. Rosberg added another fifth place in Turkey, while in Spain, Schumacher finishe...
+- `team-mercedes-benz-in-formula-one#27`: ExtractionValidationError: ACHIEVED does not allow Driver -> GrandPrix
+  - Jelölt típusok: Driver, Driver, Team, GrandPrix, GrandPrix, GrandPrix, GrandPrix, GrandPrix, GrandPrix, DROVE_FOR, DROVE_FOR, ACHIEVED, ACHIEVED, ACHIEVED, ACHIEVED, ACHIEVED, ACHIEVED, ACHIEVED, ACHIEVED, ACHIEVED, ACHIEVED
+  - Forrásidézet: After scoring no points at the Monaco Grand Prix, Schumacher equalled his best finish for the team in Canada, finishing fourth after running as high as second. In Valencia, Rosberg finished seventh, and Schumacher seventeenth, after contact with Vitaly Petrov. Rosberg and Schumacher both finished in the points at the following two races in Great Britain and Germany. Gearbox issues stopped Schumach...
+- `team-mercedes-benz-in-formula-one#28`: ExtractionValidationError: ENTERED is not temporal; from_year, to_year and role must be null
+  - Jelölt típusok: Driver, Driver, Team, Season, GrandPrix, Car, DROVE_FOR, DROVE_FOR, ENTERED, ROUND_OF, FIELDED
+  - Forrásidézet: . At the Belgian Grand Prix, Schumacher moved from the back of the grid – after losing a wheel in qualifying – to finish fifth, while Rosberg finished sixth, having led the race in its early stages. Again, the team finished fourth in the Constructors' Championship just as in 2010, with 165 points with no wins, podiums, or poles.
+- `team-mercedes-benz-in-formula-one#29`: ExtractionValidationError: FIELDED is not temporal; from_year, to_year and role must be null
+  - Jelölt típusok: Team, Car, Season, FIELDED, RACED_IN, ENTERED
+  - Forrásidézet: For 2012, the team removed the GP from their name and added the name of AMG, the high performance brand of Daimler AG, to their title. The team would officially get the designation Mercedes AMG Petronas F1 Team. At the start of the season Mercedes was the subject of protest over the use of a "radical" rear wing concept on the Mercedes F1 W03 racing car, which was not settled until the third race i...
+- `team-mercedes-benz-in-formula-one#3`: ExtractionValidationError: FIELDED does not allow Team -> GrandPrix
+  - Jelölt típusok: Team, Driver, Season, Season, Title, Title, GrandPrix, FIELDED, ACHIEVED, WON, WON, ENTERED, ENTERED
+  - Forrásidézet: Before the Second World War, Mercedes-Benz competed in the European Championship, winning three titles. The marque debuted in Formula One in 1954. After winning their first race at the 1954 French Grand Prix, driver Juan Manuel Fangio won another three Grands Prix to win the 1954 Drivers' Championship and repeated this success in 1955. Despite winning two Drivers' Championships, Mercedes-Benz with...
+- `team-mercedes-benz-in-formula-one#30`: ExtractionValidationError: HELD_AT does not allow Team -> GrandPrix
+  - Jelölt típusok: Driver, Driver, Team, GrandPrix, Season, HELD_AT, ENTERED, ACHIEVED, ROUND_OF, DROVE_FOR, DROVE_FOR, WON, AWARDED_IN
+  - Forrásidézet: . At the third race of the season in China, Rosberg took the team's first pole position as a works team since Fangio in 1955; Schumacher finished the session third, but moved up to second after a grid penalty for McLaren team's Lewis Hamilton. The team secured its first win in 57 years when Nico Rosberg finished first in the 2012 Chinese Grand Prix. This marked also the first win for a German driv...
+- `team-mercedes-benz-in-formula-one#31`: ExtractionValidationError: ACHIEVED does not allow Driver -> GrandPrix
+  - Jelölt típusok: Driver, Driver, Driver, Season, GrandPrix, GrandPrix, Team, ACHIEVED, DROVE_FOR, TEAMMATE_OF, WON, ACHIEVED, DROVE_FOR, ROUND_OF, ROUND_OF
+  - Forrásidézet: . At the 2012 Monaco Grand Prix, Michael Schumacher set the fastest time in qualifying, but started sixth after a five-place grid penalty was imposed for having caused an avoidable collision with Bruno Senna during the Spanish Grand Prix, the previous round. In addition to that, Rosberg became the first German driver to win a Grand Prix driving a German vehicle since Hermann Lang's victory at the ...
+- `team-mercedes-benz-in-formula-one#32`: ExtractionValidationError: ENTERED is not temporal; from_year, to_year and role must be null
+  - Jelölt típusok: Driver, Driver, Team, Season, Driver, Driver, DROVE_FOR, DROVE_FOR, ENTERED, DROVE_FOR, DROVE_FOR
+  - Forrásidézet: . On 28 September 2012, it was announced that McLaren driver Lewis Hamilton would join the Mercedes team from the 2013 season onwards, having signed a three-year deal to partner Nico Rosberg in the team. In January 2013, Toto Wolff became an executive director of the Mercedes AMG Petronas Formula One Team, with his business partner Rene Berger becoming non-executive director
+- `team-mercedes-benz-in-formula-one#35`: ExtractionValidationError: ENTERED is not temporal; from_year, to_year and role must be null
+  - Jelölt típusok: Driver, Driver, Team, Season, GrandPrix, GrandPrix, DROVE_FOR, DROVE_FOR, ENTERED, ROUND_OF, ROUND_OF, ACHIEVED, ACHIEVED, FOR_TEAM
+  - Forrásidézet: The following season on 26 May 2013, Nico Rosberg capitalised on a pole position to award the team its first win of 2013 at the Monaco Grand Prix. Paddy Lowe moved to the team as executive director on 3 June 2013. Mercedes then went on to take third place in the Canadian Grand Prix courtesy of Hamilton, followed by another win for Rosberg at the British Grand Prix after the team took 1–2 in qualif...
+- `team-mercedes-benz-in-formula-one#38`: ExtractionValidationError: ACHIEVED does not allow Driver -> GrandPrix
+  - Jelölt típusok: Driver, Driver, Team, Season, GrandPrix, GrandPrix, ACHIEVED, ACHIEVED, ENTERED, TEAMMATE_OF, ROUND_OF, ROUND_OF
+  - Forrásidézet: Both drivers were retained for 2014. Rosberg won the first race of the season in Australia, then in Malaysia, Hamilton completed a grand slam – leading every lap from pole position, with the fastest race lap – while Rosberg completed a 1–2 finish for the team; it ended Hamilton's nine race streak without a podium finish, and was the first 1–2 finish by Mercedes as a works team since the 1955 Itali...
+- `team-mercedes-benz-in-formula-one#39`: ExtractionValidationError: ENTERED is not temporal; from_year, to_year and role must be null
+  - Jelölt típusok: Team, Driver, Driver, Season, GrandPrix, GrandPrix, GrandPrix, GrandPrix, GrandPrix, GrandPrix, GrandPrix, Season, Driver, ENTERED, ROUND_OF, ROUND_OF, ROUND_OF, ACHIEVED, ACHIEVED, ACHIEVED, ACHIEVED, ACHIEVED, WON, ROUND_OF, ACHIEVED
+  - Forrásidézet: . The team repeated the result at the Bahrain, the Chinese, and the Spanish Grands Prix, while Rosberg and Hamilton finished 1–2 respectively at the Monaco and Austrian Grands Prix. At the German Grand Prix, Rosberg became the first German driver driving a German vehicle to win the German Grand Prix since it was achieved by Rudolf Caracciola and Mercedes-Benz at the 1939 German Grand Prix. At the ...
+- `team-mercedes-benz-in-formula-one#4`: ExtractionValidationError: DROVE_FOR does not allow Team -> Team
+  - Jelölt típusok: Team, Team, Team, PowerUnit, Team, Season, Season, Title, Title, DROVE_FOR, FIELDED, DROVE_FOR, WON, WON, DROVE_FOR
+  - Forrásidézet: Mercedes returned to Formula One in 1994 as an engine manufacturer in association with Ilmor, a British independent high-performance autosport engineering company, which developed their engines. The company won one constructors' title and three drivers' titles in a works partnership with McLaren which lasted until 2009. In 2005, Ilmor was rebranded as Mercedes AMG High Performance Powertrains. In ...
+- `team-mercedes-benz-in-formula-one#40`: ExtractionValidationError: WON is not temporal; from_year, to_year and role must be null
+  - Jelölt típusok: Driver, Driver, Team, Season, GrandPrix, Car, Title, Title, WON, WON, ROUND_OF, ENTERED, RACED_IN, FIELDED, TEAMMATE_OF
+  - Forrásidézet: . Hamilton won the last race of the season, held in Abu Dhabi. He finished the season 67 points ahead of Rosberg, clinching the World Drivers' Championship. The team finished the 2014 season 296 points ahead of their closest rival Red Bull Racing in the World Constructors' Championship standings. With 18 pole positions, 16 wins and 11 1–2s out of 19 races, Mercedes dominated this first year of the...
+- `team-mercedes-benz-in-formula-one#44`: ExtractionValidationError: WON is not temporal; from_year, to_year and role must be null
+  - Jelölt típusok: Team, Driver, Driver, Season, Title, WON, WON, AWARDED_IN
+  - Forrásidézet: In the 2016 season, Mercedes won the Constructors' Championship for the third consecutive season, winning 19 of the 21 races held, while securing 20 poles (the highest percentage ever in a single season of F1 at 95.2%) and 8 1–2s. The average winning gap to the nearest non-Mercedes driver dropped to 14.6 seconds. Rosberg won his only Drivers' Championship, finishing 5 points ahead of Hamilton, bef...
+- `team-mercedes-benz-in-formula-one#45`: ExtractionValidationError: WON is not temporal; from_year, to_year and role must be null
+  - Jelölt típusok: Team, Driver, Driver, Driver, Season, Title, WON, AWARDED_IN, DROVE_FOR, DROVE_FOR, DROVE_FOR
+  - Forrásidézet: On 10 January 2017, Mercedes announced that Executive Director Paddy Lowe had left the team, and entered a period of garden leave. On 16 January 2017, Valtteri Bottas was announced as Rosberg's replacement for the 2017 season and British GP3 driver George Russell was incorporated into the junior team. On 22 October 2017, Mercedes won the Constructors' Championship for the fourth consecutive time. ...
+- `team-mercedes-benz-in-formula-one#46`: ExtractionValidationError: ENTERED is not temporal; from_year, to_year and role must be null
+  - Jelölt típusok: Team, Season, ENTERED
+  - Forrásidézet: . Mercedes finished the 2017 season with 12 wins out of 20 races, 15 poles, 4 1–2s and an average winning margin to the nearest non-Mercedes driver of 13.1 seconds.
+- `team-mercedes-benz-in-formula-one#47`: ExtractionValidationError: ACHIEVED does not allow Driver -> GrandPrix
+  - Jelölt típusok: Team, Driver, Driver, Season, GrandPrix, Car, ENTERED, FIELDED, ACHIEVED, DROVE_FOR, DROVE_FOR, RACED_IN, RACED_IN, FOR_TEAM, FOR_TEAM
+  - Forrásidézet: For the 2018 season the team retained both Hamilton and Bottas. The team clinched their fifth straight constructors' title at the penultimate race of the season in Brazil after a win for Hamilton. In the 2018 season, Mercedes won 11 races (all for Hamilton) out of 21 races, took 10 fastest laps (three for Hamilton and seven for Bottas), 13 pole positions (eleven for Hamilton and two for Bottas), a...
+- `team-mercedes-benz-in-formula-one#48`: ExtractionValidationError: ENTERED is not temporal; from_year, to_year and role must be null
+  - Jelölt típusok: Team, Team, Season, ENTERED, WON
+  - Forrásidézet: . This made Mercedes only the second team in the history in F1 to achieve the feat of winning 5 drivers' and constructors' titles in a row, after Ferrari did so between 2000 and 2004.
+- `team-mercedes-benz-in-formula-one#49`: ExtractionValidationError: ENTERED is not temporal; from_year, to_year and role must be null
+  - Jelölt típusok: Team, Driver, Driver, Season, GrandPrix, ENTERED, DROVE_FOR, DROVE_FOR, ACHIEVED, ACHIEVED, FOR_TEAM, FOR_TEAM
+  - Forrásidézet: For the 2019 season, the team again retained both Hamilton and Bottas. In the opening race, both drivers locked out the front row with Hamilton taking pole position. Bottas overtook Hamilton at the start and took his first victory since the 2017 Abu Dhabi Grand Prix, with Hamilton managing to give the team a 1–2 finish after fending off Red Bull's Max Verstappen. The team continued the strong perf...
+- `team-mercedes-benz-in-formula-one#5`: ExtractionValidationError: ENTERED is not temporal; from_year, to_year and role must be null
+  - Jelölt típusok: Team, Season, Season, Season, Title, Title, ENTERED, WON, WON
+  - Forrásidézet: . In 2010, the company bought the Brawn GP team, rebranding it as Mercedes. Since a major rule shake-up in 2014, which required the use of turbochargers and hybrid electric engines, Mercedes has become one of the most successful teams in Formula One history, winning seven consecutive Drivers' titles from 2014 to 2020 and eight consecutive Constructors' titles from 2014 to 2021, both records
+- `team-mercedes-benz-in-formula-one#50`: ExtractionValidationError: ENTERED is not temporal; from_year, to_year and role must be null
+  - Jelölt típusok: Team, Driver, Driver, Season, Title, Title, ENTERED, WON, WON, TEAMMATE_OF
+  - Forrásidézet: . By the summer break, Mercedes had won 10 out of 12 races with Hamilton taking 8 victories to Bottas' 2, securing 1–2 finishes at the first 5 races of the season. The team would go on to take both the drivers and constructors titles for the sixth consecutive year.
+- `team-mercedes-benz-in-formula-one#51`: ExtractionValidationError: ENTERED is not temporal; from_year, to_year and role must be null
+  - Jelölt típusok: Team, Season, Season, ENTERED, ENTERED
+  - Forrásidézet: The team debuted their "Dual-Axis-Steering" system during pre-season testing for the 2020 season. This allows the driver to change the toe of the front wheels by pushing or pulling on the steering wheel. This allows the driver to optimise the car for better tyre warming on the straights with zero toe, or better mechanical grip in the corners with positive toe. The system was allowed for the 2020 s...
+- `team-mercedes-benz-in-formula-one#52`: ExtractionValidationError: ENTERED is not temporal; from_year, to_year and role must be null
+  - Jelölt típusok: Team, Driver, Driver, Season, GrandPrix, ENTERED, ACHIEVED, ACHIEVED, ROUND_OF
+  - Forrásidézet: . The team would go on to win both the drivers and constructors championships. Before the penultimate round of the season, the 2020 Sakhir Grand Prix, Hamilton was forced to sit the race out following a positive coronavirus test, with Williams driver and Mercedes junior George Russell replacing him.
+- `team-mercedes-benz-in-formula-one#53`: ExtractionValidationError: ACHIEVED does not allow Driver -> GrandPrix
+  - Jelölt típusok: Team, Driver, Driver, Season, GrandPrix, ENTERED, DROVE_FOR, DROVE_FOR, ROUND_OF, ACHIEVED, ACHIEVED
+  - Forrásidézet: For 2021, the team retained the same driver line-up for a fifth straight season. The team failed to win the drivers' championship for the first time in the V6 turbo-hybrid era, with Hamilton being overtaken by title rival Max Verstappen on the last lap of the season-ending Abu Dhabi Grand Prix after a controversial safety car restart. Hamilton had comfortably led the race and been on course for hi...
+- `team-mercedes-benz-in-formula-one#54`: ExtractionValidationError: WON is not temporal; from_year, to_year and role must be null
+  - Jelölt típusok: Team, Driver, Driver, Driver, Season, Title, WON, ACHIEVED, ACHIEVED, ACHIEVED, ENTERED
+  - Forrásidézet: . The actions of FIA race director Michael Masi surrounding the controversial procedures used during the late safety car caused Mercedes to file an intention to appeal the results of that race, though this was later withdrawn. Hamilton finished second in the championship, eight points behind champion Verstappen, with Bottas third in the standings in his final season with the team. The team took th...
+- `team-mercedes-benz-in-formula-one#56`: ExtractionValidationError: ROUND_OF does not allow Team -> GrandPrix
+  - Jelölt típusok: Driver, Driver, Team, Season, GrandPrix, TEAMMATE_OF, ENTERED, ROUND_OF
+  - Forrásidézet: Mercedes junior driver, George Russell replaced Bottas to partner Hamilton for 2022. 2022 saw major rule changes, which reintroduced ground effect. Mercedes revealed a radical design with what was dubbed 'zero-pods'. The radical design did not pay dividends, as the team struggled to understand and unlock its full potential. Additionally, the car suffered from aggressive porpoising, the porpoising ...
+- `team-mercedes-benz-in-formula-one#57`: ExtractionValidationError: HELD_AT does not allow Team -> GrandPrix
+  - Jelölt típusok: Team, Driver, Driver, Driver, Driver, Driver, GrandPrix, GrandPrix, GrandPrix, Season, HELD_AT, HELD_AT, HELD_AT, ACHIEVED, ACHIEVED, ACHIEVED, ENTERED
+  - Forrásidézet: . Despite their performance struggles, Mercedes's reliability was "amazing", meaning their only three retirements of the season came at the British Grand Prix, where Russell was involved in a crash with Zhou Guanyu and Pierre Gasly, the Belgian Grand Prix, where Hamilton was involved in a crash with Fernando Alonso, and the Abu Dhabi Grand Prix, where Hamilton suffered a mechanical failure, but wa...
+- `team-mercedes-benz-in-formula-one#58`: ExtractionValidationError: ACHIEVED does not allow Driver -> GrandPrix
+  - Jelölt típusok: Driver, Driver, Team, Season, GrandPrix, GrandPrix, GrandPrix, DROVE_FOR, DROVE_FOR, ENTERED, ROUND_OF, ROUND_OF, ROUND_OF, ACHIEVED, ACHIEVED, ACHIEVED
+  - Forrásidézet: . The team regularly appeared on the podium. At the French Grand Prix, Hamilton finished second while Russell finished third, marking the team's first double podium of the season. Russell achieved his first ever pole position, and Mercedes's first of the season, at the Hungarian Grand Prix. Russell achieved his first Formula One win, and Mercedes's first of the season, along with Hamilton coming i...
+- `team-mercedes-benz-in-formula-one#59`: ExtractionValidationError: ENTERED is not temporal; from_year, to_year and role must be null
+  - Jelölt típusok: Team, Driver, Driver, Season, GrandPrix, GrandPrix, ENTERED, FIELDED, DROVE_FOR, ACHIEVED, ACHIEVED, DROVE_FOR
+  - Forrásidézet: Mercedes finished the 2022 season third in the Constructors' Championship with the one win at São Paulo marking their best result of the season. Russell finished 4th in the Drivers' Championship having scored the win in Brazil plus a pole position in Hungary. Hamilton finished 6th in the Drivers' Championship marking the first time in his career he finished outside the top 5, with 2022 also markin...
+- `team-mercedes-benz-in-formula-one#60`: ExtractionValidationError: ENTERED is not temporal; from_year, to_year and role must be null
+  - Jelölt típusok: Team, Driver, Driver, Season, ENTERED, DROVE_FOR, DROVE_FOR
+  - Forrásidézet: After continuing to struggle with their radical "zero-pods" design in the 2023 season, Mercedes opted to replace Technical Director Mike Elliott with James Allison, with Elliott becoming Chief Technical Officer. This change occurred on 21 April 2023.
+- `team-mercedes-benz-in-formula-one#61`: ExtractionValidationError: ENTERED is not temporal; from_year, to_year and role must be null
+  - Jelölt típusok: Team, Team, Season, GrandPrix, Driver, Driver, ENTERED, ROUND_OF, TEAMMATE_OF, FOR_TEAM, ACHIEVED
+  - Forrásidézet: Mercedes finished 2023 second in the Constructors' Championship, 3 points ahead of Ferrari. The season however still was disappointing as the team failed to secure a win for the first time since 2011. The closest the team came to winning was at the United States Grand Prix where Hamilton finished 0.3 seconds behind World Champion Max Verstappen before he was disqualified for his rear skid blocks b...
+- `team-mercedes-benz-in-formula-one#62`: ExtractionValidationError: WON does not allow Driver -> Season
+  - Jelölt típusok: Driver, Driver, Season, GrandPrix, Circuit, WON, ACHIEVED, AT_RACE, WON
+  - Forrásidézet: . Hamilton finished 2023 third in the Drivers' Championship with 6 podiums, with the highlight of his season being breaking the record for the most pole positions at a single circuit after he took his 9th pole at the Hungaroring during the Hungarian Grand Prix. Russell had a miserable season finishing 8th in the Drivers' Championship with 2 podiums.
+- `team-mercedes-benz-in-formula-one#63`: ExtractionValidationError: ROUND_OF does not allow Team -> GrandPrix
+  - Jelölt típusok: Team, Car, Season, GrandPrix, GrandPrix, Driver, Season, FIELDED, RACED_IN, ROUND_OF, ROUND_OF, ACHIEVED, AWARDED_IN
+  - Forrásidézet: The team admitted the W15 will have a completely different concept for the 2024 season with their intentions to be trying to catch up to pace setters Red Bull for their hope of claiming the championship or fighting for wins. Mercedes secured consecutive victories at the Austrian and British Grands Prix, the latter marking Hamilton's first victory since 2021 and breaking Michael Schumacher's record...
+- `team-mercedes-benz-in-formula-one#64`: ExtractionValidationError: ROUND_OF does not allow Team -> GrandPrix
+  - Jelölt típusok: Team, Driver, Driver, Season, GrandPrix, GrandPrix, ENTERED, ROUND_OF, ROUND_OF, ACHIEVED, ACHIEVED, WON
+  - Forrásidézet: . Mercedes secured two more wins at the Belgian (inherited by Hamilton for his last win with the team after Russell was disqualified) and Las Vegas Grands Prix to finish fourth in the Constructors' Championship. In the Drivers' Championship, Russell finished sixth, ahead of the departing Hamilton in seventh.
+- `team-mercedes-benz-in-formula-one#65`: ExtractionValidationError: ENTERED is not temporal; from_year, to_year and role must be null
+  - Jelölt típusok: Driver, Team, Team, Driver, Driver, Team, Season, Season, Season, DROVE_FOR, DROVE_FOR, DROVE_FOR, DROVE_FOR, DROVE_FOR, ENTERED, ENTERED, ENTERED
+  - Forrásidézet: On 1 February 2024, Mercedes confirmed Hamilton would leave the team after 12 years, with the seven-time champion signing a multi-year contract to drive for Ferrari from 2025 onwards after he activated an exit clause in his contract. Mercedes junior driver Kimi Antonelli was announced as his replacement on 31 August 2024. On 19 December 2024, Bottas was announced to be rejoining the team as a rese...
+- `team-mercedes-benz-in-formula-one#66`: ExtractionValidationError: WON does not allow Driver -> Season
+  - Jelölt típusok: Driver, Driver, Team, Season, GrandPrix, GrandPrix, WON, ENTERED, WON, ACHIEVED, ACHIEVED, ACHIEVED
+  - Forrásidézet: Outside of an off weekend in Monaco, Russell consistently finished in the points and won in Canada and Singapore, ultimately tying his best finish of fourth in 2022 in the Drivers' Championship, while Antonelli, who obtained his maiden podium in Canada, finished in seventh. Mercedes overall finished in second in the Constructors' Championship.
+- `team-mercedes-benz-in-formula-one#69`: ExtractionValidationError: ENTERED is not temporal; from_year, to_year and role must be null
+  - Jelölt típusok: Team, Season, ENTERED
+  - Forrásidézet: Going into the 2026 season, pundits and bookies predicted that Mercedes would have a strong season amidst new regulations
+- `team-mercedes-benz-in-formula-one#70`: ExtractionValidationError: ACHIEVED does not allow Driver -> GrandPrix
+  - Jelölt típusok: Car, Team, Driver, Driver, Driver, Driver, GrandPrix, GrandPrix, GrandPrix, FIELDED, ACHIEVED, FOR_TEAM, ACHIEVED, ACHIEVED, TEAMMATE_OF, TEAMMATE_OF, TEAMMATE_OF
+  - Forrásidézet: . The Mercedes W17 was indeed dominant in the first two races it has entered, both times securing 1-2 finishes; Russell won ahead of Antonelli at the Australian Grand Prix after surviving an early attack from the Ferraris of Hamilton and Charles Leclerc, he won the Chinese sprint ahead of both Ferraris after Antonelli hit early trouble, and Antonelli claimed his maiden win ahead of Russell and Ham...
+- `team-mercedes-benz-in-formula-one#71`: ExtractionValidationError: ACHIEVED does not allow Driver -> GrandPrix
+  - Jelölt típusok: Driver, GrandPrix, GrandPrix, ACHIEVED, ACHIEVED
+  - Forrásidézet: . Antonelli then became the youngest driver in F1 history to lead the World Championship after his victory in the Japanese Grand Prix, and furthermore, at the Miami Grand Prix, became the first driver in Formula One history to convert his first three consecutive pole positions into wins at the same events.
+- `team-mercedes-benz-in-formula-one#74`: ExtractionValidationError: DROVE_FOR does not allow Team -> Team
+  - Jelölt típusok: Team, Team, Team, Team, Season, Season, Team, DROVE_FOR, POWERED_BY, DROVE_FOR, DROVE_FOR
+  - Forrásidézet: Mercedes-Benz returned to Formula One as an engine supplier in 1994 in partnership with Ilmor, a British independent high-performance autosport engineering company with its manufacturing centre based in Brixworth, Northamptonshire. After acquisition by Mercedes, the company is now called Mercedes AMG High Performance Powertrains. It supplied Sauber for one season, then switched to McLaren in 1995 ...
+- `team-mercedes-benz-in-formula-one#75`: ExtractionValidationError: POWERED_BY does not allow Team -> Season
+  - Jelölt típusok: Team, Team, Team, Team, Team, Team, Season, Season, Season, Season, Season, Season, POWERED_BY, POWERED_BY, POWERED_BY, POWERED_BY, POWERED_BY, POWERED_BY, POWERED_BY
+  - Forrásidézet: . In 2009, Mercedes also became suppliers of Brawn GP (later acquired to become the Mercedes-Benz factory team) and Force India, later known as Racing Point and eventually, Aston Martin F1, until the 2025 season. A fourth team was added to the supplying program in 2014, Williams. The 20-year long partnership with McLaren ended in advance of the 2015 season, before resuming in 2021. Mercedes suppli...
+- `team-mercedes-benz-in-formula-one#76`: ExtractionValidationError: POWERED_BY does not allow Team -> Team
+  - Jelölt típusok: Team, Team, Team, Team, Season, POWERED_BY, POWERED_BY, POWERED_BY, POWERED_BY
+  - Forrásidézet: For the 2026 season, Mercedes supplies engines to Alpine, McLaren, and Williams, in addition to their own team.
+- `team-mercedes-benz-in-formula-one#78`: ExtractionValidationError: ACHIEVED does not allow Driver -> Season
+  - Jelölt típusok: Driver, Driver, Driver, Driver, Team, Season, DROVE_FOR, DROVE_FOR, DROVE_FOR, ACHIEVED
+  - Forrásidézet: Four of the graduates of the Mercedes junior team have driven in Formula One. Pascal Wehrlein was the first graduate to race in F1 from 2016 to 2017. As of 2026, George Russell and Kimi Antonelli are the only drivers to have driven for Mercedes, with the former having done so since 2022 and the latter starting in 2025. Esteban Ocon is the only other former driver to be participating in the 2026 se...
+- `team-mercedes-benz-in-formula-one#82`: ExtractionValidationError: DROVE_FOR does not allow Team -> Team
+  - Jelölt típusok: Team, Team, Circuit, Season, DROVE_FOR, HELD_AT
+  - Forrásidézet: On 21 December, the team confirmed that the number one Malaysian oil and gas company Petronas would join the team as title sponsor. Petronas was based in Kuala Lumpur where the Sepang International Circuit (SIC) is located. From 2010, the team competed under the full title of Mercedes GP Petronas Formula One Team. According to some reports, the arrangement is valued at €30m each year
+- `team-mercedes-benz-in-formula-one#83`: ExtractionValidationError: DROVE_FOR: unknown source_id 'e1'
+  - Jelölt típusok: DROVE_FOR
+  - Forrásidézet: . According to some reports, the arrangement is valued at €30m each year. On 28 September 2022, Mercedes and Petronas announced a multi-year renewal of the title and technical partnership from the 2026 season onwards.
+- `team-mercedes-benz-in-formula-one#84`: ExtractionValidationError: FIELDED does not allow Team -> Team
+  - Jelölt típusok: Team, Driver, Driver, Team, Team, Team, Team, Team, Season, Season, FIELDED, DROVE_FOR, DROVE_FOR, DROVE_FOR, DROVE_FOR, TEAMMATE_OF, TEAMMATE_OF
+  - Forrásidézet: On 25 January 2010, the team's livery was unveiled publicly at the Mercedes-Benz Museum in Stuttgart, with Schumacher and Rosberg in attendance. The cars race in the traditional silver colours of Mercedes-Benz and retains Brawn GP sponsor MIGfx. In 2013, the team signed a multi-year deal with mobile company BlackBerry which ended after the 2015 season. The team also had other major partners such a...
+- `team-mercedes-benz-in-formula-one#85`: ExtractionValidationError: DROVE_FOR does not allow Team -> Driver
+  - Jelölt típusok: Team, Driver, Driver, Season, Season, Season, GrandPrix, DROVE_FOR, DROVE_FOR, ROUND_OF
+  - Forrásidézet: . Qualcomm, UBS, Epson, Bose & Hugo Boss were added as sponsors in 2015, while Wihuri joined Mercedes together with Bottas in 2017. Before the 2017 Bahrain Grand Prix, Mercedes added software company Tibco as one of their partners. In 2018, Tommy Hilfiger took over from Hugo Boss as the team's clothing supplier with Hamilton becoming a brand ambassador for the company and participating in the #Wha...
+- `team-mercedes-benz-in-formula-one#88`: ExtractionValidationError: DROVE_FOR does not allow Team -> Team
+  - Jelölt típusok: Team, Team, Season, GrandPrix, DROVE_FOR, ENTERED, ROUND_OF
+  - Forrásidézet: The Mercedes F1 team had previously partnered with FTX, a Bahamas-based cryptocurrency exchange company. Mercedes suspended its sponsorship deal with FTX and removed the company's logos from their cars prior to the 2022 São Paulo Grand Prix due to FTX's financial difficulties, with the cryptocurrency firm filing for chapter 11 bankruptcy soon after, thereby formally ending the sponsorship deal. Th...
+- `team-mercedes-benz-in-formula-one#89`: ExtractionValidationError: ENTERED: unknown source_id 'e1'
+  - Jelölt típusok: ENTERED
+  - Forrásidézet: . A lawsuit against Mercedes F1 team for promoting FTX was filed to a federal court in Miami in November 2023.
+- `team-mercedes-benz-in-formula-one#91`: ExtractionValidationError: DROVE_FOR does not allow Team -> Team
+  - Jelölt típusok: Team, Team, DROVE_FOR
+  - Forrásidézet: On 1 December 2021, the team initially signed a sponsorship deal with the Kingspan Group. This announcement proved controversial due to Kingspan being under scrutiny in the Grenfell Tower inquiry, an inquiry about the 2017 Grenfell Tower Fire where 72 people lost their lives. The Mercedes-Kingspan Group deal led to criticism from Grenfell United (made up of survivors and families of victims of the...
+- `team-mercedes-benz-in-formula-one#92`: ExtractionValidationError: DROVE_FOR does not allow Team -> Driver
+  - Jelölt típusok: Team, Driver, DROVE_FOR
+  - Forrásidézet: . Mercedes subsequently agreed to review its decision with Mercedes F1 team boss, Toto Wolff even offering to meet and listen to the Grenfell fire survivors. On 8 December 2021, it was announced the deal between Kingspan and Mercedes F1 Team had been terminated with immediate effect.
+- `team-mercedes-benz-in-formula-one#94`: ExtractionValidationError: WON does not allow Driver -> Team
+  - Jelölt típusok: Driver, Driver, Driver, Team, Season, Season, Season, Season, Season, Season, Season, Season, Season, WON, AWARDED_IN, AWARDED_IN, WON, AWARDED_IN, AWARDED_IN, AWARDED_IN, AWARDED_IN, AWARDED_IN, AWARDED_IN, WON, AWARDED_IN
+  - Forrásidézet: ## Drivers' Champions The following drivers won the Formula One Drivers' Championship for Mercedes: Juan Manuel Fangio (1954, 1955) Lewis Hamilton (2014, 2015, 2017, 2018, 2019, 2020) Nico Rosberg (2016)
+- `team-mercedes-benz-in-formula-one#96`: ExtractionValidationError: WON does not allow Driver -> Season
+  - Jelölt típusok: Driver, Driver, Season, Season, WON, WON
+  - Forrásidézet: ## Esports Drivers' Champions The following drivers won the Formula One Esports Drivers' Championship for Mercedes: Brendon Leigh (2018). Jarno Opmeer (2021).
+
+## Egy chunkban előforduló entitások
+
+Pontosan egy forráschunkban szereplő összevont entitás: 237.
+
+## Legnagyobb fokszám
+
+A legnagyobb fokszám 42. Ezt eléri: `Season:2012`. Az összevont szakterületi élek iránya nélküli száma. A szám nem igazolja, hogy az extrakció szemantikailag helyes.
+
+- GrandPrix:malaysian grand prix -ROUND_OF-> Season:2012
+- GrandPrix:chinese grand prix -ROUND_OF-> Season:2012
+- GrandPrix:british grand prix -ROUND_OF-> Season:2012
+- Team:mercedes -ENTERED-> Season:2012
+- Car:mercedes f1 w03 -RACED_IN-> Season:2012
+- Title:triple world champion -AWARDED_IN-> Season:2012
+- GrandPrix:united states grand prix -ROUND_OF-> Season:2012
+- GrandPrix:bahrain grand prix -ROUND_OF-> Season:2012
+- GrandPrix:monaco -ROUND_OF-> Season:2012
+- Team:red bull -ENTERED-> Season:2012
+- GrandPrix:canada -ROUND_OF-> Season:2012
+- GrandPrix:grand prix of canada -ROUND_OF-> Season:2012
+- GrandPrix:grand prix -ROUND_OF-> Season:2012
+- GrandPrix:germany -ROUND_OF-> Season:2012
+- GrandPrix:hungary -ROUND_OF-> Season:2012
+- GrandPrix:round 12 -ROUND_OF-> Season:2012
+- GrandPrix:belgium -ROUND_OF-> Season:2012
+- GrandPrix:round 13 -ROUND_OF-> Season:2012
+- Team:red bull racing -ENTERED-> Season:2012
+- GrandPrix:italy -ROUND_OF-> Season:2012
+- GrandPrix:round 14 -ROUND_OF-> Season:2012
+- Car:f2012 -RACED_IN-> Season:2012
+- GrandPrix:indian grand prix -ROUND_OF-> Season:2012
+- GrandPrix:round 17 -ROUND_OF-> Season:2012
+- GrandPrix:abu dhabi grand prix -ROUND_OF-> Season:2012
+- GrandPrix:european grand prix -ROUND_OF-> Season:2012
+- GrandPrix:united kingdom -ROUND_OF-> Season:2012
+- GrandPrix:singapore -ROUND_OF-> Season:2012
+- Team:lotus -ENTERED-> Season:2012
+- Team:force india -ENTERED-> Season:2012
+- GrandPrix:belgian grand prix -ROUND_OF-> Season:2012
+- GrandPrix:italian grand prix -ROUND_OF-> Season:2012
+- GrandPrix:singapore grand prix -ROUND_OF-> Season:2012
+- GrandPrix:german grand prix -ROUND_OF-> Season:2012
+- Team:williams -ENTERED-> Season:2012
+- Car:red bull rb8 -RACED_IN-> Season:2012
+- Team:lotus f1 -ENTERED-> Season:2012
+- Team:hrt -ENTERED-> Season:2012
+- Team:marussia -ENTERED-> Season:2012
+- Team:mclaren -ENTERED-> Season:2012
+- GrandPrix:malaysia -ROUND_OF-> Season:2012
+- GrandPrix:grand prix of china -ROUND_OF-> Season:2012
+
+## Deduplikáció
+
+Előtte egy csomópont egy chunk egy entitása, egy él egy chunk egy kapcsolata. Utána egy csomópont egy entity_key, egy él egy rel_key. Az aliaslista üres: `{}`.
+
+- Előtte: csomópont 1442, él 726, legnagyobb gyengén összefüggő komponens 13 csomópont.
+- Utána: csomópont 401, él 580, legnagyobb gyengén összefüggő komponens 283 csomópont.
+
+Az irányított szakterületi gráf legnagyobb gyengén összefüggő komponense: az irány nem számít, a méret a csomópontok száma. A seed, a dokumentumgráf és a MENTIONS élek nincsenek benne.

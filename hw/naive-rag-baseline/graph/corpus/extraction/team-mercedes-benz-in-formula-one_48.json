@@ -1,0 +1,55 @@
+{
+  "chunk_id": "team-mercedes-benz-in-formula-one#48",
+  "doc_id": "team-mercedes-benz-in-formula-one",
+  "document_title": "Mercedes-Benz in Formula One",
+  "section": "Mercedes-Benz in Formula One > Eight consecutive Constructors' titles (2014–2021)",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/Mercedes-Benz_in_Formula_One",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "592bac1c2e1ab8cea45b12e5ad95017cad3374c83b51d768a9b33a6d156ebbf5",
+  "status": "error",
+  "error": "ExtractionValidationError: ENTERED is not temporal; from_year, to_year and role must be null",
+  "candidate_result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Mercedes",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that achieved multiple titles."
+      },
+      {
+        "local_id": "e2",
+        "name": "Ferrari",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that won 5 drivers' and constructors' titles in a row between 2000 and 2004."
+      },
+      {
+        "local_id": "e3",
+        "name": "2014–2021",
+        "entity_type": "Season",
+        "description": "The period during which Mercedes achieved eight consecutive Constructors' titles."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e3",
+        "relationship_type": "ENTERED",
+        "description": "Mercedes entered the seasons from 2014 to 2021.",
+        "from_year": 2014,
+        "to_year": 2021,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "WON",
+        "description": "Mercedes won 5 drivers' and constructors' titles in a row, making them the second team to achieve this feat after Ferrari.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "chunk_id": "season-2021-formula-one-world-championship#1",
+  "doc_id": "season-2021-formula-one-world-championship",
+  "document_title": "2021 Formula One World Championship",
+  "section": null,
+  "page": 1,
+  "source": "https://en.wikipedia.org/wiki/2021_Formula_One_World_Championship",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-2",
+  "input_hash": "f44ed79faeb55778e8de4686921a6ffff07736d186d0894a8e99f9cc466aa22f",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Max Verstappen",
+        "entity_type": "Driver",
+        "description": "Driver from the Netherlands who won the Drivers' Championship in 2021."
+      },
+      {
+        "local_id": "e2",
+        "name": "Red Bull Racing-Honda",
+        "entity_type": "Team",
+        "description": "Formula 1 team that Max Verstappen drove for in 2021."
+      },
+      {
+        "local_id": "e3",
+        "name": "2021",
+        "entity_type": "Season",
+        "description": "The season in which Max Verstappen won the Drivers' Championship."
+      },
+      {
+        "local_id": "e4",
+        "name": "World Drivers' Champion",
+        "entity_type": "Title",
+        "description": "Championship title won by Max Verstappen in 2021."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Max Verstappen drove for Red Bull Racing-Honda in 2021.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e4",
+        "relationship_type": "WON",
+        "description": "Max Verstappen won the World Drivers' Champion title in 2021.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e3",
+        "relationship_type": "AWARDED_IN",
+        "description": "The World Drivers' Champion title was awarded in the 2021 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

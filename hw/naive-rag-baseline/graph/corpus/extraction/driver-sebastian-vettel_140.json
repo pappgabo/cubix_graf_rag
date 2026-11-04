@@ -1,0 +1,118 @@
+{
+  "chunk_id": "driver-sebastian-vettel#140",
+  "doc_id": "driver-sebastian-vettel",
+  "document_title": "Sebastian Vettel",
+  "section": "Race of Champions",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/Sebastian_Vettel",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "0a250b331d1730a48e9060d85f8b0db36e5b730cb191d0c6cc656825303efcbe",
+  "status": "error",
+  "error": "ExtractionValidationError: ACHIEVED does not allow Driver -> Season",
+  "candidate_result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Sebastian Vettel",
+        "entity_type": "Driver",
+        "description": "A German racing driver who has competed in Formula One."
+      },
+      {
+        "local_id": "e2",
+        "name": "Mick Schumacher",
+        "entity_type": "Driver",
+        "description": "A German racing driver and son of Michael Schumacher."
+      },
+      {
+        "local_id": "e3",
+        "name": "Kristensen",
+        "entity_type": "Driver",
+        "description": "A driver who was part of the Nordic team in the 2019 Race of Champions."
+      },
+      {
+        "local_id": "e4",
+        "name": "Johan Kristoffersson",
+        "entity_type": "Driver",
+        "description": "A driver who was part of the Nordic team in the 2019 Race of Champions."
+      },
+      {
+        "local_id": "e5",
+        "name": "Sébastien Loeb",
+        "entity_type": "Driver",
+        "description": "A French rally driver who defeated Vettel in the 2022 Race of Champions."
+      },
+      {
+        "local_id": "e6",
+        "name": "2019",
+        "entity_type": "Season",
+        "description": "The year of the Race of Champions event where Vettel and Schumacher finished runners-up."
+      },
+      {
+        "local_id": "e7",
+        "name": "2022",
+        "entity_type": "Season",
+        "description": "The year when Vettel reached the individual final but was beaten by Sébastien Loeb."
+      },
+      {
+        "local_id": "e8",
+        "name": "2023",
+        "entity_type": "Season",
+        "description": "The year when Vettel competed in the Race of Champions."
+      },
+      {
+        "local_id": "e9",
+        "name": "2025",
+        "entity_type": "Season",
+        "description": "The year when Vettel competed in the Race of Champions."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Vettel teamed up with Mick Schumacher in the 2019 Race of Champions.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e6",
+        "relationship_type": "ACHIEVED",
+        "description": "Vettel was eliminated in the group stages of the individual competition in the 2019 Race of Champions.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e7",
+        "relationship_type": "ACHIEVED",
+        "description": "Vettel reached the individual final in 2022 but was beaten by Sébastien Loeb.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e8",
+        "relationship_type": "RACED_IN",
+        "description": "Vettel competed in the 2023 Race of Champions.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e9",
+        "relationship_type": "RACED_IN",
+        "description": "Vettel competed in the 2025 Race of Champions.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

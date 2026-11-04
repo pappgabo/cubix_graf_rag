@@ -1,0 +1,94 @@
+{
+  "chunk_id": "season-2016-formula-one-world-championship#70",
+  "doc_id": "season-2016-formula-one-world-championship",
+  "document_title": "2016 Formula One World Championship",
+  "section": "European rounds",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/2016_Formula_One_World_Championship",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "acaf0597d388e9405a0be3453790cb6183e79da84bdff2b6d25da691f61b239b",
+  "status": "error",
+  "error": "ExtractionValidationError: WON does not allow Driver -> GrandPrix",
+  "candidate_result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Daniel Ricciardo",
+        "entity_type": "Driver",
+        "description": "Finished second ahead of Sergio Pérez."
+      },
+      {
+        "local_id": "e2",
+        "name": "Sergio Pérez",
+        "entity_type": "Driver",
+        "description": "Finished behind Daniel Ricciardo."
+      },
+      {
+        "local_id": "e3",
+        "name": "Lewis Hamilton",
+        "entity_type": "Driver",
+        "description": "Won the Canadian Grand Prix."
+      },
+      {
+        "local_id": "e4",
+        "name": "Sebastian Vettel",
+        "entity_type": "Driver",
+        "description": "Lost the lead to Lewis Hamilton at the start."
+      },
+      {
+        "local_id": "e5",
+        "name": "Valtteri Bottas",
+        "entity_type": "Driver",
+        "description": "Finished third, his first podium of the season."
+      },
+      {
+        "local_id": "e6",
+        "name": "Canadian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "Race won by Lewis Hamilton."
+      },
+      {
+        "local_id": "e7",
+        "name": "2016",
+        "entity_type": "Season",
+        "description": "The championship year."
+      },
+      {
+        "local_id": "e8",
+        "name": "Ferrari",
+        "entity_type": "Team",
+        "description": "Team of Sebastian Vettel."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e3",
+        "target_id": "e6",
+        "relationship_type": "WON",
+        "description": "Lewis Hamilton won the Canadian Grand Prix.",
+        "from_year": 2016,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e6",
+        "target_id": "e7",
+        "relationship_type": "ROUND_OF",
+        "description": "The Canadian Grand Prix is a round of the 2016 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e8",
+        "target_id": "e6",
+        "relationship_type": "HELD_AT",
+        "description": "The Canadian Grand Prix is held at a circuit.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

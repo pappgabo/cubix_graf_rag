@@ -1,0 +1,55 @@
+{
+  "chunk_id": "team-mercedes-benz-in-formula-one#51",
+  "doc_id": "team-mercedes-benz-in-formula-one",
+  "document_title": "Mercedes-Benz in Formula One",
+  "section": "Mercedes-Benz in Formula One > Eight consecutive Constructors' titles (2014–2021)",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/Mercedes-Benz_in_Formula_One",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "2d403bc45f22dfe86773bc31e9e3045f40622eb4981c62c0d5457b7767a42ea9",
+  "status": "error",
+  "error": "ExtractionValidationError: ENTERED is not temporal; from_year, to_year and role must be null",
+  "candidate_result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Mercedes-Benz",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that debuted their 'Dual-Axis-Steering' system during pre-season testing for the 2020 season."
+      },
+      {
+        "local_id": "e2",
+        "name": "2020",
+        "entity_type": "Season",
+        "description": "The championship year in which the 'Dual-Axis-Steering' system was allowed."
+      },
+      {
+        "local_id": "e3",
+        "name": "2021",
+        "entity_type": "Season",
+        "description": "The championship year in which the 'Dual-Axis-Steering' system was made illegal."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "ENTERED",
+        "description": "Mercedes-Benz took part in the 2020 season.",
+        "from_year": 2020,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e3",
+        "relationship_type": "ENTERED",
+        "description": "Mercedes-Benz took part in the 2021 season.",
+        "from_year": 2021,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "chunk_id": "season-2012-formula-one-world-championship#168",
+  "doc_id": "season-2012-formula-one-world-championship",
+  "document_title": "2012 Formula One World Championship",
+  "section": "Race summaries > Round 15 – Japan Suzuka International Racing Course",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/2012_Formula_One_World_Championship",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "51b90096e1e2d9576b5cbf411ea98bee812950f043ab2a1b056d28cd48e2d05b",
+  "status": "error",
+  "error": "ExtractionValidationError: DROVE_FOR does not allow Driver -> Driver",
+  "candidate_result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Fernando Alonso",
+        "entity_type": "Driver",
+        "description": "A driver who was involved in a first corner clash."
+      },
+      {
+        "local_id": "e2",
+        "name": "Kimi Räikkönen",
+        "entity_type": "Driver",
+        "description": "A driver who made contact with Fernando Alonso."
+      },
+      {
+        "local_id": "e3",
+        "name": "Mark Webber",
+        "entity_type": "Driver",
+        "description": "A driver who was caught up in the opening lap melee."
+      },
+      {
+        "local_id": "e4",
+        "name": "Romain Grosjean",
+        "entity_type": "Driver",
+        "description": "A driver who hit Mark Webber and received a penalty."
+      },
+      {
+        "local_id": "e5",
+        "name": "2012",
+        "entity_type": "Season",
+        "description": "The championship year of the race."
+      },
+      {
+        "local_id": "e6",
+        "name": "Japan Suzuka International Racing Course",
+        "entity_type": "Circuit",
+        "description": "The circuit where the race took place."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Fernando Alonso made contact with Kimi Räikkönen.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e4",
+        "relationship_type": "DROVE_FOR",
+        "description": "Mark Webber was hit by Romain Grosjean.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e6",
+        "relationship_type": "ROUND_OF",
+        "description": "The race took place in the 2012 season at the Japan Suzuka International Racing Course.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

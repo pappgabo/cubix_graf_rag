@@ -1,0 +1,139 @@
+{
+  "chunk_id": "driver-valtteri-bottas#136",
+  "doc_id": "driver-valtteri-bottas",
+  "document_title": "Valtteri Bottas",
+  "section": "Other racing > Rallying",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/Valtteri_Bottas",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "66d6785390b1d55e3bcee714e76c25648805a740f6306b822dc769147510b4bc",
+  "status": "error",
+  "error": "ExtractionValidationError: ACHIEVED does not allow Driver -> GrandPrix",
+  "candidate_result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Valtteri Bottas",
+        "entity_type": "Driver",
+        "description": "A Finnish racing driver who has competed in Formula One."
+      },
+      {
+        "local_id": "e2",
+        "name": "Arctic Rally",
+        "entity_type": "GrandPrix",
+        "description": "A rally event that Bottas participated in."
+      },
+      {
+        "local_id": "e3",
+        "name": "Paul Ricard-based Rallycircuit Côte d'Azur",
+        "entity_type": "GrandPrix",
+        "description": "A rally event that Bottas won."
+      },
+      {
+        "local_id": "e4",
+        "name": "Arctic Lapland Rally",
+        "entity_type": "GrandPrix",
+        "description": "A rally event that Bottas participated in multiple times."
+      },
+      {
+        "local_id": "e5",
+        "name": "Citroën DS3 WRC",
+        "entity_type": "Car",
+        "description": "A car model that Bottas drove in the Arctic Lapland Rally."
+      },
+      {
+        "local_id": "e6",
+        "name": "Extreme E",
+        "entity_type": "Car",
+        "description": "A racing series in which Bottas participated in a test."
+      },
+      {
+        "local_id": "e7",
+        "name": "Jean-Éric Vergne",
+        "entity_type": "Driver",
+        "description": "A driver who participated in the Extreme E test alongside Bottas."
+      },
+      {
+        "local_id": "e8",
+        "name": "Sébastien Loeb",
+        "entity_type": "Driver",
+        "description": "A driver who participated in the Extreme E test alongside Bottas."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "ACHIEVED",
+        "description": "Bottas recorded a stage win and finished fifth overall in the Arctic Rally.",
+        "from_year": 2019,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e3",
+        "relationship_type": "WON",
+        "description": "Bottas won the Paul Ricard-based Rallycircuit Côte d'Azur.",
+        "from_year": 2019,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e4",
+        "relationship_type": "ACHIEVED",
+        "description": "Bottas finished ninth in the Arctic Lapland Rally.",
+        "from_year": 2020,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e4",
+        "relationship_type": "ACHIEVED",
+        "description": "Bottas competed in his third Arctic Lapland Rally.",
+        "from_year": 2021,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e5",
+        "relationship_type": "POWERED_BY",
+        "description": "The Arctic Lapland Rally car driven by Bottas was a Citroën DS3 WRC.",
+        "from_year": 2020,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e6",
+        "relationship_type": "ACHIEVED",
+        "description": "Bottas participated in an Extreme E test.",
+        "from_year": 2020,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e6",
+        "target_id": "e7",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Bottas was a teammate of Jean-Éric Vergne during the Extreme E test.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e6",
+        "target_id": "e8",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Bottas was a teammate of Sébastien Loeb during the Extreme E test.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

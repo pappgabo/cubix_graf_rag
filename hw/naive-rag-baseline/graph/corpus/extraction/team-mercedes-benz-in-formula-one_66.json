@@ -1,0 +1,109 @@
+{
+  "chunk_id": "team-mercedes-benz-in-formula-one#66",
+  "doc_id": "team-mercedes-benz-in-formula-one",
+  "document_title": "Mercedes-Benz in Formula One",
+  "section": "Mercedes-Benz in Formula One > Struggling with ground effect (2022–2025)",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/Mercedes-Benz_in_Formula_One",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "98efc767502307f08073159f089de845e47f82603ffe66848bad92d4b36da09e",
+  "status": "error",
+  "error": "ExtractionValidationError: WON does not allow Driver -> Season",
+  "candidate_result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "George Russell",
+        "entity_type": "Driver",
+        "description": "Russell consistently finished in the points and won in Canada and Singapore, ultimately tying his best finish of fourth in 2022 in the Drivers' Championship."
+      },
+      {
+        "local_id": "e2",
+        "name": "Andrea Antonelli",
+        "entity_type": "Driver",
+        "description": "Antonelli obtained his maiden podium in Canada, finished in seventh."
+      },
+      {
+        "local_id": "e3",
+        "name": "Mercedes",
+        "entity_type": "Team",
+        "description": "Mercedes overall finished in second in the Constructors' Championship."
+      },
+      {
+        "local_id": "e4",
+        "name": "2022",
+        "entity_type": "Season",
+        "description": "The year in which Russell tied his best finish of fourth in the Drivers' Championship."
+      },
+      {
+        "local_id": "e5",
+        "name": "Canada",
+        "entity_type": "GrandPrix",
+        "description": "Russell won in Canada and Antonelli obtained his maiden podium in Canada."
+      },
+      {
+        "local_id": "e6",
+        "name": "Singapore",
+        "entity_type": "GrandPrix",
+        "description": "Russell won in Singapore."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e4",
+        "relationship_type": "WON",
+        "description": "Russell won in the Drivers' Championship in 2022.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e4",
+        "relationship_type": "ENTERED",
+        "description": "Mercedes entered the 2022 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e4",
+        "relationship_type": "WON",
+        "description": "Mercedes finished second in the Constructors' Championship in 2022.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e5",
+        "relationship_type": "ACHIEVED",
+        "description": "Russell won in Canada.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e6",
+        "relationship_type": "ACHIEVED",
+        "description": "Russell won in Singapore.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e5",
+        "relationship_type": "ACHIEVED",
+        "description": "Antonelli obtained his maiden podium in Canada.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

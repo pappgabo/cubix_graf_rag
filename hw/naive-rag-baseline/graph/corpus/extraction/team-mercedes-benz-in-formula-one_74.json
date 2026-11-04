@@ -1,0 +1,97 @@
+{
+  "chunk_id": "team-mercedes-benz-in-formula-one#74",
+  "doc_id": "team-mercedes-benz-in-formula-one",
+  "document_title": "Mercedes-Benz in Formula One",
+  "section": "Mercedes-Benz in Formula One > Engine supplier",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/Mercedes-Benz_in_Formula_One",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "91b5ead4b9ceb3070038e2a89b3a8e8651cb08f4f3948f53e311a81751d76baa",
+  "status": "error",
+  "error": "ExtractionValidationError: DROVE_FOR does not allow Team -> Team",
+  "candidate_result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Mercedes-Benz",
+        "entity_type": "Team",
+        "description": "Returned to Formula One as an engine supplier in 1994."
+      },
+      {
+        "local_id": "e2",
+        "name": "Ilmor",
+        "entity_type": "Team",
+        "description": "A British independent high-performance autosport engineering company."
+      },
+      {
+        "local_id": "e3",
+        "name": "Sauber",
+        "entity_type": "Team",
+        "description": "Supplied by Mercedes-Benz for one season."
+      },
+      {
+        "local_id": "e4",
+        "name": "McLaren",
+        "entity_type": "Team",
+        "description": "Partnered with Mercedes-Benz in a highly successful 20-year partnership starting in 1995."
+      },
+      {
+        "local_id": "e5",
+        "name": "1994",
+        "entity_type": "Season",
+        "description": "The year Mercedes-Benz returned to Formula One as an engine supplier."
+      },
+      {
+        "local_id": "e6",
+        "name": "1995",
+        "entity_type": "Season",
+        "description": "The year Mercedes-Benz switched to McLaren."
+      },
+      {
+        "local_id": "e7",
+        "name": "Mercedes AMG High Performance Powertrains",
+        "entity_type": "Team",
+        "description": "The name of Ilmor after acquisition by Mercedes."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Mercedes-Benz partnered with Ilmor as an engine supplier.",
+        "from_year": 1994,
+        "to_year": null,
+        "role": "engine supplier"
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e3",
+        "relationship_type": "POWERED_BY",
+        "description": "Mercedes-Benz supplied Sauber for one season.",
+        "from_year": null,
+        "to_year": null,
+        "role": "engine supplier"
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e4",
+        "relationship_type": "DROVE_FOR",
+        "description": "Mercedes-Benz switched to McLaren for a 20-year partnership.",
+        "from_year": 1995,
+        "to_year": null,
+        "role": "engine supplier"
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e7",
+        "relationship_type": "DROVE_FOR",
+        "description": "Ilmor became Mercedes AMG High Performance Powertrains after acquisition by Mercedes.",
+        "from_year": null,
+        "to_year": null,
+        "role": "engine supplier"
+      }
+    ]
+  }
+}

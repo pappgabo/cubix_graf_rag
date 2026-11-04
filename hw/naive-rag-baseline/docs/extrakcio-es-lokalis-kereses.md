@@ -1,0 +1,129 @@
+# Extrakció és lokális keresés
+
+Ez a fájl a beadandó kötelező pontjait köti konkrét fájlhoz vagy futtatási eredményhez. Ami nem futott le, az nincs késznek jelölve.
+
+## Adatkör
+
+A feldolgozási kör a `questions.md` Q01–Q08 kérdéseinek Dokumentum mezőiben backtickben megnevezett dokumentumok összes chunkja. A kiválasztás `src/naive_rag/question_scope.py`. A wildcard, például a Q09 `driver-*` kifejezése, nincs kibontva, ezért Q09–Q13 nincs a körben.
+
+A korpusz betöltése után, modellhívás nélkül, a kör:
+
+| doc_id | chunk |
+|---|---|
+| season-2012-formula-one-world-championship | 229 |
+| driver-lewis-hamilton | 199 |
+| driver-michael-schumacher | 192 |
+| driver-fernando-alonso | 166 |
+| driver-sebastian-vettel | 165 |
+| driver-valtteri-bottas | 163 |
+| driver-nico-rosberg | 132 |
+| season-2016-formula-one-world-championship | 106 |
+| season-2021-formula-one-world-championship | 106 |
+| team-mercedes-benz-in-formula-one | 102 |
+| reference-list-of-formula-one-world-drivers-champions | 5 |
+
+11 dokumentum, 1565 chunk. Hiányzó azonosító ebben a listában nincs.
+
+A manifestben szereplő `driver-charles-leclerc.html` hiányzik a korpusz könyvtárból. A betöltő figyelmeztet és kihagyja. Ez a fájl nincs a Q01–Q08 listában, ezért a 1565-öt nem csökkenti. A teljes jelenlegi korpusz 22 dokumentum, 94 forrásoldal és 3639 chunk. A baseline `baseline/answers.json` metaadata 3832 chunkot rögzít. A két lefedettség eltér.
+
+A `graph/pilot/extraction-v3` 10 mentett rekordjából 8 esik a körbe, azonos `gpt-4o-mini` és `f1-pilot-3` bemenettel. Ezek új hívás nélkül bekerültek: 6 sikeres és 2 hibás. A másik kettő, a Ferrari-chunkok, nincs a körben. Új extrakciós hívás: 1557. A rekordok: `graph/corpus/extraction`, 1565 fájl. Összesen 880 strukturálisan sikeres és 685 hibás. A 2 újrahasznált hibás rekord nem lett újrahívva.
+
+## Séma, chunkolás, modellek
+
+- Entitás- és kapcsolattípusok: `src/naive_rag/extraction_models.py`.
+- Gráfséma: `docs/graph-schema.md`. A Q6 rétegszűrés nélküli Driver-illesztése változatlan, `src/naive_rag/extraction_load.py` elején dokumentálva.
+- Chunk: 500 karakter, 75 átfedés, `src/naive_rag/config.py`. Ugyanez a baseline metaadatában.
+- Chat: `gpt-4o-mini`. Embedding: `text-embedding-3-small`. Szolgáltató: OpenAI. Prompt: `f1-pilot-3`.
+- Azonosság: `src/naive_rag/extraction_identity.py`. Az aliaslista üres, `graph_merge.ALIAS_MAP`.
+
+## Extrakció és betöltés
+
+A 10 chunkos v3 pilot kész: `graph/pilot/extraction-v3` és `graph/pilot/extraction-summary-v3.md`. Ezek a fájlok ebben a menetben nem változtak.
+
+A betöltő a séma minden entitás- és kapcsolattípusát írhatja, entitásonként leírást és MENTIONS-élt, élenként `origin=extracted` és `source_chunk_ids` listát tárol. A seed azonosítói nem kerülnek az extrahált csomópontokra. A nyers rekord önmagában nem jóváhagyás: `plan_validated_raw` az `accept_validated_raw` jelző nélkül elutasít, és nem ír `approved` státuszt.
+
+A 880 sikeres rekord bekerült a helyi Neo4j-be, a hibás 685 nem. A rekordokra nem került `approved` mező. A betöltés után: 401 `:Extracted` csomópont, 1441 `MENTIONS` él, 580 `origin=extracted` szakterületi él. Ez a 401 és 580 megegyezik az összevont gráf mértékével.
+
+## Minőség és deduplikáció
+
+Lefutott a 10 chunkos piloton: `graph/pilot/quality-report-v3.md` és `graph/pilot/quality-report-v3.json`.
+
+- 10 feldolgozott, 7 strukturálisan sikeres, 3 hibás, 3 sikeres üres chunk.
+- A strukturális siker nem szemantikai helyesség.
+- Sűrű chunk: `driver-lewis-hamilton#0`, 2 entitás és 1 DROVE_FOR. Forrásszöveg és extrakció a riportban.
+- Ritka chunk: `driver-nico-rosberg#64`, 0 entitás. A forrásszöveg a `## 2013–2016` címsor. Ez üres eredmény, nem hibás extrakció.
+- Sémán kívüli típus nincs. Elutasított jelöltek: a 2021-es chunkban a Team → Driver DROVE_FOR, valamint két ENTERED kapcsolat évvel. Idézetek a riportban.
+- Pontosan egy chunkban szereplő összevont entitás: 5.
+- Legnagyobb fokszám 1, döntetlen: `Driver:lewis hamilton`, `GrandPrix:grand prix`, `Season:2021 formula one world championship`, `Team:ferrari`. A fokszám az összevont szakterületi élek száma. A `GrandPrix:grand prix` általános neve minőségi észrevétel, a fokszám ezt nem igazolja helyesnek.
+- Az indexelhető hat entitás neve: Lewis Hamilton, Grand Prix, 2021 Formula One World Championship, Ferrari, McLaren-Mercedes Young Driver Programme, Scuderia Ferrari. A program Team típusa a nyers v3 rekordban van; ez a rekord nincs emberi jóváhagyással betöltve.
+
+Deduplikáció ugyanezen a piloton. Előtte egy csomópont egy chunk egy entitása, egy él egy chunk egy kapcsolata. Utána egy csomópont egy `entity_key`, egy él egy `rel_key`. A komponens az irányított gráf gyengén összefüggő komponense: az irány nem számít, a méret csomópontszám, MENTIONS, seed és dokumentumgráf nélkül.
+
+- Előtte: 7 csomópont, 2 él, legnagyobb komponens 2.
+- Utána: 6 csomópont, 2 él, legnagyobb komponens 2.
+
+A csökkenés a két chunkban szereplő Lewis Hamilton összevonása. Az élek nem olvadtak össze. Különböző év vagy szerep a tesztben külön él marad: `tests/test_domain_round.py`.
+
+A Q01–Q08 kör riportja: `graph/corpus/quality-report.md` és `graph/corpus/quality-report.json`.
+
+- 1565 feldolgozott, 880 strukturálisan sikeres, 685 hibás, 517 sikeres üres chunk.
+- Sűrű chunk: `reference-list-of-formula-one-world-drivers-champions#1`, 16 entitás, 15 kapcsolat.
+- Ritka chunk: `driver-fernando-alonso#101`, 0 entitás. A forrásszöveg a `## McLaren Racing (2019)` címsor. Üres eredmény, nem hibás extrakció.
+- Pontosan egy chunkban szereplő összevont entitás: 237.
+- Legnagyobb fokszám 42, egyedül `Season:2012`. A fokszám szerkezeti, a 2012-es szezon fontosságát nem igazolja.
+- Deduplikáció előtt: 1442 csomópont, 726 él, legnagyobb gyengén összefüggő komponens 13. Utána: 401 csomópont, 580 él, legnagyobb komponens 283. Az aliaslista üres.
+- Konkrét, validáción átment szemantikai hiba: `driver-sebastian-vettel#58`. A „Triple World Champion” kifejezés Title típusú entitás lett, és `AWARDED_IN` éllel a 2012-es szezonhoz kötődött. A mondat összesített győzelmi szám, nem egy bajnoki cím.
+
+## Lokális keresés és összevetés
+
+A lánc a projektben van: `entity_index.py`, `local_search.py`. A tanórai `Videók/4.hét/codes_4week/local-search` kód nincs importálva. Az embedding bemenete a név és a leírás együtt. A keresés az összevont extrahált kulcsokon megy. Üres horgony esetén a válasz a rögzített elutasító mondat, modellhívás nélkül.
+
+A 401 összevont entitás embeddingje elkészült: `graph/corpus/entity-index.json`. A válaszgenerálás csak a kiválasztott forrásszövegekből mondhat nevet vagy számot, és a riport minden kimondott nevet és számot visszaellenőriz a mellékelt részleteken: `unsupported_claims`.
+
+A bizonyítékválogatás az élek chunkjai mellett a kiválasztott entitások saját forrásait is figyelembe veszi, entitásonként egy lefoglalt részlettel, legfeljebb hattal. A kérdést megválaszoló mondat jellemzően egy entitás chunkján van, nem egy kapcsolat chunkján; emiatt utasított el a korábbi futás mindent.
+
+Futások: `docs/osszehasonlitas-elso-futas.md`, `docs/osszehasonlitas-masodik-futas.md`, `docs/osszehasonlitas-harmadik-futas.md`, és a lezáró `docs/osszehasonlitas.md` a `docs/osszehasonlitas-run.json` naplóval.
+
+A lezáró futás: 9 elutasítás és 4 válasz. Mind a 4 válasz minden neve és száma szerepel a mellékelt forrásszövegekben. A `questions.md` gold értékeivel összevetve a Q01 és a Q09 helyes, a Q10 hiányos, a Q04 téves: a 2016-os bajnokot nevezte meg a csapattársa helyett.
+
+A Q01–Q03 egyszerű kérdés, a Q04–Q08 multi-hop, külön szakaszban. A Q09–Q13 a 11 dokumentumos körön futott. Javulás nincs állítva, és az összevetés a 3832 és a 3639 chunkos eltérés miatt nem kontrollált. A baseline fájl `baseline/answers.json` változatlan.
+
+Megmaradó adatminőségi korlát: a gráf a 3639 chunkból csak 363-at ér el, mert 685 rekord strukturálisan hibás és 517 sikeres rekord üres. A Q08-hoz egyetlen elérhető chunk sem tartalmazza egyszerre Bottast és Rosberget, pedig a korpuszban tíz ilyen van. A Q04 második lépéséhez tizenegy korpuszchunkból egy érhető el. Ez extrakciós hiány, nem visszakeresési hiba.
+
+## Ellenőrzés
+
+Adatbázis nélküli tesztek: `python -m unittest discover -s tests -q` a `src` könyvtárral a `PYTHONPATH`-on. A Neo4j-t és a modelleket nem hívják.
+
+| Pont | Hol látszik |
+|---|---|
+| Adatkör és kihagyás | ez a fájl, `question_scope.py` |
+| Séma és provenance | `extraction_models.py`, `extraction_load.py` |
+| Chunkolás és modellek | `config.py`, `baseline/answers.json` |
+| Nyers extrakció | `graph/corpus/extraction`, pilot: `graph/pilot/extraction-v3` |
+| Hibás jelöltek és egy átment szemantikai hiba | `graph/corpus/quality-report.md`, ez a fájl |
+| Deduplikációs számok | `graph/corpus/quality-report.md` deduplikáció szakasza |
+| Keresési lánc | `local_search.py`, `graph/corpus/entity-index.json` |
+| Összevetés | `docs/osszehasonlitas.md` |
+| Neo4j, provenance-szal | 401 Extracted, 1441 MENTIONS, 580 extracted él |
+
+## Parancsok
+
+Pilot riport, modell és adatbázis nélkül:
+
+```powershell
+$env:PYTHONPATH = "src"
+.\.venv\Scripts\python.exe -m naive_rag.quality_report
+.\.venv\Scripts\python.exe -m naive_rag.compare_baseline
+.\.venv\Scripts\python.exe -m naive_rag.entity_index --extraction-dir graph\pilot\extraction-v3 --out graph\pilot\entity-index.json
+```
+
+Az utolsó parancs `--run` nélkül 6 entitást számol, és nem hív embeddinget. A Q01–Q08 kör parancsai lefutottak:
+
+```powershell
+.\.venv\Scripts\python.exe -m naive_rag.extract_pilot --corpus --question-scope Q01-Q08 --reuse-from graph\pilot\extraction-v3 --run
+.\.venv\Scripts\python.exe -m naive_rag.quality_report --extraction-dir graph\corpus\extraction --markdown graph\corpus\quality-report.md --json graph\corpus\quality-report.json --title "Q01-Q08 kor" --join-corpus
+.\.venv\Scripts\python.exe -m naive_rag.entity_index --extraction-dir graph\corpus\extraction --out graph\corpus\entity-index.json --run
+.\.venv\Scripts\python.exe -m naive_rag.local_search --index graph\corpus\entity-index.json --extraction-dir graph\corpus\extraction --baseline baseline\answers.json --out docs\osszehasonlitas.md --run
+```
+
+A Neo4j-betöltés nincs parancssori kapcsolóra kötve. A kapu `plan_validated_raw(..., accept_validated_raw=True)` volt, csak a `status=ok` rekordokra, 880 tranzakcióval. A JSON-fájlokra nem került `approved` mező.

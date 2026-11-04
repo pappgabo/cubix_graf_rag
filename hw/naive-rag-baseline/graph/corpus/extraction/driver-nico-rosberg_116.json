@@ -1,0 +1,100 @@
+{
+  "chunk_id": "driver-nico-rosberg#116",
+  "doc_id": "driver-nico-rosberg",
+  "document_title": "Nico Rosberg",
+  "section": "Nico Rosberg > Achievements and recognition",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/Nico_Rosberg",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "740b0a2baab546c51658483a1d230ca3c602714e79c5ce1b423840958528aa4b",
+  "status": "error",
+  "error": "ExtractionValidationError: WON is not temporal; from_year, to_year and role must be null",
+  "candidate_result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Nico Rosberg",
+        "entity_type": "Driver",
+        "description": "A Formula One driver known for his achievements and recognition in the sport."
+      },
+      {
+        "local_id": "e2",
+        "name": "Lorenzo Bandini Trophy",
+        "entity_type": "Title",
+        "description": "An award given for dedication to motor racing, spirit of competition and achievements."
+      },
+      {
+        "local_id": "e3",
+        "name": "FIA Pole Trophy",
+        "entity_type": "Title",
+        "description": "An award for winning the most pole positions in a season."
+      },
+      {
+        "local_id": "e4",
+        "name": "DHL Fastest Lap Award",
+        "entity_type": "Title",
+        "description": "An award for recording the most fastest laps in a season."
+      },
+      {
+        "local_id": "e5",
+        "name": "2014",
+        "entity_type": "Season",
+        "description": "The Formula One season in which Rosberg won the FIA Pole Trophy."
+      },
+      {
+        "local_id": "e6",
+        "name": "2016",
+        "entity_type": "Season",
+        "description": "The Formula One season in which Rosberg won the DHL Fastest Lap Award."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "WON",
+        "description": "Nico Rosberg won the Lorenzo Bandini Trophy.",
+        "from_year": 2011,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e3",
+        "relationship_type": "WON",
+        "description": "Nico Rosberg won the FIA Pole Trophy for the 2014 season.",
+        "from_year": 2014,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e4",
+        "relationship_type": "WON",
+        "description": "Nico Rosberg won the DHL Fastest Lap Award for the 2016 season.",
+        "from_year": 2016,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e5",
+        "relationship_type": "AWARDED_IN",
+        "description": "The FIA Pole Trophy was awarded in the 2014 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e6",
+        "relationship_type": "AWARDED_IN",
+        "description": "The DHL Fastest Lap Award was awarded in the 2016 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

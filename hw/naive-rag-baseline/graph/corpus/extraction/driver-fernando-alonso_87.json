@@ -1,0 +1,115 @@
+{
+  "chunk_id": "driver-fernando-alonso#87",
+  "doc_id": "driver-fernando-alonso",
+  "document_title": "Fernando Alonso",
+  "section": "Endurance racing",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/Fernando_Alonso",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "ac718a6b20fa7503a209a4c1dfd9fc197dfb25a5c74549c60570e8a91f03e829",
+  "status": "error",
+  "error": "ExtractionValidationError: FIELDED does not allow Driver -> Car",
+  "candidate_result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Fernando Alonso",
+        "entity_type": "Driver",
+        "description": "A Spanish racing driver known for competing in Formula One and endurance racing."
+      },
+      {
+        "local_id": "e2",
+        "name": "Antonio García",
+        "entity_type": "Driver",
+        "description": "A Spanish racing driver who partnered with Alonso in endurance racing."
+      },
+      {
+        "local_id": "e3",
+        "name": "Salvi Delmuns",
+        "entity_type": "Driver",
+        "description": "A driver who partnered with Alonso in endurance racing."
+      },
+      {
+        "local_id": "e4",
+        "name": "Pedro Fermín Flores",
+        "entity_type": "Driver",
+        "description": "A journalist and driver who partnered with Alonso in endurance racing."
+      },
+      {
+        "local_id": "e5",
+        "name": "Hyundai Accent",
+        "entity_type": "Car",
+        "description": "The car driven by Alonso and his team in the 1999 24 Hours of Barcelona."
+      },
+      {
+        "local_id": "e6",
+        "name": "2015 24 Hours of Le Mans",
+        "entity_type": "GrandPrix",
+        "description": "An endurance race Alonso was due to enter with Porsche."
+      },
+      {
+        "local_id": "e7",
+        "name": "Porsche's Le Mans Prototype 1 team",
+        "entity_type": "Team",
+        "description": "The team Alonso was due to race with in the 2015 24 Hours of Le Mans."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e5",
+        "relationship_type": "FIELDED",
+        "description": "Alonso raced in the 1999 24 Hours of Barcelona with the Hyundai Accent.",
+        "from_year": 1999,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e6",
+        "relationship_type": "RACED_IN",
+        "description": "Alonso was due to enter the 2015 24 Hours of Le Mans.",
+        "from_year": 2015,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e7",
+        "target_id": "e6",
+        "relationship_type": "HELD_AT",
+        "description": "The 2015 24 Hours of Le Mans is held at the Le Mans circuit.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Alonso was teammates with Antonio García in endurance racing.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e3",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Alonso was teammates with Salvi Delmuns in endurance racing.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e4",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Alonso was teammates with Pedro Fermín Flores in endurance racing.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

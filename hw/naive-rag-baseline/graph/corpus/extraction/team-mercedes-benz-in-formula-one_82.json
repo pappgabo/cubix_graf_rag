@@ -1,0 +1,61 @@
+{
+  "chunk_id": "team-mercedes-benz-in-formula-one#82",
+  "doc_id": "team-mercedes-benz-in-formula-one",
+  "document_title": "Mercedes-Benz in Formula One",
+  "section": "Mercedes-Benz in Formula One > Sponsorships",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/Mercedes-Benz_in_Formula_One",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "6a73f6cdf2531dad2d725aaab034010d8cff0bc6c70e605a0a87753386bcdf58",
+  "status": "error",
+  "error": "ExtractionValidationError: DROVE_FOR does not allow Team -> Team",
+  "candidate_result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Mercedes GP Petronas Formula One Team",
+        "entity_type": "Team",
+        "description": "The team competed under the full title of Mercedes GP Petronas Formula One Team from 2010."
+      },
+      {
+        "local_id": "e2",
+        "name": "Petronas",
+        "entity_type": "Team",
+        "description": "The number one Malaysian oil and gas company that joined the team as title sponsor."
+      },
+      {
+        "local_id": "e3",
+        "name": "Sepang International Circuit",
+        "entity_type": "Circuit",
+        "description": "The circuit located in Kuala Lumpur where Petronas is based."
+      },
+      {
+        "local_id": "e4",
+        "name": "2010",
+        "entity_type": "Season",
+        "description": "The year from which the team competed under the full title of Mercedes GP Petronas Formula One Team."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Mercedes GP Petronas Formula One Team had Petronas as a title sponsor.",
+        "from_year": 2010,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e3",
+        "relationship_type": "HELD_AT",
+        "description": "Petronas is based in Kuala Lumpur where the Sepang International Circuit is located.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

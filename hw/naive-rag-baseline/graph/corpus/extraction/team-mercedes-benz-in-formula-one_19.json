@@ -1,0 +1,85 @@
+{
+  "chunk_id": "team-mercedes-benz-in-formula-one#19",
+  "doc_id": "team-mercedes-benz-in-formula-one",
+  "document_title": "Mercedes-Benz in Formula One",
+  "section": "Mercedes-Benz in Formula One > Mercedes-AMG Petronas Formula One Team (2010–present)",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/Mercedes-Benz_in_Formula_One",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "e3a6db198afc60344e6aa853b83cf47bf5df9999888282ea638fdd9e4f073ba4",
+  "status": "error",
+  "error": "ExtractionValidationError: WON is not temporal; from_year, to_year and role must be null",
+  "candidate_result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Brawn GP",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that was formed after Honda withdrew in 2008."
+      },
+      {
+        "local_id": "e2",
+        "name": "Jenson Button",
+        "entity_type": "Driver",
+        "description": "A Formula 1 driver who won the 2009 Drivers' Championship."
+      },
+      {
+        "local_id": "e3",
+        "name": "2009",
+        "entity_type": "Season",
+        "description": "The championship year in which Jenson Button won the Drivers' Championship."
+      },
+      {
+        "local_id": "e4",
+        "name": "Constructors' Championship",
+        "entity_type": "Title",
+        "description": "The championship title won by Brawn GP in 2009."
+      },
+      {
+        "local_id": "e5",
+        "name": "Drivers' Championship",
+        "entity_type": "Title",
+        "description": "The championship title won by Jenson Button in 2009."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e4",
+        "relationship_type": "WON",
+        "description": "Brawn GP won the Constructors' Championship in 2009.",
+        "from_year": 2009,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e5",
+        "relationship_type": "WON",
+        "description": "Jenson Button won the Drivers' Championship in 2009.",
+        "from_year": 2009,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e3",
+        "relationship_type": "ENTERED",
+        "description": "Brawn GP entered the 2009 season.",
+        "from_year": 2009,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e3",
+        "relationship_type": "ACHIEVED",
+        "description": "Jenson Button recorded a result in the 2009 season.",
+        "from_year": 2009,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

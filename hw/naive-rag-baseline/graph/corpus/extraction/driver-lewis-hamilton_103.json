@@ -1,0 +1,85 @@
+{
+  "chunk_id": "driver-lewis-hamilton#103",
+  "doc_id": "driver-lewis-hamilton",
+  "document_title": "Lewis Hamilton",
+  "section": null,
+  "page": 9,
+  "source": "https://en.wikipedia.org/wiki/Lewis_Hamilton",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "7cf08106799371b648b2ba315d478f133c88e71cf257cc4d4241997e92229d59",
+  "status": "error",
+  "error": "ExtractionValidationError: WON does not allow Driver -> Season",
+  "candidate_result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Lewis Hamilton",
+        "entity_type": "Driver",
+        "description": "A Formula One driver known for his career and multiple championship wins."
+      },
+      {
+        "local_id": "e2",
+        "name": "2017",
+        "entity_type": "Season",
+        "description": "A Formula One championship year."
+      },
+      {
+        "local_id": "e3",
+        "name": "Abu Dhabi Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula One race held in Abu Dhabi."
+      },
+      {
+        "local_id": "e4",
+        "name": "Ferrari",
+        "entity_type": "Team",
+        "description": "A Formula One team that Hamilton has referenced in his helmet designs."
+      },
+      {
+        "local_id": "e5",
+        "name": "Mercedes",
+        "entity_type": "Team",
+        "description": "A Formula One team that Hamilton has driven for."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "WON",
+        "description": "Hamilton won his fourth title in 2017.",
+        "from_year": 2017,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e2",
+        "relationship_type": "ROUND_OF",
+        "description": "The Abu Dhabi Grand Prix is a round of the 2017 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e5",
+        "relationship_type": "HELD_AT",
+        "description": "The Abu Dhabi Grand Prix is held at the Mercedes team.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e2",
+        "relationship_type": "ENTERED",
+        "description": "Ferrari entered the 2017 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

@@ -1,0 +1,166 @@
+{
+  "chunk_id": "season-2012-formula-one-world-championship#27",
+  "doc_id": "season-2012-formula-one-world-championship",
+  "document_title": "2012 Formula One World Championship",
+  "section": "Teams and drivers > Driver changes",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/2012_Formula_One_World_Championship",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "a2ee90a9da60a609453f289cc5db6de434eef37ff4476a12fab5a40571d99d5c",
+  "status": "error",
+  "error": "ExtractionValidationError: DROVE_FOR does not allow Driver -> Driver",
+  "candidate_result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Pedro de la Rosa",
+        "entity_type": "Driver",
+        "description": "Returned to Formula One with HRT after being without a full-time drive since the 2010 Italian Grand Prix."
+      },
+      {
+        "local_id": "e2",
+        "name": "Narain Karthikeyan",
+        "entity_type": "Driver",
+        "description": "Returned to Formula One with HRT after being dropped by the team before the 2011 British Grand Prix."
+      },
+      {
+        "local_id": "e3",
+        "name": "HRT",
+        "entity_type": "Team",
+        "description": "Team that Pedro de la Rosa and Narain Karthikeyan returned to in 2012."
+      },
+      {
+        "local_id": "e4",
+        "name": "McLaren",
+        "entity_type": "Team",
+        "description": "Team where Pedro de la Rosa spent the majority of the 2011 season as a test driver."
+      },
+      {
+        "local_id": "e5",
+        "name": "Sauber",
+        "entity_type": "Team",
+        "description": "Team for which Pedro de la Rosa made one appearance racing."
+      },
+      {
+        "local_id": "e6",
+        "name": "Ricciardo",
+        "entity_type": "Driver",
+        "description": "Driver who replaced Narain Karthikeyan at HRT before the 2011 British Grand Prix."
+      },
+      {
+        "local_id": "e7",
+        "name": "2012",
+        "entity_type": "Season",
+        "description": "The season when Pedro de la Rosa and Narain Karthikeyan returned to Formula One with HRT."
+      },
+      {
+        "local_id": "e8",
+        "name": "2011",
+        "entity_type": "Season",
+        "description": "The season when Karthikeyan was dropped by HRT."
+      },
+      {
+        "local_id": "e9",
+        "name": "2010",
+        "entity_type": "Season",
+        "description": "The season when de la Rosa was without a full-time drive since the Italian Grand Prix."
+      },
+      {
+        "local_id": "e10",
+        "name": "Indian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The race where Karthikeyan made a one-race appearance."
+      },
+      {
+        "local_id": "e11",
+        "name": "British Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The race before which Karthikeyan was dropped by HRT."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e3",
+        "relationship_type": "DROVE_FOR",
+        "description": "Pedro de la Rosa returned to HRT in 2012.",
+        "from_year": 2012,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e3",
+        "relationship_type": "DROVE_FOR",
+        "description": "Narain Karthikeyan returned to HRT in 2012.",
+        "from_year": 2012,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e4",
+        "relationship_type": "DROVE_FOR",
+        "description": "Pedro de la Rosa was a test driver for McLaren in 2011.",
+        "from_year": 2011,
+        "to_year": null,
+        "role": "test driver"
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e5",
+        "relationship_type": "DROVE_FOR",
+        "description": "Pedro de la Rosa made one appearance racing for Sauber.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e6",
+        "relationship_type": "DROVE_FOR",
+        "description": "Ricciardo replaced Narain Karthikeyan at HRT before the 2011 British Grand Prix.",
+        "from_year": 2011,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e10",
+        "relationship_type": "ACHIEVED",
+        "description": "Karthikeyan made a one-race appearance at the Indian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e10",
+        "target_id": "e7",
+        "relationship_type": "AT_RACE",
+        "description": "The Indian Grand Prix is part of the 2012 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e8",
+        "target_id": "e2",
+        "relationship_type": "AT_RACE",
+        "description": "Karthikeyan was dropped before the 2011 British Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e11",
+        "target_id": "e8",
+        "relationship_type": "ROUND_OF",
+        "description": "The British Grand Prix is a round of the 2011 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

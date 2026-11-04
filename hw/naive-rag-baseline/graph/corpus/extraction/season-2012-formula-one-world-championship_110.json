@@ -1,0 +1,139 @@
+{
+  "chunk_id": "season-2012-formula-one-world-championship#110",
+  "doc_id": "season-2012-formula-one-world-championship",
+  "document_title": "2012 Formula One World Championship",
+  "section": "Race summaries > Round 5 – Spain Circuit de Barcelona-Catalunya",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/2012_Formula_One_World_Championship",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "6b8f7e44e9e71fc4f1c034d3f95b4290cbe0a6169cfddb70c0d20508b1985a01",
+  "status": "error",
+  "error": "ExtractionValidationError: ENTERED does not allow Team -> GrandPrix",
+  "candidate_result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Williams",
+        "entity_type": "Team",
+        "description": "Williams's first win in one hundred and thirty Grand Prix starts."
+      },
+      {
+        "local_id": "e2",
+        "name": "Juan Pablo Montoya",
+        "entity_type": "Driver",
+        "description": "Previous race win was at the 2004 Brazilian Grand Prix."
+      },
+      {
+        "local_id": "e3",
+        "name": "Lewis Hamilton",
+        "entity_type": "Driver",
+        "description": "Recovered from twenty-fourth on the grid to finish eighth."
+      },
+      {
+        "local_id": "e4",
+        "name": "Sebastian Vettel",
+        "entity_type": "Driver",
+        "description": "Overcame a drive-through penalty and an unscheduled stop to finish sixth."
+      },
+      {
+        "local_id": "e5",
+        "name": "Nico Rosberg",
+        "entity_type": "Driver",
+        "description": "Finished behind Sebastian Vettel in sixth place."
+      },
+      {
+        "local_id": "e6",
+        "name": "2012",
+        "entity_type": "Season",
+        "description": "The season of the 2012 Formula One World Championship."
+      },
+      {
+        "local_id": "e7",
+        "name": "Spanish Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "Round 5 of the 2012 Formula One World Championship."
+      },
+      {
+        "local_id": "e8",
+        "name": "Circuit de Barcelona-Catalunya",
+        "entity_type": "Circuit",
+        "description": "The circuit where the Spanish Grand Prix was held."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e7",
+        "relationship_type": "ENTERED",
+        "description": "Williams entered the Spanish Grand Prix.",
+        "from_year": 2012,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e7",
+        "target_id": "e6",
+        "relationship_type": "ROUND_OF",
+        "description": "The Spanish Grand Prix is a round of the 2012 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e7",
+        "target_id": "e8",
+        "relationship_type": "HELD_AT",
+        "description": "The Spanish Grand Prix was held at Circuit de Barcelona-Catalunya.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e7",
+        "relationship_type": "ACHIEVED",
+        "description": "Lewis Hamilton finished eighth in the Spanish Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e7",
+        "relationship_type": "ACHIEVED",
+        "description": "Sebastian Vettel finished sixth in the Spanish Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e7",
+        "relationship_type": "ACHIEVED",
+        "description": "Nico Rosberg finished sixth in the Spanish Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e1",
+        "relationship_type": "DROVE_FOR",
+        "description": "Sebastian Vettel drove for Williams during the race.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e1",
+        "relationship_type": "WON",
+        "description": "Juan Pablo Montoya's victory was the last win for Williams before this race.",
+        "from_year": 2004,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

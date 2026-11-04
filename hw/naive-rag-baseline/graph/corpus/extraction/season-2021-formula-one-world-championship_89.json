@@ -1,0 +1,109 @@
+{
+  "chunk_id": "season-2021-formula-one-world-championship#89",
+  "doc_id": "season-2021-formula-one-world-championship",
+  "document_title": "2021 Formula One World Championship",
+  "section": null,
+  "page": 8,
+  "source": "https://en.wikipedia.org/wiki/2021_Formula_One_World_Championship",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "d41944960b624194e3ddab8990c9a9b0561a54d3fa38df15f43265695b05c659",
+  "status": "error",
+  "error": "ExtractionValidationError: ACHIEVED does not allow Driver -> GrandPrix",
+  "candidate_result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Lewis Hamilton",
+        "entity_type": "Driver",
+        "description": "A driver involved in collisions during the race and won the race."
+      },
+      {
+        "local_id": "e2",
+        "name": "Max Verstappen",
+        "entity_type": "Driver",
+        "description": "A driver involved in collisions during the race and finished second."
+      },
+      {
+        "local_id": "e3",
+        "name": "Valtteri Bottas",
+        "entity_type": "Driver",
+        "description": "A driver who overtook Esteban Ocon to take third place."
+      },
+      {
+        "local_id": "e4",
+        "name": "Esteban Ocon",
+        "entity_type": "Driver",
+        "description": "A driver who was overtaken by Valtteri Bottas."
+      },
+      {
+        "local_id": "e5",
+        "name": "Abu Dhabi",
+        "entity_type": "GrandPrix",
+        "description": "The location of the final round of the Drivers' Championship."
+      },
+      {
+        "local_id": "e6",
+        "name": "Mercedes",
+        "entity_type": "Team",
+        "description": "The team that extended their lead in the championship."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Hamilton and Verstappen were involved in collisions during the race.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e5",
+        "relationship_type": "ACHIEVED",
+        "description": "Hamilton won the race.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e5",
+        "relationship_type": "ACHIEVED",
+        "description": "Verstappen finished second in the race.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e5",
+        "relationship_type": "ACHIEVED",
+        "description": "Bottas finished third in the race.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e3",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Ocon was overtaken by Bottas.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e6",
+        "target_id": "e5",
+        "relationship_type": "ENTERED",
+        "description": "Mercedes extended their lead in the championship.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

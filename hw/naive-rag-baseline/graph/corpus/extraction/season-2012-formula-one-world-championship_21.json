@@ -1,0 +1,69 @@
+{
+  "chunk_id": "season-2012-formula-one-world-championship#21",
+  "doc_id": "season-2012-formula-one-world-championship",
+  "document_title": "2012 Formula One World Championship",
+  "section": "Teams and drivers > Driver changes",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/2012_Formula_One_World_Championship",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "546452d727e0b94539a0df1beeb23c3b59d71cdea508c8c27c9bf9aeae35a287",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Kimi Räikkönen",
+        "entity_type": "Driver",
+        "description": "2007 World Drivers' Champion returning to the sport after two seasons competing in the World Rally Championship."
+      },
+      {
+        "local_id": "e2",
+        "name": "Romain Grosjean",
+        "entity_type": "Driver",
+        "description": "Reigning GP2 Series champion returning to the sport after a two-year absence."
+      },
+      {
+        "local_id": "e3",
+        "name": "Lotus",
+        "entity_type": "Team",
+        "description": "Formula 1 team that made driver changes for the 2012 season."
+      },
+      {
+        "local_id": "e4",
+        "name": "2012",
+        "entity_type": "Season",
+        "description": "The season during which several driver changes occurred."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e3",
+        "relationship_type": "DROVE_FOR",
+        "description": "Kimi Räikkönen drove for Lotus in the 2012 season.",
+        "from_year": 2012,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e3",
+        "relationship_type": "DROVE_FOR",
+        "description": "Romain Grosjean drove for Lotus in the 2012 season.",
+        "from_year": 2012,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e4",
+        "relationship_type": "ENTERED",
+        "description": "Lotus entered the 2012 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "chunk_id": "driver-nico-rosberg#5",
+  "doc_id": "driver-nico-rosberg",
+  "document_title": "Nico Rosberg",
+  "section": "Nico Rosberg",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/Nico_Rosberg",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "69f7cec7d62a8fa66db25a53abde2ede5a2725491bb250cb3ce4ae232f623463",
+  "status": "error",
+  "error": "ExtractionValidationError: WON: unknown target_id 'e2'",
+  "candidate_result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Nico Rosberg",
+        "entity_type": "Driver",
+        "description": "Rosberg announced his retirement from motor racing five days after clinching the title, citing wanting to spend more time with his family and not wanting his driving ability to atrophy as the main factors behind his decision. Overall, he started 206 Grands Prix, achieving 23 wins, 30 pole positions, 20 fastest laps and 57 podium finishes. In retirement, Rosberg moved into driver management, television punditry, and became an eco-entrepreneur."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "WON",
+        "description": "Nico Rosberg won the championship title five days before announcing his retirement.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e3",
+        "relationship_type": "AWARDED_IN",
+        "description": "The championship title was awarded in the season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

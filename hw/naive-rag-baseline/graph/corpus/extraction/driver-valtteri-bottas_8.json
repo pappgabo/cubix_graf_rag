@@ -1,0 +1,85 @@
+{
+  "chunk_id": "driver-valtteri-bottas#8",
+  "doc_id": "driver-valtteri-bottas",
+  "document_title": "Valtteri Bottas",
+  "section": "Junior racing career > Lower formulae",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/Valtteri_Bottas",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "844bfc38e81c1bfdf269faf7457abd7e3c534ffe8d58d98411a16d6cdf79607b",
+  "status": "error",
+  "error": "ExtractionValidationError: FIELDED does not allow Driver -> Car",
+  "candidate_result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Valtteri Bottas",
+        "entity_type": "Driver",
+        "description": "A Finnish racing driver who won both the 2008 Formula Renault Eurocup and the 2008 Formula Renault Northern European Cup."
+      },
+      {
+        "local_id": "e2",
+        "name": "2008",
+        "entity_type": "Season",
+        "description": "The season in which Bottas won both the Formula Renault Eurocup and the Formula Renault Northern European Cup."
+      },
+      {
+        "local_id": "e3",
+        "name": "Formula Renault Eurocup",
+        "entity_type": "Car",
+        "description": "A racing series in which Bottas won in 2008."
+      },
+      {
+        "local_id": "e4",
+        "name": "Formula Renault Northern European Cup",
+        "entity_type": "Car",
+        "description": "A racing series in which Bottas won in 2008."
+      },
+      {
+        "local_id": "e5",
+        "name": "Formula Renault UK Winter Series",
+        "entity_type": "Car",
+        "description": "A racing series Bottas competed in during 2007."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e3",
+        "relationship_type": "FIELDED",
+        "description": "Bottas competed in the Formula Renault Eurocup.",
+        "from_year": 2008,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e4",
+        "relationship_type": "FIELDED",
+        "description": "Bottas competed in the Formula Renault Northern European Cup.",
+        "from_year": 2008,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e5",
+        "relationship_type": "FIELDED",
+        "description": "Bottas competed in the Formula Renault UK Winter Series.",
+        "from_year": 2007,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "ACHIEVED",
+        "description": "Bottas won both the Formula Renault Eurocup and the Formula Renault Northern European Cup in 2008.",
+        "from_year": 2008,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

@@ -1,0 +1,160 @@
+{
+  "chunk_id": "driver-sebastian-vettel#130",
+  "doc_id": "driver-sebastian-vettel",
+  "document_title": "Sebastian Vettel",
+  "section": "Car names",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/Sebastian_Vettel",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "8f483d550a5c03a774766a330cc0c0e55d76c2a219ca18f93129a6c94bd06fff",
+  "status": "error",
+  "error": "ExtractionValidationError: FIELDED is not temporal; from_year, to_year and role must be null",
+  "candidate_result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Sebastian Vettel",
+        "entity_type": "Driver",
+        "description": "A Formula One driver who raced for Ferrari and Aston Martin."
+      },
+      {
+        "local_id": "e2",
+        "name": "Ferrari",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that Vettel raced for."
+      },
+      {
+        "local_id": "e3",
+        "name": "Aston Martin",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that Vettel raced for."
+      },
+      {
+        "local_id": "e4",
+        "name": "SF15-T",
+        "entity_type": "Car",
+        "description": "Ferrari car named Eva in 2015."
+      },
+      {
+        "local_id": "e5",
+        "name": "Margherita",
+        "entity_type": "Car",
+        "description": "Ferrari car named in 2016."
+      },
+      {
+        "local_id": "e6",
+        "name": "Gina",
+        "entity_type": "Car",
+        "description": "Ferrari car named in 2017."
+      },
+      {
+        "local_id": "e7",
+        "name": "Loria",
+        "entity_type": "Car",
+        "description": "Ferrari car named in 2018."
+      },
+      {
+        "local_id": "e8",
+        "name": "Lina",
+        "entity_type": "Car",
+        "description": "Ferrari car named in 2019."
+      },
+      {
+        "local_id": "e9",
+        "name": "Lucilla",
+        "entity_type": "Car",
+        "description": "Ferrari car named in 2020."
+      },
+      {
+        "local_id": "e10",
+        "name": "AMR21",
+        "entity_type": "Car",
+        "description": "Aston Martin car named after Honey Ryder in 2021."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Vettel raced for Ferrari.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e4",
+        "relationship_type": "FIELDED",
+        "description": "Ferrari entered the SF15-T car.",
+        "from_year": 2015,
+        "to_year": 2015,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e5",
+        "relationship_type": "FIELDED",
+        "description": "Ferrari entered the Margherita car.",
+        "from_year": 2016,
+        "to_year": 2016,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e6",
+        "relationship_type": "FIELDED",
+        "description": "Ferrari entered the Gina car.",
+        "from_year": 2017,
+        "to_year": 2017,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e7",
+        "relationship_type": "FIELDED",
+        "description": "Ferrari entered the Loria car.",
+        "from_year": 2018,
+        "to_year": 2018,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e8",
+        "relationship_type": "FIELDED",
+        "description": "Ferrari entered the Lina car.",
+        "from_year": 2019,
+        "to_year": 2019,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e9",
+        "relationship_type": "FIELDED",
+        "description": "Ferrari entered the Lucilla car.",
+        "from_year": 2020,
+        "to_year": 2020,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e3",
+        "relationship_type": "DROVE_FOR",
+        "description": "Vettel raced for Aston Martin.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e10",
+        "relationship_type": "FIELDED",
+        "description": "Aston Martin entered the AMR21 car.",
+        "from_year": 2021,
+        "to_year": 2021,
+        "role": null
+      }
+    ]
+  }
+}

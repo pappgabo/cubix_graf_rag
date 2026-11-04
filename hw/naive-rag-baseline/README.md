@@ -1,10 +1,66 @@
-# Naiv RAG baseline + gráf — Formula 1 korpusz (GraphRAG kurzus, 1–2. hét)
+# 3. házifeladat — Extrakció és lokális keresés
 
-Egy szándékosan egyszerű, jól dokumentált **naiv RAG baseline** (1. hét), amihez
-a következő hetekben a GraphRAG-os megoldást hasonlítjuk, és a ráépülő
-**Neo4j gráfréteg** (2. hét): séma-terv, kitalált seed-adat és a valódi korpusz
-dokumentum-gráfja. A cél nem a jó teljesítmény, hanem a naiv RAG korlátainak
-láthatóvá tétele — a rossz válaszokat ezért **nem javítottam**.
+Ez a repó a GraphRAG kurzus **3. projektfeladata**. A feladat a 2. heti sémával
+tripleteket nyerni a chunkokból, provenance-szal Neo4j-be tölteni, a gráfot
+megnézni, a nyilvánvaló azonosságokat összevonni, majd lokális kereséssel
+megválaszolni az 1. heti kérdéseket és összevetni a naiv RAG baseline-nal.
+A szorgalmi pontok (séma nélküli extrakció, gleaning, modell-összevetés,
+kontextusbudget) nincsenek megcsinálva.
+
+A lenti szakaszok az 1. heti baseline-t és a 2. heti gráfréteget írják le. Azok
+változatlanul a feladat alapjai: a baseline válaszait nem javítottam.
+
+## A 3. házifeladat eredménye
+
+Részletes kötés fájlokhoz: [`docs/extrakcio-es-lokalis-kereses.md`](docs/extrakcio-es-lokalis-kereses.md).
+Az összevetés: [`docs/osszehasonlitas.md`](docs/osszehasonlitas.md). A futási napló
+(prompt, nyers válasz, horgonypontszám, `model_called`): [`docs/osszehasonlitas-run.json`](docs/osszehasonlitas-run.json).
+A korábbi futások megmaradtak: `docs/osszehasonlitas-elso-futas.md`,
+`docs/osszehasonlitas-masodik-futas.md`, `docs/osszehasonlitas-harmadik-futas.md`.
+
+A kör a `questions.md` Q01–Q08 kérdéseinek dokumentumai: 11 dokumentum, 1565 chunk.
+Modell: `gpt-4o-mini`, embedding: `text-embedding-3-small`, prompt: `f1-pilot-3`.
+
+| Lépés | Eredmény |
+|---|---|
+| Extrakció | 1565 rekord: 880 strukturálisan sikeres, 685 hibás, 517 sikeres üres |
+| Összevont gráf | előtte 1442 csomópont / 726 él / legnagyobb komponens 13; utána 401 / 580 / 283 |
+| Neo4j | 401 `:Extracted` csomópont, 1441 `MENTIONS`, 580 `origin=extracted` él |
+| Entitásindex | 401 entitás, név és leírás együtt, `graph/corpus/entity-index.json` |
+| Lokális keresés | 13 kérdésből 9 elutasítás, 4 tartalmi válasz |
+
+A lezáró négy tartalmi válasz mind a mellékelt forrásszövegben szereplő neveket
+és számokat mond. A `questions.md` gold értékeihez képest:
+
+- **Q01** helyes: Hamilton hét világbajnoki címe, Schumacherrel holtversenyben.
+- **Q09** helyes: Hamilton és Schumacher, egyaránt hét címmel.
+- **Q10** hiányos: öt Ferrari-pilótát mond, Schumacher és Hamilton kimarad, Massa nincs a gold listán.
+- **Q04** téves: a 2016-os bajnokot nevezi meg, nem a csapattársát.
+
+A Q04–Q08 multi-hop kérdések az összevetésben külön szakaszban vannak. Javulást
+a baseline-hoz képest nem állítunk. Az összevetés nem kontrollált: a baseline
+3832 chunkot és 23 dokumentumot rögzít, a mostani `load_and_chunk` 3639 chunk és
+22 dokumentum, mert a `driver-charles-leclerc.html` hiányzik. A gráf a 3639
+chunkból 363-at ér el; a Q08 bizonyítéka (Bottas váltja Rosberget) egyetlen
+elérhető chunkban sincs benne. Ez extrakciós hiány.
+
+Megnevezett extrakciós hiba: `driver-sebastian-vettel#58`, a „Triple World Champion”
+Title típusú entitás lett, pedig összesített győzelmi szám, nem bajnoki cím.
+A ritka chunk (`driver-fernando-alonso#101`) üres címsor, nem hibás extrakció.
+A legnagyobb fokszám 42, egyedül `Season:2012`, és ez a szám nem jelent fontosságot.
+
+```powershell
+$env:PYTHONPATH = "src"
+.\.venv\Scripts\python.exe -m unittest discover -s tests -q
+.\.venv\Scripts\python.exe -m naive_rag.local_search `
+  --index graph\corpus\entity-index.json `
+  --extraction-dir graph\corpus\extraction `
+  --baseline baseline\answers.json `
+  --out docs\osszehasonlitas.md
+```
+
+A második parancs `--run` nélkül nem hív modellt. `--run` a 13 kérdést újra
+lefuttatja (13 kérdésembedding és 13 válasz), és felülírja az összevetést.
 
 **Stack:** Python 3.11 · `uv` · LangChain · OpenAI (`gpt-4o-mini`,
 `text-embedding-3-small`) · Qdrant (helyi, lemezre perzisztáló) · Neo4j 5.26
@@ -279,9 +335,10 @@ A három legfontosabb modellezési döntés:
    a *pilóta × futam × csapat* hármas tulajdonsága, éllel nem leírható. Ettől
    lesz a Q8 aggregálás egyáltalán lehetséges.
 2. **`Section` külön csomópont, pedig az 1. héten chunk-tulajdonság volt.**
-   Sok chunk osztozik rajta, és a 3. héten az extrakció ide fogja az
-   entitásokat felakasztani. A `section` útvonal **a chunkon is megmarad**, mert a
-   forrásmegjelölés (`rag.py`) egyetlen mezőt vár — tudatos redundancia.
+   Sok chunk osztozik rajta. A 3. házifeladat az extrahált entitást nem a
+   `Section`-höz, hanem a `Chunk`-hoz köti `MENTIONS` éllel. A `section` útvonal
+   **a chunkon is megmarad**, mert a forrásmegjelölés (`rag.py`) egyetlen mezőt
+   vár — tudatos redundancia.
 3. **`DROVE_FOR` éltulajdonsággal, nem `Contract` csomóponttal.** Csak két
    dolgot köt össze, tehát elfér élen; de a `from_year` **része a kulcsnak**,
    mert egy pilóta visszatérhet egy csapathoz, és az új szerepvállalás, nem a
@@ -384,13 +441,16 @@ naive-rag-baseline/
 ├─ README.md · questions.md · pyproject.toml · uv.lock · .env.example · .gitignore
 ├─ compose.yaml     Neo4j 5.26 (2. hét) — ugyanabból a .env-ből konfigurálva
 ├─ run.py           belépési pont ékezetes útvonalú klónokhoz (lásd 2. pont)
-├─ src/naive_rag/   config · loaders · models · vectorstore · ingest · rag · cli · api
-│                   graph · graph_schema · graph_ingest · graph_seed · graph_queries
+├─ src/naive_rag/   a 3. házifeladat: extraction_* · extract_pilot · graph_merge
+│                   quality_report · entity_index · local_search · compare_baseline
+│                   valamint a korábbi ingest · rag · graph_* modulok
 ├─ scripts/         download_corpus.py · convert_formats.py
-├─ corpus/          23 dokumentum (pdf/docx/html/txt/xlsx) + metadata.json
-├─ docs/            graph-schema.md (a séma-terv indoklásokkal)
-├─ graph/           seed/f1-seed.json · cypher/queries.cypher · query-results.md
-└─ baseline/        answers.md · answers.json (v2) · v1-plain-loaders-500-75/
+├─ corpus/          a manifest 23 dokumentumot nevez; a Leclerc HTML hiányzik
+├─ docs/            extrakcio-es-lokalis-kereses.md · osszehasonlitas.md
+│                   osszehasonlitas-run.json · a három korábbi futás · graph-schema.md
+├─ graph/           pilot/ (10 chunk) · corpus/ (Q01–Q08 extrakció, riport, index)
+│                   seed/ · cypher/ · query-results.md
+└─ baseline/        answers.md · answers.json (v2, 3832 chunk) · v1-plain-loaders-500-75/
 ```
 
 ## Ismert korlátok
@@ -405,9 +465,8 @@ naive-rag-baseline/
   nem teljes szemantikai ellenőrzés.
 - A helyi Qdrant egyszerre egy folyamatot enged; a `serve` és az `ingest`
   ne fusson egyszerre (szerver módhoz állítsd be a `QDRANT_URL`-t).
-- A gráf **két rétege nincs összekötve**: a dokumentumok valódiak, a
-  szakterületi entitások kitaláltak, ezért egy `(:Document)-[:MENTIONS]->(:Driver)`
-  él hamis állítás lenne. Ezt a 3. heti extrakció hozza.
+- A kitalált `:Seed` réteg és az extrahált `:Extracted` réteg külön marad.
+  `MENTIONS` csak a 880 sikeres rekord chunkjait köti az extrahált entitásokhoz.
 - A `graph load` 3832 chunkot ír Neo4j-be, teljes szöveggel; a `graph query`
   ennek megfelelően pár másodperc. Nagyobb korpusznál a `Chunk.text`
   tárolását újra kellene gondolni.

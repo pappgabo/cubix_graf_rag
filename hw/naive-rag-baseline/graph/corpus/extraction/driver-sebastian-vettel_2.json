@@ -1,0 +1,94 @@
+{
+  "chunk_id": "driver-sebastian-vettel#2",
+  "doc_id": "driver-sebastian-vettel",
+  "document_title": "Sebastian Vettel",
+  "section": null,
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/Sebastian_Vettel",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "aeb7c7f7666808e7f5e48d1fd1b9aa979a26bf48e7e859d1bf912eb9111bfa82",
+  "status": "error",
+  "error": "ExtractionValidationError: ENTERED is not temporal; from_year, to_year and role must be null",
+  "candidate_result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Sebastian Vettel",
+        "entity_type": "Driver",
+        "description": "A test driver for BMW Sauber since 2006, Vettel made his Formula One debut at the 2007 United States Grand Prix."
+      },
+      {
+        "local_id": "e2",
+        "name": "Toro Rosso",
+        "entity_type": "Team",
+        "description": "Vettel replaced Scott Speed at Toro Rosso after the European Grand Prix for the remainder of the 2007 season."
+      },
+      {
+        "local_id": "e3",
+        "name": "2007",
+        "entity_type": "Season",
+        "description": "The season in which Vettel made his Formula One debut."
+      },
+      {
+        "local_id": "e4",
+        "name": "2008",
+        "entity_type": "Season",
+        "description": "The season in which Vettel retained his seat at Toro Rosso."
+      },
+      {
+        "local_id": "e5",
+        "name": "Italian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "Vettel achieved his maiden pole position and victory at the Italian Grand Prix."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Vettel drove for Toro Rosso after replacing Scott Speed.",
+        "from_year": 2007,
+        "to_year": 2007,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e3",
+        "relationship_type": "ENTERED",
+        "description": "Toro Rosso entered the 2007 season.",
+        "from_year": 2007,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e4",
+        "relationship_type": "ENTERED",
+        "description": "Toro Rosso entered the 2008 season.",
+        "from_year": 2008,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e5",
+        "relationship_type": "ACHIEVED",
+        "description": "Vettel achieved his maiden victory at the Italian Grand Prix.",
+        "from_year": 2008,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e4",
+        "relationship_type": "ROUND_OF",
+        "description": "The Italian Grand Prix is a round of the 2008 season.",
+        "from_year": 2008,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

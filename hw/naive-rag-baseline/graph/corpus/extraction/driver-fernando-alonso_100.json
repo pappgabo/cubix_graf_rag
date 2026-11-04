@@ -1,0 +1,118 @@
+{
+  "chunk_id": "driver-fernando-alonso#100",
+  "doc_id": "driver-fernando-alonso",
+  "document_title": "Fernando Alonso",
+  "section": "McLaren Honda Andretti (2017)",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/Fernando_Alonso",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "abc14aeb0148fe1eac7273cb04aaeaf28b451f63d877246250bc51cac0104521",
+  "status": "error",
+  "error": "ExtractionValidationError: ACHIEVED does not allow Driver -> GrandPrix",
+  "candidate_result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Fernando Alonso",
+        "entity_type": "Driver",
+        "description": "A Formula One driver who participated in the 2017 Indianapolis 500."
+      },
+      {
+        "local_id": "e2",
+        "name": "McLaren-Honda-Andretti",
+        "entity_type": "Team",
+        "description": "A racing team that entered cars in the Indianapolis 500."
+      },
+      {
+        "local_id": "e3",
+        "name": "2017",
+        "entity_type": "Season",
+        "description": "The season during which Alonso participated in the Indianapolis 500."
+      },
+      {
+        "local_id": "e4",
+        "name": "Indianapolis 500",
+        "entity_type": "GrandPrix",
+        "description": "A prestigious race event held at the Indianapolis Motor Speedway."
+      },
+      {
+        "local_id": "e5",
+        "name": "Dallara DW12",
+        "entity_type": "Car",
+        "description": "The car model driven by Alonso in the Indianapolis 500."
+      },
+      {
+        "local_id": "e6",
+        "name": "Honda",
+        "entity_type": "PowerUnit",
+        "description": "The engine used in the McLaren-Honda-Andretti Dallara DW12."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e2",
+        "target_id": "e5",
+        "relationship_type": "FIELDED",
+        "description": "McLaren-Honda-Andretti entered the Dallara DW12 car.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e6",
+        "relationship_type": "POWERED_BY",
+        "description": "The Dallara DW12 car was powered by Honda.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e3",
+        "relationship_type": "RACED_IN",
+        "description": "The Dallara DW12 participated in the 2017 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e3",
+        "relationship_type": "ENTERED",
+        "description": "McLaren-Honda-Andretti took part in the 2017 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e3",
+        "relationship_type": "ROUND_OF",
+        "description": "The Indianapolis 500 is a round of the 2017 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e4",
+        "relationship_type": "ACHIEVED",
+        "description": "Fernando Alonso recorded a result in the Indianapolis 500.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Fernando Alonso drove for McLaren-Honda-Andretti.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

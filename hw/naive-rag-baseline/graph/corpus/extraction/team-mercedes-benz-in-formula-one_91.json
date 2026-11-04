@@ -1,0 +1,40 @@
+{
+  "chunk_id": "team-mercedes-benz-in-formula-one#91",
+  "doc_id": "team-mercedes-benz-in-formula-one",
+  "document_title": "Mercedes-Benz in Formula One",
+  "section": "Mercedes-Benz in Formula One > Kingspan Group sponsorship controversy",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/Mercedes-Benz_in_Formula_One",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "47556a2be429cc98e23d53b65699068b687e6f57cbf327b26547312c042362f9",
+  "status": "error",
+  "error": "ExtractionValidationError: DROVE_FOR does not allow Team -> Team",
+  "candidate_result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Mercedes",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that entered cars."
+      },
+      {
+        "local_id": "e2",
+        "name": "Kingspan Group",
+        "entity_type": "Team",
+        "description": "A company involved in a sponsorship deal with Mercedes."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Mercedes signed a sponsorship deal with Kingspan Group.",
+        "from_year": 2021,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

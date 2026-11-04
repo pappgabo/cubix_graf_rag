@@ -1,0 +1,79 @@
+{
+  "chunk_id": "driver-sebastian-vettel#128",
+  "doc_id": "driver-sebastian-vettel",
+  "document_title": "Sebastian Vettel",
+  "section": "Car names",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/Sebastian_Vettel",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "9973eabb20e50020770bc979dfabfd87e86b891d6328e3d6b7cc15929b304c28",
+  "status": "error",
+  "error": "ExtractionValidationError: FIELDED does not allow Car -> Car",
+  "candidate_result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "RB6",
+        "entity_type": "Car",
+        "description": "Vettel's first championship-winning car, initially called Luscious Liz before being renamed to Randy Mandy."
+      },
+      {
+        "local_id": "e2",
+        "name": "Kinky Kylie",
+        "entity_type": "Car",
+        "description": "Vettel's championship-winning car in 2011."
+      },
+      {
+        "local_id": "e3",
+        "name": "Abbey",
+        "entity_type": "Car",
+        "description": "Vettel's championship-winning car in 2012."
+      },
+      {
+        "local_id": "e4",
+        "name": "Hungry Heidi",
+        "entity_type": "Car",
+        "description": "Vettel's championship-winning car in 2013."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "FIELDED",
+        "description": "RB6 was fielded by Vettel's team in 2010.",
+        "from_year": 2010,
+        "to_year": 2010,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e3",
+        "relationship_type": "FIELDED",
+        "description": "Kinky Kylie was fielded by Vettel's team in 2011.",
+        "from_year": 2011,
+        "to_year": 2011,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e4",
+        "relationship_type": "FIELDED",
+        "description": "Abbey was fielded by Vettel's team in 2012.",
+        "from_year": 2012,
+        "to_year": 2012,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e4",
+        "relationship_type": "FIELDED",
+        "description": "Hungry Heidi was fielded by Vettel's team in 2013.",
+        "from_year": 2013,
+        "to_year": 2013,
+        "role": null
+      }
+    ]
+  }
+}

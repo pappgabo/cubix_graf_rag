@@ -1,0 +1,100 @@
+{
+  "chunk_id": "season-2012-formula-one-world-championship#26",
+  "doc_id": "season-2012-formula-one-world-championship",
+  "document_title": "2012 Formula One World Championship",
+  "section": "Teams and drivers > Driver changes",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/2012_Formula_One_World_Championship",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "9ca4ed4fbec2c6471d733e7e84ae9705c4248ed20de754fa6250e304ed63f1ba",
+  "status": "error",
+  "error": "ExtractionValidationError: POWERED_BY does not allow Driver -> Car",
+  "candidate_result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Sébastien Buemi",
+        "entity_type": "Driver",
+        "description": "Became Red Bull Racing's testing and reserve driver."
+      },
+      {
+        "local_id": "e2",
+        "name": "Red Bull Racing",
+        "entity_type": "Team",
+        "description": "Formula One team."
+      },
+      {
+        "local_id": "e3",
+        "name": "HRT",
+        "entity_type": "Team",
+        "description": "Formula One team."
+      },
+      {
+        "local_id": "e4",
+        "name": "Pirelli",
+        "entity_type": "Team",
+        "description": "Tyre supplier."
+      },
+      {
+        "local_id": "e5",
+        "name": "Lucas di Grassi",
+        "entity_type": "Driver",
+        "description": "Former Virgin Racing driver."
+      },
+      {
+        "local_id": "e6",
+        "name": "Toyota TS030 Hybrid",
+        "entity_type": "Car",
+        "description": "Car driven by Sébastien Buemi in the 24 Hours of Le Mans."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Sébastien Buemi became Red Bull Racing's testing and reserve driver.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e6",
+        "relationship_type": "POWERED_BY",
+        "description": "Sébastien Buemi drove a TS030 Hybrid at the 24 Hours of Le Mans.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e1",
+        "relationship_type": "DROVE_FOR",
+        "description": "Sébastien Buemi joined Pirelli as their test driver.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e1",
+        "relationship_type": "DROVE_FOR",
+        "description": "Alguersuari was offered a seat at HRT, but turned it down.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e5",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Alguersuari joined tyre supplier Pirelli alongside Lucas di Grassi.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

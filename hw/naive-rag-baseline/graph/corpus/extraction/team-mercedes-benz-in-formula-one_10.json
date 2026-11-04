@@ -1,0 +1,61 @@
+{
+  "chunk_id": "team-mercedes-benz-in-formula-one#10",
+  "doc_id": "team-mercedes-benz-in-formula-one",
+  "document_title": "Mercedes-Benz in Formula One",
+  "section": "Mercedes-Benz in Formula One > Daimler-Benz AG (1954–1955)",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/Mercedes-Benz_in_Formula_One",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "3fd168e086f48bd8d162a2e5c8be33ea44a51fa95dd78249f631e7da26ecf317",
+  "status": "error",
+  "error": "ExtractionValidationError: FIELDED is not temporal; from_year, to_year and role must be null",
+  "candidate_result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Mercedes-Benz",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that returned to the sport in 1954."
+      },
+      {
+        "local_id": "e2",
+        "name": "Alfred Neubauer",
+        "entity_type": "Driver",
+        "description": "Leader of Mercedes-Benz during their return to Formula One."
+      },
+      {
+        "local_id": "e3",
+        "name": "Mercedes-Benz W196",
+        "entity_type": "Car",
+        "description": "The technologically advanced car used by Mercedes-Benz in 1954."
+      },
+      {
+        "local_id": "e4",
+        "name": "1954",
+        "entity_type": "Season",
+        "description": "The year Mercedes-Benz returned to Formula One."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e3",
+        "relationship_type": "FIELDED",
+        "description": "Mercedes-Benz entered the W196 car in Formula One.",
+        "from_year": 1954,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e4",
+        "relationship_type": "RACED_IN",
+        "description": "The W196 car took part in the 1954 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

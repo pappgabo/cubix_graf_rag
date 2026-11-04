@@ -1,0 +1,70 @@
+{
+  "chunk_id": "driver-michael-schumacher#13",
+  "doc_id": "driver-michael-schumacher",
+  "document_title": "Michael Schumacher",
+  "section": null,
+  "page": 2,
+  "source": "https://en.wikipedia.org/wiki/Michael_Schumacher",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "1286fc2f1e8a46590c3e1c02b8e449462b938cd84d3f1c04fd8be530063573e0",
+  "status": "error",
+  "error": "ExtractionValidationError: WON does not allow Driver -> GrandPrix",
+  "candidate_result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Michael Schumacher",
+        "entity_type": "Driver",
+        "description": "also won the 1990 Macau Grand Prix under controversial circumstances."
+      },
+      {
+        "local_id": "e2",
+        "name": "Mika Häkkinen",
+        "entity_type": "Driver",
+        "description": "placed second behind Michael Schumacher in the first heat."
+      },
+      {
+        "local_id": "e3",
+        "name": "1990",
+        "entity_type": "Season",
+        "description": "the year of the Macau Grand Prix."
+      },
+      {
+        "local_id": "e4",
+        "name": "Macau Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "a race won by Michael Schumacher."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e4",
+        "relationship_type": "WON",
+        "description": "Michael Schumacher won the Macau Grand Prix.",
+        "from_year": 1990,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e3",
+        "relationship_type": "AWARDED_IN",
+        "description": "the Macau Grand Prix is associated with the 1990 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e4",
+        "relationship_type": "AT_RACE",
+        "description": "Mika Häkkinen participated in the Macau Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

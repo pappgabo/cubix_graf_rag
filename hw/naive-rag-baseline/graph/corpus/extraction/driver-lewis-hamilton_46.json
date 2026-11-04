@@ -1,0 +1,70 @@
+{
+  "chunk_id": "driver-lewis-hamilton#46",
+  "doc_id": "driver-lewis-hamilton",
+  "document_title": "Lewis Hamilton",
+  "section": null,
+  "page": 4,
+  "source": "https://en.wikipedia.org/wiki/Lewis_Hamilton",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "600726c64244fc190013f09d2a80d8d7b2b740f2fe1a69b34618222d760243cb",
+  "status": "error",
+  "error": "ExtractionValidationError: ACHIEVED does not allow Driver -> GrandPrix",
+  "candidate_result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Lewis Hamilton",
+        "entity_type": "Driver",
+        "description": "A Formula One driver who won six of seven races mid-season, including the Hungarian Grand Prix."
+      },
+      {
+        "local_id": "e2",
+        "name": "Hungarian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A race where Hamilton overtook his teammate to take the championship lead."
+      },
+      {
+        "local_id": "e3",
+        "name": "United States",
+        "entity_type": "GrandPrix",
+        "description": "The location where Hamilton secured his 50th race victory."
+      },
+      {
+        "local_id": "e4",
+        "name": "Japan",
+        "entity_type": "GrandPrix",
+        "description": "The location where Hamilton achieved his 100th podium finish."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "ACHIEVED",
+        "description": "Hamilton achieved a result in the Hungarian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e3",
+        "relationship_type": "ACHIEVED",
+        "description": "Hamilton achieved his 50th race victory in the United States.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e4",
+        "relationship_type": "ACHIEVED",
+        "description": "Hamilton achieved his 100th podium finish in Japan.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

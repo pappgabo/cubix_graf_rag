@@ -1,0 +1,54 @@
+{
+  "chunk_id": "season-2021-formula-one-world-championship#15",
+  "doc_id": "season-2021-formula-one-world-championship",
+  "document_title": "2021 Formula One World Championship",
+  "section": null,
+  "page": 2,
+  "source": "https://en.wikipedia.org/wiki/2021_Formula_One_World_Championship",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "cf78ddcdb2b50349e8ca9d37774a7fd4c2ac457f58e75c7906aa62b305d3b3a3",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Emilia Romagna Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Grand Prix held at the Autodromo Internazionale Enzo e Dino Ferrari in Imola."
+      },
+      {
+        "local_id": "e2",
+        "name": "Autodromo Internazionale Enzo e Dino Ferrari",
+        "entity_type": "Circuit",
+        "description": "A racing circuit located in Imola."
+      },
+      {
+        "local_id": "e3",
+        "name": "2021 Formula One World Championship",
+        "entity_type": "Season",
+        "description": "The 2021 season of the Formula One World Championship."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e3",
+        "relationship_type": "ROUND_OF",
+        "description": "The Emilia Romagna Grand Prix is a round of the 2021 Formula One World Championship.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "HELD_AT",
+        "description": "The Emilia Romagna Grand Prix is held at the Autodromo Internazionale Enzo e Dino Ferrari.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

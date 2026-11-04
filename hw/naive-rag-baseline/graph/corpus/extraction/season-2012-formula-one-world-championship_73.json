@@ -1,0 +1,55 @@
+{
+  "chunk_id": "season-2012-formula-one-world-championship#73",
+  "doc_id": "season-2012-formula-one-world-championship",
+  "document_title": "2012 Formula One World Championship",
+  "section": "Race summaries > Pre-season testing – Jerez de la Frontera and Barcelona",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/2012_Formula_One_World_Championship",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "6b11bd0000b2a0818f01e129c756345b5650f3f7c18f404d5d7be3cff45ee795",
+  "status": "error",
+  "error": "ExtractionValidationError: RACED_IN does not allow Circuit -> Season",
+  "candidate_result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "2012",
+        "entity_type": "Season",
+        "description": "The 2012 Formula One season."
+      },
+      {
+        "local_id": "e2",
+        "name": "Jerez de la Frontera",
+        "entity_type": "Circuit",
+        "description": "A racing venue where a pre-season test session took place."
+      },
+      {
+        "local_id": "e3",
+        "name": "Barcelona",
+        "entity_type": "Circuit",
+        "description": "A racing venue where two pre-season test sessions took place."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e2",
+        "target_id": "e1",
+        "relationship_type": "RACED_IN",
+        "description": "Jerez de la Frontera hosted a pre-season test session for the 2012 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e1",
+        "relationship_type": "RACED_IN",
+        "description": "Barcelona hosted two pre-season test sessions for the 2012 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

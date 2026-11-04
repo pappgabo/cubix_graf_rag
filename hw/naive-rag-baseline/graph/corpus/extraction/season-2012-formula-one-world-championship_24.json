@@ -1,0 +1,54 @@
+{
+  "chunk_id": "season-2012-formula-one-world-championship#24",
+  "doc_id": "season-2012-formula-one-world-championship",
+  "document_title": "2012 Formula One World Championship",
+  "section": "Teams and drivers > Driver changes",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/2012_Formula_One_World_Championship",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "08b130f7c4a4fca7bfc021b7556c099a1a9f7293b8a1f68f3b4e7b2c6261e4b3",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Sutil",
+        "entity_type": "Driver",
+        "description": "A driver who was later the subject of criminal action, charged with grievous bodily harm after allegedly assaulting a senior Renault team member."
+      },
+      {
+        "local_id": "e2",
+        "name": "Force India",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that Sutil rejoined for the 2013 season."
+      },
+      {
+        "local_id": "e3",
+        "name": "2013",
+        "entity_type": "Season",
+        "description": "The season in which Sutil rejoined Force India."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Sutil rejoined Force India for the 2013 season.",
+        "from_year": 2013,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e3",
+        "relationship_type": "ENTERED",
+        "description": "Force India took part in the 2013 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

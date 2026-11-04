@@ -1,0 +1,118 @@
+{
+  "chunk_id": "driver-michael-schumacher#4",
+  "doc_id": "driver-michael-schumacher",
+  "document_title": "Michael Schumacher",
+  "section": null,
+  "page": 1,
+  "source": "https://en.wikipedia.org/wiki/Michael_Schumacher",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "5c1ee88005df5efdd9a55da6bcf9433f3441cd0daa543bf69fd5a21d37dc1f48",
+  "status": "error",
+  "error": "ExtractionValidationError: WON is not temporal; from_year, to_year and role must be null",
+  "candidate_result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Michael Schumacher",
+        "entity_type": "Driver",
+        "description": "A Formula One driver who won multiple championships."
+      },
+      {
+        "local_id": "e2",
+        "name": "Ferrari",
+        "entity_type": "Team",
+        "description": "A Formula One team that Michael Schumacher drove for."
+      },
+      {
+        "local_id": "e3",
+        "name": "2000",
+        "entity_type": "Season",
+        "description": "The Formula One season in which Michael Schumacher won his first title with Ferrari."
+      },
+      {
+        "local_id": "e4",
+        "name": "2001",
+        "entity_type": "Season",
+        "description": "The Formula One season in which Michael Schumacher defended his title."
+      },
+      {
+        "local_id": "e5",
+        "name": "2002",
+        "entity_type": "Season",
+        "description": "The Formula One season during which Michael Schumacher won a record 11 Grands Prix."
+      },
+      {
+        "local_id": "e6",
+        "name": "Title",
+        "entity_type": "Title",
+        "description": "The championship title won by Michael Schumacher."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Michael Schumacher drove for Ferrari.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e6",
+        "relationship_type": "WON",
+        "description": "Michael Schumacher won a championship title.",
+        "from_year": 2000,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e6",
+        "target_id": "e3",
+        "relationship_type": "AWARDED_IN",
+        "description": "The championship title was awarded in the 2000 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e6",
+        "relationship_type": "WON",
+        "description": "Michael Schumacher won a championship title.",
+        "from_year": 2001,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e6",
+        "target_id": "e4",
+        "relationship_type": "AWARDED_IN",
+        "description": "The championship title was awarded in the 2001 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e6",
+        "relationship_type": "WON",
+        "description": "Michael Schumacher won a championship title.",
+        "from_year": 2002,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e6",
+        "target_id": "e5",
+        "relationship_type": "AWARDED_IN",
+        "description": "The championship title was awarded in the 2002 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

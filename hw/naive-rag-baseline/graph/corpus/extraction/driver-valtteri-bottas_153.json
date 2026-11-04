@@ -1,0 +1,70 @@
+{
+  "chunk_id": "driver-valtteri-bottas#153",
+  "doc_id": "driver-valtteri-bottas",
+  "document_title": "Valtteri Bottas",
+  "section": "Awards and honours > Other awards",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/Valtteri_Bottas",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "f878e0ab01cfb012a644b8610aa622b14a8b4f03c212d94d6e0769511f92f61f",
+  "status": "error",
+  "error": "ExtractionValidationError: WON is not temporal; from_year, to_year and role must be null",
+  "candidate_result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Valtteri Bottas",
+        "entity_type": "Driver",
+        "description": "A Finnish racing driver who has competed in Formula One."
+      },
+      {
+        "local_id": "e2",
+        "name": "Sky Sports Award for Most Improved Driver",
+        "entity_type": "Title",
+        "description": "An award given to the most improved driver."
+      },
+      {
+        "local_id": "e3",
+        "name": "Confartigianato Motori Driver of the Year",
+        "entity_type": "Title",
+        "description": "An award recognizing the best driver of the year."
+      },
+      {
+        "local_id": "e4",
+        "name": "AKK-Motorsport Driver of the Year",
+        "entity_type": "Title",
+        "description": "An award given to the best driver in motorsport."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "WON",
+        "description": "Valtteri Bottas won the Sky Sports Award for Most Improved Driver.",
+        "from_year": 2014,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e3",
+        "relationship_type": "WON",
+        "description": "Valtteri Bottas won the Confartigianato Motori Driver of the Year award.",
+        "from_year": 2017,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e4",
+        "relationship_type": "WON",
+        "description": "Valtteri Bottas won the AKK-Motorsport Driver of the Year award.",
+        "from_year": 2019,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

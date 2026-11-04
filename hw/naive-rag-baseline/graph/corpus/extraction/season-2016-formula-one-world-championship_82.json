@@ -1,0 +1,91 @@
+{
+  "chunk_id": "season-2016-formula-one-world-championship#82",
+  "doc_id": "season-2016-formula-one-world-championship",
+  "document_title": "2016 Formula One World Championship",
+  "section": "European rounds",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/2016_Formula_One_World_Championship",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "04757d0ca31106454c59bc2d2eda8797f551f61ecde99bf4a0a3ca7dd6bf0956",
+  "status": "error",
+  "error": "ExtractionValidationError: ACHIEVED does not allow Driver -> Season",
+  "candidate_result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Vettel",
+        "entity_type": "Driver",
+        "description": "Vettel went on to finish third—his first podium finish in five races."
+      },
+      {
+        "local_id": "e2",
+        "name": "Räikkönen",
+        "entity_type": "Driver",
+        "description": "Räikkönen finished fourth."
+      },
+      {
+        "local_id": "e3",
+        "name": "061",
+        "entity_type": "PowerUnit",
+        "description": "The type 061 power unit introduced upgrades."
+      },
+      {
+        "local_id": "e4",
+        "name": "Red Bull",
+        "entity_type": "Team",
+        "description": "A team that was competing for second place in the World Constructors' Championship."
+      },
+      {
+        "local_id": "e5",
+        "name": "World Constructors' Championship",
+        "entity_type": "Title",
+        "description": "The championship that the team was trying to recover second place in."
+      },
+      {
+        "local_id": "e6",
+        "name": "2016",
+        "entity_type": "Season",
+        "description": "The season of the 2016 Formula One World Championship."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e6",
+        "relationship_type": "ACHIEVED",
+        "description": "Vettel finished third in the race during the 2016 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e6",
+        "relationship_type": "ACHIEVED",
+        "description": "Räikkönen finished fourth in the race during the 2016 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e5",
+        "relationship_type": "DROVE_FOR",
+        "description": "Red Bull was competing for second place in the World Constructors' Championship.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e4",
+        "relationship_type": "POWERED_BY",
+        "description": "The type 061 power unit was used by the team.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

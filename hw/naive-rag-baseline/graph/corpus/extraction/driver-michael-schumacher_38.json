@@ -1,0 +1,54 @@
+{
+  "chunk_id": "driver-michael-schumacher#38",
+  "doc_id": "driver-michael-schumacher",
+  "document_title": "Michael Schumacher",
+  "section": null,
+  "page": 4,
+  "source": "https://en.wikipedia.org/wiki/Michael_Schumacher",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "8e21c0886b0585e10eb538c9eefd97ced12d59215e81e67d7db57bf97457c22c",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Michael Schumacher",
+        "entity_type": "Driver",
+        "description": "a result, Schumacher won the Drivers' Championship, the first German to do so."
+      },
+      {
+        "local_id": "e2",
+        "name": "Drivers' Championship",
+        "entity_type": "Title",
+        "description": "the championship title won by Schumacher."
+      },
+      {
+        "local_id": "e3",
+        "name": "null",
+        "entity_type": "Season",
+        "description": "null"
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "WON",
+        "description": "Schumacher won the Drivers' Championship.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e3",
+        "relationship_type": "AWARDED_IN",
+        "description": "The Drivers' Championship title belongs to a season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

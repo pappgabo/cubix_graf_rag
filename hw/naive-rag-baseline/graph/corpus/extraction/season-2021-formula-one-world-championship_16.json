@@ -1,0 +1,84 @@
+{
+  "chunk_id": "season-2021-formula-one-world-championship#16",
+  "doc_id": "season-2021-formula-one-world-championship",
+  "document_title": "2021 Formula One World Championship",
+  "section": null,
+  "page": 2,
+  "source": "https://en.wikipedia.org/wiki/2021_Formula_One_World_Championship",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "dd19dca060e5cd8ad3321738cbed2b7d754b2c990ba61ce6bfd61819c821c291",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Portuguese Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The Portuguese Grand Prix, which was originally intended to make a one-off return in 2020 at the Autódromo Internacional do Algarve in Portimão."
+      },
+      {
+        "local_id": "e2",
+        "name": "Autódromo Internacional do Algarve",
+        "entity_type": "Circuit",
+        "description": "The circuit where the Portuguese Grand Prix is held."
+      },
+      {
+        "local_id": "e3",
+        "name": "Styrian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The Styrian Grand Prix at the Red Bull Ring in Spielberg, which was originally intended to be a one-off race in 2020."
+      },
+      {
+        "local_id": "e4",
+        "name": "Red Bull Ring",
+        "entity_type": "Circuit",
+        "description": "The circuit where the Styrian Grand Prix is held."
+      },
+      {
+        "local_id": "e5",
+        "name": "2021 Formula One World Championship",
+        "entity_type": "Season",
+        "description": "The championship year in which the Portuguese and Styrian Grand Prix were held."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e5",
+        "relationship_type": "ROUND_OF",
+        "description": "The Portuguese Grand Prix is the third round of the 2021 Formula One World Championship.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e5",
+        "relationship_type": "ROUND_OF",
+        "description": "The Styrian Grand Prix is the eighth round of the 2021 Formula One World Championship.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "HELD_AT",
+        "description": "The Portuguese Grand Prix is held at the Autódromo Internacional do Algarve.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e4",
+        "relationship_type": "HELD_AT",
+        "description": "The Styrian Grand Prix is held at the Red Bull Ring.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

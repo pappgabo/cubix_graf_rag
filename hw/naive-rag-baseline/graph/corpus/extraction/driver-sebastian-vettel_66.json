@@ -1,0 +1,256 @@
+{
+  "chunk_id": "driver-sebastian-vettel#66",
+  "doc_id": "driver-sebastian-vettel",
+  "document_title": "Sebastian Vettel",
+  "section": "2014: Winless year and departure from Red Bull",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/Sebastian_Vettel",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "72b6fb89e353153d5f728fd43cb97836a0079e9613ce5580983d45c632a8460e",
+  "status": "error",
+  "error": "ExtractionValidationError: RACED_IN does not allow Driver -> Season",
+  "candidate_result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Sebastian Vettel",
+        "entity_type": "Driver",
+        "description": "Vettel struggled with reliability issues throughout winter testing, which forced him to retire at the opening Australian Grand Prix. Reliability problems also forced Vettel to retire at the Monaco and Austrian Grands Prix. Vettel qualified on the front-row for the races in Malaysia, Great Britain and Hungary, and finished on the podium in Malaysia, Canada, Singapore and Japan."
+      },
+      {
+        "local_id": "e2",
+        "name": "2014",
+        "entity_type": "Season",
+        "description": "The season in which Vettel struggled with reliability issues and had a winless year."
+      },
+      {
+        "local_id": "e3",
+        "name": "Australian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The opening race of the season where Vettel retired due to reliability issues."
+      },
+      {
+        "local_id": "e4",
+        "name": "Monaco Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "One of the races where Vettel retired due to reliability problems."
+      },
+      {
+        "local_id": "e5",
+        "name": "Austrian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "Another race where Vettel retired due to reliability problems."
+      },
+      {
+        "local_id": "e6",
+        "name": "Malaysia",
+        "entity_type": "GrandPrix",
+        "description": "One of the races where Vettel finished on the podium."
+      },
+      {
+        "local_id": "e7",
+        "name": "Canada",
+        "entity_type": "GrandPrix",
+        "description": "One of the races where Vettel finished on the podium."
+      },
+      {
+        "local_id": "e8",
+        "name": "Singapore",
+        "entity_type": "GrandPrix",
+        "description": "One of the races where Vettel finished on the podium."
+      },
+      {
+        "local_id": "e9",
+        "name": "Japan",
+        "entity_type": "GrandPrix",
+        "description": "One of the races where Vettel finished on the podium."
+      },
+      {
+        "local_id": "e10",
+        "name": "Great Britain",
+        "entity_type": "GrandPrix",
+        "description": "One of the races where Vettel qualified on the front-row."
+      },
+      {
+        "local_id": "e11",
+        "name": "Hungary",
+        "entity_type": "GrandPrix",
+        "description": "One of the races where Vettel qualified on the front-row."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "RACED_IN",
+        "description": "Vettel raced in the 2014 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e3",
+        "relationship_type": "ACHIEVED",
+        "description": "Vettel retired at the Australian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e2",
+        "relationship_type": "ROUND_OF",
+        "description": "The Australian Grand Prix is a round of the 2014 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e4",
+        "relationship_type": "ACHIEVED",
+        "description": "Vettel retired at the Monaco Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e2",
+        "relationship_type": "ROUND_OF",
+        "description": "The Monaco Grand Prix is a round of the 2014 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e5",
+        "relationship_type": "ACHIEVED",
+        "description": "Vettel retired at the Austrian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e2",
+        "relationship_type": "ROUND_OF",
+        "description": "The Austrian Grand Prix is a round of the 2014 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e6",
+        "relationship_type": "ACHIEVED",
+        "description": "Vettel finished on the podium in Malaysia.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e6",
+        "target_id": "e2",
+        "relationship_type": "ROUND_OF",
+        "description": "The Malaysia Grand Prix is a round of the 2014 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e7",
+        "relationship_type": "ACHIEVED",
+        "description": "Vettel finished on the podium in Canada.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e7",
+        "target_id": "e2",
+        "relationship_type": "ROUND_OF",
+        "description": "The Canada Grand Prix is a round of the 2014 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e8",
+        "relationship_type": "ACHIEVED",
+        "description": "Vettel finished on the podium in Singapore.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e8",
+        "target_id": "e2",
+        "relationship_type": "ROUND_OF",
+        "description": "The Singapore Grand Prix is a round of the 2014 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e9",
+        "relationship_type": "ACHIEVED",
+        "description": "Vettel finished on the podium in Japan.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e9",
+        "target_id": "e2",
+        "relationship_type": "ROUND_OF",
+        "description": "The Japan Grand Prix is a round of the 2014 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e10",
+        "relationship_type": "ACHIEVED",
+        "description": "Vettel qualified on the front-row in Great Britain.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e10",
+        "target_id": "e2",
+        "relationship_type": "ROUND_OF",
+        "description": "The Great Britain Grand Prix is a round of the 2014 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e11",
+        "relationship_type": "ACHIEVED",
+        "description": "Vettel qualified on the front-row in Hungary.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e11",
+        "target_id": "e2",
+        "relationship_type": "ROUND_OF",
+        "description": "The Hungary Grand Prix is a round of the 2014 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

@@ -12,15 +12,18 @@ from langchain_core.language_models import BaseChatModel
 from .config import get_settings
 
 
-def get_chat_model(*, streaming: bool = False) -> BaseChatModel:
+def get_chat_model(*, streaming: bool = False,
+                   max_retries: int | None = None) -> BaseChatModel:
     s = get_settings()
     if s.llm_provider == "openai":
         from langchain_openai import ChatOpenAI
+        extra = {} if max_retries is None else {"max_retries": max_retries}
         return ChatOpenAI(
             model=s.chat_model,
             temperature=0,
             streaming=streaming,
             api_key=s.openai_api_key,
+            **extra,
         )
     if s.llm_provider == "ollama":
         from langchain_ollama import ChatOllama  # optional dependency

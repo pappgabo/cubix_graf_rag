@@ -1,0 +1,124 @@
+{
+  "chunk_id": "team-mercedes-benz-in-formula-one#11",
+  "doc_id": "team-mercedes-benz-in-formula-one",
+  "document_title": "Mercedes-Benz in Formula One",
+  "section": "Mercedes-Benz in Formula One > Daimler-Benz AG (1954–1955)",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/Mercedes-Benz_in_Formula_One",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "488a1f541f322b0ac0a460b2b54c2747291b5bca1293ea078ee2777b8730aabf",
+  "status": "error",
+  "error": "ExtractionValidationError: HELD_AT does not allow GrandPrix -> Driver",
+  "candidate_result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Juan Manuel Fangio",
+        "entity_type": "Driver",
+        "description": "The 1951 champion who transferred mid-season from Maserati to Mercedes-Benz."
+      },
+      {
+        "local_id": "e2",
+        "name": "Mercedes-Benz",
+        "entity_type": "Team",
+        "description": "The Formula 1 team that Fangio transferred to for their debut."
+      },
+      {
+        "local_id": "e3",
+        "name": "1954",
+        "entity_type": "Season",
+        "description": "The championship year in which Fangio won the title."
+      },
+      {
+        "local_id": "e4",
+        "name": "French Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The race where Mercedes-Benz made their debut."
+      },
+      {
+        "local_id": "e5",
+        "name": "Karl Kling",
+        "entity_type": "Driver",
+        "description": "Teammate of Fangio at Mercedes-Benz during their debut."
+      },
+      {
+        "local_id": "e6",
+        "name": "Hans Herrmann",
+        "entity_type": "Driver",
+        "description": "Recorded the fastest lap during the French Grand Prix."
+      },
+      {
+        "local_id": "e7",
+        "name": "Championship Title",
+        "entity_type": "Title",
+        "description": "The title won by Fangio in 1954."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Fangio transferred to Mercedes-Benz mid-season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e3",
+        "relationship_type": "ENTERED",
+        "description": "Mercedes-Benz participated in the 1954 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e3",
+        "relationship_type": "ROUND_OF",
+        "description": "The French Grand Prix is a round of the 1954 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e7",
+        "relationship_type": "WON",
+        "description": "Fangio won the championship title in 1954.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e7",
+        "target_id": "e3",
+        "relationship_type": "AWARDED_IN",
+        "description": "The championship title belongs to the 1954 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e5",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Fangio was teammates with Karl Kling at Mercedes-Benz.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e6",
+        "relationship_type": "HELD_AT",
+        "description": "The French Grand Prix was held at a circuit.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

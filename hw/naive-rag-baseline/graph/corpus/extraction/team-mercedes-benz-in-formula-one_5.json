@@ -1,0 +1,82 @@
+{
+  "chunk_id": "team-mercedes-benz-in-formula-one#5",
+  "doc_id": "team-mercedes-benz-in-formula-one",
+  "document_title": "Mercedes-Benz in Formula One",
+  "section": "Mercedes-Benz in Formula One",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/Mercedes-Benz_in_Formula_One",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "80ed54c9c207f6838cc7aac84ed29949ed5ffc0d43c4cb21047d55d0e5bd5c63",
+  "status": "error",
+  "error": "ExtractionValidationError: ENTERED is not temporal; from_year, to_year and role must be null",
+  "candidate_result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Mercedes",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that was rebranded from Brawn GP in 2010."
+      },
+      {
+        "local_id": "e2",
+        "name": "2014",
+        "entity_type": "Season",
+        "description": "A championship year."
+      },
+      {
+        "local_id": "e3",
+        "name": "2020",
+        "entity_type": "Season",
+        "description": "A championship year."
+      },
+      {
+        "local_id": "e4",
+        "name": "2021",
+        "entity_type": "Season",
+        "description": "A championship year."
+      },
+      {
+        "local_id": "e5",
+        "name": "Drivers' title",
+        "entity_type": "Title",
+        "description": "A championship title won by drivers."
+      },
+      {
+        "local_id": "e6",
+        "name": "Constructors' title",
+        "entity_type": "Title",
+        "description": "A championship title won by teams."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "ENTERED",
+        "description": "Mercedes entered the 2014 season.",
+        "from_year": 2014,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e5",
+        "relationship_type": "WON",
+        "description": "Mercedes won the Drivers' title from 2014 to 2020.",
+        "from_year": 2014,
+        "to_year": 2020,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e6",
+        "relationship_type": "WON",
+        "description": "Mercedes won the Constructors' title from 2014 to 2021.",
+        "from_year": 2014,
+        "to_year": 2021,
+        "role": null
+      }
+    ]
+  }
+}

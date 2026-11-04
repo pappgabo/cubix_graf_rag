@@ -1,0 +1,103 @@
+{
+  "chunk_id": "season-2021-formula-one-world-championship#79",
+  "doc_id": "season-2021-formula-one-world-championship",
+  "document_title": "2021 Formula One World Championship",
+  "section": null,
+  "page": 7,
+  "source": "https://en.wikipedia.org/wiki/2021_Formula_One_World_Championship",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "d6e9b29c9aae0e83acbfd27d0c1764ed810dd45999b8ad105b10619bbeca42af",
+  "status": "error",
+  "error": "ExtractionValidationError: WON does not allow Driver -> GrandPrix",
+  "candidate_result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Verstappen",
+        "entity_type": "Driver",
+        "description": "A driver who collided with Hamilton, ending his race prematurely."
+      },
+      {
+        "local_id": "e2",
+        "name": "Hamilton",
+        "entity_type": "Driver",
+        "description": "A driver who collided with Verstappen, ending his race prematurely."
+      },
+      {
+        "local_id": "e3",
+        "name": "Ricciardo",
+        "entity_type": "Driver",
+        "description": "A driver who led to take his first victory since the 2018 Monaco Grand Prix."
+      },
+      {
+        "local_id": "e4",
+        "name": "Norris",
+        "entity_type": "Driver",
+        "description": "Teammate of Ricciardo who finished the race."
+      },
+      {
+        "local_id": "e5",
+        "name": "McLaren",
+        "entity_type": "Team",
+        "description": "The team that achieved its first victory since the 2012 Brazilian Grand Prix."
+      },
+      {
+        "local_id": "e6",
+        "name": "2021",
+        "entity_type": "Season",
+        "description": "The championship year in which the events took place."
+      },
+      {
+        "local_id": "e7",
+        "name": "2018 Monaco Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The race where Ricciardo last won before this event."
+      },
+      {
+        "local_id": "e8",
+        "name": "2012 Brazilian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The race where McLaren last won before this event."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e3",
+        "target_id": "e7",
+        "relationship_type": "WON",
+        "description": "Ricciardo won the 2018 Monaco Grand Prix.",
+        "from_year": 2018,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e6",
+        "relationship_type": "ENTERED",
+        "description": "McLaren entered the 2021 season.",
+        "from_year": 2021,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e6",
+        "relationship_type": "WON",
+        "description": "McLaren won in the 2021 season.",
+        "from_year": 2021,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e8",
+        "relationship_type": "WON",
+        "description": "McLaren last won at the 2012 Brazilian Grand Prix.",
+        "from_year": 2012,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "chunk_id": "driver-michael-schumacher#140",
+  "doc_id": "driver-michael-schumacher",
+  "document_title": "Michael Schumacher",
+  "section": null,
+  "page": 12,
+  "source": "https://en.wikipedia.org/wiki/Michael_Schumacher",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "4b6fa3621b207c6f5bbb6f82c935b8819d09672ff730e593c500a0437e938422",
+  "status": "error",
+  "error": "ExtractionValidationError: ACHIEVED does not allow Driver -> Driver",
+  "candidate_result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Michael Schumacher",
+        "entity_type": "Driver",
+        "description": "A Formula One driver known for his multiple championship wins."
+      },
+      {
+        "local_id": "e2",
+        "name": "Fernando Alonso",
+        "entity_type": "Driver",
+        "description": "A Formula One driver who ended Schumacher's five-consecutive titles."
+      },
+      {
+        "local_id": "e3",
+        "name": "Lewis Hamilton",
+        "entity_type": "Driver",
+        "description": "A Formula One driver who is seen as a rival to Schumacher."
+      },
+      {
+        "local_id": "e4",
+        "name": "1979",
+        "entity_type": "Season",
+        "description": "The season of the last Drivers' Championship won by the team before Schumacher's era."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e2",
+        "target_id": "e1",
+        "relationship_type": "ACHIEVED",
+        "description": "Alonso ended Schumacher's five-consecutive titles",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e1",
+        "relationship_type": "ACHIEVED",
+        "description": "Hamilton cited Schumacher as an inspiration",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e4",
+        "relationship_type": "WON",
+        "description": "Schumacher's team won the Drivers' Championship",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e1",
+        "relationship_type": "AWARDED_IN",
+        "description": "The Drivers' Championship was awarded in the 1979 season",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

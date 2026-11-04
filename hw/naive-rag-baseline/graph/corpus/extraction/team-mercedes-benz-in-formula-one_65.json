@@ -1,0 +1,145 @@
+{
+  "chunk_id": "team-mercedes-benz-in-formula-one#65",
+  "doc_id": "team-mercedes-benz-in-formula-one",
+  "document_title": "Mercedes-Benz in Formula One",
+  "section": "Mercedes-Benz in Formula One > Struggling with ground effect (2022–2025)",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/Mercedes-Benz_in_Formula_One",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "2091a8eba8dc7f72567662db88f26e4ec3074f002f077d5748f70686e7cd105a",
+  "status": "error",
+  "error": "ExtractionValidationError: ENTERED is not temporal; from_year, to_year and role must be null",
+  "candidate_result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Lewis Hamilton",
+        "entity_type": "Driver",
+        "description": "A seven-time champion who drove for Mercedes for 12 years."
+      },
+      {
+        "local_id": "e2",
+        "name": "Ferrari",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that Hamilton signed a contract with."
+      },
+      {
+        "local_id": "e3",
+        "name": "Mercedes",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that Hamilton drove for before leaving."
+      },
+      {
+        "local_id": "e4",
+        "name": "Kimi Antonelli",
+        "entity_type": "Driver",
+        "description": "Mercedes junior driver announced as Hamilton's replacement."
+      },
+      {
+        "local_id": "e5",
+        "name": "Valtteri Bottas",
+        "entity_type": "Driver",
+        "description": "A driver who rejoined Mercedes as a reserve driver."
+      },
+      {
+        "local_id": "e6",
+        "name": "Cadillac",
+        "entity_type": "Team",
+        "description": "A new Formula 1 team that Bottas joined."
+      },
+      {
+        "local_id": "e7",
+        "name": "2024",
+        "entity_type": "Season",
+        "description": "The season when Hamilton confirmed his departure from Mercedes."
+      },
+      {
+        "local_id": "e8",
+        "name": "2025",
+        "entity_type": "Season",
+        "description": "The season when Hamilton will drive for Ferrari."
+      },
+      {
+        "local_id": "e9",
+        "name": "2026",
+        "entity_type": "Season",
+        "description": "The season when Bottas left Mercedes."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e3",
+        "relationship_type": "DROVE_FOR",
+        "description": "Hamilton drove for Mercedes for 12 years.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Hamilton signed a contract to drive for Ferrari from 2025 onwards.",
+        "from_year": 2025,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e3",
+        "relationship_type": "DROVE_FOR",
+        "description": "Kimi Antonelli was announced as Hamilton's replacement at Mercedes.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e3",
+        "relationship_type": "DROVE_FOR",
+        "description": "Bottas rejoined Mercedes as a reserve driver.",
+        "from_year": 2024,
+        "to_year": null,
+        "role": "reserve driver"
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e6",
+        "relationship_type": "DROVE_FOR",
+        "description": "Bottas left Mercedes to join the new Cadillac team.",
+        "from_year": 2026,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e7",
+        "relationship_type": "ENTERED",
+        "description": "Mercedes entered the 2024 season.",
+        "from_year": 2024,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e8",
+        "relationship_type": "ENTERED",
+        "description": "Ferrari entered the 2025 season.",
+        "from_year": 2025,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e9",
+        "relationship_type": "ENTERED",
+        "description": "Mercedes entered the 2026 season.",
+        "from_year": 2026,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

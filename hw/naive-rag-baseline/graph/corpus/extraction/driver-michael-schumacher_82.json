@@ -1,0 +1,94 @@
+{
+  "chunk_id": "driver-michael-schumacher#82",
+  "doc_id": "driver-michael-schumacher",
+  "document_title": "Michael Schumacher",
+  "section": null,
+  "page": 7,
+  "source": "https://en.wikipedia.org/wiki/Michael_Schumacher",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "84c0cee5b755afd38e84525c3d515c851e9114ebb18595ac9d54e8e3d43907e3",
+  "status": "error",
+  "error": "ExtractionValidationError: ACHIEVED does not allow Driver -> GrandPrix",
+  "candidate_result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Michael Schumacher",
+        "entity_type": "Driver",
+        "description": "A Formula One driver known for his multiple championship wins."
+      },
+      {
+        "local_id": "e2",
+        "name": "Räikkönen",
+        "entity_type": "Driver",
+        "description": "A Formula One driver who competed against Schumacher."
+      },
+      {
+        "local_id": "e3",
+        "name": "Canadian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula One race where Schumacher achieved victory."
+      },
+      {
+        "local_id": "e4",
+        "name": "British Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula One race where Barrichello achieved victory."
+      },
+      {
+        "local_id": "e5",
+        "name": "Hungarian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula One race mentioned in the context."
+      },
+      {
+        "local_id": "e6",
+        "name": "Williams",
+        "entity_type": "Team",
+        "description": "A Formula One team whose drivers dominated the mid-season."
+      },
+      {
+        "local_id": "e7",
+        "name": "Ralf Schumacher",
+        "entity_type": "Driver",
+        "description": "A Formula One driver and teammate of Montoya at Williams."
+      },
+      {
+        "local_id": "e8",
+        "name": "Juan Pablo Montoya",
+        "entity_type": "Driver",
+        "description": "A Formula One driver and teammate of Ralf Schumacher at Williams."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e3",
+        "relationship_type": "ACHIEVED",
+        "description": "Schumacher achieved victory at the Canadian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e6",
+        "target_id": "e7",
+        "relationship_type": "DROVE_FOR",
+        "description": "Ralf Schumacher drove for Williams.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e6",
+        "target_id": "e8",
+        "relationship_type": "DROVE_FOR",
+        "description": "Juan Pablo Montoya drove for Williams.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

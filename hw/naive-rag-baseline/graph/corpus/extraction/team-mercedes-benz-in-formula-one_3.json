@@ -1,0 +1,115 @@
+{
+  "chunk_id": "team-mercedes-benz-in-formula-one#3",
+  "doc_id": "team-mercedes-benz-in-formula-one",
+  "document_title": "Mercedes-Benz in Formula One",
+  "section": "Mercedes-Benz in Formula One",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/Mercedes-Benz_in_Formula_One",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "f2281488a2d4cb270d36abd82d8c4eb6898ef60526820112c446a726aa9c855c",
+  "status": "error",
+  "error": "ExtractionValidationError: FIELDED does not allow Team -> GrandPrix",
+  "candidate_result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Mercedes-Benz",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that entered cars."
+      },
+      {
+        "local_id": "e2",
+        "name": "Juan Manuel Fangio",
+        "entity_type": "Driver",
+        "description": "A driver who won the 1954 and 1955 Drivers' Championships."
+      },
+      {
+        "local_id": "e3",
+        "name": "1954",
+        "entity_type": "Season",
+        "description": "A championship year."
+      },
+      {
+        "local_id": "e4",
+        "name": "1955",
+        "entity_type": "Season",
+        "description": "A championship year."
+      },
+      {
+        "local_id": "e5",
+        "name": "1954 Drivers' Championship",
+        "entity_type": "Title",
+        "description": "A championship title won by Juan Manuel Fangio."
+      },
+      {
+        "local_id": "e6",
+        "name": "1955 Drivers' Championship",
+        "entity_type": "Title",
+        "description": "A championship title won by Juan Manuel Fangio."
+      },
+      {
+        "local_id": "e7",
+        "name": "1954 French Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The first race won by Mercedes-Benz in Formula One."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e7",
+        "relationship_type": "FIELDED",
+        "description": "Mercedes-Benz entered the 1954 French Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e7",
+        "relationship_type": "ACHIEVED",
+        "description": "Juan Manuel Fangio recorded a result in the 1954 French Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e5",
+        "relationship_type": "WON",
+        "description": "Juan Manuel Fangio won the 1954 Drivers' Championship.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e6",
+        "relationship_type": "WON",
+        "description": "Juan Manuel Fangio won the 1955 Drivers' Championship.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e3",
+        "relationship_type": "ENTERED",
+        "description": "Mercedes-Benz took part in the 1954 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e4",
+        "relationship_type": "ENTERED",
+        "description": "Mercedes-Benz took part in the 1955 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

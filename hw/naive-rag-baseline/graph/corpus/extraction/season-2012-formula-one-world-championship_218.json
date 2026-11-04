@@ -1,0 +1,76 @@
+{
+  "chunk_id": "season-2012-formula-one-world-championship#218",
+  "doc_id": "season-2012-formula-one-world-championship",
+  "document_title": "2012 Formula One World Championship",
+  "section": "Race summaries > Post-season controversy",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/2012_Formula_One_World_Championship",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "0d6dc9e3fc5d8c96528e0f2e48bfe953f72601cdf0036265c2509edfb1c9fa86",
+  "status": "error",
+  "error": "ExtractionValidationError: HELD_AT does not allow Driver -> Circuit",
+  "candidate_result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Pastor Maldonado",
+        "entity_type": "Driver",
+        "description": "A driver who spun and retired during the race."
+      },
+      {
+        "local_id": "e2",
+        "name": "Curva do Sol",
+        "entity_type": "Circuit",
+        "description": "The third corner of the Interlagos circuit."
+      },
+      {
+        "local_id": "e3",
+        "name": "Interlagos",
+        "entity_type": "Circuit",
+        "description": "The racing circuit where the incident occurred."
+      },
+      {
+        "local_id": "e4",
+        "name": "Sebastian Vettel",
+        "entity_type": "Driver",
+        "description": "A driver who overtook Vergne during the race."
+      },
+      {
+        "local_id": "e5",
+        "name": "Jean-Eric Vergne",
+        "entity_type": "Driver",
+        "description": "A driver who was overtaken by Vettel."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "HELD_AT",
+        "description": "Pastor Maldonado's incident occurred at Curva do Sol.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e3",
+        "relationship_type": "HELD_AT",
+        "description": "Curva do Sol is part of the Interlagos circuit.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e5",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Vettel overtook Vergne during the race.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

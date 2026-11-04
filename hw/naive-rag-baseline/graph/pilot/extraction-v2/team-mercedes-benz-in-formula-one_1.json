@@ -1,0 +1,40 @@
+{
+  "chunk_id": "team-mercedes-benz-in-formula-one#1",
+  "doc_id": "team-mercedes-benz-in-formula-one",
+  "document_title": "Mercedes-Benz in Formula One",
+  "section": "Mercedes-Benz in Formula One",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/Mercedes-Benz_in_Formula_One",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-2",
+  "input_hash": "e7e3471d83d553e56bff5a873937d414455bdabc84d0ab13d30cf46196c711ec",
+  "status": "error",
+  "error": "ExtractionValidationError: DROVE_FOR does not allow Team -> Team",
+  "candidate_result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Mercedes-AMG Petronas Formula One Team",
+        "entity_type": "Team",
+        "description": "The current Mercedes-Benz Grand Prix Limited, competing as Mercedes-AMG Petronas Formula One Team, is based in Brackley, England, and holds a German racing licence."
+      },
+      {
+        "local_id": "e2",
+        "name": "Mercedes-Benz",
+        "entity_type": "Team",
+        "description": "A German automotive brand of the Mercedes-Benz Group, involved in Formula One as both team owner and engine manufacturer."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e2",
+        "target_id": "e1",
+        "relationship_type": "DROVE_FOR",
+        "description": "Mercedes-Benz is involved in Formula One as the team owner of Mercedes-AMG Petronas Formula One Team.",
+        "from_year": 1954,
+        "to_year": null,
+        "role": "owner"
+      }
+    ]
+  }
+}

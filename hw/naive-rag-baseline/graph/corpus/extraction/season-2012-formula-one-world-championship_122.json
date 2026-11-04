@@ -1,0 +1,133 @@
+{
+  "chunk_id": "season-2012-formula-one-world-championship#122",
+  "doc_id": "season-2012-formula-one-world-championship",
+  "document_title": "2012 Formula One World Championship",
+  "section": "Race summaries > Round 7 – Canada Circuit Gilles Villeneuve",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/2012_Formula_One_World_Championship",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "540ddf9b4dbf3986d76bac760c460567c61795fca16a2e8ad0cecc48f5726ad5",
+  "status": "error",
+  "error": "ExtractionValidationError: ACHIEVED does not allow Driver -> GrandPrix",
+  "candidate_result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Lewis Hamilton",
+        "entity_type": "Driver",
+        "description": "Hamilton won the race, becoming the seventh winner in seven races and taking a two-point lead in the championship."
+      },
+      {
+        "local_id": "e2",
+        "name": "Fernando Alonso",
+        "entity_type": "Driver",
+        "description": "Alonso's tyres lost all grip and he fell victim to Hamilton."
+      },
+      {
+        "local_id": "e3",
+        "name": "Romain Grosjean",
+        "entity_type": "Driver",
+        "description": "Grosjean finished second in the race."
+      },
+      {
+        "local_id": "e4",
+        "name": "Sergio Pérez",
+        "entity_type": "Driver",
+        "description": "Pérez was one of the drivers who passed Alonso."
+      },
+      {
+        "local_id": "e5",
+        "name": "Sebastian Vettel",
+        "entity_type": "Driver",
+        "description": "Vettel was one of the drivers who passed Alonso."
+      },
+      {
+        "local_id": "e6",
+        "name": "Lotus",
+        "entity_type": "Team",
+        "description": "Lotus took third place in the Constructors' Championship from Ferrari."
+      },
+      {
+        "local_id": "e7",
+        "name": "Ferrari",
+        "entity_type": "Team",
+        "description": "Ferrari lost third place in the Constructors' Championship to Lotus."
+      },
+      {
+        "local_id": "e8",
+        "name": "2012",
+        "entity_type": "Season",
+        "description": "The season of the 2012 Formula One World Championship."
+      },
+      {
+        "local_id": "e9",
+        "name": "Circuit Gilles Villeneuve",
+        "entity_type": "Circuit",
+        "description": "The circuit where the race took place."
+      },
+      {
+        "local_id": "e10",
+        "name": "Grand Prix of Canada",
+        "entity_type": "GrandPrix",
+        "description": "The race won by Hamilton."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e10",
+        "relationship_type": "ACHIEVED",
+        "description": "Hamilton won the race.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e6",
+        "relationship_type": "FOR_TEAM",
+        "description": "Hamilton raced for Lotus.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e10",
+        "target_id": "e8",
+        "relationship_type": "ROUND_OF",
+        "description": "The Grand Prix of Canada is a round of the 2012 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e10",
+        "target_id": "e9",
+        "relationship_type": "HELD_AT",
+        "description": "The Grand Prix of Canada was held at Circuit Gilles Villeneuve.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e6",
+        "target_id": "e8",
+        "relationship_type": "ENTERED",
+        "description": "Lotus took part in the 2012 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e7",
+        "target_id": "e8",
+        "relationship_type": "ENTERED",
+        "description": "Ferrari took part in the 2012 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

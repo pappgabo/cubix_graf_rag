@@ -1,0 +1,76 @@
+{
+  "chunk_id": "season-2021-formula-one-world-championship#68",
+  "doc_id": "season-2021-formula-one-world-championship",
+  "document_title": "2021 Formula One World Championship",
+  "section": null,
+  "page": 6,
+  "source": "https://en.wikipedia.org/wiki/2021_Formula_One_World_Championship",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "82a9089cc318154ad7c79fe0b9d2285674163ee4fd2d44d72444624f587cced9",
+  "status": "error",
+  "error": "ExtractionValidationError: ACHIEVED does not allow Driver -> GrandPrix",
+  "candidate_result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Lewis Hamilton",
+        "entity_type": "Driver",
+        "description": ","
+      },
+      {
+        "local_id": "e2",
+        "name": "Max Verstappen",
+        "entity_type": "Driver",
+        "description": "extended his title lead to 18 points."
+      },
+      {
+        "local_id": "e3",
+        "name": "Valtteri Bottas",
+        "entity_type": "Driver",
+        "description": "came third, taking his first podium since Spain."
+      },
+      {
+        "local_id": "e4",
+        "name": "Austrian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "the last race of the first triple header."
+      },
+      {
+        "local_id": "e5",
+        "name": "Esteban Ocon",
+        "entity_type": "Driver",
+        "description": "retired with broken suspension."
+      },
+      {
+        "local_id": "e6",
+        "name": "Lando Norris",
+        "entity_type": "Driver",
+        "description": "received a penalty after being judged to have forced Sergio Pérez off track."
+      },
+      {
+        "local_id": "e7",
+        "name": "Sergio Pérez",
+        "entity_type": "Driver",
+        "description": "later received two penalties for doing the same to Charles Leclerc."
+      },
+      {
+        "local_id": "e8",
+        "name": "Charles Leclerc",
+        "entity_type": "Driver",
+        "description": ","
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e2",
+        "target_id": "e4",
+        "relationship_type": "ACHIEVED",
+        "description": "Verstappen won the Austrian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

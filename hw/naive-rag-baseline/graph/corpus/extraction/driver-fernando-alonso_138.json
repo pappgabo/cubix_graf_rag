@@ -1,0 +1,115 @@
+{
+  "chunk_id": "driver-fernando-alonso#138",
+  "doc_id": "driver-fernando-alonso",
+  "document_title": "Fernando Alonso",
+  "section": "Endorsements and philanthropy",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/Fernando_Alonso",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "7ac4741526810e015b3369893f71f535bfddd4f9e934dfaf336f30209ce6d456",
+  "status": "error",
+  "error": "ExtractionValidationError: DROVE_FOR does not allow Team -> Team",
+  "candidate_result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Fernando Alonso",
+        "entity_type": "Driver",
+        "description": "A Formula One driver."
+      },
+      {
+        "local_id": "e2",
+        "name": "FA Racing G2 Logitech G",
+        "entity_type": "Team",
+        "description": "An eSports racing team established by Fernando Alonso."
+      },
+      {
+        "local_id": "e3",
+        "name": "FA Racing",
+        "entity_type": "Team",
+        "description": "A team that partnered with Veloce Esports."
+      },
+      {
+        "local_id": "e4",
+        "name": "Veloce Esports",
+        "entity_type": "Team",
+        "description": "A team that partnered with FA Racing."
+      },
+      {
+        "local_id": "e5",
+        "name": "F4 Spanish Championship",
+        "entity_type": "Season",
+        "description": "A racing championship in which Alonso's team competed."
+      },
+      {
+        "local_id": "e6",
+        "name": "Formula Renault Eurocup",
+        "entity_type": "Season",
+        "description": "A racing championship in which Alonso's team competed."
+      },
+      {
+        "local_id": "e7",
+        "name": "Motorsport Games",
+        "entity_type": "Team",
+        "description": "An eSports multi-racing platform in which Alonso is an investor and board member."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Alonso established and competed in the FA Racing G2 Logitech G eSports racing team.",
+        "from_year": 2017,
+        "to_year": 2018,
+        "role": "team principal"
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e3",
+        "relationship_type": "DROVE_FOR",
+        "description": "FA Racing G2 Logitech G partnered with FA Racing.",
+        "from_year": 2019,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e4",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "FA Racing partnered with Veloce Esports.",
+        "from_year": 2019,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e5",
+        "relationship_type": "FIELDED",
+        "description": "FA Racing G2 Logitech G competed in the F4 Spanish Championship.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e6",
+        "relationship_type": "FIELDED",
+        "description": "FA Racing G2 Logitech G competed in the Formula Renault Eurocup.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e7",
+        "relationship_type": "DROVE_FOR",
+        "description": "Alonso is an investor and board member of Motorsport Games.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

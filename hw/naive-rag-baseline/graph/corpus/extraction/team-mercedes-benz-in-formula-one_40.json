@@ -1,0 +1,130 @@
+{
+  "chunk_id": "team-mercedes-benz-in-formula-one#40",
+  "doc_id": "team-mercedes-benz-in-formula-one",
+  "document_title": "Mercedes-Benz in Formula One",
+  "section": "Mercedes-Benz in Formula One > Eight consecutive Constructors' titles (2014–2021)",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/Mercedes-Benz_in_Formula_One",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "8cca2f9ac132c11a8e46e083d3f69dee492d77026a796de4e511c6c92f4c8021",
+  "status": "error",
+  "error": "ExtractionValidationError: WON is not temporal; from_year, to_year and role must be null",
+  "candidate_result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Lewis Hamilton",
+        "entity_type": "Driver",
+        "description": "Hamilton won the last race of the season, held in Abu Dhabi. He finished the season 67 points ahead of Rosberg, clinching the World Drivers' Championship."
+      },
+      {
+        "local_id": "e2",
+        "name": "Nico Rosberg",
+        "entity_type": "Driver",
+        "description": "Hamilton finished the season 67 points ahead of Rosberg."
+      },
+      {
+        "local_id": "e3",
+        "name": "Mercedes",
+        "entity_type": "Team",
+        "description": "The team finished the 2014 season 296 points ahead of their closest rival Red Bull Racing in the World Constructors' Championship standings."
+      },
+      {
+        "local_id": "e4",
+        "name": "2014",
+        "entity_type": "Season",
+        "description": "The team finished the 2014 season 296 points ahead of their closest rival Red Bull Racing in the World Constructors' Championship standings."
+      },
+      {
+        "local_id": "e5",
+        "name": "Abu Dhabi Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "Hamilton won the last race of the season, held in Abu Dhabi."
+      },
+      {
+        "local_id": "e6",
+        "name": "V6 turbo era",
+        "entity_type": "Car",
+        "description": "Mercedes dominated this first year of the V6 turbo era."
+      },
+      {
+        "local_id": "e7",
+        "name": "World Drivers' Championship",
+        "entity_type": "Title",
+        "description": "Hamilton clinching the World Drivers' Championship."
+      },
+      {
+        "local_id": "e8",
+        "name": "World Constructors' Championship",
+        "entity_type": "Title",
+        "description": "The team finished the 2014 season 296 points ahead of their closest rival Red Bull Racing in the World Constructors' Championship standings."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e7",
+        "relationship_type": "WON",
+        "description": "Hamilton clinching the World Drivers' Championship.",
+        "from_year": 2014,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e8",
+        "relationship_type": "WON",
+        "description": "The team finished the 2014 season 296 points ahead of their closest rival Red Bull Racing in the World Constructors' Championship standings.",
+        "from_year": 2014,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e4",
+        "relationship_type": "ROUND_OF",
+        "description": "Hamilton won the last race of the season, held in Abu Dhabi.",
+        "from_year": 2014,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e4",
+        "relationship_type": "ENTERED",
+        "description": "The team finished the 2014 season 296 points ahead of their closest rival Red Bull Racing in the World Constructors' Championship standings.",
+        "from_year": 2014,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e6",
+        "target_id": "e4",
+        "relationship_type": "RACED_IN",
+        "description": "Mercedes dominated this first year of the V6 turbo era.",
+        "from_year": 2014,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e6",
+        "relationship_type": "FIELDED",
+        "description": "Mercedes dominated this first year of the V6 turbo era.",
+        "from_year": 2014,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Hamilton finished the season 67 points ahead of Rosberg.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

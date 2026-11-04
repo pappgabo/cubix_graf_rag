@@ -1,0 +1,64 @@
+{
+  "chunk_id": "team-mercedes-benz-in-formula-one#29",
+  "doc_id": "team-mercedes-benz-in-formula-one",
+  "document_title": "Mercedes-Benz in Formula One",
+  "section": "Mercedes-Benz in Formula One > Mercedes-AMG Petronas Formula One Team (2010–present)",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/Mercedes-Benz_in_Formula_One",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "e599f50cb19c2d73597a84c653d54b8e93ca5df0defdd7ea69a8cd077b248e36",
+  "status": "error",
+  "error": "ExtractionValidationError: FIELDED is not temporal; from_year, to_year and role must be null",
+  "candidate_result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Mercedes-AMG Petronas Formula One Team",
+        "entity_type": "Team",
+        "description": "Officially designated as Mercedes AMG Petronas F1 Team since 2012."
+      },
+      {
+        "local_id": "e2",
+        "name": "Mercedes F1 W03",
+        "entity_type": "Car",
+        "description": "Racing car used by the Mercedes-AMG Petronas Formula One Team."
+      },
+      {
+        "local_id": "e3",
+        "name": "2012",
+        "entity_type": "Season",
+        "description": "The championship year during which the team made changes to its name."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "FIELDED",
+        "description": "The team entered the Mercedes F1 W03 racing car.",
+        "from_year": 2012,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e3",
+        "relationship_type": "RACED_IN",
+        "description": "The Mercedes F1 W03 took part in the 2012 season.",
+        "from_year": 2012,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e3",
+        "relationship_type": "ENTERED",
+        "description": "The Mercedes-AMG Petronas Formula One Team took part in the 2012 season.",
+        "from_year": 2012,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

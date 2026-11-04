@@ -1,0 +1,100 @@
+{
+  "chunk_id": "driver-sebastian-vettel#135",
+  "doc_id": "driver-sebastian-vettel",
+  "document_title": "Sebastian Vettel",
+  "section": "Awards and honours",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/Sebastian_Vettel",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "bf25e3b0887182cf734b7729c26800c62e3b25c87f3faa42d9b1bb9ccdc07681",
+  "status": "error",
+  "error": "ExtractionValidationError: WON is not temporal; from_year, to_year and role must be null",
+  "candidate_result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Sebastian Vettel",
+        "entity_type": "Driver",
+        "description": "A Formula One driver who has won multiple awards and honours."
+      },
+      {
+        "local_id": "e2",
+        "name": "DHL Fastest Lap Award",
+        "entity_type": "Title",
+        "description": "An award given for achieving the fastest lap in a Formula One race."
+      },
+      {
+        "local_id": "e3",
+        "name": "European Sportsperson of the Year",
+        "entity_type": "Title",
+        "description": "An award given to outstanding European athletes."
+      },
+      {
+        "local_id": "e4",
+        "name": "BBC Overseas Sports Personality of the Year",
+        "entity_type": "Title",
+        "description": "An award recognizing the best overseas sports personality."
+      },
+      {
+        "local_id": "e5",
+        "name": "Sportsman of the Year",
+        "entity_type": "Title",
+        "description": "An award given to the best sportsman of the year."
+      },
+      {
+        "local_id": "e6",
+        "name": "Confartigianato Motori Award for Driver of the Year",
+        "entity_type": "Title",
+        "description": "An award recognizing the best driver of the year."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "WON",
+        "description": "Sebastian Vettel won the DHL Fastest Lap Award in 2009, 2012, and 2013.",
+        "from_year": 2009,
+        "to_year": 2013,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e3",
+        "relationship_type": "WON",
+        "description": "Sebastian Vettel was named European Sportsperson of the Year in 2010, 2012, and 2013.",
+        "from_year": 2010,
+        "to_year": 2013,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e4",
+        "relationship_type": "WON",
+        "description": "Sebastian Vettel was named the BBC Overseas Sports Personality of the Year in 2013.",
+        "from_year": 2013,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e5",
+        "relationship_type": "WON",
+        "description": "Sebastian Vettel was named Sportsman of the Year at the 2014 Laureus World Sports Awards.",
+        "from_year": 2014,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e6",
+        "relationship_type": "WON",
+        "description": "Sebastian Vettel received the Confartigianato Motori Award for Driver of the Year in 2015.",
+        "from_year": 2015,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

@@ -1,0 +1,166 @@
+{
+  "chunk_id": "driver-valtteri-bottas#4",
+  "doc_id": "driver-valtteri-bottas",
+  "document_title": "Valtteri Bottas",
+  "section": null,
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/Valtteri_Bottas",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "cd8b1f465c54edd3caaa0a23e5f46a287ee558f9f7ae9b7ce5f6bf8f83371283",
+  "status": "error",
+  "error": "ExtractionValidationError: FIELDED does not allow Team -> GrandPrix",
+  "candidate_result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Valtteri Bottas",
+        "entity_type": "Driver",
+        "description": "He took his final win for Mercedes at the Turkish Grand Prix in 2021, leaving at the end of the season after contributing to five consecutive World Constructors' Championships. He joined Alfa Romeo in 2022, retaining his seat for his 2023 campaign. After a non-scoring 2024 season at the re-branded Sauber, Bottas returned to Mercedes as a reserve driver. He became a full-time driver again for the 2026 season, driving for Cadillac."
+      },
+      {
+        "local_id": "e2",
+        "name": "Mercedes",
+        "entity_type": "Team",
+        "description": "Team Bottas drove for until the end of the 2021 season."
+      },
+      {
+        "local_id": "e3",
+        "name": "Turkish Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The race where Bottas took his final win for Mercedes in 2021."
+      },
+      {
+        "local_id": "e4",
+        "name": "Alfa Romeo",
+        "entity_type": "Team",
+        "description": "Team Bottas joined in 2022."
+      },
+      {
+        "local_id": "e5",
+        "name": "Sauber",
+        "entity_type": "Team",
+        "description": "The re-branded team Bottas raced for in the 2024 season."
+      },
+      {
+        "local_id": "e6",
+        "name": "Cadillac",
+        "entity_type": "Team",
+        "description": "Team Bottas became a full-time driver for in the 2026 season."
+      },
+      {
+        "local_id": "e7",
+        "name": "2021",
+        "entity_type": "Season",
+        "description": "The season Bottas took his final win for Mercedes."
+      },
+      {
+        "local_id": "e8",
+        "name": "2022",
+        "entity_type": "Season",
+        "description": "The season Bottas joined Alfa Romeo."
+      },
+      {
+        "local_id": "e9",
+        "name": "2023",
+        "entity_type": "Season",
+        "description": "The season Bottas retained his seat at Alfa Romeo."
+      },
+      {
+        "local_id": "e10",
+        "name": "2024",
+        "entity_type": "Season",
+        "description": "The non-scoring season Bottas had at Sauber."
+      },
+      {
+        "local_id": "e11",
+        "name": "2026",
+        "entity_type": "Season",
+        "description": "The season Bottas became a full-time driver for Cadillac."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e2",
+        "target_id": "e3",
+        "relationship_type": "FIELDED",
+        "description": "Mercedes entered the Turkish Grand Prix in 2021.",
+        "from_year": 2021,
+        "to_year": 2021,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Bottas drove for Mercedes until the end of the 2021 season.",
+        "from_year": null,
+        "to_year": 2021,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e4",
+        "relationship_type": "DROVE_FOR",
+        "description": "Bottas joined Alfa Romeo in 2022.",
+        "from_year": 2022,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e5",
+        "relationship_type": "DROVE_FOR",
+        "description": "Bottas raced for Sauber in the 2024 season.",
+        "from_year": 2024,
+        "to_year": 2024,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e6",
+        "relationship_type": "DROVE_FOR",
+        "description": "Bottas became a full-time driver for Cadillac in the 2026 season.",
+        "from_year": 2026,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e8",
+        "relationship_type": "ENTERED",
+        "description": "Alfa Romeo took part in the 2022 season.",
+        "from_year": 2022,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e10",
+        "relationship_type": "ENTERED",
+        "description": "Sauber took part in the 2024 season.",
+        "from_year": 2024,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e6",
+        "target_id": "e11",
+        "relationship_type": "ENTERED",
+        "description": "Cadillac took part in the 2026 season.",
+        "from_year": 2026,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e7",
+        "relationship_type": "ROUND_OF",
+        "description": "The Turkish Grand Prix is a round of the 2021 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

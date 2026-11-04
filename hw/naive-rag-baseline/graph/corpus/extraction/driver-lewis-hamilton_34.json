@@ -1,0 +1,135 @@
+{
+  "chunk_id": "driver-lewis-hamilton#34",
+  "doc_id": "driver-lewis-hamilton",
+  "document_title": "Lewis Hamilton",
+  "section": null,
+  "page": 3,
+  "source": "https://en.wikipedia.org/wiki/Lewis_Hamilton",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "7c64c789bdc4c0aa1ad10f2030e92bd7c367cfa469ce1976c0015ee15320c9f3",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Lewis Hamilton",
+        "entity_type": "Driver",
+        "description": "A driver who engaged in a four-way title battle with Alonso, Sebastian Vettel, and Mark Webber throughout the season."
+      },
+      {
+        "local_id": "e2",
+        "name": "McLaren",
+        "entity_type": "Team",
+        "description": "The team for which Lewis Hamilton secured the only pole position at the Canadian Grand Prix."
+      },
+      {
+        "local_id": "e3",
+        "name": "Canadian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A race where Hamilton secured McLaren's only pole position."
+      },
+      {
+        "local_id": "e4",
+        "name": "null",
+        "entity_type": "Season",
+        "description": "The season in which Hamilton engaged in a four-way title battle."
+      },
+      {
+        "local_id": "e5",
+        "name": "Red Bull",
+        "entity_type": "Team",
+        "description": "One of the teams Hamilton was competing against in the title battle."
+      },
+      {
+        "local_id": "e6",
+        "name": "Ferrari",
+        "entity_type": "Team",
+        "description": "One of the teams Hamilton was competing against in the title battle."
+      },
+      {
+        "local_id": "e7",
+        "name": "Alonso",
+        "entity_type": "Driver",
+        "description": "One of the drivers Hamilton was in a title battle with."
+      },
+      {
+        "local_id": "e8",
+        "name": "Sebastian Vettel",
+        "entity_type": "Driver",
+        "description": "One of the drivers Hamilton was in a title battle with."
+      },
+      {
+        "local_id": "e9",
+        "name": "Mark Webber",
+        "entity_type": "Driver",
+        "description": "One of the drivers Hamilton was in a title battle with."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Hamilton drove for McLaren.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e4",
+        "relationship_type": "ROUND_OF",
+        "description": "The Canadian Grand Prix is a round of the season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e4",
+        "relationship_type": "ENTERED",
+        "description": "Red Bull entered the season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e6",
+        "target_id": "e4",
+        "relationship_type": "ENTERED",
+        "description": "Ferrari entered the season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e7",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Hamilton was in a title battle with Alonso.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e8",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Hamilton was in a title battle with Sebastian Vettel.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e9",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Hamilton was in a title battle with Mark Webber.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}
