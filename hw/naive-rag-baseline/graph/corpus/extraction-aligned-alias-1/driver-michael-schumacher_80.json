@@ -1,0 +1,58 @@
+{
+  "chunk_id": "driver-michael-schumacher#80",
+  "doc_id": "driver-michael-schumacher",
+  "document_title": "Michael Schumacher",
+  "section": null,
+  "page": 7,
+  "source": "https://en.wikipedia.org/wiki/Michael_Schumacher",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "112ac4a3574746147ac967470663fbee10e8a94468d05a1cf447e900016c9ac9",
+  "validation_version": "partial-1",
+  "source_status": "ok",
+  "status": "ok",
+  "rejections": [],
+  "alignments": [],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Michael Schumacher",
+        "entity_type": "Driver",
+        "description": "A Formula One driver who won the drivers' title for the sixth time in 2003."
+      },
+      {
+        "local_id": "e2",
+        "name": "2003",
+        "entity_type": "Season",
+        "description": "The season in which Michael Schumacher won his sixth Drivers' Championship."
+      },
+      {
+        "local_id": "e3",
+        "name": "Drivers' Championship",
+        "entity_type": "Title",
+        "description": "The championship title won by Michael Schumacher in 2003."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e3",
+        "relationship_type": "WON",
+        "description": "Michael Schumacher won the Drivers' Championship title.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e2",
+        "relationship_type": "AWARDED_IN",
+        "description": "The Drivers' Championship title was awarded in the 2003 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

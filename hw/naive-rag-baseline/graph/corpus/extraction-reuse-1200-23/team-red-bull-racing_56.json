@@ -1,0 +1,54 @@
+{
+  "chunk_id": "team-red-bull-racing#56",
+  "doc_id": "team-red-bull-racing",
+  "document_title": "Red Bull Racing",
+  "section": "2020 season",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "2ff8277273a1a203585cb257a1639cf80cfbe463e9e03d3d052dc4dee00d076c",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Max Verstappen",
+        "entity_type": "Driver",
+        "description": "Verstappen managed to finish in the podium every race but three."
+      },
+      {
+        "local_id": "e2",
+        "name": "Alexander Albon",
+        "entity_type": "Driver",
+        "description": "Albon finished with one more podium than Verstappen."
+      },
+      {
+        "local_id": "e3",
+        "name": "2020",
+        "entity_type": "Season",
+        "description": "The season in which Verstappen and Albon raced."
+      }
+    ],
+    "relationships": []
+  },
+  "entity_candidates": 3,
+  "entities_accepted": 3,
+  "entities_rejected": 0,
+  "relationship_candidates": 2,
+  "relationships_accepted": 0,
+  "relationships_rejected": 2,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "RACED_IN does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "RACED_IN does not allow Driver -> Season"
+    }
+  ],
+  "alignments": []
+}

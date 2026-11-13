@@ -1,0 +1,64 @@
+{
+  "chunk_id": "driver-lewis-hamilton#31",
+  "doc_id": "driver-lewis-hamilton",
+  "document_title": "Lewis Hamilton",
+  "section": null,
+  "page": 3,
+  "source": "https://en.wikipedia.org/wiki/Lewis_Hamilton",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "d2264ed19c7faab4a3340fb063e12e46db4ec152cd37b209954a6e0ace983f66",
+  "validation_version": "partial-1",
+  "source_status": "ok",
+  "status": "ok",
+  "rejections": [],
+  "alignments": [],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Lewis Hamilton",
+        "entity_type": "Driver",
+        "description": "then-youngest World Drivers' Champion, and deny race-winner Massa the title by one point. Hamilton also became the first British driver to win the World Drivers' Championship since Damon Hill in 1996."
+      },
+      {
+        "local_id": "e2",
+        "name": "McLaren",
+        "entity_type": "Team",
+        "description": "Hamilton's team during his final years with McLaren."
+      },
+      {
+        "local_id": "e3",
+        "name": "World Drivers' Championship",
+        "entity_type": "Title",
+        "description": "Hamilton won the World Drivers' Championship."
+      },
+      {
+        "local_id": "e4",
+        "name": "2009–2012",
+        "entity_type": "Season",
+        "description": "Period of Hamilton's unsuccessful title bids and departure from McLaren."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e3",
+        "relationship_type": "WON",
+        "description": "Hamilton won the World Drivers' Championship.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e4",
+        "relationship_type": "ENTERED",
+        "description": "McLaren took part in the 2009–2012 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

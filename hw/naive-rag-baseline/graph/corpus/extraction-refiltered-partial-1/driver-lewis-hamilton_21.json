@@ -1,0 +1,69 @@
+{
+  "chunk_id": "driver-lewis-hamilton#21",
+  "doc_id": "driver-lewis-hamilton",
+  "document_title": "Lewis Hamilton",
+  "section": null,
+  "page": 2,
+  "source": "https://en.wikipedia.org/wiki/Lewis_Hamilton",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "02d6a71469b496bd916686bb47f71fd7e27dff8c2f9f67dee080fd8db1a0c97e",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "RACED_IN does not allow Circuit -> Driver"
+    }
+  ],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Lewis Hamilton",
+        "entity_type": "Driver",
+        "description": "A British racing driver currently competing in Formula One."
+      },
+      {
+        "local_id": "e2",
+        "name": "McLaren",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that has entered cars in various seasons."
+      },
+      {
+        "local_id": "e3",
+        "name": "2005",
+        "entity_type": "Season",
+        "description": "A Formula One championship season."
+      },
+      {
+        "local_id": "e4",
+        "name": "Silverstone",
+        "entity_type": "Circuit",
+        "description": "A racing venue in the United Kingdom."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Lewis Hamilton re-signed with McLaren after initially being advised to stay in Formula 3.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e3",
+        "relationship_type": "ENTERED",
+        "description": "McLaren entered the 2005 Formula One season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

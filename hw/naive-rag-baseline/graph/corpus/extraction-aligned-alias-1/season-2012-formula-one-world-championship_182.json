@@ -1,0 +1,164 @@
+{
+  "chunk_id": "season-2012-formula-one-world-championship#182",
+  "doc_id": "season-2012-formula-one-world-championship",
+  "document_title": "2012 Formula One World Championship",
+  "section": "Race summaries > Round 17 – India Buddh International Circuit",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/2012_Formula_One_World_Championship",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "1cef9326ef1fb026c3699b9ff73a4b8d200ce4cd62e7f56f70db8d50bff55c14",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "rejections": [],
+  "alignments": [
+    {
+      "index": 2,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e5; description kept"
+    },
+    {
+      "index": 3,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr2 -AT_RACE-> e5; description kept"
+    },
+    {
+      "index": 4,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr3 -AT_RACE-> e5; description kept"
+    }
+  ],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Sebastian Vettel",
+        "entity_type": "Driver",
+        "description": "Dominated the weekend, setting the fastest time in every practice session before qualifying on pole, and leading every lap of the race."
+      },
+      {
+        "local_id": "e2",
+        "name": "Jenson Button",
+        "entity_type": "Driver",
+        "description": "Set the fastest lap of the race on the final lap."
+      },
+      {
+        "local_id": "e3",
+        "name": "Fernando Alonso",
+        "entity_type": "Driver",
+        "description": "Finished second, conceding another seven championship points to Vettel."
+      },
+      {
+        "local_id": "e4",
+        "name": "2012 Formula One World Championship",
+        "entity_type": "Season",
+        "description": "The championship season in which the race took place."
+      },
+      {
+        "local_id": "e5",
+        "name": "Indian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The race held at the Buddh International Circuit."
+      },
+      {
+        "local_id": "e6",
+        "name": "Buddh International Circuit",
+        "entity_type": "Circuit",
+        "description": "The circuit where the Indian Grand Prix was held."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Sebastian Vettel at Indian Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Sebastian Vettel achieved a result in the Indian Grand Prix."
+      },
+      {
+        "local_id": "rr2",
+        "name": "Jenson Button at Indian Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Jenson Button achieved a result in the Indian Grand Prix."
+      },
+      {
+        "local_id": "rr3",
+        "name": "Fernando Alonso at Indian Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Fernando Alonso achieved a result in the Indian Grand Prix."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e5",
+        "target_id": "e4",
+        "relationship_type": "ROUND_OF",
+        "description": "The Indian Grand Prix is a round of the 2012 Formula One World Championship.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e6",
+        "relationship_type": "HELD_AT",
+        "description": "The Indian Grand Prix is held at the Buddh International Circuit.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Sebastian Vettel achieved a result in the Indian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e5",
+        "relationship_type": "AT_RACE",
+        "description": "Sebastian Vettel achieved a result in the Indian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "rr2",
+        "relationship_type": "ACHIEVED",
+        "description": "Jenson Button achieved a result in the Indian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr2",
+        "target_id": "e5",
+        "relationship_type": "AT_RACE",
+        "description": "Jenson Button achieved a result in the Indian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "rr3",
+        "relationship_type": "ACHIEVED",
+        "description": "Fernando Alonso achieved a result in the Indian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr3",
+        "target_id": "e5",
+        "relationship_type": "AT_RACE",
+        "description": "Fernando Alonso achieved a result in the Indian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

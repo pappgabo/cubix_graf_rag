@@ -1,0 +1,68 @@
+{
+  "chunk_id": "driver-fernando-alonso#3",
+  "doc_id": "driver-fernando-alonso",
+  "document_title": "Fernando Alonso",
+  "section": null,
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "2f41f352ea1fd953781ac9221655bf0f4b316c753f59fd32f3696981f6b50957",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Fernando Alonso",
+        "entity_type": "Driver",
+        "description": "Alonso has achieved 32 race wins, 22 pole positions, 26 fastest laps, and 106 podiums in Formula One. He is contracted to remain at Aston Martin until at least the end of the 2027 season."
+      },
+      {
+        "local_id": "e2",
+        "name": "Aston Martin",
+        "entity_type": "Team",
+        "description": "Alonso is contracted to remain at Aston Martin until at least the end of the 2027 season."
+      },
+      {
+        "local_id": "e3",
+        "name": "2026",
+        "entity_type": "Season",
+        "description": "As of the 2026 Bahrain Grand Prix."
+      },
+      {
+        "local_id": "e4",
+        "name": "Bahrain Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "As of the 2026 Bahrain Grand Prix."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Alonso is contracted to remain at Aston Martin until at least the end of the 2027 season.",
+        "from_year": null,
+        "to_year": 2027,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e3",
+        "relationship_type": "ROUND_OF",
+        "description": "The Bahrain Grand Prix is a round of the 2026 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 4,
+  "entities_accepted": 4,
+  "entities_rejected": 0,
+  "relationship_candidates": 2,
+  "relationships_accepted": 2,
+  "relationships_rejected": 0,
+  "rejections": [],
+  "alignments": []
+}

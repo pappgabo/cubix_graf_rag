@@ -1,0 +1,106 @@
+{
+  "chunk_id": "driver-fernando-alonso#57",
+  "doc_id": "driver-fernando-alonso",
+  "document_title": "Fernando Alonso",
+  "section": "Endorsements and philanthropy",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "220c4a6c0bf4a58a4ce5b4e602752d05969708bbaa7b4e66a519a426a84bac3a",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Fernando Alonso",
+        "entity_type": "Driver",
+        "description": "A Spanish racing driver who has competed in Formula One."
+      },
+      {
+        "local_id": "e2",
+        "name": "FA Racing G2 Logitech G",
+        "entity_type": "Team",
+        "description": "An eSports racing team established by Fernando Alonso."
+      },
+      {
+        "local_id": "e3",
+        "name": "FA Racing",
+        "entity_type": "Team",
+        "description": "A racing team associated with Fernando Alonso."
+      },
+      {
+        "local_id": "e4",
+        "name": "Veloce Esports",
+        "entity_type": "Team",
+        "description": "A partner team with FA Racing in eSports."
+      },
+      {
+        "local_id": "e5",
+        "name": "F4 Spanish Championship",
+        "entity_type": "Car",
+        "description": "A racing championship in which Alonso's team has competed."
+      },
+      {
+        "local_id": "e6",
+        "name": "Formula Renault Eurocup",
+        "entity_type": "Car",
+        "description": "A racing championship in which Alonso's team has competed."
+      },
+      {
+        "local_id": "e7",
+        "name": "Fundación Fernando Alonso",
+        "entity_type": "Team",
+        "description": "A foundation established by Fernando Alonso to promote motor racing and road safety education."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Fernando Alonso established and was team principal of FA Racing G2 Logitech G eSports racing team.",
+        "from_year": 2017,
+        "to_year": 2018,
+        "role": "team principal"
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e3",
+        "relationship_type": "DROVE_FOR",
+        "description": "Fernando Alonso's team FA Racing partnered with Veloce Esports in March 2019.",
+        "from_year": 2019,
+        "to_year": null,
+        "role": "team principal"
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e7",
+        "relationship_type": "DROVE_FOR",
+        "description": "Fernando Alonso founded the Fundación Fernando Alonso in 2007.",
+        "from_year": 2007,
+        "to_year": null,
+        "role": "founder"
+      }
+    ]
+  },
+  "entity_candidates": 7,
+  "entities_accepted": 7,
+  "entities_rejected": 0,
+  "relationship_candidates": 5,
+  "relationships_accepted": 3,
+  "relationships_rejected": 2,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "FIELDED does not allow Driver -> Car"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "FIELDED does not allow Driver -> Car"
+    }
+  ],
+  "alignments": []
+}

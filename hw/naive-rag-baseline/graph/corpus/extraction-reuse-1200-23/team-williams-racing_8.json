@@ -1,0 +1,289 @@
+{
+  "chunk_id": "team-williams-racing#8",
+  "doc_id": "team-williams-racing",
+  "document_title": "Williams Racing",
+  "section": "Williams Racing > 1980 season",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "e8c0290e1a7674d4276871e06d54207dc3cea0e802c734313fff720a7513dd44",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Carlos Reutemann",
+        "entity_type": "Driver",
+        "description": "Replaced Regazzoni at Williams for the 1980 season."
+      },
+      {
+        "local_id": "e2",
+        "name": "Alan Jones",
+        "entity_type": "Driver",
+        "description": "Won the Drivers' Championship in 1980."
+      },
+      {
+        "local_id": "e3",
+        "name": "Williams",
+        "entity_type": "Team",
+        "description": "Formula 1 team that competed in the 1980 season."
+      },
+      {
+        "local_id": "e4",
+        "name": "1980",
+        "entity_type": "Season",
+        "description": "The championship year in which Williams competed."
+      },
+      {
+        "local_id": "e5",
+        "name": "Argentina",
+        "entity_type": "GrandPrix",
+        "description": "Location of the first race of the 1980 season."
+      },
+      {
+        "local_id": "e6",
+        "name": "French Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "One of the races won by Alan Jones in the 1980 season."
+      },
+      {
+        "local_id": "e7",
+        "name": "British Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "One of the races won by Alan Jones in the 1980 season."
+      },
+      {
+        "local_id": "e8",
+        "name": "Canadian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "One of the races won by Alan Jones in the 1980 season."
+      },
+      {
+        "local_id": "e9",
+        "name": "United States Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The last race of the 1980 season won by Alan Jones."
+      },
+      {
+        "local_id": "e10",
+        "name": "Brabham",
+        "entity_type": "Team",
+        "description": "Team of Nelson Piquet, who finished second to Alan Jones in the 1980 championship."
+      },
+      {
+        "local_id": "e11",
+        "name": "Ligier",
+        "entity_type": "Team",
+        "description": "Second-placed team in the Constructors' Championship in 1980."
+      },
+      {
+        "local_id": "e12",
+        "name": "Drivers' Championship",
+        "entity_type": "Title",
+        "description": "Championship title won by Alan Jones in 1980."
+      },
+      {
+        "local_id": "e13",
+        "name": "Constructors' Championship",
+        "entity_type": "Title",
+        "description": "Championship title won by Williams in 1980."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e3",
+        "relationship_type": "DROVE_FOR",
+        "description": "Carlos Reutemann replaced Regazzoni at Williams for the 1980 season.",
+        "from_year": 1980,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e3",
+        "relationship_type": "DROVE_FOR",
+        "description": "Alan Jones drove for Williams in the 1980 season.",
+        "from_year": 1980,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e12",
+        "relationship_type": "WON",
+        "description": "Alan Jones won the Drivers' Championship in 1980.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e12",
+        "target_id": "e4",
+        "relationship_type": "AWARDED_IN",
+        "description": "Alan Jones won the Drivers' Championship in 1980.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e13",
+        "relationship_type": "WON",
+        "description": "Williams won the Constructors' Championship in 1980.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e13",
+        "target_id": "e4",
+        "relationship_type": "AWARDED_IN",
+        "description": "Williams won the Constructors' Championship in 1980.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e4",
+        "relationship_type": "ENTERED",
+        "description": "Williams entered the 1980 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e4",
+        "relationship_type": "ROUND_OF",
+        "description": "The Argentine Grand Prix is a round of the 1980 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e6",
+        "target_id": "e4",
+        "relationship_type": "ROUND_OF",
+        "description": "The French Grand Prix is a round of the 1980 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e7",
+        "target_id": "e4",
+        "relationship_type": "ROUND_OF",
+        "description": "The British Grand Prix is a round of the 1980 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e8",
+        "target_id": "e4",
+        "relationship_type": "ROUND_OF",
+        "description": "The Canadian Grand Prix is a round of the 1980 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e9",
+        "target_id": "e4",
+        "relationship_type": "ROUND_OF",
+        "description": "The United States Grand Prix is a round of the 1980 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 13,
+  "entities_accepted": 13,
+  "entities_rejected": 0,
+  "relationship_candidates": 17,
+  "relationships_accepted": 12,
+  "relationships_rejected": 7,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "ACHIEVED Driver -> GrandPrix has from_year=1980, to_year=None, role=None; the year or role cannot be stored on the reified result"
+    },
+    {
+      "element": "relationship",
+      "index": 5,
+      "reason": "ACHIEVED Driver -> GrandPrix has from_year=1980, to_year=None, role=None; the year or role cannot be stored on the reified result"
+    },
+    {
+      "element": "relationship",
+      "index": 6,
+      "reason": "ACHIEVED Driver -> GrandPrix has from_year=1980, to_year=None, role=None; the year or role cannot be stored on the reified result"
+    },
+    {
+      "element": "relationship",
+      "index": 7,
+      "reason": "ACHIEVED Driver -> GrandPrix has from_year=1980, to_year=None, role=None; the year or role cannot be stored on the reified result"
+    },
+    {
+      "element": "relationship",
+      "index": 8,
+      "reason": "ACHIEVED Driver -> GrandPrix has from_year=1980, to_year=None, role=None; the year or role cannot be stored on the reified result"
+    },
+    {
+      "element": "relationship",
+      "index": 12,
+      "reason": "ROUND_OF does not allow Team -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 13,
+      "reason": "ROUND_OF does not allow Team -> Season"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 2,
+      "action": "move_won_year",
+      "detail": "WON year 1980 stored as e12 -AWARDED_IN-> e4; from_year and to_year cleared; description kept"
+    },
+    {
+      "index": 3,
+      "action": "move_won_year",
+      "detail": "WON year 1980 stored as e13 -AWARDED_IN-> e4; from_year and to_year cleared; description kept"
+    },
+    {
+      "index": 9,
+      "action": "clear_redundant_season_year",
+      "detail": "ENTERED year 1980 already named by Season 'e4'; from_year and to_year cleared"
+    },
+    {
+      "index": 10,
+      "action": "clear_redundant_season_year",
+      "detail": "ROUND_OF year 1980 already named by Season 'e4'; from_year and to_year cleared"
+    },
+    {
+      "index": 11,
+      "action": "clear_redundant_season_year",
+      "detail": "ROUND_OF year 1980 already named by Season 'e4'; from_year and to_year cleared"
+    },
+    {
+      "index": 12,
+      "action": "clear_redundant_season_year",
+      "detail": "ROUND_OF year 1980 already named by Season 'e4'; from_year and to_year cleared"
+    },
+    {
+      "index": 13,
+      "action": "clear_redundant_season_year",
+      "detail": "ROUND_OF year 1980 already named by Season 'e4'; from_year and to_year cleared"
+    },
+    {
+      "index": 14,
+      "action": "clear_redundant_season_year",
+      "detail": "ROUND_OF year 1980 already named by Season 'e4'; from_year and to_year cleared"
+    }
+  ]
+}

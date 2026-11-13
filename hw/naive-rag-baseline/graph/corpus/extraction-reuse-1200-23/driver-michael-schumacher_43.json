@@ -1,0 +1,136 @@
+{
+  "chunk_id": "driver-michael-schumacher#43",
+  "doc_id": "driver-michael-schumacher",
+  "document_title": "Michael Schumacher",
+  "section": null,
+  "page": 9,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "70be9ce41158065d7c9f7e1c88276ec11662d517b9d479a384f0dc92f20bab47",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Michael Schumacher",
+        "entity_type": "Driver",
+        "description": "A German racing driver who competed in Formula One."
+      },
+      {
+        "local_id": "e2",
+        "name": "Scuderia Ferrari",
+        "entity_type": "Team",
+        "description": "An Italian Formula One team."
+      },
+      {
+        "local_id": "e3",
+        "name": "Mercedes-AMG Petronas Formula One Team",
+        "entity_type": "Team",
+        "description": "A Formula One team that Schumacher joined for the 2010 season."
+      },
+      {
+        "local_id": "e4",
+        "name": "F2007",
+        "entity_type": "Car",
+        "description": "A car model fielded by Ferrari."
+      },
+      {
+        "local_id": "e5",
+        "name": "F60",
+        "entity_type": "Car",
+        "description": "A car model that Schumacher was unable to test."
+      },
+      {
+        "local_id": "e6",
+        "name": "2010",
+        "entity_type": "Season",
+        "description": "The Formula One season in which Schumacher returned."
+      },
+      {
+        "local_id": "e7",
+        "name": "Nico Rosberg",
+        "entity_type": "Driver",
+        "description": "A German racing driver and Schumacher's teammate at Mercedes GP."
+      },
+      {
+        "local_id": "e8",
+        "name": "European Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula One race where Schumacher was planned to race."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Schumacher drove for Ferrari before his return to Formula One.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e3",
+        "relationship_type": "DROVE_FOR",
+        "description": "Schumacher drove for Mercedes GP starting in the 2010 season.",
+        "from_year": 2010,
+        "to_year": 2012,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e6",
+        "relationship_type": "ENTERED",
+        "description": "Mercedes GP entered the 2010 Formula One season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e8",
+        "target_id": "e6",
+        "relationship_type": "ROUND_OF",
+        "description": "The European Grand Prix was a round of the 2010 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e4",
+        "relationship_type": "FIELDED",
+        "description": "Ferrari fielded the F2007 car.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 8,
+  "entities_accepted": 8,
+  "entities_rejected": 0,
+  "relationship_candidates": 7,
+  "relationships_accepted": 5,
+  "relationships_rejected": 2,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "TEAMMATE_OF does not allow Team -> Driver"
+    },
+    {
+      "element": "relationship",
+      "index": 6,
+      "reason": "POWERED_BY does not allow Driver -> Car"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 2,
+      "action": "clear_redundant_season_year",
+      "detail": "ENTERED year 2010 already named by Season 'e6'; from_year and to_year cleared"
+    }
+  ]
+}

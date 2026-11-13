@@ -1,0 +1,55 @@
+{
+  "chunk_id": "driver-michael-schumacher#119",
+  "doc_id": "driver-michael-schumacher",
+  "document_title": "Michael Schumacher",
+  "section": null,
+  "page": 10,
+  "source": "https://en.wikipedia.org/wiki/Michael_Schumacher",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "bd785bd451be4a4ec50f182eec9fa2d55d891ab5a509033473db426e9605ec78",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "ACHIEVED does not allow Driver -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "ACHIEVED does not allow Driver -> GrandPrix"
+    }
+  ],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Michael Schumacher",
+        "entity_type": "Driver",
+        "description": "A Formula One driver known for his record achievements."
+      },
+      {
+        "local_id": "e2",
+        "name": "European Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula One race held in Europe."
+      },
+      {
+        "local_id": "e3",
+        "name": "German Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula One race held in Germany."
+      },
+      {
+        "local_id": "e4",
+        "name": "Belgian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula One race held in Belgium."
+      }
+    ],
+    "relationships": []
+  }
+}

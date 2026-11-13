@@ -1,0 +1,196 @@
+{
+  "chunk_id": "season-2021-formula-one-world-championship#30",
+  "doc_id": "season-2021-formula-one-world-championship",
+  "document_title": "2021 Formula One World Championship",
+  "section": null,
+  "page": 7,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "05046db6f5ea89a4a0107ef75e88a5fd7939a7813987e8bcc3e940e72cdfd374",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Lewis Hamilton",
+        "entity_type": "Driver",
+        "description": "A driver who finished first in the race."
+      },
+      {
+        "local_id": "e2",
+        "name": "Leclerc",
+        "entity_type": "Driver",
+        "description": "A driver who finished second in the race."
+      },
+      {
+        "local_id": "e3",
+        "name": "Norris",
+        "entity_type": "Driver",
+        "description": "A driver involved in a collision during the race."
+      },
+      {
+        "local_id": "e4",
+        "name": "Bottas",
+        "entity_type": "Driver",
+        "description": "A driver who caused a collision and was eliminated from the race."
+      },
+      {
+        "local_id": "e5",
+        "name": "Pérez",
+        "entity_type": "Driver",
+        "description": "A driver who was eliminated from the race."
+      },
+      {
+        "local_id": "e6",
+        "name": "Lance Stroll",
+        "entity_type": "Driver",
+        "description": "A driver who was eliminated from the race."
+      },
+      {
+        "local_id": "e7",
+        "name": "Ocon",
+        "entity_type": "Driver",
+        "description": "A driver who was in second place during the race."
+      },
+      {
+        "local_id": "e8",
+        "name": "Sebastian Vettel",
+        "entity_type": "Driver",
+        "description": "A driver who was in third place during the race."
+      },
+      {
+        "local_id": "e9",
+        "name": "Verstappen",
+        "entity_type": "Driver",
+        "description": "The championship leader who was in 13th place after acquiring damage."
+      },
+      {
+        "local_id": "e10",
+        "name": "Hungarian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A race where multiple collisions occurred."
+      },
+      {
+        "local_id": "e11",
+        "name": "2021",
+        "entity_type": "Season",
+        "description": "The championship year."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Hamilton at Hungarian Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Hamilton finished first in the Hungarian Grand Prix."
+      },
+      {
+        "local_id": "rr2",
+        "name": "Leclerc at Hungarian Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Leclerc finished second in the Hungarian Grand Prix."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Hamilton finished first in the Hungarian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e10",
+        "relationship_type": "AT_RACE",
+        "description": "Hamilton finished first in the Hungarian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "rr2",
+        "relationship_type": "ACHIEVED",
+        "description": "Leclerc finished second in the Hungarian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr2",
+        "target_id": "e10",
+        "relationship_type": "AT_RACE",
+        "description": "Leclerc finished second in the Hungarian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e10",
+        "target_id": "e11",
+        "relationship_type": "ROUND_OF",
+        "description": "The Hungarian Grand Prix is a round of the 2021 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 11,
+  "entities_accepted": 13,
+  "entities_rejected": 0,
+  "relationship_candidates": 10,
+  "relationships_accepted": 5,
+  "relationships_rejected": 7,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "FOR_TEAM does not allow Driver -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 5,
+      "reason": "FOR_TEAM does not allow Driver -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 6,
+      "reason": "FOR_TEAM does not allow Driver -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 7,
+      "reason": "FOR_TEAM does not allow Driver -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 8,
+      "reason": "FOR_TEAM does not allow Driver -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 9,
+      "reason": "FOR_TEAM does not allow Driver -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 10,
+      "reason": "FOR_TEAM does not allow Driver -> GrandPrix"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 0,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e10; description kept"
+    },
+    {
+      "index": 1,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr2 -AT_RACE-> e10; description kept"
+    }
+  ]
+}

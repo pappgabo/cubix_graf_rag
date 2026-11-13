@@ -1,0 +1,179 @@
+{
+  "chunk_id": "driver-nico-rosberg#51",
+  "doc_id": "driver-nico-rosberg",
+  "document_title": "Nico Rosberg",
+  "section": "Nico Rosberg > 2008–2009",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/Nico_Rosberg",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "2df4b9156b8d789a24449b9bf9cbf4c0100715b03b9f7f2a6218be8c68d77cce",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "entity_candidates": 5,
+  "entities_accepted": 8,
+  "entities_rejected": 0,
+  "relationship_candidates": 7,
+  "relationships_accepted": 9,
+  "relationships_rejected": 1,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "RACED_IN does not allow Driver -> Season"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 1,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e3; description kept"
+    },
+    {
+      "index": 2,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr2 -AT_RACE-> e4; description kept"
+    },
+    {
+      "index": 3,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr3 -AT_RACE-> e5; description kept"
+    }
+  ],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Nico Rosberg",
+        "entity_type": "Driver",
+        "description": "A Formula One driver who finished 16 of 17 rounds in the 2008 season."
+      },
+      {
+        "local_id": "e2",
+        "name": "2008",
+        "entity_type": "Season",
+        "description": "The Formula One season in which Nico Rosberg finished seventh in the World Drivers' Championship."
+      },
+      {
+        "local_id": "e3",
+        "name": "Brazilian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Grand Prix that was the exception where Nico Rosberg did not finish."
+      },
+      {
+        "local_id": "e4",
+        "name": "German Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The Grand Prix where Nico Rosberg achieved a season-best result of fourth."
+      },
+      {
+        "local_id": "e5",
+        "name": "Hungarian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The Grand Prix where Nico Rosberg achieved a season-best result of fourth."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Nico Rosberg at Brazilian Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Nico Rosberg did not finish the Brazilian Grand Prix."
+      },
+      {
+        "local_id": "rr2",
+        "name": "Nico Rosberg at German Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Nico Rosberg achieved a season-best result of fourth at the German Grand Prix."
+      },
+      {
+        "local_id": "rr3",
+        "name": "Nico Rosberg at Hungarian Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Nico Rosberg achieved a season-best result of fourth at the Hungarian Grand Prix."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Nico Rosberg did not finish the Brazilian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e3",
+        "relationship_type": "AT_RACE",
+        "description": "Nico Rosberg did not finish the Brazilian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr2",
+        "relationship_type": "ACHIEVED",
+        "description": "Nico Rosberg achieved a season-best result of fourth at the German Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr2",
+        "target_id": "e4",
+        "relationship_type": "AT_RACE",
+        "description": "Nico Rosberg achieved a season-best result of fourth at the German Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr3",
+        "relationship_type": "ACHIEVED",
+        "description": "Nico Rosberg achieved a season-best result of fourth at the Hungarian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr3",
+        "target_id": "e5",
+        "relationship_type": "AT_RACE",
+        "description": "Nico Rosberg achieved a season-best result of fourth at the Hungarian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e2",
+        "relationship_type": "ROUND_OF",
+        "description": "The Brazilian Grand Prix is a round of the 2008 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e2",
+        "relationship_type": "ROUND_OF",
+        "description": "The German Grand Prix is a round of the 2008 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e2",
+        "relationship_type": "ROUND_OF",
+        "description": "The Hungarian Grand Prix is a round of the 2008 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

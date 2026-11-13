@@ -1,0 +1,111 @@
+{
+  "chunk_id": "reference-formula-one#21",
+  "doc_id": "reference-formula-one",
+  "document_title": "Formula One",
+  "section": "Formula One > Hybrid era",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "c216f34f6783e97f2328a3d08987f671269378a4b769117f80f89065c3c675c5",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Red Bull Racing",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that emerged as the dominant force after the rule shakeup."
+      },
+      {
+        "local_id": "e2",
+        "name": "Verstappen",
+        "entity_type": "Driver",
+        "description": "A driver who won the 2022 and 2023 Drivers' championships."
+      },
+      {
+        "local_id": "e3",
+        "name": "2022",
+        "entity_type": "Season",
+        "description": "A championship year in which Red Bull and Verstappen won titles."
+      },
+      {
+        "local_id": "e4",
+        "name": "2023",
+        "entity_type": "Season",
+        "description": "A championship year in which Red Bull and Verstappen won titles."
+      },
+      {
+        "local_id": "e5",
+        "name": "2020",
+        "entity_type": "Season",
+        "description": "A championship year affected by the COVID-19 pandemic."
+      },
+      {
+        "local_id": "e6",
+        "name": "2021",
+        "entity_type": "Season",
+        "description": "A championship year affected by the COVID-19 pandemic."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e5",
+        "relationship_type": "ENTERED",
+        "description": "Red Bull entered the 2020 season affected by the COVID-19 pandemic.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e6",
+        "relationship_type": "ENTERED",
+        "description": "Red Bull entered the 2021 season affected by the COVID-19 pandemic.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 6,
+  "entities_accepted": 6,
+  "entities_rejected": 0,
+  "relationship_candidates": 8,
+  "relationships_accepted": 2,
+  "relationships_rejected": 6,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "WON does not allow Team -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "WON does not allow Team -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "WON does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "WON does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 6,
+      "reason": "RACED_IN does not allow Season -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 7,
+      "reason": "RACED_IN does not allow Season -> Season"
+    }
+  ],
+  "alignments": []
+}

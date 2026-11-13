@@ -1,0 +1,54 @@
+{
+  "chunk_id": "reference-formula-one#33",
+  "doc_id": "reference-formula-one",
+  "document_title": "Formula One",
+  "section": "Formula One > Virtual Safety Car (VSC)",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "ef13347389eff7b686d9c880476ea5ecfa2f3e4aed3dbb4febf6d1be84f8e179",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Jules Bianchi",
+        "entity_type": "Driver",
+        "description": "A driver who had a fatal crash at the Japanese Grand Prix."
+      },
+      {
+        "local_id": "e2",
+        "name": "2014",
+        "entity_type": "Season",
+        "description": "The year when the FIA established an accident panel."
+      },
+      {
+        "local_id": "e3",
+        "name": "2015 Monaco Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The first Grand Prix where the Virtual Safety Car system was implemented."
+      }
+    ],
+    "relationships": []
+  },
+  "entity_candidates": 3,
+  "entities_accepted": 3,
+  "entities_rejected": 0,
+  "relationship_candidates": 2,
+  "relationships_accepted": 0,
+  "relationships_rejected": 2,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "ROUND_OF is not temporal; from_year=2015, to_year=None, role=None cannot be stored without dropping them"
+    },
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "WON does not allow Driver -> Season"
+    }
+  ],
+  "alignments": []
+}

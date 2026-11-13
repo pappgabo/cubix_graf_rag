@@ -1,0 +1,137 @@
+{
+  "chunk_id": "driver-fernando-alonso#43",
+  "doc_id": "driver-fernando-alonso",
+  "document_title": "Fernando Alonso",
+  "section": "IndyCar Series > McLaren Honda Andretti (2017)",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "bc1f3bba9b174e6557e1a678c4aa2a9f67759b1be18516db4f30083eb69dad55",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Fernando Alonso",
+        "entity_type": "Driver",
+        "description": "A driver who participated in the IndyCar Series."
+      },
+      {
+        "local_id": "e2",
+        "name": "McLaren Honda Andretti",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that entered cars."
+      },
+      {
+        "local_id": "e3",
+        "name": "2017",
+        "entity_type": "Season",
+        "description": "The season in which Alonso participated in the IndyCar Series."
+      },
+      {
+        "local_id": "e4",
+        "name": "Indianapolis 500",
+        "entity_type": "GrandPrix",
+        "description": "A race event in which Alonso participated."
+      },
+      {
+        "local_id": "e5",
+        "name": "Dallara DW12",
+        "entity_type": "Car",
+        "description": "The car model driven by Alonso."
+      },
+      {
+        "local_id": "e6",
+        "name": "Honda",
+        "entity_type": "PowerUnit",
+        "description": "The power unit used in Alonso's car."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Fernando Alonso at Indianapolis 500",
+        "entity_type": "RaceResult",
+        "description": "Fernando Alonso recorded a result in the Indianapolis 500."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e2",
+        "target_id": "e5",
+        "relationship_type": "FIELDED",
+        "description": "McLaren Honda Andretti entered the Dallara DW12 car.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e6",
+        "relationship_type": "POWERED_BY",
+        "description": "The Dallara DW12 car used a Honda power unit.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e3",
+        "relationship_type": "RACED_IN",
+        "description": "The Dallara DW12 car took part in the 2017 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e3",
+        "relationship_type": "ROUND_OF",
+        "description": "The Indianapolis 500 is a round of the 2017 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Fernando Alonso recorded a result in the Indianapolis 500.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e4",
+        "relationship_type": "AT_RACE",
+        "description": "Fernando Alonso recorded a result in the Indianapolis 500.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Fernando Alonso drove for McLaren Honda Andretti.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 6,
+  "entities_accepted": 7,
+  "entities_rejected": 0,
+  "relationship_candidates": 6,
+  "relationships_accepted": 7,
+  "relationships_rejected": 0,
+  "rejections": [],
+  "alignments": [
+    {
+      "index": 4,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e4; description kept"
+    }
+  ]
+}

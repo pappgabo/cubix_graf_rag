@@ -1,0 +1,69 @@
+{
+  "chunk_id": "team-mercedes-benz-in-formula-one#26",
+  "doc_id": "team-mercedes-benz-in-formula-one",
+  "document_title": "Mercedes-Benz in Formula One",
+  "section": "Mercedes-Benz in Formula One > Mercedes-AMG Petronas Formula One Team (2010–present)",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/Mercedes-Benz_in_Formula_One",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "f2bd7096b0794e6622357e26a84a1a2fa2019428a7c638a134be0c7bd3c443d1",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "ENTERED is not temporal; from_year, to_year and role must be null"
+    }
+  ],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Michael Schumacher",
+        "entity_type": "Driver",
+        "description": "A driver who raced for Mercedes-AMG Petronas Formula One Team."
+      },
+      {
+        "local_id": "e2",
+        "name": "Nico Rosberg",
+        "entity_type": "Driver",
+        "description": "A driver who raced for Mercedes-AMG Petronas Formula One Team."
+      },
+      {
+        "local_id": "e3",
+        "name": "Mercedes-AMG Petronas Formula One Team",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that entered cars."
+      },
+      {
+        "local_id": "e4",
+        "name": "2010",
+        "entity_type": "Season",
+        "description": "A championship year."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e3",
+        "relationship_type": "DROVE_FOR",
+        "description": "Michael Schumacher drove for Mercedes-AMG Petronas Formula One Team.",
+        "from_year": 2010,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e3",
+        "relationship_type": "DROVE_FOR",
+        "description": "Nico Rosberg drove for Mercedes-AMG Petronas Formula One Team.",
+        "from_year": 2010,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

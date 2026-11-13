@@ -1,0 +1,202 @@
+{
+  "chunk_id": "season-2021-formula-one-world-championship#78",
+  "doc_id": "season-2021-formula-one-world-championship",
+  "document_title": "2021 Formula One World Championship",
+  "section": null,
+  "page": 7,
+  "source": "https://en.wikipedia.org/wiki/2021_Formula_One_World_Championship",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "2d6f0d569644b0a0041212feba2f53ef44ed5646a2694eff5e1afb0151efc6c3",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "entity_candidates": 7,
+  "entities_accepted": 11,
+  "entities_rejected": 0,
+  "relationship_candidates": 6,
+  "relationships_accepted": 9,
+  "relationships_rejected": 1,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "WON does not allow Driver -> Season"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 2,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e6; description kept"
+    },
+    {
+      "index": 3,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr2 -AT_RACE-> e6; description kept"
+    },
+    {
+      "index": 4,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr3 -AT_RACE-> e6; description kept"
+    },
+    {
+      "index": 5,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr4 -AT_RACE-> e6; description kept"
+    }
+  ],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Lewis Hamilton",
+        "entity_type": "Driver",
+        "description": "A driver who took the win at his home race."
+      },
+      {
+        "local_id": "e2",
+        "name": "Bottas",
+        "entity_type": "Driver",
+        "description": "A driver who came third in the race."
+      },
+      {
+        "local_id": "e3",
+        "name": "Norris",
+        "entity_type": "Driver",
+        "description": "A driver who finished tenth in the standings."
+      },
+      {
+        "local_id": "e4",
+        "name": "Verstappen",
+        "entity_type": "Driver",
+        "description": "A driver who started at the front."
+      },
+      {
+        "local_id": "e5",
+        "name": "Daniel Ricciardo",
+        "entity_type": "Driver",
+        "description": "A driver who took the lead on lap."
+      },
+      {
+        "local_id": "e6",
+        "name": "Italian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A race where Bottas won sprint qualifying."
+      },
+      {
+        "local_id": "e7",
+        "name": "2021",
+        "entity_type": "Season",
+        "description": "The championship year mentioned in the text."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Bottas at Italian Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Bottas came third in the Italian Grand Prix."
+      },
+      {
+        "local_id": "rr2",
+        "name": "Norris at Italian Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Norris finished tenth in the Italian Grand Prix."
+      },
+      {
+        "local_id": "rr3",
+        "name": "Verstappen at Italian Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Verstappen started at the front in the Italian Grand Prix."
+      },
+      {
+        "local_id": "rr4",
+        "name": "Daniel Ricciardo at Italian Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Daniel Ricciardo took the lead on lap in the Italian Grand Prix."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e6",
+        "target_id": "e7",
+        "relationship_type": "ROUND_OF",
+        "description": "The Italian Grand Prix is a round of the 2021 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Bottas came third in the Italian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e6",
+        "relationship_type": "AT_RACE",
+        "description": "Bottas came third in the Italian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "rr2",
+        "relationship_type": "ACHIEVED",
+        "description": "Norris finished tenth in the Italian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr2",
+        "target_id": "e6",
+        "relationship_type": "AT_RACE",
+        "description": "Norris finished tenth in the Italian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "rr3",
+        "relationship_type": "ACHIEVED",
+        "description": "Verstappen started at the front in the Italian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr3",
+        "target_id": "e6",
+        "relationship_type": "AT_RACE",
+        "description": "Verstappen started at the front in the Italian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "rr4",
+        "relationship_type": "ACHIEVED",
+        "description": "Daniel Ricciardo took the lead on lap in the Italian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr4",
+        "target_id": "e6",
+        "relationship_type": "AT_RACE",
+        "description": "Daniel Ricciardo took the lead on lap in the Italian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

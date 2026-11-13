@@ -1,0 +1,86 @@
+{
+  "chunk_id": "team-mercedes-benz-in-formula-one#13",
+  "doc_id": "team-mercedes-benz-in-formula-one",
+  "document_title": "Mercedes-Benz in Formula One",
+  "section": "Mercedes-Benz in Formula One > Daimler-Benz AG (1954–1955)",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/Mercedes-Benz_in_Formula_One",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "972d1285d0596b103e886b7d1a932115f445f9541f75f7ef6d2362fb6ac61c98",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "WON does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "ACHIEVED does not allow Driver -> Season"
+    }
+  ],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Mercedes-Benz",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that entered cars."
+      },
+      {
+        "local_id": "e2",
+        "name": "Juan Manuel Fangio",
+        "entity_type": "Driver",
+        "description": "A driver who finished first in the 1955 championship."
+      },
+      {
+        "local_id": "e3",
+        "name": "Stirling Moss",
+        "entity_type": "Driver",
+        "description": "A driver who finished second in the 1955 championship."
+      },
+      {
+        "local_id": "e4",
+        "name": "1955",
+        "entity_type": "Season",
+        "description": "The championship year in which Fangio and Moss finished first and second."
+      },
+      {
+        "local_id": "e5",
+        "name": "24 Hours of Le Mans",
+        "entity_type": "GrandPrix",
+        "description": "A race event where the 1955 disaster occurred."
+      },
+      {
+        "local_id": "e6",
+        "name": "Pierre Levegh",
+        "entity_type": "Driver",
+        "description": "A Mercedes-Benz sportscar driver who died in the 1955 disaster."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e4",
+        "relationship_type": "ENTERED",
+        "description": "Mercedes-Benz entered the 1955 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e4",
+        "relationship_type": "ROUND_OF",
+        "description": "The 24 Hours of Le Mans is a round of the 1955 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

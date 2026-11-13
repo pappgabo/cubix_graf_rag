@@ -1,0 +1,137 @@
+{
+  "chunk_id": "team-williams-racing#116",
+  "doc_id": "team-williams-racing",
+  "document_title": "Williams Racing",
+  "section": "Williams Racing > British Touring Car Championship (1995–1999)",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "b7bd8bbcfc1f126ca67360d445a42f641db096ddc76071228886128e340e0fde",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Williams",
+        "entity_type": "Team",
+        "description": "Williams entered the British Touring Car Championship in 1995, taking over the works Renault programme."
+      },
+      {
+        "local_id": "e2",
+        "name": "Alain Menu",
+        "entity_type": "Driver",
+        "description": "Menu was a championship contender and finished second in the championship with seven wins."
+      },
+      {
+        "local_id": "e3",
+        "name": "Will Hoy",
+        "entity_type": "Driver",
+        "description": "Hoy had constant failures and bad luck during the first half of the season but won three races and scored several podium finishes in the second half of the year, eventually taking fourth in the championship."
+      },
+      {
+        "local_id": "e4",
+        "name": "1995",
+        "entity_type": "Season",
+        "description": "The year Williams entered the British Touring Car Championship."
+      },
+      {
+        "local_id": "e5",
+        "name": "1996",
+        "entity_type": "Season",
+        "description": "A more difficult year for Williams with the front-wheel-drive cars outclassed."
+      },
+      {
+        "local_id": "e6",
+        "name": "1997",
+        "entity_type": "Season",
+        "description": "A breakthrough year for Williams, winning the drivers' championship with Menu."
+      },
+      {
+        "local_id": "e7",
+        "name": "Renault",
+        "entity_type": "Team",
+        "description": "Renault won the manufacturers championship."
+      },
+      {
+        "local_id": "e8",
+        "name": "British Touring Car Championship",
+        "entity_type": "GrandPrix",
+        "description": "The championship in which Williams participated."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e4",
+        "relationship_type": "ENTERED",
+        "description": "Williams entered the British Touring Car Championship in 1995.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e8",
+        "target_id": "e4",
+        "relationship_type": "ROUND_OF",
+        "description": "The British Touring Car Championship is a round of the 1995 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e8",
+        "target_id": "e5",
+        "relationship_type": "ROUND_OF",
+        "description": "The British Touring Car Championship is a round of the 1996 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e8",
+        "target_id": "e6",
+        "relationship_type": "ROUND_OF",
+        "description": "The British Touring Car Championship is a round of the 1997 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 8,
+  "entities_accepted": 8,
+  "entities_rejected": 0,
+  "relationship_candidates": 8,
+  "relationships_accepted": 4,
+  "relationships_rejected": 4,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "ACHIEVED does not allow Team -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "WON does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "WON does not allow Team -> Team"
+    },
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "RACED_IN does not allow Team -> GrandPrix"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 0,
+      "action": "clear_redundant_season_year",
+      "detail": "ENTERED year 1995 already named by Season 'e4'; from_year and to_year cleared"
+    }
+  ]
+}

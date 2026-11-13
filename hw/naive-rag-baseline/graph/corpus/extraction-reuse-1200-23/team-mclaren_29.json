@@ -1,0 +1,239 @@
+{
+  "chunk_id": "team-mclaren#29",
+  "doc_id": "team-mclaren",
+  "document_title": "McLaren",
+  "section": "1995–2014: First Mercedes partnership > 1995–2009: Factory Mercedes partnership",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "1dbc9980a8ddef2ee2412bb309962ada2b845e59572f98b32e2989c561ded4fb",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "McLaren",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that entered cars."
+      },
+      {
+        "local_id": "e2",
+        "name": "David Coulthard",
+        "entity_type": "Driver",
+        "description": "A Formula 1 driver who raced for McLaren."
+      },
+      {
+        "local_id": "e3",
+        "name": "Mika Häkkinen",
+        "entity_type": "Driver",
+        "description": "A Formula 1 driver who raced for McLaren."
+      },
+      {
+        "local_id": "e4",
+        "name": "1997",
+        "entity_type": "Season",
+        "description": "A Formula 1 championship year."
+      },
+      {
+        "local_id": "e5",
+        "name": "Australian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula 1 race event."
+      },
+      {
+        "local_id": "e6",
+        "name": "Adrian Newey",
+        "entity_type": "Driver",
+        "description": "A highly rated designer who joined McLaren."
+      },
+      {
+        "local_id": "e7",
+        "name": "Williams",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that McLaren competed against."
+      },
+      {
+        "local_id": "e8",
+        "name": "Scuderia Ferrari",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that became a rival to McLaren."
+      },
+      {
+        "local_id": "e9",
+        "name": "Marlboro",
+        "entity_type": "Team",
+        "description": "A long-time sponsor of McLaren."
+      },
+      {
+        "local_id": "e10",
+        "name": "West",
+        "entity_type": "Team",
+        "description": "A tobacco sponsor that replaced Marlboro for McLaren."
+      },
+      {
+        "local_id": "e11",
+        "name": "British Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula 1 race event."
+      },
+      {
+        "local_id": "e12",
+        "name": "Luxembourg Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula 1 race event."
+      },
+      {
+        "local_id": "rr1",
+        "name": "David Coulthard at Australian Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "David Coulthard won the Australian Grand Prix."
+      },
+      {
+        "local_id": "rr2",
+        "name": "Mika Häkkinen at British Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Mika Häkkinen was leading at the British Grand Prix before retirement."
+      },
+      {
+        "local_id": "rr3",
+        "name": "Mika Häkkinen at Luxembourg Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Mika Häkkinen was leading at the Luxembourg Grand Prix before retirement."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e2",
+        "target_id": "e1",
+        "relationship_type": "DROVE_FOR",
+        "description": "David Coulthard raced for McLaren.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e1",
+        "relationship_type": "DROVE_FOR",
+        "description": "Mika Häkkinen raced for McLaren.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "David Coulthard won the Australian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e5",
+        "relationship_type": "AT_RACE",
+        "description": "David Coulthard won the Australian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e4",
+        "relationship_type": "ENTERED",
+        "description": "McLaren took part in the 1997 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "rr2",
+        "relationship_type": "ACHIEVED",
+        "description": "Mika Häkkinen was leading at the British Grand Prix before retirement.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr2",
+        "target_id": "e11",
+        "relationship_type": "AT_RACE",
+        "description": "Mika Häkkinen was leading at the British Grand Prix before retirement.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "rr3",
+        "relationship_type": "ACHIEVED",
+        "description": "Mika Häkkinen was leading at the Luxembourg Grand Prix before retirement.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr3",
+        "target_id": "e12",
+        "relationship_type": "AT_RACE",
+        "description": "Mika Häkkinen was leading at the Luxembourg Grand Prix before retirement.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 12,
+  "entities_accepted": 15,
+  "entities_rejected": 0,
+  "relationship_candidates": 11,
+  "relationships_accepted": 9,
+  "relationships_rejected": 5,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "ACHIEVED does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 6,
+      "reason": "FIELDED does not allow Team -> Team"
+    },
+    {
+      "element": "relationship",
+      "index": 7,
+      "reason": "FIELDED does not allow Team -> Team"
+    },
+    {
+      "element": "relationship",
+      "index": 8,
+      "reason": "RACED_IN does not allow Team -> Team"
+    },
+    {
+      "element": "relationship",
+      "index": 9,
+      "reason": "RACED_IN does not allow Team -> Team"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 2,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e5; description kept"
+    },
+    {
+      "index": 9,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr2 -AT_RACE-> e11; description kept"
+    },
+    {
+      "index": 10,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr3 -AT_RACE-> e12; description kept"
+    }
+  ]
+}

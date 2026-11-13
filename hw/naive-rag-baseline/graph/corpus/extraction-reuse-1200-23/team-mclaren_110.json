@@ -1,0 +1,85 @@
+{
+  "chunk_id": "team-mclaren#110",
+  "doc_id": "team-mclaren",
+  "document_title": "McLaren",
+  "section": "Liveries",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "12bc548c4554b3e398d9d2fc9de6db50c53554d6386698e3a9bc669b367a3da6",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "McLaren",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that debuted in 1966."
+      },
+      {
+        "local_id": "e2",
+        "name": "MCL39",
+        "entity_type": "Car",
+        "description": "A car model used by McLaren in 2025."
+      },
+      {
+        "local_id": "e3",
+        "name": "MCL38",
+        "entity_type": "Car",
+        "description": "A car model used by McLaren that won the Constructors' Championship."
+      },
+      {
+        "local_id": "e4",
+        "name": "MCL40",
+        "entity_type": "Car",
+        "description": "A car model used by McLaren after successfully defending the Constructors' Championship."
+      },
+      {
+        "local_id": "e5",
+        "name": "2025",
+        "entity_type": "Season",
+        "description": "The championship year in which the MCL39 was used."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e3",
+        "target_id": "e5",
+        "relationship_type": "RACED_IN",
+        "description": "MCL38 raced in the 2025 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e5",
+        "relationship_type": "ENTERED",
+        "description": "McLaren entered the 2025 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 5,
+  "entities_accepted": 5,
+  "entities_rejected": 0,
+  "relationship_candidates": 4,
+  "relationships_accepted": 2,
+  "relationships_rejected": 2,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "FIELDED does not allow Car -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "FIELDED does not allow Car -> Season"
+    }
+  ],
+  "alignments": []
+}

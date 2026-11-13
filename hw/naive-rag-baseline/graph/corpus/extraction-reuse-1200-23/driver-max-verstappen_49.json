@@ -1,0 +1,59 @@
+{
+  "chunk_id": "driver-max-verstappen#49",
+  "doc_id": "driver-max-verstappen",
+  "document_title": "Max Verstappen",
+  "section": null,
+  "page": 9,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "1e300df84e63a0eb8ea69f52a3cea20256820db2c0d9c108c5f0d385e9984938",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Max Verstappen",
+        "entity_type": "Driver",
+        "description": "A Formula One driver who became the first driver to win a title driving for a team."
+      },
+      {
+        "local_id": "e2",
+        "name": "George Russell",
+        "entity_type": "Driver",
+        "description": "A Formula One driver involved in a widely publicised feud with Max Verstappen."
+      },
+      {
+        "local_id": "e3",
+        "name": "Abu Dhabi Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The season-ending Grand Prix where Max Verstappen won his title."
+      }
+    ],
+    "relationships": []
+  },
+  "entity_candidates": 4,
+  "entities_accepted": 3,
+  "entities_rejected": 1,
+  "relationship_candidates": 2,
+  "relationships_accepted": 0,
+  "relationships_rejected": 2,
+  "rejections": [
+    {
+      "element": "entity",
+      "index": 3,
+      "reason": "name 'null' is a placeholder, not an entity identity"
+    },
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "WON: target_id 'e4' rejected: name 'null' is a placeholder, not an entity identity"
+    },
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "ENTERED: source_id 'e4' rejected: name 'null' is a placeholder, not an entity identity"
+    }
+  ],
+  "alignments": []
+}

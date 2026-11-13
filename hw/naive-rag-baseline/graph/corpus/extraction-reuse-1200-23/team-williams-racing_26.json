@@ -1,0 +1,86 @@
+{
+  "chunk_id": "team-williams-racing#26",
+  "doc_id": "team-williams-racing",
+  "document_title": "Williams Racing",
+  "section": "Williams Racing > 1990 season",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "d41b831340351bfeb2d2f272a4b23700418e166ef267db117beba5fc1d10cd69",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Williams Racing",
+        "entity_type": "Team",
+        "description": "A Formula 1 team."
+      },
+      {
+        "local_id": "e2",
+        "name": "Riccardo Patrese",
+        "entity_type": "Driver",
+        "description": "A Formula 1 driver who raced for Williams in the 1990 season."
+      },
+      {
+        "local_id": "e3",
+        "name": "Bruno Boutsen",
+        "entity_type": "Driver",
+        "description": "A Formula 1 driver who raced for Williams in the 1990 season."
+      },
+      {
+        "local_id": "e4",
+        "name": "1990",
+        "entity_type": "Season",
+        "description": "The Formula 1 championship season of 1990."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e4",
+        "relationship_type": "ENTERED",
+        "description": "Williams Racing entered the 1990 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 4,
+  "entities_accepted": 4,
+  "entities_rejected": 0,
+  "relationship_candidates": 5,
+  "relationships_accepted": 1,
+  "relationships_rejected": 4,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "DROVE_FOR does not allow Team -> Driver"
+    },
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "DROVE_FOR does not allow Team -> Driver"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "ACHIEVED does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "ACHIEVED does not allow Driver -> Season"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 2,
+      "action": "clear_redundant_season_year",
+      "detail": "ENTERED year 1990 already named by Season 'e4'; from_year and to_year cleared"
+    }
+  ]
+}

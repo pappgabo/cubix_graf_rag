@@ -1,0 +1,140 @@
+{
+  "chunk_id": "driver-max-verstappen#11",
+  "doc_id": "driver-max-verstappen",
+  "document_title": "Max Verstappen",
+  "section": null,
+  "page": 3,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "58c5b9112eb993f19ae4702ee025e53c27df6dfc4b2d873d81d0cde0a298db71",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Max Verstappen",
+        "entity_type": "Driver",
+        "description": "A Formula One driver who began the 2016 season at Toro Rosso and later joined Red Bull Racing."
+      },
+      {
+        "local_id": "e2",
+        "name": "Toro Rosso",
+        "entity_type": "Team",
+        "description": "A Formula One team that Verstappen drove for at the start of the 2016 season."
+      },
+      {
+        "local_id": "e3",
+        "name": "Red Bull Racing",
+        "entity_type": "Team",
+        "description": "A Formula One team that Verstappen joined from the Spanish Grand Prix in 2016."
+      },
+      {
+        "local_id": "e4",
+        "name": "2016",
+        "entity_type": "Season",
+        "description": "The Formula One season in which Verstappen began driving for Toro Rosso and later for Red Bull Racing."
+      },
+      {
+        "local_id": "e5",
+        "name": "Belgian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula One race where Verstappen received the 'Action of the Year' award for his overtake."
+      },
+      {
+        "local_id": "e6",
+        "name": "Sakhir Circuit",
+        "entity_type": "Circuit",
+        "description": "The circuit where Toro Rosso scored its first-ever points."
+      },
+      {
+        "local_id": "e7",
+        "name": "Spanish Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The race where Verstappen began driving for Red Bull Racing."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Verstappen drove for Toro Rosso at the start of the 2016 season.",
+        "from_year": 2016,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e3",
+        "relationship_type": "DROVE_FOR",
+        "description": "Verstappen drove for Red Bull Racing from the Spanish Grand Prix onwards in 2016.",
+        "from_year": 2016,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e4",
+        "relationship_type": "ENTERED",
+        "description": "Toro Rosso entered the 2016 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e4",
+        "relationship_type": "ENTERED",
+        "description": "Red Bull Racing entered the 2016 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e4",
+        "relationship_type": "ROUND_OF",
+        "description": "The Belgian Grand Prix is a round of the 2016 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 7,
+  "entities_accepted": 7,
+  "entities_rejected": 0,
+  "relationship_candidates": 7,
+  "relationships_accepted": 5,
+  "relationships_rejected": 2,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 5,
+      "reason": "HELD_AT does not allow Circuit -> Team"
+    },
+    {
+      "element": "relationship",
+      "index": 6,
+      "reason": "ROUND_OF does not allow GrandPrix -> Team"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 2,
+      "action": "clear_redundant_season_year",
+      "detail": "ENTERED year 2016 already named by Season 'e4'; from_year and to_year cleared"
+    },
+    {
+      "index": 3,
+      "action": "clear_redundant_season_year",
+      "detail": "ENTERED year 2016 already named by Season 'e4'; from_year and to_year cleared"
+    },
+    {
+      "index": 4,
+      "action": "clear_redundant_season_year",
+      "detail": "ROUND_OF year 2016 already named by Season 'e4'; from_year and to_year cleared"
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "chunk_id": "driver-fernando-alonso#43",
+  "doc_id": "driver-fernando-alonso",
+  "document_title": "Fernando Alonso",
+  "section": "McLaren and second stint with Renault (2007–2009)",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/Fernando_Alonso",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "409e1cb9ee4a5ac92b1cc6f80ebcf28b05cc2e0b6dee650cb0de4fbf98a00e62",
+  "validation_version": "partial-1",
+  "source_status": "ok",
+  "status": "ok",
+  "rejections": [],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Fernando Alonso",
+        "entity_type": "Driver",
+        "description": "A Formula One driver who raced for Renault."
+      },
+      {
+        "local_id": "e2",
+        "name": "Renault",
+        "entity_type": "Team",
+        "description": "A Formula One team that entered cars."
+      },
+      {
+        "local_id": "e3",
+        "name": "2007",
+        "entity_type": "Season",
+        "description": "A Formula One championship year."
+      },
+      {
+        "local_id": "e4",
+        "name": "Singapore Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula One race event."
+      },
+      {
+        "local_id": "e5",
+        "name": "Japan Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula One race event."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Fernando Alonso drove for Renault.",
+        "from_year": 2007,
+        "to_year": 2009,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e3",
+        "relationship_type": "ROUND_OF",
+        "description": "Singapore Grand Prix is a round of the 2007 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e3",
+        "relationship_type": "ROUND_OF",
+        "description": "Japan Grand Prix is a round of the 2007 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

@@ -1,0 +1,285 @@
+{
+  "chunk_id": "season-2012-formula-one-world-championship#59",
+  "doc_id": "season-2012-formula-one-world-championship",
+  "document_title": "2012 Formula One World Championship",
+  "section": "Race summaries > Round 8 – Europe Valencia Street Circuit",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "cea573ca7783a553ed620e5a033058f6266c1c2b8515c6adfcb65adb17380cf9",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Fernando Alonso",
+        "entity_type": "Driver",
+        "description": "A driver who won the European Grand Prix in 2012."
+      },
+      {
+        "local_id": "e2",
+        "name": "European Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula One race held in Valencia."
+      },
+      {
+        "local_id": "e3",
+        "name": "Valencia Street Circuit",
+        "entity_type": "Circuit",
+        "description": "The circuit where the European Grand Prix took place."
+      },
+      {
+        "local_id": "e4",
+        "name": "2012",
+        "entity_type": "Season",
+        "description": "The Formula One season in which the European Grand Prix was held."
+      },
+      {
+        "local_id": "e5",
+        "name": "Sebastian Vettel",
+        "entity_type": "Driver",
+        "description": "A driver who led the race before losing drive."
+      },
+      {
+        "local_id": "e6",
+        "name": "Heikki Kovalainen",
+        "entity_type": "Driver",
+        "description": "A driver involved in a collision that triggered the safety car."
+      },
+      {
+        "local_id": "e7",
+        "name": "Jean-Éric Vergne",
+        "entity_type": "Driver",
+        "description": "A driver involved in a collision that triggered the safety car."
+      },
+      {
+        "local_id": "e8",
+        "name": "Romain Grosjean",
+        "entity_type": "Driver",
+        "description": "A driver who was second before retiring from the race."
+      },
+      {
+        "local_id": "e9",
+        "name": "Lewis Hamilton",
+        "entity_type": "Driver",
+        "description": "A driver who was in third place during the race."
+      },
+      {
+        "local_id": "e10",
+        "name": "Kimi Räikkönen",
+        "entity_type": "Driver",
+        "description": "A driver who was in the race."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Sebastian Vettel at European Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Sebastian Vettel led the race before losing drive."
+      },
+      {
+        "local_id": "rr2",
+        "name": "Heikki Kovalainen at European Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Heikki Kovalainen was involved in a collision during the race."
+      },
+      {
+        "local_id": "rr3",
+        "name": "Jean-Éric Vergne at European Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Jean-Éric Vergne was involved in a collision during the race."
+      },
+      {
+        "local_id": "rr4",
+        "name": "Romain Grosjean at European Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Romain Grosjean was second before retiring from the race."
+      },
+      {
+        "local_id": "rr5",
+        "name": "Lewis Hamilton at European Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Lewis Hamilton was in third place during the race."
+      },
+      {
+        "local_id": "rr6",
+        "name": "Kimi Räikkönen at European Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Kimi Räikkönen was in the race."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e2",
+        "target_id": "e4",
+        "relationship_type": "ROUND_OF",
+        "description": "The European Grand Prix is a round of the 2012 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e3",
+        "relationship_type": "HELD_AT",
+        "description": "The European Grand Prix was held at the Valencia Street Circuit.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Sebastian Vettel led the race before losing drive.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e2",
+        "relationship_type": "AT_RACE",
+        "description": "Sebastian Vettel led the race before losing drive.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e6",
+        "target_id": "rr2",
+        "relationship_type": "ACHIEVED",
+        "description": "Heikki Kovalainen was involved in a collision during the race.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr2",
+        "target_id": "e2",
+        "relationship_type": "AT_RACE",
+        "description": "Heikki Kovalainen was involved in a collision during the race.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e7",
+        "target_id": "rr3",
+        "relationship_type": "ACHIEVED",
+        "description": "Jean-Éric Vergne was involved in a collision during the race.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr3",
+        "target_id": "e2",
+        "relationship_type": "AT_RACE",
+        "description": "Jean-Éric Vergne was involved in a collision during the race.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e8",
+        "target_id": "rr4",
+        "relationship_type": "ACHIEVED",
+        "description": "Romain Grosjean was second before retiring from the race.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr4",
+        "target_id": "e2",
+        "relationship_type": "AT_RACE",
+        "description": "Romain Grosjean was second before retiring from the race.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e9",
+        "target_id": "rr5",
+        "relationship_type": "ACHIEVED",
+        "description": "Lewis Hamilton was in third place during the race.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr5",
+        "target_id": "e2",
+        "relationship_type": "AT_RACE",
+        "description": "Lewis Hamilton was in third place during the race.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e10",
+        "target_id": "rr6",
+        "relationship_type": "ACHIEVED",
+        "description": "Kimi Räikkönen was in the race.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr6",
+        "target_id": "e2",
+        "relationship_type": "AT_RACE",
+        "description": "Kimi Räikkönen was in the race.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 10,
+  "entities_accepted": 16,
+  "entities_rejected": 0,
+  "relationship_candidates": 9,
+  "relationships_accepted": 14,
+  "relationships_rejected": 1,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "WON does not allow Driver -> GrandPrix"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 3,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e2; description kept"
+    },
+    {
+      "index": 4,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr2 -AT_RACE-> e2; description kept"
+    },
+    {
+      "index": 5,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr3 -AT_RACE-> e2; description kept"
+    },
+    {
+      "index": 6,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr4 -AT_RACE-> e2; description kept"
+    },
+    {
+      "index": 7,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr5 -AT_RACE-> e2; description kept"
+    },
+    {
+      "index": 8,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr6 -AT_RACE-> e2; description kept"
+    }
+  ]
+}

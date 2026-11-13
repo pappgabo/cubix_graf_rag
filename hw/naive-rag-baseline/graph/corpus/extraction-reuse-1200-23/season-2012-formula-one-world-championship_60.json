@@ -1,0 +1,170 @@
+{
+  "chunk_id": "season-2012-formula-one-world-championship#60",
+  "doc_id": "season-2012-formula-one-world-championship",
+  "document_title": "2012 Formula One World Championship",
+  "section": "Race summaries > Round 8 – Europe Valencia Street Circuit",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "2e852ae9dd3ae4d47141b9713f5518625c07511555d373d192e111fd11e17e76",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Kimi Räikkönen",
+        "entity_type": "Driver",
+        "description": "Raced for Lotus and finished second in the race."
+      },
+      {
+        "local_id": "e2",
+        "name": "Lewis Hamilton",
+        "entity_type": "Driver",
+        "description": "Raced for McLaren and was involved in a collision, finishing in the barriers."
+      },
+      {
+        "local_id": "e3",
+        "name": "Pastor Maldonado",
+        "entity_type": "Driver",
+        "description": "Raced for Williams and finished twelfth after a penalty."
+      },
+      {
+        "local_id": "e4",
+        "name": "Michael Schumacher",
+        "entity_type": "Driver",
+        "description": "Raced for Mercedes and finished third."
+      },
+      {
+        "local_id": "e5",
+        "name": "Mark Webber",
+        "entity_type": "Driver",
+        "description": "Raced for Red Bull and finished fourth."
+      },
+      {
+        "local_id": "e6",
+        "name": "Fernando Alonso",
+        "entity_type": "Driver",
+        "description": "Raced for Ferrari and won the race."
+      },
+      {
+        "local_id": "e7",
+        "name": "2012 Formula One World Championship",
+        "entity_type": "Season",
+        "description": "The championship season in which the race took place."
+      },
+      {
+        "local_id": "e8",
+        "name": "Valencia Street Circuit",
+        "entity_type": "Circuit",
+        "description": "The circuit where the race was held."
+      },
+      {
+        "local_id": "e9",
+        "name": "Lotus",
+        "entity_type": "Team",
+        "description": "The team for which Kimi Räikkönen raced."
+      },
+      {
+        "local_id": "e10",
+        "name": "McLaren",
+        "entity_type": "Team",
+        "description": "The team for which Lewis Hamilton raced."
+      },
+      {
+        "local_id": "e11",
+        "name": "Williams",
+        "entity_type": "Team",
+        "description": "The team for which Pastor Maldonado raced."
+      },
+      {
+        "local_id": "e12",
+        "name": "Mercedes-AMG Petronas Formula One Team",
+        "entity_type": "Team",
+        "description": "The team for which Michael Schumacher raced."
+      },
+      {
+        "local_id": "e13",
+        "name": "Red Bull Racing",
+        "entity_type": "Team",
+        "description": "The team for which Mark Webber raced."
+      },
+      {
+        "local_id": "e14",
+        "name": "Scuderia Ferrari",
+        "entity_type": "Team",
+        "description": "The team for which Fernando Alonso raced."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e9",
+        "relationship_type": "DROVE_FOR",
+        "description": "Kimi Räikkönen raced for Lotus.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e10",
+        "relationship_type": "DROVE_FOR",
+        "description": "Lewis Hamilton raced for McLaren.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e11",
+        "relationship_type": "DROVE_FOR",
+        "description": "Pastor Maldonado raced for Williams.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e12",
+        "relationship_type": "DROVE_FOR",
+        "description": "Michael Schumacher raced for Mercedes.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e13",
+        "relationship_type": "DROVE_FOR",
+        "description": "Mark Webber raced for Red Bull.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e6",
+        "target_id": "e14",
+        "relationship_type": "DROVE_FOR",
+        "description": "Fernando Alonso raced for Ferrari.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 14,
+  "entities_accepted": 14,
+  "entities_rejected": 0,
+  "relationship_candidates": 7,
+  "relationships_accepted": 6,
+  "relationships_rejected": 1,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 6,
+      "reason": "ROUND_OF does not allow Season -> Circuit"
+    }
+  ],
+  "alignments": []
+}

@@ -1,0 +1,80 @@
+{
+  "chunk_id": "season-2021-formula-one-world-championship#66",
+  "doc_id": "season-2021-formula-one-world-championship",
+  "document_title": "2021 Formula One World Championship",
+  "section": null,
+  "page": 6,
+  "source": "https://en.wikipedia.org/wiki/2021_Formula_One_World_Championship",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "190ea15aaaca91059b29ad9fa98f9193261a311ff75c7166c9512f787725d65e",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "FOR_TEAM does not allow Driver -> RaceResult"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "AT_RACE does not allow RaceResult -> Season"
+    }
+  ],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Hamilton",
+        "entity_type": "Driver",
+        "description": "A driver who finished second in the race."
+      },
+      {
+        "local_id": "e2",
+        "name": "Bottas",
+        "entity_type": "Driver",
+        "description": "A driver who finished fourth in the race."
+      },
+      {
+        "local_id": "e3",
+        "name": "Pérez",
+        "entity_type": "Driver",
+        "description": "A driver who finished third in the race."
+      },
+      {
+        "local_id": "e4",
+        "name": "2021",
+        "entity_type": "Season",
+        "description": "The championship year."
+      },
+      {
+        "local_id": "e5",
+        "name": "thirteenth win",
+        "entity_type": "RaceResult",
+        "description": "The overall win count for the race winner."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e5",
+        "relationship_type": "ACHIEVED",
+        "description": "Hamilton finished second in the race.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e5",
+        "relationship_type": "ACHIEVED",
+        "description": "Pérez finished third in the race.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

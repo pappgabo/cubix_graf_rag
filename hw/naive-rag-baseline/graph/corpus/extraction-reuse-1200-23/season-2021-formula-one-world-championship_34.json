@@ -1,0 +1,137 @@
+{
+  "chunk_id": "season-2021-formula-one-world-championship#34",
+  "doc_id": "season-2021-formula-one-world-championship",
+  "document_title": "2021 Formula One World Championship",
+  "section": null,
+  "page": 7,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "3f350c3251c18edbfa714914d1f56e7060cdc4dd0a7e2b3c6719c62f750cc9b0",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Valtteri Bottas",
+        "entity_type": "Driver",
+        "description": "A driver who won his first race of 2021."
+      },
+      {
+        "local_id": "e2",
+        "name": "Max Verstappen",
+        "entity_type": "Driver",
+        "description": "A driver who re-took the championship lead and won multiple races."
+      },
+      {
+        "local_id": "e3",
+        "name": "Sergio Pérez",
+        "entity_type": "Driver",
+        "description": "A driver who took his first podium since France."
+      },
+      {
+        "local_id": "e4",
+        "name": "Lewis Hamilton",
+        "entity_type": "Driver",
+        "description": "A driver who was in contention for the championship and collected an extra Championship point."
+      },
+      {
+        "local_id": "e5",
+        "name": "Daniel Ricciardo",
+        "entity_type": "Driver",
+        "description": "A driver who spun Bottas around at the first corner in Mexico City."
+      },
+      {
+        "local_id": "e6",
+        "name": "Yuki Tsunoda",
+        "entity_type": "Driver",
+        "description": "A driver involved in an incident that took him out of the race."
+      },
+      {
+        "local_id": "e7",
+        "name": "Mick Schumacher",
+        "entity_type": "Driver",
+        "description": "A driver involved in an incident that took him out of the race."
+      },
+      {
+        "local_id": "e8",
+        "name": "2021",
+        "entity_type": "Season",
+        "description": "The championship year for the events described."
+      },
+      {
+        "local_id": "e9",
+        "name": "United States Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A race where Verstappen won."
+      },
+      {
+        "local_id": "e10",
+        "name": "Mexico City Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A race where Bottas took pole position and Verstappen won."
+      },
+      {
+        "local_id": "e11",
+        "name": "Brazilian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A race where Hamilton was disqualified for a technical infringement."
+      }
+    ],
+    "relationships": []
+  },
+  "entity_candidates": 11,
+  "entities_accepted": 11,
+  "entities_rejected": 0,
+  "relationship_candidates": 9,
+  "relationships_accepted": 0,
+  "relationships_rejected": 9,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "ACHIEVED does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "ACHIEVED does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "ACHIEVED does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "ACHIEVED does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "AT_RACE does not allow Driver -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 5,
+      "reason": "FOR_TEAM does not allow Driver -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 6,
+      "reason": "AT_RACE does not allow Driver -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 7,
+      "reason": "FOR_TEAM does not allow Driver -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 8,
+      "reason": "AT_RACE does not allow Driver -> GrandPrix"
+    }
+  ],
+  "alignments": []
+}

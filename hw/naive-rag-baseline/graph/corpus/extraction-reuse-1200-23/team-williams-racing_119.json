@@ -1,0 +1,204 @@
+{
+  "chunk_id": "team-williams-racing#119",
+  "doc_id": "team-williams-racing",
+  "document_title": "Williams Racing",
+  "section": "Williams Racing > Le Mans 24 Hours and Sportscars (1998–2000)",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "6f5f224e35f2c1fa557310d59e445368ddb623195fffba50382c96874d21bad6",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Williams Motorsport",
+        "entity_type": "Team",
+        "description": "Built Le Mans Prototypes for BMW, known as the V12 LM and V12 LMR."
+      },
+      {
+        "local_id": "e2",
+        "name": "BMW Motorsport",
+        "entity_type": "Team",
+        "description": "Operated the V12 LMR."
+      },
+      {
+        "local_id": "e3",
+        "name": "V12 LMR",
+        "entity_type": "Car",
+        "description": "Won the 24 Hours of Le Mans in 1999."
+      },
+      {
+        "local_id": "e4",
+        "name": "Pierluigi Martini",
+        "entity_type": "Driver",
+        "description": "Driver of the V12 LMR."
+      },
+      {
+        "local_id": "e5",
+        "name": "Yannick Dalmas",
+        "entity_type": "Driver",
+        "description": "Driver of the V12 LMR."
+      },
+      {
+        "local_id": "e6",
+        "name": "Joachim Winkelhock",
+        "entity_type": "Driver",
+        "description": "Driver of the V12 LMR."
+      },
+      {
+        "local_id": "e7",
+        "name": "1999",
+        "entity_type": "Season",
+        "description": "The year the V12 LMR won the 24 Hours of Le Mans."
+      },
+      {
+        "local_id": "e8",
+        "name": "24 Hours of Le Mans",
+        "entity_type": "GrandPrix",
+        "description": "Race won by the V12 LMR in 1999."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Pierluigi Martini at 24 Hours of Le Mans",
+        "entity_type": "RaceResult",
+        "description": "Pierluigi Martini recorded a result in the 24 Hours of Le Mans."
+      },
+      {
+        "local_id": "rr2",
+        "name": "Yannick Dalmas at 24 Hours of Le Mans",
+        "entity_type": "RaceResult",
+        "description": "Yannick Dalmas recorded a result in the 24 Hours of Le Mans."
+      },
+      {
+        "local_id": "rr3",
+        "name": "Joachim Winkelhock at 24 Hours of Le Mans",
+        "entity_type": "RaceResult",
+        "description": "Joachim Winkelhock recorded a result in the 24 Hours of Le Mans."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e3",
+        "relationship_type": "FIELDED",
+        "description": "Williams Motorsport entered the V12 LMR.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e3",
+        "relationship_type": "FIELDED",
+        "description": "BMW Motorsport entered the V12 LMR.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Pierluigi Martini recorded a result in the 24 Hours of Le Mans.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e8",
+        "relationship_type": "AT_RACE",
+        "description": "Pierluigi Martini recorded a result in the 24 Hours of Le Mans.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "rr2",
+        "relationship_type": "ACHIEVED",
+        "description": "Yannick Dalmas recorded a result in the 24 Hours of Le Mans.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr2",
+        "target_id": "e8",
+        "relationship_type": "AT_RACE",
+        "description": "Yannick Dalmas recorded a result in the 24 Hours of Le Mans.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e6",
+        "target_id": "rr3",
+        "relationship_type": "ACHIEVED",
+        "description": "Joachim Winkelhock recorded a result in the 24 Hours of Le Mans.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr3",
+        "target_id": "e8",
+        "relationship_type": "AT_RACE",
+        "description": "Joachim Winkelhock recorded a result in the 24 Hours of Le Mans.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e7",
+        "relationship_type": "RACED_IN",
+        "description": "The V12 LMR took part in the 1999 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e8",
+        "target_id": "e7",
+        "relationship_type": "ROUND_OF",
+        "description": "The 24 Hours of Le Mans is a round of the 1999 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 8,
+  "entities_accepted": 11,
+  "entities_rejected": 0,
+  "relationship_candidates": 8,
+  "relationships_accepted": 10,
+  "relationships_rejected": 1,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 10,
+      "reason": "DROVE_FOR does not allow Team -> Team"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 2,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e8; description kept"
+    },
+    {
+      "index": 3,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr2 -AT_RACE-> e8; description kept"
+    },
+    {
+      "index": 4,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr3 -AT_RACE-> e8; description kept"
+    }
+  ]
+}

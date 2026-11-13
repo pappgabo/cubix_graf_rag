@@ -1,0 +1,117 @@
+{
+  "chunk_id": "season-2012-formula-one-world-championship#193",
+  "doc_id": "season-2012-formula-one-world-championship",
+  "document_title": "2012 Formula One World Championship",
+  "section": "Race summaries > Round 18 – Abu Dhabi Yas Marina Circuit",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/2012_Formula_One_World_Championship",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "ce0c3b72be7b8b0549b513a1f91c47f7fa8feb7c68777fe0ec7a5516bc94ade4",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "WON does not allow Driver -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 5,
+      "reason": "AWARDED_IN does not allow Season -> Driver"
+    }
+  ],
+  "alignments": [],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Romain Räikkönen",
+        "entity_type": "Driver",
+        "description": "Räikkönen held on to secure his only victory of the season."
+      },
+      {
+        "local_id": "e2",
+        "name": "Fernando Alonso",
+        "entity_type": "Driver",
+        "description": "Alonso was being harried by Jenson Button."
+      },
+      {
+        "local_id": "e3",
+        "name": "Jenson Button",
+        "entity_type": "Driver",
+        "description": "Button was being harried by Vettel."
+      },
+      {
+        "local_id": "e4",
+        "name": "Sebastian Vettel",
+        "entity_type": "Driver",
+        "description": "Vettel was in fourth place."
+      },
+      {
+        "local_id": "e5",
+        "name": "Lotus F1",
+        "entity_type": "Team",
+        "description": "Lotus F1 secured their only victory of the season."
+      },
+      {
+        "local_id": "e6",
+        "name": "2012",
+        "entity_type": "Season",
+        "description": "The season in which Räikkönen secured his only victory."
+      },
+      {
+        "local_id": "e7",
+        "name": "Abu Dhabi Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The race where Räikkönen secured his victory."
+      },
+      {
+        "local_id": "e8",
+        "name": "Yas Marina Circuit",
+        "entity_type": "Circuit",
+        "description": "The circuit where the Abu Dhabi Grand Prix was held."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e5",
+        "relationship_type": "DROVE_FOR",
+        "description": "Räikkönen drove for Lotus F1.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e6",
+        "relationship_type": "ENTERED",
+        "description": "Lotus F1 entered the 2012 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e7",
+        "target_id": "e6",
+        "relationship_type": "ROUND_OF",
+        "description": "The Abu Dhabi Grand Prix is a round of the 2012 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e7",
+        "target_id": "e8",
+        "relationship_type": "HELD_AT",
+        "description": "The Abu Dhabi Grand Prix was held at Yas Marina Circuit.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "chunk_id": "driver-lewis-hamilton#40",
+  "doc_id": "driver-lewis-hamilton",
+  "document_title": "Lewis Hamilton",
+  "section": null,
+  "page": 4,
+  "source": "https://en.wikipedia.org/wiki/Lewis_Hamilton",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "fbcf337c257fa4fdf69d689108e273f9a23977f2bdfdcff254792d7f40a85701",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "ACHIEVED does not allow Driver -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "HELD_AT does not allow GrandPrix -> Team"
+    }
+  ],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Lewis Hamilton",
+        "entity_type": "Driver",
+        "description": "A driver who moved to Mercedes and finished fourth in his first season with the team."
+      },
+      {
+        "local_id": "e2",
+        "name": "Mercedes",
+        "entity_type": "Team",
+        "description": "A Formula 1 team with no recent history of success."
+      },
+      {
+        "local_id": "e3",
+        "name": "Hungarian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A race where Lewis Hamilton converted a pole position into a victory."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Lewis Hamilton drove for Mercedes in his first season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

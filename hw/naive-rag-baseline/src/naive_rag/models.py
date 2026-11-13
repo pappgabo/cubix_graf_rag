@@ -13,11 +13,16 @@ from .config import get_settings
 
 
 def get_chat_model(*, streaming: bool = False,
-                   max_retries: int | None = None) -> BaseChatModel:
+                   max_retries: int | None = None,
+                   max_tokens: int | None = None) -> BaseChatModel:
     s = get_settings()
     if s.llm_provider == "openai":
         from langchain_openai import ChatOpenAI
-        extra = {} if max_retries is None else {"max_retries": max_retries}
+        extra = {}
+        if max_retries is not None:
+            extra["max_retries"] = max_retries
+        if max_tokens is not None:
+            extra["max_tokens"] = max_tokens
         return ChatOpenAI(
             model=s.chat_model,
             temperature=0,
@@ -27,10 +32,12 @@ def get_chat_model(*, streaming: bool = False,
         )
     if s.llm_provider == "ollama":
         from langchain_ollama import ChatOllama  # optional dependency
+        extra = {} if max_tokens is None else {"num_predict": max_tokens}
         return ChatOllama(
             model=s.ollama_chat_model,
             base_url=s.ollama_base_url,
             temperature=0,
+            **extra,
         )
     raise ValueError(f"Unknown llm_provider: {s.llm_provider!r}")
 

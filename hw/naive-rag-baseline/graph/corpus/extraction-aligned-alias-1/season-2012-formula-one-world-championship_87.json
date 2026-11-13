@@ -1,0 +1,117 @@
+{
+  "chunk_id": "season-2012-formula-one-world-championship#87",
+  "doc_id": "season-2012-formula-one-world-championship",
+  "document_title": "2012 Formula One World Championship",
+  "section": "Race summaries > Round 3 – China Shanghai International Circuit",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/2012_Formula_One_World_Championship",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "72b3eebdddc38a0a6bc5b58694895e1f1e27baa1441a8f4a5ae76583d2abae9b",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "DROVE_FOR does not allow Team -> Driver"
+    },
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "AT_RACE does not allow Driver -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "AT_RACE does not allow Driver -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "AT_RACE does not allow Driver -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "TEAMMATE_OF does not allow Driver -> Team"
+    }
+  ],
+  "alignments": [],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Nico Rosberg",
+        "entity_type": "Driver",
+        "description": "Driver who took his first pole position since Mercedes's return to Formula One in 2010."
+      },
+      {
+        "local_id": "e2",
+        "name": "Mercedes-AMG Petronas Formula One Team",
+        "entity_type": "Team",
+        "description": "Formula 1 team that had Nico Rosberg taking pole position."
+      },
+      {
+        "local_id": "e3",
+        "name": "Michael Schumacher",
+        "entity_type": "Driver",
+        "description": "Driver who was promoted to second on the grid due to a penalty to Lewis Hamilton."
+      },
+      {
+        "local_id": "e4",
+        "name": "Lewis Hamilton",
+        "entity_type": "Driver",
+        "description": "Driver who received a penalty for a gearbox change."
+      },
+      {
+        "local_id": "e5",
+        "name": "2012",
+        "entity_type": "Season",
+        "description": "The championship year of the 2012 Formula One World Championship."
+      },
+      {
+        "local_id": "e6",
+        "name": "Shanghai International Circuit",
+        "entity_type": "Circuit",
+        "description": "The circuit where the race took place."
+      },
+      {
+        "local_id": "e7",
+        "name": "Round 3 – China",
+        "entity_type": "GrandPrix",
+        "description": "The third round of the 2012 Formula One World Championship."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e4",
+        "target_id": "e3",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Lewis Hamilton was a teammate of Michael Schumacher.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e7",
+        "target_id": "e5",
+        "relationship_type": "ROUND_OF",
+        "description": "Round 3 – China is a round of the 2012 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e7",
+        "target_id": "e6",
+        "relationship_type": "HELD_AT",
+        "description": "Round 3 – China is held at Shanghai International Circuit.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

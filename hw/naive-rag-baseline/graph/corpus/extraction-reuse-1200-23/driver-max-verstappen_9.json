@@ -1,0 +1,77 @@
+{
+  "chunk_id": "driver-max-verstappen#9",
+  "doc_id": "driver-max-verstappen",
+  "document_title": "Max Verstappen",
+  "section": null,
+  "page": 3,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "3ae99f8576eaf10fe59ca15b592236334eca5034d13b8920fdf10496130bd136",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Max Verstappen",
+        "entity_type": "Driver",
+        "description": "A Formula One driver who began his career with Toro Rosso."
+      },
+      {
+        "local_id": "e2",
+        "name": "Toro Rosso",
+        "entity_type": "Team",
+        "description": "A Formula One team that Verstappen drove for."
+      },
+      {
+        "local_id": "e3",
+        "name": "2015",
+        "entity_type": "Season",
+        "description": "The Formula One season in which Verstappen made his debut."
+      },
+      {
+        "local_id": "e4",
+        "name": "2016",
+        "entity_type": "Season",
+        "description": "The Formula One season following Verstappen's debut."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Verstappen drove for Toro Rosso.",
+        "from_year": 2015,
+        "to_year": 2016,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e3",
+        "relationship_type": "ENTERED",
+        "description": "Toro Rosso entered the 2015 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e4",
+        "relationship_type": "ENTERED",
+        "description": "Toro Rosso entered the 2016 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 4,
+  "entities_accepted": 4,
+  "entities_rejected": 0,
+  "relationship_candidates": 3,
+  "relationships_accepted": 3,
+  "relationships_rejected": 0,
+  "rejections": [],
+  "alignments": []
+}

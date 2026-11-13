@@ -1,0 +1,124 @@
+{
+  "chunk_id": "driver-lewis-hamilton#42",
+  "doc_id": "driver-lewis-hamilton",
+  "document_title": "Lewis Hamilton",
+  "section": null,
+  "page": 9,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "b5df9371852427965c1aefee7ddd4a4fad1f76445f19c52bd42a3024d5de07ba",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Lewis Hamilton",
+        "entity_type": "Driver",
+        "description": "A Formula One driver known for his multiple championship titles."
+      },
+      {
+        "local_id": "e2",
+        "name": "Scuderia Ferrari",
+        "entity_type": "Team",
+        "description": "A Formula One team that Hamilton signed with in 2025."
+      },
+      {
+        "local_id": "e3",
+        "name": "Mercedes-AMG Petronas Formula One Team",
+        "entity_type": "Team",
+        "description": "The Formula One team Hamilton drove for before signing with Ferrari."
+      },
+      {
+        "local_id": "e4",
+        "name": "2017",
+        "entity_type": "Season",
+        "description": "The season in which Hamilton won his fourth title."
+      },
+      {
+        "local_id": "e5",
+        "name": "Abu Dhabi Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula One race where Hamilton wore a gold helmet after winning his fourth title."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Lewis Hamilton at Abu Dhabi Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Hamilton sported a gold helmet at the Abu Dhabi Grand Prix after winning his fourth title."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Hamilton signed with Ferrari in 2025.",
+        "from_year": 2025,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e3",
+        "relationship_type": "DROVE_FOR",
+        "description": "Hamilton drove for Mercedes before signing with Ferrari.",
+        "from_year": null,
+        "to_year": 2025,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e4",
+        "relationship_type": "ROUND_OF",
+        "description": "The Abu Dhabi Grand Prix is a round of the 2017 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Hamilton sported a gold helmet at the Abu Dhabi Grand Prix after winning his fourth title.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e5",
+        "relationship_type": "AT_RACE",
+        "description": "Hamilton sported a gold helmet at the Abu Dhabi Grand Prix after winning his fourth title.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 5,
+  "entities_accepted": 6,
+  "entities_rejected": 0,
+  "relationship_candidates": 6,
+  "relationships_accepted": 5,
+  "relationships_rejected": 2,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "WON does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 6,
+      "reason": "HELD_AT does not allow GrandPrix -> Team"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 4,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e5; description kept"
+    }
+  ]
+}

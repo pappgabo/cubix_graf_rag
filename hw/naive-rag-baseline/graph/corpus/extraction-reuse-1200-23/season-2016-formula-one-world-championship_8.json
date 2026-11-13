@@ -1,0 +1,152 @@
+{
+  "chunk_id": "season-2016-formula-one-world-championship#8",
+  "doc_id": "season-2016-formula-one-world-championship",
+  "document_title": "2016 Formula One World Championship",
+  "section": "Driver changes",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "d9a20c0eccc82d714aa519be5d7867cfaaa68ca3ab9c008ceba28d1bca844243",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Romain Grosjean",
+        "entity_type": "Driver",
+        "description": "Left Lotus at the end of the 2015 season and signed with Haas F1 Team for 2016."
+      },
+      {
+        "local_id": "e2",
+        "name": "Haas F1 Team",
+        "entity_type": "Team",
+        "description": "Newly formed team for the 2016 season."
+      },
+      {
+        "local_id": "e3",
+        "name": "Esteban Gutiérrez",
+        "entity_type": "Driver",
+        "description": "Joined Haas F1 Team for 2016 after being a former Sauber driver."
+      },
+      {
+        "local_id": "e4",
+        "name": "Renault",
+        "entity_type": "Team",
+        "description": "Introduced a new driver line-up after taking over the Lotus team."
+      },
+      {
+        "local_id": "e5",
+        "name": "Jolyon Palmer",
+        "entity_type": "Driver",
+        "description": "2014 GP2 Series champion who made his race debut in Melbourne."
+      },
+      {
+        "local_id": "e6",
+        "name": "Pastor Maldonado",
+        "entity_type": "Driver",
+        "description": "Originally signed with Lotus for 2016 but did not drive for Renault due to sponsor issues."
+      },
+      {
+        "local_id": "e7",
+        "name": "Kevin Magnussen",
+        "entity_type": "Driver",
+        "description": "Replaced Pastor Maldonado at Renault after being released by McLaren."
+      },
+      {
+        "local_id": "e8",
+        "name": "McLaren",
+        "entity_type": "Team",
+        "description": "Team that released Kevin Magnussen when they chose not to renew his contract."
+      },
+      {
+        "local_id": "e9",
+        "name": "Lotus",
+        "entity_type": "Team",
+        "description": "Team that Romain Grosjean and Pastor Maldonado were associated with before 2016."
+      },
+      {
+        "local_id": "e10",
+        "name": "2016",
+        "entity_type": "Season",
+        "description": "The championship year in which these driver changes occurred."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Romain Grosjean drove for Haas F1 Team in 2016.",
+        "from_year": 2016,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Esteban Gutiérrez drove for Haas F1 Team in 2016.",
+        "from_year": 2016,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e4",
+        "relationship_type": "DROVE_FOR",
+        "description": "Jolyon Palmer drove for Renault in 2016.",
+        "from_year": 2016,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e6",
+        "target_id": "e4",
+        "relationship_type": "DROVE_FOR",
+        "description": "Pastor Maldonado was supposed to drive for Renault in 2016 but did not due to sponsor issues.",
+        "from_year": 2016,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e7",
+        "target_id": "e4",
+        "relationship_type": "DROVE_FOR",
+        "description": "Kevin Magnussen drove for Renault in 2016 after replacing Pastor Maldonado.",
+        "from_year": 2016,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 10,
+  "entities_accepted": 10,
+  "entities_rejected": 0,
+  "relationship_candidates": 9,
+  "relationships_accepted": 5,
+  "relationships_rejected": 4,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 5,
+      "reason": "DROVE_FOR does not allow Team -> Team"
+    },
+    {
+      "element": "relationship",
+      "index": 6,
+      "reason": "DROVE_FOR does not allow Team -> Driver"
+    },
+    {
+      "element": "relationship",
+      "index": 7,
+      "reason": "ENTERED does not allow Season -> Team"
+    },
+    {
+      "element": "relationship",
+      "index": 8,
+      "reason": "ENTERED does not allow Season -> Team"
+    }
+  ],
+  "alignments": []
+}

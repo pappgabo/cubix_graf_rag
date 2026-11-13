@@ -1,0 +1,216 @@
+{
+  "chunk_id": "team-renault-in-formula-one#30",
+  "doc_id": "team-renault-in-formula-one",
+  "document_title": "Renault in Formula One",
+  "section": "Constructor > Renault F1 Team and Lotus Renault GP (2002–2011): The rise and fall of the first Enstone era > Decline in fortunes and race-fixing scandal (2007–2009)",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "314f3373b0c67ec74b42b8f2121f5ee2edafee5053e00b6e6b88c0154a41d877",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Renault F1 Team",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that entered cars."
+      },
+      {
+        "local_id": "e2",
+        "name": "Fernando Alonso",
+        "entity_type": "Driver",
+        "description": "A driver who raced for Renault F1 Team."
+      },
+      {
+        "local_id": "e3",
+        "name": "Nelson Piquet Jr.",
+        "entity_type": "Driver",
+        "description": "A driver who raced for Renault F1 Team."
+      },
+      {
+        "local_id": "e4",
+        "name": "2006 Japanese Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A race where Renault last won before the events described."
+      },
+      {
+        "local_id": "e5",
+        "name": "2008",
+        "entity_type": "Season",
+        "description": "The championship year during which the events occurred."
+      },
+      {
+        "local_id": "e6",
+        "name": "Singapore Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A race where Alonso claimed his first victory of the season."
+      },
+      {
+        "local_id": "e7",
+        "name": "Japanese Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A race where Alonso recorded another win."
+      },
+      {
+        "local_id": "e8",
+        "name": "Brazilian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The season-ending race where Alonso finished second."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Fernando Alonso at Singapore Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Alonso recorded a result in the Singapore Grand Prix."
+      },
+      {
+        "local_id": "rr2",
+        "name": "Fernando Alonso at Brazilian Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Alonso recorded a result in the Brazilian Grand Prix."
+      },
+      {
+        "local_id": "rr3",
+        "name": "Nelson Piquet Jr. at Japanese Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Piquet Jr. recorded a result in the Japanese Grand Prix."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e2",
+        "target_id": "e1",
+        "relationship_type": "DROVE_FOR",
+        "description": "Alonso raced for Renault F1 Team.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e1",
+        "relationship_type": "DROVE_FOR",
+        "description": "Piquet Jr. raced for Renault F1 Team.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e6",
+        "target_id": "e5",
+        "relationship_type": "ROUND_OF",
+        "description": "Singapore Grand Prix is a round of the 2008 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e7",
+        "target_id": "e5",
+        "relationship_type": "ROUND_OF",
+        "description": "Japanese Grand Prix is a round of the 2008 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e8",
+        "target_id": "e5",
+        "relationship_type": "ROUND_OF",
+        "description": "Brazilian Grand Prix is a round of the 2008 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e5",
+        "relationship_type": "ENTERED",
+        "description": "Renault F1 Team took part in the 2008 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Alonso recorded a result in the Singapore Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e6",
+        "relationship_type": "AT_RACE",
+        "description": "Alonso recorded a result in the Singapore Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "rr2",
+        "relationship_type": "ACHIEVED",
+        "description": "Alonso recorded a result in the Brazilian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr2",
+        "target_id": "e8",
+        "relationship_type": "AT_RACE",
+        "description": "Alonso recorded a result in the Brazilian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "rr3",
+        "relationship_type": "ACHIEVED",
+        "description": "Piquet Jr. recorded a result in the Japanese Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr3",
+        "target_id": "e7",
+        "relationship_type": "AT_RACE",
+        "description": "Piquet Jr. recorded a result in the Japanese Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 8,
+  "entities_accepted": 11,
+  "entities_rejected": 0,
+  "relationship_candidates": 9,
+  "relationships_accepted": 12,
+  "relationships_rejected": 0,
+  "rejections": [],
+  "alignments": [
+    {
+      "index": 6,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e6; description kept"
+    },
+    {
+      "index": 7,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr2 -AT_RACE-> e8; description kept"
+    },
+    {
+      "index": 8,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr3 -AT_RACE-> e7; description kept"
+    }
+  ]
+}

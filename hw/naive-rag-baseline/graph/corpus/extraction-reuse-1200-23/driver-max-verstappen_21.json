@@ -1,0 +1,167 @@
+{
+  "chunk_id": "driver-max-verstappen#21",
+  "doc_id": "driver-max-verstappen",
+  "document_title": "Max Verstappen",
+  "section": null,
+  "page": 5,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "f0ca8940b436dbf99c1ab156e2dd285305a4224c570f71134cf9d6494bbe0527",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Max Verstappen",
+        "entity_type": "Driver",
+        "description": "A Formula One driver who earned his fifth career win in Mexico and finished the 2018 season in fourth place with 249 points."
+      },
+      {
+        "local_id": "e2",
+        "name": "Lewis Hamilton",
+        "entity_type": "Driver",
+        "description": "A Formula One driver who was overtaken by Verstappen at the start of the race."
+      },
+      {
+        "local_id": "e3",
+        "name": "Esteban Ocon",
+        "entity_type": "Driver",
+        "description": "A Force India driver who collided with Verstappen during the 2018 Brazilian Grand Prix."
+      },
+      {
+        "local_id": "e4",
+        "name": "2018",
+        "entity_type": "Season",
+        "description": "The Formula One season in which Verstappen earned two wins and finished fourth in the championship."
+      },
+      {
+        "local_id": "e5",
+        "name": "Mexico",
+        "entity_type": "GrandPrix",
+        "description": "The Grand Prix where Verstappen earned his fifth career win."
+      },
+      {
+        "local_id": "e6",
+        "name": "Brazilian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The Grand Prix where Verstappen was poised to win but finished second after a collision with Ocon."
+      },
+      {
+        "local_id": "e7",
+        "name": "Abu Dhabi",
+        "entity_type": "GrandPrix",
+        "description": "The Grand Prix where Verstappen finished third."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Max Verstappen at Mexico",
+        "entity_type": "RaceResult",
+        "description": "Verstappen earned a win at the Mexico Grand Prix."
+      },
+      {
+        "local_id": "rr2",
+        "name": "Max Verstappen at Brazilian Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Verstappen finished second at the Brazilian Grand Prix."
+      },
+      {
+        "local_id": "rr3",
+        "name": "Max Verstappen at Abu Dhabi",
+        "entity_type": "RaceResult",
+        "description": "Verstappen finished third at the Abu Dhabi Grand Prix."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Verstappen earned a win at the Mexico Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e5",
+        "relationship_type": "AT_RACE",
+        "description": "Verstappen earned a win at the Mexico Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr2",
+        "relationship_type": "ACHIEVED",
+        "description": "Verstappen finished second at the Brazilian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr2",
+        "target_id": "e6",
+        "relationship_type": "AT_RACE",
+        "description": "Verstappen finished second at the Brazilian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr3",
+        "relationship_type": "ACHIEVED",
+        "description": "Verstappen finished third at the Abu Dhabi Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr3",
+        "target_id": "e7",
+        "relationship_type": "AT_RACE",
+        "description": "Verstappen finished third at the Abu Dhabi Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 7,
+  "entities_accepted": 10,
+  "entities_rejected": 0,
+  "relationship_candidates": 5,
+  "relationships_accepted": 6,
+  "relationships_rejected": 2,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "RACED_IN does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 7,
+      "reason": "WON does not allow Driver -> Season"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 1,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e5; description kept"
+    },
+    {
+      "index": 2,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr2 -AT_RACE-> e6; description kept"
+    },
+    {
+      "index": 3,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr3 -AT_RACE-> e7; description kept"
+    }
+  ]
+}

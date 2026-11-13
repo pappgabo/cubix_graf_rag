@@ -1,0 +1,118 @@
+{
+  "chunk_id": "team-mclaren#78",
+  "doc_id": "team-mclaren",
+  "document_title": "McLaren",
+  "section": "American open-wheel racing > USAC (1970–1979)",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "ad56a7b20a235182d2a407d9397968dc7e75c0dd36ad48e9eba04e6a89534c2e",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "McLaren",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that entered cars."
+      },
+      {
+        "local_id": "e2",
+        "name": "M16",
+        "entity_type": "Car",
+        "description": "A car model used by McLaren."
+      },
+      {
+        "local_id": "e3",
+        "name": "M24",
+        "entity_type": "Car",
+        "description": "A new car model introduced by McLaren in 1977."
+      },
+      {
+        "local_id": "e4",
+        "name": "1975",
+        "entity_type": "Season",
+        "description": "A championship year."
+      },
+      {
+        "local_id": "e5",
+        "name": "1976",
+        "entity_type": "Season",
+        "description": "A championship year."
+      },
+      {
+        "local_id": "e6",
+        "name": "1977",
+        "entity_type": "Season",
+        "description": "A championship year."
+      },
+      {
+        "local_id": "e7",
+        "name": "1978",
+        "entity_type": "Season",
+        "description": "A championship year."
+      },
+      {
+        "local_id": "e8",
+        "name": "1979",
+        "entity_type": "Season",
+        "description": "A championship year."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "FIELDED",
+        "description": "McLaren fielded the M16 car.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e4",
+        "relationship_type": "ENTERED",
+        "description": "McLaren entered the 1975 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 8,
+  "entities_accepted": 8,
+  "entities_rejected": 0,
+  "relationship_candidates": 7,
+  "relationships_accepted": 2,
+  "relationships_rejected": 5,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "FIELDED is not temporal; from_year=1977, to_year=None, role=None cannot be stored without dropping them"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "WON does not allow Team -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "RACED_IN does not allow Team -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "RACED_IN does not allow Team -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 5,
+      "reason": "RACED_IN does not allow Team -> Season"
+    }
+  ],
+  "alignments": []
+}

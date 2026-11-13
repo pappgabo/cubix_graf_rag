@@ -1,0 +1,109 @@
+{
+  "chunk_id": "driver-michael-schumacher#58",
+  "doc_id": "driver-michael-schumacher",
+  "document_title": "Michael Schumacher",
+  "section": null,
+  "page": 5,
+  "source": "https://en.wikipedia.org/wiki/Michael_Schumacher",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "951732eed34c6f343271f697c895852dc2327e0626ca2cd846ddfd2dee7e8ee4",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "FOR_TEAM does not allow Driver -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "FOR_TEAM does not allow Driver -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "FIELDED does not allow Team -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 5,
+      "reason": "FIELDED does not allow Team -> Season"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 0,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e5; description kept"
+    }
+  ],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Michael Schumacher",
+        "entity_type": "Driver",
+        "description": "A Formula One driver who achieved a notable performance at the French Grand Prix."
+      },
+      {
+        "local_id": "e2",
+        "name": "David Coulthard",
+        "entity_type": "Driver",
+        "description": "A Formula One driver who finished behind Michael Schumacher at the French Grand Prix."
+      },
+      {
+        "local_id": "e3",
+        "name": "Mika Häkkinen",
+        "entity_type": "Driver",
+        "description": "A Formula One driver who started on pole at the French Grand Prix but faced reliability issues."
+      },
+      {
+        "local_id": "e4",
+        "name": "Scuderia Ferrari",
+        "entity_type": "Team",
+        "description": "The Formula One team that achieved a 1–2 finish at the French Grand Prix."
+      },
+      {
+        "local_id": "e5",
+        "name": "French Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula One race where Schumacher finished first."
+      },
+      {
+        "local_id": "e6",
+        "name": "1990",
+        "entity_type": "Season",
+        "description": "The year of the last Ferrari 1–2 finish before the one at the French Grand Prix."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Michael Schumacher at French Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Schumacher finished first at the French Grand Prix."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Schumacher finished first at the French Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e5",
+        "relationship_type": "AT_RACE",
+        "description": "Schumacher finished first at the French Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

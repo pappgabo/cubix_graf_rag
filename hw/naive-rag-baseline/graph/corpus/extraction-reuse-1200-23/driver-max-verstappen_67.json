@@ -1,0 +1,116 @@
+{
+  "chunk_id": "driver-max-verstappen#67",
+  "doc_id": "driver-max-verstappen",
+  "document_title": "Max Verstappen",
+  "section": null,
+  "page": 13,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "d63fa9db29e51860116ce0a7225bf7c7d59045a9fdfe2d951b8192d50ce9ccbc",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Max Verstappen",
+        "entity_type": "Driver",
+        "description": "A Formula One driver from the Netherlands."
+      },
+      {
+        "local_id": "e2",
+        "name": "Netherlands",
+        "entity_type": "Team",
+        "description": "The home country of Max Verstappen."
+      },
+      {
+        "local_id": "e3",
+        "name": "Orange Army",
+        "entity_type": "Team",
+        "description": "The nickname for Max Verstappen's fanbase."
+      },
+      {
+        "local_id": "e4",
+        "name": "Las Vegas Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula One race held in Las Vegas."
+      },
+      {
+        "local_id": "e5",
+        "name": "Dutch Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula One race held in the Netherlands."
+      },
+      {
+        "local_id": "e6",
+        "name": "Honda",
+        "entity_type": "Team",
+        "description": "An engine supplier in Formula One."
+      },
+      {
+        "local_id": "e7",
+        "name": "2021",
+        "entity_type": "Season",
+        "description": "The Formula One season in which Verstappen was voted the most popular driver."
+      },
+      {
+        "local_id": "e8",
+        "name": "2023",
+        "entity_type": "Season",
+        "description": "The year of the inaugural Las Vegas Grand Prix."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Max Verstappen is from the Netherlands.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e3",
+        "relationship_type": "DROVE_FOR",
+        "description": "Max Verstappen's fanbase is referred to as the Orange Army.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e8",
+        "relationship_type": "ROUND_OF",
+        "description": "The Las Vegas Grand Prix is a round of the 2023 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e7",
+        "relationship_type": "ROUND_OF",
+        "description": "The Dutch Grand Prix is a round of the 2021 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 8,
+  "entities_accepted": 8,
+  "entities_rejected": 0,
+  "relationship_candidates": 5,
+  "relationships_accepted": 4,
+  "relationships_rejected": 1,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "DROVE_FOR does not allow Team -> Season"
+    }
+  ],
+  "alignments": []
+}

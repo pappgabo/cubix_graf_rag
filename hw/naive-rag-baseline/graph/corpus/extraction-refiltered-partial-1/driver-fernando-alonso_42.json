@@ -1,0 +1,57 @@
+{
+  "chunk_id": "driver-fernando-alonso#42",
+  "doc_id": "driver-fernando-alonso",
+  "document_title": "Fernando Alonso",
+  "section": "McLaren and second stint with Renault (2007–2009)",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/Fernando_Alonso",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "d819b34da13003483df632303b794ad675a4462ccc7c0101f63ab020a6562b84",
+  "validation_version": "partial-1",
+  "source_status": "ok",
+  "status": "ok",
+  "rejections": [],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Fernando Alonso",
+        "entity_type": "Driver",
+        "description": "A Formula One driver who rejoined Renault in 2008."
+      },
+      {
+        "local_id": "e2",
+        "name": "Renault",
+        "entity_type": "Team",
+        "description": "A Formula One team that Alonso rejoined in 2008."
+      },
+      {
+        "local_id": "e3",
+        "name": "2008",
+        "entity_type": "Season",
+        "description": "The Formula One season during which Alonso rejoined Renault."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Alonso rejoined Renault",
+        "from_year": 2008,
+        "to_year": 2009,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e3",
+        "relationship_type": "ENTERED",
+        "description": "Renault took part in the 2008 season",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

@@ -1,0 +1,144 @@
+{
+  "chunk_id": "driver-valtteri-bottas#17",
+  "doc_id": "driver-valtteri-bottas",
+  "document_title": "Valtteri Bottas",
+  "section": "Formula One career > Williams (2010–2016) > 2013: Debut season",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/Valtteri_Bottas",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "d8bf00beda104240a660a77236ea20e4cb1d3500a2c38f52a4baec6355fc577a",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "entity_candidates": 5,
+  "entities_accepted": 7,
+  "entities_rejected": 0,
+  "relationship_candidates": 5,
+  "relationships_accepted": 7,
+  "relationships_rejected": 0,
+  "rejections": [],
+  "alignments": [
+    {
+      "index": 1,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e4; description kept"
+    },
+    {
+      "index": 2,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr2 -AT_RACE-> e5; description kept"
+    }
+  ],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Valtteri Bottas",
+        "entity_type": "Driver",
+        "description": "A Finnish racing driver who competed in Formula One."
+      },
+      {
+        "local_id": "e2",
+        "name": "Williams",
+        "entity_type": "Team",
+        "description": "A Formula One team that entered cars."
+      },
+      {
+        "local_id": "e3",
+        "name": "2013",
+        "entity_type": "Season",
+        "description": "The Formula One season in which Bottas made his debut."
+      },
+      {
+        "local_id": "e4",
+        "name": "Australian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The first race of the 2013 Formula One season."
+      },
+      {
+        "local_id": "e5",
+        "name": "Malaysian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The second race of the 2013 Formula One season."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Valtteri Bottas at Australian Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Bottas finished 14th at his debut race."
+      },
+      {
+        "local_id": "rr2",
+        "name": "Valtteri Bottas at Malaysian Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Bottas improved from 18th to 11th at the Malaysian Grand Prix."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Bottas drove for Williams as a full-time race driver.",
+        "from_year": 2013,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Bottas finished 14th at his debut race.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e4",
+        "relationship_type": "AT_RACE",
+        "description": "Bottas finished 14th at his debut race.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr2",
+        "relationship_type": "ACHIEVED",
+        "description": "Bottas improved from 18th to 11th at the Malaysian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr2",
+        "target_id": "e5",
+        "relationship_type": "AT_RACE",
+        "description": "Bottas improved from 18th to 11th at the Malaysian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e3",
+        "relationship_type": "ROUND_OF",
+        "description": "The Australian Grand Prix is a round of the 2013 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e3",
+        "relationship_type": "ROUND_OF",
+        "description": "The Malaysian Grand Prix is a round of the 2013 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

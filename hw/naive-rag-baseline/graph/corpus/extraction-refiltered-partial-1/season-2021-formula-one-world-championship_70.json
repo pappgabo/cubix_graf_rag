@@ -1,0 +1,82 @@
+{
+  "chunk_id": "season-2021-formula-one-world-championship#70",
+  "doc_id": "season-2021-formula-one-world-championship",
+  "document_title": "2021 Formula One World Championship",
+  "section": null,
+  "page": 6,
+  "source": "https://en.wikipedia.org/wiki/2021_Formula_One_World_Championship",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "26929aeabb11ae1b4c17b2094c1fad77614bb788c69edd894dfa7796f3248eb8",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "ROUND_OF does not allow Driver -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "ACHIEVED does not allow Driver -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "ACHIEVED does not allow Driver -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "ACHIEVED does not allow Driver -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "ACHIEVED does not allow Driver -> Driver"
+    }
+  ],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Lewis Hamilton",
+        "entity_type": "Driver",
+        "description": "/"
+      },
+      {
+        "local_id": "e2",
+        "name": "Valtteri Bottas",
+        "entity_type": "Driver",
+        "description": "/"
+      },
+      {
+        "local_id": "e3",
+        "name": "Max Verstappen",
+        "entity_type": "Driver",
+        "description": "/"
+      },
+      {
+        "local_id": "e4",
+        "name": "Sergio Pérez",
+        "entity_type": "Driver",
+        "description": "/"
+      },
+      {
+        "local_id": "e5",
+        "name": "2021",
+        "entity_type": "Season",
+        "description": "/"
+      },
+      {
+        "local_id": "e6",
+        "name": "Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "/"
+      }
+    ],
+    "relationships": []
+  }
+}

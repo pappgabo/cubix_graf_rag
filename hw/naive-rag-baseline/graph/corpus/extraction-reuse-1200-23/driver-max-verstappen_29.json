@@ -1,0 +1,169 @@
+{
+  "chunk_id": "driver-max-verstappen#29",
+  "doc_id": "driver-max-verstappen",
+  "document_title": "Max Verstappen",
+  "section": null,
+  "page": 6,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "2211a6e98e610cd9c98c02857cdcabb8f9439d987a08c7920bdc57993a1f337e",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Max Verstappen",
+        "entity_type": "Driver",
+        "description": "A Formula One driver."
+      },
+      {
+        "local_id": "e2",
+        "name": "Sergio Pérez",
+        "entity_type": "Driver",
+        "description": "A Formula One driver."
+      },
+      {
+        "local_id": "e3",
+        "name": "Emilia Romagna Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula One race."
+      },
+      {
+        "local_id": "e4",
+        "name": "Portuguese Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula One race."
+      },
+      {
+        "local_id": "e5",
+        "name": "Spanish Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula One race."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Max Verstappen at Emilia Romagna Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Verstappen finished second at the Emilia Romagna Grand Prix."
+      },
+      {
+        "local_id": "rr2",
+        "name": "Max Verstappen at Portuguese Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Verstappen finished second at the Portuguese Grand Prix."
+      },
+      {
+        "local_id": "rr3",
+        "name": "Max Verstappen at Spanish Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Verstappen finished second at the Spanish Grand Prix."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Verstappen was teammates with Pérez.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Verstappen finished second at the Emilia Romagna Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e3",
+        "relationship_type": "AT_RACE",
+        "description": "Verstappen finished second at the Emilia Romagna Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr2",
+        "relationship_type": "ACHIEVED",
+        "description": "Verstappen finished second at the Portuguese Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr2",
+        "target_id": "e4",
+        "relationship_type": "AT_RACE",
+        "description": "Verstappen finished second at the Portuguese Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr3",
+        "relationship_type": "ACHIEVED",
+        "description": "Verstappen finished second at the Spanish Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr3",
+        "target_id": "e5",
+        "relationship_type": "AT_RACE",
+        "description": "Verstappen finished second at the Spanish Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 5,
+  "entities_accepted": 8,
+  "entities_rejected": 0,
+  "relationship_candidates": 7,
+  "relationships_accepted": 7,
+  "relationships_rejected": 3,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "AT_RACE does not allow GrandPrix -> Driver"
+    },
+    {
+      "element": "relationship",
+      "index": 6,
+      "reason": "AT_RACE does not allow GrandPrix -> Driver"
+    },
+    {
+      "element": "relationship",
+      "index": 9,
+      "reason": "AT_RACE does not allow GrandPrix -> Driver"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 1,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e3; description kept"
+    },
+    {
+      "index": 3,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr2 -AT_RACE-> e4; description kept"
+    },
+    {
+      "index": 5,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr3 -AT_RACE-> e5; description kept"
+    }
+  ]
+}

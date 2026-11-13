@@ -1,0 +1,180 @@
+{
+  "chunk_id": "team-mclaren#72",
+  "doc_id": "team-mclaren",
+  "document_title": "McLaren",
+  "section": "Can-Am",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "c6de6a450d3eaf2e66b3d9f3a689c1572b87669d2ad3cea03555ca92ebac1749",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Bruce McLaren",
+        "entity_type": "Driver",
+        "description": "Bruce McLaren won races with the small-block Oldsmobile-powered car."
+      },
+      {
+        "local_id": "e2",
+        "name": "McLaren",
+        "entity_type": "Team",
+        "description": "McLaren's first racing car designed and built by Bruce McLaren Motor Racing."
+      },
+      {
+        "local_id": "e3",
+        "name": "M1",
+        "entity_type": "Car",
+        "description": "McLaren's first racing car designed and built."
+      },
+      {
+        "local_id": "e4",
+        "name": "M3",
+        "entity_type": "Car",
+        "description": "Car created by McLaren for the Can-Am Series."
+      },
+      {
+        "local_id": "e5",
+        "name": "M6A",
+        "entity_type": "Car",
+        "description": "Chevrolet V8-powered car designed for the Can-Am Series."
+      },
+      {
+        "local_id": "e6",
+        "name": "1966",
+        "entity_type": "Season",
+        "description": "Season in which the Can-Am Series started."
+      },
+      {
+        "local_id": "e7",
+        "name": "1967",
+        "entity_type": "Season",
+        "description": "Season in which Bruce McLaren won the championship."
+      },
+      {
+        "local_id": "e8",
+        "name": "John Surtees",
+        "entity_type": "Driver",
+        "description": "Took the inaugural title in a Lola T70."
+      },
+      {
+        "local_id": "e9",
+        "name": "Denny Hulme",
+        "entity_type": "Driver",
+        "description": "Partnered Bruce McLaren in the Can-Am Series."
+      },
+      {
+        "local_id": "e10",
+        "name": "Can-Am Series",
+        "entity_type": "GrandPrix",
+        "description": "Series in which McLaren competed with the M3 and M6A."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e2",
+        "target_id": "e3",
+        "relationship_type": "FIELDED",
+        "description": "McLaren fielded the M1 car.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e4",
+        "relationship_type": "FIELDED",
+        "description": "McLaren fielded the M3 car for the Can-Am Series.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e5",
+        "relationship_type": "FIELDED",
+        "description": "McLaren fielded the M6A car for the Can-Am Series.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e6",
+        "relationship_type": "RACED_IN",
+        "description": "The M3 raced in the 1966 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e7",
+        "relationship_type": "RACED_IN",
+        "description": "The M6A raced in the 1967 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e10",
+        "target_id": "e6",
+        "relationship_type": "ROUND_OF",
+        "description": "The Can-Am Series is a round of the 1966 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e10",
+        "target_id": "e7",
+        "relationship_type": "ROUND_OF",
+        "description": "The Can-Am Series is a round of the 1967 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e9",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Bruce McLaren was teammates with Denny Hulme.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 10,
+  "entities_accepted": 10,
+  "entities_rejected": 0,
+  "relationship_candidates": 10,
+  "relationships_accepted": 8,
+  "relationships_rejected": 2,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 5,
+      "reason": "WON does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 9,
+      "reason": "WON does not allow Driver -> Season"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 3,
+      "action": "clear_redundant_season_year",
+      "detail": "RACED_IN year 1966 already named by Season 'e6'; from_year and to_year cleared"
+    },
+    {
+      "index": 4,
+      "action": "clear_redundant_season_year",
+      "detail": "RACED_IN year 1967 already named by Season 'e7'; from_year and to_year cleared"
+    }
+  ]
+}

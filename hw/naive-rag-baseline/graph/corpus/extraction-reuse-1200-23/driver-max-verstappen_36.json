@@ -1,0 +1,62 @@
+{
+  "chunk_id": "driver-max-verstappen#36",
+  "doc_id": "driver-max-verstappen",
+  "document_title": "Max Verstappen",
+  "section": null,
+  "page": 7,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "174301290af7131be06d6a22ef50a11abea94199b1c9cc069ff6366484f7e93a",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Max Verstappen",
+        "entity_type": "Driver",
+        "description": "First World Drivers' Champion from the Netherlands and the 34th overall."
+      },
+      {
+        "local_id": "e2",
+        "name": "2021",
+        "entity_type": "Season",
+        "description": "The season in which Verstappen became World Drivers' Champion."
+      },
+      {
+        "local_id": "e3",
+        "name": "World Drivers' Championship",
+        "entity_type": "Title",
+        "description": "Championship title won by Verstappen."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e3",
+        "relationship_type": "WON",
+        "description": "Verstappen won the World Drivers' Championship",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e2",
+        "relationship_type": "AWARDED_IN",
+        "description": "World Drivers' Championship awarded in the 2021 season",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 3,
+  "entities_accepted": 3,
+  "entities_rejected": 0,
+  "relationship_candidates": 2,
+  "relationships_accepted": 2,
+  "relationships_rejected": 0,
+  "rejections": [],
+  "alignments": []
+}

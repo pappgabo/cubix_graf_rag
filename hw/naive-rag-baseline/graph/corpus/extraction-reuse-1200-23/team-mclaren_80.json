@@ -1,0 +1,65 @@
+{
+  "chunk_id": "team-mclaren#80",
+  "doc_id": "team-mclaren",
+  "document_title": "McLaren",
+  "section": "Full season (2020–present)",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "e252c94d69c87514f09a2029827942e1595381cd973b23ee6e73a7eaefe16632",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "McLaren",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that entered cars."
+      },
+      {
+        "local_id": "e2",
+        "name": "Arrow McLaren SP",
+        "entity_type": "Team",
+        "description": "A collaboration between McLaren and Arrow Schmidt Peterson Motorsports."
+      },
+      {
+        "local_id": "e3",
+        "name": "2020",
+        "entity_type": "Season",
+        "description": "The championship year when McLaren contested full-time."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e3",
+        "relationship_type": "ENTERED",
+        "description": "McLaren took part in the 2020 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 3,
+  "entities_accepted": 3,
+  "entities_rejected": 0,
+  "relationship_candidates": 2,
+  "relationships_accepted": 1,
+  "relationships_rejected": 1,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "DROVE_FOR does not allow Team -> Team"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 0,
+      "action": "clear_redundant_season_year",
+      "detail": "ENTERED year 2020 already named by Season 'e3'; from_year and to_year cleared"
+    }
+  ]
+}

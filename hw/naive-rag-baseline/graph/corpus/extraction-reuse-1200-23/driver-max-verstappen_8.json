@@ -1,0 +1,65 @@
+{
+  "chunk_id": "driver-max-verstappen#8",
+  "doc_id": "driver-max-verstappen",
+  "document_title": "Max Verstappen",
+  "section": null,
+  "page": 2,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "a1d921f6ad2e951bd7c75f3fa8d31025395c01ead9551198db360b4f80cceaf7",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Max Verstappen",
+        "entity_type": "Driver",
+        "description": "A Dutch racing driver who made his junior formulae debut in 2014."
+      },
+      {
+        "local_id": "e2",
+        "name": "Florida Winter Series",
+        "entity_type": "Season",
+        "description": "A non-championship series where Verstappen made his junior formulae debut."
+      },
+      {
+        "local_id": "e3",
+        "name": "Palm Beach International Raceway",
+        "entity_type": "Circuit",
+        "description": "The circuit where Verstappen won a race in the Florida Winter Series."
+      },
+      {
+        "local_id": "e4",
+        "name": "Homestead–Miami Speedway",
+        "entity_type": "Circuit",
+        "description": "The circuit where Verstappen won his second race in the Florida Winter Series."
+      }
+    ],
+    "relationships": []
+  },
+  "entity_candidates": 4,
+  "entities_accepted": 4,
+  "entities_rejected": 0,
+  "relationship_candidates": 3,
+  "relationships_accepted": 0,
+  "relationships_rejected": 3,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "RACED_IN does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "ACHIEVED does not allow Driver -> Circuit"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "ACHIEVED does not allow Driver -> Circuit"
+    }
+  ],
+  "alignments": []
+}

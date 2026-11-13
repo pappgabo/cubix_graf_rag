@@ -1,0 +1,103 @@
+{
+  "chunk_id": "driver-michael-schumacher#23",
+  "doc_id": "driver-michael-schumacher",
+  "document_title": "Michael Schumacher",
+  "section": null,
+  "page": 3,
+  "source": "https://en.wikipedia.org/wiki/Michael_Schumacher",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "f2de840a5006b6da683b3e99bf0d33e368cf65cafbce43acc3856b7044a49441",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "entity_candidates": 6,
+  "entities_accepted": 6,
+  "entities_rejected": 0,
+  "relationship_candidates": 4,
+  "relationships_accepted": 3,
+  "relationships_rejected": 1,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "POWERED_BY does not allow Team -> PowerUnit"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 1,
+      "action": "clear_redundant_season_year",
+      "detail": "ENTERED year 1992 already named by Season 'e5'; from_year and to_year cleared"
+    }
+  ],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Michael Schumacher",
+        "entity_type": "Driver",
+        "description": "A Formula One driver."
+      },
+      {
+        "local_id": "e2",
+        "name": "Nelson Piquet",
+        "entity_type": "Driver",
+        "description": "A three-time World Champion Formula One driver."
+      },
+      {
+        "local_id": "e3",
+        "name": "Sauber",
+        "entity_type": "Team",
+        "description": "A Formula One team."
+      },
+      {
+        "local_id": "e4",
+        "name": "Mercedes",
+        "entity_type": "PowerUnit",
+        "description": "An engine supplier for Formula One."
+      },
+      {
+        "local_id": "e5",
+        "name": "1992",
+        "entity_type": "Season",
+        "description": "A Formula One championship season."
+      },
+      {
+        "local_id": "e6",
+        "name": "Italian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula One race."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Michael Schumacher was teammates with Nelson Piquet.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e5",
+        "relationship_type": "ENTERED",
+        "description": "Sauber team entered the 1992 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e6",
+        "target_id": "e5",
+        "relationship_type": "ROUND_OF",
+        "description": "Italian Grand Prix is a round of the 1992 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

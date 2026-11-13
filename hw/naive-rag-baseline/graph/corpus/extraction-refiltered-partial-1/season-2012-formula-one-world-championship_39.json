@@ -1,0 +1,57 @@
+{
+  "chunk_id": "season-2012-formula-one-world-championship#39",
+  "doc_id": "season-2012-formula-one-world-championship",
+  "document_title": "2012 Formula One World Championship",
+  "section": "Changes > Rule changes > Technical regulations",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/2012_Formula_One_World_Championship",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "604a03b55f02a265abaaa89415ee1194f72d74b1079eadc1fb4412d61cad6833",
+  "validation_version": "partial-1",
+  "source_status": "ok",
+  "status": "ok",
+  "rejections": [],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Williams",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that entered cars."
+      },
+      {
+        "local_id": "e2",
+        "name": "Mercedes",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that entered cars."
+      },
+      {
+        "local_id": "e3",
+        "name": "2012",
+        "entity_type": "Season",
+        "description": "A championship year."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e3",
+        "relationship_type": "ENTERED",
+        "description": "Williams took part in the 2012 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e3",
+        "relationship_type": "ENTERED",
+        "description": "Mercedes took part in the 2012 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

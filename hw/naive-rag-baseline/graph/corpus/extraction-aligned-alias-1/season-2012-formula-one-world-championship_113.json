@@ -1,0 +1,85 @@
+{
+  "chunk_id": "season-2012-formula-one-world-championship#113",
+  "doc_id": "season-2012-formula-one-world-championship",
+  "document_title": "2012 Formula One World Championship",
+  "section": "Race summaries > Round 6 – Monaco Circuit de Monaco",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/2012_Formula_One_World_Championship",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "6c87d2c4611d98acba7f33131c9b3533fbb0bf9ba45f2852f3f74bd1c99b9c10",
+  "validation_version": "partial-1",
+  "source_status": "ok",
+  "status": "ok",
+  "rejections": [],
+  "alignments": [],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Red Bull Racing",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that entered cars."
+      },
+      {
+        "local_id": "e2",
+        "name": "RB8",
+        "entity_type": "Car",
+        "description": "A chassis model fielded by Red Bull."
+      },
+      {
+        "local_id": "e3",
+        "name": "Christian Horner",
+        "entity_type": "Driver",
+        "description": "Team principal of Red Bull."
+      },
+      {
+        "local_id": "e4",
+        "name": "2012",
+        "entity_type": "Season",
+        "description": "The championship year."
+      },
+      {
+        "local_id": "e5",
+        "name": "Monaco",
+        "entity_type": "GrandPrix",
+        "description": "A specific race event."
+      },
+      {
+        "local_id": "e6",
+        "name": "Circuit de Monaco",
+        "entity_type": "Circuit",
+        "description": "The racing venue for the Monaco Grand Prix."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "FIELDED",
+        "description": "Red Bull entered the RB8 car.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e4",
+        "relationship_type": "ROUND_OF",
+        "description": "Monaco Grand Prix is a round of the 2012 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e6",
+        "relationship_type": "HELD_AT",
+        "description": "Monaco Grand Prix is held at Circuit de Monaco.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "chunk_id": "team-red-bull-racing#54",
+  "doc_id": "team-red-bull-racing",
+  "document_title": "Red Bull Racing",
+  "section": "2020 season",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "beb2d4c88323baf4baaee7c5f33f502a00a5159786e37806a90af56fc6a8cb2d",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Red Bull Racing",
+        "entity_type": "Team",
+        "description": "A Formula 1 team."
+      },
+      {
+        "local_id": "e2",
+        "name": "Max Verstappen",
+        "entity_type": "Driver",
+        "description": "A driver who races in Formula One."
+      },
+      {
+        "local_id": "e3",
+        "name": "Alex Albon",
+        "entity_type": "Driver",
+        "description": "A driver who races in Formula One."
+      },
+      {
+        "local_id": "e4",
+        "name": "2020",
+        "entity_type": "Season",
+        "description": "A championship year."
+      }
+    ],
+    "relationships": []
+  },
+  "entity_candidates": 4,
+  "entities_accepted": 4,
+  "entities_rejected": 0,
+  "relationship_candidates": 2,
+  "relationships_accepted": 0,
+  "relationships_rejected": 2,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "DROVE_FOR does not allow Team -> Driver"
+    },
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "DROVE_FOR does not allow Team -> Driver"
+    }
+  ],
+  "alignments": []
+}

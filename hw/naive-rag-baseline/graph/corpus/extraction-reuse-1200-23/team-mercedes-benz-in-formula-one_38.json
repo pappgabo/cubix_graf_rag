@@ -1,0 +1,70 @@
+{
+  "chunk_id": "team-mercedes-benz-in-formula-one#38",
+  "doc_id": "team-mercedes-benz-in-formula-one",
+  "document_title": "Mercedes-Benz in Formula One",
+  "section": "Mercedes-Benz in Formula One > Kingspan Group sponsorship controversy",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "fa4c36d89b914e716e9d08819e03fd1f86c7f75db6e7ce49934b3735d512684b",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Mercedes-AMG Petronas Formula One Team",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that entered cars."
+      },
+      {
+        "local_id": "e2",
+        "name": "Kingspan Group",
+        "entity_type": "Team",
+        "description": "A company that signed a sponsorship deal with Mercedes F1 Team."
+      },
+      {
+        "local_id": "e3",
+        "name": "2021",
+        "entity_type": "Season",
+        "description": "The championship year when the sponsorship deal was signed."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e3",
+        "relationship_type": "ENTERED",
+        "description": "Mercedes F1 Team entered the 2021 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 3,
+  "entities_accepted": 3,
+  "entities_rejected": 0,
+  "relationship_candidates": 3,
+  "relationships_accepted": 1,
+  "relationships_rejected": 2,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "DROVE_FOR does not allow Team -> Team"
+    },
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "DROVE_FOR does not allow Team -> Team"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 2,
+      "action": "clear_redundant_season_year",
+      "detail": "ENTERED year 2021 already named by Season 'e3'; from_year and to_year cleared"
+    }
+  ]
+}

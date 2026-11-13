@@ -1,0 +1,98 @@
+{
+  "chunk_id": "driver-sebastian-vettel#12",
+  "doc_id": "driver-sebastian-vettel",
+  "document_title": "Sebastian Vettel",
+  "section": "Toro Rosso (2007–2008) > 2007–2008: Maiden race win and rise to prominence",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "6fd2b1ae0f08c27ae98b53ef15583e8c20ee6d8959a375a91783dcc775581abe",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Sebastian Vettel",
+        "entity_type": "Driver",
+        "description": "A Formula One driver who raced for Toro Rosso."
+      },
+      {
+        "local_id": "e2",
+        "name": "Toro Rosso",
+        "entity_type": "Team",
+        "description": "A Formula One team that entered cars."
+      },
+      {
+        "local_id": "e3",
+        "name": "2008",
+        "entity_type": "Season",
+        "description": "The Formula One season in which Vettel raced."
+      },
+      {
+        "local_id": "e4",
+        "name": "Chinese Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula One race held in China."
+      },
+      {
+        "local_id": "e5",
+        "name": "Monaco Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula One race held in Monaco."
+      },
+      {
+        "local_id": "e6",
+        "name": "European Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula One race held in Europe."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Vettel raced for Toro Rosso.",
+        "from_year": 2007,
+        "to_year": 2008,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e3",
+        "relationship_type": "ROUND_OF",
+        "description": "The Chinese Grand Prix is a round of the 2008 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e3",
+        "relationship_type": "ROUND_OF",
+        "description": "The Monaco Grand Prix is a round of the 2008 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e6",
+        "target_id": "e3",
+        "relationship_type": "ROUND_OF",
+        "description": "The European Grand Prix is a round of the 2008 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 6,
+  "entities_accepted": 6,
+  "entities_rejected": 0,
+  "relationship_candidates": 4,
+  "relationships_accepted": 4,
+  "relationships_rejected": 0,
+  "rejections": [],
+  "alignments": []
+}

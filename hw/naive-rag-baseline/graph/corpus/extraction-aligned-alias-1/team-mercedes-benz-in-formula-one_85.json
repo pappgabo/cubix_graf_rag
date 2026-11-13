@@ -1,0 +1,84 @@
+{
+  "chunk_id": "team-mercedes-benz-in-formula-one#85",
+  "doc_id": "team-mercedes-benz-in-formula-one",
+  "document_title": "Mercedes-Benz in Formula One",
+  "section": "Mercedes-Benz in Formula One > Sponsorships",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/Mercedes-Benz_in_Formula_One",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "2a5c668f65cae17642e5f218b4939d47de80edcc89e35ab38a1eb202e6fa8315",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "DROVE_FOR does not allow Team -> Driver"
+    },
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "DROVE_FOR does not allow Team -> Driver"
+    }
+  ],
+  "alignments": [],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Mercedes-AMG Petronas Formula One Team",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that enters cars."
+      },
+      {
+        "local_id": "e2",
+        "name": "Bottas",
+        "entity_type": "Driver",
+        "description": "A driver who raced in Formula One."
+      },
+      {
+        "local_id": "e3",
+        "name": "Lewis Hamilton",
+        "entity_type": "Driver",
+        "description": "A driver who raced in Formula One."
+      },
+      {
+        "local_id": "e4",
+        "name": "2015",
+        "entity_type": "Season",
+        "description": "A championship year."
+      },
+      {
+        "local_id": "e5",
+        "name": "2017",
+        "entity_type": "Season",
+        "description": "A championship year."
+      },
+      {
+        "local_id": "e6",
+        "name": "2018",
+        "entity_type": "Season",
+        "description": "A championship year."
+      },
+      {
+        "local_id": "e7",
+        "name": "Bahrain Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A specific Grand Prix."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e7",
+        "target_id": "e5",
+        "relationship_type": "ROUND_OF",
+        "description": "The Bahrain Grand Prix is a round of the 2017 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

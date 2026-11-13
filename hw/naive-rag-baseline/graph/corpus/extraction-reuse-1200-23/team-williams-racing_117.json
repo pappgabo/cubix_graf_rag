@@ -1,0 +1,145 @@
+{
+  "chunk_id": "team-williams-racing#117",
+  "doc_id": "team-williams-racing",
+  "document_title": "Williams Racing",
+  "section": "Williams Racing > British Touring Car Championship (1995–1999)",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "640698c85ebd1ca9dc30448fde5f67ac8ab5bcb1d8182b12c1321c6cfb6f5ddb",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Williams Racing",
+        "entity_type": "Team",
+        "description": "A Formula 1 team."
+      },
+      {
+        "local_id": "e2",
+        "name": "1997",
+        "entity_type": "Season",
+        "description": "A championship year."
+      },
+      {
+        "local_id": "e3",
+        "name": "Bathurst 1000",
+        "entity_type": "GrandPrix",
+        "description": "A named race event."
+      },
+      {
+        "local_id": "e4",
+        "name": "Menu",
+        "entity_type": "Driver",
+        "description": "A driver who participated in the race."
+      },
+      {
+        "local_id": "e5",
+        "name": "Plato",
+        "entity_type": "Driver",
+        "description": "A driver who participated in the race."
+      },
+      {
+        "local_id": "e6",
+        "name": "Alan Jones",
+        "entity_type": "Driver",
+        "description": "A driver who participated in the race."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Menu at Bathurst 1000",
+        "entity_type": "RaceResult",
+        "description": "Menu recorded a result in the Bathurst 1000."
+      },
+      {
+        "local_id": "rr2",
+        "name": "Plato at Bathurst 1000",
+        "entity_type": "RaceResult",
+        "description": "Plato recorded a result in the Bathurst 1000."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "ENTERED",
+        "description": "Williams Racing competed in the 1997 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Menu recorded a result in the Bathurst 1000.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e3",
+        "relationship_type": "AT_RACE",
+        "description": "Menu recorded a result in the Bathurst 1000.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "rr2",
+        "relationship_type": "ACHIEVED",
+        "description": "Plato recorded a result in the Bathurst 1000.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr2",
+        "target_id": "e3",
+        "relationship_type": "AT_RACE",
+        "description": "Plato recorded a result in the Bathurst 1000.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e6",
+        "target_id": "e1",
+        "relationship_type": "DROVE_FOR",
+        "description": "Alan Jones drove for Williams Racing.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 6,
+  "entities_accepted": 8,
+  "entities_rejected": 0,
+  "relationship_candidates": 5,
+  "relationships_accepted": 6,
+  "relationships_rejected": 1,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "HELD_AT does not allow Team -> GrandPrix"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 2,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e3; description kept"
+    },
+    {
+      "index": 3,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr2 -AT_RACE-> e3; description kept"
+    }
+  ]
+}

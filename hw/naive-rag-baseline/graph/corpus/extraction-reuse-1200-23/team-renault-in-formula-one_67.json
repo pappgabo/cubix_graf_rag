@@ -1,0 +1,76 @@
+{
+  "chunk_id": "team-renault-in-formula-one#67",
+  "doc_id": "team-renault-in-formula-one",
+  "document_title": "Renault in Formula One",
+  "section": "Engine supplier (1983–2025) > Struggles in the V6 turbo-hybrid era and the end of engine supply (2014–2025)",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "6f86c7178982c49e8078e73a815e338c1b23201015cbdb1a9baa45bce8a961ce",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Renault",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that has supplied engines."
+      },
+      {
+        "local_id": "e2",
+        "name": "Alpine",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that received engines from Renault."
+      },
+      {
+        "local_id": "e3",
+        "name": "Mercedes-AMG Petronas Formula One Team",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that will supply engines to Alpine from 2026."
+      },
+      {
+        "local_id": "e4",
+        "name": "V6 turbo-hybrid era",
+        "entity_type": "Season",
+        "description": "A period in Formula 1 starting in 2014 characterized by V6 turbo-hybrid engines."
+      },
+      {
+        "local_id": "e5",
+        "name": "2026",
+        "entity_type": "Season",
+        "description": "The season when revised engine regulations are set to be introduced."
+      }
+    ],
+    "relationships": []
+  },
+  "entity_candidates": 5,
+  "entities_accepted": 5,
+  "entities_rejected": 0,
+  "relationship_candidates": 4,
+  "relationships_accepted": 0,
+  "relationships_rejected": 4,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "DROVE_FOR does not allow Team -> Team"
+    },
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "DROVE_FOR does not allow Team -> Team"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "RACED_IN does not allow Team -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "RACED_IN does not allow Team -> Season"
+    }
+  ],
+  "alignments": []
+}

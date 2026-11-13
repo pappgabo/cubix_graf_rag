@@ -1,0 +1,64 @@
+{
+  "chunk_id": "driver-michael-schumacher#72",
+  "doc_id": "driver-michael-schumacher",
+  "document_title": "Michael Schumacher",
+  "section": null,
+  "page": 6,
+  "source": "https://en.wikipedia.org/wiki/Michael_Schumacher",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "d3d7e6577582e0b1c35c224948edb53597f8c8ba06444aa33635926ac5f999f8",
+  "validation_version": "partial-1",
+  "source_status": "ok",
+  "status": "ok",
+  "entity_candidates": 3,
+  "entities_accepted": 3,
+  "entities_rejected": 0,
+  "relationship_candidates": 2,
+  "relationships_accepted": 2,
+  "relationships_rejected": 0,
+  "rejections": [],
+  "alignments": [],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Michael Schumacher",
+        "entity_type": "Driver",
+        "description": "Unquestionably the greatest driver of his era, took his fourth Drivers' title in 2001, scored a record-tying nine wins."
+      },
+      {
+        "local_id": "e2",
+        "name": "2001",
+        "entity_type": "Season",
+        "description": "The season in which Michael Schumacher took his fourth Drivers' title."
+      },
+      {
+        "local_id": "e3",
+        "name": "World Championship",
+        "entity_type": "Title",
+        "description": "The championship title won by Michael Schumacher in 2001."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e3",
+        "relationship_type": "WON",
+        "description": "Michael Schumacher won the World Championship title",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e2",
+        "relationship_type": "AWARDED_IN",
+        "description": "The World Championship title was awarded in the 2001 season",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

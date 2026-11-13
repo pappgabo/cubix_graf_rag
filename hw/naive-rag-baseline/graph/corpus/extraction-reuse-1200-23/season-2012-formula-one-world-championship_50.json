@@ -1,0 +1,154 @@
+{
+  "chunk_id": "season-2012-formula-one-world-championship#50",
+  "doc_id": "season-2012-formula-one-world-championship",
+  "document_title": "2012 Formula One World Championship",
+  "section": "Race summaries > Round 5 – Spain Circuit de Barcelona-Catalunya",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "eec877f89e85eceddb3c42d83a499d744be07d928279cadc72c069c92dd19943",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Lewis Hamilton",
+        "entity_type": "Driver",
+        "description": "A driver who took his third pole of the season."
+      },
+      {
+        "local_id": "e2",
+        "name": "Pastor Maldonado",
+        "entity_type": "Driver",
+        "description": "A Williams driver who was promoted to pole position."
+      },
+      {
+        "local_id": "e3",
+        "name": "Bruno Senna",
+        "entity_type": "Driver",
+        "description": "Pastor Maldonado's team-mate who was eliminated early."
+      },
+      {
+        "local_id": "e4",
+        "name": "Fernando Alonso",
+        "entity_type": "Driver",
+        "description": "A driver who took the lead of the race at the first corner."
+      },
+      {
+        "local_id": "e5",
+        "name": "Charles Pic",
+        "entity_type": "Driver",
+        "description": "A driver who held up Fernando Alonso."
+      },
+      {
+        "local_id": "e6",
+        "name": "Williams",
+        "entity_type": "Team",
+        "description": "The team of Pastor Maldonado and Bruno Senna."
+      },
+      {
+        "local_id": "e7",
+        "name": "Scuderia Ferrari",
+        "entity_type": "Team",
+        "description": "The team of Fernando Alonso."
+      },
+      {
+        "local_id": "e8",
+        "name": "Spanish Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Grand Prix held at Circuit de Barcelona-Catalunya."
+      },
+      {
+        "local_id": "e9",
+        "name": "Circuit de Barcelona-Catalunya",
+        "entity_type": "Circuit",
+        "description": "The circuit where the Spanish Grand Prix was held."
+      },
+      {
+        "local_id": "e10",
+        "name": "Pirelli",
+        "entity_type": "Team",
+        "description": "The tyre supplier for the Grand Prix."
+      },
+      {
+        "local_id": "e11",
+        "name": "2012",
+        "entity_type": "Season",
+        "description": "The season of the 2012 Formula One World Championship."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e6",
+        "target_id": "e11",
+        "relationship_type": "ENTERED",
+        "description": "Williams took part in the 2012 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e7",
+        "target_id": "e11",
+        "relationship_type": "ENTERED",
+        "description": "Ferrari took part in the 2012 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e8",
+        "target_id": "e11",
+        "relationship_type": "ROUND_OF",
+        "description": "The Spanish Grand Prix is a round of the 2012 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e8",
+        "target_id": "e9",
+        "relationship_type": "HELD_AT",
+        "description": "The Spanish Grand Prix was held at Circuit de Barcelona-Catalunya.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 11,
+  "entities_accepted": 11,
+  "entities_rejected": 0,
+  "relationship_candidates": 9,
+  "relationships_accepted": 4,
+  "relationships_rejected": 5,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "DROVE_FOR does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "DROVE_FOR does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "DROVE_FOR does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 5,
+      "reason": "DROVE_FOR does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 6,
+      "reason": "DROVE_FOR does not allow Driver -> Season"
+    }
+  ],
+  "alignments": []
+}

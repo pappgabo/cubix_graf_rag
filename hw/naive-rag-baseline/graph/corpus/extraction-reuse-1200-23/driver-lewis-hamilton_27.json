@@ -1,0 +1,128 @@
+{
+  "chunk_id": "driver-lewis-hamilton#27",
+  "doc_id": "driver-lewis-hamilton",
+  "document_title": "Lewis Hamilton",
+  "section": null,
+  "page": 6,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "038293f6fec3d21c01f4b9d1f5d85e80af0f09603ff95982ad796072b74ce5bb",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Lewis Hamilton",
+        "entity_type": "Driver",
+        "description": "A Formula One driver associated with Mercedes."
+      },
+      {
+        "local_id": "e2",
+        "name": "Mercedes-AMG Petronas Formula One Team",
+        "entity_type": "Team",
+        "description": "A Formula One team that Lewis Hamilton drives for."
+      },
+      {
+        "local_id": "e3",
+        "name": "2024",
+        "entity_type": "Season",
+        "description": "The Formula One season in which Hamilton triggered an exit-clause in his contract."
+      },
+      {
+        "local_id": "e4",
+        "name": "Hungarian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula One race where Hamilton took his record ninth pole position."
+      },
+      {
+        "local_id": "e5",
+        "name": "W15",
+        "entity_type": "Car",
+        "description": "The car model that Mercedes fielded during the 2024 season."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Lewis Hamilton at Hungarian Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Lewis Hamilton achieved pole position at the Hungarian Grand Prix."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Lewis Hamilton drives for Mercedes.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e3",
+        "relationship_type": "ENTERED",
+        "description": "Mercedes entered the 2024 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e3",
+        "relationship_type": "ROUND_OF",
+        "description": "Hungarian Grand Prix is a round of the 2024 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e3",
+        "relationship_type": "RACED_IN",
+        "description": "W15 took part in the 2024 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Lewis Hamilton achieved pole position at the Hungarian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e4",
+        "relationship_type": "AT_RACE",
+        "description": "Lewis Hamilton achieved pole position at the Hungarian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 5,
+  "entities_accepted": 6,
+  "entities_rejected": 0,
+  "relationship_candidates": 6,
+  "relationships_accepted": 6,
+  "relationships_rejected": 1,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 6,
+      "reason": "FOR_TEAM does not allow Driver -> Team"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 4,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e4; description kept"
+    }
+  ]
+}

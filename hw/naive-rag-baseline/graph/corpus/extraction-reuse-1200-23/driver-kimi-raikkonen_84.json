@@ -1,0 +1,141 @@
+{
+  "chunk_id": "driver-kimi-raikkonen#84",
+  "doc_id": "driver-kimi-raikkonen",
+  "document_title": "Kimi Räikkönen",
+  "section": "Formula One career > Return to Ferrari (2014–2018) > 2018",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "cc93ed749ed863694c61e74d7db7a5fe989871d43d65b3a4ea79151bff08edfa",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Kimi Räikkönen",
+        "entity_type": "Driver",
+        "description": "A Finnish racing driver who competed in Formula One."
+      },
+      {
+        "local_id": "e2",
+        "name": "Scuderia Ferrari",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that Kimi Räikkönen drove for."
+      },
+      {
+        "local_id": "e3",
+        "name": "2018",
+        "entity_type": "Season",
+        "description": "The Formula One season in which Kimi Räikkönen achieved significant results."
+      },
+      {
+        "local_id": "e4",
+        "name": "Italian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A race in which Kimi Räikkönen took pole position and finished second."
+      },
+      {
+        "local_id": "e5",
+        "name": "Mercedes-AMG Petronas Formula One Team",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that ordered Bottas to block Räikkönen."
+      },
+      {
+        "local_id": "e6",
+        "name": "Bottas",
+        "entity_type": "Driver",
+        "description": "A driver for Mercedes who was ordered to block Räikkönen."
+      },
+      {
+        "local_id": "e7",
+        "name": "Verstappen",
+        "entity_type": "Driver",
+        "description": "A driver who hit Räikkönen's car during the Japanese Grand Prix."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Kimi Räikkönen at Italian Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Kimi Räikkönen finished second in the Italian Grand Prix."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Kimi Räikkönen drove for Ferrari during this period.",
+        "from_year": 2014,
+        "to_year": 2018,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e3",
+        "relationship_type": "ROUND_OF",
+        "description": "The Italian Grand Prix is a round of the 2018 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Kimi Räikkönen finished second in the Italian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e4",
+        "relationship_type": "AT_RACE",
+        "description": "Kimi Räikkönen finished second in the Italian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e6",
+        "target_id": "e5",
+        "relationship_type": "DROVE_FOR",
+        "description": "Bottas drove for Mercedes during the Italian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 7,
+  "entities_accepted": 8,
+  "entities_rejected": 0,
+  "relationship_candidates": 7,
+  "relationships_accepted": 5,
+  "relationships_rejected": 3,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "HELD_AT does not allow GrandPrix -> Team"
+    },
+    {
+      "element": "relationship",
+      "index": 6,
+      "reason": "ACHIEVED does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 7,
+      "reason": "ACHIEVED does not allow Driver -> Driver"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 2,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e4; description kept"
+    }
+  ]
+}

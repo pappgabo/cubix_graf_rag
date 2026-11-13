@@ -1,0 +1,70 @@
+{
+  "chunk_id": "driver-nico-rosberg#28",
+  "doc_id": "driver-nico-rosberg",
+  "document_title": "Nico Rosberg",
+  "section": "Nico Rosberg > Junior car career (2001–2005)",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/Nico_Rosberg",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "281c7272b5a963b2725f024f6c1e99d4ac42640a9fd9d36fbd726d1e4c6b623a",
+  "validation_version": "partial-1",
+  "source_status": "ok",
+  "status": "ok",
+  "entity_candidates": 4,
+  "entities_accepted": 4,
+  "entities_rejected": 0,
+  "relationship_candidates": 2,
+  "relationships_accepted": 2,
+  "relationships_rejected": 0,
+  "rejections": [],
+  "alignments": [],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Nico Rosberg",
+        "entity_type": "Driver",
+        "description": "A driver who raced in Formula One."
+      },
+      {
+        "local_id": "e2",
+        "name": "BCN Competicion",
+        "entity_type": "Team",
+        "description": "A team that participated in the GP2 Series."
+      },
+      {
+        "local_id": "e3",
+        "name": "ART Grand Prix",
+        "entity_type": "Team",
+        "description": "A team that participated in the GP2 Series."
+      },
+      {
+        "local_id": "e4",
+        "name": "2005",
+        "entity_type": "Season",
+        "description": "The inaugural season of the GP2 Series."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e3",
+        "relationship_type": "DROVE_FOR",
+        "description": "Nico Rosberg drove for ART Grand Prix in the 2005 GP2 Series season.",
+        "from_year": 2005,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e4",
+        "relationship_type": "ENTERED",
+        "description": "ART Grand Prix entered the 2005 GP2 Series season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

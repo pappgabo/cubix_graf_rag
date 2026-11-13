@@ -1,0 +1,144 @@
+{
+  "chunk_id": "team-mclaren#19",
+  "doc_id": "team-mclaren",
+  "document_title": "McLaren",
+  "section": "1983–1992: TAG-Porsche and Honda engines",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "dc12bf9053118ab1980a84a06746a9ac9440c3013e57a4cb4401813abf0a0e8c",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "McLaren",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that entered cars."
+      },
+      {
+        "local_id": "e2",
+        "name": "Lauda",
+        "entity_type": "Driver",
+        "description": "A driver who came out of retirement in 1982 to drive for McLaren."
+      },
+      {
+        "local_id": "e3",
+        "name": "Watson",
+        "entity_type": "Driver",
+        "description": "A driver who raced for McLaren and won two races in 1982."
+      },
+      {
+        "local_id": "e4",
+        "name": "1982",
+        "entity_type": "Season",
+        "description": "A Formula 1 championship season."
+      },
+      {
+        "local_id": "e5",
+        "name": "Detroit",
+        "entity_type": "GrandPrix",
+        "description": "A Grand Prix where Watson won from 17th on the grid."
+      },
+      {
+        "local_id": "e6",
+        "name": "Long Beach",
+        "entity_type": "GrandPrix",
+        "description": "A Grand Prix where Watson won from 22nd on the grid."
+      },
+      {
+        "local_id": "e7",
+        "name": "San Marino",
+        "entity_type": "GrandPrix",
+        "description": "A Grand Prix that McLaren boycotted due to a dispute with FISA."
+      },
+      {
+        "local_id": "e8",
+        "name": "TAG-Porsche",
+        "entity_type": "PowerUnit",
+        "description": "Turbo engines funded by TAG and built by Porsche."
+      },
+      {
+        "local_id": "e9",
+        "name": "Cosworth",
+        "entity_type": "PowerUnit",
+        "description": "Engines used by McLaren before switching to TAG-Porsche engines."
+      },
+      {
+        "local_id": "e10",
+        "name": "MP4",
+        "entity_type": "Car",
+        "description": "The car model developed by McLaren."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e2",
+        "target_id": "e1",
+        "relationship_type": "DROVE_FOR",
+        "description": "Lauda drove for McLaren in 1982.",
+        "from_year": 1982,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e1",
+        "relationship_type": "DROVE_FOR",
+        "description": "Watson drove for McLaren in 1982.",
+        "from_year": 1982,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e10",
+        "relationship_type": "FIELDED",
+        "description": "McLaren developed the MP4 car model.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 10,
+  "entities_accepted": 10,
+  "entities_rejected": 0,
+  "relationship_candidates": 9,
+  "relationships_accepted": 3,
+  "relationships_rejected": 6,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "ACHIEVED does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "AT_RACE does not allow Driver -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "AT_RACE does not allow Driver -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 5,
+      "reason": "ROUND_OF does not allow Team -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 6,
+      "reason": "FIELDED does not allow Team -> PowerUnit"
+    },
+    {
+      "element": "relationship",
+      "index": 7,
+      "reason": "FIELDED does not allow Team -> PowerUnit"
+    }
+  ],
+  "alignments": []
+}

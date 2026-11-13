@@ -1,0 +1,80 @@
+{
+  "chunk_id": "reference-formula-one#42",
+  "doc_id": "reference-formula-one",
+  "document_title": "Formula One",
+  "section": "Formula One > Drivers",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "6a385f2179a930098f321a840fab0d094d6f21d8793949450d5213ef30a4f0c8",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Michael Schumacher",
+        "entity_type": "Driver",
+        "description": "Holds the record for most championships with seven."
+      },
+      {
+        "local_id": "e2",
+        "name": "Lewis Hamilton",
+        "entity_type": "Driver",
+        "description": "Holds the record for most championships with seven."
+      },
+      {
+        "local_id": "e3",
+        "name": "Jochen Rindt",
+        "entity_type": "Driver",
+        "description": "The only posthumous World Champion."
+      },
+      {
+        "local_id": "e4",
+        "name": "World Drivers' Championship",
+        "entity_type": "Title",
+        "description": "Championship title won by drivers."
+      },
+      {
+        "local_id": "e5",
+        "name": "2025",
+        "entity_type": "Season",
+        "description": "Year referenced for the total number of drivers who have won the championship."
+      },
+      {
+        "local_id": "e6",
+        "name": "2026",
+        "entity_type": "Season",
+        "description": "Year referenced for the total number of wins by drivers from the United Kingdom."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e4",
+        "target_id": "e5",
+        "relationship_type": "AWARDED_IN",
+        "description": "The World Drivers' Championship title is awarded in the 2025 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e6",
+        "relationship_type": "AWARDED_IN",
+        "description": "The World Drivers' Championship title is awarded in the 2026 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 6,
+  "entities_accepted": 6,
+  "entities_rejected": 0,
+  "relationship_candidates": 2,
+  "relationships_accepted": 2,
+  "relationships_rejected": 0,
+  "rejections": [],
+  "alignments": []
+}

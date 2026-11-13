@@ -1,0 +1,91 @@
+{
+  "chunk_id": "driver-michael-schumacher#47",
+  "doc_id": "driver-michael-schumacher",
+  "document_title": "Michael Schumacher",
+  "section": null,
+  "page": 5,
+  "source": "https://en.wikipedia.org/wiki/Michael_Schumacher",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "03756e00949c2199350f3ae513cff850d98a9000da6b305de1124e84bc4ba151",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "entity_candidates": 5,
+  "entities_accepted": 5,
+  "entities_rejected": 0,
+  "relationship_candidates": 4,
+  "relationships_accepted": 3,
+  "relationships_rejected": 1,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "DROVE_FOR does not allow Driver -> Car"
+    }
+  ],
+  "alignments": [],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Michael Schumacher",
+        "entity_type": "Driver",
+        "description": "A Formula One driver who won the World Championship in 1995."
+      },
+      {
+        "local_id": "e2",
+        "name": "Scuderia Ferrari",
+        "entity_type": "Team",
+        "description": "A Formula One team that Schumacher drove for."
+      },
+      {
+        "local_id": "e3",
+        "name": "Benetton B195",
+        "entity_type": "Car",
+        "description": "The car driven by Michael Schumacher to win the World Championship in 1995."
+      },
+      {
+        "local_id": "e4",
+        "name": "1995",
+        "entity_type": "Season",
+        "description": "The championship year in which Michael Schumacher won the World Championship."
+      },
+      {
+        "local_id": "e5",
+        "name": "World Championship",
+        "entity_type": "Title",
+        "description": "The championship title won by Michael Schumacher in 1995."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e5",
+        "relationship_type": "WON",
+        "description": "Michael Schumacher won the World Championship.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e4",
+        "relationship_type": "AWARDED_IN",
+        "description": "The World Championship title was awarded in the 1995 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e4",
+        "relationship_type": "ENTERED",
+        "description": "Ferrari entered the 1995 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

@@ -1,0 +1,113 @@
+{
+  "chunk_id": "season-2021-formula-one-world-championship#86",
+  "doc_id": "season-2021-formula-one-world-championship",
+  "document_title": "2021 Formula One World Championship",
+  "section": null,
+  "page": 8,
+  "source": "https://en.wikipedia.org/wiki/2021_Formula_One_World_Championship",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "50f55187bbed0a0544c2ff5438718503f6d2b24e01ac7394d139a085d8697b42",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "entity_candidates": 5,
+  "entities_accepted": 6,
+  "entities_rejected": 0,
+  "relationship_candidates": 5,
+  "relationships_accepted": 3,
+  "relationships_rejected": 3,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "WON does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "AT_RACE does not allow Driver -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 5,
+      "reason": "AT_RACE does not allow Driver -> GrandPrix"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 0,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e4; description kept"
+    }
+  ],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Lewis Hamilton",
+        "entity_type": "Driver",
+        "description": "A driver who won the race."
+      },
+      {
+        "local_id": "e2",
+        "name": "Verstappen",
+        "entity_type": "Driver",
+        "description": "A driver who finished second in the race."
+      },
+      {
+        "local_id": "e3",
+        "name": "Bottas",
+        "entity_type": "Driver",
+        "description": "A driver who completed the podium."
+      },
+      {
+        "local_id": "e4",
+        "name": "Qatar",
+        "entity_type": "GrandPrix",
+        "description": "The Grand Prix where Hamilton took pole position."
+      },
+      {
+        "local_id": "e5",
+        "name": "2021",
+        "entity_type": "Season",
+        "description": "The season of the 2021 Formula One World Championship."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Hamilton at Qatar",
+        "entity_type": "RaceResult",
+        "description": "Hamilton took pole position in Qatar."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Hamilton took pole position in Qatar.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e4",
+        "relationship_type": "AT_RACE",
+        "description": "Hamilton took pole position in Qatar.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e5",
+        "relationship_type": "ROUND_OF",
+        "description": "The Qatar Grand Prix is a round of the 2021 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

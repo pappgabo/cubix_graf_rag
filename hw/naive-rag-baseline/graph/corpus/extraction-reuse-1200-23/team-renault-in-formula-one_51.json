@@ -1,0 +1,203 @@
+{
+  "chunk_id": "team-renault-in-formula-one#51",
+  "doc_id": "team-renault-in-formula-one",
+  "document_title": "Renault in Formula One",
+  "section": "Engine supplier (1983–2025) > Original turbo era (1983–1986)",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "ec89579f0340cbdf5564859cbf7e8bea89ba51916b91e1ee5dd6ec5fc1d6fe56",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Renault",
+        "entity_type": "Team",
+        "description": "An engine supplier in Formula One."
+      },
+      {
+        "local_id": "e2",
+        "name": "Gérard Ducarouge",
+        "entity_type": "Driver",
+        "description": "Designer who helped Renault gain competitiveness."
+      },
+      {
+        "local_id": "e3",
+        "name": "Nigel Mansell",
+        "entity_type": "Driver",
+        "description": "Driver who scored regular podiums for Renault."
+      },
+      {
+        "local_id": "e4",
+        "name": "Elio de Angelis",
+        "entity_type": "Driver",
+        "description": "Driver who scored regular podiums for Renault."
+      },
+      {
+        "local_id": "e5",
+        "name": "Ligier",
+        "entity_type": "Team",
+        "description": "A Formula One team that used Renault engines."
+      },
+      {
+        "local_id": "e6",
+        "name": "Ayrton Senna",
+        "entity_type": "Driver",
+        "description": "Driver who joined Team Lotus and won races with Renault engines."
+      },
+      {
+        "local_id": "e7",
+        "name": "Team Lotus",
+        "entity_type": "Team",
+        "description": "A Formula One team that Ayrton Senna joined."
+      },
+      {
+        "local_id": "e8",
+        "name": "Lotus 97T",
+        "entity_type": "Car",
+        "description": "Car model used by Team Lotus with Renault engines."
+      },
+      {
+        "local_id": "e9",
+        "name": "Lotus 98T",
+        "entity_type": "Car",
+        "description": "Car model used by Team Lotus with Renault engines."
+      },
+      {
+        "local_id": "e10",
+        "name": "Tyrrell",
+        "entity_type": "Team",
+        "description": "A Formula One team that started using Renault engines."
+      },
+      {
+        "local_id": "e11",
+        "name": "Ligier JS25",
+        "entity_type": "Car",
+        "description": "Car model used by Ligier with Renault engines."
+      },
+      {
+        "local_id": "e12",
+        "name": "1983",
+        "entity_type": "Season",
+        "description": "The season when Renault began gaining competitiveness."
+      },
+      {
+        "local_id": "e13",
+        "name": "1984",
+        "entity_type": "Season",
+        "description": "The season when Renault scored three points with Ligier."
+      },
+      {
+        "local_id": "e14",
+        "name": "1985",
+        "entity_type": "Season",
+        "description": "The season when Ayrton Senna joined Team Lotus."
+      },
+      {
+        "local_id": "e15",
+        "name": "1986",
+        "entity_type": "Season",
+        "description": "The season when Johnny Dumfries was chosen as Senna's partner."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e6",
+        "target_id": "e7",
+        "relationship_type": "DROVE_FOR",
+        "description": "Ayrton Senna drove for Team Lotus.",
+        "from_year": 1985,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e1",
+        "relationship_type": "DROVE_FOR",
+        "description": "Nigel Mansell drove for Renault.",
+        "from_year": 1983,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e1",
+        "relationship_type": "DROVE_FOR",
+        "description": "Elio de Angelis drove for Renault.",
+        "from_year": 1983,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e11",
+        "target_id": "e13",
+        "relationship_type": "RACED_IN",
+        "description": "Ligier JS25 raced in the 1984 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 15,
+  "entities_accepted": 15,
+  "entities_rejected": 0,
+  "relationship_candidates": 14,
+  "relationships_accepted": 4,
+  "relationships_rejected": 10,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 8,
+      "reason": "FIELDED is not temporal; from_year=1985, to_year=None, role=None cannot be stored without dropping them"
+    },
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "FIELDED does not allow Team -> Team"
+    },
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "FIELDED does not allow Team -> Team"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "FIELDED does not allow Team -> Team"
+    },
+    {
+      "element": "relationship",
+      "index": 6,
+      "reason": "ACHIEVED does not allow Driver -> Car"
+    },
+    {
+      "element": "relationship",
+      "index": 7,
+      "reason": "ACHIEVED does not allow Driver -> Car"
+    },
+    {
+      "element": "relationship",
+      "index": 9,
+      "reason": "RACED_IN does not allow Team -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 10,
+      "reason": "RACED_IN does not allow Team -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 11,
+      "reason": "RACED_IN does not allow Team -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 12,
+      "reason": "RACED_IN does not allow Team -> Season"
+    }
+  ],
+  "alignments": []
+}

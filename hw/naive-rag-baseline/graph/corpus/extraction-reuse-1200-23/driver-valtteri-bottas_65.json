@@ -1,0 +1,138 @@
+{
+  "chunk_id": "driver-valtteri-bottas#65",
+  "doc_id": "driver-valtteri-bottas",
+  "document_title": "Valtteri Bottas",
+  "section": "Awards and honours > Other awards",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "f878e0ab01cfb012a644b8610aa622b14a8b4f03c212d94d6e0769511f92f61f",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Valtteri Bottas",
+        "entity_type": "Driver",
+        "description": "A Finnish racing driver who has competed in Formula One."
+      },
+      {
+        "local_id": "e2",
+        "name": "Sky Sports Award for Most Improved Driver",
+        "entity_type": "Title",
+        "description": "An award given to the most improved driver."
+      },
+      {
+        "local_id": "e3",
+        "name": "Confartigianato Motori Driver of the Year",
+        "entity_type": "Title",
+        "description": "An award recognizing the best driver of the year."
+      },
+      {
+        "local_id": "e4",
+        "name": "AKK-Motorsport Driver of the Year",
+        "entity_type": "Title",
+        "description": "An award given to the best driver in motorsport."
+      },
+      {
+        "local_id": "season2014-1",
+        "name": "2014",
+        "entity_type": "Season",
+        "description": "2014"
+      },
+      {
+        "local_id": "season2017-1",
+        "name": "2017",
+        "entity_type": "Season",
+        "description": "2017"
+      },
+      {
+        "local_id": "season2019-1",
+        "name": "2019",
+        "entity_type": "Season",
+        "description": "2019"
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "WON",
+        "description": "Valtteri Bottas won the Sky Sports Award for Most Improved Driver.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "season2014-1",
+        "relationship_type": "AWARDED_IN",
+        "description": "Valtteri Bottas won the Sky Sports Award for Most Improved Driver.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e3",
+        "relationship_type": "WON",
+        "description": "Valtteri Bottas won the Confartigianato Motori Driver of the Year award.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "season2017-1",
+        "relationship_type": "AWARDED_IN",
+        "description": "Valtteri Bottas won the Confartigianato Motori Driver of the Year award.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e4",
+        "relationship_type": "WON",
+        "description": "Valtteri Bottas won the AKK-Motorsport Driver of the Year award.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "season2019-1",
+        "relationship_type": "AWARDED_IN",
+        "description": "Valtteri Bottas won the AKK-Motorsport Driver of the Year award.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 4,
+  "entities_accepted": 7,
+  "entities_rejected": 0,
+  "relationship_candidates": 3,
+  "relationships_accepted": 6,
+  "relationships_rejected": 0,
+  "rejections": [],
+  "alignments": [
+    {
+      "index": 0,
+      "action": "move_won_year",
+      "detail": "WON year 2014 stored as e2 -AWARDED_IN-> season2014-1; from_year and to_year cleared; description kept"
+    },
+    {
+      "index": 1,
+      "action": "move_won_year",
+      "detail": "WON year 2017 stored as e3 -AWARDED_IN-> season2017-1; from_year and to_year cleared; description kept"
+    },
+    {
+      "index": 2,
+      "action": "move_won_year",
+      "detail": "WON year 2019 stored as e4 -AWARDED_IN-> season2019-1; from_year and to_year cleared; description kept"
+    }
+  ]
+}

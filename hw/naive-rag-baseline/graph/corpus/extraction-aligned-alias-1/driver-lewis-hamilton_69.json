@@ -1,0 +1,64 @@
+{
+  "chunk_id": "driver-lewis-hamilton#69",
+  "doc_id": "driver-lewis-hamilton",
+  "document_title": "Lewis Hamilton",
+  "section": null,
+  "page": 6,
+  "source": "https://en.wikipedia.org/wiki/Lewis_Hamilton",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "56155620fa1858763eae21d87d64b8473a43d4d07a47bc778c2d260aa31d3d0d",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "rejections": [],
+  "alignments": [
+    {
+      "index": 1,
+      "action": "clear_redundant_season_year",
+      "detail": "ENTERED year 2025 already named by Season 'e3'; from_year and to_year cleared"
+    }
+  ],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Lewis Hamilton",
+        "entity_type": "Driver",
+        "description": "A Formula One driver who joined Ferrari in 2025."
+      },
+      {
+        "local_id": "e2",
+        "name": "Scuderia Ferrari",
+        "entity_type": "Team",
+        "description": "A Formula One team that entered a multi-year agreement with Lewis Hamilton."
+      },
+      {
+        "local_id": "e3",
+        "name": "2025",
+        "entity_type": "Season",
+        "description": "The season in which Lewis Hamilton joined Ferrari."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Lewis Hamilton joined Ferrari.",
+        "from_year": 2025,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e3",
+        "relationship_type": "ENTERED",
+        "description": "Ferrari entered the 2025 season with Lewis Hamilton.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

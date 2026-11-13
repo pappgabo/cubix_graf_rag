@@ -1,0 +1,108 @@
+{
+  "chunk_id": "driver-sebastian-vettel#51",
+  "doc_id": "driver-sebastian-vettel",
+  "document_title": "Sebastian Vettel",
+  "section": "Helmet",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "84a897362d01fba2e600c8cec8d2e3980070081a98ede474c7529c6ea42ab96d",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Sebastian Vettel",
+        "entity_type": "Driver",
+        "description": "A Formula One driver who raced for Red Bull."
+      },
+      {
+        "local_id": "e2",
+        "name": "Red Bull Racing",
+        "entity_type": "Team",
+        "description": "A Formula One team that Vettel drove for."
+      },
+      {
+        "local_id": "e3",
+        "name": "2010",
+        "entity_type": "Season",
+        "description": "The season during which Vettel used a special helmet design at the Japanese Grand Prix."
+      },
+      {
+        "local_id": "e4",
+        "name": "2012",
+        "entity_type": "Season",
+        "description": "The season during which Vettel celebrated his 50th helmet design at the Italian Grand Prix."
+      },
+      {
+        "local_id": "e5",
+        "name": "2013",
+        "entity_type": "Season",
+        "description": "The season during which Vettel started with a design in honour of Felix Baumgartner."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Vettel drove for Red Bull.",
+        "from_year": 2009,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e3",
+        "relationship_type": "ENTERED",
+        "description": "Red Bull entered the 2010 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e4",
+        "relationship_type": "ENTERED",
+        "description": "Red Bull entered the 2012 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e5",
+        "relationship_type": "ENTERED",
+        "description": "Red Bull entered the 2013 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 5,
+  "entities_accepted": 5,
+  "entities_rejected": 0,
+  "relationship_candidates": 4,
+  "relationships_accepted": 4,
+  "relationships_rejected": 0,
+  "rejections": [],
+  "alignments": [
+    {
+      "index": 1,
+      "action": "clear_redundant_season_year",
+      "detail": "ENTERED year 2010 already named by Season 'e3'; from_year and to_year cleared"
+    },
+    {
+      "index": 2,
+      "action": "clear_redundant_season_year",
+      "detail": "ENTERED year 2012 already named by Season 'e4'; from_year and to_year cleared"
+    },
+    {
+      "index": 3,
+      "action": "clear_redundant_season_year",
+      "detail": "ENTERED year 2013 already named by Season 'e5'; from_year and to_year cleared"
+    }
+  ]
+}

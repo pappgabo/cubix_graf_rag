@@ -1,0 +1,121 @@
+{
+  "chunk_id": "driver-nico-rosberg#35",
+  "doc_id": "driver-nico-rosberg",
+  "document_title": "Nico Rosberg",
+  "section": "Nico Rosberg > Retirement from racing and subsequent ventures (2016–present)",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "d1419bd7b8d40e7402f868aef449b0c24ecb68eaaa3a6742eba3f8e4dc05a3a7",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Nico Rosberg",
+        "entity_type": "Driver",
+        "description": "A Formula One driver who won the championship in 2016 and retired shortly after."
+      },
+      {
+        "local_id": "e2",
+        "name": "Mercedes-AMG Petronas Formula One Team",
+        "entity_type": "Team",
+        "description": "The Formula One team for which Nico Rosberg raced."
+      },
+      {
+        "local_id": "e3",
+        "name": "2016",
+        "entity_type": "Season",
+        "description": "The Formula One season in which Nico Rosberg won the championship."
+      },
+      {
+        "local_id": "e4",
+        "name": "Abu Dhabi Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The final race of the 2016 Formula One season where Rosberg announced his retirement."
+      },
+      {
+        "local_id": "e5",
+        "name": "FIA Prize Giving Ceremony",
+        "entity_type": "GrandPrix",
+        "description": "The event where Rosberg publicly announced his retirement."
+      },
+      {
+        "local_id": "e6",
+        "name": "Valtteri Bottas",
+        "entity_type": "Driver",
+        "description": "The driver who replaced Nico Rosberg at Mercedes after his retirement."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Nico Rosberg at FIA Prize Giving Ceremony",
+        "entity_type": "RaceResult",
+        "description": "Nico Rosberg announced his retirement at the FIA Prize Giving Ceremony."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Nico Rosberg drove for Mercedes.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Nico Rosberg announced his retirement at the FIA Prize Giving Ceremony.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e5",
+        "relationship_type": "AT_RACE",
+        "description": "Nico Rosberg announced his retirement at the FIA Prize Giving Ceremony.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e6",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Valtteri Bottas drove for Mercedes after Rosberg's retirement.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 6,
+  "entities_accepted": 7,
+  "entities_rejected": 0,
+  "relationship_candidates": 5,
+  "relationships_accepted": 4,
+  "relationships_rejected": 2,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "WON does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "ROUND_OF does not allow Season -> GrandPrix"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 3,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e5; description kept"
+    }
+  ]
+}

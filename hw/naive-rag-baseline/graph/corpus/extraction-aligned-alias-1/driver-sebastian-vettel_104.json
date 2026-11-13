@@ -1,0 +1,58 @@
+{
+  "chunk_id": "driver-sebastian-vettel#104",
+  "doc_id": "driver-sebastian-vettel",
+  "document_title": "Sebastian Vettel",
+  "section": "2019–2020: Decline and departure from Ferrari",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/Sebastian_Vettel",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "e6fa698d5ddad06885e8b0b873b632e22551a8c862b0281e3257261fc846abeb",
+  "validation_version": "partial-1",
+  "source_status": "ok",
+  "status": "ok",
+  "rejections": [],
+  "alignments": [],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Sebastian Vettel",
+        "entity_type": "Driver",
+        "description": "A Formula One driver who raced for Ferrari."
+      },
+      {
+        "local_id": "e2",
+        "name": "Scuderia Ferrari",
+        "entity_type": "Team",
+        "description": "A Formula One team that entered cars."
+      },
+      {
+        "local_id": "e3",
+        "name": "2020",
+        "entity_type": "Season",
+        "description": "The Formula One season in which Vettel's contract was not extended."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Vettel drove for Ferrari until the end of the 2020 season.",
+        "from_year": null,
+        "to_year": 2020,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e3",
+        "relationship_type": "ENTERED",
+        "description": "Ferrari took part in the 2020 Formula One season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

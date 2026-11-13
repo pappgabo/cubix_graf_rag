@@ -1,0 +1,126 @@
+{
+  "chunk_id": "season-2016-formula-one-world-championship#88",
+  "doc_id": "season-2016-formula-one-world-championship",
+  "document_title": "2016 Formula One World Championship",
+  "section": "Return to Asia",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/2016_Formula_One_World_Championship",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "21f22426a1428ea5fcdec2e8ae201e9f77e203d7cfccff43d0191a98e455734a",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "entity_candidates": 5,
+  "entities_accepted": 7,
+  "entities_rejected": 0,
+  "relationship_candidates": 3,
+  "relationships_accepted": 5,
+  "relationships_rejected": 0,
+  "rejections": [],
+  "alignments": [
+    {
+      "index": 0,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e5; description kept"
+    },
+    {
+      "index": 1,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr2 -AT_RACE-> e5; description kept"
+    }
+  ],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Rosberg",
+        "entity_type": "Driver",
+        "description": "Further extended his championship lead to thirty-three points in Japan, starting the race from pole and winning it."
+      },
+      {
+        "local_id": "e2",
+        "name": "Lewis Hamilton",
+        "entity_type": "Driver",
+        "description": "Suffered a poor start, slipping from second on the grid to eighth by the end of the first lap. Finished third."
+      },
+      {
+        "local_id": "e3",
+        "name": "Verstappen",
+        "entity_type": "Driver",
+        "description": "Hamilton was unable to pass him and finished third."
+      },
+      {
+        "local_id": "e4",
+        "name": "2016",
+        "entity_type": "Season",
+        "description": "The championship year."
+      },
+      {
+        "local_id": "e5",
+        "name": "Japanese Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The race where Rosberg won and Hamilton finished third."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Rosberg at Japanese Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Rosberg won the race."
+      },
+      {
+        "local_id": "rr2",
+        "name": "Hamilton at Japanese Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Hamilton finished third in the race."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Rosberg won the race.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e5",
+        "relationship_type": "AT_RACE",
+        "description": "Rosberg won the race.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "rr2",
+        "relationship_type": "ACHIEVED",
+        "description": "Hamilton finished third in the race.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr2",
+        "target_id": "e5",
+        "relationship_type": "AT_RACE",
+        "description": "Hamilton finished third in the race.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e4",
+        "relationship_type": "ROUND_OF",
+        "description": "The Japanese Grand Prix is a round of the 2016 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

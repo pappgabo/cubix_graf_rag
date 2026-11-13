@@ -1,0 +1,224 @@
+{
+  "chunk_id": "team-williams-racing#9",
+  "doc_id": "team-williams-racing",
+  "document_title": "Williams Racing",
+  "section": "Williams Racing > 1981 season",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "1da4cb03c7efe65decaade2524e177959eb7f67627e71dae8066e1ca5d5717d3",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Williams",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that won the Constructors' title in 1981."
+      },
+      {
+        "local_id": "e2",
+        "name": "Alan Jones",
+        "entity_type": "Driver",
+        "description": "A driver who won the United States West Grand Prix and the Caesars Palace Grand Prix in 1981."
+      },
+      {
+        "local_id": "e3",
+        "name": "Carlos Reutemann",
+        "entity_type": "Driver",
+        "description": "A driver who won the Brazilian Grand Prix and the Belgian Grand Prix in 1981."
+      },
+      {
+        "local_id": "e4",
+        "name": "1981",
+        "entity_type": "Season",
+        "description": "The Formula 1 season in which Williams won the Constructors' title."
+      },
+      {
+        "local_id": "e5",
+        "name": "United States West Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A race in which Alan Jones won in 1981."
+      },
+      {
+        "local_id": "e6",
+        "name": "Caesars Palace Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The final race of the 1981 season won by Alan Jones."
+      },
+      {
+        "local_id": "e7",
+        "name": "Brazilian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A race won by Carlos Reutemann in 1981."
+      },
+      {
+        "local_id": "e8",
+        "name": "Belgian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A race won by Carlos Reutemann in 1981."
+      },
+      {
+        "local_id": "e9",
+        "name": "Constructors' title",
+        "entity_type": "Title",
+        "description": "The championship title won by Williams in 1981."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Alan Jones at United States West Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Alan Jones won the United States West Grand Prix."
+      },
+      {
+        "local_id": "rr2",
+        "name": "Alan Jones at Caesars Palace Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Alan Jones won the Caesars Palace Grand Prix."
+      },
+      {
+        "local_id": "rr3",
+        "name": "Carlos Reutemann at Brazilian Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Carlos Reutemann won the Brazilian Grand Prix."
+      },
+      {
+        "local_id": "rr4",
+        "name": "Carlos Reutemann at Belgian Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Carlos Reutemann won the Belgian Grand Prix."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e4",
+        "relationship_type": "ENTERED",
+        "description": "Williams entered the 1981 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Alan Jones won the United States West Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e5",
+        "relationship_type": "AT_RACE",
+        "description": "Alan Jones won the United States West Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "rr2",
+        "relationship_type": "ACHIEVED",
+        "description": "Alan Jones won the Caesars Palace Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr2",
+        "target_id": "e6",
+        "relationship_type": "AT_RACE",
+        "description": "Alan Jones won the Caesars Palace Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "rr3",
+        "relationship_type": "ACHIEVED",
+        "description": "Carlos Reutemann won the Brazilian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr3",
+        "target_id": "e7",
+        "relationship_type": "AT_RACE",
+        "description": "Carlos Reutemann won the Brazilian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "rr4",
+        "relationship_type": "ACHIEVED",
+        "description": "Carlos Reutemann won the Belgian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr4",
+        "target_id": "e8",
+        "relationship_type": "AT_RACE",
+        "description": "Carlos Reutemann won the Belgian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e9",
+        "relationship_type": "WON",
+        "description": "Williams won the Constructors' title in 1981.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e9",
+        "target_id": "e4",
+        "relationship_type": "AWARDED_IN",
+        "description": "The Constructors' title belongs to the 1981 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 9,
+  "entities_accepted": 13,
+  "entities_rejected": 0,
+  "relationship_candidates": 7,
+  "relationships_accepted": 11,
+  "relationships_rejected": 0,
+  "rejections": [],
+  "alignments": [
+    {
+      "index": 1,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e5; description kept"
+    },
+    {
+      "index": 2,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr2 -AT_RACE-> e6; description kept"
+    },
+    {
+      "index": 3,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr3 -AT_RACE-> e7; description kept"
+    },
+    {
+      "index": 4,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr4 -AT_RACE-> e8; description kept"
+    }
+  ]
+}

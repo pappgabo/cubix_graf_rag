@@ -1,0 +1,132 @@
+{
+  "chunk_id": "driver-michael-schumacher#45",
+  "doc_id": "driver-michael-schumacher",
+  "document_title": "Michael Schumacher",
+  "section": null,
+  "page": 9,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "bf5a03eff23e6e477ee47276da5c0ed50258f5a399b8c04b51d36469f85beaa0",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Michael Schumacher",
+        "entity_type": "Driver",
+        "description": "A German racing driver who is a seven-time Formula One World Champion."
+      },
+      {
+        "local_id": "e2",
+        "name": "Mercedes-AMG Petronas Formula One Team",
+        "entity_type": "Team",
+        "description": "A Formula One team that Schumacher drove for during his return from retirement."
+      },
+      {
+        "local_id": "e3",
+        "name": "2010",
+        "entity_type": "Season",
+        "description": "The Formula One season during which Schumacher returned from retirement."
+      },
+      {
+        "local_id": "e4",
+        "name": "Bahrain Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The first race of the 2010 Formula One season."
+      },
+      {
+        "local_id": "e5",
+        "name": "Rosberg",
+        "entity_type": "Driver",
+        "description": "Schumacher's teammate at Mercedes during the 2010 season."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Michael Schumacher at Bahrain Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Schumacher finished sixth in the Bahrain Grand Prix."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Schumacher drove for Mercedes during his return from retirement in 2010.",
+        "from_year": 2010,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e3",
+        "relationship_type": "ENTERED",
+        "description": "Mercedes participated in the 2010 Formula One season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e3",
+        "relationship_type": "ROUND_OF",
+        "description": "The Bahrain Grand Prix was a round of the 2010 Formula One season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Schumacher finished sixth in the Bahrain Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e4",
+        "relationship_type": "AT_RACE",
+        "description": "Schumacher finished sixth in the Bahrain Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e5",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Schumacher was teammates with Rosberg at Mercedes during the 2010 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 5,
+  "entities_accepted": 6,
+  "entities_rejected": 0,
+  "relationship_candidates": 5,
+  "relationships_accepted": 6,
+  "relationships_rejected": 0,
+  "rejections": [],
+  "alignments": [
+    {
+      "index": 1,
+      "action": "clear_redundant_season_year",
+      "detail": "ENTERED year 2010 already named by Season 'e3'; from_year and to_year cleared"
+    },
+    {
+      "index": 2,
+      "action": "clear_redundant_season_year",
+      "detail": "ROUND_OF year 2010 already named by Season 'e3'; from_year and to_year cleared"
+    },
+    {
+      "index": 3,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e4; description kept"
+    }
+  ]
+}

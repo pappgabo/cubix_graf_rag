@@ -1,0 +1,70 @@
+{
+  "chunk_id": "driver-fernando-alonso#51",
+  "doc_id": "driver-fernando-alonso",
+  "document_title": "Fernando Alonso",
+  "section": "Ferrari (2010–2014)",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/Fernando_Alonso",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "6a462739be9093a4fb9697636591ee22dbefdedbf03eee891cf56be6b5c30b6f",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "entity_candidates": 3,
+  "entities_accepted": 3,
+  "entities_rejected": 0,
+  "relationship_candidates": 3,
+  "relationships_accepted": 2,
+  "relationships_rejected": 1,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "WON does not allow Driver -> Season"
+    }
+  ],
+  "alignments": [],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Fernando Alonso",
+        "entity_type": "Driver",
+        "description": "A Formula One driver who raced for Ferrari from 2010 to 2014."
+      },
+      {
+        "local_id": "e2",
+        "name": "Scuderia Ferrari",
+        "entity_type": "Team",
+        "description": "A Formula One team that entered cars."
+      },
+      {
+        "local_id": "e3",
+        "name": "2012",
+        "entity_type": "Season",
+        "description": "A Formula One championship year."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Alonso raced for Ferrari.",
+        "from_year": 2010,
+        "to_year": 2014,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e3",
+        "relationship_type": "ENTERED",
+        "description": "Ferrari took part in the 2012 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "chunk_id": "driver-sebastian-vettel#48",
+  "doc_id": "driver-sebastian-vettel",
+  "document_title": "Sebastian Vettel",
+  "section": "2011: Dominant second title",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/Sebastian_Vettel",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "43d8d0a1c3b2ee4772635a2f1e229c36f604b19bea6a0bc645d71d94e0969f97",
+  "validation_version": "partial-1",
+  "source_status": "ok",
+  "status": "ok",
+  "entity_candidates": 4,
+  "entities_accepted": 4,
+  "entities_rejected": 0,
+  "relationship_candidates": 2,
+  "relationships_accepted": 2,
+  "relationships_rejected": 0,
+  "rejections": [],
+  "alignments": [],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Sebastian Vettel",
+        "entity_type": "Driver",
+        "description": "A driver who raced in Formula One."
+      },
+      {
+        "local_id": "e2",
+        "name": "Red Bull Racing",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that enters cars."
+      },
+      {
+        "local_id": "e3",
+        "name": "2011",
+        "entity_type": "Season",
+        "description": "A championship year."
+      },
+      {
+        "local_id": "e4",
+        "name": "British Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A specific race event."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e2",
+        "target_id": "e3",
+        "relationship_type": "ENTERED",
+        "description": "Red Bull took part in the 2011 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e3",
+        "relationship_type": "ROUND_OF",
+        "description": "The British Grand Prix is a round of the 2011 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

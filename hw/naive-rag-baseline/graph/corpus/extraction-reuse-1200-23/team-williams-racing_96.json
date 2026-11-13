@@ -1,0 +1,98 @@
+{
+  "chunk_id": "team-williams-racing#96",
+  "doc_id": "team-williams-racing",
+  "document_title": "Williams Racing",
+  "section": "Williams Racing > 2018–2019: Continued decline",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "f2add88abbd2c5cd63b0b29c704e3e6be895d6c86d3cb162c49e4493430c9f49",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Robert Kubica",
+        "entity_type": "Driver",
+        "description": "Decided to leave Williams Racing at the end of the 2019 season."
+      },
+      {
+        "local_id": "e2",
+        "name": "Nicholas Latifi",
+        "entity_type": "Driver",
+        "description": "Promoted from reserve driver to replace Kubica for the 2020 season."
+      },
+      {
+        "local_id": "e3",
+        "name": "Jack Aitken",
+        "entity_type": "Driver",
+        "description": "Replaced Latifi as reserve driver."
+      },
+      {
+        "local_id": "e4",
+        "name": "Williams Racing",
+        "entity_type": "Team",
+        "description": "Formula 1 team that announced Kubica's departure."
+      },
+      {
+        "local_id": "e5",
+        "name": "2019",
+        "entity_type": "Season",
+        "description": "The season in which Kubica decided to leave Williams."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e4",
+        "relationship_type": "DROVE_FOR",
+        "description": "Kubica left Williams Racing at the end of the 2019 season.",
+        "from_year": null,
+        "to_year": 2019,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e4",
+        "relationship_type": "DROVE_FOR",
+        "description": "Latifi was promoted to replace Kubica for the 2020 season.",
+        "from_year": 2020,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e4",
+        "relationship_type": "DROVE_FOR",
+        "description": "Aitken replaced Latifi as reserve driver.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e5",
+        "relationship_type": "ENTERED",
+        "description": "Williams Racing participated in the 2019 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 5,
+  "entities_accepted": 5,
+  "entities_rejected": 0,
+  "relationship_candidates": 4,
+  "relationships_accepted": 4,
+  "relationships_rejected": 0,
+  "rejections": [],
+  "alignments": [
+    {
+      "index": 3,
+      "action": "clear_redundant_season_year",
+      "detail": "ENTERED year 2019 already named by Season 'e5'; from_year and to_year cleared"
+    }
+  ]
+}

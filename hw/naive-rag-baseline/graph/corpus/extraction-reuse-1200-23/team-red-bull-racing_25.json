@@ -1,0 +1,157 @@
+{
+  "chunk_id": "team-red-bull-racing#25",
+  "doc_id": "team-red-bull-racing",
+  "document_title": "Red Bull Racing",
+  "section": "2010 season",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "01a69beeeb36424ca2818353ed0bc365c6505a1486bacc0db6e37087b487e2f1",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Sebastian Vettel",
+        "entity_type": "Driver",
+        "description": "A driver for Red Bull Racing during the 2010 season."
+      },
+      {
+        "local_id": "e2",
+        "name": "Mark Webber",
+        "entity_type": "Driver",
+        "description": "A driver for Red Bull Racing during the 2010 season."
+      },
+      {
+        "local_id": "e3",
+        "name": "Red Bull Racing",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that entered cars in the 2010 season."
+      },
+      {
+        "local_id": "e4",
+        "name": "2010",
+        "entity_type": "Season",
+        "description": "The Formula 1 season in which Red Bull Racing competed."
+      },
+      {
+        "local_id": "e5",
+        "name": "British Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A race held at Silverstone during the 2010 season."
+      },
+      {
+        "local_id": "e6",
+        "name": "Germany",
+        "entity_type": "GrandPrix",
+        "description": "A race held during the 2010 season."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Mark Webber at British Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Mark Webber won the British Grand Prix."
+      },
+      {
+        "local_id": "rr2",
+        "name": "Sebastian Vettel at Germany",
+        "entity_type": "RaceResult",
+        "description": "Sebastian Vettel finished third in the Germany Grand Prix."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e3",
+        "relationship_type": "DROVE_FOR",
+        "description": "Sebastian Vettel drove for Red Bull Racing.",
+        "from_year": 2010,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e3",
+        "relationship_type": "DROVE_FOR",
+        "description": "Mark Webber drove for Red Bull Racing.",
+        "from_year": 2010,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e4",
+        "relationship_type": "ROUND_OF",
+        "description": "The British Grand Prix is a round of the 2010 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e6",
+        "target_id": "e4",
+        "relationship_type": "ROUND_OF",
+        "description": "The Germany Grand Prix is a round of the 2010 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Mark Webber won the British Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e5",
+        "relationship_type": "AT_RACE",
+        "description": "Mark Webber won the British Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr2",
+        "relationship_type": "ACHIEVED",
+        "description": "Sebastian Vettel finished third in the Germany Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr2",
+        "target_id": "e6",
+        "relationship_type": "AT_RACE",
+        "description": "Sebastian Vettel finished third in the Germany Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 6,
+  "entities_accepted": 8,
+  "entities_rejected": 0,
+  "relationship_candidates": 6,
+  "relationships_accepted": 8,
+  "relationships_rejected": 0,
+  "rejections": [],
+  "alignments": [
+    {
+      "index": 4,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e5; description kept"
+    },
+    {
+      "index": 5,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr2 -AT_RACE-> e6; description kept"
+    }
+  ]
+}

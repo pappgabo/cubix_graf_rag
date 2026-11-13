@@ -1,0 +1,67 @@
+{
+  "chunk_id": "driver-michael-schumacher#151",
+  "doc_id": "driver-michael-schumacher",
+  "document_title": "Michael Schumacher",
+  "section": null,
+  "page": 13,
+  "source": "https://en.wikipedia.org/wiki/Michael_Schumacher",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "d379330088678c0f010d3430dec7de6567e8602c696bd420f08bc248a9e5df4d",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "DROVE_FOR does not allow Driver -> Season"
+    }
+  ],
+  "alignments": [],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Ralf Schumacher",
+        "entity_type": "Driver",
+        "description": "Ralf competed in Formula One for ten years, starting from 1997 until the end of 2007."
+      },
+      {
+        "local_id": "e2",
+        "name": "Mick Schumacher",
+        "entity_type": "Driver",
+        "description": "Mick became the third Schumacher to race in Formula One, making his debut with Haas in the 2021 season."
+      },
+      {
+        "local_id": "e3",
+        "name": "2021",
+        "entity_type": "Season",
+        "description": "The season in which Mick Schumacher made his debut."
+      },
+      {
+        "local_id": "e4",
+        "name": "Haas",
+        "entity_type": "Team",
+        "description": "The team with which Mick Schumacher made his debut."
+      },
+      {
+        "local_id": "e5",
+        "name": "2013",
+        "entity_type": "Season",
+        "description": "The year of Schumacher's skiing accident."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e2",
+        "target_id": "e4",
+        "relationship_type": "DROVE_FOR",
+        "description": "Mick Schumacher raced for Haas.",
+        "from_year": 2021,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

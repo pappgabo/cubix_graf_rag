@@ -1,0 +1,83 @@
+{
+  "chunk_id": "driver-jenson-button#41",
+  "doc_id": "driver-jenson-button",
+  "document_title": "Jenson Button",
+  "section": "Formula One career > McLaren (2010–2017) > 2016–2017",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "bc85b5ab852af02d2ce6ca4a712835e6c00643175d34c87b6109eb584d3ffa02",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Jenson Button",
+        "entity_type": "Driver",
+        "description": "A British racing driver who competed in Formula One."
+      },
+      {
+        "local_id": "e2",
+        "name": "McLaren",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that entered cars."
+      },
+      {
+        "local_id": "e3",
+        "name": "Lando Norris",
+        "entity_type": "Driver",
+        "description": "A British racing driver who competed in Formula One."
+      },
+      {
+        "local_id": "e4",
+        "name": "2017",
+        "entity_type": "Season",
+        "description": "A championship year in Formula One."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Jenson Button was a reserve driver for McLaren.",
+        "from_year": null,
+        "to_year": 2017,
+        "role": "reserve driver"
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e4",
+        "relationship_type": "ENTERED",
+        "description": "McLaren participated in the 2017 Formula One season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Lando Norris replaced Jenson Button as McLaren reserve driver.",
+        "from_year": 2018,
+        "to_year": null,
+        "role": "reserve driver"
+      }
+    ]
+  },
+  "entity_candidates": 4,
+  "entities_accepted": 4,
+  "entities_rejected": 0,
+  "relationship_candidates": 3,
+  "relationships_accepted": 3,
+  "relationships_rejected": 0,
+  "rejections": [],
+  "alignments": [
+    {
+      "index": 1,
+      "action": "clear_redundant_season_year",
+      "detail": "ENTERED year 2017 already named by Season 'e4'; from_year and to_year cleared"
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "chunk_id": "driver-lewis-hamilton#96",
+  "doc_id": "driver-lewis-hamilton",
+  "document_title": "Lewis Hamilton",
+  "section": null,
+  "page": 8,
+  "source": "https://en.wikipedia.org/wiki/Lewis_Hamilton",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "eebed072e6c1b954bff419b1221357dc5848741e43508d3c2ed88e4947c1ba1e",
+  "validation_version": "partial-1",
+  "source_status": "ok",
+  "status": "ok",
+  "entity_candidates": 3,
+  "entities_accepted": 1,
+  "entities_rejected": 2,
+  "relationship_candidates": 2,
+  "relationships_accepted": 0,
+  "relationships_rejected": 2,
+  "rejections": [
+    {
+      "element": "entity",
+      "index": 1,
+      "reason": "name 'null' is a placeholder, not an entity identity"
+    },
+    {
+      "element": "entity",
+      "index": 2,
+      "reason": "name 'null' is a placeholder, not an entity identity"
+    },
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "WON: target_id 'e2' rejected: name 'null' is a placeholder, not an entity identity"
+    },
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "AWARDED_IN: source_id 'e2' rejected: name 'null' is a placeholder, not an entity identity"
+    }
+  ],
+  "alignments": [],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Lewis Hamilton",
+        "entity_type": "Driver",
+        "description": "A driver regarded as one of the greatest in Formula One history, known for achieving the most all-time pole positions."
+      }
+    ],
+    "relationships": []
+  }
+}

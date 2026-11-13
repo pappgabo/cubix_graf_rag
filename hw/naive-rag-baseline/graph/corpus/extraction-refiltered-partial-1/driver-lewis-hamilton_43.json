@@ -1,0 +1,74 @@
+{
+  "chunk_id": "driver-lewis-hamilton#43",
+  "doc_id": "driver-lewis-hamilton",
+  "document_title": "Lewis Hamilton",
+  "section": null,
+  "page": 4,
+  "source": "https://en.wikipedia.org/wiki/Lewis_Hamilton",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "dc499459ef834eb5ae766cd3f924d47b2c8e500e473581bbf6c7a6741b196656",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "WON does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "ROUND_OF does not allow Season -> GrandPrix"
+    }
+  ],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Lewis Hamilton",
+        "entity_type": "Driver",
+        "description": "A Formula One driver who clinched his second World Drivers' Championship."
+      },
+      {
+        "local_id": "e2",
+        "name": "2015",
+        "entity_type": "Season",
+        "description": "The season in which Hamilton won his second World Drivers' Championship."
+      },
+      {
+        "local_id": "e3",
+        "name": "Abu Dhabi",
+        "entity_type": "GrandPrix",
+        "description": "The final round of the season where Hamilton clinched his championship."
+      },
+      {
+        "local_id": "e4",
+        "name": "Mercedes",
+        "entity_type": "Team",
+        "description": "The team Hamilton raced for during the 2015 season."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e4",
+        "target_id": "e2",
+        "relationship_type": "ENTERED",
+        "description": "Mercedes entered the 2015 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e4",
+        "relationship_type": "DROVE_FOR",
+        "description": "Hamilton drove for Mercedes during the 2015 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

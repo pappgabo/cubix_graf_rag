@@ -1,0 +1,135 @@
+{
+  "chunk_id": "driver-kimi-raikkonen#23",
+  "doc_id": "driver-kimi-raikkonen",
+  "document_title": "Kimi Räikkönen",
+  "section": "Formula One career > McLaren (2002–2006) > 2006: Final season at McLaren",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "432f48815fd8e8e57a7f893fd5d4a19829fb8a28a00efe0294c794bb711793dd",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Kimi Räikkönen",
+        "entity_type": "Driver",
+        "description": "A Finnish racing driver who competed in Formula One."
+      },
+      {
+        "local_id": "e2",
+        "name": "Räikkönen Robertson Racing",
+        "entity_type": "Team",
+        "description": "Kimi Räikkönen's British Formula 3 Championship team."
+      },
+      {
+        "local_id": "e3",
+        "name": "2006",
+        "entity_type": "Season",
+        "description": "The championship year."
+      },
+      {
+        "local_id": "e4",
+        "name": "Macau Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A prestigious race in the Macau Grand Prix."
+      },
+      {
+        "local_id": "e5",
+        "name": "Mike Conway",
+        "entity_type": "Driver",
+        "description": "A British racing driver who won the 2006 British F3 International Series title."
+      },
+      {
+        "local_id": "e6",
+        "name": "British F3 International Series",
+        "entity_type": "GrandPrix",
+        "description": "A racing series in which Mike Conway won the title."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Mike Conway at British F3 International Series",
+        "entity_type": "RaceResult",
+        "description": "Mike Conway recorded a result in the British F3 International Series."
+      },
+      {
+        "local_id": "rr2",
+        "name": "Mike Conway at Macau Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Mike Conway won the Macau Grand Prix."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e2",
+        "target_id": "e3",
+        "relationship_type": "ENTERED",
+        "description": "Räikkönen Robertson Racing took part in the 2006 British F3 International Series.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Mike Conway recorded a result in the British F3 International Series.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e6",
+        "relationship_type": "AT_RACE",
+        "description": "Mike Conway recorded a result in the British F3 International Series.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "rr2",
+        "relationship_type": "ACHIEVED",
+        "description": "Mike Conway won the Macau Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr2",
+        "target_id": "e4",
+        "relationship_type": "AT_RACE",
+        "description": "Mike Conway won the Macau Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 6,
+  "entities_accepted": 8,
+  "entities_rejected": 0,
+  "relationship_candidates": 3,
+  "relationships_accepted": 5,
+  "relationships_rejected": 0,
+  "rejections": [],
+  "alignments": [
+    {
+      "index": 0,
+      "action": "clear_redundant_season_year",
+      "detail": "ENTERED year 2006 already named by Season 'e3'; from_year and to_year cleared"
+    },
+    {
+      "index": 1,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e6; description kept"
+    },
+    {
+      "index": 2,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr2 -AT_RACE-> e4; description kept"
+    }
+  ]
+}

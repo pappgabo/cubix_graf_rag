@@ -1,0 +1,99 @@
+{
+  "chunk_id": "driver-nico-rosberg#48",
+  "doc_id": "driver-nico-rosberg",
+  "document_title": "Nico Rosberg",
+  "section": "Nico Rosberg > 2008–2009",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/Nico_Rosberg",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "0da9f88897ff4d0691192ef0395285127a5511d67575d9b40e654f78e81eaa04",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "RACED_IN does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "RACED_IN does not allow Driver -> Season"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 0,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e5; description kept"
+    }
+  ],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Nico Rosberg",
+        "entity_type": "Driver",
+        "description": "A Formula One driver who competed during the 2008–2009 seasons."
+      },
+      {
+        "local_id": "e2",
+        "name": "Kazuki Nakajima",
+        "entity_type": "Driver",
+        "description": "A Formula One driver who occasionally outperformed Nico Rosberg."
+      },
+      {
+        "local_id": "e3",
+        "name": "2008",
+        "entity_type": "Season",
+        "description": "A Formula One championship season."
+      },
+      {
+        "local_id": "e4",
+        "name": "2009",
+        "entity_type": "Season",
+        "description": "A Formula One championship season."
+      },
+      {
+        "local_id": "e5",
+        "name": "Singapore Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The inaugural Singapore Grand Prix where Nico Rosberg achieved his best career result."
+      },
+      {
+        "local_id": "e6",
+        "name": "17 points",
+        "entity_type": "RaceResult",
+        "description": "The total points Nico Rosberg scored in the 2008–2009 seasons."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Nico Rosberg at Singapore Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Nico Rosberg achieved a second place at the inaugural Singapore Grand Prix."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Nico Rosberg achieved a second place at the inaugural Singapore Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e5",
+        "relationship_type": "AT_RACE",
+        "description": "Nico Rosberg achieved a second place at the inaugural Singapore Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

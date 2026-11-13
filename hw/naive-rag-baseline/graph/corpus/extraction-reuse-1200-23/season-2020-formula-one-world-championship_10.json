@@ -1,0 +1,70 @@
+{
+  "chunk_id": "season-2020-formula-one-world-championship#10",
+  "doc_id": "season-2020-formula-one-world-championship",
+  "document_title": "2020 Formula One World Championship",
+  "section": "2020 Formula One World Championship > Calendar",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "87fb9ad289de0c2435ba4edfe9284b1421f96b4d33896c9d8a1fbe5823826495",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "2020 Formula One World Championship",
+        "entity_type": "Season",
+        "description": "The 2020 Formula One World Championship."
+      },
+      {
+        "local_id": "e2",
+        "name": "Austria",
+        "entity_type": "GrandPrix",
+        "description": "A Grand Prix held in Austria."
+      },
+      {
+        "local_id": "e3",
+        "name": "Silverstone Circuit",
+        "entity_type": "Circuit",
+        "description": "A racing circuit in Silverstone, UK."
+      },
+      {
+        "local_id": "e4",
+        "name": "Bahrain International Circuit",
+        "entity_type": "Circuit",
+        "description": "A racing circuit in Bahrain."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e2",
+        "target_id": "e1",
+        "relationship_type": "ROUND_OF",
+        "description": "Austria Grand Prix is a round of the 2020 Formula One World Championship.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 4,
+  "entities_accepted": 4,
+  "entities_rejected": 0,
+  "relationship_candidates": 3,
+  "relationships_accepted": 1,
+  "relationships_rejected": 2,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "ROUND_OF does not allow Circuit -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "ROUND_OF does not allow Circuit -> Season"
+    }
+  ],
+  "alignments": []
+}

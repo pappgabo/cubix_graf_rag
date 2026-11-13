@@ -1,0 +1,251 @@
+{
+  "chunk_id": "team-williams-racing#104",
+  "doc_id": "team-williams-racing",
+  "document_title": "Williams Racing",
+  "section": "Williams Racing > 2023–present: Improvements under James Vowles",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "3e58dfe1669d09bf4bd8ca962ed0c2f5aeb4e545bf8bd733306130ce7a70480e",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Williams Racing",
+        "entity_type": "Team",
+        "description": "A Formula 1 team."
+      },
+      {
+        "local_id": "e2",
+        "name": "Alexander Albon",
+        "entity_type": "Driver",
+        "description": "A Formula 1 driver racing for Williams."
+      },
+      {
+        "local_id": "e3",
+        "name": "Logan Sargeant",
+        "entity_type": "Driver",
+        "description": "A rookie Formula 1 driver racing for Williams."
+      },
+      {
+        "local_id": "e4",
+        "name": "Nicholas Latifi",
+        "entity_type": "Driver",
+        "description": "A former Formula 1 driver who raced for Williams."
+      },
+      {
+        "local_id": "e5",
+        "name": "2023",
+        "entity_type": "Season",
+        "description": "The Formula 1 season."
+      },
+      {
+        "local_id": "e6",
+        "name": "2023 United States Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula 1 race in the 2023 season."
+      },
+      {
+        "local_id": "e7",
+        "name": "Bahrain Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The season-opener race in the 2023 season."
+      },
+      {
+        "local_id": "e8",
+        "name": "Saudi Arabian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A race in the 2023 season."
+      },
+      {
+        "local_id": "e9",
+        "name": "Australian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A race in the 2023 season."
+      },
+      {
+        "local_id": "e10",
+        "name": "AlphaTauri",
+        "entity_type": "Team",
+        "description": "A Formula 1 team."
+      },
+      {
+        "local_id": "e11",
+        "name": "Nyck de Vries",
+        "entity_type": "Driver",
+        "description": "A Formula 1 driver racing for AlphaTauri."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Logan Sargeant at 2023 United States Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Logan Sargeant scored his first point at the 2023 United States Grand Prix."
+      },
+      {
+        "local_id": "rr2",
+        "name": "Alexander Albon at Bahrain Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Alexander Albon scored one point in the Bahrain Grand Prix."
+      },
+      {
+        "local_id": "rr3",
+        "name": "Alexander Albon at Saudi Arabian Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Alexander Albon retired at the Saudi Arabian Grand Prix."
+      },
+      {
+        "local_id": "rr4",
+        "name": "Logan Sargeant at Australian Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Logan Sargeant was classified as having finished 16th in the Australian Grand Prix."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e5",
+        "relationship_type": "ENTERED",
+        "description": "Williams Racing took part in the 2023 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e1",
+        "relationship_type": "DROVE_FOR",
+        "description": "Alexander Albon raced for Williams Racing.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e1",
+        "relationship_type": "DROVE_FOR",
+        "description": "Logan Sargeant raced for Williams Racing.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e1",
+        "relationship_type": "DROVE_FOR",
+        "description": "Nicholas Latifi raced for Williams Racing.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Logan Sargeant scored his first point at the 2023 United States Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e6",
+        "relationship_type": "AT_RACE",
+        "description": "Logan Sargeant scored his first point at the 2023 United States Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "rr2",
+        "relationship_type": "ACHIEVED",
+        "description": "Alexander Albon scored one point in the Bahrain Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr2",
+        "target_id": "e7",
+        "relationship_type": "AT_RACE",
+        "description": "Alexander Albon scored one point in the Bahrain Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "rr3",
+        "relationship_type": "ACHIEVED",
+        "description": "Alexander Albon retired at the Saudi Arabian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr3",
+        "target_id": "e8",
+        "relationship_type": "AT_RACE",
+        "description": "Alexander Albon retired at the Saudi Arabian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "rr4",
+        "relationship_type": "ACHIEVED",
+        "description": "Logan Sargeant was classified as having finished 16th in the Australian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr4",
+        "target_id": "e9",
+        "relationship_type": "AT_RACE",
+        "description": "Logan Sargeant was classified as having finished 16th in the Australian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 11,
+  "entities_accepted": 15,
+  "entities_rejected": 0,
+  "relationship_candidates": 9,
+  "relationships_accepted": 12,
+  "relationships_rejected": 1,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 12,
+      "reason": "AT_RACE does not allow Driver -> Driver"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 4,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e6; description kept"
+    },
+    {
+      "index": 5,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr2 -AT_RACE-> e7; description kept"
+    },
+    {
+      "index": 6,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr3 -AT_RACE-> e8; description kept"
+    },
+    {
+      "index": 7,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr4 -AT_RACE-> e9; description kept"
+    }
+  ]
+}

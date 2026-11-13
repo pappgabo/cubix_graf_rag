@@ -1,0 +1,96 @@
+{
+  "chunk_id": "team-williams-racing#51",
+  "doc_id": "team-williams-racing",
+  "document_title": "Williams Racing",
+  "section": "Williams Racing > 1995 season",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "14ab61d75bb3d93ac42cddc2fd547d7abeb1b77909a2ee7ed56563fb339ecc0d",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Williams Racing",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that entered cars."
+      },
+      {
+        "local_id": "e2",
+        "name": "Benetton",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that entered cars."
+      },
+      {
+        "local_id": "e3",
+        "name": "1995",
+        "entity_type": "Season",
+        "description": "A championship year."
+      },
+      {
+        "local_id": "e4",
+        "name": "Damon Hill",
+        "entity_type": "Driver",
+        "description": "A driver who raced in Formula One."
+      },
+      {
+        "local_id": "e5",
+        "name": "David Coulthard",
+        "entity_type": "Driver",
+        "description": "A driver who raced in Formula One."
+      },
+      {
+        "local_id": "e6",
+        "name": "Michael Schumacher",
+        "entity_type": "Driver",
+        "description": "A driver who raced in Formula One."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e3",
+        "relationship_type": "ENTERED",
+        "description": "Williams Racing took part in the 1995 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e3",
+        "relationship_type": "ENTERED",
+        "description": "Benetton took part in the 1995 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 6,
+  "entities_accepted": 6,
+  "entities_rejected": 0,
+  "relationship_candidates": 5,
+  "relationships_accepted": 2,
+  "relationships_rejected": 3,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "ACHIEVED does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "ACHIEVED does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "ACHIEVED does not allow Driver -> Season"
+    }
+  ],
+  "alignments": []
+}

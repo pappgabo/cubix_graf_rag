@@ -1,0 +1,107 @@
+{
+  "chunk_id": "reference-formula-one#11",
+  "doc_id": "reference-formula-one",
+  "document_title": "Formula One",
+  "section": "Formula One > Big business",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "afe75dfa72c3ac10ebd2be6f9b7560157a166224137f65b1bb62894a3682a41e",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Ayrton Senna",
+        "entity_type": "Driver",
+        "description": "A Brazilian racing driver who won the Monaco Grand Prix in 1987."
+      },
+      {
+        "local_id": "e2",
+        "name": "Alain Prost",
+        "entity_type": "Driver",
+        "description": "A French racing driver who was a rival of Ayrton Senna."
+      },
+      {
+        "local_id": "e3",
+        "name": "Lotus 92",
+        "entity_type": "Car",
+        "description": "A car model developed by Lotus that featured active suspension."
+      },
+      {
+        "local_id": "e4",
+        "name": "Monaco Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula One race held in Monaco."
+      },
+      {
+        "local_id": "e5",
+        "name": "1994",
+        "entity_type": "Season",
+        "description": "The Formula One season during which many electronic driver aids were banned."
+      },
+      {
+        "local_id": "e6",
+        "name": "San Marino Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula One race held in San Marino where Ayrton Senna died."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Ayrton Senna at San Marino Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Ayrton Senna recorded a result in the San Marino Grand Prix where he died."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Ayrton Senna recorded a result in the San Marino Grand Prix where he died.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e6",
+        "relationship_type": "AT_RACE",
+        "description": "Ayrton Senna recorded a result in the San Marino Grand Prix where he died.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e1",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Alain Prost was a rival of Ayrton Senna.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 6,
+  "entities_accepted": 7,
+  "entities_rejected": 0,
+  "relationship_candidates": 3,
+  "relationships_accepted": 3,
+  "relationships_rejected": 1,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "WON does not allow Driver -> GrandPrix"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 1,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e6; description kept"
+    }
+  ]
+}

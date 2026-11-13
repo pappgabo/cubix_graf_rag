@@ -1,0 +1,162 @@
+{
+  "chunk_id": "driver-fernando-alonso#4",
+  "doc_id": "driver-fernando-alonso",
+  "document_title": "Fernando Alonso",
+  "section": null,
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/Fernando_Alonso",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "b364025d692ed9d31c348e2b5e2b32bb8f764672a085cb0ba44b16da93251f2a",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "entity_candidates": 8,
+  "entities_accepted": 9,
+  "entities_rejected": 0,
+  "relationship_candidates": 8,
+  "relationships_accepted": 7,
+  "relationships_rejected": 2,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "WON does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 8,
+      "reason": "RACED_IN does not allow Driver -> Season"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 5,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e8; description kept"
+    }
+  ],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Fernando Alonso",
+        "entity_type": "Driver",
+        "description": "A Formula One driver who successfully defended his title from Michael Schumacher in 2006."
+      },
+      {
+        "local_id": "e2",
+        "name": "McLaren",
+        "entity_type": "Team",
+        "description": "A Formula One team that Alonso moved to for the 2007 season."
+      },
+      {
+        "local_id": "e3",
+        "name": "Renault",
+        "entity_type": "Team",
+        "description": "A Formula One team that Alonso returned to after McLaren."
+      },
+      {
+        "local_id": "e4",
+        "name": "2006",
+        "entity_type": "Season",
+        "description": "The season in which Alonso successfully defended his title."
+      },
+      {
+        "local_id": "e5",
+        "name": "2007",
+        "entity_type": "Season",
+        "description": "The season in which Alonso moved to McLaren."
+      },
+      {
+        "local_id": "e6",
+        "name": "2008",
+        "entity_type": "Season",
+        "description": "The season in which Alonso won multiple races."
+      },
+      {
+        "local_id": "e7",
+        "name": "2009",
+        "entity_type": "Season",
+        "description": "The season in which Alonso endured a winless campaign."
+      },
+      {
+        "local_id": "e8",
+        "name": "Singapore Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A controversial race that Alonso won in 2008."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Fernando Alonso at Singapore Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Alonso won the controversial Singapore Grand Prix in 2008."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Alonso moved to McLaren for the 2007 season.",
+        "from_year": 2007,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e3",
+        "relationship_type": "DROVE_FOR",
+        "description": "Alonso returned to Renault after McLaren.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e5",
+        "relationship_type": "ENTERED",
+        "description": "McLaren took part in the 2007 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e6",
+        "relationship_type": "ENTERED",
+        "description": "Renault took part in the 2008 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Alonso won the controversial Singapore Grand Prix in 2008.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e8",
+        "relationship_type": "AT_RACE",
+        "description": "Alonso won the controversial Singapore Grand Prix in 2008.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e8",
+        "target_id": "e6",
+        "relationship_type": "ROUND_OF",
+        "description": "The Singapore Grand Prix is a round of the 2008 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

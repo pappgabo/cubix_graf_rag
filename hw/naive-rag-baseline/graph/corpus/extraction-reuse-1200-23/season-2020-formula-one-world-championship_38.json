@@ -1,0 +1,273 @@
+{
+  "chunk_id": "season-2020-formula-one-world-championship#38",
+  "doc_id": "season-2020-formula-one-world-championship",
+  "document_title": "2020 Formula One World Championship",
+  "section": "2020 Formula One World Championship > Mid-season rounds",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "7506ec850640ca482fc49e3189efcd4e5fbd297dd1393886bb92a898791b4bc5",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Lewis Hamilton",
+        "entity_type": "Driver",
+        "description": "Won the Belgian Grand Prix, led every lap."
+      },
+      {
+        "local_id": "e2",
+        "name": "Valtteri Bottas",
+        "entity_type": "Driver",
+        "description": "Finished second in the Belgian Grand Prix."
+      },
+      {
+        "local_id": "e3",
+        "name": "Max Verstappen",
+        "entity_type": "Driver",
+        "description": "Finished third in the Belgian Grand Prix."
+      },
+      {
+        "local_id": "e4",
+        "name": "Daniel Ricciardo",
+        "entity_type": "Driver",
+        "description": "Finished fourth in the Belgian Grand Prix, set the fastest lap."
+      },
+      {
+        "local_id": "e5",
+        "name": "Antonio Giovinazzi",
+        "entity_type": "Driver",
+        "description": "Crashed at Campus corner during the Belgian Grand Prix."
+      },
+      {
+        "local_id": "e6",
+        "name": "George Russell",
+        "entity_type": "Driver",
+        "description": "Retired from the Belgian Grand Prix due to a crash involving Giovinazzi."
+      },
+      {
+        "local_id": "e7",
+        "name": "Renault",
+        "entity_type": "Team",
+        "description": "Achieved a finish of P4 and P5 in the Belgian Grand Prix."
+      },
+      {
+        "local_id": "e8",
+        "name": "Belgian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "Race won by Lewis Hamilton."
+      },
+      {
+        "local_id": "e9",
+        "name": "2020",
+        "entity_type": "Season",
+        "description": "The season of the 2020 Formula One World Championship."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Lewis Hamilton at Belgian Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Lewis Hamilton won the Belgian Grand Prix."
+      },
+      {
+        "local_id": "rr2",
+        "name": "Valtteri Bottas at Belgian Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Valtteri Bottas finished second in the Belgian Grand Prix."
+      },
+      {
+        "local_id": "rr3",
+        "name": "Max Verstappen at Belgian Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Max Verstappen finished third in the Belgian Grand Prix."
+      },
+      {
+        "local_id": "rr4",
+        "name": "Daniel Ricciardo at Belgian Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Daniel Ricciardo finished fourth in the Belgian Grand Prix, set the fastest lap."
+      },
+      {
+        "local_id": "rr5",
+        "name": "Antonio Giovinazzi at Belgian Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Antonio Giovinazzi crashed at the Belgian Grand Prix."
+      },
+      {
+        "local_id": "rr6",
+        "name": "George Russell at Belgian Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "George Russell retired from the Belgian Grand Prix due to a crash involving Giovinazzi."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Lewis Hamilton won the Belgian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e8",
+        "relationship_type": "AT_RACE",
+        "description": "Lewis Hamilton won the Belgian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "rr2",
+        "relationship_type": "ACHIEVED",
+        "description": "Valtteri Bottas finished second in the Belgian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr2",
+        "target_id": "e8",
+        "relationship_type": "AT_RACE",
+        "description": "Valtteri Bottas finished second in the Belgian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "rr3",
+        "relationship_type": "ACHIEVED",
+        "description": "Max Verstappen finished third in the Belgian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr3",
+        "target_id": "e8",
+        "relationship_type": "AT_RACE",
+        "description": "Max Verstappen finished third in the Belgian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "rr4",
+        "relationship_type": "ACHIEVED",
+        "description": "Daniel Ricciardo finished fourth in the Belgian Grand Prix, set the fastest lap.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr4",
+        "target_id": "e8",
+        "relationship_type": "AT_RACE",
+        "description": "Daniel Ricciardo finished fourth in the Belgian Grand Prix, set the fastest lap.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "rr5",
+        "relationship_type": "ACHIEVED",
+        "description": "Antonio Giovinazzi crashed at the Belgian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr5",
+        "target_id": "e8",
+        "relationship_type": "AT_RACE",
+        "description": "Antonio Giovinazzi crashed at the Belgian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e6",
+        "target_id": "rr6",
+        "relationship_type": "ACHIEVED",
+        "description": "George Russell retired from the Belgian Grand Prix due to a crash involving Giovinazzi.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr6",
+        "target_id": "e8",
+        "relationship_type": "AT_RACE",
+        "description": "George Russell retired from the Belgian Grand Prix due to a crash involving Giovinazzi.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e7",
+        "target_id": "e9",
+        "relationship_type": "ENTERED",
+        "description": "Renault participated in the 2020 Formula One World Championship.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e8",
+        "target_id": "e9",
+        "relationship_type": "ROUND_OF",
+        "description": "The Belgian Grand Prix is a round of the 2020 Formula One World Championship.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 9,
+  "entities_accepted": 15,
+  "entities_rejected": 0,
+  "relationship_candidates": 8,
+  "relationships_accepted": 14,
+  "relationships_rejected": 0,
+  "rejections": [],
+  "alignments": [
+    {
+      "index": 0,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e8; description kept"
+    },
+    {
+      "index": 1,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr2 -AT_RACE-> e8; description kept"
+    },
+    {
+      "index": 2,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr3 -AT_RACE-> e8; description kept"
+    },
+    {
+      "index": 3,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr4 -AT_RACE-> e8; description kept"
+    },
+    {
+      "index": 4,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr5 -AT_RACE-> e8; description kept"
+    },
+    {
+      "index": 5,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr6 -AT_RACE-> e8; description kept"
+    }
+  ]
+}

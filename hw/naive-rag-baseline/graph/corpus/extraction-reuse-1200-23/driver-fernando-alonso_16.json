@@ -1,0 +1,216 @@
+{
+  "chunk_id": "driver-fernando-alonso#16",
+  "doc_id": "driver-fernando-alonso",
+  "document_title": "Fernando Alonso",
+  "section": "McLaren and second stint with Renault (2007–2009)",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "73d024ba89b6ea68aa8a27159558d75267e7e4a2bee395147767f74900f1d5e2",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Fernando Alonso",
+        "entity_type": "Driver",
+        "description": "A Formula One driver who raced for McLaren and Renault."
+      },
+      {
+        "local_id": "e2",
+        "name": "Lewis Hamilton",
+        "entity_type": "Driver",
+        "description": "A Formula One driver who was Alonso's teammate at McLaren."
+      },
+      {
+        "local_id": "e3",
+        "name": "McLaren",
+        "entity_type": "Team",
+        "description": "A Formula One team that Alonso raced for."
+      },
+      {
+        "local_id": "e4",
+        "name": "Renault",
+        "entity_type": "Team",
+        "description": "A Formula One team that Alonso rejoined."
+      },
+      {
+        "local_id": "e5",
+        "name": "2008",
+        "entity_type": "Season",
+        "description": "The Formula One season when Alonso rejoined Renault."
+      },
+      {
+        "local_id": "e6",
+        "name": "Singapore Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A race where Alonso won."
+      },
+      {
+        "local_id": "e7",
+        "name": "Japanese Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A race where Alonso won."
+      },
+      {
+        "local_id": "e8",
+        "name": "Nelson Piquet Jr.",
+        "entity_type": "Driver",
+        "description": "A Formula One driver who was Alonso's teammate at Renault."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Fernando Alonso at Singapore Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Alonso won the Singapore Grand Prix."
+      },
+      {
+        "local_id": "rr2",
+        "name": "Fernando Alonso at Japanese Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Alonso won the Japanese Grand Prix."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e3",
+        "relationship_type": "DROVE_FOR",
+        "description": "Alonso raced for McLaren.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e4",
+        "relationship_type": "DROVE_FOR",
+        "description": "Alonso rejoined Renault.",
+        "from_year": 2008,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Alonso was teammates with Hamilton at McLaren.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e8",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Alonso was teammates with Piquet Jr. at Renault.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e5",
+        "relationship_type": "ENTERED",
+        "description": "McLaren took part in the 2008 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e5",
+        "relationship_type": "ENTERED",
+        "description": "Renault took part in the 2008 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e6",
+        "target_id": "e5",
+        "relationship_type": "ROUND_OF",
+        "description": "The Singapore Grand Prix was a round of the 2008 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e7",
+        "target_id": "e5",
+        "relationship_type": "ROUND_OF",
+        "description": "The Japanese Grand Prix was a round of the 2008 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Alonso won the Singapore Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e6",
+        "relationship_type": "AT_RACE",
+        "description": "Alonso won the Singapore Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr2",
+        "relationship_type": "ACHIEVED",
+        "description": "Alonso won the Japanese Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr2",
+        "target_id": "e7",
+        "relationship_type": "AT_RACE",
+        "description": "Alonso won the Japanese Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 8,
+  "entities_accepted": 10,
+  "entities_rejected": 0,
+  "relationship_candidates": 12,
+  "relationships_accepted": 12,
+  "relationships_rejected": 2,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 12,
+      "reason": "HELD_AT does not allow GrandPrix -> Team"
+    },
+    {
+      "element": "relationship",
+      "index": 13,
+      "reason": "HELD_AT does not allow GrandPrix -> Team"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 8,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e6; description kept"
+    },
+    {
+      "index": 9,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr2 -AT_RACE-> e7; description kept"
+    }
+  ]
+}

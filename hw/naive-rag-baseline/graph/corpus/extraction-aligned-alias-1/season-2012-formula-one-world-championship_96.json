@@ -1,0 +1,61 @@
+{
+  "chunk_id": "season-2012-formula-one-world-championship#96",
+  "doc_id": "season-2012-formula-one-world-championship",
+  "document_title": "2012 Formula One World Championship",
+  "section": "Race summaries > Round 4 – Bahrain International Circuit",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/2012_Formula_One_World_Championship",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "eb5108677a9d4de6e601c5d1cab45358a4106173be6e3cdcfda300b2c015d2df",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "RACED_IN does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "RACED_IN does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "ROUND_OF does not allow Circuit -> Season"
+    }
+  ],
+  "alignments": [],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Romain Grosjean",
+        "entity_type": "Driver",
+        "description": "His team-mate, Romain Grosjean, finished third."
+      },
+      {
+        "local_id": "e2",
+        "name": "Lewis Hamilton",
+        "entity_type": "Driver",
+        "description": "Lewis Hamilton finished eighth, once again hampered by slow pit stops."
+      },
+      {
+        "local_id": "e3",
+        "name": "Bahrain International Circuit",
+        "entity_type": "Circuit",
+        "description": "The race took place at Bahrain International Circuit."
+      },
+      {
+        "local_id": "e4",
+        "name": "2012",
+        "entity_type": "Season",
+        "description": "The season is the 2012 Formula One World Championship."
+      }
+    ],
+    "relationships": []
+  }
+}

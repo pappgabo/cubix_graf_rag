@@ -1,0 +1,57 @@
+{
+  "chunk_id": "season-2012-formula-one-world-championship#19",
+  "doc_id": "season-2012-formula-one-world-championship",
+  "document_title": "2012 Formula One World Championship",
+  "section": "Teams and drivers > Team changes",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/2012_Formula_One_World_Championship",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "7594d6442281e35b82175d87be819dae5e701aa06648e4b391ab168fb3267a36",
+  "validation_version": "partial-1",
+  "source_status": "ok",
+  "status": "ok",
+  "rejections": [],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Peter Sauber",
+        "entity_type": "Driver",
+        "description": "Former team principal of Sauber F1."
+      },
+      {
+        "local_id": "e2",
+        "name": "Sauber F1",
+        "entity_type": "Team",
+        "description": "Formula 1 team."
+      },
+      {
+        "local_id": "e3",
+        "name": "Monisha Kaltenborn",
+        "entity_type": "Driver",
+        "description": "CEO of Sauber F1 and first female team principal in Formula One."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Peter Sauber stepped down as team principal of Sauber F1.",
+        "from_year": null,
+        "to_year": null,
+        "role": "team principal"
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Monisha Kaltenborn appointed as team principal of Sauber F1.",
+        "from_year": null,
+        "to_year": null,
+        "role": "team principal"
+      }
+    ]
+  }
+}

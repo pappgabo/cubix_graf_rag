@@ -1,0 +1,137 @@
+{
+  "chunk_id": "team-mclaren#50",
+  "doc_id": "team-mclaren",
+  "document_title": "McLaren",
+  "section": "2018–2020: Customer Renault engines",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "4eba50b1f300f8c29a0caaa75bf31c049d3f44995e969bf6c37b169f16f0e977",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Fernando Alonso",
+        "entity_type": "Driver",
+        "description": "A driver who raced for McLaren."
+      },
+      {
+        "local_id": "e2",
+        "name": "Carlos Sainz Jr.",
+        "entity_type": "Driver",
+        "description": "A driver who was signed to replace Fernando Alonso at McLaren."
+      },
+      {
+        "local_id": "e3",
+        "name": "Stoffel Vandoorne",
+        "entity_type": "Driver",
+        "description": "A driver who left McLaren at the end of the 2018 season."
+      },
+      {
+        "local_id": "e4",
+        "name": "Lando Norris",
+        "entity_type": "Driver",
+        "description": "A driver who was promoted to McLaren from reserve driver in 2019."
+      },
+      {
+        "local_id": "e5",
+        "name": "McLaren",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that entered cars."
+      },
+      {
+        "local_id": "e6",
+        "name": "2018",
+        "entity_type": "Season",
+        "description": "The Formula 1 season in which McLaren competed."
+      },
+      {
+        "local_id": "e7",
+        "name": "Australian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The season-opening race of the 2018 Formula 1 season."
+      },
+      {
+        "local_id": "e8",
+        "name": "Monaco Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The race where McLaren had its best finish since 2016."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e5",
+        "relationship_type": "DROVE_FOR",
+        "description": "Fernando Alonso raced for McLaren.",
+        "from_year": null,
+        "to_year": 2018,
+        "role": "Driver"
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e5",
+        "relationship_type": "DROVE_FOR",
+        "description": "Carlos Sainz Jr. was signed to McLaren as a replacement for Fernando Alonso.",
+        "from_year": 2019,
+        "to_year": null,
+        "role": "Driver"
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e5",
+        "relationship_type": "DROVE_FOR",
+        "description": "Stoffel Vandoorne raced for McLaren until the end of the 2018 season.",
+        "from_year": null,
+        "to_year": 2018,
+        "role": "Driver"
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e5",
+        "relationship_type": "DROVE_FOR",
+        "description": "Lando Norris was promoted to McLaren in 2019.",
+        "from_year": 2019,
+        "to_year": null,
+        "role": "Driver"
+      },
+      {
+        "source_id": "e7",
+        "target_id": "e6",
+        "relationship_type": "ROUND_OF",
+        "description": "The Australian Grand Prix is a round of the 2018 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e8",
+        "target_id": "e6",
+        "relationship_type": "ROUND_OF",
+        "description": "The Monaco Grand Prix is a round of the 2018 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e6",
+        "relationship_type": "ENTERED",
+        "description": "McLaren took part in the 2018 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 8,
+  "entities_accepted": 8,
+  "entities_rejected": 0,
+  "relationship_candidates": 7,
+  "relationships_accepted": 7,
+  "relationships_rejected": 0,
+  "rejections": [],
+  "alignments": []
+}

@@ -1,0 +1,172 @@
+{
+  "chunk_id": "team-renault-in-formula-one#4",
+  "doc_id": "team-renault-in-formula-one",
+  "document_title": "Renault in Formula One",
+  "section": "Constructor > Équipe Renault (1977–1985) > 1977–1978: Laying a foundation for turbo revolution",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "0ee1ecebcd75b39850752bc1974cec5035dc8faf090835c9c0ec833d6756455c",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Renault",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that entered cars."
+      },
+      {
+        "local_id": "e2",
+        "name": "Jabouille",
+        "entity_type": "Driver",
+        "description": "A driver who raced in Formula One."
+      },
+      {
+        "local_id": "e3",
+        "name": "1977",
+        "entity_type": "Season",
+        "description": "A championship year."
+      },
+      {
+        "local_id": "e4",
+        "name": "1978",
+        "entity_type": "Season",
+        "description": "A championship year."
+      },
+      {
+        "local_id": "e5",
+        "name": "United States Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A named race event."
+      },
+      {
+        "local_id": "e6",
+        "name": "Canada",
+        "entity_type": "GrandPrix",
+        "description": "A named race event."
+      },
+      {
+        "local_id": "e7",
+        "name": "Japan",
+        "entity_type": "GrandPrix",
+        "description": "A named race event."
+      },
+      {
+        "local_id": "e8",
+        "name": "Watkins Glen",
+        "entity_type": "Circuit",
+        "description": "A racing venue."
+      },
+      {
+        "local_id": "e9",
+        "name": "Zandvoort",
+        "entity_type": "Circuit",
+        "description": "A racing venue."
+      },
+      {
+        "local_id": "e10",
+        "name": "Lotus",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that entered cars."
+      },
+      {
+        "local_id": "e11",
+        "name": "Hesketh",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that entered cars."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e2",
+        "target_id": "e1",
+        "relationship_type": "DROVE_FOR",
+        "description": "Jabouille raced for Renault.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e3",
+        "relationship_type": "ENTERED",
+        "description": "Renault took part in the 1977 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e4",
+        "relationship_type": "ENTERED",
+        "description": "Renault took part in the 1978 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e8",
+        "relationship_type": "HELD_AT",
+        "description": "The United States Grand Prix is held at Watkins Glen.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e6",
+        "target_id": "e9",
+        "relationship_type": "HELD_AT",
+        "description": "The Canada Grand Prix is held at a circuit in Canada.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e7",
+        "target_id": "e9",
+        "relationship_type": "HELD_AT",
+        "description": "The Japan Grand Prix is held at a circuit in Japan.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 11,
+  "entities_accepted": 11,
+  "entities_rejected": 0,
+  "relationship_candidates": 11,
+  "relationships_accepted": 6,
+  "relationships_rejected": 5,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "ROUND_OF does not allow GrandPrix -> Team"
+    },
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "ROUND_OF does not allow GrandPrix -> Team"
+    },
+    {
+      "element": "relationship",
+      "index": 5,
+      "reason": "ROUND_OF does not allow GrandPrix -> Team"
+    },
+    {
+      "element": "relationship",
+      "index": 9,
+      "reason": "TEAMMATE_OF does not allow Team -> Driver"
+    },
+    {
+      "element": "relationship",
+      "index": 10,
+      "reason": "TEAMMATE_OF does not allow Team -> Driver"
+    }
+  ],
+  "alignments": []
+}

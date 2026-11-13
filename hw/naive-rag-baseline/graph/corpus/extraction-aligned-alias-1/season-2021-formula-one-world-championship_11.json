@@ -1,0 +1,133 @@
+{
+  "chunk_id": "season-2021-formula-one-world-championship#11",
+  "doc_id": "season-2021-formula-one-world-championship",
+  "document_title": "2021 Formula One World Championship",
+  "section": null,
+  "page": 2,
+  "source": "https://en.wikipedia.org/wiki/2021_Formula_One_World_Championship",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "2230492b6505ddb09637e11debf8f29f7b704ce6efe46cbf97ccaf8690b60c05",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 5,
+      "reason": "ROUND_OF does not allow Season -> Season"
+    }
+  ],
+  "alignments": [],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Romain Grosjean",
+        "entity_type": "Driver",
+        "description": "Raced for Haas since 2016."
+      },
+      {
+        "local_id": "e2",
+        "name": "Kevin Magnussen",
+        "entity_type": "Driver",
+        "description": "Raced for Haas since 2017."
+      },
+      {
+        "local_id": "e3",
+        "name": "Haas",
+        "entity_type": "Team",
+        "description": "Formula 1 team."
+      },
+      {
+        "local_id": "e4",
+        "name": "Mick Schumacher",
+        "entity_type": "Driver",
+        "description": "2020 Formula 2 Champion, son of Michael Schumacher."
+      },
+      {
+        "local_id": "e5",
+        "name": "Nikita Mazepin",
+        "entity_type": "Driver",
+        "description": "Finished fifth in the Formula 2 Championship."
+      },
+      {
+        "local_id": "e6",
+        "name": "Yuki Tsunoda",
+        "entity_type": "Driver",
+        "description": "Finished third in 2020 Formula 2 Championship."
+      },
+      {
+        "local_id": "e7",
+        "name": "Scuderia AlphaTauri",
+        "entity_type": "Team",
+        "description": "Formula 1 team."
+      },
+      {
+        "local_id": "e8",
+        "name": "2020",
+        "entity_type": "Season",
+        "description": "Championship year."
+      },
+      {
+        "local_id": "e9",
+        "name": "2020 Formula 2 Championship",
+        "entity_type": "Season",
+        "description": "Championship year."
+      },
+      {
+        "local_id": "e10",
+        "name": "Michael Schumacher",
+        "entity_type": "Driver",
+        "description": "Seven-time World Champion."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e3",
+        "relationship_type": "DROVE_FOR",
+        "description": "Romain Grosjean raced for Haas.",
+        "from_year": 2016,
+        "to_year": 2020,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e3",
+        "relationship_type": "DROVE_FOR",
+        "description": "Kevin Magnussen raced for Haas.",
+        "from_year": 2017,
+        "to_year": 2020,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e3",
+        "relationship_type": "DROVE_FOR",
+        "description": "Mick Schumacher took one of the seats at Haas.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e3",
+        "relationship_type": "DROVE_FOR",
+        "description": "Nikita Mazepin filled the other seat at Haas.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e6",
+        "target_id": "e7",
+        "relationship_type": "DROVE_FOR",
+        "description": "Yuki Tsunoda graduated to Formula One with Scuderia AlphaTauri.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

@@ -1,0 +1,98 @@
+{
+  "chunk_id": "driver-lewis-hamilton#55",
+  "doc_id": "driver-lewis-hamilton",
+  "document_title": "Lewis Hamilton",
+  "section": null,
+  "page": 5,
+  "source": "https://en.wikipedia.org/wiki/Lewis_Hamilton",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "196ecbc643f80bfe7eabf2b8df9b169b8551953d7981c4d028971e4e5cdf4922",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "WON is not temporal; from_year, to_year and role must be null"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "ACHIEVED does not allow Driver -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "ACHIEVED does not allow Driver -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "ACHIEVED does not allow Driver -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 5,
+      "reason": "FOR_TEAM does not allow Driver -> Driver"
+    }
+  ],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Lewis Hamilton",
+        "entity_type": "Driver",
+        "description": "A Formula One driver known for his record wins."
+      },
+      {
+        "local_id": "e2",
+        "name": "Turkish Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula One race held in Turkey."
+      },
+      {
+        "local_id": "e3",
+        "name": "2020",
+        "entity_type": "Season",
+        "description": "The Formula One season in which Hamilton won the championship."
+      },
+      {
+        "local_id": "e4",
+        "name": "Title",
+        "entity_type": "Title",
+        "description": "The championship title won by Hamilton in 2020."
+      },
+      {
+        "local_id": "e5",
+        "name": "Portuguese Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula One race held in Portugal."
+      },
+      {
+        "local_id": "e6",
+        "name": "Sakhir Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula One race held in Sakhir."
+      },
+      {
+        "local_id": "e7",
+        "name": "Valtteri Bottas",
+        "entity_type": "Driver",
+        "description": "A Formula One driver who finished second in the 2020 season."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e4",
+        "target_id": "e3",
+        "relationship_type": "AWARDED_IN",
+        "description": "The championship title belongs to the 2020 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

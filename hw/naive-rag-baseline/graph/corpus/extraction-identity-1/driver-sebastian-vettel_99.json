@@ -1,0 +1,102 @@
+{
+  "chunk_id": "driver-sebastian-vettel#99",
+  "doc_id": "driver-sebastian-vettel",
+  "document_title": "Sebastian Vettel",
+  "section": "2019–2020: Decline and departure from Ferrari",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/Sebastian_Vettel",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "82fbcbe9c49a5778bac8ab65089f74a41c5fd0b94b1685b6ff8a6855ba109c47",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "entity_candidates": 6,
+  "entities_accepted": 4,
+  "entities_rejected": 3,
+  "relationship_candidates": 3,
+  "relationships_accepted": 2,
+  "relationships_rejected": 2,
+  "rejections": [
+    {
+      "element": "entity",
+      "index": 3,
+      "reason": "name 'null' is a placeholder, not an entity identity"
+    },
+    {
+      "element": "entity",
+      "index": 4,
+      "reason": "name 'null' is a placeholder, not an entity identity"
+    },
+    {
+      "element": "entity",
+      "index": 5,
+      "reason": "name 'null' is a placeholder, not an entity identity"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "FOR_TEAM does not allow Driver -> Team"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "ROUND_OF: target_id 'e4' rejected: name 'null' is a placeholder, not an entity identity"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 0,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e3; description kept"
+    }
+  ],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Sebastian Vettel",
+        "entity_type": "Driver",
+        "description": "A Formula One driver."
+      },
+      {
+        "local_id": "e2",
+        "name": "Mercedes-AMG Petronas Formula One Team",
+        "entity_type": "Team",
+        "description": "A Formula One team."
+      },
+      {
+        "local_id": "e3",
+        "name": "German Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula One race held in Germany."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Sebastian Vettel at German Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Vettel climbed up to second place during the German Grand Prix."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Vettel climbed up to second place during the German Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e3",
+        "relationship_type": "AT_RACE",
+        "description": "Vettel climbed up to second place during the German Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

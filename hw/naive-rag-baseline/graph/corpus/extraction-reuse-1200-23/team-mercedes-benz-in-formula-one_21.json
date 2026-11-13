@@ -1,0 +1,124 @@
+{
+  "chunk_id": "team-mercedes-benz-in-formula-one#21",
+  "doc_id": "team-mercedes-benz-in-formula-one",
+  "document_title": "Mercedes-Benz in Formula One",
+  "section": "Mercedes-Benz in Formula One > Eight consecutive Constructors' titles (2014–2021)",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "863cb7e77c3f750afdf9b54b23fd6c25f9baeb4c6bbe56e6c6c203c578bd53af",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Mercedes-AMG Petronas Formula One Team",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that entered cars."
+      },
+      {
+        "local_id": "e2",
+        "name": "2020",
+        "entity_type": "Season",
+        "description": "A championship year."
+      },
+      {
+        "local_id": "e3",
+        "name": "2020 Sakhir Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A specific Grand Prix race."
+      },
+      {
+        "local_id": "e4",
+        "name": "Lewis Hamilton",
+        "entity_type": "Driver",
+        "description": "A driver who races in Formula One."
+      },
+      {
+        "local_id": "e5",
+        "name": "George Russell",
+        "entity_type": "Driver",
+        "description": "A driver who races in Formula One."
+      },
+      {
+        "local_id": "rr1",
+        "name": "George Russell at 2020 Sakhir Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "George Russell achieved a race result in the 2020 Sakhir Grand Prix."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "ENTERED",
+        "description": "Mercedes entered the 2020 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "George Russell achieved a race result in the 2020 Sakhir Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e3",
+        "relationship_type": "AT_RACE",
+        "description": "George Russell achieved a race result in the 2020 Sakhir Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e1",
+        "relationship_type": "DROVE_FOR",
+        "description": "George Russell drove for Mercedes during the 2020 Sakhir Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e1",
+        "relationship_type": "DROVE_FOR",
+        "description": "Lewis Hamilton drove for Mercedes in the 2020 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 5,
+  "entities_accepted": 6,
+  "entities_rejected": 0,
+  "relationship_candidates": 6,
+  "relationships_accepted": 5,
+  "relationships_rejected": 2,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "WON does not allow Team -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "WON does not allow Driver -> Season"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 3,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e3; description kept"
+    }
+  ]
+}

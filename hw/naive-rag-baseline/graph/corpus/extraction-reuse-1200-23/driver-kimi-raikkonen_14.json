@@ -1,0 +1,83 @@
+{
+  "chunk_id": "driver-kimi-raikkonen#14",
+  "doc_id": "driver-kimi-raikkonen",
+  "document_title": "Kimi Räikkönen",
+  "section": "Formula One career > McLaren (2002–2006) > 2005: Runner up to Alonso",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "edad2140b8f7c331667bb1b05689cbbfc515044dedad67dfa2d5fe18fff453c0",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Kimi Räikkönen",
+        "entity_type": "Driver",
+        "description": "A Finnish racing driver who competed in Formula One."
+      },
+      {
+        "local_id": "e2",
+        "name": "McLaren",
+        "entity_type": "Team",
+        "description": "A Formula One team that entered cars."
+      },
+      {
+        "local_id": "e3",
+        "name": "2005",
+        "entity_type": "Season",
+        "description": "The Formula One season in which Räikkönen was the runner-up."
+      },
+      {
+        "local_id": "e4",
+        "name": "Australian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula One race held in Australia."
+      },
+      {
+        "local_id": "e5",
+        "name": "Bahrain Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula One race held in Bahrain."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Räikkönen drove for McLaren during the 2005 season.",
+        "from_year": 2002,
+        "to_year": 2006,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e3",
+        "relationship_type": "ROUND_OF",
+        "description": "The Australian Grand Prix is a round of the 2005 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e3",
+        "relationship_type": "ROUND_OF",
+        "description": "The Bahrain Grand Prix is a round of the 2005 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 5,
+  "entities_accepted": 5,
+  "entities_rejected": 0,
+  "relationship_candidates": 3,
+  "relationships_accepted": 3,
+  "relationships_rejected": 0,
+  "rejections": [],
+  "alignments": []
+}

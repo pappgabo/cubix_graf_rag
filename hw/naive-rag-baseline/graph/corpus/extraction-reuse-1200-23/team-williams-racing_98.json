@@ -1,0 +1,98 @@
+{
+  "chunk_id": "team-williams-racing#98",
+  "doc_id": "team-williams-racing",
+  "document_title": "Williams Racing",
+  "section": "Williams Racing > 2020–2022: Team sale to Dorilton Capital and Capito era",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "ac6b3a040de8ef6a6fd1785920a09e35c0e20fa96a92182780dc6ad5d42b387c",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Claire Williams",
+        "entity_type": "Driver",
+        "description": "Former Team Principal of Williams Racing."
+      },
+      {
+        "local_id": "e2",
+        "name": "Williams F1 Team",
+        "entity_type": "Team",
+        "description": "Formula 1 team that has been sold to Dorilton Capital."
+      },
+      {
+        "local_id": "e3",
+        "name": "Simon Roberts",
+        "entity_type": "Driver",
+        "description": "Acting team principal of Williams Racing."
+      },
+      {
+        "local_id": "e4",
+        "name": "Jost Capito",
+        "entity_type": "Driver",
+        "description": "New CEO of Williams Racing."
+      },
+      {
+        "local_id": "e5",
+        "name": "2020",
+        "entity_type": "Season",
+        "description": "The season in which Williams failed to score a point."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Claire Williams announced her departure from the team.",
+        "from_year": null,
+        "to_year": 2020,
+        "role": "Team Principal"
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Simon Roberts became the acting team principal of Williams Racing.",
+        "from_year": 2020,
+        "to_year": null,
+        "role": "Acting Team Principal"
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Jost Capito joined Williams as the new CEO.",
+        "from_year": 2020,
+        "to_year": null,
+        "role": "CEO"
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e5",
+        "relationship_type": "ENTERED",
+        "description": "Williams failed to score a point in the 2020 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 5,
+  "entities_accepted": 5,
+  "entities_rejected": 0,
+  "relationship_candidates": 4,
+  "relationships_accepted": 4,
+  "relationships_rejected": 0,
+  "rejections": [],
+  "alignments": [
+    {
+      "index": 3,
+      "action": "clear_redundant_season_year",
+      "detail": "ENTERED year 2020 already named by Season 'e5'; from_year and to_year cleared"
+    }
+  ]
+}

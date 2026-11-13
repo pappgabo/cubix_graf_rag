@@ -1,0 +1,80 @@
+{
+  "chunk_id": "team-renault-in-formula-one#44",
+  "doc_id": "team-renault-in-formula-one",
+  "document_title": "Renault in Formula One",
+  "section": "Constructor > Renault Sport Formula One Team and Renault F1 Team (2016–2020): The second Enstone era > 2016 season: Struggles in first season back",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "dc5e36de859435c80abfb613d43bd2e7f115c544547c7154165d140795a980e2",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Renault Sport Formula One Team",
+        "entity_type": "Team",
+        "description": "Renault's Formula One team competing from 2016 to 2020."
+      },
+      {
+        "local_id": "e2",
+        "name": "Lotus F1 Team",
+        "entity_type": "Team",
+        "description": "The team that Renault purchased to return to Formula One."
+      },
+      {
+        "local_id": "e3",
+        "name": "2016",
+        "entity_type": "Season",
+        "description": "The season Renault returned to Formula One as a full-works constructor."
+      },
+      {
+        "local_id": "e4",
+        "name": "Alain Prost",
+        "entity_type": "Driver",
+        "description": "F1 veteran who drove for Renault from 1981 to 1983."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e3",
+        "relationship_type": "ENTERED",
+        "description": "Renault Sport Formula One Team entered the 2016 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e1",
+        "relationship_type": "DROVE_FOR",
+        "description": "Alain Prost drove for Renault from 1981 to 1983.",
+        "from_year": 1981,
+        "to_year": 1983,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 4,
+  "entities_accepted": 4,
+  "entities_rejected": 0,
+  "relationship_candidates": 3,
+  "relationships_accepted": 2,
+  "relationships_rejected": 1,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "DROVE_FOR does not allow Team -> Team"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 0,
+      "action": "clear_redundant_season_year",
+      "detail": "ENTERED year 2016 already named by Season 'e3'; from_year and to_year cleared"
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "chunk_id": "team-mclaren#119",
+  "doc_id": "team-mclaren",
+  "document_title": "McLaren",
+  "section": "Esports Drivers' Champions",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "1e1c6d2797a0110d555d4ffd0dd5781003a1a9af1ccdea057bdb1a3ebfbac3a2",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Lucas Blakeley",
+        "entity_type": "Driver",
+        "description": "Won the Formula One Esports Drivers' Championship for McLaren Shadows in 2022."
+      },
+      {
+        "local_id": "e2",
+        "name": "McLaren Shadows",
+        "entity_type": "Team",
+        "description": "Esports team that Lucas Blakeley won the championship for."
+      },
+      {
+        "local_id": "e3",
+        "name": "2022",
+        "entity_type": "Season",
+        "description": "The season in which Lucas Blakeley won the championship."
+      },
+      {
+        "local_id": "e4",
+        "name": "Esports Drivers' Championship",
+        "entity_type": "Title",
+        "description": "The championship title won by Lucas Blakeley."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Lucas Blakeley drove for McLaren Shadows.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e3",
+        "relationship_type": "AWARDED_IN",
+        "description": "Esports Drivers' Championship title awarded in 2022.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 4,
+  "entities_accepted": 4,
+  "entities_rejected": 0,
+  "relationship_candidates": 3,
+  "relationships_accepted": 2,
+  "relationships_rejected": 1,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "WON does not allow Title -> Season"
+    }
+  ],
+  "alignments": []
+}

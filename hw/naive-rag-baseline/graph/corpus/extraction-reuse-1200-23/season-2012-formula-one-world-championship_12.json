@@ -1,0 +1,144 @@
+{
+  "chunk_id": "season-2012-formula-one-world-championship#12",
+  "doc_id": "season-2012-formula-one-world-championship",
+  "document_title": "2012 Formula One World Championship",
+  "section": "Teams and drivers > Driver changes",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "79adc0361c18cd2173c4287cd490f46d702cd1ab514de6b856c5a3f670a86005",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Scuderia Toro Rosso",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that did not retain Jaime Alguersuari or Sébastien Buemi."
+      },
+      {
+        "local_id": "e2",
+        "name": "Jaime Alguersuari",
+        "entity_type": "Driver",
+        "description": "A driver who was not retained by Scuderia Toro Rosso."
+      },
+      {
+        "local_id": "e3",
+        "name": "Sébastien Buemi",
+        "entity_type": "Driver",
+        "description": "A driver who was not retained by Scuderia Toro Rosso and became Red Bull Racing's testing and reserve driver."
+      },
+      {
+        "local_id": "e4",
+        "name": "Daniel Ricciardo",
+        "entity_type": "Driver",
+        "description": "A driver who replaced Sébastien Buemi at Scuderia Toro Rosso."
+      },
+      {
+        "local_id": "e5",
+        "name": "Jean-Éric Vergne",
+        "entity_type": "Driver",
+        "description": "A driver who replaced Jaime Alguersuari at Scuderia Toro Rosso."
+      },
+      {
+        "local_id": "e6",
+        "name": "Red Bull Racing",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that Sébastien Buemi became a testing and reserve driver for."
+      },
+      {
+        "local_id": "e7",
+        "name": "HRT",
+        "entity_type": "Team",
+        "description": "A Formula 1 team where Daniel Ricciardo was placed for the 2011 British Grand Prix."
+      },
+      {
+        "local_id": "e8",
+        "name": "Toyota",
+        "entity_type": "Team",
+        "description": "The team with which Sébastien Buemi contested the 24 Hours of Le Mans."
+      },
+      {
+        "local_id": "e9",
+        "name": "TS030 Hybrid",
+        "entity_type": "Car",
+        "description": "The car driven by Sébastien Buemi in the 24 Hours of Le Mans."
+      },
+      {
+        "local_id": "e10",
+        "name": "Pirelli",
+        "entity_type": "Team",
+        "description": "The tyre supplier where Jaime Alguersuari joined as a test driver."
+      },
+      {
+        "local_id": "e11",
+        "name": "Lucas di Grassi",
+        "entity_type": "Driver",
+        "description": "A former Virgin Racing driver who worked with Jaime Alguersuari at Pirelli."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e3",
+        "target_id": "e6",
+        "relationship_type": "DROVE_FOR",
+        "description": "Sébastien Buemi became Red Bull Racing's testing and reserve driver.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e7",
+        "relationship_type": "DROVE_FOR",
+        "description": "Daniel Ricciardo was placed at HRT for the 2011 British Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e8",
+        "relationship_type": "DROVE_FOR",
+        "description": "Sébastien Buemi contested the 24 Hours of Le Mans with Toyota.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e10",
+        "relationship_type": "DROVE_FOR",
+        "description": "Jaime Alguersuari joined Pirelli as their test driver.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 11,
+  "entities_accepted": 11,
+  "entities_rejected": 0,
+  "relationship_candidates": 7,
+  "relationships_accepted": 4,
+  "relationships_rejected": 3,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "DROVE_FOR does not allow Team -> Driver"
+    },
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "DROVE_FOR does not allow Team -> Driver"
+    },
+    {
+      "element": "relationship",
+      "index": 6,
+      "reason": "TEAMMATE_OF does not allow Team -> Driver"
+    }
+  ],
+  "alignments": []
+}

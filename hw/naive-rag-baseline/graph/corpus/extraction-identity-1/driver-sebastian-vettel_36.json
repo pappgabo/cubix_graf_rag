@@ -1,0 +1,130 @@
+{
+  "chunk_id": "driver-sebastian-vettel#36",
+  "doc_id": "driver-sebastian-vettel",
+  "document_title": "Sebastian Vettel",
+  "section": "2009: Championship contender",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/Sebastian_Vettel",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "e3ae9726a3f40ec931b63198087bb51321d5c4066fc2fe05b62ac3f95473b91b",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "entity_candidates": 5,
+  "entities_accepted": 6,
+  "entities_rejected": 0,
+  "relationship_candidates": 6,
+  "relationships_accepted": 6,
+  "relationships_rejected": 1,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 6,
+      "reason": "FOR_TEAM does not allow GrandPrix -> Team"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 4,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e5; description kept"
+    }
+  ],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Sebastian Vettel",
+        "entity_type": "Driver",
+        "description": "A driver who replaced David Coulthard at Red Bull Racing."
+      },
+      {
+        "local_id": "e2",
+        "name": "Red Bull Racing",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that Vettel drove for."
+      },
+      {
+        "local_id": "e3",
+        "name": "2009",
+        "entity_type": "Season",
+        "description": "The championship year in which Vettel competed."
+      },
+      {
+        "local_id": "e4",
+        "name": "Australian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A race where Vettel had a clash with Robert Kubica."
+      },
+      {
+        "local_id": "e5",
+        "name": "Chinese Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A race where Vettel took pole position and won."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Sebastian Vettel at Chinese Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Vettel won the Chinese Grand Prix."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Vettel drove for Red Bull Racing.",
+        "from_year": 2009,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e3",
+        "relationship_type": "ENTERED",
+        "description": "Red Bull Racing took part in the 2009 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e3",
+        "relationship_type": "ROUND_OF",
+        "description": "The Australian Grand Prix is a round of the 2009 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e3",
+        "relationship_type": "ROUND_OF",
+        "description": "The Chinese Grand Prix is a round of the 2009 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Vettel won the Chinese Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e5",
+        "relationship_type": "AT_RACE",
+        "description": "Vettel won the Chinese Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

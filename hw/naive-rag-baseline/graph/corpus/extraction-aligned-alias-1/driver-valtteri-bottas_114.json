@@ -1,0 +1,133 @@
+{
+  "chunk_id": "driver-valtteri-bottas#114",
+  "doc_id": "driver-valtteri-bottas",
+  "document_title": "Valtteri Bottas",
+  "section": "Formula One career > Alfa Romeo / Sauber (2022–2024) > 2023",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/Valtteri_Bottas",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "0c04bcfec0c8a590d179ce01f75cc6c8119e99ca69dc086ffe2f8f558a1b1fe1",
+  "validation_version": "partial-1",
+  "source_status": "ok",
+  "status": "ok",
+  "rejections": [],
+  "alignments": [],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Valtteri Bottas",
+        "entity_type": "Driver",
+        "description": "A Finnish racing driver competing in Formula One."
+      },
+      {
+        "local_id": "e2",
+        "name": "Alfa Romeo",
+        "entity_type": "Team",
+        "description": "A Formula One team that entered cars."
+      },
+      {
+        "local_id": "e3",
+        "name": "Hungarian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula One race held in Hungary."
+      },
+      {
+        "local_id": "e4",
+        "name": "Italian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula One race held in Italy."
+      },
+      {
+        "local_id": "e5",
+        "name": "Singapore Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula One race held in Singapore."
+      },
+      {
+        "local_id": "e6",
+        "name": "Japanese Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula One race held in Japan."
+      },
+      {
+        "local_id": "e7",
+        "name": "2023",
+        "entity_type": "Season",
+        "description": "The Formula One championship season of 2023."
+      },
+      {
+        "local_id": "e8",
+        "name": "10th",
+        "entity_type": "RaceResult",
+        "description": "Valtteri Bottas finished 10th at the Italian Grand Prix."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Valtteri Bottas drove for Alfa Romeo in 2023.",
+        "from_year": 2022,
+        "to_year": 2024,
+        "role": null
+      },
+      {
+        "source_id": "e8",
+        "target_id": "e4",
+        "relationship_type": "AT_RACE",
+        "description": "The race result of 10th place belongs to the Italian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e8",
+        "target_id": "e2",
+        "relationship_type": "FOR_TEAM",
+        "description": "The race result of 10th place was scored for Alfa Romeo.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e7",
+        "relationship_type": "ROUND_OF",
+        "description": "The Italian Grand Prix is a round of the 2023 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e7",
+        "relationship_type": "ROUND_OF",
+        "description": "The Hungarian Grand Prix is a round of the 2023 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e7",
+        "relationship_type": "ROUND_OF",
+        "description": "The Singapore Grand Prix is a round of the 2023 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e6",
+        "target_id": "e7",
+        "relationship_type": "ROUND_OF",
+        "description": "The Japanese Grand Prix is a round of the 2023 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

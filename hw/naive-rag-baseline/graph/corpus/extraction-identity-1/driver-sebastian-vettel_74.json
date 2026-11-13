@@ -1,0 +1,101 @@
+{
+  "chunk_id": "driver-sebastian-vettel#74",
+  "doc_id": "driver-sebastian-vettel",
+  "document_title": "Sebastian Vettel",
+  "section": "2015: Returning to the top step",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/Sebastian_Vettel",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "3a2df1f58ec7129b5b47ebc1633223bb3a646f18d92c8bb924cfb4361f2bcc9d",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "entity_candidates": 5,
+  "entities_accepted": 5,
+  "entities_rejected": 0,
+  "relationship_candidates": 6,
+  "relationships_accepted": 3,
+  "relationships_rejected": 3,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "HELD_AT does not allow Team -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "HELD_AT does not allow Team -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "ACHIEVED does not allow Driver -> Season"
+    }
+  ],
+  "alignments": [],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Sebastian Vettel",
+        "entity_type": "Driver",
+        "description": "A Formula One driver who raced for Ferrari."
+      },
+      {
+        "local_id": "e2",
+        "name": "Scuderia Ferrari",
+        "entity_type": "Team",
+        "description": "A Formula One team that entered cars."
+      },
+      {
+        "local_id": "e3",
+        "name": "2015",
+        "entity_type": "Season",
+        "description": "The Formula One championship season."
+      },
+      {
+        "local_id": "e4",
+        "name": "Italian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula One race held in Italy."
+      },
+      {
+        "local_id": "e5",
+        "name": "Singapore Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula One race held in Singapore."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Vettel raced for Ferrari.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e3",
+        "relationship_type": "ROUND_OF",
+        "description": "The Singapore Grand Prix is a round of the 2015 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e3",
+        "relationship_type": "ROUND_OF",
+        "description": "The Italian Grand Prix is a round of the 2015 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

@@ -1,0 +1,137 @@
+{
+  "chunk_id": "season-2021-formula-one-world-championship#82",
+  "doc_id": "season-2021-formula-one-world-championship",
+  "document_title": "2021 Formula One World Championship",
+  "section": null,
+  "page": 7,
+  "source": "https://en.wikipedia.org/wiki/2021_Formula_One_World_Championship",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "f397582230a4de468200bdbd178057cc35ee3e806b401eaedbbbd5b1bb6c9cf4",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "entity_candidates": 5,
+  "entities_accepted": 7,
+  "entities_rejected": 0,
+  "relationship_candidates": 5,
+  "relationships_accepted": 5,
+  "relationships_rejected": 2,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "ACHIEVED does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "ACHIEVED does not allow Driver -> Season"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 1,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e5; description kept"
+    },
+    {
+      "index": 3,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr2 -AT_RACE-> e5; description kept"
+    }
+  ],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Valtteri Bottas",
+        "entity_type": "Driver",
+        "description": "Valtteri Bottas was promoted to pole position and won the race, his first of 2021."
+      },
+      {
+        "local_id": "e2",
+        "name": "Max Verstappen",
+        "entity_type": "Driver",
+        "description": "Max Verstappen re-took the championship lead and won the race in the United States Grand Prix."
+      },
+      {
+        "local_id": "e3",
+        "name": "Sergio Pérez",
+        "entity_type": "Driver",
+        "description": "Sergio Pérez took his first podium since France."
+      },
+      {
+        "local_id": "e4",
+        "name": "2021",
+        "entity_type": "Season",
+        "description": "The season in which Valtteri Bottas won his first race."
+      },
+      {
+        "local_id": "e5",
+        "name": "United States Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "Max Verstappen won the race in the United States Grand Prix."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Max Verstappen at United States Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Max Verstappen won the race in the United States Grand Prix."
+      },
+      {
+        "local_id": "rr2",
+        "name": "Sergio Pérez at United States Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Sergio Pérez took his first podium in the United States Grand Prix."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e2",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Max Verstappen won the race in the United States Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e5",
+        "relationship_type": "AT_RACE",
+        "description": "Max Verstappen won the race in the United States Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "rr2",
+        "relationship_type": "ACHIEVED",
+        "description": "Sergio Pérez took his first podium in the United States Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr2",
+        "target_id": "e5",
+        "relationship_type": "AT_RACE",
+        "description": "Sergio Pérez took his first podium in the United States Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e4",
+        "relationship_type": "ROUND_OF",
+        "description": "The United States Grand Prix is a round of the 2021 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

@@ -1,0 +1,131 @@
+{
+  "chunk_id": "driver-valtteri-bottas#61",
+  "doc_id": "driver-valtteri-bottas",
+  "document_title": "Valtteri Bottas",
+  "section": "Other ventures > Gravel cycling",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "8de6d541c2c667f5f8f8ed7ce47f9cb9f0766a1bd5544592f0b988a78c3a5c52",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Valtteri Bottas",
+        "entity_type": "Driver",
+        "description": "A Finnish racing driver who has competed in Formula One."
+      },
+      {
+        "local_id": "e2",
+        "name": "FNLD GRVL",
+        "entity_type": "Team",
+        "description": "A gravel cycling event co-founded by Valtteri Bottas."
+      },
+      {
+        "local_id": "e3",
+        "name": "UCI Gravel World Championships",
+        "entity_type": "GrandPrix",
+        "description": "An international gravel cycling championship."
+      },
+      {
+        "local_id": "e4",
+        "name": "Swartberg 100",
+        "entity_type": "GrandPrix",
+        "description": "A gravel race in South Africa."
+      },
+      {
+        "local_id": "e5",
+        "name": "Tiffany Cromwell",
+        "entity_type": "Driver",
+        "description": "A professional cyclist and girlfriend of Valtteri Bottas."
+      },
+      {
+        "local_id": "e6",
+        "name": "Amy Charity",
+        "entity_type": "Driver",
+        "description": "An American cyclist and partner at SBT GRVL."
+      },
+      {
+        "local_id": "e7",
+        "name": "Flemish Brabant",
+        "entity_type": "Circuit",
+        "description": "The location of the UCI Gravel World Championships."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Valtteri Bottas at Swartberg 100",
+        "entity_type": "RaceResult",
+        "description": "Valtteri Bottas qualified for the World Championships after finishing sixth at the Swartberg 100."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Valtteri Bottas is a co-founder and partner of FNLD GRVL.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Valtteri Bottas qualified for the World Championships after finishing sixth at the Swartberg 100.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e4",
+        "relationship_type": "AT_RACE",
+        "description": "Valtteri Bottas qualified for the World Championships after finishing sixth at the Swartberg 100.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e7",
+        "relationship_type": "HELD_AT",
+        "description": "The UCI Gravel World Championships were held at Flemish Brabant.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e7",
+        "relationship_type": "HELD_AT",
+        "description": "The Swartberg 100 gravel race was held in South Africa.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 7,
+  "entities_accepted": 8,
+  "entities_rejected": 0,
+  "relationship_candidates": 5,
+  "relationships_accepted": 5,
+  "relationships_rejected": 1,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "ACHIEVED Driver -> GrandPrix has from_year=2024, to_year=None, role=None; the year or role cannot be stored on the reified result"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 2,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e4; description kept"
+    }
+  ]
+}

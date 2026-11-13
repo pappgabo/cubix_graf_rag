@@ -1,0 +1,126 @@
+{
+  "chunk_id": "team-williams-racing#2",
+  "doc_id": "team-williams-racing",
+  "document_title": "Williams Racing",
+  "section": "Williams Racing",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "f9e7cca6ffc4c02679fa969455461df6cf43f69ab3a30bd6365369260cd596ce",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Williams Racing",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that has worked with many engine manufacturers, most successfully with Renault."
+      },
+      {
+        "local_id": "e2",
+        "name": "Renault",
+        "entity_type": "Team",
+        "description": "An engine manufacturer that has worked with Williams Racing, contributing to their success."
+      },
+      {
+        "local_id": "e3",
+        "name": "Scuderia Ferrari",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that is part of the 'Big Four' teams."
+      },
+      {
+        "local_id": "e4",
+        "name": "McLaren",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that is part of the 'Big Four' teams."
+      },
+      {
+        "local_id": "e5",
+        "name": "Benetton",
+        "entity_type": "Team",
+        "description": "A former Formula 1 team that is now known as Renault."
+      },
+      {
+        "local_id": "e6",
+        "name": "Williams Hybrid Power",
+        "entity_type": "Team",
+        "description": "A business established by Williams to adapt Formula One technology for commercial applications."
+      },
+      {
+        "local_id": "e7",
+        "name": "GKN",
+        "entity_type": "Team",
+        "description": "A company that acquired Williams Hybrid Power in April 2014."
+      },
+      {
+        "local_id": "e8",
+        "name": "Dorilton Capital",
+        "entity_type": "Team",
+        "description": "The company that acquired Williams Racing in August 2020."
+      },
+      {
+        "local_id": "e9",
+        "name": "Frank Williams",
+        "entity_type": "Driver",
+        "description": "Co-founder of Williams Racing who stepped down from management."
+      },
+      {
+        "local_id": "e10",
+        "name": "Claire Williams",
+        "entity_type": "Driver",
+        "description": "Daughter of Frank Williams who stepped down from management."
+      }
+    ],
+    "relationships": []
+  },
+  "entity_candidates": 10,
+  "entities_accepted": 10,
+  "entities_rejected": 0,
+  "relationship_candidates": 8,
+  "relationships_accepted": 0,
+  "relationships_rejected": 8,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "FIELDED does not allow Team -> Team"
+    },
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "FIELDED does not allow Team -> Team"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "FIELDED does not allow Team -> Team"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "FIELDED does not allow Team -> Team"
+    },
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "DROVE_FOR does not allow Team -> Team"
+    },
+    {
+      "element": "relationship",
+      "index": 5,
+      "reason": "DROVE_FOR does not allow Team -> Team"
+    },
+    {
+      "element": "relationship",
+      "index": 6,
+      "reason": "DROVE_FOR does not allow Team -> Driver"
+    },
+    {
+      "element": "relationship",
+      "index": 7,
+      "reason": "DROVE_FOR does not allow Team -> Driver"
+    }
+  ],
+  "alignments": []
+}

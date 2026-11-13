@@ -1,0 +1,64 @@
+{
+  "chunk_id": "team-mercedes-benz-in-formula-one#36",
+  "doc_id": "team-mercedes-benz-in-formula-one",
+  "document_title": "Mercedes-Benz in Formula One",
+  "section": "Mercedes-Benz in Formula One > Mercedes-AMG Petronas Formula One Team (2010–present)",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/Mercedes-Benz_in_Formula_One",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "c6d67514df75e7bb53a64686992e031e5d71ce832144ca25c3bce45e74398c56",
+  "validation_version": "partial-1",
+  "source_status": "ok",
+  "status": "ok",
+  "rejections": [],
+  "alignments": [],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Mercedes-AMG Petronas Formula One Team",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that competes in the championship."
+      },
+      {
+        "local_id": "e2",
+        "name": "Lewis Hamilton",
+        "entity_type": "Driver",
+        "description": "A driver who races for Mercedes-AMG Petronas Formula One Team."
+      },
+      {
+        "local_id": "e3",
+        "name": "Hungarian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula 1 race held in Hungary."
+      },
+      {
+        "local_id": "e4",
+        "name": "Constructors' Championship",
+        "entity_type": "Season",
+        "description": "The championship for Formula 1 teams."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e2",
+        "target_id": "e1",
+        "relationship_type": "DROVE_FOR",
+        "description": "Lewis Hamilton drove for Mercedes-AMG Petronas Formula One Team.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e4",
+        "relationship_type": "ROUND_OF",
+        "description": "Hungarian Grand Prix is a round of the Constructors' Championship.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

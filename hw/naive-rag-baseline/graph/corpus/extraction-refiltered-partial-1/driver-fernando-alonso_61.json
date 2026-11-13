@@ -1,0 +1,89 @@
+{
+  "chunk_id": "driver-fernando-alonso#61",
+  "doc_id": "driver-fernando-alonso",
+  "document_title": "Fernando Alonso",
+  "section": "Return to McLaren (2015–2019)",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/Fernando_Alonso",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "2838db0bf97725b9b8e48ddb733301fcfdc94ef0a9f9de218d079ca89bf9c05c",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "ENTERED is not temporal; from_year, to_year and role must be null"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "ACHIEVED does not allow Driver -> GrandPrix"
+    }
+  ],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Fernando Alonso",
+        "entity_type": "Driver",
+        "description": "A Formula One driver who raced for McLaren."
+      },
+      {
+        "local_id": "e2",
+        "name": "McLaren",
+        "entity_type": "Team",
+        "description": "A Formula One team that entered cars."
+      },
+      {
+        "local_id": "e3",
+        "name": "2018",
+        "entity_type": "Season",
+        "description": "A Formula One championship year."
+      },
+      {
+        "local_id": "e4",
+        "name": "Australian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula One race event."
+      },
+      {
+        "local_id": "e5",
+        "name": "Stoffel Vandoorne",
+        "entity_type": "Driver",
+        "description": "A Formula One driver who was Alonso's teammate."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Alonso drove for McLaren.",
+        "from_year": 2015,
+        "to_year": 2019,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e3",
+        "relationship_type": "ROUND_OF",
+        "description": "The Australian Grand Prix is a round of the 2018 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e5",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Alonso was teammates with Stoffel Vandoorne.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

@@ -1,0 +1,111 @@
+{
+  "chunk_id": "driver-sebastian-vettel#45",
+  "doc_id": "driver-sebastian-vettel",
+  "document_title": "Sebastian Vettel",
+  "section": "Aston Martin (2021–2022) > 2021: Final podium",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "cf2d15f0fab268eadaf22c6c5795f4795e01b76ba1210f1cd31a4579aa2997bd",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Sebastian Vettel",
+        "entity_type": "Driver",
+        "description": "A driver who joined Aston Martin for the 2021 season."
+      },
+      {
+        "local_id": "e2",
+        "name": "Aston Martin",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that Vettel joined for the 2021 season."
+      },
+      {
+        "local_id": "e3",
+        "name": "2021",
+        "entity_type": "Season",
+        "description": "The season during which Vettel joined Aston Martin."
+      },
+      {
+        "local_id": "e4",
+        "name": "Azerbaijan Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The race where Vettel claimed Aston Martin's first podium."
+      },
+      {
+        "local_id": "e5",
+        "name": "Monaco",
+        "entity_type": "Circuit",
+        "description": "The circuit where Vettel scored his first points for Aston Martin."
+      },
+      {
+        "local_id": "e6",
+        "name": "Hungary",
+        "entity_type": "Circuit",
+        "description": "The circuit where Vettel finished second but was disqualified."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Vettel joined Aston Martin for the 2021 season.",
+        "from_year": 2021,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e3",
+        "relationship_type": "ENTERED",
+        "description": "Aston Martin took part in the 2021 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e3",
+        "relationship_type": "ROUND_OF",
+        "description": "The Azerbaijan Grand Prix is a round of the 2021 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 6,
+  "entities_accepted": 6,
+  "entities_rejected": 0,
+  "relationship_candidates": 5,
+  "relationships_accepted": 3,
+  "relationships_rejected": 2,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "ROUND_OF does not allow Circuit -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "ROUND_OF does not allow Circuit -> Season"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 1,
+      "action": "clear_redundant_season_year",
+      "detail": "ENTERED year 2021 already named by Season 'e3'; from_year and to_year cleared"
+    },
+    {
+      "index": 2,
+      "action": "clear_redundant_season_year",
+      "detail": "ROUND_OF year 2021 already named by Season 'e3'; from_year and to_year cleared"
+    }
+  ]
+}

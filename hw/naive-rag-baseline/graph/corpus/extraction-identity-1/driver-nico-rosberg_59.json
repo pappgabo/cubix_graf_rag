@@ -1,0 +1,136 @@
+{
+  "chunk_id": "driver-nico-rosberg#59",
+  "doc_id": "driver-nico-rosberg",
+  "document_title": "Nico Rosberg",
+  "section": "Nico Rosberg > 2010–2012",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/Nico_Rosberg",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "230441d4d3f1a6b27d05a39455787b92d84cafc27497cbdffe2e56fc3c046ca2",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "entity_candidates": 6,
+  "entities_accepted": 6,
+  "entities_rejected": 0,
+  "relationship_candidates": 6,
+  "relationships_accepted": 5,
+  "relationships_rejected": 1,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "FIELDED is not temporal; from_year=2011, to_year=None, role=None cannot be stored without dropping them"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 1,
+      "action": "clear_redundant_season_year",
+      "detail": "ENTERED year 2011 already named by Season 'e3'; from_year and to_year cleared"
+    },
+    {
+      "index": 3,
+      "action": "clear_redundant_season_year",
+      "detail": "RACED_IN year 2011 already named by Season 'e3'; from_year and to_year cleared"
+    },
+    {
+      "index": 4,
+      "action": "clear_redundant_season_year",
+      "detail": "ROUND_OF year 2011 already named by Season 'e3'; from_year and to_year cleared"
+    },
+    {
+      "index": 5,
+      "action": "clear_redundant_season_year",
+      "detail": "ROUND_OF year 2011 already named by Season 'e3'; from_year and to_year cleared"
+    }
+  ],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Nico Rosberg",
+        "entity_type": "Driver",
+        "description": "A driver who raced for Mercedes."
+      },
+      {
+        "local_id": "e2",
+        "name": "Mercedes-AMG Petronas Formula One Team",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that entered cars."
+      },
+      {
+        "local_id": "e3",
+        "name": "2011",
+        "entity_type": "Season",
+        "description": "The Formula 1 season in which Rosberg competed."
+      },
+      {
+        "local_id": "e4",
+        "name": "Chinese Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A race in which Rosberg led."
+      },
+      {
+        "local_id": "e5",
+        "name": "Belgian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A race in which Rosberg led."
+      },
+      {
+        "local_id": "e6",
+        "name": "MGP W02",
+        "entity_type": "Car",
+        "description": "The car model fielded by Mercedes in 2011."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Nico Rosberg drove for Mercedes.",
+        "from_year": 2011,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e3",
+        "relationship_type": "ENTERED",
+        "description": "Mercedes entered the 2011 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e6",
+        "target_id": "e3",
+        "relationship_type": "RACED_IN",
+        "description": "The MGP W02 raced in the 2011 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e3",
+        "relationship_type": "ROUND_OF",
+        "description": "The Chinese Grand Prix was a round of the 2011 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e3",
+        "relationship_type": "ROUND_OF",
+        "description": "The Belgian Grand Prix was a round of the 2011 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

@@ -1,0 +1,125 @@
+{
+  "chunk_id": "driver-charles-leclerc#7",
+  "doc_id": "driver-charles-leclerc",
+  "document_title": "Charles Leclerc",
+  "section": "Charles Leclerc > 2012–2013: Senior titles with ART",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "12239655176da975621a9359ba6d2527006b7a504a95baa94a8ce1ab6162bbb2",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Charles Leclerc",
+        "entity_type": "Driver",
+        "description": "A racing driver who progressed to the KZ senior gearbox class in 2013."
+      },
+      {
+        "local_id": "e2",
+        "name": "KZ2",
+        "entity_type": "Car",
+        "description": "A class in karting where Leclerc achieved victory at the South Garda Winter Cup."
+      },
+      {
+        "local_id": "e3",
+        "name": "WSK Euro Series",
+        "entity_type": "Season",
+        "description": "A karting series where Leclerc finished twelfth."
+      },
+      {
+        "local_id": "e4",
+        "name": "WSK Master Series",
+        "entity_type": "Season",
+        "description": "A karting series where Leclerc finished fourth."
+      },
+      {
+        "local_id": "e5",
+        "name": "European Championship",
+        "entity_type": "Season",
+        "description": "A championship where Leclerc finished sixth."
+      },
+      {
+        "local_id": "e6",
+        "name": "Genk",
+        "entity_type": "Circuit",
+        "description": "The circuit where Leclerc claimed a podium in the final round of the European Championship."
+      },
+      {
+        "local_id": "e7",
+        "name": "KZ World Championship",
+        "entity_type": "Title",
+        "description": "A championship where Leclerc finished runner-up."
+      },
+      {
+        "local_id": "e8",
+        "name": "Max Verstappen",
+        "entity_type": "Driver",
+        "description": "The driver who finished ahead of Leclerc in the KZ World Championship."
+      },
+      {
+        "local_id": "e9",
+        "name": "Varennes-sur-Allier",
+        "entity_type": "Circuit",
+        "description": "The location where Leclerc finished runner-up to Verstappen in the KZ World Championship."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e8",
+        "target_id": "e7",
+        "relationship_type": "WON",
+        "description": "Max Verstappen won the KZ World Championship title.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 9,
+  "entities_accepted": 9,
+  "entities_rejected": 0,
+  "relationship_candidates": 8,
+  "relationships_accepted": 1,
+  "relationships_rejected": 7,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "ACHIEVED does not allow Driver -> Car"
+    },
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "ACHIEVED does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "ACHIEVED does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "ACHIEVED does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "ACHIEVED does not allow Driver -> Title"
+    },
+    {
+      "element": "relationship",
+      "index": 5,
+      "reason": "AWARDED_IN does not allow Title -> Circuit"
+    },
+    {
+      "element": "relationship",
+      "index": 7,
+      "reason": "ROUND_OF does not allow Circuit -> Title"
+    }
+  ],
+  "alignments": []
+}

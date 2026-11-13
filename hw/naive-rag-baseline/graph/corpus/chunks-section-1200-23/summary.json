@@ -1,0 +1,124 @@
+{
+  "corpus_documents": 23,
+  "present_files": 23,
+  "missing": [],
+  "extra": [],
+  "mismatches": [],
+  "loaded_doc_ids": [
+    "driver-charles-leclerc",
+    "driver-fernando-alonso",
+    "driver-jenson-button",
+    "driver-kimi-raikkonen",
+    "driver-lewis-hamilton",
+    "driver-max-verstappen",
+    "driver-michael-schumacher",
+    "driver-nico-rosberg",
+    "driver-sebastian-vettel",
+    "driver-valtteri-bottas",
+    "reference-formula-one",
+    "reference-list-of-formula-one-world-drivers-champions",
+    "season-2008-formula-one-world-championship",
+    "season-2012-formula-one-world-championship",
+    "season-2016-formula-one-world-championship",
+    "season-2020-formula-one-world-championship",
+    "season-2021-formula-one-world-championship",
+    "team-mclaren",
+    "team-mercedes-benz-in-formula-one",
+    "team-red-bull-racing",
+    "team-renault-in-formula-one",
+    "team-scuderia-ferrari",
+    "team-williams-racing"
+  ],
+  "empty_loaded_documents": [],
+  "source_pieces": 95,
+  "documents": 23,
+  "sections": 560,
+  "chunks": 1651,
+  "chunk_size": 1200,
+  "chunk_overlap": 100,
+  "deterministic": true,
+  "chunks_over_1200": [],
+  "chunk_chars": {
+    "min": 9,
+    "median": 848,
+    "p90": 1164,
+    "p95": 1182,
+    "max": 1199
+  },
+  "coverage_nonws_missing": {},
+  "coverage_docs_complete": 23,
+  "coverage_method": "Loaded document text, after the existing provenance strip. Every non-whitespace source character must occur in order in the concatenated chunks. Overlap may add characters. A nonzero count is not a token measurement.",
+  "leclerc_file_metadata": {
+    "doc_id": {
+      "manifest": "driver-charles-leclerc",
+      "meta": "driver-charles-leclerc",
+      "list": "driver-charles-leclerc",
+      "meta_matches": true,
+      "list_matches": true
+    },
+    "revision_id": {
+      "manifest": "1375968451",
+      "meta": "1375968451",
+      "list": "1375968451",
+      "meta_matches": true,
+      "list_matches": true
+    },
+    "revision_timestamp": {
+      "manifest": "2026-09-21T04:40:35Z",
+      "meta": "2026-09-21T04:40:35Z",
+      "list": "2026-09-21T04:40:35Z",
+      "meta_matches": true,
+      "list_matches": true
+    },
+    "url": {
+      "manifest": "https://en.wikipedia.org/wiki/Charles_Leclerc",
+      "meta": "https://en.wikipedia.org/wiki/Charles_Leclerc",
+      "list": "https://en.wikipedia.org/wiki/Charles_Leclerc",
+      "meta_matches": true,
+      "list_matches": true
+    },
+    "retrieved_utc": {
+      "manifest": "2026-10-06T04:42:06.789150+00:00",
+      "meta": "2026-10-06T04:42:06.789150+00:00",
+      "list": "2026-10-06T04:42:06.789150+00:00",
+      "meta_matches": true,
+      "list_matches": true
+    },
+    "license": {
+      "manifest": "CC BY-SA 4.0",
+      "meta": "CC BY-SA 4.0",
+      "list": "CC BY-SA 4.0",
+      "meta_matches": true,
+      "list_matches": true
+    }
+  },
+  "leclerc_revision_live_check": false,
+  "provider": "openai",
+  "extraction_model": "gpt-4o-mini",
+  "extraction_input_window": null,
+  "extraction_output_reserve": null,
+  "window_meaning": "check_extraction_prompt subtracts extraction_output_reserve from extraction_input_window. The configured window is the whole call budget, not an already reduced input budget. The answer window 8192/1024 is not used.",
+  "prompt_measurement": "ceil_chars_div_3",
+  "prompt_measurement_limit": "ceil(characters / 3) via (length + 2) // 3. An estimate, not a guaranteed token ceiling.",
+  "prompt_chars": {
+    "min": 6220,
+    "median": 7108,
+    "p90": 7406,
+    "p95": 7429,
+    "max": 7580
+  },
+  "prompt_estimate": {
+    "min": 2074,
+    "median": 2370,
+    "p90": 2469,
+    "p95": 2477,
+    "max": 2527
+  },
+  "fit_certified": false,
+  "extraction_inputs": 1651,
+  "reusable_by_input_hash": 86,
+  "new_extraction_inputs": 1565,
+  "hash_match_under_different_chunk_id": 86,
+  "same_chunk_id_file_different_hash": 350,
+  "saved_ok_unique_hashes": 878
+}

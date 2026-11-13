@@ -1,0 +1,67 @@
+{
+  "chunk_id": "driver-valtteri-bottas#117",
+  "doc_id": "driver-valtteri-bottas",
+  "document_title": "Valtteri Bottas",
+  "section": "Formula One career > Alfa Romeo / Sauber (2022–2024) > 2023",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/Valtteri_Bottas",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "e825a6bea7c7adf8210f30f536e8dead7da523ba9a39733323afe58a2dfb5f2b",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "entity_candidates": 3,
+  "entities_accepted": 3,
+  "entities_rejected": 0,
+  "relationship_candidates": 2,
+  "relationships_accepted": 1,
+  "relationships_rejected": 1,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "ACHIEVED does not allow Driver -> Season"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 1,
+      "action": "clear_redundant_season_year",
+      "detail": "ENTERED year 2023 already named by Season 'e3'; from_year and to_year cleared"
+    }
+  ],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Valtteri Bottas",
+        "entity_type": "Driver",
+        "description": "Bottas ended the season 15th in the World Drivers' Championship, scoring ten points."
+      },
+      {
+        "local_id": "e2",
+        "name": "Alfa Romeo",
+        "entity_type": "Team",
+        "description": "Alfa Romeo finished ninth of the ten teams in the World Constructors' Championship."
+      },
+      {
+        "local_id": "e3",
+        "name": "2023",
+        "entity_type": "Season",
+        "description": "The season in which Bottas ended 15th in the World Drivers' Championship."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e2",
+        "target_id": "e3",
+        "relationship_type": "ENTERED",
+        "description": "Alfa Romeo participated in the 2023 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

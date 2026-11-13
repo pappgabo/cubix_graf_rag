@@ -1,0 +1,99 @@
+{
+  "chunk_id": "driver-valtteri-bottas#7",
+  "doc_id": "driver-valtteri-bottas",
+  "document_title": "Valtteri Bottas",
+  "section": "Junior racing career > Karting",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/Valtteri_Bottas",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "08a461bf86b6d6a247b7acbcc55c971fb14c0a599d5ddd474a9e4517ae00d3d5",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "RACED_IN does not allow PowerUnit -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 5,
+      "reason": "ACHIEVED does not allow Driver -> Season"
+    }
+  ],
+  "alignments": [],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Valtteri Bottas",
+        "entity_type": "Driver",
+        "description": "Bottas's interest in motorsport was sparked at the age of six by a chance visit to a karting event."
+      },
+      {
+        "local_id": "e2",
+        "name": "P.D.B. Racing Team",
+        "entity_type": "Team",
+        "description": "Bottas finished eighth in the 2005 Karting World Cup for the P.D.B. Racing Team."
+      },
+      {
+        "local_id": "e3",
+        "name": "Gillard",
+        "entity_type": "Car",
+        "description": "Bottas used a Gillard chassis in the 2005 Karting World Cup."
+      },
+      {
+        "local_id": "e4",
+        "name": "Parilla",
+        "entity_type": "PowerUnit",
+        "description": "Bottas used Parilla engines in the 2005 Karting World Cup."
+      },
+      {
+        "local_id": "e5",
+        "name": "2005",
+        "entity_type": "Season",
+        "description": "Bottas finished eighth in the 2005 Karting World Cup."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e2",
+        "target_id": "e3",
+        "relationship_type": "FIELDED",
+        "description": "P.D.B. Racing Team fielded a Gillard chassis.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e4",
+        "relationship_type": "POWERED_BY",
+        "description": "Gillard chassis was powered by Parilla engines.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e5",
+        "relationship_type": "RACED_IN",
+        "description": "Gillard chassis took part in the 2005 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Valtteri Bottas drove for P.D.B. Racing Team.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "chunk_id": "driver-lewis-hamilton#26",
+  "doc_id": "driver-lewis-hamilton",
+  "document_title": "Lewis Hamilton",
+  "section": null,
+  "page": 3,
+  "source": "https://en.wikipedia.org/wiki/Lewis_Hamilton",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "258d2767a28c0b733cb6a34624f9c716554d5ca337ff47869bda94332b7941a9",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "ACHIEVED does not allow Driver -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "TEAMMATE_OF does not allow Team -> Driver"
+    }
+  ],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Lewis Hamilton",
+        "entity_type": "Driver",
+        "description": "A driver who made his debut in Formula One in 2007."
+      },
+      {
+        "local_id": "e2",
+        "name": "Fernando Alonso",
+        "entity_type": "Driver",
+        "description": "Two-time defending World Drivers' Champion who partnered with Hamilton at McLaren."
+      },
+      {
+        "local_id": "e3",
+        "name": "McLaren",
+        "entity_type": "Team",
+        "description": "The Formula One team Hamilton raced for during his debut season."
+      },
+      {
+        "local_id": "e4",
+        "name": "2007",
+        "entity_type": "Season",
+        "description": "The season in which Hamilton made his debut in Formula One."
+      },
+      {
+        "local_id": "e5",
+        "name": "2008",
+        "entity_type": "Season",
+        "description": "The season following Hamilton's debut."
+      },
+      {
+        "local_id": "e6",
+        "name": "Australian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The season-opening race where Hamilton made his debut."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e3",
+        "relationship_type": "DROVE_FOR",
+        "description": "Hamilton drove for McLaren during his debut season.",
+        "from_year": 2007,
+        "to_year": 2008,
+        "role": null
+      },
+      {
+        "source_id": "e6",
+        "target_id": "e4",
+        "relationship_type": "ROUND_OF",
+        "description": "The Australian Grand Prix is a round of the 2007 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

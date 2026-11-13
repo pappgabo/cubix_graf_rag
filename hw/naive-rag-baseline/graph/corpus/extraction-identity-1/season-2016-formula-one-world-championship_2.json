@@ -1,0 +1,109 @@
+{
+  "chunk_id": "season-2016-formula-one-world-championship#2",
+  "doc_id": "season-2016-formula-one-world-championship",
+  "document_title": "2016 Formula One World Championship",
+  "section": null,
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/2016_Formula_One_World_Championship",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "6e3486835fd7f84e4fbc92250e7b4972101bdad452c42ff6545578afa8e57c84",
+  "validation_version": "partial-1",
+  "source_status": "ok",
+  "status": "ok",
+  "entity_candidates": 6,
+  "entities_accepted": 6,
+  "entities_rejected": 0,
+  "relationship_candidates": 5,
+  "relationships_accepted": 5,
+  "relationships_rejected": 0,
+  "rejections": [],
+  "alignments": [],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Haas F1 Team",
+        "entity_type": "Team",
+        "description": "The Haas F1 Team entry expanded the grid to twenty-two cars."
+      },
+      {
+        "local_id": "e2",
+        "name": "Renault",
+        "entity_type": "Team",
+        "description": "Renault returned to the sport as a constructor after a four-year absence."
+      },
+      {
+        "local_id": "e3",
+        "name": "2016",
+        "entity_type": "Season",
+        "description": "The 2016 Formula One season."
+      },
+      {
+        "local_id": "e4",
+        "name": "German Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The German Grand Prix returned to the calendar."
+      },
+      {
+        "local_id": "e5",
+        "name": "European Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The European Grand Prix was revived."
+      },
+      {
+        "local_id": "e6",
+        "name": "Baku",
+        "entity_type": "Circuit",
+        "description": "The European Grand Prix visited a new circuit in Azerbaijan's capital city."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e2",
+        "target_id": "e3",
+        "relationship_type": "ENTERED",
+        "description": "Renault returned to the sport as a constructor in the 2016 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e3",
+        "relationship_type": "ENTERED",
+        "description": "Haas F1 Team entry expanded the grid in the 2016 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e3",
+        "relationship_type": "ROUND_OF",
+        "description": "The German Grand Prix is a round of the 2016 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e3",
+        "relationship_type": "ROUND_OF",
+        "description": "The European Grand Prix is a round of the 2016 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e6",
+        "relationship_type": "HELD_AT",
+        "description": "The European Grand Prix was held at the new circuit in Baku.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

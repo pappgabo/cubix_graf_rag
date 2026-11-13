@@ -1,0 +1,43 @@
+{
+  "chunk_id": "driver-kimi-raikkonen#98",
+  "doc_id": "driver-kimi-raikkonen",
+  "document_title": "Kimi Räikkönen",
+  "section": "Personal life",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "d9913845a7784834457c2c2d49d34c7ac0703ff2dcf411750eeeb90f58157da3",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Kimi Räikkönen",
+        "entity_type": "Driver",
+        "description": "Räikkönen's hobbies include snowboarding and ice hockey. He has also competed in several different kinds of motorsport events."
+      },
+      {
+        "local_id": "e2",
+        "name": "Lynx",
+        "entity_type": "PowerUnit",
+        "description": "The snowmobile Räikkönen used in the Enduro Sprint race."
+      }
+    ],
+    "relationships": []
+  },
+  "entity_candidates": 2,
+  "entities_accepted": 2,
+  "entities_rejected": 0,
+  "relationship_candidates": 1,
+  "relationships_accepted": 0,
+  "relationships_rejected": 1,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "POWERED_BY does not allow Driver -> PowerUnit"
+    }
+  ],
+  "alignments": []
+}

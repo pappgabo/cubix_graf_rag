@@ -1,0 +1,188 @@
+{
+  "chunk_id": "driver-jenson-button#45",
+  "doc_id": "driver-jenson-button",
+  "document_title": "Jenson Button",
+  "section": "Super GT career",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "017b05b9fb09bc8d0ffa7f5902b44f0ff7a1ab4f08cb82eaca7dae78e900ab3b",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Jenson Button",
+        "entity_type": "Driver",
+        "description": "A British racing driver who competed in Formula One and later in Super GT."
+      },
+      {
+        "local_id": "e2",
+        "name": "Team Kunimitsu",
+        "entity_type": "Team",
+        "description": "A racing team that competes in Super GT."
+      },
+      {
+        "local_id": "e3",
+        "name": "2019",
+        "entity_type": "Season",
+        "description": "The season in which Jenson Button competed in Super GT."
+      },
+      {
+        "local_id": "e4",
+        "name": "Okayama",
+        "entity_type": "GrandPrix",
+        "description": "A racing event in Super GT."
+      },
+      {
+        "local_id": "e5",
+        "name": "Fuji",
+        "entity_type": "GrandPrix",
+        "description": "A racing event in Super GT."
+      },
+      {
+        "local_id": "e6",
+        "name": "Sugo",
+        "entity_type": "GrandPrix",
+        "description": "A racing event in Super GT."
+      },
+      {
+        "local_id": "e7",
+        "name": "Motegi",
+        "entity_type": "GrandPrix",
+        "description": "A racing event in Super GT."
+      },
+      {
+        "local_id": "e8",
+        "name": "Hockenheimring",
+        "entity_type": "Circuit",
+        "description": "A racing circuit in Germany where DTM races are held."
+      },
+      {
+        "local_id": "e9",
+        "name": "NSX",
+        "entity_type": "Car",
+        "description": "The car model driven by Jenson Button in Super GT."
+      },
+      {
+        "local_id": "e10",
+        "name": "Deutsche Tourenwagen Masters",
+        "entity_type": "Season",
+        "description": "A touring car racing series in which Button participated."
+      },
+      {
+        "local_id": "e11",
+        "name": "Fuji Speedway",
+        "entity_type": "Circuit",
+        "description": "A racing circuit in Japan."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Jenson Button drove for Team Kunimitsu.",
+        "from_year": 2019,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e3",
+        "relationship_type": "ENTERED",
+        "description": "Team Kunimitsu entered the 2019 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e3",
+        "relationship_type": "ROUND_OF",
+        "description": "Okayama is a round of the 2019 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e3",
+        "relationship_type": "ROUND_OF",
+        "description": "Fuji is a round of the 2019 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e6",
+        "target_id": "e3",
+        "relationship_type": "ROUND_OF",
+        "description": "Sugo is a round of the 2019 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e7",
+        "target_id": "e3",
+        "relationship_type": "ROUND_OF",
+        "description": "Motegi is a round of the 2019 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 11,
+  "entities_accepted": 11,
+  "entities_rejected": 0,
+  "relationship_candidates": 9,
+  "relationships_accepted": 6,
+  "relationships_rejected": 3,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 6,
+      "reason": "DROVE_FOR does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 7,
+      "reason": "RACED_IN does not allow Season -> Circuit"
+    },
+    {
+      "element": "relationship",
+      "index": 8,
+      "reason": "DROVE_FOR does not allow Driver -> Car"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 1,
+      "action": "clear_redundant_season_year",
+      "detail": "ENTERED year 2019 already named by Season 'e3'; from_year and to_year cleared"
+    },
+    {
+      "index": 2,
+      "action": "clear_redundant_season_year",
+      "detail": "ROUND_OF year 2019 already named by Season 'e3'; from_year and to_year cleared"
+    },
+    {
+      "index": 3,
+      "action": "clear_redundant_season_year",
+      "detail": "ROUND_OF year 2019 already named by Season 'e3'; from_year and to_year cleared"
+    },
+    {
+      "index": 4,
+      "action": "clear_redundant_season_year",
+      "detail": "ROUND_OF year 2019 already named by Season 'e3'; from_year and to_year cleared"
+    },
+    {
+      "index": 5,
+      "action": "clear_redundant_season_year",
+      "detail": "ROUND_OF year 2019 already named by Season 'e3'; from_year and to_year cleared"
+    }
+  ]
+}

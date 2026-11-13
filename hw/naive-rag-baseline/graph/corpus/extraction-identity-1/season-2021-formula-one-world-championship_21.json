@@ -1,0 +1,79 @@
+{
+  "chunk_id": "season-2021-formula-one-world-championship#21",
+  "doc_id": "season-2021-formula-one-world-championship",
+  "document_title": "2021 Formula One World Championship",
+  "section": null,
+  "page": 3,
+  "source": "https://en.wikipedia.org/wiki/2021_Formula_One_World_Championship",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "6d3366a36823f1c1d87f7a9d29d4660541fb8fb5b86e6c049d27b57049b0581d",
+  "validation_version": "partial-1",
+  "source_status": "ok",
+  "status": "ok",
+  "entity_candidates": 4,
+  "entities_accepted": 4,
+  "entities_rejected": 0,
+  "relationship_candidates": 3,
+  "relationships_accepted": 3,
+  "relationships_rejected": 0,
+  "rejections": [],
+  "alignments": [],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Vietnamese Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Grand Prix that was scheduled to take place in Hanoi."
+      },
+      {
+        "local_id": "e2",
+        "name": "Hanoi Circuit",
+        "entity_type": "Circuit",
+        "description": "The racing venue for the Vietnamese Grand Prix."
+      },
+      {
+        "local_id": "e3",
+        "name": "2021",
+        "entity_type": "Season",
+        "description": "The Formula One season in which the Vietnamese Grand Prix was dropped from the calendar."
+      },
+      {
+        "local_id": "e4",
+        "name": "2020",
+        "entity_type": "Season",
+        "description": "The Formula One season in which the Vietnamese Grand Prix was included but cancelled."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e3",
+        "relationship_type": "ROUND_OF",
+        "description": "The Vietnamese Grand Prix was scheduled to be a round of the 2021 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e4",
+        "relationship_type": "ROUND_OF",
+        "description": "The Vietnamese Grand Prix was included in the 2020 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "HELD_AT",
+        "description": "The Vietnamese Grand Prix was to be held at the Hanoi Circuit.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

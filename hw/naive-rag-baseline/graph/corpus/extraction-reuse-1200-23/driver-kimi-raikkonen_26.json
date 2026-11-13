@@ -1,0 +1,166 @@
+{
+  "chunk_id": "driver-kimi-raikkonen#26",
+  "doc_id": "driver-kimi-raikkonen",
+  "document_title": "Kimi Räikkönen",
+  "section": "Formula One career > Ferrari (2007–2009) > 2007: World Drivers' Champion",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "9e0faef22d3a7bb569a45c5a5cdcd0c45886dd42832ed9c7df2b3c75010fe0f5",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Kimi Räikkönen",
+        "entity_type": "Driver",
+        "description": "A Finnish racing driver who competed in Formula One."
+      },
+      {
+        "local_id": "e2",
+        "name": "Scuderia Ferrari",
+        "entity_type": "Team",
+        "description": "An Italian Formula One team."
+      },
+      {
+        "local_id": "e3",
+        "name": "2007",
+        "entity_type": "Season",
+        "description": "The Formula One season in which Kimi Räikkönen became World Drivers' Champion."
+      },
+      {
+        "local_id": "e4",
+        "name": "United States Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula One race held in the United States."
+      },
+      {
+        "local_id": "e5",
+        "name": "France",
+        "entity_type": "GrandPrix",
+        "description": "A Formula One race held in France."
+      },
+      {
+        "local_id": "e6",
+        "name": "British Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula One race held in Britain."
+      },
+      {
+        "local_id": "e7",
+        "name": "Ferrari F2007",
+        "entity_type": "Car",
+        "description": "The car model used by Ferrari in the 2007 Formula One season."
+      },
+      {
+        "local_id": "e8",
+        "name": "Ferrari",
+        "entity_type": "PowerUnit",
+        "description": "The power unit used by the Ferrari team."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Kimi Räikkönen drove for Ferrari during the 2007 Formula One season.",
+        "from_year": 2007,
+        "to_year": 2009,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e3",
+        "relationship_type": "ENTERED",
+        "description": "Ferrari entered the 2007 Formula One season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e3",
+        "relationship_type": "ROUND_OF",
+        "description": "The United States Grand Prix was a round of the 2007 Formula One season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e3",
+        "relationship_type": "ROUND_OF",
+        "description": "The French Grand Prix was a round of the 2007 Formula One season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e6",
+        "target_id": "e3",
+        "relationship_type": "ROUND_OF",
+        "description": "The British Grand Prix was a round of the 2007 Formula One season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 8,
+  "entities_accepted": 8,
+  "entities_rejected": 0,
+  "relationship_candidates": 10,
+  "relationships_accepted": 5,
+  "relationships_rejected": 5,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 5,
+      "reason": "ACHIEVED Driver -> GrandPrix has from_year=2007, to_year=None, role=None; the year or role cannot be stored on the reified result"
+    },
+    {
+      "element": "relationship",
+      "index": 6,
+      "reason": "ACHIEVED Driver -> GrandPrix has from_year=2007, to_year=None, role=None; the year or role cannot be stored on the reified result"
+    },
+    {
+      "element": "relationship",
+      "index": 7,
+      "reason": "ACHIEVED Driver -> GrandPrix has from_year=2007, to_year=None, role=None; the year or role cannot be stored on the reified result"
+    },
+    {
+      "element": "relationship",
+      "index": 5,
+      "reason": "WON does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 6,
+      "reason": "AWARDED_IN does not allow Season -> Season"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 1,
+      "action": "clear_redundant_season_year",
+      "detail": "ENTERED year 2007 already named by Season 'e3'; from_year and to_year cleared"
+    },
+    {
+      "index": 2,
+      "action": "clear_redundant_season_year",
+      "detail": "ROUND_OF year 2007 already named by Season 'e3'; from_year and to_year cleared"
+    },
+    {
+      "index": 3,
+      "action": "clear_redundant_season_year",
+      "detail": "ROUND_OF year 2007 already named by Season 'e3'; from_year and to_year cleared"
+    },
+    {
+      "index": 4,
+      "action": "clear_redundant_season_year",
+      "detail": "ROUND_OF year 2007 already named by Season 'e3'; from_year and to_year cleared"
+    }
+  ]
+}

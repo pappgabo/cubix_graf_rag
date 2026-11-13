@@ -1,0 +1,137 @@
+{
+  "chunk_id": "driver-lewis-hamilton#23",
+  "doc_id": "driver-lewis-hamilton",
+  "document_title": "Lewis Hamilton",
+  "section": null,
+  "page": 5,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "98d78218ab4f1fbc41ae0a45b8618b043f09fb26bd9aa2fd45cdbd8b233212f0",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Lewis Hamilton",
+        "entity_type": "Driver",
+        "description": "A Formula One driver known for his multiple championship wins."
+      },
+      {
+        "local_id": "e2",
+        "name": "Mercedes-AMG Petronas Formula One Team",
+        "entity_type": "Team",
+        "description": "A Formula One team that Hamilton drives for."
+      },
+      {
+        "local_id": "e3",
+        "name": "2020",
+        "entity_type": "Season",
+        "description": "The Formula One season heavily impacted by the COVID-19 pandemic."
+      },
+      {
+        "local_id": "e4",
+        "name": "Portuguese Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A race in which Hamilton achieved his 92nd career win."
+      },
+      {
+        "local_id": "e5",
+        "name": "Turkish Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A race where Hamilton clinched the title."
+      },
+      {
+        "local_id": "e6",
+        "name": "Max Verstappen",
+        "entity_type": "Driver",
+        "description": "A Formula One driver competing against Hamilton in the 2021 season."
+      },
+      {
+        "local_id": "e7",
+        "name": "Red Bull Racing",
+        "entity_type": "Team",
+        "description": "A Formula One team that Verstappen drives for."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Hamilton drives for Mercedes.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e3",
+        "relationship_type": "ENTERED",
+        "description": "Mercedes entered the 2020 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e3",
+        "relationship_type": "ROUND_OF",
+        "description": "The Portuguese Grand Prix is a round of the 2020 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e3",
+        "relationship_type": "ROUND_OF",
+        "description": "The Turkish Grand Prix is a round of the 2020 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e6",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Hamilton and Verstappen engaged in a title battle in 2021.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e6",
+        "target_id": "e7",
+        "relationship_type": "DROVE_FOR",
+        "description": "Verstappen drives for Red Bull.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e7",
+        "target_id": "e3",
+        "relationship_type": "ENTERED",
+        "description": "Red Bull entered the 2021 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 7,
+  "entities_accepted": 7,
+  "entities_rejected": 0,
+  "relationship_candidates": 8,
+  "relationships_accepted": 7,
+  "relationships_rejected": 1,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "WON does not allow Driver -> Season"
+    }
+  ],
+  "alignments": []
+}

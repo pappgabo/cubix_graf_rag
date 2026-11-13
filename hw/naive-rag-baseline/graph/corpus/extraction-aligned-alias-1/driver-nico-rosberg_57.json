@@ -1,0 +1,94 @@
+{
+  "chunk_id": "driver-nico-rosberg#57",
+  "doc_id": "driver-nico-rosberg",
+  "document_title": "Nico Rosberg",
+  "section": "Nico Rosberg > 2010–2012",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/Nico_Rosberg",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "85e1d52b676428d3c11353ea025297da105ea36cc055adc8c28fc190f2333c24",
+  "validation_version": "partial-1",
+  "source_status": "ok",
+  "status": "ok",
+  "rejections": [],
+  "alignments": [],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Nico Rosberg",
+        "entity_type": "Driver",
+        "description": "A Formula One driver who raced for Mercedes."
+      },
+      {
+        "local_id": "e2",
+        "name": "Mercedes-AMG Petronas Formula One Team",
+        "entity_type": "Team",
+        "description": "A Formula One team that entered cars."
+      },
+      {
+        "local_id": "e3",
+        "name": "2012",
+        "entity_type": "Season",
+        "description": "The Formula One championship season."
+      },
+      {
+        "local_id": "e4",
+        "name": "Malaysian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula One race event."
+      },
+      {
+        "local_id": "e5",
+        "name": "Chinese Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula One race event."
+      },
+      {
+        "local_id": "e6",
+        "name": "British Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula One race event."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Nico Rosberg raced for Mercedes.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e3",
+        "relationship_type": "ROUND_OF",
+        "description": "The Malaysian Grand Prix is a round of the 2012 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e3",
+        "relationship_type": "ROUND_OF",
+        "description": "The Chinese Grand Prix is a round of the 2012 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e6",
+        "target_id": "e3",
+        "relationship_type": "ROUND_OF",
+        "description": "The British Grand Prix is a round of the 2012 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

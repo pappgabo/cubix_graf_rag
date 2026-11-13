@@ -1,0 +1,162 @@
+{
+  "chunk_id": "team-williams-racing#34",
+  "doc_id": "team-williams-racing",
+  "document_title": "Williams Racing",
+  "section": "Williams Racing > 1992 off-season",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "fcc4df1c666fc0871b4d8c63a553797644c92f1ba6554251bc269b8027535859",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Nigel Mansell",
+        "entity_type": "Driver",
+        "description": "Mansell left F1 for the CART IndyCar Series and joined Newman/Haas Racing."
+      },
+      {
+        "local_id": "e2",
+        "name": "Alain Prost",
+        "entity_type": "Driver",
+        "description": "Prost was a teammate of Mansell at Ferrari."
+      },
+      {
+        "local_id": "e3",
+        "name": "Michael Andretti",
+        "entity_type": "Driver",
+        "description": "Andretti had been driving the Kmart/Texaco-Havoline Lola-Ford before Mansell."
+      },
+      {
+        "local_id": "e4",
+        "name": "Mario Andretti",
+        "entity_type": "Driver",
+        "description": "Mario became Mansell's teammate in Indy racing."
+      },
+      {
+        "local_id": "e5",
+        "name": "Ayrton Senna",
+        "entity_type": "Driver",
+        "description": "Senna was uncertain to be a part of the McLaren team as 1993 began."
+      },
+      {
+        "local_id": "e6",
+        "name": "Gerhard Berger",
+        "entity_type": "Driver",
+        "description": "Berger's place was taken by Michael Andretti at McLaren."
+      },
+      {
+        "local_id": "e7",
+        "name": "Honda",
+        "entity_type": "PowerUnit",
+        "description": "Honda was the engine supplier for McLaren since 1988."
+      },
+      {
+        "local_id": "e8",
+        "name": "Williams",
+        "entity_type": "Team",
+        "description": "Senna explored the option of potentially moving to Williams."
+      },
+      {
+        "local_id": "e9",
+        "name": "McLaren",
+        "entity_type": "Team",
+        "description": "Senna was uncertain to be a part of the McLaren team as 1993 began."
+      },
+      {
+        "local_id": "e10",
+        "name": "CART IndyCar Series",
+        "entity_type": "Circuit",
+        "description": "Mansell left F1 for the CART IndyCar Series."
+      },
+      {
+        "local_id": "e11",
+        "name": "1993",
+        "entity_type": "Season",
+        "description": "The season when Senna began exploring options outside of McLaren."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Mansell and Prost were teammates at Ferrari.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e1",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Michael Andretti was Mansell's teammate at Newman/Haas Racing.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e1",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Mario Andretti became Mansell's teammate in Indy racing.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e9",
+        "relationship_type": "DROVE_FOR",
+        "description": "Senna was part of the McLaren team as 1993 began.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e8",
+        "target_id": "e11",
+        "relationship_type": "ENTERED",
+        "description": "Williams was the defending world championship constructor in 1993.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e9",
+        "target_id": "e11",
+        "relationship_type": "ENTERED",
+        "description": "McLaren was part of the 1993 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 11,
+  "entities_accepted": 11,
+  "entities_rejected": 0,
+  "relationship_candidates": 9,
+  "relationships_accepted": 6,
+  "relationships_rejected": 3,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "DROVE_FOR does not allow Driver -> Circuit"
+    },
+    {
+      "element": "relationship",
+      "index": 5,
+      "reason": "TEAMMATE_OF does not allow Driver -> Team"
+    },
+    {
+      "element": "relationship",
+      "index": 6,
+      "reason": "POWERED_BY does not allow PowerUnit -> Team"
+    }
+  ],
+  "alignments": []
+}

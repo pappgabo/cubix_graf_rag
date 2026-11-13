@@ -1,0 +1,82 @@
+{
+  "chunk_id": "season-2012-formula-one-world-championship#120",
+  "doc_id": "season-2012-formula-one-world-championship",
+  "document_title": "2012 Formula One World Championship",
+  "section": "Race summaries > Round 7 – Canada Circuit Gilles Villeneuve",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/2012_Formula_One_World_Championship",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "80ef16679dcf0f1f3337c4a110ab4eea714a4c1fb41c3a668cfa53916644aacb",
+  "validation_version": "partial-1",
+  "source_status": "ok",
+  "status": "ok",
+  "entity_candidates": 6,
+  "entities_accepted": 6,
+  "entities_rejected": 0,
+  "relationship_candidates": 2,
+  "relationships_accepted": 2,
+  "relationships_rejected": 0,
+  "rejections": [],
+  "alignments": [],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Sebastian Vettel",
+        "entity_type": "Driver",
+        "description": "A driver who took pole position in the race."
+      },
+      {
+        "local_id": "e2",
+        "name": "Lewis Hamilton",
+        "entity_type": "Driver",
+        "description": "A driver who passed Sebastian Vettel during the race."
+      },
+      {
+        "local_id": "e3",
+        "name": "Fernando Alonso",
+        "entity_type": "Driver",
+        "description": "A driver who passed Sebastian Vettel shortly after Lewis Hamilton."
+      },
+      {
+        "local_id": "e4",
+        "name": "Canada",
+        "entity_type": "Circuit",
+        "description": "The circuit where the race took place."
+      },
+      {
+        "local_id": "e5",
+        "name": "2012",
+        "entity_type": "Season",
+        "description": "The season of the Formula One World Championship."
+      },
+      {
+        "local_id": "e6",
+        "name": "Grand Prix of Canada",
+        "entity_type": "GrandPrix",
+        "description": "The specific Grand Prix that is a round of the 2012 season."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e6",
+        "target_id": "e5",
+        "relationship_type": "ROUND_OF",
+        "description": "The Grand Prix of Canada is a round of the 2012 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e6",
+        "target_id": "e4",
+        "relationship_type": "HELD_AT",
+        "description": "The Grand Prix of Canada is held at the Canada circuit.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

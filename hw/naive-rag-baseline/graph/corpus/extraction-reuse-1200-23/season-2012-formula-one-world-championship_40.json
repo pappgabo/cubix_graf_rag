@@ -1,0 +1,151 @@
+{
+  "chunk_id": "season-2012-formula-one-world-championship#40",
+  "doc_id": "season-2012-formula-one-world-championship",
+  "document_title": "2012 Formula One World Championship",
+  "section": "Race summaries > Round 2 – Malaysia Sepang International Circuit",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "a234568aaadb7f1ab04cef64082723eb8c192ff375f8215ce31637a04fad3e62",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Fernando Alonso",
+        "entity_type": "Driver",
+        "description": "Two-time World Champion who won the race."
+      },
+      {
+        "local_id": "e2",
+        "name": "Sergio Pérez",
+        "entity_type": "Driver",
+        "description": "Finished second, taking his first podium."
+      },
+      {
+        "local_id": "e3",
+        "name": "Sauber",
+        "entity_type": "Team",
+        "description": "Team that Pérez drove for."
+      },
+      {
+        "local_id": "e4",
+        "name": "Lewis Hamilton",
+        "entity_type": "Driver",
+        "description": "Finished third in the race."
+      },
+      {
+        "local_id": "e5",
+        "name": "Mark Webber",
+        "entity_type": "Driver",
+        "description": "Finished fourth in the race."
+      },
+      {
+        "local_id": "e6",
+        "name": "Kimi Räikkönen",
+        "entity_type": "Driver",
+        "description": "Finished fifth in the race."
+      },
+      {
+        "local_id": "e7",
+        "name": "Bruno Senna",
+        "entity_type": "Driver",
+        "description": "Finished sixth in the race."
+      },
+      {
+        "local_id": "e8",
+        "name": "Sebastian Vettel",
+        "entity_type": "Driver",
+        "description": "Finished outside the points after a puncture."
+      },
+      {
+        "local_id": "e9",
+        "name": "2012 Formula One World Championship",
+        "entity_type": "Season",
+        "description": "The championship season in which the race took place."
+      },
+      {
+        "local_id": "e10",
+        "name": "Malaysia",
+        "entity_type": "GrandPrix",
+        "description": "The Grand Prix held at Sepang International Circuit."
+      },
+      {
+        "local_id": "e11",
+        "name": "Sepang International Circuit",
+        "entity_type": "Circuit",
+        "description": "The circuit where the Malaysia Grand Prix was held."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e10",
+        "target_id": "e9",
+        "relationship_type": "ROUND_OF",
+        "description": "The Malaysia Grand Prix is a round of the 2012 Formula One World Championship.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e10",
+        "target_id": "e11",
+        "relationship_type": "HELD_AT",
+        "description": "The Malaysia Grand Prix was held at Sepang International Circuit.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 11,
+  "entities_accepted": 11,
+  "entities_rejected": 0,
+  "relationship_candidates": 10,
+  "relationships_accepted": 2,
+  "relationships_rejected": 8,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "ACHIEVED Driver -> GrandPrix has from_year=2012, to_year=None, role=None; the year or role cannot be stored on the reified result"
+    },
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "ACHIEVED Driver -> GrandPrix has from_year=2012, to_year=None, role=None; the year or role cannot be stored on the reified result"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "ACHIEVED Driver -> GrandPrix has from_year=2012, to_year=None, role=None; the year or role cannot be stored on the reified result"
+    },
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "ACHIEVED Driver -> GrandPrix has from_year=2012, to_year=None, role=None; the year or role cannot be stored on the reified result"
+    },
+    {
+      "element": "relationship",
+      "index": 5,
+      "reason": "ACHIEVED Driver -> GrandPrix has from_year=2012, to_year=None, role=None; the year or role cannot be stored on the reified result"
+    },
+    {
+      "element": "relationship",
+      "index": 6,
+      "reason": "ACHIEVED Driver -> GrandPrix has from_year=2012, to_year=None, role=None; the year or role cannot be stored on the reified result"
+    },
+    {
+      "element": "relationship",
+      "index": 7,
+      "reason": "ACHIEVED Driver -> GrandPrix has from_year=2012, to_year=None, role=None; the year or role cannot be stored on the reified result"
+    },
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "DROVE_FOR does not allow Team -> Driver"
+    }
+  ],
+  "alignments": []
+}

@@ -1,0 +1,70 @@
+{
+  "chunk_id": "team-williams-racing#82",
+  "doc_id": "team-williams-racing",
+  "document_title": "Williams Racing",
+  "section": "Williams Racing > Customer Toyota engines (2007–2009) > Williams Racing > 2007–2009 seasons",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "736769faef3292e8d101cd36493caa6da189d8a6df09b8f01a1b9884fe88ac0a",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Williams Racing",
+        "entity_type": "Team",
+        "description": "A Formula 1 team."
+      },
+      {
+        "local_id": "e2",
+        "name": "Toyota",
+        "entity_type": "PowerUnit",
+        "description": "An engine supplier that partnered with Williams Racing."
+      },
+      {
+        "local_id": "e3",
+        "name": "2009",
+        "entity_type": "Season",
+        "description": "A Formula 1 championship year."
+      },
+      {
+        "local_id": "e4",
+        "name": "Brazilian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A specific race event."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e4",
+        "target_id": "e3",
+        "relationship_type": "ROUND_OF",
+        "description": "The Brazilian Grand Prix is a round of the 2009 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 4,
+  "entities_accepted": 4,
+  "entities_rejected": 0,
+  "relationship_candidates": 3,
+  "relationships_accepted": 1,
+  "relationships_rejected": 2,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "DROVE_FOR does not allow Team -> PowerUnit"
+    },
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "RACED_IN does not allow PowerUnit -> Season"
+    }
+  ],
+  "alignments": []
+}

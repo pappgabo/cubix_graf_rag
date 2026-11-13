@@ -1,0 +1,79 @@
+{
+  "chunk_id": "driver-michael-schumacher#120",
+  "doc_id": "driver-michael-schumacher",
+  "document_title": "Michael Schumacher",
+  "section": null,
+  "page": 10,
+  "source": "https://en.wikipedia.org/wiki/Michael_Schumacher",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "5c2e8493cb551d126b24617556ba0e2770356ac23a5ceb140d77d243cda52dfa",
+  "validation_version": "partial-1",
+  "source_status": "ok",
+  "status": "ok",
+  "rejections": [],
+  "alignments": [],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Michael Schumacher",
+        "entity_type": "Driver",
+        "description": "second driver in history (after Barrichello) to race in 300 Grands Prix; he took seventh place after starting 13th."
+      },
+      {
+        "local_id": "e2",
+        "name": "Lewis Hamilton",
+        "entity_type": "Driver",
+        "description": "replaced Michael Schumacher at Mercedes for the 2013 season."
+      },
+      {
+        "local_id": "e3",
+        "name": "Mercedes-AMG Petronas Formula One Team",
+        "entity_type": "Team",
+        "description": "team that Michael Schumacher raced for before his retirement."
+      },
+      {
+        "local_id": "e4",
+        "name": "2013",
+        "entity_type": "Season",
+        "description": "season in which Lewis Hamilton replaced Michael Schumacher at Mercedes."
+      },
+      {
+        "local_id": "e5",
+        "name": "Japanese Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "event during which Schumacher announced his retirement for a second time."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e3",
+        "relationship_type": "DROVE_FOR",
+        "description": "Michael Schumacher raced for Mercedes.",
+        "from_year": null,
+        "to_year": 2012,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e3",
+        "relationship_type": "DROVE_FOR",
+        "description": "Lewis Hamilton replaced Michael Schumacher at Mercedes.",
+        "from_year": 2013,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e4",
+        "relationship_type": "ROUND_OF",
+        "description": "Japanese Grand Prix is a round of the 2013 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

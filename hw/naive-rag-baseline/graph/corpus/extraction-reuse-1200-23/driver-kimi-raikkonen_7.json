@@ -1,0 +1,133 @@
+{
+  "chunk_id": "driver-kimi-raikkonen#7",
+  "doc_id": "driver-kimi-raikkonen",
+  "document_title": "Kimi Räikkönen",
+  "section": "Formula One career > McLaren (2002–2006) > 2002",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "69801b00238a115c50a986683ff89f708ae5cc15cbca3440f5be9e4c455ec1b7",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Kimi Räikkönen",
+        "entity_type": "Driver",
+        "description": "A Finnish racing driver who competed in Formula One."
+      },
+      {
+        "local_id": "e2",
+        "name": "McLaren",
+        "entity_type": "Team",
+        "description": "A Formula One team that entered cars."
+      },
+      {
+        "local_id": "e3",
+        "name": "2002",
+        "entity_type": "Season",
+        "description": "The Formula One championship season."
+      },
+      {
+        "local_id": "e4",
+        "name": "2002 Australian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula One race held in 2002."
+      },
+      {
+        "local_id": "e5",
+        "name": "2002 French Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula One race held in 2002."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Kimi Räikkönen at 2002 Australian Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Kimi Räikkönen scored a third-place podium finish at the 2002 Australian Grand Prix."
+      },
+      {
+        "local_id": "rr2",
+        "name": "Kimi Räikkönen at 2002 French Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Kimi Räikkönen finished second at the 2002 French Grand Prix."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Kimi Räikkönen drove for McLaren in 2002.",
+        "from_year": 2002,
+        "to_year": 2006,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Kimi Räikkönen scored a third-place podium finish at the 2002 Australian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e4",
+        "relationship_type": "AT_RACE",
+        "description": "Kimi Räikkönen scored a third-place podium finish at the 2002 Australian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr2",
+        "relationship_type": "ACHIEVED",
+        "description": "Kimi Räikkönen finished second at the 2002 French Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr2",
+        "target_id": "e5",
+        "relationship_type": "AT_RACE",
+        "description": "Kimi Räikkönen finished second at the 2002 French Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e3",
+        "relationship_type": "ENTERED",
+        "description": "McLaren took part in the 2002 Formula One season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 5,
+  "entities_accepted": 7,
+  "entities_rejected": 0,
+  "relationship_candidates": 4,
+  "relationships_accepted": 6,
+  "relationships_rejected": 0,
+  "rejections": [],
+  "alignments": [
+    {
+      "index": 1,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e4; description kept"
+    },
+    {
+      "index": 2,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr2 -AT_RACE-> e5; description kept"
+    }
+  ]
+}

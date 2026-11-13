@@ -1,0 +1,61 @@
+{
+  "chunk_id": "season-2016-formula-one-world-championship#12",
+  "doc_id": "season-2016-formula-one-world-championship",
+  "document_title": "2016 Formula One World Championship",
+  "section": "Team changes",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/2016_Formula_One_World_Championship",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "354e288ad26431abb7319d00be884baf72bd8b0fce105dce9ce66fb4fe14255c",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "entity_candidates": 3,
+  "entities_accepted": 3,
+  "entities_rejected": 0,
+  "relationship_candidates": 2,
+  "relationships_accepted": 1,
+  "relationships_rejected": 1,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "DROVE_FOR does not allow Team -> Team"
+    }
+  ],
+  "alignments": [],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Renault",
+        "entity_type": "Team",
+        "description": "Renault returned to Formula One as a full factory-supported team after they purchased Lotus."
+      },
+      {
+        "local_id": "e2",
+        "name": "Lotus",
+        "entity_type": "Team",
+        "description": "Lotus's participation in the 2016 season was in question pending the resolution of a High Court case."
+      },
+      {
+        "local_id": "e3",
+        "name": "2016",
+        "entity_type": "Season",
+        "description": "The season in which Lotus's participation was in question."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e2",
+        "target_id": "e3",
+        "relationship_type": "ENTERED",
+        "description": "Lotus's participation in the 2016 season was in question.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

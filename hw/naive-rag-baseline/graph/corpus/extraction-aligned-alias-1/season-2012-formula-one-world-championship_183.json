@@ -1,0 +1,77 @@
+{
+  "chunk_id": "season-2012-formula-one-world-championship#183",
+  "doc_id": "season-2012-formula-one-world-championship",
+  "document_title": "2012 Formula One World Championship",
+  "section": "Race summaries > Round 17 – India Buddh International Circuit",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/2012_Formula_One_World_Championship",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "3acf81086b8b599060d320b557d94d3c2591eceb5c53af1133633b158ba352ad",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "DROVE_FOR does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "DROVE_FOR does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "ROUND_OF does not allow Circuit -> Season"
+    }
+  ],
+  "alignments": [],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Scuderia Ferrari",
+        "entity_type": "Team",
+        "description": "A Formula 1 team."
+      },
+      {
+        "local_id": "e2",
+        "name": "Mark Webber",
+        "entity_type": "Driver",
+        "description": "A Formula 1 driver."
+      },
+      {
+        "local_id": "e3",
+        "name": "Lewis Hamilton",
+        "entity_type": "Driver",
+        "description": "A Formula 1 driver."
+      },
+      {
+        "local_id": "e4",
+        "name": "2012",
+        "entity_type": "Season",
+        "description": "The 2012 Formula One World Championship."
+      },
+      {
+        "local_id": "e5",
+        "name": "Buddh International Circuit",
+        "entity_type": "Circuit",
+        "description": "A racing venue in India."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e4",
+        "relationship_type": "ENTERED",
+        "description": "Ferrari took part in the 2012 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

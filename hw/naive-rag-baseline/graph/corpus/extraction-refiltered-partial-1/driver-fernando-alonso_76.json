@@ -1,0 +1,87 @@
+{
+  "chunk_id": "driver-fernando-alonso#76",
+  "doc_id": "driver-fernando-alonso",
+  "document_title": "Fernando Alonso",
+  "section": "Aston Martin (2023–present)",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/Fernando_Alonso",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "837436e3eba93643bffae3c8c2dd7cdf1a3f0a7dfa707c702d543ff7abac4e33",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "ENTERED is not temporal; from_year, to_year and role must be null"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "ROUND_OF is not temporal; from_year, to_year and role must be null"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "ROUND_OF is not temporal; from_year, to_year and role must be null"
+    },
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "ROUND_OF is not temporal; from_year, to_year and role must be null"
+    }
+  ],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Fernando Alonso",
+        "entity_type": "Driver",
+        "description": "A driver currently racing for Aston Martin."
+      },
+      {
+        "local_id": "e2",
+        "name": "Aston Martin",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that Fernando Alonso is currently racing for."
+      },
+      {
+        "local_id": "e3",
+        "name": "2023",
+        "entity_type": "Season",
+        "description": "The Formula 1 season in which Fernando Alonso is competing."
+      },
+      {
+        "local_id": "e4",
+        "name": "Zandvoort",
+        "entity_type": "GrandPrix",
+        "description": "A Grand Prix where Fernando Alonso secured a podium finish."
+      },
+      {
+        "local_id": "e5",
+        "name": "São Paulo",
+        "entity_type": "GrandPrix",
+        "description": "A Grand Prix where Fernando Alonso secured a podium finish."
+      },
+      {
+        "local_id": "e6",
+        "name": "Abu Dhabi Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Grand Prix where Fernando Alonso finished seventh."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Fernando Alonso is currently racing for Aston Martin.",
+        "from_year": 2023,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

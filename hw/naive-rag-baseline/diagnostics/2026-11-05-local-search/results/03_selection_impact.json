@@ -1,0 +1,4056 @@
+{
+  "limits": [
+    6,
+    8,
+    10
+  ],
+  "questions": {
+    "Q01": {
+      "pool_size": 199,
+      "policies": {
+        "A_current": {
+          "6": {
+            "picked": [
+              "driver-lewis-hamilton#0",
+              "driver-lewis-hamilton#50",
+              "driver-lewis-hamilton#114",
+              "driver-michael-schumacher#68",
+              "driver-valtteri-bottas#126",
+              "driver-fernando-alonso#142"
+            ],
+            "hops": {
+              "hamilton seven titles": true
+            }
+          },
+          "8": {
+            "picked": [
+              "driver-lewis-hamilton#0",
+              "driver-lewis-hamilton#50",
+              "driver-lewis-hamilton#114",
+              "driver-michael-schumacher#68",
+              "driver-michael-schumacher#72",
+              "driver-lewis-hamilton#51",
+              "driver-valtteri-bottas#126",
+              "driver-fernando-alonso#142"
+            ],
+            "hops": {
+              "hamilton seven titles": true
+            }
+          },
+          "10": {
+            "picked": [
+              "driver-lewis-hamilton#0",
+              "driver-michael-schumacher#0",
+              "driver-lewis-hamilton#50",
+              "driver-nico-rosberg#18",
+              "driver-lewis-hamilton#114",
+              "driver-michael-schumacher#68",
+              "driver-michael-schumacher#72",
+              "driver-lewis-hamilton#51",
+              "driver-valtteri-bottas#126",
+              "driver-fernando-alonso#142"
+            ],
+            "hops": {
+              "hamilton seven titles": true
+            }
+          }
+        },
+        "B_no_reserve": {
+          "6": {
+            "picked": [
+              "driver-lewis-hamilton#0",
+              "driver-michael-schumacher#0",
+              "driver-lewis-hamilton#50",
+              "driver-nico-rosberg#18",
+              "driver-lewis-hamilton#114",
+              "driver-lewis-hamilton#173"
+            ],
+            "hops": {
+              "hamilton seven titles": true
+            }
+          },
+          "8": {
+            "picked": [
+              "driver-lewis-hamilton#0",
+              "driver-michael-schumacher#0",
+              "driver-lewis-hamilton#50",
+              "driver-nico-rosberg#18",
+              "driver-lewis-hamilton#114",
+              "driver-lewis-hamilton#173",
+              "driver-lewis-hamilton#31",
+              "driver-michael-schumacher#68"
+            ],
+            "hops": {
+              "hamilton seven titles": true
+            }
+          },
+          "10": {
+            "picked": [
+              "driver-lewis-hamilton#0",
+              "driver-michael-schumacher#0",
+              "driver-lewis-hamilton#50",
+              "driver-nico-rosberg#18",
+              "driver-lewis-hamilton#114",
+              "driver-lewis-hamilton#173",
+              "driver-lewis-hamilton#31",
+              "driver-michael-schumacher#68",
+              "driver-michael-schumacher#72",
+              "driver-fernando-alonso#1"
+            ],
+            "hops": {
+              "hamilton seven titles": true
+            }
+          }
+        },
+        "C_anchor_reserve_only": {
+          "6": {
+            "picked": [
+              "driver-lewis-hamilton#0",
+              "driver-lewis-hamilton#50",
+              "driver-lewis-hamilton#114",
+              "driver-michael-schumacher#0",
+              "driver-nico-rosberg#18",
+              "driver-lewis-hamilton#173"
+            ],
+            "hops": {
+              "hamilton seven titles": true
+            }
+          },
+          "8": {
+            "picked": [
+              "driver-lewis-hamilton#0",
+              "driver-lewis-hamilton#50",
+              "driver-lewis-hamilton#114",
+              "driver-michael-schumacher#0",
+              "driver-nico-rosberg#18",
+              "driver-lewis-hamilton#173",
+              "driver-lewis-hamilton#31",
+              "driver-michael-schumacher#68"
+            ],
+            "hops": {
+              "hamilton seven titles": true
+            }
+          },
+          "10": {
+            "picked": [
+              "driver-lewis-hamilton#0",
+              "driver-lewis-hamilton#50",
+              "driver-lewis-hamilton#114",
+              "driver-michael-schumacher#0",
+              "driver-nico-rosberg#18",
+              "driver-lewis-hamilton#173",
+              "driver-lewis-hamilton#31",
+              "driver-michael-schumacher#68",
+              "driver-michael-schumacher#72",
+              "driver-fernando-alonso#1"
+            ],
+            "hops": {
+              "hamilton seven titles": true
+            }
+          }
+        },
+        "D_edge_sources_first": {
+          "6": {
+            "picked": [
+              "driver-lewis-hamilton#50",
+              "driver-lewis-hamilton#114",
+              "driver-lewis-hamilton#31",
+              "driver-lewis-hamilton#95",
+              "driver-lewis-hamilton#51",
+              "driver-valtteri-bottas#75"
+            ],
+            "hops": {
+              "hamilton seven titles": false
+            }
+          },
+          "8": {
+            "picked": [
+              "driver-lewis-hamilton#50",
+              "driver-lewis-hamilton#114",
+              "driver-lewis-hamilton#31",
+              "driver-lewis-hamilton#95",
+              "driver-lewis-hamilton#51",
+              "driver-valtteri-bottas#75",
+              "team-mercedes-benz-in-formula-one#42",
+              "driver-fernando-alonso#142"
+            ],
+            "hops": {
+              "hamilton seven titles": false
+            }
+          },
+          "10": {
+            "picked": [
+              "driver-lewis-hamilton#50",
+              "driver-lewis-hamilton#114",
+              "driver-lewis-hamilton#31",
+              "driver-lewis-hamilton#95",
+              "driver-lewis-hamilton#51",
+              "driver-valtteri-bottas#75",
+              "team-mercedes-benz-in-formula-one#42",
+              "driver-fernando-alonso#142",
+              "driver-fernando-alonso#48",
+              "driver-fernando-alonso#35"
+            ],
+            "hops": {
+              "hamilton seven titles": false
+            }
+          }
+        },
+        "E_one_per_selected_edge": {
+          "6": {
+            "picked": [
+              "driver-lewis-hamilton#50",
+              "team-mercedes-benz-in-formula-one#42",
+              "driver-lewis-hamilton#95",
+              "driver-lewis-hamilton#51",
+              "driver-valtteri-bottas#75",
+              "driver-lewis-hamilton#114"
+            ],
+            "hops": {
+              "hamilton seven titles": false
+            }
+          },
+          "8": {
+            "picked": [
+              "driver-lewis-hamilton#50",
+              "team-mercedes-benz-in-formula-one#42",
+              "driver-lewis-hamilton#95",
+              "driver-lewis-hamilton#51",
+              "driver-valtteri-bottas#75",
+              "driver-lewis-hamilton#114",
+              "driver-fernando-alonso#142",
+              "driver-fernando-alonso#35"
+            ],
+            "hops": {
+              "hamilton seven titles": false
+            }
+          },
+          "10": {
+            "picked": [
+              "driver-lewis-hamilton#50",
+              "team-mercedes-benz-in-formula-one#42",
+              "driver-lewis-hamilton#95",
+              "driver-lewis-hamilton#51",
+              "driver-valtteri-bottas#75",
+              "driver-lewis-hamilton#114",
+              "driver-fernando-alonso#142",
+              "driver-fernando-alonso#35",
+              "driver-lewis-hamilton#0",
+              "driver-michael-schumacher#0"
+            ],
+            "hops": {
+              "hamilton seven titles": true
+            }
+          }
+        },
+        "F_rank_by_edge_support": {
+          "6": {
+            "picked": [
+              "driver-lewis-hamilton#50",
+              "driver-lewis-hamilton#114",
+              "driver-lewis-hamilton#31",
+              "driver-lewis-hamilton#95",
+              "driver-lewis-hamilton#51",
+              "driver-valtteri-bottas#75"
+            ],
+            "hops": {
+              "hamilton seven titles": false
+            }
+          },
+          "8": {
+            "picked": [
+              "driver-lewis-hamilton#50",
+              "driver-lewis-hamilton#114",
+              "driver-lewis-hamilton#31",
+              "driver-lewis-hamilton#95",
+              "driver-lewis-hamilton#51",
+              "driver-valtteri-bottas#75",
+              "team-mercedes-benz-in-formula-one#42",
+              "driver-fernando-alonso#142"
+            ],
+            "hops": {
+              "hamilton seven titles": false
+            }
+          },
+          "10": {
+            "picked": [
+              "driver-lewis-hamilton#50",
+              "driver-lewis-hamilton#114",
+              "driver-lewis-hamilton#31",
+              "driver-lewis-hamilton#95",
+              "driver-lewis-hamilton#51",
+              "driver-valtteri-bottas#75",
+              "team-mercedes-benz-in-formula-one#42",
+              "driver-fernando-alonso#142",
+              "driver-fernando-alonso#48",
+              "driver-fernando-alonso#35"
+            ],
+            "hops": {
+              "hamilton seven titles": false
+            }
+          }
+        }
+      },
+      "upper_bounds": {
+        "hamilton seven titles": {
+          "in_corpus": 4,
+          "linked_to_graph": 2,
+          "in_candidate_pool": 2,
+          "best_rank_by_score": 1
+        }
+      }
+    },
+    "Q02": {
+      "pool_size": 100,
+      "policies": {
+        "A_current": {
+          "6": {
+            "picked": [
+              "driver-fernando-alonso#3",
+              "driver-sebastian-vettel#58",
+              "season-2021-formula-one-world-championship#9",
+              "driver-sebastian-vettel#22",
+              "driver-sebastian-vettel#14",
+              "driver-sebastian-vettel#9"
+            ],
+            "hops": {
+              "vettel youngest champion at 23": false
+            }
+          },
+          "8": {
+            "picked": [
+              "driver-fernando-alonso#3",
+              "driver-sebastian-vettel#58",
+              "season-2021-formula-one-world-championship#9",
+              "season-2012-formula-one-world-championship#89",
+              "driver-sebastian-vettel#22",
+              "driver-sebastian-vettel#14",
+              "driver-sebastian-vettel#50",
+              "driver-sebastian-vettel#9"
+            ],
+            "hops": {
+              "vettel youngest champion at 23": false
+            }
+          },
+          "10": {
+            "picked": [
+              "driver-fernando-alonso#3",
+              "driver-sebastian-vettel#58",
+              "season-2021-formula-one-world-championship#9",
+              "season-2012-formula-one-world-championship#89",
+              "driver-sebastian-vettel#22",
+              "reference-list-of-formula-one-world-drivers-champions#1",
+              "season-2012-formula-one-world-championship#121",
+              "driver-sebastian-vettel#14",
+              "driver-sebastian-vettel#50",
+              "driver-sebastian-vettel#9"
+            ],
+            "hops": {
+              "vettel youngest champion at 23": false
+            }
+          }
+        },
+        "B_no_reserve": {
+          "6": {
+            "picked": [
+              "driver-fernando-alonso#3",
+              "driver-sebastian-vettel#58",
+              "season-2021-formula-one-world-championship#9",
+              "season-2012-formula-one-world-championship#89",
+              "driver-sebastian-vettel#22",
+              "reference-list-of-formula-one-world-drivers-champions#1"
+            ],
+            "hops": {
+              "vettel youngest champion at 23": false
+            }
+          },
+          "8": {
+            "picked": [
+              "driver-fernando-alonso#3",
+              "driver-sebastian-vettel#58",
+              "season-2021-formula-one-world-championship#9",
+              "season-2012-formula-one-world-championship#89",
+              "driver-sebastian-vettel#22",
+              "reference-list-of-formula-one-world-drivers-champions#1",
+              "season-2012-formula-one-world-championship#121",
+              "driver-fernando-alonso#33"
+            ],
+            "hops": {
+              "vettel youngest champion at 23": false
+            }
+          },
+          "10": {
+            "picked": [
+              "driver-fernando-alonso#3",
+              "driver-sebastian-vettel#58",
+              "season-2021-formula-one-world-championship#9",
+              "season-2012-formula-one-world-championship#89",
+              "driver-sebastian-vettel#22",
+              "reference-list-of-formula-one-world-drivers-champions#1",
+              "season-2012-formula-one-world-championship#121",
+              "driver-fernando-alonso#33",
+              "driver-fernando-alonso#36",
+              "driver-lewis-hamilton#113"
+            ],
+            "hops": {
+              "vettel youngest champion at 23": false
+            }
+          }
+        },
+        "C_anchor_reserve_only": {
+          "6": {
+            "picked": [
+              "driver-sebastian-vettel#58",
+              "driver-fernando-alonso#3",
+              "driver-sebastian-vettel#9",
+              "season-2021-formula-one-world-championship#9",
+              "season-2012-formula-one-world-championship#89",
+              "driver-sebastian-vettel#22"
+            ],
+            "hops": {
+              "vettel youngest champion at 23": false
+            }
+          },
+          "8": {
+            "picked": [
+              "driver-sebastian-vettel#58",
+              "driver-fernando-alonso#3",
+              "driver-sebastian-vettel#9",
+              "season-2021-formula-one-world-championship#9",
+              "season-2012-formula-one-world-championship#89",
+              "driver-sebastian-vettel#22",
+              "reference-list-of-formula-one-world-drivers-champions#1",
+              "season-2012-formula-one-world-championship#121"
+            ],
+            "hops": {
+              "vettel youngest champion at 23": false
+            }
+          },
+          "10": {
+            "picked": [
+              "driver-sebastian-vettel#58",
+              "driver-fernando-alonso#3",
+              "driver-sebastian-vettel#9",
+              "season-2021-formula-one-world-championship#9",
+              "season-2012-formula-one-world-championship#89",
+              "driver-sebastian-vettel#22",
+              "reference-list-of-formula-one-world-drivers-champions#1",
+              "season-2012-formula-one-world-championship#121",
+              "driver-fernando-alonso#33",
+              "driver-fernando-alonso#36"
+            ],
+            "hops": {
+              "vettel youngest champion at 23": false
+            }
+          }
+        },
+        "D_edge_sources_first": {
+          "6": {
+            "picked": [
+              "driver-fernando-alonso#3",
+              "driver-sebastian-vettel#58",
+              "driver-sebastian-vettel#22",
+              "driver-fernando-alonso#33",
+              "season-2012-formula-one-world-championship#181",
+              "driver-fernando-alonso#48"
+            ],
+            "hops": {
+              "vettel youngest champion at 23": false
+            }
+          },
+          "8": {
+            "picked": [
+              "driver-fernando-alonso#3",
+              "driver-sebastian-vettel#58",
+              "driver-sebastian-vettel#22",
+              "driver-fernando-alonso#33",
+              "season-2012-formula-one-world-championship#181",
+              "driver-fernando-alonso#48",
+              "driver-sebastian-vettel#14",
+              "driver-sebastian-vettel#50"
+            ],
+            "hops": {
+              "vettel youngest champion at 23": false
+            }
+          },
+          "10": {
+            "picked": [
+              "driver-fernando-alonso#3",
+              "driver-sebastian-vettel#58",
+              "driver-sebastian-vettel#22",
+              "driver-fernando-alonso#33",
+              "season-2012-formula-one-world-championship#181",
+              "driver-fernando-alonso#48",
+              "driver-sebastian-vettel#14",
+              "driver-sebastian-vettel#50",
+              "season-2021-formula-one-world-championship#9",
+              "season-2012-formula-one-world-championship#89"
+            ],
+            "hops": {
+              "vettel youngest champion at 23": false
+            }
+          }
+        },
+        "E_one_per_selected_edge": {
+          "6": {
+            "picked": [
+              "driver-sebastian-vettel#58",
+              "driver-sebastian-vettel#22",
+              "driver-sebastian-vettel#14",
+              "driver-sebastian-vettel#50",
+              "season-2012-formula-one-world-championship#181",
+              "driver-fernando-alonso#3"
+            ],
+            "hops": {
+              "vettel youngest champion at 23": false
+            }
+          },
+          "8": {
+            "picked": [
+              "driver-sebastian-vettel#58",
+              "driver-sebastian-vettel#22",
+              "driver-sebastian-vettel#14",
+              "driver-sebastian-vettel#50",
+              "season-2012-formula-one-world-championship#181",
+              "driver-fernando-alonso#3",
+              "driver-fernando-alonso#48",
+              "season-2021-formula-one-world-championship#9"
+            ],
+            "hops": {
+              "vettel youngest champion at 23": false
+            }
+          },
+          "10": {
+            "picked": [
+              "driver-sebastian-vettel#58",
+              "driver-sebastian-vettel#22",
+              "driver-sebastian-vettel#14",
+              "driver-sebastian-vettel#50",
+              "season-2012-formula-one-world-championship#181",
+              "driver-fernando-alonso#3",
+              "driver-fernando-alonso#48",
+              "season-2021-formula-one-world-championship#9",
+              "season-2012-formula-one-world-championship#89",
+              "reference-list-of-formula-one-world-drivers-champions#1"
+            ],
+            "hops": {
+              "vettel youngest champion at 23": false
+            }
+          }
+        },
+        "F_rank_by_edge_support": {
+          "6": {
+            "picked": [
+              "driver-fernando-alonso#3",
+              "driver-sebastian-vettel#58",
+              "driver-sebastian-vettel#22",
+              "driver-fernando-alonso#33",
+              "season-2012-formula-one-world-championship#181",
+              "driver-fernando-alonso#48"
+            ],
+            "hops": {
+              "vettel youngest champion at 23": false
+            }
+          },
+          "8": {
+            "picked": [
+              "driver-fernando-alonso#3",
+              "driver-sebastian-vettel#58",
+              "driver-sebastian-vettel#22",
+              "driver-fernando-alonso#33",
+              "season-2012-formula-one-world-championship#181",
+              "driver-fernando-alonso#48",
+              "driver-sebastian-vettel#14",
+              "driver-sebastian-vettel#50"
+            ],
+            "hops": {
+              "vettel youngest champion at 23": false
+            }
+          },
+          "10": {
+            "picked": [
+              "driver-fernando-alonso#3",
+              "driver-sebastian-vettel#58",
+              "driver-sebastian-vettel#22",
+              "driver-fernando-alonso#33",
+              "season-2012-formula-one-world-championship#181",
+              "driver-fernando-alonso#48",
+              "driver-sebastian-vettel#14",
+              "driver-sebastian-vettel#50",
+              "season-2021-formula-one-world-championship#9",
+              "season-2012-formula-one-world-championship#89"
+            ],
+            "hops": {
+              "vettel youngest champion at 23": false
+            }
+          }
+        }
+      },
+      "upper_bounds": {
+        "vettel youngest champion at 23": {
+          "in_corpus": 1,
+          "linked_to_graph": 0,
+          "in_candidate_pool": 0,
+          "best_rank_by_score": null
+        }
+      }
+    },
+    "Q03": {
+      "pool_size": 136,
+      "policies": {
+        "A_current": {
+          "6": {
+            "picked": [
+              "driver-lewis-hamilton#0",
+              "season-2021-formula-one-world-championship#0",
+              "driver-valtteri-bottas#75",
+              "driver-michael-schumacher#74",
+              "season-2021-formula-one-world-championship#41",
+              "driver-valtteri-bottas#80"
+            ],
+            "hops": {
+              "verstappen won 2021 title": false
+            }
+          },
+          "8": {
+            "picked": [
+              "driver-lewis-hamilton#0",
+              "driver-nico-rosberg#0",
+              "season-2021-formula-one-world-championship#0",
+              "driver-valtteri-bottas#75",
+              "driver-michael-schumacher#74",
+              "season-2021-formula-one-world-championship#41",
+              "driver-valtteri-bottas#80",
+              "season-2021-formula-one-world-championship#15"
+            ],
+            "hops": {
+              "verstappen won 2021 title": false
+            }
+          },
+          "10": {
+            "picked": [
+              "driver-lewis-hamilton#0",
+              "driver-michael-schumacher#0",
+              "driver-nico-rosberg#0",
+              "season-2021-formula-one-world-championship#0",
+              "driver-nico-rosberg#18",
+              "driver-valtteri-bottas#75",
+              "driver-michael-schumacher#74",
+              "season-2021-formula-one-world-championship#41",
+              "driver-valtteri-bottas#80",
+              "season-2021-formula-one-world-championship#15"
+            ],
+            "hops": {
+              "verstappen won 2021 title": false
+            }
+          }
+        },
+        "B_no_reserve": {
+          "6": {
+            "picked": [
+              "driver-lewis-hamilton#0",
+              "driver-michael-schumacher#0",
+              "driver-nico-rosberg#0",
+              "season-2021-formula-one-world-championship#0",
+              "driver-nico-rosberg#18",
+              "driver-valtteri-bottas#75"
+            ],
+            "hops": {
+              "verstappen won 2021 title": false
+            }
+          },
+          "8": {
+            "picked": [
+              "driver-lewis-hamilton#0",
+              "driver-michael-schumacher#0",
+              "driver-nico-rosberg#0",
+              "season-2021-formula-one-world-championship#0",
+              "driver-nico-rosberg#18",
+              "driver-valtteri-bottas#75",
+              "driver-lewis-hamilton#13",
+              "driver-lewis-hamilton#1"
+            ],
+            "hops": {
+              "verstappen won 2021 title": false
+            }
+          },
+          "10": {
+            "picked": [
+              "driver-lewis-hamilton#0",
+              "driver-michael-schumacher#0",
+              "driver-nico-rosberg#0",
+              "season-2021-formula-one-world-championship#0",
+              "driver-nico-rosberg#18",
+              "driver-valtteri-bottas#75",
+              "driver-lewis-hamilton#13",
+              "driver-lewis-hamilton#1",
+              "driver-lewis-hamilton#114",
+              "driver-lewis-hamilton#173"
+            ],
+            "hops": {
+              "verstappen won 2021 title": false
+            }
+          }
+        },
+        "C_anchor_reserve_only": {
+          "6": {
+            "picked": [
+              "driver-valtteri-bottas#80",
+              "season-2021-formula-one-world-championship#0",
+              "driver-valtteri-bottas#75",
+              "driver-lewis-hamilton#0",
+              "driver-michael-schumacher#0",
+              "driver-nico-rosberg#0"
+            ],
+            "hops": {
+              "verstappen won 2021 title": false
+            }
+          },
+          "8": {
+            "picked": [
+              "driver-valtteri-bottas#80",
+              "season-2021-formula-one-world-championship#0",
+              "driver-valtteri-bottas#75",
+              "driver-lewis-hamilton#0",
+              "driver-michael-schumacher#0",
+              "driver-nico-rosberg#0",
+              "driver-nico-rosberg#18",
+              "driver-lewis-hamilton#13"
+            ],
+            "hops": {
+              "verstappen won 2021 title": false
+            }
+          },
+          "10": {
+            "picked": [
+              "driver-valtteri-bottas#80",
+              "season-2021-formula-one-world-championship#0",
+              "driver-valtteri-bottas#75",
+              "driver-lewis-hamilton#0",
+              "driver-michael-schumacher#0",
+              "driver-nico-rosberg#0",
+              "driver-nico-rosberg#18",
+              "driver-lewis-hamilton#13",
+              "driver-lewis-hamilton#1",
+              "driver-lewis-hamilton#114"
+            ],
+            "hops": {
+              "verstappen won 2021 title": false
+            }
+          }
+        },
+        "D_edge_sources_first": {
+          "6": {
+            "picked": [
+              "driver-lewis-hamilton#31",
+              "driver-lewis-hamilton#50",
+              "season-2021-formula-one-world-championship#41",
+              "season-2021-formula-one-world-championship#15",
+              "driver-lewis-hamilton#39",
+              "driver-lewis-hamilton#0"
+            ],
+            "hops": {
+              "verstappen won 2021 title": false
+            }
+          },
+          "8": {
+            "picked": [
+              "driver-lewis-hamilton#31",
+              "driver-lewis-hamilton#50",
+              "season-2021-formula-one-world-championship#41",
+              "season-2021-formula-one-world-championship#15",
+              "driver-lewis-hamilton#39",
+              "driver-lewis-hamilton#0",
+              "driver-michael-schumacher#0",
+              "driver-nico-rosberg#0"
+            ],
+            "hops": {
+              "verstappen won 2021 title": false
+            }
+          },
+          "10": {
+            "picked": [
+              "driver-lewis-hamilton#31",
+              "driver-lewis-hamilton#50",
+              "season-2021-formula-one-world-championship#41",
+              "season-2021-formula-one-world-championship#15",
+              "driver-lewis-hamilton#39",
+              "driver-lewis-hamilton#0",
+              "driver-michael-schumacher#0",
+              "driver-nico-rosberg#0",
+              "season-2021-formula-one-world-championship#0",
+              "driver-nico-rosberg#18"
+            ],
+            "hops": {
+              "verstappen won 2021 title": false
+            }
+          }
+        },
+        "E_one_per_selected_edge": {
+          "6": {
+            "picked": [
+              "driver-lewis-hamilton#31",
+              "driver-lewis-hamilton#39",
+              "season-2021-formula-one-world-championship#41",
+              "season-2021-formula-one-world-championship#15",
+              "driver-lewis-hamilton#0",
+              "driver-michael-schumacher#0"
+            ],
+            "hops": {
+              "verstappen won 2021 title": false
+            }
+          },
+          "8": {
+            "picked": [
+              "driver-lewis-hamilton#31",
+              "driver-lewis-hamilton#39",
+              "season-2021-formula-one-world-championship#41",
+              "season-2021-formula-one-world-championship#15",
+              "driver-lewis-hamilton#0",
+              "driver-michael-schumacher#0",
+              "driver-nico-rosberg#0",
+              "season-2021-formula-one-world-championship#0"
+            ],
+            "hops": {
+              "verstappen won 2021 title": false
+            }
+          },
+          "10": {
+            "picked": [
+              "driver-lewis-hamilton#31",
+              "driver-lewis-hamilton#39",
+              "season-2021-formula-one-world-championship#41",
+              "season-2021-formula-one-world-championship#15",
+              "driver-lewis-hamilton#0",
+              "driver-michael-schumacher#0",
+              "driver-nico-rosberg#0",
+              "season-2021-formula-one-world-championship#0",
+              "driver-nico-rosberg#18",
+              "driver-valtteri-bottas#75"
+            ],
+            "hops": {
+              "verstappen won 2021 title": false
+            }
+          }
+        },
+        "F_rank_by_edge_support": {
+          "6": {
+            "picked": [
+              "season-2021-formula-one-world-championship#41",
+              "driver-lewis-hamilton#31",
+              "driver-lewis-hamilton#50",
+              "season-2021-formula-one-world-championship#15",
+              "driver-lewis-hamilton#39",
+              "driver-lewis-hamilton#0"
+            ],
+            "hops": {
+              "verstappen won 2021 title": false
+            }
+          },
+          "8": {
+            "picked": [
+              "season-2021-formula-one-world-championship#41",
+              "driver-lewis-hamilton#31",
+              "driver-lewis-hamilton#50",
+              "season-2021-formula-one-world-championship#15",
+              "driver-lewis-hamilton#39",
+              "driver-lewis-hamilton#0",
+              "driver-michael-schumacher#0",
+              "driver-nico-rosberg#0"
+            ],
+            "hops": {
+              "verstappen won 2021 title": false
+            }
+          },
+          "10": {
+            "picked": [
+              "season-2021-formula-one-world-championship#41",
+              "driver-lewis-hamilton#31",
+              "driver-lewis-hamilton#50",
+              "season-2021-formula-one-world-championship#15",
+              "driver-lewis-hamilton#39",
+              "driver-lewis-hamilton#0",
+              "driver-michael-schumacher#0",
+              "driver-nico-rosberg#0",
+              "season-2021-formula-one-world-championship#0",
+              "driver-nico-rosberg#18"
+            ],
+            "hops": {
+              "verstappen won 2021 title": false
+            }
+          }
+        }
+      },
+      "upper_bounds": {
+        "verstappen won 2021 title": {
+          "in_corpus": 5,
+          "linked_to_graph": 0,
+          "in_candidate_pool": 0,
+          "best_rank_by_score": null
+        }
+      }
+    },
+    "Q04": {
+      "pool_size": 218,
+      "policies": {
+        "A_current": {
+          "6": {
+            "picked": [
+              "driver-nico-rosberg#0",
+              "driver-lewis-hamilton#99",
+              "driver-nico-rosberg#18",
+              "reference-list-of-formula-one-world-drivers-champions#1",
+              "season-2016-formula-one-world-championship#18",
+              "driver-valtteri-bottas#114"
+            ],
+            "hops": {
+              "rosberg won 2016 title": true,
+              "hamilton was his 2016 teammate": false
+            }
+          },
+          "8": {
+            "picked": [
+              "driver-nico-rosberg#0",
+              "driver-lewis-hamilton#99",
+              "driver-nico-rosberg#18",
+              "driver-nico-rosberg#65",
+              "reference-list-of-formula-one-world-drivers-champions#1",
+              "season-2016-formula-one-world-championship#18",
+              "driver-valtteri-bottas#102",
+              "driver-valtteri-bottas#114"
+            ],
+            "hops": {
+              "rosberg won 2016 title": true,
+              "hamilton was his 2016 teammate": false
+            }
+          },
+          "10": {
+            "picked": [
+              "driver-nico-rosberg#0",
+              "driver-lewis-hamilton#99",
+              "driver-nico-rosberg#18",
+              "driver-nico-rosberg#65",
+              "driver-valtteri-bottas#75",
+              "reference-list-of-formula-one-world-drivers-champions#1",
+              "season-2021-formula-one-world-championship#9",
+              "season-2016-formula-one-world-championship#18",
+              "driver-valtteri-bottas#102",
+              "driver-valtteri-bottas#114"
+            ],
+            "hops": {
+              "rosberg won 2016 title": true,
+              "hamilton was his 2016 teammate": false
+            }
+          }
+        },
+        "B_no_reserve": {
+          "6": {
+            "picked": [
+              "driver-nico-rosberg#0",
+              "driver-lewis-hamilton#99",
+              "driver-nico-rosberg#18",
+              "driver-nico-rosberg#65",
+              "driver-valtteri-bottas#75",
+              "reference-list-of-formula-one-world-drivers-champions#1"
+            ],
+            "hops": {
+              "rosberg won 2016 title": true,
+              "hamilton was his 2016 teammate": false
+            }
+          },
+          "8": {
+            "picked": [
+              "driver-nico-rosberg#0",
+              "driver-lewis-hamilton#99",
+              "driver-nico-rosberg#18",
+              "driver-nico-rosberg#65",
+              "driver-valtteri-bottas#75",
+              "reference-list-of-formula-one-world-drivers-champions#1",
+              "season-2021-formula-one-world-championship#9",
+              "driver-lewis-hamilton#39"
+            ],
+            "hops": {
+              "rosberg won 2016 title": true,
+              "hamilton was his 2016 teammate": true
+            }
+          },
+          "10": {
+            "picked": [
+              "driver-nico-rosberg#0",
+              "driver-lewis-hamilton#99",
+              "driver-nico-rosberg#18",
+              "driver-nico-rosberg#65",
+              "driver-valtteri-bottas#75",
+              "reference-list-of-formula-one-world-drivers-champions#1",
+              "season-2021-formula-one-world-championship#9",
+              "driver-lewis-hamilton#39",
+              "driver-michael-schumacher#105",
+              "season-2016-formula-one-world-championship#18"
+            ],
+            "hops": {
+              "rosberg won 2016 title": true,
+              "hamilton was his 2016 teammate": true
+            }
+          }
+        },
+        "C_anchor_reserve_only": {
+          "6": {
+            "picked": [
+              "driver-nico-rosberg#0",
+              "reference-list-of-formula-one-world-drivers-champions#1",
+              "season-2016-formula-one-world-championship#18",
+              "driver-lewis-hamilton#99",
+              "driver-nico-rosberg#18",
+              "driver-nico-rosberg#65"
+            ],
+            "hops": {
+              "rosberg won 2016 title": true,
+              "hamilton was his 2016 teammate": false
+            }
+          },
+          "8": {
+            "picked": [
+              "driver-nico-rosberg#0",
+              "reference-list-of-formula-one-world-drivers-champions#1",
+              "season-2016-formula-one-world-championship#18",
+              "driver-lewis-hamilton#99",
+              "driver-nico-rosberg#18",
+              "driver-nico-rosberg#65",
+              "driver-valtteri-bottas#75",
+              "season-2021-formula-one-world-championship#9"
+            ],
+            "hops": {
+              "rosberg won 2016 title": true,
+              "hamilton was his 2016 teammate": false
+            }
+          },
+          "10": {
+            "picked": [
+              "driver-nico-rosberg#0",
+              "reference-list-of-formula-one-world-drivers-champions#1",
+              "season-2016-formula-one-world-championship#18",
+              "driver-lewis-hamilton#99",
+              "driver-nico-rosberg#18",
+              "driver-nico-rosberg#65",
+              "driver-valtteri-bottas#75",
+              "season-2021-formula-one-world-championship#9",
+              "driver-lewis-hamilton#39",
+              "driver-michael-schumacher#105"
+            ],
+            "hops": {
+              "rosberg won 2016 title": true,
+              "hamilton was his 2016 teammate": true
+            }
+          }
+        },
+        "D_edge_sources_first": {
+          "6": {
+            "picked": [
+              "driver-nico-rosberg#0",
+              "driver-nico-rosberg#18",
+              "driver-lewis-hamilton#39",
+              "driver-lewis-hamilton#114",
+              "driver-valtteri-bottas#114",
+              "team-mercedes-benz-in-formula-one#42"
+            ],
+            "hops": {
+              "rosberg won 2016 title": true,
+              "hamilton was his 2016 teammate": true
+            }
+          },
+          "8": {
+            "picked": [
+              "driver-nico-rosberg#0",
+              "driver-nico-rosberg#18",
+              "driver-lewis-hamilton#39",
+              "driver-lewis-hamilton#114",
+              "driver-valtteri-bottas#114",
+              "team-mercedes-benz-in-formula-one#42",
+              "driver-lewis-hamilton#115",
+              "driver-lewis-hamilton#107"
+            ],
+            "hops": {
+              "rosberg won 2016 title": true,
+              "hamilton was his 2016 teammate": true
+            }
+          },
+          "10": {
+            "picked": [
+              "driver-nico-rosberg#0",
+              "driver-nico-rosberg#18",
+              "driver-lewis-hamilton#39",
+              "driver-lewis-hamilton#114",
+              "driver-valtteri-bottas#114",
+              "team-mercedes-benz-in-formula-one#42",
+              "driver-lewis-hamilton#115",
+              "driver-lewis-hamilton#107",
+              "driver-lewis-hamilton#116",
+              "driver-lewis-hamilton#119"
+            ],
+            "hops": {
+              "rosberg won 2016 title": true,
+              "hamilton was his 2016 teammate": true
+            }
+          }
+        },
+        "E_one_per_selected_edge": {
+          "6": {
+            "picked": [
+              "driver-lewis-hamilton#39",
+              "driver-valtteri-bottas#114",
+              "driver-nico-rosberg#0",
+              "driver-lewis-hamilton#114",
+              "driver-nico-rosberg#18",
+              "driver-lewis-hamilton#99"
+            ],
+            "hops": {
+              "rosberg won 2016 title": true,
+              "hamilton was his 2016 teammate": true
+            }
+          },
+          "8": {
+            "picked": [
+              "driver-lewis-hamilton#39",
+              "driver-valtteri-bottas#114",
+              "driver-nico-rosberg#0",
+              "driver-lewis-hamilton#114",
+              "driver-nico-rosberg#18",
+              "driver-lewis-hamilton#99",
+              "driver-nico-rosberg#65",
+              "driver-valtteri-bottas#75"
+            ],
+            "hops": {
+              "rosberg won 2016 title": true,
+              "hamilton was his 2016 teammate": true
+            }
+          },
+          "10": {
+            "picked": [
+              "driver-lewis-hamilton#39",
+              "driver-valtteri-bottas#114",
+              "driver-nico-rosberg#0",
+              "driver-lewis-hamilton#114",
+              "driver-nico-rosberg#18",
+              "driver-lewis-hamilton#99",
+              "driver-nico-rosberg#65",
+              "driver-valtteri-bottas#75",
+              "reference-list-of-formula-one-world-drivers-champions#1",
+              "season-2021-formula-one-world-championship#9"
+            ],
+            "hops": {
+              "rosberg won 2016 title": true,
+              "hamilton was his 2016 teammate": true
+            }
+          }
+        },
+        "F_rank_by_edge_support": {
+          "6": {
+            "picked": [
+              "driver-nico-rosberg#0",
+              "driver-lewis-hamilton#39",
+              "driver-nico-rosberg#18",
+              "driver-lewis-hamilton#114",
+              "driver-valtteri-bottas#114",
+              "team-mercedes-benz-in-formula-one#42"
+            ],
+            "hops": {
+              "rosberg won 2016 title": true,
+              "hamilton was his 2016 teammate": true
+            }
+          },
+          "8": {
+            "picked": [
+              "driver-nico-rosberg#0",
+              "driver-lewis-hamilton#39",
+              "driver-nico-rosberg#18",
+              "driver-lewis-hamilton#114",
+              "driver-valtteri-bottas#114",
+              "team-mercedes-benz-in-formula-one#42",
+              "driver-lewis-hamilton#115",
+              "driver-lewis-hamilton#107"
+            ],
+            "hops": {
+              "rosberg won 2016 title": true,
+              "hamilton was his 2016 teammate": true
+            }
+          },
+          "10": {
+            "picked": [
+              "driver-nico-rosberg#0",
+              "driver-lewis-hamilton#39",
+              "driver-nico-rosberg#18",
+              "driver-lewis-hamilton#114",
+              "driver-valtteri-bottas#114",
+              "team-mercedes-benz-in-formula-one#42",
+              "driver-lewis-hamilton#115",
+              "driver-lewis-hamilton#107",
+              "driver-lewis-hamilton#116",
+              "driver-lewis-hamilton#119"
+            ],
+            "hops": {
+              "rosberg won 2016 title": true,
+              "hamilton was his 2016 teammate": true
+            }
+          }
+        }
+      },
+      "upper_bounds": {
+        "rosberg won 2016 title": {
+          "in_corpus": 8,
+          "linked_to_graph": 1,
+          "in_candidate_pool": 1,
+          "best_rank_by_score": 1
+        },
+        "hamilton was his 2016 teammate": {
+          "in_corpus": 5,
+          "linked_to_graph": 1,
+          "in_candidate_pool": 1,
+          "best_rank_by_score": 8
+        }
+      }
+    },
+    "Q05": {
+      "pool_size": 144,
+      "policies": {
+        "A_current": {
+          "6": {
+            "picked": [
+              "season-2012-formula-one-world-championship#21",
+              "driver-lewis-hamilton#70",
+              "season-2021-formula-one-world-championship#9",
+              "driver-fernando-alonso#135",
+              "driver-valtteri-bottas#79",
+              "season-2012-formula-one-world-championship#119"
+            ],
+            "hops": {
+              "vettel won 2012 title": false,
+              "vettel left red bull for ferrari": false,
+              "ferrari move effective 2015": false
+            }
+          },
+          "8": {
+            "picked": [
+              "season-2012-formula-one-world-championship#21",
+              "driver-lewis-hamilton#70",
+              "season-2021-formula-one-world-championship#9",
+              "driver-fernando-alonso#135",
+              "driver-sebastian-vettel#58",
+              "driver-fernando-alonso#3",
+              "driver-valtteri-bottas#79",
+              "season-2012-formula-one-world-championship#119"
+            ],
+            "hops": {
+              "vettel won 2012 title": false,
+              "vettel left red bull for ferrari": false,
+              "ferrari move effective 2015": false
+            }
+          },
+          "10": {
+            "picked": [
+              "season-2012-formula-one-world-championship#21",
+              "driver-lewis-hamilton#70",
+              "season-2021-formula-one-world-championship#9",
+              "driver-fernando-alonso#135",
+              "driver-michael-schumacher#120",
+              "driver-michael-schumacher#126",
+              "driver-sebastian-vettel#58",
+              "driver-fernando-alonso#3",
+              "driver-valtteri-bottas#79",
+              "season-2012-formula-one-world-championship#119"
+            ],
+            "hops": {
+              "vettel won 2012 title": false,
+              "vettel left red bull for ferrari": false,
+              "ferrari move effective 2015": false
+            }
+          }
+        },
+        "B_no_reserve": {
+          "6": {
+            "picked": [
+              "season-2012-formula-one-world-championship#21",
+              "driver-lewis-hamilton#70",
+              "season-2021-formula-one-world-championship#9",
+              "driver-fernando-alonso#135",
+              "driver-michael-schumacher#120",
+              "driver-michael-schumacher#126"
+            ],
+            "hops": {
+              "vettel won 2012 title": false,
+              "vettel left red bull for ferrari": false,
+              "ferrari move effective 2015": false
+            }
+          },
+          "8": {
+            "picked": [
+              "season-2012-formula-one-world-championship#21",
+              "driver-lewis-hamilton#70",
+              "season-2021-formula-one-world-championship#9",
+              "driver-fernando-alonso#135",
+              "driver-michael-schumacher#120",
+              "driver-michael-schumacher#126",
+              "driver-nico-rosberg#60",
+              "driver-nico-rosberg#65"
+            ],
+            "hops": {
+              "vettel won 2012 title": false,
+              "vettel left red bull for ferrari": false,
+              "ferrari move effective 2015": false
+            }
+          },
+          "10": {
+            "picked": [
+              "season-2012-formula-one-world-championship#21",
+              "driver-lewis-hamilton#70",
+              "season-2021-formula-one-world-championship#9",
+              "driver-fernando-alonso#135",
+              "driver-michael-schumacher#120",
+              "driver-michael-schumacher#126",
+              "driver-nico-rosberg#60",
+              "driver-nico-rosberg#65",
+              "driver-sebastian-vettel#58",
+              "driver-valtteri-bottas#75"
+            ],
+            "hops": {
+              "vettel won 2012 title": false,
+              "vettel left red bull for ferrari": false,
+              "ferrari move effective 2015": false
+            }
+          }
+        },
+        "C_anchor_reserve_only": {
+          "6": {
+            "picked": [
+              "driver-lewis-hamilton#70",
+              "driver-fernando-alonso#135",
+              "season-2021-formula-one-world-championship#9",
+              "season-2012-formula-one-world-championship#21",
+              "driver-michael-schumacher#120",
+              "driver-michael-schumacher#126"
+            ],
+            "hops": {
+              "vettel won 2012 title": false,
+              "vettel left red bull for ferrari": false,
+              "ferrari move effective 2015": false
+            }
+          },
+          "8": {
+            "picked": [
+              "driver-lewis-hamilton#70",
+              "driver-fernando-alonso#135",
+              "season-2021-formula-one-world-championship#9",
+              "season-2012-formula-one-world-championship#21",
+              "driver-michael-schumacher#120",
+              "driver-michael-schumacher#126",
+              "driver-nico-rosberg#60",
+              "driver-nico-rosberg#65"
+            ],
+            "hops": {
+              "vettel won 2012 title": false,
+              "vettel left red bull for ferrari": false,
+              "ferrari move effective 2015": false
+            }
+          },
+          "10": {
+            "picked": [
+              "driver-lewis-hamilton#70",
+              "driver-fernando-alonso#135",
+              "season-2021-formula-one-world-championship#9",
+              "season-2012-formula-one-world-championship#21",
+              "driver-michael-schumacher#120",
+              "driver-michael-schumacher#126",
+              "driver-nico-rosberg#60",
+              "driver-nico-rosberg#65",
+              "driver-sebastian-vettel#58",
+              "driver-valtteri-bottas#75"
+            ],
+            "hops": {
+              "vettel won 2012 title": false,
+              "vettel left red bull for ferrari": false,
+              "ferrari move effective 2015": false
+            }
+          }
+        },
+        "D_edge_sources_first": {
+          "6": {
+            "picked": [
+              "driver-nico-rosberg#60",
+              "driver-sebastian-vettel#58",
+              "driver-fernando-alonso#3",
+              "driver-fernando-alonso#33",
+              "season-2012-formula-one-world-championship#39",
+              "driver-valtteri-bottas#79"
+            ],
+            "hops": {
+              "vettel won 2012 title": false,
+              "vettel left red bull for ferrari": false,
+              "ferrari move effective 2015": false
+            }
+          },
+          "8": {
+            "picked": [
+              "driver-nico-rosberg#60",
+              "driver-sebastian-vettel#58",
+              "driver-fernando-alonso#3",
+              "driver-fernando-alonso#33",
+              "season-2012-formula-one-world-championship#39",
+              "driver-valtteri-bottas#79",
+              "season-2012-formula-one-world-championship#119",
+              "season-2012-formula-one-world-championship#21"
+            ],
+            "hops": {
+              "vettel won 2012 title": false,
+              "vettel left red bull for ferrari": false,
+              "ferrari move effective 2015": false
+            }
+          },
+          "10": {
+            "picked": [
+              "driver-nico-rosberg#60",
+              "driver-sebastian-vettel#58",
+              "driver-fernando-alonso#3",
+              "driver-fernando-alonso#33",
+              "season-2012-formula-one-world-championship#39",
+              "driver-valtteri-bottas#79",
+              "season-2012-formula-one-world-championship#119",
+              "season-2012-formula-one-world-championship#21",
+              "driver-lewis-hamilton#70",
+              "season-2021-formula-one-world-championship#9"
+            ],
+            "hops": {
+              "vettel won 2012 title": false,
+              "vettel left red bull for ferrari": false,
+              "ferrari move effective 2015": false
+            }
+          }
+        },
+        "E_one_per_selected_edge": {
+          "6": {
+            "picked": [
+              "driver-valtteri-bottas#79",
+              "driver-sebastian-vettel#58",
+              "driver-fernando-alonso#3",
+              "season-2012-formula-one-world-championship#119",
+              "driver-nico-rosberg#60",
+              "season-2012-formula-one-world-championship#21"
+            ],
+            "hops": {
+              "vettel won 2012 title": false,
+              "vettel left red bull for ferrari": false,
+              "ferrari move effective 2015": false
+            }
+          },
+          "8": {
+            "picked": [
+              "driver-valtteri-bottas#79",
+              "driver-sebastian-vettel#58",
+              "driver-fernando-alonso#3",
+              "season-2012-formula-one-world-championship#119",
+              "driver-nico-rosberg#60",
+              "season-2012-formula-one-world-championship#21",
+              "driver-lewis-hamilton#70",
+              "season-2021-formula-one-world-championship#9"
+            ],
+            "hops": {
+              "vettel won 2012 title": false,
+              "vettel left red bull for ferrari": false,
+              "ferrari move effective 2015": false
+            }
+          },
+          "10": {
+            "picked": [
+              "driver-valtteri-bottas#79",
+              "driver-sebastian-vettel#58",
+              "driver-fernando-alonso#3",
+              "season-2012-formula-one-world-championship#119",
+              "driver-nico-rosberg#60",
+              "season-2012-formula-one-world-championship#21",
+              "driver-lewis-hamilton#70",
+              "season-2021-formula-one-world-championship#9",
+              "driver-fernando-alonso#135",
+              "driver-michael-schumacher#120"
+            ],
+            "hops": {
+              "vettel won 2012 title": false,
+              "vettel left red bull for ferrari": false,
+              "ferrari move effective 2015": false
+            }
+          }
+        },
+        "F_rank_by_edge_support": {
+          "6": {
+            "picked": [
+              "driver-nico-rosberg#60",
+              "driver-sebastian-vettel#58",
+              "driver-fernando-alonso#3",
+              "driver-fernando-alonso#33",
+              "season-2012-formula-one-world-championship#39",
+              "driver-valtteri-bottas#79"
+            ],
+            "hops": {
+              "vettel won 2012 title": false,
+              "vettel left red bull for ferrari": false,
+              "ferrari move effective 2015": false
+            }
+          },
+          "8": {
+            "picked": [
+              "driver-nico-rosberg#60",
+              "driver-sebastian-vettel#58",
+              "driver-fernando-alonso#3",
+              "driver-fernando-alonso#33",
+              "season-2012-formula-one-world-championship#39",
+              "driver-valtteri-bottas#79",
+              "season-2012-formula-one-world-championship#119",
+              "season-2012-formula-one-world-championship#21"
+            ],
+            "hops": {
+              "vettel won 2012 title": false,
+              "vettel left red bull for ferrari": false,
+              "ferrari move effective 2015": false
+            }
+          },
+          "10": {
+            "picked": [
+              "driver-nico-rosberg#60",
+              "driver-sebastian-vettel#58",
+              "driver-fernando-alonso#3",
+              "driver-fernando-alonso#33",
+              "season-2012-formula-one-world-championship#39",
+              "driver-valtteri-bottas#79",
+              "season-2012-formula-one-world-championship#119",
+              "season-2012-formula-one-world-championship#21",
+              "driver-lewis-hamilton#70",
+              "season-2021-formula-one-world-championship#9"
+            ],
+            "hops": {
+              "vettel won 2012 title": false,
+              "vettel left red bull for ferrari": false,
+              "ferrari move effective 2015": false
+            }
+          }
+        }
+      },
+      "upper_bounds": {
+        "vettel won 2012 title": {
+          "in_corpus": 8,
+          "linked_to_graph": 0,
+          "in_candidate_pool": 0,
+          "best_rank_by_score": null
+        },
+        "vettel left red bull for ferrari": {
+          "in_corpus": 1,
+          "linked_to_graph": 0,
+          "in_candidate_pool": 0,
+          "best_rank_by_score": null
+        },
+        "ferrari move effective 2015": {
+          "in_corpus": 2,
+          "linked_to_graph": 0,
+          "in_candidate_pool": 0,
+          "best_rank_by_score": null
+        }
+      }
+    },
+    "Q06": {
+      "pool_size": 185,
+      "policies": {
+        "A_current": {
+          "6": {
+            "picked": [
+              "driver-lewis-hamilton#0",
+              "driver-michael-schumacher#0",
+              "driver-lewis-hamilton#50",
+              "driver-michael-schumacher#178",
+              "driver-sebastian-vettel#94",
+              "driver-valtteri-bottas#79"
+            ],
+            "hops": {
+              "hamilton seven titles": true,
+              "schumacher seven titles": false,
+              "schumacher benetton titles": false,
+              "schumacher ferrari titles": false,
+              "hamilton mclaren 2008 title": false,
+              "hamilton mercedes titles": false
+            }
+          },
+          "8": {
+            "picked": [
+              "driver-lewis-hamilton#0",
+              "driver-michael-schumacher#0",
+              "driver-lewis-hamilton#50",
+              "driver-valtteri-bottas#75",
+              "driver-lewis-hamilton#95",
+              "driver-michael-schumacher#178",
+              "driver-sebastian-vettel#94",
+              "driver-valtteri-bottas#79"
+            ],
+            "hops": {
+              "hamilton seven titles": true,
+              "schumacher seven titles": false,
+              "schumacher benetton titles": false,
+              "schumacher ferrari titles": false,
+              "hamilton mclaren 2008 title": false,
+              "hamilton mercedes titles": true
+            }
+          },
+          "10": {
+            "picked": [
+              "driver-lewis-hamilton#0",
+              "driver-michael-schumacher#0",
+              "driver-nico-rosberg#18",
+              "driver-lewis-hamilton#50",
+              "driver-valtteri-bottas#75",
+              "driver-lewis-hamilton#1",
+              "driver-lewis-hamilton#95",
+              "driver-michael-schumacher#178",
+              "driver-sebastian-vettel#94",
+              "driver-valtteri-bottas#79"
+            ],
+            "hops": {
+              "hamilton seven titles": true,
+              "schumacher seven titles": false,
+              "schumacher benetton titles": false,
+              "schumacher ferrari titles": false,
+              "hamilton mclaren 2008 title": false,
+              "hamilton mercedes titles": true
+            }
+          }
+        },
+        "B_no_reserve": {
+          "6": {
+            "picked": [
+              "driver-lewis-hamilton#0",
+              "driver-michael-schumacher#0",
+              "driver-nico-rosberg#18",
+              "driver-lewis-hamilton#50",
+              "driver-valtteri-bottas#75",
+              "driver-lewis-hamilton#1"
+            ],
+            "hops": {
+              "hamilton seven titles": true,
+              "schumacher seven titles": false,
+              "schumacher benetton titles": false,
+              "schumacher ferrari titles": false,
+              "hamilton mclaren 2008 title": false,
+              "hamilton mercedes titles": false
+            }
+          },
+          "8": {
+            "picked": [
+              "driver-lewis-hamilton#0",
+              "driver-michael-schumacher#0",
+              "driver-nico-rosberg#18",
+              "driver-lewis-hamilton#50",
+              "driver-valtteri-bottas#75",
+              "driver-lewis-hamilton#1",
+              "driver-lewis-hamilton#101",
+              "driver-lewis-hamilton#31"
+            ],
+            "hops": {
+              "hamilton seven titles": true,
+              "schumacher seven titles": false,
+              "schumacher benetton titles": false,
+              "schumacher ferrari titles": false,
+              "hamilton mclaren 2008 title": false,
+              "hamilton mercedes titles": false
+            }
+          },
+          "10": {
+            "picked": [
+              "driver-lewis-hamilton#0",
+              "driver-michael-schumacher#0",
+              "driver-nico-rosberg#18",
+              "driver-lewis-hamilton#50",
+              "driver-valtteri-bottas#75",
+              "driver-lewis-hamilton#1",
+              "driver-lewis-hamilton#101",
+              "driver-lewis-hamilton#31",
+              "driver-lewis-hamilton#95",
+              "driver-michael-schumacher#106"
+            ],
+            "hops": {
+              "hamilton seven titles": true,
+              "schumacher seven titles": false,
+              "schumacher benetton titles": false,
+              "schumacher ferrari titles": false,
+              "hamilton mclaren 2008 title": false,
+              "hamilton mercedes titles": true
+            }
+          }
+        },
+        "C_anchor_reserve_only": {
+          "6": {
+            "picked": [
+              "driver-michael-schumacher#178",
+              "driver-michael-schumacher#0",
+              "driver-lewis-hamilton#50",
+              "driver-lewis-hamilton#0",
+              "driver-nico-rosberg#18",
+              "driver-valtteri-bottas#75"
+            ],
+            "hops": {
+              "hamilton seven titles": true,
+              "schumacher seven titles": false,
+              "schumacher benetton titles": false,
+              "schumacher ferrari titles": false,
+              "hamilton mclaren 2008 title": false,
+              "hamilton mercedes titles": false
+            }
+          },
+          "8": {
+            "picked": [
+              "driver-michael-schumacher#178",
+              "driver-michael-schumacher#0",
+              "driver-lewis-hamilton#50",
+              "driver-lewis-hamilton#0",
+              "driver-nico-rosberg#18",
+              "driver-valtteri-bottas#75",
+              "driver-lewis-hamilton#1",
+              "driver-lewis-hamilton#101"
+            ],
+            "hops": {
+              "hamilton seven titles": true,
+              "schumacher seven titles": false,
+              "schumacher benetton titles": false,
+              "schumacher ferrari titles": false,
+              "hamilton mclaren 2008 title": false,
+              "hamilton mercedes titles": false
+            }
+          },
+          "10": {
+            "picked": [
+              "driver-michael-schumacher#178",
+              "driver-michael-schumacher#0",
+              "driver-lewis-hamilton#50",
+              "driver-lewis-hamilton#0",
+              "driver-nico-rosberg#18",
+              "driver-valtteri-bottas#75",
+              "driver-lewis-hamilton#1",
+              "driver-lewis-hamilton#101",
+              "driver-lewis-hamilton#31",
+              "driver-lewis-hamilton#95"
+            ],
+            "hops": {
+              "hamilton seven titles": true,
+              "schumacher seven titles": false,
+              "schumacher benetton titles": false,
+              "schumacher ferrari titles": false,
+              "hamilton mclaren 2008 title": false,
+              "hamilton mercedes titles": true
+            }
+          }
+        },
+        "D_edge_sources_first": {
+          "6": {
+            "picked": [
+              "driver-lewis-hamilton#50",
+              "driver-valtteri-bottas#75",
+              "driver-lewis-hamilton#31",
+              "driver-michael-schumacher#178",
+              "driver-valtteri-bottas#79",
+              "driver-lewis-hamilton#0"
+            ],
+            "hops": {
+              "hamilton seven titles": true,
+              "schumacher seven titles": false,
+              "schumacher benetton titles": false,
+              "schumacher ferrari titles": false,
+              "hamilton mclaren 2008 title": false,
+              "hamilton mercedes titles": false
+            }
+          },
+          "8": {
+            "picked": [
+              "driver-lewis-hamilton#50",
+              "driver-valtteri-bottas#75",
+              "driver-lewis-hamilton#31",
+              "driver-michael-schumacher#178",
+              "driver-valtteri-bottas#79",
+              "driver-lewis-hamilton#0",
+              "driver-michael-schumacher#0",
+              "driver-nico-rosberg#18"
+            ],
+            "hops": {
+              "hamilton seven titles": true,
+              "schumacher seven titles": false,
+              "schumacher benetton titles": false,
+              "schumacher ferrari titles": false,
+              "hamilton mclaren 2008 title": false,
+              "hamilton mercedes titles": false
+            }
+          },
+          "10": {
+            "picked": [
+              "driver-lewis-hamilton#50",
+              "driver-valtteri-bottas#75",
+              "driver-lewis-hamilton#31",
+              "driver-michael-schumacher#178",
+              "driver-valtteri-bottas#79",
+              "driver-lewis-hamilton#0",
+              "driver-michael-schumacher#0",
+              "driver-nico-rosberg#18",
+              "driver-lewis-hamilton#1",
+              "driver-lewis-hamilton#101"
+            ],
+            "hops": {
+              "hamilton seven titles": true,
+              "schumacher seven titles": false,
+              "schumacher benetton titles": false,
+              "schumacher ferrari titles": false,
+              "hamilton mclaren 2008 title": false,
+              "hamilton mercedes titles": false
+            }
+          }
+        },
+        "E_one_per_selected_edge": {
+          "6": {
+            "picked": [
+              "driver-valtteri-bottas#79",
+              "driver-lewis-hamilton#50",
+              "driver-valtteri-bottas#75",
+              "driver-michael-schumacher#178",
+              "driver-lewis-hamilton#0",
+              "driver-michael-schumacher#0"
+            ],
+            "hops": {
+              "hamilton seven titles": true,
+              "schumacher seven titles": false,
+              "schumacher benetton titles": false,
+              "schumacher ferrari titles": false,
+              "hamilton mclaren 2008 title": false,
+              "hamilton mercedes titles": false
+            }
+          },
+          "8": {
+            "picked": [
+              "driver-valtteri-bottas#79",
+              "driver-lewis-hamilton#50",
+              "driver-valtteri-bottas#75",
+              "driver-michael-schumacher#178",
+              "driver-lewis-hamilton#0",
+              "driver-michael-schumacher#0",
+              "driver-nico-rosberg#18",
+              "driver-lewis-hamilton#1"
+            ],
+            "hops": {
+              "hamilton seven titles": true,
+              "schumacher seven titles": false,
+              "schumacher benetton titles": false,
+              "schumacher ferrari titles": false,
+              "hamilton mclaren 2008 title": false,
+              "hamilton mercedes titles": false
+            }
+          },
+          "10": {
+            "picked": [
+              "driver-valtteri-bottas#79",
+              "driver-lewis-hamilton#50",
+              "driver-valtteri-bottas#75",
+              "driver-michael-schumacher#178",
+              "driver-lewis-hamilton#0",
+              "driver-michael-schumacher#0",
+              "driver-nico-rosberg#18",
+              "driver-lewis-hamilton#1",
+              "driver-lewis-hamilton#101",
+              "driver-lewis-hamilton#31"
+            ],
+            "hops": {
+              "hamilton seven titles": true,
+              "schumacher seven titles": false,
+              "schumacher benetton titles": false,
+              "schumacher ferrari titles": false,
+              "hamilton mclaren 2008 title": false,
+              "hamilton mercedes titles": false
+            }
+          }
+        },
+        "F_rank_by_edge_support": {
+          "6": {
+            "picked": [
+              "driver-lewis-hamilton#50",
+              "driver-valtteri-bottas#75",
+              "driver-lewis-hamilton#31",
+              "driver-michael-schumacher#178",
+              "driver-valtteri-bottas#79",
+              "driver-lewis-hamilton#0"
+            ],
+            "hops": {
+              "hamilton seven titles": true,
+              "schumacher seven titles": false,
+              "schumacher benetton titles": false,
+              "schumacher ferrari titles": false,
+              "hamilton mclaren 2008 title": false,
+              "hamilton mercedes titles": false
+            }
+          },
+          "8": {
+            "picked": [
+              "driver-lewis-hamilton#50",
+              "driver-valtteri-bottas#75",
+              "driver-lewis-hamilton#31",
+              "driver-michael-schumacher#178",
+              "driver-valtteri-bottas#79",
+              "driver-lewis-hamilton#0",
+              "driver-michael-schumacher#0",
+              "driver-nico-rosberg#18"
+            ],
+            "hops": {
+              "hamilton seven titles": true,
+              "schumacher seven titles": false,
+              "schumacher benetton titles": false,
+              "schumacher ferrari titles": false,
+              "hamilton mclaren 2008 title": false,
+              "hamilton mercedes titles": false
+            }
+          },
+          "10": {
+            "picked": [
+              "driver-lewis-hamilton#50",
+              "driver-valtteri-bottas#75",
+              "driver-lewis-hamilton#31",
+              "driver-michael-schumacher#178",
+              "driver-valtteri-bottas#79",
+              "driver-lewis-hamilton#0",
+              "driver-michael-schumacher#0",
+              "driver-nico-rosberg#18",
+              "driver-lewis-hamilton#1",
+              "driver-lewis-hamilton#101"
+            ],
+            "hops": {
+              "hamilton seven titles": true,
+              "schumacher seven titles": false,
+              "schumacher benetton titles": false,
+              "schumacher ferrari titles": false,
+              "hamilton mclaren 2008 title": false,
+              "hamilton mercedes titles": false
+            }
+          }
+        }
+      },
+      "upper_bounds": {
+        "hamilton seven titles": {
+          "in_corpus": 4,
+          "linked_to_graph": 2,
+          "in_candidate_pool": 2,
+          "best_rank_by_score": 1
+        },
+        "schumacher seven titles": {
+          "in_corpus": 3,
+          "linked_to_graph": 1,
+          "in_candidate_pool": 1,
+          "best_rank_by_score": 13
+        },
+        "schumacher benetton titles": {
+          "in_corpus": 3,
+          "linked_to_graph": 0,
+          "in_candidate_pool": 0,
+          "best_rank_by_score": null
+        },
+        "schumacher ferrari titles": {
+          "in_corpus": 4,
+          "linked_to_graph": 1,
+          "in_candidate_pool": 1,
+          "best_rank_by_score": 11
+        },
+        "hamilton mclaren 2008 title": {
+          "in_corpus": 1,
+          "linked_to_graph": 0,
+          "in_candidate_pool": 0,
+          "best_rank_by_score": null
+        },
+        "hamilton mercedes titles": {
+          "in_corpus": 3,
+          "linked_to_graph": 1,
+          "in_candidate_pool": 1,
+          "best_rank_by_score": 9
+        }
+      }
+    },
+    "Q07": {
+      "pool_size": 188,
+      "policies": {
+        "A_current": {
+          "6": {
+            "picked": [
+              "driver-nico-rosberg#18",
+              "driver-nico-rosberg#65",
+              "reference-list-of-formula-one-world-drivers-champions#1",
+              "season-2012-formula-one-world-championship#148",
+              "driver-fernando-alonso#48",
+              "driver-lewis-hamilton#62"
+            ],
+            "hops": {
+              "alonso and hamilton teammates at mclaren 2007": false,
+              "raikkonen won the 2007 title": false
+            }
+          },
+          "8": {
+            "picked": [
+              "driver-nico-rosberg#18",
+              "driver-nico-rosberg#65",
+              "reference-list-of-formula-one-world-drivers-champions#1",
+              "driver-michael-schumacher#120",
+              "season-2012-formula-one-world-championship#148",
+              "driver-fernando-alonso#48",
+              "driver-lewis-hamilton#62",
+              "driver-valtteri-bottas#79"
+            ],
+            "hops": {
+              "alonso and hamilton teammates at mclaren 2007": false,
+              "raikkonen won the 2007 title": false
+            }
+          },
+          "10": {
+            "picked": [
+              "driver-nico-rosberg#18",
+              "driver-nico-rosberg#65",
+              "reference-list-of-formula-one-world-drivers-champions#1",
+              "driver-lewis-hamilton#99",
+              "driver-michael-schumacher#120",
+              "season-2012-formula-one-world-championship#148",
+              "season-2012-formula-one-world-championship#162",
+              "driver-fernando-alonso#48",
+              "driver-lewis-hamilton#62",
+              "driver-valtteri-bottas#79"
+            ],
+            "hops": {
+              "alonso and hamilton teammates at mclaren 2007": false,
+              "raikkonen won the 2007 title": false
+            }
+          }
+        },
+        "B_no_reserve": {
+          "6": {
+            "picked": [
+              "driver-nico-rosberg#18",
+              "driver-nico-rosberg#65",
+              "reference-list-of-formula-one-world-drivers-champions#1",
+              "driver-lewis-hamilton#99",
+              "driver-michael-schumacher#120",
+              "season-2012-formula-one-world-championship#148"
+            ],
+            "hops": {
+              "alonso and hamilton teammates at mclaren 2007": false,
+              "raikkonen won the 2007 title": false
+            }
+          },
+          "8": {
+            "picked": [
+              "driver-nico-rosberg#18",
+              "driver-nico-rosberg#65",
+              "reference-list-of-formula-one-world-drivers-champions#1",
+              "driver-lewis-hamilton#99",
+              "driver-michael-schumacher#120",
+              "season-2012-formula-one-world-championship#148",
+              "season-2012-formula-one-world-championship#162",
+              "season-2021-formula-one-world-championship#40"
+            ],
+            "hops": {
+              "alonso and hamilton teammates at mclaren 2007": false,
+              "raikkonen won the 2007 title": false
+            }
+          },
+          "10": {
+            "picked": [
+              "driver-nico-rosberg#18",
+              "driver-nico-rosberg#65",
+              "reference-list-of-formula-one-world-drivers-champions#1",
+              "driver-lewis-hamilton#99",
+              "driver-michael-schumacher#120",
+              "season-2012-formula-one-world-championship#148",
+              "season-2012-formula-one-world-championship#162",
+              "season-2021-formula-one-world-championship#40",
+              "season-2021-formula-one-world-championship#9",
+              "driver-fernando-alonso#54"
+            ],
+            "hops": {
+              "alonso and hamilton teammates at mclaren 2007": false,
+              "raikkonen won the 2007 title": false
+            }
+          }
+        },
+        "C_anchor_reserve_only": {
+          "6": {
+            "picked": [
+              "reference-list-of-formula-one-world-drivers-champions#1",
+              "driver-nico-rosberg#65",
+              "driver-fernando-alonso#48",
+              "driver-nico-rosberg#18",
+              "driver-lewis-hamilton#99",
+              "driver-michael-schumacher#120"
+            ],
+            "hops": {
+              "alonso and hamilton teammates at mclaren 2007": false,
+              "raikkonen won the 2007 title": false
+            }
+          },
+          "8": {
+            "picked": [
+              "reference-list-of-formula-one-world-drivers-champions#1",
+              "driver-nico-rosberg#65",
+              "driver-fernando-alonso#48",
+              "driver-nico-rosberg#18",
+              "driver-lewis-hamilton#99",
+              "driver-michael-schumacher#120",
+              "season-2012-formula-one-world-championship#148",
+              "season-2012-formula-one-world-championship#162"
+            ],
+            "hops": {
+              "alonso and hamilton teammates at mclaren 2007": false,
+              "raikkonen won the 2007 title": false
+            }
+          },
+          "10": {
+            "picked": [
+              "reference-list-of-formula-one-world-drivers-champions#1",
+              "driver-nico-rosberg#65",
+              "driver-fernando-alonso#48",
+              "driver-nico-rosberg#18",
+              "driver-lewis-hamilton#99",
+              "driver-michael-schumacher#120",
+              "season-2012-formula-one-world-championship#148",
+              "season-2012-formula-one-world-championship#162",
+              "season-2021-formula-one-world-championship#40",
+              "season-2021-formula-one-world-championship#9"
+            ],
+            "hops": {
+              "alonso and hamilton teammates at mclaren 2007": false,
+              "raikkonen won the 2007 title": false
+            }
+          }
+        },
+        "D_edge_sources_first": {
+          "6": {
+            "picked": [
+              "driver-nico-rosberg#65",
+              "reference-list-of-formula-one-world-drivers-champions#1",
+              "driver-michael-schumacher#120",
+              "season-2021-formula-one-world-championship#9",
+              "driver-lewis-hamilton#112",
+              "driver-lewis-hamilton#114"
+            ],
+            "hops": {
+              "alonso and hamilton teammates at mclaren 2007": false,
+              "raikkonen won the 2007 title": false
+            }
+          },
+          "8": {
+            "picked": [
+              "driver-nico-rosberg#65",
+              "reference-list-of-formula-one-world-drivers-champions#1",
+              "driver-michael-schumacher#120",
+              "season-2021-formula-one-world-championship#9",
+              "driver-lewis-hamilton#112",
+              "driver-lewis-hamilton#114",
+              "driver-lewis-hamilton#38",
+              "driver-lewis-hamilton#68"
+            ],
+            "hops": {
+              "alonso and hamilton teammates at mclaren 2007": false,
+              "raikkonen won the 2007 title": false
+            }
+          },
+          "10": {
+            "picked": [
+              "driver-nico-rosberg#65",
+              "reference-list-of-formula-one-world-drivers-champions#1",
+              "driver-michael-schumacher#120",
+              "season-2021-formula-one-world-championship#9",
+              "driver-lewis-hamilton#112",
+              "driver-lewis-hamilton#114",
+              "driver-lewis-hamilton#38",
+              "driver-lewis-hamilton#68",
+              "driver-lewis-hamilton#70",
+              "team-mercedes-benz-in-formula-one#42"
+            ],
+            "hops": {
+              "alonso and hamilton teammates at mclaren 2007": false,
+              "raikkonen won the 2007 title": false
+            }
+          }
+        },
+        "E_one_per_selected_edge": {
+          "6": {
+            "picked": [
+              "driver-lewis-hamilton#112",
+              "driver-valtteri-bottas#79",
+              "driver-lewis-hamilton#62",
+              "driver-michael-schumacher#120",
+              "driver-nico-rosberg#65",
+              "driver-lewis-hamilton#33"
+            ],
+            "hops": {
+              "alonso and hamilton teammates at mclaren 2007": false,
+              "raikkonen won the 2007 title": false
+            }
+          },
+          "8": {
+            "picked": [
+              "driver-lewis-hamilton#112",
+              "driver-valtteri-bottas#79",
+              "driver-lewis-hamilton#62",
+              "driver-michael-schumacher#120",
+              "driver-nico-rosberg#65",
+              "driver-lewis-hamilton#33",
+              "season-2021-formula-one-world-championship#9",
+              "reference-list-of-formula-one-world-drivers-champions#1"
+            ],
+            "hops": {
+              "alonso and hamilton teammates at mclaren 2007": false,
+              "raikkonen won the 2007 title": false
+            }
+          },
+          "10": {
+            "picked": [
+              "driver-lewis-hamilton#112",
+              "driver-valtteri-bottas#79",
+              "driver-lewis-hamilton#62",
+              "driver-michael-schumacher#120",
+              "driver-nico-rosberg#65",
+              "driver-lewis-hamilton#33",
+              "season-2021-formula-one-world-championship#9",
+              "reference-list-of-formula-one-world-drivers-champions#1",
+              "driver-lewis-hamilton#24",
+              "driver-lewis-hamilton#107"
+            ],
+            "hops": {
+              "alonso and hamilton teammates at mclaren 2007": false,
+              "raikkonen won the 2007 title": false
+            }
+          }
+        },
+        "F_rank_by_edge_support": {
+          "6": {
+            "picked": [
+              "reference-list-of-formula-one-world-drivers-champions#1",
+              "driver-lewis-hamilton#107",
+              "driver-lewis-hamilton#62",
+              "driver-lewis-hamilton#33",
+              "driver-nico-rosberg#65",
+              "driver-michael-schumacher#120"
+            ],
+            "hops": {
+              "alonso and hamilton teammates at mclaren 2007": false,
+              "raikkonen won the 2007 title": false
+            }
+          },
+          "8": {
+            "picked": [
+              "reference-list-of-formula-one-world-drivers-champions#1",
+              "driver-lewis-hamilton#107",
+              "driver-lewis-hamilton#62",
+              "driver-lewis-hamilton#33",
+              "driver-nico-rosberg#65",
+              "driver-michael-schumacher#120",
+              "season-2021-formula-one-world-championship#9",
+              "driver-lewis-hamilton#112"
+            ],
+            "hops": {
+              "alonso and hamilton teammates at mclaren 2007": false,
+              "raikkonen won the 2007 title": false
+            }
+          },
+          "10": {
+            "picked": [
+              "reference-list-of-formula-one-world-drivers-champions#1",
+              "driver-lewis-hamilton#107",
+              "driver-lewis-hamilton#62",
+              "driver-lewis-hamilton#33",
+              "driver-nico-rosberg#65",
+              "driver-michael-schumacher#120",
+              "season-2021-formula-one-world-championship#9",
+              "driver-lewis-hamilton#112",
+              "driver-lewis-hamilton#114",
+              "driver-lewis-hamilton#38"
+            ],
+            "hops": {
+              "alonso and hamilton teammates at mclaren 2007": false,
+              "raikkonen won the 2007 title": false
+            }
+          }
+        }
+      },
+      "upper_bounds": {
+        "alonso and hamilton teammates at mclaren 2007": {
+          "in_corpus": 1,
+          "linked_to_graph": 0,
+          "in_candidate_pool": 0,
+          "best_rank_by_score": null
+        },
+        "raikkonen won the 2007 title": {
+          "in_corpus": 13,
+          "linked_to_graph": 1,
+          "in_candidate_pool": 0,
+          "best_rank_by_score": null
+        }
+      }
+    },
+    "Q08": {
+      "pool_size": 204,
+      "policies": {
+        "A_current": {
+          "6": {
+            "picked": [
+              "reference-list-of-formula-one-world-drivers-champions#1",
+              "driver-nico-rosberg#18",
+              "driver-michael-schumacher#105",
+              "driver-nico-rosberg#65",
+              "driver-lewis-hamilton#116",
+              "driver-valtteri-bottas#79"
+            ],
+            "hops": {
+              "bottas replaced rosberg at mercedes": false,
+              "bottas came from williams": false
+            }
+          },
+          "8": {
+            "picked": [
+              "reference-list-of-formula-one-world-drivers-champions#1",
+              "driver-nico-rosberg#18",
+              "driver-michael-schumacher#105",
+              "driver-nico-rosberg#65",
+              "driver-michael-schumacher#120",
+              "driver-nico-rosberg#37",
+              "driver-lewis-hamilton#116",
+              "driver-valtteri-bottas#79"
+            ],
+            "hops": {
+              "bottas replaced rosberg at mercedes": false,
+              "bottas came from williams": false
+            }
+          },
+          "10": {
+            "picked": [
+              "reference-list-of-formula-one-world-drivers-champions#1",
+              "driver-nico-rosberg#18",
+              "driver-michael-schumacher#105",
+              "driver-nico-rosberg#65",
+              "driver-michael-schumacher#120",
+              "driver-nico-rosberg#0",
+              "season-2021-formula-one-world-championship#40",
+              "driver-nico-rosberg#37",
+              "driver-lewis-hamilton#116",
+              "driver-valtteri-bottas#79"
+            ],
+            "hops": {
+              "bottas replaced rosberg at mercedes": false,
+              "bottas came from williams": false
+            }
+          }
+        },
+        "B_no_reserve": {
+          "6": {
+            "picked": [
+              "reference-list-of-formula-one-world-drivers-champions#1",
+              "driver-nico-rosberg#18",
+              "driver-michael-schumacher#105",
+              "driver-nico-rosberg#65",
+              "driver-michael-schumacher#120",
+              "driver-nico-rosberg#0"
+            ],
+            "hops": {
+              "bottas replaced rosberg at mercedes": false,
+              "bottas came from williams": false
+            }
+          },
+          "8": {
+            "picked": [
+              "reference-list-of-formula-one-world-drivers-champions#1",
+              "driver-nico-rosberg#18",
+              "driver-michael-schumacher#105",
+              "driver-nico-rosberg#65",
+              "driver-michael-schumacher#120",
+              "driver-nico-rosberg#0",
+              "season-2021-formula-one-world-championship#40",
+              "driver-lewis-hamilton#115"
+            ],
+            "hops": {
+              "bottas replaced rosberg at mercedes": false,
+              "bottas came from williams": false
+            }
+          },
+          "10": {
+            "picked": [
+              "reference-list-of-formula-one-world-drivers-champions#1",
+              "driver-nico-rosberg#18",
+              "driver-michael-schumacher#105",
+              "driver-nico-rosberg#65",
+              "driver-michael-schumacher#120",
+              "driver-nico-rosberg#0",
+              "season-2021-formula-one-world-championship#40",
+              "driver-lewis-hamilton#115",
+              "driver-lewis-hamilton#39",
+              "driver-nico-rosberg#37"
+            ],
+            "hops": {
+              "bottas replaced rosberg at mercedes": false,
+              "bottas came from williams": false
+            }
+          }
+        },
+        "C_anchor_reserve_only": {
+          "6": {
+            "picked": [
+              "reference-list-of-formula-one-world-drivers-champions#1",
+              "driver-nico-rosberg#65",
+              "driver-lewis-hamilton#116",
+              "driver-nico-rosberg#18",
+              "driver-michael-schumacher#105",
+              "driver-michael-schumacher#120"
+            ],
+            "hops": {
+              "bottas replaced rosberg at mercedes": false,
+              "bottas came from williams": false
+            }
+          },
+          "8": {
+            "picked": [
+              "reference-list-of-formula-one-world-drivers-champions#1",
+              "driver-nico-rosberg#65",
+              "driver-lewis-hamilton#116",
+              "driver-nico-rosberg#18",
+              "driver-michael-schumacher#105",
+              "driver-michael-schumacher#120",
+              "driver-nico-rosberg#0",
+              "season-2021-formula-one-world-championship#40"
+            ],
+            "hops": {
+              "bottas replaced rosberg at mercedes": false,
+              "bottas came from williams": false
+            }
+          },
+          "10": {
+            "picked": [
+              "reference-list-of-formula-one-world-drivers-champions#1",
+              "driver-nico-rosberg#65",
+              "driver-lewis-hamilton#116",
+              "driver-nico-rosberg#18",
+              "driver-michael-schumacher#105",
+              "driver-michael-schumacher#120",
+              "driver-nico-rosberg#0",
+              "season-2021-formula-one-world-championship#40",
+              "driver-lewis-hamilton#115",
+              "driver-lewis-hamilton#39"
+            ],
+            "hops": {
+              "bottas replaced rosberg at mercedes": false,
+              "bottas came from williams": false
+            }
+          }
+        },
+        "D_edge_sources_first": {
+          "6": {
+            "picked": [
+              "reference-list-of-formula-one-world-drivers-champions#1",
+              "driver-nico-rosberg#18",
+              "driver-michael-schumacher#105",
+              "driver-nico-rosberg#65",
+              "driver-michael-schumacher#120",
+              "driver-nico-rosberg#0"
+            ],
+            "hops": {
+              "bottas replaced rosberg at mercedes": false,
+              "bottas came from williams": false
+            }
+          },
+          "8": {
+            "picked": [
+              "reference-list-of-formula-one-world-drivers-champions#1",
+              "driver-nico-rosberg#18",
+              "driver-michael-schumacher#105",
+              "driver-nico-rosberg#65",
+              "driver-michael-schumacher#120",
+              "driver-nico-rosberg#0",
+              "driver-lewis-hamilton#115",
+              "driver-lewis-hamilton#39"
+            ],
+            "hops": {
+              "bottas replaced rosberg at mercedes": false,
+              "bottas came from williams": false
+            }
+          },
+          "10": {
+            "picked": [
+              "reference-list-of-formula-one-world-drivers-champions#1",
+              "driver-nico-rosberg#18",
+              "driver-michael-schumacher#105",
+              "driver-nico-rosberg#65",
+              "driver-michael-schumacher#120",
+              "driver-nico-rosberg#0",
+              "driver-lewis-hamilton#115",
+              "driver-lewis-hamilton#39",
+              "driver-nico-rosberg#37",
+              "driver-nico-rosberg#60"
+            ],
+            "hops": {
+              "bottas replaced rosberg at mercedes": false,
+              "bottas came from williams": false
+            }
+          }
+        },
+        "E_one_per_selected_edge": {
+          "6": {
+            "picked": [
+              "driver-valtteri-bottas#79",
+              "driver-nico-rosberg#0",
+              "reference-list-of-formula-one-world-drivers-champions#1",
+              "driver-lewis-hamilton#116",
+              "driver-michael-schumacher#120",
+              "driver-lewis-hamilton#115"
+            ],
+            "hops": {
+              "bottas replaced rosberg at mercedes": false,
+              "bottas came from williams": false
+            }
+          },
+          "8": {
+            "picked": [
+              "driver-valtteri-bottas#79",
+              "driver-nico-rosberg#0",
+              "reference-list-of-formula-one-world-drivers-champions#1",
+              "driver-lewis-hamilton#116",
+              "driver-michael-schumacher#120",
+              "driver-lewis-hamilton#115",
+              "driver-michael-schumacher#105",
+              "driver-nico-rosberg#18"
+            ],
+            "hops": {
+              "bottas replaced rosberg at mercedes": false,
+              "bottas came from williams": false
+            }
+          },
+          "10": {
+            "picked": [
+              "driver-valtteri-bottas#79",
+              "driver-nico-rosberg#0",
+              "reference-list-of-formula-one-world-drivers-champions#1",
+              "driver-lewis-hamilton#116",
+              "driver-michael-schumacher#120",
+              "driver-lewis-hamilton#115",
+              "driver-michael-schumacher#105",
+              "driver-nico-rosberg#18",
+              "driver-nico-rosberg#37",
+              "driver-nico-rosberg#103"
+            ],
+            "hops": {
+              "bottas replaced rosberg at mercedes": false,
+              "bottas came from williams": false
+            }
+          }
+        },
+        "F_rank_by_edge_support": {
+          "6": {
+            "picked": [
+              "driver-nico-rosberg#65",
+              "driver-lewis-hamilton#115",
+              "driver-lewis-hamilton#116",
+              "team-mercedes-benz-in-formula-one#42",
+              "driver-nico-rosberg#103",
+              "reference-list-of-formula-one-world-drivers-champions#1"
+            ],
+            "hops": {
+              "bottas replaced rosberg at mercedes": false,
+              "bottas came from williams": false
+            }
+          },
+          "8": {
+            "picked": [
+              "driver-nico-rosberg#65",
+              "driver-lewis-hamilton#115",
+              "driver-lewis-hamilton#116",
+              "team-mercedes-benz-in-formula-one#42",
+              "driver-nico-rosberg#103",
+              "reference-list-of-formula-one-world-drivers-champions#1",
+              "driver-nico-rosberg#18",
+              "driver-michael-schumacher#105"
+            ],
+            "hops": {
+              "bottas replaced rosberg at mercedes": false,
+              "bottas came from williams": false
+            }
+          },
+          "10": {
+            "picked": [
+              "driver-nico-rosberg#65",
+              "driver-lewis-hamilton#115",
+              "driver-lewis-hamilton#116",
+              "team-mercedes-benz-in-formula-one#42",
+              "driver-nico-rosberg#103",
+              "reference-list-of-formula-one-world-drivers-champions#1",
+              "driver-nico-rosberg#18",
+              "driver-michael-schumacher#105",
+              "driver-michael-schumacher#120",
+              "driver-nico-rosberg#0"
+            ],
+            "hops": {
+              "bottas replaced rosberg at mercedes": false,
+              "bottas came from williams": false
+            }
+          }
+        }
+      },
+      "upper_bounds": {
+        "bottas replaced rosberg at mercedes": {
+          "in_corpus": 5,
+          "linked_to_graph": 0,
+          "in_candidate_pool": 0,
+          "best_rank_by_score": null
+        },
+        "bottas came from williams": {
+          "in_corpus": 3,
+          "linked_to_graph": 0,
+          "in_candidate_pool": 0,
+          "best_rank_by_score": null
+        }
+      }
+    },
+    "Q09": {
+      "pool_size": 219,
+      "policies": {
+        "A_current": {
+          "6": {
+            "picked": [
+              "driver-lewis-hamilton#0",
+              "driver-michael-schumacher#0",
+              "driver-nico-rosberg#0",
+              "driver-lewis-hamilton#50",
+              "driver-valtteri-bottas#5",
+              "driver-valtteri-bottas#80"
+            ]
+          },
+          "8": {
+            "picked": [
+              "driver-lewis-hamilton#0",
+              "driver-michael-schumacher#0",
+              "driver-nico-rosberg#0",
+              "driver-michael-schumacher#134",
+              "driver-lewis-hamilton#50",
+              "driver-michael-schumacher#68",
+              "driver-valtteri-bottas#5",
+              "driver-valtteri-bottas#80"
+            ]
+          },
+          "10": {
+            "picked": [
+              "driver-lewis-hamilton#0",
+              "driver-michael-schumacher#0",
+              "driver-nico-rosberg#0",
+              "driver-michael-schumacher#134",
+              "driver-lewis-hamilton#114",
+              "driver-lewis-hamilton#50",
+              "driver-michael-schumacher#68",
+              "driver-nico-rosberg#8",
+              "driver-valtteri-bottas#5",
+              "driver-valtteri-bottas#80"
+            ]
+          }
+        },
+        "B_no_reserve": {
+          "6": {
+            "picked": [
+              "driver-lewis-hamilton#0",
+              "driver-michael-schumacher#0",
+              "driver-nico-rosberg#0",
+              "driver-michael-schumacher#134",
+              "driver-lewis-hamilton#114",
+              "driver-lewis-hamilton#50"
+            ]
+          },
+          "8": {
+            "picked": [
+              "driver-lewis-hamilton#0",
+              "driver-michael-schumacher#0",
+              "driver-nico-rosberg#0",
+              "driver-michael-schumacher#134",
+              "driver-lewis-hamilton#114",
+              "driver-lewis-hamilton#50",
+              "driver-michael-schumacher#68",
+              "driver-nico-rosberg#8"
+            ]
+          },
+          "10": {
+            "picked": [
+              "driver-lewis-hamilton#0",
+              "driver-michael-schumacher#0",
+              "driver-nico-rosberg#0",
+              "driver-michael-schumacher#134",
+              "driver-lewis-hamilton#114",
+              "driver-lewis-hamilton#50",
+              "driver-michael-schumacher#68",
+              "driver-nico-rosberg#8",
+              "driver-valtteri-bottas#5",
+              "driver-valtteri-bottas#75"
+            ]
+          }
+        },
+        "C_anchor_reserve_only": {
+          "6": {
+            "picked": [
+              "driver-valtteri-bottas#80",
+              "driver-michael-schumacher#0",
+              "driver-lewis-hamilton#50",
+              "driver-lewis-hamilton#0",
+              "driver-nico-rosberg#0",
+              "driver-michael-schumacher#134"
+            ]
+          },
+          "8": {
+            "picked": [
+              "driver-valtteri-bottas#80",
+              "driver-michael-schumacher#0",
+              "driver-lewis-hamilton#50",
+              "driver-lewis-hamilton#0",
+              "driver-nico-rosberg#0",
+              "driver-michael-schumacher#134",
+              "driver-lewis-hamilton#114",
+              "driver-michael-schumacher#68"
+            ]
+          },
+          "10": {
+            "picked": [
+              "driver-valtteri-bottas#80",
+              "driver-michael-schumacher#0",
+              "driver-lewis-hamilton#50",
+              "driver-lewis-hamilton#0",
+              "driver-nico-rosberg#0",
+              "driver-michael-schumacher#134",
+              "driver-lewis-hamilton#114",
+              "driver-michael-schumacher#68",
+              "driver-nico-rosberg#8",
+              "driver-valtteri-bottas#5"
+            ]
+          }
+        },
+        "D_edge_sources_first": {
+          "6": {
+            "picked": [
+              "driver-nico-rosberg#0",
+              "driver-lewis-hamilton#50",
+              "driver-michael-schumacher#68",
+              "driver-valtteri-bottas#75",
+              "driver-lewis-hamilton#31",
+              "driver-michael-schumacher#38"
+            ]
+          },
+          "8": {
+            "picked": [
+              "driver-nico-rosberg#0",
+              "driver-lewis-hamilton#50",
+              "driver-michael-schumacher#68",
+              "driver-valtteri-bottas#75",
+              "driver-lewis-hamilton#31",
+              "driver-michael-schumacher#38",
+              "driver-michael-schumacher#74",
+              "team-mercedes-benz-in-formula-one#42"
+            ]
+          },
+          "10": {
+            "picked": [
+              "driver-nico-rosberg#0",
+              "driver-lewis-hamilton#50",
+              "driver-michael-schumacher#68",
+              "driver-valtteri-bottas#75",
+              "driver-lewis-hamilton#31",
+              "driver-michael-schumacher#38",
+              "driver-michael-schumacher#74",
+              "team-mercedes-benz-in-formula-one#42",
+              "driver-michael-schumacher#87",
+              "driver-michael-schumacher#80"
+            ]
+          }
+        },
+        "E_one_per_selected_edge": {
+          "6": {
+            "picked": [
+              "driver-lewis-hamilton#50",
+              "driver-valtteri-bottas#75",
+              "driver-nico-rosberg#0",
+              "driver-michael-schumacher#68",
+              "team-mercedes-benz-in-formula-one#42",
+              "driver-lewis-hamilton#0"
+            ]
+          },
+          "8": {
+            "picked": [
+              "driver-lewis-hamilton#50",
+              "driver-valtteri-bottas#75",
+              "driver-nico-rosberg#0",
+              "driver-michael-schumacher#68",
+              "team-mercedes-benz-in-formula-one#42",
+              "driver-lewis-hamilton#0",
+              "driver-michael-schumacher#0",
+              "driver-michael-schumacher#134"
+            ]
+          },
+          "10": {
+            "picked": [
+              "driver-lewis-hamilton#50",
+              "driver-valtteri-bottas#75",
+              "driver-nico-rosberg#0",
+              "driver-michael-schumacher#68",
+              "team-mercedes-benz-in-formula-one#42",
+              "driver-lewis-hamilton#0",
+              "driver-michael-schumacher#0",
+              "driver-michael-schumacher#134",
+              "driver-lewis-hamilton#114",
+              "driver-nico-rosberg#8"
+            ]
+          }
+        },
+        "F_rank_by_edge_support": {
+          "6": {
+            "picked": [
+              "driver-nico-rosberg#0",
+              "driver-lewis-hamilton#50",
+              "driver-michael-schumacher#68",
+              "driver-valtteri-bottas#75",
+              "driver-lewis-hamilton#31",
+              "driver-michael-schumacher#38"
+            ]
+          },
+          "8": {
+            "picked": [
+              "driver-nico-rosberg#0",
+              "driver-lewis-hamilton#50",
+              "driver-michael-schumacher#68",
+              "driver-valtteri-bottas#75",
+              "driver-lewis-hamilton#31",
+              "driver-michael-schumacher#38",
+              "driver-michael-schumacher#74",
+              "team-mercedes-benz-in-formula-one#42"
+            ]
+          },
+          "10": {
+            "picked": [
+              "driver-nico-rosberg#0",
+              "driver-lewis-hamilton#50",
+              "driver-michael-schumacher#68",
+              "driver-valtteri-bottas#75",
+              "driver-lewis-hamilton#31",
+              "driver-michael-schumacher#38",
+              "driver-michael-schumacher#74",
+              "team-mercedes-benz-in-formula-one#42",
+              "driver-michael-schumacher#87",
+              "driver-michael-schumacher#80"
+            ]
+          }
+        }
+      }
+    },
+    "Q10": {
+      "pool_size": 96,
+      "policies": {
+        "A_current": {
+          "6": {
+            "picked": [
+              "reference-list-of-formula-one-world-drivers-champions#1",
+              "season-2021-formula-one-world-championship#9",
+              "season-2012-formula-one-world-championship#225",
+              "reference-list-of-formula-one-world-drivers-champions#2",
+              "season-2012-formula-one-world-championship#197",
+              "driver-fernando-alonso#137"
+            ]
+          },
+          "8": {
+            "picked": [
+              "reference-list-of-formula-one-world-drivers-champions#1",
+              "season-2021-formula-one-world-championship#9",
+              "season-2012-formula-one-world-championship#225",
+              "driver-fernando-alonso#3",
+              "reference-list-of-formula-one-world-drivers-champions#2",
+              "season-2012-formula-one-world-championship#197",
+              "driver-fernando-alonso#137",
+              "driver-fernando-alonso#33"
+            ]
+          },
+          "10": {
+            "picked": [
+              "reference-list-of-formula-one-world-drivers-champions#1",
+              "season-2021-formula-one-world-championship#9",
+              "driver-michael-schumacher#144",
+              "season-2012-formula-one-world-championship#225",
+              "driver-fernando-alonso#47",
+              "driver-fernando-alonso#3",
+              "reference-list-of-formula-one-world-drivers-champions#2",
+              "season-2012-formula-one-world-championship#197",
+              "driver-fernando-alonso#137",
+              "driver-fernando-alonso#33"
+            ]
+          }
+        },
+        "B_no_reserve": {
+          "6": {
+            "picked": [
+              "reference-list-of-formula-one-world-drivers-champions#1",
+              "season-2021-formula-one-world-championship#9",
+              "driver-michael-schumacher#144",
+              "season-2012-formula-one-world-championship#225",
+              "driver-fernando-alonso#47",
+              "driver-lewis-hamilton#124"
+            ]
+          },
+          "8": {
+            "picked": [
+              "reference-list-of-formula-one-world-drivers-champions#1",
+              "season-2021-formula-one-world-championship#9",
+              "driver-michael-schumacher#144",
+              "season-2012-formula-one-world-championship#225",
+              "driver-fernando-alonso#47",
+              "driver-lewis-hamilton#124",
+              "driver-lewis-hamilton#68",
+              "driver-michael-schumacher#146"
+            ]
+          },
+          "10": {
+            "picked": [
+              "reference-list-of-formula-one-world-drivers-champions#1",
+              "season-2021-formula-one-world-championship#9",
+              "driver-michael-schumacher#144",
+              "season-2012-formula-one-world-championship#225",
+              "driver-fernando-alonso#47",
+              "driver-lewis-hamilton#124",
+              "driver-lewis-hamilton#68",
+              "driver-michael-schumacher#146",
+              "driver-michael-schumacher#185",
+              "driver-michael-schumacher#98"
+            ]
+          }
+        },
+        "C_anchor_reserve_only": {
+          "6": {
+            "picked": [
+              "reference-list-of-formula-one-world-drivers-champions#1",
+              "season-2021-formula-one-world-championship#9",
+              "season-2012-formula-one-world-championship#225",
+              "driver-michael-schumacher#144",
+              "driver-fernando-alonso#47",
+              "driver-lewis-hamilton#124"
+            ]
+          },
+          "8": {
+            "picked": [
+              "reference-list-of-formula-one-world-drivers-champions#1",
+              "season-2021-formula-one-world-championship#9",
+              "season-2012-formula-one-world-championship#225",
+              "driver-michael-schumacher#144",
+              "driver-fernando-alonso#47",
+              "driver-lewis-hamilton#124",
+              "driver-lewis-hamilton#68",
+              "driver-michael-schumacher#146"
+            ]
+          },
+          "10": {
+            "picked": [
+              "reference-list-of-formula-one-world-drivers-champions#1",
+              "season-2021-formula-one-world-championship#9",
+              "season-2012-formula-one-world-championship#225",
+              "driver-michael-schumacher#144",
+              "driver-fernando-alonso#47",
+              "driver-lewis-hamilton#124",
+              "driver-lewis-hamilton#68",
+              "driver-michael-schumacher#146",
+              "driver-michael-schumacher#185",
+              "driver-michael-schumacher#98"
+            ]
+          }
+        },
+        "D_edge_sources_first": {
+          "6": {
+            "picked": [
+              "reference-list-of-formula-one-world-drivers-champions#1",
+              "driver-fernando-alonso#47",
+              "driver-fernando-alonso#3",
+              "driver-fernando-alonso#35",
+              "reference-list-of-formula-one-world-drivers-champions#2",
+              "season-2012-formula-one-world-championship#197"
+            ]
+          },
+          "8": {
+            "picked": [
+              "reference-list-of-formula-one-world-drivers-champions#1",
+              "driver-fernando-alonso#47",
+              "driver-fernando-alonso#3",
+              "driver-fernando-alonso#35",
+              "reference-list-of-formula-one-world-drivers-champions#2",
+              "season-2012-formula-one-world-championship#197",
+              "driver-fernando-alonso#137",
+              "driver-fernando-alonso#33"
+            ]
+          },
+          "10": {
+            "picked": [
+              "reference-list-of-formula-one-world-drivers-champions#1",
+              "driver-fernando-alonso#47",
+              "driver-fernando-alonso#3",
+              "driver-fernando-alonso#35",
+              "reference-list-of-formula-one-world-drivers-champions#2",
+              "season-2012-formula-one-world-championship#197",
+              "driver-fernando-alonso#137",
+              "driver-fernando-alonso#33",
+              "season-2012-formula-one-world-championship#2",
+              "driver-fernando-alonso#44"
+            ]
+          }
+        },
+        "E_one_per_selected_edge": {
+          "6": {
+            "picked": [
+              "driver-fernando-alonso#54",
+              "driver-fernando-alonso#47",
+              "season-2012-formula-one-world-championship#197",
+              "reference-list-of-formula-one-world-drivers-champions#2",
+              "driver-fernando-alonso#137",
+              "reference-list-of-formula-one-world-drivers-champions#1"
+            ]
+          },
+          "8": {
+            "picked": [
+              "driver-fernando-alonso#54",
+              "driver-fernando-alonso#47",
+              "season-2012-formula-one-world-championship#197",
+              "reference-list-of-formula-one-world-drivers-champions#2",
+              "driver-fernando-alonso#137",
+              "reference-list-of-formula-one-world-drivers-champions#1",
+              "driver-fernando-alonso#3",
+              "season-2021-formula-one-world-championship#9"
+            ]
+          },
+          "10": {
+            "picked": [
+              "driver-fernando-alonso#54",
+              "driver-fernando-alonso#47",
+              "season-2012-formula-one-world-championship#197",
+              "reference-list-of-formula-one-world-drivers-champions#2",
+              "driver-fernando-alonso#137",
+              "reference-list-of-formula-one-world-drivers-champions#1",
+              "driver-fernando-alonso#3",
+              "season-2021-formula-one-world-championship#9",
+              "driver-michael-schumacher#144",
+              "season-2012-formula-one-world-championship#225"
+            ]
+          }
+        },
+        "F_rank_by_edge_support": {
+          "6": {
+            "picked": [
+              "driver-fernando-alonso#3",
+              "season-2012-formula-one-world-championship#197",
+              "reference-list-of-formula-one-world-drivers-champions#1",
+              "driver-fernando-alonso#47",
+              "driver-fernando-alonso#35",
+              "reference-list-of-formula-one-world-drivers-champions#2"
+            ]
+          },
+          "8": {
+            "picked": [
+              "driver-fernando-alonso#3",
+              "season-2012-formula-one-world-championship#197",
+              "reference-list-of-formula-one-world-drivers-champions#1",
+              "driver-fernando-alonso#47",
+              "driver-fernando-alonso#35",
+              "reference-list-of-formula-one-world-drivers-champions#2",
+              "driver-fernando-alonso#137",
+              "driver-fernando-alonso#33"
+            ]
+          },
+          "10": {
+            "picked": [
+              "driver-fernando-alonso#3",
+              "season-2012-formula-one-world-championship#197",
+              "reference-list-of-formula-one-world-drivers-champions#1",
+              "driver-fernando-alonso#47",
+              "driver-fernando-alonso#35",
+              "reference-list-of-formula-one-world-drivers-champions#2",
+              "driver-fernando-alonso#137",
+              "driver-fernando-alonso#33",
+              "season-2012-formula-one-world-championship#2",
+              "driver-fernando-alonso#44"
+            ]
+          }
+        }
+      }
+    },
+    "Q11": {
+      "pool_size": 110,
+      "policies": {
+        "A_current": {
+          "6": {
+            "picked": [
+              "driver-michael-schumacher#0",
+              "driver-michael-schumacher#68",
+              "driver-lewis-hamilton#68",
+              "team-mercedes-benz-in-formula-one#42",
+              "driver-michael-schumacher#98",
+              "team-mercedes-benz-in-formula-one#36"
+            ]
+          },
+          "8": {
+            "picked": [
+              "driver-michael-schumacher#0",
+              "driver-michael-schumacher#68",
+              "driver-lewis-hamilton#68",
+              "driver-michael-schumacher#72",
+              "team-mercedes-benz-in-formula-one#42",
+              "driver-michael-schumacher#98",
+              "driver-michael-schumacher#178",
+              "team-mercedes-benz-in-formula-one#36"
+            ]
+          },
+          "10": {
+            "picked": [
+              "driver-michael-schumacher#0",
+              "driver-michael-schumacher#68",
+              "driver-lewis-hamilton#68",
+              "driver-michael-schumacher#72",
+              "driver-lewis-hamilton#95",
+              "driver-nico-rosberg#0",
+              "team-mercedes-benz-in-formula-one#42",
+              "driver-michael-schumacher#98",
+              "driver-michael-schumacher#178",
+              "team-mercedes-benz-in-formula-one#36"
+            ]
+          }
+        },
+        "B_no_reserve": {
+          "6": {
+            "picked": [
+              "driver-michael-schumacher#0",
+              "driver-michael-schumacher#68",
+              "driver-lewis-hamilton#68",
+              "driver-michael-schumacher#72",
+              "driver-lewis-hamilton#95",
+              "driver-nico-rosberg#0"
+            ]
+          },
+          "8": {
+            "picked": [
+              "driver-michael-schumacher#0",
+              "driver-michael-schumacher#68",
+              "driver-lewis-hamilton#68",
+              "driver-michael-schumacher#72",
+              "driver-lewis-hamilton#95",
+              "driver-nico-rosberg#0",
+              "driver-valtteri-bottas#75",
+              "team-mercedes-benz-in-formula-one#42"
+            ]
+          },
+          "10": {
+            "picked": [
+              "driver-michael-schumacher#0",
+              "driver-michael-schumacher#68",
+              "driver-lewis-hamilton#68",
+              "driver-michael-schumacher#72",
+              "driver-lewis-hamilton#95",
+              "driver-nico-rosberg#0",
+              "driver-valtteri-bottas#75",
+              "team-mercedes-benz-in-formula-one#42",
+              "driver-michael-schumacher#134",
+              "driver-michael-schumacher#14"
+            ]
+          }
+        },
+        "C_anchor_reserve_only": {
+          "6": {
+            "picked": [
+              "team-mercedes-benz-in-formula-one#42",
+              "team-mercedes-benz-in-formula-one#36",
+              "driver-michael-schumacher#98",
+              "driver-michael-schumacher#0",
+              "driver-michael-schumacher#68",
+              "driver-lewis-hamilton#68"
+            ]
+          },
+          "8": {
+            "picked": [
+              "team-mercedes-benz-in-formula-one#42",
+              "team-mercedes-benz-in-formula-one#36",
+              "driver-michael-schumacher#98",
+              "driver-michael-schumacher#0",
+              "driver-michael-schumacher#68",
+              "driver-lewis-hamilton#68",
+              "driver-michael-schumacher#72",
+              "driver-lewis-hamilton#95"
+            ]
+          },
+          "10": {
+            "picked": [
+              "team-mercedes-benz-in-formula-one#42",
+              "team-mercedes-benz-in-formula-one#36",
+              "driver-michael-schumacher#98",
+              "driver-michael-schumacher#0",
+              "driver-michael-schumacher#68",
+              "driver-lewis-hamilton#68",
+              "driver-michael-schumacher#72",
+              "driver-lewis-hamilton#95",
+              "driver-nico-rosberg#0",
+              "driver-valtteri-bottas#75"
+            ]
+          }
+        },
+        "D_edge_sources_first": {
+          "6": {
+            "picked": [
+              "driver-michael-schumacher#68",
+              "driver-michael-schumacher#72",
+              "team-mercedes-benz-in-formula-one#42",
+              "driver-michael-schumacher#98",
+              "driver-michael-schumacher#136",
+              "driver-michael-schumacher#38"
+            ]
+          },
+          "8": {
+            "picked": [
+              "driver-michael-schumacher#68",
+              "driver-michael-schumacher#72",
+              "team-mercedes-benz-in-formula-one#42",
+              "driver-michael-schumacher#98",
+              "driver-michael-schumacher#136",
+              "driver-michael-schumacher#38",
+              "driver-michael-schumacher#74",
+              "driver-michael-schumacher#80"
+            ]
+          },
+          "10": {
+            "picked": [
+              "driver-michael-schumacher#68",
+              "driver-michael-schumacher#72",
+              "team-mercedes-benz-in-formula-one#42",
+              "driver-michael-schumacher#98",
+              "driver-michael-schumacher#136",
+              "driver-michael-schumacher#38",
+              "driver-michael-schumacher#74",
+              "driver-michael-schumacher#80",
+              "driver-michael-schumacher#84",
+              "driver-michael-schumacher#87"
+            ]
+          }
+        },
+        "E_one_per_selected_edge": {
+          "6": {
+            "picked": [
+              "driver-michael-schumacher#68",
+              "driver-michael-schumacher#98",
+              "driver-michael-schumacher#72",
+              "driver-michael-schumacher#178",
+              "team-mercedes-benz-in-formula-one#42",
+              "driver-michael-schumacher#0"
+            ]
+          },
+          "8": {
+            "picked": [
+              "driver-michael-schumacher#68",
+              "driver-michael-schumacher#98",
+              "driver-michael-schumacher#72",
+              "driver-michael-schumacher#178",
+              "team-mercedes-benz-in-formula-one#42",
+              "driver-michael-schumacher#0",
+              "driver-lewis-hamilton#68",
+              "driver-lewis-hamilton#95"
+            ]
+          },
+          "10": {
+            "picked": [
+              "driver-michael-schumacher#68",
+              "driver-michael-schumacher#98",
+              "driver-michael-schumacher#72",
+              "driver-michael-schumacher#178",
+              "team-mercedes-benz-in-formula-one#42",
+              "driver-michael-schumacher#0",
+              "driver-lewis-hamilton#68",
+              "driver-lewis-hamilton#95",
+              "driver-nico-rosberg#0",
+              "driver-valtteri-bottas#75"
+            ]
+          }
+        },
+        "F_rank_by_edge_support": {
+          "6": {
+            "picked": [
+              "driver-michael-schumacher#68",
+              "driver-michael-schumacher#72",
+              "team-mercedes-benz-in-formula-one#42",
+              "driver-michael-schumacher#98",
+              "driver-michael-schumacher#136",
+              "driver-michael-schumacher#38"
+            ]
+          },
+          "8": {
+            "picked": [
+              "driver-michael-schumacher#68",
+              "driver-michael-schumacher#72",
+              "team-mercedes-benz-in-formula-one#42",
+              "driver-michael-schumacher#98",
+              "driver-michael-schumacher#136",
+              "driver-michael-schumacher#38",
+              "driver-michael-schumacher#74",
+              "driver-michael-schumacher#80"
+            ]
+          },
+          "10": {
+            "picked": [
+              "driver-michael-schumacher#68",
+              "driver-michael-schumacher#72",
+              "team-mercedes-benz-in-formula-one#42",
+              "driver-michael-schumacher#98",
+              "driver-michael-schumacher#136",
+              "driver-michael-schumacher#38",
+              "driver-michael-schumacher#74",
+              "driver-michael-schumacher#80",
+              "driver-michael-schumacher#84",
+              "driver-michael-schumacher#87"
+            ]
+          }
+        }
+      }
+    },
+    "Q12": {
+      "pool_size": 189,
+      "policies": {
+        "A_current": {
+          "6": {
+            "picked": [
+              "driver-michael-schumacher#0",
+              "driver-lewis-hamilton#31",
+              "driver-sebastian-vettel#58",
+              "driver-valtteri-bottas#45",
+              "driver-valtteri-bottas#80",
+              "season-2016-formula-one-world-championship#56"
+            ]
+          },
+          "8": {
+            "picked": [
+              "driver-michael-schumacher#0",
+              "driver-lewis-hamilton#31",
+              "driver-nico-rosberg#18",
+              "reference-list-of-formula-one-world-drivers-champions#1",
+              "driver-sebastian-vettel#58",
+              "driver-valtteri-bottas#45",
+              "driver-valtteri-bottas#80",
+              "season-2016-formula-one-world-championship#56"
+            ]
+          },
+          "10": {
+            "picked": [
+              "driver-michael-schumacher#0",
+              "driver-lewis-hamilton#31",
+              "driver-nico-rosberg#18",
+              "reference-list-of-formula-one-world-drivers-champions#1",
+              "driver-lewis-hamilton#0",
+              "driver-lewis-hamilton#1",
+              "driver-sebastian-vettel#58",
+              "driver-valtteri-bottas#45",
+              "driver-valtteri-bottas#80",
+              "season-2016-formula-one-world-championship#56"
+            ]
+          }
+        },
+        "B_no_reserve": {
+          "6": {
+            "picked": [
+              "driver-michael-schumacher#0",
+              "driver-lewis-hamilton#31",
+              "driver-nico-rosberg#18",
+              "reference-list-of-formula-one-world-drivers-champions#1",
+              "driver-lewis-hamilton#0",
+              "driver-lewis-hamilton#1"
+            ]
+          },
+          "8": {
+            "picked": [
+              "driver-michael-schumacher#0",
+              "driver-lewis-hamilton#31",
+              "driver-nico-rosberg#18",
+              "reference-list-of-formula-one-world-drivers-champions#1",
+              "driver-lewis-hamilton#0",
+              "driver-lewis-hamilton#1",
+              "driver-lewis-hamilton#33",
+              "driver-sebastian-vettel#58"
+            ]
+          },
+          "10": {
+            "picked": [
+              "driver-michael-schumacher#0",
+              "driver-lewis-hamilton#31",
+              "driver-nico-rosberg#18",
+              "reference-list-of-formula-one-world-drivers-champions#1",
+              "driver-lewis-hamilton#0",
+              "driver-lewis-hamilton#1",
+              "driver-lewis-hamilton#33",
+              "driver-sebastian-vettel#58",
+              "season-2012-formula-one-world-championship#21",
+              "season-2021-formula-one-world-championship#9"
+            ]
+          }
+        },
+        "C_anchor_reserve_only": {
+          "6": {
+            "picked": [
+              "season-2016-formula-one-world-championship#56",
+              "driver-sebastian-vettel#58",
+              "driver-valtteri-bottas#80",
+              "driver-michael-schumacher#0",
+              "driver-lewis-hamilton#31",
+              "driver-nico-rosberg#18"
+            ]
+          },
+          "8": {
+            "picked": [
+              "season-2016-formula-one-world-championship#56",
+              "driver-sebastian-vettel#58",
+              "driver-valtteri-bottas#80",
+              "driver-michael-schumacher#0",
+              "driver-lewis-hamilton#31",
+              "driver-nico-rosberg#18",
+              "reference-list-of-formula-one-world-drivers-champions#1",
+              "driver-lewis-hamilton#0"
+            ]
+          },
+          "10": {
+            "picked": [
+              "season-2016-formula-one-world-championship#56",
+              "driver-sebastian-vettel#58",
+              "driver-valtteri-bottas#80",
+              "driver-michael-schumacher#0",
+              "driver-lewis-hamilton#31",
+              "driver-nico-rosberg#18",
+              "reference-list-of-formula-one-world-drivers-champions#1",
+              "driver-lewis-hamilton#0",
+              "driver-lewis-hamilton#1",
+              "driver-lewis-hamilton#33"
+            ]
+          }
+        },
+        "D_edge_sources_first": {
+          "6": {
+            "picked": [
+              "driver-sebastian-vettel#58",
+              "driver-valtteri-bottas#14",
+              "driver-valtteri-bottas#34",
+              "driver-lewis-hamilton#24",
+              "driver-michael-schumacher#0",
+              "driver-lewis-hamilton#31"
+            ]
+          },
+          "8": {
+            "picked": [
+              "driver-sebastian-vettel#58",
+              "driver-valtteri-bottas#14",
+              "driver-valtteri-bottas#34",
+              "driver-lewis-hamilton#24",
+              "driver-michael-schumacher#0",
+              "driver-lewis-hamilton#31",
+              "driver-nico-rosberg#18",
+              "reference-list-of-formula-one-world-drivers-champions#1"
+            ]
+          },
+          "10": {
+            "picked": [
+              "driver-sebastian-vettel#58",
+              "driver-valtteri-bottas#14",
+              "driver-valtteri-bottas#34",
+              "driver-lewis-hamilton#24",
+              "driver-michael-schumacher#0",
+              "driver-lewis-hamilton#31",
+              "driver-nico-rosberg#18",
+              "reference-list-of-formula-one-world-drivers-champions#1",
+              "driver-lewis-hamilton#0",
+              "driver-lewis-hamilton#1"
+            ]
+          }
+        },
+        "E_one_per_selected_edge": {
+          "6": {
+            "picked": [
+              "driver-valtteri-bottas#14",
+              "driver-sebastian-vettel#58",
+              "driver-lewis-hamilton#24",
+              "driver-valtteri-bottas#34",
+              "driver-michael-schumacher#0",
+              "driver-lewis-hamilton#31"
+            ]
+          },
+          "8": {
+            "picked": [
+              "driver-valtteri-bottas#14",
+              "driver-sebastian-vettel#58",
+              "driver-lewis-hamilton#24",
+              "driver-valtteri-bottas#34",
+              "driver-michael-schumacher#0",
+              "driver-lewis-hamilton#31",
+              "driver-nico-rosberg#18",
+              "reference-list-of-formula-one-world-drivers-champions#1"
+            ]
+          },
+          "10": {
+            "picked": [
+              "driver-valtteri-bottas#14",
+              "driver-sebastian-vettel#58",
+              "driver-lewis-hamilton#24",
+              "driver-valtteri-bottas#34",
+              "driver-michael-schumacher#0",
+              "driver-lewis-hamilton#31",
+              "driver-nico-rosberg#18",
+              "reference-list-of-formula-one-world-drivers-champions#1",
+              "driver-lewis-hamilton#0",
+              "driver-lewis-hamilton#1"
+            ]
+          }
+        },
+        "F_rank_by_edge_support": {
+          "6": {
+            "picked": [
+              "driver-sebastian-vettel#58",
+              "driver-valtteri-bottas#14",
+              "driver-valtteri-bottas#34",
+              "driver-lewis-hamilton#24",
+              "driver-michael-schumacher#0",
+              "driver-lewis-hamilton#31"
+            ]
+          },
+          "8": {
+            "picked": [
+              "driver-sebastian-vettel#58",
+              "driver-valtteri-bottas#14",
+              "driver-valtteri-bottas#34",
+              "driver-lewis-hamilton#24",
+              "driver-michael-schumacher#0",
+              "driver-lewis-hamilton#31",
+              "driver-nico-rosberg#18",
+              "reference-list-of-formula-one-world-drivers-champions#1"
+            ]
+          },
+          "10": {
+            "picked": [
+              "driver-sebastian-vettel#58",
+              "driver-valtteri-bottas#14",
+              "driver-valtteri-bottas#34",
+              "driver-lewis-hamilton#24",
+              "driver-michael-schumacher#0",
+              "driver-lewis-hamilton#31",
+              "driver-nico-rosberg#18",
+              "reference-list-of-formula-one-world-drivers-champions#1",
+              "driver-lewis-hamilton#0",
+              "driver-lewis-hamilton#1"
+            ]
+          }
+        }
+      }
+    },
+    "Q13": {
+      "pool_size": 178,
+      "policies": {
+        "A_current": {
+          "6": {
+            "picked": [
+              "reference-list-of-formula-one-world-drivers-champions#1",
+              "season-2012-formula-one-world-championship#70",
+              "driver-lewis-hamilton#31",
+              "driver-lewis-hamilton#34",
+              "driver-sebastian-vettel#123",
+              "driver-michael-schumacher#101"
+            ]
+          },
+          "8": {
+            "picked": [
+              "reference-list-of-formula-one-world-drivers-champions#1",
+              "season-2012-formula-one-world-championship#70",
+              "driver-lewis-hamilton#31",
+              "driver-lewis-hamilton#34",
+              "driver-nico-rosberg#60",
+              "driver-sebastian-vettel#123",
+              "driver-lewis-hamilton#19",
+              "driver-michael-schumacher#101"
+            ]
+          },
+          "10": {
+            "picked": [
+              "reference-list-of-formula-one-world-drivers-champions#1",
+              "season-2012-formula-one-world-championship#70",
+              "season-2012-formula-one-world-championship#225",
+              "driver-lewis-hamilton#31",
+              "driver-lewis-hamilton#34",
+              "driver-michael-schumacher#146",
+              "driver-nico-rosberg#60",
+              "driver-sebastian-vettel#123",
+              "driver-lewis-hamilton#19",
+              "driver-michael-schumacher#101"
+            ]
+          }
+        },
+        "B_no_reserve": {
+          "6": {
+            "picked": [
+              "reference-list-of-formula-one-world-drivers-champions#1",
+              "season-2012-formula-one-world-championship#70",
+              "season-2012-formula-one-world-championship#225",
+              "driver-lewis-hamilton#31",
+              "driver-lewis-hamilton#34",
+              "driver-michael-schumacher#146"
+            ]
+          },
+          "8": {
+            "picked": [
+              "reference-list-of-formula-one-world-drivers-champions#1",
+              "season-2012-formula-one-world-championship#70",
+              "season-2012-formula-one-world-championship#225",
+              "driver-lewis-hamilton#31",
+              "driver-lewis-hamilton#34",
+              "driver-michael-schumacher#146",
+              "driver-michael-schumacher#99",
+              "driver-nico-rosberg#60"
+            ]
+          },
+          "10": {
+            "picked": [
+              "reference-list-of-formula-one-world-drivers-champions#1",
+              "season-2012-formula-one-world-championship#70",
+              "season-2012-formula-one-world-championship#225",
+              "driver-lewis-hamilton#31",
+              "driver-lewis-hamilton#34",
+              "driver-michael-schumacher#146",
+              "driver-michael-schumacher#99",
+              "driver-nico-rosberg#60",
+              "driver-sebastian-vettel#123",
+              "season-2012-formula-one-world-championship#199"
+            ]
+          }
+        },
+        "C_anchor_reserve_only": {
+          "6": {
+            "picked": [
+              "driver-lewis-hamilton#34",
+              "reference-list-of-formula-one-world-drivers-champions#1",
+              "season-2012-formula-one-world-championship#70",
+              "season-2012-formula-one-world-championship#225",
+              "driver-lewis-hamilton#31",
+              "driver-michael-schumacher#146"
+            ]
+          },
+          "8": {
+            "picked": [
+              "driver-lewis-hamilton#34",
+              "reference-list-of-formula-one-world-drivers-champions#1",
+              "season-2012-formula-one-world-championship#70",
+              "season-2012-formula-one-world-championship#225",
+              "driver-lewis-hamilton#31",
+              "driver-michael-schumacher#146",
+              "driver-michael-schumacher#99",
+              "driver-nico-rosberg#60"
+            ]
+          },
+          "10": {
+            "picked": [
+              "driver-lewis-hamilton#34",
+              "reference-list-of-formula-one-world-drivers-champions#1",
+              "season-2012-formula-one-world-championship#70",
+              "season-2012-formula-one-world-championship#225",
+              "driver-lewis-hamilton#31",
+              "driver-michael-schumacher#146",
+              "driver-michael-schumacher#99",
+              "driver-nico-rosberg#60",
+              "driver-sebastian-vettel#123",
+              "season-2012-formula-one-world-championship#199"
+            ]
+          }
+        },
+        "D_edge_sources_first": {
+          "6": {
+            "picked": [
+              "reference-list-of-formula-one-world-drivers-champions#1",
+              "driver-sebastian-vettel#123",
+              "driver-lewis-hamilton#0",
+              "driver-sebastian-vettel#27",
+              "season-2012-formula-one-world-championship#119",
+              "driver-lewis-hamilton#137"
+            ]
+          },
+          "8": {
+            "picked": [
+              "reference-list-of-formula-one-world-drivers-champions#1",
+              "driver-sebastian-vettel#123",
+              "driver-lewis-hamilton#0",
+              "driver-sebastian-vettel#27",
+              "season-2012-formula-one-world-championship#119",
+              "driver-lewis-hamilton#137",
+              "driver-michael-schumacher#101",
+              "driver-sebastian-vettel#104"
+            ]
+          },
+          "10": {
+            "picked": [
+              "reference-list-of-formula-one-world-drivers-champions#1",
+              "driver-sebastian-vettel#123",
+              "driver-lewis-hamilton#0",
+              "driver-sebastian-vettel#27",
+              "season-2012-formula-one-world-championship#119",
+              "driver-lewis-hamilton#137",
+              "driver-michael-schumacher#101",
+              "driver-sebastian-vettel#104",
+              "driver-sebastian-vettel#29",
+              "driver-sebastian-vettel#3"
+            ]
+          }
+        },
+        "E_one_per_selected_edge": {
+          "6": {
+            "picked": [
+              "season-2012-formula-one-world-championship#119",
+              "driver-lewis-hamilton#0",
+              "driver-sebastian-vettel#123",
+              "driver-michael-schumacher#101",
+              "reference-list-of-formula-one-world-drivers-champions#1",
+              "driver-sebastian-vettel#29"
+            ]
+          },
+          "8": {
+            "picked": [
+              "season-2012-formula-one-world-championship#119",
+              "driver-lewis-hamilton#0",
+              "driver-sebastian-vettel#123",
+              "driver-michael-schumacher#101",
+              "reference-list-of-formula-one-world-drivers-champions#1",
+              "driver-sebastian-vettel#29",
+              "season-2012-formula-one-world-championship#159",
+              "driver-lewis-hamilton#102"
+            ]
+          },
+          "10": {
+            "picked": [
+              "season-2012-formula-one-world-championship#119",
+              "driver-lewis-hamilton#0",
+              "driver-sebastian-vettel#123",
+              "driver-michael-schumacher#101",
+              "reference-list-of-formula-one-world-drivers-champions#1",
+              "driver-sebastian-vettel#29",
+              "season-2012-formula-one-world-championship#159",
+              "driver-lewis-hamilton#102",
+              "driver-lewis-hamilton#137",
+              "driver-sebastian-vettel#104"
+            ]
+          }
+        },
+        "F_rank_by_edge_support": {
+          "6": {
+            "picked": [
+              "reference-list-of-formula-one-world-drivers-champions#1",
+              "driver-michael-schumacher#101",
+              "season-2012-formula-one-world-championship#159",
+              "driver-sebastian-vettel#123",
+              "driver-lewis-hamilton#0",
+              "driver-sebastian-vettel#27"
+            ]
+          },
+          "8": {
+            "picked": [
+              "reference-list-of-formula-one-world-drivers-champions#1",
+              "driver-michael-schumacher#101",
+              "season-2012-formula-one-world-championship#159",
+              "driver-sebastian-vettel#123",
+              "driver-lewis-hamilton#0",
+              "driver-sebastian-vettel#27",
+              "season-2012-formula-one-world-championship#119",
+              "driver-lewis-hamilton#137"
+            ]
+          },
+          "10": {
+            "picked": [
+              "reference-list-of-formula-one-world-drivers-champions#1",
+              "driver-michael-schumacher#101",
+              "season-2012-formula-one-world-championship#159",
+              "driver-sebastian-vettel#123",
+              "driver-lewis-hamilton#0",
+              "driver-sebastian-vettel#27",
+              "season-2012-formula-one-world-championship#119",
+              "driver-lewis-hamilton#137",
+              "driver-sebastian-vettel#104",
+              "driver-sebastian-vettel#29"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "summary": {
+    "A_current@6": {
+      "hops_covered": "3/18",
+      "complete_chains_Q01_Q08": 1,
+      "gained_vs_A@6": [],
+      "lost_vs_A@6": [],
+      "global_Q09_Q13_jaccard_vs_A@6": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    "A_current@8": {
+      "hops_covered": "4/18",
+      "complete_chains_Q01_Q08": 1,
+      "gained_vs_A@6": [
+        "Q06: hamilton mercedes titles"
+      ],
+      "lost_vs_A@6": [],
+      "global_Q09_Q13_jaccard_vs_A@6": [
+        0.75,
+        0.75,
+        0.75,
+        0.75,
+        0.75
+      ]
+    },
+    "A_current@10": {
+      "hops_covered": "4/18",
+      "complete_chains_Q01_Q08": 1,
+      "gained_vs_A@6": [
+        "Q06: hamilton mercedes titles"
+      ],
+      "lost_vs_A@6": [],
+      "global_Q09_Q13_jaccard_vs_A@6": [
+        0.6,
+        0.6,
+        0.6,
+        0.6,
+        0.6
+      ]
+    },
+    "B_no_reserve@6": {
+      "hops_covered": "3/18",
+      "complete_chains_Q01_Q08": 1,
+      "gained_vs_A@6": [],
+      "lost_vs_A@6": [],
+      "global_Q09_Q13_jaccard_vs_A@6": [
+        0.5,
+        0.33,
+        0.33,
+        0.2,
+        0.5
+      ]
+    },
+    "B_no_reserve@8": {
+      "hops_covered": "4/18",
+      "complete_chains_Q01_Q08": 2,
+      "gained_vs_A@6": [
+        "Q04: hamilton was his 2016 teammate"
+      ],
+      "lost_vs_A@6": [],
+      "global_Q09_Q13_jaccard_vs_A@6": [
+        0.4,
+        0.27,
+        0.4,
+        0.27,
+        0.4
+      ]
+    },
+    "B_no_reserve@10": {
+      "hops_covered": "5/18",
+      "complete_chains_Q01_Q08": 2,
+      "gained_vs_A@6": [
+        "Q04: hamilton was his 2016 teammate",
+        "Q06: hamilton mercedes titles"
+      ],
+      "lost_vs_A@6": [],
+      "global_Q09_Q13_jaccard_vs_A@6": [
+        0.45,
+        0.23,
+        0.33,
+        0.23,
+        0.45
+      ]
+    },
+    "C_anchor_reserve_only@6": {
+      "hops_covered": "3/18",
+      "complete_chains_Q01_Q08": 1,
+      "gained_vs_A@6": [],
+      "lost_vs_A@6": [],
+      "global_Q09_Q13_jaccard_vs_A@6": [
+        0.71,
+        0.33,
+        1.0,
+        0.71,
+        0.5
+      ]
+    },
+    "C_anchor_reserve_only@8": {
+      "hops_covered": "3/18",
+      "complete_chains_Q01_Q08": 1,
+      "gained_vs_A@6": [],
+      "lost_vs_A@6": [],
+      "global_Q09_Q13_jaccard_vs_A@6": [
+        0.56,
+        0.27,
+        0.75,
+        0.56,
+        0.4
+      ]
+    },
+    "C_anchor_reserve_only@10": {
+      "hops_covered": "5/18",
+      "complete_chains_Q01_Q08": 2,
+      "gained_vs_A@6": [
+        "Q04: hamilton was his 2016 teammate",
+        "Q06: hamilton mercedes titles"
+      ],
+      "lost_vs_A@6": [],
+      "global_Q09_Q13_jaccard_vs_A@6": [
+        0.6,
+        0.23,
+        0.6,
+        0.45,
+        0.45
+      ]
+    },
+    "D_edge_sources_first@6": {
+      "hops_covered": "3/18",
+      "complete_chains_Q01_Q08": 1,
+      "gained_vs_A@6": [
+        "Q04: hamilton was his 2016 teammate"
+      ],
+      "lost_vs_A@6": [
+        "Q01: hamilton seven titles"
+      ],
+      "global_Q09_Q13_jaccard_vs_A@6": [
+        0.2,
+        0.33,
+        0.33,
+        0.33,
+        0.2
+      ]
+    },
+    "D_edge_sources_first@8": {
+      "hops_covered": "3/18",
+      "complete_chains_Q01_Q08": 1,
+      "gained_vs_A@6": [
+        "Q04: hamilton was his 2016 teammate"
+      ],
+      "lost_vs_A@6": [
+        "Q01: hamilton seven titles"
+      ],
+      "global_Q09_Q13_jaccard_vs_A@6": [
+        0.17,
+        0.4,
+        0.27,
+        0.27,
+        0.27
+      ]
+    },
+    "D_edge_sources_first@10": {
+      "hops_covered": "3/18",
+      "complete_chains_Q01_Q08": 1,
+      "gained_vs_A@6": [
+        "Q04: hamilton was his 2016 teammate"
+      ],
+      "lost_vs_A@6": [
+        "Q01: hamilton seven titles"
+      ],
+      "global_Q09_Q13_jaccard_vs_A@6": [
+        0.14,
+        0.33,
+        0.23,
+        0.23,
+        0.23
+      ]
+    },
+    "E_one_per_selected_edge@6": {
+      "hops_covered": "3/18",
+      "complete_chains_Q01_Q08": 1,
+      "gained_vs_A@6": [
+        "Q04: hamilton was his 2016 teammate"
+      ],
+      "lost_vs_A@6": [
+        "Q01: hamilton seven titles"
+      ],
+      "global_Q09_Q13_jaccard_vs_A@6": [
+        0.33,
+        0.5,
+        0.5,
+        0.33,
+        0.33
+      ]
+    },
+    "E_one_per_selected_edge@8": {
+      "hops_covered": "3/18",
+      "complete_chains_Q01_Q08": 1,
+      "gained_vs_A@6": [
+        "Q04: hamilton was his 2016 teammate"
+      ],
+      "lost_vs_A@6": [
+        "Q01: hamilton seven titles"
+      ],
+      "global_Q09_Q13_jaccard_vs_A@6": [
+        0.4,
+        0.56,
+        0.56,
+        0.27,
+        0.27
+      ]
+    },
+    "E_one_per_selected_edge@10": {
+      "hops_covered": "4/18",
+      "complete_chains_Q01_Q08": 2,
+      "gained_vs_A@6": [
+        "Q04: hamilton was his 2016 teammate"
+      ],
+      "lost_vs_A@6": [],
+      "global_Q09_Q13_jaccard_vs_A@6": [
+        0.33,
+        0.6,
+        0.45,
+        0.23,
+        0.23
+      ]
+    },
+    "F_rank_by_edge_support@6": {
+      "hops_covered": "3/18",
+      "complete_chains_Q01_Q08": 1,
+      "gained_vs_A@6": [
+        "Q04: hamilton was his 2016 teammate"
+      ],
+      "lost_vs_A@6": [
+        "Q01: hamilton seven titles"
+      ],
+      "global_Q09_Q13_jaccard_vs_A@6": [
+        0.2,
+        0.33,
+        0.33,
+        0.33,
+        0.33
+      ]
+    },
+    "F_rank_by_edge_support@8": {
+      "hops_covered": "3/18",
+      "complete_chains_Q01_Q08": 1,
+      "gained_vs_A@6": [
+        "Q04: hamilton was his 2016 teammate"
+      ],
+      "lost_vs_A@6": [
+        "Q01: hamilton seven titles"
+      ],
+      "global_Q09_Q13_jaccard_vs_A@6": [
+        0.17,
+        0.4,
+        0.27,
+        0.27,
+        0.27
+      ]
+    },
+    "F_rank_by_edge_support@10": {
+      "hops_covered": "3/18",
+      "complete_chains_Q01_Q08": 1,
+      "gained_vs_A@6": [
+        "Q04: hamilton was his 2016 teammate"
+      ],
+      "lost_vs_A@6": [
+        "Q01: hamilton seven titles"
+      ],
+      "global_Q09_Q13_jaccard_vs_A@6": [
+        0.14,
+        0.33,
+        0.23,
+        0.23,
+        0.23
+      ]
+    }
+  }
+}

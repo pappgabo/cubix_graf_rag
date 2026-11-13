@@ -1,0 +1,68 @@
+{
+  "chunk_id": "driver-kimi-raikkonen#58",
+  "doc_id": "driver-kimi-raikkonen",
+  "document_title": "Kimi Räikkönen",
+  "section": "Formula One career > Lotus (2012–2013) > 2012",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "60bfa54854bc2d7a0f9be75a583a1585dd0041f76fd9692172d4cd79933ce536",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Kimi Räikkönen",
+        "entity_type": "Driver",
+        "description": "A Finnish racing driver who competed in Formula One."
+      },
+      {
+        "local_id": "e2",
+        "name": "Lotus",
+        "entity_type": "Team",
+        "description": "A Formula One team that Kimi Räikkönen drove for."
+      },
+      {
+        "local_id": "e3",
+        "name": "2012",
+        "entity_type": "Season",
+        "description": "The Formula One season in which Kimi Räikkönen competed."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e2",
+        "target_id": "e3",
+        "relationship_type": "ENTERED",
+        "description": "Lotus took part in the 2012 Formula One season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Kimi Räikkönen drove for Lotus during the 2012 season.",
+        "from_year": 2012,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 3,
+  "entities_accepted": 3,
+  "entities_rejected": 0,
+  "relationship_candidates": 2,
+  "relationships_accepted": 2,
+  "relationships_rejected": 0,
+  "rejections": [],
+  "alignments": [
+    {
+      "index": 0,
+      "action": "clear_redundant_season_year",
+      "detail": "ENTERED year 2012 already named by Season 'e3'; from_year and to_year cleared"
+    }
+  ]
+}

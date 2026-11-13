@@ -1,0 +1,89 @@
+{
+  "chunk_id": "driver-fernando-alonso#49",
+  "doc_id": "driver-fernando-alonso",
+  "document_title": "Fernando Alonso",
+  "section": "Helmet and career number",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "6eb23a7e1f84f7416b8f7897350571bac19f60f22123edb80944e13cb4333895",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Fernando Alonso",
+        "entity_type": "Driver",
+        "description": "A Spanish Formula One driver known for his multiple championship wins."
+      },
+      {
+        "local_id": "e2",
+        "name": "Monaco Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A prestigious Formula One race held in Monaco."
+      },
+      {
+        "local_id": "e3",
+        "name": "Singapore Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula One night race held in Singapore."
+      },
+      {
+        "local_id": "e4",
+        "name": "Indian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula One race held in India."
+      },
+      {
+        "local_id": "e5",
+        "name": "2008",
+        "entity_type": "Season",
+        "description": "The Formula One season in which Alonso was a two-time world champion."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e2",
+        "target_id": "e5",
+        "relationship_type": "ROUND_OF",
+        "description": "The Monaco Grand Prix is a round of the 2008 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e5",
+        "relationship_type": "ROUND_OF",
+        "description": "The Singapore Grand Prix is a round of the 2008 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e5",
+        "relationship_type": "ROUND_OF",
+        "description": "The Indian Grand Prix is a round of the 2008 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 5,
+  "entities_accepted": 5,
+  "entities_rejected": 0,
+  "relationship_candidates": 4,
+  "relationships_accepted": 3,
+  "relationships_rejected": 1,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "WON does not allow Driver -> Season"
+    }
+  ],
+  "alignments": []
+}

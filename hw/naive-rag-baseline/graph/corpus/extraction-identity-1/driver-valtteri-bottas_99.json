@@ -1,0 +1,75 @@
+{
+  "chunk_id": "driver-valtteri-bottas#99",
+  "doc_id": "driver-valtteri-bottas",
+  "document_title": "Valtteri Bottas",
+  "section": "Formula One career > Mercedes (2017–2021) > 2021: Final season at Mercedes",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/Valtteri_Bottas",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "f7afc65684bc65d175430639cee4eb886410cb76b329f8912f475c6edae9001b",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "entity_candidates": 3,
+  "entities_accepted": 3,
+  "entities_rejected": 0,
+  "relationship_candidates": 4,
+  "relationships_accepted": 2,
+  "relationships_rejected": 2,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "WON does not allow Team -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "WON does not allow Driver -> Season"
+    }
+  ],
+  "alignments": [],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Valtteri Bottas",
+        "entity_type": "Driver",
+        "description": "Bottas ended the season third in the World Drivers' Championship with 226 points."
+      },
+      {
+        "local_id": "e2",
+        "name": "Mercedes-AMG Petronas Formula One Team",
+        "entity_type": "Team",
+        "description": "Mercedes achieved an eighth consecutive World Constructors' Championship."
+      },
+      {
+        "local_id": "e3",
+        "name": "2021",
+        "entity_type": "Season",
+        "description": "Bottas's final year with Mercedes."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Bottas drove for Mercedes during the 2021 season.",
+        "from_year": 2017,
+        "to_year": 2021,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e3",
+        "relationship_type": "ENTERED",
+        "description": "Mercedes entered the 2021 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

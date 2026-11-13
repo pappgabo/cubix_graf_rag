@@ -1,0 +1,107 @@
+{
+  "chunk_id": "season-2012-formula-one-world-championship#0",
+  "doc_id": "season-2012-formula-one-world-championship",
+  "document_title": "2012 Formula One World Championship",
+  "section": null,
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "ca791f830bb90a9ac80015997d9113b55f61a85ad8b608d47161fba719dd05cd",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "2012 FIA Formula One World Championship",
+        "entity_type": "Season",
+        "description": "The 66th season of FIA Formula One motor racing."
+      },
+      {
+        "local_id": "e2",
+        "name": "Australia",
+        "entity_type": "GrandPrix",
+        "description": "The Grand Prix where the 2012 season started."
+      },
+      {
+        "local_id": "e3",
+        "name": "Brazil",
+        "entity_type": "GrandPrix",
+        "description": "The Grand Prix where the 2012 season ended."
+      },
+      {
+        "local_id": "e4",
+        "name": "United States Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Grand Prix that returned in the 2012 season."
+      },
+      {
+        "local_id": "e5",
+        "name": "Circuit of the Americas",
+        "entity_type": "Circuit",
+        "description": "The circuit where the United States Grand Prix was held."
+      },
+      {
+        "local_id": "e6",
+        "name": "Bahrain Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Grand Prix that returned to the calendar in 2012."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e2",
+        "target_id": "e1",
+        "relationship_type": "ROUND_OF",
+        "description": "Australia Grand Prix is a round of the 2012 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e1",
+        "relationship_type": "ROUND_OF",
+        "description": "Brazil Grand Prix is a round of the 2012 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e1",
+        "relationship_type": "ROUND_OF",
+        "description": "United States Grand Prix is a round of the 2012 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e5",
+        "relationship_type": "HELD_AT",
+        "description": "United States Grand Prix is held at Circuit of the Americas.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e6",
+        "target_id": "e1",
+        "relationship_type": "ROUND_OF",
+        "description": "Bahrain Grand Prix is a round of the 2012 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 6,
+  "entities_accepted": 6,
+  "entities_rejected": 0,
+  "relationship_candidates": 5,
+  "relationships_accepted": 5,
+  "relationships_rejected": 0,
+  "rejections": [],
+  "alignments": []
+}

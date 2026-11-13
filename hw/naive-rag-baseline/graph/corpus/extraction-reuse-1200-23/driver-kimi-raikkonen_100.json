@@ -1,0 +1,62 @@
+{
+  "chunk_id": "driver-kimi-raikkonen#100",
+  "doc_id": "driver-kimi-raikkonen",
+  "document_title": "Kimi Räikkönen",
+  "section": "Personal life",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "8acbd0a1238431f7323dae7e53b2c01a20c0c26f0861a045fa600ecdcf95360d",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Kimi Räikkönen",
+        "entity_type": "Driver",
+        "description": "A Finnish racing driver known for his distinctive voice and personal beliefs."
+      },
+      {
+        "local_id": "e2",
+        "name": "Sebastian Vettel",
+        "entity_type": "Driver",
+        "description": "A German racing driver and close friend of Kimi Räikkönen."
+      },
+      {
+        "local_id": "e3",
+        "name": "Antonio Giovinazzi",
+        "entity_type": "Driver",
+        "description": "An Italian racing driver and close friend of Kimi Räikkönen."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Kimi Räikkönen and Sebastian Vettel were teammates at Ferrari.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e3",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Kimi Räikkönen and Antonio Giovinazzi were teammates at Alfa Romeo.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 3,
+  "entities_accepted": 3,
+  "entities_rejected": 0,
+  "relationship_candidates": 2,
+  "relationships_accepted": 2,
+  "relationships_rejected": 0,
+  "rejections": [],
+  "alignments": []
+}

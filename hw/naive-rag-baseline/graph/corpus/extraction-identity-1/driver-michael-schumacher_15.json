@@ -1,0 +1,67 @@
+{
+  "chunk_id": "driver-michael-schumacher#15",
+  "doc_id": "driver-michael-schumacher",
+  "document_title": "Michael Schumacher",
+  "section": null,
+  "page": 2,
+  "source": "https://en.wikipedia.org/wiki/Michael_Schumacher",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "7e04fa2ffb0e55eb20a51f4924c9fd484115c02892282898d2eb5104eef43594",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "entity_candidates": 4,
+  "entities_accepted": 4,
+  "entities_rejected": 0,
+  "relationship_candidates": 2,
+  "relationships_accepted": 1,
+  "relationships_rejected": 1,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "HELD_AT does not allow Circuit -> Season"
+    }
+  ],
+  "alignments": [],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Michael Schumacher",
+        "entity_type": "Driver",
+        "description": "A prominent Formula One driver."
+      },
+      {
+        "local_id": "e2",
+        "name": "Sauber–Mercedes C11",
+        "entity_type": "Car",
+        "description": "A car model driven by Michael Schumacher."
+      },
+      {
+        "local_id": "e3",
+        "name": "1990",
+        "entity_type": "Season",
+        "description": "The season of the World Sportscar Championship."
+      },
+      {
+        "local_id": "e4",
+        "name": "Autódromo Hermanos Rodríguez",
+        "entity_type": "Circuit",
+        "description": "The circuit where Schumacher won the season finale."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e2",
+        "target_id": "e3",
+        "relationship_type": "RACED_IN",
+        "description": "The Sauber–Mercedes C11 took part in the 1990 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

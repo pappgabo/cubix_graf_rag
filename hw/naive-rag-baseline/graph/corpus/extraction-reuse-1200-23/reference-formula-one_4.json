@@ -1,0 +1,121 @@
+{
+  "chunk_id": "reference-formula-one#4",
+  "doc_id": "reference-formula-one",
+  "document_title": "Formula One",
+  "section": "Formula One > History",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "7e5fbe082cd69e554121e45d70b5064df769c13ba9276ab19a6f03d3f66e4e08",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Keke Rosberg",
+        "entity_type": "Driver",
+        "description": "Reigning World Champion who won the 1983 Race of Champions."
+      },
+      {
+        "local_id": "e2",
+        "name": "Danny Sullivan",
+        "entity_type": "Driver",
+        "description": "American driver who competed in the 1983 Race of Champions."
+      },
+      {
+        "local_id": "e3",
+        "name": "Williams-Cosworth",
+        "entity_type": "Car",
+        "description": "Car driven by Keke Rosberg in the 1983 Race of Champions."
+      },
+      {
+        "local_id": "e4",
+        "name": "1983",
+        "entity_type": "Season",
+        "description": "The year of the last non-championship Formula One race."
+      },
+      {
+        "local_id": "e5",
+        "name": "Race of Champions",
+        "entity_type": "GrandPrix",
+        "description": "The last non-championship Formula One race held in 1983."
+      },
+      {
+        "local_id": "e6",
+        "name": "Brands Hatch",
+        "entity_type": "Circuit",
+        "description": "The circuit where the 1983 Race of Champions was held."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Danny Sullivan at Race of Champions",
+        "entity_type": "RaceResult",
+        "description": "Danny Sullivan competed in the 1983 Race of Champions."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e5",
+        "target_id": "e4",
+        "relationship_type": "ROUND_OF",
+        "description": "The Race of Champions is a round of the 1983 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e6",
+        "relationship_type": "HELD_AT",
+        "description": "The Race of Champions was held at Brands Hatch.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Danny Sullivan competed in the 1983 Race of Champions.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e5",
+        "relationship_type": "AT_RACE",
+        "description": "Danny Sullivan competed in the 1983 Race of Champions.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 6,
+  "entities_accepted": 7,
+  "entities_rejected": 0,
+  "relationship_candidates": 5,
+  "relationships_accepted": 4,
+  "relationships_rejected": 2,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "WON does not allow Driver -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "FOR_TEAM does not allow Driver -> Car"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 4,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e5; description kept"
+    }
+  ]
+}

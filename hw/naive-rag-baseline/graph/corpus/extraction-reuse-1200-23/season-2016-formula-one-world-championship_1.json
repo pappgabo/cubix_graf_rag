@@ -1,0 +1,128 @@
+{
+  "chunk_id": "season-2016-formula-one-world-championship#1",
+  "doc_id": "season-2016-formula-one-world-championship",
+  "document_title": "2016 Formula One World Championship",
+  "section": null,
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "990a316b5680c0c63c8a25014dd4567f66b9da8c5b7877edb51ee0d46be9adcb",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Nico Rosberg",
+        "entity_type": "Driver",
+        "description": "Won his only World Drivers' Championship title in 2016."
+      },
+      {
+        "local_id": "e2",
+        "name": "Lewis Hamilton",
+        "entity_type": "Driver",
+        "description": "Teammate of Nico Rosberg in 2016 and defending World Champion."
+      },
+      {
+        "local_id": "e3",
+        "name": "Mercedes-AMG Petronas Formula One Team",
+        "entity_type": "Team",
+        "description": "Team that won the World Constructors' Championship in 2016."
+      },
+      {
+        "local_id": "e4",
+        "name": "Red Bull Racing",
+        "entity_type": "Team",
+        "description": "Finished second in the World Constructors' Championship in 2016."
+      },
+      {
+        "local_id": "e5",
+        "name": "Scuderia Ferrari",
+        "entity_type": "Team",
+        "description": "Finished third in the World Constructors' Championship in 2016."
+      },
+      {
+        "local_id": "e6",
+        "name": "2016",
+        "entity_type": "Season",
+        "description": "The season in which Nico Rosberg won the World Drivers' Championship."
+      },
+      {
+        "local_id": "e7",
+        "name": "World Drivers' Championship",
+        "entity_type": "Title",
+        "description": "Title won by Nico Rosberg in 2016."
+      },
+      {
+        "local_id": "e8",
+        "name": "World Constructors' Championship",
+        "entity_type": "Title",
+        "description": "Title won by Mercedes in 2016."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e7",
+        "relationship_type": "WON",
+        "description": "Nico Rosberg won the World Drivers' Championship title.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e8",
+        "relationship_type": "WON",
+        "description": "Mercedes won the World Constructors' Championship title.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Nico Rosberg and Lewis Hamilton were teammates in 2016.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e6",
+        "relationship_type": "ENTERED",
+        "description": "Mercedes entered the 2016 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e6",
+        "relationship_type": "ENTERED",
+        "description": "Red Bull Racing entered the 2016 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e6",
+        "relationship_type": "ENTERED",
+        "description": "Ferrari entered the 2016 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 8,
+  "entities_accepted": 8,
+  "entities_rejected": 0,
+  "relationship_candidates": 6,
+  "relationships_accepted": 6,
+  "relationships_rejected": 0,
+  "rejections": [],
+  "alignments": []
+}

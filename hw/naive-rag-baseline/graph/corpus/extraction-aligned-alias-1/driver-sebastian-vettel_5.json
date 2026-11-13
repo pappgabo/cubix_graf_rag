@@ -1,0 +1,81 @@
+{
+  "chunk_id": "driver-sebastian-vettel#5",
+  "doc_id": "driver-sebastian-vettel",
+  "document_title": "Sebastian Vettel",
+  "section": null,
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/Sebastian_Vettel",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "abe132510edb5f2ace773c7a947777e921b392508e7d23d7f5fa510ed3b533dc",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "WON does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "WON does not allow Driver -> Season"
+    }
+  ],
+  "alignments": [],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Sebastian Vettel",
+        "entity_type": "Driver",
+        "description": "A Formula One driver who signed for Ferrari after a winless 2014 campaign."
+      },
+      {
+        "local_id": "e2",
+        "name": "Scuderia Ferrari",
+        "entity_type": "Team",
+        "description": "A Formula One team that Vettel signed for, replacing Alonso."
+      },
+      {
+        "local_id": "e3",
+        "name": "Kimi Räikkönen",
+        "entity_type": "Driver",
+        "description": "A Formula One driver who partnered with Vettel at Ferrari."
+      },
+      {
+        "local_id": "e4",
+        "name": "2017",
+        "entity_type": "Season",
+        "description": "A Formula One season where Vettel finished runner-up."
+      },
+      {
+        "local_id": "e5",
+        "name": "2018",
+        "entity_type": "Season",
+        "description": "A Formula One season where Vettel finished runner-up."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Vettel signed for Ferrari, replacing Alonso.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e3",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Vettel partnered with Kimi Räikkönen at Ferrari.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

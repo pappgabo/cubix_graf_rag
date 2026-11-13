@@ -21,11 +21,16 @@ from naive_rag.graph_merge import (
 )
 from naive_rag.local_search import (
     REFUSAL,
+    answer_prompt,
     cited_chunks,
+    context_text,
     filter_questions,
     local_search,
     search_record,
     select_context,
+    classify_claims,
+    evaluation_text,
+    graph_statement_text,
     unsupported_claims,
     main as search_main,
 )
@@ -101,7 +106,49 @@ class MergeTests(unittest.TestCase):
         self.assertEqual(len(before.edges), 1)
         self.assertEqual(len(after.edges), 1)
         self.assertEqual(after.edges[0].source_chunk_ids, ("a#0",))
-        self.assertEqual(ALIAS_MAP, {})
+        self.assertEqual(ALIAS_MAP["Driver:hamilton"], "Driver:lewis hamilton")
+        self.assertEqual(ALIAS_MAP["Team:ferrari"], "Team:scuderia ferrari")
+        self.assertEqual(ALIAS_MAP["Team:red bull"], "Team:red bull racing")
+
+    def test_self_loop_drops_and_the_other_edge_stays(self):
+        description = (
+            "Nico Rosberg was teammates with Lewis Hamilton "
+            "from 2013 to 2016."
+        )
+        entities = [
+            _driver("e1", "Nico Rosberg"),
+            _driver("e2", "Lewis Hamilton"),
+        ]
+        relationships = [
+            {
+                "source_id": "e1",
+                "target_id": "e1",
+                "relationship_type": "TEAMMATE_OF",
+                "description": description,
+                "from_year": None,
+                "to_year": None,
+                "role": None,
+            },
+            {
+                "source_id": "e1",
+                "target_id": "e2",
+                "relationship_type": "TEAMMATE_OF",
+                "description": description,
+                "from_year": None,
+                "to_year": None,
+                "role": None,
+            },
+        ]
+        records = [_record("rosberg#1", entities, relationships)]
+        for graph in (occurrence_graph(records), merged_graph(records)):
+            self.assertEqual(
+                {node.entity_key for node in graph.nodes},
+                {"Driver:nico rosberg", "Driver:lewis hamilton"},
+            )
+            self.assertEqual(len(graph.edges), 1)
+            edge = graph.edges[0]
+            self.assertEqual(edge.rel_type, "TEAMMATE_OF")
+            self.assertNotEqual(edge.source_id, edge.target_id)
 
     def test_different_years_stay_two_edges(self):
         records = [
@@ -139,6 +186,92 @@ class MergeTests(unittest.TestCase):
         self.assertEqual(measured["edges"], 1)
         self.assertEqual(measured["largest_weak_component_nodes"], 2)
         self.assertIn("az irány nem számít", measured["component_meaning"])
+
+
+class AliasMergeTests(unittest.TestCase):
+    def test_alias_and_canonical_name_become_one_node(self):
+        graph = merged_graph([
+            _record("a#0", [_driver("e1", "Hamilton", "Short form.")], []),
+            _record("b#0", [_driver("e1", "Lewis Hamilton", "Full form.")], []),
+            _record("c#0", [_team("e1", "Ferrari")], []),
+            _record("d#0", [_team("e1", "Scuderia Ferrari")], []),
+            _record("e#0", [_team("e1", "Red Bull")], []),
+            _record("f#0", [_team("e1", "Red Bull Racing")], []),
+        ])
+        by_key = {node.entity_key: node for node in graph.nodes}
+        self.assertEqual(set(by_key), {
+            "Driver:lewis hamilton",
+            "Team:scuderia ferrari",
+            "Team:red bull racing",
+        })
+        self.assertEqual(by_key["Driver:lewis hamilton"].name, "Lewis Hamilton")
+        self.assertEqual(by_key["Team:scuderia ferrari"].name, "Scuderia Ferrari")
+        self.assertEqual(by_key["Team:red bull racing"].name, "Red Bull Racing")
+
+    def test_both_occurrences_keep_sources_and_descriptions(self):
+        graph = merged_graph([
+            _record("a#0", [_driver("e1", "Hamilton", "Short form.")], []),
+            _record("b#0", [_driver("e1", "Lewis Hamilton", "Full form.")], []),
+        ])
+        node = graph.nodes[0]
+        self.assertEqual(node.source_chunk_ids, ("a#0", "b#0"))
+        self.assertEqual(node.description, "Short form.\nFull form.")
+
+    def test_relationship_endpoints_use_the_canonical_key(self):
+        graph = merged_graph([
+            _record(
+                "a#0",
+                [_driver("e1", "Hamilton"), _team("e2", "Red Bull")],
+                [_drove("e1", "e2")],
+            ),
+        ])
+        edge = graph.edges[0]
+        self.assertEqual(edge.source_id, "Driver:lewis hamilton")
+        self.assertEqual(edge.target_id, "Team:red bull racing")
+
+    def test_edges_that_become_identical_merge_and_keep_sources(self):
+        first = _drove("e1", "e2")
+        first["description"] = "Alias spell."
+        second = _drove("e1", "e2")
+        second["description"] = "Canonical spell."
+        graph = merged_graph([
+            _record("a#0",
+                    [_driver("e1", "Hamilton"), _team("e2", "Ferrari")],
+                    [first]),
+            _record("b#0",
+                    [_driver("e1", "Lewis Hamilton"),
+                     _team("e2", "Scuderia Ferrari")],
+                    [second]),
+        ])
+        self.assertEqual(len(graph.edges), 1)
+        edge = graph.edges[0]
+        self.assertEqual(edge.source_id, "Driver:lewis hamilton")
+        self.assertEqual(edge.target_id, "Team:scuderia ferrari")
+        self.assertEqual(edge.source_chunk_ids, ("a#0", "b#0"))
+        self.assertEqual(edge.description, "Alias spell.\nCanonical spell.")
+
+    def test_rosberg_does_not_merge_with_nico_rosberg(self):
+        graph = merged_graph([
+            _record("a#0", [_driver("e1", "Rosberg")], []),
+            _record("b#0", [_driver("e1", "Nico Rosberg")], []),
+        ])
+        self.assertEqual(
+            {node.entity_key for node in graph.nodes},
+            {"Driver:rosberg", "Driver:nico rosberg"},
+        )
+
+    def test_same_name_with_a_different_type_stays_separate(self):
+        graph = merged_graph([
+            _record("a#0", [
+                _driver("e1", "Mercedes"),
+                _team("e2", "Mercedes"),
+            ], []),
+        ])
+        self.assertEqual(
+            {node.entity_key for node in graph.nodes},
+            {"Driver:mercedes",
+             "Team:mercedes-amg petronas formula one team"},
+        )
 
 
 class SearchTests(unittest.TestCase):
@@ -187,9 +320,12 @@ class SearchTests(unittest.TestCase):
         self.assertEqual(seen[0], "Lewis Hamilton\nBritish racing driver.")
 
         def answer(prompt):
+            graph, _, original = prompt.partition("Eredeti dokumentumrészletek:")
             self.assertIn("Driver:lewis hamilton", prompt)
-            self.assertIn("a#0", prompt)
-            self.assertNotIn("British racing driver", prompt)
+            self.assertIn("források: további 1", prompt)
+            self.assertNotIn("a#0", prompt)
+            self.assertIn("British racing driver.", graph)
+            self.assertNotIn("British racing driver.", original)
             return "Hamilton versenyez a Ferrarinak."
 
         result = local_search(
@@ -202,7 +338,7 @@ class SearchTests(unittest.TestCase):
         self.assertFalse(result.refused)
         self.assertTrue(result.model_called)
         keys = {node["entity_key"] for node in result.subgraph["nodes"]}
-        self.assertEqual(keys, {"Driver:lewis hamilton", "Team:ferrari"})
+        self.assertEqual(keys, {"Driver:lewis hamilton", "Team:scuderia ferrari"})
         self.assertEqual(result.subgraph["chunk_ids"], ["a#0"])
         self.assertEqual(result.subgraph["edges"][0]["rel_type"], "DROVE_FOR")
         saved = search_record("Q01", result)
@@ -298,6 +434,93 @@ class SearchTests(unittest.TestCase):
             for edge in edges
         ))
 
+    def _teammate_pair(self):
+        entities = [
+            _driver("hamilton", "Lewis Hamilton"),
+            _driver("rosberg", "Nico Rosberg"),
+            _driver("leclerc", "Charles Leclerc"),
+        ]
+        relationships = [
+            {
+                "source_id": "leclerc",
+                "target_id": "rosberg",
+                "relationship_type": "TEAMMATE_OF",
+                "description": "Charles Leclerc was teammates with Nico Rosberg.",
+                "from_year": None,
+                "to_year": None,
+                "role": None,
+            },
+            {
+                "source_id": "hamilton",
+                "target_id": "rosberg",
+                "relationship_type": "TEAMMATE_OF",
+                "description": (
+                    "Nico Rosberg was teammates with Lewis Hamilton "
+                    "from 2013 to 2016."
+                ),
+                "from_year": None,
+                "to_year": None,
+                "role": None,
+            },
+        ]
+        return merged_graph([_record("q#0", entities, relationships)])
+
+    def test_reserved_tie_prefers_the_anchor_edge(self):
+        graph = self._teammate_pair()
+        _nodes, edges = select_context(
+            graph,
+            "Who was the teammate?",
+            (("Driver:lewis hamilton", 0.9),),
+            edge_limit=1,
+        )
+        self.assertEqual(len(edges), 1)
+        self.assertEqual(
+            {edges[0].source_id, edges[0].target_id},
+            {"Driver:lewis hamilton", "Driver:nico rosberg"},
+        )
+
+    def test_higher_hits_still_take_the_reserved_slot(self):
+        entities = [
+            _driver("hamilton", "Lewis Hamilton"),
+            _driver("rosberg", "Nico Rosberg"),
+            _driver("leclerc", "Charles Leclerc"),
+        ]
+        relationships = [
+            {
+                "source_id": "leclerc",
+                "target_id": "rosberg",
+                "relationship_type": "TEAMMATE_OF",
+                "description": "Charles Leclerc finished as runner-up to the champion.",
+                "from_year": None,
+                "to_year": None,
+                "role": None,
+            },
+            {
+                "source_id": "hamilton",
+                "target_id": "rosberg",
+                "relationship_type": "TEAMMATE_OF",
+                "description": (
+                    "Nico Rosberg was teammates with Lewis Hamilton "
+                    "from 2013 to 2016."
+                ),
+                "from_year": None,
+                "to_year": None,
+                "role": None,
+            },
+        ]
+        graph = merged_graph([_record("q#0", entities, relationships)])
+        _nodes, edges = select_context(
+            graph,
+            "Who was the teammate of the champion?",
+            (("Driver:lewis hamilton", 0.9),),
+            edge_limit=1,
+        )
+        self.assertEqual(len(edges), 1)
+        self.assertEqual(
+            {edges[0].source_id, edges[0].target_id},
+            {"Driver:charles leclerc", "Driver:nico rosberg"},
+        )
+
     def test_low_score_does_not_call_the_answer_model(self):
         graph = self._graph()
         index = build_index(graph, lambda texts: [[1.0, 0.0] for _text in texts])
@@ -368,6 +591,42 @@ class SearchTests(unittest.TestCase):
             unsupported_claims("Nico Rosberg, Charles Leclerc.", sources),
         )
         self.assertIn("7", unsupported_claims("He won 7 titles.", sources))
+
+    def test_graph_only_names_are_not_unsupported(self):
+        sources = [{"chunk_id": "a#0", "text": "Nico Rosberg won in 2016."}]
+        graph = (
+            "Gráfállítások:\n"
+            "Lewis Hamilton won his titles with McLaren in 2008 "
+            "and Mercedes in 2014.\n"
+        )
+        answer = "Lewis Hamilton won with McLaren and Mercedes. Renault won 11."
+        claims = classify_claims(answer, sources, graph)
+        self.assertIn("lewis hamilton", claims["graph_only"])
+        self.assertIn("mclaren", claims["graph_only"])
+        self.assertIn("mercedes", claims["graph_only"])
+        self.assertIn("renault", claims["unsupported"])
+        self.assertNotIn("mclaren", claims["unsupported"])
+        text = evaluation_text(False, claims)
+        self.assertNotIn("nem forrással alátámasztott: mclaren", text)
+        self.assertIn("renault", text)
+        self.assertIn("nem forrással alátámasztott", text)
+        graph_only = evaluation_text(False, {
+            "in_excerpts": ["lewis hamilton"],
+            "graph_only": ["mclaren"],
+            "unsupported": [],
+        })
+        self.assertNotIn("nem forrással alátámasztott", graph_only)
+        self.assertIn("Csak a gráfállításokban: mclaren", graph_only)
+
+    def test_graph_statement_text_stops_before_the_excerpts(self):
+        prompt = (
+            "Kérdés: Who?\n\nKontextus:\n"
+            "Gráfállítások:\nMcLaren won.\n"
+            "Eredeti dokumentumrészletek:\nRenault won.\n"
+        )
+        section = graph_statement_text(prompt)
+        self.assertIn("McLaren", section)
+        self.assertNotIn("Renault", section)
 
     def test_question_filter_keeps_an_inclusive_range(self):
         items = [{"id": "Q01"}, {"id": "Q04"}, {"id": "Q05"}]
@@ -448,13 +707,52 @@ class PilotReportTests(unittest.TestCase):
             payload["before"]["nodes"], payload["after"]["nodes"])
         self.assertEqual(payload["highest_degree"]["degree"], 1)
         self.assertGreater(len(payload["highest_degree"]["entity_keys"]), 1)
-        self.assertEqual(payload["alias_map"], {})
+        self.assertEqual(
+            payload["alias_map"]["Driver:hamilton"], "Driver:lewis hamilton")
+        self.assertEqual(
+            payload["alias_map"]["Team:ferrari"], "Team:scuderia ferrari")
+        self.assertEqual(
+            payload["alias_map"]["Team:red bull"], "Team:red bull racing")
+        self.assertEqual(payload["alias_map"], dict(ALIAS_MAP))
         self.assertEqual(payload["outside_schema"], {})
         self.assertTrue(payload["rejected"][0]["quote"])
         self.assertNotIn("MENTIONS", payload["relationship_types"])
         markdown = render_markdown(payload, title="pilot")
         self.assertIn("nem hibás extrakció", markdown)
         self.assertIn("strukturális", markdown.lower())
+
+    def test_self_loop_does_not_stop_the_quality_report(self):
+        description = (
+            "Nico Rosberg was teammates with Lewis Hamilton "
+            "from 2013 to 2016."
+        )
+        records = [_record(
+            "rosberg#1",
+            [_driver("e1", "Nico Rosberg"), _driver("e2", "Lewis Hamilton")],
+            [
+                {
+                    "source_id": "e1",
+                    "target_id": "e1",
+                    "relationship_type": "TEAMMATE_OF",
+                    "description": description,
+                    "from_year": None,
+                    "to_year": None,
+                    "role": None,
+                },
+                {
+                    "source_id": "e1",
+                    "target_id": "e2",
+                    "relationship_type": "TEAMMATE_OF",
+                    "description": description,
+                    "from_year": None,
+                    "to_year": None,
+                    "role": None,
+                },
+            ],
+        )]
+        payload = quality_payload(records, {})
+        self.assertEqual(payload["after"]["nodes"], 2)
+        self.assertEqual(payload["after"]["edges"], 1)
 
 
 if __name__ == "__main__":

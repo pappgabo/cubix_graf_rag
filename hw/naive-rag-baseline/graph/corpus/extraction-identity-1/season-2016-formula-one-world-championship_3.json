@@ -1,0 +1,85 @@
+{
+  "chunk_id": "season-2016-formula-one-world-championship#3",
+  "doc_id": "season-2016-formula-one-world-championship",
+  "document_title": "2016 Formula One World Championship",
+  "section": null,
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/2016_Formula_One_World_Championship",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "a3c1841821fc030196705a078aa8b61f20ffada7ff375c62eb9a94b779d8ea6e",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "entity_candidates": 4,
+  "entities_accepted": 4,
+  "entities_rejected": 0,
+  "relationship_candidates": 4,
+  "relationships_accepted": 3,
+  "relationships_rejected": 1,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "ACHIEVED does not allow Driver -> Season"
+    }
+  ],
+  "alignments": [],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Nico Rosberg",
+        "entity_type": "Driver",
+        "description": "Nico Rosberg won his only World Drivers' Championship title in the final race of the season. With nine wins and seven other podiums, Rosberg beat teammate and defending World Champion Lewis Hamilton by five points, despite Hamilton winning more races than Rosberg throughout the season."
+      },
+      {
+        "local_id": "e2",
+        "name": "Lewis Hamilton",
+        "entity_type": "Driver",
+        "description": "Teammate of Nico Rosberg, defending World Champion."
+      },
+      {
+        "local_id": "e3",
+        "name": "2016",
+        "entity_type": "Season",
+        "description": "The season in which Nico Rosberg won his only World Drivers' Championship title."
+      },
+      {
+        "local_id": "e4",
+        "name": "World Drivers' Championship",
+        "entity_type": "Title",
+        "description": "Nico Rosberg won his only World Drivers' Championship title."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e4",
+        "relationship_type": "WON",
+        "description": "Nico Rosberg won the World Drivers' Championship title.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e3",
+        "relationship_type": "AWARDED_IN",
+        "description": "The World Drivers' Championship title was awarded in the 2016 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Nico Rosberg was teammates with Lewis Hamilton.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

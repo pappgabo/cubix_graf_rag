@@ -1,0 +1,87 @@
+{
+  "chunk_id": "driver-lewis-hamilton#6",
+  "doc_id": "driver-lewis-hamilton",
+  "document_title": "Lewis Hamilton",
+  "section": null,
+  "page": 1,
+  "source": "https://en.wikipedia.org/wiki/Lewis_Hamilton",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "3d0c4a501206ef167c73e0a5496086c2ae841c742d6863b82ae41d276c49800e",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "WON does not allow Season -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "ROUND_OF does not allow Season -> Season"
+    }
+  ],
+  "alignments": [],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Lewis Hamilton",
+        "entity_type": "Driver",
+        "description": "A Formula One driver who took his record ninth British Grand Prix victory in 2024."
+      },
+      {
+        "local_id": "e2",
+        "name": "Mercedes-AMG Petronas Formula One Team",
+        "entity_type": "Team",
+        "description": "The Formula One team Hamilton raced for until 2024."
+      },
+      {
+        "local_id": "e3",
+        "name": "Scuderia Ferrari",
+        "entity_type": "Team",
+        "description": "The Formula One team Hamilton signed for in 2025."
+      },
+      {
+        "local_id": "e4",
+        "name": "2024",
+        "entity_type": "Season",
+        "description": "The season in which Hamilton took his ninth British Grand Prix victory."
+      },
+      {
+        "local_id": "e5",
+        "name": "2025",
+        "entity_type": "Season",
+        "description": "The season in which Hamilton signed for Ferrari."
+      },
+      {
+        "local_id": "e6",
+        "name": "2027",
+        "entity_type": "Season",
+        "description": "The end of the contract Hamilton signed with Ferrari."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Hamilton raced for Mercedes until 2024.",
+        "from_year": null,
+        "to_year": 2024,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e3",
+        "relationship_type": "DROVE_FOR",
+        "description": "Hamilton signed for Ferrari in 2025.",
+        "from_year": 2025,
+        "to_year": 2027,
+        "role": null
+      }
+    ]
+  }
+}

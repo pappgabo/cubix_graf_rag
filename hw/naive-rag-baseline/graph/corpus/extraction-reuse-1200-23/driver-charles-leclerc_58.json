@@ -1,0 +1,88 @@
+{
+  "chunk_id": "driver-charles-leclerc#58",
+  "doc_id": "driver-charles-leclerc",
+  "document_title": "Charles Leclerc",
+  "section": "Charles Leclerc > Racecraft",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "1cca245dc5fa7c863ebe50a68ef7021044d58df9b1f6a5c229ceb886309316da",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Charles Leclerc",
+        "entity_type": "Driver",
+        "description": "Leclerc has been noted by critics for his proficiency in wheel-to-wheel racing."
+      },
+      {
+        "local_id": "e2",
+        "name": "Max Verstappen",
+        "entity_type": "Driver",
+        "description": "Leclerc ceded the lead of the 2019 Austrian Grand Prix to Verstappen."
+      },
+      {
+        "local_id": "e3",
+        "name": "Lewis Hamilton",
+        "entity_type": "Driver",
+        "description": "Leclerc defended his lead at the 2019 Italian Grand Prix from Hamilton."
+      },
+      {
+        "local_id": "e4",
+        "name": "Valtteri Bottas",
+        "entity_type": "Driver",
+        "description": "Leclerc defended his lead at the 2019 Italian Grand Prix from Bottas."
+      },
+      {
+        "local_id": "e5",
+        "name": "2019 Austrian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "Leclerc ceded the lead to Verstappen in the closing laps."
+      },
+      {
+        "local_id": "e6",
+        "name": "2019 Italian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "Leclerc defended his lead from Hamilton and Bottas."
+      },
+      {
+        "local_id": "e7",
+        "name": "2021 Spanish Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "Leclerc was praised for his first-corner overtake on Bottas."
+      }
+    ],
+    "relationships": []
+  },
+  "entity_candidates": 7,
+  "entities_accepted": 7,
+  "entities_rejected": 0,
+  "relationship_candidates": 4,
+  "relationships_accepted": 0,
+  "relationships_rejected": 4,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "ACHIEVED Driver -> GrandPrix has from_year=2019, to_year=None, role=None; the year or role cannot be stored on the reified result"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "ACHIEVED Driver -> GrandPrix has from_year=2019, to_year=None, role=None; the year or role cannot be stored on the reified result"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "ACHIEVED Driver -> GrandPrix has from_year=2021, to_year=None, role=None; the year or role cannot be stored on the reified result"
+    },
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "ACHIEVED does not allow Driver -> Driver"
+    }
+  ],
+  "alignments": []
+}

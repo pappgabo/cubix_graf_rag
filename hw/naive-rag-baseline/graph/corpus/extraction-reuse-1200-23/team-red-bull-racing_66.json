@@ -1,0 +1,221 @@
+{
+  "chunk_id": "team-red-bull-racing#66",
+  "doc_id": "team-red-bull-racing",
+  "document_title": "Red Bull Racing",
+  "section": "2023 season",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "bf32081d4317ca0b6ab1fa57df9be3b6a306bf274d0a7576feb6e5b6d7828c90",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Red Bull Racing",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that entered cars."
+      },
+      {
+        "local_id": "e2",
+        "name": "Max Verstappen",
+        "entity_type": "Driver",
+        "description": "A driver who won the Drivers' Championship in 2023."
+      },
+      {
+        "local_id": "e3",
+        "name": "2023",
+        "entity_type": "Season",
+        "description": "The championship year in which Red Bull Racing secured the Constructors' Championship."
+      },
+      {
+        "local_id": "e4",
+        "name": "Japanese Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A race where Max Verstappen secured the Drivers' Championship."
+      },
+      {
+        "local_id": "e5",
+        "name": "Qatar Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A race where Max Verstappen secured the Drivers' Championship."
+      },
+      {
+        "local_id": "e6",
+        "name": "Abu Dhabi Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The race marking the culmination of Red Bull's successful season."
+      },
+      {
+        "local_id": "e7",
+        "name": "RB19",
+        "entity_type": "Car",
+        "description": "A dominant car designed by Adrian Newey that won 21 out of 22 races in the 2023 season."
+      },
+      {
+        "local_id": "e8",
+        "name": "McLaren MP4/4",
+        "entity_type": "Car",
+        "description": "Another Honda-powered car noted for its high win rate."
+      },
+      {
+        "local_id": "e9",
+        "name": "Scuderia Ferrari",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that won the 2023 Singapore Grand Prix."
+      },
+      {
+        "local_id": "e10",
+        "name": "2023 Singapore Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A race won by Ferrari."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Max Verstappen at Japanese Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Max Verstappen recorded a result in the Japanese Grand Prix."
+      },
+      {
+        "local_id": "rr2",
+        "name": "Max Verstappen at Qatar Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Max Verstappen recorded a result in the Qatar Grand Prix."
+      },
+      {
+        "local_id": "rr3",
+        "name": "Max Verstappen at Abu Dhabi Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Max Verstappen recorded a result in the Abu Dhabi Grand Prix."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e3",
+        "relationship_type": "ENTERED",
+        "description": "Red Bull Racing took part in the 2023 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Max Verstappen recorded a result in the Japanese Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e4",
+        "relationship_type": "AT_RACE",
+        "description": "Max Verstappen recorded a result in the Japanese Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "rr2",
+        "relationship_type": "ACHIEVED",
+        "description": "Max Verstappen recorded a result in the Qatar Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr2",
+        "target_id": "e5",
+        "relationship_type": "AT_RACE",
+        "description": "Max Verstappen recorded a result in the Qatar Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "rr3",
+        "relationship_type": "ACHIEVED",
+        "description": "Max Verstappen recorded a result in the Abu Dhabi Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr3",
+        "target_id": "e6",
+        "relationship_type": "AT_RACE",
+        "description": "Max Verstappen recorded a result in the Abu Dhabi Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e7",
+        "relationship_type": "FIELDED",
+        "description": "Red Bull Racing entered the RB19 car.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e7",
+        "target_id": "e3",
+        "relationship_type": "RACED_IN",
+        "description": "The RB19 took part in the 2023 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e8",
+        "target_id": "e3",
+        "relationship_type": "RACED_IN",
+        "description": "The McLaren MP4/4 took part in the 1988 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 10,
+  "entities_accepted": 13,
+  "entities_rejected": 0,
+  "relationship_candidates": 9,
+  "relationships_accepted": 10,
+  "relationships_rejected": 2,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 9,
+      "reason": "POWERED_BY does not allow Car -> Car"
+    },
+    {
+      "element": "relationship",
+      "index": 11,
+      "reason": "ACHIEVED does not allow Team -> GrandPrix"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 1,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e4; description kept"
+    },
+    {
+      "index": 2,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr2 -AT_RACE-> e5; description kept"
+    },
+    {
+      "index": 3,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr3 -AT_RACE-> e6; description kept"
+    }
+  ]
+}

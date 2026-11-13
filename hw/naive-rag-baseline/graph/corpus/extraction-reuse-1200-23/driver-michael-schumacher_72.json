@@ -1,0 +1,92 @@
+{
+  "chunk_id": "driver-michael-schumacher#72",
+  "doc_id": "driver-michael-schumacher",
+  "document_title": "Michael Schumacher",
+  "section": null,
+  "page": 14,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "9726d21f515a7ecad8f1f9a1bd4850e3a3767127960dc34f0c1835baa928c5c7",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Michael Schumacher",
+        "entity_type": "Driver",
+        "description": "A German racing driver known for his seven World Championships."
+      },
+      {
+        "local_id": "e2",
+        "name": "Sebastian Vettel",
+        "entity_type": "Driver",
+        "description": "A German racing driver who won the Race of Champions Nations' Cup with Schumacher."
+      },
+      {
+        "local_id": "e3",
+        "name": "2007",
+        "entity_type": "Season",
+        "description": "The year Schumacher received the Prince of Asturias Award for Sport."
+      },
+      {
+        "local_id": "e4",
+        "name": "2012",
+        "entity_type": "Season",
+        "description": "The last year Schumacher and Vettel won the Race of Champions Nations' Cup together."
+      },
+      {
+        "local_id": "e5",
+        "name": "2017",
+        "entity_type": "Season",
+        "description": "The year Schumacher was inducted into the FIA Hall of Fame."
+      },
+      {
+        "local_id": "e6",
+        "name": "2020",
+        "entity_type": "Season",
+        "description": "The year Schumacher received the FIA President Award."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Schumacher and Vettel were teammates in the Race of Champions Nations' Cup.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 6,
+  "entities_accepted": 6,
+  "entities_rejected": 0,
+  "relationship_candidates": 5,
+  "relationships_accepted": 1,
+  "relationships_rejected": 4,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "WON does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "WON does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "WON does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "WON does not allow Driver -> Season"
+    }
+  ],
+  "alignments": []
+}

@@ -1,0 +1,192 @@
+{
+  "chunk_id": "season-2008-formula-one-world-championship#15",
+  "doc_id": "season-2008-formula-one-world-championship",
+  "document_title": "2008 Formula One World Championship",
+  "section": null,
+  "page": 4,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "908ab959de15c45329e3a54add43fe2061fe83046657d26d8c783dd3af592e05",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Lewis Hamilton",
+        "entity_type": "Driver",
+        "description": "Hamilton took pole and his fifth career victory at the first race in Australia."
+      },
+      {
+        "local_id": "e2",
+        "name": "Nick Heidfeld",
+        "entity_type": "Driver",
+        "description": "BMW Sauber's Nick Heidfeld finished second."
+      },
+      {
+        "local_id": "e3",
+        "name": "Nico Rosberg",
+        "entity_type": "Driver",
+        "description": "Williams's Nico Rosberg sealed his first podium finish."
+      },
+      {
+        "local_id": "e4",
+        "name": "Rubens Barrichello",
+        "entity_type": "Driver",
+        "description": "Honda's Rubens Barrichello was disqualified for exiting the pits under a red light."
+      },
+      {
+        "local_id": "e5",
+        "name": "Sébastien Bourdais",
+        "entity_type": "Driver",
+        "description": "Toro Rosso debutant Sébastien Bourdais completed over 90% of the race distance, earning him points in seventh."
+      },
+      {
+        "local_id": "e6",
+        "name": "Kimi Räikkönen",
+        "entity_type": "Driver",
+        "description": "Räikkönen took his 16th career victory after he qualified in second position."
+      },
+      {
+        "local_id": "e7",
+        "name": "Robert Kubica",
+        "entity_type": "Driver",
+        "description": "BMW Sauber's Robert Kubica finished second for the first time."
+      },
+      {
+        "local_id": "e8",
+        "name": "Heikki Kovalainen",
+        "entity_type": "Driver",
+        "description": "McLaren's Heikki Kovalainen finished third."
+      },
+      {
+        "local_id": "e9",
+        "name": "Felipe Massa",
+        "entity_type": "Driver",
+        "description": "Massa won the race with teammate Räikkönen in second."
+      },
+      {
+        "local_id": "e10",
+        "name": "2008 Formula One World Championship",
+        "entity_type": "Season",
+        "description": "The championship year."
+      },
+      {
+        "local_id": "e11",
+        "name": "Australia",
+        "entity_type": "GrandPrix",
+        "description": "The first race in Australia."
+      },
+      {
+        "local_id": "e12",
+        "name": "Malaysia",
+        "entity_type": "GrandPrix",
+        "description": "The race in Malaysia."
+      },
+      {
+        "local_id": "e13",
+        "name": "Bahrain",
+        "entity_type": "GrandPrix",
+        "description": "The race in Bahrain."
+      },
+      {
+        "local_id": "e14",
+        "name": "Barcelona",
+        "entity_type": "GrandPrix",
+        "description": "The race in Barcelona."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e11",
+        "target_id": "e10",
+        "relationship_type": "ROUND_OF",
+        "description": "The Australian Grand Prix is a round of the 2008 Formula One World Championship.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e12",
+        "target_id": "e10",
+        "relationship_type": "ROUND_OF",
+        "description": "The Malaysian Grand Prix is a round of the 2008 Formula One World Championship.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e13",
+        "target_id": "e10",
+        "relationship_type": "ROUND_OF",
+        "description": "The Bahrain Grand Prix is a round of the 2008 Formula One World Championship.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e14",
+        "target_id": "e10",
+        "relationship_type": "ROUND_OF",
+        "description": "The Barcelona Grand Prix is a round of the 2008 Formula One World Championship.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 14,
+  "entities_accepted": 14,
+  "entities_rejected": 0,
+  "relationship_candidates": 13,
+  "relationships_accepted": 4,
+  "relationships_rejected": 9,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "DROVE_FOR does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "DROVE_FOR does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "DROVE_FOR does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "DROVE_FOR does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "DROVE_FOR does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 5,
+      "reason": "DROVE_FOR does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 6,
+      "reason": "DROVE_FOR does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 7,
+      "reason": "DROVE_FOR does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 8,
+      "reason": "DROVE_FOR does not allow Driver -> Season"
+    }
+  ],
+  "alignments": []
+}

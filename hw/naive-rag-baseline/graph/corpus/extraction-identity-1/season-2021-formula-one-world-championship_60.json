@@ -1,0 +1,106 @@
+{
+  "chunk_id": "season-2021-formula-one-world-championship#60",
+  "doc_id": "season-2021-formula-one-world-championship",
+  "document_title": "2021 Formula One World Championship",
+  "section": null,
+  "page": 6,
+  "source": "https://en.wikipedia.org/wiki/2021_Formula_One_World_Championship",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "faa9b2bae2851a2cc438288812aa349d237e07e182c35196ff89286a649ee1f7",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "entity_candidates": 5,
+  "entities_accepted": 6,
+  "entities_rejected": 0,
+  "relationship_candidates": 3,
+  "relationships_accepted": 4,
+  "relationships_rejected": 0,
+  "rejections": [],
+  "alignments": [
+    {
+      "index": 0,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e5; description kept"
+    }
+  ],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Bottas",
+        "entity_type": "Driver",
+        "description": "Bottas was given the fastest lap point."
+      },
+      {
+        "local_id": "e2",
+        "name": "Lewis Hamilton",
+        "entity_type": "Driver",
+        "description": "Hamilton took his 100th pole position in Spain."
+      },
+      {
+        "local_id": "e3",
+        "name": "Verstappen",
+        "entity_type": "Driver",
+        "description": "Verstappen overtook Hamilton at the first turn."
+      },
+      {
+        "local_id": "e4",
+        "name": "Yuki Tsunoda",
+        "entity_type": "Driver",
+        "description": "Tsunoda marked his first Formula One retirement."
+      },
+      {
+        "local_id": "e5",
+        "name": "Spain",
+        "entity_type": "GrandPrix",
+        "description": "Hamilton took his 100th pole position in Spain."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Hamilton at Spain",
+        "entity_type": "RaceResult",
+        "description": "Hamilton took his 100th pole position in Spain."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e2",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Hamilton took his 100th pole position in Spain.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e5",
+        "relationship_type": "AT_RACE",
+        "description": "Hamilton took his 100th pole position in Spain.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e2",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Verstappen overtook Hamilton at the first turn.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e3",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Tsunoda marked his first Formula One retirement.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

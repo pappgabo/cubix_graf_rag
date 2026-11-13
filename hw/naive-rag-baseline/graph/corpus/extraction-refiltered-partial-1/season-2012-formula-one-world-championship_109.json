@@ -1,0 +1,91 @@
+{
+  "chunk_id": "season-2012-formula-one-world-championship#109",
+  "doc_id": "season-2012-formula-one-world-championship",
+  "document_title": "2012 Formula One World Championship",
+  "section": "Race summaries > Round 5 – Spain Circuit de Barcelona-Catalunya",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/2012_Formula_One_World_Championship",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "7f595bdb578add3b48f8ee4a17593ed78e7513e650fb231312ec7d6ad5565109",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "ACHIEVED does not allow Driver -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "ACHIEVED does not allow Driver -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "ACHIEVED does not allow Driver -> GrandPrix"
+    }
+  ],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Kimi Räikkönen",
+        "entity_type": "Driver",
+        "description": "Third-placed driver who attempted an ambitious strategy."
+      },
+      {
+        "local_id": "e2",
+        "name": "Pastor Maldonado",
+        "entity_type": "Driver",
+        "description": "Winner of the race, first Venezuelan driver to win a Formula One Grand Prix."
+      },
+      {
+        "local_id": "e3",
+        "name": "Fernando Alonso",
+        "entity_type": "Driver",
+        "description": "Driver who pressured Maldonado for fifteen laps."
+      },
+      {
+        "local_id": "e4",
+        "name": "2012",
+        "entity_type": "Season",
+        "description": "The championship year of the race."
+      },
+      {
+        "local_id": "e5",
+        "name": "Spanish Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The race held at Circuit de Barcelona-Catalunya."
+      },
+      {
+        "local_id": "e6",
+        "name": "Circuit de Barcelona-Catalunya",
+        "entity_type": "Circuit",
+        "description": "The venue for the Spanish Grand Prix."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e5",
+        "target_id": "e4",
+        "relationship_type": "ROUND_OF",
+        "description": "The Spanish Grand Prix is a round of the 2012 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e6",
+        "relationship_type": "HELD_AT",
+        "description": "The Spanish Grand Prix is held at Circuit de Barcelona-Catalunya.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

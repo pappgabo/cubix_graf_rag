@@ -1,0 +1,112 @@
+{
+  "chunk_id": "driver-fernando-alonso#74",
+  "doc_id": "driver-fernando-alonso",
+  "document_title": "Fernando Alonso",
+  "section": "Aston Martin (2023–present)",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/Fernando_Alonso",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "2104d8c165c4e5cfa4fb344f319ff55692ff948838d5e5991845eec40edeb4ce",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "entity_candidates": 5,
+  "entities_accepted": 6,
+  "entities_rejected": 0,
+  "relationship_candidates": 4,
+  "relationships_accepted": 4,
+  "relationships_rejected": 1,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "ACHIEVED does not allow Driver -> Driver"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 3,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e4; description kept"
+    }
+  ],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Fernando Alonso",
+        "entity_type": "Driver",
+        "description": "A Formula One driver."
+      },
+      {
+        "local_id": "e2",
+        "name": "Aston Martin",
+        "entity_type": "Team",
+        "description": "A Formula One team."
+      },
+      {
+        "local_id": "e3",
+        "name": "2023",
+        "entity_type": "Season",
+        "description": "The 2023 Formula One season."
+      },
+      {
+        "local_id": "e4",
+        "name": "Australian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula One race held in Australia."
+      },
+      {
+        "local_id": "e5",
+        "name": "Carlos Sainz Jr.",
+        "entity_type": "Driver",
+        "description": "A Formula One driver."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Fernando Alonso at Australian Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Fernando Alonso finished third in the Australian Grand Prix."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Fernando Alonso drove for Aston Martin.",
+        "from_year": 2023,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e3",
+        "relationship_type": "ROUND_OF",
+        "description": "The Australian Grand Prix is a round of the 2023 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Fernando Alonso finished third in the Australian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e4",
+        "relationship_type": "AT_RACE",
+        "description": "Fernando Alonso finished third in the Australian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

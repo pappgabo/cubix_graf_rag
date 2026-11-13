@@ -1,0 +1,66 @@
+{
+  "chunk_id": "driver-sebastian-vettel#82",
+  "doc_id": "driver-sebastian-vettel",
+  "document_title": "Sebastian Vettel",
+  "section": "2017–2018: Title battles versus Hamilton",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/Sebastian_Vettel",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "c12d7b1f52626ed74b537656b20466f0c07795cd4540b6185cf628544a0e9bc6",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "entity_candidates": 3,
+  "entities_accepted": 3,
+  "entities_rejected": 0,
+  "relationship_candidates": 3,
+  "relationships_accepted": 1,
+  "relationships_rejected": 2,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "AT_RACE does not allow GrandPrix -> Driver"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "AT_RACE does not allow GrandPrix -> Driver"
+    }
+  ],
+  "alignments": [],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Sebastian Vettel",
+        "entity_type": "Driver",
+        "description": "A Formula One driver involved in title battles."
+      },
+      {
+        "local_id": "e2",
+        "name": "Lewis Hamilton",
+        "entity_type": "Driver",
+        "description": "A Formula One driver who was the race leader in Azerbaijan."
+      },
+      {
+        "local_id": "e3",
+        "name": "Azerbaijan Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula One race where the incident between Vettel and Hamilton occurred."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Vettel accused Hamilton of brake testing him during the race.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

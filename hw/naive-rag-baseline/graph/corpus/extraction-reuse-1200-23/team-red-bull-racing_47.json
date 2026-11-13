@@ -1,0 +1,154 @@
+{
+  "chunk_id": "team-red-bull-racing#47",
+  "doc_id": "team-red-bull-racing",
+  "document_title": "Red Bull Racing",
+  "section": "TAG Heuer era (2016–2018) > 2016 season",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "06340bdb33be5b22e085142808107271a46e46777d32835bd86aa346810f8c73",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Max Verstappen",
+        "entity_type": "Driver",
+        "description": "A driver who raced for Red Bull Racing."
+      },
+      {
+        "local_id": "e2",
+        "name": "Red Bull Racing",
+        "entity_type": "Team",
+        "description": "A Formula 1 team."
+      },
+      {
+        "local_id": "e3",
+        "name": "Daniel Ricciardo",
+        "entity_type": "Driver",
+        "description": "A driver who raced for Red Bull Racing."
+      },
+      {
+        "local_id": "e4",
+        "name": "2016",
+        "entity_type": "Season",
+        "description": "The 2016 Formula One season."
+      },
+      {
+        "local_id": "e5",
+        "name": "Brazilian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula 1 race held in Brazil."
+      },
+      {
+        "local_id": "e6",
+        "name": "Constructors' Championship",
+        "entity_type": "Title",
+        "description": "A championship title for teams."
+      },
+      {
+        "local_id": "e7",
+        "name": "Drivers' Championship",
+        "entity_type": "Title",
+        "description": "A championship title for drivers."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Max Verstappen at Brazilian Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Max Verstappen finished third in the Brazilian Grand Prix."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Max Verstappen finished third in the Brazilian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e5",
+        "relationship_type": "AT_RACE",
+        "description": "Max Verstappen finished third in the Brazilian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Max Verstappen drove for Red Bull Racing.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e4",
+        "relationship_type": "ENTERED",
+        "description": "Red Bull Racing entered the 2016 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e6",
+        "relationship_type": "WON",
+        "description": "Red Bull Racing finished second in the Constructors' Championship.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e6",
+        "target_id": "e4",
+        "relationship_type": "AWARDED_IN",
+        "description": "Red Bull Racing finished second in the Constructors' Championship.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Daniel Ricciardo drove for Red Bull Racing.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 7,
+  "entities_accepted": 8,
+  "entities_rejected": 0,
+  "relationship_candidates": 6,
+  "relationships_accepted": 7,
+  "relationships_rejected": 1,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 6,
+      "reason": "ACHIEVED does not allow Driver -> Season"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 0,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e5; description kept"
+    },
+    {
+      "index": 3,
+      "action": "move_won_year",
+      "detail": "WON year 2016 stored as e6 -AWARDED_IN-> e4; from_year and to_year cleared; description kept"
+    }
+  ]
+}

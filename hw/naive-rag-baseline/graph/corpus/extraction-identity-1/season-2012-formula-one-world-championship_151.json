@@ -1,0 +1,266 @@
+{
+  "chunk_id": "season-2012-formula-one-world-championship#151",
+  "doc_id": "season-2012-formula-one-world-championship",
+  "document_title": "2012 Formula One World Championship",
+  "section": "Race summaries > Round 12 – Belgium Circuit de Spa-Francorchamps",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/2012_Formula_One_World_Championship",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "b6a6d3b01081e0a7da792cd577ad736740c25df65cd32b94e147fd58c272ec20",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "entity_candidates": 9,
+  "entities_accepted": 14,
+  "entities_rejected": 0,
+  "relationship_candidates": 10,
+  "relationships_accepted": 13,
+  "relationships_rejected": 2,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "FOR_TEAM does not allow Driver -> Team"
+    },
+    {
+      "element": "relationship",
+      "index": 8,
+      "reason": "TEAMMATE_OF does not allow Team -> Driver"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 0,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e8; description kept"
+    },
+    {
+      "index": 2,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr2 -AT_RACE-> e8; description kept"
+    },
+    {
+      "index": 3,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr3 -AT_RACE-> e8; description kept"
+    },
+    {
+      "index": 6,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr4 -AT_RACE-> e8; description kept"
+    },
+    {
+      "index": 7,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr5 -AT_RACE-> e8; description kept"
+    }
+  ],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Button",
+        "entity_type": "Driver",
+        "description": "A driver who won the race."
+      },
+      {
+        "local_id": "e2",
+        "name": "Alonso",
+        "entity_type": "Driver",
+        "description": "A driver who retired from the race."
+      },
+      {
+        "local_id": "e3",
+        "name": "Vettel",
+        "entity_type": "Driver",
+        "description": "A driver who finished second in the race."
+      },
+      {
+        "local_id": "e4",
+        "name": "Scuderia Toro Rosso",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that scored points in this race."
+      },
+      {
+        "local_id": "e5",
+        "name": "Jean-Éric Vergne",
+        "entity_type": "Driver",
+        "description": "A driver who finished eighth in the race."
+      },
+      {
+        "local_id": "e6",
+        "name": "Daniel Ricciardo",
+        "entity_type": "Driver",
+        "description": "A driver who finished ninth in the race."
+      },
+      {
+        "local_id": "e7",
+        "name": "2012",
+        "entity_type": "Season",
+        "description": "The championship year of the race."
+      },
+      {
+        "local_id": "e8",
+        "name": "Belgium Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The race held at Circuit de Spa-Francorchamps."
+      },
+      {
+        "local_id": "e9",
+        "name": "Circuit de Spa-Francorchamps",
+        "entity_type": "Circuit",
+        "description": "The circuit where the Belgium Grand Prix was held."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Button at Belgium Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Button won the race."
+      },
+      {
+        "local_id": "rr2",
+        "name": "Alonso at Belgium Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Alonso retired from the race."
+      },
+      {
+        "local_id": "rr3",
+        "name": "Vettel at Belgium Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Vettel finished second in the race."
+      },
+      {
+        "local_id": "rr4",
+        "name": "Jean-Éric Vergne at Belgium Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Vergne finished eighth in the race."
+      },
+      {
+        "local_id": "rr5",
+        "name": "Daniel Ricciardo at Belgium Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Ricciardo finished ninth in the race."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Button won the race.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e8",
+        "relationship_type": "AT_RACE",
+        "description": "Button won the race.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "rr2",
+        "relationship_type": "ACHIEVED",
+        "description": "Alonso retired from the race.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr2",
+        "target_id": "e8",
+        "relationship_type": "AT_RACE",
+        "description": "Alonso retired from the race.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "rr3",
+        "relationship_type": "ACHIEVED",
+        "description": "Vettel finished second in the race.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr3",
+        "target_id": "e8",
+        "relationship_type": "AT_RACE",
+        "description": "Vettel finished second in the race.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e7",
+        "relationship_type": "ENTERED",
+        "description": "Scuderia Toro Rosso took part in the 2012 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "rr4",
+        "relationship_type": "ACHIEVED",
+        "description": "Vergne finished eighth in the race.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr4",
+        "target_id": "e8",
+        "relationship_type": "AT_RACE",
+        "description": "Vergne finished eighth in the race.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e6",
+        "target_id": "rr5",
+        "relationship_type": "ACHIEVED",
+        "description": "Ricciardo finished ninth in the race.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr5",
+        "target_id": "e8",
+        "relationship_type": "AT_RACE",
+        "description": "Ricciardo finished ninth in the race.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e8",
+        "target_id": "e9",
+        "relationship_type": "HELD_AT",
+        "description": "The Belgium Grand Prix was held at Circuit de Spa-Francorchamps.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e8",
+        "target_id": "e7",
+        "relationship_type": "ROUND_OF",
+        "description": "The Belgium Grand Prix was a round of the 2012 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "chunk_id": "season-2012-formula-one-world-championship#145",
+  "doc_id": "season-2012-formula-one-world-championship",
+  "document_title": "2012 Formula One World Championship",
+  "section": "Race summaries > Round 11 – Hungary Hungaroring",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/2012_Formula_One_World_Championship",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "39dc112e47eaedb02a1b1b34bf3a46af79f26c232147a61beac37127518d8001",
+  "validation_version": "partial-1",
+  "source_status": "ok",
+  "status": "ok",
+  "rejections": [],
+  "alignments": [],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Kimi Räikkönen",
+        "entity_type": "Driver",
+        "description": "A driver who raced in the 2012 Formula One World Championship."
+      },
+      {
+        "local_id": "e2",
+        "name": "Romain Grosjean",
+        "entity_type": "Driver",
+        "description": "A driver who raced in the 2012 Formula One World Championship."
+      },
+      {
+        "local_id": "e3",
+        "name": "2012",
+        "entity_type": "Season",
+        "description": "The season of the Formula One World Championship."
+      },
+      {
+        "local_id": "e4",
+        "name": "Hungary",
+        "entity_type": "GrandPrix",
+        "description": "The Grand Prix held at the Hungaroring."
+      },
+      {
+        "local_id": "e5",
+        "name": "Hungaroring",
+        "entity_type": "Circuit",
+        "description": "The circuit where the Hungarian Grand Prix is held."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Kimi Räikkönen was teammates with Romain Grosjean.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e3",
+        "relationship_type": "ROUND_OF",
+        "description": "The Hungarian Grand Prix is a round of the 2012 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e5",
+        "relationship_type": "HELD_AT",
+        "description": "The Hungarian Grand Prix is held at the Hungaroring.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

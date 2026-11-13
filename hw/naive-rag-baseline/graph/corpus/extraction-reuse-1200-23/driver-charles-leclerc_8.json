@@ -1,0 +1,166 @@
+{
+  "chunk_id": "driver-charles-leclerc#8",
+  "doc_id": "driver-charles-leclerc",
+  "document_title": "Charles Leclerc",
+  "section": "Charles Leclerc > Formula Renault 2.0 (2014)",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "4ef858e1fdcd7852956fcc20ac5602182cc56d9a336d08fdb537ed7eb49a2afc",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Charles Leclerc",
+        "entity_type": "Driver",
+        "description": "Leclerc graduated to junior formulae in 2014, signing for Fortec in Formula Renault 2.0, aged 16."
+      },
+      {
+        "local_id": "e2",
+        "name": "Fortec",
+        "entity_type": "Team",
+        "description": "Leclerc signed for Fortec in Formula Renault 2.0."
+      },
+      {
+        "local_id": "e3",
+        "name": "Formula Renault 2.0",
+        "entity_type": "Season",
+        "description": "Leclerc competed in Formula Renault 2.0 in 2014."
+      },
+      {
+        "local_id": "e4",
+        "name": "Imola",
+        "entity_type": "Circuit",
+        "description": "Leclerc debuted in the Alps Series at Imola."
+      },
+      {
+        "local_id": "e5",
+        "name": "Pau",
+        "entity_type": "Circuit",
+        "description": "Leclerc achieved his maiden podium finish in the second race at Pau."
+      },
+      {
+        "local_id": "e6",
+        "name": "Red Bull Ring",
+        "entity_type": "Circuit",
+        "description": "Leclerc had fourth-placed finishes at the Red Bull Ring."
+      },
+      {
+        "local_id": "e7",
+        "name": "Spa-Francorchamps",
+        "entity_type": "Circuit",
+        "description": "Leclerc scored a double podium during the Spa-Francorchamps round."
+      },
+      {
+        "local_id": "e8",
+        "name": "Monza",
+        "entity_type": "Circuit",
+        "description": "Leclerc achieved his maiden formula racing victories at Monza."
+      },
+      {
+        "local_id": "e9",
+        "name": "Mugello",
+        "entity_type": "Circuit",
+        "description": "Leclerc finished second to Nyck de Vries in both Mugello races."
+      },
+      {
+        "local_id": "e10",
+        "name": "Jerez",
+        "entity_type": "Circuit",
+        "description": "Leclerc claimed points finishes at the season-ending Jerez round."
+      },
+      {
+        "local_id": "e11",
+        "name": "Nyck de Vries",
+        "entity_type": "Driver",
+        "description": "Leclerc finished second to Nyck de Vries in both Mugello races."
+      },
+      {
+        "local_id": "e12",
+        "name": "Matevos Isaakyan",
+        "entity_type": "Driver",
+        "description": "Leclerc beat Matevos Isaakyan to the rookies' championship."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Leclerc signed for Fortec in Formula Renault 2.0.",
+        "from_year": 2014,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e11",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Leclerc finished second to Nyck de Vries in both Mugello races.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e12",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Leclerc beat Matevos Isaakyan to the rookies' championship.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 12,
+  "entities_accepted": 12,
+  "entities_rejected": 0,
+  "relationship_candidates": 11,
+  "relationships_accepted": 3,
+  "relationships_rejected": 8,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "ENTERED is not temporal; from_year=2014, to_year=None, role=None cannot be stored without dropping them"
+    },
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "ROUND_OF does not allow Circuit -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "ROUND_OF does not allow Circuit -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "ROUND_OF does not allow Circuit -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "ROUND_OF does not allow Circuit -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 5,
+      "reason": "ROUND_OF does not allow Circuit -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 6,
+      "reason": "ROUND_OF does not allow Circuit -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 7,
+      "reason": "ROUND_OF does not allow Circuit -> Season"
+    }
+  ],
+  "alignments": []
+}

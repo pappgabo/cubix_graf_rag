@@ -1,0 +1,114 @@
+{
+  "chunk_id": "driver-valtteri-bottas#113",
+  "doc_id": "driver-valtteri-bottas",
+  "document_title": "Valtteri Bottas",
+  "section": "Formula One career > Alfa Romeo / Sauber (2022–2024) > 2023",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/Valtteri_Bottas",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "e85ea1a464515a61296ca89d2e7f47dac24c5e93e79b95b45d7ef7ef0e7e3fbe",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "rejections": [],
+  "alignments": [
+    {
+      "index": 0,
+      "action": "clear_redundant_season_year",
+      "detail": "ENTERED year 2023 already named by Season 'e3'; from_year and to_year cleared"
+    },
+    {
+      "index": 2,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e4; description kept"
+    }
+  ],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Valtteri Bottas",
+        "entity_type": "Driver",
+        "description": "A Finnish racing driver currently competing in Formula One."
+      },
+      {
+        "local_id": "e2",
+        "name": "Alfa Romeo",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that Valtteri Bottas drives for."
+      },
+      {
+        "local_id": "e3",
+        "name": "2023",
+        "entity_type": "Season",
+        "description": "The Formula One season in which Valtteri Bottas is competing."
+      },
+      {
+        "local_id": "e4",
+        "name": "British Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula 1 race where Valtteri Bottas faced issues during qualifying."
+      },
+      {
+        "local_id": "e5",
+        "name": "Circuit",
+        "entity_type": "Circuit",
+        "description": "The venue for the British Grand Prix."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Valtteri Bottas at British Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Valtteri Bottas finished 12th in the British Grand Prix after starting from 20th."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e2",
+        "target_id": "e3",
+        "relationship_type": "ENTERED",
+        "description": "Alfa Romeo participated in the 2023 Formula One season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e3",
+        "relationship_type": "ROUND_OF",
+        "description": "The British Grand Prix is a round of the 2023 Formula One season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Valtteri Bottas finished 12th in the British Grand Prix after starting from 20th.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e4",
+        "relationship_type": "AT_RACE",
+        "description": "Valtteri Bottas finished 12th in the British Grand Prix after starting from 20th.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Valtteri Bottas drives for Alfa Romeo.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

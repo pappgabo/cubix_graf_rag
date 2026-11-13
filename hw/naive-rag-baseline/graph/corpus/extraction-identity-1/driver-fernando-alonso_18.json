@@ -1,0 +1,83 @@
+{
+  "chunk_id": "driver-fernando-alonso#18",
+  "doc_id": "driver-fernando-alonso",
+  "document_title": "Fernando Alonso",
+  "section": "Early life and karting career",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/Fernando_Alonso",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "e7414f9e47bdcd760d1970c46568562c5af59b0edf24be4e20b919c3fb530a57",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "entity_candidates": 5,
+  "entities_accepted": 5,
+  "entities_rejected": 0,
+  "relationship_candidates": 4,
+  "relationships_accepted": 1,
+  "relationships_rejected": 3,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "ACHIEVED does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "ACHIEVED does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "ACHIEVED does not allow Driver -> Season"
+    }
+  ],
+  "alignments": [],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Fernando Alonso",
+        "entity_type": "Driver",
+        "description": "A Spanish racing driver who won three successive Spanish Junior Championships from 1993 to 1995."
+      },
+      {
+        "local_id": "e2",
+        "name": "IAME works team",
+        "entity_type": "Team",
+        "description": "A karting team that Fernando Alonso joined in 1993."
+      },
+      {
+        "local_id": "e3",
+        "name": "1993",
+        "entity_type": "Season",
+        "description": "The year Fernando Alonso joined the IAME works team."
+      },
+      {
+        "local_id": "e4",
+        "name": "1994",
+        "entity_type": "Season",
+        "description": "The year Fernando Alonso won the Spanish Junior Championship."
+      },
+      {
+        "local_id": "e5",
+        "name": "1995",
+        "entity_type": "Season",
+        "description": "The year Fernando Alonso won the Spanish Junior Championship."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Fernando Alonso drove for the IAME works team.",
+        "from_year": 1993,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

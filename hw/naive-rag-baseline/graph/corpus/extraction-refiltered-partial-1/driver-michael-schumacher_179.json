@@ -1,0 +1,99 @@
+{
+  "chunk_id": "driver-michael-schumacher#179",
+  "doc_id": "driver-michael-schumacher",
+  "document_title": "Michael Schumacher",
+  "section": null,
+  "page": 15,
+  "source": "https://en.wikipedia.org/wiki/Michael_Schumacher",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "d13f98af688f2ec42ab078caef345585a740032db217e2cd16cd99436c1cee93",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "TEAMMATE_OF is not temporal; from_year, to_year and role must be null"
+    }
+  ],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Michael Schumacher",
+        "entity_type": "Driver",
+        "description": "A Formula One driver known for his success with Ferrari."
+      },
+      {
+        "local_id": "e2",
+        "name": "Ferrari",
+        "entity_type": "Team",
+        "description": "A Formula One team that Michael Schumacher drove for."
+      },
+      {
+        "local_id": "e3",
+        "name": "2002",
+        "entity_type": "Season",
+        "description": "A Formula One championship season."
+      },
+      {
+        "local_id": "e4",
+        "name": "2004",
+        "entity_type": "Season",
+        "description": "A Formula One championship season."
+      },
+      {
+        "local_id": "e5",
+        "name": "2006",
+        "entity_type": "Season",
+        "description": "A Formula One championship season."
+      },
+      {
+        "local_id": "e6",
+        "name": "Barrichello",
+        "entity_type": "Driver",
+        "description": "A Formula One driver who was Michael Schumacher's teammate."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Michael Schumacher drove for Ferrari.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e3",
+        "relationship_type": "ENTERED",
+        "description": "Ferrari took part in the 2002 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e4",
+        "relationship_type": "ENTERED",
+        "description": "Ferrari took part in the 2004 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e5",
+        "relationship_type": "ENTERED",
+        "description": "Ferrari took part in the 2006 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

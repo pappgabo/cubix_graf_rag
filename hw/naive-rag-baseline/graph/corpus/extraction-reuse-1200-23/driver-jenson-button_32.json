@@ -1,0 +1,80 @@
+{
+  "chunk_id": "driver-jenson-button#32",
+  "doc_id": "driver-jenson-button",
+  "document_title": "Jenson Button",
+  "section": "Formula One career > McLaren (2010–2017)",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "ee0112e34ebeadb9903db246335dbb6382da4f7a7abf5f9c6de8a48816dff220",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Jenson Button",
+        "entity_type": "Driver",
+        "description": "A British racing driver who competed in Formula One."
+      },
+      {
+        "local_id": "e2",
+        "name": "McLaren",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that entered cars."
+      },
+      {
+        "local_id": "e3",
+        "name": "2010",
+        "entity_type": "Season",
+        "description": "The Formula One season in which Jenson Button joined McLaren."
+      },
+      {
+        "local_id": "e4",
+        "name": "Lewis Hamilton",
+        "entity_type": "Driver",
+        "description": "A British racing driver who was a world champion in 2008."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Jenson Button drove for McLaren.",
+        "from_year": 2010,
+        "to_year": 2017,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e3",
+        "relationship_type": "ENTERED",
+        "description": "McLaren entered the 2010 Formula One season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 4,
+  "entities_accepted": 4,
+  "entities_rejected": 0,
+  "relationship_candidates": 3,
+  "relationships_accepted": 2,
+  "relationships_rejected": 1,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "TEAMMATE_OF is not temporal; from_year=2010, to_year=2017, role=None cannot be stored without dropping them"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 2,
+      "action": "clear_redundant_season_year",
+      "detail": "ENTERED year 2010 already named by Season 'e3'; from_year and to_year cleared"
+    }
+  ]
+}

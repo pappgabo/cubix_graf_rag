@@ -1,0 +1,313 @@
+{
+  "chunk_id": "driver-michael-schumacher#49",
+  "doc_id": "driver-michael-schumacher",
+  "document_title": "Michael Schumacher",
+  "section": null,
+  "page": 10,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "3437d2a361761e0a386cbad4084eb557d3df4b0defb374a680a29d823d20da10",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Michael Schumacher",
+        "entity_type": "Driver",
+        "description": "A Formula One driver known for his multiple championship wins."
+      },
+      {
+        "local_id": "e2",
+        "name": "Australian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The inaugural race of the season."
+      },
+      {
+        "local_id": "e3",
+        "name": "Malaysian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The second round of the season where Schumacher scored a point."
+      },
+      {
+        "local_id": "e4",
+        "name": "Chinese Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A race where Schumacher retired due to a loose wheel."
+      },
+      {
+        "local_id": "e5",
+        "name": "Spanish Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A race where Schumacher caused a collision with Bruno Senna."
+      },
+      {
+        "local_id": "e6",
+        "name": "Monaco Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A race where Schumacher received a five-place grid penalty."
+      },
+      {
+        "local_id": "e7",
+        "name": "European Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A race where Schumacher finished third, his only podium finish since his return."
+      },
+      {
+        "local_id": "e8",
+        "name": "German Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A race where Schumacher set the fastest lap for the 77th time."
+      },
+      {
+        "local_id": "e9",
+        "name": "Belgian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A race where Schumacher became the second driver in history to race in 300 Grands Prix."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Michael Schumacher at Australian Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Schumacher retired from the Australian Grand Prix."
+      },
+      {
+        "local_id": "rr2",
+        "name": "Michael Schumacher at Malaysian Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Schumacher scored a point in the Malaysian Grand Prix."
+      },
+      {
+        "local_id": "rr3",
+        "name": "Michael Schumacher at Chinese Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Schumacher retired from the Chinese Grand Prix due to a loose wheel."
+      },
+      {
+        "local_id": "rr4",
+        "name": "Michael Schumacher at Spanish Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Schumacher caused a collision with Bruno Senna at the Spanish Grand Prix."
+      },
+      {
+        "local_id": "rr5",
+        "name": "Michael Schumacher at Monaco Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Schumacher received a five-place grid penalty for the Monaco Grand Prix."
+      },
+      {
+        "local_id": "rr6",
+        "name": "Michael Schumacher at European Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Schumacher finished third at the European Grand Prix, his only podium finish since his return."
+      },
+      {
+        "local_id": "rr7",
+        "name": "Michael Schumacher at German Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Schumacher set the fastest lap for the 77th time at the German Grand Prix."
+      },
+      {
+        "local_id": "rr8",
+        "name": "Michael Schumacher at Belgian Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Schumacher raced in 300 Grands Prix at the Belgian Grand Prix."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Schumacher retired from the Australian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e2",
+        "relationship_type": "AT_RACE",
+        "description": "Schumacher retired from the Australian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr2",
+        "relationship_type": "ACHIEVED",
+        "description": "Schumacher scored a point in the Malaysian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr2",
+        "target_id": "e3",
+        "relationship_type": "AT_RACE",
+        "description": "Schumacher scored a point in the Malaysian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr3",
+        "relationship_type": "ACHIEVED",
+        "description": "Schumacher retired from the Chinese Grand Prix due to a loose wheel.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr3",
+        "target_id": "e4",
+        "relationship_type": "AT_RACE",
+        "description": "Schumacher retired from the Chinese Grand Prix due to a loose wheel.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr4",
+        "relationship_type": "ACHIEVED",
+        "description": "Schumacher caused a collision with Bruno Senna at the Spanish Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr4",
+        "target_id": "e5",
+        "relationship_type": "AT_RACE",
+        "description": "Schumacher caused a collision with Bruno Senna at the Spanish Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr5",
+        "relationship_type": "ACHIEVED",
+        "description": "Schumacher received a five-place grid penalty for the Monaco Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr5",
+        "target_id": "e6",
+        "relationship_type": "AT_RACE",
+        "description": "Schumacher received a five-place grid penalty for the Monaco Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr6",
+        "relationship_type": "ACHIEVED",
+        "description": "Schumacher finished third at the European Grand Prix, his only podium finish since his return.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr6",
+        "target_id": "e7",
+        "relationship_type": "AT_RACE",
+        "description": "Schumacher finished third at the European Grand Prix, his only podium finish since his return.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr7",
+        "relationship_type": "ACHIEVED",
+        "description": "Schumacher set the fastest lap for the 77th time at the German Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr7",
+        "target_id": "e8",
+        "relationship_type": "AT_RACE",
+        "description": "Schumacher set the fastest lap for the 77th time at the German Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr8",
+        "relationship_type": "ACHIEVED",
+        "description": "Schumacher raced in 300 Grands Prix at the Belgian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr8",
+        "target_id": "e9",
+        "relationship_type": "AT_RACE",
+        "description": "Schumacher raced in 300 Grands Prix at the Belgian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 9,
+  "entities_accepted": 17,
+  "entities_rejected": 0,
+  "relationship_candidates": 8,
+  "relationships_accepted": 16,
+  "relationships_rejected": 0,
+  "rejections": [],
+  "alignments": [
+    {
+      "index": 0,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e2; description kept"
+    },
+    {
+      "index": 1,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr2 -AT_RACE-> e3; description kept"
+    },
+    {
+      "index": 2,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr3 -AT_RACE-> e4; description kept"
+    },
+    {
+      "index": 3,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr4 -AT_RACE-> e5; description kept"
+    },
+    {
+      "index": 4,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr5 -AT_RACE-> e6; description kept"
+    },
+    {
+      "index": 5,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr6 -AT_RACE-> e7; description kept"
+    },
+    {
+      "index": 6,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr7 -AT_RACE-> e8; description kept"
+    },
+    {
+      "index": 7,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr8 -AT_RACE-> e9; description kept"
+    }
+  ]
+}

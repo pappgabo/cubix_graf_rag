@@ -1,0 +1,173 @@
+{
+  "chunk_id": "driver-max-verstappen#44",
+  "doc_id": "driver-max-verstappen",
+  "document_title": "Max Verstappen",
+  "section": null,
+  "page": 9,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "6718376bdf91f69177bad439c52f9371196a8b2ccc38c6a887cc1903442a5ac8",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Max Verstappen",
+        "entity_type": "Driver",
+        "description": "A Formula One driver who has achieved multiple titles and records."
+      },
+      {
+        "local_id": "e2",
+        "name": "Red Bull Racing",
+        "entity_type": "Team",
+        "description": "A Formula One team that Verstappen drives for."
+      },
+      {
+        "local_id": "e3",
+        "name": "2024",
+        "entity_type": "Season",
+        "description": "The Formula One season in which Verstappen won his fourth title."
+      },
+      {
+        "local_id": "e4",
+        "name": "Bahrain Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula One race where Verstappen achieved his fifth career grand slam."
+      },
+      {
+        "local_id": "e5",
+        "name": "Saudi Arabian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula One race where Verstappen achieved another pole and victory."
+      },
+      {
+        "local_id": "e6",
+        "name": "Australian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula One race where Verstappen retired on lap 4."
+      },
+      {
+        "local_id": "e7",
+        "name": "Japanese Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula One race where Verstappen won after taking pole."
+      },
+      {
+        "local_id": "e8",
+        "name": "Chinese Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula One race where Verstappen won after claiming pole."
+      },
+      {
+        "local_id": "e9",
+        "name": "Miami Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula One race where Verstappen finished second after starting on pole."
+      },
+      {
+        "local_id": "e10",
+        "name": "Emilia Romagna Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula One race where Verstappen matched Ayrton Senna's record of eight consecutive poles."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Verstappen drives for Red Bull.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e3",
+        "relationship_type": "ENTERED",
+        "description": "Red Bull entered the 2024 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e3",
+        "relationship_type": "ROUND_OF",
+        "description": "Bahrain Grand Prix is a round of the 2024 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e3",
+        "relationship_type": "ROUND_OF",
+        "description": "Saudi Arabian Grand Prix is a round of the 2024 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e6",
+        "target_id": "e3",
+        "relationship_type": "ROUND_OF",
+        "description": "Australian Grand Prix is a round of the 2024 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e7",
+        "target_id": "e3",
+        "relationship_type": "ROUND_OF",
+        "description": "Japanese Grand Prix is a round of the 2024 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e8",
+        "target_id": "e3",
+        "relationship_type": "ROUND_OF",
+        "description": "Chinese Grand Prix is a round of the 2024 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e9",
+        "target_id": "e3",
+        "relationship_type": "ROUND_OF",
+        "description": "Miami Grand Prix is a round of the 2024 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e10",
+        "target_id": "e3",
+        "relationship_type": "ROUND_OF",
+        "description": "Emilia Romagna Grand Prix is a round of the 2024 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 10,
+  "entities_accepted": 10,
+  "entities_rejected": 0,
+  "relationship_candidates": 10,
+  "relationships_accepted": 9,
+  "relationships_rejected": 1,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 9,
+      "reason": "WON does not allow Driver -> Season"
+    }
+  ],
+  "alignments": []
+}

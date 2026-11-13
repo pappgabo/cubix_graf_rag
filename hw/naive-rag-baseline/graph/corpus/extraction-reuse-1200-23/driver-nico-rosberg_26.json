@@ -1,0 +1,92 @@
+{
+  "chunk_id": "driver-nico-rosberg#26",
+  "doc_id": "driver-nico-rosberg",
+  "document_title": "Nico Rosberg",
+  "section": "Nico Rosberg > 2013–2016 > Nico Rosberg > 2013: Monaco and British victories",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "ef301d87ffe1fc09a39cd8b753615e3d5440a7a3c91fdc479607646c40cf24c8",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Nico Rosberg",
+        "entity_type": "Driver",
+        "description": "A Formula One driver who raced for Mercedes."
+      },
+      {
+        "local_id": "e2",
+        "name": "Mercedes-AMG Petronas Formula One Team",
+        "entity_type": "Team",
+        "description": "A Formula One team that entered cars."
+      },
+      {
+        "local_id": "e3",
+        "name": "Lewis Hamilton",
+        "entity_type": "Driver",
+        "description": "A Formula One driver who raced for Mercedes."
+      },
+      {
+        "local_id": "e4",
+        "name": "2013",
+        "entity_type": "Season",
+        "description": "The Formula One championship season."
+      },
+      {
+        "local_id": "e5",
+        "name": "F1 W04",
+        "entity_type": "Car",
+        "description": "The car model fielded by Mercedes in 2013."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Nico Rosberg drove for Mercedes.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e5",
+        "relationship_type": "FIELDED",
+        "description": "Mercedes entered the F1 W04 car.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Lewis Hamilton drove for Mercedes.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e4",
+        "relationship_type": "RACED_IN",
+        "description": "The F1 W04 took part in the 2013 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 5,
+  "entities_accepted": 5,
+  "entities_rejected": 0,
+  "relationship_candidates": 4,
+  "relationships_accepted": 4,
+  "relationships_rejected": 0,
+  "rejections": [],
+  "alignments": []
+}

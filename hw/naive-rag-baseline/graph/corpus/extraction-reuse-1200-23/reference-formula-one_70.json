@@ -1,0 +1,143 @@
+{
+  "chunk_id": "reference-formula-one#70",
+  "doc_id": "reference-formula-one",
+  "document_title": "Formula One",
+  "section": "Formula One > Drivers",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "264cab6e778f3671e87638430d81b379d57ac46bb180b3bbb59c46315edc9f27",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Giovanna Amati",
+        "entity_type": "Driver",
+        "description": "The last female driver to attempt to qualify for a Formula One Grand Prix."
+      },
+      {
+        "local_id": "e2",
+        "name": "Brabham",
+        "entity_type": "Team",
+        "description": "The team that signed Giovanna Amati."
+      },
+      {
+        "local_id": "e3",
+        "name": "1992",
+        "entity_type": "Season",
+        "description": "The season in which Giovanna Amati participated in three races."
+      },
+      {
+        "local_id": "e4",
+        "name": "South Africa",
+        "entity_type": "GrandPrix",
+        "description": "One of the races Giovanna Amati participated in."
+      },
+      {
+        "local_id": "e5",
+        "name": "Mexico",
+        "entity_type": "GrandPrix",
+        "description": "One of the races Giovanna Amati participated in."
+      },
+      {
+        "local_id": "e6",
+        "name": "Brazil",
+        "entity_type": "GrandPrix",
+        "description": "One of the races Giovanna Amati participated in."
+      },
+      {
+        "local_id": "e7",
+        "name": "Damon Hill",
+        "entity_type": "Driver",
+        "description": "The driver who replaced Giovanna Amati at Brabham."
+      },
+      {
+        "local_id": "e8",
+        "name": "Susie Wolff",
+        "entity_type": "Driver",
+        "description": "The female driver who took part in free practice sessions for Williams after Amati."
+      },
+      {
+        "local_id": "e9",
+        "name": "Williams",
+        "entity_type": "Team",
+        "description": "The team for which Susie Wolff participated in free practice sessions."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Giovanna Amati drove for Brabham.",
+        "from_year": 1992,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e3",
+        "relationship_type": "ENTERED",
+        "description": "Brabham entered the 1992 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e3",
+        "relationship_type": "ROUND_OF",
+        "description": "South Africa Grand Prix was a round of the 1992 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e3",
+        "relationship_type": "ROUND_OF",
+        "description": "Mexico Grand Prix was a round of the 1992 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e6",
+        "target_id": "e3",
+        "relationship_type": "ROUND_OF",
+        "description": "Brazil Grand Prix was a round of the 1992 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e7",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Damon Hill drove for Brabham after Giovanna Amati.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e8",
+        "target_id": "e9",
+        "relationship_type": "DROVE_FOR",
+        "description": "Susie Wolff drove for Williams as a development driver.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 9,
+  "entities_accepted": 9,
+  "entities_rejected": 0,
+  "relationship_candidates": 7,
+  "relationships_accepted": 7,
+  "relationships_rejected": 0,
+  "rejections": [],
+  "alignments": []
+}

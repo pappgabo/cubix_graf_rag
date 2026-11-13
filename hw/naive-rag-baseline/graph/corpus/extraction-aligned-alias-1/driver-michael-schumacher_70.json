@@ -1,0 +1,62 @@
+{
+  "chunk_id": "driver-michael-schumacher#70",
+  "doc_id": "driver-michael-schumacher",
+  "document_title": "Michael Schumacher",
+  "section": null,
+  "page": 6,
+  "source": "https://en.wikipedia.org/wiki/Michael_Schumacher",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "c8f7199a9545d97dd618363944efd374a4b1310a11f36bb3213f89464398230e",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "WON does not allow Driver -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "ROUND_OF does not allow GrandPrix -> Driver"
+    }
+  ],
+  "alignments": [],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Michael Schumacher",
+        "entity_type": "Driver",
+        "description": "A Formula One driver known for his career wins."
+      },
+      {
+        "local_id": "e2",
+        "name": "Rubens Barrichello",
+        "entity_type": "Driver",
+        "description": "Michael Schumacher's teammate who took his maiden win."
+      },
+      {
+        "local_id": "e3",
+        "name": "Mika Häkkinen",
+        "entity_type": "Driver",
+        "description": "A Formula One driver who took two victories."
+      },
+      {
+        "local_id": "e4",
+        "name": "Italian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A race where Schumacher won his 41st career win."
+      },
+      {
+        "local_id": "e5",
+        "name": "Japanese Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The penultimate race of the season."
+      }
+    ],
+    "relationships": []
+  }
+}

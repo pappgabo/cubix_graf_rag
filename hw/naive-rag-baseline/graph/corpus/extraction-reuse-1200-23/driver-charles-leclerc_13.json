@@ -1,0 +1,144 @@
+{
+  "chunk_id": "driver-charles-leclerc#13",
+  "doc_id": "driver-charles-leclerc",
+  "document_title": "Charles Leclerc",
+  "section": "Charles Leclerc > GP3 Series (2016)",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "d730c7d25163d6145b50351e8c47e6cfa78794dc69038239f2e0e97bff5c16eb",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Charles Leclerc",
+        "entity_type": "Driver",
+        "description": "A driver who competed in the GP3 Series in 2016."
+      },
+      {
+        "local_id": "e2",
+        "name": "GP3 Series",
+        "entity_type": "Season",
+        "description": "The championship season in which Charles Leclerc competed in 2016."
+      },
+      {
+        "local_id": "e3",
+        "name": "Spa-Francorchamps",
+        "entity_type": "Circuit",
+        "description": "The circuit where Leclerc took pole and won race one."
+      },
+      {
+        "local_id": "e4",
+        "name": "Monza",
+        "entity_type": "Circuit",
+        "description": "The circuit where Leclerc took pole and finished fourth in race one."
+      },
+      {
+        "local_id": "e5",
+        "name": "Sepang",
+        "entity_type": "Circuit",
+        "description": "The circuit where Leclerc took his third consecutive pole."
+      },
+      {
+        "local_id": "e6",
+        "name": "Yas Marina",
+        "entity_type": "Circuit",
+        "description": "The circuit where Leclerc clinched the title."
+      },
+      {
+        "local_id": "e7",
+        "name": "Nirei Fukuzumi",
+        "entity_type": "Driver",
+        "description": "Leclerc's teammate in the GP3 Series."
+      },
+      {
+        "local_id": "e8",
+        "name": "Alexander Albon",
+        "entity_type": "Driver",
+        "description": "Leclerc's title rival in the GP3 Series."
+      },
+      {
+        "local_id": "e9",
+        "name": "Antonio Fuoco",
+        "entity_type": "Driver",
+        "description": "Leclerc's title rival in the GP3 Series."
+      },
+      {
+        "local_id": "e10",
+        "name": "Santino Ferrucci",
+        "entity_type": "Driver",
+        "description": "The driver with whom Leclerc collided at Yas Marina."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e7",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Leclerc was teammates with Nirei Fukuzumi in the GP3 Series.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e8",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Leclerc was title rivals with Alexander Albon in the GP3 Series.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e9",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Leclerc was title rivals with Antonio Fuoco in the GP3 Series.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 10,
+  "entities_accepted": 10,
+  "entities_rejected": 0,
+  "relationship_candidates": 9,
+  "relationships_accepted": 3,
+  "relationships_rejected": 6,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "WON does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "ROUND_OF does not allow Season -> Circuit"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "ROUND_OF does not allow Season -> Circuit"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "ROUND_OF does not allow Season -> Circuit"
+    },
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "ROUND_OF does not allow Season -> Circuit"
+    },
+    {
+      "element": "relationship",
+      "index": 8,
+      "reason": "ACHIEVED does not allow Driver -> Driver"
+    }
+  ],
+  "alignments": []
+}

@@ -1,0 +1,134 @@
+{
+  "chunk_id": "season-2008-formula-one-world-championship#9",
+  "doc_id": "season-2008-formula-one-world-championship",
+  "document_title": "2008 Formula One World Championship",
+  "section": null,
+  "page": 3,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "d7633dbd4f9b55acbdba8d59ec458650dc92681704c1aca1c6c0aa3adb2865a0",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "European Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The European Grand Prix took place at the Valencia Street Circuit in 2008."
+      },
+      {
+        "local_id": "e2",
+        "name": "Valencia Street Circuit",
+        "entity_type": "Circuit",
+        "description": "The circuit where the European Grand Prix was held in 2008."
+      },
+      {
+        "local_id": "e3",
+        "name": "Nürburgring",
+        "entity_type": "Circuit",
+        "description": "The circuit that hosted the European Grand Prix up until 2007."
+      },
+      {
+        "local_id": "e4",
+        "name": "German Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The Grand Prix that took place at Hockenheimring in 2008."
+      },
+      {
+        "local_id": "e5",
+        "name": "Hockenheimring",
+        "entity_type": "Circuit",
+        "description": "The circuit where the German Grand Prix was held in 2008."
+      },
+      {
+        "local_id": "e6",
+        "name": "Indianapolis Motor Speedway",
+        "entity_type": "Circuit",
+        "description": "The circuit that did not hold a Grand Prix in 2008."
+      },
+      {
+        "local_id": "e7",
+        "name": "United States Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The Grand Prix that made its return in 2012 at the Circuit of the Americas."
+      },
+      {
+        "local_id": "e8",
+        "name": "Circuit of the Americas",
+        "entity_type": "Circuit",
+        "description": "The circuit in Austin, Texas where the United States Grand Prix returned in 2012."
+      },
+      {
+        "local_id": "e9",
+        "name": "French Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The Grand Prix that was reported to be the last held at Magny-Cours."
+      },
+      {
+        "local_id": "e10",
+        "name": "Magny-Cours",
+        "entity_type": "Circuit",
+        "description": "The circuit that hosted the French Grand Prix until 2008."
+      },
+      {
+        "local_id": "e11",
+        "name": "Paul Ricard",
+        "entity_type": "Circuit",
+        "description": "One of the suggested alternatives for the French Grand Prix."
+      },
+      {
+        "local_id": "e12",
+        "name": "Disneyland Paris",
+        "entity_type": "Circuit",
+        "description": "A suggested location for a new circuit for the French Grand Prix."
+      },
+      {
+        "local_id": "e13",
+        "name": "Charles de Gaulle Airport",
+        "entity_type": "Circuit",
+        "description": "Another suggested location for a new circuit for the French Grand Prix."
+      }
+    ],
+    "relationships": []
+  },
+  "entity_candidates": 13,
+  "entities_accepted": 13,
+  "entities_rejected": 0,
+  "relationship_candidates": 6,
+  "relationships_accepted": 0,
+  "relationships_rejected": 6,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "HELD_AT is not temporal; from_year=2008, to_year=None, role=None cannot be stored without dropping them"
+    },
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "HELD_AT is not temporal; from_year=2008, to_year=None, role=None cannot be stored without dropping them"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "HELD_AT is not temporal; from_year=None, to_year=2008, role=None cannot be stored without dropping them"
+    },
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "ROUND_OF does not allow GrandPrix -> Circuit"
+    },
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "ROUND_OF does not allow GrandPrix -> Circuit"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "ROUND_OF does not allow GrandPrix -> Circuit"
+    }
+  ],
+  "alignments": []
+}

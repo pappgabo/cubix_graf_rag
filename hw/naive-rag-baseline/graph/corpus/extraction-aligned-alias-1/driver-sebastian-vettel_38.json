@@ -1,0 +1,151 @@
+{
+  "chunk_id": "driver-sebastian-vettel#38",
+  "doc_id": "driver-sebastian-vettel",
+  "document_title": "Sebastian Vettel",
+  "section": "2010: Youngest World Champion",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/Sebastian_Vettel",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "7f97dcf476a86731f172fcdf149faaaf46200e5dd7c135a94ee06bd4db9e2505",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 6,
+      "reason": "WON does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 7,
+      "reason": "AWARDED_IN does not allow Season -> Season"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 0,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e3; description kept"
+    },
+    {
+      "index": 1,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr2 -AT_RACE-> e4; description kept"
+    },
+    {
+      "index": 2,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr3 -AT_RACE-> e5; description kept"
+    }
+  ],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Sebastian Vettel",
+        "entity_type": "Driver",
+        "description": "A Formula One driver who became the youngest World Champion."
+      },
+      {
+        "local_id": "e2",
+        "name": "2010",
+        "entity_type": "Season",
+        "description": "The championship year in which Sebastian Vettel became the youngest World Champion."
+      },
+      {
+        "local_id": "e3",
+        "name": "Bahrain Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The first race of the 2010 season where Vettel took pole position."
+      },
+      {
+        "local_id": "e4",
+        "name": "Australian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The race where Vettel was appointed as a director of the Grand Prix Drivers' Association."
+      },
+      {
+        "local_id": "e5",
+        "name": "Malaysia",
+        "entity_type": "GrandPrix",
+        "description": "The race where Vettel took his first win of the 2010 season."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Sebastian Vettel at Bahrain Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Vettel took pole position at the Bahrain Grand Prix."
+      },
+      {
+        "local_id": "rr2",
+        "name": "Sebastian Vettel at Australian Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Vettel was appointed as a director of the Grand Prix Drivers' Association at the Australian Grand Prix."
+      },
+      {
+        "local_id": "rr3",
+        "name": "Sebastian Vettel at Malaysia",
+        "entity_type": "RaceResult",
+        "description": "Vettel took his first win of the season in Malaysia."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Vettel took pole position at the Bahrain Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e3",
+        "relationship_type": "AT_RACE",
+        "description": "Vettel took pole position at the Bahrain Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr2",
+        "relationship_type": "ACHIEVED",
+        "description": "Vettel was appointed as a director of the Grand Prix Drivers' Association at the Australian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr2",
+        "target_id": "e4",
+        "relationship_type": "AT_RACE",
+        "description": "Vettel was appointed as a director of the Grand Prix Drivers' Association at the Australian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr3",
+        "relationship_type": "ACHIEVED",
+        "description": "Vettel took his first win of the season in Malaysia.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr3",
+        "target_id": "e5",
+        "relationship_type": "AT_RACE",
+        "description": "Vettel took his first win of the season in Malaysia.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

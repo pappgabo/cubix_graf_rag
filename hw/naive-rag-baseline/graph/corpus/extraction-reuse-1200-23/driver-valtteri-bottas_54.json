@@ -1,0 +1,143 @@
+{
+  "chunk_id": "driver-valtteri-bottas#54",
+  "doc_id": "driver-valtteri-bottas",
+  "document_title": "Valtteri Bottas",
+  "section": "Formula One career > Alfa Romeo / Sauber (2022–2024) > 2024",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "4147f05965916b00cf204878112d73b94f33fd6f9ad4019c643f3a0aede38c19",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Valtteri Bottas",
+        "entity_type": "Driver",
+        "description": "A Finnish racing driver currently competing in Formula One."
+      },
+      {
+        "local_id": "e2",
+        "name": "Alfa Romeo",
+        "entity_type": "Team",
+        "description": "A Formula One team that Bottas drove for."
+      },
+      {
+        "local_id": "e3",
+        "name": "2024",
+        "entity_type": "Season",
+        "description": "The Formula One season in which Bottas competed."
+      },
+      {
+        "local_id": "e4",
+        "name": "São Paulo Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A race in which Bottas qualified 11th."
+      },
+      {
+        "local_id": "e5",
+        "name": "Qatar Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A race where Bottas finished 11th."
+      },
+      {
+        "local_id": "e6",
+        "name": "Abu Dhabi Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A race where Bottas reached Q3 but retired."
+      },
+      {
+        "local_id": "e7",
+        "name": "Nico Hülkenberg",
+        "entity_type": "Driver",
+        "description": "A driver signed by Sauber for the 2025 season."
+      },
+      {
+        "local_id": "e8",
+        "name": "Gabriel Bortoleto",
+        "entity_type": "Driver",
+        "description": "A Formula 2 graduate who took the second seat at Sauber."
+      },
+      {
+        "local_id": "e9",
+        "name": "Zhou Guanyu",
+        "entity_type": "Driver",
+        "description": "Bottas's teammate who scored points for the team."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Bottas drove for Alfa Romeo.",
+        "from_year": 2022,
+        "to_year": 2024,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e3",
+        "relationship_type": "ROUND_OF",
+        "description": "São Paulo Grand Prix is a round of the 2024 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e3",
+        "relationship_type": "ROUND_OF",
+        "description": "Qatar Grand Prix is a round of the 2024 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e6",
+        "target_id": "e3",
+        "relationship_type": "ROUND_OF",
+        "description": "Abu Dhabi Grand Prix is a round of the 2024 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e9",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Bottas was teammates with Zhou Guanyu.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e7",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Nico Hülkenberg drove for Alfa Romeo.",
+        "from_year": 2025,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e8",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Gabriel Bortoleto drove for Alfa Romeo.",
+        "from_year": 2025,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 9,
+  "entities_accepted": 9,
+  "entities_rejected": 0,
+  "relationship_candidates": 7,
+  "relationships_accepted": 7,
+  "relationships_rejected": 0,
+  "rejections": [],
+  "alignments": []
+}

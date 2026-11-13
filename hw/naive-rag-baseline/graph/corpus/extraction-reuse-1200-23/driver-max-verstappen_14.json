@@ -1,0 +1,104 @@
+{
+  "chunk_id": "driver-max-verstappen#14",
+  "doc_id": "driver-max-verstappen",
+  "document_title": "Max Verstappen",
+  "section": null,
+  "page": 4,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "dfb7a957540285176eb047de7d1265cd06e5421fcc3fd4261cf120e9997276f3",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Max Verstappen",
+        "entity_type": "Driver",
+        "description": "A Formula One driver known for his aggressive driving style."
+      },
+      {
+        "local_id": "e2",
+        "name": "2016 Brazilian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula One race held in 2016."
+      },
+      {
+        "local_id": "e3",
+        "name": "Circuit",
+        "entity_type": "Circuit",
+        "description": "The racing venue for the Brazilian Grand Prix."
+      },
+      {
+        "local_id": "e4",
+        "name": "Third place",
+        "entity_type": "RaceResult",
+        "description": "Verstappen finished in third place at the 2016 Brazilian Grand Prix."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Max Verstappen at 2016 Brazilian Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Verstappen finished third at the 2016 Brazilian Grand Prix."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Verstappen finished third at the 2016 Brazilian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e2",
+        "relationship_type": "AT_RACE",
+        "description": "Verstappen finished third at the 2016 Brazilian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e2",
+        "relationship_type": "AT_RACE",
+        "description": "The race result belongs to the 2016 Brazilian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e3",
+        "relationship_type": "HELD_AT",
+        "description": "The Brazilian Grand Prix is held at a circuit.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 4,
+  "entities_accepted": 5,
+  "entities_rejected": 0,
+  "relationship_candidates": 4,
+  "relationships_accepted": 4,
+  "relationships_rejected": 1,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "FOR_TEAM does not allow RaceResult -> Driver"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 0,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e2; description kept"
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "chunk_id": "team-mercedes-benz-in-formula-one#6",
+  "doc_id": "team-mercedes-benz-in-formula-one",
+  "document_title": "Mercedes-Benz in Formula One",
+  "section": "Mercedes-Benz in Formula One > Mercedes-AMG Petronas Formula One Team (2010–present)",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "dd3b217fa646d9ee9c7a6a53c0ace98069d4decc04371ea7ec8814c789fcc46b",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Brawn GP",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that was formed after Honda withdrew from the sport in 2008."
+      },
+      {
+        "local_id": "e2",
+        "name": "Jenson Button",
+        "entity_type": "Driver",
+        "description": "A Formula 1 driver who won the 2009 Drivers' Championship driving for Brawn GP."
+      },
+      {
+        "local_id": "e3",
+        "name": "2009",
+        "entity_type": "Season",
+        "description": "The championship year in which Jenson Button won the Drivers' Championship and Brawn GP won the Constructors' Championship."
+      },
+      {
+        "local_id": "e4",
+        "name": "Drivers' Championship",
+        "entity_type": "Title",
+        "description": "The championship title won by Jenson Button in 2009."
+      },
+      {
+        "local_id": "e5",
+        "name": "Constructors' Championship",
+        "entity_type": "Title",
+        "description": "The championship title won by Brawn GP in 2009."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e2",
+        "target_id": "e4",
+        "relationship_type": "WON",
+        "description": "Jenson Button won the Drivers' Championship in 2009.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e5",
+        "relationship_type": "WON",
+        "description": "Brawn GP won the Constructors' Championship in 2009.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e3",
+        "relationship_type": "ENTERED",
+        "description": "Brawn GP entered the 2009 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 5,
+  "entities_accepted": 5,
+  "entities_rejected": 0,
+  "relationship_candidates": 3,
+  "relationships_accepted": 3,
+  "relationships_rejected": 0,
+  "rejections": [],
+  "alignments": [
+    {
+      "index": 2,
+      "action": "clear_redundant_season_year",
+      "detail": "ENTERED year 2009 already named by Season 'e3'; from_year and to_year cleared"
+    }
+  ]
+}

@@ -1,0 +1,129 @@
+{
+  "chunk_id": "driver-max-verstappen#73",
+  "doc_id": "driver-max-verstappen",
+  "document_title": "Max Verstappen",
+  "section": null,
+  "page": 14,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "aa293e4530f153731d595404bf72a4c60023bfe6382df96cf676df3d242062ce",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Max Verstappen",
+        "entity_type": "Driver",
+        "description": "A Formula One driver known for his achievements in both real and sim racing."
+      },
+      {
+        "local_id": "e2",
+        "name": "Lando Norris",
+        "entity_type": "Driver",
+        "description": "A Formula One driver who partnered with Verstappen in sim racing events."
+      },
+      {
+        "local_id": "e3",
+        "name": "Haas",
+        "entity_type": "Team",
+        "description": "A Formula One team whose driver Romain Grosjean commented on Verstappen's sim racing skills."
+      },
+      {
+        "local_id": "e4",
+        "name": "R8G eSports",
+        "entity_type": "Team",
+        "description": "An eSports team founded by Romain Grosjean."
+      },
+      {
+        "local_id": "e5",
+        "name": "Redline",
+        "entity_type": "Team",
+        "description": "The team Verstappen raced with in the Daytona 24 Special Event."
+      },
+      {
+        "local_id": "e6",
+        "name": "Emilia Romagna Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula One race where Verstappen achieved a record-equalling pole position."
+      },
+      {
+        "local_id": "e7",
+        "name": "Nürburgring 24 Special Event",
+        "entity_type": "GrandPrix",
+        "description": "A sim racing event won by Verstappen on the same weekend as the Emilia Romagna Grand Prix."
+      },
+      {
+        "local_id": "e8",
+        "name": "Spa 24 Special Event",
+        "entity_type": "GrandPrix",
+        "description": "A sim racing event won by Verstappen multiple times."
+      },
+      {
+        "local_id": "e9",
+        "name": "AMX Global League",
+        "entity_type": "Season",
+        "description": "A sim racing league in which Verstappen competed."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Verstappen and Norris were teammates in the Bathurst 12 Special Event.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e5",
+        "relationship_type": "DROVE_FOR",
+        "description": "Verstappen raced with Redline in the Daytona 24 Special Event.",
+        "from_year": 2024,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 9,
+  "entities_accepted": 9,
+  "entities_rejected": 0,
+  "relationship_candidates": 8,
+  "relationships_accepted": 2,
+  "relationships_rejected": 6,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "ACHIEVED Driver -> GrandPrix has from_year=2024, to_year=None, role=None; the year or role cannot be stored on the reified result"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "ACHIEVED Driver -> GrandPrix has from_year=2024, to_year=None, role=None; the year or role cannot be stored on the reified result"
+    },
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "ACHIEVED Driver -> GrandPrix has from_year=2024, to_year=None, role=None; the year or role cannot be stored on the reified result"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "TEAMMATE_OF does not allow Team -> Driver"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "DROVE_FOR does not allow Team -> Team"
+    },
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "RACED_IN does not allow Driver -> Season"
+    }
+  ],
+  "alignments": []
+}

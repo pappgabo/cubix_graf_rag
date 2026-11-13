@@ -1,0 +1,94 @@
+{
+  "chunk_id": "driver-sebastian-vettel#57",
+  "doc_id": "driver-sebastian-vettel",
+  "document_title": "Sebastian Vettel",
+  "section": "2012: Triple World Champion following Alonso title duel",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/Sebastian_Vettel",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "7c799b504b674819c0091ebda6e2cb631b90aa956552b648eee0e34f8d70d547",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "rejections": [],
+  "alignments": [
+    {
+      "index": 0,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e2; description kept"
+    }
+  ],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Sebastian Vettel",
+        "entity_type": "Driver",
+        "description": "A Formula One driver who became a triple world champion."
+      },
+      {
+        "local_id": "e2",
+        "name": "Abu Dhabi Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula One race held in Abu Dhabi."
+      },
+      {
+        "local_id": "e3",
+        "name": "Brazil",
+        "entity_type": "GrandPrix",
+        "description": "The location of the last race in the 2012 season."
+      },
+      {
+        "local_id": "e4",
+        "name": "2012",
+        "entity_type": "Season",
+        "description": "The Formula One season in which Vettel competed."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Sebastian Vettel at Abu Dhabi Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Vettel finished in third place at the Abu Dhabi Grand Prix."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Vettel finished in third place at the Abu Dhabi Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e2",
+        "relationship_type": "AT_RACE",
+        "description": "Vettel finished in third place at the Abu Dhabi Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e4",
+        "relationship_type": "ROUND_OF",
+        "description": "The Abu Dhabi Grand Prix is a round of the 2012 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e4",
+        "relationship_type": "ROUND_OF",
+        "description": "The Brazilian Grand Prix is a round of the 2012 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

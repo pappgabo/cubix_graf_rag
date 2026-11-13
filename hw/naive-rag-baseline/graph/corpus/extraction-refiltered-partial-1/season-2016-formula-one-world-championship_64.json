@@ -1,0 +1,94 @@
+{
+  "chunk_id": "season-2016-formula-one-world-championship#64",
+  "doc_id": "season-2016-formula-one-world-championship",
+  "document_title": "2016 Formula One World Championship",
+  "section": "Opening rounds",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/2016_Formula_One_World_Championship",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "64031592d42854b2d0288ce16c622e3704ed89f39dea75006735a284e4d7a096",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "ACHIEVED does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "ACHIEVED does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 5,
+      "reason": "ACHIEVED does not allow Driver -> Season"
+    }
+  ],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Lewis Hamilton",
+        "entity_type": "Driver",
+        "description": "A driver who secured pole position."
+      },
+      {
+        "local_id": "e2",
+        "name": "Nico Rosberg",
+        "entity_type": "Driver",
+        "description": "A driver who took his second consecutive victory of 2016."
+      },
+      {
+        "local_id": "e3",
+        "name": "Kimi Räikkönen",
+        "entity_type": "Driver",
+        "description": "A driver who finished second in the race."
+      },
+      {
+        "local_id": "e4",
+        "name": "2016",
+        "entity_type": "Season",
+        "description": "The championship year."
+      },
+      {
+        "local_id": "e5",
+        "name": "2016 Formula One World Championship",
+        "entity_type": "Title",
+        "description": "The championship title for the 2016 season."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e2",
+        "target_id": "e5",
+        "relationship_type": "WON",
+        "description": "Nico Rosberg won the championship title for the 2016 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e4",
+        "relationship_type": "AWARDED_IN",
+        "description": "The championship title belongs to the 2016 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Lewis Hamilton was a teammate of Nico Rosberg.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

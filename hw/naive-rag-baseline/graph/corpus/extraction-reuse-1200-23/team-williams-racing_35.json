@@ -1,0 +1,125 @@
+{
+  "chunk_id": "team-williams-racing#35",
+  "doc_id": "team-williams-racing",
+  "document_title": "Williams Racing",
+  "section": "Williams Racing > 1992 off-season",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "f74c6f148666712677e726d0efa44109e6739c00755648829a993ff5cc328474",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Alain Prost",
+        "entity_type": "Driver",
+        "description": "A driver who had a rivalry with Ayrton Senna and negotiated veto power in his contract with Williams."
+      },
+      {
+        "local_id": "e2",
+        "name": "Ayrton Senna",
+        "entity_type": "Driver",
+        "description": "A driver who had a rivalry with Alain Prost and was excluded from joining Williams."
+      },
+      {
+        "local_id": "e3",
+        "name": "Damon Hill",
+        "entity_type": "Driver",
+        "description": "A driver who was promoted to the second seat at Williams after Prost's veto."
+      },
+      {
+        "local_id": "e4",
+        "name": "Williams",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that Prost joined in 1993."
+      },
+      {
+        "local_id": "e5",
+        "name": "Brabham",
+        "entity_type": "Team",
+        "description": "The team where Damon Hill made his debut in 1992."
+      },
+      {
+        "local_id": "e6",
+        "name": "McLaren",
+        "entity_type": "Team",
+        "description": "The team where Ayrton Senna signed a race-to-race contract after being excluded from Williams."
+      },
+      {
+        "local_id": "e7",
+        "name": "Scuderia Ferrari",
+        "entity_type": "Team",
+        "description": "The team where Berger returned."
+      },
+      {
+        "local_id": "e8",
+        "name": "Ligier",
+        "entity_type": "Team",
+        "description": "The team where Brundle joined."
+      },
+      {
+        "local_id": "e9",
+        "name": "1993",
+        "entity_type": "Season",
+        "description": "The season when Alain Prost joined Williams."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e4",
+        "relationship_type": "DROVE_FOR",
+        "description": "Alain Prost drove for Williams.",
+        "from_year": 1993,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e4",
+        "relationship_type": "DROVE_FOR",
+        "description": "Damon Hill drove for Williams.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e6",
+        "relationship_type": "DROVE_FOR",
+        "description": "Ayrton Senna drove for McLaren.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e5",
+        "relationship_type": "DROVE_FOR",
+        "description": "Damon Hill drove for Brabham.",
+        "from_year": 1992,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Alain Prost and Ayrton Senna were teammates at McLaren before Prost's departure.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 9,
+  "entities_accepted": 9,
+  "entities_rejected": 0,
+  "relationship_candidates": 5,
+  "relationships_accepted": 5,
+  "relationships_rejected": 0,
+  "rejections": [],
+  "alignments": []
+}

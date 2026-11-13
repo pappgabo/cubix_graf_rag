@@ -1,0 +1,108 @@
+{
+  "chunk_id": "driver-lewis-hamilton#36",
+  "doc_id": "driver-lewis-hamilton",
+  "document_title": "Lewis Hamilton",
+  "section": null,
+  "page": 4,
+  "source": "https://en.wikipedia.org/wiki/Lewis_Hamilton",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "e330104d8c9582b6d723023b42e90b14ef48778d8c76e5e915d06b1f1b91cb67",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "entity_candidates": 5,
+  "entities_accepted": 6,
+  "entities_rejected": 0,
+  "relationship_candidates": 4,
+  "relationships_accepted": 3,
+  "relationships_rejected": 2,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "ACHIEVED does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "ACHIEVED does not allow Driver -> Season"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 2,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e4; description kept"
+    }
+  ],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Lewis Hamilton",
+        "entity_type": "Driver",
+        "description": "A Formula One driver who had a challenging year in 2011."
+      },
+      {
+        "local_id": "e2",
+        "name": "Jenson Button",
+        "entity_type": "Driver",
+        "description": "Hamilton's teammate in 2011 who finished runner-up to Vettel."
+      },
+      {
+        "local_id": "e3",
+        "name": "2011",
+        "entity_type": "Season",
+        "description": "A challenging season for Hamilton."
+      },
+      {
+        "local_id": "e4",
+        "name": "Korean Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The race where Hamilton secured the only non-Red Bull pole position of the season."
+      },
+      {
+        "local_id": "e5",
+        "name": "Sebastian Vettel",
+        "entity_type": "Driver",
+        "description": "The driver who finished first in the standings in 2011."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Lewis Hamilton at Korean Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Hamilton secured the only non-Red Bull pole position of the season at the Korean Grand Prix."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Hamilton was teammates with Button in 2011.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Hamilton secured the only non-Red Bull pole position of the season at the Korean Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e4",
+        "relationship_type": "AT_RACE",
+        "description": "Hamilton secured the only non-Red Bull pole position of the season at the Korean Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

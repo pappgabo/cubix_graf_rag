@@ -1,0 +1,80 @@
+{
+  "chunk_id": "driver-sebastian-vettel#48",
+  "doc_id": "driver-sebastian-vettel",
+  "document_title": "Sebastian Vettel",
+  "section": "Driver profile > Comparison to Michael Schumacher",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "59177c90c84a5df378d0c3522df20dc01d5885735b59651689be02498ea643fa",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Sebastian Vettel",
+        "entity_type": "Driver",
+        "description": "Vettel's unexpected win at the 2008 Italian Grand Prix led the media to dub him the 'Baby Schumi'. He played down the comparison stating he wanted to be the 'New Vettel'."
+      },
+      {
+        "local_id": "e2",
+        "name": "Michael Schumacher",
+        "entity_type": "Driver",
+        "description": "Schumacher's father is a bricklayer and he had his first taste of racing at the Kerpen karting track near Cologne."
+      },
+      {
+        "local_id": "e3",
+        "name": "2008",
+        "entity_type": "Season",
+        "description": "The year of Vettel's unexpected win at the Italian Grand Prix."
+      },
+      {
+        "local_id": "e4",
+        "name": "Italian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The race where Vettel had his unexpected win in 2008."
+      },
+      {
+        "local_id": "e5",
+        "name": "Nürburgring",
+        "entity_type": "Circuit",
+        "description": "A racing venue near Cologne where both Vettel and Schumacher had their early racing experiences."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e4",
+        "target_id": "e3",
+        "relationship_type": "ROUND_OF",
+        "description": "The Italian Grand Prix is a round of the 2008 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e5",
+        "relationship_type": "HELD_AT",
+        "description": "The Italian Grand Prix is held at the Nürburgring.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 5,
+  "entities_accepted": 5,
+  "entities_rejected": 0,
+  "relationship_candidates": 3,
+  "relationships_accepted": 2,
+  "relationships_rejected": 1,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "ACHIEVED Driver -> GrandPrix has from_year=2008, to_year=None, role=None; the year or role cannot be stored on the reified result"
+    }
+  ],
+  "alignments": []
+}

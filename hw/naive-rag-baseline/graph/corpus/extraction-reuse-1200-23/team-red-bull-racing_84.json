@@ -1,0 +1,115 @@
+{
+  "chunk_id": "team-red-bull-racing#84",
+  "doc_id": "team-red-bull-racing",
+  "document_title": "Red Bull Racing",
+  "section": "Red Bull Advanced Technologies",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "9390fc6b41a5dc4c42c331ad9d9c2491d101083bda3411dc53fd95a0c746b4b9",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Red Bull Advanced Technologies",
+        "entity_type": "Team",
+        "description": "A division of Red Bull Racing focused on advanced technologies."
+      },
+      {
+        "local_id": "e2",
+        "name": "RB17",
+        "entity_type": "Car",
+        "description": "A hypercar being developed by Red Bull Advanced Technologies."
+      },
+      {
+        "local_id": "e3",
+        "name": "Adrian Newey",
+        "entity_type": "Driver",
+        "description": "Chief Technical Officer at Red Bull Racing, designer of the RB17."
+      },
+      {
+        "local_id": "e4",
+        "name": "Oracle Red Bull Racing Team",
+        "entity_type": "Team",
+        "description": "The Formula One team associated with Red Bull Racing."
+      },
+      {
+        "local_id": "e5",
+        "name": "2025",
+        "entity_type": "Season",
+        "description": "The year production of the RB17 is scheduled to begin."
+      },
+      {
+        "local_id": "e6",
+        "name": "Goodwood Festival of Speed",
+        "entity_type": "GrandPrix",
+        "description": "Event where the prototype of the RB17 was revealed."
+      },
+      {
+        "local_id": "e7",
+        "name": "July 2024",
+        "entity_type": "Season",
+        "description": "The month and year when the prototype of the RB17 was revealed."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "FIELDED",
+        "description": "Red Bull Advanced Technologies is developing the RB17 hypercar.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e5",
+        "relationship_type": "RACED_IN",
+        "description": "The RB17 is scheduled to begin production in 2025.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e2",
+        "relationship_type": "FIELDED",
+        "description": "Oracle Red Bull Racing Team revealed the prototype of the RB17.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e6",
+        "target_id": "e7",
+        "relationship_type": "ROUND_OF",
+        "description": "The Goodwood Festival of Speed is the event where the RB17 prototype was revealed.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 7,
+  "entities_accepted": 7,
+  "entities_rejected": 0,
+  "relationship_candidates": 6,
+  "relationships_accepted": 4,
+  "relationships_rejected": 2,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "AT_RACE does not allow Car -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "FIELDED does not allow Driver -> Car"
+    }
+  ],
+  "alignments": []
+}

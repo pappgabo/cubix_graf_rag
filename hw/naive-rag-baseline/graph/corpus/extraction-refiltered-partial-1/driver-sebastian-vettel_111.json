@@ -1,0 +1,94 @@
+{
+  "chunk_id": "driver-sebastian-vettel#111",
+  "doc_id": "driver-sebastian-vettel",
+  "document_title": "Sebastian Vettel",
+  "section": "2021: Final podium",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/Sebastian_Vettel",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "f43ff181d576c2bd45b829b8ef99312239e389e6ba2dd49645df1086221cb457",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "ACHIEVED does not allow Driver -> Car"
+    },
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "AT_RACE does not allow Car -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 5,
+      "reason": "FIELDED does not allow Team -> GrandPrix"
+    }
+  ],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Sebastian Vettel",
+        "entity_type": "Driver",
+        "description": "A driver who raced for Aston Martin in 2021."
+      },
+      {
+        "local_id": "e2",
+        "name": "Aston Martin",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that entered cars in 2021."
+      },
+      {
+        "local_id": "e3",
+        "name": "2021",
+        "entity_type": "Season",
+        "description": "The Formula 1 championship season."
+      },
+      {
+        "local_id": "e4",
+        "name": "Azerbaijan Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula 1 race held in Azerbaijan."
+      },
+      {
+        "local_id": "e5",
+        "name": "Car",
+        "entity_type": "Car",
+        "description": "The car fielded by Aston Martin in 2021."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Sebastian Vettel drove for Aston Martin in 2021.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e3",
+        "relationship_type": "ENTERED",
+        "description": "Aston Martin took part in the 2021 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e3",
+        "relationship_type": "ROUND_OF",
+        "description": "The Azerbaijan Grand Prix is a round of the 2021 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

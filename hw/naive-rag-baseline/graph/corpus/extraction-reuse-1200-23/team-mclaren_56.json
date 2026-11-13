@@ -1,0 +1,154 @@
+{
+  "chunk_id": "team-mclaren#56",
+  "doc_id": "team-mclaren",
+  "document_title": "McLaren",
+  "section": "2021–present: Return to Mercedes engines > 2021–2023: Continued spells in the midfield",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "08076f19905ff01797eb4e979ab4bd3bc4a9daf4f736e03d52de6aafb35bd0da",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "McLaren",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that entered cars."
+      },
+      {
+        "local_id": "e2",
+        "name": "Lando Norris",
+        "entity_type": "Driver",
+        "description": "A driver who races for McLaren."
+      },
+      {
+        "local_id": "e3",
+        "name": "Daniel Ricciardo",
+        "entity_type": "Driver",
+        "description": "A driver who races for McLaren."
+      },
+      {
+        "local_id": "e4",
+        "name": "2022",
+        "entity_type": "Season",
+        "description": "A championship year."
+      },
+      {
+        "local_id": "e5",
+        "name": "Emilia Romagna Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A race event where Norris achieved third place."
+      },
+      {
+        "local_id": "e6",
+        "name": "São Paulo Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A race event where McLaren suffered their first double DNF finish since Monaco 2017."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Lando Norris at Emilia Romagna Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Lando Norris achieved third place at the Emilia Romagna Grand Prix."
+      },
+      {
+        "local_id": "rr2",
+        "name": "Daniel Ricciardo at São Paulo Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Daniel Ricciardo was involved in a collision at the São Paulo Grand Prix."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e4",
+        "relationship_type": "ENTERED",
+        "description": "McLaren took part in the 2022 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e1",
+        "relationship_type": "DROVE_FOR",
+        "description": "Lando Norris raced for McLaren.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e1",
+        "relationship_type": "DROVE_FOR",
+        "description": "Daniel Ricciardo raced for McLaren.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Lando Norris achieved third place at the Emilia Romagna Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e5",
+        "relationship_type": "AT_RACE",
+        "description": "Lando Norris achieved third place at the Emilia Romagna Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "rr2",
+        "relationship_type": "ACHIEVED",
+        "description": "Daniel Ricciardo was involved in a collision at the São Paulo Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr2",
+        "target_id": "e6",
+        "relationship_type": "AT_RACE",
+        "description": "Daniel Ricciardo was involved in a collision at the São Paulo Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 6,
+  "entities_accepted": 8,
+  "entities_rejected": 0,
+  "relationship_candidates": 6,
+  "relationships_accepted": 7,
+  "relationships_rejected": 1,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 7,
+      "reason": "FOR_TEAM does not allow Team -> GrandPrix"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 3,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e5; description kept"
+    },
+    {
+      "index": 4,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr2 -AT_RACE-> e6; description kept"
+    }
+  ]
+}

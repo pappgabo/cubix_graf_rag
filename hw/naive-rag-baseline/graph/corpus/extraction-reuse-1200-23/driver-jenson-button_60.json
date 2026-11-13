@@ -1,0 +1,70 @@
+{
+  "chunk_id": "driver-jenson-button#60",
+  "doc_id": "driver-jenson-button",
+  "document_title": "Jenson Button",
+  "section": "Public image",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "63ec0119582d23fb730e293f0f6ec2aa55395bfa58a2b21eb9a31d7d5c6fcabd",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Jenson Button",
+        "entity_type": "Driver",
+        "description": "Button was appointed Member of the Order of the British Empire (MBE) in the 2010 New Year Honours for services to motorsport. He has authored five books about his life and career."
+      },
+      {
+        "local_id": "e2",
+        "name": "Brawn GP",
+        "entity_type": "Team",
+        "description": "Brawn GP's rise to success is the focus of the 2023 Disney+ miniseries Brawn: The Impossible Formula 1 Story."
+      },
+      {
+        "local_id": "e3",
+        "name": "2009",
+        "entity_type": "Season",
+        "description": "Button's 2009 championship winning season."
+      },
+      {
+        "local_id": "e4",
+        "name": "Brawn: The Impossible Formula 1 Story",
+        "entity_type": "GrandPrix",
+        "description": "The focus of the 2023 Disney+ miniseries."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e4",
+        "target_id": "e3",
+        "relationship_type": "ROUND_OF",
+        "description": "The miniseries focuses on the 2009 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 4,
+  "entities_accepted": 4,
+  "entities_rejected": 0,
+  "relationship_candidates": 3,
+  "relationships_accepted": 1,
+  "relationships_rejected": 2,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "WON does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "ROUND_OF does not allow Season -> Team"
+    }
+  ],
+  "alignments": []
+}

@@ -1,0 +1,189 @@
+{
+  "chunk_id": "driver-michael-schumacher#10",
+  "doc_id": "driver-michael-schumacher",
+  "document_title": "Michael Schumacher",
+  "section": null,
+  "page": 3,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "31b5dfc9c373931d9f2a7bb08bd538edd5bd49c35a005a118d38bdd3addabffd",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Michael Schumacher",
+        "entity_type": "Driver",
+        "description": "A German racing driver who competed in Formula One."
+      },
+      {
+        "local_id": "e2",
+        "name": "Benetton",
+        "entity_type": "Team",
+        "description": "A Formula One team that Schumacher drove for."
+      },
+      {
+        "local_id": "e3",
+        "name": "Williams FW14B",
+        "entity_type": "Car",
+        "description": "A car model used by the Williams team in the 1992 season."
+      },
+      {
+        "local_id": "e4",
+        "name": "Renault",
+        "entity_type": "PowerUnit",
+        "description": "An engine brand used in the Williams FW14B."
+      },
+      {
+        "local_id": "e5",
+        "name": "Mexican Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula One race where Schumacher finished third."
+      },
+      {
+        "local_id": "e6",
+        "name": "Belgian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula One race where Schumacher achieved his first victory."
+      },
+      {
+        "local_id": "e7",
+        "name": "Spa-Francorchamps Circuit",
+        "entity_type": "Circuit",
+        "description": "The circuit where the Belgian Grand Prix is held."
+      },
+      {
+        "local_id": "e8",
+        "name": "1992",
+        "entity_type": "Season",
+        "description": "The Formula One season during which Schumacher competed."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Michael Schumacher at Mexican Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Michael Schumacher finished third in the Mexican Grand Prix."
+      },
+      {
+        "local_id": "rr2",
+        "name": "Michael Schumacher at Belgian Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Michael Schumacher won the Belgian Grand Prix."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e2",
+        "target_id": "e8",
+        "relationship_type": "ENTERED",
+        "description": "Benetton entered the 1992 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Michael Schumacher drove for Benetton.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Michael Schumacher finished third in the Mexican Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e5",
+        "relationship_type": "AT_RACE",
+        "description": "Michael Schumacher finished third in the Mexican Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e8",
+        "relationship_type": "ROUND_OF",
+        "description": "The Mexican Grand Prix was a round of the 1992 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr2",
+        "relationship_type": "ACHIEVED",
+        "description": "Michael Schumacher won the Belgian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr2",
+        "target_id": "e6",
+        "relationship_type": "AT_RACE",
+        "description": "Michael Schumacher won the Belgian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e6",
+        "target_id": "e8",
+        "relationship_type": "ROUND_OF",
+        "description": "The Belgian Grand Prix was a round of the 1992 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e6",
+        "target_id": "e7",
+        "relationship_type": "HELD_AT",
+        "description": "The Belgian Grand Prix was held at Spa-Francorchamps Circuit.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 8,
+  "entities_accepted": 10,
+  "entities_rejected": 0,
+  "relationship_candidates": 9,
+  "relationships_accepted": 9,
+  "relationships_rejected": 2,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "FIELDED does not allow Car -> Team"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "POWERED_BY does not allow PowerUnit -> Car"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 4,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e5; description kept"
+    },
+    {
+      "index": 6,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr2 -AT_RACE-> e6; description kept"
+    }
+  ]
+}

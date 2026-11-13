@@ -1,0 +1,215 @@
+{
+  "chunk_id": "team-red-bull-racing#48",
+  "doc_id": "team-red-bull-racing",
+  "document_title": "Red Bull Racing",
+  "section": "2017 season",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "0d656d0e079c542f99b646b36cb36bacf02d1e810b07d14809cfbf575c7c5f5d",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Red Bull Racing",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that entered cars."
+      },
+      {
+        "local_id": "e2",
+        "name": "Daniel Ricciardo",
+        "entity_type": "Driver",
+        "description": "A Formula 1 driver who raced for Red Bull Racing."
+      },
+      {
+        "local_id": "e3",
+        "name": "Max Verstappen",
+        "entity_type": "Driver",
+        "description": "A Formula 1 driver who raced for Red Bull Racing."
+      },
+      {
+        "local_id": "e4",
+        "name": "2017",
+        "entity_type": "Season",
+        "description": "The Formula 1 championship season."
+      },
+      {
+        "local_id": "e5",
+        "name": "Azerbaijan Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula 1 race where Ricciardo won."
+      },
+      {
+        "local_id": "e6",
+        "name": "Malaysian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula 1 race where Verstappen won."
+      },
+      {
+        "local_id": "e7",
+        "name": "Mexican Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula 1 race where Verstappen won."
+      },
+      {
+        "local_id": "e8",
+        "name": "Japanese Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula 1 race where Ricciardo and Verstappen scored a double podium."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Daniel Ricciardo at Azerbaijan Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Daniel Ricciardo won the Azerbaijan Grand Prix."
+      },
+      {
+        "local_id": "rr2",
+        "name": "Max Verstappen at Malaysian Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Max Verstappen won the Malaysian Grand Prix."
+      },
+      {
+        "local_id": "rr3",
+        "name": "Max Verstappen at Mexican Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Max Verstappen won the Mexican Grand Prix."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e4",
+        "relationship_type": "ENTERED",
+        "description": "Red Bull Racing took part in the 2017 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e1",
+        "relationship_type": "DROVE_FOR",
+        "description": "Daniel Ricciardo raced for Red Bull Racing.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e1",
+        "relationship_type": "DROVE_FOR",
+        "description": "Max Verstappen raced for Red Bull Racing.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Daniel Ricciardo won the Azerbaijan Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e5",
+        "relationship_type": "AT_RACE",
+        "description": "Daniel Ricciardo won the Azerbaijan Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "rr2",
+        "relationship_type": "ACHIEVED",
+        "description": "Max Verstappen won the Malaysian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr2",
+        "target_id": "e6",
+        "relationship_type": "AT_RACE",
+        "description": "Max Verstappen won the Malaysian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "rr3",
+        "relationship_type": "ACHIEVED",
+        "description": "Max Verstappen won the Mexican Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr3",
+        "target_id": "e7",
+        "relationship_type": "AT_RACE",
+        "description": "Max Verstappen won the Mexican Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 8,
+  "entities_accepted": 11,
+  "entities_rejected": 0,
+  "relationship_candidates": 11,
+  "relationships_accepted": 9,
+  "relationships_rejected": 5,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 9,
+      "reason": "FOR_TEAM does not allow Driver -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 10,
+      "reason": "FOR_TEAM does not allow Driver -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 11,
+      "reason": "ACHIEVED does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 12,
+      "reason": "ACHIEVED does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 13,
+      "reason": "ACHIEVED does not allow Team -> Season"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 3,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e5; description kept"
+    },
+    {
+      "index": 4,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr2 -AT_RACE-> e6; description kept"
+    },
+    {
+      "index": 5,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr3 -AT_RACE-> e7; description kept"
+    }
+  ]
+}

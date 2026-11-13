@@ -1,0 +1,50 @@
+{
+  "chunk_id": "driver-sebastian-vettel#52",
+  "doc_id": "driver-sebastian-vettel",
+  "document_title": "Sebastian Vettel",
+  "section": "2012: Triple World Champion following Alonso title duel",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/Sebastian_Vettel",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "55904c345c3e6dd1783ca3bdb5f8971a099def3d50c4104dfb6dba92f44f7e55",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "entity_candidates": 2,
+  "entities_accepted": 2,
+  "entities_rejected": 0,
+  "relationship_candidates": 2,
+  "relationships_accepted": 0,
+  "relationships_rejected": 2,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "WON does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "AWARDED_IN does not allow Season -> Season"
+    }
+  ],
+  "alignments": [],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Sebastian Vettel",
+        "entity_type": "Driver",
+        "description": "Triple World Champion following Alonso title duel."
+      },
+      {
+        "local_id": "e2",
+        "name": "2012",
+        "entity_type": "Season",
+        "description": "The season in which Sebastian Vettel became a Triple World Champion."
+      }
+    ],
+    "relationships": []
+  }
+}

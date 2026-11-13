@@ -1,0 +1,96 @@
+{
+  "chunk_id": "reference-formula-one#37",
+  "doc_id": "reference-formula-one",
+  "document_title": "Formula One",
+  "section": "Formula One > Constructors",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "88ea56b6981f0528386556823091dcff0e9b4dc8f770fa6c005bbbe99974e9b0",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Super Aguri",
+        "entity_type": "Team",
+        "description": "A Formula One team that used a modified Honda Racing RA106 chassis in 2007."
+      },
+      {
+        "local_id": "e2",
+        "name": "Honda Racing RA106",
+        "entity_type": "Car",
+        "description": "A chassis used by Super Aguri in 2007."
+      },
+      {
+        "local_id": "e3",
+        "name": "Scuderia Toro Rosso",
+        "entity_type": "Team",
+        "description": "A Formula One team that used a chassis from its parent team in 2007."
+      },
+      {
+        "local_id": "e4",
+        "name": "Red Bull Racing",
+        "entity_type": "Team",
+        "description": "The parent team of Scuderia Toro Rosso."
+      },
+      {
+        "local_id": "e5",
+        "name": "2007",
+        "entity_type": "Season",
+        "description": "The Formula One season during which Super Aguri and Scuderia Toro Rosso used chassis built by other teams."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e3",
+        "target_id": "e5",
+        "relationship_type": "ENTERED",
+        "description": "Scuderia Toro Rosso entered the 2007 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e5",
+        "relationship_type": "ENTERED",
+        "description": "Super Aguri entered the 2007 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 5,
+  "entities_accepted": 5,
+  "entities_rejected": 0,
+  "relationship_candidates": 4,
+  "relationships_accepted": 2,
+  "relationships_rejected": 2,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "FIELDED is not temporal; from_year=2007, to_year=None, role=None cannot be stored without dropping them"
+    },
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "DROVE_FOR does not allow Team -> Team"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 2,
+      "action": "clear_redundant_season_year",
+      "detail": "ENTERED year 2007 already named by Season 'e5'; from_year and to_year cleared"
+    },
+    {
+      "index": 3,
+      "action": "clear_redundant_season_year",
+      "detail": "ENTERED year 2007 already named by Season 'e5'; from_year and to_year cleared"
+    }
+  ]
+}

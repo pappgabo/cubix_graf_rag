@@ -1,0 +1,128 @@
+{
+  "chunk_id": "driver-max-verstappen#20",
+  "doc_id": "driver-max-verstappen",
+  "document_title": "Max Verstappen",
+  "section": null,
+  "page": 5,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "a196116f35b533f43f54fd66bb1d4c7900029af2a8b29a57e4b64f8861ea80a1",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Max Verstappen",
+        "entity_type": "Driver",
+        "description": "A Formula One driver who has achieved multiple race victories."
+      },
+      {
+        "local_id": "e2",
+        "name": "Red Bull Racing",
+        "entity_type": "Team",
+        "description": "A Formula One team that fields cars for drivers."
+      },
+      {
+        "local_id": "e3",
+        "name": "2017",
+        "entity_type": "Season",
+        "description": "The Formula One season in which Verstappen competed."
+      },
+      {
+        "local_id": "e4",
+        "name": "Belgium Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A race event in which Verstappen achieved a podium finish."
+      },
+      {
+        "local_id": "e5",
+        "name": "Singapore Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A race event in which Verstappen achieved a podium finish."
+      },
+      {
+        "local_id": "e6",
+        "name": "Japanese Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A race event in which Verstappen achieved a podium finish."
+      },
+      {
+        "local_id": "e7",
+        "name": "United States Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A race event in which Verstappen achieved second place."
+      },
+      {
+        "local_id": "e8",
+        "name": "Mexican Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A race event where Verstappen faced mechanical issues."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Verstappen drove for Red Bull during the 2017 season.",
+        "from_year": 2017,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e3",
+        "relationship_type": "ROUND_OF",
+        "description": "The Belgium Grand Prix is a round of the 2017 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e3",
+        "relationship_type": "ROUND_OF",
+        "description": "The Singapore Grand Prix is a round of the 2017 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e6",
+        "target_id": "e3",
+        "relationship_type": "ROUND_OF",
+        "description": "The Japanese Grand Prix is a round of the 2017 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e7",
+        "target_id": "e3",
+        "relationship_type": "ROUND_OF",
+        "description": "The United States Grand Prix is a round of the 2017 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e8",
+        "target_id": "e3",
+        "relationship_type": "ROUND_OF",
+        "description": "The Mexican Grand Prix is a round of the 2017 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 8,
+  "entities_accepted": 8,
+  "entities_rejected": 0,
+  "relationship_candidates": 6,
+  "relationships_accepted": 6,
+  "relationships_rejected": 0,
+  "rejections": [],
+  "alignments": []
+}

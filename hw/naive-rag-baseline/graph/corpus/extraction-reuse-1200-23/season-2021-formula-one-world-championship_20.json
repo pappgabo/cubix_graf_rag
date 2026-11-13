@@ -1,0 +1,142 @@
+{
+  "chunk_id": "season-2021-formula-one-world-championship#20",
+  "doc_id": "season-2021-formula-one-world-championship",
+  "document_title": "2021 Formula One World Championship",
+  "section": null,
+  "page": 5,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "eb9f65d2c5f8c0e91bdfe83d4bd4ff034affcd88dd173e2e3b0924ccb0ce9460",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "2021 Formula One World Championship",
+        "entity_type": "Season",
+        "description": "The 2021 Formula One World Championship season."
+      },
+      {
+        "local_id": "e2",
+        "name": "Styrian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Grand Prix held in late June 2021."
+      },
+      {
+        "local_id": "e3",
+        "name": "Mexico City Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Grand Prix held in late October 2021."
+      },
+      {
+        "local_id": "e4",
+        "name": "British Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Grand Prix held from 16–18 July 2021."
+      },
+      {
+        "local_id": "e5",
+        "name": "Formula 2",
+        "entity_type": "Team",
+        "description": "A support racing series for Formula One."
+      },
+      {
+        "local_id": "e6",
+        "name": "Formula 3",
+        "entity_type": "Team",
+        "description": "A support racing series for Formula One."
+      },
+      {
+        "local_id": "e7",
+        "name": "Porsche Supercup",
+        "entity_type": "Team",
+        "description": "A support racing series for Formula One."
+      },
+      {
+        "local_id": "e8",
+        "name": "W Series",
+        "entity_type": "Team",
+        "description": "A racing series for female drivers."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e5",
+        "target_id": "e1",
+        "relationship_type": "ENTERED",
+        "description": "Formula 2 supported Formula One on alternate weekends during the 2021 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e6",
+        "target_id": "e1",
+        "relationship_type": "ENTERED",
+        "description": "Formula 3 supported Formula One on alternate weekends during the 2021 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e7",
+        "target_id": "e1",
+        "relationship_type": "ENTERED",
+        "description": "Porsche Supercup supported Formula One during the 2021 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e1",
+        "relationship_type": "ROUND_OF",
+        "description": "The British Grand Prix was part of the 2021 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 8,
+  "entities_accepted": 8,
+  "entities_rejected": 0,
+  "relationship_candidates": 6,
+  "relationships_accepted": 4,
+  "relationships_rejected": 2,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "ROUND_OF does not allow Team -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "ROUND_OF does not allow Team -> GrandPrix"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 2,
+      "action": "clear_redundant_season_year",
+      "detail": "ENTERED year 2021 already named by Season 'e1'; from_year and to_year cleared"
+    },
+    {
+      "index": 3,
+      "action": "clear_redundant_season_year",
+      "detail": "ENTERED year 2021 already named by Season 'e1'; from_year and to_year cleared"
+    },
+    {
+      "index": 4,
+      "action": "clear_redundant_season_year",
+      "detail": "ENTERED year 2021 already named by Season 'e1'; from_year and to_year cleared"
+    },
+    {
+      "index": 5,
+      "action": "clear_redundant_season_year",
+      "detail": "ROUND_OF year 2021 already named by Season 'e1'; from_year and to_year cleared"
+    }
+  ]
+}

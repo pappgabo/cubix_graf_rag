@@ -1,0 +1,74 @@
+{
+  "chunk_id": "driver-max-verstappen#6",
+  "doc_id": "driver-max-verstappen",
+  "document_title": "Max Verstappen",
+  "section": null,
+  "page": 2,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "d038889cb6884c0eaa5cc8891c589202efa6e642565df45d51b682bbfd73737a",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Max Verstappen",
+        "entity_type": "Driver",
+        "description": "A driver who completed a record-breaking season in karting in 2013."
+      },
+      {
+        "local_id": "e2",
+        "name": "2013 KZ World Championship",
+        "entity_type": "Title",
+        "description": "A championship title won by Max Verstappen."
+      },
+      {
+        "local_id": "e3",
+        "name": "2013",
+        "entity_type": "Season",
+        "description": "The season in which Max Verstappen won the KZ World Championship."
+      },
+      {
+        "local_id": "e4",
+        "name": "Varennes-sur-Allier",
+        "entity_type": "Circuit",
+        "description": "The circuit where the 2013 KZ World Championship was held."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "WON",
+        "description": "Max Verstappen won the 2013 KZ World Championship.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e3",
+        "relationship_type": "AWARDED_IN",
+        "description": "The 2013 KZ World Championship title belongs to the 2013 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 4,
+  "entities_accepted": 4,
+  "entities_rejected": 0,
+  "relationship_candidates": 3,
+  "relationships_accepted": 2,
+  "relationships_rejected": 1,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "HELD_AT does not allow Title -> Circuit"
+    }
+  ],
+  "alignments": []
+}

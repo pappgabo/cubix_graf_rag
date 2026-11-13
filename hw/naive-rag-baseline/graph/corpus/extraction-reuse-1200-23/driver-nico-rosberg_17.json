@@ -1,0 +1,77 @@
+{
+  "chunk_id": "driver-nico-rosberg#17",
+  "doc_id": "driver-nico-rosberg",
+  "document_title": "Nico Rosberg",
+  "section": "Nico Rosberg > 2006–2007",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "fadf7a8597eba8810ceba1d7c3e95f29e6b83cf9ffae7a8750afc6abb1a2f902",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Nico Rosberg",
+        "entity_type": "Driver",
+        "description": "A Formula One driver linked to several teams for 2008."
+      },
+      {
+        "local_id": "e2",
+        "name": "Williams",
+        "entity_type": "Team",
+        "description": "A Formula One team that Rosberg was contracted with."
+      },
+      {
+        "local_id": "e3",
+        "name": "2008",
+        "entity_type": "Season",
+        "description": "The season Rosberg was linked to several teams."
+      },
+      {
+        "local_id": "e4",
+        "name": "2009",
+        "entity_type": "Season",
+        "description": "The season until which Rosberg's contract was extended."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Rosberg was contracted with Williams.",
+        "from_year": null,
+        "to_year": 2009,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e3",
+        "relationship_type": "ENTERED",
+        "description": "Williams took part in the 2008 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e4",
+        "relationship_type": "ENTERED",
+        "description": "Williams took part in the 2009 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 4,
+  "entities_accepted": 4,
+  "entities_rejected": 0,
+  "relationship_candidates": 3,
+  "relationships_accepted": 3,
+  "relationships_rejected": 0,
+  "rejections": [],
+  "alignments": []
+}

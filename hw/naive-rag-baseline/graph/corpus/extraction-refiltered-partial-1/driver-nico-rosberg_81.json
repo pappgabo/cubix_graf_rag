@@ -1,0 +1,65 @@
+{
+  "chunk_id": "driver-nico-rosberg#81",
+  "doc_id": "driver-nico-rosberg",
+  "document_title": "Nico Rosberg",
+  "section": "Nico Rosberg > 2016: Champion at last in final Formula One season",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/Nico_Rosberg",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "5f6bdb50f9b11261a53c072620bc3d35d7181f4e094edcca90736fbafde00f01",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "WON does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "AWARDED_IN does not allow Season -> Season"
+    }
+  ],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Nico Rosberg",
+        "entity_type": "Driver",
+        "description": "A Formula One driver who won the championship in 2016."
+      },
+      {
+        "local_id": "e2",
+        "name": "Mercedes",
+        "entity_type": "Team",
+        "description": "A Formula One team that Nico Rosberg drove for."
+      },
+      {
+        "local_id": "e3",
+        "name": "2016",
+        "entity_type": "Season",
+        "description": "The championship year in which Nico Rosberg won the title."
+      },
+      {
+        "local_id": "e4",
+        "name": "Niki Lauda",
+        "entity_type": "Driver",
+        "description": "Non-executive chairman of Mercedes who helped Rosberg regain confidence."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Nico Rosberg drove for Mercedes.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

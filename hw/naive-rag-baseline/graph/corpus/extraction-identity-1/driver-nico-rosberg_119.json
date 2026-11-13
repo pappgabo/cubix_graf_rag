@@ -1,0 +1,70 @@
+{
+  "chunk_id": "driver-nico-rosberg#119",
+  "doc_id": "driver-nico-rosberg",
+  "document_title": "Nico Rosberg",
+  "section": "Nico Rosberg > Achievements and recognition",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/Nico_Rosberg",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "f3595b2635a969d9a3047cb242b36452851dcf06010dae60aac60f9c7bf10278",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "entity_candidates": 2,
+  "entities_accepted": 3,
+  "entities_rejected": 0,
+  "relationship_candidates": 1,
+  "relationships_accepted": 2,
+  "relationships_rejected": 0,
+  "rejections": [],
+  "alignments": [
+    {
+      "index": 0,
+      "action": "move_won_year",
+      "detail": "WON year 2017 stored as e2 -AWARDED_IN-> season2017-1; from_year and to_year cleared; description kept"
+    }
+  ],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Nico Rosberg",
+        "entity_type": "Driver",
+        "description": "Rosberg was inducted into the FIA Hall of Fame in December 2017."
+      },
+      {
+        "local_id": "e2",
+        "name": "FIA Hall of Fame",
+        "entity_type": "Title",
+        "description": "An honor recognizing outstanding achievements in motorsport."
+      },
+      {
+        "local_id": "season2017-1",
+        "name": "2017",
+        "entity_type": "Season",
+        "description": "2017"
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "WON",
+        "description": "Induction into the FIA Hall of Fame",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "season2017-1",
+        "relationship_type": "AWARDED_IN",
+        "description": "Induction into the FIA Hall of Fame",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

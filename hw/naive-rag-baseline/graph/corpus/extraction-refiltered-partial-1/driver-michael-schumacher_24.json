@@ -1,0 +1,78 @@
+{
+  "chunk_id": "driver-michael-schumacher#24",
+  "doc_id": "driver-michael-schumacher",
+  "document_title": "Michael Schumacher",
+  "section": null,
+  "page": 3,
+  "source": "https://en.wikipedia.org/wiki/Michael_Schumacher",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "ba247b7892c0136d740231080a218cdde4d237bb8c6d334f3fa4e20279defece",
+  "validation_version": "partial-1",
+  "source_status": "ok",
+  "status": "ok",
+  "rejections": [],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Michael Schumacher",
+        "entity_type": "Driver",
+        "description": "A German racing driver who competed in Formula One."
+      },
+      {
+        "local_id": "e2",
+        "name": "Mercedes",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that entered cars."
+      },
+      {
+        "local_id": "e3",
+        "name": "Benetton",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that entered cars."
+      },
+      {
+        "local_id": "e4",
+        "name": "Williams FW14B",
+        "entity_type": "Car",
+        "description": "A car model fielded by the Williams team."
+      },
+      {
+        "local_id": "e5",
+        "name": "Renault",
+        "entity_type": "PowerUnit",
+        "description": "An engine brand used in Formula One."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Schumacher had a clause in his contract to drive for Mercedes if they entered Formula One.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e3",
+        "relationship_type": "DROVE_FOR",
+        "description": "It was eventually agreed that Schumacher would stay with Benetton.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e5",
+        "relationship_type": "POWERED_BY",
+        "description": "The Williams FW14B featured powerful Renault engines.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

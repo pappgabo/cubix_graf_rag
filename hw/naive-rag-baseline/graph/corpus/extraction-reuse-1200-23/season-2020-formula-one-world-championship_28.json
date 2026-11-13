@@ -1,0 +1,163 @@
+{
+  "chunk_id": "season-2020-formula-one-world-championship#28",
+  "doc_id": "season-2020-formula-one-world-championship",
+  "document_title": "2020 Formula One World Championship",
+  "section": "2020 Formula One World Championship > Rescheduled calendar",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "d449fc1ac633c840235b3899d66f556eb7f1f5577c8034ef7319fbd071430224",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Russian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula One race that was re-added to the calendar on its originally scheduled date."
+      },
+      {
+        "local_id": "e2",
+        "name": "Tuscan Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula One race announced at the Mugello Circuit, marking the first time the circuit hosted a Formula One World Championship race."
+      },
+      {
+        "local_id": "e3",
+        "name": "Mugello Circuit",
+        "entity_type": "Circuit",
+        "description": "The circuit that hosted the Tuscan Grand Prix."
+      },
+      {
+        "local_id": "e4",
+        "name": "Nürburgring",
+        "entity_type": "Circuit",
+        "description": "A circuit that returned to the calendar for the first time since 2013."
+      },
+      {
+        "local_id": "e5",
+        "name": "Autodromo Internazionale Enzo e Dino Ferrari",
+        "entity_type": "Circuit",
+        "description": "A circuit in Imola that returned to the calendar for the first time since 2006."
+      },
+      {
+        "local_id": "e6",
+        "name": "Algarve International Circuit",
+        "entity_type": "Circuit",
+        "description": "A new circuit that debuted in the 2020 season."
+      },
+      {
+        "local_id": "e7",
+        "name": "Eifel Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula One race named after the Nürburgring."
+      },
+      {
+        "local_id": "e8",
+        "name": "Emilia Romagna Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula One race that took place at Imola."
+      },
+      {
+        "local_id": "e9",
+        "name": "Portuguese Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula One race that returned for the first time since the 1996 season."
+      },
+      {
+        "local_id": "e10",
+        "name": "2020 Formula One World Championship",
+        "entity_type": "Season",
+        "description": "The championship season in which these races took place."
+      },
+      {
+        "local_id": "e11",
+        "name": "Italy",
+        "entity_type": "Circuit",
+        "description": "The country that hosted three Grands Prix in the 2020 season."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e10",
+        "relationship_type": "ROUND_OF",
+        "description": "The Russian Grand Prix is a round of the 2020 Formula One World Championship.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e10",
+        "relationship_type": "ROUND_OF",
+        "description": "The Tuscan Grand Prix is a round of the 2020 Formula One World Championship.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e7",
+        "target_id": "e4",
+        "relationship_type": "HELD_AT",
+        "description": "The Eifel Grand Prix is held at the Nürburgring.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e8",
+        "target_id": "e5",
+        "relationship_type": "HELD_AT",
+        "description": "The Emilia Romagna Grand Prix is held at the Autodromo Internazionale Enzo e Dino Ferrari.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e9",
+        "target_id": "e10",
+        "relationship_type": "ROUND_OF",
+        "description": "The Portuguese Grand Prix is a round of the 2020 Formula One World Championship.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 11,
+  "entities_accepted": 11,
+  "entities_rejected": 0,
+  "relationship_candidates": 10,
+  "relationships_accepted": 5,
+  "relationships_rejected": 5,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "HELD_AT does not allow Circuit -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "ROUND_OF does not allow Circuit -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "ROUND_OF does not allow Circuit -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 5,
+      "reason": "ROUND_OF does not allow Circuit -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 9,
+      "reason": "ROUND_OF does not allow Circuit -> Season"
+    }
+  ],
+  "alignments": []
+}

@@ -1,0 +1,134 @@
+{
+  "chunk_id": "team-mercedes-benz-in-formula-one#12",
+  "doc_id": "team-mercedes-benz-in-formula-one",
+  "document_title": "Mercedes-Benz in Formula One",
+  "section": "Mercedes-Benz in Formula One > Mercedes-AMG Petronas Formula One Team (2010–present)",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "bc132878e39ea055f557605f76c378534847ad73bfb2ec78737c55a0ca5e232a",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Nico Rosberg",
+        "entity_type": "Driver",
+        "description": "First German driver to win a Grand Prix driving a German vehicle since Hermann Lang's victory at the 1939 Swiss Grand Prix."
+      },
+      {
+        "local_id": "e2",
+        "name": "Lewis Hamilton",
+        "entity_type": "Driver",
+        "description": "Joined the Mercedes team from the 2013 season onwards."
+      },
+      {
+        "local_id": "e3",
+        "name": "Mercedes-AMG Petronas Formula One Team",
+        "entity_type": "Team",
+        "description": "Formula One team that Lewis Hamilton and Nico Rosberg drove for."
+      },
+      {
+        "local_id": "e4",
+        "name": "2013",
+        "entity_type": "Season",
+        "description": "The season Lewis Hamilton joined the Mercedes team."
+      },
+      {
+        "local_id": "e5",
+        "name": "Toto Wolff",
+        "entity_type": "Driver",
+        "description": "Became an executive director of the Mercedes AMG Petronas Formula One Team in January 2013."
+      },
+      {
+        "local_id": "e6",
+        "name": "Rene Berger",
+        "entity_type": "Driver",
+        "description": "Became non-executive director of the Mercedes AMG Petronas Formula One Team."
+      },
+      {
+        "local_id": "e7",
+        "name": "Niki Lauda",
+        "entity_type": "Driver",
+        "description": "Chairman of the board of the Mercedes AMG Petronas Formula One Team."
+      },
+      {
+        "local_id": "e8",
+        "name": "Mercedes-Benz Grand Prix Ltd",
+        "entity_type": "Team",
+        "description": "Company associated with the Mercedes AMG Petronas Formula One Team."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e2",
+        "target_id": "e3",
+        "relationship_type": "DROVE_FOR",
+        "description": "Lewis Hamilton joined the Mercedes team from the 2013 season onwards.",
+        "from_year": 2013,
+        "to_year": null,
+        "role": "driver"
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e3",
+        "relationship_type": "DROVE_FOR",
+        "description": "Nico Rosberg drove for the Mercedes team.",
+        "from_year": null,
+        "to_year": null,
+        "role": "driver"
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e3",
+        "relationship_type": "DROVE_FOR",
+        "description": "Toto Wolff became an executive director of the Mercedes AMG Petronas Formula One Team.",
+        "from_year": 2013,
+        "to_year": null,
+        "role": "executive director"
+      },
+      {
+        "source_id": "e6",
+        "target_id": "e3",
+        "relationship_type": "DROVE_FOR",
+        "description": "Rene Berger became non-executive director of the Mercedes AMG Petronas Formula One Team.",
+        "from_year": null,
+        "to_year": null,
+        "role": "non-executive director"
+      },
+      {
+        "source_id": "e7",
+        "target_id": "e3",
+        "relationship_type": "DROVE_FOR",
+        "description": "Niki Lauda was chairman of the board of the Mercedes AMG Petronas Formula One Team.",
+        "from_year": null,
+        "to_year": null,
+        "role": "chairman"
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e4",
+        "relationship_type": "ENTERED",
+        "description": "Mercedes-AMG Petronas Formula One Team entered the 2013 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 8,
+  "entities_accepted": 8,
+  "entities_rejected": 0,
+  "relationship_candidates": 6,
+  "relationships_accepted": 6,
+  "relationships_rejected": 0,
+  "rejections": [],
+  "alignments": [
+    {
+      "index": 5,
+      "action": "clear_redundant_season_year",
+      "detail": "ENTERED year 2013 already named by Season 'e4'; from_year and to_year cleared"
+    }
+  ]
+}

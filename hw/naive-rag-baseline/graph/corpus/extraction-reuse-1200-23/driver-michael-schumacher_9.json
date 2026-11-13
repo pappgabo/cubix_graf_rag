@@ -1,0 +1,113 @@
+{
+  "chunk_id": "driver-michael-schumacher#9",
+  "doc_id": "driver-michael-schumacher",
+  "document_title": "Michael Schumacher",
+  "section": null,
+  "page": 3,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "23a70d73d528d12e24bf84d00e4dd079e1fb981b0c07b1a1c04d37a4a3ee2cc6",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Michael Schumacher",
+        "entity_type": "Driver",
+        "description": "A German racing driver who competed in Formula One."
+      },
+      {
+        "local_id": "e2",
+        "name": "Benetton-Ford",
+        "entity_type": "Team",
+        "description": "A Formula One team that Schumacher raced for."
+      },
+      {
+        "local_id": "e3",
+        "name": "1991",
+        "entity_type": "Season",
+        "description": "The Formula One season in which Schumacher competed."
+      },
+      {
+        "local_id": "e4",
+        "name": "Italian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula One race where Schumacher finished fifth."
+      },
+      {
+        "local_id": "e5",
+        "name": "Nelson Piquet",
+        "entity_type": "Driver",
+        "description": "A three-time World Champion and Schumacher's teammate."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Michael Schumacher at Italian Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Schumacher finished fifth in the Italian Grand Prix."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Schumacher raced for Benetton-Ford.",
+        "from_year": 1991,
+        "to_year": 1995,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Schumacher finished fifth in the Italian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e4",
+        "relationship_type": "AT_RACE",
+        "description": "Schumacher finished fifth in the Italian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e3",
+        "relationship_type": "ROUND_OF",
+        "description": "The Italian Grand Prix is a round of the 1991 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e5",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Schumacher was teammates with Nelson Piquet.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 5,
+  "entities_accepted": 6,
+  "entities_rejected": 0,
+  "relationship_candidates": 4,
+  "relationships_accepted": 5,
+  "relationships_rejected": 0,
+  "rejections": [],
+  "alignments": [
+    {
+      "index": 1,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e4; description kept"
+    }
+  ]
+}

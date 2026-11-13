@@ -1,0 +1,191 @@
+{
+  "chunk_id": "season-2016-formula-one-world-championship#25",
+  "doc_id": "season-2016-formula-one-world-championship",
+  "document_title": "2016 Formula One World Championship",
+  "section": "Mid-season changes",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/2016_Formula_One_World_Championship",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "1919ee1e4ca76da8186443a0937bc0c7502dbf4139a2d13be8c850e666e39ff0",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "rejections": [],
+  "alignments": [
+    {
+      "index": 0,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e7; description kept"
+    },
+    {
+      "index": 1,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr2 -AT_RACE-> e8; description kept"
+    },
+    {
+      "index": 5,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr3 -AT_RACE-> e9; description kept"
+    }
+  ],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Fernando Alonso",
+        "entity_type": "Driver",
+        "description": "Returned to his seat for the Chinese Grand Prix."
+      },
+      {
+        "local_id": "e2",
+        "name": "Daniil Kvyat",
+        "entity_type": "Driver",
+        "description": "Traded places with Max Verstappen ahead of the Spanish Grand Prix."
+      },
+      {
+        "local_id": "e3",
+        "name": "Max Verstappen",
+        "entity_type": "Driver",
+        "description": "Promoted to Red Bull Racing ahead of the Spanish Grand Prix."
+      },
+      {
+        "local_id": "e4",
+        "name": "Red Bull Racing",
+        "entity_type": "Team",
+        "description": "Team that promoted Max Verstappen."
+      },
+      {
+        "local_id": "e5",
+        "name": "Scuderia Toro Rosso",
+        "entity_type": "Team",
+        "description": "Team that Daniil Kvyat returned to."
+      },
+      {
+        "local_id": "e6",
+        "name": "Carlos Sainz Jr",
+        "entity_type": "Driver",
+        "description": "Teammate of Max Verstappen."
+      },
+      {
+        "local_id": "e7",
+        "name": "Chinese Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "Race where Fernando Alonso returned to his seat."
+      },
+      {
+        "local_id": "e8",
+        "name": "Spanish Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "Race where Daniil Kvyat and Max Verstappen traded places."
+      },
+      {
+        "local_id": "e9",
+        "name": "Russian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "Race where Kvyat faced criticism for his role in a first-lap accident."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Fernando Alonso at Chinese Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Fernando Alonso returned to his seat for the Chinese Grand Prix."
+      },
+      {
+        "local_id": "rr2",
+        "name": "Daniil Kvyat at Spanish Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Daniil Kvyat traded places with Max Verstappen ahead of the Spanish Grand Prix."
+      },
+      {
+        "local_id": "rr3",
+        "name": "Daniil Kvyat at Russian Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Daniil Kvyat faced criticism for his role in a first-lap accident in the Russian Grand Prix."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Fernando Alonso returned to his seat for the Chinese Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e7",
+        "relationship_type": "AT_RACE",
+        "description": "Fernando Alonso returned to his seat for the Chinese Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "rr2",
+        "relationship_type": "ACHIEVED",
+        "description": "Daniil Kvyat traded places with Max Verstappen ahead of the Spanish Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr2",
+        "target_id": "e8",
+        "relationship_type": "AT_RACE",
+        "description": "Daniil Kvyat traded places with Max Verstappen ahead of the Spanish Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e4",
+        "relationship_type": "DROVE_FOR",
+        "description": "Max Verstappen was promoted to Red Bull Racing.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e5",
+        "relationship_type": "DROVE_FOR",
+        "description": "Daniil Kvyat returned to Scuderia Toro Rosso.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e6",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Max Verstappen and Carlos Sainz Jr were teammates.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "rr3",
+        "relationship_type": "ACHIEVED",
+        "description": "Daniil Kvyat faced criticism for his role in a first-lap accident in the Russian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr3",
+        "target_id": "e9",
+        "relationship_type": "AT_RACE",
+        "description": "Daniil Kvyat faced criticism for his role in a first-lap accident in the Russian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

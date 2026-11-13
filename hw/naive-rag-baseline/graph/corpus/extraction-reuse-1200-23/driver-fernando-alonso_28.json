@@ -1,0 +1,104 @@
+{
+  "chunk_id": "driver-fernando-alonso#28",
+  "doc_id": "driver-fernando-alonso",
+  "document_title": "Fernando Alonso",
+  "section": "Alpine (2021–2022)",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "6d3fc9b93edb5a193f135bb857645a82605e5d2826b2ee9f8c0521ee0e012806",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Fernando Alonso",
+        "entity_type": "Driver",
+        "description": "A Formula One driver who raced for Alpine in 2021 and 2022."
+      },
+      {
+        "local_id": "e2",
+        "name": "Alpine",
+        "entity_type": "Team",
+        "description": "A Formula One team that Alonso raced for in 2021 and 2022."
+      },
+      {
+        "local_id": "e3",
+        "name": "2021",
+        "entity_type": "Season",
+        "description": "The Formula One season in which Alonso raced for Alpine."
+      },
+      {
+        "local_id": "e4",
+        "name": "2022",
+        "entity_type": "Season",
+        "description": "The Formula One season in which Alonso raced for Alpine."
+      },
+      {
+        "local_id": "e5",
+        "name": "Hungarian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A race where Alonso temporarily led before finishing fourth."
+      },
+      {
+        "local_id": "e6",
+        "name": "Qatar Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A race where Alonso finished third, marking his first podium since 2014."
+      },
+      {
+        "local_id": "e7",
+        "name": "Canadian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A race where Alonso achieved his highest start for Alpine, starting in second."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Alonso raced for Alpine.",
+        "from_year": 2021,
+        "to_year": 2022,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e3",
+        "relationship_type": "ROUND_OF",
+        "description": "Hungarian Grand Prix is a round of the 2021 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e6",
+        "target_id": "e4",
+        "relationship_type": "ROUND_OF",
+        "description": "Qatar Grand Prix is a round of the 2022 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e7",
+        "target_id": "e4",
+        "relationship_type": "ROUND_OF",
+        "description": "Canadian Grand Prix is a round of the 2022 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 7,
+  "entities_accepted": 7,
+  "entities_rejected": 0,
+  "relationship_candidates": 4,
+  "relationships_accepted": 4,
+  "relationships_rejected": 0,
+  "rejections": [],
+  "alignments": []
+}

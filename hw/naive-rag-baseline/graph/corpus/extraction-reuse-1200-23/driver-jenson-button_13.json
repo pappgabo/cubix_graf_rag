@@ -1,0 +1,74 @@
+{
+  "chunk_id": "driver-jenson-button#13",
+  "doc_id": "driver-jenson-button",
+  "document_title": "Jenson Button",
+  "section": "Formula One career > Williams (2000)",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "e0b457ce524949b3ca86a9073fa077eec5dda6650662b79187e58ce5d45a4dcf",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Jenson Button",
+        "entity_type": "Driver",
+        "description": "Britain's youngest ever F1 driver."
+      },
+      {
+        "local_id": "e2",
+        "name": "Williams",
+        "entity_type": "Team",
+        "description": "Formula 1 team that entered cars."
+      },
+      {
+        "local_id": "e3",
+        "name": "FW21B",
+        "entity_type": "Car",
+        "description": "A car model fielded by Williams."
+      },
+      {
+        "local_id": "e4",
+        "name": "BMW",
+        "entity_type": "PowerUnit",
+        "description": "Engine supplier for the Williams FW21B."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e3",
+        "target_id": "e4",
+        "relationship_type": "POWERED_BY",
+        "description": "The FW21B car used a BMW engine.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Jenson Button drove for Williams.",
+        "from_year": 2000,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 4,
+  "entities_accepted": 4,
+  "entities_rejected": 0,
+  "relationship_candidates": 3,
+  "relationships_accepted": 2,
+  "relationships_rejected": 1,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "FIELDED is not temporal; from_year=2000, to_year=None, role=None cannot be stored without dropping them"
+    }
+  ],
+  "alignments": []
+}

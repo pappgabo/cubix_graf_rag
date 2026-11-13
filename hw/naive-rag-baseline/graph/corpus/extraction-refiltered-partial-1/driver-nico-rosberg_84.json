@@ -1,0 +1,54 @@
+{
+  "chunk_id": "driver-nico-rosberg#84",
+  "doc_id": "driver-nico-rosberg",
+  "document_title": "Nico Rosberg",
+  "section": "Nico Rosberg > 2016: Champion at last in final Formula One season",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/Nico_Rosberg",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "4ffe9c239511a6e4d15472fdc9b0daf1f0bdbbbd2db97bc7bbba72347876544c",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "WON is not temporal; from_year, to_year and role must be null"
+    }
+  ],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Nico Rosberg",
+        "entity_type": "Driver",
+        "description": "He published a limited-edition book entitled Finally about the 2016 season on 24 December 2016. Overall, Rosberg competed in 206 races: he won 23, achieved 30 pole positions, gained 57 podium finishes, and scored 1594.5 championship points."
+      },
+      {
+        "local_id": "e2",
+        "name": "2016",
+        "entity_type": "Season",
+        "description": "The season in which Nico Rosberg became champion."
+      },
+      {
+        "local_id": "e3",
+        "name": "Champion",
+        "entity_type": "Title",
+        "description": "Nico Rosberg won the championship title in 2016."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e3",
+        "target_id": "e2",
+        "relationship_type": "AWARDED_IN",
+        "description": "The championship title belongs to the 2016 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

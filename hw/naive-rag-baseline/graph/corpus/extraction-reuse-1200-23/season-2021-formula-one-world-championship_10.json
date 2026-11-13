@@ -1,0 +1,92 @@
+{
+  "chunk_id": "season-2021-formula-one-world-championship#10",
+  "doc_id": "season-2021-formula-one-world-championship",
+  "document_title": "2021 Formula One World Championship",
+  "section": null,
+  "page": 3,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "b5f270d1f085b1da2d2a870903593c2e95a14ec8cd02f21dab4f3bfc08f74d69",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "2021 Formula One World Championship",
+        "entity_type": "Season",
+        "description": ""
+      },
+      {
+        "local_id": "e2",
+        "name": "Paulo Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": ""
+      },
+      {
+        "local_id": "e3",
+        "name": "Chinese Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": ""
+      },
+      {
+        "local_id": "e4",
+        "name": "Emilia Romagna Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": ""
+      },
+      {
+        "local_id": "e5",
+        "name": "Autodromo Enzo e Dino Ferrari",
+        "entity_type": "Circuit",
+        "description": ""
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e2",
+        "target_id": "e1",
+        "relationship_type": "ROUND_OF",
+        "description": "Paulo Grand Prix is a round of the 2021 Formula One World Championship.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e1",
+        "relationship_type": "ROUND_OF",
+        "description": "Chinese Grand Prix is a round of the 2021 Formula One World Championship.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e1",
+        "relationship_type": "ROUND_OF",
+        "description": "Emilia Romagna Grand Prix is a round of the 2021 Formula One World Championship.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e5",
+        "relationship_type": "HELD_AT",
+        "description": "Emilia Romagna Grand Prix is held at Autodromo Enzo e Dino Ferrari.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 5,
+  "entities_accepted": 5,
+  "entities_rejected": 0,
+  "relationship_candidates": 4,
+  "relationships_accepted": 4,
+  "relationships_rejected": 0,
+  "rejections": [],
+  "alignments": []
+}

@@ -1,0 +1,168 @@
+{
+  "chunk_id": "season-2012-formula-one-world-championship#92",
+  "doc_id": "season-2012-formula-one-world-championship",
+  "document_title": "2012 Formula One World Championship",
+  "section": "Race summaries > Round 18 – Abu Dhabi Yas Marina Circuit",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "f919bfdde6c6297534729e05112878a1eab14c4e638e00fa963024b43c7316c3",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Sebastian Vettel",
+        "entity_type": "Driver",
+        "description": "Vettel was forced to pit during the safety car period after crashing into a bollard."
+      },
+      {
+        "local_id": "e2",
+        "name": "Daniel Ricciardo",
+        "entity_type": "Driver",
+        "description": "Ricciardo was involved in an incident with Vettel."
+      },
+      {
+        "local_id": "e3",
+        "name": "Lewis Hamilton",
+        "entity_type": "Driver",
+        "description": "Hamilton suffered a mechanical failure while leading the race."
+      },
+      {
+        "local_id": "e4",
+        "name": "Kimi Räikkönen",
+        "entity_type": "Driver",
+        "description": "Räikkönen took the lead of the race after Hamilton's retirement."
+      },
+      {
+        "local_id": "e5",
+        "name": "Fernando Alonso",
+        "entity_type": "Driver",
+        "description": "Alonso inherited second place after Hamilton's retirement."
+      },
+      {
+        "local_id": "e6",
+        "name": "Paul di Resta",
+        "entity_type": "Driver",
+        "description": "Di Resta forced Sergio Pérez wide, causing a collision."
+      },
+      {
+        "local_id": "e7",
+        "name": "Sergio Pérez",
+        "entity_type": "Driver",
+        "description": "Pérez was involved in a collision that led to a penalty."
+      },
+      {
+        "local_id": "e8",
+        "name": "Romain Grosjean",
+        "entity_type": "Driver",
+        "description": "Grosjean retired after being forced into the path of Mark Webber."
+      },
+      {
+        "local_id": "e9",
+        "name": "Mark Webber",
+        "entity_type": "Driver",
+        "description": "Webber retired after colliding with Grosjean."
+      },
+      {
+        "local_id": "e10",
+        "name": "Red Bull Racing",
+        "entity_type": "Team",
+        "description": "Team for which Vettel raced."
+      },
+      {
+        "local_id": "e11",
+        "name": "Pirelli",
+        "entity_type": "PowerUnit",
+        "description": "Supplier of the tyres used in the race."
+      },
+      {
+        "local_id": "e12",
+        "name": "Abu Dhabi Yas Marina Circuit",
+        "entity_type": "Circuit",
+        "description": "The circuit where the race took place."
+      },
+      {
+        "local_id": "e13",
+        "name": "2012",
+        "entity_type": "Season",
+        "description": "The season of the Formula One World Championship."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e10",
+        "relationship_type": "DROVE_FOR",
+        "description": "Vettel raced for Red Bull Racing.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e10",
+        "target_id": "e13",
+        "relationship_type": "ENTERED",
+        "description": "Red Bull Racing took part in the 2012 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 13,
+  "entities_accepted": 13,
+  "entities_rejected": 0,
+  "relationship_candidates": 11,
+  "relationships_accepted": 2,
+  "relationships_rejected": 9,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "ROUND_OF does not allow Circuit -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "ACHIEVED does not allow Driver -> Circuit"
+    },
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "ACHIEVED does not allow Driver -> Circuit"
+    },
+    {
+      "element": "relationship",
+      "index": 5,
+      "reason": "ACHIEVED does not allow Driver -> Circuit"
+    },
+    {
+      "element": "relationship",
+      "index": 6,
+      "reason": "ACHIEVED does not allow Driver -> Circuit"
+    },
+    {
+      "element": "relationship",
+      "index": 7,
+      "reason": "ACHIEVED does not allow Driver -> Circuit"
+    },
+    {
+      "element": "relationship",
+      "index": 8,
+      "reason": "ACHIEVED does not allow Driver -> Circuit"
+    },
+    {
+      "element": "relationship",
+      "index": 9,
+      "reason": "ACHIEVED does not allow Driver -> Circuit"
+    },
+    {
+      "element": "relationship",
+      "index": 10,
+      "reason": "ACHIEVED does not allow Driver -> Circuit"
+    }
+  ],
+  "alignments": []
+}

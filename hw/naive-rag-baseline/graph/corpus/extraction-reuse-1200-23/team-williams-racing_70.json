@@ -1,0 +1,176 @@
+{
+  "chunk_id": "team-williams-racing#70",
+  "doc_id": "team-williams-racing",
+  "document_title": "Williams Racing",
+  "section": "Williams Racing > 2003 season",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "24b98822d207ff1612bea7dcff710cbf2a3475c04688e3c96a09a709879fa910",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Williams Racing",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that entered cars."
+      },
+      {
+        "local_id": "e2",
+        "name": "Juan Pablo Montoya",
+        "entity_type": "Driver",
+        "description": "A driver who raced for Williams Racing in the 2003 season."
+      },
+      {
+        "local_id": "e3",
+        "name": "Ralf Schumacher",
+        "entity_type": "Driver",
+        "description": "A driver who raced for Williams Racing in the 2003 season."
+      },
+      {
+        "local_id": "e4",
+        "name": "2003",
+        "entity_type": "Season",
+        "description": "The Formula 1 season in which Williams Racing competed."
+      },
+      {
+        "local_id": "e5",
+        "name": "Monaco Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A race where Juan Pablo Montoya won."
+      },
+      {
+        "local_id": "e6",
+        "name": "German Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A race where Juan Pablo Montoya won."
+      },
+      {
+        "local_id": "e7",
+        "name": "Nürburgring",
+        "entity_type": "Circuit",
+        "description": "A circuit where Ralf Schumacher won."
+      },
+      {
+        "local_id": "e8",
+        "name": "Magny-Cours",
+        "entity_type": "Circuit",
+        "description": "A circuit where Ralf Schumacher won."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Juan Pablo Montoya at Monaco Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Juan Pablo Montoya recorded a result in the Monaco Grand Prix."
+      },
+      {
+        "local_id": "rr2",
+        "name": "Juan Pablo Montoya at German Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Juan Pablo Montoya recorded a result in the German Grand Prix."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e4",
+        "relationship_type": "ENTERED",
+        "description": "Williams Racing took part in the 2003 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e1",
+        "relationship_type": "DROVE_FOR",
+        "description": "Juan Pablo Montoya raced for Williams Racing.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e1",
+        "relationship_type": "DROVE_FOR",
+        "description": "Ralf Schumacher raced for Williams Racing.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Juan Pablo Montoya recorded a result in the Monaco Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e5",
+        "relationship_type": "AT_RACE",
+        "description": "Juan Pablo Montoya recorded a result in the Monaco Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "rr2",
+        "relationship_type": "ACHIEVED",
+        "description": "Juan Pablo Montoya recorded a result in the German Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr2",
+        "target_id": "e6",
+        "relationship_type": "AT_RACE",
+        "description": "Juan Pablo Montoya recorded a result in the German Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 8,
+  "entities_accepted": 10,
+  "entities_rejected": 0,
+  "relationship_candidates": 8,
+  "relationships_accepted": 7,
+  "relationships_rejected": 3,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 7,
+      "reason": "ACHIEVED does not allow Driver -> Circuit"
+    },
+    {
+      "element": "relationship",
+      "index": 8,
+      "reason": "ACHIEVED does not allow Driver -> Circuit"
+    },
+    {
+      "element": "relationship",
+      "index": 9,
+      "reason": "WON does not allow Team -> Season"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 3,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e5; description kept"
+    },
+    {
+      "index": 4,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr2 -AT_RACE-> e6; description kept"
+    }
+  ]
+}

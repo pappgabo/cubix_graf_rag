@@ -1,0 +1,98 @@
+{
+  "chunk_id": "season-2012-formula-one-world-championship#11",
+  "doc_id": "season-2012-formula-one-world-championship",
+  "document_title": "2012 Formula One World Championship",
+  "section": "Teams and drivers > Driver changes",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "6eded49a191f227d1b76905a77e7a14189d35d5a99b681870850b2b507e5952e",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Nico Hülkenberg",
+        "entity_type": "Driver",
+        "description": "Returned to Formula One, joining Force India."
+      },
+      {
+        "local_id": "e2",
+        "name": "Paul di Resta",
+        "entity_type": "Driver",
+        "description": "Joined Force India alongside Nico Hülkenberg."
+      },
+      {
+        "local_id": "e3",
+        "name": "Adrian Sutil",
+        "entity_type": "Driver",
+        "description": "Left Force India after six years with the team."
+      },
+      {
+        "local_id": "e4",
+        "name": "Force India",
+        "entity_type": "Team",
+        "description": "Team that Nico Hülkenberg and Paul di Resta joined."
+      },
+      {
+        "local_id": "e5",
+        "name": "2012",
+        "entity_type": "Season",
+        "description": "The season of the 2012 Formula One World Championship."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e4",
+        "relationship_type": "DROVE_FOR",
+        "description": "Nico Hülkenberg joined Force India.",
+        "from_year": 2012,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e4",
+        "relationship_type": "DROVE_FOR",
+        "description": "Paul di Resta joined Force India alongside Nico Hülkenberg.",
+        "from_year": 2012,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e4",
+        "relationship_type": "DROVE_FOR",
+        "description": "Adrian Sutil left Force India after six years.",
+        "from_year": null,
+        "to_year": 2012,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e5",
+        "relationship_type": "ENTERED",
+        "description": "Force India took part in the 2012 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 5,
+  "entities_accepted": 5,
+  "entities_rejected": 0,
+  "relationship_candidates": 4,
+  "relationships_accepted": 4,
+  "relationships_rejected": 0,
+  "rejections": [],
+  "alignments": [
+    {
+      "index": 3,
+      "action": "clear_redundant_season_year",
+      "detail": "ENTERED year 2012 already named by Season 'e5'; from_year and to_year cleared"
+    }
+  ]
+}

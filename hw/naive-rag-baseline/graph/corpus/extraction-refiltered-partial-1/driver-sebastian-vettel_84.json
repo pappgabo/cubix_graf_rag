@@ -1,0 +1,74 @@
+{
+  "chunk_id": "driver-sebastian-vettel#84",
+  "doc_id": "driver-sebastian-vettel",
+  "document_title": "Sebastian Vettel",
+  "section": "2017–2018: Title battles versus Hamilton",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/Sebastian_Vettel",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "d088c24d24ce5106137feb481bd11d43938b098823746aa2d4b4932c6590db98",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "ACHIEVED does not allow Driver -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "ACHIEVED does not allow Driver -> GrandPrix"
+    }
+  ],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Sebastian Vettel",
+        "entity_type": "Driver",
+        "description": "Vettel's championship lead was cut to only a single point in Great Britain, as he suffered a puncture on the penultimate lap and dropped to seventh place. Vettel started from pole in Hungary and maintained the lead. He overcame steering issues and held on for victory, which gave him a 14-point lead over Hamilton."
+      },
+      {
+        "local_id": "e2",
+        "name": "2017",
+        "entity_type": "Season",
+        "description": "Vettel's championship lead was cut to only a single point in Great Britain, as he suffered a puncture on the penultimate lap and dropped to seventh place. Vettel started from pole in Hungary and maintained the lead. He overcame steering issues and held on for victory, which gave him a 14-point lead over Hamilton."
+      },
+      {
+        "local_id": "e3",
+        "name": "Great Britain",
+        "entity_type": "GrandPrix",
+        "description": "Vettel's championship lead was cut to only a single point in Great Britain, as he suffered a puncture on the penultimate lap and dropped to seventh place."
+      },
+      {
+        "local_id": "e4",
+        "name": "Hungary",
+        "entity_type": "GrandPrix",
+        "description": "Vettel started from pole in Hungary and maintained the lead. He overcame steering issues and held on for victory."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e4",
+        "target_id": "e2",
+        "relationship_type": "ROUND_OF",
+        "description": "Hungary is a round of the 2017 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e2",
+        "relationship_type": "ROUND_OF",
+        "description": "Great Britain is a round of the 2017 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

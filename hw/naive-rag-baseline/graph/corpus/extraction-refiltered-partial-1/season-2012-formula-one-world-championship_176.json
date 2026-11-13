@@ -1,0 +1,81 @@
+{
+  "chunk_id": "season-2012-formula-one-world-championship#176",
+  "doc_id": "season-2012-formula-one-world-championship",
+  "document_title": "2012 Formula One World Championship",
+  "section": "Race summaries > Round 16 – Korea International Circuit",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/2012_Formula_One_World_Championship",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "da8c7573306d559e2cca20b181fb0ece13295eec26c5e29ec9123b842bffb523",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "WON is not temporal; from_year, to_year and role must be null"
+    },
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "FOR_TEAM does not allow Driver -> Title"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "ACHIEVED does not allow Driver -> Circuit"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "ACHIEVED does not allow Driver -> Circuit"
+    },
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "HELD_AT does not allow Circuit -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 5,
+      "reason": "ROUND_OF does not allow Circuit -> Season"
+    }
+  ],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Vettel",
+        "entity_type": "Driver",
+        "description": "A driver who secured victory in the race."
+      },
+      {
+        "local_id": "e2",
+        "name": "Webber",
+        "entity_type": "Driver",
+        "description": "A driver who finished second in the race."
+      },
+      {
+        "local_id": "e3",
+        "name": "Korea International Circuit",
+        "entity_type": "Circuit",
+        "description": "The circuit where the race took place."
+      },
+      {
+        "local_id": "e4",
+        "name": "2012",
+        "entity_type": "Season",
+        "description": "The championship year of the race."
+      },
+      {
+        "local_id": "e5",
+        "name": "2012 Formula One World Championship",
+        "entity_type": "Title",
+        "description": "The championship title for the 2012 season."
+      }
+    ],
+    "relationships": []
+  }
+}

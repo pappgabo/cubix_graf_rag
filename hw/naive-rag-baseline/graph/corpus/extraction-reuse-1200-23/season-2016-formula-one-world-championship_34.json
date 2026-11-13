@@ -1,0 +1,92 @@
+{
+  "chunk_id": "season-2016-formula-one-world-championship#34",
+  "doc_id": "season-2016-formula-one-world-championship",
+  "document_title": "2016 Formula One World Championship",
+  "section": "European rounds",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "70f337080822063ae160f4b1c6362eb539b8e19743cf280004dd0b82dedf6f4a",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Lewis Hamilton",
+        "entity_type": "Driver",
+        "description": "A driver who further consolidated his championship lead."
+      },
+      {
+        "local_id": "e2",
+        "name": "Nico Rosberg",
+        "entity_type": "Driver",
+        "description": "A driver who was caught by the Red Bulls and received a time penalty."
+      },
+      {
+        "local_id": "e3",
+        "name": "Daniel Ricciardo",
+        "entity_type": "Driver",
+        "description": "A Red Bull driver who passed Rosberg."
+      },
+      {
+        "local_id": "e4",
+        "name": "Max Verstappen",
+        "entity_type": "Driver",
+        "description": "A Red Bull driver who was forced wide by Rosberg's aggressive pass."
+      },
+      {
+        "local_id": "e5",
+        "name": "2016",
+        "entity_type": "Season",
+        "description": "The championship year in which these events took place."
+      },
+      {
+        "local_id": "e6",
+        "name": "German Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The next round in Germany where these events occurred."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e6",
+        "target_id": "e5",
+        "relationship_type": "ROUND_OF",
+        "description": "The German Grand Prix is a round of the 2016 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 6,
+  "entities_accepted": 6,
+  "entities_rejected": 0,
+  "relationship_candidates": 5,
+  "relationships_accepted": 1,
+  "relationships_rejected": 4,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "RACED_IN does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "RACED_IN does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "RACED_IN does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "RACED_IN does not allow Driver -> Season"
+    }
+  ],
+  "alignments": []
+}

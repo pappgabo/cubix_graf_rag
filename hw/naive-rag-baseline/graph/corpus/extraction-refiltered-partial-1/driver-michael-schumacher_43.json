@@ -1,0 +1,57 @@
+{
+  "chunk_id": "driver-michael-schumacher#43",
+  "doc_id": "driver-michael-schumacher",
+  "document_title": "Michael Schumacher",
+  "section": null,
+  "page": 4,
+  "source": "https://en.wikipedia.org/wiki/Michael_Schumacher",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "be1b62ce0052dcb6820479725a303a203bc2ab2c361c8aa72e948db38d387b62",
+  "validation_version": "partial-1",
+  "source_status": "ok",
+  "status": "ok",
+  "rejections": [],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Michael Schumacher",
+        "entity_type": "Driver",
+        "description": "A German racing driver who raced for Ferrari."
+      },
+      {
+        "local_id": "e2",
+        "name": "Ferrari",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that Michael Schumacher joined in 1996."
+      },
+      {
+        "local_id": "e3",
+        "name": "1996",
+        "entity_type": "Season",
+        "description": "The season when Michael Schumacher joined Ferrari."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Michael Schumacher drove for Ferrari.",
+        "from_year": 1996,
+        "to_year": 2006,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e3",
+        "relationship_type": "ENTERED",
+        "description": "Ferrari entered the 1996 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

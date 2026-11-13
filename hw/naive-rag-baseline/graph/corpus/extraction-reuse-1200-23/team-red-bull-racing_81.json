@@ -1,0 +1,76 @@
+{
+  "chunk_id": "team-red-bull-racing#81",
+  "doc_id": "team-red-bull-racing",
+  "document_title": "Red Bull Racing",
+  "section": "Red Bull Technology",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "9877262092ec2e298d2872e51f6a71f56756b4df536a89262c7e88c8f9cd5ba1",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Red Bull Racing",
+        "entity_type": "Team",
+        "description": "A Formula One team that competes in the championship."
+      },
+      {
+        "local_id": "e2",
+        "name": "Scuderia Toro Rosso",
+        "entity_type": "Team",
+        "description": "A former Formula One team that was a sister team to Red Bull Racing."
+      },
+      {
+        "local_id": "e3",
+        "name": "Red Bull Technology",
+        "entity_type": "Team",
+        "description": "The parent company of Red Bull Racing, set up to design, engineer, and build cars for its Formula One team."
+      },
+      {
+        "local_id": "e4",
+        "name": "2010",
+        "entity_type": "Season",
+        "description": "The season when regulations were changed to forbid the use of identical cars between teams."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e2",
+        "target_id": "e4",
+        "relationship_type": "ENTERED",
+        "description": "Scuderia Toro Rosso entered the 2010 season before changing its car production process.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 4,
+  "entities_accepted": 4,
+  "entities_rejected": 0,
+  "relationship_candidates": 3,
+  "relationships_accepted": 1,
+  "relationships_rejected": 2,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "DROVE_FOR does not allow Team -> Team"
+    },
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "DROVE_FOR does not allow Team -> Team"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 2,
+      "action": "clear_redundant_season_year",
+      "detail": "ENTERED year 2010 already named by Season 'e4'; from_year and to_year cleared"
+    }
+  ]
+}

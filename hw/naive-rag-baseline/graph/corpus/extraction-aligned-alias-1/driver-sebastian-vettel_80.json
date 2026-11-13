@@ -1,0 +1,287 @@
+{
+  "chunk_id": "driver-sebastian-vettel#80",
+  "doc_id": "driver-sebastian-vettel",
+  "document_title": "Sebastian Vettel",
+  "section": "2017–2018: Title battles versus Hamilton",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/Sebastian_Vettel",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "827e3e00bdf6195c1c684a40acefcacf760305f9ebeaa3a04dfa554674960139",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 14,
+      "reason": "TEAMMATE_OF does not allow Team -> Driver"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 2,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e4; description kept"
+    },
+    {
+      "index": 3,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr2 -AT_RACE-> e5; description kept"
+    },
+    {
+      "index": 4,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr3 -AT_RACE-> e6; description kept"
+    },
+    {
+      "index": 5,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr4 -AT_RACE-> e7; description kept"
+    },
+    {
+      "index": 6,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr5 -AT_RACE-> e8; description kept"
+    },
+    {
+      "index": 7,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr6 -AT_RACE-> e9; description kept"
+    }
+  ],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Sebastian Vettel",
+        "entity_type": "Driver",
+        "description": "A Formula One driver who raced for Ferrari."
+      },
+      {
+        "local_id": "e2",
+        "name": "Scuderia Ferrari",
+        "entity_type": "Team",
+        "description": "A Formula One team that entered cars."
+      },
+      {
+        "local_id": "e3",
+        "name": "2017",
+        "entity_type": "Season",
+        "description": "A Formula One championship year."
+      },
+      {
+        "local_id": "e4",
+        "name": "Australia",
+        "entity_type": "GrandPrix",
+        "description": "A Grand Prix race held in Australia."
+      },
+      {
+        "local_id": "e5",
+        "name": "Bahrain",
+        "entity_type": "GrandPrix",
+        "description": "A Grand Prix race held in Bahrain."
+      },
+      {
+        "local_id": "e6",
+        "name": "Monaco",
+        "entity_type": "GrandPrix",
+        "description": "A Grand Prix race held in Monaco."
+      },
+      {
+        "local_id": "e7",
+        "name": "China",
+        "entity_type": "GrandPrix",
+        "description": "A Grand Prix race held in China."
+      },
+      {
+        "local_id": "e8",
+        "name": "Russia",
+        "entity_type": "GrandPrix",
+        "description": "A Grand Prix race held in Russia."
+      },
+      {
+        "local_id": "e9",
+        "name": "Spain",
+        "entity_type": "GrandPrix",
+        "description": "A Grand Prix race held in Spain."
+      },
+      {
+        "local_id": "e10",
+        "name": "2008 French Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Grand Prix race held in France."
+      },
+      {
+        "local_id": "e11",
+        "name": "Kimi Räikkönen",
+        "entity_type": "Driver",
+        "description": "A Formula One driver who raced for Ferrari."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Sebastian Vettel at Australia",
+        "entity_type": "RaceResult",
+        "description": "Sebastian Vettel won the Australian Grand Prix."
+      },
+      {
+        "local_id": "rr2",
+        "name": "Sebastian Vettel at Bahrain",
+        "entity_type": "RaceResult",
+        "description": "Sebastian Vettel won the Bahrain Grand Prix."
+      },
+      {
+        "local_id": "rr3",
+        "name": "Sebastian Vettel at Monaco",
+        "entity_type": "RaceResult",
+        "description": "Sebastian Vettel won the Monaco Grand Prix."
+      },
+      {
+        "local_id": "rr4",
+        "name": "Sebastian Vettel at China",
+        "entity_type": "RaceResult",
+        "description": "Sebastian Vettel finished second in the Chinese Grand Prix."
+      },
+      {
+        "local_id": "rr5",
+        "name": "Sebastian Vettel at Russia",
+        "entity_type": "RaceResult",
+        "description": "Sebastian Vettel finished second in the Russian Grand Prix."
+      },
+      {
+        "local_id": "rr6",
+        "name": "Sebastian Vettel at Spain",
+        "entity_type": "RaceResult",
+        "description": "Sebastian Vettel finished second in the Spanish Grand Prix."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Sebastian Vettel drove for Ferrari.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e3",
+        "relationship_type": "ENTERED",
+        "description": "Ferrari took part in the 2017 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Sebastian Vettel won the Australian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e4",
+        "relationship_type": "AT_RACE",
+        "description": "Sebastian Vettel won the Australian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr2",
+        "relationship_type": "ACHIEVED",
+        "description": "Sebastian Vettel won the Bahrain Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr2",
+        "target_id": "e5",
+        "relationship_type": "AT_RACE",
+        "description": "Sebastian Vettel won the Bahrain Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr3",
+        "relationship_type": "ACHIEVED",
+        "description": "Sebastian Vettel won the Monaco Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr3",
+        "target_id": "e6",
+        "relationship_type": "AT_RACE",
+        "description": "Sebastian Vettel won the Monaco Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr4",
+        "relationship_type": "ACHIEVED",
+        "description": "Sebastian Vettel finished second in the Chinese Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr4",
+        "target_id": "e7",
+        "relationship_type": "AT_RACE",
+        "description": "Sebastian Vettel finished second in the Chinese Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr5",
+        "relationship_type": "ACHIEVED",
+        "description": "Sebastian Vettel finished second in the Russian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr5",
+        "target_id": "e8",
+        "relationship_type": "AT_RACE",
+        "description": "Sebastian Vettel finished second in the Russian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr6",
+        "relationship_type": "ACHIEVED",
+        "description": "Sebastian Vettel finished second in the Spanish Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr6",
+        "target_id": "e9",
+        "relationship_type": "AT_RACE",
+        "description": "Sebastian Vettel finished second in the Spanish Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

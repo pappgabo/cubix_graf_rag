@@ -1,0 +1,141 @@
+{
+  "chunk_id": "driver-sebastian-vettel#127",
+  "doc_id": "driver-sebastian-vettel",
+  "document_title": "Sebastian Vettel",
+  "section": "Car names",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/Sebastian_Vettel",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "eb02ccf75caf1dfeaa48d61e3c3072043a6fc0c7447cce50620fd7a578da8077",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 6,
+      "reason": "ROUND_OF does not allow GrandPrix -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 7,
+      "reason": "ROUND_OF does not allow Team -> GrandPrix"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 4,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e6; description kept"
+    }
+  ],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Sebastian Vettel",
+        "entity_type": "Driver",
+        "description": "A Formula One driver who raced for Toro Rosso and Red Bull."
+      },
+      {
+        "local_id": "e2",
+        "name": "Toro Rosso",
+        "entity_type": "Team",
+        "description": "A Formula One team that Vettel drove for in 2008."
+      },
+      {
+        "local_id": "e3",
+        "name": "STR3",
+        "entity_type": "Car",
+        "description": "The car model Vettel drove for Toro Rosso in 2008."
+      },
+      {
+        "local_id": "e4",
+        "name": "Red Bull Racing",
+        "entity_type": "Team",
+        "description": "A Formula One team that Vettel drove for starting in 2009."
+      },
+      {
+        "local_id": "e5",
+        "name": "RB5",
+        "entity_type": "Car",
+        "description": "The car model Vettel drove for Red Bull in 2009."
+      },
+      {
+        "local_id": "e6",
+        "name": "Italian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The race where Vettel took his maiden victory."
+      },
+      {
+        "local_id": "e7",
+        "name": "Australian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The season-opening race in 2009 where Vettel had a collision."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Sebastian Vettel at Italian Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Vettel took his maiden victory at the Italian Grand Prix."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Vettel drove for Toro Rosso in 2008.",
+        "from_year": 2008,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e3",
+        "relationship_type": "FIELDED",
+        "description": "Toro Rosso entered the STR3 car.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e4",
+        "relationship_type": "DROVE_FOR",
+        "description": "Vettel drove for Red Bull starting in 2009.",
+        "from_year": 2009,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e5",
+        "relationship_type": "FIELDED",
+        "description": "Red Bull entered the RB5 car.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Vettel took his maiden victory at the Italian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e6",
+        "relationship_type": "AT_RACE",
+        "description": "Vettel took his maiden victory at the Italian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "chunk_id": "team-williams-racing#61",
+  "doc_id": "team-williams-racing",
+  "document_title": "Williams Racing",
+  "section": "Williams Racing > Supertec engines (1999) > Williams Racing > 1999 season",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "3a004653d7f1cc8934193eed99931efd0552f808740300152504af233d16d487",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Williams Racing",
+        "entity_type": "Team",
+        "description": "A Formula 1 team."
+      },
+      {
+        "local_id": "e2",
+        "name": "Jacques Villeneuve",
+        "entity_type": "Driver",
+        "description": "A Formula 1 driver who was lured away from Williams by British American Racing."
+      },
+      {
+        "local_id": "e3",
+        "name": "Heinz-Harald Frentzen",
+        "entity_type": "Driver",
+        "description": "A Formula 1 driver who was sacked by Williams."
+      },
+      {
+        "local_id": "e4",
+        "name": "Ralf Schumacher",
+        "entity_type": "Driver",
+        "description": "A Formula 1 driver who replaced Heinz-Harald Frentzen at Williams."
+      },
+      {
+        "local_id": "e5",
+        "name": "Jordan",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that signed Heinz-Harald Frentzen."
+      },
+      {
+        "local_id": "e6",
+        "name": "Damon Hill",
+        "entity_type": "Driver",
+        "description": "A former world champion who joined Jordan."
+      },
+      {
+        "local_id": "e7",
+        "name": "1999",
+        "entity_type": "Season",
+        "description": "The Formula 1 season in which Williams replaced both of its drivers."
+      }
+    ],
+    "relationships": []
+  },
+  "entity_candidates": 7,
+  "entities_accepted": 7,
+  "entities_rejected": 0,
+  "relationship_candidates": 8,
+  "relationships_accepted": 0,
+  "relationships_rejected": 8,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "DROVE_FOR does not allow Team -> Driver"
+    },
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "DROVE_FOR does not allow Team -> Driver"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "DROVE_FOR does not allow Team -> Driver"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "DROVE_FOR does not allow Team -> Driver"
+    },
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "DROVE_FOR does not allow Team -> Driver"
+    },
+    {
+      "element": "relationship",
+      "index": 5,
+      "reason": "RACED_IN does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 6,
+      "reason": "RACED_IN does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 7,
+      "reason": "RACED_IN does not allow Driver -> Season"
+    }
+  ],
+  "alignments": []
+}

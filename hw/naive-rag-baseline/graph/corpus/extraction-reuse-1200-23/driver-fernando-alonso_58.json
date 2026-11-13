@@ -1,0 +1,107 @@
+{
+  "chunk_id": "driver-fernando-alonso#58",
+  "doc_id": "driver-fernando-alonso",
+  "document_title": "Fernando Alonso",
+  "section": "Awards and honours",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "ab41808008ccf6ff7faad4b0a7c33963c60b7d1591ec7b9d60a04d64bfb3656d",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Fernando Alonso",
+        "entity_type": "Driver",
+        "description": "A Spanish racing driver who has won multiple championships."
+      },
+      {
+        "local_id": "e2",
+        "name": "2003 Hungarian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula One race held in Hungary."
+      },
+      {
+        "local_id": "e3",
+        "name": "2005 F1 World Championship",
+        "entity_type": "Title",
+        "description": "A championship title won by Fernando Alonso."
+      },
+      {
+        "local_id": "e4",
+        "name": "2017 Indianapolis 500",
+        "entity_type": "GrandPrix",
+        "description": "An iconic automobile race held annually in Indianapolis."
+      },
+      {
+        "local_id": "e5",
+        "name": "FIA Hall of Fame",
+        "entity_type": "Title",
+        "description": "An honor recognizing outstanding achievements in motorsport."
+      },
+      {
+        "local_id": "season2005-1",
+        "name": "2005",
+        "entity_type": "Season",
+        "description": "2005"
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e3",
+        "relationship_type": "WON",
+        "description": "Alonso won the 2005 F1 World Championship.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "season2005-1",
+        "relationship_type": "AWARDED_IN",
+        "description": "Alonso won the 2005 F1 World Championship.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 5,
+  "entities_accepted": 6,
+  "entities_rejected": 0,
+  "relationship_candidates": 5,
+  "relationships_accepted": 2,
+  "relationships_rejected": 4,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "ACHIEVED Driver -> GrandPrix has from_year=2017, to_year=None, role=None; the year or role cannot be stored on the reified result"
+    },
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "WON does not allow Driver -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "ACHIEVED does not allow Driver -> Title"
+    },
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "ACHIEVED does not allow Driver -> Title"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 1,
+      "action": "move_won_year",
+      "detail": "WON year 2005 stored as e3 -AWARDED_IN-> season2005-1; from_year and to_year cleared; description kept"
+    }
+  ]
+}

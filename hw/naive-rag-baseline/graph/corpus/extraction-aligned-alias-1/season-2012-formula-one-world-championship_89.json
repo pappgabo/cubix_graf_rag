@@ -1,0 +1,82 @@
+{
+  "chunk_id": "season-2012-formula-one-world-championship#89",
+  "doc_id": "season-2012-formula-one-world-championship",
+  "document_title": "2012 Formula One World Championship",
+  "section": "Race summaries > Round 3 – China Shanghai International Circuit",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/2012_Formula_One_World_Championship",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "63a3d59eda2fdfb5f0896d80b892f620e97f0b8691e519ce8b928555a8aa40b2",
+  "validation_version": "partial-1",
+  "source_status": "ok",
+  "status": "ok",
+  "rejections": [],
+  "alignments": [],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Räikkönen",
+        "entity_type": "Driver",
+        "description": "Attempted a two-stop strategy but lost eleven positions due to tyre wear."
+      },
+      {
+        "local_id": "e2",
+        "name": "Rosberg",
+        "entity_type": "Driver",
+        "description": "Had to drive conservatively to preserve his tyres."
+      },
+      {
+        "local_id": "e3",
+        "name": "Button",
+        "entity_type": "Driver",
+        "description": "Recovered from a disastrous pit stop to pass Sebastian Vettel for second."
+      },
+      {
+        "local_id": "e4",
+        "name": "Sebastian Vettel",
+        "entity_type": "Driver",
+        "description": "Held up Button long enough for Rosberg to preserve his tyres."
+      },
+      {
+        "local_id": "e5",
+        "name": "2012 Formula One World Championship",
+        "entity_type": "Season",
+        "description": "The championship year for the race."
+      },
+      {
+        "local_id": "e6",
+        "name": "Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "Rosberg became the 103rd person to win a Grand Prix."
+      },
+      {
+        "local_id": "e7",
+        "name": "Shanghai International Circuit",
+        "entity_type": "Circuit",
+        "description": "The venue for the race."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e6",
+        "target_id": "e5",
+        "relationship_type": "ROUND_OF",
+        "description": "The Grand Prix is a round of the 2012 Formula One World Championship.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e6",
+        "target_id": "e7",
+        "relationship_type": "HELD_AT",
+        "description": "The Grand Prix is held at Shanghai International Circuit.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

@@ -1,0 +1,162 @@
+{
+  "chunk_id": "driver-kimi-raikkonen#40",
+  "doc_id": "driver-kimi-raikkonen",
+  "document_title": "Kimi Räikkönen",
+  "section": "Formula One career > Ferrari (2007–2009) > 2008",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "d83629f7b4c8053c8ce1178f89bce9750c9f15714f9832c03cdad10d81e7b568",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Kimi Räikkönen",
+        "entity_type": "Driver",
+        "description": "A Finnish racing driver who competed in Formula One."
+      },
+      {
+        "local_id": "e2",
+        "name": "Scuderia Ferrari",
+        "entity_type": "Team",
+        "description": "An Italian Formula One team."
+      },
+      {
+        "local_id": "e3",
+        "name": "2008",
+        "entity_type": "Season",
+        "description": "The Formula One season of 2008."
+      },
+      {
+        "local_id": "e4",
+        "name": "Japanese Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula One race held at Fuji Speedway."
+      },
+      {
+        "local_id": "e5",
+        "name": "Fuji Speedway",
+        "entity_type": "Circuit",
+        "description": "A racing circuit located in Japan."
+      },
+      {
+        "local_id": "e6",
+        "name": "Alonso",
+        "entity_type": "Driver",
+        "description": "A Spanish racing driver who competed for Renault."
+      },
+      {
+        "local_id": "e7",
+        "name": "Robert Kubica",
+        "entity_type": "Driver",
+        "description": "A Polish racing driver who competed for BMW Sauber."
+      },
+      {
+        "local_id": "e8",
+        "name": "Lewis Hamilton",
+        "entity_type": "Driver",
+        "description": "A British racing driver who competed for McLaren."
+      },
+      {
+        "local_id": "e9",
+        "name": "Massa",
+        "entity_type": "Driver",
+        "description": "A Brazilian racing driver who competed for Ferrari."
+      },
+      {
+        "local_id": "e10",
+        "name": "Kovalainen",
+        "entity_type": "Driver",
+        "description": "A Finnish racing driver who competed for McLaren."
+      },
+      {
+        "local_id": "e11",
+        "name": "Jarno Trulli",
+        "entity_type": "Driver",
+        "description": "An Italian racing driver who competed for Toyota."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Kimi Räikkönen drove for Ferrari during the 2008 season.",
+        "from_year": 2007,
+        "to_year": 2009,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e3",
+        "relationship_type": "ROUND_OF",
+        "description": "The Japanese Grand Prix is a round of the 2008 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e5",
+        "relationship_type": "HELD_AT",
+        "description": "The Japanese Grand Prix is held at Fuji Speedway.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e9",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Kimi Räikkönen was teammates with Massa at Ferrari during the 2008 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e10",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Kimi Räikkönen was teammates with Kovalainen at McLaren during the 2008 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e11",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Kimi Räikkönen was teammates with Jarno Trulli at Toyota during the 2008 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 11,
+  "entities_accepted": 11,
+  "entities_rejected": 0,
+  "relationship_candidates": 9,
+  "relationships_accepted": 6,
+  "relationships_rejected": 3,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "ACHIEVED does not allow Driver -> Driver"
+    },
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "ACHIEVED does not allow Driver -> Driver"
+    },
+    {
+      "element": "relationship",
+      "index": 5,
+      "reason": "ACHIEVED does not allow Driver -> Driver"
+    }
+  ],
+  "alignments": []
+}

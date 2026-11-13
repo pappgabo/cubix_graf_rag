@@ -1,0 +1,49 @@
+{
+  "chunk_id": "season-2020-formula-one-world-championship#6",
+  "doc_id": "season-2020-formula-one-world-championship",
+  "document_title": "2020 Formula One World Championship",
+  "section": "2020 Formula One World Championship > Team changes",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "3eb4685c0ede1fdf2ff2f5bee962540fa4eb9b9fb559aa3677240b7a40c3727d",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Red Bull Racing",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that entered cars."
+      },
+      {
+        "local_id": "e2",
+        "name": "Scuderia Toro Rosso",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that was renamed to Scuderia AlphaTauri."
+      },
+      {
+        "local_id": "e3",
+        "name": "Scuderia AlphaTauri",
+        "entity_type": "Team",
+        "description": "The new name for Scuderia Toro Rosso."
+      }
+    ],
+    "relationships": []
+  },
+  "entity_candidates": 3,
+  "entities_accepted": 3,
+  "entities_rejected": 0,
+  "relationship_candidates": 1,
+  "relationships_accepted": 0,
+  "relationships_rejected": 1,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "DROVE_FOR does not allow Team -> Team"
+    }
+  ],
+  "alignments": []
+}

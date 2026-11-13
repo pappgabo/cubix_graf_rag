@@ -1,0 +1,59 @@
+{
+  "chunk_id": "season-2008-formula-one-world-championship#3",
+  "doc_id": "season-2008-formula-one-world-championship",
+  "document_title": "2008 Formula One World Championship",
+  "section": null,
+  "page": 1,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "ba5c3871fcd6a3c4980ea7121567419ea6d3ec76c0eef1fa3009f5631e710eb0",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "2008 FIA Formula One World Championship",
+        "entity_type": "Season",
+        "description": "The championship year for Formula One racing."
+      },
+      {
+        "local_id": "e2",
+        "name": "Bridgestone",
+        "entity_type": "PowerUnit",
+        "description": "Tyre supplier for the teams in the 2008 season."
+      },
+      {
+        "local_id": "e3",
+        "name": "McLaren",
+        "entity_type": "Team",
+        "description": "Formula One team that competed in the 2008 season."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e3",
+        "target_id": "e1",
+        "relationship_type": "ENTERED",
+        "description": "McLaren participated in the 2008 FIA Formula One World Championship.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 3,
+  "entities_accepted": 3,
+  "entities_rejected": 0,
+  "relationship_candidates": 2,
+  "relationships_accepted": 1,
+  "relationships_rejected": 1,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "POWERED_BY does not allow Season -> PowerUnit"
+    }
+  ],
+  "alignments": []
+}

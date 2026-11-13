@@ -1,0 +1,74 @@
+{
+  "chunk_id": "team-williams-racing#64",
+  "doc_id": "team-williams-racing",
+  "document_title": "Williams Racing",
+  "section": "Williams Racing > Supertec engines (1999) > Williams Racing > 1999 season",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "34f55c8a72766e83da3f8f9a75345a4561a2702d51c50de83049dc0183b38679",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Williams Racing",
+        "entity_type": "Team",
+        "description": "A Formula 1 team."
+      },
+      {
+        "local_id": "e2",
+        "name": "Alex Zanardi",
+        "entity_type": "Driver",
+        "description": "A Formula 1 driver who raced for Williams Racing in the 1999 season."
+      },
+      {
+        "local_id": "e3",
+        "name": "1999",
+        "entity_type": "Season",
+        "description": "The Formula 1 season in which Alex Zanardi raced for Williams Racing."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e2",
+        "target_id": "e1",
+        "relationship_type": "DROVE_FOR",
+        "description": "Alex Zanardi drove for Williams Racing during the 1999 season.",
+        "from_year": 1999,
+        "to_year": 1999,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e3",
+        "relationship_type": "ENTERED",
+        "description": "Williams Racing took part in the 1999 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 3,
+  "entities_accepted": 3,
+  "entities_rejected": 0,
+  "relationship_candidates": 3,
+  "relationships_accepted": 2,
+  "relationships_rejected": 1,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "ROUND_OF does not allow Season -> Team"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 1,
+      "action": "clear_redundant_season_year",
+      "detail": "ENTERED year 1999 already named by Season 'e3'; from_year and to_year cleared"
+    }
+  ]
+}

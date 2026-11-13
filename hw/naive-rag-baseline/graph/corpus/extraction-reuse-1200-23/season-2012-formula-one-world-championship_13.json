@@ -1,0 +1,198 @@
+{
+  "chunk_id": "season-2012-formula-one-world-championship#13",
+  "doc_id": "season-2012-formula-one-world-championship",
+  "document_title": "2012 Formula One World Championship",
+  "section": "Teams and drivers > Driver changes",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "e89aac24062af11102ac3bd2c2b1e435a11d40fd27ba7b866efdefbfc579e938",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Pedro de la Rosa",
+        "entity_type": "Driver",
+        "description": "Returned to Formula One with HRT after being without a full-time drive since the 2010 Italian Grand Prix."
+      },
+      {
+        "local_id": "e2",
+        "name": "Narain Karthikeyan",
+        "entity_type": "Driver",
+        "description": "Returned to Formula One with HRT after making a one-race appearance at the Indian Grand Prix."
+      },
+      {
+        "local_id": "e3",
+        "name": "HRT",
+        "entity_type": "Team",
+        "description": "Team that Pedro de la Rosa and Narain Karthikeyan returned to in 2012."
+      },
+      {
+        "local_id": "e4",
+        "name": "Vitantonio Liuzzi",
+        "entity_type": "Driver",
+        "description": "Drove for HRT in 2011 and joined the Indian i1 Super Series."
+      },
+      {
+        "local_id": "e5",
+        "name": "Dani Clos",
+        "entity_type": "Driver",
+        "description": "Former GP2 Series driver confirmed as one of HRT's testing and reserve drivers."
+      },
+      {
+        "local_id": "e6",
+        "name": "Ma Qinghua",
+        "entity_type": "Driver",
+        "description": "First ever Chinese driver to step into a Formula 1 car, confirmed as one of HRT's testing and reserve drivers."
+      },
+      {
+        "local_id": "e7",
+        "name": "Jérôme d'Ambrosio",
+        "entity_type": "Driver",
+        "description": "Left Marussia after the 2011 Brazilian Grand Prix and joined Lotus F1 as their third driver."
+      },
+      {
+        "local_id": "e8",
+        "name": "Lotus F1",
+        "entity_type": "Team",
+        "description": "Team that Jérôme d'Ambrosio joined as their third driver."
+      },
+      {
+        "local_id": "e9",
+        "name": "Charles Pic",
+        "entity_type": "Driver",
+        "description": "Joined Marussia, replacing Jérôme d'Ambrosio after placing fourth in the 2011 GP2 Series."
+      },
+      {
+        "local_id": "e10",
+        "name": "Marussia",
+        "entity_type": "Team",
+        "description": "Then known as Virgin Racing, the team that Charles Pic joined."
+      },
+      {
+        "local_id": "e11",
+        "name": "2012 Formula One World Championship",
+        "entity_type": "Season",
+        "description": "The championship year in which these driver changes occurred."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e3",
+        "relationship_type": "DROVE_FOR",
+        "description": "Pedro de la Rosa returned to HRT in 2012.",
+        "from_year": 2012,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e3",
+        "relationship_type": "DROVE_FOR",
+        "description": "Narain Karthikeyan returned to HRT in 2012.",
+        "from_year": 2012,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e3",
+        "relationship_type": "DROVE_FOR",
+        "description": "Vitantonio Liuzzi drove for HRT in 2011.",
+        "from_year": 2011,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e3",
+        "relationship_type": "DROVE_FOR",
+        "description": "Dani Clos was confirmed as one of HRT's testing and reserve drivers.",
+        "from_year": 2012,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e6",
+        "target_id": "e3",
+        "relationship_type": "DROVE_FOR",
+        "description": "Ma Qinghua was confirmed as one of HRT's testing and reserve drivers.",
+        "from_year": 2012,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e7",
+        "target_id": "e8",
+        "relationship_type": "DROVE_FOR",
+        "description": "Jérôme d'Ambrosio joined Lotus F1 as their third driver.",
+        "from_year": 2012,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e9",
+        "target_id": "e10",
+        "relationship_type": "DROVE_FOR",
+        "description": "Charles Pic joined Marussia, replacing Jérôme d'Ambrosio.",
+        "from_year": 2012,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e10",
+        "target_id": "e11",
+        "relationship_type": "ENTERED",
+        "description": "Marussia entered the 2012 Formula One World Championship.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e11",
+        "relationship_type": "ENTERED",
+        "description": "HRT entered the 2012 Formula One World Championship.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e8",
+        "target_id": "e11",
+        "relationship_type": "ENTERED",
+        "description": "Lotus F1 entered the 2012 Formula One World Championship.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 11,
+  "entities_accepted": 11,
+  "entities_rejected": 0,
+  "relationship_candidates": 10,
+  "relationships_accepted": 10,
+  "relationships_rejected": 0,
+  "rejections": [],
+  "alignments": [
+    {
+      "index": 7,
+      "action": "clear_redundant_season_year",
+      "detail": "ENTERED year 2012 already named by Season 'e11'; from_year and to_year cleared"
+    },
+    {
+      "index": 8,
+      "action": "clear_redundant_season_year",
+      "detail": "ENTERED year 2012 already named by Season 'e11'; from_year and to_year cleared"
+    },
+    {
+      "index": 9,
+      "action": "clear_redundant_season_year",
+      "detail": "ENTERED year 2012 already named by Season 'e11'; from_year and to_year cleared"
+    }
+  ]
+}

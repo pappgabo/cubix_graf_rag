@@ -1,0 +1,151 @@
+{
+  "chunk_id": "driver-sebastian-vettel#54",
+  "doc_id": "driver-sebastian-vettel",
+  "document_title": "Sebastian Vettel",
+  "section": "Car names",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "c449d7dc9140099758af0aba7be25584ce6caa900e9b2e0d31ba4433009eb2e1",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Sebastian Vettel",
+        "entity_type": "Driver",
+        "description": "A German racing driver who competed in Formula One."
+      },
+      {
+        "local_id": "e2",
+        "name": "Scuderia Ferrari",
+        "entity_type": "Team",
+        "description": "An Italian Formula One team."
+      },
+      {
+        "local_id": "e3",
+        "name": "Aston Martin",
+        "entity_type": "Team",
+        "description": "A British Formula One team."
+      },
+      {
+        "local_id": "e4",
+        "name": "SF15-T",
+        "entity_type": "Car",
+        "description": "Ferrari car used by Sebastian Vettel in 2015."
+      },
+      {
+        "local_id": "e5",
+        "name": "Margherita",
+        "entity_type": "Car",
+        "description": "Ferrari car used by Sebastian Vettel in 2016."
+      },
+      {
+        "local_id": "e6",
+        "name": "Gina",
+        "entity_type": "Car",
+        "description": "Ferrari car used by Sebastian Vettel in 2017."
+      },
+      {
+        "local_id": "e7",
+        "name": "Loria",
+        "entity_type": "Car",
+        "description": "Ferrari car used by Sebastian Vettel in 2018."
+      },
+      {
+        "local_id": "e8",
+        "name": "Lina",
+        "entity_type": "Car",
+        "description": "Ferrari car used by Sebastian Vettel in 2019."
+      },
+      {
+        "local_id": "e9",
+        "name": "Lucilla",
+        "entity_type": "Car",
+        "description": "Ferrari car used by Sebastian Vettel in 2020."
+      },
+      {
+        "local_id": "e10",
+        "name": "AMR21",
+        "entity_type": "Car",
+        "description": "Aston Martin car used by Sebastian Vettel in 2021."
+      },
+      {
+        "local_id": "e11",
+        "name": "AMR22",
+        "entity_type": "Car",
+        "description": "Aston Martin car that Sebastian Vettel did not name in 2022."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Sebastian Vettel drove for Ferrari.",
+        "from_year": 2015,
+        "to_year": 2020,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e3",
+        "relationship_type": "DROVE_FOR",
+        "description": "Sebastian Vettel drove for Aston Martin.",
+        "from_year": 2021,
+        "to_year": 2021,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 11,
+  "entities_accepted": 11,
+  "entities_rejected": 0,
+  "relationship_candidates": 10,
+  "relationships_accepted": 2,
+  "relationships_rejected": 8,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "FIELDED is not temporal; from_year=2015, to_year=2020, role=None cannot be stored without dropping them"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "FIELDED is not temporal; from_year=2016, to_year=2020, role=None cannot be stored without dropping them"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "FIELDED is not temporal; from_year=2017, to_year=2020, role=None cannot be stored without dropping them"
+    },
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "FIELDED is not temporal; from_year=2018, to_year=2020, role=None cannot be stored without dropping them"
+    },
+    {
+      "element": "relationship",
+      "index": 5,
+      "reason": "FIELDED is not temporal; from_year=2019, to_year=2020, role=None cannot be stored without dropping them"
+    },
+    {
+      "element": "relationship",
+      "index": 6,
+      "reason": "FIELDED is not temporal; from_year=2020, to_year=2020, role=None cannot be stored without dropping them"
+    },
+    {
+      "element": "relationship",
+      "index": 8,
+      "reason": "FIELDED is not temporal; from_year=2021, to_year=2021, role=None cannot be stored without dropping them"
+    },
+    {
+      "element": "relationship",
+      "index": 9,
+      "reason": "FIELDED is not temporal; from_year=2022, to_year=2022, role=None cannot be stored without dropping them"
+    }
+  ],
+  "alignments": []
+}

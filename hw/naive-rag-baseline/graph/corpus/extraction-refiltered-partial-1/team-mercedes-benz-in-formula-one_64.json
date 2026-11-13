@@ -1,0 +1,92 @@
+{
+  "chunk_id": "team-mercedes-benz-in-formula-one#64",
+  "doc_id": "team-mercedes-benz-in-formula-one",
+  "document_title": "Mercedes-Benz in Formula One",
+  "section": "Mercedes-Benz in Formula One > Struggling with ground effect (2022–2025)",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/Mercedes-Benz_in_Formula_One",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "ee896119367fa019706c07576a4c900c3b5834edfc42b0d8f221ab9936ad8364",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "ROUND_OF does not allow Team -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "ROUND_OF does not allow Team -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "ACHIEVED does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "ACHIEVED does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 5,
+      "reason": "WON does not allow Team -> Season"
+    }
+  ],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Mercedes",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that enters cars."
+      },
+      {
+        "local_id": "e2",
+        "name": "Hamilton",
+        "entity_type": "Driver",
+        "description": "A driver who raced for Mercedes."
+      },
+      {
+        "local_id": "e3",
+        "name": "Russell",
+        "entity_type": "Driver",
+        "description": "A driver who raced for Mercedes."
+      },
+      {
+        "local_id": "e4",
+        "name": "2022",
+        "entity_type": "Season",
+        "description": "A championship year."
+      },
+      {
+        "local_id": "e5",
+        "name": "Belgian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A race event."
+      },
+      {
+        "local_id": "e6",
+        "name": "Las Vegas Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A race event."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e4",
+        "relationship_type": "ENTERED",
+        "description": "Mercedes took part in the 2022 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

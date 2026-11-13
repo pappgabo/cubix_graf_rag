@@ -1,0 +1,130 @@
+{
+  "chunk_id": "driver-michael-schumacher#86",
+  "doc_id": "driver-michael-schumacher",
+  "document_title": "Michael Schumacher",
+  "section": null,
+  "page": 7,
+  "source": "https://en.wikipedia.org/wiki/Michael_Schumacher",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "4c5a6af5e22877252e4f29445733b8d3881b290b6c7624f0b4b24fb13560fc0f",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "WON is not temporal; from_year=2000, to_year=2004, role=None cannot be stored without dropping them"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "ACHIEVED Driver -> GrandPrix has from_year=2004, to_year=None, role=None; the year or role cannot be stored on the reified result"
+    },
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "WON does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "WON does not allow Driver -> Season"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 4,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e5; description kept"
+    }
+  ],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Michael Schumacher",
+        "entity_type": "Driver",
+        "description": "A Formula One driver known for his record achievements."
+      },
+      {
+        "local_id": "e2",
+        "name": "Fernando Alonso",
+        "entity_type": "Driver",
+        "description": "A Formula One driver who was polesitter at the French Grand Prix."
+      },
+      {
+        "local_id": "e3",
+        "name": "Barrichello",
+        "entity_type": "Driver",
+        "description": "A Formula One driver who was the runner-up to Schumacher in the season."
+      },
+      {
+        "local_id": "e4",
+        "name": "Belgian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula One race."
+      },
+      {
+        "local_id": "e5",
+        "name": "French Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula One race where Schumacher beat Alonso."
+      },
+      {
+        "local_id": "e6",
+        "name": "2002",
+        "entity_type": "Season",
+        "description": "A Formula One season where Schumacher had 11 wins."
+      },
+      {
+        "local_id": "e7",
+        "name": "2004",
+        "entity_type": "Season",
+        "description": "A Formula One season where Schumacher achieved a record 13 race wins."
+      },
+      {
+        "local_id": "e8",
+        "name": "Drivers' Championships",
+        "entity_type": "Title",
+        "description": "Championship titles won by Schumacher."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Michael Schumacher at French Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Schumacher beat Alonso at the French Grand Prix."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Schumacher beat Alonso at the French Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e5",
+        "relationship_type": "AT_RACE",
+        "description": "Schumacher beat Alonso at the French Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e1",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Barrichello was the runner-up to Schumacher in the season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

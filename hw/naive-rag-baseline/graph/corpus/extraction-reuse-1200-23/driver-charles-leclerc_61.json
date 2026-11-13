@@ -1,0 +1,87 @@
+{
+  "chunk_id": "driver-charles-leclerc#61",
+  "doc_id": "driver-charles-leclerc",
+  "document_title": "Charles Leclerc",
+  "section": "Charles Leclerc > Other ventures > Charles Leclerc > Film and television",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "e1da6b076dc4bcb3afefe8791da2c8f681a8ee07c3dd0e931fb83703019f9b31",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Charles Leclerc",
+        "entity_type": "Driver",
+        "description": "A Formula One driver who starred in various films and television projects."
+      },
+      {
+        "local_id": "e2",
+        "name": "Circuit de Monaco",
+        "entity_type": "Circuit",
+        "description": "A famous racing circuit located in Monaco."
+      },
+      {
+        "local_id": "e3",
+        "name": "Ferrari SF90 Stradale",
+        "entity_type": "Car",
+        "description": "A car model fielded by Ferrari."
+      },
+      {
+        "local_id": "e4",
+        "name": "Lightyear",
+        "entity_type": "Car",
+        "description": "An animated film in which Charles Leclerc made his voice acting debut."
+      },
+      {
+        "local_id": "e5",
+        "name": "Charles Leclerc – Supersonique",
+        "entity_type": "GrandPrix",
+        "description": "A documentary featuring Charles Leclerc."
+      },
+      {
+        "local_id": "e6",
+        "name": "Saint-Dizier – Robinson Air Base",
+        "entity_type": "Circuit",
+        "description": "A military air base where aerobatics were attempted."
+      }
+    ],
+    "relationships": []
+  },
+  "entity_candidates": 6,
+  "entities_accepted": 6,
+  "entities_rejected": 0,
+  "relationship_candidates": 5,
+  "relationships_accepted": 0,
+  "relationships_rejected": 5,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "HELD_AT is not temporal; from_year=2024, to_year=2024, role=None cannot be stored without dropping them"
+    },
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "HELD_AT does not allow Driver -> Circuit"
+    },
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "FIELDED does not allow Driver -> Car"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "FIELDED does not allow Driver -> Car"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "FIELDED does not allow Driver -> GrandPrix"
+    }
+  ],
+  "alignments": []
+}

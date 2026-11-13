@@ -1,0 +1,68 @@
+{
+  "chunk_id": "driver-lewis-hamilton#58",
+  "doc_id": "driver-lewis-hamilton",
+  "document_title": "Lewis Hamilton",
+  "section": null,
+  "page": 12,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "5bd441c2f814561fc7758d0c1c41cc34415bf4705f2e0f13dc043d27b0e815d8",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Lewis Hamilton",
+        "entity_type": "Driver",
+        "description": "A prominent Formula One driver known for his activism against racism."
+      },
+      {
+        "local_id": "e2",
+        "name": "Formula One",
+        "entity_type": "Team",
+        "description": "The governing body of Formula One racing."
+      },
+      {
+        "local_id": "e3",
+        "name": "2020",
+        "entity_type": "Season",
+        "description": "The Formula One season during which Hamilton made significant statements regarding social justice."
+      },
+      {
+        "local_id": "e4",
+        "name": "Tuscan Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula One race held in 2020."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Hamilton drives for the Formula One team.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e3",
+        "relationship_type": "ROUND_OF",
+        "description": "The Tuscan Grand Prix is a round of the 2020 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 4,
+  "entities_accepted": 4,
+  "entities_rejected": 0,
+  "relationship_candidates": 2,
+  "relationships_accepted": 2,
+  "relationships_rejected": 0,
+  "rejections": [],
+  "alignments": []
+}

@@ -1,0 +1,227 @@
+{
+  "chunk_id": "driver-nico-rosberg#6",
+  "doc_id": "driver-nico-rosberg",
+  "document_title": "Nico Rosberg",
+  "section": "Nico Rosberg > Karting (1991–2001)",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "e8478f9cadb24e0a6120f82d9034a840d9caf537520ea8f4bb4d5a7eb9f59b34",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Nico Rosberg",
+        "entity_type": "Driver",
+        "description": "A Formula One driver who won multiple karting championships."
+      },
+      {
+        "local_id": "e2",
+        "name": "Côte d'Azur Mini-Kart Regional Championship",
+        "entity_type": "Title",
+        "description": "A regional karting championship won by Nico Rosberg in 1996."
+      },
+      {
+        "local_id": "e3",
+        "name": "Trophee Jérôme Bernard",
+        "entity_type": "Title",
+        "description": "A karting trophy won by Nico Rosberg in 1997."
+      },
+      {
+        "local_id": "e4",
+        "name": "Trophee de France",
+        "entity_type": "Title",
+        "description": "A karting trophy won by Nico Rosberg in 1997."
+      },
+      {
+        "local_id": "e5",
+        "name": "French Manufacturers' Trophy",
+        "entity_type": "Title",
+        "description": "A karting trophy where Nico Rosberg finished second in 1997."
+      },
+      {
+        "local_id": "e6",
+        "name": "Côte d'Azur Regional Championship",
+        "entity_type": "Title",
+        "description": "A regional karting championship where Nico Rosberg finished second in 1997."
+      },
+      {
+        "local_id": "e7",
+        "name": "European karting championships",
+        "entity_type": "Season",
+        "description": "The championships Nico Rosberg progressed to in 1998."
+      },
+      {
+        "local_id": "e8",
+        "name": "CRG",
+        "entity_type": "Car",
+        "description": "The kart brand driven by Nico Rosberg during his karting career."
+      },
+      {
+        "local_id": "e9",
+        "name": "28° Torneo Industrie",
+        "entity_type": "GrandPrix",
+        "description": "A karting event where Nico Rosberg finished fifth in 1998."
+      },
+      {
+        "local_id": "e10",
+        "name": "Andrea Margutti Trophy",
+        "entity_type": "GrandPrix",
+        "description": "A karting event where Nico Rosberg finished seventh in 1998."
+      },
+      {
+        "local_id": "e11",
+        "name": "CIK-FIA Green Helmet Trophy",
+        "entity_type": "GrandPrix",
+        "description": "A karting event where Nico Rosberg crashed out in 1998."
+      },
+      {
+        "local_id": "e12",
+        "name": "Italian Junior Karting Championship",
+        "entity_type": "Title",
+        "description": "A karting championship where Nico Rosberg was runner-up in 1999."
+      },
+      {
+        "local_id": "e13",
+        "name": "ICA Junior CIK-FIA European Championship",
+        "entity_type": "Title",
+        "description": "A karting championship where Nico Rosberg finished fourth in 1999."
+      },
+      {
+        "local_id": "season1996-1",
+        "name": "1996",
+        "entity_type": "Season",
+        "description": "1996"
+      },
+      {
+        "local_id": "season1997-1",
+        "name": "1997",
+        "entity_type": "Season",
+        "description": "1997"
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "WON",
+        "description": "Nico Rosberg won the Côte d'Azur Mini-Kart Regional Championship.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "season1996-1",
+        "relationship_type": "AWARDED_IN",
+        "description": "Nico Rosberg won the Côte d'Azur Mini-Kart Regional Championship.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e3",
+        "relationship_type": "WON",
+        "description": "Nico Rosberg won the Trophee Jérôme Bernard.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "season1997-1",
+        "relationship_type": "AWARDED_IN",
+        "description": "Nico Rosberg won the Trophee Jérôme Bernard.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e4",
+        "relationship_type": "WON",
+        "description": "Nico Rosberg won the Trophee de France.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "season1997-1",
+        "relationship_type": "AWARDED_IN",
+        "description": "Nico Rosberg won the Trophee de France.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 13,
+  "entities_accepted": 15,
+  "entities_rejected": 0,
+  "relationship_candidates": 11,
+  "relationships_accepted": 6,
+  "relationships_rejected": 8,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 5,
+      "reason": "RACED_IN is not temporal; from_year=1998, to_year=None, role=None cannot be stored without dropping them"
+    },
+    {
+      "element": "relationship",
+      "index": 6,
+      "reason": "ACHIEVED Driver -> GrandPrix has from_year=1998, to_year=None, role=None; the year or role cannot be stored on the reified result"
+    },
+    {
+      "element": "relationship",
+      "index": 7,
+      "reason": "ACHIEVED Driver -> GrandPrix has from_year=1998, to_year=None, role=None; the year or role cannot be stored on the reified result"
+    },
+    {
+      "element": "relationship",
+      "index": 8,
+      "reason": "ACHIEVED Driver -> GrandPrix has from_year=1998, to_year=None, role=None; the year or role cannot be stored on the reified result"
+    },
+    {
+      "element": "relationship",
+      "index": 6,
+      "reason": "ACHIEVED does not allow Driver -> Title"
+    },
+    {
+      "element": "relationship",
+      "index": 7,
+      "reason": "ACHIEVED does not allow Driver -> Title"
+    },
+    {
+      "element": "relationship",
+      "index": 8,
+      "reason": "ACHIEVED does not allow Driver -> Title"
+    },
+    {
+      "element": "relationship",
+      "index": 9,
+      "reason": "ACHIEVED does not allow Driver -> Title"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 0,
+      "action": "move_won_year",
+      "detail": "WON year 1996 stored as e2 -AWARDED_IN-> season1996-1; from_year and to_year cleared; description kept"
+    },
+    {
+      "index": 1,
+      "action": "move_won_year",
+      "detail": "WON year 1997 stored as e3 -AWARDED_IN-> season1997-1; from_year and to_year cleared; description kept"
+    },
+    {
+      "index": 2,
+      "action": "move_won_year",
+      "detail": "WON year 1997 stored as e4 -AWARDED_IN-> season1997-1; from_year and to_year cleared; description kept"
+    }
+  ]
+}

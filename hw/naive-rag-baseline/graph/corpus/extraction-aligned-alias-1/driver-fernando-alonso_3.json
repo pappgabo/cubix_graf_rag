@@ -1,0 +1,103 @@
+{
+  "chunk_id": "driver-fernando-alonso#3",
+  "doc_id": "driver-fernando-alonso",
+  "document_title": "Fernando Alonso",
+  "section": null,
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/Fernando_Alonso",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "f018cfa91446841c74de98d0f335d4964565dbb9905e0bc49422623fcaf984ce",
+  "validation_version": "partial-1",
+  "source_status": "ok",
+  "status": "ok",
+  "rejections": [],
+  "alignments": [],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Fernando Alonso",
+        "entity_type": "Driver",
+        "description": "A Formula One driver who won his maiden title after winning seven Grands Prix in 2005."
+      },
+      {
+        "local_id": "e2",
+        "name": "Renault",
+        "entity_type": "Team",
+        "description": "A Formula One team that Alonso joined as a test driver before becoming a full-time driver."
+      },
+      {
+        "local_id": "e3",
+        "name": "2005",
+        "entity_type": "Season",
+        "description": "The season in which Alonso won his maiden title."
+      },
+      {
+        "local_id": "e4",
+        "name": "Malaysian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A race where Alonso became the then-youngest polesitter."
+      },
+      {
+        "local_id": "e5",
+        "name": "Hungarian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A race where Alonso became the then-youngest race winner."
+      },
+      {
+        "local_id": "e6",
+        "name": "World Drivers' Champion",
+        "entity_type": "Title",
+        "description": "The championship title won by Alonso in 2005."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Alonso joined Renault as a test driver before becoming a full-time driver.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e6",
+        "relationship_type": "WON",
+        "description": "Alonso won his maiden title in 2005.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e6",
+        "target_id": "e3",
+        "relationship_type": "AWARDED_IN",
+        "description": "The title won by Alonso belongs to the 2005 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e3",
+        "relationship_type": "ROUND_OF",
+        "description": "The Malaysian Grand Prix is a round of the 2005 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e3",
+        "relationship_type": "ROUND_OF",
+        "description": "The Hungarian Grand Prix is a round of the 2005 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

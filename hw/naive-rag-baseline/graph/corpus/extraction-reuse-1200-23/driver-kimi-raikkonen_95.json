@@ -1,0 +1,85 @@
+{
+  "chunk_id": "driver-kimi-raikkonen#95",
+  "doc_id": "driver-kimi-raikkonen",
+  "document_title": "Kimi Räikkönen",
+  "section": "Other racing > NASCAR",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "3459d8fef24bf5be7a87a5388a7304d29b8333866490431f35c93a14ed75bfb5",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Kimi Räikkönen",
+        "entity_type": "Driver",
+        "description": "A Finnish racing driver who has competed in various motorsport series, including Formula One."
+      },
+      {
+        "local_id": "e2",
+        "name": "Kyle Busch Motorsports",
+        "entity_type": "Team",
+        "description": "A NASCAR team owned by driver Kyle Busch."
+      },
+      {
+        "local_id": "e3",
+        "name": "NEMCO Motorsports",
+        "entity_type": "Team",
+        "description": "A NASCAR team owned by Joe Nemechek."
+      },
+      {
+        "local_id": "e4",
+        "name": "Charlotte Motor Speedway",
+        "entity_type": "Circuit",
+        "description": "A motorsport track located in Concord, North Carolina, used for NASCAR events."
+      },
+      {
+        "local_id": "e5",
+        "name": "Toyota/Save Mart 350",
+        "entity_type": "GrandPrix",
+        "description": "A NASCAR race held at Infineon Raceway."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Räikkönen signed a deal with Kyle Busch Motorsports to run a limited schedule in the Truck Series.",
+        "from_year": 2011,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e3",
+        "relationship_type": "DROVE_FOR",
+        "description": "Räikkönen raced for NEMCO Motorsports in the Nationwide Series.",
+        "from_year": 2011,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 5,
+  "entities_accepted": 5,
+  "entities_rejected": 0,
+  "relationship_candidates": 4,
+  "relationships_accepted": 2,
+  "relationships_rejected": 2,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "ACHIEVED does not allow Driver -> Circuit"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "HELD_AT does not allow Circuit -> GrandPrix"
+    }
+  ],
+  "alignments": []
+}

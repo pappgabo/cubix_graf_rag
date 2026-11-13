@@ -1,0 +1,47 @@
+{
+  "chunk_id": "driver-max-verstappen#17",
+  "doc_id": "driver-max-verstappen",
+  "document_title": "Max Verstappen",
+  "section": null,
+  "page": 4,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "fc144f3a683fe3001aadc846465515f03e16e7a945d1531615acbdb03ce00732",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Max Verstappen",
+        "entity_type": "Driver",
+        "description": "A Dutch racing driver who competes in Formula One."
+      },
+      {
+        "local_id": "e2",
+        "name": "Daniel Ricciardo",
+        "entity_type": "Driver",
+        "description": "An Australian racing driver who competes in Formula One."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Verstappen and Ricciardo were teammates during the race.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 2,
+  "entities_accepted": 2,
+  "entities_rejected": 0,
+  "relationship_candidates": 1,
+  "relationships_accepted": 1,
+  "relationships_rejected": 0,
+  "rejections": [],
+  "alignments": []
+}

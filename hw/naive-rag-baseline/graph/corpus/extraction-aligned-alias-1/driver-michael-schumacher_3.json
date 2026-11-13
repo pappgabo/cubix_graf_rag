@@ -1,0 +1,94 @@
+{
+  "chunk_id": "driver-michael-schumacher#3",
+  "doc_id": "driver-michael-schumacher",
+  "document_title": "Michael Schumacher",
+  "section": null,
+  "page": 1,
+  "source": "https://en.wikipedia.org/wiki/Michael_Schumacher",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "5e3f54a093068655aff72fcdc4ef84650dfb1609be8ebbccc36b70e4680c5e97",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "WON does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "WON does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "TEAMMATE_OF does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "TEAMMATE_OF does not allow Driver -> Season"
+    }
+  ],
+  "alignments": [],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Michael Schumacher",
+        "entity_type": "Driver",
+        "description": "A Formula One driver with eight victories in 1994 and nine victories in 1995."
+      },
+      {
+        "local_id": "e2",
+        "name": "Scuderia Ferrari",
+        "entity_type": "Team",
+        "description": "A Formula One team that Michael Schumacher moved to for his 1996 campaign."
+      },
+      {
+        "local_id": "e3",
+        "name": "1994",
+        "entity_type": "Season",
+        "description": "The season in which Michael Schumacher achieved eight victories."
+      },
+      {
+        "local_id": "e4",
+        "name": "1995",
+        "entity_type": "Season",
+        "description": "The season in which Michael Schumacher won a further nine Grands Prix."
+      },
+      {
+        "local_id": "e5",
+        "name": "1996",
+        "entity_type": "Season",
+        "description": "The season in which Michael Schumacher moved to Ferrari."
+      },
+      {
+        "local_id": "e6",
+        "name": "1997",
+        "entity_type": "Season",
+        "description": "The season in which Michael Schumacher was involved in a title battle and was disqualified."
+      },
+      {
+        "local_id": "e7",
+        "name": "1998",
+        "entity_type": "Season",
+        "description": "The season in which Michael Schumacher was involved in a title battle."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Michael Schumacher drove for Ferrari in the 1996 season.",
+        "from_year": 1996,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

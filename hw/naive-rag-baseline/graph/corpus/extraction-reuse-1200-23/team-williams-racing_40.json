@@ -1,0 +1,185 @@
+{
+  "chunk_id": "team-williams-racing#40",
+  "doc_id": "team-williams-racing",
+  "document_title": "Williams Racing",
+  "section": "Williams Racing > 1994 season",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "3ee0d7626e5d4476156fcf381f943a751d15ed2ba9b2d1dbc99893f5b952f67d",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Williams",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that entered cars."
+      },
+      {
+        "local_id": "e2",
+        "name": "FW16",
+        "entity_type": "Car",
+        "description": "A chassis used by Williams during the 1994 season."
+      },
+      {
+        "local_id": "e3",
+        "name": "FW16B",
+        "entity_type": "Car",
+        "description": "An updated chassis used by Williams during the 1994 season."
+      },
+      {
+        "local_id": "e4",
+        "name": "1994",
+        "entity_type": "Season",
+        "description": "The Formula 1 championship season."
+      },
+      {
+        "local_id": "e5",
+        "name": "Ayrton Senna",
+        "entity_type": "Driver",
+        "description": "A driver who was approached by Williams to drive for them."
+      },
+      {
+        "local_id": "e6",
+        "name": "Canon",
+        "entity_type": "Team",
+        "description": "A backer that withdrew from Williams at the end of 1993."
+      },
+      {
+        "local_id": "e7",
+        "name": "Rothmans International",
+        "entity_type": "Team",
+        "description": "A new backer for Williams during the 1994 season."
+      },
+      {
+        "local_id": "e8",
+        "name": "McLaren",
+        "entity_type": "Team",
+        "description": "The team Ayrton Senna was driving for during negotiations."
+      },
+      {
+        "local_id": "e9",
+        "name": "Scuderia Ferrari",
+        "entity_type": "Team",
+        "description": "A team Ayrton Senna was in negotiations with."
+      },
+      {
+        "local_id": "e10",
+        "name": "Alain Prost",
+        "entity_type": "Driver",
+        "description": "A driver who was not interested in racing with Senna again."
+      },
+      {
+        "local_id": "e11",
+        "name": "Gerhard Berger",
+        "entity_type": "Driver",
+        "description": "A driver who was part of Ferrari during Senna's negotiations."
+      },
+      {
+        "local_id": "e12",
+        "name": "Jean Alesi",
+        "entity_type": "Driver",
+        "description": "A driver who was part of Ferrari during Senna's negotiations."
+      },
+      {
+        "local_id": "e13",
+        "name": "Jean Todt",
+        "entity_type": "Driver",
+        "description": "Ferrari boss who informed Senna about the team's driver situation."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "FIELDED",
+        "description": "Williams entered the FW16 car during the 1994 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e3",
+        "relationship_type": "FIELDED",
+        "description": "Williams entered the FW16B car during the 1994 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e4",
+        "relationship_type": "ENTERED",
+        "description": "Williams took part in the 1994 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e1",
+        "relationship_type": "DROVE_FOR",
+        "description": "Ayrton Senna was approached by Williams to drive for them during the 1994 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e10",
+        "target_id": "e5",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Alain Prost was not interested in racing with Ayrton Senna again.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 13,
+  "entities_accepted": 13,
+  "entities_rejected": 0,
+  "relationship_candidates": 12,
+  "relationships_accepted": 5,
+  "relationships_rejected": 7,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "DROVE_FOR does not allow Team -> Team"
+    },
+    {
+      "element": "relationship",
+      "index": 5,
+      "reason": "DROVE_FOR does not allow Team -> Team"
+    },
+    {
+      "element": "relationship",
+      "index": 6,
+      "reason": "TEAMMATE_OF does not allow Team -> Driver"
+    },
+    {
+      "element": "relationship",
+      "index": 7,
+      "reason": "TEAMMATE_OF does not allow Team -> Driver"
+    },
+    {
+      "element": "relationship",
+      "index": 9,
+      "reason": "TEAMMATE_OF does not allow Driver -> Team"
+    },
+    {
+      "element": "relationship",
+      "index": 10,
+      "reason": "TEAMMATE_OF does not allow Driver -> Team"
+    },
+    {
+      "element": "relationship",
+      "index": 11,
+      "reason": "TEAMMATE_OF does not allow Driver -> Team"
+    }
+  ],
+  "alignments": []
+}

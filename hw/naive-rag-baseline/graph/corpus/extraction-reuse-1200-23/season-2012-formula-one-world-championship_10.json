@@ -1,0 +1,173 @@
+{
+  "chunk_id": "season-2012-formula-one-world-championship#10",
+  "doc_id": "season-2012-formula-one-world-championship",
+  "document_title": "2012 Formula One World Championship",
+  "section": "Teams and drivers > Driver changes",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "13b2441a44b3790f8e83c41a48faffae743baf0074ccc8cf57d62c733a4417a1",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Kimi Räikkönen",
+        "entity_type": "Driver",
+        "description": "2007 World Drivers' Champion returning to the sport after two seasons in the World Rally Championship."
+      },
+      {
+        "local_id": "e2",
+        "name": "Romain Grosjean",
+        "entity_type": "Driver",
+        "description": "Reigning GP2 Series champion returning to the sport after a two-year absence."
+      },
+      {
+        "local_id": "e3",
+        "name": "Vitaly Petrov",
+        "entity_type": "Driver",
+        "description": "Replaced by Kimi Räikkönen at Lotus."
+      },
+      {
+        "local_id": "e4",
+        "name": "Bruno Senna",
+        "entity_type": "Driver",
+        "description": "Replaced by Romain Grosjean at Lotus and joined Williams."
+      },
+      {
+        "local_id": "e5",
+        "name": "Jarno Trulli",
+        "entity_type": "Driver",
+        "description": "Replaced by Vitaly Petrov at Caterham."
+      },
+      {
+        "local_id": "e6",
+        "name": "Rubens Barrichello",
+        "entity_type": "Driver",
+        "description": "Left Formula One after a record-breaking nineteen seasons."
+      },
+      {
+        "local_id": "e7",
+        "name": "Williams",
+        "entity_type": "Team",
+        "description": "Team that Bruno Senna joined."
+      },
+      {
+        "local_id": "e8",
+        "name": "Lotus",
+        "entity_type": "Team",
+        "description": "Team that replaced Vitaly Petrov and Bruno Senna."
+      },
+      {
+        "local_id": "e9",
+        "name": "Caterham",
+        "entity_type": "Team",
+        "description": "Team that Jarno Trulli was part of before being replaced by Vitaly Petrov."
+      },
+      {
+        "local_id": "e10",
+        "name": "KV Racing Technology",
+        "entity_type": "Team",
+        "description": "Team that Rubens Barrichello joined after leaving Formula One."
+      },
+      {
+        "local_id": "e11",
+        "name": "2012",
+        "entity_type": "Season",
+        "description": "The season in which these driver changes occurred."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e8",
+        "relationship_type": "DROVE_FOR",
+        "description": "Kimi Räikkönen drove for Lotus in 2012.",
+        "from_year": 2012,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e8",
+        "relationship_type": "DROVE_FOR",
+        "description": "Romain Grosjean drove for Lotus in 2012.",
+        "from_year": 2012,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e9",
+        "relationship_type": "DROVE_FOR",
+        "description": "Vitaly Petrov drove for Caterham after leaving Lotus.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e7",
+        "relationship_type": "DROVE_FOR",
+        "description": "Bruno Senna drove for Williams in 2012.",
+        "from_year": 2012,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e9",
+        "relationship_type": "DROVE_FOR",
+        "description": "Jarno Trulli drove for Caterham before being replaced by Vitaly Petrov.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e6",
+        "target_id": "e10",
+        "relationship_type": "DROVE_FOR",
+        "description": "Rubens Barrichello drove for KV Racing Technology after leaving Formula One.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e8",
+        "target_id": "e11",
+        "relationship_type": "ENTERED",
+        "description": "Lotus entered the 2012 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e7",
+        "target_id": "e11",
+        "relationship_type": "ENTERED",
+        "description": "Williams entered the 2012 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e9",
+        "target_id": "e11",
+        "relationship_type": "ENTERED",
+        "description": "Caterham entered the 2012 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 11,
+  "entities_accepted": 11,
+  "entities_rejected": 0,
+  "relationship_candidates": 9,
+  "relationships_accepted": 9,
+  "relationships_rejected": 0,
+  "rejections": [],
+  "alignments": []
+}

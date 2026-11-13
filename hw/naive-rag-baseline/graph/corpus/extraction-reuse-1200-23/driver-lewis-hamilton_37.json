@@ -1,0 +1,47 @@
+{
+  "chunk_id": "driver-lewis-hamilton#37",
+  "doc_id": "driver-lewis-hamilton",
+  "document_title": "Lewis Hamilton",
+  "section": null,
+  "page": 8,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "b2c9131d0628730bd92624a465737ddb1f3cacb464c0500e61eadfc22d5f6818",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Lewis Hamilton",
+        "entity_type": "Driver",
+        "description": "A prodigious talent as a teenager, Hamilton established himself as one of the world's best drivers."
+      },
+      {
+        "local_id": "e2",
+        "name": "Mercedes-AMG Petronas Formula One Team",
+        "entity_type": "Team",
+        "description": "Hamilton's team in Formula One."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Hamilton drives for Mercedes.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 2,
+  "entities_accepted": 2,
+  "entities_rejected": 0,
+  "relationship_candidates": 1,
+  "relationships_accepted": 1,
+  "relationships_rejected": 0,
+  "rejections": [],
+  "alignments": []
+}

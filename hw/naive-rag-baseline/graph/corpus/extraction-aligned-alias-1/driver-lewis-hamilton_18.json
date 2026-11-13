@@ -1,0 +1,64 @@
+{
+  "chunk_id": "driver-lewis-hamilton#18",
+  "doc_id": "driver-lewis-hamilton",
+  "document_title": "Lewis Hamilton",
+  "section": null,
+  "page": 2,
+  "source": "https://en.wikipedia.org/wiki/Lewis_Hamilton",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "ccd05985ee5368f1b67af97ad7791b6082d53d53f195810298a5bbc525685000",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "WON does not allow Driver -> Season"
+    }
+  ],
+  "alignments": [],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Lewis Hamilton",
+        "entity_type": "Driver",
+        "description": "A British racing driver who has competed in various championships including Formula Renault Eurocup and Formula Renault UK."
+      },
+      {
+        "local_id": "e2",
+        "name": "Manor",
+        "entity_type": "Team",
+        "description": "A racing team that Lewis Hamilton competed for in Formula Renault."
+      },
+      {
+        "local_id": "e3",
+        "name": "Formula Renault UK",
+        "entity_type": "Season",
+        "description": "A racing season in which Lewis Hamilton won the championship."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Lewis Hamilton drove for Manor in Formula Renault UK.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e3",
+        "relationship_type": "ENTERED",
+        "description": "Manor entered the Formula Renault UK season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "chunk_id": "driver-fernando-alonso#42",
+  "doc_id": "driver-fernando-alonso",
+  "document_title": "Fernando Alonso",
+  "section": "IndyCar Series > McLaren Honda Andretti (2017)",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "eb65507776fef547a16c4c65062d9dc9027c442fcf0ad8458da8d1bd5d17f2be",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Fernando Alonso",
+        "entity_type": "Driver",
+        "description": "A Formula One driver who expressed interest in racing at the Indianapolis 500."
+      },
+      {
+        "local_id": "e2",
+        "name": "McLaren Honda Andretti",
+        "entity_type": "Team",
+        "description": "The team Alonso was associated with for the 2017 Indianapolis 500."
+      },
+      {
+        "local_id": "e3",
+        "name": "2017",
+        "entity_type": "Season",
+        "description": "The season during which Alonso planned to race in the Indianapolis 500."
+      },
+      {
+        "local_id": "e4",
+        "name": "Indianapolis 500",
+        "entity_type": "GrandPrix",
+        "description": "The race Alonso expressed interest in participating."
+      },
+      {
+        "local_id": "e5",
+        "name": "Andretti Autosport",
+        "entity_type": "Team",
+        "description": "The team that allowed Alonso to drive in the Indianapolis 500."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e2",
+        "target_id": "e3",
+        "relationship_type": "ENTERED",
+        "description": "McLaren Honda Andretti entered the 2017 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e3",
+        "relationship_type": "ROUND_OF",
+        "description": "The Indianapolis 500 is a round of the 2017 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 5,
+  "entities_accepted": 5,
+  "entities_rejected": 0,
+  "relationship_candidates": 4,
+  "relationships_accepted": 2,
+  "relationships_rejected": 2,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "DROVE_FOR does not allow Driver -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "HELD_AT does not allow Team -> GrandPrix"
+    }
+  ],
+  "alignments": []
+}

@@ -1,0 +1,98 @@
+{
+  "chunk_id": "team-red-bull-racing#37",
+  "doc_id": "team-red-bull-racing",
+  "document_title": "Red Bull Racing",
+  "section": "2013 season",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "77955d8d35330250f3fc002189ef81d012fed99bc3b7f9abbf32ef5f885b6e68",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Daniel Ricciardo",
+        "entity_type": "Driver",
+        "description": "Toro Rosso driver who would replace Webber for the 2014 season."
+      },
+      {
+        "local_id": "e2",
+        "name": "Mark Webber",
+        "entity_type": "Driver",
+        "description": "Driver whose seat was to be replaced by Daniel Ricciardo."
+      },
+      {
+        "local_id": "e3",
+        "name": "Toro Rosso",
+        "entity_type": "Team",
+        "description": "Team that Daniel Ricciardo drove for."
+      },
+      {
+        "local_id": "e4",
+        "name": "2013",
+        "entity_type": "Season",
+        "description": "The season in which the announcement was made."
+      },
+      {
+        "local_id": "e5",
+        "name": "Kimi Räikkönen",
+        "entity_type": "Driver",
+        "description": "Driver associated with Lotus who was considered for Webber's seat."
+      },
+      {
+        "local_id": "e6",
+        "name": "Lotus",
+        "entity_type": "Team",
+        "description": "Team associated with Kimi Räikkönen."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e3",
+        "relationship_type": "DROVE_FOR",
+        "description": "Daniel Ricciardo drove for Toro Rosso.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e1",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Mark Webber was a teammate of Daniel Ricciardo.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e6",
+        "relationship_type": "DROVE_FOR",
+        "description": "Kimi Räikkönen drove for Lotus.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e6",
+        "target_id": "e4",
+        "relationship_type": "ENTERED",
+        "description": "Lotus entered the 2013 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 6,
+  "entities_accepted": 6,
+  "entities_rejected": 0,
+  "relationship_candidates": 4,
+  "relationships_accepted": 4,
+  "relationships_rejected": 0,
+  "rejections": [],
+  "alignments": []
+}

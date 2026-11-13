@@ -1,0 +1,146 @@
+{
+  "chunk_id": "driver-michael-schumacher#94",
+  "doc_id": "driver-michael-schumacher",
+  "document_title": "Michael Schumacher",
+  "section": null,
+  "page": 8,
+  "source": "https://en.wikipedia.org/wiki/Michael_Schumacher",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "766f39c57ecca182d2875e43d4d7e096c9c23942003ecadde1f8bd43a0fb1d1d",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "entity_candidates": 5,
+  "entities_accepted": 7,
+  "entities_rejected": 0,
+  "relationship_candidates": 6,
+  "relationships_accepted": 6,
+  "relationships_rejected": 2,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "WON does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 5,
+      "reason": "DROVE_FOR does not allow Team -> Driver"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 1,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e4; description kept"
+    },
+    {
+      "index": 2,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr2 -AT_RACE-> e5; description kept"
+    }
+  ],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Michael Schumacher",
+        "entity_type": "Driver",
+        "description": "A Formula One driver known for his victories and championships."
+      },
+      {
+        "local_id": "e2",
+        "name": "Scuderia Ferrari",
+        "entity_type": "Team",
+        "description": "A Formula One team that Michael Schumacher drove for."
+      },
+      {
+        "local_id": "e3",
+        "name": "2006",
+        "entity_type": "Season",
+        "description": "The Formula One season during which Schumacher announced his retirement."
+      },
+      {
+        "local_id": "e4",
+        "name": "Italian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A race where Schumacher announced his retirement."
+      },
+      {
+        "local_id": "e5",
+        "name": "Chinese Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The race where Schumacher achieved his final career win."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Michael Schumacher at Italian Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Michael Schumacher achieved a victory at the Italian Grand Prix."
+      },
+      {
+        "local_id": "rr2",
+        "name": "Michael Schumacher at Chinese Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Michael Schumacher achieved a victory at the Chinese Grand Prix, his final career win."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Michael Schumacher achieved a victory at the Italian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e4",
+        "relationship_type": "AT_RACE",
+        "description": "Michael Schumacher achieved a victory at the Italian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr2",
+        "relationship_type": "ACHIEVED",
+        "description": "Michael Schumacher achieved a victory at the Chinese Grand Prix, his final career win.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr2",
+        "target_id": "e5",
+        "relationship_type": "AT_RACE",
+        "description": "Michael Schumacher achieved a victory at the Chinese Grand Prix, his final career win.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e3",
+        "relationship_type": "ROUND_OF",
+        "description": "The Italian Grand Prix is a round of the 2006 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e3",
+        "relationship_type": "ROUND_OF",
+        "description": "The Chinese Grand Prix is a round of the 2006 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

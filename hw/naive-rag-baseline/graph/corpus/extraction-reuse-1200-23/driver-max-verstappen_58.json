@@ -1,0 +1,70 @@
+{
+  "chunk_id": "driver-max-verstappen#58",
+  "doc_id": "driver-max-verstappen",
+  "document_title": "Max Verstappen",
+  "section": null,
+  "page": 11,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "7240d5b1bf3662cc6620556ce2c7f29b4af479681afeadeebc1b2c11e50ef36d",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Max Verstappen",
+        "entity_type": "Driver",
+        "description": "F1 driver praised for his dominance and skills."
+      },
+      {
+        "local_id": "e2",
+        "name": "2024",
+        "entity_type": "Season",
+        "description": "Season in which Max Verstappen was acclaimed as F1's best driver."
+      },
+      {
+        "local_id": "e3",
+        "name": "2025 Japanese Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "Race where Verstappen received acclaim for his pole lap."
+      },
+      {
+        "local_id": "e4",
+        "name": "2020",
+        "entity_type": "Season",
+        "description": "Season during which Jenson Button commented on Verstappen's dominance over teammates."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e3",
+        "target_id": "e2",
+        "relationship_type": "ROUND_OF",
+        "description": "The 2025 Japanese Grand Prix is a round of the 2024 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 4,
+  "entities_accepted": 4,
+  "entities_rejected": 0,
+  "relationship_candidates": 3,
+  "relationships_accepted": 1,
+  "relationships_rejected": 2,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "WON does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "DROVE_FOR does not allow Driver -> Season"
+    }
+  ],
+  "alignments": []
+}

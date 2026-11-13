@@ -1,0 +1,88 @@
+{
+  "chunk_id": "season-2012-formula-one-world-championship#97",
+  "doc_id": "season-2012-formula-one-world-championship",
+  "document_title": "2012 Formula One World Championship",
+  "section": "Race summaries > Round 4 – Bahrain International Circuit",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/2012_Formula_One_World_Championship",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "55d661425eb0771524b584e4822adaaa792ff3a8923b78fe26c01e24d7700fca",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "entity_candidates": 6,
+  "entities_accepted": 6,
+  "entities_rejected": 0,
+  "relationship_candidates": 3,
+  "relationships_accepted": 2,
+  "relationships_rejected": 1,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "ROUND_OF does not allow Circuit -> Season"
+    }
+  ],
+  "alignments": [],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Lewis Hamilton",
+        "entity_type": "Driver",
+        "description": "Finished eighth, hampered by slow pit stops."
+      },
+      {
+        "local_id": "e2",
+        "name": "Nico Rosberg",
+        "entity_type": "Driver",
+        "description": "Involved in an altercation with Hamilton."
+      },
+      {
+        "local_id": "e3",
+        "name": "Jenson Button",
+        "entity_type": "Driver",
+        "description": "Forced to retire two laps from the end of the race."
+      },
+      {
+        "local_id": "e4",
+        "name": "Bahrain International Circuit",
+        "entity_type": "Circuit",
+        "description": "Venue for Round 4 of the 2012 Formula One World Championship."
+      },
+      {
+        "local_id": "e5",
+        "name": "2012",
+        "entity_type": "Season",
+        "description": "The championship year for the race."
+      },
+      {
+        "local_id": "e6",
+        "name": "McLaren",
+        "entity_type": "Team",
+        "description": "Team for both Lewis Hamilton and Jenson Button."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e6",
+        "relationship_type": "DROVE_FOR",
+        "description": "Lewis Hamilton drove for McLaren.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e6",
+        "relationship_type": "DROVE_FOR",
+        "description": "Jenson Button drove for McLaren.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

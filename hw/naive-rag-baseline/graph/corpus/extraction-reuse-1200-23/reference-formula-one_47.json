@@ -1,0 +1,116 @@
+{
+  "chunk_id": "reference-formula-one#47",
+  "doc_id": "reference-formula-one",
+  "document_title": "Formula One",
+  "section": "Formula One > Grands Prix",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "27e830b799539304791f2f8ced3c53a3b891bf02c8589ba1ef4c48b48177a0b1",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "1950",
+        "entity_type": "Season",
+        "description": "The inaugural World Championship season comprising seven races."
+      },
+      {
+        "local_id": "e2",
+        "name": "Indianapolis 500",
+        "entity_type": "GrandPrix",
+        "description": "The only non-European race that counted towards the World Championship in 1950."
+      },
+      {
+        "local_id": "e3",
+        "name": "French Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A race that pre-dated the formation of the World Championship."
+      },
+      {
+        "local_id": "e4",
+        "name": "Argentina",
+        "entity_type": "GrandPrix",
+        "description": "Hosted the first South American Grand Prix in 1953."
+      },
+      {
+        "local_id": "e5",
+        "name": "Morocco",
+        "entity_type": "GrandPrix",
+        "description": "Hosted the first African Grand Prix in 1958."
+      },
+      {
+        "local_id": "e6",
+        "name": "Japan",
+        "entity_type": "GrandPrix",
+        "description": "Hosted its first race in 1976."
+      },
+      {
+        "local_id": "e7",
+        "name": "Australia",
+        "entity_type": "GrandPrix",
+        "description": "Hosted its first race in 1985."
+      },
+      {
+        "local_id": "e8",
+        "name": "2004",
+        "entity_type": "Season",
+        "description": "The year the first race in the Middle East was held."
+      },
+      {
+        "local_id": "e9",
+        "name": "2014",
+        "entity_type": "Season",
+        "description": "The season with 19 races spread over every populated continent except for Africa."
+      },
+      {
+        "local_id": "e10",
+        "name": "2024",
+        "entity_type": "Season",
+        "description": "The season containing 24 races, the highest number of World Championship races in one season."
+      }
+    ],
+    "relationships": []
+  },
+  "entity_candidates": 10,
+  "entities_accepted": 10,
+  "entities_rejected": 0,
+  "relationship_candidates": 6,
+  "relationships_accepted": 0,
+  "relationships_rejected": 6,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "ROUND_OF does not allow Season -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "ROUND_OF does not allow Season -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "ROUND_OF does not allow GrandPrix -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "ROUND_OF does not allow GrandPrix -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "ROUND_OF does not allow Season -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 5,
+      "reason": "ENTERED does not allow Season -> Season"
+    }
+  ],
+  "alignments": []
+}

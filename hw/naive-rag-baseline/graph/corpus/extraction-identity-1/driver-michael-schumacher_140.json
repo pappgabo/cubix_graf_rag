@@ -1,0 +1,72 @@
+{
+  "chunk_id": "driver-michael-schumacher#140",
+  "doc_id": "driver-michael-schumacher",
+  "document_title": "Michael Schumacher",
+  "section": null,
+  "page": 12,
+  "source": "https://en.wikipedia.org/wiki/Michael_Schumacher",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "4b6fa3621b207c6f5bbb6f82c935b8819d09672ff730e593c500a0437e938422",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "entity_candidates": 4,
+  "entities_accepted": 4,
+  "entities_rejected": 0,
+  "relationship_candidates": 4,
+  "relationships_accepted": 0,
+  "relationships_rejected": 4,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "ACHIEVED does not allow Driver -> Driver"
+    },
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "ACHIEVED does not allow Driver -> Driver"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "WON does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "AWARDED_IN does not allow Season -> Driver"
+    }
+  ],
+  "alignments": [],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Michael Schumacher",
+        "entity_type": "Driver",
+        "description": "A Formula One driver known for his multiple championship wins."
+      },
+      {
+        "local_id": "e2",
+        "name": "Fernando Alonso",
+        "entity_type": "Driver",
+        "description": "A Formula One driver who ended Schumacher's five-consecutive titles."
+      },
+      {
+        "local_id": "e3",
+        "name": "Lewis Hamilton",
+        "entity_type": "Driver",
+        "description": "A Formula One driver who is seen as a rival to Schumacher."
+      },
+      {
+        "local_id": "e4",
+        "name": "1979",
+        "entity_type": "Season",
+        "description": "The season of the last Drivers' Championship won by the team before Schumacher's era."
+      }
+    ],
+    "relationships": []
+  }
+}

@@ -1,0 +1,238 @@
+{
+  "chunk_id": "season-2020-formula-one-world-championship#36",
+  "doc_id": "season-2020-formula-one-world-championship",
+  "document_title": "2020 Formula One World Championship",
+  "section": "2020 Formula One World Championship > Season summary > 2020 Formula One World Championship > Opening rounds",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "688733d7ef42d8db5e5b57b1ce2dff28de2f77bb74d012af211689a2853b5a73",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Lewis Hamilton",
+        "entity_type": "Driver",
+        "description": "A driver who won the Styrian Grand Prix and the Hungarian Grand Prix."
+      },
+      {
+        "local_id": "e2",
+        "name": "Valtteri Bottas",
+        "entity_type": "Driver",
+        "description": "A driver who finished third in both the Styrian Grand Prix and the Hungarian Grand Prix."
+      },
+      {
+        "local_id": "e3",
+        "name": "Max Verstappen",
+        "entity_type": "Driver",
+        "description": "A driver who finished second in both the Styrian Grand Prix and the Hungarian Grand Prix."
+      },
+      {
+        "local_id": "e4",
+        "name": "Styrian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A race held at the circuit in Spielberg."
+      },
+      {
+        "local_id": "e5",
+        "name": "Hungarian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A race held at the Hungaroring in Mogyoród."
+      },
+      {
+        "local_id": "e6",
+        "name": "Red Bull Ring",
+        "entity_type": "Circuit",
+        "description": "The circuit where the Styrian Grand Prix was held."
+      },
+      {
+        "local_id": "e7",
+        "name": "Hungaroring",
+        "entity_type": "Circuit",
+        "description": "The circuit where the Hungarian Grand Prix was held."
+      },
+      {
+        "local_id": "e8",
+        "name": "2020 Formula One World Championship",
+        "entity_type": "Season",
+        "description": "The championship season in which the Styrian Grand Prix and Hungarian Grand Prix took place."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Max Verstappen at Styrian Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Max Verstappen finished second in the Styrian Grand Prix."
+      },
+      {
+        "local_id": "rr2",
+        "name": "Valtteri Bottas at Styrian Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Valtteri Bottas finished third in the Styrian Grand Prix."
+      },
+      {
+        "local_id": "rr3",
+        "name": "Max Verstappen at Hungarian Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Max Verstappen finished second in the Hungarian Grand Prix."
+      },
+      {
+        "local_id": "rr4",
+        "name": "Valtteri Bottas at Hungarian Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Valtteri Bottas finished third in the Hungarian Grand Prix."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e4",
+        "target_id": "e8",
+        "relationship_type": "ROUND_OF",
+        "description": "The Styrian Grand Prix is a round of the 2020 Formula One World Championship.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e8",
+        "relationship_type": "ROUND_OF",
+        "description": "The Hungarian Grand Prix is a round of the 2020 Formula One World Championship.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e6",
+        "relationship_type": "HELD_AT",
+        "description": "The Styrian Grand Prix is held at the Red Bull Ring.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e7",
+        "relationship_type": "HELD_AT",
+        "description": "The Hungarian Grand Prix is held at the Hungaroring.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Max Verstappen finished second in the Styrian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e4",
+        "relationship_type": "AT_RACE",
+        "description": "Max Verstappen finished second in the Styrian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "rr2",
+        "relationship_type": "ACHIEVED",
+        "description": "Valtteri Bottas finished third in the Styrian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr2",
+        "target_id": "e4",
+        "relationship_type": "AT_RACE",
+        "description": "Valtteri Bottas finished third in the Styrian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "rr3",
+        "relationship_type": "ACHIEVED",
+        "description": "Max Verstappen finished second in the Hungarian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr3",
+        "target_id": "e5",
+        "relationship_type": "AT_RACE",
+        "description": "Max Verstappen finished second in the Hungarian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "rr4",
+        "relationship_type": "ACHIEVED",
+        "description": "Valtteri Bottas finished third in the Hungarian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr4",
+        "target_id": "e5",
+        "relationship_type": "AT_RACE",
+        "description": "Valtteri Bottas finished third in the Hungarian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 8,
+  "entities_accepted": 12,
+  "entities_rejected": 0,
+  "relationship_candidates": 10,
+  "relationships_accepted": 12,
+  "relationships_rejected": 2,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "WON does not allow Driver -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "WON does not allow Driver -> GrandPrix"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 6,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e4; description kept"
+    },
+    {
+      "index": 7,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr2 -AT_RACE-> e4; description kept"
+    },
+    {
+      "index": 8,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr3 -AT_RACE-> e5; description kept"
+    },
+    {
+      "index": 9,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr4 -AT_RACE-> e5; description kept"
+    }
+  ]
+}

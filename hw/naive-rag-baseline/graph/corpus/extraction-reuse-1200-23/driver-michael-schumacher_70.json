@@ -1,0 +1,116 @@
+{
+  "chunk_id": "driver-michael-schumacher#70",
+  "doc_id": "driver-michael-schumacher",
+  "document_title": "Michael Schumacher",
+  "section": null,
+  "page": 14,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "e114f83a59950bf19b0f498b5a5e90012511876397b85a8bc6d668ea282a5668",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Michael Schumacher",
+        "entity_type": "Driver",
+        "description": "A German racing driver who has been honoured many times."
+      },
+      {
+        "local_id": "e2",
+        "name": "German Motor Sport Federation",
+        "entity_type": "Team",
+        "description": "The governing body that awarded Schumacher the ONS Cup."
+      },
+      {
+        "local_id": "e3",
+        "name": "ONS Cup",
+        "entity_type": "Title",
+        "description": "German motorsport's highest accolade awarded to Schumacher."
+      },
+      {
+        "local_id": "e4",
+        "name": "Bambi Award",
+        "entity_type": "Title",
+        "description": "An award won by Schumacher in 1993."
+      },
+      {
+        "local_id": "e5",
+        "name": "Golden Steering Wheel",
+        "entity_type": "Title",
+        "description": "An award received by Schumacher as the first racing driver."
+      },
+      {
+        "local_id": "e6",
+        "name": "European Sportsperson of the Year",
+        "entity_type": "Title",
+        "description": "An award voted to Schumacher in 1994 and from 2001 to 2003."
+      },
+      {
+        "local_id": "season1993-1",
+        "name": "1993",
+        "entity_type": "Season",
+        "description": "1993"
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e2",
+        "target_id": "e3",
+        "relationship_type": "WON",
+        "description": "Schumacher won the ONS Cup awarded by the German Motor Sport Federation.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e4",
+        "relationship_type": "WON",
+        "description": "Schumacher won the Bambi Award in 1993.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "season1993-1",
+        "relationship_type": "AWARDED_IN",
+        "description": "Schumacher won the Bambi Award in 1993.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e5",
+        "relationship_type": "WON",
+        "description": "Schumacher was the first racing driver to receive the Golden Steering Wheel.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 6,
+  "entities_accepted": 7,
+  "entities_rejected": 0,
+  "relationship_candidates": 4,
+  "relationships_accepted": 4,
+  "relationships_rejected": 1,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "WON is not temporal; from_year=1994, to_year=2003, role=None cannot be stored without dropping them"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 1,
+      "action": "move_won_year",
+      "detail": "WON year 1993 stored as e4 -AWARDED_IN-> season1993-1; from_year and to_year cleared; description kept"
+    }
+  ]
+}

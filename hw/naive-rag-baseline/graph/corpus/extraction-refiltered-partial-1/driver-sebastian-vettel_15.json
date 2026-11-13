@@ -1,0 +1,54 @@
+{
+  "chunk_id": "driver-sebastian-vettel#15",
+  "doc_id": "driver-sebastian-vettel",
+  "document_title": "Sebastian Vettel",
+  "section": "2005–2007: Formula Three and Formula Renault",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/Sebastian_Vettel",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "8cd42fca11aea97271c713e31775b46a904a5092aabbcc0b700aacd9e0dc84fc",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "ENTERED is not temporal; from_year, to_year and role must be null"
+    }
+  ],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Sebastian Vettel",
+        "entity_type": "Driver",
+        "description": "A driver who raced in Formula One."
+      },
+      {
+        "local_id": "e2",
+        "name": "ASL Mücke Motorsport",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that Vettel drove for in 2005."
+      },
+      {
+        "local_id": "e3",
+        "name": "2005",
+        "entity_type": "Season",
+        "description": "The season of the Formula 3 Euro Series."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Vettel drove for ASL Mücke Motorsport in the 2005 Formula 3 Euro Series.",
+        "from_year": 2005,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

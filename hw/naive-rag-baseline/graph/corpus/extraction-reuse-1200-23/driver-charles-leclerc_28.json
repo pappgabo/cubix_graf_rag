@@ -1,0 +1,244 @@
+{
+  "chunk_id": "driver-charles-leclerc#28",
+  "doc_id": "driver-charles-leclerc",
+  "document_title": "Charles Leclerc",
+  "section": "Charles Leclerc > Ferrari (2019–present) > Charles Leclerc > 2019: Maiden victories and il Predestinato",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "8d80a68f2dea37fb30698a9ed9d46e7e45318212fc1b3c020ac32d5be4ab110e",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Charles Leclerc",
+        "entity_type": "Driver",
+        "description": "A Formula One driver racing for Ferrari."
+      },
+      {
+        "local_id": "e2",
+        "name": "Scuderia Ferrari",
+        "entity_type": "Team",
+        "description": "A Formula One team that enters cars."
+      },
+      {
+        "local_id": "e3",
+        "name": "2019",
+        "entity_type": "Season",
+        "description": "The Formula One championship season."
+      },
+      {
+        "local_id": "e4",
+        "name": "Mexican Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula One race held in Mexico."
+      },
+      {
+        "local_id": "e5",
+        "name": "United States Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula One race held in the United States."
+      },
+      {
+        "local_id": "e6",
+        "name": "Brazilian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula One race held in Brazil."
+      },
+      {
+        "local_id": "e7",
+        "name": "Abu Dhabi Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula One race held in Abu Dhabi."
+      },
+      {
+        "local_id": "e8",
+        "name": "FIA Pole Trophy",
+        "entity_type": "Title",
+        "description": "An award for the driver with the most pole positions."
+      },
+      {
+        "local_id": "e9",
+        "name": "Lorenzo Bandini Trophy",
+        "entity_type": "Title",
+        "description": "An award given to a promising driver."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Charles Leclerc at Mexican Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Charles Leclerc finished fourth at the Mexican Grand Prix."
+      },
+      {
+        "local_id": "rr2",
+        "name": "Charles Leclerc at United States Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Charles Leclerc finished fourth at the United States Grand Prix."
+      },
+      {
+        "local_id": "rr3",
+        "name": "Charles Leclerc at Brazilian Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Charles Leclerc retired from the Brazilian Grand Prix due to a collision with Vettel."
+      },
+      {
+        "local_id": "rr4",
+        "name": "Charles Leclerc at Abu Dhabi Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Charles Leclerc finished third at the Abu Dhabi Grand Prix."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Charles Leclerc drove for Ferrari.",
+        "from_year": 2019,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Charles Leclerc finished fourth at the Mexican Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e4",
+        "relationship_type": "AT_RACE",
+        "description": "Charles Leclerc finished fourth at the Mexican Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr2",
+        "relationship_type": "ACHIEVED",
+        "description": "Charles Leclerc finished fourth at the United States Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr2",
+        "target_id": "e5",
+        "relationship_type": "AT_RACE",
+        "description": "Charles Leclerc finished fourth at the United States Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr3",
+        "relationship_type": "ACHIEVED",
+        "description": "Charles Leclerc retired from the Brazilian Grand Prix due to a collision with Vettel.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr3",
+        "target_id": "e6",
+        "relationship_type": "AT_RACE",
+        "description": "Charles Leclerc retired from the Brazilian Grand Prix due to a collision with Vettel.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr4",
+        "relationship_type": "ACHIEVED",
+        "description": "Charles Leclerc finished third at the Abu Dhabi Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr4",
+        "target_id": "e7",
+        "relationship_type": "AT_RACE",
+        "description": "Charles Leclerc finished third at the Abu Dhabi Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e8",
+        "relationship_type": "WON",
+        "description": "Charles Leclerc won the FIA Pole Trophy in 2019.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e8",
+        "target_id": "e3",
+        "relationship_type": "AWARDED_IN",
+        "description": "Charles Leclerc won the FIA Pole Trophy in 2019.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e9",
+        "relationship_type": "WON",
+        "description": "Charles Leclerc was awarded the Lorenzo Bandini Trophy.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 9,
+  "entities_accepted": 13,
+  "entities_rejected": 0,
+  "relationship_candidates": 8,
+  "relationships_accepted": 12,
+  "relationships_rejected": 1,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "ACHIEVED does not allow Driver -> Season"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 2,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e4; description kept"
+    },
+    {
+      "index": 3,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr2 -AT_RACE-> e5; description kept"
+    },
+    {
+      "index": 4,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr3 -AT_RACE-> e6; description kept"
+    },
+    {
+      "index": 5,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr4 -AT_RACE-> e7; description kept"
+    },
+    {
+      "index": 6,
+      "action": "move_won_year",
+      "detail": "WON year 2019 stored as e8 -AWARDED_IN-> e3; from_year and to_year cleared; description kept"
+    }
+  ]
+}

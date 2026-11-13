@@ -1,0 +1,274 @@
+{
+  "chunk_id": "team-williams-racing#101",
+  "doc_id": "team-williams-racing",
+  "document_title": "Williams Racing",
+  "section": "Williams Racing > 2020–2022: Team sale to Dorilton Capital and Capito era",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "ff2afc1ebb8b4d1e5cb40b7ec2fed4053e47cc0735dedb2712e072035e231bac",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Williams Racing",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that entered cars."
+      },
+      {
+        "local_id": "e2",
+        "name": "George Russell",
+        "entity_type": "Driver",
+        "description": "A driver who raced for Williams Racing."
+      },
+      {
+        "local_id": "e3",
+        "name": "Alex Albon",
+        "entity_type": "Driver",
+        "description": "A driver who raced for Williams Racing."
+      },
+      {
+        "local_id": "e4",
+        "name": "Nicholas Latifi",
+        "entity_type": "Driver",
+        "description": "A driver who raced for Williams Racing."
+      },
+      {
+        "local_id": "e5",
+        "name": "Nyck de Vries",
+        "entity_type": "Driver",
+        "description": "A driver who replaced Alex Albon at Williams Racing."
+      },
+      {
+        "local_id": "e6",
+        "name": "2022",
+        "entity_type": "Season",
+        "description": "The Formula 1 season in which Williams Racing competed."
+      },
+      {
+        "local_id": "e7",
+        "name": "Australian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A race in which Alex Albon scored points for Williams Racing."
+      },
+      {
+        "local_id": "e8",
+        "name": "Miami Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A race in which Alex Albon finished ninth."
+      },
+      {
+        "local_id": "e9",
+        "name": "British Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A race where Nicholas Latifi achieved his first Q3 appearance."
+      },
+      {
+        "local_id": "e10",
+        "name": "Belgian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A race where Alex Albon finished tenth."
+      },
+      {
+        "local_id": "e11",
+        "name": "Italian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A race where Nyck de Vries replaced Alex Albon."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Alex Albon at Australian Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Alex Albon scored points in the Australian Grand Prix."
+      },
+      {
+        "local_id": "rr2",
+        "name": "Alex Albon at Miami Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Alex Albon finished ninth in the Miami Grand Prix."
+      },
+      {
+        "local_id": "rr3",
+        "name": "Nicholas Latifi at British Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Nicholas Latifi achieved his first Q3 appearance at the British Grand Prix."
+      },
+      {
+        "local_id": "rr4",
+        "name": "Alex Albon at Belgian Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Alex Albon finished tenth at the Belgian Grand Prix."
+      },
+      {
+        "local_id": "rr5",
+        "name": "Nyck de Vries at Italian Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Nyck de Vries qualified thirteenth at the Italian Grand Prix."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e2",
+        "target_id": "e1",
+        "relationship_type": "DROVE_FOR",
+        "description": "George Russell left Williams to join Mercedes.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e1",
+        "relationship_type": "DROVE_FOR",
+        "description": "Alex Albon was signed to replace George Russell at Williams.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e1",
+        "relationship_type": "DROVE_FOR",
+        "description": "Nicholas Latifi retained his spot in Williams Racing.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Alex Albon scored points in the Australian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e7",
+        "relationship_type": "AT_RACE",
+        "description": "Alex Albon scored points in the Australian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "rr2",
+        "relationship_type": "ACHIEVED",
+        "description": "Alex Albon finished ninth in the Miami Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr2",
+        "target_id": "e8",
+        "relationship_type": "AT_RACE",
+        "description": "Alex Albon finished ninth in the Miami Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "rr3",
+        "relationship_type": "ACHIEVED",
+        "description": "Nicholas Latifi achieved his first Q3 appearance at the British Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr3",
+        "target_id": "e9",
+        "relationship_type": "AT_RACE",
+        "description": "Nicholas Latifi achieved his first Q3 appearance at the British Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "rr4",
+        "relationship_type": "ACHIEVED",
+        "description": "Alex Albon finished tenth at the Belgian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr4",
+        "target_id": "e10",
+        "relationship_type": "AT_RACE",
+        "description": "Alex Albon finished tenth at the Belgian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e1",
+        "relationship_type": "DROVE_FOR",
+        "description": "Nyck de Vries replaced Alex Albon at Williams Racing.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "rr5",
+        "relationship_type": "ACHIEVED",
+        "description": "Nyck de Vries qualified thirteenth at the Italian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr5",
+        "target_id": "e11",
+        "relationship_type": "AT_RACE",
+        "description": "Nyck de Vries qualified thirteenth at the Italian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 11,
+  "entities_accepted": 16,
+  "entities_rejected": 0,
+  "relationship_candidates": 9,
+  "relationships_accepted": 14,
+  "relationships_rejected": 0,
+  "rejections": [],
+  "alignments": [
+    {
+      "index": 3,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e7; description kept"
+    },
+    {
+      "index": 4,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr2 -AT_RACE-> e8; description kept"
+    },
+    {
+      "index": 5,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr3 -AT_RACE-> e9; description kept"
+    },
+    {
+      "index": 6,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr4 -AT_RACE-> e10; description kept"
+    },
+    {
+      "index": 8,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr5 -AT_RACE-> e11; description kept"
+    }
+  ]
+}

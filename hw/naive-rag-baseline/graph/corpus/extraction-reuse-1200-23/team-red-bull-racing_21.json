@@ -1,0 +1,115 @@
+{
+  "chunk_id": "team-red-bull-racing#21",
+  "doc_id": "team-red-bull-racing",
+  "document_title": "Red Bull Racing",
+  "section": "2010 season",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "5888c46d99bf43f77634d9e301112019eee0e25c937b46544e70169132457f80",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Mark Webber",
+        "entity_type": "Driver",
+        "description": "A driver for Red Bull Racing during the 2010 season."
+      },
+      {
+        "local_id": "e2",
+        "name": "Sebastian Vettel",
+        "entity_type": "Driver",
+        "description": "A driver for Red Bull Racing during the 2010 season."
+      },
+      {
+        "local_id": "e3",
+        "name": "Red Bull Racing",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that entered cars in the 2010 season."
+      },
+      {
+        "local_id": "e4",
+        "name": "2010",
+        "entity_type": "Season",
+        "description": "The Formula 1 championship season."
+      },
+      {
+        "local_id": "e5",
+        "name": "Bahrain Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The opening round of the 2010 season."
+      },
+      {
+        "local_id": "e6",
+        "name": "Renault",
+        "entity_type": "PowerUnit",
+        "description": "The engine supplier for Red Bull Racing in the 2010 season."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e3",
+        "relationship_type": "DROVE_FOR",
+        "description": "Mark Webber drove for Red Bull Racing.",
+        "from_year": 2010,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e3",
+        "relationship_type": "DROVE_FOR",
+        "description": "Sebastian Vettel drove for Red Bull Racing.",
+        "from_year": 2010,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e4",
+        "relationship_type": "ENTERED",
+        "description": "Red Bull Racing took part in the 2010 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e4",
+        "relationship_type": "ROUND_OF",
+        "description": "Bahrain Grand Prix is a round of the 2010 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 6,
+  "entities_accepted": 6,
+  "entities_rejected": 0,
+  "relationship_candidates": 5,
+  "relationships_accepted": 4,
+  "relationships_rejected": 1,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "POWERED_BY does not allow Team -> PowerUnit"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 2,
+      "action": "clear_redundant_season_year",
+      "detail": "ENTERED year 2010 already named by Season 'e4'; from_year and to_year cleared"
+    },
+    {
+      "index": 3,
+      "action": "clear_redundant_season_year",
+      "detail": "ROUND_OF year 2010 already named by Season 'e4'; from_year and to_year cleared"
+    }
+  ]
+}

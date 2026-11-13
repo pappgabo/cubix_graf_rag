@@ -1,0 +1,94 @@
+{
+  "chunk_id": "season-2021-formula-one-world-championship#17",
+  "doc_id": "season-2021-formula-one-world-championship",
+  "document_title": "2021 Formula One World Championship",
+  "section": null,
+  "page": 2,
+  "source": "https://en.wikipedia.org/wiki/2021_Formula_One_World_Championship",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "3250df33aa9b6ebeb7290a7ddb323c833a498492e4f9d9ddc0bdc47351cbfb70",
+  "validation_version": "partial-1",
+  "source_status": "ok",
+  "status": "ok",
+  "entity_candidates": 5,
+  "entities_accepted": 5,
+  "entities_rejected": 0,
+  "relationship_candidates": 4,
+  "relationships_accepted": 4,
+  "relationships_rejected": 0,
+  "rejections": [],
+  "alignments": [],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Dutch Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The Dutch Grand Prix was revived, marking the first time it has been run since 1985."
+      },
+      {
+        "local_id": "e2",
+        "name": "Circuit Zandvoort",
+        "entity_type": "Circuit",
+        "description": "The race took place at the Circuit Zandvoort."
+      },
+      {
+        "local_id": "e3",
+        "name": "Turkish Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The Turkish Grand Prix at Istanbul Park in Istanbul."
+      },
+      {
+        "local_id": "e4",
+        "name": "Istanbul Park",
+        "entity_type": "Circuit",
+        "description": "The Turkish Grand Prix was held at Istanbul Park."
+      },
+      {
+        "local_id": "e5",
+        "name": "2021",
+        "entity_type": "Season",
+        "description": "The championship year for the races mentioned."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "HELD_AT",
+        "description": "The Dutch Grand Prix was held at Circuit Zandvoort.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e4",
+        "relationship_type": "HELD_AT",
+        "description": "The Turkish Grand Prix was held at Istanbul Park.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e5",
+        "relationship_type": "ROUND_OF",
+        "description": "The Dutch Grand Prix is a round of the 2021 championship.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e5",
+        "relationship_type": "ROUND_OF",
+        "description": "The Turkish Grand Prix is a round of the 2021 championship.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

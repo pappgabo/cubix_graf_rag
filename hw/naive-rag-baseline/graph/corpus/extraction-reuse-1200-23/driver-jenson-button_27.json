@@ -1,0 +1,92 @@
+{
+  "chunk_id": "driver-jenson-button#27",
+  "doc_id": "driver-jenson-button",
+  "document_title": "Jenson Button",
+  "section": "Formula One career > BAR/Honda/Brawn (2003–2009) > Honda (2006–2008)",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "41af108ac61c7078b9c7997cc591d1bfad3950931d355dad07b317985b108055",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Jenson Button",
+        "entity_type": "Driver",
+        "description": "A British Formula One driver who raced for Honda from 2006 to 2008."
+      },
+      {
+        "local_id": "e2",
+        "name": "Honda",
+        "entity_type": "Team",
+        "description": "A Formula One team that Jenson Button drove for from 2006 to 2008."
+      },
+      {
+        "local_id": "e3",
+        "name": "2007",
+        "entity_type": "Season",
+        "description": "The Formula One season in which Jenson Button drove for Honda."
+      },
+      {
+        "local_id": "e4",
+        "name": "2008",
+        "entity_type": "Season",
+        "description": "The Formula One season in which Jenson Button drove for Honda."
+      },
+      {
+        "local_id": "e5",
+        "name": "Chinese Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A race in which Jenson Button achieved his best finish of fifth in 2007."
+      },
+      {
+        "local_id": "e6",
+        "name": "Spanish Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A race in which Jenson Button finished sixth in 2008."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Jenson Button drove for Honda during the 2007 and 2008 seasons.",
+        "from_year": 2006,
+        "to_year": 2008,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 6,
+  "entities_accepted": 6,
+  "entities_rejected": 0,
+  "relationship_candidates": 5,
+  "relationships_accepted": 1,
+  "relationships_rejected": 4,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "ACHIEVED does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "ACHIEVED does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "AT_RACE does not allow GrandPrix -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "AT_RACE does not allow GrandPrix -> Season"
+    }
+  ],
+  "alignments": []
+}

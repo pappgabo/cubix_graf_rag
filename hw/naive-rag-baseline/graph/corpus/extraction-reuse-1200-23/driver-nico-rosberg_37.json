@@ -1,0 +1,125 @@
+{
+  "chunk_id": "driver-nico-rosberg#37",
+  "doc_id": "driver-nico-rosberg",
+  "document_title": "Nico Rosberg",
+  "section": "Nico Rosberg > Retirement from racing and subsequent ventures (2016–present)",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "8a63895cb08fdfee15add14c8c61113ffedc12f5679adfb951f15327e265f4f9",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Nico Rosberg",
+        "entity_type": "Driver",
+        "description": "A retired Formula One driver who won the 2016 World Championship."
+      },
+      {
+        "local_id": "e2",
+        "name": "Team Rosberg",
+        "entity_type": "Team",
+        "description": "A racing team that competes in various motorsport events."
+      },
+      {
+        "local_id": "e3",
+        "name": "Robert Kubica",
+        "entity_type": "Driver",
+        "description": "A racing driver who returned to Formula One after a severe accident."
+      },
+      {
+        "local_id": "e4",
+        "name": "Rosberg Young Drivers Academy",
+        "entity_type": "Team",
+        "description": "An academy co-founded by Nico Rosberg to support young go-kart drivers."
+      },
+      {
+        "local_id": "e5",
+        "name": "ADAC GT Masters",
+        "entity_type": "Circuit",
+        "description": "A sports car championship in which Team Rosberg competes."
+      },
+      {
+        "local_id": "e6",
+        "name": "Sky Sports F1",
+        "entity_type": "Team",
+        "description": "A sports broadcaster that covers Formula One races."
+      },
+      {
+        "local_id": "e7",
+        "name": "RTL",
+        "entity_type": "Team",
+        "description": "A German television channel that broadcasts Formula One races."
+      },
+      {
+        "local_id": "e8",
+        "name": "Sky Italia",
+        "entity_type": "Team",
+        "description": "An Italian sports broadcaster that covers Formula One races."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Nico Rosberg joined Team Rosberg as an adviser.",
+        "from_year": 2018,
+        "to_year": null,
+        "role": "adviser"
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e6",
+        "relationship_type": "DROVE_FOR",
+        "description": "Nico Rosberg has analysed Formula One races for Sky Sports F1.",
+        "from_year": 2018,
+        "to_year": null,
+        "role": "analyst"
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e7",
+        "relationship_type": "DROVE_FOR",
+        "description": "Nico Rosberg has analysed Formula One races for RTL.",
+        "from_year": 2018,
+        "to_year": null,
+        "role": "analyst"
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e8",
+        "relationship_type": "DROVE_FOR",
+        "description": "Nico Rosberg has analysed Formula One races for Sky Italia.",
+        "from_year": 2018,
+        "to_year": null,
+        "role": "analyst"
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e4",
+        "relationship_type": "DROVE_FOR",
+        "description": "Nico Rosberg co-founded the Rosberg Young Drivers Academy.",
+        "from_year": 2018,
+        "to_year": null,
+        "role": "co-founder"
+      }
+    ]
+  },
+  "entity_candidates": 8,
+  "entities_accepted": 8,
+  "entities_rejected": 0,
+  "relationship_candidates": 6,
+  "relationships_accepted": 5,
+  "relationships_rejected": 1,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "DROVE_FOR does not allow Driver -> Driver"
+    }
+  ],
+  "alignments": []
+}

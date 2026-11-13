@@ -1,0 +1,173 @@
+{
+  "chunk_id": "reference-formula-one#18",
+  "doc_id": "reference-formula-one",
+  "document_title": "Formula One",
+  "section": "Formula One > Manufacturers' decline and return of the privateers",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "f89e1cfe7e93ef0054060fa54dfb42e0b70754147c148a6f43c6c63d6a458606",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Team Lotus",
+        "entity_type": "Team",
+        "description": "A reborn team led by a Malaysian consortium including Tony Fernandes."
+      },
+      {
+        "local_id": "e2",
+        "name": "Hispania Racing",
+        "entity_type": "Team",
+        "description": "The first Spanish Formula One team."
+      },
+      {
+        "local_id": "e3",
+        "name": "Virgin Racing",
+        "entity_type": "Team",
+        "description": "Richard Branson's entry into the series following a successful partnership with Brawn."
+      },
+      {
+        "local_id": "e4",
+        "name": "US F1 Team",
+        "entity_type": "Team",
+        "description": "Planned to operate out of the United States as the only non-European-based team."
+      },
+      {
+        "local_id": "e5",
+        "name": "2010",
+        "entity_type": "Season",
+        "description": "The season in which four new teams were accepted."
+      },
+      {
+        "local_id": "e6",
+        "name": "HRT",
+        "entity_type": "Team",
+        "description": "Formerly Hispania Racing, collapsed in 2012."
+      },
+      {
+        "local_id": "e7",
+        "name": "Caterham",
+        "entity_type": "Team",
+        "description": "Formerly Lotus, collapsed in 2014."
+      },
+      {
+        "local_id": "e8",
+        "name": "Manor",
+        "entity_type": "Team",
+        "description": "Formerly Virgin, then Marussia, collapsed at the end of 2016."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e5",
+        "relationship_type": "ENTERED",
+        "description": "Team Lotus entered the 2010 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e5",
+        "relationship_type": "ENTERED",
+        "description": "Hispania Racing entered the 2010 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e5",
+        "relationship_type": "ENTERED",
+        "description": "Virgin Racing entered the 2010 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e5",
+        "relationship_type": "ENTERED",
+        "description": "US F1 Team entered the 2010 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e6",
+        "target_id": "e5",
+        "relationship_type": "ENTERED",
+        "description": "HRT entered the 2010 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e7",
+        "target_id": "e5",
+        "relationship_type": "ENTERED",
+        "description": "Caterham entered the 2010 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e8",
+        "target_id": "e5",
+        "relationship_type": "ENTERED",
+        "description": "Manor entered the 2010 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 8,
+  "entities_accepted": 8,
+  "entities_rejected": 0,
+  "relationship_candidates": 7,
+  "relationships_accepted": 7,
+  "relationships_rejected": 0,
+  "rejections": [],
+  "alignments": [
+    {
+      "index": 0,
+      "action": "clear_redundant_season_year",
+      "detail": "ENTERED year 2010 already named by Season 'e5'; from_year and to_year cleared"
+    },
+    {
+      "index": 1,
+      "action": "clear_redundant_season_year",
+      "detail": "ENTERED year 2010 already named by Season 'e5'; from_year and to_year cleared"
+    },
+    {
+      "index": 2,
+      "action": "clear_redundant_season_year",
+      "detail": "ENTERED year 2010 already named by Season 'e5'; from_year and to_year cleared"
+    },
+    {
+      "index": 3,
+      "action": "clear_redundant_season_year",
+      "detail": "ENTERED year 2010 already named by Season 'e5'; from_year and to_year cleared"
+    },
+    {
+      "index": 4,
+      "action": "clear_redundant_season_year",
+      "detail": "ENTERED year 2010 already named by Season 'e5'; from_year and to_year cleared"
+    },
+    {
+      "index": 5,
+      "action": "clear_redundant_season_year",
+      "detail": "ENTERED year 2010 already named by Season 'e5'; from_year and to_year cleared"
+    },
+    {
+      "index": 6,
+      "action": "clear_redundant_season_year",
+      "detail": "ENTERED year 2010 already named by Season 'e5'; from_year and to_year cleared"
+    }
+  ]
+}

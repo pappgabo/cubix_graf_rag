@@ -1,0 +1,183 @@
+{
+  "chunk_id": "season-2012-formula-one-world-championship#56",
+  "doc_id": "season-2012-formula-one-world-championship",
+  "document_title": "2012 Formula One World Championship",
+  "section": "Race summaries > Round 7 – Canada Circuit Gilles Villeneuve",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "5278491095f021686cde8e715d68f414b509004857cfe267441d214f1e8f7a0d",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Sebastian Vettel",
+        "entity_type": "Driver",
+        "description": "Driver for Red Bull Racing, took pole position in the Canadian Grand Prix."
+      },
+      {
+        "local_id": "e2",
+        "name": "Lewis Hamilton",
+        "entity_type": "Driver",
+        "description": "Passed Sebastian Vettel during the Canadian Grand Prix."
+      },
+      {
+        "local_id": "e3",
+        "name": "Fernando Alonso",
+        "entity_type": "Driver",
+        "description": "Passed Sebastian Vettel during the Canadian Grand Prix."
+      },
+      {
+        "local_id": "e4",
+        "name": "Red Bull Racing",
+        "entity_type": "Team",
+        "description": "Team that faced technical regulations issues before the Canadian Grand Prix."
+      },
+      {
+        "local_id": "e5",
+        "name": "2012",
+        "entity_type": "Season",
+        "description": "The season of the Formula One World Championship in which the Canadian Grand Prix took place."
+      },
+      {
+        "local_id": "e6",
+        "name": "Canadian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The race held at Circuit Gilles Villeneuve."
+      },
+      {
+        "local_id": "e7",
+        "name": "Circuit Gilles Villeneuve",
+        "entity_type": "Circuit",
+        "description": "The circuit where the Canadian Grand Prix took place."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Sebastian Vettel at Canadian Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Sebastian Vettel took pole position in the Canadian Grand Prix."
+      },
+      {
+        "local_id": "rr2",
+        "name": "Lewis Hamilton at Canadian Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Lewis Hamilton passed Sebastian Vettel during the Canadian Grand Prix."
+      },
+      {
+        "local_id": "rr3",
+        "name": "Fernando Alonso at Canadian Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Fernando Alonso passed Sebastian Vettel during the Canadian Grand Prix."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e4",
+        "target_id": "e5",
+        "relationship_type": "ENTERED",
+        "description": "Red Bull Racing entered the 2012 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e6",
+        "target_id": "e5",
+        "relationship_type": "ROUND_OF",
+        "description": "The Canadian Grand Prix is a round of the 2012 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e6",
+        "target_id": "e7",
+        "relationship_type": "HELD_AT",
+        "description": "The Canadian Grand Prix is held at Circuit Gilles Villeneuve.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Sebastian Vettel took pole position in the Canadian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e6",
+        "relationship_type": "AT_RACE",
+        "description": "Sebastian Vettel took pole position in the Canadian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "rr2",
+        "relationship_type": "ACHIEVED",
+        "description": "Lewis Hamilton passed Sebastian Vettel during the Canadian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr2",
+        "target_id": "e6",
+        "relationship_type": "AT_RACE",
+        "description": "Lewis Hamilton passed Sebastian Vettel during the Canadian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "rr3",
+        "relationship_type": "ACHIEVED",
+        "description": "Fernando Alonso passed Sebastian Vettel during the Canadian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr3",
+        "target_id": "e6",
+        "relationship_type": "AT_RACE",
+        "description": "Fernando Alonso passed Sebastian Vettel during the Canadian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 7,
+  "entities_accepted": 10,
+  "entities_rejected": 0,
+  "relationship_candidates": 6,
+  "relationships_accepted": 9,
+  "relationships_rejected": 0,
+  "rejections": [],
+  "alignments": [
+    {
+      "index": 3,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e6; description kept"
+    },
+    {
+      "index": 4,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr2 -AT_RACE-> e6; description kept"
+    },
+    {
+      "index": 5,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr3 -AT_RACE-> e6; description kept"
+    }
+  ]
+}

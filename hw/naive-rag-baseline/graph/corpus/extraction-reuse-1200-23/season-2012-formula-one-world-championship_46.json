@@ -1,0 +1,182 @@
+{
+  "chunk_id": "season-2012-formula-one-world-championship#46",
+  "doc_id": "season-2012-formula-one-world-championship",
+  "document_title": "2012 Formula One World Championship",
+  "section": "Race summaries > Round 4 – Bahrain International Circuit",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "62725ede9947869025ef9ad5bceeb5ce48be5e3b9e419af2a179f07c60ec5c81",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Lewis Hamilton",
+        "entity_type": "Driver",
+        "description": "Finished eighth in the race."
+      },
+      {
+        "local_id": "e2",
+        "name": "Jenson Button",
+        "entity_type": "Driver",
+        "description": "Forced to retire two laps from the end of the race."
+      },
+      {
+        "local_id": "e3",
+        "name": "Daniel Ricciardo",
+        "entity_type": "Driver",
+        "description": "Involved in early contact, finished fifteenth."
+      },
+      {
+        "local_id": "e4",
+        "name": "Vitaly Petrov",
+        "entity_type": "Driver",
+        "description": "Caught behind during the race."
+      },
+      {
+        "local_id": "e5",
+        "name": "Sebastian Vettel",
+        "entity_type": "Driver",
+        "description": "Won the race."
+      },
+      {
+        "local_id": "e6",
+        "name": "Mark Webber",
+        "entity_type": "Driver",
+        "description": "Secured fourth consecutive fourth place."
+      },
+      {
+        "local_id": "e7",
+        "name": "Red Bull Racing",
+        "entity_type": "Team",
+        "description": "Took the lead in the World Constructors' Championship."
+      },
+      {
+        "local_id": "e8",
+        "name": "McLaren",
+        "entity_type": "Team",
+        "description": "Lost the lead in the World Constructors' Championship."
+      },
+      {
+        "local_id": "e9",
+        "name": "Lotus",
+        "entity_type": "Team",
+        "description": "Achieved a double podium."
+      },
+      {
+        "local_id": "e10",
+        "name": "2012 Formula One World Championship",
+        "entity_type": "Season",
+        "description": "The championship season."
+      },
+      {
+        "local_id": "e11",
+        "name": "Bahrain International Circuit",
+        "entity_type": "Circuit",
+        "description": "The circuit where the race took place."
+      },
+      {
+        "local_id": "e12",
+        "name": "Grand Prix of Bahrain",
+        "entity_type": "GrandPrix",
+        "description": "The specific race event."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Sebastian Vettel at Grand Prix of Bahrain",
+        "entity_type": "RaceResult",
+        "description": "Vettel won the Grand Prix of Bahrain."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Hamilton and Button were teammates.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Vettel won the Grand Prix of Bahrain.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e12",
+        "relationship_type": "AT_RACE",
+        "description": "Vettel won the Grand Prix of Bahrain.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e12",
+        "target_id": "e10",
+        "relationship_type": "ROUND_OF",
+        "description": "The Grand Prix of Bahrain is a round of the 2012 Formula One World Championship.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e12",
+        "target_id": "e11",
+        "relationship_type": "HELD_AT",
+        "description": "The Grand Prix of Bahrain was held at Bahrain International Circuit.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e7",
+        "target_id": "e10",
+        "relationship_type": "ENTERED",
+        "description": "Red Bull Racing entered the 2012 Formula One World Championship.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e8",
+        "target_id": "e10",
+        "relationship_type": "ENTERED",
+        "description": "McLaren entered the 2012 Formula One World Championship.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e9",
+        "target_id": "e10",
+        "relationship_type": "ENTERED",
+        "description": "Lotus entered the 2012 Formula One World Championship.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 12,
+  "entities_accepted": 13,
+  "entities_rejected": 0,
+  "relationship_candidates": 7,
+  "relationships_accepted": 8,
+  "relationships_rejected": 0,
+  "rejections": [],
+  "alignments": [
+    {
+      "index": 1,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e12; description kept"
+    }
+  ]
+}

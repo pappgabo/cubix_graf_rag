@@ -1,0 +1,128 @@
+{
+  "chunk_id": "driver-kimi-raikkonen#59",
+  "doc_id": "driver-kimi-raikkonen",
+  "document_title": "Kimi Räikkönen",
+  "section": "Formula One career > Lotus (2012–2013) > 2013",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "a1799c94790a51de9e87f92aea91eefc0018ee97250919e94cf082a5db3281c2",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Kimi Räikkönen",
+        "entity_type": "Driver",
+        "description": "A Finnish racing driver who competed in Formula One."
+      },
+      {
+        "local_id": "e2",
+        "name": "Lotus",
+        "entity_type": "Team",
+        "description": "A Formula One team that entered cars."
+      },
+      {
+        "local_id": "e3",
+        "name": "2013",
+        "entity_type": "Season",
+        "description": "The Formula One season in which Kimi Räikkönen raced."
+      },
+      {
+        "local_id": "e4",
+        "name": "Australian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The first race of the 2013 Formula One season."
+      },
+      {
+        "local_id": "e5",
+        "name": "Lotus E21",
+        "entity_type": "Car",
+        "description": "The car model fielded by Lotus in the 2013 season."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Kimi Räikkönen at Australian Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Kimi Räikkönen won the Australian Grand Prix in 2013."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Kimi Räikkönen raced for Lotus in 2013.",
+        "from_year": 2013,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e5",
+        "relationship_type": "FIELDED",
+        "description": "Lotus entered the Lotus E21 car in the 2013 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e3",
+        "relationship_type": "RACED_IN",
+        "description": "The Lotus E21 participated in the 2013 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e3",
+        "relationship_type": "ROUND_OF",
+        "description": "The Australian Grand Prix was a round of the 2013 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Kimi Räikkönen won the Australian Grand Prix in 2013.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e4",
+        "relationship_type": "AT_RACE",
+        "description": "Kimi Räikkönen won the Australian Grand Prix in 2013.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 5,
+  "entities_accepted": 6,
+  "entities_rejected": 0,
+  "relationship_candidates": 6,
+  "relationships_accepted": 6,
+  "relationships_rejected": 1,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 6,
+      "reason": "FOR_TEAM does not allow GrandPrix -> Team"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 4,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e4; description kept"
+    }
+  ]
+}

@@ -1,0 +1,110 @@
+{
+  "chunk_id": "driver-fernando-alonso#68",
+  "doc_id": "driver-fernando-alonso",
+  "document_title": "Fernando Alonso",
+  "section": "Alpine (2021–2022)",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/Fernando_Alonso",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "788af088b776e801adb7b8e41072ac1a9fe6b4991fa6e74b9ef601d707315135",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "ACHIEVED does not allow Driver -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "ACHIEVED does not allow Driver -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "ACHIEVED does not allow Driver -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "ACHIEVED does not allow Driver -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 5,
+      "reason": "AT_RACE does not allow GrandPrix -> GrandPrix"
+    }
+  ],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Fernando Alonso",
+        "entity_type": "Driver",
+        "description": "A Formula One driver who scored points in multiple races."
+      },
+      {
+        "local_id": "e2",
+        "name": "Alpine",
+        "entity_type": "Team",
+        "description": "A Formula One team that Fernando Alonso drove for during 2021-2022."
+      },
+      {
+        "local_id": "e3",
+        "name": "2021",
+        "entity_type": "Season",
+        "description": "A Formula One championship season."
+      },
+      {
+        "local_id": "e4",
+        "name": "2022",
+        "entity_type": "Season",
+        "description": "A Formula One championship season."
+      },
+      {
+        "local_id": "e5",
+        "name": "Netherlands Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A race where Alonso finished sixth."
+      },
+      {
+        "local_id": "e6",
+        "name": "Italian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A race where Alonso finished eighth."
+      },
+      {
+        "local_id": "e7",
+        "name": "Russian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A race where Alonso finished sixth."
+      },
+      {
+        "local_id": "e8",
+        "name": "Qatar Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A race where Alonso finished third."
+      },
+      {
+        "local_id": "e9",
+        "name": "Hungarian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A race where Alonso last achieved a podium finish in 2014."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Fernando Alonso drove for Alpine.",
+        "from_year": 2021,
+        "to_year": 2022,
+        "role": null
+      }
+    ]
+  }
+}

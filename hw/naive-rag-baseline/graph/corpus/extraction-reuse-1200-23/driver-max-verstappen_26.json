@@ -1,0 +1,134 @@
+{
+  "chunk_id": "driver-max-verstappen#26",
+  "doc_id": "driver-max-verstappen",
+  "document_title": "Max Verstappen",
+  "section": null,
+  "page": 6,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "ba69c3e9233946e406069e393a323c7bc5c2d5b214b0292476392bd75b792b30",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Max Verstappen",
+        "entity_type": "Driver",
+        "description": "A Formula One driver who raced for Red Bull."
+      },
+      {
+        "local_id": "e2",
+        "name": "Red Bull Racing",
+        "entity_type": "Team",
+        "description": "A Formula One team that entered cars."
+      },
+      {
+        "local_id": "e3",
+        "name": "2020",
+        "entity_type": "Season",
+        "description": "The Formula One championship season."
+      },
+      {
+        "local_id": "e4",
+        "name": "Austrian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula One race held in Austria."
+      },
+      {
+        "local_id": "e5",
+        "name": "Hungarian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula One race held in Hungary."
+      },
+      {
+        "local_id": "e6",
+        "name": "70th Anniversary Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula One race held at Silverstone."
+      },
+      {
+        "local_id": "e7",
+        "name": "Silverstone",
+        "entity_type": "Circuit",
+        "description": "A racing venue in the UK."
+      },
+      {
+        "local_id": "e8",
+        "name": "Honda",
+        "entity_type": "PowerUnit",
+        "description": "An engine supplier for Formula One."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Max Verstappen raced for Red Bull.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e3",
+        "relationship_type": "ENTERED",
+        "description": "Red Bull took part in the 2020 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e3",
+        "relationship_type": "ROUND_OF",
+        "description": "Austrian Grand Prix is a round of the 2020 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e3",
+        "relationship_type": "ROUND_OF",
+        "description": "Hungarian Grand Prix is a round of the 2020 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e6",
+        "target_id": "e3",
+        "relationship_type": "ROUND_OF",
+        "description": "70th Anniversary Grand Prix is a round of the 2020 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e6",
+        "target_id": "e7",
+        "relationship_type": "HELD_AT",
+        "description": "70th Anniversary Grand Prix is held at Silverstone.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 8,
+  "entities_accepted": 8,
+  "entities_rejected": 0,
+  "relationship_candidates": 7,
+  "relationships_accepted": 6,
+  "relationships_rejected": 1,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 6,
+      "reason": "POWERED_BY does not allow Driver -> PowerUnit"
+    }
+  ],
+  "alignments": []
+}

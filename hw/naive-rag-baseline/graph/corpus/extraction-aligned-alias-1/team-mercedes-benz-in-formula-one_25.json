@@ -1,0 +1,85 @@
+{
+  "chunk_id": "team-mercedes-benz-in-formula-one#25",
+  "doc_id": "team-mercedes-benz-in-formula-one",
+  "document_title": "Mercedes-Benz in Formula One",
+  "section": "Mercedes-Benz in Formula One > Mercedes-AMG Petronas Formula One Team (2010–present)",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/Mercedes-Benz_in_Formula_One",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "d3093ec905d7265351840764d119e5f7319f566bad8e9d92d8ccda78d720cf0c",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "FIELDED is not temporal; from_year=2011, to_year=None, role=None cannot be stored without dropping them"
+    }
+  ],
+  "alignments": [],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Mercedes-AMG Petronas Formula One Team",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that entered cars."
+      },
+      {
+        "local_id": "e2",
+        "name": "MGP W02",
+        "entity_type": "Car",
+        "description": "A car model fielded by Mercedes-AMG Petronas Formula One Team."
+      },
+      {
+        "local_id": "e3",
+        "name": "2011",
+        "entity_type": "Season",
+        "description": "The Formula 1 championship season."
+      },
+      {
+        "local_id": "e4",
+        "name": "Australian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula 1 race event."
+      },
+      {
+        "local_id": "e5",
+        "name": "Malaysia Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula 1 race event."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e2",
+        "target_id": "e3",
+        "relationship_type": "RACED_IN",
+        "description": "MGP W02 took part in the 2011 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e3",
+        "relationship_type": "ROUND_OF",
+        "description": "Australian Grand Prix is a round of the 2011 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e3",
+        "relationship_type": "ROUND_OF",
+        "description": "Malaysia Grand Prix is a round of the 2011 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

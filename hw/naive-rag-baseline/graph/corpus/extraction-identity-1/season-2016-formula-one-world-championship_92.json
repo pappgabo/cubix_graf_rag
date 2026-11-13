@@ -1,0 +1,205 @@
+{
+  "chunk_id": "season-2016-formula-one-world-championship#92",
+  "doc_id": "season-2016-formula-one-world-championship",
+  "document_title": "2016 Formula One World Championship",
+  "section": "Championship conclusion",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/2016_Formula_One_World_Championship",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "86fe0310259efed82d6f32e1758e21d654878c20ee9f1284ae4b20c05bd705d8",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "entity_candidates": 7,
+  "entities_accepted": 11,
+  "entities_rejected": 0,
+  "relationship_candidates": 6,
+  "relationships_accepted": 10,
+  "relationships_rejected": 0,
+  "rejections": [],
+  "alignments": [
+    {
+      "index": 2,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e5; description kept"
+    },
+    {
+      "index": 3,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr2 -AT_RACE-> e5; description kept"
+    },
+    {
+      "index": 4,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr3 -AT_RACE-> e5; description kept"
+    },
+    {
+      "index": 5,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr4 -AT_RACE-> e5; description kept"
+    }
+  ],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Vettel",
+        "entity_type": "Driver",
+        "description": "A driver who inherited third place when Verstappen was penalised."
+      },
+      {
+        "local_id": "e2",
+        "name": "Verstappen",
+        "entity_type": "Driver",
+        "description": "A driver who was penalised, causing Vettel to inherit third place."
+      },
+      {
+        "local_id": "e3",
+        "name": "Ricciardo",
+        "entity_type": "Driver",
+        "description": "A driver who finished third in the final amended results."
+      },
+      {
+        "local_id": "e4",
+        "name": "Kimi Räikkönen",
+        "entity_type": "Driver",
+        "description": "A driver who crashed on the main straight during the Brazilian Grand Prix."
+      },
+      {
+        "local_id": "e5",
+        "name": "Brazilian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Grand Prix that experienced several race stoppages due to treacherous weather conditions."
+      },
+      {
+        "local_id": "e6",
+        "name": "Mercedes-AMG Petronas Formula One Team",
+        "entity_type": "Team",
+        "description": "A team that took another 1–2 finish in the Brazilian Grand Prix."
+      },
+      {
+        "local_id": "e7",
+        "name": "2016",
+        "entity_type": "Season",
+        "description": "The season of the Formula One World Championship."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Ricciardo at Brazilian Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Ricciardo recorded a result in the Brazilian Grand Prix."
+      },
+      {
+        "local_id": "rr2",
+        "name": "Vettel at Brazilian Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Vettel recorded a result in the Brazilian Grand Prix."
+      },
+      {
+        "local_id": "rr3",
+        "name": "Verstappen at Brazilian Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Verstappen recorded a result in the Brazilian Grand Prix."
+      },
+      {
+        "local_id": "rr4",
+        "name": "Kimi Räikkönen at Brazilian Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Kimi Räikkönen recorded a result in the Brazilian Grand Prix."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e5",
+        "target_id": "e7",
+        "relationship_type": "ROUND_OF",
+        "description": "The Brazilian Grand Prix is a round of the 2016 Formula One World Championship.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e6",
+        "target_id": "e7",
+        "relationship_type": "ENTERED",
+        "description": "Mercedes took part in the 2016 Formula One World Championship.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Ricciardo recorded a result in the Brazilian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e5",
+        "relationship_type": "AT_RACE",
+        "description": "Ricciardo recorded a result in the Brazilian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr2",
+        "relationship_type": "ACHIEVED",
+        "description": "Vettel recorded a result in the Brazilian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr2",
+        "target_id": "e5",
+        "relationship_type": "AT_RACE",
+        "description": "Vettel recorded a result in the Brazilian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "rr3",
+        "relationship_type": "ACHIEVED",
+        "description": "Verstappen recorded a result in the Brazilian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr3",
+        "target_id": "e5",
+        "relationship_type": "AT_RACE",
+        "description": "Verstappen recorded a result in the Brazilian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "rr4",
+        "relationship_type": "ACHIEVED",
+        "description": "Kimi Räikkönen recorded a result in the Brazilian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr4",
+        "target_id": "e5",
+        "relationship_type": "AT_RACE",
+        "description": "Kimi Räikkönen recorded a result in the Brazilian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

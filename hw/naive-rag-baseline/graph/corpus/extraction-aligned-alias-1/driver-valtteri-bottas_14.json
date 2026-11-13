@@ -1,0 +1,73 @@
+{
+  "chunk_id": "driver-valtteri-bottas#14",
+  "doc_id": "driver-valtteri-bottas",
+  "document_title": "Valtteri Bottas",
+  "section": "Formula One career > Williams (2010–2016) > 2010–2012: Test and reserve driver",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/Valtteri_Bottas",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "9c76fbd6fe2d0ab00015cd1269e7e0b79bb4d8e80ec51299e3b64bfbc01974d7",
+  "validation_version": "partial-1",
+  "source_status": "ok",
+  "status": "ok",
+  "rejections": [],
+  "alignments": [],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Valtteri Bottas",
+        "entity_type": "Driver",
+        "description": "Signed as the official Formula One test driver for the Williams team in January 2010."
+      },
+      {
+        "local_id": "e2",
+        "name": "Williams",
+        "entity_type": "Team",
+        "description": "Formula One team that Bottas was signed to as a test driver."
+      },
+      {
+        "local_id": "e3",
+        "name": "FW32",
+        "entity_type": "Car",
+        "description": "The car model used by Williams for straight-line aerodynamic testing."
+      },
+      {
+        "local_id": "e4",
+        "name": "2010",
+        "entity_type": "Season",
+        "description": "The year Bottas was signed as the official test driver."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Bottas was signed as the official test driver for Williams.",
+        "from_year": 2010,
+        "to_year": null,
+        "role": "test driver"
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e3",
+        "relationship_type": "FIELDED",
+        "description": "Williams entered the FW32 for testing.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e4",
+        "relationship_type": "RACED_IN",
+        "description": "The FW32 was used in the 2010 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

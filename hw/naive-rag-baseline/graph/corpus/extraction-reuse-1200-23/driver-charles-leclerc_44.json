@@ -1,0 +1,70 @@
+{
+  "chunk_id": "driver-charles-leclerc#44",
+  "doc_id": "driver-charles-leclerc",
+  "document_title": "Charles Leclerc",
+  "section": "Charles Leclerc > 2023–2024: First Monaco Grand Prix victory",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "ce7b87e3bf8e23242ba186c88f439aabb1a8084a69b0f63681ba8e710c18b319",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Charles Leclerc",
+        "entity_type": "Driver",
+        "description": "A Formula One driver who finished second in Abu Dhabi and achieved five pole positions and six podiums throughout the season."
+      },
+      {
+        "local_id": "e2",
+        "name": "Carlos Sainz Jr.",
+        "entity_type": "Driver",
+        "description": "A Formula One driver and teammate of Charles Leclerc."
+      },
+      {
+        "local_id": "e3",
+        "name": "Fernando Alonso",
+        "entity_type": "Driver",
+        "description": "A Formula One driver who was level on points with Charles Leclerc in the World Drivers' Championship."
+      },
+      {
+        "local_id": "e4",
+        "name": "World Drivers' Championship",
+        "entity_type": "Season",
+        "description": "The championship in which Charles Leclerc finished fifth with 206 points."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Charles Leclerc and Carlos Sainz Jr. were teammates.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 4,
+  "entities_accepted": 4,
+  "entities_rejected": 0,
+  "relationship_candidates": 3,
+  "relationships_accepted": 1,
+  "relationships_rejected": 2,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "ACHIEVED does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "ACHIEVED does not allow Driver -> Season"
+    }
+  ],
+  "alignments": []
+}

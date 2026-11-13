@@ -1,0 +1,185 @@
+{
+  "chunk_id": "team-williams-racing#5",
+  "doc_id": "team-williams-racing",
+  "document_title": "Williams Racing",
+  "section": "Williams Racing > 1978 season",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "f2b0ac1f25daf8d3472a26f2563c47aa9cd6990d03c3fffacabc4afa5ca029ab",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Williams",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that entered cars."
+      },
+      {
+        "local_id": "e2",
+        "name": "Alan Jones",
+        "entity_type": "Driver",
+        "description": "A Formula 1 driver who raced for Williams in the 1978 season."
+      },
+      {
+        "local_id": "e3",
+        "name": "FW06",
+        "entity_type": "Car",
+        "description": "The first Williams car designed by Patrick Head."
+      },
+      {
+        "local_id": "e4",
+        "name": "1978",
+        "entity_type": "Season",
+        "description": "The Formula 1 season in which Williams competed."
+      },
+      {
+        "local_id": "e5",
+        "name": "Argentine Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The first race for Alan Jones with Williams."
+      },
+      {
+        "local_id": "e6",
+        "name": "South African Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The race where Williams scored its first championship points."
+      },
+      {
+        "local_id": "e7",
+        "name": "United States Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The race where Williams earned their first podium."
+      },
+      {
+        "local_id": "e8",
+        "name": "Constructors' Championship",
+        "entity_type": "Title",
+        "description": "The championship in which Williams finished ninth."
+      },
+      {
+        "local_id": "e9",
+        "name": "Drivers' Championship",
+        "entity_type": "Title",
+        "description": "The championship in which Alan Jones finished 11th."
+      },
+      {
+        "local_id": "e10",
+        "name": "Carlos Reutemann",
+        "entity_type": "Driver",
+        "description": "A driver for Ferrari who finished ahead of Alan Jones at the United States Grand Prix."
+      },
+      {
+        "local_id": "e11",
+        "name": "Frank Dernie",
+        "entity_type": "Driver",
+        "description": "A designer recruited by Frank Williams."
+      },
+      {
+        "local_id": "e12",
+        "name": "Patrick Head",
+        "entity_type": "Driver",
+        "description": "A designer for Williams."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e4",
+        "relationship_type": "ENTERED",
+        "description": "Williams took part in the 1978 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e8",
+        "relationship_type": "WON",
+        "description": "Williams finished ninth in the Constructors' Championship.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e8",
+        "target_id": "e4",
+        "relationship_type": "AWARDED_IN",
+        "description": "Williams finished ninth in the Constructors' Championship.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e9",
+        "relationship_type": "WON",
+        "description": "Alan Jones finished 11th in the Drivers' Championship.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e9",
+        "target_id": "e4",
+        "relationship_type": "AWARDED_IN",
+        "description": "Alan Jones finished 11th in the Drivers' Championship.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 12,
+  "entities_accepted": 12,
+  "entities_rejected": 0,
+  "relationship_candidates": 8,
+  "relationships_accepted": 5,
+  "relationships_rejected": 5,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "FIELDED is not temporal; from_year=1978, to_year=None, role=None cannot be stored without dropping them"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "ACHIEVED Driver -> GrandPrix has from_year=1978, to_year=None, role=None; the year or role cannot be stored on the reified result"
+    },
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "ACHIEVED Driver -> GrandPrix has from_year=1978, to_year=None, role=None; the year or role cannot be stored on the reified result"
+    },
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "DROVE_FOR does not allow Driver -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 6,
+      "reason": "FOR_TEAM does not allow Driver -> GrandPrix"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 1,
+      "action": "clear_redundant_season_year",
+      "detail": "ENTERED year 1978 already named by Season 'e4'; from_year and to_year cleared"
+    },
+    {
+      "index": 5,
+      "action": "move_won_year",
+      "detail": "WON year 1978 stored as e8 -AWARDED_IN-> e4; from_year and to_year cleared; description kept"
+    },
+    {
+      "index": 6,
+      "action": "move_won_year",
+      "detail": "WON year 1978 stored as e9 -AWARDED_IN-> e4; from_year and to_year cleared; description kept"
+    }
+  ]
+}

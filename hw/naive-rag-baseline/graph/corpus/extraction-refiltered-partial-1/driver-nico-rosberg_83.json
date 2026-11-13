@@ -1,0 +1,54 @@
+{
+  "chunk_id": "driver-nico-rosberg#83",
+  "doc_id": "driver-nico-rosberg",
+  "document_title": "Nico Rosberg",
+  "section": "Nico Rosberg > 2016: Champion at last in final Formula One season",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/Nico_Rosberg",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "a466f0763db0e6c4281cbe765737e7f019d4f9fe768dca28e4c4fd8fcc02d30f",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "WON is not temporal; from_year, to_year and role must be null"
+    }
+  ],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Nico Rosberg",
+        "entity_type": "Driver",
+        "description": "Nico Rosberg won the World Drivers' Championship in 2016."
+      },
+      {
+        "local_id": "e2",
+        "name": "2016",
+        "entity_type": "Season",
+        "description": "The season in which Nico Rosberg won the World Drivers' Championship."
+      },
+      {
+        "local_id": "e3",
+        "name": "World Drivers' Championship",
+        "entity_type": "Title",
+        "description": "The championship title won by Nico Rosberg in 2016."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e3",
+        "target_id": "e2",
+        "relationship_type": "AWARDED_IN",
+        "description": "The World Drivers' Championship title was awarded in the 2016 season",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "chunk_id": "team-mercedes-benz-in-formula-one#41",
+  "doc_id": "team-mercedes-benz-in-formula-one",
+  "document_title": "Mercedes-Benz in Formula One",
+  "section": "Mercedes-Benz in Formula One > Esports Drivers' Champions",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "80e4934432e0a4af725ee99964207e3f83d6da59093af89a6f916086bae8a0d4",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Brendon Leigh",
+        "entity_type": "Driver",
+        "description": "Won the Formula One Esports Drivers' Championship for Mercedes in 2018."
+      },
+      {
+        "local_id": "e2",
+        "name": "Jarno Opmeer",
+        "entity_type": "Driver",
+        "description": "Won the Formula One Esports Drivers' Championship for Mercedes in 2021."
+      },
+      {
+        "local_id": "e3",
+        "name": "Mercedes-AMG Petronas Formula One Team",
+        "entity_type": "Team",
+        "description": "Formula One team that entered drivers in the Esports Drivers' Championship."
+      },
+      {
+        "local_id": "e4",
+        "name": "2018",
+        "entity_type": "Season",
+        "description": "Season of the Esports Drivers' Championship won by Brendon Leigh."
+      },
+      {
+        "local_id": "e5",
+        "name": "2021",
+        "entity_type": "Season",
+        "description": "Season of the Esports Drivers' Championship won by Jarno Opmeer."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e3",
+        "relationship_type": "DROVE_FOR",
+        "description": "Brendon Leigh drove for Mercedes in the Esports Drivers' Championship.",
+        "from_year": 2018,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e3",
+        "relationship_type": "DROVE_FOR",
+        "description": "Jarno Opmeer drove for Mercedes in the Esports Drivers' Championship.",
+        "from_year": 2021,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 5,
+  "entities_accepted": 5,
+  "entities_rejected": 0,
+  "relationship_candidates": 6,
+  "relationships_accepted": 2,
+  "relationships_rejected": 4,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "WON does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "AWARDED_IN does not allow Season -> Team"
+    },
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "WON does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 5,
+      "reason": "AWARDED_IN does not allow Season -> Team"
+    }
+  ],
+  "alignments": []
+}

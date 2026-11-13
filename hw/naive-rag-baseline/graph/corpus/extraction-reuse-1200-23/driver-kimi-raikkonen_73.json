@@ -1,0 +1,81 @@
+{
+  "chunk_id": "driver-kimi-raikkonen#73",
+  "doc_id": "driver-kimi-raikkonen",
+  "document_title": "Kimi Räikkönen",
+  "section": "Formula One career > Return to Ferrari (2014–2018) > 2015",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "762a27abe6f567f8d664e5f2a4a40a8569c8548c68f7ae30ac8791add5f8bd77",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Kimi Räikkönen",
+        "entity_type": "Driver",
+        "description": "A Finnish racing driver who competed in Formula One."
+      },
+      {
+        "local_id": "e2",
+        "name": "Scuderia Ferrari",
+        "entity_type": "Team",
+        "description": "A Formula One team that Kimi Räikkönen raced for."
+      },
+      {
+        "local_id": "e3",
+        "name": "2015",
+        "entity_type": "Season",
+        "description": "The Formula One season in which Kimi Räikkönen recorded a podium finish."
+      },
+      {
+        "local_id": "e4",
+        "name": "2013 Korean Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The last podium finish for Kimi Räikkönen before 2015."
+      },
+      {
+        "local_id": "e5",
+        "name": "2009 Italian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The last podium finish for Kimi Räikkönen during his first spell with Ferrari."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Kimi Räikkönen raced for Ferrari.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 5,
+  "entities_accepted": 5,
+  "entities_rejected": 0,
+  "relationship_candidates": 4,
+  "relationships_accepted": 1,
+  "relationships_rejected": 3,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "ACHIEVED does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "ACHIEVED does not allow GrandPrix -> Driver"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "ACHIEVED does not allow GrandPrix -> Driver"
+    }
+  ],
+  "alignments": []
+}

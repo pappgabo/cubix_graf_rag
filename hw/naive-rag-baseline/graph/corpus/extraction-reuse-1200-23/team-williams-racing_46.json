@@ -1,0 +1,125 @@
+{
+  "chunk_id": "team-williams-racing#46",
+  "doc_id": "team-williams-racing",
+  "document_title": "Williams Racing",
+  "section": "Williams Racing > 1994 season",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "59fab05a29ae89e85a2603232a4f3494d5d67b16907d18874f2fd44002d911c6",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Michael Schumacher",
+        "entity_type": "Driver",
+        "description": "A driver who competed in the 1994 season."
+      },
+      {
+        "local_id": "e2",
+        "name": "Damon Hill",
+        "entity_type": "Driver",
+        "description": "A driver who competed in the 1994 season."
+      },
+      {
+        "local_id": "e3",
+        "name": "Williams Racing",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that entered cars in the 1994 season."
+      },
+      {
+        "local_id": "e4",
+        "name": "1994",
+        "entity_type": "Season",
+        "description": "The Formula 1 season in which the events took place."
+      },
+      {
+        "local_id": "e5",
+        "name": "European Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A race in which Schumacher won after his suspension."
+      },
+      {
+        "local_id": "e6",
+        "name": "Japan",
+        "entity_type": "GrandPrix",
+        "description": "A race where Hill won and Schumacher finished second."
+      },
+      {
+        "local_id": "e7",
+        "name": "Adelaide",
+        "entity_type": "GrandPrix",
+        "description": "The final round of the 1994 season."
+      },
+      {
+        "local_id": "e8",
+        "name": "1994 World Championship",
+        "entity_type": "Title",
+        "description": "The championship title won by Schumacher in 1994."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e8",
+        "relationship_type": "WON",
+        "description": "Schumacher won the 1994 World Championship.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e4",
+        "relationship_type": "ENTERED",
+        "description": "Williams Racing entered the 1994 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e4",
+        "relationship_type": "ROUND_OF",
+        "description": "The European Grand Prix was a round of the 1994 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e6",
+        "target_id": "e4",
+        "relationship_type": "ROUND_OF",
+        "description": "The Japan Grand Prix was a round of the 1994 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e7",
+        "target_id": "e4",
+        "relationship_type": "ROUND_OF",
+        "description": "The Adelaide Grand Prix was a round of the 1994 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 8,
+  "entities_accepted": 8,
+  "entities_rejected": 0,
+  "relationship_candidates": 6,
+  "relationships_accepted": 5,
+  "relationships_rejected": 1,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 5,
+      "reason": "TEAMMATE_OF does not allow Driver -> Team"
+    }
+  ],
+  "alignments": []
+}

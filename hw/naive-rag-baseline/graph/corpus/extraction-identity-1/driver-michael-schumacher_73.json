@@ -1,0 +1,61 @@
+{
+  "chunk_id": "driver-michael-schumacher#73",
+  "doc_id": "driver-michael-schumacher",
+  "document_title": "Michael Schumacher",
+  "section": null,
+  "page": 6,
+  "source": "https://en.wikipedia.org/wiki/Michael_Schumacher",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "f61e4b67ec12c02282d40f430859005a75fa39fb2f609eaa23090884b7f2e27f",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "entity_candidates": 4,
+  "entities_accepted": 3,
+  "entities_rejected": 1,
+  "relationship_candidates": 2,
+  "relationships_accepted": 0,
+  "relationships_rejected": 2,
+  "rejections": [
+    {
+      "element": "entity",
+      "index": 3,
+      "reason": "name 'null' is a placeholder, not an entity identity"
+    },
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "RACED_IN: target_id 'e4' rejected: name 'null' is a placeholder, not an entity identity"
+    },
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "ROUND_OF: target_id 'e4' rejected: name 'null' is a placeholder, not an entity identity"
+    }
+  ],
+  "alignments": [],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Michael Schumacher",
+        "entity_type": "Driver",
+        "description": "A Formula One driver who finished the championship with 123 points."
+      },
+      {
+        "local_id": "e2",
+        "name": "Coulthard",
+        "entity_type": "Driver",
+        "description": "Runner-up in the championship."
+      },
+      {
+        "local_id": "e3",
+        "name": "Spanish Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A race where Michael Schumacher won after Häkkinen retired."
+      }
+    ],
+    "relationships": []
+  }
+}

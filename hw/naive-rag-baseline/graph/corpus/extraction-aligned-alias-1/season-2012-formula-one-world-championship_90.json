@@ -1,0 +1,208 @@
+{
+  "chunk_id": "season-2012-formula-one-world-championship#90",
+  "doc_id": "season-2012-formula-one-world-championship",
+  "document_title": "2012 Formula One World Championship",
+  "section": "Race summaries > Round 3 – China Shanghai International Circuit",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/2012_Formula_One_World_Championship",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "1fd8d69b7cc9658ca3114b1c4a2dfcce09dc8ec94589a3daf54f51cec4246f3e",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "HELD_AT does not allow Team -> GrandPrix"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 2,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e8; description kept"
+    },
+    {
+      "index": 3,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr2 -AT_RACE-> e8; description kept"
+    },
+    {
+      "index": 4,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr3 -AT_RACE-> e8; description kept"
+    },
+    {
+      "index": 5,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr4 -AT_RACE-> e8; description kept"
+    }
+  ],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Mercedes-AMG Petronas Formula One Team",
+        "entity_type": "Team",
+        "description": "Constructor that won the race."
+      },
+      {
+        "local_id": "e2",
+        "name": "Juan Manuel Fangio",
+        "entity_type": "Driver",
+        "description": "Driver who won the 1955 Italian Grand Prix."
+      },
+      {
+        "local_id": "e3",
+        "name": "Button",
+        "entity_type": "Driver",
+        "description": "Finished second in the race."
+      },
+      {
+        "local_id": "e4",
+        "name": "Lewis Hamilton",
+        "entity_type": "Driver",
+        "description": "Finished third in the race."
+      },
+      {
+        "local_id": "e5",
+        "name": "Fernando Alonso",
+        "entity_type": "Driver",
+        "description": "Finished ninth in the race."
+      },
+      {
+        "local_id": "e6",
+        "name": "Romain Grosjean",
+        "entity_type": "Driver",
+        "description": "Finished sixth in the race."
+      },
+      {
+        "local_id": "e7",
+        "name": "2012",
+        "entity_type": "Season",
+        "description": "The championship year."
+      },
+      {
+        "local_id": "e8",
+        "name": "China",
+        "entity_type": "GrandPrix",
+        "description": "The Grand Prix held at Shanghai International Circuit."
+      },
+      {
+        "local_id": "e9",
+        "name": "Shanghai International Circuit",
+        "entity_type": "Circuit",
+        "description": "The circuit where the race took place."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Button at China",
+        "entity_type": "RaceResult",
+        "description": "Button recorded a result in the China Grand Prix."
+      },
+      {
+        "local_id": "rr2",
+        "name": "Hamilton at China",
+        "entity_type": "RaceResult",
+        "description": "Hamilton recorded a result in the China Grand Prix."
+      },
+      {
+        "local_id": "rr3",
+        "name": "Fernando Alonso at China",
+        "entity_type": "RaceResult",
+        "description": "Alonso recorded a result in the China Grand Prix."
+      },
+      {
+        "local_id": "rr4",
+        "name": "Romain Grosjean at China",
+        "entity_type": "RaceResult",
+        "description": "Grosjean recorded a result in the China Grand Prix."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e8",
+        "target_id": "e7",
+        "relationship_type": "ROUND_OF",
+        "description": "The China Grand Prix is a round of the 2012 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Button recorded a result in the China Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e8",
+        "relationship_type": "AT_RACE",
+        "description": "Button recorded a result in the China Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "rr2",
+        "relationship_type": "ACHIEVED",
+        "description": "Hamilton recorded a result in the China Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr2",
+        "target_id": "e8",
+        "relationship_type": "AT_RACE",
+        "description": "Hamilton recorded a result in the China Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "rr3",
+        "relationship_type": "ACHIEVED",
+        "description": "Alonso recorded a result in the China Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr3",
+        "target_id": "e8",
+        "relationship_type": "AT_RACE",
+        "description": "Alonso recorded a result in the China Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e6",
+        "target_id": "rr4",
+        "relationship_type": "ACHIEVED",
+        "description": "Grosjean recorded a result in the China Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr4",
+        "target_id": "e8",
+        "relationship_type": "AT_RACE",
+        "description": "Grosjean recorded a result in the China Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

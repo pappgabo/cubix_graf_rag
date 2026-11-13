@@ -1,0 +1,268 @@
+{
+  "chunk_id": "team-mclaren#47",
+  "doc_id": "team-mclaren",
+  "document_title": "McLaren",
+  "section": "2015–2017: Return to Honda engines",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "5d6cf505fe6ddee60a7d956cfc0f5c4241ff1a45b58369944144b18b21b08cd7",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "McLaren",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that entered cars."
+      },
+      {
+        "local_id": "e2",
+        "name": "Fernando Alonso",
+        "entity_type": "Driver",
+        "description": "A Formula 1 driver who raced for McLaren."
+      },
+      {
+        "local_id": "e3",
+        "name": "Jenson Button",
+        "entity_type": "Driver",
+        "description": "A Formula 1 driver who raced for McLaren."
+      },
+      {
+        "local_id": "e4",
+        "name": "Stoffel Vandoorne",
+        "entity_type": "Driver",
+        "description": "A Formula 1 driver who became Alonso's teammate for 2017."
+      },
+      {
+        "local_id": "e5",
+        "name": "2016",
+        "entity_type": "Season",
+        "description": "A championship year."
+      },
+      {
+        "local_id": "e6",
+        "name": "Belgian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula 1 race held in Belgium."
+      },
+      {
+        "local_id": "e7",
+        "name": "United States Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula 1 race held in the United States."
+      },
+      {
+        "local_id": "e8",
+        "name": "Hungarian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula 1 race held in Hungary."
+      },
+      {
+        "local_id": "e9",
+        "name": "German Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula 1 race held in Germany."
+      },
+      {
+        "local_id": "e10",
+        "name": "Constructors' Championship",
+        "entity_type": "Title",
+        "description": "A championship title for teams."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Fernando Alonso at Belgian Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Fernando Alonso finished seventh at the Belgian Grand Prix."
+      },
+      {
+        "local_id": "rr2",
+        "name": "Fernando Alonso at United States Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Fernando Alonso finished fifth at the United States Grand Prix."
+      },
+      {
+        "local_id": "rr3",
+        "name": "Jenson Button at United States Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Jenson Button finished ninth at the United States Grand Prix."
+      },
+      {
+        "local_id": "rr4",
+        "name": "Fernando Alonso at Hungarian Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Fernando Alonso scored six points in Hungary."
+      },
+      {
+        "local_id": "rr5",
+        "name": "Jenson Button at German Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Jenson Button scored four points in Germany."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e5",
+        "relationship_type": "ENTERED",
+        "description": "McLaren took part in the 2016 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e10",
+        "relationship_type": "WON",
+        "description": "McLaren ended the season in sixth place in the Constructors' Championship.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Fernando Alonso finished seventh at the Belgian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e6",
+        "relationship_type": "AT_RACE",
+        "description": "Fernando Alonso finished seventh at the Belgian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "rr2",
+        "relationship_type": "ACHIEVED",
+        "description": "Fernando Alonso finished fifth at the United States Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr2",
+        "target_id": "e7",
+        "relationship_type": "AT_RACE",
+        "description": "Fernando Alonso finished fifth at the United States Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "rr3",
+        "relationship_type": "ACHIEVED",
+        "description": "Jenson Button finished ninth at the United States Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr3",
+        "target_id": "e7",
+        "relationship_type": "AT_RACE",
+        "description": "Jenson Button finished ninth at the United States Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "rr4",
+        "relationship_type": "ACHIEVED",
+        "description": "Fernando Alonso scored six points in Hungary.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr4",
+        "target_id": "e8",
+        "relationship_type": "AT_RACE",
+        "description": "Fernando Alonso scored six points in Hungary.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "rr5",
+        "relationship_type": "ACHIEVED",
+        "description": "Jenson Button scored four points in Germany.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr5",
+        "target_id": "e9",
+        "relationship_type": "AT_RACE",
+        "description": "Jenson Button scored four points in Germany.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e4",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Fernando Alonso and Stoffel Vandoorne were teammates in 2017.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e4",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Jenson Button and Stoffel Vandoorne were teammates in 2017.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 10,
+  "entities_accepted": 15,
+  "entities_rejected": 0,
+  "relationship_candidates": 9,
+  "relationships_accepted": 14,
+  "relationships_rejected": 0,
+  "rejections": [],
+  "alignments": [
+    {
+      "index": 2,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e6; description kept"
+    },
+    {
+      "index": 3,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr2 -AT_RACE-> e7; description kept"
+    },
+    {
+      "index": 4,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr3 -AT_RACE-> e7; description kept"
+    },
+    {
+      "index": 5,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr4 -AT_RACE-> e8; description kept"
+    },
+    {
+      "index": 6,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr5 -AT_RACE-> e9; description kept"
+    }
+  ]
+}

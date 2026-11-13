@@ -1,0 +1,98 @@
+{
+  "chunk_id": "driver-michael-schumacher#40",
+  "doc_id": "driver-michael-schumacher",
+  "document_title": "Michael Schumacher",
+  "section": null,
+  "page": 4,
+  "source": "https://en.wikipedia.org/wiki/Michael_Schumacher",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "675d42b3086717180a48bb98d57f1865272c82b3f6f58b6dfbfe3f3d6a3f0baf",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "entity_candidates": 6,
+  "entities_accepted": 6,
+  "entities_rejected": 0,
+  "relationship_candidates": 5,
+  "relationships_accepted": 2,
+  "relationships_rejected": 3,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "WON does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "ACHIEVED does not allow GrandPrix -> Driver"
+    },
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "ACHIEVED does not allow GrandPrix -> Driver"
+    }
+  ],
+  "alignments": [],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Michael Schumacher",
+        "entity_type": "Driver",
+        "description": "Youngest two-time World Champion in Formula One history."
+      },
+      {
+        "local_id": "e2",
+        "name": "McLaren",
+        "entity_type": "Team",
+        "description": "Dominant team in Formula One."
+      },
+      {
+        "local_id": "e3",
+        "name": "Williams",
+        "entity_type": "Team",
+        "description": "Dominant team in Formula One."
+      },
+      {
+        "local_id": "e4",
+        "name": "1995",
+        "entity_type": "Season",
+        "description": "Season in which Schumacher became the youngest two-time World Champion."
+      },
+      {
+        "local_id": "e5",
+        "name": "British Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "Race where Schumacher collided with Hill."
+      },
+      {
+        "local_id": "e6",
+        "name": "Italian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "Race where Schumacher collided with Hill."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e2",
+        "target_id": "e4",
+        "relationship_type": "ENTERED",
+        "description": "McLaren entered the 1995 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e4",
+        "relationship_type": "ENTERED",
+        "description": "Williams entered the 1995 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

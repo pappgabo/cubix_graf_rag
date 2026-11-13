@@ -1,0 +1,159 @@
+{
+  "chunk_id": "driver-valtteri-bottas#89",
+  "doc_id": "driver-valtteri-bottas",
+  "document_title": "Valtteri Bottas",
+  "section": "Formula One career > Mercedes (2017–2021) > 2021: Final season at Mercedes",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/Valtteri_Bottas",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "9cdc9069e57162bc90f69db041c53a58b290042a5b1de5eea43964e368e9f87e",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "RACED_IN does not allow Driver -> Season"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 4,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e4; description kept"
+    },
+    {
+      "index": 5,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr2 -AT_RACE-> e5; description kept"
+    }
+  ],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Valtteri Bottas",
+        "entity_type": "Driver",
+        "description": "A Finnish racing driver who raced for Mercedes in Formula One."
+      },
+      {
+        "local_id": "e2",
+        "name": "Mercedes-AMG Petronas Formula One Team",
+        "entity_type": "Team",
+        "description": "A Formula One team that entered cars."
+      },
+      {
+        "local_id": "e3",
+        "name": "2021",
+        "entity_type": "Season",
+        "description": "The Formula One championship season."
+      },
+      {
+        "local_id": "e4",
+        "name": "Bahrain Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The season-opening race of the 2021 Formula One season."
+      },
+      {
+        "local_id": "e5",
+        "name": "Emilia Romagna Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A race in the 2021 Formula One season."
+      },
+      {
+        "local_id": "e6",
+        "name": "George Russell",
+        "entity_type": "Driver",
+        "description": "A British racing driver involved in a collision with Valtteri Bottas."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Valtteri Bottas at Bahrain Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Valtteri Bottas started and finished third at the Bahrain Grand Prix."
+      },
+      {
+        "local_id": "rr2",
+        "name": "Valtteri Bottas at Emilia Romagna Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Valtteri Bottas qualified eighth at the Emilia Romagna Grand Prix."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Valtteri Bottas extended his contract with Mercedes into 2021.",
+        "from_year": 2021,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e3",
+        "relationship_type": "ROUND_OF",
+        "description": "The Bahrain Grand Prix is a round of the 2021 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e3",
+        "relationship_type": "ROUND_OF",
+        "description": "The Emilia Romagna Grand Prix is a round of the 2021 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Valtteri Bottas started and finished third at the Bahrain Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e4",
+        "relationship_type": "AT_RACE",
+        "description": "Valtteri Bottas started and finished third at the Bahrain Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr2",
+        "relationship_type": "ACHIEVED",
+        "description": "Valtteri Bottas qualified eighth at the Emilia Romagna Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr2",
+        "target_id": "e5",
+        "relationship_type": "AT_RACE",
+        "description": "Valtteri Bottas qualified eighth at the Emilia Romagna Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e6",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Valtteri Bottas was involved in a collision with George Russell at the Emilia Romagna Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

@@ -1,0 +1,140 @@
+{
+  "chunk_id": "team-scuderia-ferrari#25",
+  "doc_id": "team-scuderia-ferrari",
+  "document_title": "Scuderia Ferrari",
+  "section": null,
+  "page": 6,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "21fb1bdca1196a7387cde4a82864578868d1321554748aff4e912267d2e05829",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "AF Corse",
+        "entity_type": "Team",
+        "description": "A team that achieved success in major international GT2 and GTE Pro/GTLM competitions."
+      },
+      {
+        "local_id": "e2",
+        "name": "Scuderia Ferrari",
+        "entity_type": "Team",
+        "description": "A team that has enjoyed much success in GT racing."
+      },
+      {
+        "local_id": "e3",
+        "name": "2012",
+        "entity_type": "Season",
+        "description": "The season when the WEC championship was introduced."
+      },
+      {
+        "local_id": "e4",
+        "name": "2013",
+        "entity_type": "Season",
+        "description": "The season when the GT drivers' title had been awarded."
+      },
+      {
+        "local_id": "e5",
+        "name": "2014",
+        "entity_type": "Season",
+        "description": "A season in which Ferrari/AF Corse won the GT drivers' title."
+      },
+      {
+        "local_id": "e6",
+        "name": "2016",
+        "entity_type": "Season",
+        "description": "A season in which Ferrari won the GT manufacturers' championship."
+      },
+      {
+        "local_id": "e7",
+        "name": "2017",
+        "entity_type": "Season",
+        "description": "A season in which Ferrari won the GT manufacturers' championship and the GT drivers' title."
+      },
+      {
+        "local_id": "e8",
+        "name": "2021",
+        "entity_type": "Season",
+        "description": "A season in which Ferrari won the GT manufacturers' championship and the GT drivers' title."
+      },
+      {
+        "local_id": "e9",
+        "name": "2022",
+        "entity_type": "Season",
+        "description": "A season in which Ferrari won the GT manufacturers' championship and the GT drivers' title."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e2",
+        "target_id": "e3",
+        "relationship_type": "ENTERED",
+        "description": "Ferrari entered the WEC championship starting in 2012.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e4",
+        "relationship_type": "ENTERED",
+        "description": "Ferrari entered the GT drivers' title starting in 2013.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 9,
+  "entities_accepted": 9,
+  "entities_rejected": 0,
+  "relationship_candidates": 8,
+  "relationships_accepted": 2,
+  "relationships_rejected": 6,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "DROVE_FOR does not allow Team -> Team"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "WON does not allow Team -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "WON does not allow Team -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 5,
+      "reason": "WON does not allow Team -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 6,
+      "reason": "WON does not allow Team -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 7,
+      "reason": "WON does not allow Team -> Season"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 1,
+      "action": "clear_redundant_season_year",
+      "detail": "ENTERED year 2012 already named by Season 'e3'; from_year and to_year cleared"
+    },
+    {
+      "index": 2,
+      "action": "clear_redundant_season_year",
+      "detail": "ENTERED year 2013 already named by Season 'e4'; from_year and to_year cleared"
+    }
+  ]
+}

@@ -1,0 +1,162 @@
+{
+  "chunk_id": "driver-sebastian-vettel#11",
+  "doc_id": "driver-sebastian-vettel",
+  "document_title": "Sebastian Vettel",
+  "section": "Toro Rosso (2007–2008) > 2007–2008: Maiden race win and rise to prominence",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "f6656c98a533d7fd523f7717fbc622c55a8c689d1d877253451c6e6eb01081d1",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Sebastian Vettel",
+        "entity_type": "Driver",
+        "description": "A driver who raced for Toro Rosso."
+      },
+      {
+        "local_id": "e2",
+        "name": "Toro Rosso",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that entered cars."
+      },
+      {
+        "local_id": "e3",
+        "name": "2007",
+        "entity_type": "Season",
+        "description": "A championship year."
+      },
+      {
+        "local_id": "e4",
+        "name": "2008",
+        "entity_type": "Season",
+        "description": "A championship year."
+      },
+      {
+        "local_id": "e5",
+        "name": "Hungarian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A race event."
+      },
+      {
+        "local_id": "e6",
+        "name": "Japanese Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A race event."
+      },
+      {
+        "local_id": "e7",
+        "name": "Fuji",
+        "entity_type": "Circuit",
+        "description": "A racing venue."
+      },
+      {
+        "local_id": "e8",
+        "name": "Lewis Hamilton",
+        "entity_type": "Driver",
+        "description": "A driver who raced in Formula One."
+      },
+      {
+        "local_id": "e9",
+        "name": "Mark Webber",
+        "entity_type": "Driver",
+        "description": "A driver who raced in Formula One."
+      },
+      {
+        "local_id": "e10",
+        "name": "Sébastien Bourdais",
+        "entity_type": "Driver",
+        "description": "A driver who raced for Toro Rosso."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Sebastian Vettel drove for Toro Rosso.",
+        "from_year": 2007,
+        "to_year": 2008,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e3",
+        "relationship_type": "ENTERED",
+        "description": "Toro Rosso took part in the 2007 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e4",
+        "relationship_type": "ENTERED",
+        "description": "Toro Rosso took part in the 2008 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e6",
+        "target_id": "e4",
+        "relationship_type": "ROUND_OF",
+        "description": "The Japanese Grand Prix is a round of the 2008 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e6",
+        "target_id": "e7",
+        "relationship_type": "HELD_AT",
+        "description": "The Japanese Grand Prix was held at Fuji.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e3",
+        "relationship_type": "ROUND_OF",
+        "description": "The Hungarian Grand Prix is a round of the 2007 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 10,
+  "entities_accepted": 10,
+  "entities_rejected": 0,
+  "relationship_candidates": 8,
+  "relationships_accepted": 6,
+  "relationships_rejected": 2,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "TEAMMATE_OF is not temporal; from_year=2008, to_year=None, role=None cannot be stored without dropping them"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "ACHIEVED does not allow Driver -> Driver"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 1,
+      "action": "clear_redundant_season_year",
+      "detail": "ENTERED year 2007 already named by Season 'e3'; from_year and to_year cleared"
+    },
+    {
+      "index": 2,
+      "action": "clear_redundant_season_year",
+      "detail": "ENTERED year 2008 already named by Season 'e4'; from_year and to_year cleared"
+    }
+  ]
+}

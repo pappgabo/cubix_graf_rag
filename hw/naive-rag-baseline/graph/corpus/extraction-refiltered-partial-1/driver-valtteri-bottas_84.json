@@ -1,0 +1,92 @@
+{
+  "chunk_id": "driver-valtteri-bottas#84",
+  "doc_id": "driver-valtteri-bottas",
+  "document_title": "Valtteri Bottas",
+  "section": "Formula One career > Mercedes (2017–2021) > 2019–2020: Championship runner-up",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/Valtteri_Bottas",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "bfd2eeca14e755b079eb8d393d45ef50a65a1695ab54a844785d0612d8ad3e56",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "ENTERED is not temporal; from_year, to_year and role must be null"
+    },
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "WON is not temporal; from_year, to_year and role must be null"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "WON is not temporal; from_year, to_year and role must be null"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "ACHIEVED does not allow Driver -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "ROUND_OF is not temporal; from_year, to_year and role must be null"
+    }
+  ],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Valtteri Bottas",
+        "entity_type": "Driver",
+        "description": "A Finnish racing driver who competed in Formula One."
+      },
+      {
+        "local_id": "e2",
+        "name": "Mercedes",
+        "entity_type": "Team",
+        "description": "A Formula One team that entered cars."
+      },
+      {
+        "local_id": "e3",
+        "name": "Turkish Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula One race held in Turkey."
+      },
+      {
+        "local_id": "e4",
+        "name": "Hamilton",
+        "entity_type": "Driver",
+        "description": "A British racing driver who competed in Formula One."
+      },
+      {
+        "local_id": "e5",
+        "name": "Drivers' Championship",
+        "entity_type": "Title",
+        "description": "The championship title awarded to the best performing driver in a Formula One season."
+      },
+      {
+        "local_id": "e6",
+        "name": "2020",
+        "entity_type": "Season",
+        "description": "The Formula One championship season."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Bottas drove for Mercedes.",
+        "from_year": 2017,
+        "to_year": 2021,
+        "role": null
+      }
+    ]
+  }
+}

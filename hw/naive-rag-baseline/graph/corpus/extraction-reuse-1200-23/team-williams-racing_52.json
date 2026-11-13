@@ -1,0 +1,93 @@
+{
+  "chunk_id": "team-williams-racing#52",
+  "doc_id": "team-williams-racing",
+  "document_title": "Williams Racing",
+  "section": "Williams Racing > 1996 season",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "574d8a41d9b52b19028a60cec87a023ef2be2f5a8f6b9c24923e863f0b3a7fb0",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Williams Racing",
+        "entity_type": "Team",
+        "description": "A Formula 1 team."
+      },
+      {
+        "local_id": "e2",
+        "name": "David Coulthard",
+        "entity_type": "Driver",
+        "description": "A driver who left Williams Racing to join McLaren."
+      },
+      {
+        "local_id": "e3",
+        "name": "Jacques Villeneuve",
+        "entity_type": "Driver",
+        "description": "A driver signed by Williams Racing for the 1996 season."
+      },
+      {
+        "local_id": "e4",
+        "name": "Damon Hill",
+        "entity_type": "Driver",
+        "description": "A driver returning for a fourth full season with Williams Racing."
+      },
+      {
+        "local_id": "e5",
+        "name": "Michael Schumacher",
+        "entity_type": "Driver",
+        "description": "Defending world champion driving for Scuderia Ferrari."
+      },
+      {
+        "local_id": "e6",
+        "name": "1996",
+        "entity_type": "Season",
+        "description": "The Formula 1 season."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e6",
+        "relationship_type": "ENTERED",
+        "description": "Williams Racing entered the 1996 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 6,
+  "entities_accepted": 6,
+  "entities_rejected": 0,
+  "relationship_candidates": 4,
+  "relationships_accepted": 1,
+  "relationships_rejected": 3,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "DROVE_FOR does not allow Team -> Driver"
+    },
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "DROVE_FOR does not allow Team -> Driver"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "ROUND_OF does not allow Season -> Team"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 2,
+      "action": "clear_redundant_season_year",
+      "detail": "ENTERED year 1996 already named by Season 'e6'; from_year and to_year cleared"
+    }
+  ]
+}

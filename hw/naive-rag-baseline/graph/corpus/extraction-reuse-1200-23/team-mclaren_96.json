@@ -1,0 +1,100 @@
+{
+  "chunk_id": "team-mclaren#96",
+  "doc_id": "team-mclaren",
+  "document_title": "McLaren",
+  "section": "Customer racing",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "6d10764cccefdb6d30c2b469fc6b25f02025cf231b3771f62600ce29035c1c0d",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "McLaren Automotive",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that announced its intent to participate in various racing events."
+      },
+      {
+        "local_id": "e2",
+        "name": "United Autosports",
+        "entity_type": "Team",
+        "description": "A customer team that will participate in the 2024 24 Hours of Le Mans and FIA World Endurance Championship season."
+      },
+      {
+        "local_id": "e3",
+        "name": "Pfaff Motorsports",
+        "entity_type": "Team",
+        "description": "A customer team that will enter the 2024 IMSA SportsCar Championship."
+      },
+      {
+        "local_id": "e4",
+        "name": "McLaren 720S GT3 Evo",
+        "entity_type": "Car",
+        "description": "The car model that will be used by United Autosports and Pfaff Motorsports."
+      },
+      {
+        "local_id": "e5",
+        "name": "2024",
+        "entity_type": "Season",
+        "description": "The championship year for the announced racing participation."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e2",
+        "target_id": "e4",
+        "relationship_type": "FIELDED",
+        "description": "United Autosports will use the McLaren 720S GT3 Evo for the 2024 racing events.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e4",
+        "relationship_type": "FIELDED",
+        "description": "Pfaff Motorsports will use the McLaren 720S GT3 Evo for the 2024 racing events.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e5",
+        "relationship_type": "RACED_IN",
+        "description": "The McLaren 720S GT3 Evo will participate in the 2024 racing season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 5,
+  "entities_accepted": 5,
+  "entities_rejected": 0,
+  "relationship_candidates": 5,
+  "relationships_accepted": 3,
+  "relationships_rejected": 2,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "DROVE_FOR does not allow Team -> Team"
+    },
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "DROVE_FOR does not allow Team -> Team"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 4,
+      "action": "clear_redundant_season_year",
+      "detail": "RACED_IN year 2024 already named by Season 'e5'; from_year and to_year cleared"
+    }
+  ]
+}

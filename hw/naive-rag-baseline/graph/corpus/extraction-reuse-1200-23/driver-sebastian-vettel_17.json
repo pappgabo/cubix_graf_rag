@@ -1,0 +1,142 @@
+{
+  "chunk_id": "driver-sebastian-vettel#17",
+  "doc_id": "driver-sebastian-vettel",
+  "document_title": "Sebastian Vettel",
+  "section": "2010: Youngest World Champion",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "bb7476ee27f1b2dbb2542affaaf342374da4342900d94645cc1f93a7f5c1d7bf",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Sebastian Vettel",
+        "entity_type": "Driver",
+        "description": "A driver who became the youngest World Drivers' Champion in 2010."
+      },
+      {
+        "local_id": "e2",
+        "name": "Mark Webber",
+        "entity_type": "Driver",
+        "description": "A driver who finished second to Vettel in the 2010 season."
+      },
+      {
+        "local_id": "e3",
+        "name": "Red Bull Racing",
+        "entity_type": "Team",
+        "description": "The team that Vettel and Webber drove for in 2010."
+      },
+      {
+        "local_id": "e4",
+        "name": "2010",
+        "entity_type": "Season",
+        "description": "The championship year in which Vettel won the title."
+      },
+      {
+        "local_id": "e5",
+        "name": "Brazilian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The race where Vettel and Webber secured the Constructors' Championship."
+      },
+      {
+        "local_id": "e6",
+        "name": "Abu Dhabi Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The final race of the 2010 season where Vettel won the Drivers' Championship."
+      },
+      {
+        "local_id": "e7",
+        "name": "World Drivers' Championship",
+        "entity_type": "Title",
+        "description": "The championship title won by Vettel in 2010."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e3",
+        "target_id": "e7",
+        "relationship_type": "WON",
+        "description": "Red Bull Racing won the Constructors' Championship in 2010.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e7",
+        "target_id": "e4",
+        "relationship_type": "AWARDED_IN",
+        "description": "Red Bull Racing won the Constructors' Championship in 2010.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e7",
+        "relationship_type": "WON",
+        "description": "Sebastian Vettel won the World Drivers' Championship in 2010.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e4",
+        "relationship_type": "ROUND_OF",
+        "description": "The Brazilian Grand Prix is a round of the 2010 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e6",
+        "target_id": "e4",
+        "relationship_type": "ROUND_OF",
+        "description": "The Abu Dhabi Grand Prix is a round of the 2010 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e3",
+        "relationship_type": "DROVE_FOR",
+        "description": "Sebastian Vettel drove for Red Bull Racing in 2010.",
+        "from_year": 2010,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e3",
+        "relationship_type": "DROVE_FOR",
+        "description": "Mark Webber drove for Red Bull Racing in 2010.",
+        "from_year": 2010,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 7,
+  "entities_accepted": 7,
+  "entities_rejected": 0,
+  "relationship_candidates": 6,
+  "relationships_accepted": 7,
+  "relationships_rejected": 0,
+  "rejections": [],
+  "alignments": [
+    {
+      "index": 0,
+      "action": "move_won_year",
+      "detail": "WON year 2010 stored as e7 -AWARDED_IN-> e4; from_year and to_year cleared; description kept"
+    },
+    {
+      "index": 1,
+      "action": "move_won_year",
+      "detail": "WON year 2010 stored as e7 -AWARDED_IN-> e4; from_year and to_year cleared; description kept"
+    }
+  ]
+}

@@ -1,0 +1,205 @@
+{
+  "chunk_id": "driver-lewis-hamilton#74",
+  "doc_id": "driver-lewis-hamilton",
+  "document_title": "Lewis Hamilton",
+  "section": null,
+  "page": 7,
+  "source": "https://en.wikipedia.org/wiki/Lewis_Hamilton",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "3af2328e4116b8965d67fb3a031f12e6cc3e8a224c626a55ec4a47bf66ae1d98",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "entity_candidates": 7,
+  "entities_accepted": 11,
+  "entities_rejected": 0,
+  "relationship_candidates": 6,
+  "relationships_accepted": 10,
+  "relationships_rejected": 0,
+  "rejections": [],
+  "alignments": [
+    {
+      "index": 0,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e4; description kept"
+    },
+    {
+      "index": 1,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr2 -AT_RACE-> e5; description kept"
+    },
+    {
+      "index": 2,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr3 -AT_RACE-> e6; description kept"
+    },
+    {
+      "index": 3,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr4 -AT_RACE-> e7; description kept"
+    }
+  ],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Lewis Hamilton",
+        "entity_type": "Driver",
+        "description": "A prominent Formula One driver who has achieved multiple podium finishes and race victories."
+      },
+      {
+        "local_id": "e2",
+        "name": "Mercedes-AMG Petronas Formula One Team",
+        "entity_type": "Team",
+        "description": "A Formula One team known for its dominant car performance."
+      },
+      {
+        "local_id": "e3",
+        "name": "Scuderia Ferrari",
+        "entity_type": "Team",
+        "description": "A historic Formula One team with which Hamilton achieved his maiden race victory."
+      },
+      {
+        "local_id": "e4",
+        "name": "Chinese Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula One race where Hamilton secured his first podium finish."
+      },
+      {
+        "local_id": "e5",
+        "name": "Canadian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula One race where Hamilton achieved a podium finish."
+      },
+      {
+        "local_id": "e6",
+        "name": "Monaco Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula One race where Hamilton achieved a podium finish."
+      },
+      {
+        "local_id": "e7",
+        "name": "Barcelona-Catalunya Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula One race where Hamilton achieved his maiden race victory."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Lewis Hamilton at Chinese Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Hamilton secured his first podium finish at the Chinese Grand Prix."
+      },
+      {
+        "local_id": "rr2",
+        "name": "Lewis Hamilton at Canadian Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Hamilton achieved a podium finish at the Canadian Grand Prix."
+      },
+      {
+        "local_id": "rr3",
+        "name": "Lewis Hamilton at Monaco Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Hamilton achieved a podium finish at the Monaco Grand Prix."
+      },
+      {
+        "local_id": "rr4",
+        "name": "Lewis Hamilton at Barcelona-Catalunya Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Hamilton achieved his maiden race victory at the Barcelona-Catalunya Grand Prix."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Hamilton secured his first podium finish at the Chinese Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e4",
+        "relationship_type": "AT_RACE",
+        "description": "Hamilton secured his first podium finish at the Chinese Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr2",
+        "relationship_type": "ACHIEVED",
+        "description": "Hamilton achieved a podium finish at the Canadian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr2",
+        "target_id": "e5",
+        "relationship_type": "AT_RACE",
+        "description": "Hamilton achieved a podium finish at the Canadian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr3",
+        "relationship_type": "ACHIEVED",
+        "description": "Hamilton achieved a podium finish at the Monaco Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr3",
+        "target_id": "e6",
+        "relationship_type": "AT_RACE",
+        "description": "Hamilton achieved a podium finish at the Monaco Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr4",
+        "relationship_type": "ACHIEVED",
+        "description": "Hamilton achieved his maiden race victory at the Barcelona-Catalunya Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr4",
+        "target_id": "e7",
+        "relationship_type": "AT_RACE",
+        "description": "Hamilton achieved his maiden race victory at the Barcelona-Catalunya Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Hamilton drove for Mercedes during his time in Formula One.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e3",
+        "relationship_type": "DROVE_FOR",
+        "description": "Hamilton drove for Ferrari when he achieved his maiden race victory.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

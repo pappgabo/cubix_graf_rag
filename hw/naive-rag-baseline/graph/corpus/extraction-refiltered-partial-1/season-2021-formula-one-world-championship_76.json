@@ -1,0 +1,65 @@
+{
+  "chunk_id": "season-2021-formula-one-world-championship#76",
+  "doc_id": "season-2021-formula-one-world-championship",
+  "document_title": "2021 Formula One World Championship",
+  "section": null,
+  "page": 7,
+  "source": "https://en.wikipedia.org/wiki/2021_Formula_One_World_Championship",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "cd1340e934a6a0632144f817729c2178a5ad3953c152b633a44a857faec34abd",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "ACHIEVED does not allow Driver -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "ACHIEVED does not allow Driver -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "ACHIEVED does not allow Driver -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "ROUND_OF does not allow GrandPrix -> Driver"
+    }
+  ],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Verstappen",
+        "entity_type": "Driver",
+        "description": "A driver who took pole position in the Belgian Grand Prix."
+      },
+      {
+        "local_id": "e2",
+        "name": "Russell",
+        "entity_type": "Driver",
+        "description": "A driver who qualified behind Verstappen in the Belgian Grand Prix."
+      },
+      {
+        "local_id": "e3",
+        "name": "Hamilton",
+        "entity_type": "Driver",
+        "description": "A driver who qualified behind Verstappen in the Belgian Grand Prix."
+      },
+      {
+        "local_id": "e4",
+        "name": "Belgian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A race that was heavily affected by rain."
+      }
+    ],
+    "relationships": []
+  }
+}

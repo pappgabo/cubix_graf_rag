@@ -1,0 +1,193 @@
+{
+  "chunk_id": "driver-lewis-hamilton#12",
+  "doc_id": "driver-lewis-hamilton",
+  "document_title": "Lewis Hamilton",
+  "section": null,
+  "page": 3,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "b9dac099bcab2448e8e6595caae1ec671567ac3719c2eaa3ae7f1035eefab256",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Lewis Hamilton",
+        "entity_type": "Driver",
+        "description": "A Formula One driver who raced for McLaren and won his maiden title."
+      },
+      {
+        "local_id": "e2",
+        "name": "McLaren",
+        "entity_type": "Team",
+        "description": "A Formula One team that Lewis Hamilton raced for."
+      },
+      {
+        "local_id": "e3",
+        "name": "2008",
+        "entity_type": "Season",
+        "description": "The championship year in which Lewis Hamilton won his maiden title."
+      },
+      {
+        "local_id": "e4",
+        "name": "British Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A race in which Lewis Hamilton won by over a minute."
+      },
+      {
+        "local_id": "e5",
+        "name": "Heikki Kovalainen",
+        "entity_type": "Driver",
+        "description": "Teammate of Lewis Hamilton in 2008."
+      },
+      {
+        "local_id": "e6",
+        "name": "Felipe Massa",
+        "entity_type": "Driver",
+        "description": "A rival of Lewis Hamilton during the 2008 season."
+      },
+      {
+        "local_id": "e7",
+        "name": "Alonso",
+        "entity_type": "Driver",
+        "description": "Teammate of Lewis Hamilton who had inter-team tensions with him."
+      },
+      {
+        "local_id": "e8",
+        "name": "Räikkönen",
+        "entity_type": "Driver",
+        "description": "A rival of Lewis Hamilton in the championship."
+      },
+      {
+        "local_id": "e9",
+        "name": "Nick Heidfeld",
+        "entity_type": "Driver",
+        "description": "Second-placed driver at the rain-affected British Grand Prix."
+      },
+      {
+        "local_id": "e10",
+        "name": "Scuderia Ferrari",
+        "entity_type": "Team",
+        "description": "A Formula One team whose drivers were rivals to Lewis Hamilton."
+      },
+      {
+        "local_id": "e11",
+        "name": "BMW",
+        "entity_type": "Team",
+        "description": "A Formula One team whose driver Robert Kubica was a rival to Lewis Hamilton."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Lewis Hamilton at British Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Lewis Hamilton achieved a victory at the British Grand Prix."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Lewis Hamilton raced for McLaren.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e5",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Lewis Hamilton was teammates with Heikki Kovalainen in 2008.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e6",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Lewis Hamilton was teammates with Alonso.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e3",
+        "relationship_type": "ROUND_OF",
+        "description": "The British Grand Prix is a round of the 2008 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Lewis Hamilton achieved a victory at the British Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e4",
+        "relationship_type": "AT_RACE",
+        "description": "Lewis Hamilton achieved a victory at the British Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e8",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Lewis Hamilton was a rival to Räikkönen in the championship.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 11,
+  "entities_accepted": 12,
+  "entities_rejected": 0,
+  "relationship_candidates": 11,
+  "relationships_accepted": 7,
+  "relationships_rejected": 5,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "WON does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "AWARDED_IN does not allow Season -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 6,
+      "reason": "AT_RACE does not allow GrandPrix -> Driver"
+    },
+    {
+      "element": "relationship",
+      "index": 10,
+      "reason": "TEAMMATE_OF does not allow Driver -> Team"
+    },
+    {
+      "element": "relationship",
+      "index": 11,
+      "reason": "TEAMMATE_OF does not allow Driver -> Team"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 7,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e4; description kept"
+    }
+  ]
+}

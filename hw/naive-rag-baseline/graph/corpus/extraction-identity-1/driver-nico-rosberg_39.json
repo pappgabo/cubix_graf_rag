@@ -1,0 +1,61 @@
+{
+  "chunk_id": "driver-nico-rosberg#39",
+  "doc_id": "driver-nico-rosberg",
+  "document_title": "Nico Rosberg",
+  "section": "Nico Rosberg > 2006–2007",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/Nico_Rosberg",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "2e9b98d1e2f77a48df47f61860d9753b36d5ed5ca10fc930ec35c812fd6369cf",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "entity_candidates": 3,
+  "entities_accepted": 3,
+  "entities_rejected": 0,
+  "relationship_candidates": 2,
+  "relationships_accepted": 1,
+  "relationships_rejected": 1,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "RACED_IN does not allow Driver -> Season"
+    }
+  ],
+  "alignments": [],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Nico Rosberg",
+        "entity_type": "Driver",
+        "description": "Rosberg was paid £500,000 by Williams and was the first son of a former world champion in Formula One since Damon Hill in 1999."
+      },
+      {
+        "local_id": "e2",
+        "name": "Williams",
+        "entity_type": "Team",
+        "description": "Rosberg was paid £500,000 by Williams."
+      },
+      {
+        "local_id": "e3",
+        "name": "2006–2007",
+        "entity_type": "Season",
+        "description": "The season during which Rosberg achieved the highest score ever in Williams's Engineering Aptitude Test."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Rosberg drove for Williams during the 2006–2007 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

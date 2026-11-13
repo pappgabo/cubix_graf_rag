@@ -1,0 +1,95 @@
+{
+  "chunk_id": "team-williams-racing#47",
+  "doc_id": "team-williams-racing",
+  "document_title": "Williams Racing",
+  "section": "Williams Racing > 1994 season",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "f82c45abc0eca4ef191d7582ad7d5516cab5b3ca0d3f31d1b1a95efb2d9aae8e",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Nigel Mansell",
+        "entity_type": "Driver",
+        "description": "A driver who won the last Grand Prix of his career."
+      },
+      {
+        "local_id": "e2",
+        "name": "Williams Racing",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that entered cars."
+      },
+      {
+        "local_id": "e3",
+        "name": "1994",
+        "entity_type": "Season",
+        "description": "The season in which Nigel Mansell won the last Grand Prix of his career."
+      },
+      {
+        "local_id": "e4",
+        "name": "Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The last Grand Prix of Nigel Mansell's career."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Nigel Mansell at Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Nigel Mansell recorded a result in the last Grand Prix of his career."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Nigel Mansell recorded a result in the last Grand Prix of his career.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e4",
+        "relationship_type": "AT_RACE",
+        "description": "Nigel Mansell recorded a result in the last Grand Prix of his career.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e3",
+        "relationship_type": "ENTERED",
+        "description": "Williams Racing took part in the 1994 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 4,
+  "entities_accepted": 5,
+  "entities_rejected": 0,
+  "relationship_candidates": 3,
+  "relationships_accepted": 3,
+  "relationships_rejected": 1,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "FOR_TEAM does not allow Team -> GrandPrix"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 0,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e4; description kept"
+    }
+  ]
+}

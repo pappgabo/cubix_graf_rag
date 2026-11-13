@@ -1,0 +1,85 @@
+{
+  "chunk_id": "driver-valtteri-bottas#32",
+  "doc_id": "driver-valtteri-bottas",
+  "document_title": "Valtteri Bottas",
+  "section": "Formula One career > Williams (2010–2016) > 2015",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/Valtteri_Bottas",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "a68f38aae9bd5b24c5d2e527aa3984ddb9904674c22607ab29cc09c2426aa31b",
+  "validation_version": "partial-1",
+  "source_status": "ok",
+  "status": "ok",
+  "entity_candidates": 5,
+  "entities_accepted": 5,
+  "entities_rejected": 0,
+  "relationship_candidates": 3,
+  "relationships_accepted": 3,
+  "relationships_rejected": 0,
+  "rejections": [],
+  "alignments": [],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Valtteri Bottas",
+        "entity_type": "Driver",
+        "description": "A Finnish racing driver who competed in Formula One."
+      },
+      {
+        "local_id": "e2",
+        "name": "Felipe Massa",
+        "entity_type": "Driver",
+        "description": "A Brazilian racing driver who competed in Formula One."
+      },
+      {
+        "local_id": "e3",
+        "name": "Williams",
+        "entity_type": "Team",
+        "description": "A Formula One team based in the United Kingdom."
+      },
+      {
+        "local_id": "e4",
+        "name": "2015",
+        "entity_type": "Season",
+        "description": "The Formula One season of 2015."
+      },
+      {
+        "local_id": "e5",
+        "name": "Australian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula One race held in Australia."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e3",
+        "relationship_type": "DROVE_FOR",
+        "description": "Bottas drove for Williams in 2015.",
+        "from_year": 2015,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e3",
+        "relationship_type": "DROVE_FOR",
+        "description": "Massa drove for Williams in 2015.",
+        "from_year": 2015,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e4",
+        "relationship_type": "ROUND_OF",
+        "description": "The Australian Grand Prix is a round of the 2015 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "chunk_id": "season-2012-formula-one-world-championship#215",
+  "doc_id": "season-2012-formula-one-world-championship",
+  "document_title": "2012 Formula One World Championship",
+  "section": "Race summaries > Round 20 – Brazil Autódromo José Carlos Pace (Interlagos)",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/2012_Formula_One_World_Championship",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "816dbc54998afda256dd02dac3f9fe14e70489196cf76fd3460c5d3b63d3b5cd",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "entity_candidates": 6,
+  "entities_accepted": 6,
+  "entities_rejected": 0,
+  "relationship_candidates": 4,
+  "relationships_accepted": 1,
+  "relationships_rejected": 3,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "DROVE_FOR does not allow Team -> Driver"
+    },
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "DROVE_FOR does not allow Team -> Driver"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "ENTERED does not allow Season -> Team"
+    }
+  ],
+  "alignments": [],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Nikolai Fomenko",
+        "entity_type": "Driver",
+        "description": "Marussia's director of engineering."
+      },
+      {
+        "local_id": "e2",
+        "name": "Charles Pic",
+        "entity_type": "Driver",
+        "description": "Raced for Marussia and announced his move to Caterham for the 2013 season."
+      },
+      {
+        "local_id": "e3",
+        "name": "Vitaly Petrov",
+        "entity_type": "Driver",
+        "description": "Raced in Formula One."
+      },
+      {
+        "local_id": "e4",
+        "name": "Marussia",
+        "entity_type": "Team",
+        "description": "Formula One team."
+      },
+      {
+        "local_id": "e5",
+        "name": "Caterham",
+        "entity_type": "Team",
+        "description": "Formula One team."
+      },
+      {
+        "local_id": "e6",
+        "name": "2012",
+        "entity_type": "Season",
+        "description": "The championship year."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e3",
+        "target_id": "e2",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Charles Pic and Vitaly Petrov were teammates at Marussia.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

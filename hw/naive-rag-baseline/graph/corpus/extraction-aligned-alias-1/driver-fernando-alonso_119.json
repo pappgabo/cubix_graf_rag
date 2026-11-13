@@ -1,0 +1,113 @@
+{
+  "chunk_id": "driver-fernando-alonso#119",
+  "doc_id": "driver-fernando-alonso",
+  "document_title": "Fernando Alonso",
+  "section": "Helmet and career number",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/Fernando_Alonso",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "b45416a25e3af5341ef83c39f7b21298e7b72235c56dc5954e1b88727add8360",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "HELD_AT does not allow Team -> GrandPrix"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 1,
+      "action": "clear_redundant_season_year",
+      "detail": "ENTERED year 2014 already named by Season 'e3'; from_year and to_year cleared"
+    },
+    {
+      "index": 2,
+      "action": "clear_redundant_season_year",
+      "detail": "ROUND_OF year 2017 already named by Season 'e5'; from_year and to_year cleared"
+    },
+    {
+      "index": 3,
+      "action": "clear_redundant_season_year",
+      "detail": "ROUND_OF year 2017 already named by Season 'e5'; from_year and to_year cleared"
+    }
+  ],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Fernando Alonso",
+        "entity_type": "Driver",
+        "description": "A Formula One driver known for his time with Ferrari and other teams."
+      },
+      {
+        "local_id": "e2",
+        "name": "Scuderia Ferrari",
+        "entity_type": "Team",
+        "description": "A Formula One team that Alonso drove for."
+      },
+      {
+        "local_id": "e3",
+        "name": "2014",
+        "entity_type": "Season",
+        "description": "The Formula One season in which Alonso had his final event for Ferrari."
+      },
+      {
+        "local_id": "e4",
+        "name": "Abu Dhabi Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The final event for Alonso at Ferrari in 2014."
+      },
+      {
+        "local_id": "e5",
+        "name": "2017",
+        "entity_type": "Season",
+        "description": "The Formula One season in which Alonso participated in the Indianapolis 500 and the United States Grand Prix."
+      },
+      {
+        "local_id": "e6",
+        "name": "Indianapolis 500",
+        "entity_type": "GrandPrix",
+        "description": "A race in which Alonso participated in 2017."
+      },
+      {
+        "local_id": "e7",
+        "name": "United States Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A race in which Alonso participated in 2017."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e2",
+        "target_id": "e3",
+        "relationship_type": "ENTERED",
+        "description": "Ferrari entered the 2014 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e6",
+        "target_id": "e5",
+        "relationship_type": "ROUND_OF",
+        "description": "The Indianapolis 500 is a round of the 2017 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e7",
+        "target_id": "e5",
+        "relationship_type": "ROUND_OF",
+        "description": "The United States Grand Prix is a round of the 2017 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

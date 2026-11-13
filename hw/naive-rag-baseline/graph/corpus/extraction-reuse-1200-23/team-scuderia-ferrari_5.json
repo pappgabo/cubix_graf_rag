@@ -1,0 +1,152 @@
+{
+  "chunk_id": "team-scuderia-ferrari#5",
+  "doc_id": "team-scuderia-ferrari",
+  "document_title": "Scuderia Ferrari",
+  "section": null,
+  "page": 2,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "a203a2e8deb88c43f625b4c125aefad0125525e07cc2ac30b1650c588cd354d0",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Lotario Rangoni Machiavelli di Modena",
+        "entity_type": "Driver",
+        "description": "Drove for Ferrari in the 1940 Mille Miglia."
+      },
+      {
+        "local_id": "e2",
+        "name": "Scuderia Ferrari",
+        "entity_type": "Team",
+        "description": "A Formula 1 team founded by Enzo Ferrari."
+      },
+      {
+        "local_id": "e3",
+        "name": "1948",
+        "entity_type": "Season",
+        "description": "The year when the Tipo 125 made its debut."
+      },
+      {
+        "local_id": "e4",
+        "name": "Italian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The race where the Tipo 125 made its debut."
+      },
+      {
+        "local_id": "e5",
+        "name": "Circuito di Garda",
+        "entity_type": "Circuit",
+        "description": "The circuit where Ferrari achieved its first win."
+      },
+      {
+        "local_id": "e6",
+        "name": "Tipo 125",
+        "entity_type": "Car",
+        "description": "The 12-cylinder, 1.5 L car constructed by Ferrari."
+      },
+      {
+        "local_id": "e7",
+        "name": "Giuseppe Farina",
+        "entity_type": "Driver",
+        "description": "Achieved Ferrari's first win at the Circuito di Garda."
+      },
+      {
+        "local_id": "e8",
+        "name": "Raymond Sommer",
+        "entity_type": "Driver",
+        "description": "Drove the Tipo 125 at the 1948 Italian Grand Prix."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Raymond Sommer at Italian Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Raymond Sommer drove the Tipo 125 at the Italian Grand Prix."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Lotario Rangoni Machiavelli di Modena drove for Ferrari in the 1940 Mille Miglia.",
+        "from_year": 1940,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e3",
+        "relationship_type": "ENTERED",
+        "description": "Ferrari entered the 1948 season with the Tipo 125.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e6",
+        "target_id": "e3",
+        "relationship_type": "RACED_IN",
+        "description": "The Tipo 125 raced in the 1948 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e8",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Raymond Sommer drove the Tipo 125 at the Italian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e4",
+        "relationship_type": "AT_RACE",
+        "description": "Raymond Sommer drove the Tipo 125 at the Italian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 8,
+  "entities_accepted": 9,
+  "entities_rejected": 0,
+  "relationship_candidates": 6,
+  "relationships_accepted": 5,
+  "relationships_rejected": 2,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "FIELDED does not allow Car -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "ACHIEVED does not allow Driver -> Circuit"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 1,
+      "action": "clear_redundant_season_year",
+      "detail": "ENTERED year 1948 already named by Season 'e3'; from_year and to_year cleared"
+    },
+    {
+      "index": 2,
+      "action": "clear_redundant_season_year",
+      "detail": "RACED_IN year 1948 already named by Season 'e3'; from_year and to_year cleared"
+    },
+    {
+      "index": 5,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e4; description kept"
+    }
+  ]
+}

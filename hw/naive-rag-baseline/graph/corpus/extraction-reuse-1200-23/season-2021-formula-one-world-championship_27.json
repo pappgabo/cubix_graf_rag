@@ -1,0 +1,205 @@
+{
+  "chunk_id": "season-2021-formula-one-world-championship#27",
+  "doc_id": "season-2021-formula-one-world-championship",
+  "document_title": "2021 Formula One World Championship",
+  "section": null,
+  "page": 6,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "056a521547ceea3d639933bf8dafb2dead2d3ff80c32f302f53ab1852f5f6655",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Lewis Hamilton",
+        "entity_type": "Driver",
+        "description": "Hamilton secured second place in the race."
+      },
+      {
+        "local_id": "e2",
+        "name": "Max Verstappen",
+        "entity_type": "Driver",
+        "description": "Verstappen won the Styrian Grand Prix and extended his title lead."
+      },
+      {
+        "local_id": "e3",
+        "name": "Valtteri Bottas",
+        "entity_type": "Driver",
+        "description": "Bottas came third in the Styrian Grand Prix."
+      },
+      {
+        "local_id": "e4",
+        "name": "Red Bull Racing",
+        "entity_type": "Team",
+        "description": "Red Bull extended their lead in the Constructors' Championship."
+      },
+      {
+        "local_id": "e5",
+        "name": "Mercedes-AMG Petronas Formula One Team",
+        "entity_type": "Team",
+        "description": "Mercedes is competing in the Constructors' Championship."
+      },
+      {
+        "local_id": "e6",
+        "name": "2021",
+        "entity_type": "Season",
+        "description": "The season of the 2021 Formula One World Championship."
+      },
+      {
+        "local_id": "e7",
+        "name": "Styrian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A race where Verstappen won and Hamilton secured second."
+      },
+      {
+        "local_id": "e8",
+        "name": "Austrian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The last race of the first triple header."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Max Verstappen at Styrian Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Verstappen won the Styrian Grand Prix."
+      },
+      {
+        "local_id": "rr2",
+        "name": "Lewis Hamilton at Styrian Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Hamilton secured second place in the Styrian Grand Prix."
+      },
+      {
+        "local_id": "rr3",
+        "name": "Valtteri Bottas at Styrian Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Bottas came third in the Styrian Grand Prix."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e4",
+        "target_id": "e6",
+        "relationship_type": "ENTERED",
+        "description": "Red Bull Racing took part in the 2021 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e6",
+        "relationship_type": "ENTERED",
+        "description": "Mercedes took part in the 2021 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e7",
+        "target_id": "e6",
+        "relationship_type": "ROUND_OF",
+        "description": "The Styrian Grand Prix is a round of the 2021 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Verstappen won the Styrian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e7",
+        "relationship_type": "AT_RACE",
+        "description": "Verstappen won the Styrian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr2",
+        "relationship_type": "ACHIEVED",
+        "description": "Hamilton secured second place in the Styrian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr2",
+        "target_id": "e7",
+        "relationship_type": "AT_RACE",
+        "description": "Hamilton secured second place in the Styrian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "rr3",
+        "relationship_type": "ACHIEVED",
+        "description": "Bottas came third in the Styrian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr3",
+        "target_id": "e7",
+        "relationship_type": "AT_RACE",
+        "description": "Bottas came third in the Styrian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 8,
+  "entities_accepted": 11,
+  "entities_rejected": 0,
+  "relationship_candidates": 9,
+  "relationships_accepted": 9,
+  "relationships_rejected": 3,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 9,
+      "reason": "DROVE_FOR does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 10,
+      "reason": "DROVE_FOR does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 11,
+      "reason": "DROVE_FOR does not allow Driver -> Season"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 3,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e7; description kept"
+    },
+    {
+      "index": 4,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr2 -AT_RACE-> e7; description kept"
+    },
+    {
+      "index": 5,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr3 -AT_RACE-> e7; description kept"
+    }
+  ]
+}

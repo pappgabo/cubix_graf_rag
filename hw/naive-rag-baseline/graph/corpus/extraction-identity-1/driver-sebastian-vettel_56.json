@@ -1,0 +1,135 @@
+{
+  "chunk_id": "driver-sebastian-vettel#56",
+  "doc_id": "driver-sebastian-vettel",
+  "document_title": "Sebastian Vettel",
+  "section": "2012: Triple World Champion following Alonso title duel",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/Sebastian_Vettel",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "2160094f44c4e248aac98ddd1019a16591ce7e5521eaf34fc503a475b0c87900",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "entity_candidates": 4,
+  "entities_accepted": 6,
+  "entities_rejected": 0,
+  "relationship_candidates": 5,
+  "relationships_accepted": 6,
+  "relationships_rejected": 1,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 6,
+      "reason": "WON does not allow Driver -> Season"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 0,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e2; description kept"
+    },
+    {
+      "index": 1,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr2 -AT_RACE-> e3; description kept"
+    }
+  ],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Sebastian Vettel",
+        "entity_type": "Driver",
+        "description": "A Formula One driver who won the 2012 championship."
+      },
+      {
+        "local_id": "e2",
+        "name": "Korean Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula One race where Sebastian Vettel won."
+      },
+      {
+        "local_id": "e3",
+        "name": "Indian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula One race where Sebastian Vettel won."
+      },
+      {
+        "local_id": "e4",
+        "name": "2012",
+        "entity_type": "Season",
+        "description": "The Formula One season in which Sebastian Vettel became a Triple World Champion."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Sebastian Vettel at Korean Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Sebastian Vettel recorded a result in the Korean Grand Prix."
+      },
+      {
+        "local_id": "rr2",
+        "name": "Sebastian Vettel at Indian Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Sebastian Vettel recorded a result in the Indian Grand Prix."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Sebastian Vettel recorded a result in the Korean Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e2",
+        "relationship_type": "AT_RACE",
+        "description": "Sebastian Vettel recorded a result in the Korean Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr2",
+        "relationship_type": "ACHIEVED",
+        "description": "Sebastian Vettel recorded a result in the Indian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr2",
+        "target_id": "e3",
+        "relationship_type": "AT_RACE",
+        "description": "Sebastian Vettel recorded a result in the Indian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e4",
+        "relationship_type": "ROUND_OF",
+        "description": "The Korean Grand Prix is a round of the 2012 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e4",
+        "relationship_type": "ROUND_OF",
+        "description": "The Indian Grand Prix is a round of the 2012 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

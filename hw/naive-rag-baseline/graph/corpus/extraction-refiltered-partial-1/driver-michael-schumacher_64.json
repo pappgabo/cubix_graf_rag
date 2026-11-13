@@ -1,0 +1,89 @@
+{
+  "chunk_id": "driver-michael-schumacher#64",
+  "doc_id": "driver-michael-schumacher",
+  "document_title": "Michael Schumacher",
+  "section": null,
+  "page": 6,
+  "source": "https://en.wikipedia.org/wiki/Michael_Schumacher",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "ecbe0d66217fc25e232761f455cba38f2ab11d9fa9fa55698eb891cf79b550ad",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "WON is not temporal; from_year, to_year and role must be null"
+    },
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "RACED_IN does not allow Driver -> Season"
+    }
+  ],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Michael Schumacher",
+        "entity_type": "Driver",
+        "description": "A Formula One driver who raced for Ferrari."
+      },
+      {
+        "local_id": "e2",
+        "name": "Ferrari",
+        "entity_type": "Team",
+        "description": "A Formula One team that entered cars."
+      },
+      {
+        "local_id": "e3",
+        "name": "1999",
+        "entity_type": "Season",
+        "description": "A championship year."
+      },
+      {
+        "local_id": "e4",
+        "name": "Drivers' Championship",
+        "entity_type": "Title",
+        "description": "A championship title for drivers."
+      },
+      {
+        "local_id": "e5",
+        "name": "Constructors' Championship",
+        "entity_type": "Title",
+        "description": "A championship title for teams."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e2",
+        "target_id": "e3",
+        "relationship_type": "ENTERED",
+        "description": "Ferrari took part in the 1999 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Michael Schumacher drove for Ferrari.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e4",
+        "relationship_type": "WON",
+        "description": "Michael Schumacher was a contender for the Drivers' Championship.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

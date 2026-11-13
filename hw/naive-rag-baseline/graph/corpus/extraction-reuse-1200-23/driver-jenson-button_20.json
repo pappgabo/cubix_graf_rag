@@ -1,0 +1,201 @@
+{
+  "chunk_id": "driver-jenson-button#20",
+  "doc_id": "driver-jenson-button",
+  "document_title": "Jenson Button",
+  "section": "Formula One career > BAR/Honda/Brawn (2003–2009) > BAR (2003–2005)",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "4f99adebf78a233fa71cd70c5383482f964e5061ec4012197c58f154b47e5039",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Jenson Button",
+        "entity_type": "Driver",
+        "description": "A Formula One driver who raced for BAR from 2003 to 2005."
+      },
+      {
+        "local_id": "e2",
+        "name": "Jacques Villeneuve",
+        "entity_type": "Driver",
+        "description": "A Formula One driver who was Jenson Button's teammate at BAR."
+      },
+      {
+        "local_id": "e3",
+        "name": "BAR",
+        "entity_type": "Team",
+        "description": "A Formula One team that Jenson Button raced for from 2003 to 2005."
+      },
+      {
+        "local_id": "e4",
+        "name": "Austrian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula One race where Jenson Button finished fourth."
+      },
+      {
+        "local_id": "e5",
+        "name": "Monaco Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula One race where Jenson Button had a high-speed crash during qualifying."
+      },
+      {
+        "local_id": "e6",
+        "name": "Montreal Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The following Grand Prix after the Monaco Grand Prix where Jenson Button was cleared to race."
+      },
+      {
+        "local_id": "e7",
+        "name": "2003",
+        "entity_type": "Season",
+        "description": "The Formula One season during which Jenson Button raced for BAR."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Jenson Button at Austrian Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Jenson Button scored points at the Austrian Grand Prix."
+      },
+      {
+        "local_id": "rr2",
+        "name": "Jenson Button at Monaco Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Jenson Button had a crash during qualifying at the Monaco Grand Prix."
+      },
+      {
+        "local_id": "rr3",
+        "name": "Jenson Button at Montreal Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Jenson Button was cleared to race at the Montreal Grand Prix after the Monaco crash."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e3",
+        "relationship_type": "DROVE_FOR",
+        "description": "Jenson Button drove for BAR.",
+        "from_year": 2003,
+        "to_year": 2005,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Jenson Button was teammates with Jacques Villeneuve at BAR.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Jenson Button scored points at the Austrian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e4",
+        "relationship_type": "AT_RACE",
+        "description": "Jenson Button scored points at the Austrian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e7",
+        "relationship_type": "ROUND_OF",
+        "description": "The Austrian Grand Prix is a round of the 2003 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr2",
+        "relationship_type": "ACHIEVED",
+        "description": "Jenson Button had a crash during qualifying at the Monaco Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr2",
+        "target_id": "e5",
+        "relationship_type": "AT_RACE",
+        "description": "Jenson Button had a crash during qualifying at the Monaco Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e7",
+        "relationship_type": "ROUND_OF",
+        "description": "The Monaco Grand Prix is a round of the 2003 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr3",
+        "relationship_type": "ACHIEVED",
+        "description": "Jenson Button was cleared to race at the Montreal Grand Prix after the Monaco crash.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr3",
+        "target_id": "e6",
+        "relationship_type": "AT_RACE",
+        "description": "Jenson Button was cleared to race at the Montreal Grand Prix after the Monaco crash.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e6",
+        "target_id": "e7",
+        "relationship_type": "ROUND_OF",
+        "description": "The Montreal Grand Prix is a round of the 2003 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 7,
+  "entities_accepted": 10,
+  "entities_rejected": 0,
+  "relationship_candidates": 8,
+  "relationships_accepted": 11,
+  "relationships_rejected": 0,
+  "rejections": [],
+  "alignments": [
+    {
+      "index": 2,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e4; description kept"
+    },
+    {
+      "index": 4,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr2 -AT_RACE-> e5; description kept"
+    },
+    {
+      "index": 6,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr3 -AT_RACE-> e6; description kept"
+    }
+  ]
+}

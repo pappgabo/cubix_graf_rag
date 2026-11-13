@@ -1,0 +1,109 @@
+{
+  "chunk_id": "driver-sebastian-vettel#36",
+  "doc_id": "driver-sebastian-vettel",
+  "document_title": "Sebastian Vettel",
+  "section": "2017–2018: Title battles versus Hamilton",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "933ed5b3390a5adb5fd72ef162001867861670175a57903dc2e2533ec602513c",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Sebastian Vettel",
+        "entity_type": "Driver",
+        "description": "A four-time world champion driver in Formula One."
+      },
+      {
+        "local_id": "e2",
+        "name": "Valtteri Bottas",
+        "entity_type": "Driver",
+        "description": "A Formula One driver for Mercedes."
+      },
+      {
+        "local_id": "e3",
+        "name": "Max Verstappen",
+        "entity_type": "Driver",
+        "description": "A Formula One driver."
+      },
+      {
+        "local_id": "e4",
+        "name": "2018",
+        "entity_type": "Season",
+        "description": "The Formula One season in which Vettel competed."
+      },
+      {
+        "local_id": "e5",
+        "name": "Australian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The first race of the 2018 Formula One season."
+      },
+      {
+        "local_id": "e6",
+        "name": "Bahrain Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A race in the 2018 Formula One season."
+      },
+      {
+        "local_id": "e7",
+        "name": "Chinese Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A race in the 2018 Formula One season."
+      },
+      {
+        "local_id": "e8",
+        "name": "Azerbaijan Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A race in the 2018 Formula One season."
+      }
+    ],
+    "relationships": []
+  },
+  "entity_candidates": 8,
+  "entities_accepted": 8,
+  "entities_rejected": 0,
+  "relationship_candidates": 7,
+  "relationships_accepted": 0,
+  "relationships_rejected": 7,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "ACHIEVED Driver -> GrandPrix has from_year=2018, to_year=None, role=None; the year or role cannot be stored on the reified result"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "ACHIEVED Driver -> GrandPrix has from_year=2018, to_year=None, role=None; the year or role cannot be stored on the reified result"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "ACHIEVED Driver -> GrandPrix has from_year=2018, to_year=None, role=None; the year or role cannot be stored on the reified result"
+    },
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "RACED_IN does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "RACED_IN does not allow Driver -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "FOR_TEAM does not allow Driver -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "FOR_TEAM does not allow Driver -> GrandPrix"
+    }
+  ],
+  "alignments": []
+}

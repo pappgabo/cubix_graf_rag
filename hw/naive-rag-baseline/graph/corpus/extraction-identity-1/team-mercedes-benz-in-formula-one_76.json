@@ -1,0 +1,78 @@
+{
+  "chunk_id": "team-mercedes-benz-in-formula-one#76",
+  "doc_id": "team-mercedes-benz-in-formula-one",
+  "document_title": "Mercedes-Benz in Formula One",
+  "section": "Mercedes-Benz in Formula One > Engine supplier",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/Mercedes-Benz_in_Formula_One",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "f584e1865358c18cfa5ec75b3ab56a10b3a7035c3b2a31ecbb097eb4ed891c98",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "entity_candidates": 5,
+  "entities_accepted": 5,
+  "entities_rejected": 0,
+  "relationship_candidates": 4,
+  "relationships_accepted": 0,
+  "relationships_rejected": 4,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "POWERED_BY does not allow Team -> Team"
+    },
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "POWERED_BY does not allow Team -> Team"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "POWERED_BY does not allow Team -> Team"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "POWERED_BY does not allow Team -> Team"
+    }
+  ],
+  "alignments": [],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Mercedes-AMG Petronas Formula One Team",
+        "entity_type": "Team",
+        "description": "Mercedes supplies engines to Alpine, McLaren, and Williams, in addition to their own team."
+      },
+      {
+        "local_id": "e2",
+        "name": "Alpine",
+        "entity_type": "Team",
+        "description": "Team that receives engines from Mercedes."
+      },
+      {
+        "local_id": "e3",
+        "name": "McLaren",
+        "entity_type": "Team",
+        "description": "Team that receives engines from Mercedes."
+      },
+      {
+        "local_id": "e4",
+        "name": "Williams",
+        "entity_type": "Team",
+        "description": "Team that receives engines from Mercedes."
+      },
+      {
+        "local_id": "e5",
+        "name": "2026",
+        "entity_type": "Season",
+        "description": "The season for which Mercedes supplies engines."
+      }
+    ],
+    "relationships": []
+  }
+}

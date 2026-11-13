@@ -1,0 +1,70 @@
+{
+  "chunk_id": "driver-sebastian-vettel#90",
+  "doc_id": "driver-sebastian-vettel",
+  "document_title": "Sebastian Vettel",
+  "section": "2017–2018: Title battles versus Hamilton",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/Sebastian_Vettel",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "0f6c735e6cb413533daf60b6c10ec114bcdabfb55451bcb58621d442cd00330b",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "AT_RACE does not allow GrandPrix -> Driver"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 0,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e2; description kept"
+    }
+  ],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Sebastian Vettel",
+        "entity_type": "Driver",
+        "description": "A Formula One driver who took three consecutive pole positions in 2017."
+      },
+      {
+        "local_id": "e2",
+        "name": "Azerbaijan",
+        "entity_type": "GrandPrix",
+        "description": "A Grand Prix where Vettel qualified in first place."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Sebastian Vettel at Azerbaijan",
+        "entity_type": "RaceResult",
+        "description": "Vettel qualified in first place in Azerbaijan."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Vettel qualified in first place in Azerbaijan.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e2",
+        "relationship_type": "AT_RACE",
+        "description": "Vettel qualified in first place in Azerbaijan.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

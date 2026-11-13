@@ -1,0 +1,60 @@
+{
+  "chunk_id": "driver-michael-schumacher#13",
+  "doc_id": "driver-michael-schumacher",
+  "document_title": "Michael Schumacher",
+  "section": null,
+  "page": 2,
+  "source": "https://en.wikipedia.org/wiki/Michael_Schumacher",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "1286fc2f1e8a46590c3e1c02b8e449462b938cd84d3f1c04fd8be530063573e0",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "WON does not allow Driver -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "AWARDED_IN does not allow GrandPrix -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "AT_RACE does not allow Driver -> GrandPrix"
+    }
+  ],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Michael Schumacher",
+        "entity_type": "Driver",
+        "description": "also won the 1990 Macau Grand Prix under controversial circumstances."
+      },
+      {
+        "local_id": "e2",
+        "name": "Mika Häkkinen",
+        "entity_type": "Driver",
+        "description": "placed second behind Michael Schumacher in the first heat."
+      },
+      {
+        "local_id": "e3",
+        "name": "1990",
+        "entity_type": "Season",
+        "description": "the year of the Macau Grand Prix."
+      },
+      {
+        "local_id": "e4",
+        "name": "Macau Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "a race won by Michael Schumacher."
+      }
+    ],
+    "relationships": []
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "chunk_id": "team-williams-racing#66",
+  "doc_id": "team-williams-racing",
+  "document_title": "Williams Racing",
+  "section": "Williams Racing > BMW engines (2000–2005)",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "62098c0c71d3f30ea4cb621e79aab7a57114acb38bf13aa7c0f4e896d2585864",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Williams Racing",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that entered cars."
+      },
+      {
+        "local_id": "e2",
+        "name": "BMW",
+        "entity_type": "PowerUnit",
+        "description": "An engine supplier for Williams Racing."
+      },
+      {
+        "local_id": "e3",
+        "name": "2000–2005",
+        "entity_type": "Season",
+        "description": "A championship period during which Williams Racing had major sponsorship changes."
+      },
+      {
+        "local_id": "e4",
+        "name": "Ralf Schumacher",
+        "entity_type": "Driver",
+        "description": "A driver who raced for Williams Racing."
+      },
+      {
+        "local_id": "e5",
+        "name": "Juan Pablo Montoya",
+        "entity_type": "Driver",
+        "description": "A driver who raced for Williams Racing."
+      },
+      {
+        "local_id": "e6",
+        "name": "British Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A race where Williams debuted Hewlett-Packard sponsorship."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e4",
+        "target_id": "e1",
+        "relationship_type": "DROVE_FOR",
+        "description": "Ralf Schumacher raced for Williams Racing.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e1",
+        "relationship_type": "DROVE_FOR",
+        "description": "Juan Pablo Montoya raced for Williams Racing.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e6",
+        "target_id": "e3",
+        "relationship_type": "ROUND_OF",
+        "description": "The British Grand Prix is a round of the 2000–2005 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 6,
+  "entities_accepted": 6,
+  "entities_rejected": 0,
+  "relationship_candidates": 4,
+  "relationships_accepted": 3,
+  "relationships_rejected": 1,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "FIELDED does not allow Team -> PowerUnit"
+    }
+  ],
+  "alignments": []
+}

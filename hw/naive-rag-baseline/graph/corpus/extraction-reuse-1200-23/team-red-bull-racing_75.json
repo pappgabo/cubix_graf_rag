@@ -1,0 +1,88 @@
+{
+  "chunk_id": "team-red-bull-racing#75",
+  "doc_id": "team-red-bull-racing",
+  "document_title": "Red Bull Racing",
+  "section": "RBPT-Ford engines (2026–present) > 2026 season",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "0662d55c54ea15e0953f43b2e0d73219c8c2fe246743e19a2cd32f512e7db43c",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Red Bull Racing",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that enters cars."
+      },
+      {
+        "local_id": "e2",
+        "name": "Ford Motor Company",
+        "entity_type": "PowerUnit",
+        "description": "An automotive manufacturer providing engines."
+      },
+      {
+        "local_id": "e3",
+        "name": "Isack Hadjar",
+        "entity_type": "Driver",
+        "description": "A driver promoted to partner Verstappen for the 2026 season."
+      },
+      {
+        "local_id": "e4",
+        "name": "Max Verstappen",
+        "entity_type": "Driver",
+        "description": "A driver for Red Bull Racing."
+      },
+      {
+        "local_id": "e5",
+        "name": "2026",
+        "entity_type": "Season",
+        "description": "The Formula 1 championship season."
+      },
+      {
+        "local_id": "e6",
+        "name": "Honda",
+        "entity_type": "PowerUnit",
+        "description": "An automotive manufacturer that had a partnership with Red Bull Racing."
+      },
+      {
+        "local_id": "e7",
+        "name": "2025 Qatar Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A specific race event."
+      }
+    ],
+    "relationships": []
+  },
+  "entity_candidates": 7,
+  "entities_accepted": 7,
+  "entities_rejected": 0,
+  "relationship_candidates": 4,
+  "relationships_accepted": 0,
+  "relationships_rejected": 4,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "TEAMMATE_OF is not temporal; from_year=2026, to_year=None, role=None cannot be stored without dropping them"
+    },
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "POWERED_BY does not allow Team -> PowerUnit"
+    },
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "DROVE_FOR does not allow Team -> PowerUnit"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "ROUND_OF does not allow GrandPrix -> Team"
+    }
+  ],
+  "alignments": []
+}

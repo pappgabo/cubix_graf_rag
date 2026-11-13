@@ -1,0 +1,157 @@
+{
+  "chunk_id": "season-2012-formula-one-world-championship#116",
+  "doc_id": "season-2012-formula-one-world-championship",
+  "document_title": "2012 Formula One World Championship",
+  "section": "Race summaries > Round 6 – Monaco Circuit de Monaco",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/2012_Formula_One_World_Championship",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "b34a6a27f1f8273607281725f1d4c9bd2a2e835e742f8766f9ca5d47ff2e000c",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "entity_candidates": 8,
+  "entities_accepted": 9,
+  "entities_rejected": 0,
+  "relationship_candidates": 7,
+  "relationships_accepted": 7,
+  "relationships_rejected": 1,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 5,
+      "reason": "RACED_IN does not allow Driver -> Driver"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 3,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e7; description kept"
+    }
+  ],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Red Bull Racing",
+        "entity_type": "Team",
+        "description": "Maintained their lead in the Constructors' Championship."
+      },
+      {
+        "local_id": "e2",
+        "name": "Caterham",
+        "entity_type": "Team",
+        "description": "Overtook Marussia for tenth place."
+      },
+      {
+        "local_id": "e3",
+        "name": "Marussia",
+        "entity_type": "Team",
+        "description": "Was overtaken by Caterham for tenth place."
+      },
+      {
+        "local_id": "e4",
+        "name": "Pastor Maldonado",
+        "entity_type": "Driver",
+        "description": "Spanish Grand Prix winner who received a ten-place grid penalty."
+      },
+      {
+        "local_id": "e5",
+        "name": "Sergio Pérez",
+        "entity_type": "Driver",
+        "description": "Clipped by Pastor Maldonado in an incident."
+      },
+      {
+        "local_id": "e6",
+        "name": "2012",
+        "entity_type": "Season",
+        "description": "The championship year."
+      },
+      {
+        "local_id": "e7",
+        "name": "Monaco Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "Round 6 of the 2012 Formula One World Championship."
+      },
+      {
+        "local_id": "e8",
+        "name": "Circuit de Monaco",
+        "entity_type": "Circuit",
+        "description": "The venue for the Monaco Grand Prix."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Pastor Maldonado at Monaco Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Pastor Maldonado recorded a result in the Monaco Grand Prix."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e6",
+        "relationship_type": "ENTERED",
+        "description": "Red Bull Racing took part in the 2012 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e6",
+        "relationship_type": "ENTERED",
+        "description": "Caterham took part in the 2012 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e6",
+        "relationship_type": "ENTERED",
+        "description": "Marussia took part in the 2012 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Pastor Maldonado recorded a result in the Monaco Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e7",
+        "relationship_type": "AT_RACE",
+        "description": "Pastor Maldonado recorded a result in the Monaco Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e7",
+        "target_id": "e8",
+        "relationship_type": "HELD_AT",
+        "description": "The Monaco Grand Prix is held at the Circuit de Monaco.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e7",
+        "target_id": "e6",
+        "relationship_type": "ROUND_OF",
+        "description": "The Monaco Grand Prix is a round of the 2012 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

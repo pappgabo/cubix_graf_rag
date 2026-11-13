@@ -1,0 +1,96 @@
+{
+  "chunk_id": "team-mclaren#48",
+  "doc_id": "team-mclaren",
+  "document_title": "McLaren",
+  "section": "2015–2017: Return to Honda engines",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "d3e55ce006de2ec57bb0e321440c7b9034cb39465256b814e2b57a063f8796c0",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "McLaren",
+        "entity_type": "Team",
+        "description": "A Formula 1 team."
+      },
+      {
+        "local_id": "e2",
+        "name": "Lando Norris",
+        "entity_type": "Driver",
+        "description": "A driver signed to McLaren's Young Driver Programme."
+      },
+      {
+        "local_id": "e3",
+        "name": "Fernando Alonso",
+        "entity_type": "Driver",
+        "description": "A driver who participated in the 2017 Monaco Grand Prix."
+      },
+      {
+        "local_id": "e4",
+        "name": "Jenson Button",
+        "entity_type": "Driver",
+        "description": "A driver who replaced Alonso in the 2017 Monaco Grand Prix."
+      },
+      {
+        "local_id": "e5",
+        "name": "Pascal Wehrlein",
+        "entity_type": "Driver",
+        "description": "A driver whose car was hit by Jenson Button."
+      },
+      {
+        "local_id": "e6",
+        "name": "2017",
+        "entity_type": "Season",
+        "description": "The Formula 1 season in which McLaren finished 9th."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e6",
+        "relationship_type": "ENTERED",
+        "description": "McLaren took part in the 2017 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e5",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Jenson Button was teammates with Pascal Wehrlein during the incident.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 6,
+  "entities_accepted": 6,
+  "entities_rejected": 0,
+  "relationship_candidates": 5,
+  "relationships_accepted": 2,
+  "relationships_rejected": 3,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "DROVE_FOR does not allow Team -> Driver"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "DROVE_FOR does not allow Team -> Driver"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "DROVE_FOR does not allow Team -> Driver"
+    }
+  ],
+  "alignments": []
+}

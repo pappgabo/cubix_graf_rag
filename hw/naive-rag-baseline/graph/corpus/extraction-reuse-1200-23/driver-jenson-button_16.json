@@ -1,0 +1,122 @@
+{
+  "chunk_id": "driver-jenson-button#16",
+  "doc_id": "driver-jenson-button",
+  "document_title": "Jenson Button",
+  "section": "Formula One career > Team Enstone (2001–2002) > Benetton (2001)",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "525a3f3533eb12c89946c31b98ecf04613a1378392d9dcdf1bab46622c67ca10",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Jenson Button",
+        "entity_type": "Driver",
+        "description": "A Formula One driver who raced for Benetton in 2001."
+      },
+      {
+        "local_id": "e2",
+        "name": "Benetton",
+        "entity_type": "Team",
+        "description": "A Formula One team that Jenson Button raced for in 2001."
+      },
+      {
+        "local_id": "e3",
+        "name": "2001",
+        "entity_type": "Season",
+        "description": "The Formula One season in which Jenson Button raced for Benetton."
+      },
+      {
+        "local_id": "e4",
+        "name": "German Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The race where Jenson Button achieved his best result, a fifth-place finish."
+      },
+      {
+        "local_id": "e5",
+        "name": "Giancarlo Fisichella",
+        "entity_type": "Driver",
+        "description": "An experienced driver who partnered with Jenson Button at Benetton in 2001."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Jenson Button at German Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Jenson Button achieved a fifth-place finish at the German Grand Prix."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Jenson Button drove for Benetton in 2001.",
+        "from_year": 2001,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Jenson Button achieved a fifth-place finish at the German Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e4",
+        "relationship_type": "AT_RACE",
+        "description": "Jenson Button achieved a fifth-place finish at the German Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e5",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Jenson Button was teammates with Giancarlo Fisichella at Benetton in 2001.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e3",
+        "relationship_type": "ENTERED",
+        "description": "Benetton entered the 2001 Formula One season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e3",
+        "relationship_type": "ROUND_OF",
+        "description": "The German Grand Prix was a round of the 2001 Formula One season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 5,
+  "entities_accepted": 6,
+  "entities_rejected": 0,
+  "relationship_candidates": 5,
+  "relationships_accepted": 6,
+  "relationships_rejected": 0,
+  "rejections": [],
+  "alignments": [
+    {
+      "index": 1,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e4; description kept"
+    }
+  ]
+}

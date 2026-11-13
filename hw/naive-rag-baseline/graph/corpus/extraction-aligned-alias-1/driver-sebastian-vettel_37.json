@@ -1,0 +1,96 @@
+{
+  "chunk_id": "driver-sebastian-vettel#37",
+  "doc_id": "driver-sebastian-vettel",
+  "document_title": "Sebastian Vettel",
+  "section": "2009: Championship contender",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/Sebastian_Vettel",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "b2bb6145f2abb41ab8647c5d132cc633a1b71df57ccbee328b0dc9286227106b",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "WON does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "WON does not allow Driver -> Season"
+    }
+  ],
+  "alignments": [],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Sebastian Vettel",
+        "entity_type": "Driver",
+        "description": "A Formula One driver who was a championship contender in 2009."
+      },
+      {
+        "local_id": "e2",
+        "name": "Jenson Button",
+        "entity_type": "Driver",
+        "description": "A Formula One driver who finished first in the World Drivers' Championship standings in 2009."
+      },
+      {
+        "local_id": "e3",
+        "name": "Mark Webber",
+        "entity_type": "Driver",
+        "description": "A Formula One driver and teammate of Sebastian Vettel."
+      },
+      {
+        "local_id": "e4",
+        "name": "2009",
+        "entity_type": "Season",
+        "description": "The Formula One season in which Sebastian Vettel was a championship contender."
+      },
+      {
+        "local_id": "e5",
+        "name": "Japanese Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula One race where Sebastian Vettel won from pole position."
+      },
+      {
+        "local_id": "e6",
+        "name": "Abu Dhabi Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The inaugural Formula One race held as a day-night event, won by Sebastian Vettel."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e5",
+        "target_id": "e4",
+        "relationship_type": "ROUND_OF",
+        "description": "The Japanese Grand Prix is a round of the 2009 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e6",
+        "target_id": "e4",
+        "relationship_type": "ROUND_OF",
+        "description": "The Abu Dhabi Grand Prix is a round of the 2009 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e3",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Sebastian Vettel was teammates with Mark Webber.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

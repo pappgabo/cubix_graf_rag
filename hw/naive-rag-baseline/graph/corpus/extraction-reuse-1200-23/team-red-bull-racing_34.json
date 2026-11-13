@@ -1,0 +1,77 @@
+{
+  "chunk_id": "team-red-bull-racing#34",
+  "doc_id": "team-red-bull-racing",
+  "document_title": "Red Bull Racing",
+  "section": "2013 season",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "95cc7fdb6625c54093d059569259fbb77d017c23f01d70ed33161ce34e1627b5",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Infiniti Red Bull Racing",
+        "entity_type": "Team",
+        "description": "The team was renamed Infiniti Red Bull Racing for the 2013 season."
+      },
+      {
+        "local_id": "e2",
+        "name": "Sebastian Vettel",
+        "entity_type": "Driver",
+        "description": "Driver for Infiniti Red Bull Racing in the 2013 season."
+      },
+      {
+        "local_id": "e3",
+        "name": "Mark Webber",
+        "entity_type": "Driver",
+        "description": "Driver for Infiniti Red Bull Racing in the 2013 season."
+      },
+      {
+        "local_id": "e4",
+        "name": "2013",
+        "entity_type": "Season",
+        "description": "The season in which Infiniti Red Bull Racing competed."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e4",
+        "relationship_type": "ENTERED",
+        "description": "Infiniti Red Bull Racing took part in the 2013 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e1",
+        "relationship_type": "DROVE_FOR",
+        "description": "Sebastian Vettel drove for Infiniti Red Bull Racing.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e1",
+        "relationship_type": "DROVE_FOR",
+        "description": "Mark Webber drove for Infiniti Red Bull Racing.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 4,
+  "entities_accepted": 4,
+  "entities_rejected": 0,
+  "relationship_candidates": 3,
+  "relationships_accepted": 3,
+  "relationships_rejected": 0,
+  "rejections": [],
+  "alignments": []
+}

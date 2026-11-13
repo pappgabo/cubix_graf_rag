@@ -1,0 +1,38 @@
+{
+  "chunk_id": "driver-michael-schumacher#20",
+  "doc_id": "driver-michael-schumacher",
+  "document_title": "Michael Schumacher",
+  "section": null,
+  "page": 2,
+  "source": "https://en.wikipedia.org/wiki/Michael_Schumacher",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "53ca4bfca1de68d3d05fcbaa07ba03314c565bda31476d517ceb290b43f9e578",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "DROVE_FOR does not allow Driver -> Car"
+    }
+  ],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Michael Schumacher",
+        "entity_type": "Driver",
+        "description": "A Formula One driver known for his impressive career."
+      },
+      {
+        "local_id": "e2",
+        "name": "Jordan 191",
+        "entity_type": "Car",
+        "description": "The car model fielded by the Jordan team."
+      }
+    ],
+    "relationships": []
+  }
+}

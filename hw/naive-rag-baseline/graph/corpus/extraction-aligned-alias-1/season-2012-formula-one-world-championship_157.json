@@ -1,0 +1,139 @@
+{
+  "chunk_id": "season-2012-formula-one-world-championship#157",
+  "doc_id": "season-2012-formula-one-world-championship",
+  "document_title": "2012 Formula One World Championship",
+  "section": "Race summaries > Round 13 – Italy Autodromo Nazionale Monza",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/2012_Formula_One_World_Championship",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "7ea9ec2a71a40574799ae4cd998b3a91a5025056b9105368137716eeae4e2c90",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "FOR_TEAM does not allow Driver -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "FOR_TEAM does not allow Driver -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "FOR_TEAM does not allow Driver -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 5,
+      "reason": "FOR_TEAM does not allow Driver -> GrandPrix"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 0,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e7; description kept"
+    }
+  ],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Fernando Alonso",
+        "entity_type": "Driver",
+        "description": "Finished third in the race."
+      },
+      {
+        "local_id": "e2",
+        "name": "Jenson Button",
+        "entity_type": "Driver",
+        "description": "Retired from the race."
+      },
+      {
+        "local_id": "e3",
+        "name": "Sebastian Vettel",
+        "entity_type": "Driver",
+        "description": "Received a drive-through penalty."
+      },
+      {
+        "local_id": "e4",
+        "name": "Bruno Senna",
+        "entity_type": "Driver",
+        "description": "Criticised the race stewards."
+      },
+      {
+        "local_id": "e5",
+        "name": "Paul di Resta",
+        "entity_type": "Driver",
+        "description": "Involved in an altercation."
+      },
+      {
+        "local_id": "e6",
+        "name": "2012",
+        "entity_type": "Season",
+        "description": "The championship year."
+      },
+      {
+        "local_id": "e7",
+        "name": "Italian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "Round 13 of the 2012 Formula One World Championship."
+      },
+      {
+        "local_id": "e8",
+        "name": "Autodromo Nazionale Monza",
+        "entity_type": "Circuit",
+        "description": "The circuit where the Italian Grand Prix was held."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Fernando Alonso at Italian Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Alonso finished third in the Italian Grand Prix."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Alonso finished third in the Italian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e7",
+        "relationship_type": "AT_RACE",
+        "description": "Alonso finished third in the Italian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e7",
+        "target_id": "e6",
+        "relationship_type": "ROUND_OF",
+        "description": "The Italian Grand Prix is a round of the 2012 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e7",
+        "target_id": "e8",
+        "relationship_type": "HELD_AT",
+        "description": "The Italian Grand Prix was held at Autodromo Nazionale Monza.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "chunk_id": "season-2016-formula-one-world-championship#32",
+  "doc_id": "season-2016-formula-one-world-championship",
+  "document_title": "2016 Formula One World Championship",
+  "section": "European rounds",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "bd8eda6eab46b8ca5ef2df3b31d3828e46cbf403790dbbcf7944191739ca111c",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Rosberg",
+        "entity_type": "Driver",
+        "description": "A driver who was penalised for a radio call."
+      },
+      {
+        "local_id": "e2",
+        "name": "Verstappen",
+        "entity_type": "Driver",
+        "description": "A driver who finished ahead of Rosberg after his penalty."
+      }
+    ],
+    "relationships": []
+  },
+  "entity_candidates": 2,
+  "entities_accepted": 2,
+  "entities_rejected": 0,
+  "relationship_candidates": 1,
+  "relationships_accepted": 0,
+  "relationships_rejected": 1,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "ACHIEVED does not allow Driver -> Driver"
+    }
+  ],
+  "alignments": []
+}

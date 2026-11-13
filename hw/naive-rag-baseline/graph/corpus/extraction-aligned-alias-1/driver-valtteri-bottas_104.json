@@ -1,0 +1,79 @@
+{
+  "chunk_id": "driver-valtteri-bottas#104",
+  "doc_id": "driver-valtteri-bottas",
+  "document_title": "Valtteri Bottas",
+  "section": "Formula One career > Alfa Romeo / Sauber (2022–2024) > 2022",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/Valtteri_Bottas",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "7a4d765d1cb46d2898643eb913a580efa5128d9975a062d0f3a1333bb5d3aaa8",
+  "validation_version": "partial-1",
+  "source_status": "ok",
+  "status": "ok",
+  "rejections": [],
+  "alignments": [],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Valtteri Bottas",
+        "entity_type": "Driver",
+        "description": "A Finnish racing driver who competes in Formula One."
+      },
+      {
+        "local_id": "e2",
+        "name": "Alfa Romeo",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that entered cars."
+      },
+      {
+        "local_id": "e3",
+        "name": "2022",
+        "entity_type": "Season",
+        "description": "The Formula One championship season of 2022."
+      },
+      {
+        "local_id": "e4",
+        "name": "Spanish Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula One race held in Spain."
+      },
+      {
+        "local_id": "e5",
+        "name": "Circuit de Barcelona-Catalunya",
+        "entity_type": "Circuit",
+        "description": "The racing venue for the Spanish Grand Prix."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Valtteri Bottas drove for Alfa Romeo in 2022.",
+        "from_year": 2022,
+        "to_year": 2024,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e3",
+        "relationship_type": "ROUND_OF",
+        "description": "The Spanish Grand Prix is a round of the 2022 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e5",
+        "relationship_type": "HELD_AT",
+        "description": "The Spanish Grand Prix is held at Circuit de Barcelona-Catalunya.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

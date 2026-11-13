@@ -1,0 +1,77 @@
+{
+  "chunk_id": "team-renault-in-formula-one#24",
+  "doc_id": "team-renault-in-formula-one",
+  "document_title": "Renault in Formula One",
+  "section": "Constructor > Renault F1 Team and Lotus Renault GP (2002–2011): The rise and fall of the first Enstone era > Back to back double championship success (2005–2006)",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "fbbd5f44ac473ade8894fb9717faf5150b4ed00889ad227a8ad67ffe22a84c2f",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Renault",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that entered cars."
+      },
+      {
+        "local_id": "e2",
+        "name": "2006",
+        "entity_type": "Season",
+        "description": "A championship year."
+      },
+      {
+        "local_id": "e3",
+        "name": "Constructors' Championship",
+        "entity_type": "Title",
+        "description": "A championship title for the Constructors'."
+      },
+      {
+        "local_id": "e4",
+        "name": "Brazilian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A named race event."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e3",
+        "relationship_type": "WON",
+        "description": "Renault won the Constructors' Championship in 2006.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e2",
+        "relationship_type": "ROUND_OF",
+        "description": "The Brazilian Grand Prix is a round of the 2006 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e2",
+        "relationship_type": "AWARDED_IN",
+        "description": "The Constructors' Championship title belongs to the 2006 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 4,
+  "entities_accepted": 4,
+  "entities_rejected": 0,
+  "relationship_candidates": 3,
+  "relationships_accepted": 3,
+  "relationships_rejected": 0,
+  "rejections": [],
+  "alignments": []
+}

@@ -1,0 +1,59 @@
+{
+  "chunk_id": "team-williams-racing#123",
+  "doc_id": "team-williams-racing",
+  "document_title": "Williams Racing",
+  "section": "Williams Racing > Porsche 911 GT3R Hybrid",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "5cde638ec1a3eb6755943c3240d5135c7afe87b8748fe01ce39576e0e19cb282",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Porsche 911 GT3R Hybrid",
+        "entity_type": "Car",
+        "description": "A variant of the Porsche 911 GT3 R developed with a flywheel-based kinetic-energy storage system."
+      },
+      {
+        "local_id": "e2",
+        "name": "VLN Endurance Racing Championship",
+        "entity_type": "Season",
+        "description": "A racing championship in which the Porsche 911 GT3R Hybrid competed."
+      },
+      {
+        "local_id": "e3",
+        "name": "Nürburgring",
+        "entity_type": "Circuit",
+        "description": "The circuit where the Porsche 911 GT3R Hybrid achieved its first victory."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "RACED_IN",
+        "description": "The Porsche 911 GT3R Hybrid participated in the VLN Endurance Racing Championship.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 3,
+  "entities_accepted": 3,
+  "entities_rejected": 0,
+  "relationship_candidates": 2,
+  "relationships_accepted": 1,
+  "relationships_rejected": 1,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "ROUND_OF does not allow Season -> Circuit"
+    }
+  ],
+  "alignments": []
+}

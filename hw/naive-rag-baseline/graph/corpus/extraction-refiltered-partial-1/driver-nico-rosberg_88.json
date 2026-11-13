@@ -1,0 +1,76 @@
+{
+  "chunk_id": "driver-nico-rosberg#88",
+  "doc_id": "driver-nico-rosberg",
+  "document_title": "Nico Rosberg",
+  "section": "Nico Rosberg > Retirement from racing and subsequent ventures (2016–present)",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/Nico_Rosberg",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "584b164944f4cf7b21e81504fc272f9fa9fa197f737f0e3a999d8669c0a5ab2e",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "TEAMMATE_OF does not allow Team -> Driver"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "WON does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "WON does not allow Driver -> Season"
+    }
+  ],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Nico Rosberg",
+        "entity_type": "Driver",
+        "description": "A Formula One driver who retired after winning the championship."
+      },
+      {
+        "local_id": "e2",
+        "name": "Mercedes",
+        "entity_type": "Team",
+        "description": "A Formula One team that Nico Rosberg drove for."
+      },
+      {
+        "local_id": "e3",
+        "name": "Valtteri Bottas",
+        "entity_type": "Driver",
+        "description": "A Formula One driver who replaced Nico Rosberg at Mercedes."
+      },
+      {
+        "local_id": "e4",
+        "name": "Alain Prost",
+        "entity_type": "Driver",
+        "description": "A former Formula One driver who was the last reigning champion to retire before Rosberg."
+      },
+      {
+        "local_id": "e5",
+        "name": "1993",
+        "entity_type": "Season",
+        "description": "The year Alain Prost retired from Formula One."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Nico Rosberg drove for Mercedes.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

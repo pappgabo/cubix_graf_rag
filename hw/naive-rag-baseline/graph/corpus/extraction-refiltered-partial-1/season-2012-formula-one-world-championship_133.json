@@ -1,0 +1,101 @@
+{
+  "chunk_id": "season-2012-formula-one-world-championship#133",
+  "doc_id": "season-2012-formula-one-world-championship",
+  "document_title": "2012 Formula One World Championship",
+  "section": "Race summaries > Round 9 – Great Britain Silverstone Circuit",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/2012_Formula_One_World_Championship",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "36f21bdd46b46104ea4bd19ae2cd64c3c969b81435cf0d72db3b23006360df2f",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "RACED_IN does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "RACED_IN does not allow Driver -> Season"
+    }
+  ],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Kamui Kobayashi",
+        "entity_type": "Driver",
+        "description": "Kobayashi is a driver who raced in Formula One."
+      },
+      {
+        "local_id": "e2",
+        "name": "Sergio Perez",
+        "entity_type": "Driver",
+        "description": "Perez is a driver who raced in Formula One."
+      },
+      {
+        "local_id": "e3",
+        "name": "Fernando Alonso",
+        "entity_type": "Driver",
+        "description": "Alonso is a driver who raced in Formula One."
+      },
+      {
+        "local_id": "e4",
+        "name": "Mark Webber",
+        "entity_type": "Driver",
+        "description": "Webber is a driver who raced in Formula One."
+      },
+      {
+        "local_id": "e5",
+        "name": "2012 Formula One World Championship",
+        "entity_type": "Season",
+        "description": "The 2012 Formula One World Championship."
+      },
+      {
+        "local_id": "e6",
+        "name": "Silverstone Circuit",
+        "entity_type": "Circuit",
+        "description": "The circuit where the Great Britain Grand Prix is held."
+      },
+      {
+        "local_id": "e7",
+        "name": "Great Britain",
+        "entity_type": "GrandPrix",
+        "description": "The Grand Prix held at Silverstone Circuit."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Kobayashi was teammates with Perez.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e7",
+        "target_id": "e5",
+        "relationship_type": "ROUND_OF",
+        "description": "The Great Britain Grand Prix is a round of the 2012 Formula One World Championship.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e7",
+        "target_id": "e6",
+        "relationship_type": "HELD_AT",
+        "description": "The Great Britain Grand Prix is held at Silverstone Circuit.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

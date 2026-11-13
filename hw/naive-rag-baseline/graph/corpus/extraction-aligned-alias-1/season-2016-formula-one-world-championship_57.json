@@ -1,0 +1,75 @@
+{
+  "chunk_id": "season-2016-formula-one-world-championship#57",
+  "doc_id": "season-2016-formula-one-world-championship",
+  "document_title": "2016 Formula One World Championship",
+  "section": "Pre-season",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/2016_Formula_One_World_Championship",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "f185c72b47f0745231dc5c2a2ea8f1b24c7ab422da0e6ec42612932fad295624",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "rejections": [],
+  "alignments": [
+    {
+      "index": 0,
+      "action": "clear_redundant_season_year",
+      "detail": "ENTERED year 2016 already named by Season 'e4'; from_year and to_year cleared"
+    },
+    {
+      "index": 1,
+      "action": "clear_redundant_season_year",
+      "detail": "ENTERED year 2016 already named by Season 'e4'; from_year and to_year cleared"
+    }
+  ],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Scuderia Ferrari",
+        "entity_type": "Team",
+        "description": "Ferrari were fastest on three of the four testing days."
+      },
+      {
+        "local_id": "e2",
+        "name": "Nico Hülkenberg",
+        "entity_type": "Driver",
+        "description": "Nico Hülkenberg topped the time sheets for Force India on the third day."
+      },
+      {
+        "local_id": "e3",
+        "name": "Force India",
+        "entity_type": "Team",
+        "description": "Force India was represented by Nico Hülkenberg during testing."
+      },
+      {
+        "local_id": "e4",
+        "name": "2016",
+        "entity_type": "Season",
+        "description": "The season for the 2016 Formula One World Championship."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e4",
+        "relationship_type": "ENTERED",
+        "description": "Ferrari entered the 2016 Formula One World Championship season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e4",
+        "relationship_type": "ENTERED",
+        "description": "Force India entered the 2016 Formula One World Championship season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

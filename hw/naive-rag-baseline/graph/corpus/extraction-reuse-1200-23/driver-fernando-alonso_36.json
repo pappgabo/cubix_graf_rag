@@ -1,0 +1,155 @@
+{
+  "chunk_id": "driver-fernando-alonso#36",
+  "doc_id": "driver-fernando-alonso",
+  "document_title": "Fernando Alonso",
+  "section": "Aston Martin (2023–present)",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "a71bd7fda3bb2718949e7580422150ae4be71fc6f7fab05ba943f8269a643bcc",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Fernando Alonso",
+        "entity_type": "Driver",
+        "description": "A Formula One driver currently racing for Aston Martin."
+      },
+      {
+        "local_id": "e2",
+        "name": "Aston Martin",
+        "entity_type": "Team",
+        "description": "A Formula One team that Fernando Alonso is currently racing for."
+      },
+      {
+        "local_id": "e3",
+        "name": "2026",
+        "entity_type": "Season",
+        "description": "The Formula One season in which Alonso is competing."
+      },
+      {
+        "local_id": "e4",
+        "name": "Monaco Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Grand Prix where Alonso scored points in the 2026 season."
+      },
+      {
+        "local_id": "e5",
+        "name": "Dutch Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Grand Prix where Alonso finished ninth in the 2026 season."
+      },
+      {
+        "local_id": "e6",
+        "name": "AMR26",
+        "entity_type": "Car",
+        "description": "The car fielded by Aston Martin in the 2026 season."
+      },
+      {
+        "local_id": "e7",
+        "name": "Honda",
+        "entity_type": "PowerUnit",
+        "description": "The engine powering the AMR26."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Alonso is currently racing for Aston Martin.",
+        "from_year": 2023,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e3",
+        "relationship_type": "ENTERED",
+        "description": "Aston Martin is participating in the 2026 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e6",
+        "target_id": "e3",
+        "relationship_type": "RACED_IN",
+        "description": "The AMR26 took part in the 2026 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e3",
+        "relationship_type": "ROUND_OF",
+        "description": "The Monaco Grand Prix is a round of the 2026 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e3",
+        "relationship_type": "ROUND_OF",
+        "description": "The Dutch Grand Prix is a round of the 2026 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 7,
+  "entities_accepted": 7,
+  "entities_rejected": 0,
+  "relationship_candidates": 9,
+  "relationships_accepted": 5,
+  "relationships_rejected": 4,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "FIELDED is not temporal; from_year=2026, to_year=None, role=None cannot be stored without dropping them"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "POWERED_BY is not temporal; from_year=2026, to_year=None, role=None cannot be stored without dropping them"
+    },
+    {
+      "element": "relationship",
+      "index": 5,
+      "reason": "ACHIEVED Driver -> GrandPrix has from_year=2026, to_year=None, role=None; the year or role cannot be stored on the reified result"
+    },
+    {
+      "element": "relationship",
+      "index": 7,
+      "reason": "ACHIEVED Driver -> GrandPrix has from_year=2026, to_year=None, role=None; the year or role cannot be stored on the reified result"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 1,
+      "action": "clear_redundant_season_year",
+      "detail": "ENTERED year 2026 already named by Season 'e3'; from_year and to_year cleared"
+    },
+    {
+      "index": 4,
+      "action": "clear_redundant_season_year",
+      "detail": "RACED_IN year 2026 already named by Season 'e3'; from_year and to_year cleared"
+    },
+    {
+      "index": 6,
+      "action": "clear_redundant_season_year",
+      "detail": "ROUND_OF year 2026 already named by Season 'e3'; from_year and to_year cleared"
+    },
+    {
+      "index": 8,
+      "action": "clear_redundant_season_year",
+      "detail": "ROUND_OF year 2026 already named by Season 'e3'; from_year and to_year cleared"
+    }
+  ]
+}

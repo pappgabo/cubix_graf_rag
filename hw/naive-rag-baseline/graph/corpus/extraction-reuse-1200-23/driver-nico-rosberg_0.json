@@ -1,0 +1,83 @@
+{
+  "chunk_id": "driver-nico-rosberg#0",
+  "doc_id": "driver-nico-rosberg",
+  "document_title": "Nico Rosberg",
+  "section": "Nico Rosberg",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "4619853b82ec5a9b968adaa992c05727979e24f91889ed915df7b8181fe2c83e",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Nico Rosberg",
+        "entity_type": "Driver",
+        "description": "Nico Erik Rosberg is a German and Finnish former racing driver who competed under the German flag in Formula One from 2006 to 2016. He won the Formula One World Drivers' Championship in 2016 with Mercedes and won 23 Grands Prix across 11 seasons."
+      },
+      {
+        "local_id": "e2",
+        "name": "Mercedes-AMG Petronas Formula One Team",
+        "entity_type": "Team",
+        "description": "A Formula 1 team with which Nico Rosberg won the World Drivers' Championship in 2016."
+      },
+      {
+        "local_id": "e3",
+        "name": "2016",
+        "entity_type": "Season",
+        "description": "The championship year in which Nico Rosberg won the Formula One World Drivers' Championship."
+      },
+      {
+        "local_id": "e4",
+        "name": "Formula One World Drivers' Championship",
+        "entity_type": "Title",
+        "description": "The championship title won by Nico Rosberg in 2016."
+      },
+      {
+        "local_id": "e5",
+        "name": "23",
+        "entity_type": "RaceResult",
+        "description": "The number of Grands Prix won by Nico Rosberg across his Formula One career."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Nico Rosberg drove for Mercedes.",
+        "from_year": 2006,
+        "to_year": 2016,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e4",
+        "relationship_type": "WON",
+        "description": "Nico Rosberg won the Formula One World Drivers' Championship.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e3",
+        "relationship_type": "AWARDED_IN",
+        "description": "The Formula One World Drivers' Championship title was awarded in 2016.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 5,
+  "entities_accepted": 5,
+  "entities_rejected": 0,
+  "relationship_candidates": 3,
+  "relationships_accepted": 3,
+  "relationships_rejected": 0,
+  "rejections": [],
+  "alignments": []
+}

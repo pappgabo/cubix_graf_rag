@@ -1,0 +1,74 @@
+{
+  "chunk_id": "driver-jenson-button#6",
+  "doc_id": "driver-jenson-button",
+  "document_title": "Jenson Button",
+  "section": "Karting career",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "dfc917e93a88c40befccbf19788b86b91831b081aed6c2113b2c3ac2fbe0a802",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Jenson Button",
+        "entity_type": "Driver",
+        "description": "Button was required to drive on slick tyres on a wet track because his father wanted him to learn car control on a sodden surface."
+      },
+      {
+        "local_id": "e2",
+        "name": "Wright Karts",
+        "entity_type": "Team",
+        "description": "Button won all 34 races of the 1991 British Cadet Kart Championship and the title with team Wright Karts."
+      },
+      {
+        "local_id": "e3",
+        "name": "1991",
+        "entity_type": "Season",
+        "description": "Button won all 34 races of the 1991 British Cadet Kart Championship."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Button drove for Wright Karts in the 1991 British Cadet Kart Championship.",
+        "from_year": 1991,
+        "to_year": 1991,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e3",
+        "relationship_type": "ENTERED",
+        "description": "Wright Karts entered the 1991 British Cadet Kart Championship.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 3,
+  "entities_accepted": 3,
+  "entities_rejected": 0,
+  "relationship_candidates": 3,
+  "relationships_accepted": 2,
+  "relationships_rejected": 1,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "ROUND_OF does not allow Season -> Team"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 1,
+      "action": "clear_redundant_season_year",
+      "detail": "ENTERED year 1991 already named by Season 'e3'; from_year and to_year cleared"
+    }
+  ]
+}

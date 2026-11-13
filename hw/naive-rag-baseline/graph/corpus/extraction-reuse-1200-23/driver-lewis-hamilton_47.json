@@ -1,0 +1,110 @@
+{
+  "chunk_id": "driver-lewis-hamilton#47",
+  "doc_id": "driver-lewis-hamilton",
+  "document_title": "Lewis Hamilton",
+  "section": null,
+  "page": 10,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "1133b80c551ef3d4eb7ae7db39c9f6718c26bdc508b002e9aa025e1d1df2120a",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Lewis Hamilton",
+        "entity_type": "Driver",
+        "description": "One of the top five greatest drivers of all time."
+      },
+      {
+        "local_id": "e2",
+        "name": "Fernando Alonso",
+        "entity_type": "Driver",
+        "description": "Hamilton's teammate who described him as one of the top five greatest drivers."
+      },
+      {
+        "local_id": "e3",
+        "name": "Nico Rosberg",
+        "entity_type": "Driver",
+        "description": "Hamilton's teammate at Mercedes from 2013."
+      },
+      {
+        "local_id": "e4",
+        "name": "Mercedes-AMG Petronas Formula One Team",
+        "entity_type": "Team",
+        "description": "The team Hamilton joined in 2013."
+      },
+      {
+        "local_id": "e5",
+        "name": "World Drivers' Championship",
+        "entity_type": "Title",
+        "description": "Championship in which Hamilton and Alonso competed."
+      },
+      {
+        "local_id": "e6",
+        "name": "2013",
+        "entity_type": "Season",
+        "description": "The season Hamilton joined Mercedes."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Hamilton and Alonso were teammates.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e6",
+        "relationship_type": "ENTERED",
+        "description": "Mercedes took part in the 2013 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e5",
+        "relationship_type": "WON",
+        "description": "Hamilton placed second in the World Drivers' Championship.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e5",
+        "relationship_type": "WON",
+        "description": "Alonso placed third in the World Drivers' Championship.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 6,
+  "entities_accepted": 6,
+  "entities_rejected": 0,
+  "relationship_candidates": 5,
+  "relationships_accepted": 4,
+  "relationships_rejected": 1,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "TEAMMATE_OF is not temporal; from_year=2013, to_year=None, role=None cannot be stored without dropping them"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 2,
+      "action": "clear_redundant_season_year",
+      "detail": "ENTERED year 2013 already named by Season 'e6'; from_year and to_year cleared"
+    }
+  ]
+}

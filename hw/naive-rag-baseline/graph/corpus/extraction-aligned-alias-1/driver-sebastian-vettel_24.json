@@ -1,0 +1,132 @@
+{
+  "chunk_id": "driver-sebastian-vettel#24",
+  "doc_id": "driver-sebastian-vettel",
+  "document_title": "Sebastian Vettel",
+  "section": "2007: Debut",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/Sebastian_Vettel",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "f2833004e8707898ae32ca1635667b42fcd53a29652d936967cd790edde8c9c9",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "ACHIEVED Driver -> GrandPrix has from_year=2007, to_year=None, role=None; the year or role cannot be stored on the reified result"
+    },
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "FOR_TEAM does not allow GrandPrix -> Team"
+    },
+    {
+      "element": "relationship",
+      "index": 5,
+      "reason": "AT_RACE does not allow Driver -> GrandPrix"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 1,
+      "action": "clear_redundant_season_year",
+      "detail": "ENTERED year 2007 already named by Season 'e3'; from_year and to_year cleared"
+    },
+    {
+      "index": 2,
+      "action": "clear_redundant_season_year",
+      "detail": "ROUND_OF year 2007 already named by Season 'e3'; from_year and to_year cleared"
+    },
+    {
+      "index": 3,
+      "action": "clear_redundant_season_year",
+      "detail": "ROUND_OF year 2007 already named by Season 'e3'; from_year and to_year cleared"
+    }
+  ],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Sebastian Vettel",
+        "entity_type": "Driver",
+        "description": "Vettel was confirmed as BMW's test driver for 2007. Following Kubica's crash at the 2007 Canadian Grand Prix, Vettel was named his replacement at the 2007 United States Grand Prix. He started in seventh position and finished in eighth to become the then-youngest driver to score a point in Formula One."
+      },
+      {
+        "local_id": "e2",
+        "name": "BMW",
+        "entity_type": "Team",
+        "description": "BMW's test driver for 2007."
+      },
+      {
+        "local_id": "e3",
+        "name": "2007",
+        "entity_type": "Season",
+        "description": "The season in which Vettel made his debut."
+      },
+      {
+        "local_id": "e4",
+        "name": "2007 United States Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "Vettel was named as a replacement for Kubica at this Grand Prix."
+      },
+      {
+        "local_id": "e5",
+        "name": "2007 Canadian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "Kubica's crash occurred at this Grand Prix."
+      },
+      {
+        "local_id": "e6",
+        "name": "null",
+        "entity_type": "Car",
+        "description": "No specific car model mentioned."
+      },
+      {
+        "local_id": "e7",
+        "name": "null",
+        "entity_type": "PowerUnit",
+        "description": "No specific power unit mentioned."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Vettel was confirmed as BMW's test driver for 2007.",
+        "from_year": 2007,
+        "to_year": null,
+        "role": "test driver"
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e3",
+        "relationship_type": "ENTERED",
+        "description": "BMW took part in the 2007 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e3",
+        "relationship_type": "ROUND_OF",
+        "description": "The 2007 United States Grand Prix is a round of the 2007 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e3",
+        "relationship_type": "ROUND_OF",
+        "description": "The 2007 Canadian Grand Prix is a round of the 2007 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

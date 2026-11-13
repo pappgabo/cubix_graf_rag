@@ -26,7 +26,10 @@ the raw file.
 
 from __future__ import annotations
 
+import argparse
 import json
+import sys
+from collections import Counter
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Any, Callable, Protocol
@@ -36,18 +39,18 @@ from pydantic import ValidationError
 from .config import PROJECT_ROOT
 from .extraction_identity import (
     EmptyNameError,
-    make_entity_key,
+    canonical_identity,
+    identity_rejection,
     make_rel_key,
     merge_descriptions,
     merge_source_ids,
-    normalize_name,
 )
 from .extraction_models import (
     EntityType,
     ExtractionResult,
     ExtractionValidationError,
     RelType,
-    validate_extraction,
+    load_saved_extraction,
 )
 
 APPROVED = "approved"
@@ -288,7 +291,7 @@ def plan_validated_raw(record: dict[str, Any], *,
         raise SourceRejected("The raw record status is not 'ok'.")
     try:
         result = ExtractionResult.model_validate(record["result"])
-        validate_extraction(result)
+        result, _reasons = load_saved_extraction(result)
     except KeyError as exc:
         raise ResultRejected("raw result is missing.") from exc
     except (ValidationError, ExtractionValidationError) as exc:
@@ -517,7 +520,7 @@ class _Neo4jTransaction:
 def _validated_result(review: dict[str, Any]) -> ExtractionResult:
     try:
         result = ExtractionResult.model_validate(review["result"])
-        validate_extraction(result)
+        result, _reasons = load_saved_extraction(result)
     except KeyError as exc:
         raise ResultRejected("review result is missing.") from exc
     except (ValidationError, ExtractionValidationError) as exc:
@@ -529,25 +532,37 @@ def _build_plan(result: ExtractionResult, chunk_id: object) -> LoadPlan:
     if not isinstance(chunk_id, str) or chunk_id == "":
         raise SourceRejected("chunk_id must be a non-empty string.")
     by_local: dict[str, tuple[EntityType, str]] = {}
-    entities: list[EntityWrite] = []
+    entities: dict[str, EntityWrite] = {}
+    entity_order: list[str] = []
     for entity in result.entities:
+        if identity_rejection(entity.name) is not None:
+            continue
         try:
-            name_norm = normalize_name(entity.name)
-            key = make_entity_key(entity.entity_type, entity.name)
+            key, display_name, name_norm = canonical_identity(
+                entity.entity_type, entity.name)
         except EmptyNameError as exc:
             raise ResultRejected(str(exc)) from exc
         if key == "":
             raise ResultRejected("entity_key is empty.")
         by_local[entity.local_id] = (entity.entity_type, key)
-        entities.append(EntityWrite(
+        previous = entities.get(key)
+        entities[key] = EntityWrite(
             label=entity.entity_type.value,
-            name=entity.name,
+            name=display_name,
             name_norm=name_norm,
             entity_key=key,
-            description=entity.description or "",
-        ))
-    relationships: list[RelationshipWrite] = []
+            description=merge_descriptions(
+                previous.description if previous else None,
+                entity.description or "",
+            ),
+        )
+        if key not in entity_order:
+            entity_order.append(key)
+    relationships: dict[str, RelationshipWrite] = {}
+    relationship_order: list[str] = []
     for rel in result.relationships:
+        if rel.source_id not in by_local or rel.target_id not in by_local:
+            continue
         source_type, source_key = by_local[rel.source_id]
         target_type, target_key = by_local[rel.target_id]
         rel_key = make_rel_key(
@@ -560,7 +575,8 @@ def _build_plan(result: ExtractionResult, chunk_id: object) -> LoadPlan:
         )
         if rel_key == "":
             raise ResultRejected("rel_key is empty.")
-        relationships.append(RelationshipWrite(
+        previous = relationships.get(rel_key)
+        relationships[rel_key] = RelationshipWrite(
             source_key=source_key,
             target_key=target_key,
             source_label=source_type.value,
@@ -570,13 +586,18 @@ def _build_plan(result: ExtractionResult, chunk_id: object) -> LoadPlan:
             from_year=rel.from_year,
             to_year=rel.to_year,
             role=rel.role,
-            description=rel.description,
+            description=merge_descriptions(
+                previous.description if previous else None,
+                rel.description,
+            ),
             origin=ORIGIN_EXTRACTED,
-        ))
+        )
+        if rel_key not in relationship_order:
+            relationship_order.append(rel_key)
     return LoadPlan(
         chunk_id=chunk_id,
-        entities=tuple(entities),
-        relationships=tuple(relationships),
+        entities=tuple(entities[key] for key in entity_order),
+        relationships=tuple(relationships[key] for key in relationship_order),
     )
 
 
@@ -609,6 +630,528 @@ def _version_from_components(rows: list[dict[str, Any]]) -> str:
     )
 
 
+@dataclass(frozen=True)
+class CorpusPlan:
+    """Plans from structurally accepted raw records. Not human approval."""
+
+    plans: tuple[LoadPlan, ...]
+    failures: tuple[tuple[str, str], ...]
+
+
+def plan_validated_corpus(input_dir: Path) -> CorpusPlan:
+    """Plan each saved record. Does not open a database or edit the files."""
+    if not input_dir.is_dir():
+        raise SourceRejected(f"input directory does not exist: {input_dir}")
+    plans: list[LoadPlan] = []
+    failures: list[tuple[str, str]] = []
+    for path in sorted(input_dir.glob("*.json")):
+        try:
+            loaded = json.loads(path.read_text(encoding="utf-8"))
+        except json.JSONDecodeError as exc:
+            failures.append((path.name, f"invalid JSON: {exc}"))
+            continue
+        if not isinstance(loaded, dict):
+            failures.append((path.name, "record is not an object"))
+            continue
+        try:
+            plans.append(plan_validated_raw(loaded, accept_validated_raw=True))
+        except LoadRejected as exc:
+            label = loaded.get("chunk_id")
+            failures.append((
+                str(label) if isinstance(label, str) and label else path.name,
+                f"{type(exc).__name__}: {exc}",
+            ))
+    return CorpusPlan(tuple(plans), tuple(failures))
+
+
+def load_validated_corpus(input_dir: Path, *, write: bool = False,
+                          open_tx: Opener | None = None) -> CorpusPlan:
+    """Plan the corpus. Write only when ``write`` is true.
+
+    Writing calls ``load_approved_plan`` once per plan. Dry-run does not
+    call ``open_tx`` and does not open Neo4j.
+    """
+    planned = plan_validated_corpus(input_dir)
+    if not write:
+        return planned
+    opener = open_tx if open_tx is not None else open_neo4j_transaction
+    for plan in planned.plans:
+        load_approved_plan(plan, opener)
+    return planned
+
+
+BACKUP_FORMAT = "extracted-layer-backup-1"
+_PROTECTED_LABELS = ("Seed", "Document", "Chunk", "Section", "Corpus")
+
+MIXED_LABEL_QUERY = """
+MATCH (n:Extracted)
+WHERE n:Seed OR n:Document OR n:Chunk OR n:Section OR n:Corpus
+RETURN labels(n) AS labels, n.entity_key AS entity_key
+ORDER BY entity_key
+""".strip()
+
+EXTRACTED_NODE_QUERY = """
+MATCH (n:Extracted)
+RETURN labels(n) AS labels, properties(n) AS properties
+ORDER BY n.entity_key
+""".strip()
+
+EXTRACTED_EDGE_QUERY = """
+MATCH (a)-[r]->(b)
+WHERE a:Extracted OR b:Extracted
+RETURN type(r) AS type, properties(r) AS properties,
+       labels(a) AS source_labels, properties(a) AS source_properties,
+       labels(b) AS target_labels, properties(b) AS target_properties
+ORDER BY type(r),
+         coalesce(a.entity_key, a.chunk_id),
+         coalesce(b.entity_key, b.chunk_id),
+         coalesce(r.rel_key, "")
+""".strip()
+
+EXTRACTED_COUNT_QUERY = """
+MATCH (n:Extracted)
+RETURN count(n) AS nodes
+""".strip()
+
+EXTRACTED_EDGE_COUNT_QUERY = """
+MATCH (a)-[r]->(b)
+WHERE a:Extracted OR b:Extracted
+RETURN count(r) AS edges
+""".strip()
+
+# Deletes only nodes that carry :Extracted and none of the protected labels.
+# DETACH DELETE removes edges that touch those nodes. It does not match
+# :Chunk, :Document, :Section, :Corpus, or :Seed nodes.
+DELETE_EXTRACTED_CYPHER = """
+MATCH (n:Extracted)
+WHERE NOT n:Seed AND NOT n:Document AND NOT n:Chunk
+  AND NOT n:Section AND NOT n:Corpus
+DETACH DELETE n
+""".strip()
+
+
+class LayerRejected(LoadRejected):
+    """The extracted layer cannot be replaced or restored safely."""
+
+
+class PartialLoad(RuntimeError):
+    """The extracted layer was deleted and only some plans were written."""
+
+    def __init__(self, written: int, total: int, backup: Path) -> None:
+        self.written = written
+        self.total = total
+        self.backup = backup
+        super().__init__(
+            f"partial load: the :Extracted layer was deleted and "
+            f"{written} of {total} plans were written. "
+            f"Restore from {backup}."
+        )
+
+
+def _json_value(value: object) -> object:
+    if value is None or isinstance(value, (str, int, float, bool)):
+        return value
+    if isinstance(value, list):
+        return [_json_value(item) for item in value]
+    if isinstance(value, dict):
+        return {str(key): _json_value(item) for key, item in value.items()}
+    raise LayerRejected(f"property value {type(value).__name__} is not JSON")
+
+
+def _type_label(labels: list[str]) -> str:
+    kind = [label for label in labels if label != "Extracted"]
+    if len(kind) != 1 or kind[0] not in _LABELS:
+        raise LayerRejected(f"extracted node labels are not restorable: {labels}")
+    return kind[0]
+
+
+def _durable_endpoint(labels: list[str], properties: dict) -> dict[str, str]:
+    label_list = [str(label) for label in labels]
+    if "Extracted" in label_list:
+        return {
+            "kind": "extracted",
+            "label": _type_label(label_list),
+            "entity_key": str(properties["entity_key"]),
+        }
+    if label_list == ["Chunk"]:
+        chunk_id = properties.get("chunk_id")
+        if not isinstance(chunk_id, str) or chunk_id == "":
+            raise LayerRejected("Chunk endpoint has no chunk_id")
+        return {"kind": "chunk", "chunk_id": chunk_id}
+    raise LayerRejected(
+        f"endpoint has no durable key for labels {label_list}")
+
+
+def build_extracted_backup(node_rows: list[dict],
+                           edge_rows: list[dict],
+                           mixed_rows: list[dict]) -> dict:
+    """Build a restorable snapshot. Endpoints use entity_key or chunk_id."""
+    nodes = []
+    for row in node_rows:
+        labels = [str(label) for label in row["labels"]]
+        properties = _json_value(row["properties"])
+        if not isinstance(properties, dict) or "entity_key" not in properties:
+            raise LayerRejected("extracted node has no entity_key")
+        _type_label(labels)
+        nodes.append({"labels": labels, "properties": properties})
+    edges = []
+    for row in edge_rows:
+        source_props = _json_value(row["source_properties"])
+        target_props = _json_value(row["target_properties"])
+        if not isinstance(source_props, dict) or not isinstance(target_props, dict):
+            raise LayerRejected("edge endpoint properties are not an object")
+        edges.append({
+            "type": str(row["type"]),
+            "properties": _json_value(row["properties"]),
+            "source": _durable_endpoint(list(row["source_labels"]), source_props),
+            "target": _durable_endpoint(list(row["target_labels"]), target_props),
+        })
+    return {
+        "format": BACKUP_FORMAT,
+        "mixed": [
+            {"labels": [str(label) for label in row["labels"]],
+             "entity_key": row.get("entity_key")}
+            for row in mixed_rows
+        ],
+        "nodes": nodes,
+        "edges": edges,
+    }
+
+
+def read_extracted_backup(path: Path) -> dict:
+    """Load a backup and reject a file that cannot be restored."""
+    payload = json.loads(path.read_text(encoding="utf-8"))
+    if not isinstance(payload, dict) or payload.get("format") != BACKUP_FORMAT:
+        raise LayerRejected(f"{path} is not an extracted-layer backup")
+    nodes = payload.get("nodes")
+    edges = payload.get("edges")
+    if not isinstance(nodes, list) or not isinstance(edges, list):
+        raise LayerRejected(f"{path} has no node and edge lists")
+    for node in nodes:
+        labels = node.get("labels")
+        properties = node.get("properties")
+        if not isinstance(labels, list) or not isinstance(properties, dict):
+            raise LayerRejected("backup node is incomplete")
+        if not isinstance(properties.get("entity_key"), str):
+            raise LayerRejected("backup node has no entity_key")
+        _type_label([str(label) for label in labels])
+    for edge in edges:
+        if edge.get("type") not in set(_REL_TYPES) | {"MENTIONS"}:
+            raise LayerRejected(f"backup edge type {edge.get('type')!r} is unknown")
+        for end in ("source", "target"):
+            ref = edge.get(end)
+            if not isinstance(ref, dict):
+                raise LayerRejected("backup edge has no durable endpoint")
+            if ref.get("kind") == "extracted":
+                if not isinstance(ref.get("entity_key"), str):
+                    raise LayerRejected("backup edge has no entity_key")
+                _check_name(str(ref.get("label")), _LABELS, "entity label")
+            elif ref.get("kind") == "chunk":
+                if not isinstance(ref.get("chunk_id"), str) or ref["chunk_id"] == "":
+                    raise LayerRejected("backup edge has no chunk_id")
+            else:
+                raise LayerRejected("backup edge endpoint is not durable")
+        if "element_id" in edge or "elementId" in edge:
+            raise LayerRejected("backup edge uses an internal id")
+    return payload
+
+
+def save_extracted_backup(path: Path, query_fn: Query | None = None) -> dict:
+    """Read the current :Extracted layer and write a new backup file."""
+    if path.exists():
+        raise LayerRejected(f"backup already exists: {path}")
+    reader = query_fn if query_fn is not None else _read_query
+    payload = build_extracted_backup(
+        reader(EXTRACTED_NODE_QUERY),
+        reader(EXTRACTED_EDGE_QUERY),
+        reader(MIXED_LABEL_QUERY),
+    )
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(
+        json.dumps(payload, ensure_ascii=False, indent=2) + "\n",
+        encoding="utf-8",
+    )
+    read_extracted_backup(path)
+    return payload
+
+
+def _read_query(cypher: str, **params: Any) -> list[dict[str, Any]]:
+    from .graph import query
+
+    return query(cypher, **params)
+
+
+def extracted_scope(query_fn: Query | None = None) -> dict[str, Any]:
+    """Read-only counts for the layer a replace would delete."""
+    reader = query_fn if query_fn is not None else _read_query
+    mixed = reader(MIXED_LABEL_QUERY)
+    nodes = reader(EXTRACTED_COUNT_QUERY)[0]["nodes"]
+    edges = reader(EXTRACTED_EDGE_COUNT_QUERY)[0]["edges"]
+    return {"mixed": mixed, "nodes": nodes, "edges": edges}
+
+
+def _embedding_params(props: dict) -> dict[str, Any] | None:
+    """Return the stored vector fields, or None when the backup has none.
+
+    A present vector is written back with its model, dimension, and text
+    hash. An incomplete vector is rejected before the layer is deleted.
+    """
+    if "embedding" not in props or props.get("embedding") is None:
+        return None
+    embedding = props.get("embedding")
+    if (not isinstance(embedding, list) or not embedding
+            or any(isinstance(item, bool) or not isinstance(item, (int, float))
+                   for item in embedding)):
+        raise LayerRejected("backup embedding is not a numeric vector")
+    model = props.get("embedding_model")
+    dimensions = props.get("embedding_dimensions")
+    digest = props.get("embedding_text_sha256")
+    if not isinstance(model, str) or model == "":
+        raise LayerRejected("backup embedding has no model")
+    if (not isinstance(dimensions, int) or isinstance(dimensions, bool)
+            or dimensions != len(embedding)):
+        raise LayerRejected("backup embedding dimensions do not match the vector")
+    if not isinstance(digest, str) or digest == "":
+        raise LayerRejected("backup embedding has no text hash")
+    return {
+        "embedding": [float(item) for item in embedding],
+        "embedding_model": model,
+        "embedding_dimensions": dimensions,
+        "embedding_text_sha256": digest,
+    }
+
+
+def _restore_node_cypher(label: str, *, with_embedding: bool) -> str:
+    _check_name(label, _LABELS, "entity label")
+    statement = (
+        f"MERGE (e:{label}:Extracted {{entity_key: $entity_key}})\n"
+        "SET e.name = $name, e.name_norm = $name_norm, "
+        "e.description = $description"
+    )
+    if with_embedding:
+        statement += (
+            ",\n    e.embedding = $embedding,\n"
+            "    e.embedding_model = $embedding_model,\n"
+            "    e.embedding_dimensions = $embedding_dimensions,\n"
+            "    e.embedding_text_sha256 = $embedding_text_sha256"
+        )
+    return statement
+
+
+def _restore_edge_cypher(edge: dict) -> tuple[str, dict[str, Any]]:
+    source = edge["source"]
+    target = edge["target"]
+    properties = edge.get("properties") or {}
+    if edge["type"] == "MENTIONS":
+        if source.get("kind") != "chunk" or target.get("kind") != "extracted":
+            raise LayerRejected("MENTIONS backup edge is not Chunk -> Extracted")
+        label = str(target["label"])
+        _check_name(label, _LABELS, "entity label")
+        return (
+            f"MATCH (c:Chunk {{chunk_id: $chunk_id}})\n"
+            f"MATCH (e:{label}:Extracted {{entity_key: $entity_key}})\n"
+            "MERGE (c)-[:MENTIONS]->(e)\n"
+            "RETURN c.chunk_id AS chunk_id",
+            {"chunk_id": source["chunk_id"], "entity_key": target["entity_key"]},
+        )
+    if source.get("kind") != "extracted" or target.get("kind") != "extracted":
+        raise LayerRejected(f"{edge['type']} backup edge is not between extracted nodes")
+    rel_key = properties.get("rel_key")
+    if not isinstance(rel_key, str) or rel_key == "":
+        raise LayerRejected(f"{edge['type']} backup edge has no rel_key")
+    source_label = str(source["label"])
+    target_label = str(target["label"])
+    _check_name(source_label, _LABELS, "entity label")
+    _check_name(target_label, _LABELS, "entity label")
+    _check_name(str(edge["type"]), _REL_TYPES, "relationship type")
+    return (
+        f"MATCH (s:{source_label}:Extracted {{entity_key: $source_key}})\n"
+        f"MATCH (t:{target_label}:Extracted {{entity_key: $target_key}})\n"
+        f"MERGE (s)-[r:{edge['type']} {{rel_key: $rel_key}}]->(t)\n"
+        "SET r.origin = $origin, r.description = $description,\n"
+        "    r.from_year = $from_year, r.to_year = $to_year, r.role = $role,\n"
+        "    r.source_chunk_ids = $source_chunk_ids\n"
+        "RETURN r.rel_key AS rel_key",
+        {
+            "source_key": source["entity_key"],
+            "target_key": target["entity_key"],
+            "rel_key": rel_key,
+            "origin": properties.get("origin"),
+            "description": properties.get("description"),
+            "from_year": properties.get("from_year"),
+            "to_year": properties.get("to_year"),
+            "role": properties.get("role"),
+            "source_chunk_ids": properties.get("source_chunk_ids"),
+        },
+    )
+
+
+def restore_extracted_backup(path: Path, open_tx: Opener) -> dict:
+    """Replace the current :Extracted layer with one backup, in one transaction.
+
+    Refuses when a protected label shares an :Extracted node. Does not match
+    document or seed nodes.
+    """
+    payload = read_extracted_backup(path)
+    prepared = []
+    for node in payload["nodes"]:
+        label = _type_label([str(item) for item in node["labels"]])
+        props = node["properties"]
+        prepared.append((label, props, _embedding_params(props)))
+
+    def work(tx: GraphTx) -> None:
+        mixed = tx.run(MIXED_LABEL_QUERY, {})
+        if mixed:
+            raise LayerRejected(
+                "an :Extracted node also has a protected label; "
+                "restore will not delete it"
+            )
+        tx.run(DELETE_EXTRACTED_CYPHER, {})
+        for label, props, embedding in prepared:
+            params = {
+                "entity_key": props["entity_key"],
+                "name": props.get("name"),
+                "name_norm": props.get("name_norm"),
+                "description": props.get("description"),
+            }
+            if embedding is not None:
+                params.update(embedding)
+            tx.run(_restore_node_cypher(label, with_embedding=embedding is not None), params)
+        for edge in payload["edges"]:
+            cypher, params = _restore_edge_cypher(edge)
+            found = tx.run(cypher, params)
+            if not found:
+                raise LayerRejected(
+                    f"restore could not match {edge['type']} endpoints"
+                )
+
+    run_unit_of_work(open_tx, work)
+    return payload
+
+
+def replace_extracted_layer(input_dir: Path, backup_path: Path, *,
+                            write: bool = False,
+                            open_tx: Opener | None = None,
+                            query_fn: Query | None = None) -> tuple[dict, CorpusPlan]:
+    """Plan a replacement. Delete and load only when ``write`` is true.
+
+    Dry-run reads the scope and does not open a write transaction.
+    """
+    planned = plan_validated_corpus(input_dir)
+    scope = extracted_scope(query_fn)
+    if not write:
+        return scope, planned
+    if scope["mixed"]:
+        raise LayerRejected(
+            "an :Extracted node also has Seed, Document, Chunk, Section, "
+            "or Corpus; automatic deletion was not run"
+        )
+    if planned.failures:
+        raise LayerRejected(
+            f"{len(planned.failures)} plans failed; the layer was not deleted"
+        )
+    payload = read_extracted_backup(backup_path)
+    if (len(payload["nodes"]) != scope["nodes"]
+            or len(payload["edges"]) != scope["edges"]):
+        raise LayerRejected(
+            "backup counts do not match the current :Extracted layer; "
+            "the layer was not deleted"
+        )
+    opener = open_tx if open_tx is not None else open_neo4j_transaction
+    run_unit_of_work(opener, lambda tx: tx.run(DELETE_EXTRACTED_CYPHER, {}))
+    written = 0
+    try:
+        for plan in planned.plans:
+            load_approved_plan(plan, opener)
+            written += 1
+    except Exception as exc:
+        raise PartialLoad(written, len(planned.plans), backup_path) from exc
+    return scope, planned
+
+
+def corpus_plan_summary(planned: CorpusPlan) -> str:
+    entity_keys = {
+        entity.entity_key
+        for plan in planned.plans
+        for entity in plan.entities
+    }
+    rel_keys = {
+        rel.rel_key
+        for plan in planned.plans
+        for rel in plan.relationships
+    }
+    lines = [
+        "write: no",
+        f"planned: {len(planned.plans)}",
+        f"failed: {len(planned.failures)}",
+        f"entity_keys: {len(entity_keys)}",
+        f"rel_keys: {len(rel_keys)}",
+    ]
+    reasons = Counter(reason for _label, reason in planned.failures)
+    if not reasons:
+        lines.append("failures: none")
+    else:
+        for reason, count in reasons.most_common():
+            lines.append(f"failure: {count} {reason}")
+    return "\n".join(line for line in lines if line)
+
+
+def main(argv: list[str] | None = None) -> int:
+    parser = argparse.ArgumentParser(prog="python -m naive_rag.extraction_load")
+    parser.add_argument("--input-dir", required=True,
+                        help="saved extraction directory; files are not modified")
+    parser.add_argument("--write", action="store_true",
+                        help="write plans with the existing loader; default is dry-run")
+    parser.add_argument("--replace", action="store_true",
+                        help="replace only the :Extracted layer; default is dry-run")
+    parser.add_argument("--backup", default=None,
+                        help="extracted-layer backup required by --replace")
+    parser.add_argument("--restore", action="store_true",
+                        help="restore the :Extracted layer from --backup")
+    args = parser.parse_args(argv)
+    try:
+        if args.restore:
+            if not args.backup:
+                print("error: --restore requires --backup", file=sys.stderr)
+                return 1
+            if not args.write:
+                payload = read_extracted_backup(Path(args.backup))
+                print("write: no")
+                print(f"restore_nodes: {len(payload['nodes'])}")
+                print(f"restore_edges: {len(payload['edges'])}")
+                print(f"mixed: {len(payload['mixed'])}")
+                return 0
+            restore_extracted_backup(Path(args.backup), open_neo4j_transaction)
+            print("write: yes")
+            print(f"restored: {args.backup}")
+            return 0
+        if args.replace:
+            if not args.backup:
+                print("error: --replace requires --backup", file=sys.stderr)
+                return 1
+            scope, planned = replace_extracted_layer(
+                Path(args.input_dir), Path(args.backup), write=args.write)
+            print("write: yes" if args.write else "write: no")
+            print(f"mixed: {len(scope['mixed'])}")
+            print(f"delete_nodes: {scope['nodes']}")
+            print(f"delete_edges: {scope['edges']}")
+            print(corpus_plan_summary(planned).replace("write: no\n", ""))
+            print("delete: " + " ".join(DELETE_EXTRACTED_CYPHER.split()))
+            return 0
+        planned = load_validated_corpus(Path(args.input_dir), write=args.write)
+    except PartialLoad as exc:
+        print(f"error: {exc}", file=sys.stderr)
+        return 2
+    except (SourceRejected, LayerRejected) as exc:
+        print(f"error: {exc}", file=sys.stderr)
+        return 1
+    text = corpus_plan_summary(planned)
+    if args.write:
+        text = text.replace("write: no", "write: yes", 1)
+    print(text)
+    return 0
+
+
 def _version_tuple(version: str) -> tuple[int, int]:
     numbers: list[int] = []
     for part in version.split(".")[:2]:
@@ -624,3 +1167,7 @@ def _version_tuple(version: str) -> tuple[int, int]:
     while len(numbers) < 2:
         numbers.append(0)
     return numbers[0], numbers[1]
+
+
+if __name__ == "__main__":
+    sys.exit(main())

@@ -1,0 +1,138 @@
+{
+  "chunk_id": "season-2016-formula-one-world-championship#24",
+  "doc_id": "season-2016-formula-one-world-championship",
+  "document_title": "2016 Formula One World Championship",
+  "section": "Season report > Pre-season",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "c596a2912d1b4fdfa12422073a2cd93468a19023ac1aaf8164ed4245a6597006",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Lewis Hamilton",
+        "entity_type": "Driver",
+        "description": "Decided not to switch his car number to 1 and would race with his career number 44."
+      },
+      {
+        "local_id": "e2",
+        "name": "Pirelli",
+        "entity_type": "Team",
+        "description": "Conducted a pre-season tyre test to evaluate their wet weather tyres."
+      },
+      {
+        "local_id": "e3",
+        "name": "Circuit Paul Ricard",
+        "entity_type": "Circuit",
+        "description": "Location of the pre-season tyre test in France."
+      },
+      {
+        "local_id": "e4",
+        "name": "Circuit de Catalunya",
+        "entity_type": "Circuit",
+        "description": "Location of the first pre-season team test."
+      },
+      {
+        "local_id": "e5",
+        "name": "Scuderia Ferrari",
+        "entity_type": "Team",
+        "description": "Fastest on three of the four testing days."
+      },
+      {
+        "local_id": "e6",
+        "name": "Nico Hülkenberg",
+        "entity_type": "Driver",
+        "description": "Topped the time sheets for Force India on the third day of testing."
+      },
+      {
+        "local_id": "e7",
+        "name": "Force India",
+        "entity_type": "Team",
+        "description": "Team for which Nico Hülkenberg raced."
+      },
+      {
+        "local_id": "e8",
+        "name": "Mercedes-AMG Petronas Formula One Team",
+        "entity_type": "Team",
+        "description": "Covered the most distance in testing."
+      },
+      {
+        "local_id": "e9",
+        "name": "ultra-soft tyres",
+        "entity_type": "Car",
+        "description": "Newly introduced tyres tested during the pre-season."
+      },
+      {
+        "local_id": "e10",
+        "name": "2016",
+        "entity_type": "Season",
+        "description": "The championship year for the 2016 Formula One World Championship."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e8",
+        "target_id": "e10",
+        "relationship_type": "ENTERED",
+        "description": "Mercedes entered the 2016 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e10",
+        "relationship_type": "ENTERED",
+        "description": "Ferrari entered the 2016 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e7",
+        "target_id": "e10",
+        "relationship_type": "ENTERED",
+        "description": "Force India entered the 2016 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e9",
+        "target_id": "e10",
+        "relationship_type": "RACED_IN",
+        "description": "Ultra-soft tyres were used in the 2016 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 10,
+  "entities_accepted": 10,
+  "entities_rejected": 0,
+  "relationship_candidates": 8,
+  "relationships_accepted": 4,
+  "relationships_rejected": 3,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "HELD_AT does not allow Team -> Circuit"
+    },
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "FIELDED does not allow Team -> Circuit"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "TEAMMATE_OF does not allow Team -> Driver"
+    }
+  ],
+  "alignments": []
+}

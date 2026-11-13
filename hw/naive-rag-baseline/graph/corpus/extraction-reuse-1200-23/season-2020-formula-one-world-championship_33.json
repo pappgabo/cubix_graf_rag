@@ -1,0 +1,74 @@
+{
+  "chunk_id": "season-2020-formula-one-world-championship#33",
+  "doc_id": "season-2020-formula-one-world-championship",
+  "document_title": "2020 Formula One World Championship",
+  "section": "2020 Formula One World Championship > Racing Point",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "69c4e00ce92e50e0e2f8303325f62e1948ba0e992705440cdcf752dab21e3110",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Racing Point",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that entered cars."
+      },
+      {
+        "local_id": "e2",
+        "name": "RP20",
+        "entity_type": "Car",
+        "description": "The car model fielded by Racing Point."
+      },
+      {
+        "local_id": "e3",
+        "name": "Mercedes F1 W10",
+        "entity_type": "Car",
+        "description": "The car model used by Mercedes in 2019."
+      },
+      {
+        "local_id": "e4",
+        "name": "2020 Formula One World Championship",
+        "entity_type": "Season",
+        "description": "The championship year."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "FIELDED",
+        "description": "Racing Point entered the RP20 car.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e4",
+        "relationship_type": "RACED_IN",
+        "description": "The RP20 car took part in the 2020 Formula One World Championship.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 4,
+  "entities_accepted": 4,
+  "entities_rejected": 0,
+  "relationship_candidates": 3,
+  "relationships_accepted": 2,
+  "relationships_rejected": 1,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "POWERED_BY does not allow Car -> Team"
+    }
+  ],
+  "alignments": []
+}

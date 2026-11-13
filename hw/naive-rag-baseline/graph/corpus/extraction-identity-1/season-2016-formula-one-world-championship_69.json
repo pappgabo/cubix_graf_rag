@@ -1,0 +1,155 @@
+{
+  "chunk_id": "season-2016-formula-one-world-championship#69",
+  "doc_id": "season-2016-formula-one-world-championship",
+  "document_title": "2016 Formula One World Championship",
+  "section": "European rounds",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/2016_Formula_One_World_Championship",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "8c0fccb060ca83173771bcbd635252f5372ae5cff2b7023202187c79eab508aa",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "entity_candidates": 5,
+  "entities_accepted": 8,
+  "entities_rejected": 0,
+  "relationship_candidates": 4,
+  "relationships_accepted": 7,
+  "relationships_rejected": 0,
+  "rejections": [],
+  "alignments": [
+    {
+      "index": 0,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e4; description kept"
+    },
+    {
+      "index": 1,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr2 -AT_RACE-> e4; description kept"
+    },
+    {
+      "index": 2,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr3 -AT_RACE-> e4; description kept"
+    }
+  ],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Daniel Ricciardo",
+        "entity_type": "Driver",
+        "description": "Ricciardo took the first pole position of his career at the Monaco Grand Prix."
+      },
+      {
+        "local_id": "e2",
+        "name": "Lewis Hamilton",
+        "entity_type": "Driver",
+        "description": "Hamilton won the Monaco Grand Prix, his first win of the 2016 season."
+      },
+      {
+        "local_id": "e3",
+        "name": "Sergio Pérez",
+        "entity_type": "Driver",
+        "description": "Pérez finished third in the Monaco Grand Prix."
+      },
+      {
+        "local_id": "e4",
+        "name": "Monaco Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A round of the 2016 Formula One World Championship held in Monaco."
+      },
+      {
+        "local_id": "e5",
+        "name": "2016 Formula One World Championship",
+        "entity_type": "Season",
+        "description": "The championship season in which the Monaco Grand Prix took place."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Daniel Ricciardo at Monaco Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Ricciardo finished second in the Monaco Grand Prix."
+      },
+      {
+        "local_id": "rr2",
+        "name": "Lewis Hamilton at Monaco Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Hamilton won the Monaco Grand Prix."
+      },
+      {
+        "local_id": "rr3",
+        "name": "Sergio Pérez at Monaco Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Pérez finished third in the Monaco Grand Prix."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Ricciardo finished second in the Monaco Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e4",
+        "relationship_type": "AT_RACE",
+        "description": "Ricciardo finished second in the Monaco Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "rr2",
+        "relationship_type": "ACHIEVED",
+        "description": "Hamilton won the Monaco Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr2",
+        "target_id": "e4",
+        "relationship_type": "AT_RACE",
+        "description": "Hamilton won the Monaco Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "rr3",
+        "relationship_type": "ACHIEVED",
+        "description": "Pérez finished third in the Monaco Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr3",
+        "target_id": "e4",
+        "relationship_type": "AT_RACE",
+        "description": "Pérez finished third in the Monaco Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e5",
+        "relationship_type": "ROUND_OF",
+        "description": "The Monaco Grand Prix is a round of the 2016 Formula One World Championship.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

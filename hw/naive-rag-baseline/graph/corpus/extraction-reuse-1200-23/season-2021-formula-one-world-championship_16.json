@@ -1,0 +1,62 @@
+{
+  "chunk_id": "season-2021-formula-one-world-championship#16",
+  "doc_id": "season-2021-formula-one-world-championship",
+  "document_title": "2021 Formula One World Championship",
+  "section": null,
+  "page": 4,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "fda54d19c741855c93b0b4d3b67a7b0570489196fcb457d8558296b77bfddb5d",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "2021",
+        "entity_type": "Season",
+        "description": "A championship year with regulations that reduced downforce levels."
+      },
+      {
+        "local_id": "e2",
+        "name": "Mercedes-AMG Petronas Formula One Team",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that developed the dual-axis steering (DAS) system."
+      },
+      {
+        "local_id": "e3",
+        "name": "French Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Grand Prix where newly revised wing load tests were introduced."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e2",
+        "target_id": "e1",
+        "relationship_type": "ENTERED",
+        "description": "Mercedes participated in the 2021 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e1",
+        "relationship_type": "ROUND_OF",
+        "description": "The French Grand Prix is a round of the 2021 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 3,
+  "entities_accepted": 3,
+  "entities_rejected": 0,
+  "relationship_candidates": 2,
+  "relationships_accepted": 2,
+  "relationships_rejected": 0,
+  "rejections": [],
+  "alignments": []
+}

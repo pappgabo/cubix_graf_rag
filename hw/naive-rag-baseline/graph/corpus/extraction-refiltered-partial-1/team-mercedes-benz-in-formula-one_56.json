@@ -1,0 +1,75 @@
+{
+  "chunk_id": "team-mercedes-benz-in-formula-one#56",
+  "doc_id": "team-mercedes-benz-in-formula-one",
+  "document_title": "Mercedes-Benz in Formula One",
+  "section": "Mercedes-Benz in Formula One > Struggling with ground effect (2022–2025)",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/Mercedes-Benz_in_Formula_One",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "99d0942a85150ae81d237d0df2b3a8a1f351eb8499354ba50189fc30e3ff87a9",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "ROUND_OF does not allow Team -> GrandPrix"
+    }
+  ],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "George Russell",
+        "entity_type": "Driver",
+        "description": "Mercedes junior driver who replaced Bottas to partner Hamilton for 2022."
+      },
+      {
+        "local_id": "e2",
+        "name": "Lewis Hamilton",
+        "entity_type": "Driver",
+        "description": "Partnered with George Russell for the 2022 season."
+      },
+      {
+        "local_id": "e3",
+        "name": "Mercedes",
+        "entity_type": "Team",
+        "description": "Formula One team that struggled with ground effect in 2022."
+      },
+      {
+        "local_id": "e4",
+        "name": "2022",
+        "entity_type": "Season",
+        "description": "Season with major rule changes and the introduction of ground effect."
+      },
+      {
+        "local_id": "e5",
+        "name": "Canadian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "Race where porpoising issues were significantly reduced and solved."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "George Russell partnered with Lewis Hamilton for the 2022 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e4",
+        "relationship_type": "ENTERED",
+        "description": "Mercedes entered the 2022 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "chunk_id": "team-williams-racing#94",
+  "doc_id": "team-williams-racing",
+  "document_title": "Williams Racing",
+  "section": "Williams Racing > 2018–2019: Continued decline",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "a38d9f893dc9bb582cc7ede50317a4e9965394d1903f6de38cdafd0069d65e1a",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Williams Racing",
+        "entity_type": "Team",
+        "description": "A Formula 1 team."
+      },
+      {
+        "local_id": "e2",
+        "name": "George Russell",
+        "entity_type": "Driver",
+        "description": "A driver who joined Williams Racing for the 2019 season."
+      },
+      {
+        "local_id": "e3",
+        "name": "Robert Kubica",
+        "entity_type": "Driver",
+        "description": "A driver who was promoted to a seat at Williams Racing for the 2019 season."
+      },
+      {
+        "local_id": "e4",
+        "name": "2019",
+        "entity_type": "Season",
+        "description": "The Formula 1 season in which Williams Racing entered George Russell and Robert Kubica."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e4",
+        "relationship_type": "ENTERED",
+        "description": "Williams Racing entered the 2019 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 4,
+  "entities_accepted": 4,
+  "entities_rejected": 0,
+  "relationship_candidates": 3,
+  "relationships_accepted": 1,
+  "relationships_rejected": 2,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "DROVE_FOR does not allow Team -> Driver"
+    },
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "DROVE_FOR does not allow Team -> Driver"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 2,
+      "action": "clear_redundant_season_year",
+      "detail": "ENTERED year 2019 already named by Season 'e4'; from_year and to_year cleared"
+    }
+  ]
+}

@@ -1,0 +1,110 @@
+{
+  "chunk_id": "driver-kimi-raikkonen#64",
+  "doc_id": "driver-kimi-raikkonen",
+  "document_title": "Kimi Räikkönen",
+  "section": "Formula One career > Lotus (2012–2013) > 2013",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "48ef25d1bd49e719f7d3e4715b1a17d23c2471f01bd94b688e6e2f452d39b5ae",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Kimi Räikkönen",
+        "entity_type": "Driver",
+        "description": "A Finnish racing driver who competed in Formula One."
+      },
+      {
+        "local_id": "e2",
+        "name": "Lotus",
+        "entity_type": "Team",
+        "description": "A Formula One team that entered cars."
+      },
+      {
+        "local_id": "e3",
+        "name": "2013",
+        "entity_type": "Season",
+        "description": "The Formula One season in which Kimi Räikkönen competed."
+      },
+      {
+        "local_id": "e4",
+        "name": "Indian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula One race held in India."
+      },
+      {
+        "local_id": "e5",
+        "name": "Romain Grosjean",
+        "entity_type": "Driver",
+        "description": "A French racing driver who was Kimi Räikkönen's teammate at Lotus."
+      },
+      {
+        "local_id": "e6",
+        "name": "Nico Rosberg",
+        "entity_type": "Driver",
+        "description": "A German racing driver who competed in Formula One."
+      },
+      {
+        "local_id": "e7",
+        "name": "seventh",
+        "entity_type": "RaceResult",
+        "description": "Kimi Räikkönen's finishing position in the Indian Grand Prix."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Kimi Räikkönen drove for Lotus.",
+        "from_year": 2012,
+        "to_year": 2013,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e7",
+        "relationship_type": "ACHIEVED",
+        "description": "Kimi Räikkönen finished seventh in the Indian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e7",
+        "target_id": "e4",
+        "relationship_type": "AT_RACE",
+        "description": "The race result belongs to the Indian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e5",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Kimi Räikkönen was teammates with Romain Grosjean at Lotus.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 7,
+  "entities_accepted": 7,
+  "entities_rejected": 0,
+  "relationship_candidates": 5,
+  "relationships_accepted": 4,
+  "relationships_rejected": 1,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "FOR_TEAM does not allow Driver -> RaceResult"
+    }
+  ],
+  "alignments": []
+}

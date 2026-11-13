@@ -1,0 +1,109 @@
+{
+  "chunk_id": "driver-valtteri-bottas#136",
+  "doc_id": "driver-valtteri-bottas",
+  "document_title": "Valtteri Bottas",
+  "section": "Other racing > Rallying",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/Valtteri_Bottas",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "66d6785390b1d55e3bcee714e76c25648805a740f6306b822dc769147510b4bc",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "ACHIEVED does not allow Driver -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "WON does not allow Driver -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "ACHIEVED does not allow Driver -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "ACHIEVED does not allow Driver -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "POWERED_BY does not allow GrandPrix -> Car"
+    },
+    {
+      "element": "relationship",
+      "index": 5,
+      "reason": "ACHIEVED does not allow Driver -> Car"
+    },
+    {
+      "element": "relationship",
+      "index": 6,
+      "reason": "TEAMMATE_OF does not allow Car -> Driver"
+    },
+    {
+      "element": "relationship",
+      "index": 7,
+      "reason": "TEAMMATE_OF does not allow Car -> Driver"
+    }
+  ],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Valtteri Bottas",
+        "entity_type": "Driver",
+        "description": "A Finnish racing driver who has competed in Formula One."
+      },
+      {
+        "local_id": "e2",
+        "name": "Arctic Rally",
+        "entity_type": "GrandPrix",
+        "description": "A rally event that Bottas participated in."
+      },
+      {
+        "local_id": "e3",
+        "name": "Paul Ricard-based Rallycircuit Côte d'Azur",
+        "entity_type": "GrandPrix",
+        "description": "A rally event that Bottas won."
+      },
+      {
+        "local_id": "e4",
+        "name": "Arctic Lapland Rally",
+        "entity_type": "GrandPrix",
+        "description": "A rally event that Bottas participated in multiple times."
+      },
+      {
+        "local_id": "e5",
+        "name": "Citroën DS3 WRC",
+        "entity_type": "Car",
+        "description": "A car model that Bottas drove in the Arctic Lapland Rally."
+      },
+      {
+        "local_id": "e6",
+        "name": "Extreme E",
+        "entity_type": "Car",
+        "description": "A racing series in which Bottas participated in a test."
+      },
+      {
+        "local_id": "e7",
+        "name": "Jean-Éric Vergne",
+        "entity_type": "Driver",
+        "description": "A driver who participated in the Extreme E test alongside Bottas."
+      },
+      {
+        "local_id": "e8",
+        "name": "Sébastien Loeb",
+        "entity_type": "Driver",
+        "description": "A driver who participated in the Extreme E test alongside Bottas."
+      }
+    ],
+    "relationships": []
+  }
+}

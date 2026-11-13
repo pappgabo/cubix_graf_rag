@@ -1,0 +1,211 @@
+{
+  "chunk_id": "driver-jenson-button#0",
+  "doc_id": "driver-jenson-button",
+  "document_title": "Jenson Button",
+  "section": null,
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "b37aa8bf684d538890862ef053a6da418b8a699e6cdb0631c3c33d6e0fdc3ad0",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Jenson Button",
+        "entity_type": "Driver",
+        "description": "A British former racing driver who competed in Formula One from 2000 to 2017."
+      },
+      {
+        "local_id": "e2",
+        "name": "Brawn",
+        "entity_type": "Team",
+        "description": "The team with which Jenson Button won the Formula One World Drivers' Championship in 2009."
+      },
+      {
+        "local_id": "e3",
+        "name": "Williams",
+        "entity_type": "Team",
+        "description": "The team Jenson Button first drove for in the 2000 season."
+      },
+      {
+        "local_id": "e4",
+        "name": "Benetton",
+        "entity_type": "Team",
+        "description": "The team Jenson Button switched to in 2001, which became Renault at the start of the 2002 season."
+      },
+      {
+        "local_id": "e5",
+        "name": "BAR",
+        "entity_type": "Team",
+        "description": "The team Jenson Button moved to for the 2003 season."
+      },
+      {
+        "local_id": "e6",
+        "name": "Honda",
+        "entity_type": "Team",
+        "description": "The team BAR was renamed to for the 2006 season."
+      },
+      {
+        "local_id": "e7",
+        "name": "Hungarian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The Grand Prix where Jenson Button won his first race."
+      },
+      {
+        "local_id": "e8",
+        "name": "2009",
+        "entity_type": "Season",
+        "description": "The season in which Jenson Button won the Formula One World Drivers' Championship."
+      },
+      {
+        "local_id": "e9",
+        "name": "2000",
+        "entity_type": "Season",
+        "description": "The season Jenson Button first drove in Formula One."
+      },
+      {
+        "local_id": "e10",
+        "name": "2001",
+        "entity_type": "Season",
+        "description": "The season Jenson Button switched to Benetton."
+      },
+      {
+        "local_id": "e11",
+        "name": "2003",
+        "entity_type": "Season",
+        "description": "The season Jenson Button moved to BAR."
+      },
+      {
+        "local_id": "e12",
+        "name": "2006",
+        "entity_type": "Season",
+        "description": "The season BAR was renamed to Honda."
+      },
+      {
+        "local_id": "e13",
+        "name": "2004",
+        "entity_type": "Season",
+        "description": "The season Jenson Button finished third in the World Drivers' Championship."
+      },
+      {
+        "local_id": "e14",
+        "name": "2005",
+        "entity_type": "Season",
+        "description": "The season Jenson Button fell to ninth in the World Drivers' Championship."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Jenson Button at Hungarian Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Jenson Button won his first Grand Prix at the Hungarian Grand Prix."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e3",
+        "relationship_type": "DROVE_FOR",
+        "description": "Jenson Button drove for Williams in the 2000 season.",
+        "from_year": 2000,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e4",
+        "relationship_type": "DROVE_FOR",
+        "description": "Jenson Button drove for Benetton in the 2001 season.",
+        "from_year": 2001,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e5",
+        "relationship_type": "DROVE_FOR",
+        "description": "Jenson Button drove for BAR in the 2003 season.",
+        "from_year": 2003,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e6",
+        "relationship_type": "DROVE_FOR",
+        "description": "Jenson Button drove for Honda in the 2006 season.",
+        "from_year": 2006,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Jenson Button won his first Grand Prix at the Hungarian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e7",
+        "relationship_type": "AT_RACE",
+        "description": "Jenson Button won his first Grand Prix at the Hungarian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e7",
+        "target_id": "e11",
+        "relationship_type": "ROUND_OF",
+        "description": "The Hungarian Grand Prix is a round of the 2006 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 14,
+  "entities_accepted": 15,
+  "entities_rejected": 0,
+  "relationship_candidates": 11,
+  "relationships_accepted": 7,
+  "relationships_rejected": 5,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "WON does not allow Driver -> Team"
+    },
+    {
+      "element": "relationship",
+      "index": 5,
+      "reason": "AWARDED_IN does not allow Team -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 8,
+      "reason": "HELD_AT does not allow GrandPrix -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 10,
+      "reason": "RACED_IN does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 11,
+      "reason": "RACED_IN does not allow Driver -> Season"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 6,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e7; description kept"
+    }
+  ]
+}

@@ -1,0 +1,110 @@
+{
+  "chunk_id": "team-mclaren#49",
+  "doc_id": "team-mclaren",
+  "document_title": "McLaren",
+  "section": "2018–2020: Customer Renault engines",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "6ab3148a2578ca803076529f8860662c43e32753d66171765db3b70c1e6ed298",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "McLaren",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that entered cars."
+      },
+      {
+        "local_id": "e2",
+        "name": "Renault",
+        "entity_type": "PowerUnit",
+        "description": "An engine supplier for McLaren."
+      },
+      {
+        "local_id": "e3",
+        "name": "2018",
+        "entity_type": "Season",
+        "description": "A championship year."
+      },
+      {
+        "local_id": "e4",
+        "name": "Fernando Alonso",
+        "entity_type": "Driver",
+        "description": "A driver who raced for McLaren."
+      },
+      {
+        "local_id": "e5",
+        "name": "Stoffel Vandoorne",
+        "entity_type": "Driver",
+        "description": "A driver who raced for McLaren."
+      },
+      {
+        "local_id": "e6",
+        "name": "Lando Norris",
+        "entity_type": "Driver",
+        "description": "A test and reserve driver for McLaren."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e3",
+        "relationship_type": "ENTERED",
+        "description": "McLaren took part in the 2018 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e1",
+        "relationship_type": "DROVE_FOR",
+        "description": "Fernando Alonso raced for McLaren.",
+        "from_year": 2018,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e1",
+        "relationship_type": "DROVE_FOR",
+        "description": "Stoffel Vandoorne raced for McLaren.",
+        "from_year": 2018,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e6",
+        "target_id": "e1",
+        "relationship_type": "DROVE_FOR",
+        "description": "Lando Norris was the test and reserve driver for McLaren.",
+        "from_year": 2018,
+        "to_year": null,
+        "role": "test and reserve driver"
+      }
+    ]
+  },
+  "entity_candidates": 6,
+  "entities_accepted": 6,
+  "entities_rejected": 0,
+  "relationship_candidates": 5,
+  "relationships_accepted": 4,
+  "relationships_rejected": 1,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "POWERED_BY does not allow Team -> PowerUnit"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 1,
+      "action": "clear_redundant_season_year",
+      "detail": "ENTERED year 2018 already named by Season 'e3'; from_year and to_year cleared"
+    }
+  ]
+}

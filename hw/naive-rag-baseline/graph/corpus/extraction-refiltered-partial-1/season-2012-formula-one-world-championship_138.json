@@ -1,0 +1,134 @@
+{
+  "chunk_id": "season-2012-formula-one-world-championship#138",
+  "doc_id": "season-2012-formula-one-world-championship",
+  "document_title": "2012 Formula One World Championship",
+  "section": "Race summaries > Round 10 – Germany Hockenheimring",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/2012_Formula_One_World_Championship",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "3934e320609ff5889945d80a87ee857453a8474203ab7a9419a4b2373b52a4e0",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "TEAMMATE_OF does not allow Driver -> Team"
+    },
+    {
+      "element": "relationship",
+      "index": 7,
+      "reason": "ROUND_OF does not allow Circuit -> Season"
+    }
+  ],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Sebastian Vettel",
+        "entity_type": "Driver",
+        "description": "A driver who raced in Formula One."
+      },
+      {
+        "local_id": "e2",
+        "name": "McLaren",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that enters cars."
+      },
+      {
+        "local_id": "e3",
+        "name": "Alonso",
+        "entity_type": "Driver",
+        "description": "A driver who raced in Formula One."
+      },
+      {
+        "local_id": "e4",
+        "name": "Hamilton",
+        "entity_type": "Driver",
+        "description": "A driver who raced in Formula One."
+      },
+      {
+        "local_id": "e5",
+        "name": "Jenson Button",
+        "entity_type": "Driver",
+        "description": "A driver who raced in Formula One."
+      },
+      {
+        "local_id": "e6",
+        "name": "Ferrari",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that enters cars."
+      },
+      {
+        "local_id": "e7",
+        "name": "Hockenheimring",
+        "entity_type": "Circuit",
+        "description": "A racing venue in Germany."
+      },
+      {
+        "local_id": "e8",
+        "name": "2012",
+        "entity_type": "Season",
+        "description": "The 2012 Formula One championship year."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Sebastian Vettel drove for McLaren.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e3",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Sebastian Vettel was teammates with Alonso.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e4",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Alonso was teammates with Hamilton.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e6",
+        "relationship_type": "DROVE_FOR",
+        "description": "Alonso drove for Ferrari.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e8",
+        "relationship_type": "ENTERED",
+        "description": "McLaren entered the 2012 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e6",
+        "target_id": "e8",
+        "relationship_type": "ENTERED",
+        "description": "Ferrari entered the 2012 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

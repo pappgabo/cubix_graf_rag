@@ -1,0 +1,365 @@
+{
+  "chunk_id": "team-williams-racing#7",
+  "doc_id": "team-williams-racing",
+  "document_title": "Williams Racing",
+  "section": "Williams Racing > 1979 season",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "70c400032f9b0944526e403c075a001ff647054ddba213b340a10ccd6023f495",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Williams Racing",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that entered cars."
+      },
+      {
+        "local_id": "e2",
+        "name": "Alan Jones",
+        "entity_type": "Driver",
+        "description": "A driver who raced for Williams Racing and scored 43 points in the 1979 season."
+      },
+      {
+        "local_id": "e3",
+        "name": "Clay Regazzoni",
+        "entity_type": "Driver",
+        "description": "A driver who raced for Williams Racing and scored 32 points in the 1979 season."
+      },
+      {
+        "local_id": "e4",
+        "name": "Gilles Villeneuve",
+        "entity_type": "Driver",
+        "description": "A driver for Ferrari who competed against Williams drivers in the 1979 season."
+      },
+      {
+        "local_id": "e5",
+        "name": "Jody Scheckter",
+        "entity_type": "Driver",
+        "description": "The 1979 champion who drove for Ferrari."
+      },
+      {
+        "local_id": "e6",
+        "name": "1979",
+        "entity_type": "Season",
+        "description": "The championship year in which Williams Racing competed."
+      },
+      {
+        "local_id": "e7",
+        "name": "German Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A race where Williams achieved a 1-2 finish."
+      },
+      {
+        "local_id": "e8",
+        "name": "Austrian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A race where Alan Jones won, making it three wins in a row."
+      },
+      {
+        "local_id": "e9",
+        "name": "Dutch Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A race where Alan Jones won, making it four wins in a row."
+      },
+      {
+        "local_id": "e10",
+        "name": "Italian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A race where Jody Scheckter ended Williams's winning streak."
+      },
+      {
+        "local_id": "e11",
+        "name": "Canadian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The penultimate race where Alan Jones won."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Alan Jones at German Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Alan Jones recorded a result in the German Grand Prix."
+      },
+      {
+        "local_id": "rr2",
+        "name": "Alan Jones at Austrian Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Alan Jones recorded a result in the Austrian Grand Prix."
+      },
+      {
+        "local_id": "rr3",
+        "name": "Alan Jones at Dutch Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Alan Jones recorded a result in the Dutch Grand Prix."
+      },
+      {
+        "local_id": "rr4",
+        "name": "Alan Jones at Canadian Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Alan Jones recorded a result in the Canadian Grand Prix."
+      },
+      {
+        "local_id": "rr5",
+        "name": "Clay Regazzoni at German Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Clay Regazzoni recorded a result in the German Grand Prix."
+      },
+      {
+        "local_id": "rr6",
+        "name": "Clay Regazzoni at Italian Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Clay Regazzoni recorded a result in the Italian Grand Prix."
+      },
+      {
+        "local_id": "rr7",
+        "name": "Gilles Villeneuve at Austrian Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Gilles Villeneuve recorded a result in the Austrian Grand Prix."
+      },
+      {
+        "local_id": "rr8",
+        "name": "Jody Scheckter at Italian Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Jody Scheckter recorded a result in the Italian Grand Prix."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e6",
+        "relationship_type": "ENTERED",
+        "description": "Williams Racing took part in the 1979 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Alan Jones recorded a result in the German Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e7",
+        "relationship_type": "AT_RACE",
+        "description": "Alan Jones recorded a result in the German Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "rr2",
+        "relationship_type": "ACHIEVED",
+        "description": "Alan Jones recorded a result in the Austrian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr2",
+        "target_id": "e8",
+        "relationship_type": "AT_RACE",
+        "description": "Alan Jones recorded a result in the Austrian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "rr3",
+        "relationship_type": "ACHIEVED",
+        "description": "Alan Jones recorded a result in the Dutch Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr3",
+        "target_id": "e9",
+        "relationship_type": "AT_RACE",
+        "description": "Alan Jones recorded a result in the Dutch Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "rr4",
+        "relationship_type": "ACHIEVED",
+        "description": "Alan Jones recorded a result in the Canadian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr4",
+        "target_id": "e11",
+        "relationship_type": "AT_RACE",
+        "description": "Alan Jones recorded a result in the Canadian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "rr5",
+        "relationship_type": "ACHIEVED",
+        "description": "Clay Regazzoni recorded a result in the German Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr5",
+        "target_id": "e7",
+        "relationship_type": "AT_RACE",
+        "description": "Clay Regazzoni recorded a result in the German Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "rr6",
+        "relationship_type": "ACHIEVED",
+        "description": "Clay Regazzoni recorded a result in the Italian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr6",
+        "target_id": "e10",
+        "relationship_type": "AT_RACE",
+        "description": "Clay Regazzoni recorded a result in the Italian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "rr7",
+        "relationship_type": "ACHIEVED",
+        "description": "Gilles Villeneuve recorded a result in the Austrian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr7",
+        "target_id": "e8",
+        "relationship_type": "AT_RACE",
+        "description": "Gilles Villeneuve recorded a result in the Austrian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "rr8",
+        "relationship_type": "ACHIEVED",
+        "description": "Jody Scheckter recorded a result in the Italian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr8",
+        "target_id": "e10",
+        "relationship_type": "AT_RACE",
+        "description": "Jody Scheckter recorded a result in the Italian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 11,
+  "entities_accepted": 19,
+  "entities_rejected": 0,
+  "relationship_candidates": 15,
+  "relationships_accepted": 17,
+  "relationships_rejected": 6,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "ROUND_OF does not allow Team -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "ROUND_OF does not allow Team -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "ROUND_OF does not allow Team -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "ROUND_OF does not allow Team -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 5,
+      "reason": "ROUND_OF does not allow Team -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 22,
+      "reason": "TEAMMATE_OF does not allow Driver -> Season"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 6,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e7; description kept"
+    },
+    {
+      "index": 7,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr2 -AT_RACE-> e8; description kept"
+    },
+    {
+      "index": 8,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr3 -AT_RACE-> e9; description kept"
+    },
+    {
+      "index": 9,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr4 -AT_RACE-> e11; description kept"
+    },
+    {
+      "index": 10,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr5 -AT_RACE-> e7; description kept"
+    },
+    {
+      "index": 11,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr6 -AT_RACE-> e10; description kept"
+    },
+    {
+      "index": 12,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr7 -AT_RACE-> e8; description kept"
+    },
+    {
+      "index": 13,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr8 -AT_RACE-> e10; description kept"
+    }
+  ]
+}

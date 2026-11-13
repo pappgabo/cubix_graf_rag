@@ -1,0 +1,63 @@
+{
+  "chunk_id": "driver-michael-schumacher#141",
+  "doc_id": "driver-michael-schumacher",
+  "document_title": "Michael Schumacher",
+  "section": null,
+  "page": 12,
+  "source": "https://en.wikipedia.org/wiki/Michael_Schumacher",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "03c3206eb1628c5f514c5eadfcae9a2d8c7bb16208e29e10bc8bbcfcb131c716",
+  "validation_version": "partial-1",
+  "source_status": "ok",
+  "status": "ok",
+  "rejections": [],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Michael Schumacher",
+        "entity_type": "Driver",
+        "description": "A Formula One driver known for his success and multiple championships."
+      },
+      {
+        "local_id": "e2",
+        "name": "Barrichello",
+        "entity_type": "Driver",
+        "description": "A Formula One driver who was Michael Schumacher's teammate."
+      },
+      {
+        "local_id": "e3",
+        "name": "2000",
+        "entity_type": "Season",
+        "description": "A Formula One championship season."
+      },
+      {
+        "local_id": "e4",
+        "name": "Monaco Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A prestigious Formula One race held in Monaco."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Michael Schumacher was teammates with Barrichello.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e3",
+        "relationship_type": "ROUND_OF",
+        "description": "The Monaco Grand Prix is a round of the 2000 Formula One season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

@@ -1,0 +1,169 @@
+{
+  "chunk_id": "team-red-bull-racing#29",
+  "doc_id": "team-red-bull-racing",
+  "document_title": "Red Bull Racing",
+  "section": "2010 season",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "2173c0cdbaf95a3d9b7b00317dca5af638b59f9ca688ea166c330d136a88e93e",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Red Bull Racing",
+        "entity_type": "Team",
+        "description": "A Formula 1 team."
+      },
+      {
+        "local_id": "e2",
+        "name": "Sebastian Vettel",
+        "entity_type": "Driver",
+        "description": "A Formula 1 driver who raced for Red Bull Racing."
+      },
+      {
+        "local_id": "e3",
+        "name": "Mark Webber",
+        "entity_type": "Driver",
+        "description": "A Formula 1 driver who raced for Red Bull Racing."
+      },
+      {
+        "local_id": "e4",
+        "name": "Korean Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula 1 race held in Yeongam."
+      },
+      {
+        "local_id": "e5",
+        "name": "2010",
+        "entity_type": "Season",
+        "description": "The Formula 1 championship season."
+      },
+      {
+        "local_id": "e6",
+        "name": "Fernando Alonso",
+        "entity_type": "Driver",
+        "description": "A Formula 1 driver who raced for Ferrari."
+      },
+      {
+        "local_id": "e7",
+        "name": "Mercedes-AMG Petronas Formula One Team",
+        "entity_type": "Team",
+        "description": "A Formula 1 team."
+      },
+      {
+        "local_id": "e8",
+        "name": "Nico Rosberg",
+        "entity_type": "Driver",
+        "description": "A Formula 1 driver who raced for Mercedes."
+      },
+      {
+        "local_id": "e9",
+        "name": "2008 Australian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula 1 race."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Sebastian Vettel at Korean Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Sebastian Vettel recorded a result in the Korean Grand Prix."
+      },
+      {
+        "local_id": "rr2",
+        "name": "Mark Webber at Korean Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Mark Webber recorded a result in the Korean Grand Prix."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e5",
+        "relationship_type": "ENTERED",
+        "description": "Red Bull Racing took part in the 2010 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Sebastian Vettel recorded a result in the Korean Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e4",
+        "relationship_type": "AT_RACE",
+        "description": "Sebastian Vettel recorded a result in the Korean Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "rr2",
+        "relationship_type": "ACHIEVED",
+        "description": "Mark Webber recorded a result in the Korean Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr2",
+        "target_id": "e4",
+        "relationship_type": "AT_RACE",
+        "description": "Mark Webber recorded a result in the Korean Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 9,
+  "entities_accepted": 11,
+  "entities_rejected": 0,
+  "relationship_candidates": 7,
+  "relationships_accepted": 5,
+  "relationships_rejected": 4,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "HELD_AT does not allow Team -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 6,
+      "reason": "ACHIEVED does not allow Driver -> Driver"
+    },
+    {
+      "element": "relationship",
+      "index": 7,
+      "reason": "ACHIEVED does not allow Driver -> Driver"
+    },
+    {
+      "element": "relationship",
+      "index": 8,
+      "reason": "ACHIEVED does not allow Team -> GrandPrix"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 2,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e4; description kept"
+    },
+    {
+      "index": 3,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr2 -AT_RACE-> e4; description kept"
+    }
+  ]
+}

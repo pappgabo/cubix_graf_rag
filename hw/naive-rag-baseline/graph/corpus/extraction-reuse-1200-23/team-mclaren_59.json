@@ -1,0 +1,92 @@
+{
+  "chunk_id": "team-mclaren#59",
+  "doc_id": "team-mclaren",
+  "document_title": "McLaren",
+  "section": "2021–present: Return to Mercedes engines > 2021–2023: Continued spells in the midfield",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "789cacb2f204407808bca1f92891ba8b2720a466696a03e53daa8fc561649962",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "McLaren",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that entered cars."
+      },
+      {
+        "local_id": "e2",
+        "name": "2021",
+        "entity_type": "Season",
+        "description": "A championship year."
+      },
+      {
+        "local_id": "e3",
+        "name": "Abu Dhabi Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A specific Grand Prix."
+      },
+      {
+        "local_id": "e4",
+        "name": "Lando Norris",
+        "entity_type": "Driver",
+        "description": "A driver who races in Formula One."
+      },
+      {
+        "local_id": "e5",
+        "name": "Oscar Piastri",
+        "entity_type": "Driver",
+        "description": "A driver who races in Formula One."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "ENTERED",
+        "description": "McLaren took part in the 2021 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 5,
+  "entities_accepted": 5,
+  "entities_rejected": 0,
+  "relationship_candidates": 5,
+  "relationships_accepted": 1,
+  "relationships_rejected": 4,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "ROUND_OF does not allow Team -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "ACHIEVED does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "ACHIEVED does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "WON does not allow Team -> Season"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 0,
+      "action": "clear_redundant_season_year",
+      "detail": "ENTERED year 2021 already named by Season 'e2'; from_year and to_year cleared"
+    }
+  ]
+}

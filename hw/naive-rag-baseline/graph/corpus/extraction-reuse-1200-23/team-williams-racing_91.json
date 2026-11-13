@@ -1,0 +1,156 @@
+{
+  "chunk_id": "team-williams-racing#91",
+  "doc_id": "team-williams-racing",
+  "document_title": "Williams Racing",
+  "section": "Williams Racing > Mercedes power units (2014–present) > Williams Racing > 2014–2017 seasons: Initial highs followed by the start of another decline",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "77bb42b1333bbdd8f8a78cabc4026a664209ffe73ccab1b207db059dad353103",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Williams Racing",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that entered cars."
+      },
+      {
+        "local_id": "e2",
+        "name": "Mercedes",
+        "entity_type": "PowerUnit",
+        "description": "An engine supplier for Williams Racing."
+      },
+      {
+        "local_id": "e3",
+        "name": "Felipe Massa",
+        "entity_type": "Driver",
+        "description": "A driver who raced for Williams Racing."
+      },
+      {
+        "local_id": "e4",
+        "name": "Valtteri Bottas",
+        "entity_type": "Driver",
+        "description": "A driver who raced for Williams Racing."
+      },
+      {
+        "local_id": "e5",
+        "name": "2014",
+        "entity_type": "Season",
+        "description": "A Formula 1 championship season."
+      },
+      {
+        "local_id": "e6",
+        "name": "2015",
+        "entity_type": "Season",
+        "description": "A Formula 1 championship season."
+      },
+      {
+        "local_id": "e7",
+        "name": "Austrian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula 1 race where Williams Racing won its first pole position since 2012."
+      },
+      {
+        "local_id": "e8",
+        "name": "Constructors' Championship",
+        "entity_type": "Title",
+        "description": "A championship title for Formula 1 teams."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e5",
+        "relationship_type": "ENTERED",
+        "description": "Williams Racing took part in the 2014 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e6",
+        "relationship_type": "ENTERED",
+        "description": "Williams Racing took part in the 2015 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e7",
+        "target_id": "e5",
+        "relationship_type": "ROUND_OF",
+        "description": "The Austrian Grand Prix is a round of the 2014 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e8",
+        "relationship_type": "WON",
+        "description": "Williams Racing took third place in the Constructors' Championship.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e8",
+        "target_id": "e5",
+        "relationship_type": "AWARDED_IN",
+        "description": "Williams Racing took third place in the Constructors' Championship.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 8,
+  "entities_accepted": 8,
+  "entities_rejected": 0,
+  "relationship_candidates": 8,
+  "relationships_accepted": 5,
+  "relationships_rejected": 4,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 7,
+      "reason": "WON is not temporal; from_year=2015, to_year=None, role=None cannot be stored without dropping them"
+    },
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "POWERED_BY does not allow Team -> PowerUnit"
+    },
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "DROVE_FOR does not allow Team -> Driver"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "DROVE_FOR does not allow Team -> Driver"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 3,
+      "action": "clear_redundant_season_year",
+      "detail": "ENTERED year 2014 already named by Season 'e5'; from_year and to_year cleared"
+    },
+    {
+      "index": 4,
+      "action": "clear_redundant_season_year",
+      "detail": "ENTERED year 2015 already named by Season 'e6'; from_year and to_year cleared"
+    },
+    {
+      "index": 6,
+      "action": "move_won_year",
+      "detail": "WON year 2014 stored as e8 -AWARDED_IN-> e5; from_year and to_year cleared; description kept"
+    }
+  ]
+}

@@ -1,0 +1,260 @@
+{
+  "chunk_id": "driver-michael-schumacher#124",
+  "doc_id": "driver-michael-schumacher",
+  "document_title": "Michael Schumacher",
+  "section": null,
+  "page": 10,
+  "source": "https://en.wikipedia.org/wiki/Michael_Schumacher",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "d3e4a44406927cc4d743ac5fee10ea6463df0cdbf777c8e39f49ee33b787ebeb",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 8,
+      "reason": "FIELDED does not allow Team -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 9,
+      "reason": "FIELDED does not allow Team -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 10,
+      "reason": "FIELDED does not allow Team -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 11,
+      "reason": "FIELDED does not allow Team -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 12,
+      "reason": "FIELDED does not allow Team -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 13,
+      "reason": "FIELDED does not allow Team -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 14,
+      "reason": "FIELDED does not allow Team -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 15,
+      "reason": "FIELDED does not allow Team -> Season"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 0,
+      "action": "clear_redundant_season_year",
+      "detail": "ENTERED year 2014 already named by Season 'e6'; from_year and to_year cleared"
+    },
+    {
+      "index": 1,
+      "action": "clear_redundant_season_year",
+      "detail": "ENTERED year 2015 already named by Season 'e7'; from_year and to_year cleared"
+    },
+    {
+      "index": 2,
+      "action": "clear_redundant_season_year",
+      "detail": "ENTERED year 2016 already named by Season 'e8'; from_year and to_year cleared"
+    },
+    {
+      "index": 3,
+      "action": "clear_redundant_season_year",
+      "detail": "ENTERED year 2017 already named by Season 'e9'; from_year and to_year cleared"
+    },
+    {
+      "index": 4,
+      "action": "clear_redundant_season_year",
+      "detail": "ENTERED year 2018 already named by Season 'e10'; from_year and to_year cleared"
+    },
+    {
+      "index": 5,
+      "action": "clear_redundant_season_year",
+      "detail": "ENTERED year 2019 already named by Season 'e11'; from_year and to_year cleared"
+    },
+    {
+      "index": 6,
+      "action": "clear_redundant_season_year",
+      "detail": "ENTERED year 2020 already named by Season 'e12'; from_year and to_year cleared"
+    },
+    {
+      "index": 7,
+      "action": "clear_redundant_season_year",
+      "detail": "ENTERED year 2021 already named by Season 'e13'; from_year and to_year cleared"
+    }
+  ],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Mercedes-AMG Petronas Formula One Team",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that entered cars."
+      },
+      {
+        "local_id": "e2",
+        "name": "Lewis Hamilton",
+        "entity_type": "Driver",
+        "description": "A driver who raced in Formula One."
+      },
+      {
+        "local_id": "e3",
+        "name": "Rosberg",
+        "entity_type": "Driver",
+        "description": "A driver who raced in Formula One."
+      },
+      {
+        "local_id": "e4",
+        "name": "Valtteri Bottas",
+        "entity_type": "Driver",
+        "description": "A driver who raced in Formula One."
+      },
+      {
+        "local_id": "e5",
+        "name": "Scuderia Ferrari",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that entered cars."
+      },
+      {
+        "local_id": "e6",
+        "name": "2014",
+        "entity_type": "Season",
+        "description": "A championship year."
+      },
+      {
+        "local_id": "e7",
+        "name": "2015",
+        "entity_type": "Season",
+        "description": "A championship year."
+      },
+      {
+        "local_id": "e8",
+        "name": "2016",
+        "entity_type": "Season",
+        "description": "A championship year."
+      },
+      {
+        "local_id": "e9",
+        "name": "2017",
+        "entity_type": "Season",
+        "description": "A championship year."
+      },
+      {
+        "local_id": "e10",
+        "name": "2018",
+        "entity_type": "Season",
+        "description": "A championship year."
+      },
+      {
+        "local_id": "e11",
+        "name": "2019",
+        "entity_type": "Season",
+        "description": "A championship year."
+      },
+      {
+        "local_id": "e12",
+        "name": "2020",
+        "entity_type": "Season",
+        "description": "A championship year."
+      },
+      {
+        "local_id": "e13",
+        "name": "2021",
+        "entity_type": "Season",
+        "description": "A championship year."
+      },
+      {
+        "local_id": "e14",
+        "name": "Schumacher",
+        "entity_type": "Driver",
+        "description": "A driver who raced in Formula One."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e6",
+        "relationship_type": "ENTERED",
+        "description": "Mercedes took part in the 2014 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e7",
+        "relationship_type": "ENTERED",
+        "description": "Mercedes took part in the 2015 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e8",
+        "relationship_type": "ENTERED",
+        "description": "Mercedes took part in the 2016 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e9",
+        "relationship_type": "ENTERED",
+        "description": "Mercedes took part in the 2017 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e10",
+        "relationship_type": "ENTERED",
+        "description": "Mercedes took part in the 2018 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e11",
+        "relationship_type": "ENTERED",
+        "description": "Mercedes took part in the 2019 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e12",
+        "relationship_type": "ENTERED",
+        "description": "Mercedes took part in the 2020 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e13",
+        "relationship_type": "ENTERED",
+        "description": "Mercedes took part in the 2021 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

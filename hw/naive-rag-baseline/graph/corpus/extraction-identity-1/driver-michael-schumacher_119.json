@@ -1,0 +1,111 @@
+{
+  "chunk_id": "driver-michael-schumacher#119",
+  "doc_id": "driver-michael-schumacher",
+  "document_title": "Michael Schumacher",
+  "section": null,
+  "page": 10,
+  "source": "https://en.wikipedia.org/wiki/Michael_Schumacher",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "bd785bd451be4a4ec50f182eec9fa2d55d891ab5a509033473db426e9605ec78",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "entity_candidates": 4,
+  "entities_accepted": 6,
+  "entities_rejected": 0,
+  "relationship_candidates": 2,
+  "relationships_accepted": 4,
+  "relationships_rejected": 0,
+  "rejections": [],
+  "alignments": [
+    {
+      "index": 0,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e2; description kept"
+    },
+    {
+      "index": 1,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr2 -AT_RACE-> e3; description kept"
+    }
+  ],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Michael Schumacher",
+        "entity_type": "Driver",
+        "description": "A Formula One driver known for his record achievements."
+      },
+      {
+        "local_id": "e2",
+        "name": "European Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula One race held in Europe."
+      },
+      {
+        "local_id": "e3",
+        "name": "German Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula One race held in Germany."
+      },
+      {
+        "local_id": "e4",
+        "name": "Belgian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula One race held in Belgium."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Michael Schumacher at European Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Schumacher finished third at the European Grand Prix."
+      },
+      {
+        "local_id": "rr2",
+        "name": "Michael Schumacher at German Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Schumacher set the fastest lap at the German Grand Prix."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Schumacher finished third at the European Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e2",
+        "relationship_type": "AT_RACE",
+        "description": "Schumacher finished third at the European Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr2",
+        "relationship_type": "ACHIEVED",
+        "description": "Schumacher set the fastest lap at the German Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr2",
+        "target_id": "e3",
+        "relationship_type": "AT_RACE",
+        "description": "Schumacher set the fastest lap at the German Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

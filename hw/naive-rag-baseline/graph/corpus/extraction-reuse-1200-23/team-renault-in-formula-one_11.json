@@ -1,0 +1,156 @@
+{
+  "chunk_id": "team-renault-in-formula-one#11",
+  "doc_id": "team-renault-in-formula-one",
+  "document_title": "Renault in Formula One",
+  "section": "Constructor > Équipe Renault (1977–1985) > 1984–1985 seasons: Post-Prost decline and works team exit",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "01582c4651fe36fc4558705339036dd8401cd4e420279d2834fa3c26f5a67e8f",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Renault",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that entered cars."
+      },
+      {
+        "local_id": "e2",
+        "name": "Alfa Romeo",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that entered cars."
+      },
+      {
+        "local_id": "e3",
+        "name": "McLaren",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that entered cars."
+      },
+      {
+        "local_id": "e4",
+        "name": "Dijon",
+        "entity_type": "Circuit",
+        "description": "A racing venue where the 1984 French Grand Prix was held."
+      },
+      {
+        "local_id": "e5",
+        "name": "Nürburgring",
+        "entity_type": "Circuit",
+        "description": "A racing venue where the team ran a third car in 1985."
+      },
+      {
+        "local_id": "e6",
+        "name": "1984",
+        "entity_type": "Season",
+        "description": "A championship year."
+      },
+      {
+        "local_id": "e7",
+        "name": "1985",
+        "entity_type": "Season",
+        "description": "A championship year."
+      },
+      {
+        "local_id": "e8",
+        "name": "Renault RE40",
+        "entity_type": "Car",
+        "description": "A car model fielded by Renault."
+      },
+      {
+        "local_id": "e9",
+        "name": "François Hesnault",
+        "entity_type": "Driver",
+        "description": "A driver who raced for Renault."
+      },
+      {
+        "local_id": "e10",
+        "name": "Lotus",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that entered cars."
+      },
+      {
+        "local_id": "e11",
+        "name": "Ligier",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that entered cars."
+      },
+      {
+        "local_id": "e12",
+        "name": "1983",
+        "entity_type": "Season",
+        "description": "A championship year."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e8",
+        "relationship_type": "FIELDED",
+        "description": "Renault fielded the Renault RE40.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e6",
+        "relationship_type": "ENTERED",
+        "description": "Renault entered the 1984 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e7",
+        "relationship_type": "ENTERED",
+        "description": "Renault entered the 1985 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 12,
+  "entities_accepted": 12,
+  "entities_rejected": 0,
+  "relationship_candidates": 9,
+  "relationships_accepted": 3,
+  "relationships_rejected": 6,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "HELD_AT does not allow Team -> Circuit"
+    },
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "HELD_AT does not allow Team -> Circuit"
+    },
+    {
+      "element": "relationship",
+      "index": 5,
+      "reason": "DROVE_FOR does not allow Driver -> Circuit"
+    },
+    {
+      "element": "relationship",
+      "index": 6,
+      "reason": "RACED_IN does not allow Team -> Team"
+    },
+    {
+      "element": "relationship",
+      "index": 7,
+      "reason": "RACED_IN does not allow Team -> Team"
+    },
+    {
+      "element": "relationship",
+      "index": 8,
+      "reason": "ROUND_OF does not allow Season -> Team"
+    }
+  ],
+  "alignments": []
+}

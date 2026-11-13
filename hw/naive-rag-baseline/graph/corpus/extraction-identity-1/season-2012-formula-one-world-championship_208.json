@@ -1,0 +1,84 @@
+{
+  "chunk_id": "season-2012-formula-one-world-championship#208",
+  "doc_id": "season-2012-formula-one-world-championship",
+  "document_title": "2012 Formula One World Championship",
+  "section": "Race summaries > Round 20 – Brazil Autódromo José Carlos Pace (Interlagos)",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/2012_Formula_One_World_Championship",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "de51a10901cb4a647573e2542ee9e4adf2e99823c0696fc0f498417d0c887010",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "entity_candidates": 6,
+  "entities_accepted": 6,
+  "entities_rejected": 0,
+  "relationship_candidates": 4,
+  "relationships_accepted": 0,
+  "relationships_rejected": 4,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "ACHIEVED does not allow Driver -> Driver"
+    },
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "FOR_TEAM does not allow Driver -> Circuit"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "FOR_TEAM does not allow Driver -> Circuit"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "ROUND_OF does not allow Circuit -> Season"
+    }
+  ],
+  "alignments": [],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Hülkenberg",
+        "entity_type": "Driver",
+        "description": "A driver who spun on lap 48 and lost the lead to Hamilton."
+      },
+      {
+        "local_id": "e2",
+        "name": "Lewis Hamilton",
+        "entity_type": "Driver",
+        "description": "A driver who lost the lead to Hülkenberg and was forced out of the race."
+      },
+      {
+        "local_id": "e3",
+        "name": "Button",
+        "entity_type": "Driver",
+        "description": "A driver who re-took the lead after the collision between Hülkenberg and Hamilton."
+      },
+      {
+        "local_id": "e4",
+        "name": "Brazil Autódromo José Carlos Pace (Interlagos)",
+        "entity_type": "Circuit",
+        "description": "The circuit where the race took place."
+      },
+      {
+        "local_id": "e5",
+        "name": "2012",
+        "entity_type": "Season",
+        "description": "The championship year of the race."
+      },
+      {
+        "local_id": "e6",
+        "name": "McLaren",
+        "entity_type": "Team",
+        "description": "The team for which Hamilton raced."
+      }
+    ],
+    "relationships": []
+  }
+}

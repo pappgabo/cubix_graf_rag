@@ -1,0 +1,195 @@
+{
+  "chunk_id": "driver-valtteri-bottas#50",
+  "doc_id": "driver-valtteri-bottas",
+  "document_title": "Valtteri Bottas",
+  "section": "Formula One career > Mercedes (2017–2021) > 2017: Maiden race win",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/Valtteri_Bottas",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "8c01688c96e6863b591e8dbe0279f0d1247885962d6f3c0035eaccdf2467666e",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "entity_candidates": 9,
+  "entities_accepted": 12,
+  "entities_rejected": 0,
+  "relationship_candidates": 7,
+  "relationships_accepted": 7,
+  "relationships_rejected": 3,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 7,
+      "reason": "ACHIEVED does not allow Driver -> Driver"
+    },
+    {
+      "element": "relationship",
+      "index": 8,
+      "reason": "ACHIEVED does not allow Driver -> Driver"
+    },
+    {
+      "element": "relationship",
+      "index": 9,
+      "reason": "FOR_TEAM does not allow Driver -> Driver"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 1,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e4; description kept"
+    },
+    {
+      "index": 2,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr2 -AT_RACE-> e5; description kept"
+    },
+    {
+      "index": 3,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr3 -AT_RACE-> e4; description kept"
+    }
+  ],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Valtteri Bottas",
+        "entity_type": "Driver",
+        "description": "A Finnish racing driver who competed in Formula One."
+      },
+      {
+        "local_id": "e2",
+        "name": "Mercedes-AMG Petronas Formula One Team",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that entered cars."
+      },
+      {
+        "local_id": "e3",
+        "name": "2017",
+        "entity_type": "Season",
+        "description": "The Formula One championship season."
+      },
+      {
+        "local_id": "e4",
+        "name": "Canadian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula One race held in Canada."
+      },
+      {
+        "local_id": "e5",
+        "name": "Azerbaijan Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula One race held in Azerbaijan."
+      },
+      {
+        "local_id": "e6",
+        "name": "Lance Stroll",
+        "entity_type": "Driver",
+        "description": "A Canadian racing driver who competed in Formula One."
+      },
+      {
+        "local_id": "e7",
+        "name": "Lewis Hamilton",
+        "entity_type": "Driver",
+        "description": "A British racing driver who competed in Formula One."
+      },
+      {
+        "local_id": "e8",
+        "name": "Sebastian Vettel",
+        "entity_type": "Driver",
+        "description": "A German racing driver who competed in Formula One."
+      },
+      {
+        "local_id": "e9",
+        "name": "Kimi Räikkönen",
+        "entity_type": "Driver",
+        "description": "A Finnish racing driver who competed in Formula One."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Valtteri Bottas at Canadian Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Valtteri Bottas finished second at the Canadian Grand Prix."
+      },
+      {
+        "local_id": "rr2",
+        "name": "Valtteri Bottas at Azerbaijan Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Valtteri Bottas finished second at the Azerbaijan Grand Prix."
+      },
+      {
+        "local_id": "rr3",
+        "name": "Lewis Hamilton at Canadian Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Lewis Hamilton finished first at the Canadian Grand Prix."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Valtteri Bottas drove for Mercedes.",
+        "from_year": 2017,
+        "to_year": 2021,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Valtteri Bottas finished second at the Canadian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e4",
+        "relationship_type": "AT_RACE",
+        "description": "Valtteri Bottas finished second at the Canadian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr2",
+        "relationship_type": "ACHIEVED",
+        "description": "Valtteri Bottas finished second at the Azerbaijan Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr2",
+        "target_id": "e5",
+        "relationship_type": "AT_RACE",
+        "description": "Valtteri Bottas finished second at the Azerbaijan Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e7",
+        "target_id": "rr3",
+        "relationship_type": "ACHIEVED",
+        "description": "Lewis Hamilton finished first at the Canadian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr3",
+        "target_id": "e4",
+        "relationship_type": "AT_RACE",
+        "description": "Lewis Hamilton finished first at the Canadian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

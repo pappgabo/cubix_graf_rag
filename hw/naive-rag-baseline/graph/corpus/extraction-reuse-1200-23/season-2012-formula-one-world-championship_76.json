@@ -1,0 +1,113 @@
+{
+  "chunk_id": "season-2012-formula-one-world-championship#76",
+  "doc_id": "season-2012-formula-one-world-championship",
+  "document_title": "2012 Formula One World Championship",
+  "section": "Race summaries > Round 13 – Italy Autodromo Nazionale Monza",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "50cf27c0ba11d3b66066add98d407b81e968bc974a65235d60e3a6483d242fa3",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Red Bull Racing",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that entered cars."
+      },
+      {
+        "local_id": "e2",
+        "name": "Sebastian Vettel",
+        "entity_type": "Driver",
+        "description": "A driver who raced for Red Bull Racing."
+      },
+      {
+        "local_id": "e3",
+        "name": "Mark Webber",
+        "entity_type": "Driver",
+        "description": "A driver who raced for Red Bull Racing."
+      },
+      {
+        "local_id": "e4",
+        "name": "Lewis Hamilton",
+        "entity_type": "Driver",
+        "description": "A driver who raced for McLaren."
+      },
+      {
+        "local_id": "e5",
+        "name": "Kimi Räikkönen",
+        "entity_type": "Driver",
+        "description": "A driver who finished the race fifth."
+      },
+      {
+        "local_id": "e6",
+        "name": "2012",
+        "entity_type": "Season",
+        "description": "The championship year."
+      },
+      {
+        "local_id": "e7",
+        "name": "Italy",
+        "entity_type": "GrandPrix",
+        "description": "The Grand Prix held at Autodromo Nazionale Monza."
+      },
+      {
+        "local_id": "e8",
+        "name": "Autodromo Nazionale Monza",
+        "entity_type": "Circuit",
+        "description": "The circuit where the race took place."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e6",
+        "relationship_type": "ENTERED",
+        "description": "Red Bull Racing took part in the 2012 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e7",
+        "target_id": "e6",
+        "relationship_type": "ROUND_OF",
+        "description": "The Italy Grand Prix is a round of the 2012 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 8,
+  "entities_accepted": 8,
+  "entities_rejected": 0,
+  "relationship_candidates": 6,
+  "relationships_accepted": 2,
+  "relationships_rejected": 4,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "DROVE_FOR does not allow Team -> Driver"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "DROVE_FOR does not allow Team -> Driver"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "DROVE_FOR does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "HELD_AT does not allow Driver -> GrandPrix"
+    }
+  ],
+  "alignments": []
+}

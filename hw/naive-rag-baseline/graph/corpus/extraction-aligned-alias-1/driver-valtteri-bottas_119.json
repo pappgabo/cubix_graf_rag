@@ -1,0 +1,79 @@
+{
+  "chunk_id": "driver-valtteri-bottas#119",
+  "doc_id": "driver-valtteri-bottas",
+  "document_title": "Valtteri Bottas",
+  "section": "Formula One career > Alfa Romeo / Sauber (2022–2024) > 2024",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/Valtteri_Bottas",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "43480bb76f2505a336887c5ae945705880e515641a8f70b911c7262e6bc6551d",
+  "validation_version": "partial-1",
+  "source_status": "ok",
+  "status": "ok",
+  "rejections": [],
+  "alignments": [],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Valtteri Bottas",
+        "entity_type": "Driver",
+        "description": "A Finnish racing driver who competes in Formula One."
+      },
+      {
+        "local_id": "e2",
+        "name": "Zhou Guanyu",
+        "entity_type": "Driver",
+        "description": "A Chinese racing driver who competes in Formula One."
+      },
+      {
+        "local_id": "e3",
+        "name": "Stake F1 Team Kick Sauber",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that rebranded from Alfa Romeo."
+      },
+      {
+        "local_id": "e4",
+        "name": "2024",
+        "entity_type": "Season",
+        "description": "The Formula One championship season of 2024."
+      },
+      {
+        "local_id": "e5",
+        "name": "Bahrain Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The season-opening race of the 2024 Formula One season."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e3",
+        "relationship_type": "DROVE_FOR",
+        "description": "Valtteri Bottas drove for Stake F1 Team Kick Sauber.",
+        "from_year": 2024,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e3",
+        "relationship_type": "DROVE_FOR",
+        "description": "Zhou Guanyu drove for Stake F1 Team Kick Sauber.",
+        "from_year": 2024,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e4",
+        "relationship_type": "ROUND_OF",
+        "description": "Bahrain Grand Prix is a round of the 2024 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

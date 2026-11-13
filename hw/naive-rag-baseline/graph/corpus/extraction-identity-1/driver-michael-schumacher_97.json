@@ -1,0 +1,72 @@
+{
+  "chunk_id": "driver-michael-schumacher#97",
+  "doc_id": "driver-michael-schumacher",
+  "document_title": "Michael Schumacher",
+  "section": null,
+  "page": 8,
+  "source": "https://en.wikipedia.org/wiki/Michael_Schumacher",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "2e93649d89cb0f758f0aa576859fe6732e8e91ceaff5e6c7030a8532ae6a5516",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "entity_candidates": 4,
+  "entities_accepted": 4,
+  "entities_rejected": 0,
+  "relationship_candidates": 3,
+  "relationships_accepted": 1,
+  "relationships_rejected": 2,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "ACHIEVED does not allow Driver -> Driver"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "ACHIEVED does not allow Driver -> Driver"
+    }
+  ],
+  "alignments": [],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Michael Schumacher",
+        "entity_type": "Driver",
+        "description": "A German racing driver who is a seven-time Formula One World Champion."
+      },
+      {
+        "local_id": "e2",
+        "name": "Felipe Massa",
+        "entity_type": "Driver",
+        "description": "A Brazilian racing driver who competed in Formula One."
+      },
+      {
+        "local_id": "e3",
+        "name": "Giancarlo Fisichella",
+        "entity_type": "Driver",
+        "description": "An Italian racing driver who competed in Formula One."
+      },
+      {
+        "local_id": "e4",
+        "name": "Kimi Räikkönen",
+        "entity_type": "Driver",
+        "description": "A Finnish racing driver who competed in Formula One."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Schumacher was teammate with Massa during their time at Ferrari.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

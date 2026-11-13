@@ -1,0 +1,210 @@
+{
+  "chunk_id": "driver-kimi-raikkonen#25",
+  "doc_id": "driver-kimi-raikkonen",
+  "document_title": "Kimi Räikkönen",
+  "section": "Formula One career > Ferrari (2007–2009) > 2007: World Drivers' Champion",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "36b6a011a705b30cc96121c1487b3f05a94c4d1ae3221b13378cd83f663ba45d",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Kimi Räikkönen",
+        "entity_type": "Driver",
+        "description": "A Finnish racing driver who won the World Drivers' Championship in 2007."
+      },
+      {
+        "local_id": "e2",
+        "name": "Scuderia Ferrari",
+        "entity_type": "Team",
+        "description": "An Italian Formula One team that Kimi Räikkönen drove for from 2007 to 2009."
+      },
+      {
+        "local_id": "e3",
+        "name": "2007",
+        "entity_type": "Season",
+        "description": "The Formula One season in which Kimi Räikkönen became World Drivers' Champion."
+      },
+      {
+        "local_id": "e4",
+        "name": "Australian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The first race of the 2007 Formula One season where Räikkönen took pole position and won."
+      },
+      {
+        "local_id": "e5",
+        "name": "Malaysian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A race in the 2007 season where Räikkönen finished third."
+      },
+      {
+        "local_id": "e6",
+        "name": "Bahrain Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A race in the 2007 season where Räikkönen finished third."
+      },
+      {
+        "local_id": "e7",
+        "name": "Spanish Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A race in the 2007 season where Räikkönen retired after 10 laps."
+      },
+      {
+        "local_id": "e8",
+        "name": "Monaco Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A race in the 2007 season where Räikkönen started 16th and finished eighth."
+      },
+      {
+        "local_id": "e9",
+        "name": "Felipe Massa",
+        "entity_type": "Driver",
+        "description": "Kimi Räikkönen's teammate at Ferrari during the 2007 season."
+      },
+      {
+        "local_id": "e10",
+        "name": "Lewis Hamilton",
+        "entity_type": "Driver",
+        "description": "A competitor who passed Räikkönen at the Malaysian Grand Prix."
+      },
+      {
+        "local_id": "e11",
+        "name": "Fernando Alonso",
+        "entity_type": "Driver",
+        "description": "A competitor who passed Räikkönen at the Bahrain Grand Prix."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Kimi Räikkönen at Spanish Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Kimi Räikkönen retired at the Spanish Grand Prix."
+      },
+      {
+        "local_id": "rr2",
+        "name": "Kimi Räikkönen at Monaco Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Kimi Räikkönen finished eighth at the Monaco Grand Prix."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Kimi Räikkönen drove for Ferrari.",
+        "from_year": 2007,
+        "to_year": 2009,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e9",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Kimi Räikkönen was teammates with Felipe Massa at Ferrari.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Kimi Räikkönen retired at the Spanish Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e7",
+        "relationship_type": "AT_RACE",
+        "description": "Kimi Räikkönen retired at the Spanish Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr2",
+        "relationship_type": "ACHIEVED",
+        "description": "Kimi Räikkönen finished eighth at the Monaco Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr2",
+        "target_id": "e8",
+        "relationship_type": "AT_RACE",
+        "description": "Kimi Räikkönen finished eighth at the Monaco Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 11,
+  "entities_accepted": 13,
+  "entities_rejected": 0,
+  "relationship_candidates": 12,
+  "relationships_accepted": 6,
+  "relationships_rejected": 8,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "WON does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "ROUND_OF does not allow Season -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "ROUND_OF does not allow Season -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "ROUND_OF does not allow Season -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 5,
+      "reason": "ROUND_OF does not allow Season -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 6,
+      "reason": "ROUND_OF does not allow Season -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 8,
+      "reason": "ACHIEVED does not allow Driver -> Driver"
+    },
+    {
+      "element": "relationship",
+      "index": 9,
+      "reason": "ACHIEVED does not allow Driver -> Driver"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 10,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e7; description kept"
+    },
+    {
+      "index": 11,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr2 -AT_RACE-> e8; description kept"
+    }
+  ]
+}

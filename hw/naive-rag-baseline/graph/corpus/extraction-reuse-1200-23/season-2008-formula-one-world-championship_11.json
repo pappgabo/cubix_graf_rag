@@ -1,0 +1,113 @@
+{
+  "chunk_id": "season-2008-formula-one-world-championship#11",
+  "doc_id": "season-2008-formula-one-world-championship",
+  "document_title": "2008 Formula One World Championship",
+  "section": null,
+  "page": 3,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "2a3c2fd4bf5428a08ea23cc5d03f155e0dbbd7fb1521e0ae702bb85b55fdbeeb",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Lewis Hamilton",
+        "entity_type": "Driver",
+        "description": "A driver who competed in the 2008 Formula One World Championship."
+      },
+      {
+        "local_id": "e2",
+        "name": "Heikki Kovalainen",
+        "entity_type": "Driver",
+        "description": "A driver who competed in the 2008 Formula One World Championship."
+      },
+      {
+        "local_id": "e3",
+        "name": "Nick Heidfeld",
+        "entity_type": "Driver",
+        "description": "A driver who competed in the 2008 Formula One World Championship."
+      },
+      {
+        "local_id": "e4",
+        "name": "Fernando Alonso",
+        "entity_type": "Driver",
+        "description": "A driver who competed in the 2008 Formula One World Championship."
+      },
+      {
+        "local_id": "e5",
+        "name": "2008 Formula One World Championship",
+        "entity_type": "Season",
+        "description": "The championship season for Formula One in 2008."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e3",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Lewis Hamilton was teammates with Nick Heidfeld during the 2008 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e4",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Lewis Hamilton was teammates with Fernando Alonso during the 2008 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e3",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Heikki Kovalainen was teammates with Nick Heidfeld during the 2008 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e4",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Heikki Kovalainen was teammates with Fernando Alonso during the 2008 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 5,
+  "entities_accepted": 5,
+  "entities_rejected": 0,
+  "relationship_candidates": 8,
+  "relationships_accepted": 4,
+  "relationships_rejected": 4,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "DROVE_FOR does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 5,
+      "reason": "DROVE_FOR does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 6,
+      "reason": "DROVE_FOR does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 7,
+      "reason": "DROVE_FOR does not allow Driver -> Season"
+    }
+  ],
+  "alignments": []
+}

@@ -1,0 +1,107 @@
+{
+  "chunk_id": "team-williams-racing#73",
+  "doc_id": "team-williams-racing",
+  "document_title": "Williams Racing",
+  "section": "Williams Racing > 2005 season",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "f6d780be7043f361bba112a182328806d4283c21c19a788c68bb171eb673a590",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Williams",
+        "entity_type": "Team",
+        "description": "Williams Racing team"
+      },
+      {
+        "local_id": "e2",
+        "name": "2005",
+        "entity_type": "Season",
+        "description": "2005 Formula One season"
+      },
+      {
+        "local_id": "e3",
+        "name": "Heidfeld",
+        "entity_type": "Driver",
+        "description": "Nick Heidfeld, driver for Williams in 2005"
+      },
+      {
+        "local_id": "e4",
+        "name": "Pizzonia",
+        "entity_type": "Driver",
+        "description": "Antonio Pizzonia, replaced Heidfeld for the last five races of 2005"
+      },
+      {
+        "local_id": "e5",
+        "name": "Monaco",
+        "entity_type": "GrandPrix",
+        "description": "Monaco Grand Prix, where Williams achieved a double podium finish"
+      },
+      {
+        "local_id": "e6",
+        "name": "Nürburgring",
+        "entity_type": "GrandPrix",
+        "description": "Nürburgring Grand Prix, where Heidfeld qualified on pole position"
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "ENTERED",
+        "description": "Williams Racing participated in the 2005 season",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e1",
+        "relationship_type": "DROVE_FOR",
+        "description": "Heidfeld drove for Williams in 2005",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e1",
+        "relationship_type": "DROVE_FOR",
+        "description": "Pizzonia drove for Williams in 2005",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e2",
+        "relationship_type": "ROUND_OF",
+        "description": "Monaco Grand Prix was a round of the 2005 season",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e6",
+        "target_id": "e2",
+        "relationship_type": "ROUND_OF",
+        "description": "Nürburgring Grand Prix was a round of the 2005 season",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 6,
+  "entities_accepted": 6,
+  "entities_rejected": 0,
+  "relationship_candidates": 5,
+  "relationships_accepted": 5,
+  "relationships_rejected": 0,
+  "rejections": [],
+  "alignments": []
+}

@@ -1,0 +1,103 @@
+{
+  "chunk_id": "team-williams-racing#32",
+  "doc_id": "team-williams-racing",
+  "document_title": "Williams Racing",
+  "section": "Williams Racing > 1992 season",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "ae2db31afb2273481eb4f21f03a4e2714c133fee6e318e0e8a51974926ed5a2e",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Nigel Mansell",
+        "entity_type": "Driver",
+        "description": "World Champion in 1992, scored 108 points, placed first in nine races."
+      },
+      {
+        "local_id": "e2",
+        "name": "Riccardo Patrese",
+        "entity_type": "Driver",
+        "description": "Finished second in the 1992 season with 56 points."
+      },
+      {
+        "local_id": "e3",
+        "name": "Williams Racing",
+        "entity_type": "Team",
+        "description": "Formula 1 team that competed in the 1992 season."
+      },
+      {
+        "local_id": "e4",
+        "name": "1992",
+        "entity_type": "Season",
+        "description": "The championship year in which Mansell became World Champion."
+      },
+      {
+        "local_id": "e5",
+        "name": "World Championship",
+        "entity_type": "Title",
+        "description": "Championship title won by Nigel Mansell in 1992."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e5",
+        "relationship_type": "WON",
+        "description": "Nigel Mansell won the World Championship title.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e4",
+        "relationship_type": "ENTERED",
+        "description": "Williams Racing took part in the 1992 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e3",
+        "relationship_type": "DROVE_FOR",
+        "description": "Nigel Mansell drove for Williams Racing.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e3",
+        "relationship_type": "DROVE_FOR",
+        "description": "Riccardo Patrese drove for Williams Racing.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 5,
+  "entities_accepted": 5,
+  "entities_rejected": 0,
+  "relationship_candidates": 6,
+  "relationships_accepted": 4,
+  "relationships_rejected": 2,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "ACHIEVED does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "ACHIEVED does not allow Driver -> Season"
+    }
+  ],
+  "alignments": []
+}

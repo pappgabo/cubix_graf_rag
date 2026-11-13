@@ -1,0 +1,76 @@
+{
+  "chunk_id": "team-mercedes-benz-in-formula-one#34",
+  "doc_id": "team-mercedes-benz-in-formula-one",
+  "document_title": "Mercedes-Benz in Formula One",
+  "section": "Mercedes-Benz in Formula One > Sponsorships",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "02f1ef59ef61b696d6711f2ef54fa13411114d37bc2652a89f51840b865651aa",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Mercedes-AMG Petronas Formula One Team",
+        "entity_type": "Team",
+        "description": "The team competed under the full title of Mercedes GP Petronas Formula One Team from 2010."
+      },
+      {
+        "local_id": "e2",
+        "name": "Petronas",
+        "entity_type": "Team",
+        "description": "The number one Malaysian oil and gas company that joined the team as title sponsor."
+      },
+      {
+        "local_id": "e3",
+        "name": "Sepang International Circuit",
+        "entity_type": "Circuit",
+        "description": "The circuit located in Kuala Lumpur where Petronas is based."
+      },
+      {
+        "local_id": "e4",
+        "name": "2026",
+        "entity_type": "Season",
+        "description": "The season from which the multi-year renewal of the title and technical partnership with Petronas will commence."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e2",
+        "target_id": "e4",
+        "relationship_type": "ENTERED",
+        "description": "Petronas entered a partnership starting from the 2026 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 4,
+  "entities_accepted": 4,
+  "entities_rejected": 0,
+  "relationship_candidates": 3,
+  "relationships_accepted": 1,
+  "relationships_rejected": 2,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "DROVE_FOR does not allow Team -> Team"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "HELD_AT does not allow Team -> Circuit"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 1,
+      "action": "clear_redundant_season_year",
+      "detail": "ENTERED year 2026 already named by Season 'e4'; from_year and to_year cleared"
+    }
+  ]
+}

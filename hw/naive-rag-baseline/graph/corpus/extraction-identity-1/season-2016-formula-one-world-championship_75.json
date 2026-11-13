@@ -1,0 +1,78 @@
+{
+  "chunk_id": "season-2016-formula-one-world-championship#75",
+  "doc_id": "season-2016-formula-one-world-championship",
+  "document_title": "2016 Formula One World Championship",
+  "section": "European rounds",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/2016_Formula_One_World_Championship",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "17fda39ad22bd9aaf2713803ff393701bdb3bd6719abaae7e47e18cccdd394ad",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "entity_candidates": 5,
+  "entities_accepted": 5,
+  "entities_rejected": 0,
+  "relationship_candidates": 3,
+  "relationships_accepted": 1,
+  "relationships_rejected": 2,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "WON does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "FIELDED does not allow Team -> GrandPrix"
+    }
+  ],
+  "alignments": [],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Lewis Hamilton",
+        "entity_type": "Driver",
+        "description": "A driver who took the championship lead in the 2016 Formula One World Championship."
+      },
+      {
+        "local_id": "e2",
+        "name": "Nico Rosberg",
+        "entity_type": "Driver",
+        "description": "A driver who was in contention for the championship lead in the 2016 Formula One World Championship."
+      },
+      {
+        "local_id": "e3",
+        "name": "Mercedes-AMG Petronas Formula One Team",
+        "entity_type": "Team",
+        "description": "The team that fielded cars for Lewis Hamilton and Nico Rosberg in the 2016 Formula One World Championship."
+      },
+      {
+        "local_id": "e4",
+        "name": "Hungarian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The race where Lewis Hamilton took the championship lead from Nico Rosberg."
+      },
+      {
+        "local_id": "e5",
+        "name": "2016",
+        "entity_type": "Season",
+        "description": "The championship year of the Formula One World Championship."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e4",
+        "target_id": "e5",
+        "relationship_type": "ROUND_OF",
+        "description": "The Hungarian Grand Prix is a round of the 2016 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

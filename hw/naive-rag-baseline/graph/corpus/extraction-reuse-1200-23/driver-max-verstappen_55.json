@@ -1,0 +1,233 @@
+{
+  "chunk_id": "driver-max-verstappen#55",
+  "doc_id": "driver-max-verstappen",
+  "document_title": "Max Verstappen",
+  "section": null,
+  "page": 11,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "db26d88bba32ee80d67f22ed56d6e971fe833bef0458ae0830763293c7e3d443",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Max Verstappen",
+        "entity_type": "Driver",
+        "description": "A Formula One driver."
+      },
+      {
+        "local_id": "e2",
+        "name": "Red Bull Racing",
+        "entity_type": "Team",
+        "description": "A Formula One team that Verstappen drives for."
+      },
+      {
+        "local_id": "e3",
+        "name": "2026",
+        "entity_type": "Season",
+        "description": "A Formula One championship year."
+      },
+      {
+        "local_id": "e4",
+        "name": "Austrian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula One race where Verstappen returned to the podium."
+      },
+      {
+        "local_id": "e5",
+        "name": "Belgian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula One race where Verstappen finished third."
+      },
+      {
+        "local_id": "e6",
+        "name": "Dutch Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula One race where Verstappen finished sixth in the sprint race."
+      },
+      {
+        "local_id": "e7",
+        "name": "Azerbaijan Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula One race where Verstappen finished second."
+      },
+      {
+        "local_id": "e8",
+        "name": "Isack Hadjar",
+        "entity_type": "Driver",
+        "description": "Teammate of Verstappen at Red Bull Racing."
+      },
+      {
+        "local_id": "e9",
+        "name": "2024",
+        "entity_type": "Season",
+        "description": "A Formula One championship year."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Max Verstappen at Austrian Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Verstappen returned to the podium at the Austrian Grand Prix."
+      },
+      {
+        "local_id": "rr2",
+        "name": "Max Verstappen at Belgian Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Verstappen finished third at the Belgian Grand Prix."
+      },
+      {
+        "local_id": "rr3",
+        "name": "Max Verstappen at Dutch Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Verstappen finished sixth in the sprint race at the Dutch Grand Prix."
+      },
+      {
+        "local_id": "rr4",
+        "name": "Max Verstappen at Azerbaijan Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Verstappen finished second at the Azerbaijan Grand Prix."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Verstappen drives for Red Bull Racing.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e3",
+        "relationship_type": "ENTERED",
+        "description": "Red Bull Racing took part in the 2026 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Verstappen returned to the podium at the Austrian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e4",
+        "relationship_type": "AT_RACE",
+        "description": "Verstappen returned to the podium at the Austrian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr2",
+        "relationship_type": "ACHIEVED",
+        "description": "Verstappen finished third at the Belgian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr2",
+        "target_id": "e5",
+        "relationship_type": "AT_RACE",
+        "description": "Verstappen finished third at the Belgian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr3",
+        "relationship_type": "ACHIEVED",
+        "description": "Verstappen finished sixth in the sprint race at the Dutch Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr3",
+        "target_id": "e6",
+        "relationship_type": "AT_RACE",
+        "description": "Verstappen finished sixth in the sprint race at the Dutch Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr4",
+        "relationship_type": "ACHIEVED",
+        "description": "Verstappen finished second at the Azerbaijan Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr4",
+        "target_id": "e7",
+        "relationship_type": "AT_RACE",
+        "description": "Verstappen finished second at the Azerbaijan Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e8",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Verstappen is teammates with Isack Hadjar at Red Bull Racing.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e9",
+        "relationship_type": "ENTERED",
+        "description": "Red Bull Racing took part in the 2024 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 10,
+  "entities_accepted": 13,
+  "entities_rejected": 0,
+  "relationship_candidates": 8,
+  "relationships_accepted": 12,
+  "relationships_rejected": 0,
+  "rejections": [],
+  "alignments": [
+    {
+      "index": 2,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e4; description kept"
+    },
+    {
+      "index": 3,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr2 -AT_RACE-> e5; description kept"
+    },
+    {
+      "index": 4,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr3 -AT_RACE-> e6; description kept"
+    },
+    {
+      "index": 5,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr4 -AT_RACE-> e7; description kept"
+    }
+  ]
+}

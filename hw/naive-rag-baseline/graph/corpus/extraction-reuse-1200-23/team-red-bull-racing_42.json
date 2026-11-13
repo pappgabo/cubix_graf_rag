@@ -1,0 +1,77 @@
+{
+  "chunk_id": "team-red-bull-racing#42",
+  "doc_id": "team-red-bull-racing",
+  "document_title": "Red Bull Racing",
+  "section": "2015 season",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "b1e623b2988c257de8b83569eacf144bccaf558ae3d5221c1e7c8b3dfe8a3da1",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Daniel Ricciardo",
+        "entity_type": "Driver",
+        "description": "Returned for a second season with Red Bull Racing."
+      },
+      {
+        "local_id": "e2",
+        "name": "Daniil Kvyat",
+        "entity_type": "Driver",
+        "description": "Replaced Sebastian Vettel for the 2015 season."
+      },
+      {
+        "local_id": "e3",
+        "name": "Red Bull Racing",
+        "entity_type": "Team",
+        "description": "Formula 1 team that entered cars."
+      },
+      {
+        "local_id": "e4",
+        "name": "2015",
+        "entity_type": "Season",
+        "description": "The championship year."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e3",
+        "relationship_type": "DROVE_FOR",
+        "description": "Daniel Ricciardo drove for Red Bull Racing in 2015.",
+        "from_year": 2015,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e3",
+        "relationship_type": "DROVE_FOR",
+        "description": "Daniil Kvyat drove for Red Bull Racing in 2015.",
+        "from_year": 2015,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e4",
+        "relationship_type": "ENTERED",
+        "description": "Red Bull Racing took part in the 2015 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 4,
+  "entities_accepted": 4,
+  "entities_rejected": 0,
+  "relationship_candidates": 3,
+  "relationships_accepted": 3,
+  "relationships_rejected": 0,
+  "rejections": [],
+  "alignments": []
+}

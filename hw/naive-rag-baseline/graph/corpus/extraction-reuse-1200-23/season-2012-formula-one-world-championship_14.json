@@ -1,0 +1,212 @@
+{
+  "chunk_id": "season-2012-formula-one-world-championship#14",
+  "doc_id": "season-2012-formula-one-world-championship",
+  "document_title": "2012 Formula One World Championship",
+  "section": "Teams and drivers > Driver changes > Mid-season changes",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "1ab8871778152cc06d077a8c2385ab0bdb1301584b7193b810779f4ef08089c7",
+  "validation_version": "partial-1",
+  "source_status": "ok",
+  "status": "ok",
+  "entity_candidates": 7,
+  "entities_accepted": 7,
+  "entities_rejected": 0,
+  "relationship_candidates": 5,
+  "relationships_accepted": 5,
+  "relationships_rejected": 0,
+  "rejections": [],
+  "alignments": [],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Romain Grosjean",
+        "entity_type": "Driver",
+        "description": "Lotus driver responsible for causing a multi-car pile-up at the start of the Belgian Grand Prix."
+      },
+      {
+        "local_id": "e2",
+        "name": "Jérôme d'Ambrosio",
+        "entity_type": "Driver",
+        "description": "Lotus's testing and reserve driver who replaced Romain Grosjean for the Italian Grand Prix."
+      },
+      {
+        "local_id": "e3",
+        "name": "2012",
+        "entity_type": "Season",
+        "description": "The season of the 2012 Formula One World Championship."
+      },
+      {
+        "local_id": "e4",
+        "name": "Belgian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The Grand Prix where Romain Grosjean caused a multi-car pile-up."
+      },
+      {
+        "local_id": "e5",
+        "name": "Italian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The Grand Prix that Romain Grosjean missed due to a one-race ban."
+      },
+      {
+        "local_id": "e6",
+        "name": "Singapore Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The Grand Prix where Romain Grosjean returned to the team."
+      },
+      {
+        "local_id": "e7",
+        "name": "Lotus",
+        "entity_type": "Team",
+        "description": "The Formula One team that Romain Grosjean and Jérôme d'Ambrosio drove for."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e7",
+        "relationship_type": "DROVE_FOR",
+        "description": "Romain Grosjean drove for Lotus.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e7",
+        "relationship_type": "DROVE_FOR",
+        "description": "Jérôme d'Ambrosio drove for Lotus.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e3",
+        "relationship_type": "ROUND_OF",
+        "description": "The Belgian Grand Prix is a round of the 2012 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e3",
+        "relationship_type": "ROUND_OF",
+        "description": "The Italian Grand Prix is a round of the 2012 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e6",
+        "target_id": "e3",
+        "relationship_type": "ROUND_OF",
+        "description": "The Singapore Grand Prix is a round of the 2012 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "candidate_result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Romain Grosjean",
+        "entity_type": "Driver",
+        "description": "Lotus driver responsible for causing a multi-car pile-up at the start of the Belgian Grand Prix."
+      },
+      {
+        "local_id": "e2",
+        "name": "Jérôme d'Ambrosio",
+        "entity_type": "Driver",
+        "description": "Lotus's testing and reserve driver who replaced Romain Grosjean for the Italian Grand Prix."
+      },
+      {
+        "local_id": "e3",
+        "name": "2012",
+        "entity_type": "Season",
+        "description": "The season of the 2012 Formula One World Championship."
+      },
+      {
+        "local_id": "e4",
+        "name": "Belgian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The Grand Prix where Romain Grosjean caused a multi-car pile-up."
+      },
+      {
+        "local_id": "e5",
+        "name": "Italian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The Grand Prix that Romain Grosjean missed due to a one-race ban."
+      },
+      {
+        "local_id": "e6",
+        "name": "Singapore Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The Grand Prix where Romain Grosjean returned to the team."
+      },
+      {
+        "local_id": "e7",
+        "name": "Lotus",
+        "entity_type": "Team",
+        "description": "The Formula One team that Romain Grosjean and Jérôme d'Ambrosio drove for."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e7",
+        "relationship_type": "DROVE_FOR",
+        "description": "Romain Grosjean drove for Lotus.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e7",
+        "relationship_type": "DROVE_FOR",
+        "description": "Jérôme d'Ambrosio drove for Lotus.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e3",
+        "relationship_type": "ROUND_OF",
+        "description": "The Belgian Grand Prix is a round of the 2012 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e3",
+        "relationship_type": "ROUND_OF",
+        "description": "The Italian Grand Prix is a round of the 2012 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e6",
+        "target_id": "e3",
+        "relationship_type": "ROUND_OF",
+        "description": "The Singapore Grand Prix is a round of the 2012 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "reused_from": {
+    "chunk_id": "season-2012-formula-one-world-championship#30",
+    "file": "season-2012-formula-one-world-championship_30.json"
+  }
+}

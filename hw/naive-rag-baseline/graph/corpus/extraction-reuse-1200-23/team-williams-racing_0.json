@@ -1,0 +1,171 @@
+{
+  "chunk_id": "team-williams-racing#0",
+  "doc_id": "team-williams-racing",
+  "document_title": "Williams Racing",
+  "section": "Williams Racing",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "732ba03e25261972921e959f970d8cd5038893633384ccee876502ae268a47ce",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Williams Racing",
+        "entity_type": "Team",
+        "description": "A British Formula One team and constructor, competing in 2026 as Atlassian Williams F1 Team."
+      },
+      {
+        "local_id": "e2",
+        "name": "1977",
+        "entity_type": "Season",
+        "description": "The season when Williams Racing was formed and competed in its first race."
+      },
+      {
+        "local_id": "e3",
+        "name": "1977 Spanish Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The first race for Williams Racing."
+      },
+      {
+        "local_id": "e4",
+        "name": "March",
+        "entity_type": "Car",
+        "description": "The chassis used by Williams Racing in its first race."
+      },
+      {
+        "local_id": "e5",
+        "name": "Patrick Nève",
+        "entity_type": "Driver",
+        "description": "The driver who raced for Williams Racing in its first race."
+      },
+      {
+        "local_id": "e6",
+        "name": "1979 British Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The race where Clay Regazzoni won Williams's first race."
+      },
+      {
+        "local_id": "e7",
+        "name": "Clay Regazzoni",
+        "entity_type": "Driver",
+        "description": "The driver who won Williams's first race."
+      },
+      {
+        "local_id": "e8",
+        "name": "1997 British Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The race where Jacques Villeneuve scored the team's 100th race victory."
+      },
+      {
+        "local_id": "e9",
+        "name": "Jacques Villeneuve",
+        "entity_type": "Driver",
+        "description": "The driver who scored Williams Racing's 100th race victory."
+      },
+      {
+        "local_id": "e10",
+        "name": "9",
+        "entity_type": "Title",
+        "description": "The number of Constructors' Championships won by Williams Racing between 1980 and 1997."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "ENTERED",
+        "description": "Williams Racing entered the 1977 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e4",
+        "relationship_type": "FIELDED",
+        "description": "Williams Racing fielded a March chassis in its first race.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e1",
+        "relationship_type": "DROVE_FOR",
+        "description": "Patrick Nève drove for Williams Racing in its first race.",
+        "from_year": 1977,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e7",
+        "target_id": "e1",
+        "relationship_type": "DROVE_FOR",
+        "description": "Clay Regazzoni drove for Williams Racing when it won its first race.",
+        "from_year": 1979,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e9",
+        "target_id": "e1",
+        "relationship_type": "DROVE_FOR",
+        "description": "Jacques Villeneuve drove for Williams Racing when it scored its 100th race victory.",
+        "from_year": 1997,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e10",
+        "relationship_type": "WON",
+        "description": "Williams Racing won nine Constructors' Championships.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e10",
+        "target_id": "e2",
+        "relationship_type": "AWARDED_IN",
+        "description": "The nine Constructors' Championships were awarded between 1980 and 1997.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 10,
+  "entities_accepted": 10,
+  "entities_rejected": 0,
+  "relationship_candidates": 10,
+  "relationships_accepted": 7,
+  "relationships_rejected": 3,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "ROUND_OF does not allow Team -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "FIELDED does not allow Team -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "FIELDED does not allow Team -> GrandPrix"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 0,
+      "action": "clear_redundant_season_year",
+      "detail": "ENTERED year 1977 already named by Season 'e2'; from_year and to_year cleared"
+    }
+  ]
+}

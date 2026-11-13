@@ -1,0 +1,68 @@
+{
+  "chunk_id": "driver-charles-leclerc#2",
+  "doc_id": "driver-charles-leclerc",
+  "document_title": "Charles Leclerc",
+  "section": "Charles Leclerc",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "13668e13501947d2753dd93b6f1d117a715fad106a8773e9bda816856ed2f7e3",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Charles Leclerc",
+        "entity_type": "Driver",
+        "description": "A Formula One driver who has achieved nine race wins, 13 fastest laps, and 54 podiums."
+      },
+      {
+        "local_id": "e2",
+        "name": "Scuderia Ferrari",
+        "entity_type": "Team",
+        "description": "A Formula One team that Charles Leclerc is contracted to until at least the end of the 2028 season."
+      },
+      {
+        "local_id": "e3",
+        "name": "2026",
+        "entity_type": "Season",
+        "description": "A championship year mentioned in relation to the Bahrain Grand Prix."
+      },
+      {
+        "local_id": "e4",
+        "name": "Bahrain Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A specific race event where Charles Leclerc's achievements are noted."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Charles Leclerc is contracted to Ferrari.",
+        "from_year": null,
+        "to_year": 2028,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e3",
+        "relationship_type": "ROUND_OF",
+        "description": "The Bahrain Grand Prix is a round of the 2026 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 4,
+  "entities_accepted": 4,
+  "entities_rejected": 0,
+  "relationship_candidates": 2,
+  "relationships_accepted": 2,
+  "relationships_rejected": 0,
+  "rejections": [],
+  "alignments": []
+}

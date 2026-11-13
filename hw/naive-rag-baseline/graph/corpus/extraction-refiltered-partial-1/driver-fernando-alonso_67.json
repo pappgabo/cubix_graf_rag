@@ -1,0 +1,112 @@
+{
+  "chunk_id": "driver-fernando-alonso#67",
+  "doc_id": "driver-fernando-alonso",
+  "document_title": "Fernando Alonso",
+  "section": "Alpine (2021–2022)",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/Fernando_Alonso",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "575842467e28996f6e986cd47fd59d4083bdff192d5eb5d0bdc32e252784fe6b",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "ENTERED is not temporal; from_year, to_year and role must be null"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "ENTERED is not temporal; from_year, to_year and role must be null"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "ROUND_OF is not temporal; from_year, to_year and role must be null"
+    },
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "ACHIEVED does not allow Driver -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 5,
+      "reason": "FOR_TEAM does not allow GrandPrix -> Team"
+    },
+    {
+      "element": "relationship",
+      "index": 6,
+      "reason": "AT_RACE does not allow Driver -> GrandPrix"
+    }
+  ],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Fernando Alonso",
+        "entity_type": "Driver",
+        "description": "A Formula One driver who raced for Alpine in 2021 and 2022."
+      },
+      {
+        "local_id": "e2",
+        "name": "Alpine",
+        "entity_type": "Team",
+        "description": "A Formula One team that Alonso raced for in 2021 and 2022."
+      },
+      {
+        "local_id": "e3",
+        "name": "2021",
+        "entity_type": "Season",
+        "description": "The Formula One season in which Alonso raced for Alpine."
+      },
+      {
+        "local_id": "e4",
+        "name": "2022",
+        "entity_type": "Season",
+        "description": "The Formula One season in which Alonso raced for Alpine."
+      },
+      {
+        "local_id": "e5",
+        "name": "Hungarian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A race in which Alonso temporarily led before finishing fourth."
+      },
+      {
+        "local_id": "e6",
+        "name": "Lewis Hamilton",
+        "entity_type": "Driver",
+        "description": "A Formula One driver who finished behind Alonso in the Hungarian Grand Prix."
+      },
+      {
+        "local_id": "e7",
+        "name": "Esteban Ocon",
+        "entity_type": "Driver",
+        "description": "Alonso's teammate at Alpine who credited Alonso's defence for his race victory."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Alonso raced for Alpine.",
+        "from_year": 2021,
+        "to_year": 2022,
+        "role": null
+      },
+      {
+        "source_id": "e7",
+        "target_id": "e1",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Ocon was Alonso's teammate at Alpine.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

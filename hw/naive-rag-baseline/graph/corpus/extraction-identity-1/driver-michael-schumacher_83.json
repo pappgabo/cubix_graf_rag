@@ -1,0 +1,157 @@
+{
+  "chunk_id": "driver-michael-schumacher#83",
+  "doc_id": "driver-michael-schumacher",
+  "document_title": "Michael Schumacher",
+  "section": null,
+  "page": 7,
+  "source": "https://en.wikipedia.org/wiki/Michael_Schumacher",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "975c711ab3a8fc12f6437bb3661cdbd27b23d661e154eb82f51f02fd6d918a1b",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "entity_candidates": 9,
+  "entities_accepted": 11,
+  "entities_rejected": 0,
+  "relationship_candidates": 5,
+  "relationships_accepted": 4,
+  "relationships_rejected": 3,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "POWERED_BY does not allow Team -> PowerUnit"
+    },
+    {
+      "element": "relationship",
+      "index": 5,
+      "reason": "POWERED_BY does not allow Team -> PowerUnit"
+    },
+    {
+      "element": "relationship",
+      "index": 6,
+      "reason": "POWERED_BY does not allow Driver -> PowerUnit"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 0,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e4; description kept"
+    },
+    {
+      "index": 1,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr2 -AT_RACE-> e9; description kept"
+    }
+  ],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Michael Schumacher",
+        "entity_type": "Driver",
+        "description": "A Formula One driver."
+      },
+      {
+        "local_id": "e2",
+        "name": "Juan Pablo Montoya",
+        "entity_type": "Driver",
+        "description": "A Formula One driver."
+      },
+      {
+        "local_id": "e3",
+        "name": "Kimi Räikkönen",
+        "entity_type": "Driver",
+        "description": "A Formula One driver."
+      },
+      {
+        "local_id": "e4",
+        "name": "Italian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula One race."
+      },
+      {
+        "local_id": "e5",
+        "name": "Bridgestone",
+        "entity_type": "PowerUnit",
+        "description": "A tyre supplier."
+      },
+      {
+        "local_id": "e6",
+        "name": "Michelin",
+        "entity_type": "PowerUnit",
+        "description": "A tyre supplier."
+      },
+      {
+        "local_id": "e7",
+        "name": "Williams",
+        "entity_type": "Team",
+        "description": "A Formula One team."
+      },
+      {
+        "local_id": "e8",
+        "name": "McLaren",
+        "entity_type": "Team",
+        "description": "A Formula One team."
+      },
+      {
+        "local_id": "e9",
+        "name": "United States Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula One race."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Michael Schumacher at Italian Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Michael Schumacher won the Italian Grand Prix."
+      },
+      {
+        "local_id": "rr2",
+        "name": "Michael Schumacher at United States Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Michael Schumacher won the United States Grand Prix after Montoya was penalised."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Michael Schumacher won the Italian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e4",
+        "relationship_type": "AT_RACE",
+        "description": "Michael Schumacher won the Italian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr2",
+        "relationship_type": "ACHIEVED",
+        "description": "Michael Schumacher won the United States Grand Prix after Montoya was penalised.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr2",
+        "target_id": "e9",
+        "relationship_type": "AT_RACE",
+        "description": "Michael Schumacher won the United States Grand Prix after Montoya was penalised.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

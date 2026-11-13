@@ -1,0 +1,82 @@
+{
+  "chunk_id": "reference-formula-one#14",
+  "doc_id": "reference-formula-one",
+  "document_title": "Formula One",
+  "section": "Formula One > Manufacturers' return",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "76fcc75b3f0e27a2b798a7d67e22b81c94fe6831be90a7a1dde43df8065fbe5f",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Scuderia Ferrari",
+        "entity_type": "Team",
+        "description": "A Formula 1 team known for its historical success and involvement in the sport."
+      },
+      {
+        "local_id": "e2",
+        "name": "Bridgestone",
+        "entity_type": "PowerUnit",
+        "description": "A tyre supplier that became the sole tyre supplier to Formula One for the 2007 season."
+      },
+      {
+        "local_id": "e3",
+        "name": "Michelin",
+        "entity_type": "PowerUnit",
+        "description": "A tyre supplier that competed with Bridgestone during the 'tyre war'."
+      },
+      {
+        "local_id": "e4",
+        "name": "2007",
+        "entity_type": "Season",
+        "description": "The Formula One season in which Bridgestone became the exclusive tyre supplier."
+      },
+      {
+        "local_id": "e5",
+        "name": "2002 Austrian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A race where Ferrari was involved in a controversial team orders incident."
+      },
+      {
+        "local_id": "e6",
+        "name": "2005 United States Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A race where seven out of ten teams did not race due to tyre safety issues."
+      }
+    ],
+    "relationships": []
+  },
+  "entity_candidates": 6,
+  "entities_accepted": 6,
+  "entities_rejected": 0,
+  "relationship_candidates": 4,
+  "relationships_accepted": 0,
+  "relationships_rejected": 4,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "RACED_IN does not allow PowerUnit -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "FOR_TEAM does not allow GrandPrix -> Team"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "AT_RACE does not allow GrandPrix -> PowerUnit"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "FOR_TEAM does not allow GrandPrix -> Team"
+    }
+  ],
+  "alignments": []
+}

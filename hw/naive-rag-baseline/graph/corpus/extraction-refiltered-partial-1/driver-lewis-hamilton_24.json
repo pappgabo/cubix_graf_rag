@@ -1,0 +1,78 @@
+{
+  "chunk_id": "driver-lewis-hamilton#24",
+  "doc_id": "driver-lewis-hamilton",
+  "document_title": "Lewis Hamilton",
+  "section": null,
+  "page": 3,
+  "source": "https://en.wikipedia.org/wiki/Lewis_Hamilton",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "b6b48e97d816ddc796f513b9b5e5d1e5902e56bc2af7de5bd7b65924a3a6ece6",
+  "validation_version": "partial-1",
+  "source_status": "ok",
+  "status": "ok",
+  "rejections": [],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Lewis Hamilton",
+        "entity_type": "Driver",
+        "description": "A Formula One driver known for his career with McLaren and multiple championship wins."
+      },
+      {
+        "local_id": "e2",
+        "name": "McLaren",
+        "entity_type": "Team",
+        "description": "A Formula One team that Hamilton drove for from 2007 to 2012."
+      },
+      {
+        "local_id": "e3",
+        "name": "2007",
+        "entity_type": "Season",
+        "description": "The season in which Hamilton began his Formula One career with McLaren."
+      },
+      {
+        "local_id": "e4",
+        "name": "Title",
+        "entity_type": "Title",
+        "description": "The championship title won by Hamilton under unusual circumstances."
+      },
+      {
+        "local_id": "e5",
+        "name": "Monza",
+        "entity_type": "GrandPrix",
+        "description": "A Grand Prix where Giorgio Pantano was stripped of fastest lap."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Hamilton drove for McLaren during his early career.",
+        "from_year": 2007,
+        "to_year": 2012,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e3",
+        "relationship_type": "AWARDED_IN",
+        "description": "Hamilton's title was awarded in the 2007 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e3",
+        "relationship_type": "ROUND_OF",
+        "description": "The Monza Grand Prix is a round of the 2007 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

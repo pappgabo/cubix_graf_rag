@@ -1,0 +1,273 @@
+{
+  "chunk_id": "season-2012-formula-one-world-championship#78",
+  "doc_id": "season-2012-formula-one-world-championship",
+  "document_title": "2012 Formula One World Championship",
+  "section": "Race summaries > Round 14 – Singapore Marina Bay Street Circuit",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "e80ec0c908e794106e4efeb8fab5198f064ea842f3916caa0aea618f5608ab7e",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Lewis Hamilton",
+        "entity_type": "Driver",
+        "description": "A driver who qualified on pole for the race."
+      },
+      {
+        "local_id": "e2",
+        "name": "Fernando Alonso",
+        "entity_type": "Driver",
+        "description": "A driver who qualified in fifth place."
+      },
+      {
+        "local_id": "e3",
+        "name": "Sebastian Vettel",
+        "entity_type": "Driver",
+        "description": "A driver who took the lead after Hamilton's gearbox failure."
+      },
+      {
+        "local_id": "e4",
+        "name": "Narain Karthikeyan",
+        "entity_type": "Driver",
+        "description": "A driver involved in an accident that caused the first safety car deployment."
+      },
+      {
+        "local_id": "e5",
+        "name": "Michael Schumacher",
+        "entity_type": "Driver",
+        "description": "A driver who caused the second safety car deployment."
+      },
+      {
+        "local_id": "e6",
+        "name": "Jean-Éric Vergne",
+        "entity_type": "Driver",
+        "description": "A driver who was involved in the accident caused by Schumacher."
+      },
+      {
+        "local_id": "e7",
+        "name": "2012",
+        "entity_type": "Season",
+        "description": "The championship year of the race."
+      },
+      {
+        "local_id": "e8",
+        "name": "Singapore Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The race held at the Marina Bay Street Circuit."
+      },
+      {
+        "local_id": "e9",
+        "name": "Marina Bay Street Circuit",
+        "entity_type": "Circuit",
+        "description": "The circuit where the Singapore Grand Prix took place."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Lewis Hamilton at Singapore Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Lewis Hamilton qualified on pole for the Singapore Grand Prix."
+      },
+      {
+        "local_id": "rr2",
+        "name": "Fernando Alonso at Singapore Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Fernando Alonso qualified in fifth place for the Singapore Grand Prix."
+      },
+      {
+        "local_id": "rr3",
+        "name": "Sebastian Vettel at Singapore Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Sebastian Vettel took the lead in the Singapore Grand Prix after Hamilton's gearbox failure."
+      },
+      {
+        "local_id": "rr4",
+        "name": "Narain Karthikeyan at Singapore Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Narain Karthikeyan's accident caused the first safety car deployment in the Singapore Grand Prix."
+      },
+      {
+        "local_id": "rr5",
+        "name": "Michael Schumacher at Singapore Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Michael Schumacher's accident caused the second safety car deployment in the Singapore Grand Prix."
+      },
+      {
+        "local_id": "rr6",
+        "name": "Jean-Éric Vergne at Singapore Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Jean-Éric Vergne was involved in the accident caused by Schumacher in the Singapore Grand Prix."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e8",
+        "target_id": "e7",
+        "relationship_type": "ROUND_OF",
+        "description": "The Singapore Grand Prix is a round of the 2012 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e8",
+        "target_id": "e9",
+        "relationship_type": "HELD_AT",
+        "description": "The Singapore Grand Prix is held at the Marina Bay Street Circuit.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Lewis Hamilton qualified on pole for the Singapore Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e8",
+        "relationship_type": "AT_RACE",
+        "description": "Lewis Hamilton qualified on pole for the Singapore Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "rr2",
+        "relationship_type": "ACHIEVED",
+        "description": "Fernando Alonso qualified in fifth place for the Singapore Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr2",
+        "target_id": "e8",
+        "relationship_type": "AT_RACE",
+        "description": "Fernando Alonso qualified in fifth place for the Singapore Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "rr3",
+        "relationship_type": "ACHIEVED",
+        "description": "Sebastian Vettel took the lead in the Singapore Grand Prix after Hamilton's gearbox failure.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr3",
+        "target_id": "e8",
+        "relationship_type": "AT_RACE",
+        "description": "Sebastian Vettel took the lead in the Singapore Grand Prix after Hamilton's gearbox failure.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "rr4",
+        "relationship_type": "ACHIEVED",
+        "description": "Narain Karthikeyan's accident caused the first safety car deployment in the Singapore Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr4",
+        "target_id": "e8",
+        "relationship_type": "AT_RACE",
+        "description": "Narain Karthikeyan's accident caused the first safety car deployment in the Singapore Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "rr5",
+        "relationship_type": "ACHIEVED",
+        "description": "Michael Schumacher's accident caused the second safety car deployment in the Singapore Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr5",
+        "target_id": "e8",
+        "relationship_type": "AT_RACE",
+        "description": "Michael Schumacher's accident caused the second safety car deployment in the Singapore Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e6",
+        "target_id": "rr6",
+        "relationship_type": "ACHIEVED",
+        "description": "Jean-Éric Vergne was involved in the accident caused by Schumacher in the Singapore Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr6",
+        "target_id": "e8",
+        "relationship_type": "AT_RACE",
+        "description": "Jean-Éric Vergne was involved in the accident caused by Schumacher in the Singapore Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 9,
+  "entities_accepted": 15,
+  "entities_rejected": 0,
+  "relationship_candidates": 8,
+  "relationships_accepted": 14,
+  "relationships_rejected": 0,
+  "rejections": [],
+  "alignments": [
+    {
+      "index": 2,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e8; description kept"
+    },
+    {
+      "index": 3,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr2 -AT_RACE-> e8; description kept"
+    },
+    {
+      "index": 4,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr3 -AT_RACE-> e8; description kept"
+    },
+    {
+      "index": 5,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr4 -AT_RACE-> e8; description kept"
+    },
+    {
+      "index": 6,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr5 -AT_RACE-> e8; description kept"
+    },
+    {
+      "index": 7,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr6 -AT_RACE-> e8; description kept"
+    }
+  ]
+}

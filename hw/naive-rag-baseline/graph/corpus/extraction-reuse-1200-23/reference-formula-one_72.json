@@ -1,0 +1,159 @@
+{
+  "chunk_id": "reference-formula-one#72",
+  "doc_id": "reference-formula-one",
+  "document_title": "Formula One",
+  "section": "Formula One > Team personnel",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "675a43616bbdfb708e0a7a124edc58a50bae1b62011c5d5278b98b3efc3b2a8c",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Monisha Kaltenborn",
+        "entity_type": "Driver",
+        "description": "Austrian Monisha Kaltenborn became the sport's first-ever female team principal when she took over the role at Sauber Formula One Team in 2010."
+      },
+      {
+        "local_id": "e2",
+        "name": "Sauber Formula One Team",
+        "entity_type": "Team",
+        "description": "Formula One team where Monisha Kaltenborn became the first female team principal."
+      },
+      {
+        "local_id": "e3",
+        "name": "Claire Williams",
+        "entity_type": "Driver",
+        "description": "English Claire Williams became the only other woman to ever manage a Formula One team when she assumed the role of Deputy Team Principal for Williams Racing in 2013."
+      },
+      {
+        "local_id": "e4",
+        "name": "Williams Racing",
+        "entity_type": "Team",
+        "description": "Formula One team where Claire Williams served as Deputy Team Principal."
+      },
+      {
+        "local_id": "e5",
+        "name": "Hannah Schmitz",
+        "entity_type": "Driver",
+        "description": "As of 2025, Hannah Schmitz holds the role of principal strategy engineer at Red Bull Racing."
+      },
+      {
+        "local_id": "e6",
+        "name": "Red Bull Racing",
+        "entity_type": "Team",
+        "description": "Formula One team where Hannah Schmitz is the principal strategy engineer."
+      },
+      {
+        "local_id": "e7",
+        "name": "Esteban Ocon",
+        "entity_type": "Driver",
+        "description": "Driver for whom Laura Müller serves as race engineer at Haas."
+      },
+      {
+        "local_id": "e8",
+        "name": "Haas",
+        "entity_type": "Team",
+        "description": "Formula One team where Laura Müller serves as race engineer for Esteban Ocon."
+      },
+      {
+        "local_id": "e9",
+        "name": "Laura Müller",
+        "entity_type": "Driver",
+        "description": "Beginning in 2025, Laura Müller has served as the race engineer for Esteban Ocon at Haas."
+      },
+      {
+        "local_id": "e10",
+        "name": "2021",
+        "entity_type": "Season",
+        "description": "Year when Red Bull Racing achieved victories with Hannah Schmitz."
+      },
+      {
+        "local_id": "e11",
+        "name": "2022",
+        "entity_type": "Season",
+        "description": "Year when Red Bull Racing achieved victories with Hannah Schmitz."
+      },
+      {
+        "local_id": "e12",
+        "name": "2023",
+        "entity_type": "Season",
+        "description": "Year when Red Bull Racing achieved victories with Hannah Schmitz."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Monisha Kaltenborn became team principal at Sauber Formula One Team.",
+        "from_year": 2010,
+        "to_year": null,
+        "role": "team principal"
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e4",
+        "relationship_type": "DROVE_FOR",
+        "description": "Claire Williams became Deputy Team Principal for Williams Racing.",
+        "from_year": 2013,
+        "to_year": null,
+        "role": "Deputy Team Principal"
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e6",
+        "relationship_type": "DROVE_FOR",
+        "description": "Hannah Schmitz holds the role of principal strategy engineer at Red Bull Racing.",
+        "from_year": 2009,
+        "to_year": null,
+        "role": "principal strategy engineer"
+      },
+      {
+        "source_id": "e9",
+        "target_id": "e8",
+        "relationship_type": "DROVE_FOR",
+        "description": "Laura Müller serves as the race engineer for Esteban Ocon at Haas.",
+        "from_year": 2025,
+        "to_year": null,
+        "role": "race engineer"
+      },
+      {
+        "source_id": "e7",
+        "target_id": "e8",
+        "relationship_type": "DROVE_FOR",
+        "description": "Esteban Ocon is a driver for Haas.",
+        "from_year": null,
+        "to_year": null,
+        "role": "driver"
+      }
+    ]
+  },
+  "entity_candidates": 12,
+  "entities_accepted": 12,
+  "entities_rejected": 0,
+  "relationship_candidates": 8,
+  "relationships_accepted": 5,
+  "relationships_rejected": 3,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "ACHIEVED does not allow Team -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 5,
+      "reason": "ACHIEVED does not allow Team -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 6,
+      "reason": "ACHIEVED does not allow Team -> Season"
+    }
+  ],
+  "alignments": []
+}

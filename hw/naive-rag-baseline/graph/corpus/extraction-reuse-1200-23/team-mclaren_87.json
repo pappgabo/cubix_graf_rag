@@ -1,0 +1,91 @@
+{
+  "chunk_id": "team-mclaren#87",
+  "doc_id": "team-mclaren",
+  "document_title": "McLaren",
+  "section": "Extreme E (2022–2024)",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "66ecc4da552ff4a0efd2593c6a8c4695a08a0fd9c9c2e2222d44313a242ba2e2",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "McLaren",
+        "entity_type": "Team",
+        "description": "A Formula 1 team."
+      },
+      {
+        "local_id": "e2",
+        "name": "Cristina Gutiérrez",
+        "entity_type": "Driver",
+        "description": "A driver racing for McLaren."
+      },
+      {
+        "local_id": "e3",
+        "name": "Mattias Ekström",
+        "entity_type": "Driver",
+        "description": "A driver racing for McLaren."
+      },
+      {
+        "local_id": "e4",
+        "name": "2024",
+        "entity_type": "Season",
+        "description": "The 2024 Extreme E season."
+      },
+      {
+        "local_id": "e5",
+        "name": "Desert X-Prix",
+        "entity_type": "GrandPrix",
+        "description": "A race event in the Extreme E series."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e4",
+        "relationship_type": "ENTERED",
+        "description": "McLaren took part in the 2024 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e4",
+        "relationship_type": "ROUND_OF",
+        "description": "Desert X-Prix is a round of the 2024 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 5,
+  "entities_accepted": 5,
+  "entities_rejected": 0,
+  "relationship_candidates": 4,
+  "relationships_accepted": 2,
+  "relationships_rejected": 2,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "DROVE_FOR does not allow Team -> Driver"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "DROVE_FOR does not allow Team -> Driver"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 0,
+      "action": "clear_redundant_season_year",
+      "detail": "ENTERED year 2024 already named by Season 'e4'; from_year and to_year cleared"
+    }
+  ]
+}

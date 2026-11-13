@@ -1,0 +1,125 @@
+{
+  "chunk_id": "team-mclaren#6",
+  "doc_id": "team-mclaren",
+  "document_title": "McLaren",
+  "section": "Racing history: Formula One > Overview",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "1cbc108039a190d65c699ea95af3fdcf90ef46e4bd0e93221445677a53eb81f8",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "McLaren",
+        "entity_type": "Team",
+        "description": "A Formula One constructor founded in 1963 by Bruce McLaren."
+      },
+      {
+        "local_id": "e2",
+        "name": "Bruce McLaren",
+        "entity_type": "Driver",
+        "description": "Founder of the McLaren team and a Formula One driver."
+      },
+      {
+        "local_id": "e3",
+        "name": "Emerson Fittipaldi",
+        "entity_type": "Driver",
+        "description": "Formula One driver who won the Drivers' Championship in 1974."
+      },
+      {
+        "local_id": "e4",
+        "name": "James Hunt",
+        "entity_type": "Driver",
+        "description": "Formula One driver who won the Drivers' Championship in 1976."
+      },
+      {
+        "local_id": "e5",
+        "name": "1974",
+        "entity_type": "Season",
+        "description": "The year McLaren won their first Constructors' Championship."
+      },
+      {
+        "local_id": "e6",
+        "name": "1976",
+        "entity_type": "Season",
+        "description": "The year James Hunt won the Drivers' Championship."
+      },
+      {
+        "local_id": "e7",
+        "name": "1968 Belgian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The maiden Grand Prix victory for McLaren."
+      },
+      {
+        "local_id": "e8",
+        "name": "1974 Constructors' Championship",
+        "entity_type": "Title",
+        "description": "The first Constructors' Championship won by McLaren."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e8",
+        "relationship_type": "WON",
+        "description": "McLaren won their first Constructors' Championship in 1974.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e8",
+        "relationship_type": "WON",
+        "description": "Emerson Fittipaldi won the Drivers' Championship in 1974.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e8",
+        "relationship_type": "WON",
+        "description": "James Hunt won the Drivers' Championship in 1976.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e5",
+        "relationship_type": "ENTERED",
+        "description": "McLaren entered the 1974 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e6",
+        "relationship_type": "ENTERED",
+        "description": "McLaren entered the 1976 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 8,
+  "entities_accepted": 8,
+  "entities_rejected": 0,
+  "relationship_candidates": 6,
+  "relationships_accepted": 5,
+  "relationships_rejected": 1,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 5,
+      "reason": "FIELDED does not allow Team -> GrandPrix"
+    }
+  ],
+  "alignments": []
+}

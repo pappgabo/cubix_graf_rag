@@ -1,0 +1,106 @@
+{
+  "chunk_id": "season-2021-formula-one-world-championship#2",
+  "doc_id": "season-2021-formula-one-world-championship",
+  "document_title": "2021 Formula One World Championship",
+  "section": null,
+  "page": 1,
+  "source": "https://en.wikipedia.org/wiki/2021_Formula_One_World_Championship",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "a70624bfa7e2b3cd4b4c5b2d3315957bfe5a26f546d8fdebcebe0b2e52fd8b91",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "entity_candidates": 6,
+  "entities_accepted": 6,
+  "entities_rejected": 0,
+  "relationship_candidates": 5,
+  "relationships_accepted": 4,
+  "relationships_rejected": 1,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "POWERED_BY does not allow PowerUnit -> Season"
+    }
+  ],
+  "alignments": [],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Lewis Hamilton",
+        "entity_type": "Driver",
+        "description": "Four-time defending and seven-time champion, finished runner-up in the 2021 season."
+      },
+      {
+        "local_id": "e2",
+        "name": "Mercedes-AMG Petronas Formula One Team",
+        "entity_type": "Team",
+        "description": "Team that Lewis Hamilton drove for and retained the Constructors' Championship for the eighth consecutive season."
+      },
+      {
+        "local_id": "e3",
+        "name": "Aston Martin",
+        "entity_type": "Team",
+        "description": "Returned to Formula One in 2021 after Lawrence Stroll invested into the British marque."
+      },
+      {
+        "local_id": "e4",
+        "name": "Honda",
+        "entity_type": "PowerUnit",
+        "description": "Second engine supplier in the turbo-hybrid era to power a championship-winning car."
+      },
+      {
+        "local_id": "e5",
+        "name": "2021",
+        "entity_type": "Season",
+        "description": "Season in which the events described took place."
+      },
+      {
+        "local_id": "e6",
+        "name": "World Championship",
+        "entity_type": "Title",
+        "description": "Championship title won by a non-Mercedes driver in the turbo-hybrid era."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e2",
+        "target_id": "e5",
+        "relationship_type": "ENTERED",
+        "description": "Mercedes entered the 2021 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e5",
+        "relationship_type": "ENTERED",
+        "description": "Aston Martin entered the 2021 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e6",
+        "relationship_type": "WON",
+        "description": "Lewis Hamilton finished runner-up in the World Championship.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e6",
+        "relationship_type": "WON",
+        "description": "Mercedes retained the Constructors' Championship title.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

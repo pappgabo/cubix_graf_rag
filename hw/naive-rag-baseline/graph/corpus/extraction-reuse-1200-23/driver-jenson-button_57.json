@@ -1,0 +1,104 @@
+{
+  "chunk_id": "driver-jenson-button#57",
+  "doc_id": "driver-jenson-button",
+  "document_title": "Jenson Button",
+  "section": "Endorsements and philanthropy",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "89f26cb53650ebcc342973218d52ef16f21d84d17f93fcf37a614fbbfbd5828e",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Jenson Button",
+        "entity_type": "Driver",
+        "description": "A British former Formula One driver."
+      },
+      {
+        "local_id": "e2",
+        "name": "Victus",
+        "entity_type": "Team",
+        "description": "A restaurant ran by Jenson Button in Harrogate."
+      },
+      {
+        "local_id": "e3",
+        "name": "The Sports Partnership",
+        "entity_type": "Team",
+        "description": "A sports agency founded by Jenson Button, Goodard, and James Williamson."
+      },
+      {
+        "local_id": "e4",
+        "name": "Jenson Team Rocket RJN",
+        "entity_type": "Team",
+        "description": "A sports car team founded by Jenson Button, Buncombe, and Bob Neville."
+      },
+      {
+        "local_id": "e5",
+        "name": "Sky Sports F1",
+        "entity_type": "Team",
+        "description": "A sports broadcasting network where Jenson Button has worked as an analyst."
+      },
+      {
+        "local_id": "e6",
+        "name": "2026",
+        "entity_type": "Season",
+        "description": "The year when Jenson Button launched a campaign to find young F1 drivers."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Jenson Button ran the restaurant Victus.",
+        "from_year": 2011,
+        "to_year": 2012,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e3",
+        "relationship_type": "DROVE_FOR",
+        "description": "Jenson Button co-founded The Sports Partnership.",
+        "from_year": 2012,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e4",
+        "relationship_type": "DROVE_FOR",
+        "description": "Jenson Button co-founded Jenson Team Rocket RJN.",
+        "from_year": 2018,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e5",
+        "relationship_type": "DROVE_FOR",
+        "description": "Jenson Button has worked as an analyst for Sky Sports F1 since 2018.",
+        "from_year": 2018,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 6,
+  "entities_accepted": 6,
+  "entities_rejected": 0,
+  "relationship_candidates": 5,
+  "relationships_accepted": 4,
+  "relationships_rejected": 1,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "DROVE_FOR does not allow Driver -> Season"
+    }
+  ],
+  "alignments": []
+}

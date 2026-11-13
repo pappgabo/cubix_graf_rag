@@ -1,0 +1,97 @@
+{
+  "chunk_id": "driver-fernando-alonso#69",
+  "doc_id": "driver-fernando-alonso",
+  "document_title": "Fernando Alonso",
+  "section": "Alpine (2021–2022)",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/Fernando_Alonso",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "c5ac03805dc4a06c338c1eed14bfb1eaaa87e98b915e137a1f9e8f810c2935d2",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "ACHIEVED does not allow RaceResult -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "ACHIEVED does not allow RaceResult -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "ACHIEVED does not allow RaceResult -> GrandPrix"
+    }
+  ],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Fernando Alonso",
+        "entity_type": "Driver",
+        "description": "A Formula One driver who raced for Alpine in 2021 and 2022."
+      },
+      {
+        "local_id": "e2",
+        "name": "Alpine",
+        "entity_type": "Team",
+        "description": "A Formula One team that Alonso raced for in 2021 and 2022."
+      },
+      {
+        "local_id": "e3",
+        "name": "2022",
+        "entity_type": "Season",
+        "description": "The Formula One season in which Alonso raced for Alpine."
+      },
+      {
+        "local_id": "e4",
+        "name": "Canadian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula One race where Alonso achieved his highest start driving for Alpine."
+      },
+      {
+        "local_id": "e5",
+        "name": "Second",
+        "entity_type": "RaceResult",
+        "description": "Alonso's highest starting position during the Canadian Grand Prix."
+      },
+      {
+        "local_id": "e6",
+        "name": "Seventh",
+        "entity_type": "RaceResult",
+        "description": "Alonso's position during the race before penalties."
+      },
+      {
+        "local_id": "e7",
+        "name": "Ninth",
+        "entity_type": "RaceResult",
+        "description": "Alonso's final position after receiving a post-race time penalty."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Alonso raced for Alpine.",
+        "from_year": 2021,
+        "to_year": 2022,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e3",
+        "relationship_type": "ROUND_OF",
+        "description": "The Canadian Grand Prix is a round of the 2022 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "chunk_id": "team-williams-racing#22",
+  "doc_id": "team-williams-racing",
+  "document_title": "Williams Racing",
+  "section": "Williams Racing > Renault engines (1989–1997)",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "a1b098ba3ccbb7c0131e9dad82ce5c873d8db296ab1d15b09c0d46da0c81f601",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Williams Racing",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that entered cars."
+      },
+      {
+        "local_id": "e2",
+        "name": "Renault",
+        "entity_type": "PowerUnit",
+        "description": "An engine supplier for Williams Racing."
+      },
+      {
+        "local_id": "e3",
+        "name": "1992",
+        "entity_type": "Season",
+        "description": "A championship year."
+      },
+      {
+        "local_id": "e4",
+        "name": "Drivers' Championship",
+        "entity_type": "Title",
+        "description": "A championship title for drivers."
+      },
+      {
+        "local_id": "e5",
+        "name": "Constructors' Championship",
+        "entity_type": "Title",
+        "description": "A championship title for constructors."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e3",
+        "relationship_type": "ENTERED",
+        "description": "Williams Racing took part in the 1992 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e4",
+        "relationship_type": "WON",
+        "description": "Williams Racing won the Drivers' Championship.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e3",
+        "relationship_type": "AWARDED_IN",
+        "description": "Williams Racing won the Drivers' Championship.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e5",
+        "relationship_type": "WON",
+        "description": "Williams Racing won the Constructors' Championship.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 5,
+  "entities_accepted": 5,
+  "entities_rejected": 0,
+  "relationship_candidates": 4,
+  "relationships_accepted": 4,
+  "relationships_rejected": 1,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "POWERED_BY does not allow Team -> PowerUnit"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 1,
+      "action": "clear_redundant_season_year",
+      "detail": "ENTERED year 1992 already named by Season 'e3'; from_year and to_year cleared"
+    },
+    {
+      "index": 2,
+      "action": "move_won_year",
+      "detail": "WON year 1992 stored as e4 -AWARDED_IN-> e3; from_year and to_year cleared; description kept"
+    }
+  ]
+}

@@ -1,0 +1,225 @@
+{
+  "chunk_id": "driver-kimi-raikkonen#1",
+  "doc_id": "driver-kimi-raikkonen",
+  "document_title": "Kimi Räikkönen",
+  "section": null,
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "012673783d5575c44cb4c7cf8311dddb3369f2b8c11bae7d2cd768c8df23bb2f",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Kimi Räikkönen",
+        "entity_type": "Driver",
+        "description": "Born in Espoo, Räikkönen began competitive kart racing aged 10, winning several national titles before graduating to junior formulae in 1999. He dominated the 2000 British Formula Renault Championship with Manor, prompting Sauber to sign him in Formula One for 2001. Following several points finishes across his rookie season, he joined McLaren in 2002, achieving his maiden podium on debut. He achieved his maiden victory at the Malaysian Grand Prix in 2003, as he finished runner-up to Michael Schumacher. Reliability issues with the MP4-19 saw him drop to seventh the following year, taking a sole victory in Belgium. He won seven Grands Prix as he finished runner-up to Fernando Alonso in 2005. After a winless 2006 campaign, Räikkönen moved to Ferrari; he took six victories as he beat Alonso and Lewis Hamilton to the 2007 World Drivers' Championship by a single point. He finished third in 2008, with victories in Malaysia and Spain. Replaced by Alonso for 2010, Räikkönen left Formula One at the end of his 2009 campaign, where he won the Belgian Grand Prix."
+      },
+      {
+        "local_id": "e2",
+        "name": "Sauber",
+        "entity_type": "Team",
+        "description": "Team that signed Kimi Räikkönen in Formula One for 2001."
+      },
+      {
+        "local_id": "e3",
+        "name": "McLaren",
+        "entity_type": "Team",
+        "description": "Team that Kimi Räikkönen joined in 2002."
+      },
+      {
+        "local_id": "e4",
+        "name": "Scuderia Ferrari",
+        "entity_type": "Team",
+        "description": "Team that Kimi Räikkönen moved to after McLaren."
+      },
+      {
+        "local_id": "e5",
+        "name": "2001",
+        "entity_type": "Season",
+        "description": "The season Kimi Räikkönen began racing in Formula One with Sauber."
+      },
+      {
+        "local_id": "e6",
+        "name": "2002",
+        "entity_type": "Season",
+        "description": "The season Kimi Räikkönen raced with McLaren."
+      },
+      {
+        "local_id": "e7",
+        "name": "2003",
+        "entity_type": "Season",
+        "description": "The season Kimi Räikkönen achieved his maiden victory at the Malaysian Grand Prix."
+      },
+      {
+        "local_id": "e8",
+        "name": "2005",
+        "entity_type": "Season",
+        "description": "The season Kimi Räikkönen finished runner-up to Fernando Alonso."
+      },
+      {
+        "local_id": "e9",
+        "name": "2007",
+        "entity_type": "Season",
+        "description": "The season Kimi Räikkönen won the World Drivers' Championship."
+      },
+      {
+        "local_id": "e10",
+        "name": "2008",
+        "entity_type": "Season",
+        "description": "The season Kimi Räikkönen finished third."
+      },
+      {
+        "local_id": "e11",
+        "name": "2009",
+        "entity_type": "Season",
+        "description": "The season Kimi Räikkönen left Formula One."
+      },
+      {
+        "local_id": "e12",
+        "name": "Malaysian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The Grand Prix where Kimi Räikkönen achieved his maiden victory in 2003."
+      },
+      {
+        "local_id": "e13",
+        "name": "Belgian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The Grand Prix where Kimi Räikkönen won in 2009."
+      },
+      {
+        "local_id": "e14",
+        "name": "World Drivers' Championship",
+        "entity_type": "Title",
+        "description": "The championship title Kimi Räikkönen won in 2007."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Kimi Räikkönen at Malaysian Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Kimi Räikkönen achieved his maiden victory at the Malaysian Grand Prix in 2003."
+      },
+      {
+        "local_id": "rr2",
+        "name": "Kimi Räikkönen at Belgian Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Kimi Räikkönen won the Belgian Grand Prix in 2009."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Kimi Räikkönen drove for Sauber in 2001.",
+        "from_year": 2001,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e3",
+        "relationship_type": "DROVE_FOR",
+        "description": "Kimi Räikkönen drove for McLaren in 2002.",
+        "from_year": 2002,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e4",
+        "relationship_type": "DROVE_FOR",
+        "description": "Kimi Räikkönen drove for Ferrari after McLaren.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Kimi Räikkönen achieved his maiden victory at the Malaysian Grand Prix in 2003.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e12",
+        "relationship_type": "AT_RACE",
+        "description": "Kimi Räikkönen achieved his maiden victory at the Malaysian Grand Prix in 2003.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr2",
+        "relationship_type": "ACHIEVED",
+        "description": "Kimi Räikkönen won the Belgian Grand Prix in 2009.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr2",
+        "target_id": "e13",
+        "relationship_type": "AT_RACE",
+        "description": "Kimi Räikkönen won the Belgian Grand Prix in 2009.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e14",
+        "relationship_type": "WON",
+        "description": "Kimi Räikkönen won the World Drivers' Championship in 2007.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e14",
+        "target_id": "e9",
+        "relationship_type": "AWARDED_IN",
+        "description": "The World Drivers' Championship title belongs to the 2007 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 14,
+  "entities_accepted": 16,
+  "entities_rejected": 0,
+  "relationship_candidates": 9,
+  "relationships_accepted": 9,
+  "relationships_rejected": 2,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 5,
+      "reason": "AT_RACE does not allow GrandPrix -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 8,
+      "reason": "AT_RACE does not allow GrandPrix -> Season"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 3,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e12; description kept"
+    },
+    {
+      "index": 5,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr2 -AT_RACE-> e13; description kept"
+    }
+  ]
+}

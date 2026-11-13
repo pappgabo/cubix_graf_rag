@@ -1,0 +1,130 @@
+{
+  "chunk_id": "team-williams-racing#12",
+  "doc_id": "team-williams-racing",
+  "document_title": "Williams Racing",
+  "section": "Williams Racing > Honda engines (1983–1987) > Williams Racing > 1983 season",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "a65f89ec0196f8cba2d5fd8dbc7c96b3431b6f5caa4ba5af90b4c66767aab61c",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Williams Racing",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that entered cars."
+      },
+      {
+        "local_id": "e2",
+        "name": "Honda",
+        "entity_type": "PowerUnit",
+        "description": "An engine manufacturer that developed a turbocharged V6 engine."
+      },
+      {
+        "local_id": "e3",
+        "name": "Keke Rosberg",
+        "entity_type": "Driver",
+        "description": "A Formula 1 driver who raced for Williams Racing."
+      },
+      {
+        "local_id": "e4",
+        "name": "1983",
+        "entity_type": "Season",
+        "description": "A championship year."
+      },
+      {
+        "local_id": "e5",
+        "name": "Monaco Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula 1 race where Keke Rosberg won."
+      },
+      {
+        "local_id": "e6",
+        "name": "South Africa",
+        "entity_type": "Circuit",
+        "description": "The circuit where Williams debuted its Honda engine."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Keke Rosberg at Monaco Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Keke Rosberg won at Monaco Grand Prix."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e3",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Keke Rosberg won at Monaco Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e5",
+        "relationship_type": "AT_RACE",
+        "description": "Keke Rosberg won at Monaco Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e1",
+        "relationship_type": "DROVE_FOR",
+        "description": "Keke Rosberg drove for Williams Racing.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e4",
+        "relationship_type": "ENTERED",
+        "description": "Williams Racing entered the 1983 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e4",
+        "relationship_type": "ROUND_OF",
+        "description": "Monaco Grand Prix is a round of the 1983 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 6,
+  "entities_accepted": 7,
+  "entities_rejected": 0,
+  "relationship_candidates": 6,
+  "relationships_accepted": 5,
+  "relationships_rejected": 2,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "FIELDED does not allow Team -> PowerUnit"
+    },
+    {
+      "element": "relationship",
+      "index": 6,
+      "reason": "HELD_AT does not allow Team -> Circuit"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 1,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e5; description kept"
+    }
+  ]
+}

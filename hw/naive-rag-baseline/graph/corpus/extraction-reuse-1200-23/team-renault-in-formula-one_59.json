@@ -1,0 +1,191 @@
+{
+  "chunk_id": "team-renault-in-formula-one#59",
+  "doc_id": "team-renault-in-formula-one",
+  "document_title": "Renault in Formula One",
+  "section": "Engine supplier (1983–2025) > Return to naturally aspirated engines (1989–2013) > Return to supply with Red Bull Racing yields title success (2007–2013)",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "884f9c9d2a6320925c0cdc137496f56f5f6d8caa33d775199889ace9147193bb",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Renault",
+        "entity_type": "Team",
+        "description": "An engine supplier in Formula One."
+      },
+      {
+        "local_id": "e2",
+        "name": "Red Bull Racing",
+        "entity_type": "Team",
+        "description": "A Formula One team that partnered with Renault for engine supply."
+      },
+      {
+        "local_id": "e3",
+        "name": "Sebastian Vettel",
+        "entity_type": "Driver",
+        "description": "A Formula One driver who raced for Red Bull Racing."
+      },
+      {
+        "local_id": "e4",
+        "name": "Mark Webber",
+        "entity_type": "Driver",
+        "description": "A Formula One driver who raced for Red Bull Racing."
+      },
+      {
+        "local_id": "e5",
+        "name": "2009",
+        "entity_type": "Season",
+        "description": "A Formula One championship season."
+      },
+      {
+        "local_id": "e6",
+        "name": "2010",
+        "entity_type": "Season",
+        "description": "A Formula One championship season."
+      },
+      {
+        "local_id": "e7",
+        "name": "Chinese Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula One race where Red Bull Racing claimed their first victory."
+      },
+      {
+        "local_id": "e8",
+        "name": "RS27",
+        "entity_type": "PowerUnit",
+        "description": "The engine used by Red Bull Racing in 2010."
+      },
+      {
+        "local_id": "e9",
+        "name": "Constructors' Championship",
+        "entity_type": "Title",
+        "description": "A championship title in Formula One."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Sebastian Vettel at Chinese Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Sebastian Vettel recorded a victory at the Chinese Grand Prix."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e2",
+        "target_id": "e5",
+        "relationship_type": "ENTERED",
+        "description": "Red Bull Racing took part in the 2009 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e6",
+        "relationship_type": "ENTERED",
+        "description": "Red Bull Racing took part in the 2010 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Sebastian Vettel recorded a victory at the Chinese Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e7",
+        "relationship_type": "AT_RACE",
+        "description": "Sebastian Vettel recorded a victory at the Chinese Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e9",
+        "relationship_type": "WON",
+        "description": "Sebastian Vettel won the Constructors' Championship with Red Bull Racing.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e9",
+        "target_id": "e6",
+        "relationship_type": "AWARDED_IN",
+        "description": "Sebastian Vettel won the Constructors' Championship with Red Bull Racing.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e9",
+        "relationship_type": "WON",
+        "description": "Red Bull Racing won the Constructors' Championship.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 9,
+  "entities_accepted": 10,
+  "entities_rejected": 0,
+  "relationship_candidates": 8,
+  "relationships_accepted": 7,
+  "relationships_rejected": 3,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "DROVE_FOR does not allow Team -> Team"
+    },
+    {
+      "element": "relationship",
+      "index": 8,
+      "reason": "WON does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 9,
+      "reason": "TEAMMATE_OF does not allow Driver -> Season"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 1,
+      "action": "clear_redundant_season_year",
+      "detail": "ENTERED year 2009 already named by Season 'e5'; from_year and to_year cleared"
+    },
+    {
+      "index": 2,
+      "action": "clear_redundant_season_year",
+      "detail": "ENTERED year 2010 already named by Season 'e6'; from_year and to_year cleared"
+    },
+    {
+      "index": 3,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e7; description kept"
+    },
+    {
+      "index": 4,
+      "action": "move_won_year",
+      "detail": "WON year 2010 stored as e9 -AWARDED_IN-> e6; from_year and to_year cleared; description kept"
+    },
+    {
+      "index": 5,
+      "action": "move_won_year",
+      "detail": "WON year 2010 stored as e9 -AWARDED_IN-> e6; from_year and to_year cleared; description kept"
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "chunk_id": "reference-formula-one#12",
+  "doc_id": "reference-formula-one",
+  "document_title": "Formula One",
+  "section": "Formula One > Big business",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "71b47dcdfe91d04be29a1813ab30ade03ee5938d6e5ac316cf575195df2be245",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Jules Bianchi",
+        "entity_type": "Driver",
+        "description": "A Formula One driver who died from injuries sustained in a crash at the 2014 Japanese Grand Prix."
+      },
+      {
+        "local_id": "e2",
+        "name": "2014",
+        "entity_type": "Season",
+        "description": "The Formula One season during which Jules Bianchi had his fatal accident."
+      },
+      {
+        "local_id": "e3",
+        "name": "Japanese Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula One race where Jules Bianchi collided with a recovery vehicle."
+      },
+      {
+        "local_id": "e4",
+        "name": "Circuit",
+        "entity_type": "Circuit",
+        "description": "The racing venue for the Japanese Grand Prix."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e3",
+        "target_id": "e2",
+        "relationship_type": "ROUND_OF",
+        "description": "The Japanese Grand Prix is a round of the 2014 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e4",
+        "relationship_type": "HELD_AT",
+        "description": "The Japanese Grand Prix is held at a circuit.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 4,
+  "entities_accepted": 4,
+  "entities_rejected": 0,
+  "relationship_candidates": 4,
+  "relationships_accepted": 2,
+  "relationships_rejected": 2,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "ACHIEVED does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "AT_RACE does not allow Driver -> GrandPrix"
+    }
+  ],
+  "alignments": []
+}

@@ -1,0 +1,91 @@
+{
+  "chunk_id": "driver-lewis-hamilton#19",
+  "doc_id": "driver-lewis-hamilton",
+  "document_title": "Lewis Hamilton",
+  "section": null,
+  "page": 4,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "43ad4d491143c2a3e02019f8635972547d9b639ee5a9a3420404d274cee3f9ec",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Lewis Hamilton",
+        "entity_type": "Driver",
+        "description": "A British racing driver who has won multiple championships."
+      },
+      {
+        "local_id": "e2",
+        "name": "Mercedes-AMG Petronas Formula One Team",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that has entered cars in the championship."
+      },
+      {
+        "local_id": "e3",
+        "name": "2016",
+        "entity_type": "Season",
+        "description": "The Formula 1 season in which Hamilton finished runner-up."
+      },
+      {
+        "local_id": "e4",
+        "name": "Hungarian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A race in the 2016 Formula 1 season."
+      },
+      {
+        "local_id": "e5",
+        "name": "United States",
+        "entity_type": "GrandPrix",
+        "description": "A race where Hamilton secured his 50th race victory."
+      },
+      {
+        "local_id": "e6",
+        "name": "Japan",
+        "entity_type": "GrandPrix",
+        "description": "A race where Hamilton achieved his 100th podium finish."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Hamilton drove for Mercedes during the 2016 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e3",
+        "relationship_type": "ROUND_OF",
+        "description": "The Hungarian Grand Prix is a round of the 2016 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 6,
+  "entities_accepted": 6,
+  "entities_rejected": 0,
+  "relationship_candidates": 4,
+  "relationships_accepted": 2,
+  "relationships_rejected": 2,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "ACHIEVED does not allow GrandPrix -> Driver"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "ACHIEVED does not allow GrandPrix -> Driver"
+    }
+  ],
+  "alignments": []
+}

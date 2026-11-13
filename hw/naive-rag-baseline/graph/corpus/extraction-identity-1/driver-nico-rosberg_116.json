@@ -1,0 +1,140 @@
+{
+  "chunk_id": "driver-nico-rosberg#116",
+  "doc_id": "driver-nico-rosberg",
+  "document_title": "Nico Rosberg",
+  "section": "Nico Rosberg > Achievements and recognition",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/Nico_Rosberg",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "740b0a2baab546c51658483a1d230ca3c602714e79c5ce1b423840958528aa4b",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "entity_candidates": 6,
+  "entities_accepted": 7,
+  "entities_rejected": 0,
+  "relationship_candidates": 5,
+  "relationships_accepted": 6,
+  "relationships_rejected": 0,
+  "rejections": [],
+  "alignments": [
+    {
+      "index": 0,
+      "action": "move_won_year",
+      "detail": "WON year 2011 stored as e2 -AWARDED_IN-> season2011-1; from_year and to_year cleared; description kept"
+    },
+    {
+      "index": 1,
+      "action": "move_won_year",
+      "detail": "WON year 2014 stored as e3 -AWARDED_IN-> e5; from_year and to_year cleared; description kept"
+    },
+    {
+      "index": 2,
+      "action": "move_won_year",
+      "detail": "WON year 2016 stored as e4 -AWARDED_IN-> e6; from_year and to_year cleared; description kept"
+    }
+  ],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Nico Rosberg",
+        "entity_type": "Driver",
+        "description": "A Formula One driver known for his achievements and recognition in the sport."
+      },
+      {
+        "local_id": "e2",
+        "name": "Lorenzo Bandini Trophy",
+        "entity_type": "Title",
+        "description": "An award given for dedication to motor racing, spirit of competition and achievements."
+      },
+      {
+        "local_id": "e3",
+        "name": "FIA Pole Trophy",
+        "entity_type": "Title",
+        "description": "An award for winning the most pole positions in a season."
+      },
+      {
+        "local_id": "e4",
+        "name": "DHL Fastest Lap Award",
+        "entity_type": "Title",
+        "description": "An award for recording the most fastest laps in a season."
+      },
+      {
+        "local_id": "e5",
+        "name": "2014",
+        "entity_type": "Season",
+        "description": "The Formula One season in which Rosberg won the FIA Pole Trophy."
+      },
+      {
+        "local_id": "e6",
+        "name": "2016",
+        "entity_type": "Season",
+        "description": "The Formula One season in which Rosberg won the DHL Fastest Lap Award."
+      },
+      {
+        "local_id": "season2011-1",
+        "name": "2011",
+        "entity_type": "Season",
+        "description": "2011"
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "WON",
+        "description": "Nico Rosberg won the Lorenzo Bandini Trophy.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "season2011-1",
+        "relationship_type": "AWARDED_IN",
+        "description": "Nico Rosberg won the Lorenzo Bandini Trophy.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e3",
+        "relationship_type": "WON",
+        "description": "Nico Rosberg won the FIA Pole Trophy for the 2014 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e4",
+        "relationship_type": "WON",
+        "description": "Nico Rosberg won the DHL Fastest Lap Award for the 2016 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e5",
+        "relationship_type": "AWARDED_IN",
+        "description": "The FIA Pole Trophy was awarded in the 2014 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e6",
+        "relationship_type": "AWARDED_IN",
+        "description": "The DHL Fastest Lap Award was awarded in the 2016 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

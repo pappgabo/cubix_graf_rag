@@ -1,0 +1,90 @@
+{
+  "chunk_id": "driver-sebastian-vettel#18",
+  "doc_id": "driver-sebastian-vettel",
+  "document_title": "Sebastian Vettel",
+  "section": "2005–2007: Formula Three and Formula Renault",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/Sebastian_Vettel",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "ef84a56389a2a91b789b6eb1c136a4fdcdafde6b97b326dc35ecea1b6e8764a0",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "ACHIEVED does not allow Driver -> Circuit"
+    },
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "ROUND_OF does not allow Circuit -> Season"
+    }
+  ],
+  "alignments": [],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Sebastian Vettel",
+        "entity_type": "Driver",
+        "description": "A German racing driver who competed in Formula One."
+      },
+      {
+        "local_id": "e2",
+        "name": "BMW Sauber",
+        "entity_type": "Team",
+        "description": "A Formula One team that entered cars."
+      },
+      {
+        "local_id": "e3",
+        "name": "2007",
+        "entity_type": "Season",
+        "description": "A championship year."
+      },
+      {
+        "local_id": "e4",
+        "name": "Nürburgring",
+        "entity_type": "Circuit",
+        "description": "A racing venue where Vettel took his first win."
+      },
+      {
+        "local_id": "e5",
+        "name": "Formula Renault 3.5 Series",
+        "entity_type": "Car",
+        "description": "A racing series in which Vettel competed."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e5",
+        "target_id": "e3",
+        "relationship_type": "RACED_IN",
+        "description": "Formula Renault 3.5 Series took part in the 2007 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e3",
+        "relationship_type": "ENTERED",
+        "description": "BMW Sauber took part in the 2007 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Sebastian Vettel drove for BMW Sauber.",
+        "from_year": null,
+        "to_year": null,
+        "role": "driver"
+      }
+    ]
+  }
+}

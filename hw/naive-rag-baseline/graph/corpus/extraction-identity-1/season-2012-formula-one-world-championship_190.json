@@ -1,0 +1,106 @@
+{
+  "chunk_id": "season-2012-formula-one-world-championship#190",
+  "doc_id": "season-2012-formula-one-world-championship",
+  "document_title": "2012 Formula One World Championship",
+  "section": "Race summaries > Round 18 – Abu Dhabi Yas Marina Circuit",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/2012_Formula_One_World_Championship",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "0b9b2a3aec92fbd46997dfeb7ea7a58549c569abc84f8713398bc6fce2ad2bb9",
+  "validation_version": "partial-1",
+  "source_status": "ok",
+  "status": "ok",
+  "entity_candidates": 7,
+  "entities_accepted": 7,
+  "entities_rejected": 0,
+  "relationship_candidates": 4,
+  "relationships_accepted": 4,
+  "relationships_rejected": 0,
+  "rejections": [],
+  "alignments": [],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Sebastian Vettel",
+        "entity_type": "Driver",
+        "description": "A driver who raced for Red Bull Racing in the 2012 Formula One World Championship."
+      },
+      {
+        "local_id": "e2",
+        "name": "Daniel Ricciardo",
+        "entity_type": "Driver",
+        "description": "A driver involved in an incident with Sebastian Vettel during the race."
+      },
+      {
+        "local_id": "e3",
+        "name": "Red Bull Racing",
+        "entity_type": "Team",
+        "description": "The team that Sebastian Vettel raced for in the 2012 Formula One World Championship."
+      },
+      {
+        "local_id": "e4",
+        "name": "2012",
+        "entity_type": "Season",
+        "description": "The season of the Formula One World Championship being discussed."
+      },
+      {
+        "local_id": "e5",
+        "name": "Abu Dhabi Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The specific race event held at Yas Marina Circuit."
+      },
+      {
+        "local_id": "e6",
+        "name": "Yas Marina Circuit",
+        "entity_type": "Circuit",
+        "description": "The circuit where the Abu Dhabi Grand Prix took place."
+      },
+      {
+        "local_id": "e7",
+        "name": "HRT",
+        "entity_type": "Team",
+        "description": "The team that Daniel Ricciardo was racing for."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e5",
+        "target_id": "e4",
+        "relationship_type": "ROUND_OF",
+        "description": "The Abu Dhabi Grand Prix is a round of the 2012 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e6",
+        "relationship_type": "HELD_AT",
+        "description": "The Abu Dhabi Grand Prix is held at Yas Marina Circuit.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e3",
+        "relationship_type": "DROVE_FOR",
+        "description": "Sebastian Vettel drove for Red Bull Racing.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e7",
+        "relationship_type": "DROVE_FOR",
+        "description": "Daniel Ricciardo drove for HRT.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

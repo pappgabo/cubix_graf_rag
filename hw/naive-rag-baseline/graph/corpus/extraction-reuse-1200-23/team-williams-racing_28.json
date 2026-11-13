@@ -1,0 +1,166 @@
+{
+  "chunk_id": "team-williams-racing#28",
+  "doc_id": "team-williams-racing",
+  "document_title": "Williams Racing",
+  "section": "Williams Racing > 1991 season",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "0bec848a4d76db891dc23027f3a5b93f89e5763d5b97ca0309072d64887709c8",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Williams",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that entered cars."
+      },
+      {
+        "local_id": "e2",
+        "name": "Nigel Mansell",
+        "entity_type": "Driver",
+        "description": "A driver who raced for Williams in the 1991 season."
+      },
+      {
+        "local_id": "e3",
+        "name": "Riccardo Patrese",
+        "entity_type": "Driver",
+        "description": "A driver who raced for Williams in the 1991 season."
+      },
+      {
+        "local_id": "e4",
+        "name": "1991",
+        "entity_type": "Season",
+        "description": "The Formula 1 season in which Williams competed."
+      },
+      {
+        "local_id": "e5",
+        "name": "US Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The first Grand Prix of the 1991 season."
+      },
+      {
+        "local_id": "e6",
+        "name": "Interlagos",
+        "entity_type": "Circuit",
+        "description": "The circuit where the second Grand Prix of the 1991 season took place."
+      },
+      {
+        "local_id": "e7",
+        "name": "San Marino Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Grand Prix in the 1991 season where both Williams cars retired."
+      },
+      {
+        "local_id": "e8",
+        "name": "Monaco Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Grand Prix in the 1991 season where Mansell finished in the points."
+      },
+      {
+        "local_id": "e9",
+        "name": "Canadian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Grand Prix in the 1991 season where Williams locked out the front row."
+      },
+      {
+        "local_id": "e10",
+        "name": "Mexico",
+        "entity_type": "GrandPrix",
+        "description": "A Grand Prix in the 1991 season where Williams achieved a 1–2 finish."
+      },
+      {
+        "local_id": "e11",
+        "name": "French Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Grand Prix in the 1991 season where Mansell won."
+      },
+      {
+        "local_id": "e12",
+        "name": "British Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Grand Prix in the 1991 season where Mansell won."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e4",
+        "relationship_type": "ENTERED",
+        "description": "Williams took part in the 1991 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e1",
+        "relationship_type": "DROVE_FOR",
+        "description": "Nigel Mansell drove for Williams in the 1991 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e1",
+        "relationship_type": "DROVE_FOR",
+        "description": "Riccardo Patrese drove for Williams in the 1991 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 12,
+  "entities_accepted": 12,
+  "entities_rejected": 0,
+  "relationship_candidates": 11,
+  "relationships_accepted": 3,
+  "relationships_rejected": 8,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "ROUND_OF does not allow Team -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "ROUND_OF does not allow Team -> Circuit"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "ROUND_OF does not allow Team -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "ROUND_OF does not allow Team -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 5,
+      "reason": "ROUND_OF does not allow Team -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 6,
+      "reason": "ROUND_OF does not allow Team -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 7,
+      "reason": "ROUND_OF does not allow Team -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 8,
+      "reason": "ROUND_OF does not allow Team -> GrandPrix"
+    }
+  ],
+  "alignments": []
+}

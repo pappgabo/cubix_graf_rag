@@ -1,0 +1,79 @@
+{
+  "chunk_id": "team-williams-racing#120",
+  "doc_id": "team-williams-racing",
+  "document_title": "Williams Racing",
+  "section": "Williams Racing > Formula E",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "6b823586a1e099107694cb97208c70b15007b565b86a21463d2b37e539ca5441",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Williams Racing",
+        "entity_type": "Team",
+        "description": "A Formula 1 team."
+      },
+      {
+        "local_id": "e2",
+        "name": "Jaguar Racing",
+        "entity_type": "Team",
+        "description": "A Formula E team."
+      },
+      {
+        "local_id": "e3",
+        "name": "2021–22 Formula E World Championship",
+        "entity_type": "Season",
+        "description": "A season of the Formula E championship."
+      },
+      {
+        "local_id": "e4",
+        "name": "Gen3 Car",
+        "entity_type": "Car",
+        "description": "A car model used in Formula E."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e4",
+        "target_id": "e3",
+        "relationship_type": "RACED_IN",
+        "description": "The Gen3 Car is associated with the 2021–22 Formula E World Championship.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e3",
+        "relationship_type": "ENTERED",
+        "description": "Jaguar Racing participated in the 2021–22 Formula E World Championship.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 4,
+  "entities_accepted": 4,
+  "entities_rejected": 0,
+  "relationship_candidates": 4,
+  "relationships_accepted": 2,
+  "relationships_rejected": 2,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "FIELDED is not temporal; from_year=2021, to_year=None, role=None cannot be stored without dropping them"
+    },
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "DROVE_FOR does not allow Team -> Team"
+    }
+  ],
+  "alignments": []
+}

@@ -1,0 +1,65 @@
+{
+  "chunk_id": "season-2016-formula-one-world-championship#63",
+  "doc_id": "season-2016-formula-one-world-championship",
+  "document_title": "2016 Formula One World Championship",
+  "section": "Opening rounds",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/2016_Formula_One_World_Championship",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "4f11c3b238fafd1c96cd269c00d989a3134df68c84130bcec23f6bd26ee97472",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "ACHIEVED does not allow Driver -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "FOR_TEAM does not allow Driver -> GrandPrix"
+    }
+  ],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Alonso",
+        "entity_type": "Driver",
+        "description": "A driver who was ruled out of taking part in the Bahrain race on medical grounds."
+      },
+      {
+        "local_id": "e2",
+        "name": "Stoffel Vandoorne",
+        "entity_type": "Driver",
+        "description": "A rookie driver who replaced Alonso in the Bahrain race."
+      },
+      {
+        "local_id": "e3",
+        "name": "Bahrain",
+        "entity_type": "GrandPrix",
+        "description": "The next race where Alonso was ruled out."
+      },
+      {
+        "local_id": "e4",
+        "name": "2016",
+        "entity_type": "Season",
+        "description": "The season of the Formula One World Championship."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e3",
+        "target_id": "e4",
+        "relationship_type": "ROUND_OF",
+        "description": "The Bahrain Grand Prix is a round of the 2016 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

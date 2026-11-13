@@ -1,0 +1,72 @@
+{
+  "chunk_id": "driver-sebastian-vettel#144",
+  "doc_id": "driver-sebastian-vettel",
+  "document_title": "Sebastian Vettel",
+  "section": "Activism",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/Sebastian_Vettel",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "0a265751d3c66b60edd8c9616dff54d1e0d067dc1ae465f243bcc3776fa7a9ac",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "entity_candidates": 4,
+  "entities_accepted": 4,
+  "entities_rejected": 0,
+  "relationship_candidates": 4,
+  "relationships_accepted": 0,
+  "relationships_rejected": 4,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "HELD_AT does not allow Driver -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "HELD_AT does not allow Driver -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "ROUND_OF does not allow Season -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "ROUND_OF does not allow Season -> GrandPrix"
+    }
+  ],
+  "alignments": [],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Sebastian Vettel",
+        "entity_type": "Driver",
+        "description": "A Formula One driver known for his activism."
+      },
+      {
+        "local_id": "e2",
+        "name": "2021",
+        "entity_type": "Season",
+        "description": "The championship year in which Vettel held an all-women karting event and wore the pride flag."
+      },
+      {
+        "local_id": "e3",
+        "name": "Saudi Arabian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula One race held in Saudi Arabia."
+      },
+      {
+        "local_id": "e4",
+        "name": "Hungarian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula One race held in Hungary."
+      }
+    ],
+    "relationships": []
+  }
+}

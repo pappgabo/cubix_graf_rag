@@ -1,0 +1,266 @@
+{
+  "chunk_id": "driver-valtteri-bottas#133",
+  "doc_id": "driver-valtteri-bottas",
+  "document_title": "Valtteri Bottas",
+  "section": "Formula One career > Cadillac (2026)",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/Valtteri_Bottas",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "8429fea1c21d626b8191e77e90c6e3682e1d389e7d09c944e053eedab0c8a4dd",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "entity_candidates": 9,
+  "entities_accepted": 15,
+  "entities_rejected": 0,
+  "relationship_candidates": 7,
+  "relationships_accepted": 13,
+  "relationships_rejected": 0,
+  "rejections": [],
+  "alignments": [
+    {
+      "index": 1,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e4; description kept"
+    },
+    {
+      "index": 2,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr2 -AT_RACE-> e5; description kept"
+    },
+    {
+      "index": 3,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr3 -AT_RACE-> e6; description kept"
+    },
+    {
+      "index": 4,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr4 -AT_RACE-> e7; description kept"
+    },
+    {
+      "index": 5,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr5 -AT_RACE-> e8; description kept"
+    },
+    {
+      "index": 6,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr6 -AT_RACE-> e9; description kept"
+    }
+  ],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Valtteri Bottas",
+        "entity_type": "Driver",
+        "description": "A Finnish racing driver who competes in Formula One."
+      },
+      {
+        "local_id": "e2",
+        "name": "Cadillac",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that Valtteri Bottas drives for."
+      },
+      {
+        "local_id": "e3",
+        "name": "2026",
+        "entity_type": "Season",
+        "description": "The Formula One season in which Valtteri Bottas is competing."
+      },
+      {
+        "local_id": "e4",
+        "name": "Chinese Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula One race held in China."
+      },
+      {
+        "local_id": "e5",
+        "name": "Japanese Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula One race held in Japan."
+      },
+      {
+        "local_id": "e6",
+        "name": "Miami Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula One race held in Miami."
+      },
+      {
+        "local_id": "e7",
+        "name": "Monaco Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula One race held in Monaco."
+      },
+      {
+        "local_id": "e8",
+        "name": "Barcelona Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula One race held in Barcelona."
+      },
+      {
+        "local_id": "e9",
+        "name": "Austrian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula One race held in Austria."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Valtteri Bottas at Chinese Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Valtteri Bottas finished 13th in the Chinese Grand Prix."
+      },
+      {
+        "local_id": "rr2",
+        "name": "Valtteri Bottas at Japanese Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Valtteri Bottas finished 19th in the Japanese Grand Prix."
+      },
+      {
+        "local_id": "rr3",
+        "name": "Valtteri Bottas at Miami Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Valtteri Bottas finished 18th in the Miami Grand Prix."
+      },
+      {
+        "local_id": "rr4",
+        "name": "Valtteri Bottas at Monaco Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Valtteri Bottas retired from the Monaco Grand Prix due to brake issues."
+      },
+      {
+        "local_id": "rr5",
+        "name": "Valtteri Bottas at Barcelona Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Valtteri Bottas retired during the seventeenth lap at Barcelona due to an overheating issue."
+      },
+      {
+        "local_id": "rr6",
+        "name": "Valtteri Bottas at Austrian Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Valtteri Bottas retired during the second lap of the Austrian Grand Prix when his brakes caught fire."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e2",
+        "target_id": "e3",
+        "relationship_type": "ENTERED",
+        "description": "Cadillac entered the 2026 Formula One season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Valtteri Bottas finished 13th in the Chinese Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e4",
+        "relationship_type": "AT_RACE",
+        "description": "Valtteri Bottas finished 13th in the Chinese Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr2",
+        "relationship_type": "ACHIEVED",
+        "description": "Valtteri Bottas finished 19th in the Japanese Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr2",
+        "target_id": "e5",
+        "relationship_type": "AT_RACE",
+        "description": "Valtteri Bottas finished 19th in the Japanese Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr3",
+        "relationship_type": "ACHIEVED",
+        "description": "Valtteri Bottas finished 18th in the Miami Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr3",
+        "target_id": "e6",
+        "relationship_type": "AT_RACE",
+        "description": "Valtteri Bottas finished 18th in the Miami Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr4",
+        "relationship_type": "ACHIEVED",
+        "description": "Valtteri Bottas retired from the Monaco Grand Prix due to brake issues.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr4",
+        "target_id": "e7",
+        "relationship_type": "AT_RACE",
+        "description": "Valtteri Bottas retired from the Monaco Grand Prix due to brake issues.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr5",
+        "relationship_type": "ACHIEVED",
+        "description": "Valtteri Bottas retired during the seventeenth lap at Barcelona due to an overheating issue.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr5",
+        "target_id": "e8",
+        "relationship_type": "AT_RACE",
+        "description": "Valtteri Bottas retired during the seventeenth lap at Barcelona due to an overheating issue.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr6",
+        "relationship_type": "ACHIEVED",
+        "description": "Valtteri Bottas retired during the second lap of the Austrian Grand Prix when his brakes caught fire.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr6",
+        "target_id": "e9",
+        "relationship_type": "AT_RACE",
+        "description": "Valtteri Bottas retired during the second lap of the Austrian Grand Prix when his brakes caught fire.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

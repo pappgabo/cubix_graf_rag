@@ -1,0 +1,157 @@
+{
+  "chunk_id": "driver-sebastian-vettel#135",
+  "doc_id": "driver-sebastian-vettel",
+  "document_title": "Sebastian Vettel",
+  "section": "Awards and honours",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/Sebastian_Vettel",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "bf25e3b0887182cf734b7729c26800c62e3b25c87f3faa42d9b1bb9ccdc07681",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "WON is not temporal; from_year=2009, to_year=2013, role=None cannot be stored without dropping them"
+    },
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "WON is not temporal; from_year=2010, to_year=2013, role=None cannot be stored without dropping them"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 2,
+      "action": "move_won_year",
+      "detail": "WON year 2013 stored as e4 -AWARDED_IN-> season2013-1; from_year and to_year cleared; description kept"
+    },
+    {
+      "index": 3,
+      "action": "move_won_year",
+      "detail": "WON year 2014 stored as e5 -AWARDED_IN-> season2014-1; from_year and to_year cleared; description kept"
+    },
+    {
+      "index": 4,
+      "action": "move_won_year",
+      "detail": "WON year 2015 stored as e6 -AWARDED_IN-> season2015-1; from_year and to_year cleared; description kept"
+    }
+  ],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Sebastian Vettel",
+        "entity_type": "Driver",
+        "description": "A Formula One driver who has won multiple awards and honours."
+      },
+      {
+        "local_id": "e2",
+        "name": "DHL Fastest Lap Award",
+        "entity_type": "Title",
+        "description": "An award given for achieving the fastest lap in a Formula One race."
+      },
+      {
+        "local_id": "e3",
+        "name": "European Sportsperson of the Year",
+        "entity_type": "Title",
+        "description": "An award given to outstanding European athletes."
+      },
+      {
+        "local_id": "e4",
+        "name": "BBC Overseas Sports Personality of the Year",
+        "entity_type": "Title",
+        "description": "An award recognizing the best overseas sports personality."
+      },
+      {
+        "local_id": "e5",
+        "name": "Sportsman of the Year",
+        "entity_type": "Title",
+        "description": "An award given to the best sportsman of the year."
+      },
+      {
+        "local_id": "e6",
+        "name": "Confartigianato Motori Award for Driver of the Year",
+        "entity_type": "Title",
+        "description": "An award recognizing the best driver of the year."
+      },
+      {
+        "local_id": "season2013-1",
+        "name": "2013",
+        "entity_type": "Season",
+        "description": "2013"
+      },
+      {
+        "local_id": "season2014-1",
+        "name": "2014",
+        "entity_type": "Season",
+        "description": "2014"
+      },
+      {
+        "local_id": "season2015-1",
+        "name": "2015",
+        "entity_type": "Season",
+        "description": "2015"
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e4",
+        "relationship_type": "WON",
+        "description": "Sebastian Vettel was named the BBC Overseas Sports Personality of the Year in 2013.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "season2013-1",
+        "relationship_type": "AWARDED_IN",
+        "description": "Sebastian Vettel was named the BBC Overseas Sports Personality of the Year in 2013.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e5",
+        "relationship_type": "WON",
+        "description": "Sebastian Vettel was named Sportsman of the Year at the 2014 Laureus World Sports Awards.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "season2014-1",
+        "relationship_type": "AWARDED_IN",
+        "description": "Sebastian Vettel was named Sportsman of the Year at the 2014 Laureus World Sports Awards.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e6",
+        "relationship_type": "WON",
+        "description": "Sebastian Vettel received the Confartigianato Motori Award for Driver of the Year in 2015.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e6",
+        "target_id": "season2015-1",
+        "relationship_type": "AWARDED_IN",
+        "description": "Sebastian Vettel received the Confartigianato Motori Award for Driver of the Year in 2015.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

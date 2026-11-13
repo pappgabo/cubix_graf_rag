@@ -1,0 +1,65 @@
+{
+  "chunk_id": "driver-sebastian-vettel#64",
+  "doc_id": "driver-sebastian-vettel",
+  "document_title": "Sebastian Vettel",
+  "section": "Personal life",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "2ae8e26772caa51c0640f88d19162a1c0d37c6ed8e564aff5634147042980453",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Sebastian Vettel",
+        "entity_type": "Driver",
+        "description": "Vettel lives in Thurgovia, Switzerland, and has described himself as competitive, private and impatient. He married childhood friend Hanna Prater at a private ceremony in early 2019; they have three children. He is a fan of German football team Eintracht Frankfurt. He is a close friend of Kimi Räikkönen."
+      },
+      {
+        "local_id": "e2",
+        "name": "Kimi Räikkönen",
+        "entity_type": "Driver",
+        "description": "Kimi Räikkönen, Vettel's teammate from 2015 to 2018, is a close friend."
+      },
+      {
+        "local_id": "e3",
+        "name": "2019",
+        "entity_type": "Season",
+        "description": "The year when Vettel married childhood friend Hanna Prater."
+      },
+      {
+        "local_id": "e4",
+        "name": "2022",
+        "entity_type": "Season",
+        "description": "The year when Vettel announced his retirement from Formula One at the end of the season."
+      }
+    ],
+    "relationships": []
+  },
+  "entity_candidates": 4,
+  "entities_accepted": 4,
+  "entities_rejected": 0,
+  "relationship_candidates": 3,
+  "relationships_accepted": 0,
+  "relationships_rejected": 3,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "TEAMMATE_OF is not temporal; from_year=2015, to_year=2018, role=None cannot be stored without dropping them"
+    },
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "DROVE_FOR does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "DROVE_FOR does not allow Driver -> Season"
+    }
+  ],
+  "alignments": []
+}

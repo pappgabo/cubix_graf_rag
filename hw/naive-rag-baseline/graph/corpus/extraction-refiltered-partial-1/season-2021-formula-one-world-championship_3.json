@@ -1,0 +1,60 @@
+{
+  "chunk_id": "season-2021-formula-one-world-championship#3",
+  "doc_id": "season-2021-formula-one-world-championship",
+  "document_title": "2021 Formula One World Championship",
+  "section": null,
+  "page": 1,
+  "source": "https://en.wikipedia.org/wiki/2021_Formula_One_World_Championship",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "6176bb345a4e720d842431580046a5076bdb269cac0181baffa9dbd931ac944f",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "WON is not temporal; from_year, to_year and role must be null"
+    },
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "WON is not temporal; from_year, to_year and role must be null"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "AWARDED_IN does not allow Season -> Title"
+    }
+  ],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Verstappen",
+        "entity_type": "Driver",
+        "description": "One of the title contenders in the 2021 Formula One World Championship."
+      },
+      {
+        "local_id": "e2",
+        "name": "Hamilton",
+        "entity_type": "Driver",
+        "description": "One of the title contenders in the 2021 Formula One World Championship."
+      },
+      {
+        "local_id": "e3",
+        "name": "2021",
+        "entity_type": "Season",
+        "description": "The season of the 2021 Formula One World Championship."
+      },
+      {
+        "local_id": "e4",
+        "name": "Constructors' Championship",
+        "entity_type": "Title",
+        "description": "The championship title retained for the eighth consecutive season."
+      }
+    ],
+    "relationships": []
+  }
+}

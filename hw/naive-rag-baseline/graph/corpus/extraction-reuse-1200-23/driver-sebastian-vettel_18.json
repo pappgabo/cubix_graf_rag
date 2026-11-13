@@ -1,0 +1,119 @@
+{
+  "chunk_id": "driver-sebastian-vettel#18",
+  "doc_id": "driver-sebastian-vettel",
+  "document_title": "Sebastian Vettel",
+  "section": "2011: Dominant second title",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "1a3737cac1423b9f0d8d4a9395235644dcd25fbb563ace9b8dad95590fa2642e",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Sebastian Vettel",
+        "entity_type": "Driver",
+        "description": "A Formula One driver who won multiple championships."
+      },
+      {
+        "local_id": "e2",
+        "name": "Red Bull Racing",
+        "entity_type": "Team",
+        "description": "A Formula One team that Vettel drove for."
+      },
+      {
+        "local_id": "e3",
+        "name": "2011",
+        "entity_type": "Season",
+        "description": "The Formula One season in which Vettel won his second title."
+      },
+      {
+        "local_id": "e4",
+        "name": "Australian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The first race of the 2011 season where Vettel won."
+      },
+      {
+        "local_id": "e5",
+        "name": "Malaysian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The second race of the 2011 season where Vettel won."
+      },
+      {
+        "local_id": "e6",
+        "name": "Chinese Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The third race of the 2011 season where Vettel finished second."
+      },
+      {
+        "local_id": "e7",
+        "name": "Monaco Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The race in which Vettel won after a strategic pit stop."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Vettel drove for Red Bull Racing during the 2011 season.",
+        "from_year": 2011,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e3",
+        "relationship_type": "ROUND_OF",
+        "description": "The Australian Grand Prix is a round of the 2011 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e3",
+        "relationship_type": "ROUND_OF",
+        "description": "The Malaysian Grand Prix is a round of the 2011 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e6",
+        "target_id": "e3",
+        "relationship_type": "ROUND_OF",
+        "description": "The Chinese Grand Prix is a round of the 2011 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e7",
+        "target_id": "e3",
+        "relationship_type": "ROUND_OF",
+        "description": "The Monaco Grand Prix is a round of the 2011 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 7,
+  "entities_accepted": 7,
+  "entities_rejected": 0,
+  "relationship_candidates": 6,
+  "relationships_accepted": 5,
+  "relationships_rejected": 1,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 5,
+      "reason": "WON does not allow Driver -> Season"
+    }
+  ],
+  "alignments": []
+}

@@ -1,0 +1,70 @@
+{
+  "chunk_id": "season-2012-formula-one-world-championship#162",
+  "doc_id": "season-2012-formula-one-world-championship",
+  "document_title": "2012 Formula One World Championship",
+  "section": "Race summaries > Round 14 – Singapore Marina Bay Street Circuit",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/2012_Formula_One_World_Championship",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "d6bf77990f3e715208da60595123ecdd865c53016196214cc747a20674a018f9",
+  "validation_version": "partial-1",
+  "source_status": "ok",
+  "status": "ok",
+  "rejections": [],
+  "alignments": [],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Lewis Hamilton",
+        "entity_type": "Driver",
+        "description": "A driver who qualified on pole."
+      },
+      {
+        "local_id": "e2",
+        "name": "Fernando Alonso",
+        "entity_type": "Driver",
+        "description": "A driver who qualified in fifth place."
+      },
+      {
+        "local_id": "e3",
+        "name": "2012",
+        "entity_type": "Season",
+        "description": "The championship year."
+      },
+      {
+        "local_id": "e4",
+        "name": "Singapore Marina Bay Street Circuit",
+        "entity_type": "Circuit",
+        "description": "The circuit where the Grand Prix took place."
+      },
+      {
+        "local_id": "e5",
+        "name": "Round 14",
+        "entity_type": "GrandPrix",
+        "description": "The specific round of the Grand Prix."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e5",
+        "target_id": "e3",
+        "relationship_type": "ROUND_OF",
+        "description": "Round 14 is a round of the 2012 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e4",
+        "relationship_type": "HELD_AT",
+        "description": "Round 14 is held at the Singapore Marina Bay Street Circuit.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

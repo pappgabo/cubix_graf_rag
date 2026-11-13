@@ -1,0 +1,82 @@
+{
+  "chunk_id": "driver-sebastian-vettel#41",
+  "doc_id": "driver-sebastian-vettel",
+  "document_title": "Sebastian Vettel",
+  "section": "2010: Youngest World Champion",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/Sebastian_Vettel",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "c75d23a1abab156c3daf7d4b88754564799435702d65b789d2a8ac5ebda4e0f0",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "entity_candidates": 3,
+  "entities_accepted": 4,
+  "entities_rejected": 0,
+  "relationship_candidates": 2,
+  "relationships_accepted": 2,
+  "relationships_rejected": 1,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "FOR_TEAM does not allow Driver -> GrandPrix"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 0,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e2; description kept"
+    }
+  ],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Sebastian Vettel",
+        "entity_type": "Driver",
+        "description": "Aged 23 years and 98 days, Vettel became the youngest Grand Prix driver to win at the same track on two occasions."
+      },
+      {
+        "local_id": "e2",
+        "name": "Korean Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The inaugural Korean Grand Prix where Vettel led the first 45 laps before retiring with engine failure."
+      },
+      {
+        "local_id": "e3",
+        "name": "Fernando Alonso",
+        "entity_type": "Driver",
+        "description": "Championship rival who won the race after Vettel's retirement."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Sebastian Vettel at Korean Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Vettel led the first 45 laps before retiring with engine failure at the inaugural Korean Grand Prix."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Vettel led the first 45 laps before retiring with engine failure at the inaugural Korean Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e2",
+        "relationship_type": "AT_RACE",
+        "description": "Vettel led the first 45 laps before retiring with engine failure at the inaugural Korean Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

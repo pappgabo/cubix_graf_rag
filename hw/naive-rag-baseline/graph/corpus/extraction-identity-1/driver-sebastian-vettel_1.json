@@ -1,0 +1,87 @@
+{
+  "chunk_id": "driver-sebastian-vettel#1",
+  "doc_id": "driver-sebastian-vettel",
+  "document_title": "Sebastian Vettel",
+  "section": null,
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/Sebastian_Vettel",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "0aae300345fd0a5aa4a6949582bcae22281d7f637e6b2c214c8020a43236a26e",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "entity_candidates": 5,
+  "entities_accepted": 5,
+  "entities_rejected": 0,
+  "relationship_candidates": 2,
+  "relationships_accepted": 2,
+  "relationships_rejected": 0,
+  "rejections": [],
+  "alignments": [
+    {
+      "index": 0,
+      "action": "clear_redundant_season_year",
+      "detail": "RACED_IN year 2004 already named by Season 'e4'; from_year and to_year cleared"
+    },
+    {
+      "index": 1,
+      "action": "clear_redundant_season_year",
+      "detail": "RACED_IN year 2005 already named by Season 'e5'; from_year and to_year cleared"
+    }
+  ],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Sebastian Vettel",
+        "entity_type": "Driver",
+        "description": "Born and raised in Heppenheim, Vettel began competitive kart racing aged eight. After a successful karting career—culminating in his victory at the junior European Championship in 2001—Vettel graduated to junior formulae."
+      },
+      {
+        "local_id": "e2",
+        "name": "Formula BMW ADAC",
+        "entity_type": "Car",
+        "description": "Vettel started his career in Formula BMW ADAC, dominating the championship in 2004 with 18 wins from 20 races."
+      },
+      {
+        "local_id": "e3",
+        "name": "Formula 3 Euro Series",
+        "entity_type": "Car",
+        "description": "Vettel progressed to the Formula 3 Euro Series in 2005, taking several victories and finishing runner-up to Paul di Resta the following season."
+      },
+      {
+        "local_id": "e4",
+        "name": "2004",
+        "entity_type": "Season",
+        "description": "Vettel dominated the Formula BMW ADAC championship in 2004 with 18 wins from 20 races."
+      },
+      {
+        "local_id": "e5",
+        "name": "2005",
+        "entity_type": "Season",
+        "description": "Vettel progressed to the Formula 3 Euro Series in 2005."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e2",
+        "target_id": "e4",
+        "relationship_type": "RACED_IN",
+        "description": "Vettel raced in the Formula BMW ADAC in 2004.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e5",
+        "relationship_type": "RACED_IN",
+        "description": "Vettel raced in the Formula 3 Euro Series in 2005.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

@@ -1,0 +1,140 @@
+{
+  "chunk_id": "driver-jenson-button#24",
+  "doc_id": "driver-jenson-button",
+  "document_title": "Jenson Button",
+  "section": "Formula One career > BAR/Honda/Brawn (2003–2009) > BAR (2003–2005)",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "20f2f75a7294381023cf1a669426b1b54bbe128db186036cc9ee6679f56a10f8",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Jenson Button",
+        "entity_type": "Driver",
+        "description": "A British racing driver who competed in Formula One."
+      },
+      {
+        "local_id": "e2",
+        "name": "BAR",
+        "entity_type": "Team",
+        "description": "British American Racing, a Formula One team."
+      },
+      {
+        "local_id": "e3",
+        "name": "2005",
+        "entity_type": "Season",
+        "description": "The Formula One season in which Jenson Button competed."
+      },
+      {
+        "local_id": "e4",
+        "name": "San Marino Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula One race held in San Marino."
+      },
+      {
+        "local_id": "e5",
+        "name": "Montreal",
+        "entity_type": "Circuit",
+        "description": "The racing circuit where Jenson Button took his second pole position."
+      },
+      {
+        "local_id": "e6",
+        "name": "Germany",
+        "entity_type": "GrandPrix",
+        "description": "A Formula One race held in Germany."
+      },
+      {
+        "local_id": "e7",
+        "name": "Belgium",
+        "entity_type": "GrandPrix",
+        "description": "A Formula One race held in Belgium."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Jenson Button drove for BAR during the 2005 season.",
+        "from_year": 2003,
+        "to_year": 2005,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e3",
+        "relationship_type": "ENTERED",
+        "description": "BAR entered the 2005 Formula One season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e3",
+        "relationship_type": "ROUND_OF",
+        "description": "The San Marino Grand Prix was a round of the 2005 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e6",
+        "target_id": "e3",
+        "relationship_type": "ROUND_OF",
+        "description": "The German Grand Prix was a round of the 2005 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e7",
+        "target_id": "e3",
+        "relationship_type": "ROUND_OF",
+        "description": "The Belgian Grand Prix was a round of the 2005 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 7,
+  "entities_accepted": 7,
+  "entities_rejected": 0,
+  "relationship_candidates": 6,
+  "relationships_accepted": 5,
+  "relationships_rejected": 1,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "ROUND_OF does not allow Circuit -> Season"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 1,
+      "action": "clear_redundant_season_year",
+      "detail": "ENTERED year 2005 already named by Season 'e3'; from_year and to_year cleared"
+    },
+    {
+      "index": 2,
+      "action": "clear_redundant_season_year",
+      "detail": "ROUND_OF year 2005 already named by Season 'e3'; from_year and to_year cleared"
+    },
+    {
+      "index": 4,
+      "action": "clear_redundant_season_year",
+      "detail": "ROUND_OF year 2005 already named by Season 'e3'; from_year and to_year cleared"
+    },
+    {
+      "index": 5,
+      "action": "clear_redundant_season_year",
+      "detail": "ROUND_OF year 2005 already named by Season 'e3'; from_year and to_year cleared"
+    }
+  ]
+}

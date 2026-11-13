@@ -1,0 +1,69 @@
+{
+  "chunk_id": "driver-nico-rosberg#30",
+  "doc_id": "driver-nico-rosberg",
+  "document_title": "Nico Rosberg",
+  "section": "Nico Rosberg > Junior car career (2001–2005)",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/Nico_Rosberg",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "26eef29491ad6d2937dacb45be71e3bf061d33b5bc1d9856c3fef2a66e1b9b9d",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "ROUND_OF does not allow Title -> Circuit"
+    }
+  ],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Nico Rosberg",
+        "entity_type": "Driver",
+        "description": "A Formula One driver who won the first GP2 Series title."
+      },
+      {
+        "local_id": "e2",
+        "name": "GP2 Series",
+        "entity_type": "Title",
+        "description": "The championship title won by Nico Rosberg."
+      },
+      {
+        "local_id": "e3",
+        "name": "Bahrain International Circuit",
+        "entity_type": "Circuit",
+        "description": "The circuit where the season-ending round of the GP2 Series took place."
+      },
+      {
+        "local_id": "e4",
+        "name": "2005",
+        "entity_type": "Season",
+        "description": "The season in which Nico Rosberg won the GP2 Series title."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "WON",
+        "description": "Nico Rosberg won the GP2 Series title.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e4",
+        "relationship_type": "AWARDED_IN",
+        "description": "The GP2 Series title was awarded in the 2005 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

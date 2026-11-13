@@ -1,0 +1,204 @@
+{
+  "chunk_id": "team-williams-racing#85",
+  "doc_id": "team-williams-racing",
+  "document_title": "Williams Racing",
+  "section": "Williams Racing > Return to Cosworth engines (2010–2011) > Williams Racing > 2010–2011 seasons",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "55e451cafd4f86691e28039ca0bd7c864f082c83c01ebd926de501001be6596a",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Williams Racing",
+        "entity_type": "Team",
+        "description": "A Formula 1 team."
+      },
+      {
+        "local_id": "e2",
+        "name": "Nico Hülkenberg",
+        "entity_type": "Driver",
+        "description": "A Formula 1 driver who raced for Williams in 2010."
+      },
+      {
+        "local_id": "e3",
+        "name": "Pastor Maldonado",
+        "entity_type": "Driver",
+        "description": "A Formula 1 driver who replaced Hülkenberg at Williams in 2011."
+      },
+      {
+        "local_id": "e4",
+        "name": "Rubens Barrichello",
+        "entity_type": "Driver",
+        "description": "A Formula 1 driver who raced for Williams in 2011."
+      },
+      {
+        "local_id": "e5",
+        "name": "2010",
+        "entity_type": "Season",
+        "description": "The Formula 1 season in which Williams FW32 was used."
+      },
+      {
+        "local_id": "e6",
+        "name": "2011",
+        "entity_type": "Season",
+        "description": "The Formula 1 season in which Williams had a poor performance."
+      },
+      {
+        "local_id": "e7",
+        "name": "Brazilian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula 1 race where Hülkenberg took pole position."
+      },
+      {
+        "local_id": "e8",
+        "name": "Williams FW32",
+        "entity_type": "Car",
+        "description": "The car used by Williams in the 2010 season."
+      },
+      {
+        "local_id": "e9",
+        "name": "Constructors' Championship",
+        "entity_type": "Title",
+        "description": "The championship title for teams in Formula 1."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Nico Hülkenberg at Brazilian Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Nico Hülkenberg achieved pole position at the Brazilian Grand Prix."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e5",
+        "relationship_type": "ENTERED",
+        "description": "Williams Racing entered the 2010 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e6",
+        "relationship_type": "ENTERED",
+        "description": "Williams Racing entered the 2011 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e1",
+        "relationship_type": "DROVE_FOR",
+        "description": "Nico Hülkenberg drove for Williams Racing.",
+        "from_year": 2010,
+        "to_year": 2010,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e1",
+        "relationship_type": "DROVE_FOR",
+        "description": "Pastor Maldonado drove for Williams Racing.",
+        "from_year": 2011,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e1",
+        "relationship_type": "DROVE_FOR",
+        "description": "Rubens Barrichello drove for Williams Racing.",
+        "from_year": 2011,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Nico Hülkenberg achieved pole position at the Brazilian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e7",
+        "relationship_type": "AT_RACE",
+        "description": "Nico Hülkenberg achieved pole position at the Brazilian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e9",
+        "relationship_type": "WON",
+        "description": "Williams Racing ended with a ninth place in the Constructors' Championship in 2011.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e9",
+        "target_id": "e6",
+        "relationship_type": "AWARDED_IN",
+        "description": "Williams Racing ended with a ninth place in the Constructors' Championship in 2011.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 9,
+  "entities_accepted": 10,
+  "entities_rejected": 0,
+  "relationship_candidates": 10,
+  "relationships_accepted": 9,
+  "relationships_rejected": 3,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "FIELDED is not temporal; from_year=2010, to_year=None, role=None cannot be stored without dropping them"
+    },
+    {
+      "element": "relationship",
+      "index": 7,
+      "reason": "FOR_TEAM does not allow Driver -> Team"
+    },
+    {
+      "element": "relationship",
+      "index": 8,
+      "reason": "FOR_TEAM does not allow Driver -> Team"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 1,
+      "action": "clear_redundant_season_year",
+      "detail": "ENTERED year 2010 already named by Season 'e5'; from_year and to_year cleared"
+    },
+    {
+      "index": 2,
+      "action": "clear_redundant_season_year",
+      "detail": "ENTERED year 2011 already named by Season 'e6'; from_year and to_year cleared"
+    },
+    {
+      "index": 6,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e7; description kept"
+    },
+    {
+      "index": 9,
+      "action": "move_won_year",
+      "detail": "WON year 2011 stored as e9 -AWARDED_IN-> e6; from_year and to_year cleared; description kept"
+    }
+  ]
+}

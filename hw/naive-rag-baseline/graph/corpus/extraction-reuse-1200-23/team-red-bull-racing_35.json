@@ -1,0 +1,189 @@
+{
+  "chunk_id": "team-red-bull-racing#35",
+  "doc_id": "team-red-bull-racing",
+  "document_title": "Red Bull Racing",
+  "section": "2013 season",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "8c3c16e0f08fb9caf8bba716171756bfa072f0031163f360dc8c9918ef65ec58",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Sebastian Vettel",
+        "entity_type": "Driver",
+        "description": "A driver for Red Bull Racing during the 2013 season."
+      },
+      {
+        "local_id": "e2",
+        "name": "Mark Webber",
+        "entity_type": "Driver",
+        "description": "A driver for Red Bull Racing during the 2013 season."
+      },
+      {
+        "local_id": "e3",
+        "name": "Red Bull Racing",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that entered cars in the 2013 season."
+      },
+      {
+        "local_id": "e4",
+        "name": "RB9",
+        "entity_type": "Car",
+        "description": "The car model fielded by Red Bull Racing in the 2013 season."
+      },
+      {
+        "local_id": "e5",
+        "name": "2013",
+        "entity_type": "Season",
+        "description": "The Formula 1 championship season."
+      },
+      {
+        "local_id": "e6",
+        "name": "Australian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The first race of the 2013 season."
+      },
+      {
+        "local_id": "e7",
+        "name": "Malaysian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The second race of the 2013 season."
+      },
+      {
+        "local_id": "e8",
+        "name": "Chinese Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The third race of the 2013 season."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e3",
+        "relationship_type": "DROVE_FOR",
+        "description": "Sebastian Vettel drove for Red Bull Racing.",
+        "from_year": 2013,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e3",
+        "relationship_type": "DROVE_FOR",
+        "description": "Mark Webber drove for Red Bull Racing.",
+        "from_year": 2013,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e5",
+        "relationship_type": "RACED_IN",
+        "description": "The RB9 raced in the 2013 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e5",
+        "relationship_type": "ENTERED",
+        "description": "Red Bull Racing entered the 2013 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e6",
+        "target_id": "e5",
+        "relationship_type": "ROUND_OF",
+        "description": "The Australian Grand Prix is a round of the 2013 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e7",
+        "target_id": "e5",
+        "relationship_type": "ROUND_OF",
+        "description": "The Malaysian Grand Prix is a round of the 2013 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e8",
+        "target_id": "e5",
+        "relationship_type": "ROUND_OF",
+        "description": "The Chinese Grand Prix is a round of the 2013 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 8,
+  "entities_accepted": 8,
+  "entities_rejected": 0,
+  "relationship_candidates": 12,
+  "relationships_accepted": 7,
+  "relationships_rejected": 5,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "FIELDED is not temporal; from_year=2013, to_year=None, role=None cannot be stored without dropping them"
+    },
+    {
+      "element": "relationship",
+      "index": 8,
+      "reason": "ACHIEVED Driver -> GrandPrix has from_year=2013, to_year=None, role=None; the year or role cannot be stored on the reified result"
+    },
+    {
+      "element": "relationship",
+      "index": 9,
+      "reason": "ACHIEVED Driver -> GrandPrix has from_year=2013, to_year=None, role=None; the year or role cannot be stored on the reified result"
+    },
+    {
+      "element": "relationship",
+      "index": 10,
+      "reason": "ACHIEVED Driver -> GrandPrix has from_year=2013, to_year=None, role=None; the year or role cannot be stored on the reified result"
+    },
+    {
+      "element": "relationship",
+      "index": 11,
+      "reason": "ACHIEVED Driver -> GrandPrix has from_year=2013, to_year=None, role=None; the year or role cannot be stored on the reified result"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 3,
+      "action": "clear_redundant_season_year",
+      "detail": "RACED_IN year 2013 already named by Season 'e5'; from_year and to_year cleared"
+    },
+    {
+      "index": 4,
+      "action": "clear_redundant_season_year",
+      "detail": "ENTERED year 2013 already named by Season 'e5'; from_year and to_year cleared"
+    },
+    {
+      "index": 5,
+      "action": "clear_redundant_season_year",
+      "detail": "ROUND_OF year 2013 already named by Season 'e5'; from_year and to_year cleared"
+    },
+    {
+      "index": 6,
+      "action": "clear_redundant_season_year",
+      "detail": "ROUND_OF year 2013 already named by Season 'e5'; from_year and to_year cleared"
+    },
+    {
+      "index": 7,
+      "action": "clear_redundant_season_year",
+      "detail": "ROUND_OF year 2013 already named by Season 'e5'; from_year and to_year cleared"
+    }
+  ]
+}

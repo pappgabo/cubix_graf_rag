@@ -1,0 +1,182 @@
+{
+  "chunk_id": "season-2016-formula-one-world-championship#31",
+  "doc_id": "season-2016-formula-one-world-championship",
+  "document_title": "2016 Formula One World Championship",
+  "section": "European rounds",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "3a707d45be9277264981d48aad52b301c39cac06f6c073e1c6dcbf578a045dd0",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Lewis Hamilton",
+        "entity_type": "Driver",
+        "description": "A driver who took pole position in Austria and won the race."
+      },
+      {
+        "local_id": "e2",
+        "name": "Rosberg",
+        "entity_type": "Driver",
+        "description": "A driver who started sixth in Austria and finished fourth after a penalty."
+      },
+      {
+        "local_id": "e3",
+        "name": "Verstappen",
+        "entity_type": "Driver",
+        "description": "A driver who finished ahead of Rosberg in Austria."
+      },
+      {
+        "local_id": "e4",
+        "name": "Räikkönen",
+        "entity_type": "Driver",
+        "description": "A driver who finished ahead of Rosberg in Austria."
+      },
+      {
+        "local_id": "e5",
+        "name": "Mercedes-AMG Petronas Formula One Team",
+        "entity_type": "Team",
+        "description": "The team for which Hamilton and Rosberg drove."
+      },
+      {
+        "local_id": "e6",
+        "name": "Austria",
+        "entity_type": "GrandPrix",
+        "description": "The Grand Prix where Hamilton won and Rosberg finished fourth."
+      },
+      {
+        "local_id": "e7",
+        "name": "Great Britain",
+        "entity_type": "GrandPrix",
+        "description": "The Grand Prix where Hamilton reduced the deficit to Rosberg."
+      },
+      {
+        "local_id": "e8",
+        "name": "2016",
+        "entity_type": "Season",
+        "description": "The season of the Formula One World Championship."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Hamilton at Austria",
+        "entity_type": "RaceResult",
+        "description": "Hamilton won the race in Austria."
+      },
+      {
+        "local_id": "rr2",
+        "name": "Rosberg at Austria",
+        "entity_type": "RaceResult",
+        "description": "Rosberg finished fourth in Austria."
+      },
+      {
+        "local_id": "rr3",
+        "name": "Hamilton at Great Britain",
+        "entity_type": "RaceResult",
+        "description": "Hamilton reduced the deficit to Rosberg in Great Britain."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Hamilton won the race in Austria.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e6",
+        "relationship_type": "AT_RACE",
+        "description": "Hamilton won the race in Austria.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "rr2",
+        "relationship_type": "ACHIEVED",
+        "description": "Rosberg finished fourth in Austria.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr2",
+        "target_id": "e6",
+        "relationship_type": "AT_RACE",
+        "description": "Rosberg finished fourth in Austria.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e8",
+        "relationship_type": "ENTERED",
+        "description": "Mercedes took part in the 2016 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr3",
+        "relationship_type": "ACHIEVED",
+        "description": "Hamilton reduced the deficit to Rosberg in Great Britain.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr3",
+        "target_id": "e7",
+        "relationship_type": "AT_RACE",
+        "description": "Hamilton reduced the deficit to Rosberg in Great Britain.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 8,
+  "entities_accepted": 11,
+  "entities_rejected": 0,
+  "relationship_candidates": 6,
+  "relationships_accepted": 7,
+  "relationships_rejected": 2,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "FOR_TEAM does not allow Team -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 8,
+      "reason": "ENTERED does not allow Team -> GrandPrix"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 0,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e6; description kept"
+    },
+    {
+      "index": 1,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr2 -AT_RACE-> e6; description kept"
+    },
+    {
+      "index": 4,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr3 -AT_RACE-> e7; description kept"
+    }
+  ]
+}

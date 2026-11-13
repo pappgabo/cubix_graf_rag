@@ -1,0 +1,124 @@
+{
+  "chunk_id": "season-2016-formula-one-world-championship#80",
+  "doc_id": "season-2016-formula-one-world-championship",
+  "document_title": "2016 Formula One World Championship",
+  "section": "European rounds",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/2016_Formula_One_World_Championship",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "4c40701772597ea943238372d2477f4422c3977092d834a781e09b17a10f6df8",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "DROVE_FOR does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "DROVE_FOR does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "DROVE_FOR does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "DROVE_FOR does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "DROVE_FOR does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 5,
+      "reason": "DROVE_FOR does not allow Driver -> Season"
+    }
+  ],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Nico Rosberg",
+        "entity_type": "Driver",
+        "description": "Led the race until the chequered flag."
+      },
+      {
+        "local_id": "e2",
+        "name": "Lewis Hamilton",
+        "entity_type": "Driver",
+        "description": "Finished third after being unable to catch Daniel Ricciardo."
+      },
+      {
+        "local_id": "e3",
+        "name": "Daniel Ricciardo",
+        "entity_type": "Driver",
+        "description": "Finished ahead of Lewis Hamilton."
+      },
+      {
+        "local_id": "e4",
+        "name": "Max Verstappen",
+        "entity_type": "Driver",
+        "description": "Subject to criticism over driving tactics."
+      },
+      {
+        "local_id": "e5",
+        "name": "Kimi Räikkönen",
+        "entity_type": "Driver",
+        "description": "Involved in incidents with Max Verstappen."
+      },
+      {
+        "local_id": "e6",
+        "name": "Sergio Pérez",
+        "entity_type": "Driver",
+        "description": "Involved in incidents with Max Verstappen."
+      },
+      {
+        "local_id": "e7",
+        "name": "Esteban Ocon",
+        "entity_type": "Driver",
+        "description": "Finished sixteenth on debut for MRT."
+      },
+      {
+        "local_id": "e8",
+        "name": "MRT",
+        "entity_type": "Team",
+        "description": "Team for which Esteban Ocon made his debut."
+      },
+      {
+        "local_id": "e9",
+        "name": "2016",
+        "entity_type": "Season",
+        "description": "The championship year."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e7",
+        "target_id": "e8",
+        "relationship_type": "DROVE_FOR",
+        "description": "Esteban Ocon drove for MRT.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e8",
+        "target_id": "e9",
+        "relationship_type": "ENTERED",
+        "description": "MRT participated in the 2016 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

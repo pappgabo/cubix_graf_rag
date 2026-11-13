@@ -1,0 +1,104 @@
+{
+  "chunk_id": "driver-fernando-alonso#40",
+  "doc_id": "driver-fernando-alonso",
+  "document_title": "Fernando Alonso",
+  "section": "McLaren and second stint with Renault (2007–2009)",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/Fernando_Alonso",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "282ed11fe81333d8bf96c94b3c6ade430c1e4cb05ec3962845a59f42a6145101",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "entity_candidates": 5,
+  "entities_accepted": 6,
+  "entities_rejected": 0,
+  "relationship_candidates": 4,
+  "relationships_accepted": 2,
+  "relationships_rejected": 3,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "RACED_IN does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "RACED_IN does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "RACED_IN does not allow Driver -> Season"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 0,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e4; description kept"
+    }
+  ],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Fernando Alonso",
+        "entity_type": "Driver",
+        "description": "A Formula One driver who competed for McLaren and Renault."
+      },
+      {
+        "local_id": "e2",
+        "name": "Kimi Räikkönen",
+        "entity_type": "Driver",
+        "description": "A Formula One driver who was competing against Alonso in the championship."
+      },
+      {
+        "local_id": "e3",
+        "name": "Lewis Hamilton",
+        "entity_type": "Driver",
+        "description": "A Formula One driver who was competing against Alonso in the championship."
+      },
+      {
+        "local_id": "e4",
+        "name": "Brazilian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The final round of the season where Alonso needed to win to secure his title."
+      },
+      {
+        "local_id": "e5",
+        "name": "2007",
+        "entity_type": "Season",
+        "description": "The championship year relevant to the events described."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Fernando Alonso at Brazilian Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Alonso finished third in the Brazilian Grand Prix."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Alonso finished third in the Brazilian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e4",
+        "relationship_type": "AT_RACE",
+        "description": "Alonso finished third in the Brazilian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

@@ -1,0 +1,112 @@
+{
+  "chunk_id": "season-2012-formula-one-world-championship#34",
+  "doc_id": "season-2012-formula-one-world-championship",
+  "document_title": "2012 Formula One World Championship",
+  "section": "Race summaries > Pre-season testing – Jerez de la Frontera and Barcelona",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "0eb0bdc0a7db92fb1badb6d9966ab04b83267c2b0cc2a35bda30e99e69abf7af",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "2012",
+        "entity_type": "Season",
+        "description": "The 2012 Formula One season."
+      },
+      {
+        "local_id": "e2",
+        "name": "Jerez de la Frontera",
+        "entity_type": "Circuit",
+        "description": "A circuit where pre-season testing took place."
+      },
+      {
+        "local_id": "e3",
+        "name": "Barcelona",
+        "entity_type": "Circuit",
+        "description": "A circuit where pre-season testing took place."
+      },
+      {
+        "local_id": "e4",
+        "name": "Lotus F1",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that discovered a critical fault in their chassis."
+      },
+      {
+        "local_id": "e5",
+        "name": "HRT",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that was unable to complete any mileage with their 2012 car."
+      },
+      {
+        "local_id": "e6",
+        "name": "Marussia",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that was unable to complete any mileage with their 2012 car."
+      },
+      {
+        "local_id": "e7",
+        "name": "HRT F112",
+        "entity_type": "Car",
+        "description": "The car model used by HRT in the 2012 season."
+      },
+      {
+        "local_id": "e8",
+        "name": "Marussia MR01",
+        "entity_type": "Car",
+        "description": "The car model used by Marussia in the 2012 season."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e4",
+        "target_id": "e7",
+        "relationship_type": "FIELDED",
+        "description": "Lotus F1 fielded the HRT F112 car.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e7",
+        "relationship_type": "FIELDED",
+        "description": "HRT fielded the HRT F112 car.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e6",
+        "target_id": "e8",
+        "relationship_type": "FIELDED",
+        "description": "Marussia fielded the Marussia MR01 car.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 8,
+  "entities_accepted": 8,
+  "entities_rejected": 0,
+  "relationship_candidates": 5,
+  "relationships_accepted": 3,
+  "relationships_rejected": 2,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "ROUND_OF does not allow Season -> Circuit"
+    },
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "ROUND_OF does not allow Season -> Circuit"
+    }
+  ],
+  "alignments": []
+}

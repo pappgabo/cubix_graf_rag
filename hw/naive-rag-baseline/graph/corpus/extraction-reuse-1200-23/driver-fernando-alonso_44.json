@@ -1,0 +1,151 @@
+{
+  "chunk_id": "driver-fernando-alonso#44",
+  "doc_id": "driver-fernando-alonso",
+  "document_title": "Fernando Alonso",
+  "section": "McLaren Racing (2019)",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "2fff12687bb8c2e811002628d9d01064e4b8e4fd0c110159191ede8019cb9aaa",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Fernando Alonso",
+        "entity_type": "Driver",
+        "description": "A Formula One driver."
+      },
+      {
+        "local_id": "e2",
+        "name": "McLaren Racing",
+        "entity_type": "Team",
+        "description": "A Formula One team."
+      },
+      {
+        "local_id": "e3",
+        "name": "2019",
+        "entity_type": "Season",
+        "description": "The 2019 Formula One season."
+      },
+      {
+        "local_id": "e4",
+        "name": "Indianapolis 500",
+        "entity_type": "GrandPrix",
+        "description": "A prestigious race in the IndyCar Series."
+      },
+      {
+        "local_id": "e5",
+        "name": "Dallara IR18-Chevrolet",
+        "entity_type": "Car",
+        "description": "The car model Alonso was set to race."
+      },
+      {
+        "local_id": "e6",
+        "name": "Chevrolet",
+        "entity_type": "PowerUnit",
+        "description": "The engine supplier for Alonso's car."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Fernando Alonso at Indianapolis 500",
+        "entity_type": "RaceResult",
+        "description": "Fernando Alonso did not qualify for the Indianapolis 500."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e2",
+        "target_id": "e3",
+        "relationship_type": "ENTERED",
+        "description": "McLaren Racing entered the 2019 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e5",
+        "relationship_type": "FIELDED",
+        "description": "McLaren Racing fielded the Dallara IR18-Chevrolet.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e6",
+        "relationship_type": "POWERED_BY",
+        "description": "The Dallara IR18-Chevrolet was powered by Chevrolet.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e3",
+        "relationship_type": "RACED_IN",
+        "description": "The Dallara IR18-Chevrolet raced in the 2019 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Fernando Alonso drove for McLaren Racing.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Fernando Alonso did not qualify for the Indianapolis 500.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e4",
+        "relationship_type": "AT_RACE",
+        "description": "Fernando Alonso did not qualify for the Indianapolis 500.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e3",
+        "relationship_type": "ROUND_OF",
+        "description": "The Indianapolis 500 was a round of the 2019 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 6,
+  "entities_accepted": 7,
+  "entities_rejected": 0,
+  "relationship_candidates": 7,
+  "relationships_accepted": 8,
+  "relationships_rejected": 0,
+  "rejections": [],
+  "alignments": [
+    {
+      "index": 0,
+      "action": "clear_redundant_season_year",
+      "detail": "ENTERED year 2019 already named by Season 'e3'; from_year and to_year cleared"
+    },
+    {
+      "index": 5,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e4; description kept"
+    }
+  ]
+}

@@ -1,0 +1,98 @@
+{
+  "chunk_id": "season-2016-formula-one-world-championship#71",
+  "doc_id": "season-2016-formula-one-world-championship",
+  "document_title": "2016 Formula One World Championship",
+  "section": "European rounds",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/2016_Formula_One_World_Championship",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "3e882c7ecf05415003b659b4ef0a78a02ee50a09468b8ad70df9156e11461bf4",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "ACHIEVED does not allow Driver -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "ACHIEVED does not allow Driver -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "ACHIEVED does not allow Driver -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "ACHIEVED does not allow Driver -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "ACHIEVED does not allow Driver -> GrandPrix"
+    }
+  ],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Valtteri Bottas",
+        "entity_type": "Driver",
+        "description": "Finished third, his first podium of the season."
+      },
+      {
+        "local_id": "e2",
+        "name": "Nico Rosberg",
+        "entity_type": "Driver",
+        "description": "Won the returning European Grand Prix with his second grand slam of the season and of his career."
+      },
+      {
+        "local_id": "e3",
+        "name": "Sebastian Vettel",
+        "entity_type": "Driver",
+        "description": "Finished second in the European Grand Prix."
+      },
+      {
+        "local_id": "e4",
+        "name": "Sergio Pérez",
+        "entity_type": "Driver",
+        "description": "Finished third in the European Grand Prix."
+      },
+      {
+        "local_id": "e5",
+        "name": "Lewis Hamilton",
+        "entity_type": "Driver",
+        "description": "Finished fifth after struggling with a software issue."
+      },
+      {
+        "local_id": "e6",
+        "name": "European Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A race where Rosberg won."
+      },
+      {
+        "local_id": "e7",
+        "name": "2016",
+        "entity_type": "Season",
+        "description": "The season of the European Grand Prix."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e6",
+        "target_id": "e7",
+        "relationship_type": "ROUND_OF",
+        "description": "The European Grand Prix is a round of the 2016 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

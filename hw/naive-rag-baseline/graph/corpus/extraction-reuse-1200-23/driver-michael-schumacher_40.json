@@ -1,0 +1,122 @@
+{
+  "chunk_id": "driver-michael-schumacher#40",
+  "doc_id": "driver-michael-schumacher",
+  "document_title": "Michael Schumacher",
+  "section": null,
+  "page": 8,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "d0d91f6504e6c7868e419373a4490195c1851a452d812599423784fb0882439a",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Michael Schumacher",
+        "entity_type": "Driver",
+        "description": "A German racing driver who competed in Formula One."
+      },
+      {
+        "local_id": "e2",
+        "name": "Scuderia Ferrari",
+        "entity_type": "Team",
+        "description": "An Italian Formula One team."
+      },
+      {
+        "local_id": "e3",
+        "name": "2000",
+        "entity_type": "Season",
+        "description": "The 2000 Formula One season."
+      },
+      {
+        "local_id": "e4",
+        "name": "French Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula One race held in France."
+      },
+      {
+        "local_id": "e5",
+        "name": "Felipe Massa",
+        "entity_type": "Driver",
+        "description": "A Brazilian racing driver who competed in Formula One."
+      },
+      {
+        "local_id": "e6",
+        "name": "Giancarlo Fisichella",
+        "entity_type": "Driver",
+        "description": "An Italian racing driver who competed in Formula One."
+      },
+      {
+        "local_id": "e7",
+        "name": "Kimi Räikkönen",
+        "entity_type": "Driver",
+        "description": "A Finnish racing driver who competed in Formula One."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Michael Schumacher drove for Ferrari.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e3",
+        "relationship_type": "ENTERED",
+        "description": "Ferrari entered the 2000 Formula One season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e3",
+        "relationship_type": "ROUND_OF",
+        "description": "The French Grand Prix is a round of the 2000 Formula One season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e5",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Michael Schumacher was teammates with Felipe Massa.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e6",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Michael Schumacher was teammates with Giancarlo Fisichella.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e7",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Michael Schumacher was teammates with Kimi Räikkönen.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 7,
+  "entities_accepted": 7,
+  "entities_rejected": 0,
+  "relationship_candidates": 6,
+  "relationships_accepted": 6,
+  "relationships_rejected": 0,
+  "rejections": [],
+  "alignments": []
+}

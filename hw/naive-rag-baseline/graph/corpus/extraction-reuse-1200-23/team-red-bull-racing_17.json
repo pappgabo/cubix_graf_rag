@@ -1,0 +1,183 @@
+{
+  "chunk_id": "team-red-bull-racing#17",
+  "doc_id": "team-red-bull-racing",
+  "document_title": "Red Bull Racing",
+  "section": "2008 season",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "177f5c4e4166ac01700255c278c9892fefac1551f53df57cdc14627d075f6603",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Red Bull Racing",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that entered cars."
+      },
+      {
+        "local_id": "e2",
+        "name": "Sébastien Buemi",
+        "entity_type": "Driver",
+        "description": "A driver who was the test and reserve driver for Red Bull in 2008."
+      },
+      {
+        "local_id": "e3",
+        "name": "Mark Webber",
+        "entity_type": "Driver",
+        "description": "A driver for Red Bull who retired from the opening round of the 2008 season."
+      },
+      {
+        "local_id": "e4",
+        "name": "David Coulthard",
+        "entity_type": "Driver",
+        "description": "A driver for Red Bull who achieved a 3rd place at Canada in the 2008 season."
+      },
+      {
+        "local_id": "e5",
+        "name": "RB4",
+        "entity_type": "Car",
+        "description": "The car model presented by Red Bull for the 2008 season."
+      },
+      {
+        "local_id": "e6",
+        "name": "2008",
+        "entity_type": "Season",
+        "description": "The Formula 1 season in which Red Bull Racing competed."
+      },
+      {
+        "local_id": "e7",
+        "name": "Jerez",
+        "entity_type": "Circuit",
+        "description": "The circuit where Red Bull presented the RB4."
+      },
+      {
+        "local_id": "e8",
+        "name": "Canada",
+        "entity_type": "GrandPrix",
+        "description": "The Grand Prix where David Coulthard achieved a 3rd place finish."
+      },
+      {
+        "local_id": "e9",
+        "name": "2007 Constructors' Championship",
+        "entity_type": "Season",
+        "description": "The championship in which Red Bull finished 5th."
+      },
+      {
+        "local_id": "e10",
+        "name": "2007 European Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The Grand Prix where Red Bull achieved their last podium before Canada in 2008."
+      },
+      {
+        "local_id": "rr1",
+        "name": "David Coulthard at Canada",
+        "entity_type": "RaceResult",
+        "description": "David Coulthard achieved a 3rd place finish at the Canada Grand Prix."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e6",
+        "relationship_type": "ENTERED",
+        "description": "Red Bull Racing took part in the 2008 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e5",
+        "relationship_type": "FIELDED",
+        "description": "Red Bull Racing entered the RB4 car.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e6",
+        "relationship_type": "RACED_IN",
+        "description": "The RB4 car took part in the 2008 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "David Coulthard achieved a 3rd place finish at the Canada Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e8",
+        "relationship_type": "AT_RACE",
+        "description": "David Coulthard achieved a 3rd place finish at the Canada Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e8",
+        "target_id": "e6",
+        "relationship_type": "ROUND_OF",
+        "description": "The Canada Grand Prix is a round of the 2008 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 10,
+  "entities_accepted": 11,
+  "entities_rejected": 0,
+  "relationship_candidates": 11,
+  "relationships_accepted": 6,
+  "relationships_rejected": 6,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "DROVE_FOR does not allow Team -> Driver"
+    },
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "DROVE_FOR does not allow Team -> Driver"
+    },
+    {
+      "element": "relationship",
+      "index": 7,
+      "reason": "FOR_TEAM does not allow Driver -> Team"
+    },
+    {
+      "element": "relationship",
+      "index": 8,
+      "reason": "FOR_TEAM does not allow Driver -> Team"
+    },
+    {
+      "element": "relationship",
+      "index": 9,
+      "reason": "ROUND_OF does not allow Team -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 11,
+      "reason": "HELD_AT does not allow Circuit -> GrandPrix"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 5,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e8; description kept"
+    }
+  ]
+}

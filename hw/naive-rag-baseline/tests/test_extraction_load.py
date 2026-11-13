@@ -11,18 +11,23 @@ import ast
 import hashlib
 import inspect
 import json
+import tempfile
 import unittest
 from pathlib import Path
 
 from naive_rag.extract_pilot import input_hash
 from naive_rag.extraction_identity import (
+    ALIAS_MAP,
     EmptyNameError,
+    canonical_identity,
     drove_for_rel_key,
     make_entity_key,
     make_rel_key,
     merge_source_ids,
     normalize_name,
 )
+from naive_rag.graph_merge import ALIAS_MAP as MERGE_ALIAS_MAP
+from naive_rag.graph_merge import merged_graph
 from naive_rag.extraction_load import (
     MATCH_CHUNK,
     MERGE_DROVE_FOR,
@@ -39,8 +44,16 @@ from naive_rag.extraction_load import (
     extracted_constraint_statements,
     load_approved_plan,
     load_approved_records,
+    DELETE_EXTRACTED_CYPHER,
+    LayerRejected,
+    PartialLoad,
+    build_extracted_backup,
+    load_validated_corpus,
     plan_approved_load,
     plan_validated_raw,
+    read_extracted_backup,
+    replace_extracted_layer,
+    restore_extracted_backup,
     relationship_uniqueness_supported,
     run_unit_of_work,
     write_plan,
@@ -48,6 +61,7 @@ from naive_rag.extraction_load import (
 from naive_rag.extraction_models import (
     EntityType,
     ExtractionResult,
+    load_saved_extraction,
     validate_extraction,
 )
 
@@ -243,6 +257,163 @@ class EntityKeyTests(unittest.TestCase):
     def test_empty_name_has_no_key(self):
         with self.assertRaises(EmptyNameError):
             make_entity_key(EntityType.Driver, "   ")
+
+    def test_alias_follows_the_key_and_keeps_normalization(self):
+        self.assertIs(MERGE_ALIAS_MAP, ALIAS_MAP)
+        self.assertEqual(
+            make_entity_key(EntityType.Team, "Ferrari"), "Team:ferrari")
+        key, display, name_norm = canonical_identity(
+            EntityType.Team, "Ferrari")
+        self.assertEqual(key, "Team:scuderia ferrari")
+        self.assertEqual(display, "Scuderia Ferrari")
+        self.assertEqual(name_norm, "scuderia ferrari")
+
+
+def _ok_record(chunk_id, entities, relationships):
+    return {
+        "chunk_id": chunk_id,
+        "status": "ok",
+        "result": {"entities": entities, "relationships": relationships},
+    }
+
+
+def _person(local_id, name, description):
+    return {
+        "local_id": local_id,
+        "name": name,
+        "entity_type": "Driver",
+        "description": description,
+    }
+
+
+def _team_entity(local_id, name, description):
+    return {
+        "local_id": local_id,
+        "name": name,
+        "entity_type": "Team",
+        "description": description,
+    }
+
+
+def _drove(source, target, description):
+    return {
+        "source_id": source,
+        "target_id": target,
+        "relationship_type": "DROVE_FOR",
+        "description": description,
+        "from_year": None,
+        "to_year": None,
+        "role": None,
+    }
+
+
+class AliasLoadPlanTests(unittest.TestCase):
+    def test_plan_and_merged_graph_use_the_same_keys(self):
+        record = _ok_record(
+            "sample#0",
+            [
+                _person("e1", "Hamilton", "Short driver form."),
+                _team_entity("e2", "Red Bull", "Short team form."),
+            ],
+            [_drove("e1", "e2", "The text states the spell.")],
+        )
+        plan = plan_validated_raw(record, accept_validated_raw=True)
+        graph = merged_graph([record])
+        self.assertEqual(
+            [entity.entity_key for entity in plan.entities],
+            [node.entity_key for node in graph.nodes],
+        )
+        self.assertEqual(
+            [rel.rel_key for rel in plan.relationships],
+            [edge.rel_key for edge in graph.edges],
+        )
+        self.assertEqual(plan.entities[0].name, "Lewis Hamilton")
+        self.assertEqual(plan.entities[0].name_norm, "lewis hamilton")
+        self.assertEqual(plan.entities[1].name, "Red Bull Racing")
+        self.assertEqual(plan.entities[1].name_norm, "red bull racing")
+        self.assertEqual(plan.chunk_id, "sample#0")
+        self.assertEqual(graph.nodes[0].source_chunk_ids, ("sample#0",))
+
+    def test_placeholder_identity_stays_out_of_the_plan(self):
+        record = _ok_record(
+            "sample#0",
+            [
+                _person("e1", "Hamilton", "Short driver form."),
+                {
+                    "local_id": "e2",
+                    "name": "null",
+                    "entity_type": "Season",
+                    "description": "No specific season year mentioned.",
+                },
+                _team_entity("e3", "Ferrari", "Short team form."),
+            ],
+            [
+                _drove("e1", "e3", "The text states the spell."),
+                {
+                    "source_id": "e3",
+                    "target_id": "e2",
+                    "relationship_type": "ENTERED",
+                    "description": "No year was stored.",
+                    "from_year": None,
+                    "to_year": None,
+                    "role": None,
+                },
+            ],
+        )
+        plan = plan_validated_raw(record, accept_validated_raw=True)
+        graph = merged_graph([record])
+        self.assertEqual(
+            [entity.entity_key for entity in plan.entities],
+            ["Driver:lewis hamilton", "Team:scuderia ferrari"],
+        )
+        self.assertEqual(
+            [node.entity_key for node in graph.nodes],
+            ["Driver:lewis hamilton", "Team:scuderia ferrari"],
+        )
+        self.assertEqual(len(plan.relationships), 1)
+        self.assertEqual(len(graph.edges), 1)
+        self.assertNotIn(
+            "Season:null", [entity.entity_key for entity in plan.entities])
+
+    def test_alias_and_full_name_in_one_chunk_stay_one_entity(self):
+        record = _ok_record(
+            "same#0",
+            [
+                _person("e1", "Hamilton", "Short driver form."),
+                _person("e2", "Lewis Hamilton", "Full driver form."),
+                _team_entity("e3", "Ferrari", "Short team form."),
+                _team_entity("e4", "Scuderia Ferrari", "Full team form."),
+            ],
+            [
+                _drove("e1", "e3", "Alias spell."),
+                _drove("e2", "e4", "Canonical spell."),
+            ],
+        )
+        plan = plan_validated_raw(record, accept_validated_raw=True)
+        graph = merged_graph([record])
+        self.assertEqual(
+            [entity.entity_key for entity in plan.entities],
+            ["Driver:lewis hamilton", "Team:scuderia ferrari"],
+        )
+        self.assertEqual(
+            [entity.entity_key for entity in plan.entities],
+            [node.entity_key for node in graph.nodes],
+        )
+        self.assertEqual(len(plan.relationships), 1)
+        self.assertEqual(
+            plan.relationships[0].rel_key, graph.edges[0].rel_key)
+        self.assertEqual(
+            plan.relationships[0].source_key, "Driver:lewis hamilton")
+        self.assertEqual(
+            plan.relationships[0].target_key, "Team:scuderia ferrari")
+        self.assertEqual(
+            plan.entities[0].description, "Short driver form.\nFull driver form.")
+        self.assertEqual(
+            plan.entities[1].description, "Short team form.\nFull team form.")
+        self.assertEqual(
+            plan.relationships[0].description, "Alias spell.\nCanonical spell.")
+        self.assertEqual(graph.edges[0].source_chunk_ids, ("same#0",))
+        self.assertEqual(plan.chunk_id, "same#0")
 
 
 class RelationshipIdentityTests(unittest.TestCase):
@@ -697,8 +868,12 @@ class SampleFileTests(unittest.TestCase):
         plan = plan_approved_load(review, raw)
         self.assertEqual(
             [entity.entity_key for entity in plan.entities],
-            ["Driver:lewis hamilton", "Team:ferrari"],
+            ["Driver:lewis hamilton", "Team:scuderia ferrari"],
         )
+        self.assertEqual(plan.entities[0].name, "Lewis Hamilton")
+        self.assertEqual(plan.entities[0].name_norm, "lewis hamilton")
+        self.assertEqual(plan.entities[1].name, "Scuderia Ferrari")
+        self.assertEqual(plan.entities[1].name_norm, "scuderia ferrari")
         self.assertEqual(
             plan.relationships[0].description,
             "Lewis Hamilton competes for Ferrari in Formula One.",
@@ -708,7 +883,7 @@ class SampleFileTests(unittest.TestCase):
         self.assertIsNone(plan.relationships[0].role)
         self.assertEqual(
             plan.relationships[0].rel_key,
-            '["Driver:lewis hamilton","DROVE_FOR","Team:ferrari",null,null,null]',
+            '["Driver:lewis hamilton","DROVE_FOR","Team:scuderia ferrari",null,null,null]',
         )
         self.assertEqual(RAW.read_bytes(), raw_before)
         self.assertEqual(REVIEW.read_bytes(), review_before)
@@ -741,6 +916,399 @@ class SampleFileTests(unittest.TestCase):
                 self.assertNotIn("Extracted", line)
                 self.assertNotIn(":Seed", line)
         self.assertTrue(found)
+
+
+class CorpusDryRunTests(unittest.TestCase):
+    def test_dry_run_plans_aliases_and_does_not_open_a_database(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            folder = Path(tmp)
+            ok_path = folder / "ok.json"
+            bad_path = folder / "bad.json"
+            ok_path.write_text(json.dumps({
+                "chunk_id": "a#0",
+                "status": "ok",
+                "result": {
+                    "entities": [
+                        _person("e1", "Hamilton", "Short driver form."),
+                        _team_entity("e2", "Ferrari", "Short team form."),
+                    ],
+                    "relationships": [
+                        _drove("e1", "e2", "The text states the spell."),
+                    ],
+                },
+            }), encoding="utf-8")
+            bad_path.write_text(json.dumps({
+                "chunk_id": "b#0",
+                "status": "unprocessable",
+                "rejections": [{"element": "record", "index": None,
+                                "reason": "missing candidate"}],
+            }), encoding="utf-8")
+            before = {path.name: path.read_bytes() for path in folder.glob("*.json")}
+
+            def opener():
+                raise AssertionError("dry-run opened a database")
+
+            planned = load_validated_corpus(folder, write=False, open_tx=opener)
+            self.assertEqual(len(planned.plans), 1)
+            self.assertEqual(len(planned.failures), 1)
+            self.assertEqual(
+                [entity.entity_key for entity in planned.plans[0].entities],
+                ["Driver:lewis hamilton", "Team:scuderia ferrari"],
+            )
+            self.assertIn("Team:scuderia ferrari", planned.plans[0].relationships[0].rel_key)
+            self.assertIn("SourceRejected", planned.failures[0][1])
+            self.assertNotIn("approved", ok_path.read_text(encoding="utf-8"))
+            self.assertEqual(
+                {path.name: path.read_bytes() for path in folder.glob("*.json")},
+                before,
+            )
+
+    def test_write_uses_the_existing_loader_for_planned_records_only(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            folder = Path(tmp)
+            (folder / "ok.json").write_text(json.dumps({
+                "chunk_id": "a#0",
+                "status": "ok",
+                "result": {"entities": [], "relationships": []},
+            }), encoding="utf-8")
+            (folder / "bad.json").write_text(json.dumps({
+                "chunk_id": "b#0",
+                "status": "error",
+            }), encoding="utf-8")
+            opened = []
+
+            def opener():
+                opened.append("open")
+                return FakeTx(chunk_id="a#0")
+
+            planned = load_validated_corpus(folder, write=True, open_tx=opener)
+            self.assertEqual(len(planned.plans), 1)
+            self.assertEqual(len(planned.failures), 1)
+            self.assertEqual(opened, ["open"])
+            self.assertTrue(opened)
+
+
+def _scope_query(mixed=None):
+    def query_fn(cypher, **_params):
+        if "DETACH DELETE" in cypher:
+            raise AssertionError("dry-run deleted")
+        if "n:Seed" in cypher:
+            return list(mixed or [])
+        if "count(n)" in cypher:
+            return [{"nodes": 1}]
+        if "count(r)" in cypher:
+            return [{"edges": 1}]
+        raise AssertionError(cypher)
+    return query_fn
+
+
+class ExtractedReplaceTests(unittest.TestCase):
+    def _backup(self, folder: Path) -> Path:
+        payload = build_extracted_backup(
+            [{
+                "labels": ["Driver", "Extracted"],
+                "properties": {
+                    "entity_key": "Driver:lewis hamilton",
+                    "name": "Lewis Hamilton",
+                    "name_norm": "lewis hamilton",
+                    "description": "A driver.",
+                },
+            }],
+            [{
+                "type": "MENTIONS",
+                "properties": {},
+                "source_labels": ["Chunk"],
+                "source_properties": {"chunk_id": "a#0"},
+                "target_labels": ["Driver", "Extracted"],
+                "target_properties": {"entity_key": "Driver:lewis hamilton"},
+            }],
+            [],
+        )
+        path = folder / "backup.json"
+        path.write_text(json.dumps(payload), encoding="utf-8")
+        loaded = read_extracted_backup(path)
+        self.assertEqual(loaded["edges"][0]["source"]["chunk_id"], "a#0")
+        self.assertEqual(
+            loaded["edges"][0]["target"]["entity_key"], "Driver:lewis hamilton")
+        self.assertNotIn("elementId", json.dumps(loaded))
+        return path
+
+    def test_dry_run_does_not_delete_or_write(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            folder = root / "in"
+            folder.mkdir()
+            (folder / "ok.json").write_text(json.dumps({
+                "chunk_id": "a#0",
+                "status": "ok",
+                "result": {"entities": [], "relationships": []},
+            }), encoding="utf-8")
+            backup = self._backup(root)
+
+            def opener():
+                raise AssertionError("dry-run opened a write transaction")
+
+            scope, planned = replace_extracted_layer(
+                folder, backup, write=False, open_tx=opener,
+                query_fn=_scope_query())
+            self.assertEqual(scope["nodes"], 1)
+            self.assertEqual(scope["edges"], 1)
+            self.assertEqual(scope["mixed"], [])
+            self.assertEqual(len(planned.plans), 1)
+            self.assertIn("MATCH (n:Extracted)", DELETE_EXTRACTED_CYPHER)
+            self.assertIn("DETACH DELETE n", DELETE_EXTRACTED_CYPHER)
+            self.assertNotIn("DETACH DELETE c", DELETE_EXTRACTED_CYPHER)
+            self.assertIn("NOT n:Seed", DELETE_EXTRACTED_CYPHER)
+            self.assertIn("NOT n:Document", DELETE_EXTRACTED_CYPHER)
+
+    def test_mixed_label_blocks_deletion(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            folder = root / "in"
+            folder.mkdir()
+            (folder / "ok.json").write_text(json.dumps({
+                "chunk_id": "a#0",
+                "status": "ok",
+                "result": {"entities": [], "relationships": []},
+            }), encoding="utf-8")
+            backup = self._backup(root)
+
+            def opener():
+                raise AssertionError("mixed label opened a write transaction")
+
+            with self.assertRaises(LayerRejected):
+                replace_extracted_layer(
+                    folder, backup, write=True, open_tx=opener,
+                    query_fn=_scope_query(mixed=[{
+                        "labels": ["Driver", "Extracted", "Seed"],
+                        "entity_key": "Driver:example",
+                    }]))
+
+    def test_write_stops_after_a_partial_load(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            folder = root / "in"
+            folder.mkdir()
+            for name, chunk_id in (("one.json", "a#0"), ("two.json", "b#0")):
+                (folder / name).write_text(json.dumps({
+                    "chunk_id": chunk_id,
+                    "status": "ok",
+                    "result": {"entities": [], "relationships": []},
+                }), encoding="utf-8")
+            backup = self._backup(root)
+            opened = []
+
+            def opener():
+                opened.append(len(opened) + 1)
+                if len(opened) == 3:
+                    raise RuntimeError("second plan failed")
+                return FakeTx(chunk_id="a#0")
+
+            with self.assertRaises(PartialLoad) as caught:
+                replace_extracted_layer(
+                    folder, backup, write=True, open_tx=opener,
+                    query_fn=_scope_query())
+            self.assertEqual(caught.exception.written, 1)
+            self.assertEqual(caught.exception.total, 2)
+            self.assertEqual(opened, [1, 2, 3])
+            self.assertIn("partial load", str(caught.exception))
+
+
+class _RestoreTx:
+    """Records restore statements. This is not a Neo4j session."""
+
+    def __init__(self):
+        self.calls = []
+        self.committed = False
+        self.rolled_back = False
+
+    def run(self, cypher, parameters):
+        self.calls.append((cypher, dict(parameters)))
+        if "n:Seed" in cypher:
+            return []
+        return [{"ok": True}]
+
+    def commit(self):
+        self.committed = True
+
+    def rollback(self):
+        self.rolled_back = True
+
+
+class ExtractedRestoreTests(unittest.TestCase):
+    def test_restore_writes_the_stored_vector(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            path = Path(tmp) / "backup.json"
+            vector = [0.25, -1.5]
+            payload = build_extracted_backup(
+                [{
+                    "labels": ["Driver", "Extracted"],
+                    "properties": {
+                        "entity_key": "Driver:lewis hamilton",
+                        "name": "Lewis Hamilton",
+                        "name_norm": "lewis hamilton",
+                        "description": "A driver.",
+                        "embedding": vector,
+                        "embedding_model": "text-embedding-3-small",
+                        "embedding_dimensions": 2,
+                        "embedding_text_sha256": "abc",
+                    },
+                }],
+                [],
+                [],
+            )
+            path.write_text(json.dumps(payload), encoding="utf-8")
+            tx = _RestoreTx()
+            restore_extracted_backup(path, lambda: tx)
+            self.assertTrue(tx.committed)
+            self.assertFalse(tx.rolled_back)
+            node_calls = [
+                (cypher, params) for cypher, params in tx.calls
+                if "MERGE (e:Driver:Extracted" in cypher
+            ]
+            self.assertEqual(len(node_calls), 1)
+            cypher, params = node_calls[0]
+            self.assertIn("e.embedding = $embedding", cypher)
+            self.assertEqual(params["embedding"], vector)
+            self.assertEqual(params["embedding_model"], "text-embedding-3-small")
+            self.assertEqual(params["embedding_dimensions"], 2)
+            self.assertEqual(params["embedding_text_sha256"], "abc")
+            self.assertIn("DETACH DELETE n", tx.calls[1][0])
+
+    def test_restore_without_a_vector_does_not_invent_one(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            path = ExtractedReplaceTests()._backup(root)
+            tx = _RestoreTx()
+            restore_extracted_backup(path, lambda: tx)
+            cypher, params = next(
+                item for item in tx.calls if "MERGE (e:Driver:Extracted" in item[0])
+            self.assertNotIn("e.embedding", cypher)
+            self.assertNotIn("embedding", params)
+
+    def test_incomplete_vector_is_rejected_before_a_transaction(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            path = Path(tmp) / "backup.json"
+            payload = build_extracted_backup(
+                [{
+                    "labels": ["Driver", "Extracted"],
+                    "properties": {
+                        "entity_key": "Driver:lewis hamilton",
+                        "name": "Lewis Hamilton",
+                        "embedding": [0.1],
+                        "embedding_dimensions": 2,
+                    },
+                }],
+                [],
+                [],
+            )
+            path.write_text(json.dumps(payload), encoding="utf-8")
+
+            def opener():
+                raise AssertionError("invalid backup opened a transaction")
+
+            with self.assertRaises(LayerRejected):
+                restore_extracted_backup(path, opener)
+
+
+_LOOP = (
+    "Nico Rosberg was teammates with Lewis Hamilton from 2013 to 2016."
+)
+
+
+def _self_loop_result() -> dict:
+    return {
+        "entities": [
+            _person("e1", "Nico Rosberg", "Nico Rosberg as stated in the text."),
+            _person("e2", "Lewis Hamilton", "Lewis Hamilton as stated in the text."),
+        ],
+        "relationships": [
+            {
+                "source_id": "e1",
+                "target_id": "e1",
+                "relationship_type": "TEAMMATE_OF",
+                "description": _LOOP,
+                "from_year": None,
+                "to_year": None,
+                "role": None,
+            },
+            {
+                "source_id": "e1",
+                "target_id": "e2",
+                "relationship_type": "TEAMMATE_OF",
+                "description": _LOOP,
+                "from_year": None,
+                "to_year": None,
+                "role": None,
+            },
+        ],
+    }
+
+
+class SavedSelfLoopTests(unittest.TestCase):
+    def test_plan_validated_raw_drops_only_the_self_loop(self):
+        record = _ok_record("rosberg#1", *_entities_and_edges())
+        accepted, reasons = load_saved_extraction(
+            ExtractionResult.model_validate(record["result"]))
+        self.assertEqual(reasons, ("TEAMMATE_OF: source_id equals target_id",))
+        self.assertEqual(len(accepted.entities), 2)
+        self.assertEqual(len(accepted.relationships), 1)
+        plan = plan_validated_raw(record, accept_validated_raw=True)
+        self.assertEqual(
+            [entity.entity_key for entity in plan.entities],
+            ["Driver:nico rosberg", "Driver:lewis hamilton"],
+        )
+        self.assertEqual(len(plan.relationships), 1)
+        self.assertEqual(plan.relationships[0].source_key, "Driver:nico rosberg")
+        self.assertEqual(plan.relationships[0].target_key, "Driver:lewis hamilton")
+
+    def test_approved_review_drops_only_the_self_loop(self):
+        review = _approved(_self_loop_result())
+        plan = plan_approved_load(review, _raw())
+        self.assertEqual(
+            [entity.entity_key for entity in plan.entities],
+            ["Driver:nico rosberg", "Driver:lewis hamilton"],
+        )
+        self.assertEqual(len(plan.relationships), 1)
+        self.assertNotEqual(
+            plan.relationships[0].source_key,
+            plan.relationships[0].target_key,
+        )
+
+    def test_salvage_keeps_the_edge_beside_the_self_loop(self):
+        import importlib.util
+        import sys
+
+        import naive_rag.config as config
+        import naive_rag.ingest as ingest
+        import naive_rag.loaders as loaders
+
+        saved = (config.get_settings, ingest.get_settings, loaders.get_settings)
+        diag = ROOT / "diagnostics" / "2026-11-05-local-search"
+        sys.path.insert(0, str(diag))
+        path = diag / "04_salvage_impact.py"
+        spec = importlib.util.spec_from_file_location("phase3_salvage", path)
+        module = importlib.util.module_from_spec(spec)
+        assert spec.loader is not None
+        try:
+            spec.loader.exec_module(module)
+            result, reasons = module.salvage(
+                {"candidate_result": _self_loop_result()})
+        finally:
+            sys.path.remove(str(diag))
+            config.get_settings, ingest.get_settings, loaders.get_settings = saved
+        self.assertEqual(
+            [entity.name for entity in result.entities],
+            ["Nico Rosberg", "Lewis Hamilton"],
+        )
+        self.assertEqual(len(result.relationships), 1)
+        self.assertEqual(result.relationships[0].target_id, "e2")
+        self.assertEqual(reasons["TEAMMATE_OF: source_id equals target_id"], 1)
+
+
+def _entities_and_edges():
+    body = _self_loop_result()
+    return body["entities"], body["relationships"]
 
 
 if __name__ == "__main__":

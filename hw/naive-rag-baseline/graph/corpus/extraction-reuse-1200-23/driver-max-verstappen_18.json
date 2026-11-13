@@ -1,0 +1,185 @@
+{
+  "chunk_id": "driver-max-verstappen#18",
+  "doc_id": "driver-max-verstappen",
+  "document_title": "Max Verstappen",
+  "section": null,
+  "page": 4,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "219cea0d4f5ffa37f170af07b76f0a043c456296b3bf41d86e032da5838c40e1",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Max Verstappen",
+        "entity_type": "Driver",
+        "description": "A Formula One driver who races for Red Bull."
+      },
+      {
+        "local_id": "e2",
+        "name": "Red Bull Racing",
+        "entity_type": "Team",
+        "description": "A Formula One team that Verstappen races for."
+      },
+      {
+        "local_id": "e3",
+        "name": "2018",
+        "entity_type": "Season",
+        "description": "The Formula One season in which Verstappen competed."
+      },
+      {
+        "local_id": "e4",
+        "name": "Canada Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A race in which Verstappen finished third."
+      },
+      {
+        "local_id": "e5",
+        "name": "France Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The following race after Canada where Verstappen finished second."
+      },
+      {
+        "local_id": "e6",
+        "name": "Sebastian Vettel",
+        "entity_type": "Driver",
+        "description": "A Formula One driver who took pole position in Canada."
+      },
+      {
+        "local_id": "e7",
+        "name": "Fernando Alonso",
+        "entity_type": "Driver",
+        "description": "A Formula One driver competing against Verstappen."
+      },
+      {
+        "local_id": "e8",
+        "name": "Daniel Ricciardo",
+        "entity_type": "Driver",
+        "description": "Verstappen's teammate at Red Bull Racing."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Max Verstappen at Canada Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Verstappen finished third in the Canada Grand Prix."
+      },
+      {
+        "local_id": "rr2",
+        "name": "Max Verstappen at France Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Verstappen finished second in the France Grand Prix."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Verstappen races for Red Bull Racing.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e3",
+        "relationship_type": "ROUND_OF",
+        "description": "Canada Grand Prix is a round of the 2018 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e3",
+        "relationship_type": "ROUND_OF",
+        "description": "France Grand Prix is a round of the 2018 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Verstappen finished third in the Canada Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e4",
+        "relationship_type": "AT_RACE",
+        "description": "Verstappen finished third in the Canada Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr2",
+        "relationship_type": "ACHIEVED",
+        "description": "Verstappen finished second in the France Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr2",
+        "target_id": "e5",
+        "relationship_type": "AT_RACE",
+        "description": "Verstappen finished second in the France Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e7",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Alonso races for McLaren.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 8,
+  "entities_accepted": 10,
+  "entities_rejected": 0,
+  "relationship_candidates": 9,
+  "relationships_accepted": 8,
+  "relationships_rejected": 3,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "RACED_IN does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 8,
+      "reason": "TEAMMATE_OF does not allow Driver -> Team"
+    },
+    {
+      "element": "relationship",
+      "index": 10,
+      "reason": "FOR_TEAM does not allow Driver -> GrandPrix"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 4,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e4; description kept"
+    },
+    {
+      "index": 5,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr2 -AT_RACE-> e5; description kept"
+    }
+  ]
+}

@@ -1,0 +1,401 @@
+{
+  "chunk_id": "driver-charles-leclerc#31",
+  "doc_id": "driver-charles-leclerc",
+  "document_title": "Charles Leclerc",
+  "section": "Charles Leclerc > 2020–2021: Winless seasons for Ferrari",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "368458f47517745da3cdc9a0dc3a887977be85939d742c788e53bc3df3dc316f",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Charles Leclerc",
+        "entity_type": "Driver",
+        "description": "A Formula One driver who raced for Ferrari."
+      },
+      {
+        "local_id": "e2",
+        "name": "Scuderia Ferrari",
+        "entity_type": "Team",
+        "description": "A Formula One team that Charles Leclerc raced for."
+      },
+      {
+        "local_id": "e3",
+        "name": "2020",
+        "entity_type": "Season",
+        "description": "A Formula One championship season."
+      },
+      {
+        "local_id": "e4",
+        "name": "2021",
+        "entity_type": "Season",
+        "description": "A Formula One championship season."
+      },
+      {
+        "local_id": "e5",
+        "name": "Spanish Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula One race where Leclerc retired."
+      },
+      {
+        "local_id": "e6",
+        "name": "Belgian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula One race where Leclerc finished fourteenth."
+      },
+      {
+        "local_id": "e7",
+        "name": "Italian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula One race where Leclerc collided with a tyre barrier."
+      },
+      {
+        "local_id": "e8",
+        "name": "Portuguese Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula One race where Leclerc had a top-five finish."
+      },
+      {
+        "local_id": "e9",
+        "name": "Emilia Romagna Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula One race where Leclerc had a top-five finish."
+      },
+      {
+        "local_id": "e10",
+        "name": "Turkish Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula One race where Leclerc lost a podium finish."
+      },
+      {
+        "local_id": "e11",
+        "name": "Sakhir Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula One race where Leclerc retired after a collision."
+      },
+      {
+        "local_id": "e12",
+        "name": "Abu Dhabi Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula One race where Leclerc finished thirteenth."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Charles Leclerc at Spanish Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Leclerc retired at the Spanish Grand Prix."
+      },
+      {
+        "local_id": "rr2",
+        "name": "Charles Leclerc at Belgian Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Leclerc finished fourteenth at the Belgian Grand Prix."
+      },
+      {
+        "local_id": "rr3",
+        "name": "Charles Leclerc at Italian Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Leclerc collided with a tyre barrier at the Italian Grand Prix."
+      },
+      {
+        "local_id": "rr4",
+        "name": "Charles Leclerc at Portuguese Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Leclerc had a top-five finish at the Portuguese Grand Prix."
+      },
+      {
+        "local_id": "rr5",
+        "name": "Charles Leclerc at Emilia Romagna Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Leclerc had a top-five finish at the Emilia Romagna Grand Prix."
+      },
+      {
+        "local_id": "rr6",
+        "name": "Charles Leclerc at Turkish Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Leclerc lost a podium finish at the Turkish Grand Prix."
+      },
+      {
+        "local_id": "rr7",
+        "name": "Charles Leclerc at Sakhir Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Leclerc retired at the Sakhir Grand Prix."
+      },
+      {
+        "local_id": "rr8",
+        "name": "Charles Leclerc at Abu Dhabi Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Leclerc finished thirteenth at the Abu Dhabi Grand Prix."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Charles Leclerc raced for Ferrari.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e3",
+        "relationship_type": "ENTERED",
+        "description": "Ferrari took part in the 2020 Formula One season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e4",
+        "relationship_type": "ENTERED",
+        "description": "Ferrari took part in the 2021 Formula One season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Leclerc retired at the Spanish Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e5",
+        "relationship_type": "AT_RACE",
+        "description": "Leclerc retired at the Spanish Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr2",
+        "relationship_type": "ACHIEVED",
+        "description": "Leclerc finished fourteenth at the Belgian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr2",
+        "target_id": "e6",
+        "relationship_type": "AT_RACE",
+        "description": "Leclerc finished fourteenth at the Belgian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr3",
+        "relationship_type": "ACHIEVED",
+        "description": "Leclerc collided with a tyre barrier at the Italian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr3",
+        "target_id": "e7",
+        "relationship_type": "AT_RACE",
+        "description": "Leclerc collided with a tyre barrier at the Italian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr4",
+        "relationship_type": "ACHIEVED",
+        "description": "Leclerc had a top-five finish at the Portuguese Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr4",
+        "target_id": "e8",
+        "relationship_type": "AT_RACE",
+        "description": "Leclerc had a top-five finish at the Portuguese Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr5",
+        "relationship_type": "ACHIEVED",
+        "description": "Leclerc had a top-five finish at the Emilia Romagna Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr5",
+        "target_id": "e9",
+        "relationship_type": "AT_RACE",
+        "description": "Leclerc had a top-five finish at the Emilia Romagna Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr6",
+        "relationship_type": "ACHIEVED",
+        "description": "Leclerc lost a podium finish at the Turkish Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr6",
+        "target_id": "e10",
+        "relationship_type": "AT_RACE",
+        "description": "Leclerc lost a podium finish at the Turkish Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr7",
+        "relationship_type": "ACHIEVED",
+        "description": "Leclerc retired at the Sakhir Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr7",
+        "target_id": "e11",
+        "relationship_type": "AT_RACE",
+        "description": "Leclerc retired at the Sakhir Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr8",
+        "relationship_type": "ACHIEVED",
+        "description": "Leclerc finished thirteenth at the Abu Dhabi Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr8",
+        "target_id": "e12",
+        "relationship_type": "AT_RACE",
+        "description": "Leclerc finished thirteenth at the Abu Dhabi Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e10",
+        "target_id": "e4",
+        "relationship_type": "ROUND_OF",
+        "description": "The Turkish Grand Prix was a round of the 2021 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e11",
+        "target_id": "e4",
+        "relationship_type": "ROUND_OF",
+        "description": "The Sakhir Grand Prix was a round of the 2021 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e12",
+        "target_id": "e4",
+        "relationship_type": "ROUND_OF",
+        "description": "The Abu Dhabi Grand Prix was a round of the 2021 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 12,
+  "entities_accepted": 20,
+  "entities_rejected": 0,
+  "relationship_candidates": 15,
+  "relationships_accepted": 22,
+  "relationships_rejected": 1,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "AT_RACE does not allow GrandPrix -> GrandPrix"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 1,
+      "action": "clear_redundant_season_year",
+      "detail": "ENTERED year 2020 already named by Season 'e3'; from_year and to_year cleared"
+    },
+    {
+      "index": 2,
+      "action": "clear_redundant_season_year",
+      "detail": "ENTERED year 2021 already named by Season 'e4'; from_year and to_year cleared"
+    },
+    {
+      "index": 4,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e5; description kept"
+    },
+    {
+      "index": 5,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr2 -AT_RACE-> e6; description kept"
+    },
+    {
+      "index": 6,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr3 -AT_RACE-> e7; description kept"
+    },
+    {
+      "index": 7,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr4 -AT_RACE-> e8; description kept"
+    },
+    {
+      "index": 8,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr5 -AT_RACE-> e9; description kept"
+    },
+    {
+      "index": 9,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr6 -AT_RACE-> e10; description kept"
+    },
+    {
+      "index": 10,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr7 -AT_RACE-> e11; description kept"
+    },
+    {
+      "index": 11,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr8 -AT_RACE-> e12; description kept"
+    }
+  ]
+}

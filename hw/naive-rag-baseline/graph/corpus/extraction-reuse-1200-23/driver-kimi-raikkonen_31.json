@@ -1,0 +1,134 @@
+{
+  "chunk_id": "driver-kimi-raikkonen#31",
+  "doc_id": "driver-kimi-raikkonen",
+  "document_title": "Kimi Räikkönen",
+  "section": "Formula One career > Ferrari (2007–2009) > 2007: World Drivers' Champion",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "7e8a1feb3d9eff78ab87bcdb682f63182ca17e29ca77772e3591c2443e9270aa",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Kimi Räikkönen",
+        "entity_type": "Driver",
+        "description": "Räikkönen took the 2007 Formula One Drivers' title."
+      },
+      {
+        "local_id": "e2",
+        "name": "Scuderia Ferrari",
+        "entity_type": "Team",
+        "description": "The team for which Kimi Räikkönen raced during his championship win."
+      },
+      {
+        "local_id": "e3",
+        "name": "2007",
+        "entity_type": "Season",
+        "description": "The season in which Räikkönen won the Drivers' title."
+      },
+      {
+        "local_id": "e4",
+        "name": "Brazilian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The race where Räikkönen secured the 2007 Drivers' title."
+      },
+      {
+        "local_id": "e5",
+        "name": "Interlagos",
+        "entity_type": "Circuit",
+        "description": "The circuit where the Brazilian Grand Prix took place."
+      },
+      {
+        "local_id": "e6",
+        "name": "World Drivers' Champion",
+        "entity_type": "Title",
+        "description": "The title won by Räikkönen in 2007."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Kimi Räikkönen at Brazilian Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Kimi Räikkönen achieved victory in the Brazilian Grand Prix."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Kimi Räikkönen drove for Ferrari during his championship win.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e6",
+        "target_id": "e3",
+        "relationship_type": "AWARDED_IN",
+        "description": "The World Drivers' Champion title was awarded in the 2007 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e3",
+        "relationship_type": "ROUND_OF",
+        "description": "The Brazilian Grand Prix was a round of the 2007 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e5",
+        "relationship_type": "HELD_AT",
+        "description": "The Brazilian Grand Prix was held at Interlagos.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Kimi Räikkönen achieved victory in the Brazilian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e4",
+        "relationship_type": "AT_RACE",
+        "description": "Kimi Räikkönen achieved victory in the Brazilian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 6,
+  "entities_accepted": 7,
+  "entities_rejected": 0,
+  "relationship_candidates": 6,
+  "relationships_accepted": 6,
+  "relationships_rejected": 1,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 6,
+      "reason": "FIELDED does not allow Team -> GrandPrix"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 4,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e4; description kept"
+    }
+  ]
+}

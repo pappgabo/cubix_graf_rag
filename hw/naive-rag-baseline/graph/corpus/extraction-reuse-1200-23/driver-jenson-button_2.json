@@ -1,0 +1,133 @@
+{
+  "chunk_id": "driver-jenson-button#2",
+  "doc_id": "driver-jenson-button",
+  "document_title": "Jenson Button",
+  "section": null,
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "5f44577f3b5a3349d57552d57668082ead5cb1f98deb73d9b767d9024cc95e26",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Jenson Button",
+        "entity_type": "Driver",
+        "description": "After his F1 career, Button became champion of the 2018 season of the Super GT Series alongside Naoki Yamamoto."
+      },
+      {
+        "local_id": "e2",
+        "name": "Naoki Yamamoto",
+        "entity_type": "Driver",
+        "description": "Shared a Honda racing car at Team Kunimitsu with Jenson Button."
+      },
+      {
+        "local_id": "e3",
+        "name": "Team Kunimitsu",
+        "entity_type": "Team",
+        "description": "Team that fielded a Honda racing car shared by Jenson Button and Naoki Yamamoto."
+      },
+      {
+        "local_id": "e4",
+        "name": "2018",
+        "entity_type": "Season",
+        "description": "Season of the Super GT Series in which Jenson Button became champion."
+      },
+      {
+        "local_id": "e5",
+        "name": "NASCAR Cup Series",
+        "entity_type": "Team",
+        "description": "Series in which Button competed part-time."
+      },
+      {
+        "local_id": "e6",
+        "name": "Ford Mustang",
+        "entity_type": "Car",
+        "description": "Car driven by Jenson Button in the NASCAR Cup Series."
+      },
+      {
+        "local_id": "e7",
+        "name": "Rick Ware Racing",
+        "entity_type": "Team",
+        "description": "Team for which Jenson Button drove the No. 15 Ford Mustang."
+      },
+      {
+        "local_id": "e8",
+        "name": "Stewart–Haas Racing",
+        "entity_type": "Team",
+        "description": "Provided support for Jenson Button's NASCAR Cup Series participation."
+      },
+      {
+        "local_id": "e9",
+        "name": "Mobil 1",
+        "entity_type": "Team",
+        "description": "Sponsor of Jenson Button in the NASCAR Cup Series."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e3",
+        "relationship_type": "DROVE_FOR",
+        "description": "Jenson Button drove for Team Kunimitsu.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e5",
+        "relationship_type": "DROVE_FOR",
+        "description": "Jenson Button competed part-time in the NASCAR Cup Series.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e7",
+        "relationship_type": "DROVE_FOR",
+        "description": "Jenson Button drove the No. 15 Ford Mustang for Rick Ware Racing.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 9,
+  "entities_accepted": 9,
+  "entities_rejected": 0,
+  "relationship_candidates": 8,
+  "relationships_accepted": 3,
+  "relationships_rejected": 5,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "WON does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "TEAMMATE_OF does not allow Driver -> Team"
+    },
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "POWERED_BY does not allow Car -> Team"
+    },
+    {
+      "element": "relationship",
+      "index": 6,
+      "reason": "FOR_TEAM does not allow Team -> Team"
+    },
+    {
+      "element": "relationship",
+      "index": 7,
+      "reason": "FOR_TEAM does not allow Team -> Team"
+    }
+  ],
+  "alignments": []
+}

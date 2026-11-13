@@ -1,0 +1,122 @@
+{
+  "chunk_id": "team-red-bull-racing#9",
+  "doc_id": "team-red-bull-racing",
+  "document_title": "Red Bull Racing",
+  "section": "Ferrari engines (2006) > 2006 season",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "7b8309949634e476468b63a51b42b96ab993a1131809ed5522fbbd21699faa2c",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Red Bull Racing",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that entered cars."
+      },
+      {
+        "local_id": "e2",
+        "name": "Scuderia Ferrari",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that entered cars."
+      },
+      {
+        "local_id": "e3",
+        "name": "2006",
+        "entity_type": "Season",
+        "description": "A championship year."
+      },
+      {
+        "local_id": "e4",
+        "name": "Red Bull RB2",
+        "entity_type": "Car",
+        "description": "The second car of Red Bull Racing."
+      },
+      {
+        "local_id": "e5",
+        "name": "V8 engine",
+        "entity_type": "PowerUnit",
+        "description": "An engine specification mandated by a rule change."
+      },
+      {
+        "local_id": "e6",
+        "name": "Silverstone",
+        "entity_type": "Circuit",
+        "description": "A racing venue in England."
+      },
+      {
+        "local_id": "e7",
+        "name": "David Coulthard",
+        "entity_type": "Driver",
+        "description": "A driver who raced for Red Bull Racing."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e3",
+        "relationship_type": "ENTERED",
+        "description": "Red Bull Racing took part in the 2006 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e3",
+        "relationship_type": "RACED_IN",
+        "description": "Red Bull RB2 took part in the 2006 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e7",
+        "target_id": "e1",
+        "relationship_type": "DROVE_FOR",
+        "description": "David Coulthard raced for Red Bull Racing.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 7,
+  "entities_accepted": 7,
+  "entities_rejected": 0,
+  "relationship_candidates": 6,
+  "relationships_accepted": 3,
+  "relationships_rejected": 3,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "POWERED_BY does not allow Team -> PowerUnit"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "HELD_AT does not allow Car -> Circuit"
+    },
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "ACHIEVED does not allow Driver -> Car"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 1,
+      "action": "clear_redundant_season_year",
+      "detail": "ENTERED year 2006 already named by Season 'e3'; from_year and to_year cleared"
+    },
+    {
+      "index": 2,
+      "action": "clear_redundant_season_year",
+      "detail": "RACED_IN year 2006 already named by Season 'e3'; from_year and to_year cleared"
+    }
+  ]
+}

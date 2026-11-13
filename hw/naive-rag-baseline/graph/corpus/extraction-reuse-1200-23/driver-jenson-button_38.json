@@ -1,0 +1,110 @@
+{
+  "chunk_id": "driver-jenson-button#38",
+  "doc_id": "driver-jenson-button",
+  "document_title": "Jenson Button",
+  "section": "Formula One career > McLaren (2010–2017) > 2014–2015",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "1846c52c34704c46d07f7626634890025d172f4878346327ca320f020e9a2d0c",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Jenson Button",
+        "entity_type": "Driver",
+        "description": "A Formula One driver who raced for McLaren from 2010 to 2017."
+      },
+      {
+        "local_id": "e2",
+        "name": "McLaren",
+        "entity_type": "Team",
+        "description": "A Formula One team that Jenson Button raced for."
+      },
+      {
+        "local_id": "e3",
+        "name": "2015",
+        "entity_type": "Season",
+        "description": "The Formula One season in which Jenson Button struggled due to an unreliable Honda engine."
+      },
+      {
+        "local_id": "e4",
+        "name": "United States Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A race in which Jenson Button secured his best result of sixth in 2015."
+      },
+      {
+        "local_id": "e5",
+        "name": "Honda",
+        "entity_type": "PowerUnit",
+        "description": "The engine used by McLaren during Jenson Button's time with the team."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Jenson Button raced for McLaren.",
+        "from_year": 2010,
+        "to_year": 2017,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e3",
+        "relationship_type": "ENTERED",
+        "description": "McLaren took part in the 2015 Formula One season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e3",
+        "relationship_type": "ROUND_OF",
+        "description": "The United States Grand Prix was a round of the 2015 Formula One season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 5,
+  "entities_accepted": 5,
+  "entities_rejected": 0,
+  "relationship_candidates": 6,
+  "relationships_accepted": 3,
+  "relationships_rejected": 3,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "ACHIEVED Driver -> GrandPrix has from_year=2015, to_year=None, role=None; the year or role cannot be stored on the reified result"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "POWERED_BY does not allow Team -> PowerUnit"
+    },
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "HELD_AT does not allow GrandPrix -> Team"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 1,
+      "action": "clear_redundant_season_year",
+      "detail": "ENTERED year 2015 already named by Season 'e3'; from_year and to_year cleared"
+    },
+    {
+      "index": 4,
+      "action": "clear_redundant_season_year",
+      "detail": "ROUND_OF year 2015 already named by Season 'e3'; from_year and to_year cleared"
+    }
+  ]
+}

@@ -1,0 +1,154 @@
+{
+  "chunk_id": "team-williams-racing#38",
+  "doc_id": "team-williams-racing",
+  "document_title": "Williams Racing",
+  "section": "Williams Racing > 1993 season",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "560f4a66609d8dd6f959c0f5830bfea973d4a5f8f8bf6f0d9ea7a3b9e04eedea",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Williams",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that entered cars."
+      },
+      {
+        "local_id": "e2",
+        "name": "Prost",
+        "entity_type": "Driver",
+        "description": "A driver who clinched the Drivers' Championship in Portugal."
+      },
+      {
+        "local_id": "e3",
+        "name": "Senna",
+        "entity_type": "Driver",
+        "description": "A driver who took wins in Japan and Australia."
+      },
+      {
+        "local_id": "e4",
+        "name": "Hill",
+        "entity_type": "Driver",
+        "description": "A driver who was overtaken in points by Senna."
+      },
+      {
+        "local_id": "e5",
+        "name": "McLaren",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that was second-placed in the Constructors' Championship."
+      },
+      {
+        "local_id": "e6",
+        "name": "1993",
+        "entity_type": "Season",
+        "description": "The championship year in which Williams retained their Constructors' title."
+      },
+      {
+        "local_id": "e7",
+        "name": "Portugal",
+        "entity_type": "GrandPrix",
+        "description": "The race where Prost clinched the Drivers' Championship."
+      },
+      {
+        "local_id": "e8",
+        "name": "Japan",
+        "entity_type": "GrandPrix",
+        "description": "The race where Senna took a win."
+      },
+      {
+        "local_id": "e9",
+        "name": "Australia",
+        "entity_type": "GrandPrix",
+        "description": "The race where Senna took a win."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Prost at Portugal",
+        "entity_type": "RaceResult",
+        "description": "Prost recorded a result in the race in Portugal."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e6",
+        "relationship_type": "ENTERED",
+        "description": "Williams took part in the 1993 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Prost recorded a result in the race in Portugal.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e7",
+        "relationship_type": "AT_RACE",
+        "description": "Prost recorded a result in the race in Portugal.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e6",
+        "relationship_type": "ENTERED",
+        "description": "McLaren took part in the 1993 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 9,
+  "entities_accepted": 10,
+  "entities_rejected": 0,
+  "relationship_candidates": 8,
+  "relationships_accepted": 4,
+  "relationships_rejected": 5,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "WON does not allow Team -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "WON does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 5,
+      "reason": "ACHIEVED does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 6,
+      "reason": "AT_RACE does not allow Driver -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 7,
+      "reason": "AT_RACE does not allow Driver -> GrandPrix"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 3,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e7; description kept"
+    }
+  ]
+}

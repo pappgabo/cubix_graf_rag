@@ -1,0 +1,122 @@
+{
+  "chunk_id": "team-red-bull-racing#7",
+  "doc_id": "team-red-bull-racing",
+  "document_title": "Red Bull Racing",
+  "section": "Cosworth engines (2005) > 2005 season",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "79450034b711f2284b46997cd88cfb6776e6c84121348d06a4625677b695dbcb",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Red Bull Racing",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that entered cars."
+      },
+      {
+        "local_id": "e2",
+        "name": "David Coulthard",
+        "entity_type": "Driver",
+        "description": "A driver who raced for Red Bull Racing in 2005."
+      },
+      {
+        "local_id": "e3",
+        "name": "Christian Klien",
+        "entity_type": "Driver",
+        "description": "A driver who raced for Red Bull Racing in 2005."
+      },
+      {
+        "local_id": "e4",
+        "name": "Vitantonio Liuzzi",
+        "entity_type": "Driver",
+        "description": "A driver who raced for Red Bull Racing in 2005."
+      },
+      {
+        "local_id": "e5",
+        "name": "Scott Speed",
+        "entity_type": "Driver",
+        "description": "A driver who was Red Bull Racing's third driver in 2005."
+      },
+      {
+        "local_id": "e6",
+        "name": "2005",
+        "entity_type": "Season",
+        "description": "The championship year in which Red Bull Racing competed."
+      },
+      {
+        "local_id": "e7",
+        "name": "Canadian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A race in which Scott Speed participated as a third driver."
+      },
+      {
+        "local_id": "e8",
+        "name": "United States Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A race in which Scott Speed participated as a third driver."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e6",
+        "relationship_type": "ENTERED",
+        "description": "Red Bull Racing took part in the 2005 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e7",
+        "target_id": "e6",
+        "relationship_type": "ROUND_OF",
+        "description": "The Canadian Grand Prix is a round of the 2005 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e8",
+        "target_id": "e6",
+        "relationship_type": "ROUND_OF",
+        "description": "The United States Grand Prix is a round of the 2005 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 8,
+  "entities_accepted": 8,
+  "entities_rejected": 0,
+  "relationship_candidates": 7,
+  "relationships_accepted": 3,
+  "relationships_rejected": 4,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "DROVE_FOR does not allow Team -> Driver"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "DROVE_FOR does not allow Team -> Driver"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "DROVE_FOR does not allow Team -> Driver"
+    },
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "DROVE_FOR does not allow Team -> Driver"
+    }
+  ],
+  "alignments": []
+}

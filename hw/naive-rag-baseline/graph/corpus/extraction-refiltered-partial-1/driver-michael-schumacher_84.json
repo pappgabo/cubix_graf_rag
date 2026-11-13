@@ -1,0 +1,93 @@
+{
+  "chunk_id": "driver-michael-schumacher#84",
+  "doc_id": "driver-michael-schumacher",
+  "document_title": "Michael Schumacher",
+  "section": null,
+  "page": 7,
+  "source": "https://en.wikipedia.org/wiki/Michael_Schumacher",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "34f1bbd5cbaea38842aa36dde5201c3140d913487935042e20f59abeac571e07",
+  "validation_version": "partial-1",
+  "source_status": "ok",
+  "status": "ok",
+  "rejections": [],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Michael Schumacher",
+        "entity_type": "Driver",
+        "description": "A German racing driver who won six Drivers' titles."
+      },
+      {
+        "local_id": "e2",
+        "name": "Kimi Räikkönen",
+        "entity_type": "Driver",
+        "description": "A Finnish racing driver who competed against Schumacher for the title."
+      },
+      {
+        "local_id": "e3",
+        "name": "2004",
+        "entity_type": "Season",
+        "description": "The season in which Schumacher won a record 12 of the first 13 races."
+      },
+      {
+        "local_id": "e4",
+        "name": "Japanese Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The final round of the season where Schumacher secured his sixth title."
+      },
+      {
+        "local_id": "e5",
+        "name": "Bahrain Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The inaugural race of the Bahrain Grand Prix in 2004."
+      },
+      {
+        "local_id": "e6",
+        "name": "Drivers' title",
+        "entity_type": "Title",
+        "description": "The championship title won by Schumacher."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e6",
+        "relationship_type": "WON",
+        "description": "Schumacher won his sixth Drivers' title.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e6",
+        "target_id": "e3",
+        "relationship_type": "AWARDED_IN",
+        "description": "The Drivers' title was awarded in the 2004 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e3",
+        "relationship_type": "ROUND_OF",
+        "description": "The Japanese Grand Prix was the final round of the 2004 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e3",
+        "relationship_type": "ROUND_OF",
+        "description": "The Bahrain Grand Prix was part of the 2004 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "chunk_id": "season-2008-formula-one-world-championship#19",
+  "doc_id": "season-2008-formula-one-world-championship",
+  "document_title": "2008 Formula One World Championship",
+  "section": null,
+  "page": 4,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "b1c46ce3dc323360a81d11290136b0e874280b4fb47edc0d24fcbcf676ac5649",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Massa",
+        "entity_type": "Driver",
+        "description": "Massa won to momentarily take the title."
+      },
+      {
+        "local_id": "e2",
+        "name": "Lewis Hamilton",
+        "entity_type": "Driver",
+        "description": "Hamilton eventually regained fifth place."
+      },
+      {
+        "local_id": "e3",
+        "name": "2008 Formula One World Championship",
+        "entity_type": "Season",
+        "description": "The championship season in which Massa won to momentarily take the title."
+      },
+      {
+        "local_id": "e4",
+        "name": "Title",
+        "entity_type": "Title",
+        "description": "The title that Massa won momentarily."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e4",
+        "relationship_type": "WON",
+        "description": "Massa won the title",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e3",
+        "relationship_type": "AWARDED_IN",
+        "description": "The title belongs to the 2008 season",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 4,
+  "entities_accepted": 4,
+  "entities_rejected": 0,
+  "relationship_candidates": 2,
+  "relationships_accepted": 2,
+  "relationships_rejected": 0,
+  "rejections": [],
+  "alignments": []
+}

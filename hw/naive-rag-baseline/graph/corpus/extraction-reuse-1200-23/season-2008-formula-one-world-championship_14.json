@@ -1,0 +1,294 @@
+{
+  "chunk_id": "season-2008-formula-one-world-championship#14",
+  "doc_id": "season-2008-formula-one-world-championship",
+  "document_title": "2008 Formula One World Championship",
+  "section": null,
+  "page": 4,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "ab4c6e65617b019625362a2397cb8818f4fc179f593b314e88fd9c312d531b42",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Scuderia Ferrari",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that entered cars."
+      },
+      {
+        "local_id": "e2",
+        "name": "Toyota",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that entered cars."
+      },
+      {
+        "local_id": "e3",
+        "name": "Super Aguri",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that entered cars."
+      },
+      {
+        "local_id": "e4",
+        "name": "Williams",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that entered cars."
+      },
+      {
+        "local_id": "e5",
+        "name": "Red Bull Racing",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that entered cars."
+      },
+      {
+        "local_id": "e6",
+        "name": "Renault",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that entered cars."
+      },
+      {
+        "local_id": "e7",
+        "name": "BMW",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that entered cars."
+      },
+      {
+        "local_id": "e8",
+        "name": "Nico Rosberg",
+        "entity_type": "Driver",
+        "description": "A driver who raced in Formula One."
+      },
+      {
+        "local_id": "e9",
+        "name": "Felipe Massa",
+        "entity_type": "Driver",
+        "description": "A driver who raced in Formula One."
+      },
+      {
+        "local_id": "e10",
+        "name": "Kimi Räikkönen",
+        "entity_type": "Driver",
+        "description": "A driver who raced in Formula One."
+      },
+      {
+        "local_id": "e11",
+        "name": "Michael Schumacher",
+        "entity_type": "Driver",
+        "description": "A driver who raced in Formula One."
+      },
+      {
+        "local_id": "e12",
+        "name": "Lewis Hamilton",
+        "entity_type": "Driver",
+        "description": "A driver who raced in Formula One."
+      },
+      {
+        "local_id": "e13",
+        "name": "Nakajima",
+        "entity_type": "Driver",
+        "description": "A driver who raced in Formula One."
+      },
+      {
+        "local_id": "e14",
+        "name": "Jarno Trulli",
+        "entity_type": "Driver",
+        "description": "A driver who raced in Formula One."
+      },
+      {
+        "local_id": "e15",
+        "name": "SA07B",
+        "entity_type": "Car",
+        "description": "An interim car fielded by Super Aguri."
+      },
+      {
+        "local_id": "e16",
+        "name": "SA08",
+        "entity_type": "Car",
+        "description": "A car model planned for launch by Super Aguri."
+      },
+      {
+        "local_id": "e17",
+        "name": "Barcelona",
+        "entity_type": "Circuit",
+        "description": "A racing venue where testing took place."
+      },
+      {
+        "local_id": "e18",
+        "name": "Jerez",
+        "entity_type": "Circuit",
+        "description": "A racing venue where BMW were testing."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e3",
+        "target_id": "e15",
+        "relationship_type": "FIELDED",
+        "description": "Super Aguri entered the SA07B interim car.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e12",
+        "target_id": "e4",
+        "relationship_type": "DROVE_FOR",
+        "description": "Lewis Hamilton drove for McLaren.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e12",
+        "target_id": "e10",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Lewis Hamilton was a teammate of Kimi Räikkönen at McLaren.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e12",
+        "target_id": "e9",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Lewis Hamilton was a teammate of Felipe Massa at Ferrari.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e12",
+        "target_id": "e13",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Lewis Hamilton was a teammate of Nakajima at Williams.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e12",
+        "target_id": "e14",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Lewis Hamilton was a teammate of Jarno Trulli at Toyota.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 18,
+  "entities_accepted": 18,
+  "entities_rejected": 0,
+  "relationship_candidates": 27,
+  "relationships_accepted": 6,
+  "relationships_rejected": 21,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "DROVE_FOR does not allow Team -> Driver"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "DROVE_FOR does not allow Team -> Driver"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "DROVE_FOR does not allow Team -> Driver"
+    },
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "DROVE_FOR does not allow Team -> Driver"
+    },
+    {
+      "element": "relationship",
+      "index": 6,
+      "reason": "TEAMMATE_OF does not allow Driver -> Team"
+    },
+    {
+      "element": "relationship",
+      "index": 9,
+      "reason": "RACED_IN does not allow Team -> Circuit"
+    },
+    {
+      "element": "relationship",
+      "index": 10,
+      "reason": "RACED_IN does not allow Team -> Circuit"
+    },
+    {
+      "element": "relationship",
+      "index": 11,
+      "reason": "RACED_IN does not allow Team -> Circuit"
+    },
+    {
+      "element": "relationship",
+      "index": 12,
+      "reason": "RACED_IN does not allow Team -> Circuit"
+    },
+    {
+      "element": "relationship",
+      "index": 13,
+      "reason": "RACED_IN does not allow Team -> Circuit"
+    },
+    {
+      "element": "relationship",
+      "index": 14,
+      "reason": "RACED_IN does not allow Team -> Circuit"
+    },
+    {
+      "element": "relationship",
+      "index": 15,
+      "reason": "RACED_IN does not allow Team -> Circuit"
+    },
+    {
+      "element": "relationship",
+      "index": 16,
+      "reason": "ROUND_OF does not allow Team -> Circuit"
+    },
+    {
+      "element": "relationship",
+      "index": 17,
+      "reason": "ROUND_OF does not allow Team -> Circuit"
+    },
+    {
+      "element": "relationship",
+      "index": 18,
+      "reason": "ROUND_OF does not allow Team -> Circuit"
+    },
+    {
+      "element": "relationship",
+      "index": 19,
+      "reason": "ROUND_OF does not allow Team -> Circuit"
+    },
+    {
+      "element": "relationship",
+      "index": 20,
+      "reason": "ROUND_OF does not allow Team -> Circuit"
+    },
+    {
+      "element": "relationship",
+      "index": 21,
+      "reason": "ROUND_OF does not allow Team -> Circuit"
+    },
+    {
+      "element": "relationship",
+      "index": 22,
+      "reason": "TEAMMATE_OF does not allow Driver -> Team"
+    },
+    {
+      "element": "relationship",
+      "index": 24,
+      "reason": "TEAMMATE_OF does not allow Driver -> Team"
+    },
+    {
+      "element": "relationship",
+      "index": 26,
+      "reason": "TEAMMATE_OF does not allow Driver -> Team"
+    }
+  ],
+  "alignments": []
+}

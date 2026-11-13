@@ -1,0 +1,63 @@
+{
+  "chunk_id": "season-2016-formula-one-world-championship#81",
+  "doc_id": "season-2016-formula-one-world-championship",
+  "document_title": "2016 Formula One World Championship",
+  "section": "European rounds",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/2016_Formula_One_World_Championship",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "59cb5837a62b29777349d554b33287522f2703049b18f76a32f89a907dd0d02e",
+  "validation_version": "partial-1",
+  "source_status": "ok",
+  "status": "ok",
+  "rejections": [],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Rosberg",
+        "entity_type": "Driver",
+        "description": "A driver who reduced Hamilton's championship lead to two points."
+      },
+      {
+        "local_id": "e2",
+        "name": "Hamilton",
+        "entity_type": "Driver",
+        "description": "A driver who had a championship lead reduced by Rosberg."
+      },
+      {
+        "local_id": "e3",
+        "name": "Italy",
+        "entity_type": "GrandPrix",
+        "description": "The location of the next round where Rosberg reduced Hamilton's lead."
+      },
+      {
+        "local_id": "e4",
+        "name": "2016",
+        "entity_type": "Season",
+        "description": "The championship year in which the events took place."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Rosberg and Hamilton were teammates during the race in Italy.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e4",
+        "relationship_type": "ROUND_OF",
+        "description": "The Italian Grand Prix is a round of the 2016 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

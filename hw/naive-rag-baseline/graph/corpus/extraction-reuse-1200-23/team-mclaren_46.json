@@ -1,0 +1,167 @@
+{
+  "chunk_id": "team-mclaren#46",
+  "doc_id": "team-mclaren",
+  "document_title": "McLaren",
+  "section": "2015–2017: Return to Honda engines",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "77d88fb3f23b7cd22d98090a5e4cf8b91bca2e5af8fca517ca1da2e17768d1e1",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "McLaren",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that entered cars."
+      },
+      {
+        "local_id": "e2",
+        "name": "Fernando Alonso",
+        "entity_type": "Driver",
+        "description": "A driver who raced for McLaren."
+      },
+      {
+        "local_id": "e3",
+        "name": "Jenson Button",
+        "entity_type": "Driver",
+        "description": "A driver who raced for McLaren."
+      },
+      {
+        "local_id": "e4",
+        "name": "Stoffel Vandoorne",
+        "entity_type": "Driver",
+        "description": "A reserve driver who raced for McLaren."
+      },
+      {
+        "local_id": "e5",
+        "name": "2016",
+        "entity_type": "Season",
+        "description": "The Formula 1 championship season."
+      },
+      {
+        "local_id": "e6",
+        "name": "Australian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A race in which Fernando Alonso crashed."
+      },
+      {
+        "local_id": "e7",
+        "name": "Bahrain Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The second round of the Championship."
+      },
+      {
+        "local_id": "e8",
+        "name": "Russian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A race where Alonso and Button scored points."
+      },
+      {
+        "local_id": "e9",
+        "name": "Monaco Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A rain-affected race that was one of the best for McLaren."
+      },
+      {
+        "local_id": "e10",
+        "name": "Austrian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A race where Jenson Button recorded his best result of the season."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e5",
+        "relationship_type": "ENTERED",
+        "description": "McLaren took part in the 2016 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e1",
+        "relationship_type": "DROVE_FOR",
+        "description": "Fernando Alonso raced for McLaren.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e1",
+        "relationship_type": "DROVE_FOR",
+        "description": "Jenson Button raced for McLaren.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e1",
+        "relationship_type": "DROVE_FOR",
+        "description": "Stoffel Vandoorne raced for McLaren.",
+        "from_year": null,
+        "to_year": null,
+        "role": "reserve driver"
+      },
+      {
+        "source_id": "e6",
+        "target_id": "e5",
+        "relationship_type": "ROUND_OF",
+        "description": "The Australian Grand Prix is a round of the 2016 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e7",
+        "target_id": "e5",
+        "relationship_type": "ROUND_OF",
+        "description": "The Bahrain Grand Prix is a round of the 2016 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e8",
+        "target_id": "e5",
+        "relationship_type": "ROUND_OF",
+        "description": "The Russian Grand Prix is a round of the 2016 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e9",
+        "target_id": "e5",
+        "relationship_type": "ROUND_OF",
+        "description": "The Monaco Grand Prix is a round of the 2016 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e10",
+        "target_id": "e5",
+        "relationship_type": "ROUND_OF",
+        "description": "The Austrian Grand Prix is a round of the 2016 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 10,
+  "entities_accepted": 10,
+  "entities_rejected": 0,
+  "relationship_candidates": 9,
+  "relationships_accepted": 9,
+  "relationships_rejected": 0,
+  "rejections": [],
+  "alignments": []
+}

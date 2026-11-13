@@ -1,0 +1,111 @@
+{
+  "chunk_id": "reference-formula-one#35",
+  "doc_id": "reference-formula-one",
+  "document_title": "Formula One",
+  "section": "Formula One > Points system",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "98160b2735d3427754815021a45905ea7b3edb4643df0b37ba19b12d776239c2",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Points system",
+        "entity_type": "Title",
+        "description": "Various systems for awarding championship points have been used since 1950."
+      },
+      {
+        "local_id": "e2",
+        "name": "2010",
+        "entity_type": "Season",
+        "description": "The current points system has been in place since 2010."
+      },
+      {
+        "local_id": "e3",
+        "name": "1977",
+        "entity_type": "Season",
+        "description": "A period from some time between the 1977 and 1980 seasons."
+      },
+      {
+        "local_id": "e4",
+        "name": "1980",
+        "entity_type": "Season",
+        "description": "A period from some time between the 1977 and 1980 seasons."
+      },
+      {
+        "local_id": "e5",
+        "name": "2021",
+        "entity_type": "Season",
+        "description": "The end of the half-points rule was at the end of the 2021 season."
+      },
+      {
+        "local_id": "e6",
+        "name": "2022",
+        "entity_type": "Season",
+        "description": "The half-points rule was replaced by a distance-dependent, gradual-scale system for 2022."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "AWARDED_IN",
+        "description": "The current points system has been in place since 2010.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e5",
+        "relationship_type": "AWARDED_IN",
+        "description": "The half-points rule ended at the end of the 2021 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e6",
+        "relationship_type": "AWARDED_IN",
+        "description": "The half-points rule was replaced by a distance-dependent, gradual-scale system for 2022.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 6,
+  "entities_accepted": 6,
+  "entities_rejected": 0,
+  "relationship_candidates": 4,
+  "relationships_accepted": 3,
+  "relationships_rejected": 1,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "AWARDED_IN is not temporal; from_year=1977, to_year=1980, role=None cannot be stored without dropping them"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 0,
+      "action": "clear_redundant_season_year",
+      "detail": "AWARDED_IN year 2010 already named by Season 'e2'; from_year and to_year cleared"
+    },
+    {
+      "index": 2,
+      "action": "clear_redundant_season_year",
+      "detail": "AWARDED_IN year 2021 already named by Season 'e5'; from_year and to_year cleared"
+    },
+    {
+      "index": 3,
+      "action": "clear_redundant_season_year",
+      "detail": "AWARDED_IN year 2022 already named by Season 'e6'; from_year and to_year cleared"
+    }
+  ]
+}

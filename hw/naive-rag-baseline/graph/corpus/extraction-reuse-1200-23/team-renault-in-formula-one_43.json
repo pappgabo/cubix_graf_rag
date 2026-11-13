@@ -1,0 +1,187 @@
+{
+  "chunk_id": "team-renault-in-formula-one#43",
+  "doc_id": "team-renault-in-formula-one",
+  "document_title": "Renault in Formula One",
+  "section": "Constructor > Renault F1 Team and Lotus Renault GP (2002–2011): The rise and fall of the first Enstone era > Lotus Renault GP: Renault steps back (2011)",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "f63f5779f6c4279e4dfcf25b8e3b7e7c35f8d012b542da00f4a8cf6cf952e02b",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Renault F1 Team",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that entered cars."
+      },
+      {
+        "local_id": "e2",
+        "name": "Lotus Renault GP",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that entered cars."
+      },
+      {
+        "local_id": "e3",
+        "name": "Kimi Räikkönen",
+        "entity_type": "Driver",
+        "description": "A Formula 1 driver."
+      },
+      {
+        "local_id": "e4",
+        "name": "Bruno Senna",
+        "entity_type": "Driver",
+        "description": "A Formula 1 driver."
+      },
+      {
+        "local_id": "e5",
+        "name": "Romain Grosjean",
+        "entity_type": "Driver",
+        "description": "A Formula 1 driver."
+      },
+      {
+        "local_id": "e6",
+        "name": "2012",
+        "entity_type": "Season",
+        "description": "A championship year."
+      },
+      {
+        "local_id": "e7",
+        "name": "British Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A specific race event."
+      },
+      {
+        "local_id": "e8",
+        "name": "Belgian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A specific race event."
+      },
+      {
+        "local_id": "e9",
+        "name": "8th place",
+        "entity_type": "RaceResult",
+        "description": "Heidfeld's result in the British Grand Prix."
+      },
+      {
+        "local_id": "e10",
+        "name": "12th place",
+        "entity_type": "RaceResult",
+        "description": "Petrov's result in the British Grand Prix."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e6",
+        "relationship_type": "ENTERED",
+        "description": "Renault F1 Team entered the 2012 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e6",
+        "relationship_type": "ENTERED",
+        "description": "Lotus Renault GP entered the 2012 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e1",
+        "relationship_type": "DROVE_FOR",
+        "description": "Kimi Räikkönen drove for Renault F1 Team in 2012.",
+        "from_year": 2012,
+        "to_year": null,
+        "role": "driver"
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e1",
+        "relationship_type": "DROVE_FOR",
+        "description": "Bruno Senna drove for Renault F1 Team in 2011.",
+        "from_year": 2011,
+        "to_year": null,
+        "role": "driver"
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e1",
+        "relationship_type": "DROVE_FOR",
+        "description": "Romain Grosjean drove for Renault F1 Team in 2012.",
+        "from_year": 2012,
+        "to_year": null,
+        "role": "driver"
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e9",
+        "relationship_type": "ACHIEVED",
+        "description": "Kimi Räikkönen achieved 8th place in the British Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e10",
+        "relationship_type": "ACHIEVED",
+        "description": "Bruno Senna achieved 12th place in the British Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e9",
+        "target_id": "e7",
+        "relationship_type": "AT_RACE",
+        "description": "Heidfeld's result belongs to the British Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e10",
+        "target_id": "e7",
+        "relationship_type": "AT_RACE",
+        "description": "Petrov's result belongs to the British Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Bruno Senna drove for Lotus Renault GP in 2011.",
+        "from_year": 2011,
+        "to_year": null,
+        "role": "driver"
+      }
+    ]
+  },
+  "entity_candidates": 10,
+  "entities_accepted": 10,
+  "entities_rejected": 0,
+  "relationship_candidates": 10,
+  "relationships_accepted": 10,
+  "relationships_rejected": 0,
+  "rejections": [],
+  "alignments": [
+    {
+      "index": 0,
+      "action": "clear_redundant_season_year",
+      "detail": "ENTERED year 2012 already named by Season 'e6'; from_year and to_year cleared"
+    },
+    {
+      "index": 1,
+      "action": "clear_redundant_season_year",
+      "detail": "ENTERED year 2012 already named by Season 'e6'; from_year and to_year cleared"
+    }
+  ]
+}

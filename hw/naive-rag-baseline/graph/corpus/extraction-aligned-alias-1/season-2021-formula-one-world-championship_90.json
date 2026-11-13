@@ -1,0 +1,61 @@
+{
+  "chunk_id": "season-2021-formula-one-world-championship#90",
+  "doc_id": "season-2021-formula-one-world-championship",
+  "document_title": "2021 Formula One World Championship",
+  "section": null,
+  "page": 8,
+  "source": "https://en.wikipedia.org/wiki/2021_Formula_One_World_Championship",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "4f823ab462e964097bcda800867a8f7fb7646cc7b1514338c2fd3719d0ed2864",
+  "validation_version": "partial-1",
+  "source_status": "ok",
+  "status": "ok",
+  "rejections": [],
+  "alignments": [],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Verstappen",
+        "entity_type": "Driver",
+        "description": "A driver who took pole position in Abu Dhabi."
+      },
+      {
+        "local_id": "e2",
+        "name": "Lewis Hamilton",
+        "entity_type": "Driver",
+        "description": "A driver who had a better start and took the lead into the first turn."
+      },
+      {
+        "local_id": "e3",
+        "name": "Norris",
+        "entity_type": "Driver",
+        "description": "A driver who qualified behind Verstappen and Hamilton."
+      },
+      {
+        "local_id": "e4",
+        "name": "Abu Dhabi",
+        "entity_type": "GrandPrix",
+        "description": "The location of the season finale race."
+      },
+      {
+        "local_id": "e5",
+        "name": "2021",
+        "entity_type": "Season",
+        "description": "The championship year of the events described."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e4",
+        "target_id": "e5",
+        "relationship_type": "ROUND_OF",
+        "description": "Abu Dhabi is a round of the 2021 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

@@ -1,0 +1,128 @@
+{
+  "chunk_id": "driver-fernando-alonso#58",
+  "doc_id": "driver-fernando-alonso",
+  "document_title": "Fernando Alonso",
+  "section": "Return to McLaren (2015–2019)",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/Fernando_Alonso",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "ba2205608e28a8f74f8652b3e2c7a9dde39cd9722791f079ae4fac5cb3a98cd1",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "ENTERED is not temporal; from_year, to_year and role must be null"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "ROUND_OF is not temporal; from_year, to_year and role must be null"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "ROUND_OF is not temporal; from_year, to_year and role must be null"
+    },
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "ROUND_OF is not temporal; from_year, to_year and role must be null"
+    },
+    {
+      "element": "relationship",
+      "index": 5,
+      "reason": "ROUND_OF is not temporal; from_year, to_year and role must be null"
+    }
+  ],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Fernando Alonso",
+        "entity_type": "Driver",
+        "description": "A Formula One driver who raced for McLaren during the 2015-2019 period."
+      },
+      {
+        "local_id": "e2",
+        "name": "McLaren",
+        "entity_type": "Team",
+        "description": "A Formula One team that Alonso raced for from 2015 to 2019."
+      },
+      {
+        "local_id": "e3",
+        "name": "2016",
+        "entity_type": "Season",
+        "description": "The Formula One season during which Alonso raced for McLaren."
+      },
+      {
+        "local_id": "e4",
+        "name": "Australian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The season-opening race of the 2016 Formula One season."
+      },
+      {
+        "local_id": "e5",
+        "name": "Bahrain Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The race that Alonso missed due to injuries from a crash."
+      },
+      {
+        "local_id": "e6",
+        "name": "Monaco Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A race where Alonso achieved a fifth-place finish."
+      },
+      {
+        "local_id": "e7",
+        "name": "United States Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A race where Alonso achieved a fifth-place finish."
+      },
+      {
+        "local_id": "e8",
+        "name": "Jenson Button",
+        "entity_type": "Driver",
+        "description": "Alonso's teammate at McLaren during the 2016 season."
+      },
+      {
+        "local_id": "e9",
+        "name": "Stoffel Vandoorne",
+        "entity_type": "Driver",
+        "description": "The reserve driver who replaced Alonso at the Bahrain Grand Prix."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Alonso raced for McLaren in 2016.",
+        "from_year": 2016,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e8",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Alonso was teammates with Jenson Button at McLaren in 2016.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e9",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Alonso was replaced by Stoffel Vandoorne at the Bahrain Grand Prix in 2016.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

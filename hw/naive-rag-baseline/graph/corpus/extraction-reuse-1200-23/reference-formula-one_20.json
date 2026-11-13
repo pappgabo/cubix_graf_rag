@@ -1,0 +1,172 @@
+{
+  "chunk_id": "reference-formula-one#20",
+  "doc_id": "reference-formula-one",
+  "document_title": "Formula One",
+  "section": "Formula One > Hybrid era",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "f2f514c793d0765f03bd3197734b52620392f5745097e4a0a078ebf6d2b1fea8",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Mercedes-AMG Petronas Formula One Team",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that won the titles in the 2017 and 2018 seasons."
+      },
+      {
+        "local_id": "e2",
+        "name": "Scuderia Ferrari",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that competed in the title battle against Mercedes in the 2017 and 2018 seasons."
+      },
+      {
+        "local_id": "e3",
+        "name": "Red Bull Racing",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that began to challenge Mercedes in 2021."
+      },
+      {
+        "local_id": "e4",
+        "name": "Honda",
+        "entity_type": "PowerUnit",
+        "description": "An engine manufacturer that powered Red Bull starting in 2021."
+      },
+      {
+        "local_id": "e5",
+        "name": "Verstappen",
+        "entity_type": "Driver",
+        "description": "A driver who won the Drivers' Championship in 2021."
+      },
+      {
+        "local_id": "e6",
+        "name": "Lewis Hamilton",
+        "entity_type": "Driver",
+        "description": "A driver who competed against Verstappen for the Drivers' Championship in 2021."
+      },
+      {
+        "local_id": "e7",
+        "name": "Renault",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that returned in 2016 after buying back the Lotus F1 Team."
+      },
+      {
+        "local_id": "e8",
+        "name": "Aston Martin",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that was rebranded from Racing Point in 2021."
+      },
+      {
+        "local_id": "e9",
+        "name": "Alfa Romeo",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that was rebranded from Sauber for the 2019 season."
+      },
+      {
+        "local_id": "e10",
+        "name": "Lotus F1 Team",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that was bought back by Renault."
+      },
+      {
+        "local_id": "e11",
+        "name": "2017",
+        "entity_type": "Season",
+        "description": "A Formula 1 season in which Mercedes won the title."
+      },
+      {
+        "local_id": "e12",
+        "name": "2018",
+        "entity_type": "Season",
+        "description": "A Formula 1 season in which Mercedes won the title."
+      },
+      {
+        "local_id": "e13",
+        "name": "2021",
+        "entity_type": "Season",
+        "description": "A Formula 1 season in which Verstappen won the Drivers' Championship."
+      },
+      {
+        "local_id": "e14",
+        "name": "2020",
+        "entity_type": "Season",
+        "description": "A Formula 1 season during which Mercedes continued to dominate."
+      },
+      {
+        "local_id": "e15",
+        "name": "2025",
+        "entity_type": "Season",
+        "description": "The year until which all ten F1 teams committed to the sport under the new Concorde Agreement."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e8",
+        "target_id": "e13",
+        "relationship_type": "ENTERED",
+        "description": "Aston Martin was rebranded from Racing Point for the 2021 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 15,
+  "entities_accepted": 15,
+  "entities_rejected": 0,
+  "relationship_candidates": 9,
+  "relationships_accepted": 1,
+  "relationships_rejected": 8,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 5,
+      "reason": "ENTERED is not temporal; from_year=2016, to_year=None, role=None cannot be stored without dropping them"
+    },
+    {
+      "element": "relationship",
+      "index": 7,
+      "reason": "ENTERED is not temporal; from_year=2019, to_year=None, role=None cannot be stored without dropping them"
+    },
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "WON does not allow Team -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "WON does not allow Team -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "POWERED_BY does not allow Team -> PowerUnit"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "WON does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "TEAMMATE_OF does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 6,
+      "reason": "DROVE_FOR does not allow Team -> Team"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 6,
+      "action": "clear_redundant_season_year",
+      "detail": "ENTERED year 2021 already named by Season 'e13'; from_year and to_year cleared"
+    }
+  ]
+}

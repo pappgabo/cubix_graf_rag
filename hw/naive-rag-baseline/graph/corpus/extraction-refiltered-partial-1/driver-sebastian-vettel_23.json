@@ -1,0 +1,54 @@
+{
+  "chunk_id": "driver-sebastian-vettel#23",
+  "doc_id": "driver-sebastian-vettel",
+  "document_title": "Sebastian Vettel",
+  "section": "2006: Test debut",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/Sebastian_Vettel",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "4c4ce760e01af0acd63c59246d8c3f9bab2a8b4a6b7f01e45f18c787bc28bdff",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "DROVE_FOR does not allow Driver -> Season"
+    }
+  ],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Sebastian Vettel",
+        "entity_type": "Driver",
+        "description": "A Formula One driver who made his test debut in 2006."
+      },
+      {
+        "local_id": "e2",
+        "name": "2006",
+        "entity_type": "Season",
+        "description": "The season in which Sebastian Vettel made his test debut."
+      },
+      {
+        "local_id": "e3",
+        "name": "Italian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula One race where Sebastian Vettel set the fastest time in practice sessions."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e3",
+        "target_id": "e2",
+        "relationship_type": "ROUND_OF",
+        "description": "The Italian Grand Prix is a round of the 2006 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

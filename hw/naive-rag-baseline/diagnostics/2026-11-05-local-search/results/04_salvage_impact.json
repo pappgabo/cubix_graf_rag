@@ -1,0 +1,635 @@
+{
+  "rejected_records": 685,
+  "salvaged_records": 685,
+  "not_salvaged_records": 0,
+  "candidate_entities_kept": 3675,
+  "salvaged_records_with_entities": 680,
+  "candidate_relationships": 3065,
+  "relationships_kept_structurally_valid": 1131,
+  "relationships_dropped_by_reason": {
+    "ACHIEVED does not allow Driver -> GrandPrix": 536,
+    "WON does not allow Driver -> Season": 169,
+    "ENTERED is not temporal; from_year, to_year and role must be null": 132,
+    "RACED_IN does not allow Driver -> Season": 103,
+    "WON is not temporal; from_year, to_year and role must be null": 83,
+    "ACHIEVED does not allow Driver -> Season": 81,
+    "ROUND_OF is not temporal; from_year, to_year and role must be null": 47,
+    "ACHIEVED does not allow Driver -> Driver": 35,
+    "DROVE_FOR does not allow Team -> Driver": 35,
+    "ROUND_OF does not allow Circuit -> Season": 34,
+    "DROVE_FOR does not allow Team -> Team": 32,
+    "DROVE_FOR does not allow Driver -> Season": 28,
+    "FOR_TEAM does not allow Driver -> Team": 23,
+    "FIELDED is not temporal; from_year, to_year and role must be null": 22,
+    "FOR_TEAM does not allow Driver -> GrandPrix": 21,
+    "HELD_AT does not allow GrandPrix -> Team": 20,
+    "HELD_AT does not allow Team -> GrandPrix": 19,
+    "TEAMMATE_OF does not allow Driver -> Team": 16,
+    "ACHIEVED does not allow Driver -> Circuit": 15,
+    "AWARDED_IN does not allow Season -> Season": 15,
+    "AT_RACE does not allow Driver -> GrandPrix": 14,
+    "POWERED_BY does not allow Team -> PowerUnit": 14,
+    "WON does not allow Driver -> GrandPrix": 13,
+    "FIELDED does not allow Team -> Season": 12,
+    "ACHIEVED does not allow GrandPrix -> Driver": 12,
+    "DROVE_FOR does not allow Driver -> Driver": 12,
+    "ROUND_OF does not allow Team -> GrandPrix": 12,
+    "AWARDED_IN does not allow Team -> Season": 11,
+    "FIELDED does not allow Car -> Team": 11,
+    "RACED_IN is not temporal; from_year, to_year and role must be null": 11,
+    "RACED_IN does not allow Season -> Driver": 11,
+    "WON does not allow Driver -> Team": 10,
+    "FOR_TEAM does not allow GrandPrix -> Team": 10,
+    "FIELDED does not allow Team -> Driver": 10,
+    "FIELDED does not allow Team -> GrandPrix": 10,
+    "AT_RACE does not allow GrandPrix -> Driver": 9,
+    "TEAMMATE_OF is not temporal; from_year, to_year and role must be null": 8,
+    "RACED_IN does not allow Circuit -> Season": 7,
+    "FIELDED does not allow Driver -> Car": 7,
+    "TEAMMATE_OF does not allow Team -> Driver": 7,
+    "ENTERED does not allow Team -> GrandPrix": 7,
+    "HELD_AT does not allow Circuit -> Driver": 7,
+    "POWERED_BY does not allow Team -> Season": 7,
+    "RACED_IN does not allow Driver -> GrandPrix": 6,
+    "HELD_AT does not allow Circuit -> Season": 6,
+    "ROUND_OF does not allow Season -> GrandPrix": 6,
+    "WON does not allow Team -> Season": 6,
+    "ROUND_OF does not allow Season -> Circuit": 6,
+    "TEAMMATE_OF does not allow Team -> Team": 5,
+    "TEAMMATE_OF does not allow Driver -> Season": 5,
+    "ROUND_OF does not allow Team -> Season": 5,
+    "ROUND_OF does not allow GrandPrix -> Team": 5,
+    "FOR_TEAM does not allow GrandPrix -> Driver": 5,
+    "POWERED_BY does not allow Team -> Team": 5,
+    "DROVE_FOR does not allow Driver -> Car": 4,
+    "ACHIEVED does not allow RaceResult -> GrandPrix": 4,
+    "AWARDED_IN does not allow Season -> Title": 4,
+    "AWARDED_IN does not allow GrandPrix -> Season": 4,
+    "ACHIEVED does not allow Driver -> Title": 4,
+    "FIELDED does not allow Car -> Car": 4,
+    "RACED_IN does not allow GrandPrix -> Season": 4,
+    "ROUND_OF does not allow Driver -> Season": 4,
+    "HELD_AT does not allow Circuit -> GrandPrix": 3,
+    "TEAMMATE_OF does not allow Driver -> Title": 3,
+    "FOR_TEAM does not allow Driver -> Driver": 3,
+    "ROUND_OF does not allow Season -> Season": 3,
+    "AWARDED_IN does not allow Season -> Driver": 3,
+    "AWARDED_IN does not allow Driver -> Season": 3,
+    "HELD_AT does not allow Circuit -> Car": 3,
+    "ACHIEVED does not allow Circuit -> Driver": 3,
+    "AT_RACE does not allow GrandPrix -> Season": 3,
+    "TEAMMATE_OF does not allow Driver -> GrandPrix": 3,
+    "FOR_TEAM does not allow Driver -> Circuit": 3,
+    "ENTERED does not allow Season -> Team": 3,
+    "ACHIEVED does not allow RaceResult -> Driver": 3,
+    "AT_RACE does not allow Driver -> Circuit": 3,
+    "HELD_AT does not allow Driver -> Circuit": 3,
+    "ENTERED does not allow Driver -> Season": 3,
+    "ROUND_OF: unknown source_id 'x'": 3,
+    "HELD_AT does not allow GrandPrix -> Driver": 3,
+    "ACHIEVED does not allow Team -> GrandPrix": 3,
+    "RACED_IN does not allow Driver -> Car": 2,
+    "WON does not allow Driver -> Driver": 2,
+    "HELD_AT does not allow Team -> Circuit": 2,
+    "ROUND_OF does not allow GrandPrix -> Driver": 2,
+    "FIELDED does not allow Team -> Team": 2,
+    "ACHIEVED does not allow Driver -> Car": 2,
+    "HELD_AT does not allow Driver -> GrandPrix": 2,
+    "HELD_AT does not allow Circuit -> Team": 2,
+    "TEAMMATE_OF does not allow Car -> Driver": 2,
+    "HELD_AT does not allow Circuit -> Circuit": 2,
+    "RACED_IN does not allow Season -> Season": 2,
+    "HELD_AT: unknown source_id 'x'": 2,
+    "DROVE_FOR does not allow Team -> GrandPrix": 2,
+    "WON does not allow Team -> GrandPrix": 2,
+    "AT_RACE does not allow GrandPrix -> GrandPrix": 1,
+    "RACED_IN does not allow Circuit -> Driver": 1,
+    "ACHIEVED does not allow Season -> Driver": 1,
+    "RACED_IN does not allow Team -> Driver": 1,
+    "WON does not allow Season -> Season": 1,
+    "WON does not allow Driver -> Car": 1,
+    "HELD_AT does not allow Car -> Circuit": 1,
+    "AWARDED_IN does not allow Title -> Circuit": 1,
+    "WON does not allow Driver -> Circuit": 1,
+    "ENTERED does not allow Team -> Team": 1,
+    "FIELDED does not allow Car -> GrandPrix": 1,
+    "RACED_IN does not allow Team -> Season": 1,
+    "POWERED_BY does not allow Car -> Driver": 1,
+    "FOR_TEAM does not allow Team -> GrandPrix": 1,
+    "AWARDED_IN does not allow Team -> Title": 1,
+    "POWERED_BY does not allow Driver -> PowerUnit": 1,
+    "HELD_AT does not allow Car -> GrandPrix": 1,
+    "FIELDED does not allow Team -> Title": 1,
+    "HELD_AT does not allow Title -> Circuit": 1,
+    "POWERED_BY does not allow Car -> Circuit": 1,
+    "TEAMMATE_OF does not allow Driver -> Circuit": 1,
+    "ROUND_OF does not allow Title -> Circuit": 1,
+    "WON: unknown target_id 'x'": 1,
+    "AWARDED_IN: unknown source_id 'x'": 1,
+    "HELD_AT does not allow Season -> GrandPrix": 1,
+    "ENTERED does not allow Team -> Circuit": 1,
+    "DROVE_FOR does not allow Team -> Circuit": 1,
+    "AT_RACE does not allow Car -> GrandPrix": 1,
+    "ROUND_OF does not allow GrandPrix -> GrandPrix": 1,
+    "HELD_AT does not allow GrandPrix -> Car": 1,
+    "POWERED_BY does not allow GrandPrix -> Car": 1,
+    "RACED_IN does not allow PowerUnit -> Season": 1,
+    "ACHIEVED does not allow RaceResult -> Season": 1,
+    "FOR_TEAM does not allow RaceResult -> Driver": 1,
+    "RACED_IN does not allow RaceResult -> Season": 1,
+    "RACED_IN does not allow Driver -> Driver": 1,
+    "ENTERED does not allow Season -> Circuit": 1,
+    "FIELDED does not allow PowerUnit -> Season": 1,
+    "FOR_TEAM does not allow Driver -> Title": 1,
+    "AT_RACE does not allow RaceResult -> Circuit": 1,
+    "FOR_TEAM does not allow Driver -> Season": 1,
+    "HELD_AT: unknown target_id 'x'": 1,
+    "POWERED_BY does not allow Driver -> Car": 1,
+    "AT_RACE does not allow Season -> Driver": 1,
+    "FIELDED does not allow Season -> Team": 1,
+    "ROUND_OF: unknown target_id 'x'": 1,
+    "ENTERED does not allow Season -> Season": 1,
+    "POWERED_BY does not allow PowerUnit -> PowerUnit": 1,
+    "ENTERED does not allow PowerUnit -> Season": 1,
+    "DROVE_FOR does not allow Team -> Title": 1,
+    "POWERED_BY does not allow PowerUnit -> Team": 1,
+    "POWERED_BY does not allow PowerUnit -> Season": 1,
+    "FOR_TEAM does not allow Driver -> RaceResult": 1,
+    "AT_RACE does not allow RaceResult -> Season": 1,
+    "ROUND_OF does not allow Driver -> GrandPrix": 1,
+    "FIELDED does not allow Team -> PowerUnit": 1,
+    "WON does not allow Team -> Team": 1,
+    "DROVE_FOR: unknown source_id 'x'": 1,
+    "ENTERED: unknown source_id 'x'": 1
+  },
+  "dropped_only_because_years_on_non_temporal_edge": 303,
+  "graph_before": {
+    "kind": "merged",
+    "nodes": 401,
+    "edges": 580,
+    "largest_weak_component_nodes": 283
+  },
+  "graph_after": {
+    "kind": "merged",
+    "nodes": 877,
+    "edges": 1236,
+    "largest_weak_component_nodes": 497
+  },
+  "chunks_referenced_before": 363,
+  "chunks_referenced_after": 1043,
+  "chunks_referenced_by_edges_after": 756,
+  "new_entity_keys_without_embedding": 476,
+  "existing_index_entities_whose_text_would_change": 231,
+  "new_placeholder_named_entities": [
+    "Car:null",
+    "PowerUnit:null",
+    "RaceResult:null"
+  ],
+  "shape_flags": {
+    "accepted": {
+      "entity_occurrences": 1442,
+      "RaceResult name is only a number or position": 4,
+      "Season name is not a year": 30
+    },
+    "salvaged": {
+      "entity_occurrences": 3675,
+      "RaceResult name is only a number or position": 6,
+      "Season name is not a year": 57,
+      "Title name is only a year": 1
+    }
+  },
+  "evidence_changes": {
+    "linked_to_graph": {
+      "before": 8,
+      "after": 16,
+      "gained": [
+        "Q02: vettel youngest champion at 23",
+        "Q03: verstappen won 2021 title",
+        "Q05: vettel won 2012 title",
+        "Q05: vettel left red bull for ferrari",
+        "Q06: schumacher benetton titles",
+        "Q06: hamilton mclaren 2008 title",
+        "Q08: bottas replaced rosberg at mercedes",
+        "Q08: bottas came from williams"
+      ],
+      "lost": []
+    },
+    "in_pool": {
+      "before": 7,
+      "after": 14,
+      "gained": [
+        "Q02: vettel youngest champion at 23",
+        "Q05: vettel won 2012 title",
+        "Q06: schumacher benetton titles",
+        "Q06: hamilton mclaren 2008 title",
+        "Q07: raikkonen won the 2007 title",
+        "Q08: bottas replaced rosberg at mercedes",
+        "Q08: bottas came from williams"
+      ],
+      "lost": []
+    },
+    "A_current@6": {
+      "before": 3,
+      "after": 4,
+      "gained": [
+        "Q04: hamilton was his 2016 teammate",
+        "Q05: vettel won 2012 title",
+        "Q07: raikkonen won the 2007 title"
+      ],
+      "lost": [
+        "Q01: hamilton seven titles",
+        "Q06: hamilton seven titles"
+      ]
+    },
+    "A_current@8": {
+      "before": 4,
+      "after": 4,
+      "gained": [
+        "Q04: hamilton was his 2016 teammate",
+        "Q05: vettel won 2012 title",
+        "Q07: raikkonen won the 2007 title"
+      ],
+      "lost": [
+        "Q01: hamilton seven titles",
+        "Q06: hamilton seven titles",
+        "Q06: hamilton mercedes titles"
+      ]
+    },
+    "B_no_reserve@6": {
+      "before": 3,
+      "after": 7,
+      "gained": [
+        "Q02: vettel youngest champion at 23",
+        "Q04: hamilton was his 2016 teammate",
+        "Q05: vettel won 2012 title",
+        "Q07: raikkonen won the 2007 title"
+      ],
+      "lost": []
+    },
+    "B_no_reserve@8": {
+      "before": 4,
+      "after": 8,
+      "gained": [
+        "Q02: vettel youngest champion at 23",
+        "Q05: vettel won 2012 title",
+        "Q07: raikkonen won the 2007 title",
+        "Q08: bottas replaced rosberg at mercedes"
+      ],
+      "lost": []
+    }
+  },
+  "per_question": {
+    "Q01": {
+      "before": {
+        "hamilton seven titles": {
+          "linked_to_graph": true,
+          "in_pool": true,
+          "A_current@6": true,
+          "A_current@8": true,
+          "B_no_reserve@6": true,
+          "B_no_reserve@8": true
+        }
+      },
+      "before_pool_size": 199,
+      "after": {
+        "hamilton seven titles": {
+          "linked_to_graph": true,
+          "in_pool": true,
+          "A_current@6": false,
+          "A_current@8": false,
+          "B_no_reserve@6": true,
+          "B_no_reserve@8": true
+        }
+      },
+      "after_pool_size": 501
+    },
+    "Q02": {
+      "before": {
+        "vettel youngest champion at 23": {
+          "linked_to_graph": false,
+          "in_pool": false,
+          "A_current@6": false,
+          "A_current@8": false,
+          "B_no_reserve@6": false,
+          "B_no_reserve@8": false
+        }
+      },
+      "before_pool_size": 100,
+      "after": {
+        "vettel youngest champion at 23": {
+          "linked_to_graph": true,
+          "in_pool": true,
+          "A_current@6": false,
+          "A_current@8": false,
+          "B_no_reserve@6": true,
+          "B_no_reserve@8": true
+        }
+      },
+      "after_pool_size": 189
+    },
+    "Q03": {
+      "before": {
+        "verstappen won 2021 title": {
+          "linked_to_graph": false,
+          "in_pool": false,
+          "A_current@6": false,
+          "A_current@8": false,
+          "B_no_reserve@6": false,
+          "B_no_reserve@8": false
+        }
+      },
+      "before_pool_size": 136,
+      "after": {
+        "verstappen won 2021 title": {
+          "linked_to_graph": true,
+          "in_pool": false,
+          "A_current@6": false,
+          "A_current@8": false,
+          "B_no_reserve@6": false,
+          "B_no_reserve@8": false
+        }
+      },
+      "after_pool_size": 175
+    },
+    "Q04": {
+      "before": {
+        "rosberg won 2016 title": {
+          "linked_to_graph": true,
+          "in_pool": true,
+          "A_current@6": true,
+          "A_current@8": true,
+          "B_no_reserve@6": true,
+          "B_no_reserve@8": true
+        },
+        "hamilton was his 2016 teammate": {
+          "linked_to_graph": true,
+          "in_pool": true,
+          "A_current@6": false,
+          "A_current@8": false,
+          "B_no_reserve@6": false,
+          "B_no_reserve@8": true
+        }
+      },
+      "before_pool_size": 218,
+      "after": {
+        "rosberg won 2016 title": {
+          "linked_to_graph": true,
+          "in_pool": true,
+          "A_current@6": true,
+          "A_current@8": true,
+          "B_no_reserve@6": true,
+          "B_no_reserve@8": true
+        },
+        "hamilton was his 2016 teammate": {
+          "linked_to_graph": true,
+          "in_pool": true,
+          "A_current@6": true,
+          "A_current@8": true,
+          "B_no_reserve@6": true,
+          "B_no_reserve@8": true
+        }
+      },
+      "after_pool_size": 529
+    },
+    "Q05": {
+      "before": {
+        "vettel won 2012 title": {
+          "linked_to_graph": false,
+          "in_pool": false,
+          "A_current@6": false,
+          "A_current@8": false,
+          "B_no_reserve@6": false,
+          "B_no_reserve@8": false
+        },
+        "vettel left red bull for ferrari": {
+          "linked_to_graph": false,
+          "in_pool": false,
+          "A_current@6": false,
+          "A_current@8": false,
+          "B_no_reserve@6": false,
+          "B_no_reserve@8": false
+        },
+        "ferrari move effective 2015": {
+          "linked_to_graph": false,
+          "in_pool": false,
+          "A_current@6": false,
+          "A_current@8": false,
+          "B_no_reserve@6": false,
+          "B_no_reserve@8": false
+        }
+      },
+      "before_pool_size": 144,
+      "after": {
+        "vettel won 2012 title": {
+          "linked_to_graph": true,
+          "in_pool": true,
+          "A_current@6": true,
+          "A_current@8": true,
+          "B_no_reserve@6": true,
+          "B_no_reserve@8": true
+        },
+        "vettel left red bull for ferrari": {
+          "linked_to_graph": true,
+          "in_pool": false,
+          "A_current@6": false,
+          "A_current@8": false,
+          "B_no_reserve@6": false,
+          "B_no_reserve@8": false
+        },
+        "ferrari move effective 2015": {
+          "linked_to_graph": false,
+          "in_pool": false,
+          "A_current@6": false,
+          "A_current@8": false,
+          "B_no_reserve@6": false,
+          "B_no_reserve@8": false
+        }
+      },
+      "after_pool_size": 577
+    },
+    "Q06": {
+      "before": {
+        "hamilton seven titles": {
+          "linked_to_graph": true,
+          "in_pool": true,
+          "A_current@6": true,
+          "A_current@8": true,
+          "B_no_reserve@6": true,
+          "B_no_reserve@8": true
+        },
+        "schumacher seven titles": {
+          "linked_to_graph": true,
+          "in_pool": true,
+          "A_current@6": false,
+          "A_current@8": false,
+          "B_no_reserve@6": false,
+          "B_no_reserve@8": false
+        },
+        "schumacher benetton titles": {
+          "linked_to_graph": false,
+          "in_pool": false,
+          "A_current@6": false,
+          "A_current@8": false,
+          "B_no_reserve@6": false,
+          "B_no_reserve@8": false
+        },
+        "schumacher ferrari titles": {
+          "linked_to_graph": true,
+          "in_pool": true,
+          "A_current@6": false,
+          "A_current@8": false,
+          "B_no_reserve@6": false,
+          "B_no_reserve@8": false
+        },
+        "hamilton mclaren 2008 title": {
+          "linked_to_graph": false,
+          "in_pool": false,
+          "A_current@6": false,
+          "A_current@8": false,
+          "B_no_reserve@6": false,
+          "B_no_reserve@8": false
+        },
+        "hamilton mercedes titles": {
+          "linked_to_graph": true,
+          "in_pool": true,
+          "A_current@6": false,
+          "A_current@8": true,
+          "B_no_reserve@6": false,
+          "B_no_reserve@8": false
+        }
+      },
+      "before_pool_size": 185,
+      "after": {
+        "hamilton seven titles": {
+          "linked_to_graph": true,
+          "in_pool": true,
+          "A_current@6": false,
+          "A_current@8": false,
+          "B_no_reserve@6": true,
+          "B_no_reserve@8": true
+        },
+        "schumacher seven titles": {
+          "linked_to_graph": true,
+          "in_pool": true,
+          "A_current@6": false,
+          "A_current@8": false,
+          "B_no_reserve@6": false,
+          "B_no_reserve@8": false
+        },
+        "schumacher benetton titles": {
+          "linked_to_graph": true,
+          "in_pool": true,
+          "A_current@6": false,
+          "A_current@8": false,
+          "B_no_reserve@6": false,
+          "B_no_reserve@8": false
+        },
+        "schumacher ferrari titles": {
+          "linked_to_graph": true,
+          "in_pool": true,
+          "A_current@6": false,
+          "A_current@8": false,
+          "B_no_reserve@6": false,
+          "B_no_reserve@8": false
+        },
+        "hamilton mclaren 2008 title": {
+          "linked_to_graph": true,
+          "in_pool": true,
+          "A_current@6": false,
+          "A_current@8": false,
+          "B_no_reserve@6": false,
+          "B_no_reserve@8": false
+        },
+        "hamilton mercedes titles": {
+          "linked_to_graph": true,
+          "in_pool": true,
+          "A_current@6": false,
+          "A_current@8": false,
+          "B_no_reserve@6": false,
+          "B_no_reserve@8": false
+        }
+      },
+      "after_pool_size": 563
+    },
+    "Q07": {
+      "before": {
+        "alonso and hamilton teammates at mclaren 2007": {
+          "linked_to_graph": false,
+          "in_pool": false,
+          "A_current@6": false,
+          "A_current@8": false,
+          "B_no_reserve@6": false,
+          "B_no_reserve@8": false
+        },
+        "raikkonen won the 2007 title": {
+          "linked_to_graph": true,
+          "in_pool": false,
+          "A_current@6": false,
+          "A_current@8": false,
+          "B_no_reserve@6": false,
+          "B_no_reserve@8": false
+        }
+      },
+      "before_pool_size": 188,
+      "after": {
+        "alonso and hamilton teammates at mclaren 2007": {
+          "linked_to_graph": false,
+          "in_pool": false,
+          "A_current@6": false,
+          "A_current@8": false,
+          "B_no_reserve@6": false,
+          "B_no_reserve@8": false
+        },
+        "raikkonen won the 2007 title": {
+          "linked_to_graph": true,
+          "in_pool": true,
+          "A_current@6": true,
+          "A_current@8": true,
+          "B_no_reserve@6": true,
+          "B_no_reserve@8": true
+        }
+      },
+      "after_pool_size": 554
+    },
+    "Q08": {
+      "before": {
+        "bottas replaced rosberg at mercedes": {
+          "linked_to_graph": false,
+          "in_pool": false,
+          "A_current@6": false,
+          "A_current@8": false,
+          "B_no_reserve@6": false,
+          "B_no_reserve@8": false
+        },
+        "bottas came from williams": {
+          "linked_to_graph": false,
+          "in_pool": false,
+          "A_current@6": false,
+          "A_current@8": false,
+          "B_no_reserve@6": false,
+          "B_no_reserve@8": false
+        }
+      },
+      "before_pool_size": 204,
+      "after": {
+        "bottas replaced rosberg at mercedes": {
+          "linked_to_graph": true,
+          "in_pool": true,
+          "A_current@6": false,
+          "A_current@8": false,
+          "B_no_reserve@6": false,
+          "B_no_reserve@8": true
+        },
+        "bottas came from williams": {
+          "linked_to_graph": true,
+          "in_pool": true,
+          "A_current@6": false,
+          "A_current@8": false,
+          "B_no_reserve@6": false,
+          "B_no_reserve@8": false
+        }
+      },
+      "after_pool_size": 272
+    }
+  }
+}

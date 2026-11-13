@@ -1,0 +1,142 @@
+{
+  "chunk_id": "team-mclaren#109",
+  "doc_id": "team-mclaren",
+  "document_title": "McLaren",
+  "section": "Sponsorship, livery and naming > Title sponsors",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "4f37cb19e5b4b840355c2e1b9ff49820fa3e9fbeed6be9a1079eede93242b374",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "McLaren",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that competed as McLaren Honda between 2015 and 2017 and as McLaren Formula 1 Team from 2018 onwards."
+      },
+      {
+        "local_id": "e2",
+        "name": "Honda",
+        "entity_type": "PowerUnit",
+        "description": "An engine partner of McLaren from 2015 to 2017."
+      },
+      {
+        "local_id": "e3",
+        "name": "Mastercard",
+        "entity_type": "Team",
+        "description": "A title sponsor of McLaren announced in August 2025, leading to the team competing as McLaren Mastercard Formula 1 Team from 2026."
+      },
+      {
+        "local_id": "e4",
+        "name": "2015",
+        "entity_type": "Season",
+        "description": "The season when McLaren was still without a title sponsor."
+      },
+      {
+        "local_id": "e5",
+        "name": "2016",
+        "entity_type": "Season",
+        "description": "The season when McLaren was set to lose a further £20 million in sponsorship."
+      },
+      {
+        "local_id": "e6",
+        "name": "2017",
+        "entity_type": "Season",
+        "description": "The last season McLaren competed as McLaren Honda."
+      },
+      {
+        "local_id": "e7",
+        "name": "2018",
+        "entity_type": "Season",
+        "description": "The season when McLaren began competing as McLaren Formula 1 Team."
+      },
+      {
+        "local_id": "e8",
+        "name": "2026",
+        "entity_type": "Season",
+        "description": "The season when McLaren will compete as McLaren Mastercard Formula 1 Team."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e4",
+        "relationship_type": "ENTERED",
+        "description": "McLaren entered the 2015 season without a title sponsor.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e5",
+        "relationship_type": "ENTERED",
+        "description": "McLaren entered the 2016 season set to lose sponsorship.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e6",
+        "relationship_type": "ENTERED",
+        "description": "McLaren entered the 2017 season as McLaren Honda.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e7",
+        "relationship_type": "ENTERED",
+        "description": "McLaren entered the 2018 season as McLaren Formula 1 Team.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 8,
+  "entities_accepted": 8,
+  "entities_rejected": 0,
+  "relationship_candidates": 6,
+  "relationships_accepted": 4,
+  "relationships_rejected": 2,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "POWERED_BY does not allow Team -> PowerUnit"
+    },
+    {
+      "element": "relationship",
+      "index": 5,
+      "reason": "DROVE_FOR does not allow Team -> Team"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 1,
+      "action": "clear_redundant_season_year",
+      "detail": "ENTERED year 2015 already named by Season 'e4'; from_year and to_year cleared"
+    },
+    {
+      "index": 2,
+      "action": "clear_redundant_season_year",
+      "detail": "ENTERED year 2016 already named by Season 'e5'; from_year and to_year cleared"
+    },
+    {
+      "index": 3,
+      "action": "clear_redundant_season_year",
+      "detail": "ENTERED year 2017 already named by Season 'e6'; from_year and to_year cleared"
+    },
+    {
+      "index": 4,
+      "action": "clear_redundant_season_year",
+      "detail": "ENTERED year 2018 already named by Season 'e7'; from_year and to_year cleared"
+    }
+  ]
+}

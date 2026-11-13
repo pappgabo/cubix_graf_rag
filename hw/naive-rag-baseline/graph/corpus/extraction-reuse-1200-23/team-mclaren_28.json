@@ -1,0 +1,98 @@
+{
+  "chunk_id": "team-mclaren#28",
+  "doc_id": "team-mclaren",
+  "document_title": "McLaren",
+  "section": "1995–2014: First Mercedes partnership > 1995–2009: Factory Mercedes partnership",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "2c9e6059b20147430f18ff47f4342089d83f49f1d3888d6f24cc3c3ffa5dd02a",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "McLaren",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that entered cars."
+      },
+      {
+        "local_id": "e2",
+        "name": "Mercedes-Benz High Performance Engines",
+        "entity_type": "PowerUnit",
+        "description": "An engine manufacturer that partnered with McLaren."
+      },
+      {
+        "local_id": "e3",
+        "name": "1995",
+        "entity_type": "Season",
+        "description": "The Formula 1 season."
+      },
+      {
+        "local_id": "e4",
+        "name": "MP4/10",
+        "entity_type": "Car",
+        "description": "McLaren's Formula One car for the 1995 season."
+      },
+      {
+        "local_id": "e5",
+        "name": "Nigel Mansell",
+        "entity_type": "Driver",
+        "description": "A former champion who was unable to fit into the MP4/10."
+      },
+      {
+        "local_id": "e6",
+        "name": "Mark Blundell",
+        "entity_type": "Driver",
+        "description": "Took Nigel Mansell's place after two races."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e3",
+        "relationship_type": "ENTERED",
+        "description": "McLaren took part in the 1995 Formula 1 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 6,
+  "entities_accepted": 6,
+  "entities_rejected": 0,
+  "relationship_candidates": 5,
+  "relationships_accepted": 1,
+  "relationships_rejected": 4,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "FIELDED is not temporal; from_year=1995, to_year=None, role=None cannot be stored without dropping them"
+    },
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "POWERED_BY does not allow Team -> PowerUnit"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "DROVE_FOR does not allow Driver -> Car"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "DROVE_FOR does not allow Driver -> Car"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 1,
+      "action": "clear_redundant_season_year",
+      "detail": "ENTERED year 1995 already named by Season 'e3'; from_year and to_year cleared"
+    }
+  ]
+}

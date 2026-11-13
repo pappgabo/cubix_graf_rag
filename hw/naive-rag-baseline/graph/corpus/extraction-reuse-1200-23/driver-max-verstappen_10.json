@@ -1,0 +1,87 @@
+{
+  "chunk_id": "driver-max-verstappen#10",
+  "doc_id": "driver-max-verstappen",
+  "document_title": "Max Verstappen",
+  "section": null,
+  "page": 3,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "eed26cc033b611768b239d2d8315b3668828fbd905d244bfeee6d6368e2b21c2",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Max Verstappen",
+        "entity_type": "Driver",
+        "description": "A Formula One driver who made his debut at a young age."
+      },
+      {
+        "local_id": "e2",
+        "name": "2015",
+        "entity_type": "Season",
+        "description": "The Formula One season in which Max Verstappen competed."
+      },
+      {
+        "local_id": "e3",
+        "name": "Malaysia Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A race in which Max Verstappen scored his first Formula One points."
+      },
+      {
+        "local_id": "e4",
+        "name": "Monaco Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A race in which Max Verstappen was involved in a collision."
+      },
+      {
+        "local_id": "e5",
+        "name": "Hungary Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The race where Max Verstappen achieved his best finish of the 2015 season."
+      },
+      {
+        "local_id": "e6",
+        "name": "United States Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A race where Max Verstappen equalled his best finish of the 2015 season."
+      }
+    ],
+    "relationships": []
+  },
+  "entity_candidates": 6,
+  "entities_accepted": 6,
+  "entities_rejected": 0,
+  "relationship_candidates": 5,
+  "relationships_accepted": 0,
+  "relationships_rejected": 5,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "RACED_IN does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "ACHIEVED does not allow GrandPrix -> Driver"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "ACHIEVED does not allow GrandPrix -> Driver"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "ACHIEVED does not allow GrandPrix -> Driver"
+    },
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "ACHIEVED does not allow GrandPrix -> Driver"
+    }
+  ],
+  "alignments": []
+}

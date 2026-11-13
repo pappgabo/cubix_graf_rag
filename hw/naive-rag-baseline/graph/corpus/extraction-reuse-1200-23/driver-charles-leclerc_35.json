@@ -1,0 +1,80 @@
+{
+  "chunk_id": "driver-charles-leclerc#35",
+  "doc_id": "driver-charles-leclerc",
+  "document_title": "Charles Leclerc",
+  "section": "Charles Leclerc > 2020–2021: Winless seasons for Ferrari",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "66f3bf70c3dfc2e56728bd6394cbb04095ca0598974e34c149211066a92d5f60",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Charles Leclerc",
+        "entity_type": "Driver",
+        "description": "A Formula One driver who finished seventh in the World Drivers' Championship in 2020."
+      },
+      {
+        "local_id": "e2",
+        "name": "Scuderia Ferrari",
+        "entity_type": "Team",
+        "description": "The Formula One team Charles Leclerc drove for during the 2020 season."
+      },
+      {
+        "local_id": "e3",
+        "name": "2020",
+        "entity_type": "Season",
+        "description": "The Formula One season in which Charles Leclerc finished seventh in the World Drivers' Championship."
+      },
+      {
+        "local_id": "e4",
+        "name": "Abu Dhabi Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The race where Charles Leclerc lost track position due to a pit stop gamble."
+      },
+      {
+        "local_id": "e5",
+        "name": "World Drivers' Championship",
+        "entity_type": "Title",
+        "description": "The championship in which Charles Leclerc finished seventh."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Charles Leclerc drove for Ferrari during the 2020 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e3",
+        "relationship_type": "ROUND_OF",
+        "description": "The Abu Dhabi Grand Prix is a round of the 2020 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 5,
+  "entities_accepted": 5,
+  "entities_rejected": 0,
+  "relationship_candidates": 3,
+  "relationships_accepted": 2,
+  "relationships_rejected": 1,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "ACHIEVED does not allow Driver -> Title"
+    }
+  ],
+  "alignments": []
+}

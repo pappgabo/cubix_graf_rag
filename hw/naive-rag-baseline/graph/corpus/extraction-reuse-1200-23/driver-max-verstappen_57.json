@@ -1,0 +1,86 @@
+{
+  "chunk_id": "driver-max-verstappen#57",
+  "doc_id": "driver-max-verstappen",
+  "document_title": "Max Verstappen",
+  "section": null,
+  "page": 11,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "cd9c9fe66edd5e5017edc4f65d9b0a26e2f9b48264da75ff5f53bd80b03fed75",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Max Verstappen",
+        "entity_type": "Driver",
+        "description": "A Formula One driver known for his quick change of direction and driving skills."
+      },
+      {
+        "local_id": "e2",
+        "name": "Scuderia AlphaTauri",
+        "entity_type": "Team",
+        "description": "A Formula One team."
+      },
+      {
+        "local_id": "e3",
+        "name": "2021",
+        "entity_type": "Season",
+        "description": "The season in which Max Verstappen won his maiden title."
+      },
+      {
+        "local_id": "e4",
+        "name": "2024",
+        "entity_type": "Season",
+        "description": "The season in which Max Verstappen won the World Drivers' Championship."
+      },
+      {
+        "local_id": "e5",
+        "name": "RB20",
+        "entity_type": "Car",
+        "description": "The car driven by Max Verstappen during the 2024 season."
+      },
+      {
+        "local_id": "e6",
+        "name": "World Drivers' Championship",
+        "entity_type": "Title",
+        "description": "The championship title won by Max Verstappen."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e6",
+        "relationship_type": "WON",
+        "description": "Max Verstappen won the World Drivers' Championship title.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e6",
+        "target_id": "e4",
+        "relationship_type": "AWARDED_IN",
+        "description": "The World Drivers' Championship title was awarded in the 2024 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 6,
+  "entities_accepted": 6,
+  "entities_rejected": 0,
+  "relationship_candidates": 3,
+  "relationships_accepted": 2,
+  "relationships_rejected": 1,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "WON does not allow Driver -> Season"
+    }
+  ],
+  "alignments": []
+}

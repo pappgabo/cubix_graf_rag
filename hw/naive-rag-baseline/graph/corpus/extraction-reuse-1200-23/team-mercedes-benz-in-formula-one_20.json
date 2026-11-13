@@ -1,0 +1,116 @@
+{
+  "chunk_id": "team-mercedes-benz-in-formula-one#20",
+  "doc_id": "team-mercedes-benz-in-formula-one",
+  "document_title": "Mercedes-Benz in Formula One",
+  "section": "Mercedes-Benz in Formula One > Eight consecutive Constructors' titles (2014–2021)",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "f54a75c4867b8104b1f37aef717f1289fc6e2ed2e22bd8e6ae97338bcb5296a7",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Lewis Hamilton",
+        "entity_type": "Driver",
+        "description": "A driver for Mercedes-Benz in Formula One."
+      },
+      {
+        "local_id": "e2",
+        "name": "Valtteri Bottas",
+        "entity_type": "Driver",
+        "description": "A driver for Mercedes-Benz in Formula One."
+      },
+      {
+        "local_id": "e3",
+        "name": "Mercedes-Benz",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that has won multiple Constructors' titles."
+      },
+      {
+        "local_id": "e4",
+        "name": "2019",
+        "entity_type": "Season",
+        "description": "The Formula 1 season in which Mercedes-Benz won the Constructors' title."
+      },
+      {
+        "local_id": "e5",
+        "name": "Constructors' Championship",
+        "entity_type": "Title",
+        "description": "The championship title won by Mercedes-Benz in 2019."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e3",
+        "target_id": "e4",
+        "relationship_type": "ENTERED",
+        "description": "Mercedes-Benz took part in the 2019 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e3",
+        "relationship_type": "DROVE_FOR",
+        "description": "Lewis Hamilton drove for Mercedes-Benz.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e3",
+        "relationship_type": "DROVE_FOR",
+        "description": "Valtteri Bottas drove for Mercedes-Benz.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e5",
+        "relationship_type": "WON",
+        "description": "Lewis Hamilton won the Constructors' Championship in 2019.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e5",
+        "relationship_type": "WON",
+        "description": "Valtteri Bottas won the Constructors' Championship in 2019.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e4",
+        "relationship_type": "AWARDED_IN",
+        "description": "The Constructors' Championship title was awarded in the 2019 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 5,
+  "entities_accepted": 5,
+  "entities_rejected": 0,
+  "relationship_candidates": 6,
+  "relationships_accepted": 6,
+  "relationships_rejected": 0,
+  "rejections": [],
+  "alignments": [
+    {
+      "index": 0,
+      "action": "clear_redundant_season_year",
+      "detail": "ENTERED year 2019 already named by Season 'e4'; from_year and to_year cleared"
+    }
+  ]
+}

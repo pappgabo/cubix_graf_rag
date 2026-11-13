@@ -1,0 +1,227 @@
+{
+  "chunk_id": "driver-jenson-button#51",
+  "doc_id": "driver-jenson-button",
+  "document_title": "Jenson Button",
+  "section": "Other racing ventures",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "4dc1fafa934f42853a6ccf7982ece8329551446e94deaaaaac6aa6c073f54757",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Jenson Button",
+        "entity_type": "Driver",
+        "description": "A British racing driver who has competed in various motorsport events."
+      },
+      {
+        "local_id": "e2",
+        "name": "JBXE",
+        "entity_type": "Team",
+        "description": "A team launched by Jenson Button to compete in the Extreme E series."
+      },
+      {
+        "local_id": "e3",
+        "name": "Extreme E",
+        "entity_type": "Season",
+        "description": "An all-electric SUV off-road racing series."
+      },
+      {
+        "local_id": "e4",
+        "name": "Goodwood Revival",
+        "entity_type": "GrandPrix",
+        "description": "A historic racing event where Jenson Button participated."
+      },
+      {
+        "local_id": "e5",
+        "name": "Stirling Moss Trophy",
+        "entity_type": "RaceResult",
+        "description": "A race at the Goodwood Revival in which Jenson Button participated."
+      },
+      {
+        "local_id": "e6",
+        "name": "Royal Automobile Club TT Celebration",
+        "entity_type": "RaceResult",
+        "description": "A race at the Goodwood Revival in which Jenson Button participated."
+      },
+      {
+        "local_id": "e7",
+        "name": "FC1-X",
+        "entity_type": "Car",
+        "description": "A car that Jenson Button was set to drive in the Nitro Rallycross series."
+      },
+      {
+        "local_id": "e8",
+        "name": "Xite Energy Racing",
+        "entity_type": "Team",
+        "description": "The team Jenson Button was associated with for the Nitro Rallycross series."
+      },
+      {
+        "local_id": "e9",
+        "name": "Nitro Rallycross",
+        "entity_type": "Season",
+        "description": "An off-road racing series in which Jenson Button was set to compete."
+      },
+      {
+        "local_id": "e10",
+        "name": "Rick Ware Racing",
+        "entity_type": "Team",
+        "description": "A NASCAR team for which Jenson Button raced."
+      },
+      {
+        "local_id": "e11",
+        "name": "2023 EchoPark Automotive Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A NASCAR race where Jenson Button participated."
+      },
+      {
+        "local_id": "e12",
+        "name": "Circuit of the Americas",
+        "entity_type": "Circuit",
+        "description": "The circuit where the 2023 EchoPark Automotive Grand Prix was held."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Jenson Button at Goodwood Revival",
+        "entity_type": "RaceResult",
+        "description": "Jenson Button participated in the Stirling Moss Trophy race at the Goodwood Revival."
+      },
+      {
+        "local_id": "rr2",
+        "name": "Jenson Button at 2023 EchoPark Automotive Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Jenson Button's best result was eighteenth position at the 2023 EchoPark Automotive Grand Prix."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Jenson Button drove for JBXE in the Extreme E series.",
+        "from_year": 2021,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Jenson Button participated in the Stirling Moss Trophy race at the Goodwood Revival.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e4",
+        "relationship_type": "AT_RACE",
+        "description": "Jenson Button participated in the Stirling Moss Trophy race at the Goodwood Revival.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e5",
+        "relationship_type": "ACHIEVED",
+        "description": "Jenson Button participated in the Royal Automobile Club TT Celebration race at the Goodwood Revival.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e10",
+        "relationship_type": "DROVE_FOR",
+        "description": "Jenson Button raced for Rick Ware Racing in NASCAR.",
+        "from_year": 2023,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e10",
+        "target_id": "e9",
+        "relationship_type": "ENTERED",
+        "description": "Rick Ware Racing entered the Nitro Rallycross series.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e11",
+        "target_id": "e12",
+        "relationship_type": "HELD_AT",
+        "description": "The 2023 EchoPark Automotive Grand Prix was held at Circuit of the Americas.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr2",
+        "relationship_type": "ACHIEVED",
+        "description": "Jenson Button's best result was eighteenth position at the 2023 EchoPark Automotive Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr2",
+        "target_id": "e11",
+        "relationship_type": "AT_RACE",
+        "description": "Jenson Button's best result was eighteenth position at the 2023 EchoPark Automotive Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e11",
+        "target_id": "e9",
+        "relationship_type": "ROUND_OF",
+        "description": "The 2023 EchoPark Automotive Grand Prix was a round of the NASCAR Cup Series.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 12,
+  "entities_accepted": 14,
+  "entities_rejected": 0,
+  "relationship_candidates": 11,
+  "relationships_accepted": 10,
+  "relationships_rejected": 3,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "ENTERED is not temporal; from_year=2021, to_year=None, role=None cannot be stored without dropping them"
+    },
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "DROVE_FOR does not allow Driver -> Car"
+    },
+    {
+      "element": "relationship",
+      "index": 5,
+      "reason": "FIELDED does not allow Car -> Team"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 2,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e4; description kept"
+    },
+    {
+      "index": 9,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr2 -AT_RACE-> e11; description kept"
+    }
+  ]
+}

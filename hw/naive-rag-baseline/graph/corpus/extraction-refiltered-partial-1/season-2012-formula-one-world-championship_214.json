@@ -1,0 +1,99 @@
+{
+  "chunk_id": "season-2012-formula-one-world-championship#214",
+  "doc_id": "season-2012-formula-one-world-championship",
+  "document_title": "2012 Formula One World Championship",
+  "section": "Race summaries > Round 20 – Brazil Autódromo José Carlos Pace (Interlagos)",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/2012_Formula_One_World_Championship",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "fad0a9fd199fd42c9ea1b8d5c62403d912df5af4673b717b9230ff37f64f7a7d",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "TEAMMATE_OF does not allow Team -> Team"
+    },
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "TEAMMATE_OF does not allow Team -> Team"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "TEAMMATE_OF does not allow Team -> Team"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "FOR_TEAM does not allow Driver -> Team"
+    }
+  ],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Ferrari",
+        "entity_type": "Team",
+        "description": "Ferrari secured second place in the World Constructors' Championship."
+      },
+      {
+        "local_id": "e2",
+        "name": "McLaren",
+        "entity_type": "Team",
+        "description": "McLaren finished behind Ferrari in the World Constructors' Championship."
+      },
+      {
+        "local_id": "e3",
+        "name": "Sauber",
+        "entity_type": "Team",
+        "description": "Sauber finished behind Mercedes in the World Constructors' Championship."
+      },
+      {
+        "local_id": "e4",
+        "name": "Mercedes",
+        "entity_type": "Team",
+        "description": "Mercedes finished ahead of Sauber in the World Constructors' Championship."
+      },
+      {
+        "local_id": "e5",
+        "name": "Marussia",
+        "entity_type": "Team",
+        "description": "Marussia lost tenth place in the Constructors' Championship."
+      },
+      {
+        "local_id": "e6",
+        "name": "Caterham",
+        "entity_type": "Team",
+        "description": "Caterham secured tenth place in the Constructors' Championship."
+      },
+      {
+        "local_id": "e7",
+        "name": "Vitaly Petrov",
+        "entity_type": "Driver",
+        "description": "Vitaly Petrov secured the best result of the season for Caterham with eleventh place."
+      },
+      {
+        "local_id": "e8",
+        "name": "2012",
+        "entity_type": "Season",
+        "description": "The season of the 2012 Formula One World Championship."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e6",
+        "target_id": "e8",
+        "relationship_type": "ENTERED",
+        "description": "Caterham participated in the 2012 Formula One World Championship.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

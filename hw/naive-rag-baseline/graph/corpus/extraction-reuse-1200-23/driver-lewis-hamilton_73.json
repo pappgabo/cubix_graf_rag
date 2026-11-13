@@ -1,0 +1,54 @@
+{
+  "chunk_id": "driver-lewis-hamilton#73",
+  "doc_id": "driver-lewis-hamilton",
+  "document_title": "Lewis Hamilton",
+  "section": null,
+  "page": 15,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "46d7b3d12fc9c275110733a7dc204fe7fda24bbe28fe35a4b9652e7c12de8f44",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Lewis Hamilton",
+        "entity_type": "Driver",
+        "description": "A British racing driver currently competing in Formula One."
+      },
+      {
+        "local_id": "e2",
+        "name": "Mercedes-AMG C63",
+        "entity_type": "Car",
+        "description": "A car model driven by Lewis Hamilton."
+      },
+      {
+        "local_id": "e3",
+        "name": "Australian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula One race held in Australia."
+      }
+    ],
+    "relationships": []
+  },
+  "entity_candidates": 3,
+  "entities_accepted": 3,
+  "entities_rejected": 0,
+  "relationship_candidates": 2,
+  "relationships_accepted": 0,
+  "relationships_rejected": 2,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "FOR_TEAM does not allow Car -> Driver"
+    },
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "AT_RACE does not allow GrandPrix -> Driver"
+    }
+  ],
+  "alignments": []
+}

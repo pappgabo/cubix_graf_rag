@@ -1,0 +1,179 @@
+{
+  "chunk_id": "driver-sebastian-vettel#1",
+  "doc_id": "driver-sebastian-vettel",
+  "document_title": "Sebastian Vettel",
+  "section": null,
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "07699d603203e2df793c397938a95d3a34d74dfff830d28a3fe69a9e48728484",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Sebastian Vettel",
+        "entity_type": "Driver",
+        "description": "Born and raised in Heppenheim, Vettel began competitive kart racing aged eight. After a successful karting career—culminating in his victory at the junior European Championship in 2001—Vettel graduated to junior formulae. He started his career in Formula BMW ADAC, dominating the championship in 2004 with 18 wins from 20 races. Vettel then progressed to the Formula 3 Euro Series in 2005, taking several victories and finishing runner-up to Paul di Resta the following season. A test driver for BMW Sauber since 2006, Vettel made his Formula One debut at the 2007 United States Grand Prix. Vettel replaced Scott Speed at Toro Rosso after the European Grand Prix for the remainder of the 2007 season, as part of the Red Bull Junior Team. Retaining his seat for 2008, Vettel achieved his maiden pole position and victory at the Italian Grand Prix to become the then-youngest driver to win a Formula One Grand Prix. Vettel was promoted to parent team Red Bull in 2009, taking several wins as he finished runner-up to Jenson Button in the World Drivers' Championship."
+      },
+      {
+        "local_id": "e2",
+        "name": "Toro Rosso",
+        "entity_type": "Team",
+        "description": "A Formula One team that Vettel drove for after replacing Scott Speed."
+      },
+      {
+        "local_id": "e3",
+        "name": "Red Bull Racing",
+        "entity_type": "Team",
+        "description": "The parent team of Toro Rosso that Vettel was promoted to in 2009."
+      },
+      {
+        "local_id": "e4",
+        "name": "2007",
+        "entity_type": "Season",
+        "description": "The season when Vettel made his Formula One debut."
+      },
+      {
+        "local_id": "e5",
+        "name": "2008",
+        "entity_type": "Season",
+        "description": "The season when Vettel achieved his maiden pole position and victory."
+      },
+      {
+        "local_id": "e6",
+        "name": "2009",
+        "entity_type": "Season",
+        "description": "The season when Vettel was promoted to Red Bull and finished runner-up to Jenson Button."
+      },
+      {
+        "local_id": "e7",
+        "name": "United States Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The Grand Prix where Vettel made his Formula One debut."
+      },
+      {
+        "local_id": "e8",
+        "name": "Italian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The Grand Prix where Vettel achieved his maiden victory."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Sebastian Vettel at United States Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Vettel made his Formula One debut at the United States Grand Prix."
+      },
+      {
+        "local_id": "rr2",
+        "name": "Sebastian Vettel at Italian Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Vettel achieved his maiden victory at the Italian Grand Prix."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Vettel drove for Toro Rosso after replacing Scott Speed.",
+        "from_year": 2007,
+        "to_year": 2007,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e3",
+        "relationship_type": "DROVE_FOR",
+        "description": "Vettel was promoted to Red Bull in 2009.",
+        "from_year": 2009,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e4",
+        "relationship_type": "ENTERED",
+        "description": "Toro Rosso entered the 2007 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e6",
+        "relationship_type": "ENTERED",
+        "description": "Red Bull entered the 2009 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Vettel made his Formula One debut at the United States Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e7",
+        "relationship_type": "AT_RACE",
+        "description": "Vettel made his Formula One debut at the United States Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr2",
+        "relationship_type": "ACHIEVED",
+        "description": "Vettel achieved his maiden victory at the Italian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr2",
+        "target_id": "e8",
+        "relationship_type": "AT_RACE",
+        "description": "Vettel achieved his maiden victory at the Italian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 8,
+  "entities_accepted": 10,
+  "entities_rejected": 0,
+  "relationship_candidates": 6,
+  "relationships_accepted": 8,
+  "relationships_rejected": 0,
+  "rejections": [],
+  "alignments": [
+    {
+      "index": 2,
+      "action": "clear_redundant_season_year",
+      "detail": "ENTERED year 2007 already named by Season 'e4'; from_year and to_year cleared"
+    },
+    {
+      "index": 3,
+      "action": "clear_redundant_season_year",
+      "detail": "ENTERED year 2009 already named by Season 'e6'; from_year and to_year cleared"
+    },
+    {
+      "index": 4,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e7; description kept"
+    },
+    {
+      "index": 5,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr2 -AT_RACE-> e8; description kept"
+    }
+  ]
+}

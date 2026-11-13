@@ -1,0 +1,173 @@
+{
+  "chunk_id": "driver-max-verstappen#5",
+  "doc_id": "driver-max-verstappen",
+  "document_title": "Max Verstappen",
+  "section": null,
+  "page": 2,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "fc542a9d6a119c437b3be561520b869fb2e1278d658e5f232670ea75f1598837",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Max Verstappen",
+        "entity_type": "Driver",
+        "description": "A racing driver who competed in various karting championships."
+      },
+      {
+        "local_id": "e2",
+        "name": "Red Bull Racing",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that Max Verstappen raced for."
+      },
+      {
+        "local_id": "e3",
+        "name": "WSK Euro Series",
+        "entity_type": "Season",
+        "description": "A karting championship in which Max Verstappen competed."
+      },
+      {
+        "local_id": "e4",
+        "name": "WSK World Series",
+        "entity_type": "Season",
+        "description": "A karting championship in which Max Verstappen competed."
+      },
+      {
+        "local_id": "e5",
+        "name": "European Championship",
+        "entity_type": "Season",
+        "description": "A karting championship in which Max Verstappen competed."
+      },
+      {
+        "local_id": "e6",
+        "name": "WSK Nations Cup",
+        "entity_type": "Season",
+        "description": "A karting championship in which Max Verstappen competed."
+      },
+      {
+        "local_id": "e7",
+        "name": "Bridgestone Cup",
+        "entity_type": "Season",
+        "description": "A karting championship in which Max Verstappen competed."
+      },
+      {
+        "local_id": "e8",
+        "name": "Intrepid Driver Program",
+        "entity_type": "Team",
+        "description": "A program that Max Verstappen joined to race in karting classes."
+      },
+      {
+        "local_id": "e9",
+        "name": "KF2",
+        "entity_type": "Season",
+        "description": "A karting class in which Max Verstappen competed."
+      },
+      {
+        "local_id": "e10",
+        "name": "KZ2",
+        "entity_type": "Season",
+        "description": "A karting class in which Max Verstappen competed."
+      },
+      {
+        "local_id": "e11",
+        "name": "WSK Master Series",
+        "entity_type": "Season",
+        "description": "A karting championship in which Max Verstappen competed."
+      },
+      {
+        "local_id": "e12",
+        "name": "South Garda Winter Cup",
+        "entity_type": "Season",
+        "description": "A karting championship in which Max Verstappen competed."
+      },
+      {
+        "local_id": "e13",
+        "name": "KF1",
+        "entity_type": "Season",
+        "description": "A karting class in which Max Verstappen competed."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Max Verstappen raced for Red Bull Racing.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e8",
+        "relationship_type": "DROVE_FOR",
+        "description": "Max Verstappen joined the Intrepid Driver Program.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 13,
+  "entities_accepted": 13,
+  "entities_rejected": 0,
+  "relationship_candidates": 12,
+  "relationships_accepted": 2,
+  "relationships_rejected": 10,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "RACED_IN does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "RACED_IN does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "RACED_IN does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "RACED_IN does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 5,
+      "reason": "RACED_IN does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 7,
+      "reason": "RACED_IN does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 8,
+      "reason": "RACED_IN does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 9,
+      "reason": "RACED_IN does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 10,
+      "reason": "RACED_IN does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 11,
+      "reason": "RACED_IN does not allow Driver -> Season"
+    }
+  ],
+  "alignments": []
+}

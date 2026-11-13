@@ -1,0 +1,113 @@
+{
+  "chunk_id": "driver-jenson-button#22",
+  "doc_id": "driver-jenson-button",
+  "document_title": "Jenson Button",
+  "section": "Formula One career > BAR/Honda/Brawn (2003–2009) > BAR (2003–2005)",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "79ff9ce2ccf321476064b45f947451a72b4f75eab3599e00363851accd75520f",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Jenson Button",
+        "entity_type": "Driver",
+        "description": "A Formula One driver who raced for BAR from 2003 to 2005."
+      },
+      {
+        "local_id": "e2",
+        "name": "BAR",
+        "entity_type": "Team",
+        "description": "A Formula One team that Jenson Button raced for from 2003 to 2005."
+      },
+      {
+        "local_id": "e3",
+        "name": "2004",
+        "entity_type": "Season",
+        "description": "The Formula One season in which Jenson Button achieved significant results."
+      },
+      {
+        "local_id": "e4",
+        "name": "Malaysian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A race in which Jenson Button finished third in 2004."
+      },
+      {
+        "local_id": "e5",
+        "name": "Bahrain",
+        "entity_type": "GrandPrix",
+        "description": "A race in which Jenson Button finished third in 2004."
+      },
+      {
+        "local_id": "e6",
+        "name": "Imola",
+        "entity_type": "GrandPrix",
+        "description": "A race where Jenson Button took his first pole position and finished second in 2004."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Jenson Button raced for BAR.",
+        "from_year": 2003,
+        "to_year": 2005,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e3",
+        "relationship_type": "ENTERED",
+        "description": "BAR participated in the 2004 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e3",
+        "relationship_type": "ROUND_OF",
+        "description": "The Malaysian Grand Prix was a round of the 2004 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e3",
+        "relationship_type": "ROUND_OF",
+        "description": "The Bahrain Grand Prix was a round of the 2004 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e6",
+        "target_id": "e3",
+        "relationship_type": "ROUND_OF",
+        "description": "The Imola Grand Prix was a round of the 2004 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 6,
+  "entities_accepted": 6,
+  "entities_rejected": 0,
+  "relationship_candidates": 6,
+  "relationships_accepted": 5,
+  "relationships_rejected": 1,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "ACHIEVED does not allow Driver -> Season"
+    }
+  ],
+  "alignments": []
+}

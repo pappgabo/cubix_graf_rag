@@ -1,0 +1,59 @@
+{
+  "chunk_id": "driver-michael-schumacher#36",
+  "doc_id": "driver-michael-schumacher",
+  "document_title": "Michael Schumacher",
+  "section": null,
+  "page": 7,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "9523a1d927227065900addab7fb02d73b0c2866fe4ca19dd5c7d6db6aff3c6e6",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Michael Schumacher",
+        "entity_type": "Driver",
+        "description": "Achieved five Drivers' Championships between 2000 and 2004, with a total of 48 wins."
+      },
+      {
+        "local_id": "e2",
+        "name": "2002",
+        "entity_type": "Season",
+        "description": "Season in which Schumacher achieved 11 wins."
+      },
+      {
+        "local_id": "e3",
+        "name": "Drivers' Championship",
+        "entity_type": "Title",
+        "description": "Championship title won by Schumacher."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e3",
+        "target_id": "e2",
+        "relationship_type": "AWARDED_IN",
+        "description": "Drivers' Championship awarded in the 2002 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 3,
+  "entities_accepted": 3,
+  "entities_rejected": 0,
+  "relationship_candidates": 2,
+  "relationships_accepted": 1,
+  "relationships_rejected": 1,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "WON is not temporal; from_year=2000, to_year=2004, role=None cannot be stored without dropping them"
+    }
+  ],
+  "alignments": []
+}

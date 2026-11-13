@@ -1,0 +1,146 @@
+{
+  "chunk_id": "season-2012-formula-one-world-championship#65",
+  "doc_id": "season-2012-formula-one-world-championship",
+  "document_title": "2012 Formula One World Championship",
+  "section": "Race summaries > Round 10 – Germany Hockenheimring",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "ab86bb03686bc41b67dbf2591268416abfe8fe19b51b9b6e1dc374345b48418e",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Fernando Alonso",
+        "entity_type": "Driver",
+        "description": "Controlled much of the race from pole position and took his third victory of the season."
+      },
+      {
+        "local_id": "e2",
+        "name": "Lewis Hamilton",
+        "entity_type": "Driver",
+        "description": "Started his one hundredth Grand Prix with a puncture and retired on lap 56."
+      },
+      {
+        "local_id": "e3",
+        "name": "Sebastian Vettel",
+        "entity_type": "Driver",
+        "description": "Claimed that Hamilton's actions were a ploy by McLaren."
+      },
+      {
+        "local_id": "e4",
+        "name": "Jenson Button",
+        "entity_type": "Driver",
+        "description": "Leaped ahead of Vettel during the race."
+      },
+      {
+        "local_id": "e5",
+        "name": "McLaren",
+        "entity_type": "Team",
+        "description": "Team associated with Lewis Hamilton and Jenson Button."
+      },
+      {
+        "local_id": "e6",
+        "name": "Scuderia Ferrari",
+        "entity_type": "Team",
+        "description": "Team associated with Fernando Alonso."
+      },
+      {
+        "local_id": "e7",
+        "name": "2012",
+        "entity_type": "Season",
+        "description": "The championship year of the race."
+      },
+      {
+        "local_id": "e8",
+        "name": "German Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The race held at Hockenheimring."
+      },
+      {
+        "local_id": "e9",
+        "name": "Hockenheimring",
+        "entity_type": "Circuit",
+        "description": "The circuit where the German Grand Prix took place."
+      },
+      {
+        "local_id": "e10",
+        "name": "Victory",
+        "entity_type": "Title",
+        "description": "Fernando Alonso's third victory of the season."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e10",
+        "relationship_type": "WON",
+        "description": "Fernando Alonso won the race.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e10",
+        "target_id": "e7",
+        "relationship_type": "AWARDED_IN",
+        "description": "The victory belongs to the 2012 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e7",
+        "relationship_type": "ENTERED",
+        "description": "McLaren took part in the 2012 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e6",
+        "target_id": "e7",
+        "relationship_type": "ENTERED",
+        "description": "Ferrari took part in the 2012 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e8",
+        "target_id": "e7",
+        "relationship_type": "ROUND_OF",
+        "description": "The German Grand Prix is a round of the 2012 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e8",
+        "target_id": "e9",
+        "relationship_type": "HELD_AT",
+        "description": "The German Grand Prix is held at Hockenheimring.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 10,
+  "entities_accepted": 10,
+  "entities_rejected": 0,
+  "relationship_candidates": 6,
+  "relationships_accepted": 6,
+  "relationships_rejected": 0,
+  "rejections": [],
+  "alignments": [
+    {
+      "index": 0,
+      "action": "move_won_year",
+      "detail": "WON year 2012 stored as e10 -AWARDED_IN-> e7; from_year and to_year cleared; description kept"
+    }
+  ]
+}

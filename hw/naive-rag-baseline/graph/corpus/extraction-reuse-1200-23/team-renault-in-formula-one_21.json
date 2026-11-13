@@ -1,0 +1,170 @@
+{
+  "chunk_id": "team-renault-in-formula-one#21",
+  "doc_id": "team-renault-in-formula-one",
+  "document_title": "Renault in Formula One",
+  "section": "Constructor > Renault F1 Team and Lotus Renault GP (2002–2011): The rise and fall of the first Enstone era > Back to back double championship success (2005–2006)",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "b2df4c9c1127861189045d36b95988ff9c63e0dc189934f7f914e7075347dc25",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Renault",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that entered cars."
+      },
+      {
+        "local_id": "e2",
+        "name": "Alonso",
+        "entity_type": "Driver",
+        "description": "A driver who raced in Formula One."
+      },
+      {
+        "local_id": "e3",
+        "name": "French Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A specific race event."
+      },
+      {
+        "local_id": "e4",
+        "name": "Scuderia Ferrari",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that entered cars."
+      },
+      {
+        "local_id": "e5",
+        "name": "Schumacher",
+        "entity_type": "Driver",
+        "description": "A driver who raced in Formula One."
+      },
+      {
+        "local_id": "e6",
+        "name": "Massa",
+        "entity_type": "Driver",
+        "description": "A driver who raced in Formula One."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Alonso at French Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Alonso recorded a result in the French Grand Prix."
+      },
+      {
+        "local_id": "rr2",
+        "name": "Schumacher at French Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Schumacher recorded a result in the French Grand Prix."
+      },
+      {
+        "local_id": "rr3",
+        "name": "Massa at French Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Massa recorded a result in the French Grand Prix."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e2",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Alonso recorded a result in the French Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e3",
+        "relationship_type": "AT_RACE",
+        "description": "Alonso recorded a result in the French Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e1",
+        "relationship_type": "DROVE_FOR",
+        "description": "Alonso raced for Renault.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "rr2",
+        "relationship_type": "ACHIEVED",
+        "description": "Schumacher recorded a result in the French Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr2",
+        "target_id": "e3",
+        "relationship_type": "AT_RACE",
+        "description": "Schumacher recorded a result in the French Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e6",
+        "target_id": "rr3",
+        "relationship_type": "ACHIEVED",
+        "description": "Massa recorded a result in the French Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr3",
+        "target_id": "e3",
+        "relationship_type": "AT_RACE",
+        "description": "Massa recorded a result in the French Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 6,
+  "entities_accepted": 9,
+  "entities_rejected": 0,
+  "relationship_candidates": 6,
+  "relationships_accepted": 7,
+  "relationships_rejected": 2,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "HELD_AT does not allow Team -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "HELD_AT does not allow Team -> GrandPrix"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 1,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e3; description kept"
+    },
+    {
+      "index": 4,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr2 -AT_RACE-> e3; description kept"
+    },
+    {
+      "index": 5,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr3 -AT_RACE-> e3; description kept"
+    }
+  ]
+}

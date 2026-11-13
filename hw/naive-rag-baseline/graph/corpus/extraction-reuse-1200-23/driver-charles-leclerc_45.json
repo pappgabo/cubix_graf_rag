@@ -1,0 +1,135 @@
+{
+  "chunk_id": "driver-charles-leclerc#45",
+  "doc_id": "driver-charles-leclerc",
+  "document_title": "Charles Leclerc",
+  "section": "Charles Leclerc > 2023–2024: First Monaco Grand Prix victory",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "ed40560e0bf1b85e7878e0e514d8f26fd817a22b4eb25d06dd317ff86608d137",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Charles Leclerc",
+        "entity_type": "Driver",
+        "description": "A Formula One driver racing for Ferrari."
+      },
+      {
+        "local_id": "e2",
+        "name": "Scuderia Ferrari",
+        "entity_type": "Team",
+        "description": "A Formula One team."
+      },
+      {
+        "local_id": "e3",
+        "name": "2024",
+        "entity_type": "Season",
+        "description": "The Formula One season of 2024."
+      },
+      {
+        "local_id": "e4",
+        "name": "Monaco Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula One race held in Monaco."
+      },
+      {
+        "local_id": "e5",
+        "name": "Sainz",
+        "entity_type": "Driver",
+        "description": "A Formula One driver who finished ahead of Leclerc in the Monaco Grand Prix."
+      },
+      {
+        "local_id": "e6",
+        "name": "Power Unit",
+        "entity_type": "PowerUnit",
+        "description": "The engine used in Leclerc's car."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Charles Leclerc at Monaco Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Leclerc won the Monaco Grand Prix."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Leclerc races for Ferrari.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e3",
+        "relationship_type": "ENTERED",
+        "description": "Ferrari took part in the 2024 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e3",
+        "relationship_type": "ROUND_OF",
+        "description": "The Monaco Grand Prix is a round of the 2024 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Leclerc won the Monaco Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e4",
+        "relationship_type": "AT_RACE",
+        "description": "Leclerc won the Monaco Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 6,
+  "entities_accepted": 7,
+  "entities_rejected": 0,
+  "relationship_candidates": 7,
+  "relationships_accepted": 5,
+  "relationships_rejected": 3,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 5,
+      "reason": "AT_RACE does not allow GrandPrix -> Driver"
+    },
+    {
+      "element": "relationship",
+      "index": 6,
+      "reason": "FOR_TEAM does not allow Driver -> Team"
+    },
+    {
+      "element": "relationship",
+      "index": 7,
+      "reason": "POWERED_BY does not allow Driver -> PowerUnit"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 3,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e4; description kept"
+    }
+  ]
+}

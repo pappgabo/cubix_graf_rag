@@ -1,0 +1,71 @@
+{
+  "chunk_id": "reference-formula-one#66",
+  "doc_id": "reference-formula-one",
+  "document_title": "Formula One",
+  "section": "Formula One > Social inequities",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "a828fc881890ceb947310f9863b8980c44dab6a2f2b497e3903c11f60ef61120",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "2020",
+        "entity_type": "Season",
+        "description": "The 2020 Formula One World Championship."
+      },
+      {
+        "local_id": "e2",
+        "name": "#WeRaceAsOne",
+        "entity_type": "Title",
+        "description": "An initiative launched by Formula One focusing on solidarity against racism."
+      },
+      {
+        "local_id": "e3",
+        "name": "Mercedes-AMG Petronas F1 Team",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that conducted a study of its racial composition."
+      },
+      {
+        "local_id": "e4",
+        "name": "Accelerate 25",
+        "entity_type": "Title",
+        "description": "A program launched by Mercedes-AMG Petronas F1 Team to promote diversity."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e3",
+        "target_id": "e1",
+        "relationship_type": "ENTERED",
+        "description": "Mercedes-AMG Petronas F1 Team participated in the 2020 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 4,
+  "entities_accepted": 4,
+  "entities_rejected": 0,
+  "relationship_candidates": 2,
+  "relationships_accepted": 1,
+  "relationships_rejected": 1,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "FIELDED does not allow Team -> Title"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 0,
+      "action": "clear_redundant_season_year",
+      "detail": "ENTERED year 2020 already named by Season 'e1'; from_year and to_year cleared"
+    }
+  ]
+}

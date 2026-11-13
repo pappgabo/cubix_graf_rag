@@ -1,0 +1,66 @@
+{
+  "chunk_id": "team-mercedes-benz-in-formula-one#23",
+  "doc_id": "team-mercedes-benz-in-formula-one",
+  "document_title": "Mercedes-Benz in Formula One",
+  "section": "Mercedes-Benz in Formula One > Mercedes-AMG Petronas Formula One Team (2010–present)",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/Mercedes-Benz_in_Formula_One",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "d4d350984dcf1d1960572037c1e7d54ba0fcd432fca65edd5f6cc6d8fdaac801",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "FOR_TEAM does not allow Driver -> Team"
+    },
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "FOR_TEAM does not allow Driver -> Team"
+    }
+  ],
+  "alignments": [],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Nico Rosberg",
+        "entity_type": "Driver",
+        "description": "Finished in seventh place."
+      },
+      {
+        "local_id": "e2",
+        "name": "Michael Schumacher",
+        "entity_type": "Driver",
+        "description": "Had a disappointing return, finishing the season without a single race win, podium, pole position, or fastest lap."
+      },
+      {
+        "local_id": "e3",
+        "name": "Mercedes-AMG Petronas Formula One Team",
+        "entity_type": "Team",
+        "description": "Finished fourth in the Constructors' Championship with 214 points."
+      },
+      {
+        "local_id": "e4",
+        "name": "2010–present",
+        "entity_type": "Season",
+        "description": "The time period for the Mercedes-AMG Petronas Formula One Team."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e3",
+        "target_id": "e4",
+        "relationship_type": "ENTERED",
+        "description": "Mercedes-AMG Petronas Formula One Team took part in the 2010–present season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

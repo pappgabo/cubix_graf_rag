@@ -1,0 +1,99 @@
+{
+  "chunk_id": "team-mercedes-benz-in-formula-one#5",
+  "doc_id": "team-mercedes-benz-in-formula-one",
+  "document_title": "Mercedes-Benz in Formula One",
+  "section": "Mercedes-Benz in Formula One > Mercedes-AMG Petronas Formula One Team (2010–present)",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "f5374d111cbb9bb88e92ce36f75418911cabef4d1630562346c6a5e6fd2b6f19",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Mercedes-AMG Petronas Formula One Team",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that competes in the constructors' championship."
+      },
+      {
+        "local_id": "e2",
+        "name": "Brawn GP",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that was purchased by Daimler AG."
+      },
+      {
+        "local_id": "e3",
+        "name": "Daimler AG",
+        "entity_type": "Team",
+        "description": "Parent company of Mercedes-Benz."
+      },
+      {
+        "local_id": "e4",
+        "name": "Petronas",
+        "entity_type": "Team",
+        "description": "Sponsorship partner of Mercedes-AMG Petronas Formula One Team."
+      },
+      {
+        "local_id": "e5",
+        "name": "Brackley facility",
+        "entity_type": "Circuit",
+        "description": "The base and workforce location for the Mercedes-AMG Petronas Formula One Team."
+      },
+      {
+        "local_id": "e6",
+        "name": "Brixworth",
+        "entity_type": "Circuit",
+        "description": "Location of the Mercedes-Benz Formula One engine plant."
+      },
+      {
+        "local_id": "e7",
+        "name": "2010",
+        "entity_type": "Season",
+        "description": "The season when Mercedes GP Petronas Formula One Team competed for the first time."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e7",
+        "relationship_type": "ENTERED",
+        "description": "Mercedes GP Petronas Formula One Team competed in the constructors' championship for the first time in 2010.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 7,
+  "entities_accepted": 7,
+  "entities_rejected": 0,
+  "relationship_candidates": 4,
+  "relationships_accepted": 1,
+  "relationships_rejected": 3,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "DROVE_FOR does not allow Team -> Team"
+    },
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "DROVE_FOR does not allow Team -> Team"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "DROVE_FOR does not allow Team -> Team"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 3,
+      "action": "clear_redundant_season_year",
+      "detail": "ENTERED year 2010 already named by Season 'e7'; from_year and to_year cleared"
+    }
+  ]
+}

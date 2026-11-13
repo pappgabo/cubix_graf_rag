@@ -1,0 +1,104 @@
+{
+  "chunk_id": "season-2020-formula-one-world-championship#21",
+  "doc_id": "season-2020-formula-one-world-championship",
+  "document_title": "2020 Formula One World Championship",
+  "section": "2020 Formula One World Championship > Race postponements and cancellations",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "cc0ee05a6added0f81ed133ab0ce78d65fdb8143869299405de0c4d64503f5c0",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Formula One",
+        "entity_type": "Team",
+        "description": "The premier international auto racing series."
+      },
+      {
+        "local_id": "e2",
+        "name": "FIA",
+        "entity_type": "Team",
+        "description": "The governing body for world motorsport."
+      },
+      {
+        "local_id": "e3",
+        "name": "Dutch Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula One race that was postponed."
+      },
+      {
+        "local_id": "e4",
+        "name": "Spanish Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula One race that was postponed."
+      },
+      {
+        "local_id": "e5",
+        "name": "Monaco Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula One race that was cancelled."
+      },
+      {
+        "local_id": "e6",
+        "name": "Azerbaijan Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula One race that was postponed."
+      },
+      {
+        "local_id": "e7",
+        "name": "2020",
+        "entity_type": "Season",
+        "description": "The Formula One championship season for 2020."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e3",
+        "target_id": "e7",
+        "relationship_type": "ROUND_OF",
+        "description": "The Dutch Grand Prix is a round of the 2020 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e7",
+        "relationship_type": "ROUND_OF",
+        "description": "The Spanish Grand Prix is a round of the 2020 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e7",
+        "relationship_type": "ROUND_OF",
+        "description": "The Monaco Grand Prix is a round of the 2020 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e6",
+        "target_id": "e7",
+        "relationship_type": "ROUND_OF",
+        "description": "The Azerbaijan Grand Prix is a round of the 2020 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 7,
+  "entities_accepted": 7,
+  "entities_rejected": 0,
+  "relationship_candidates": 4,
+  "relationships_accepted": 4,
+  "relationships_rejected": 0,
+  "rejections": [],
+  "alignments": []
+}

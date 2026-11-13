@@ -1,0 +1,98 @@
+{
+  "chunk_id": "reference-formula-one#5",
+  "doc_id": "reference-formula-one",
+  "document_title": "Formula One",
+  "section": "Formula One > Technological developments",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "a371e020470b8ab34a277df3d42d2eb07dad219e497527e458555d88012d7a53",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Jack Brabham",
+        "entity_type": "Driver",
+        "description": "World champion in 1959, 1960, and 1966."
+      },
+      {
+        "local_id": "e2",
+        "name": "Bugatti",
+        "entity_type": "Team",
+        "description": "Introduced mid-engined cars."
+      },
+      {
+        "local_id": "e3",
+        "name": "Ferguson P99",
+        "entity_type": "Car",
+        "description": "The last front-engined Formula One car to enter a world championship race."
+      },
+      {
+        "local_id": "e4",
+        "name": "Lotus",
+        "entity_type": "Team",
+        "description": "Introduced a car with an aluminium-sheet monocoque chassis in 1962."
+      },
+      {
+        "local_id": "e5",
+        "name": "1961",
+        "entity_type": "Season",
+        "description": "The year all teams had switched to mid-engined cars."
+      },
+      {
+        "local_id": "e6",
+        "name": "1962",
+        "entity_type": "Season",
+        "description": "The year Lotus introduced a car with an aluminium-sheet monocoque chassis."
+      },
+      {
+        "local_id": "e7",
+        "name": "1961 British Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The only front-engined car to compete that year."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e7",
+        "target_id": "e5",
+        "relationship_type": "ROUND_OF",
+        "description": "The 1961 British Grand Prix was a round of the 1961 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 7,
+  "entities_accepted": 7,
+  "entities_rejected": 0,
+  "relationship_candidates": 5,
+  "relationships_accepted": 1,
+  "relationships_rejected": 4,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "WON does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "FIELDED does not allow Team -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "ENTERED does not allow Car -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "FIELDED does not allow Team -> Season"
+    }
+  ],
+  "alignments": []
+}

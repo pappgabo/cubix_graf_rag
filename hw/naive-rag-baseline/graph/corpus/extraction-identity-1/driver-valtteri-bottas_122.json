@@ -1,0 +1,82 @@
+{
+  "chunk_id": "driver-valtteri-bottas#122",
+  "doc_id": "driver-valtteri-bottas",
+  "document_title": "Valtteri Bottas",
+  "section": "Formula One career > Alfa Romeo / Sauber (2022–2024) > 2024",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/Valtteri_Bottas",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "70f6a7cee3b3c0f286d25a9f924f3e9b3c149e46dfb0c3b7db6e2ceed3baa898",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "entity_candidates": 5,
+  "entities_accepted": 5,
+  "entities_rejected": 0,
+  "relationship_candidates": 3,
+  "relationships_accepted": 2,
+  "relationships_rejected": 1,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "FIELDED is not temporal; from_year=2024, to_year=None, role=None cannot be stored without dropping them"
+    }
+  ],
+  "alignments": [],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Valtteri Bottas",
+        "entity_type": "Driver",
+        "description": "A Finnish racing driver competing in Formula One."
+      },
+      {
+        "local_id": "e2",
+        "name": "Alfa Romeo",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that Bottas drives for."
+      },
+      {
+        "local_id": "e3",
+        "name": "C44",
+        "entity_type": "Car",
+        "description": "The car model fielded by Alfa Romeo in 2024."
+      },
+      {
+        "local_id": "e4",
+        "name": "2024",
+        "entity_type": "Season",
+        "description": "The Formula One season in which Bottas is competing."
+      },
+      {
+        "local_id": "e5",
+        "name": "Spanish Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A race in which Bottas aimed to improve his qualifying position."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e3",
+        "target_id": "e4",
+        "relationship_type": "RACED_IN",
+        "description": "The C44 car took part in the 2024 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e4",
+        "relationship_type": "ROUND_OF",
+        "description": "The Spanish Grand Prix is a round of the 2024 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

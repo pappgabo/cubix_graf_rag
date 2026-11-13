@@ -1,0 +1,119 @@
+{
+  "chunk_id": "driver-jenson-button#23",
+  "doc_id": "driver-jenson-button",
+  "document_title": "Jenson Button",
+  "section": "Formula One career > BAR/Honda/Brawn (2003–2009) > BAR (2003–2005)",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "c84d81c47479ee488de4ab1e6c47d920c8d72f6461b8b4deb8377dcea1d6bab4",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Jenson Button",
+        "entity_type": "Driver",
+        "description": "A British racing driver who competed in Formula One."
+      },
+      {
+        "local_id": "e2",
+        "name": "BAR",
+        "entity_type": "Team",
+        "description": "British American Racing, a Formula One team."
+      },
+      {
+        "local_id": "e3",
+        "name": "Williams",
+        "entity_type": "Team",
+        "description": "A Formula One team."
+      },
+      {
+        "local_id": "e4",
+        "name": "Honda",
+        "entity_type": "PowerUnit",
+        "description": "An engine supplier in Formula One."
+      },
+      {
+        "local_id": "e5",
+        "name": "2003",
+        "entity_type": "Season",
+        "description": "A Formula One championship season."
+      },
+      {
+        "local_id": "e6",
+        "name": "2004",
+        "entity_type": "Season",
+        "description": "A Formula One championship season."
+      },
+      {
+        "local_id": "e7",
+        "name": "2005",
+        "entity_type": "Season",
+        "description": "A Formula One championship season."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Jenson Button drove for BAR.",
+        "from_year": 2003,
+        "to_year": 2005,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e3",
+        "relationship_type": "DROVE_FOR",
+        "description": "Jenson Button signed a contract to return to Williams.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e5",
+        "relationship_type": "ENTERED",
+        "description": "BAR took part in the 2003 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e6",
+        "relationship_type": "ENTERED",
+        "description": "BAR took part in the 2004 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e7",
+        "relationship_type": "ENTERED",
+        "description": "BAR took part in the 2005 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 7,
+  "entities_accepted": 7,
+  "entities_rejected": 0,
+  "relationship_candidates": 6,
+  "relationships_accepted": 5,
+  "relationships_rejected": 1,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "POWERED_BY does not allow Team -> PowerUnit"
+    }
+  ],
+  "alignments": []
+}

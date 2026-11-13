@@ -1,0 +1,64 @@
+{
+  "chunk_id": "driver-michael-schumacher#31",
+  "doc_id": "driver-michael-schumacher",
+  "document_title": "Michael Schumacher",
+  "section": null,
+  "page": 3,
+  "source": "https://en.wikipedia.org/wiki/Michael_Schumacher",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "a884c33d4496393c10bd43ca9ff0c12b77467721c6c3a9faaed452eb8fcafc15",
+  "validation_version": "partial-1",
+  "source_status": "ok",
+  "status": "ok",
+  "rejections": [],
+  "alignments": [],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Michael Schumacher",
+        "entity_type": "Driver",
+        "description": "A Formula One driver known for his performances in the 1994 season."
+      },
+      {
+        "local_id": "e2",
+        "name": "Benetton",
+        "entity_type": "Team",
+        "description": "The Formula One team that Michael Schumacher drove for during the 1994 season."
+      },
+      {
+        "local_id": "e3",
+        "name": "1994",
+        "entity_type": "Season",
+        "description": "The Formula One season during which Michael Schumacher competed."
+      },
+      {
+        "local_id": "e4",
+        "name": "San Marino Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Grand Prix that took place during the 1994 season."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Michael Schumacher drove for Benetton during the 1994 season.",
+        "from_year": 1994,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e3",
+        "relationship_type": "ROUND_OF",
+        "description": "The San Marino Grand Prix was a round of the 1994 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

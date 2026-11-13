@@ -1,0 +1,179 @@
+{
+  "chunk_id": "driver-nico-rosberg#44",
+  "doc_id": "driver-nico-rosberg",
+  "document_title": "Nico Rosberg",
+  "section": "Nico Rosberg > Endorsements and philanthropy",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "2088849454a7c1eb51c9229c10a74f6f93d60ecad4b50f995d20d203b0275e34",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Nico Rosberg",
+        "entity_type": "Driver",
+        "description": "Rosberg is a Formula One driver and ambassador for various brands."
+      },
+      {
+        "local_id": "e2",
+        "name": "Mercedes-Benz",
+        "entity_type": "Team",
+        "description": "Rosberg is an ambassador for Mercedes-Benz."
+      },
+      {
+        "local_id": "e3",
+        "name": "Laureus",
+        "entity_type": "Team",
+        "description": "Rosberg is an ambassador for Laureus."
+      },
+      {
+        "local_id": "e4",
+        "name": "UBS",
+        "entity_type": "Team",
+        "description": "Rosberg is an ambassador for the investment bank UBS."
+      },
+      {
+        "local_id": "e5",
+        "name": "Tribute to Bambi Foundation",
+        "entity_type": "Team",
+        "description": "Rosberg is an ambassador for the Tribute to Bambi Foundation."
+      },
+      {
+        "local_id": "e6",
+        "name": "Schaeffler Group",
+        "entity_type": "Team",
+        "description": "Rosberg is an ambassador for the electric car manufacturer Schaeffler Group."
+      },
+      {
+        "local_id": "e7",
+        "name": "Heineken",
+        "entity_type": "Team",
+        "description": "Rosberg is part of Heineken's anti-drink-drive campaign."
+      },
+      {
+        "local_id": "e8",
+        "name": "#DriveForGood",
+        "entity_type": "Team",
+        "description": "A campaign in which Rosberg participated to raise funds for the Laureus Sport for Good Foundation."
+      },
+      {
+        "local_id": "e9",
+        "name": "2015",
+        "entity_type": "Season",
+        "description": "The year Rosberg led in Formula One races as part of the #DriveForGood campaign."
+      },
+      {
+        "local_id": "e10",
+        "name": "2015 Chinese Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The first race in which Rosberg led for the #DriveForGood campaign."
+      },
+      {
+        "local_id": "e11",
+        "name": "2015 Abu Dhabi Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The season-ending race in which Rosberg led for the #DriveForGood campaign."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Rosberg is an ambassador for Mercedes-Benz.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e3",
+        "relationship_type": "DROVE_FOR",
+        "description": "Rosberg is an ambassador for Laureus.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e4",
+        "relationship_type": "DROVE_FOR",
+        "description": "Rosberg is an ambassador for UBS.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e5",
+        "relationship_type": "DROVE_FOR",
+        "description": "Rosberg is an ambassador for the Tribute to Bambi Foundation.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e6",
+        "relationship_type": "DROVE_FOR",
+        "description": "Rosberg is an ambassador for Schaeffler Group.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e7",
+        "relationship_type": "DROVE_FOR",
+        "description": "Rosberg is part of Heineken's anti-drink-drive campaign.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e8",
+        "relationship_type": "DROVE_FOR",
+        "description": "Rosberg participated in the #DriveForGood campaign.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e10",
+        "target_id": "e9",
+        "relationship_type": "ROUND_OF",
+        "description": "The 2015 Chinese Grand Prix is part of the 2015 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e11",
+        "target_id": "e9",
+        "relationship_type": "ROUND_OF",
+        "description": "The 2015 Abu Dhabi Grand Prix is part of the 2015 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 11,
+  "entities_accepted": 11,
+  "entities_rejected": 0,
+  "relationship_candidates": 10,
+  "relationships_accepted": 9,
+  "relationships_rejected": 1,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 7,
+      "reason": "RACED_IN does not allow Team -> Season"
+    }
+  ],
+  "alignments": []
+}

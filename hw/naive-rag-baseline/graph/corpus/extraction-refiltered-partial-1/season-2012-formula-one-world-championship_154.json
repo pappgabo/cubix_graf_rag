@@ -1,0 +1,105 @@
+{
+  "chunk_id": "season-2012-formula-one-world-championship#154",
+  "doc_id": "season-2012-formula-one-world-championship",
+  "document_title": "2012 Formula One World Championship",
+  "section": "Race summaries > Round 13 – Italy Autodromo Nazionale Monza",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/2012_Formula_One_World_Championship",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "be0c31754832fc9f5953312d407f2272d6ba2bc7b1064bbfc6ceca01094c2d08",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "ACHIEVED does not allow Driver -> Season"
+    }
+  ],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Fernando Alonso",
+        "entity_type": "Driver",
+        "description": "A driver for Ferrari during the 2012 Formula One World Championship."
+      },
+      {
+        "local_id": "e2",
+        "name": "Felipe Massa",
+        "entity_type": "Driver",
+        "description": "A driver for Ferrari during the 2012 Formula One World Championship."
+      },
+      {
+        "local_id": "e3",
+        "name": "Lewis Hamilton",
+        "entity_type": "Driver",
+        "description": "A driver who took pole position at the Italian Grand Prix."
+      },
+      {
+        "local_id": "e4",
+        "name": "Ferrari",
+        "entity_type": "Team",
+        "description": "The Formula 1 team that fielded Fernando Alonso and Felipe Massa."
+      },
+      {
+        "local_id": "e5",
+        "name": "2012",
+        "entity_type": "Season",
+        "description": "The championship year of the 2012 Formula One World Championship."
+      },
+      {
+        "local_id": "e6",
+        "name": "Italian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The race held at Monza."
+      },
+      {
+        "local_id": "e7",
+        "name": "Autodromo Nazionale Monza",
+        "entity_type": "Circuit",
+        "description": "The circuit where the Italian Grand Prix took place."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e4",
+        "relationship_type": "DROVE_FOR",
+        "description": "Fernando Alonso drove for Ferrari.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e4",
+        "relationship_type": "DROVE_FOR",
+        "description": "Felipe Massa drove for Ferrari.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e6",
+        "target_id": "e5",
+        "relationship_type": "ROUND_OF",
+        "description": "The Italian Grand Prix is a round of the 2012 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e6",
+        "target_id": "e7",
+        "relationship_type": "HELD_AT",
+        "description": "The Italian Grand Prix was held at Autodromo Nazionale Monza.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

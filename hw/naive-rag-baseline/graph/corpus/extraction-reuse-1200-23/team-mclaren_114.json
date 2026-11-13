@@ -1,0 +1,104 @@
+{
+  "chunk_id": "team-mclaren#114",
+  "doc_id": "team-mclaren",
+  "document_title": "McLaren",
+  "section": "Car naming nomenclature",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "af14d5d5d54fd8feccac774c8eff109554e011f473081f2d77a6f69b8da3d183",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "McLaren",
+        "entity_type": "Team",
+        "description": "A Formula 1 team known for its historical car naming conventions."
+      },
+      {
+        "local_id": "e2",
+        "name": "MP4",
+        "entity_type": "Car",
+        "description": "A naming convention for McLaren cars that originally stood for 'Marlboro Project 4'."
+      },
+      {
+        "local_id": "e3",
+        "name": "MCL",
+        "entity_type": "Car",
+        "description": "A naming convention for McLaren cars that started in 2017."
+      },
+      {
+        "local_id": "e4",
+        "name": "MCL60",
+        "entity_type": "Car",
+        "description": "The name of the McLaren car for the 2023 season, celebrating the team's 60th anniversary."
+      },
+      {
+        "local_id": "e5",
+        "name": "1981",
+        "entity_type": "Season",
+        "description": "The year of the merger with Project Four."
+      },
+      {
+        "local_id": "e6",
+        "name": "1997",
+        "entity_type": "Season",
+        "description": "The year when the title sponsor changed."
+      },
+      {
+        "local_id": "e7",
+        "name": "2017",
+        "entity_type": "Season",
+        "description": "The year when the car naming scheme changed to 'MCL'."
+      },
+      {
+        "local_id": "e8",
+        "name": "2023",
+        "entity_type": "Season",
+        "description": "The year when the MCL60 was named."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "FIELDED",
+        "description": "McLaren used the MP4 naming convention for its cars.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 8,
+  "entities_accepted": 8,
+  "entities_rejected": 0,
+  "relationship_candidates": 5,
+  "relationships_accepted": 1,
+  "relationships_rejected": 4,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "FIELDED is not temporal; from_year=2017, to_year=None, role=None cannot be stored without dropping them"
+    },
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "FIELDED does not allow Car -> Car"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "FIELDED does not allow Team -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "FIELDED does not allow Team -> Season"
+    }
+  ],
+  "alignments": []
+}

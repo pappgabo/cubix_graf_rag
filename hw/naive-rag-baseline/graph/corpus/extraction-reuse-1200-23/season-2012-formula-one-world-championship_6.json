@@ -1,0 +1,87 @@
+{
+  "chunk_id": "season-2012-formula-one-world-championship#6",
+  "doc_id": "season-2012-formula-one-world-championship",
+  "document_title": "2012 Formula One World Championship",
+  "section": "Teams and drivers > Team changes",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "43ccb52b4cda24f0d4904b8197ccefa680b072e0e988072daba03d8b8e5427db",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Caterham",
+        "entity_type": "Team",
+        "description": "Lotus became known as Caterham, reflecting team principal Tony Fernandes's purchase of Caterham Cars."
+      },
+      {
+        "local_id": "e2",
+        "name": "Lotus",
+        "entity_type": "Team",
+        "description": "Renault changed its constructor name to Lotus after Lotus Cars expanded its title sponsorship program."
+      },
+      {
+        "local_id": "e3",
+        "name": "Marussia",
+        "entity_type": "Team",
+        "description": "Virgin became Marussia, following increased ownership of the team by Russian sports car manufacturer Marussia Motors."
+      },
+      {
+        "local_id": "e4",
+        "name": "Team Lotus",
+        "entity_type": "Team",
+        "description": "Team Lotus declared that their ongoing dispute over the use of the Lotus name was over."
+      },
+      {
+        "local_id": "e5",
+        "name": "Lotus Renault GP",
+        "entity_type": "Team",
+        "description": "Lotus Renault GP declared that their ongoing dispute over the use of the Lotus name was over."
+      },
+      {
+        "local_id": "e6",
+        "name": "Group Lotus",
+        "entity_type": "Team",
+        "description": "The joint statement detailed the transfer of the rights to the Lotus and Team Lotus names to Group Lotus's ownership."
+      }
+    ],
+    "relationships": []
+  },
+  "entity_candidates": 6,
+  "entities_accepted": 6,
+  "entities_rejected": 0,
+  "relationship_candidates": 5,
+  "relationships_accepted": 0,
+  "relationships_rejected": 5,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "DROVE_FOR does not allow Team -> Team"
+    },
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "DROVE_FOR does not allow Team -> Team"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "DROVE_FOR does not allow Team -> Team"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "DROVE_FOR does not allow Team -> Team"
+    },
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "DROVE_FOR does not allow Team -> Team"
+    }
+  ],
+  "alignments": []
+}

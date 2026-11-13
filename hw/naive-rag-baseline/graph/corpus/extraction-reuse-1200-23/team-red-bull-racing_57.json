@@ -1,0 +1,76 @@
+{
+  "chunk_id": "team-red-bull-racing#57",
+  "doc_id": "team-red-bull-racing",
+  "document_title": "Red Bull Racing",
+  "section": "2020 season",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "9b3f182778d1dc5e06a6bc2e5fe17482890f66579cbf90661cf0f7809f41bcfc",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Red Bull Racing",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that entered cars."
+      },
+      {
+        "local_id": "e2",
+        "name": "Max Verstappen",
+        "entity_type": "Driver",
+        "description": "A driver who finished third in the World Drivers' Championship with 214 points."
+      },
+      {
+        "local_id": "e3",
+        "name": "Alex Albon",
+        "entity_type": "Driver",
+        "description": "A driver who finished seventh in the World Drivers' Championship with 105 points."
+      },
+      {
+        "local_id": "e4",
+        "name": "Sergio Perez",
+        "entity_type": "Driver",
+        "description": "A driver announced to replace Alex Albon for the 2021 season."
+      },
+      {
+        "local_id": "e5",
+        "name": "2020",
+        "entity_type": "Season",
+        "description": "The championship year in which Red Bull Racing ended second in the World Constructors' Championship."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e5",
+        "relationship_type": "ENTERED",
+        "description": "Red Bull Racing took part in the 2020 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 5,
+  "entities_accepted": 5,
+  "entities_rejected": 0,
+  "relationship_candidates": 3,
+  "relationships_accepted": 1,
+  "relationships_rejected": 2,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "DROVE_FOR does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "DROVE_FOR does not allow Driver -> Season"
+    }
+  ],
+  "alignments": []
+}

@@ -1,0 +1,115 @@
+{
+  "chunk_id": "driver-lewis-hamilton#51",
+  "doc_id": "driver-lewis-hamilton",
+  "document_title": "Lewis Hamilton",
+  "section": null,
+  "page": 11,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "ba74c0ee33a38e2fce4dbb618ecb07b5bd2811fc8ff1ce106b15fd1c50e75a95",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Lewis Hamilton",
+        "entity_type": "Driver",
+        "description": "A Formula One driver who fought for the championship in 2017 and 2018."
+      },
+      {
+        "local_id": "e2",
+        "name": "Sebastian Vettel",
+        "entity_type": "Driver",
+        "description": "A Formula One driver who was racing for Ferrari during the 2017 and 2018 seasons."
+      },
+      {
+        "local_id": "e3",
+        "name": "Mercedes-AMG Petronas Formula One Team",
+        "entity_type": "Team",
+        "description": "The Formula One team that Lewis Hamilton drove for during the championships in 2017 and 2018."
+      },
+      {
+        "local_id": "e4",
+        "name": "Scuderia Ferrari",
+        "entity_type": "Team",
+        "description": "The Formula One team that Sebastian Vettel drove for during the championships in 2017 and 2018."
+      },
+      {
+        "local_id": "e5",
+        "name": "2017",
+        "entity_type": "Season",
+        "description": "The Formula One season in which Lewis Hamilton won the championship."
+      },
+      {
+        "local_id": "e6",
+        "name": "2018",
+        "entity_type": "Season",
+        "description": "The Formula One season in which Lewis Hamilton won the championship."
+      },
+      {
+        "local_id": "e7",
+        "name": "2017 Azerbaijan Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A notable race in 2017 where Vettel accused Hamilton of brake checking."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e3",
+        "relationship_type": "DROVE_FOR",
+        "description": "Lewis Hamilton drove for Mercedes during the championships in 2017 and 2018.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e4",
+        "relationship_type": "DROVE_FOR",
+        "description": "Sebastian Vettel drove for Ferrari during the championships in 2017 and 2018.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e7",
+        "target_id": "e5",
+        "relationship_type": "ROUND_OF",
+        "description": "The 2017 Azerbaijan Grand Prix was a round of the 2017 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e7",
+        "target_id": "e6",
+        "relationship_type": "ROUND_OF",
+        "description": "The 2017 Azerbaijan Grand Prix was a round of the 2018 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 7,
+  "entities_accepted": 7,
+  "entities_rejected": 0,
+  "relationship_candidates": 6,
+  "relationships_accepted": 4,
+  "relationships_rejected": 2,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "WON does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "WON does not allow Driver -> Season"
+    }
+  ],
+  "alignments": []
+}

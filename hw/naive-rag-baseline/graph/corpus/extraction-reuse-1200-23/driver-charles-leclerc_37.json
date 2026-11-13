@@ -1,0 +1,190 @@
+{
+  "chunk_id": "driver-charles-leclerc#37",
+  "doc_id": "driver-charles-leclerc",
+  "document_title": "Charles Leclerc",
+  "section": "Charles Leclerc > 2022: Curtailed title battle vs. Verstappen",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "d66513a95b5bb48ec135156e0a6614676fb277d0ff774b1e6d5eb983c528494d",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Charles Leclerc",
+        "entity_type": "Driver",
+        "description": "Monégasque driver who raced for Ferrari."
+      },
+      {
+        "local_id": "e2",
+        "name": "Scuderia Ferrari",
+        "entity_type": "Team",
+        "description": "Formula 1 team that entered cars."
+      },
+      {
+        "local_id": "e3",
+        "name": "2022",
+        "entity_type": "Season",
+        "description": "Formula 1 championship season."
+      },
+      {
+        "local_id": "e4",
+        "name": "Bahrain Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "Season-opening race of the 2022 Formula 1 season."
+      },
+      {
+        "local_id": "e5",
+        "name": "Saudi Arabian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "Race in the 2022 Formula 1 season."
+      },
+      {
+        "local_id": "e6",
+        "name": "Australian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "Race in the 2022 Formula 1 season."
+      },
+      {
+        "local_id": "e7",
+        "name": "Emilia Romagna Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "Race in the 2022 Formula 1 season."
+      },
+      {
+        "local_id": "e8",
+        "name": "Miami Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "Race in the 2022 Formula 1 season."
+      },
+      {
+        "local_id": "e9",
+        "name": "Max Verstappen",
+        "entity_type": "Driver",
+        "description": "Driver who raced for Red Bull."
+      },
+      {
+        "local_id": "e10",
+        "name": "Sergio Pérez",
+        "entity_type": "Driver",
+        "description": "Driver who raced for Red Bull."
+      },
+      {
+        "local_id": "e11",
+        "name": "George Russell",
+        "entity_type": "Driver",
+        "description": "Driver who raced for Mercedes."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Charles Leclerc raced for Ferrari in 2022.",
+        "from_year": 2022,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e3",
+        "relationship_type": "ROUND_OF",
+        "description": "Bahrain Grand Prix is a round of the 2022 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e3",
+        "relationship_type": "ROUND_OF",
+        "description": "Saudi Arabian Grand Prix is a round of the 2022 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e6",
+        "target_id": "e3",
+        "relationship_type": "ROUND_OF",
+        "description": "Australian Grand Prix is a round of the 2022 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e7",
+        "target_id": "e3",
+        "relationship_type": "ROUND_OF",
+        "description": "Emilia Romagna Grand Prix is a round of the 2022 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e8",
+        "target_id": "e3",
+        "relationship_type": "ROUND_OF",
+        "description": "Miami Grand Prix is a round of the 2022 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e9",
+        "target_id": "e1",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Max Verstappen was a teammate of Sergio Pérez.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e11",
+        "target_id": "e1",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "George Russell was a teammate of Lewis Hamilton.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 11,
+  "entities_accepted": 11,
+  "entities_rejected": 0,
+  "relationship_candidates": 13,
+  "relationships_accepted": 8,
+  "relationships_rejected": 5,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "ACHIEVED Driver -> GrandPrix has from_year=2022, to_year=None, role=None; the year or role cannot be stored on the reified result"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "ACHIEVED Driver -> GrandPrix has from_year=2022, to_year=None, role=None; the year or role cannot be stored on the reified result"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "ACHIEVED Driver -> GrandPrix has from_year=2022, to_year=None, role=None; the year or role cannot be stored on the reified result"
+    },
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "ACHIEVED Driver -> GrandPrix has from_year=2022, to_year=None, role=None; the year or role cannot be stored on the reified result"
+    },
+    {
+      "element": "relationship",
+      "index": 5,
+      "reason": "ACHIEVED Driver -> GrandPrix has from_year=2022, to_year=None, role=None; the year or role cannot be stored on the reified result"
+    }
+  ],
+  "alignments": []
+}

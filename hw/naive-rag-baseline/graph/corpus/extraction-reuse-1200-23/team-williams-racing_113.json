@@ -1,0 +1,59 @@
+{
+  "chunk_id": "team-williams-racing#113",
+  "doc_id": "team-williams-racing",
+  "document_title": "Williams Racing",
+  "section": "Williams Racing > Other motorsports activities > Williams Racing > Formula Two",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "dac57b0e89584e974cf15306e567d2f6e68a42328413f4d72d1943d8f2f637b1",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Williams Racing",
+        "entity_type": "Team",
+        "description": "A Formula 1 team."
+      },
+      {
+        "local_id": "e2",
+        "name": "Formula Two",
+        "entity_type": "Car",
+        "description": "The car developed by Williams for the revived Formula Two championship."
+      },
+      {
+        "local_id": "e3",
+        "name": "2009",
+        "entity_type": "Season",
+        "description": "The year when Williams developed the car for the revived Formula Two championship."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e2",
+        "target_id": "e3",
+        "relationship_type": "RACED_IN",
+        "description": "The car was developed for the revived Formula Two championship in 2009.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 3,
+  "entities_accepted": 3,
+  "entities_rejected": 0,
+  "relationship_candidates": 2,
+  "relationships_accepted": 1,
+  "relationships_rejected": 1,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "FIELDED is not temporal; from_year=2009, to_year=None, role=None cannot be stored without dropping them"
+    }
+  ],
+  "alignments": []
+}

@@ -1,0 +1,109 @@
+{
+  "chunk_id": "season-2016-formula-one-world-championship#9",
+  "doc_id": "season-2016-formula-one-world-championship",
+  "document_title": "2016 Formula One World Championship",
+  "section": "Driver changes",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "7e26d7dcfeb809d05a7d96fc8f7e601a695c8cd4531100020fc66bfdc81a2bb2",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Pascal Wehrlein",
+        "entity_type": "Driver",
+        "description": "Reigning Deutsche Tourenwagen Masters champion who signed with Manor for the 2016 campaign."
+      },
+      {
+        "local_id": "e2",
+        "name": "Rio Haryanto",
+        "entity_type": "Driver",
+        "description": "GP2 Series regular who signed with Manor for the 2016 campaign and became the first Indonesian driver to race in Formula One."
+      },
+      {
+        "local_id": "e3",
+        "name": "Manor",
+        "entity_type": "Team",
+        "description": "Formula One team that signed two rookies for its 2016 campaign."
+      },
+      {
+        "local_id": "e4",
+        "name": "Will Stevens",
+        "entity_type": "Driver",
+        "description": "Driver who was not retained by Manor for the 2016 season."
+      },
+      {
+        "local_id": "e5",
+        "name": "Roberto Merhi",
+        "entity_type": "Driver",
+        "description": "Driver who was not retained by Manor for the 2016 season."
+      },
+      {
+        "local_id": "e6",
+        "name": "Alexander Rossi",
+        "entity_type": "Driver",
+        "description": "Driver who raced for Manor in 2015 and was moved to a test and reserve role."
+      },
+      {
+        "local_id": "e7",
+        "name": "2016",
+        "entity_type": "Season",
+        "description": "The Formula One season in which Manor signed two rookies."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e3",
+        "target_id": "e7",
+        "relationship_type": "ENTERED",
+        "description": "Manor entered the 2016 Formula One season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 7,
+  "entities_accepted": 7,
+  "entities_rejected": 0,
+  "relationship_candidates": 6,
+  "relationships_accepted": 1,
+  "relationships_rejected": 5,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "DROVE_FOR does not allow Team -> Driver"
+    },
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "DROVE_FOR does not allow Team -> Driver"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "DROVE_FOR does not allow Team -> Driver"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "DROVE_FOR does not allow Team -> Driver"
+    },
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "DROVE_FOR does not allow Team -> Driver"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 5,
+      "action": "clear_redundant_season_year",
+      "detail": "ENTERED year 2016 already named by Season 'e7'; from_year and to_year cleared"
+    }
+  ]
+}

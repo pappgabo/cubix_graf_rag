@@ -1,0 +1,79 @@
+{
+  "chunk_id": "driver-lewis-hamilton#29",
+  "doc_id": "driver-lewis-hamilton",
+  "document_title": "Lewis Hamilton",
+  "section": null,
+  "page": 3,
+  "source": "https://en.wikipedia.org/wiki/Lewis_Hamilton",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "264b6186fa9aca353befb0ea3ec5cda32ff559305e08b6955e99cc193719bcc2",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "RACED_IN does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "ACHIEVED does not allow Driver -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "WON does not allow Driver -> Season"
+    }
+  ],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Lewis Hamilton",
+        "entity_type": "Driver",
+        "description": "A Formula One driver who partnered with Heikki Kovalainen in 2008."
+      },
+      {
+        "local_id": "e2",
+        "name": "Heikki Kovalainen",
+        "entity_type": "Driver",
+        "description": "A Formula One driver who partnered with Lewis Hamilton in 2008."
+      },
+      {
+        "local_id": "e3",
+        "name": "2008",
+        "entity_type": "Season",
+        "description": "The Formula One season in which Lewis Hamilton won five races."
+      },
+      {
+        "local_id": "e4",
+        "name": "British Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A race in which Lewis Hamilton won during the 2008 season."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Lewis Hamilton partnered with Heikki Kovalainen in 2008.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e3",
+        "relationship_type": "ROUND_OF",
+        "description": "The British Grand Prix is a round of the 2008 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

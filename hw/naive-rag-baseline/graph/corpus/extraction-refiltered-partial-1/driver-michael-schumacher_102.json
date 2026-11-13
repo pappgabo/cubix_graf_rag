@@ -1,0 +1,76 @@
+{
+  "chunk_id": "driver-michael-schumacher#102",
+  "doc_id": "driver-michael-schumacher",
+  "document_title": "Michael Schumacher",
+  "section": null,
+  "page": 9,
+  "source": "https://en.wikipedia.org/wiki/Michael_Schumacher",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "353644d62a4dd4b31c875fda9489dc3af3a1dd0a6a0205f649a4c6829565521e",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "ENTERED is not temporal; from_year, to_year and role must be null"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "ENTERED is not temporal; from_year, to_year and role must be null"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "HELD_AT does not allow Team -> Circuit"
+    }
+  ],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Michael Schumacher",
+        "entity_type": "Driver",
+        "description": "A former Formula One driver who acted as Ferrari's adviser during the 2007 season."
+      },
+      {
+        "local_id": "e2",
+        "name": "Ferrari",
+        "entity_type": "Team",
+        "description": "A Formula One team that Michael Schumacher advised."
+      },
+      {
+        "local_id": "e3",
+        "name": "2007",
+        "entity_type": "Season",
+        "description": "The season during which Schumacher acted as Ferrari's adviser."
+      },
+      {
+        "local_id": "e4",
+        "name": "2008",
+        "entity_type": "Season",
+        "description": "The season during which Schumacher focused on testing for Ferrari and competed in motorcycle racing."
+      },
+      {
+        "local_id": "e5",
+        "name": "Jerez Circuit",
+        "entity_type": "Circuit",
+        "description": "A racing venue where Schumacher helped Ferrari with their development programme."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Michael Schumacher acted as Ferrari's adviser.",
+        "from_year": 2007,
+        "to_year": 2007,
+        "role": "adviser"
+      }
+    ]
+  }
+}

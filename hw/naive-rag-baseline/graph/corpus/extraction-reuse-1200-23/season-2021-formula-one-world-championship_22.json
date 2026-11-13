@@ -1,0 +1,363 @@
+{
+  "chunk_id": "season-2021-formula-one-world-championship#22",
+  "doc_id": "season-2021-formula-one-world-championship",
+  "document_title": "2021 Formula One World Championship",
+  "section": null,
+  "page": 5,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "ac679febccc526aead0b95a6750cb199da804d5cc5c4d04e5c9b6d9b8d9e2811",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Max Verstappen",
+        "entity_type": "Driver",
+        "description": "Took pole position on the opening round in Bahrain."
+      },
+      {
+        "local_id": "e2",
+        "name": "Sergio Pérez",
+        "entity_type": "Driver",
+        "description": "Stalled at the last turn and started in the pit lane."
+      },
+      {
+        "local_id": "e3",
+        "name": "Nikita Mazepin",
+        "entity_type": "Driver",
+        "description": "Spun at turn 3, crashing into the barrier."
+      },
+      {
+        "local_id": "e4",
+        "name": "Pierre Gasly",
+        "entity_type": "Driver",
+        "description": "Collided with Daniel Ricciardo's McLaren."
+      },
+      {
+        "local_id": "e5",
+        "name": "Daniel Ricciardo",
+        "entity_type": "Driver",
+        "description": "Collided with Pierre Gasly."
+      },
+      {
+        "local_id": "e6",
+        "name": "Mick Schumacher",
+        "entity_type": "Driver",
+        "description": "Spun off behind the pack."
+      },
+      {
+        "local_id": "e7",
+        "name": "Lewis Hamilton",
+        "entity_type": "Driver",
+        "description": "Won the opening round in Bahrain."
+      },
+      {
+        "local_id": "e8",
+        "name": "Valtteri Bottas",
+        "entity_type": "Driver",
+        "description": "Completed the podium in the opening round."
+      },
+      {
+        "local_id": "e9",
+        "name": "Lando Norris",
+        "entity_type": "Driver",
+        "description": "Finished in fourth place."
+      },
+      {
+        "local_id": "e10",
+        "name": "Bahrain Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The opening round of the 2021 Formula One World Championship."
+      },
+      {
+        "local_id": "e11",
+        "name": "2021 Formula One World Championship",
+        "entity_type": "Season",
+        "description": "The championship year for the events described."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Lewis Hamilton at Bahrain Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Lewis Hamilton won the Bahrain Grand Prix."
+      },
+      {
+        "local_id": "rr2",
+        "name": "Max Verstappen at Bahrain Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Max Verstappen took pole position in the Bahrain Grand Prix."
+      },
+      {
+        "local_id": "rr3",
+        "name": "Sergio Pérez at Bahrain Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Sergio Pérez started in the pit lane in the Bahrain Grand Prix."
+      },
+      {
+        "local_id": "rr4",
+        "name": "Nikita Mazepin at Bahrain Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Nikita Mazepin crashed in the Bahrain Grand Prix."
+      },
+      {
+        "local_id": "rr5",
+        "name": "Pierre Gasly at Bahrain Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Pierre Gasly collided with Daniel Ricciardo in the Bahrain Grand Prix."
+      },
+      {
+        "local_id": "rr6",
+        "name": "Daniel Ricciardo at Bahrain Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Daniel Ricciardo collided with Pierre Gasly in the Bahrain Grand Prix."
+      },
+      {
+        "local_id": "rr7",
+        "name": "Mick Schumacher at Bahrain Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Mick Schumacher spun off in the Bahrain Grand Prix."
+      },
+      {
+        "local_id": "rr8",
+        "name": "Valtteri Bottas at Bahrain Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Valtteri Bottas completed the podium in the Bahrain Grand Prix."
+      },
+      {
+        "local_id": "rr9",
+        "name": "Lando Norris at Bahrain Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Lando Norris finished in fourth place in the Bahrain Grand Prix."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e10",
+        "target_id": "e11",
+        "relationship_type": "ROUND_OF",
+        "description": "The Bahrain Grand Prix is a round of the 2021 Formula One World Championship.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e7",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Lewis Hamilton won the Bahrain Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e10",
+        "relationship_type": "AT_RACE",
+        "description": "Lewis Hamilton won the Bahrain Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr2",
+        "relationship_type": "ACHIEVED",
+        "description": "Max Verstappen took pole position in the Bahrain Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr2",
+        "target_id": "e10",
+        "relationship_type": "AT_RACE",
+        "description": "Max Verstappen took pole position in the Bahrain Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "rr3",
+        "relationship_type": "ACHIEVED",
+        "description": "Sergio Pérez started in the pit lane in the Bahrain Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr3",
+        "target_id": "e10",
+        "relationship_type": "AT_RACE",
+        "description": "Sergio Pérez started in the pit lane in the Bahrain Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "rr4",
+        "relationship_type": "ACHIEVED",
+        "description": "Nikita Mazepin crashed in the Bahrain Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr4",
+        "target_id": "e10",
+        "relationship_type": "AT_RACE",
+        "description": "Nikita Mazepin crashed in the Bahrain Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "rr5",
+        "relationship_type": "ACHIEVED",
+        "description": "Pierre Gasly collided with Daniel Ricciardo in the Bahrain Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr5",
+        "target_id": "e10",
+        "relationship_type": "AT_RACE",
+        "description": "Pierre Gasly collided with Daniel Ricciardo in the Bahrain Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "rr6",
+        "relationship_type": "ACHIEVED",
+        "description": "Daniel Ricciardo collided with Pierre Gasly in the Bahrain Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr6",
+        "target_id": "e10",
+        "relationship_type": "AT_RACE",
+        "description": "Daniel Ricciardo collided with Pierre Gasly in the Bahrain Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e6",
+        "target_id": "rr7",
+        "relationship_type": "ACHIEVED",
+        "description": "Mick Schumacher spun off in the Bahrain Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr7",
+        "target_id": "e10",
+        "relationship_type": "AT_RACE",
+        "description": "Mick Schumacher spun off in the Bahrain Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e8",
+        "target_id": "rr8",
+        "relationship_type": "ACHIEVED",
+        "description": "Valtteri Bottas completed the podium in the Bahrain Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr8",
+        "target_id": "e10",
+        "relationship_type": "AT_RACE",
+        "description": "Valtteri Bottas completed the podium in the Bahrain Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e9",
+        "target_id": "rr9",
+        "relationship_type": "ACHIEVED",
+        "description": "Lando Norris finished in fourth place in the Bahrain Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr9",
+        "target_id": "e10",
+        "relationship_type": "AT_RACE",
+        "description": "Lando Norris finished in fourth place in the Bahrain Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 11,
+  "entities_accepted": 20,
+  "entities_rejected": 0,
+  "relationship_candidates": 10,
+  "relationships_accepted": 19,
+  "relationships_rejected": 0,
+  "rejections": [],
+  "alignments": [
+    {
+      "index": 1,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e10; description kept"
+    },
+    {
+      "index": 2,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr2 -AT_RACE-> e10; description kept"
+    },
+    {
+      "index": 3,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr3 -AT_RACE-> e10; description kept"
+    },
+    {
+      "index": 4,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr4 -AT_RACE-> e10; description kept"
+    },
+    {
+      "index": 5,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr5 -AT_RACE-> e10; description kept"
+    },
+    {
+      "index": 6,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr6 -AT_RACE-> e10; description kept"
+    },
+    {
+      "index": 7,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr7 -AT_RACE-> e10; description kept"
+    },
+    {
+      "index": 8,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr8 -AT_RACE-> e10; description kept"
+    },
+    {
+      "index": 9,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr9 -AT_RACE-> e10; description kept"
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "chunk_id": "season-2012-formula-one-world-championship#8",
+  "doc_id": "season-2012-formula-one-world-championship",
+  "document_title": "2012 Formula One World Championship",
+  "section": "Teams and drivers > Team changes",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "b2410817c1adc79ba2e199efcc30f6d551b019a899594ea3eefcc945c56560c8",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Force India",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that announced a stake purchase by the Sahara Group."
+      },
+      {
+        "local_id": "e2",
+        "name": "Sahara Group",
+        "entity_type": "Team",
+        "description": "A group that purchased a stake in Force India and became its naming-rights sponsor."
+      },
+      {
+        "local_id": "e3",
+        "name": "Mercedes-AMG Petronas Formula One Team",
+        "entity_type": "Team",
+        "description": "The new name for Mercedes GP, reflecting their performance and luxury brand."
+      },
+      {
+        "local_id": "e4",
+        "name": "HRT",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that relocated its headquarters to Spain."
+      },
+      {
+        "local_id": "e5",
+        "name": "Luis Pérez-Sala",
+        "entity_type": "Driver",
+        "description": "Former Minardi driver who became the team principal of HRT."
+      },
+      {
+        "local_id": "e6",
+        "name": "2011",
+        "entity_type": "Season",
+        "description": "The season in which the Indian Grand Prix took place."
+      }
+    ],
+    "relationships": []
+  },
+  "entity_candidates": 6,
+  "entities_accepted": 6,
+  "entities_rejected": 0,
+  "relationship_candidates": 4,
+  "relationships_accepted": 0,
+  "relationships_rejected": 4,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "ENTERED is not temporal; from_year=2012, to_year=None, role=None cannot be stored without dropping them"
+    },
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "DROVE_FOR does not allow Team -> Team"
+    },
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "DROVE_FOR does not allow Team -> Team"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "DROVE_FOR does not allow Team -> Driver"
+    }
+  ],
+  "alignments": []
+}

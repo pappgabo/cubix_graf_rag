@@ -1,0 +1,115 @@
+{
+  "chunk_id": "team-mclaren#35",
+  "doc_id": "team-mclaren",
+  "document_title": "McLaren",
+  "section": "1995–2014: First Mercedes partnership > 1995–2009: Factory Mercedes partnership",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "f7338f5da8e59dfcedcec24c274089d3f2680267c2c42c27fdaf639067393d50",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Fernando Alonso",
+        "entity_type": "Driver",
+        "description": "A driver who raced for McLaren in 2007."
+      },
+      {
+        "local_id": "e2",
+        "name": "Lewis Hamilton",
+        "entity_type": "Driver",
+        "description": "A Formula One debutant and long-time McLaren protégé who raced for McLaren in 2007."
+      },
+      {
+        "local_id": "e3",
+        "name": "McLaren",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that entered cars."
+      },
+      {
+        "local_id": "e4",
+        "name": "2007",
+        "entity_type": "Season",
+        "description": "The championship year in which Alonso and Hamilton raced together."
+      },
+      {
+        "local_id": "e5",
+        "name": "Hungarian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A race in which Alonso was judged to have impeded Hamilton during qualifying."
+      },
+      {
+        "local_id": "e6",
+        "name": "Spygate",
+        "entity_type": "Title",
+        "description": "The controversy involving McLaren and proprietary technical blueprints of Ferrari's car."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e3",
+        "relationship_type": "DROVE_FOR",
+        "description": "Fernando Alonso raced for McLaren in 2007.",
+        "from_year": 2007,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e3",
+        "relationship_type": "DROVE_FOR",
+        "description": "Lewis Hamilton raced for McLaren in 2007.",
+        "from_year": 2007,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e4",
+        "relationship_type": "ENTERED",
+        "description": "McLaren took part in the 2007 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e4",
+        "relationship_type": "ROUND_OF",
+        "description": "Hungarian Grand Prix is a round of the 2007 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 6,
+  "entities_accepted": 6,
+  "entities_rejected": 0,
+  "relationship_candidates": 5,
+  "relationships_accepted": 4,
+  "relationships_rejected": 1,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "ACHIEVED does not allow Title -> Team"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 2,
+      "action": "clear_redundant_season_year",
+      "detail": "ENTERED year 2007 already named by Season 'e4'; from_year and to_year cleared"
+    },
+    {
+      "index": 3,
+      "action": "clear_redundant_season_year",
+      "detail": "ROUND_OF year 2007 already named by Season 'e4'; from_year and to_year cleared"
+    }
+  ]
+}

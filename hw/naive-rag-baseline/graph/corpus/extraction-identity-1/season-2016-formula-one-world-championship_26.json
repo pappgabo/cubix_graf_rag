@@ -1,0 +1,141 @@
+{
+  "chunk_id": "season-2016-formula-one-world-championship#26",
+  "doc_id": "season-2016-formula-one-world-championship",
+  "document_title": "2016 Formula One World Championship",
+  "section": "Mid-season changes",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/2016_Formula_One_World_Championship",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "937466954cd94a1ad5cfe67377cf22249ecf18b1f9ce4ee349924dbbdefb95de",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "entity_candidates": 6,
+  "entities_accepted": 8,
+  "entities_rejected": 0,
+  "relationship_candidates": 4,
+  "relationships_accepted": 6,
+  "relationships_rejected": 0,
+  "rejections": [],
+  "alignments": [
+    {
+      "index": 2,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e5; description kept"
+    },
+    {
+      "index": 3,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr2 -AT_RACE-> e6; description kept"
+    }
+  ],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Rio Haryanto",
+        "entity_type": "Driver",
+        "description": "A driver who lost his race seat after the German Grand Prix."
+      },
+      {
+        "local_id": "e2",
+        "name": "Esteban Ocon",
+        "entity_type": "Driver",
+        "description": "2015 GP3 Series champion and Renault test driver who made his Formula One debut with MRT at the Belgian Grand Prix."
+      },
+      {
+        "local_id": "e3",
+        "name": "Toro Rosso",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that Rio Haryanto was associated with."
+      },
+      {
+        "local_id": "e4",
+        "name": "MRT",
+        "entity_type": "Team",
+        "description": "The team with which Esteban Ocon made his Formula One debut."
+      },
+      {
+        "local_id": "e5",
+        "name": "German Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The race after which Rio Haryanto lost his race seat."
+      },
+      {
+        "local_id": "e6",
+        "name": "Belgian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The race where Esteban Ocon made his Formula One debut."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Rio Haryanto at German Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Rio Haryanto lost his race seat after the German Grand Prix."
+      },
+      {
+        "local_id": "rr2",
+        "name": "Esteban Ocon at Belgian Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Esteban Ocon made his Formula One debut at the Belgian Grand Prix."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e3",
+        "relationship_type": "DROVE_FOR",
+        "description": "Rio Haryanto drove for Toro Rosso.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e4",
+        "relationship_type": "DROVE_FOR",
+        "description": "Esteban Ocon drove for MRT.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Rio Haryanto lost his race seat after the German Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e5",
+        "relationship_type": "AT_RACE",
+        "description": "Rio Haryanto lost his race seat after the German Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "rr2",
+        "relationship_type": "ACHIEVED",
+        "description": "Esteban Ocon made his Formula One debut at the Belgian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr2",
+        "target_id": "e6",
+        "relationship_type": "AT_RACE",
+        "description": "Esteban Ocon made his Formula One debut at the Belgian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

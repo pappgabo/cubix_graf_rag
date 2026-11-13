@@ -1,0 +1,132 @@
+{
+  "chunk_id": "team-renault-in-formula-one#33",
+  "doc_id": "team-renault-in-formula-one",
+  "document_title": "Renault in Formula One",
+  "section": "Constructor > Renault F1 Team and Lotus Renault GP (2002–2011): The rise and fall of the first Enstone era > Decline in fortunes and race-fixing scandal (2007–2009)",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "db84905ded10c83f25268129c483a51c0d2ec95f6d52ef30e07032e846932b37",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Renault",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that entered cars."
+      },
+      {
+        "local_id": "e2",
+        "name": "Fernando Alonso",
+        "entity_type": "Driver",
+        "description": "A Formula 1 driver who raced for Renault."
+      },
+      {
+        "local_id": "e3",
+        "name": "Nelson Piquet Jr.",
+        "entity_type": "Driver",
+        "description": "A Formula 1 driver who raced for Renault."
+      },
+      {
+        "local_id": "e4",
+        "name": "Romain Grosjean",
+        "entity_type": "Driver",
+        "description": "A Formula 1 driver who replaced Nelson Piquet Jr. at Renault."
+      },
+      {
+        "local_id": "e5",
+        "name": "2009",
+        "entity_type": "Season",
+        "description": "A Formula 1 championship year."
+      },
+      {
+        "local_id": "e6",
+        "name": "2009 European Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A specific race event."
+      },
+      {
+        "local_id": "e7",
+        "name": "2009 Hungarian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A specific race event."
+      },
+      {
+        "local_id": "e8",
+        "name": "Scuderia Ferrari",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that Fernando Alonso moved to."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e5",
+        "relationship_type": "ENTERED",
+        "description": "Renault took part in the 2009 Formula 1 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e8",
+        "relationship_type": "DROVE_FOR",
+        "description": "Fernando Alonso moved to Ferrari after leaving Renault.",
+        "from_year": 2010,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e6",
+        "target_id": "e5",
+        "relationship_type": "ROUND_OF",
+        "description": "The 2009 European Grand Prix is a round of the 2009 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e7",
+        "target_id": "e5",
+        "relationship_type": "ROUND_OF",
+        "description": "The 2009 Hungarian Grand Prix is a round of the 2009 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 8,
+  "entities_accepted": 8,
+  "entities_rejected": 0,
+  "relationship_candidates": 7,
+  "relationships_accepted": 4,
+  "relationships_rejected": 3,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "DROVE_FOR does not allow Team -> Driver"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "DROVE_FOR does not allow Team -> Driver"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "DROVE_FOR does not allow Team -> Driver"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 0,
+      "action": "clear_redundant_season_year",
+      "detail": "ENTERED year 2009 already named by Season 'e5'; from_year and to_year cleared"
+    }
+  ]
+}

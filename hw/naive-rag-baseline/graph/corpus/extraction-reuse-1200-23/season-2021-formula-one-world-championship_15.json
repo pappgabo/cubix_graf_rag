@@ -1,0 +1,89 @@
+{
+  "chunk_id": "season-2021-formula-one-world-championship#15",
+  "doc_id": "season-2021-formula-one-world-championship",
+  "document_title": "2021 Formula One World Championship",
+  "section": null,
+  "page": 4,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "ba97abda0cc598b0524e510288a37e2fe5a8d83a47a921f3653dc67c4845bd26",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "2021",
+        "entity_type": "Season",
+        "description": "The 2021 Formula One World Championship season."
+      },
+      {
+        "local_id": "e2",
+        "name": "Toto Wolff",
+        "entity_type": "Driver",
+        "description": "Team principal of Mercedes-AMG Petronas Formula One Team."
+      },
+      {
+        "local_id": "e3",
+        "name": "Red Bull Racing",
+        "entity_type": "Team",
+        "description": "Formula One team."
+      },
+      {
+        "local_id": "e4",
+        "name": "Scuderia Ferrari",
+        "entity_type": "Team",
+        "description": "Formula One team."
+      },
+      {
+        "local_id": "e5",
+        "name": "McLaren",
+        "entity_type": "Team",
+        "description": "Formula One team."
+      },
+      {
+        "local_id": "e6",
+        "name": "Mercedes",
+        "entity_type": "PowerUnit",
+        "description": "Engine supplier for Formula One teams."
+      },
+      {
+        "local_id": "e7",
+        "name": "Renault",
+        "entity_type": "PowerUnit",
+        "description": "Former engine supplier for McLaren."
+      },
+      {
+        "local_id": "e8",
+        "name": "FIA",
+        "entity_type": "Team",
+        "description": "Governing body for Formula One."
+      }
+    ],
+    "relationships": []
+  },
+  "entity_candidates": 8,
+  "entities_accepted": 8,
+  "entities_rejected": 0,
+  "relationship_candidates": 3,
+  "relationships_accepted": 0,
+  "relationships_rejected": 3,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "POWERED_BY does not allow Team -> PowerUnit"
+    },
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "POWERED_BY does not allow Team -> PowerUnit"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "RACED_IN does not allow Team -> Season"
+    }
+  ],
+  "alignments": []
+}

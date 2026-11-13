@@ -1,0 +1,114 @@
+{
+  "chunk_id": "driver-max-verstappen#7",
+  "doc_id": "driver-max-verstappen",
+  "document_title": "Max Verstappen",
+  "section": null,
+  "page": 2,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "0e366728d45b5439902f4fe9a15ad70d3a8d3fd29dd06b7c176afbf6d7405312",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Max Verstappen",
+        "entity_type": "Driver",
+        "description": "A racing driver who competed in various lower formulae before entering Formula One."
+      },
+      {
+        "local_id": "e2",
+        "name": "2013",
+        "entity_type": "Season",
+        "description": "A championship year in which Verstappen competed."
+      },
+      {
+        "local_id": "e3",
+        "name": "Pembrey",
+        "entity_type": "Circuit",
+        "description": "A racing venue where Verstappen first experienced formula racing."
+      },
+      {
+        "local_id": "e4",
+        "name": "Barazi-Epsilon FR2.0–10",
+        "entity_type": "Car",
+        "description": "The car Verstappen drove during his first formula racing experience."
+      },
+      {
+        "local_id": "e5",
+        "name": "Dallara F311",
+        "entity_type": "Car",
+        "description": "The Formula Three car tested by Verstappen."
+      },
+      {
+        "local_id": "e6",
+        "name": "Circuito de Jerez",
+        "entity_type": "Circuit",
+        "description": "A circuit where Verstappen tested a Formula Renault car."
+      },
+      {
+        "local_id": "e7",
+        "name": "Josef Kaufmann Racing",
+        "entity_type": "Team",
+        "description": "The team Verstappen drove for in Formula Renault."
+      },
+      {
+        "local_id": "e8",
+        "name": "Circuit Ricardo Tormo",
+        "entity_type": "Circuit",
+        "description": "A circuit where Verstappen set a faster lap time than Eddie Cheever III."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e7",
+        "relationship_type": "DROVE_FOR",
+        "description": "Verstappen drove for Josef Kaufmann Racing.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 8,
+  "entities_accepted": 8,
+  "entities_rejected": 0,
+  "relationship_candidates": 7,
+  "relationships_accepted": 1,
+  "relationships_rejected": 6,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "WON does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "DROVE_FOR does not allow Driver -> Circuit"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "DROVE_FOR does not allow Driver -> Car"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "DROVE_FOR does not allow Driver -> Car"
+    },
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "DROVE_FOR does not allow Driver -> Circuit"
+    },
+    {
+      "element": "relationship",
+      "index": 6,
+      "reason": "DROVE_FOR does not allow Driver -> Circuit"
+    }
+  ],
+  "alignments": []
+}

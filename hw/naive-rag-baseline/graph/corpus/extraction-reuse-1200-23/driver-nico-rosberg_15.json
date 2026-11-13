@@ -1,0 +1,186 @@
+{
+  "chunk_id": "driver-nico-rosberg#15",
+  "doc_id": "driver-nico-rosberg",
+  "document_title": "Nico Rosberg",
+  "section": "Nico Rosberg > 2006–2007",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "8ebb9307c236295f474350a74b6e6f82d8851c9270265b56787d5500cc29cc69",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Nico Rosberg",
+        "entity_type": "Driver",
+        "description": "Rosberg was paid £500,000 by Williams and was the first son of a former world champion in Formula One since Damon Hill in 1999."
+      },
+      {
+        "local_id": "e2",
+        "name": "Williams",
+        "entity_type": "Team",
+        "description": "Rosberg drove for Williams during the 2006-2007 seasons."
+      },
+      {
+        "local_id": "e3",
+        "name": "2006",
+        "entity_type": "Season",
+        "description": "The season in which Rosberg scored his first career points."
+      },
+      {
+        "local_id": "e4",
+        "name": "Bahrain Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The season-opening race where Rosberg scored his first career points with a seventh-place finish."
+      },
+      {
+        "local_id": "e5",
+        "name": "Malaysian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The race where Rosberg achieved a season-best start of third before his engine failed."
+      },
+      {
+        "local_id": "e6",
+        "name": "European Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "Rosberg scored points once more during this race with a seventh-place finish."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Nico Rosberg at Bahrain Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Rosberg scored his first career points with a seventh-place finish at the Bahrain Grand Prix."
+      },
+      {
+        "local_id": "rr2",
+        "name": "Nico Rosberg at Malaysian Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Rosberg achieved a season-best start of third at the Malaysian Grand Prix before his engine failed."
+      },
+      {
+        "local_id": "rr3",
+        "name": "Nico Rosberg at European Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Rosberg scored points once more during the European Grand Prix with a seventh-place finish."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Rosberg drove for Williams during the 2006-2007 seasons.",
+        "from_year": 2006,
+        "to_year": 2007,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e3",
+        "relationship_type": "ROUND_OF",
+        "description": "The Bahrain Grand Prix is a round of the 2006 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e3",
+        "relationship_type": "ROUND_OF",
+        "description": "The Malaysian Grand Prix is a round of the 2006 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e6",
+        "target_id": "e3",
+        "relationship_type": "ROUND_OF",
+        "description": "The European Grand Prix is a round of the 2006 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Rosberg scored his first career points with a seventh-place finish at the Bahrain Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e4",
+        "relationship_type": "AT_RACE",
+        "description": "Rosberg scored his first career points with a seventh-place finish at the Bahrain Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr2",
+        "relationship_type": "ACHIEVED",
+        "description": "Rosberg achieved a season-best start of third at the Malaysian Grand Prix before his engine failed.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr2",
+        "target_id": "e5",
+        "relationship_type": "AT_RACE",
+        "description": "Rosberg achieved a season-best start of third at the Malaysian Grand Prix before his engine failed.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr3",
+        "relationship_type": "ACHIEVED",
+        "description": "Rosberg scored points once more during the European Grand Prix with a seventh-place finish.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr3",
+        "target_id": "e6",
+        "relationship_type": "AT_RACE",
+        "description": "Rosberg scored points once more during the European Grand Prix with a seventh-place finish.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 6,
+  "entities_accepted": 9,
+  "entities_rejected": 0,
+  "relationship_candidates": 7,
+  "relationships_accepted": 10,
+  "relationships_rejected": 0,
+  "rejections": [],
+  "alignments": [
+    {
+      "index": 4,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e4; description kept"
+    },
+    {
+      "index": 5,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr2 -AT_RACE-> e5; description kept"
+    },
+    {
+      "index": 6,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr3 -AT_RACE-> e6; description kept"
+    }
+  ]
+}

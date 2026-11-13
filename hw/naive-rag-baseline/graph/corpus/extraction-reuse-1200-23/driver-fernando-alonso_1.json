@@ -1,0 +1,111 @@
+{
+  "chunk_id": "driver-fernando-alonso#1",
+  "doc_id": "driver-fernando-alonso",
+  "document_title": "Fernando Alonso",
+  "section": null,
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "1e8c6a65e0028072318eee9527c3d293ac0530a71827eb5271feb8614643e52a",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Fernando Alonso",
+        "entity_type": "Driver",
+        "description": "Born and raised in Oviedo to a working-class family, Alonso began kart racing aged seven and won the CIK-FIA Five Continents Cup in 1996. He progressed to junior formulae aged 17, winning the Euro Open by Nissan in 1999 before finishing fourth in International Formula 3000. Alonso signed for Minardi in 2001, making his Formula One debut at the Australian Grand Prix. After a non-scoring rookie season, he joined Renault as a test driver before his promotion to a full-time seat in 2003; he became the then-youngest polesitter and race winner at the Malaysian and Hungarian Grands Prix, respectively, before achieving several podiums across his 2004 campaign. Alonso won his maiden title after winning seven Grands Prix in 2005, becoming the first World Drivers' Champion from Spain and the then-youngest in Formula One history, aged 24. He successfully defended his title from Michael Schumacher in 2006. Alonso moved to McLaren for 2007, finishing one point behind champion Kimi Räikkönen and returning to Renault amidst inter-team tensions. He won multiple races in 2008—including the controversial Singapore Grand Prix—before enduring a winless 2009 campaign."
+      },
+      {
+        "local_id": "e2",
+        "name": "Minardi",
+        "entity_type": "Team",
+        "description": "Alonso signed for Minardi in 2001, making his Formula One debut at the Australian Grand Prix."
+      },
+      {
+        "local_id": "e3",
+        "name": "Renault",
+        "entity_type": "Team",
+        "description": "Alonso joined Renault as a test driver before his promotion to a full-time seat in 2003."
+      },
+      {
+        "local_id": "e4",
+        "name": "McLaren",
+        "entity_type": "Team",
+        "description": "Alonso moved to McLaren for 2007, finishing one point behind champion Kimi Räikkönen."
+      },
+      {
+        "local_id": "e5",
+        "name": "2005",
+        "entity_type": "Season",
+        "description": "Alonso won his maiden title after winning seven Grands Prix in 2005."
+      },
+      {
+        "local_id": "e6",
+        "name": "2006",
+        "entity_type": "Season",
+        "description": "He successfully defended his title from Michael Schumacher in 2006."
+      },
+      {
+        "local_id": "e7",
+        "name": "2008",
+        "entity_type": "Season",
+        "description": "He won multiple races in 2008—including the controversial Singapore Grand Prix."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Alonso signed for Minardi in 2001, making his Formula One debut at the Australian Grand Prix.",
+        "from_year": 2001,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e3",
+        "relationship_type": "DROVE_FOR",
+        "description": "Alonso joined Renault as a test driver before his promotion to a full-time seat in 2003.",
+        "from_year": 2003,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e4",
+        "relationship_type": "DROVE_FOR",
+        "description": "Alonso moved to McLaren for 2007, finishing one point behind champion Kimi Räikkönen.",
+        "from_year": 2007,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 7,
+  "entities_accepted": 7,
+  "entities_rejected": 0,
+  "relationship_candidates": 6,
+  "relationships_accepted": 3,
+  "relationships_rejected": 3,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "WON does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "AWARDED_IN does not allow Season -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 5,
+      "reason": "ACHIEVED does not allow Driver -> Season"
+    }
+  ],
+  "alignments": []
+}

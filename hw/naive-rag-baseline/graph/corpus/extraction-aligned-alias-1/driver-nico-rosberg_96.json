@@ -1,0 +1,73 @@
+{
+  "chunk_id": "driver-nico-rosberg#96",
+  "doc_id": "driver-nico-rosberg",
+  "document_title": "Nico Rosberg",
+  "section": "Nico Rosberg > Retirement from racing and subsequent ventures (2016–present)",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/Nico_Rosberg",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "ab15a70c8aaf470f5acb8acd6624b205d3b511a4248107790bea5f65865320b2",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "ENTERED does not allow Team -> Circuit"
+    },
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "DROVE_FOR does not allow Team -> Circuit"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "ROUND_OF does not allow Team -> Season"
+    }
+  ],
+  "alignments": [],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Nico Rosberg",
+        "entity_type": "Driver",
+        "description": "A former Formula One driver who retired from racing."
+      },
+      {
+        "local_id": "e2",
+        "name": "Team X44",
+        "entity_type": "Team",
+        "description": "A Formula 1 team associated with Lewis Hamilton."
+      },
+      {
+        "local_id": "e3",
+        "name": "2022",
+        "entity_type": "Season",
+        "description": "The Formula One season in which the team narrowly missed out on retaining the constructors' title."
+      },
+      {
+        "local_id": "e4",
+        "name": "Extreme E",
+        "entity_type": "Circuit",
+        "description": "A racing series in which RXR participated."
+      },
+      {
+        "local_id": "e5",
+        "name": "Extreme H",
+        "entity_type": "Circuit",
+        "description": "The racing series that will replace Extreme E in 2025."
+      },
+      {
+        "local_id": "e6",
+        "name": "RXR",
+        "entity_type": "Team",
+        "description": "The team that Rosberg announced would cease operations in Extreme E."
+      }
+    ],
+    "relationships": []
+  }
+}

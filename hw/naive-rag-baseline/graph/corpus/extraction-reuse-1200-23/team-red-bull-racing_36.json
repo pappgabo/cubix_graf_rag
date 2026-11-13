@@ -1,0 +1,163 @@
+{
+  "chunk_id": "team-red-bull-racing#36",
+  "doc_id": "team-red-bull-racing",
+  "document_title": "Red Bull Racing",
+  "section": "2013 season",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "72256795d254216677b50e261d2eac359a93cf1f1ff671bf4d8f6bbe2f8848a8",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Sebastian Vettel",
+        "entity_type": "Driver",
+        "description": "A driver for Infiniti Red Bull Racing who finished 4th in the race and won the Bahrain Grand Prix."
+      },
+      {
+        "local_id": "e2",
+        "name": "Mark Webber",
+        "entity_type": "Driver",
+        "description": "A driver for Infiniti Red Bull Racing who finished 7th in the Bahrain Grand Prix and announced his retirement from Formula One at the end of the 2013 season."
+      },
+      {
+        "local_id": "e3",
+        "name": "Infiniti Red Bull Racing",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that entered cars in the 2013 season."
+      },
+      {
+        "local_id": "e4",
+        "name": "2013",
+        "entity_type": "Season",
+        "description": "The Formula 1 championship season in which Infiniti Red Bull Racing competed."
+      },
+      {
+        "local_id": "e5",
+        "name": "Bahrain Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A race in the 2013 season where Vettel qualified second and Webber finished 7th."
+      },
+      {
+        "local_id": "e6",
+        "name": "FIA World Endurance Championship",
+        "entity_type": "Circuit",
+        "description": "The championship Mark Webber signed a deal with for 2014."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Sebastian Vettel at Bahrain Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Sebastian Vettel finished 4th in the Bahrain Grand Prix."
+      },
+      {
+        "local_id": "rr2",
+        "name": "Mark Webber at Bahrain Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Mark Webber finished 7th in the Bahrain Grand Prix."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e3",
+        "relationship_type": "DROVE_FOR",
+        "description": "Sebastian Vettel drove for Infiniti Red Bull Racing during the 2013 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e3",
+        "relationship_type": "DROVE_FOR",
+        "description": "Mark Webber drove for Infiniti Red Bull Racing during the 2013 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e4",
+        "relationship_type": "ENTERED",
+        "description": "Infiniti Red Bull Racing took part in the 2013 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e4",
+        "relationship_type": "ROUND_OF",
+        "description": "The Bahrain Grand Prix is a round of the 2013 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Sebastian Vettel finished 4th in the Bahrain Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e5",
+        "relationship_type": "AT_RACE",
+        "description": "Sebastian Vettel finished 4th in the Bahrain Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "rr2",
+        "relationship_type": "ACHIEVED",
+        "description": "Mark Webber finished 7th in the Bahrain Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr2",
+        "target_id": "e5",
+        "relationship_type": "AT_RACE",
+        "description": "Mark Webber finished 7th in the Bahrain Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 6,
+  "entities_accepted": 8,
+  "entities_rejected": 0,
+  "relationship_candidates": 7,
+  "relationships_accepted": 8,
+  "relationships_rejected": 1,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 8,
+      "reason": "FOR_TEAM does not allow Driver -> Circuit"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 4,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e5; description kept"
+    },
+    {
+      "index": 5,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr2 -AT_RACE-> e5; description kept"
+    }
+  ]
+}

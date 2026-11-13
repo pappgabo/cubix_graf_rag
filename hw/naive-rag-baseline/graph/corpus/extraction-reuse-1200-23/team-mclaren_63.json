@@ -1,0 +1,188 @@
+{
+  "chunk_id": "team-mclaren#63",
+  "doc_id": "team-mclaren",
+  "document_title": "McLaren",
+  "section": "2024–2025: World Championship years",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "5dbaaab69a426efc0559ddd298f7ba939b63346948866fa1ed72ca8bf1ace6fe",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "McLaren",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that won the Constructors' Championship in 2025."
+      },
+      {
+        "local_id": "e2",
+        "name": "MCL39",
+        "entity_type": "Car",
+        "description": "The first McLaren car fully overseen by Rob Marshall, used in the 2025 season."
+      },
+      {
+        "local_id": "e3",
+        "name": "2025",
+        "entity_type": "Season",
+        "description": "The Formula 1 season in which McLaren won the Constructors' Championship."
+      },
+      {
+        "local_id": "e4",
+        "name": "Norris",
+        "entity_type": "Driver",
+        "description": "A driver for McLaren who scored seven wins in the 2025 season."
+      },
+      {
+        "local_id": "e5",
+        "name": "Piastri",
+        "entity_type": "Driver",
+        "description": "A driver for McLaren who scored seven wins in the 2025 season."
+      },
+      {
+        "local_id": "e6",
+        "name": "Singapore Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The race where McLaren secured their tenth Constructors' Championship."
+      },
+      {
+        "local_id": "e7",
+        "name": "Saudi Arabian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The race where Piastri took the lead in the Drivers' Championship after Norris' mistake."
+      },
+      {
+        "local_id": "e8",
+        "name": "Canadian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "One of the races where McLaren did not score a podium."
+      },
+      {
+        "local_id": "e9",
+        "name": "Azerbaijan Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "One of the races where McLaren did not score a podium."
+      },
+      {
+        "local_id": "e10",
+        "name": "Las Vegas Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "One of the races where McLaren did not score a podium."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Norris at Saudi Arabian Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Norris recorded a result in the Saudi Arabian Grand Prix."
+      },
+      {
+        "local_id": "rr2",
+        "name": "Piastri at Saudi Arabian Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Piastri recorded a result in the Saudi Arabian Grand Prix."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e3",
+        "relationship_type": "ENTERED",
+        "description": "McLaren took part in the 2025 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "FIELDED",
+        "description": "McLaren entered the MCL39 car in the 2025 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e3",
+        "relationship_type": "RACED_IN",
+        "description": "The MCL39 car took part in the 2025 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Norris recorded a result in the Saudi Arabian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e7",
+        "relationship_type": "AT_RACE",
+        "description": "Norris recorded a result in the Saudi Arabian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "rr2",
+        "relationship_type": "ACHIEVED",
+        "description": "Piastri recorded a result in the Saudi Arabian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr2",
+        "target_id": "e7",
+        "relationship_type": "AT_RACE",
+        "description": "Piastri recorded a result in the Saudi Arabian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 10,
+  "entities_accepted": 12,
+  "entities_rejected": 0,
+  "relationship_candidates": 8,
+  "relationships_accepted": 7,
+  "relationships_rejected": 3,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "WON does not allow Team -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 8,
+      "reason": "TEAMMATE_OF does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 9,
+      "reason": "TEAMMATE_OF does not allow Driver -> Season"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 4,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e7; description kept"
+    },
+    {
+      "index": 5,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr2 -AT_RACE-> e7; description kept"
+    }
+  ]
+}

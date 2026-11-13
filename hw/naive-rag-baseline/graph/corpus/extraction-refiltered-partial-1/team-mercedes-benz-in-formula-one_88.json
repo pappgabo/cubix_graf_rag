@@ -1,0 +1,65 @@
+{
+  "chunk_id": "team-mercedes-benz-in-formula-one#88",
+  "doc_id": "team-mercedes-benz-in-formula-one",
+  "document_title": "Mercedes-Benz in Formula One",
+  "section": "Mercedes-Benz in Formula One > FTX sponsorship and lawsuit filing",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/Mercedes-Benz_in_Formula_One",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "0b1bbaca8dbce503d667fc048b8384abc97b5be80a962265d586aadf90f6e42b",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "DROVE_FOR does not allow Team -> Team"
+    },
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "ENTERED is not temporal; from_year, to_year and role must be null"
+    }
+  ],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Mercedes F1",
+        "entity_type": "Team",
+        "description": "The Mercedes F1 team had previously partnered with FTX."
+      },
+      {
+        "local_id": "e2",
+        "name": "FTX",
+        "entity_type": "Team",
+        "description": "A Bahamas-based cryptocurrency exchange company that partnered with Mercedes."
+      },
+      {
+        "local_id": "e3",
+        "name": "2022",
+        "entity_type": "Season",
+        "description": "The season during which Mercedes suspended its sponsorship deal with FTX."
+      },
+      {
+        "local_id": "e4",
+        "name": "São Paulo Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The Grand Prix prior to which Mercedes removed FTX's logos from their cars."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e4",
+        "target_id": "e3",
+        "relationship_type": "ROUND_OF",
+        "description": "The São Paulo Grand Prix is a round of the 2022 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

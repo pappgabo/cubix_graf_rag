@@ -1,0 +1,62 @@
+{
+  "chunk_id": "driver-nico-rosberg#2",
+  "doc_id": "driver-nico-rosberg",
+  "document_title": "Nico Rosberg",
+  "section": "Nico Rosberg",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "ecc207de24d9a975958a192368183af7e75e53d70489047cc626bc84b82ddb18",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Nico Rosberg",
+        "entity_type": "Driver",
+        "description": "Rosberg announced his retirement from motor racing five days after clinching the title, citing wanting to spend more time with his family and not wanting his driving ability to atrophy as the main factors behind his decision. Overall, he started 206 Grands Prix, achieving 23 wins, 30 pole positions, 20 fastest laps and 57 podium finishes."
+      },
+      {
+        "local_id": "e2",
+        "name": "2016",
+        "entity_type": "Season",
+        "description": "The season in which Nico Rosberg clinched the title."
+      },
+      {
+        "local_id": "e3",
+        "name": "World Drivers' Championship",
+        "entity_type": "Title",
+        "description": "The championship title that Nico Rosberg won."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e3",
+        "relationship_type": "WON",
+        "description": "Nico Rosberg won the World Drivers' Championship title.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e2",
+        "relationship_type": "AWARDED_IN",
+        "description": "The World Drivers' Championship title was awarded in the 2016 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 3,
+  "entities_accepted": 3,
+  "entities_rejected": 0,
+  "relationship_candidates": 2,
+  "relationships_accepted": 2,
+  "relationships_rejected": 0,
+  "rejections": [],
+  "alignments": []
+}

@@ -1,0 +1,200 @@
+{
+  "chunk_id": "season-2020-formula-one-world-championship#43",
+  "doc_id": "season-2020-formula-one-world-championship",
+  "document_title": "2020 Formula One World Championship",
+  "section": "2020 Formula One World Championship > Closing rounds",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "5a92b7276b0906b34b02dc3dc2ee2a8c360130a1c1da617008a47af7b24e1c76",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Lewis Hamilton",
+        "entity_type": "Driver",
+        "description": "A Formula One driver who won the Emilia Romagna Grand Prix and claimed his seventh world title at the Turkish Grand Prix."
+      },
+      {
+        "local_id": "e2",
+        "name": "Valtteri Bottas",
+        "entity_type": "Driver",
+        "description": "A Formula One driver who finished second at the Emilia Romagna Grand Prix."
+      },
+      {
+        "local_id": "e3",
+        "name": "Daniel Ricciardo",
+        "entity_type": "Driver",
+        "description": "A Formula One driver who finished third at the Emilia Romagna Grand Prix."
+      },
+      {
+        "local_id": "e4",
+        "name": "Max Verstappen",
+        "entity_type": "Driver",
+        "description": "A Formula One driver who had a puncture while in second place at the Emilia Romagna Grand Prix."
+      },
+      {
+        "local_id": "e5",
+        "name": "Mercedes-AMG Petronas Formula One Team",
+        "entity_type": "Team",
+        "description": "A Formula One team that won their seventh consecutive Constructors' World Championship."
+      },
+      {
+        "local_id": "e6",
+        "name": "Turkish Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula One race where Lewis Hamilton claimed his seventh world title."
+      },
+      {
+        "local_id": "e7",
+        "name": "Sergio Pérez",
+        "entity_type": "Driver",
+        "description": "A Formula One driver who finished on the podium at the Turkish Grand Prix."
+      },
+      {
+        "local_id": "e8",
+        "name": "Sebastian Vettel",
+        "entity_type": "Driver",
+        "description": "A Formula One driver who finished on the podium at the Turkish Grand Prix."
+      },
+      {
+        "local_id": "e9",
+        "name": "Lance Stroll",
+        "entity_type": "Driver",
+        "description": "A Formula One driver who claimed his maiden pole position in qualifying for the Turkish Grand Prix."
+      },
+      {
+        "local_id": "e10",
+        "name": "Emilia Romagna Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula One race held at the Autodromo Enzo e Dino Ferrari."
+      },
+      {
+        "local_id": "e11",
+        "name": "2020",
+        "entity_type": "Season",
+        "description": "The Formula One championship season in which these events took place."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Max Verstappen at Emilia Romagna Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Max Verstappen had a puncture while in second place at the Emilia Romagna Grand Prix."
+      },
+      {
+        "local_id": "rr2",
+        "name": "Lance Stroll at Turkish Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Lance Stroll claimed his maiden pole position in qualifying for the Turkish Grand Prix."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e4",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Max Verstappen had a puncture while in second place at the Emilia Romagna Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e10",
+        "relationship_type": "AT_RACE",
+        "description": "Max Verstappen had a puncture while in second place at the Emilia Romagna Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e11",
+        "relationship_type": "ENTERED",
+        "description": "Mercedes entered the 2020 Formula One season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e9",
+        "target_id": "rr2",
+        "relationship_type": "ACHIEVED",
+        "description": "Lance Stroll claimed his maiden pole position in qualifying for the Turkish Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr2",
+        "target_id": "e6",
+        "relationship_type": "AT_RACE",
+        "description": "Lance Stroll claimed his maiden pole position in qualifying for the Turkish Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e6",
+        "target_id": "e11",
+        "relationship_type": "ROUND_OF",
+        "description": "The Turkish Grand Prix is a round of the 2020 Formula One season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 11,
+  "entities_accepted": 13,
+  "entities_rejected": 0,
+  "relationship_candidates": 10,
+  "relationships_accepted": 6,
+  "relationships_rejected": 6,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "WON does not allow Driver -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "FOR_TEAM does not allow Driver -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "FOR_TEAM does not allow Driver -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 6,
+      "reason": "WON does not allow Driver -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 7,
+      "reason": "FOR_TEAM does not allow Driver -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 8,
+      "reason": "FOR_TEAM does not allow Driver -> GrandPrix"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 3,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e10; description kept"
+    },
+    {
+      "index": 8,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr2 -AT_RACE-> e6; description kept"
+    }
+  ]
+}

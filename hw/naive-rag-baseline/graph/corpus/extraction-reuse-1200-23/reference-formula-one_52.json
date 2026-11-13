@@ -1,0 +1,123 @@
+{
+  "chunk_id": "reference-formula-one#52",
+  "doc_id": "reference-formula-one",
+  "document_title": "Formula One",
+  "section": "Formula One > Circuits",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "233438b61b2b204e12156ea8e6312b2bf4bb5c49667247d8c90d641322ed86ef",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Circuit of the Americas",
+        "entity_type": "Circuit",
+        "description": "A racing venue in Austin."
+      },
+      {
+        "local_id": "e2",
+        "name": "Sochi Autodrom",
+        "entity_type": "Circuit",
+        "description": "A racing venue in Sochi."
+      },
+      {
+        "local_id": "e3",
+        "name": "Baku City Circuit",
+        "entity_type": "Circuit",
+        "description": "A racing venue in Azerbaijan."
+      },
+      {
+        "local_id": "e4",
+        "name": "Algarve International Circuit",
+        "entity_type": "Circuit",
+        "description": "A racing venue that debuted on the F1 calendar in 2020."
+      },
+      {
+        "local_id": "e5",
+        "name": "Circuit Zandvoort",
+        "entity_type": "Circuit",
+        "description": "A racing venue that returned to the F1 calendar in 2021."
+      },
+      {
+        "local_id": "e6",
+        "name": "Las Vegas Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Grand Prix that entered the series in 2023."
+      },
+      {
+        "local_id": "e7",
+        "name": "Portuguese Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Grand Prix held at Algarve International Circuit."
+      },
+      {
+        "local_id": "e8",
+        "name": "Dutch Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Grand Prix held at Circuit Zandvoort."
+      },
+      {
+        "local_id": "e9",
+        "name": "2027",
+        "entity_type": "Season",
+        "description": "A season when Formula One will return to Portimão."
+      },
+      {
+        "local_id": "e10",
+        "name": "2028",
+        "entity_type": "Season",
+        "description": "A season when Formula One will return to Portimão."
+      },
+      {
+        "local_id": "e11",
+        "name": "1996",
+        "entity_type": "Season",
+        "description": "The last season Portugal hosted a race before 2020."
+      },
+      {
+        "local_id": "e12",
+        "name": "1985",
+        "entity_type": "Season",
+        "description": "The last season Circuit Zandvoort hosted a race before 2021."
+      }
+    ],
+    "relationships": []
+  },
+  "entity_candidates": 12,
+  "entities_accepted": 12,
+  "entities_rejected": 0,
+  "relationship_candidates": 5,
+  "relationships_accepted": 0,
+  "relationships_rejected": 5,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "HELD_AT does not allow Circuit -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "HELD_AT does not allow Circuit -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "ROUND_OF does not allow Circuit -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "ROUND_OF does not allow Circuit -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "ROUND_OF does not allow Season -> Season"
+    }
+  ],
+  "alignments": []
+}

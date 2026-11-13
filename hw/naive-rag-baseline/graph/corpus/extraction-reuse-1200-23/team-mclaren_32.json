@@ -1,0 +1,161 @@
+{
+  "chunk_id": "team-mclaren#32",
+  "doc_id": "team-mclaren",
+  "document_title": "McLaren",
+  "section": "1995–2014: First Mercedes partnership > 1995–2009: Factory Mercedes partnership",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "2e0915ba21d707a675571117ac83770df579894d6ff6074014fcab588939f38f",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "McLaren",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that entered cars."
+      },
+      {
+        "local_id": "e2",
+        "name": "David Coulthard",
+        "entity_type": "Driver",
+        "description": "A Formula 1 driver who raced for McLaren."
+      },
+      {
+        "local_id": "e3",
+        "name": "Kimi Räikkönen",
+        "entity_type": "Driver",
+        "description": "A Formula 1 driver who raced for McLaren."
+      },
+      {
+        "local_id": "e4",
+        "name": "MP4-18",
+        "entity_type": "Car",
+        "description": "A car model designed for the 2003 season."
+      },
+      {
+        "local_id": "e5",
+        "name": "MP4-17",
+        "entity_type": "Car",
+        "description": "A car model used by McLaren before the MP4-18."
+      },
+      {
+        "local_id": "e6",
+        "name": "MP4-19",
+        "entity_type": "Car",
+        "description": "A car model designed for the 2004 season."
+      },
+      {
+        "local_id": "e7",
+        "name": "MP4-19B",
+        "entity_type": "Car",
+        "description": "A revised car model used mid-season in 2004."
+      },
+      {
+        "local_id": "e8",
+        "name": "2003",
+        "entity_type": "Season",
+        "description": "A Formula 1 championship year."
+      },
+      {
+        "local_id": "e9",
+        "name": "2004",
+        "entity_type": "Season",
+        "description": "A Formula 1 championship year."
+      },
+      {
+        "local_id": "e10",
+        "name": "Belgian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula 1 race held in Belgium."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e10",
+        "target_id": "e9",
+        "relationship_type": "ROUND_OF",
+        "description": "The Belgian Grand Prix is a round of the 2004 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e8",
+        "relationship_type": "ENTERED",
+        "description": "McLaren took part in the 2003 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e9",
+        "relationship_type": "ENTERED",
+        "description": "McLaren took part in the 2004 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e4",
+        "relationship_type": "FIELDED",
+        "description": "McLaren entered the MP4-18 car in the 2003 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e6",
+        "relationship_type": "FIELDED",
+        "description": "McLaren entered the MP4-19 car in the 2004 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e7",
+        "relationship_type": "FIELDED",
+        "description": "McLaren entered the MP4-19B car in the 2004 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 10,
+  "entities_accepted": 10,
+  "entities_rejected": 0,
+  "relationship_candidates": 10,
+  "relationships_accepted": 6,
+  "relationships_rejected": 4,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "ACHIEVED does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "ACHIEVED does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "WON does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "FOR_TEAM does not allow Driver -> GrandPrix"
+    }
+  ],
+  "alignments": []
+}

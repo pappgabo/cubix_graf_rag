@@ -1,0 +1,74 @@
+{
+  "chunk_id": "team-williams-racing#57",
+  "doc_id": "team-williams-racing",
+  "document_title": "Williams Racing",
+  "section": "Williams Racing > Mecachrome engines (1998) > Williams Racing > 1998 season",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "83c3a28c2898a43816d51710915c81715a8d930fed953af3739c063e13f58717",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Williams Racing",
+        "entity_type": "Team",
+        "description": "A Formula 1 team."
+      },
+      {
+        "local_id": "e2",
+        "name": "Mecachrome",
+        "entity_type": "PowerUnit",
+        "description": "An engine supplier that partnered with Williams Racing for the 1998 season."
+      },
+      {
+        "local_id": "e3",
+        "name": "FW20",
+        "entity_type": "Car",
+        "description": "The car model fielded by Williams Racing in the 1998 season."
+      },
+      {
+        "local_id": "e4",
+        "name": "1998",
+        "entity_type": "Season",
+        "description": "The Formula 1 championship season."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e3",
+        "target_id": "e4",
+        "relationship_type": "RACED_IN",
+        "description": "The FW20 took part in the 1998 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e4",
+        "relationship_type": "ENTERED",
+        "description": "Williams Racing took part in the 1998 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 4,
+  "entities_accepted": 4,
+  "entities_rejected": 0,
+  "relationship_candidates": 3,
+  "relationships_accepted": 2,
+  "relationships_rejected": 1,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "POWERED_BY does not allow Team -> PowerUnit"
+    }
+  ],
+  "alignments": []
+}

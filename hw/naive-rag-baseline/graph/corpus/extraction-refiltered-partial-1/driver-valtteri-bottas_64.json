@@ -1,0 +1,70 @@
+{
+  "chunk_id": "driver-valtteri-bottas#64",
+  "doc_id": "driver-valtteri-bottas",
+  "document_title": "Valtteri Bottas",
+  "section": "Formula One career > Mercedes (2017–2021) > 2018: Underwhelming season",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/Valtteri_Bottas",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "faa74d01efcb0036120b4c43357b2dc639ba5c06e43b39042191731446781b28",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "RACED_IN does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "WON does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "AWARDED_IN does not allow Driver -> Season"
+    }
+  ],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Valtteri Bottas",
+        "entity_type": "Driver",
+        "description": "Bottas became the first Mercedes driver to finish a season without a win since Michael Schumacher in 2012."
+      },
+      {
+        "local_id": "e2",
+        "name": "Mercedes",
+        "entity_type": "Team",
+        "description": "The team Bottas drove for during the 2018 season."
+      },
+      {
+        "local_id": "e3",
+        "name": "2018",
+        "entity_type": "Season",
+        "description": "The season in which Bottas finished without a win."
+      },
+      {
+        "local_id": "e4",
+        "name": "Lewis Hamilton",
+        "entity_type": "Driver",
+        "description": "Hamilton won his fifth world title in 2018."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Bottas drove for Mercedes in 2018.",
+        "from_year": 2017,
+        "to_year": 2021,
+        "role": null
+      }
+    ]
+  }
+}

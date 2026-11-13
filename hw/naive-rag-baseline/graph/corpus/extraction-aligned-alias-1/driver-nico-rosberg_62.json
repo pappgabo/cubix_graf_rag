@@ -1,0 +1,142 @@
+{
+  "chunk_id": "driver-nico-rosberg#62",
+  "doc_id": "driver-nico-rosberg",
+  "document_title": "Nico Rosberg",
+  "section": "Nico Rosberg > 2010–2012",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/Nico_Rosberg",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "c5ffc687de365794b96dae92b02de97c1f499512711a9812b7e769595cf4e19a",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "WON does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 6,
+      "reason": "TEAMMATE_OF does not allow Driver -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 7,
+      "reason": "RACED_IN does not allow Driver -> Season"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 0,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e4; description kept"
+    },
+    {
+      "index": 1,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr2 -AT_RACE-> e5; description kept"
+    }
+  ],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Nico Rosberg",
+        "entity_type": "Driver",
+        "description": "A Formula One driver who began to receive advice from Niki Lauda."
+      },
+      {
+        "local_id": "e2",
+        "name": "Niki Lauda",
+        "entity_type": "Driver",
+        "description": "Three-time world champion who began to advise Rosberg."
+      },
+      {
+        "local_id": "e3",
+        "name": "2010",
+        "entity_type": "Season",
+        "description": "The season in which Rosberg took his first pole position and maiden victory."
+      },
+      {
+        "local_id": "e4",
+        "name": "Chinese Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The race where Rosberg took the first pole position of his career."
+      },
+      {
+        "local_id": "e5",
+        "name": "Monaco Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The race where Rosberg finished second after challenging Mark Webber."
+      },
+      {
+        "local_id": "e6",
+        "name": "Mark Webber",
+        "entity_type": "Driver",
+        "description": "Red Bull driver who was challenged by Rosberg for victory at the Monaco Grand Prix."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Nico Rosberg at Chinese Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Rosberg took the first pole position of his career at the Chinese Grand Prix."
+      },
+      {
+        "local_id": "rr2",
+        "name": "Nico Rosberg at Monaco Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Rosberg finished second at the Monaco Grand Prix after challenging Mark Webber."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Rosberg took the first pole position of his career at the Chinese Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e4",
+        "relationship_type": "AT_RACE",
+        "description": "Rosberg took the first pole position of his career at the Chinese Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr2",
+        "relationship_type": "ACHIEVED",
+        "description": "Rosberg finished second at the Monaco Grand Prix after challenging Mark Webber.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr2",
+        "target_id": "e5",
+        "relationship_type": "AT_RACE",
+        "description": "Rosberg finished second at the Monaco Grand Prix after challenging Mark Webber.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Niki Lauda began to advise Rosberg.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

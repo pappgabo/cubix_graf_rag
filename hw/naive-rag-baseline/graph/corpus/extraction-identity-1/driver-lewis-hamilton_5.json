@@ -1,0 +1,135 @@
+{
+  "chunk_id": "driver-lewis-hamilton#5",
+  "doc_id": "driver-lewis-hamilton",
+  "document_title": "Lewis Hamilton",
+  "section": null,
+  "page": 1,
+  "source": "https://en.wikipedia.org/wiki/Lewis_Hamilton",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "8a408a8c38eb461cc444cf55257a91ce20c7e4c7aee635885fee9e91b3c3550d",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "entity_candidates": 12,
+  "entities_accepted": 12,
+  "entities_rejected": 0,
+  "relationship_candidates": 7,
+  "relationships_accepted": 0,
+  "relationships_rejected": 7,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 5,
+      "reason": "ACHIEVED Driver -> GrandPrix has from_year=2020, to_year=None, role=None; the year or role cannot be stored on the reified result"
+    },
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "WON does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "WON does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "WON does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "WON does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "ACHIEVED does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 5,
+      "reason": "TEAMMATE_OF does not allow Driver -> Season"
+    }
+  ],
+  "alignments": [],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Lewis Hamilton",
+        "entity_type": "Driver",
+        "description": "A Formula One driver who won his sixth title in 2019 and his record-equalling seventh title in 2020."
+      },
+      {
+        "local_id": "e2",
+        "name": "Sebastian Vettel",
+        "entity_type": "Driver",
+        "description": "A Formula One driver who claimed his fourth and fifth titles in 2017 and 2018."
+      },
+      {
+        "local_id": "e3",
+        "name": "Scuderia Ferrari",
+        "entity_type": "Team",
+        "description": "A Formula One team that Sebastian Vettel drove for."
+      },
+      {
+        "local_id": "e4",
+        "name": "Max Verstappen",
+        "entity_type": "Driver",
+        "description": "A Formula One driver who ended the 2021 season as champion."
+      },
+      {
+        "local_id": "e5",
+        "name": "2017",
+        "entity_type": "Season",
+        "description": "The Formula One season in which Sebastian Vettel claimed his fourth title."
+      },
+      {
+        "local_id": "e6",
+        "name": "2018",
+        "entity_type": "Season",
+        "description": "The Formula One season in which Sebastian Vettel claimed his fifth title."
+      },
+      {
+        "local_id": "e7",
+        "name": "2019",
+        "entity_type": "Season",
+        "description": "The Formula One season in which Lewis Hamilton won his sixth title."
+      },
+      {
+        "local_id": "e8",
+        "name": "2020",
+        "entity_type": "Season",
+        "description": "The Formula One season in which Lewis Hamilton won his record-equalling seventh title."
+      },
+      {
+        "local_id": "e9",
+        "name": "2021",
+        "entity_type": "Season",
+        "description": "The Formula One season in which Lewis Hamilton became the first driver to surpass 100 race wins."
+      },
+      {
+        "local_id": "e10",
+        "name": "2022",
+        "entity_type": "Season",
+        "description": "The Formula One season in which Lewis Hamilton had a winless campaign."
+      },
+      {
+        "local_id": "e11",
+        "name": "2023",
+        "entity_type": "Season",
+        "description": "The Formula One season in which Lewis Hamilton had a winless campaign."
+      },
+      {
+        "local_id": "e12",
+        "name": "Portuguese Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula One race where Lewis Hamilton broke the all-time win record."
+      }
+    ],
+    "relationships": []
+  }
+}

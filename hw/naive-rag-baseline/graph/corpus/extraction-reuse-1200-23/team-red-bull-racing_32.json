@@ -1,0 +1,138 @@
+{
+  "chunk_id": "team-red-bull-racing#32",
+  "doc_id": "team-red-bull-racing",
+  "document_title": "Red Bull Racing",
+  "section": "Renault full-works partnership era (2011–2015) > 2011 season",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "cc391c5c58ef07a87947700a25d98f09ad981260189473e9681a19482bd08373",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Red Bull Racing",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that entered cars."
+      },
+      {
+        "local_id": "e2",
+        "name": "Sebastian Vettel",
+        "entity_type": "Driver",
+        "description": "A driver who raced for Red Bull Racing."
+      },
+      {
+        "local_id": "e3",
+        "name": "Mark Webber",
+        "entity_type": "Driver",
+        "description": "A driver who raced for Red Bull Racing."
+      },
+      {
+        "local_id": "e4",
+        "name": "2011",
+        "entity_type": "Season",
+        "description": "The championship year."
+      },
+      {
+        "local_id": "e5",
+        "name": "Lotus Renault GP",
+        "entity_type": "Team",
+        "description": "Renault's full-works constructor team rebranded."
+      },
+      {
+        "local_id": "e6",
+        "name": "Brazil",
+        "entity_type": "GrandPrix",
+        "description": "The location of the final race of the 2011 season."
+      },
+      {
+        "local_id": "e7",
+        "name": "650",
+        "entity_type": "RaceResult",
+        "description": "Points scored by Red Bull Racing in the Constructors' Championship."
+      },
+      {
+        "local_id": "e8",
+        "name": "McLaren",
+        "entity_type": "Team",
+        "description": "The next closest team in the Constructors' Championship."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e4",
+        "relationship_type": "ENTERED",
+        "description": "Red Bull Racing took part in the 2011 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e1",
+        "relationship_type": "DROVE_FOR",
+        "description": "Sebastian Vettel raced for Red Bull Racing.",
+        "from_year": 2011,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e1",
+        "relationship_type": "DROVE_FOR",
+        "description": "Mark Webber raced for Red Bull Racing.",
+        "from_year": 2011,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 8,
+  "entities_accepted": 8,
+  "entities_rejected": 0,
+  "relationship_candidates": 9,
+  "relationships_accepted": 3,
+  "relationships_rejected": 6,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "ACHIEVED Driver -> GrandPrix has from_year=2011, to_year=None, role=None; the year or role cannot be stored on the reified result"
+    },
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "ACHIEVED Driver -> GrandPrix has from_year=2011, to_year=None, role=None; the year or role cannot be stored on the reified result"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "FOR_TEAM does not allow Team -> RaceResult"
+    },
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "FOR_TEAM does not allow Team -> Team"
+    },
+    {
+      "element": "relationship",
+      "index": 5,
+      "reason": "WON does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 6,
+      "reason": "AWARDED_IN does not allow Team -> Season"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 0,
+      "action": "clear_redundant_season_year",
+      "detail": "ENTERED year 2011 already named by Season 'e4'; from_year and to_year cleared"
+    }
+  ]
+}

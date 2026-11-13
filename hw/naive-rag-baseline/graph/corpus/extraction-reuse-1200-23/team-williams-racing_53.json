@@ -1,0 +1,133 @@
+{
+  "chunk_id": "team-williams-racing#53",
+  "doc_id": "team-williams-racing",
+  "document_title": "Williams Racing",
+  "section": "Williams Racing > 1996 season",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "f0801208e318dbb2e658a51369f38d392dea23d667c225efca3bc91850284da0",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Williams",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that entered cars."
+      },
+      {
+        "local_id": "e2",
+        "name": "Damon Hill",
+        "entity_type": "Driver",
+        "description": "A Formula 1 driver who won the championship in 1996."
+      },
+      {
+        "local_id": "e3",
+        "name": "Jacques Villeneuve",
+        "entity_type": "Driver",
+        "description": "A Formula 1 driver who competed in the 1996 season."
+      },
+      {
+        "local_id": "e4",
+        "name": "FW18",
+        "entity_type": "Car",
+        "description": "The car model fielded by Williams in the 1996 season."
+      },
+      {
+        "local_id": "e5",
+        "name": "1996",
+        "entity_type": "Season",
+        "description": "The Formula 1 championship season."
+      },
+      {
+        "local_id": "e6",
+        "name": "Suzuka",
+        "entity_type": "Circuit",
+        "description": "The circuit where the season finale took place."
+      },
+      {
+        "local_id": "e7",
+        "name": "Driver's Championship",
+        "entity_type": "Title",
+        "description": "The championship title won by Damon Hill in 1996."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e4",
+        "relationship_type": "FIELDED",
+        "description": "Williams entered the FW18 car.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e5",
+        "relationship_type": "RACED_IN",
+        "description": "The FW18 took part in the 1996 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e5",
+        "relationship_type": "ENTERED",
+        "description": "Williams took part in the 1996 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e7",
+        "relationship_type": "WON",
+        "description": "Damon Hill won the Driver's Championship.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e7",
+        "target_id": "e5",
+        "relationship_type": "AWARDED_IN",
+        "description": "The Driver's Championship belongs to the 1996 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e3",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Damon Hill and Jacques Villeneuve were teammates in the 1996 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 7,
+  "entities_accepted": 7,
+  "entities_rejected": 0,
+  "relationship_candidates": 8,
+  "relationships_accepted": 6,
+  "relationships_rejected": 2,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 5,
+      "reason": "ACHIEVED does not allow Driver -> Circuit"
+    },
+    {
+      "element": "relationship",
+      "index": 6,
+      "reason": "ROUND_OF does not allow Circuit -> Season"
+    }
+  ],
+  "alignments": []
+}

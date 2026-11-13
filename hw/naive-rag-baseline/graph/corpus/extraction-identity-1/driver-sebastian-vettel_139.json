@@ -1,0 +1,98 @@
+{
+  "chunk_id": "driver-sebastian-vettel#139",
+  "doc_id": "driver-sebastian-vettel",
+  "document_title": "Sebastian Vettel",
+  "section": "Race of Champions",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/Sebastian_Vettel",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "fe36f1527c2e67dd62a610f761d42cc40428ca5859d519742c080ad1606e68d0",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "entity_candidates": 6,
+  "entities_accepted": 6,
+  "entities_rejected": 0,
+  "relationship_candidates": 5,
+  "relationships_accepted": 2,
+  "relationships_rejected": 3,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "WON does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "WON does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "ACHIEVED does not allow Driver -> Driver"
+    }
+  ],
+  "alignments": [],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Sebastian Vettel",
+        "entity_type": "Driver",
+        "description": "A German racing driver who won his first individual Race of Champions title in 2015."
+      },
+      {
+        "local_id": "e2",
+        "name": "Nico Hülkenberg",
+        "entity_type": "Driver",
+        "description": "A German racing driver who represented Germany with Sebastian Vettel in the 2015 Race of Champions."
+      },
+      {
+        "local_id": "e3",
+        "name": "Tom Kristensen",
+        "entity_type": "Driver",
+        "description": "A competitor who was beaten by Sebastian Vettel in the final of the 2015 Race of Champions."
+      },
+      {
+        "local_id": "e4",
+        "name": "Pascal Wehrlein",
+        "entity_type": "Driver",
+        "description": "A German racing driver who was injured earlier in a crash during the 2017 Race of Champions."
+      },
+      {
+        "local_id": "e5",
+        "name": "2015",
+        "entity_type": "Season",
+        "description": "The year when Sebastian Vettel won his first individual Race of Champions title."
+      },
+      {
+        "local_id": "e6",
+        "name": "2017",
+        "entity_type": "Season",
+        "description": "The year when Sebastian Vettel won the Nations' Cup for Germany."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Sebastian Vettel and Nico Hülkenberg were teammates representing Germany in the 2015 Race of Champions.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e4",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Sebastian Vettel was a teammate of Pascal Wehrlein in the 2017 Nations' Cup.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

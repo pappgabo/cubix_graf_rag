@@ -1,0 +1,86 @@
+{
+  "chunk_id": "driver-charles-leclerc#0",
+  "doc_id": "driver-charles-leclerc",
+  "document_title": "Charles Leclerc",
+  "section": "Charles Leclerc",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "a7aa1a354abed1f0723194e7c965c18ba431b7852ae88a898c36fdeda11e7c68",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Charles Leclerc",
+        "entity_type": "Driver",
+        "description": "Charles Marc Hervé Perceval Leclerc is a Monégasque racing driver who competes in Formula One for Ferrari."
+      },
+      {
+        "local_id": "e2",
+        "name": "Scuderia Ferrari",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that enters cars."
+      },
+      {
+        "local_id": "e3",
+        "name": "2022",
+        "entity_type": "Season",
+        "description": "The season in which Charles Leclerc was runner-up in the Formula One World Drivers' Championship."
+      },
+      {
+        "local_id": "e4",
+        "name": "Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "Leclerc has won nine Grands Prix across nine seasons."
+      },
+      {
+        "local_id": "e5",
+        "name": "FIA Formula 2 Championship",
+        "entity_type": "Title",
+        "description": "Leclerc won the inaugural FIA Formula 2 Championship in 2017."
+      },
+      {
+        "local_id": "e6",
+        "name": "2017",
+        "entity_type": "Season",
+        "description": "The season in which Leclerc won the FIA Formula 2 Championship."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Leclerc competes in Formula One for Ferrari.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e6",
+        "relationship_type": "AWARDED_IN",
+        "description": "Leclerc won the FIA Formula 2 Championship in 2017.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 6,
+  "entities_accepted": 6,
+  "entities_rejected": 0,
+  "relationship_candidates": 3,
+  "relationships_accepted": 2,
+  "relationships_rejected": 1,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "WON does not allow Driver -> Season"
+    }
+  ],
+  "alignments": []
+}

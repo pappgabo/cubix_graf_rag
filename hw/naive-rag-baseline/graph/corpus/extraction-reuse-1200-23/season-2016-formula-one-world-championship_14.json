@@ -1,0 +1,87 @@
+{
+  "chunk_id": "season-2016-formula-one-world-championship#14",
+  "doc_id": "season-2016-formula-one-world-championship",
+  "document_title": "2016 Formula One World Championship",
+  "section": "Calendar changes",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "25e7f74cea2a423ea9cd014892e5a32d0568140de49e4f41f8bafe57b786f406",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Grand Prix of America",
+        "entity_type": "GrandPrix",
+        "description": "A race set to be held for the first time at the Port Imperial Street Circuit in New Jersey."
+      },
+      {
+        "local_id": "e2",
+        "name": "Port Imperial Street Circuit",
+        "entity_type": "Circuit",
+        "description": "The circuit where the Grand Prix of America was set to be held."
+      },
+      {
+        "local_id": "e3",
+        "name": "Indian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A race removed from the calendar after the 2013 race due to a dispute over taxation."
+      },
+      {
+        "local_id": "e4",
+        "name": "Korean Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A race that was discontinued in 2014 and omitted from the calendar for the third consecutive season in 2016."
+      },
+      {
+        "local_id": "e5",
+        "name": "Korea International Circuit",
+        "entity_type": "Circuit",
+        "description": "The circuit where the Korean Grand Prix was held."
+      },
+      {
+        "local_id": "e6",
+        "name": "2016",
+        "entity_type": "Season",
+        "description": "The season in which the Indian Grand Prix was deferred and the Korean Grand Prix was omitted."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "HELD_AT",
+        "description": "The Grand Prix of America was set to be held at the Port Imperial Street Circuit.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 6,
+  "entities_accepted": 6,
+  "entities_rejected": 0,
+  "relationship_candidates": 4,
+  "relationships_accepted": 1,
+  "relationships_rejected": 3,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "ENTERED does not allow GrandPrix -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "ENTERED does not allow GrandPrix -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "HELD_AT does not allow Circuit -> GrandPrix"
+    }
+  ],
+  "alignments": []
+}

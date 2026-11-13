@@ -1,0 +1,141 @@
+{
+  "chunk_id": "season-2021-formula-one-world-championship#75",
+  "doc_id": "season-2021-formula-one-world-championship",
+  "document_title": "2021 Formula One World Championship",
+  "section": null,
+  "page": 7,
+  "source": "https://en.wikipedia.org/wiki/2021_Formula_One_World_Championship",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "84e15d2d150066c9130019f3a4d513d0f1e0a39635bc02426237af0735fdf5cb",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "entity_candidates": 9,
+  "entities_accepted": 9,
+  "entities_rejected": 0,
+  "relationship_candidates": 6,
+  "relationships_accepted": 3,
+  "relationships_rejected": 3,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "DROVE_FOR does not allow Driver -> Driver"
+    },
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "ACHIEVED does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 5,
+      "reason": "ACHIEVED does not allow Driver -> Season"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 1,
+      "action": "clear_redundant_season_year",
+      "detail": "ENTERED year 2021 already named by Season 'e9'; from_year and to_year cleared"
+    },
+    {
+      "index": 2,
+      "action": "clear_redundant_season_year",
+      "detail": "ENTERED year 2021 already named by Season 'e9'; from_year and to_year cleared"
+    },
+    {
+      "index": 3,
+      "action": "clear_redundant_season_year",
+      "detail": "ENTERED year 2021 already named by Season 'e9'; from_year and to_year cleared"
+    }
+  ],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Carlos Sainz Jr.",
+        "entity_type": "Driver",
+        "description": "/"
+      },
+      {
+        "local_id": "e2",
+        "name": "Lewis Hamilton",
+        "entity_type": "Driver",
+        "description": "/"
+      },
+      {
+        "local_id": "e3",
+        "name": "Max Verstappen",
+        "entity_type": "Driver",
+        "description": "/"
+      },
+      {
+        "local_id": "e4",
+        "name": "Nicholas Latifi",
+        "entity_type": "Driver",
+        "description": "/"
+      },
+      {
+        "local_id": "e5",
+        "name": "George Russell",
+        "entity_type": "Driver",
+        "description": "/"
+      },
+      {
+        "local_id": "e6",
+        "name": "Mercedes-AMG Petronas Formula One Team",
+        "entity_type": "Team",
+        "description": "/"
+      },
+      {
+        "local_id": "e7",
+        "name": "Red Bull Racing",
+        "entity_type": "Team",
+        "description": "/"
+      },
+      {
+        "local_id": "e8",
+        "name": "Williams",
+        "entity_type": "Team",
+        "description": "/"
+      },
+      {
+        "local_id": "e9",
+        "name": "2021",
+        "entity_type": "Season",
+        "description": "/"
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e6",
+        "target_id": "e9",
+        "relationship_type": "ENTERED",
+        "description": "Mercedes regained their advantage in the Constructors' standings",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e7",
+        "target_id": "e9",
+        "relationship_type": "ENTERED",
+        "description": "Red Bull was in the Constructors' standings",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e8",
+        "target_id": "e9",
+        "relationship_type": "ENTERED",
+        "description": "Williams took points in the 2021 season",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

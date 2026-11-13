@@ -1,0 +1,70 @@
+{
+  "chunk_id": "driver-michael-schumacher#75",
+  "doc_id": "driver-michael-schumacher",
+  "document_title": "Michael Schumacher",
+  "section": null,
+  "page": 7,
+  "source": "https://en.wikipedia.org/wiki/Michael_Schumacher",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "9e35a20cc49ccf5b7254c31c7e876256e2554b91597c1c704b00aa31bab0d0a4",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "entity_candidates": 4,
+  "entities_accepted": 2,
+  "entities_rejected": 2,
+  "relationship_candidates": 4,
+  "relationships_accepted": 0,
+  "relationships_rejected": 4,
+  "rejections": [
+    {
+      "element": "entity",
+      "index": 2,
+      "reason": "name 'null' is a placeholder, not an entity identity"
+    },
+    {
+      "element": "entity",
+      "index": 3,
+      "reason": "name 'null' is a placeholder, not an entity identity"
+    },
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "WON: target_id 'e4' rejected: name 'null' is a placeholder, not an entity identity"
+    },
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "ENTERED: target_id 'e3' rejected: name 'null' is a placeholder, not an entity identity"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "DROVE_FOR does not allow Team -> Driver"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "ACHIEVED: target_id 'e3' rejected: name 'null' is a placeholder, not an entity identity"
+    }
+  ],
+  "alignments": [],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Michael Schumacher",
+        "entity_type": "Driver",
+        "description": "A driver who won six World Championships and broke records in Formula One."
+      },
+      {
+        "local_id": "e2",
+        "name": "Scuderia Ferrari",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that won 15 out of 17 races in a season."
+      }
+    ],
+    "relationships": []
+  }
+}

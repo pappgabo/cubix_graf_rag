@@ -1,0 +1,152 @@
+{
+  "chunk_id": "driver-jenson-button#47",
+  "doc_id": "driver-jenson-button",
+  "document_title": "Jenson Button",
+  "section": "Sports car career",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "afe852ad6462fd7884a66ab228c89f1c030c91a3dc3bee49d8a957faf91e7dd8",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Jenson Button",
+        "entity_type": "Driver",
+        "description": "A British racing driver who made his British GT debut in 2020 and has participated in various racing events."
+      },
+      {
+        "local_id": "e2",
+        "name": "Jenson Team Rocket RJN",
+        "entity_type": "Team",
+        "description": "A racing team that entered the No. 3 McLaren 720S GT3 in the British GT."
+      },
+      {
+        "local_id": "e3",
+        "name": "McLaren 720S GT3",
+        "entity_type": "Car",
+        "description": "A car model fielded by Jenson Team Rocket RJN in the British GT."
+      },
+      {
+        "local_id": "e4",
+        "name": "2020",
+        "entity_type": "Season",
+        "description": "The season in which Jenson Button made his British GT debut."
+      },
+      {
+        "local_id": "e5",
+        "name": "Hendrick Motorsports",
+        "entity_type": "Team",
+        "description": "A NASCAR team that entered the Chevrolet Camaro ZL1 Garage 56 at the 2023 24 Hours of Le Mans."
+      },
+      {
+        "local_id": "e6",
+        "name": "Chevrolet Camaro ZL1 Garage 56",
+        "entity_type": "Car",
+        "description": "A car model entered by Hendrick Motorsports at the 2023 24 Hours of Le Mans."
+      },
+      {
+        "local_id": "e7",
+        "name": "2023",
+        "entity_type": "Season",
+        "description": "The season in which Jenson Button participated in the 24 Hours of Le Mans."
+      },
+      {
+        "local_id": "e8",
+        "name": "JDC–Miller MotorSports",
+        "entity_type": "Team",
+        "description": "A racing team that entered the Porsche 963 in the Petit Le Mans."
+      },
+      {
+        "local_id": "e9",
+        "name": "Porsche 963",
+        "entity_type": "Car",
+        "description": "A car model fielded by JDC–Miller MotorSports in the Petit Le Mans."
+      },
+      {
+        "local_id": "e10",
+        "name": "Petit Le Mans",
+        "entity_type": "GrandPrix",
+        "description": "A ten-hour endurance race that is part of the IMSA SportsCar Championship."
+      },
+      {
+        "local_id": "e11",
+        "name": "IMSA SportsCar Championship",
+        "entity_type": "Season",
+        "description": "The championship that includes the Petit Le Mans."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e2",
+        "target_id": "e3",
+        "relationship_type": "FIELDED",
+        "description": "Jenson Team Rocket RJN entered the McLaren 720S GT3 in the British GT.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e4",
+        "relationship_type": "RACED_IN",
+        "description": "The McLaren 720S GT3 took part in the 2020 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e6",
+        "relationship_type": "FIELDED",
+        "description": "Hendrick Motorsports entered the Chevrolet Camaro ZL1 Garage 56 at the 2023 24 Hours of Le Mans.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e6",
+        "target_id": "e7",
+        "relationship_type": "RACED_IN",
+        "description": "The Chevrolet Camaro ZL1 Garage 56 took part in the 2023 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e8",
+        "target_id": "e9",
+        "relationship_type": "FIELDED",
+        "description": "JDC–Miller MotorSports entered the Porsche 963 in the Petit Le Mans.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e10",
+        "target_id": "e11",
+        "relationship_type": "ROUND_OF",
+        "description": "The Petit Le Mans is a round of the IMSA SportsCar Championship.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 11,
+  "entities_accepted": 11,
+  "entities_rejected": 0,
+  "relationship_candidates": 7,
+  "relationships_accepted": 6,
+  "relationships_rejected": 1,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 5,
+      "reason": "RACED_IN does not allow Car -> GrandPrix"
+    }
+  ],
+  "alignments": []
+}

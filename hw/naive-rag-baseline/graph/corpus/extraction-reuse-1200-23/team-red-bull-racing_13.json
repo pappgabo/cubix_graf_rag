@@ -1,0 +1,134 @@
+{
+  "chunk_id": "team-red-bull-racing#13",
+  "doc_id": "team-red-bull-racing",
+  "document_title": "Red Bull Racing",
+  "section": "Renault engines (2007–2018) > Customer era (2007–2010) > 2007 season",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "66068e3081ff94bd65738cc19587045460f7a83478e7289975e15d4749548432",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Red Bull Racing",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that entered cars."
+      },
+      {
+        "local_id": "e2",
+        "name": "RB3",
+        "entity_type": "Car",
+        "description": "The Adrian Newey designed car used by Red Bull Racing in 2007."
+      },
+      {
+        "local_id": "e3",
+        "name": "Renault",
+        "entity_type": "PowerUnit",
+        "description": "The engine supplier for Red Bull Racing in the 2007 season."
+      },
+      {
+        "local_id": "e4",
+        "name": "Mark Webber",
+        "entity_type": "Driver",
+        "description": "A driver for Red Bull Racing in the 2007 season."
+      },
+      {
+        "local_id": "e5",
+        "name": "David Coulthard",
+        "entity_type": "Driver",
+        "description": "A driver for Red Bull Racing in the 2007 season."
+      },
+      {
+        "local_id": "e6",
+        "name": "Christian Klien",
+        "entity_type": "Driver",
+        "description": "A driver who ended his association with Red Bull Racing before the 2007 season."
+      },
+      {
+        "local_id": "e7",
+        "name": "Robert Doornbos",
+        "entity_type": "Driver",
+        "description": "The non-racing third driver for Red Bull Racing in the 2007 season."
+      },
+      {
+        "local_id": "e8",
+        "name": "2007",
+        "entity_type": "Season",
+        "description": "The Formula 1 season in which Red Bull Racing used Renault engines."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e8",
+        "relationship_type": "ENTERED",
+        "description": "Red Bull Racing took part in the 2007 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "FIELDED",
+        "description": "Red Bull Racing entered the RB3 car.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e3",
+        "relationship_type": "POWERED_BY",
+        "description": "The RB3 car used Renault engines.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e1",
+        "relationship_type": "DROVE_FOR",
+        "description": "Mark Webber drove for Red Bull Racing in the 2007 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e1",
+        "relationship_type": "DROVE_FOR",
+        "description": "David Coulthard drove for Red Bull Racing in the 2007 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e7",
+        "target_id": "e1",
+        "relationship_type": "DROVE_FOR",
+        "description": "Robert Doornbos was the non-racing third driver for Red Bull Racing in the 2007 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 8,
+  "entities_accepted": 8,
+  "entities_rejected": 0,
+  "relationship_candidates": 7,
+  "relationships_accepted": 6,
+  "relationships_rejected": 1,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 5,
+      "reason": "TEAMMATE_OF does not allow Driver -> Team"
+    }
+  ],
+  "alignments": []
+}

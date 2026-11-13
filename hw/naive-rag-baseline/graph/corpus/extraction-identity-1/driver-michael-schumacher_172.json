@@ -1,0 +1,89 @@
+{
+  "chunk_id": "driver-michael-schumacher#172",
+  "doc_id": "driver-michael-schumacher",
+  "document_title": "Michael Schumacher",
+  "section": null,
+  "page": 14,
+  "source": "https://en.wikipedia.org/wiki/Michael_Schumacher",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "bfe05284cd66f6e8e3dc5433abe3fc7fd19aa25d5047f81059293422f1866c9e",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "entity_candidates": 6,
+  "entities_accepted": 6,
+  "entities_rejected": 0,
+  "relationship_candidates": 5,
+  "relationships_accepted": 0,
+  "relationships_rejected": 5,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "TEAMMATE_OF is not temporal; from_year=2007, to_year=2012, role=None cannot be stored without dropping them"
+    },
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "WON is not temporal; from_year=2020, to_year=None, role=None cannot be stored without dropping them"
+    },
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "AWARDED_IN does not allow Title -> Circuit"
+    },
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "WON does not allow Driver -> Circuit"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "WON does not allow Driver -> GrandPrix"
+    }
+  ],
+  "alignments": [],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Michael Schumacher",
+        "entity_type": "Driver",
+        "description": "A German racing driver who is a seven-time Formula One World Champion."
+      },
+      {
+        "local_id": "e2",
+        "name": "Sebastian Vettel",
+        "entity_type": "Driver",
+        "description": "A German racing driver who is a four-time Formula One World Champion."
+      },
+      {
+        "local_id": "e3",
+        "name": "Race of Champions Nations' Cup",
+        "entity_type": "GrandPrix",
+        "description": "An annual motorsport event where national teams compete."
+      },
+      {
+        "local_id": "e4",
+        "name": "FIA Hall of Fame",
+        "entity_type": "Circuit",
+        "description": "An honor given to notable figures in motorsport."
+      },
+      {
+        "local_id": "e5",
+        "name": "Germany's Sports Hall of Fame",
+        "entity_type": "Circuit",
+        "description": "An honor recognizing outstanding athletes in Germany."
+      },
+      {
+        "local_id": "e6",
+        "name": "FIA President Award",
+        "entity_type": "Title",
+        "description": "An award given by the FIA to recognize significant contributions to motorsport."
+      }
+    ],
+    "relationships": []
+  }
+}

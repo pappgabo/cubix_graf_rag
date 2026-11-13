@@ -1,0 +1,381 @@
+{
+  "chunk_id": "team-mclaren#12",
+  "doc_id": "team-mclaren",
+  "document_title": "McLaren",
+  "section": "1968–1982: Ford-Cosworth DFV engines",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "05f0866c6789de0076fa3d908be95e24c5c506e05a58024288c872ce76d6334a",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Bruce McLaren",
+        "entity_type": "Driver",
+        "description": "Driver for McLaren, won the Race of Champions and the Belgian Grand Prix in 1968."
+      },
+      {
+        "local_id": "e2",
+        "name": "Denny Hulme",
+        "entity_type": "Driver",
+        "description": "1967 champion, drove for McLaren in 1968, won the International Trophy, Italian Grand Prix, and Canadian Grand Prix."
+      },
+      {
+        "local_id": "e3",
+        "name": "McLaren",
+        "entity_type": "Team",
+        "description": "Formula 1 team that entered cars and won races."
+      },
+      {
+        "local_id": "e4",
+        "name": "M7A",
+        "entity_type": "Car",
+        "description": "Car model used by McLaren in 1968."
+      },
+      {
+        "local_id": "e5",
+        "name": "DFV",
+        "entity_type": "PowerUnit",
+        "description": "Engine used by McLaren from 1968 until 1983."
+      },
+      {
+        "local_id": "e6",
+        "name": "1968",
+        "entity_type": "Season",
+        "description": "Championship year in which McLaren achieved significant wins."
+      },
+      {
+        "local_id": "e7",
+        "name": "Race of Champions",
+        "entity_type": "GrandPrix",
+        "description": "Non-championship race won by Bruce McLaren in 1968."
+      },
+      {
+        "local_id": "e8",
+        "name": "Belgian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "Championship race won by Bruce McLaren in 1968."
+      },
+      {
+        "local_id": "e9",
+        "name": "International Trophy",
+        "entity_type": "GrandPrix",
+        "description": "Non-championship race won by Denny Hulme in 1968."
+      },
+      {
+        "local_id": "e10",
+        "name": "Italian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "Race won by Denny Hulme in 1968."
+      },
+      {
+        "local_id": "e11",
+        "name": "Canadian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "Race won by Denny Hulme in 1968."
+      },
+      {
+        "local_id": "e12",
+        "name": "Mexican Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "Race won by Denny Hulme in 1969."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Bruce McLaren at Race of Champions",
+        "entity_type": "RaceResult",
+        "description": "Bruce McLaren achieved a win at the Race of Champions."
+      },
+      {
+        "local_id": "rr2",
+        "name": "Bruce McLaren at Belgian Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Bruce McLaren achieved a win at the Belgian Grand Prix."
+      },
+      {
+        "local_id": "rr3",
+        "name": "Denny Hulme at International Trophy",
+        "entity_type": "RaceResult",
+        "description": "Denny Hulme achieved a win at the International Trophy."
+      },
+      {
+        "local_id": "rr4",
+        "name": "Denny Hulme at Italian Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Denny Hulme achieved a win at the Italian Grand Prix."
+      },
+      {
+        "local_id": "rr5",
+        "name": "Denny Hulme at Canadian Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Denny Hulme achieved a win at the Canadian Grand Prix."
+      },
+      {
+        "local_id": "rr6",
+        "name": "Denny Hulme at Mexican Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Denny Hulme achieved a win at the Mexican Grand Prix."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e3",
+        "relationship_type": "DROVE_FOR",
+        "description": "Bruce McLaren drove for McLaren.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e3",
+        "relationship_type": "DROVE_FOR",
+        "description": "Denny Hulme drove for McLaren.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e4",
+        "relationship_type": "FIELDED",
+        "description": "McLaren fielded the M7A car.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e5",
+        "relationship_type": "POWERED_BY",
+        "description": "The M7A car was powered by the DFV engine.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e6",
+        "relationship_type": "RACED_IN",
+        "description": "The M7A car raced in the 1968 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e6",
+        "relationship_type": "ENTERED",
+        "description": "McLaren entered the 1968 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e7",
+        "target_id": "e6",
+        "relationship_type": "ROUND_OF",
+        "description": "The Race of Champions was a round of the 1968 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e8",
+        "target_id": "e6",
+        "relationship_type": "ROUND_OF",
+        "description": "The Belgian Grand Prix was a round of the 1968 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e9",
+        "target_id": "e6",
+        "relationship_type": "ROUND_OF",
+        "description": "The International Trophy was a round of the 1968 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e10",
+        "target_id": "e6",
+        "relationship_type": "ROUND_OF",
+        "description": "The Italian Grand Prix was a round of the 1968 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e11",
+        "target_id": "e6",
+        "relationship_type": "ROUND_OF",
+        "description": "The Canadian Grand Prix was a round of the 1968 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e12",
+        "target_id": "e6",
+        "relationship_type": "ROUND_OF",
+        "description": "The Mexican Grand Prix was a round of the 1969 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Bruce McLaren achieved a win at the Race of Champions.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e7",
+        "relationship_type": "AT_RACE",
+        "description": "Bruce McLaren achieved a win at the Race of Champions.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr2",
+        "relationship_type": "ACHIEVED",
+        "description": "Bruce McLaren achieved a win at the Belgian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr2",
+        "target_id": "e8",
+        "relationship_type": "AT_RACE",
+        "description": "Bruce McLaren achieved a win at the Belgian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "rr3",
+        "relationship_type": "ACHIEVED",
+        "description": "Denny Hulme achieved a win at the International Trophy.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr3",
+        "target_id": "e9",
+        "relationship_type": "AT_RACE",
+        "description": "Denny Hulme achieved a win at the International Trophy.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "rr4",
+        "relationship_type": "ACHIEVED",
+        "description": "Denny Hulme achieved a win at the Italian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr4",
+        "target_id": "e10",
+        "relationship_type": "AT_RACE",
+        "description": "Denny Hulme achieved a win at the Italian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "rr5",
+        "relationship_type": "ACHIEVED",
+        "description": "Denny Hulme achieved a win at the Canadian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr5",
+        "target_id": "e11",
+        "relationship_type": "AT_RACE",
+        "description": "Denny Hulme achieved a win at the Canadian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "rr6",
+        "relationship_type": "ACHIEVED",
+        "description": "Denny Hulme achieved a win at the Mexican Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr6",
+        "target_id": "e12",
+        "relationship_type": "AT_RACE",
+        "description": "Denny Hulme achieved a win at the Mexican Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 12,
+  "entities_accepted": 18,
+  "entities_rejected": 0,
+  "relationship_candidates": 18,
+  "relationships_accepted": 24,
+  "relationships_rejected": 0,
+  "rejections": [],
+  "alignments": [
+    {
+      "index": 12,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e7; description kept"
+    },
+    {
+      "index": 13,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr2 -AT_RACE-> e8; description kept"
+    },
+    {
+      "index": 14,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr3 -AT_RACE-> e9; description kept"
+    },
+    {
+      "index": 15,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr4 -AT_RACE-> e10; description kept"
+    },
+    {
+      "index": 16,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr5 -AT_RACE-> e11; description kept"
+    },
+    {
+      "index": 17,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr6 -AT_RACE-> e12; description kept"
+    }
+  ]
+}

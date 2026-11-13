@@ -1,0 +1,136 @@
+{
+  "chunk_id": "team-renault-in-formula-one#55",
+  "doc_id": "team-renault-in-formula-one",
+  "document_title": "Renault in Formula One",
+  "section": "Engine supplier (1983–2025) > Return to naturally aspirated engines (1989–2013) > Success with Williams and Benetton (1989–1997)",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "0df82ef548f952aaff58a7c1a4e0d0fed2410c1e2a2fde32a6b5004f2f1d2720",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Williams",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that entered cars."
+      },
+      {
+        "local_id": "e2",
+        "name": "Renault",
+        "entity_type": "PowerUnit",
+        "description": "An engine supplier in Formula One."
+      },
+      {
+        "local_id": "e3",
+        "name": "Nigel Mansell",
+        "entity_type": "Driver",
+        "description": "A Formula 1 driver who won the drivers' title in 1992."
+      },
+      {
+        "local_id": "e4",
+        "name": "Alain Prost",
+        "entity_type": "Driver",
+        "description": "A Formula 1 driver who won the Drivers' Championship in 1993."
+      },
+      {
+        "local_id": "e5",
+        "name": "Damon Hill",
+        "entity_type": "Driver",
+        "description": "A Formula 1 driver who won three Grands Prix in 1993."
+      },
+      {
+        "local_id": "e6",
+        "name": "1992",
+        "entity_type": "Season",
+        "description": "The Formula 1 championship season in which Nigel Mansell won the title."
+      },
+      {
+        "local_id": "e7",
+        "name": "1993",
+        "entity_type": "Season",
+        "description": "The Formula 1 championship season in which Alain Prost won the title."
+      },
+      {
+        "local_id": "e8",
+        "name": "Williams FW15C",
+        "entity_type": "Car",
+        "description": "A technologically advanced car used by Williams in 1993."
+      },
+      {
+        "local_id": "e9",
+        "name": "RS5",
+        "entity_type": "PowerUnit",
+        "description": "An engine used by Williams in 1993."
+      },
+      {
+        "local_id": "e10",
+        "name": "Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A race event in which drivers compete."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e6",
+        "relationship_type": "ENTERED",
+        "description": "Williams took part in the 1992 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e7",
+        "relationship_type": "ENTERED",
+        "description": "Williams took part in the 1993 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 10,
+  "entities_accepted": 10,
+  "entities_rejected": 0,
+  "relationship_candidates": 6,
+  "relationships_accepted": 2,
+  "relationships_rejected": 4,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "ACHIEVED Driver -> GrandPrix has from_year=1992, to_year=None, role=None; the year or role cannot be stored on the reified result"
+    },
+    {
+      "element": "relationship",
+      "index": 5,
+      "reason": "ACHIEVED Driver -> GrandPrix has from_year=1993, to_year=None, role=None; the year or role cannot be stored on the reified result"
+    },
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "POWERED_BY does not allow Team -> PowerUnit"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "WON does not allow Driver -> Season"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 1,
+      "action": "clear_redundant_season_year",
+      "detail": "ENTERED year 1992 already named by Season 'e6'; from_year and to_year cleared"
+    },
+    {
+      "index": 4,
+      "action": "clear_redundant_season_year",
+      "detail": "ENTERED year 1993 already named by Season 'e7'; from_year and to_year cleared"
+    }
+  ]
+}

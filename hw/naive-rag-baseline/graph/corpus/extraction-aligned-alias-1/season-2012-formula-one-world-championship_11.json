@@ -1,0 +1,56 @@
+{
+  "chunk_id": "season-2012-formula-one-world-championship#11",
+  "doc_id": "season-2012-formula-one-world-championship",
+  "document_title": "2012 Formula One World Championship",
+  "section": "Teams and drivers > Team changes",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/2012_Formula_One_World_Championship",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "6659f85f8e20dfc8ec721f6fb14a461c2d19778a549830a28a578236ffdff42f",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "DROVE_FOR does not allow Team -> Team"
+    },
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "DROVE_FOR does not allow Team -> Team"
+    }
+  ],
+  "alignments": [],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Renault",
+        "entity_type": "Team",
+        "description": "Renault changed its constructor name to Lotus."
+      },
+      {
+        "local_id": "e2",
+        "name": "Lotus",
+        "entity_type": "Team",
+        "description": "Lotus is the new name for Renault after the change."
+      },
+      {
+        "local_id": "e3",
+        "name": "Virgin",
+        "entity_type": "Team",
+        "description": "Virgin became Marussia."
+      },
+      {
+        "local_id": "e4",
+        "name": "Marussia",
+        "entity_type": "Team",
+        "description": "Marussia is the new name for Virgin after the change."
+      }
+    ],
+    "relationships": []
+  }
+}

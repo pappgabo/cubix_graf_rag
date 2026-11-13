@@ -1,0 +1,77 @@
+{
+  "chunk_id": "team-williams-racing#121",
+  "doc_id": "team-williams-racing",
+  "document_title": "Williams Racing",
+  "section": "Williams Racing > Automobile activities > Williams Racing > Jaguar C-X75",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "6b7f058902e3644653baaa89f82b32275a9b939c330cd7c4b521e59c4e1ef078",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Jaguar C-X75",
+        "entity_type": "Car",
+        "description": "A hybrid-electric, 2-seat, concept car produced by British automobile manufacturer Jaguar Cars."
+      },
+      {
+        "local_id": "e2",
+        "name": "Williams Advanced Engineering",
+        "entity_type": "Team",
+        "description": "A derivative of the Formula One team, involved in the production of the Jaguar C-X75."
+      },
+      {
+        "local_id": "e3",
+        "name": "2013",
+        "entity_type": "Season",
+        "description": "The year when the limited production of the Jaguar C-X75 was announced to begin."
+      },
+      {
+        "local_id": "e4",
+        "name": "2015",
+        "entity_type": "Season",
+        "description": "The year when the limited production of the Jaguar C-X75 was announced to end."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e2",
+        "target_id": "e1",
+        "relationship_type": "FIELDED",
+        "description": "Williams Advanced Engineering partnered with Jaguar Cars to produce the Jaguar C-X75.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e3",
+        "relationship_type": "RACED_IN",
+        "description": "The Jaguar C-X75 was planned for production starting in 2013.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e4",
+        "relationship_type": "RACED_IN",
+        "description": "The Jaguar C-X75 was planned for production until 2015.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 4,
+  "entities_accepted": 4,
+  "entities_rejected": 0,
+  "relationship_candidates": 3,
+  "relationships_accepted": 3,
+  "relationships_rejected": 0,
+  "rejections": [],
+  "alignments": []
+}

@@ -152,3 +152,51 @@ def load_corpus() -> list[Document]:
 
     print(f"Loaded {len(documents)} source documents from {corpus_dir.name}.")
     return documents
+
+
+def corpus_inventory(corpus_dir: Path) -> dict:
+    """Compare the manifest identities with the files on disk.
+
+    Does not read document bodies and does not invent a missing file.
+    """
+    meta_path = corpus_dir / "metadata.json"
+    entries = json.loads(meta_path.read_text(encoding="utf-8"))
+    if not isinstance(entries, list):
+        raise ValueError(f"{meta_path} is not a document list.")
+    missing = []
+    mismatches = []
+    doc_ids = []
+    expected_files = set()
+    for entry in entries:
+        doc_id = entry["doc_id"]
+        filename = entry["file"]
+        doc_ids.append(doc_id)
+        expected_files.add(filename)
+        path = corpus_dir / filename
+        if not path.is_file():
+            missing.append({
+                "doc_id": doc_id,
+                "file": filename,
+                "revision_id": entry.get("revision_id"),
+            })
+            continue
+        if path.stem != doc_id:
+            mismatches.append(
+                f"{filename}: stem {path.stem!r} != doc_id {doc_id!r}")
+        suffix = path.suffix.lstrip(".").lower()
+        declared = str(entry.get("format") or suffix).lower()
+        if suffix != declared:
+            mismatches.append(
+                f"{filename}: suffix {suffix!r} != format {declared!r}")
+    present_files = {
+        path.name for path in corpus_dir.iterdir()
+        if path.is_file() and path.name != "metadata.json"
+    }
+    return {
+        "manifest_documents": len(entries),
+        "present_files": len(entries) - len(missing),
+        "doc_ids": doc_ids,
+        "missing": missing,
+        "extra": sorted(present_files - expected_files),
+        "mismatches": mismatches,
+    }

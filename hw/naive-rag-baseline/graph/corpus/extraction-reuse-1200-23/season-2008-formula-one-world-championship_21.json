@@ -1,0 +1,107 @@
+{
+  "chunk_id": "season-2008-formula-one-world-championship#21",
+  "doc_id": "season-2008-formula-one-world-championship",
+  "document_title": "2008 Formula One World Championship",
+  "section": null,
+  "page": 5,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "51b65c9123c32e8c4be655812e3a2ca759f7905facded9f89e5990646bdb4f95",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Lewis Hamilton",
+        "entity_type": "Driver",
+        "description": "A driver who became world champion."
+      },
+      {
+        "local_id": "e2",
+        "name": "Felipe Massa",
+        "entity_type": "Driver",
+        "description": "A driver who investigated the outcome of the 2008 championship."
+      },
+      {
+        "local_id": "e3",
+        "name": "2008 Formula One World Championship",
+        "entity_type": "Season",
+        "description": "The championship season in which the events described took place."
+      },
+      {
+        "local_id": "e4",
+        "name": "Singapore Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Grand Prix that was allegedly rigged."
+      },
+      {
+        "local_id": "e5",
+        "name": "FIA",
+        "entity_type": "Team",
+        "description": "The governing body of Formula One."
+      },
+      {
+        "local_id": "e6",
+        "name": "FOM",
+        "entity_type": "Team",
+        "description": "Formula One Management."
+      },
+      {
+        "local_id": "e7",
+        "name": "Bernie Ecclestone",
+        "entity_type": "Driver",
+        "description": "Former Formula One chief who commented on the championship."
+      },
+      {
+        "local_id": "e8",
+        "name": "Jean Todt",
+        "entity_type": "Driver",
+        "description": "Former FIA president who commented on the Singapore Grand Prix."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e4",
+        "target_id": "e3",
+        "relationship_type": "ROUND_OF",
+        "description": "The Singapore Grand Prix is a round of the 2008 Formula One World Championship.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e3",
+        "relationship_type": "ENTERED",
+        "description": "The FIA took part in the 2008 Formula One World Championship.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e6",
+        "target_id": "e3",
+        "relationship_type": "ENTERED",
+        "description": "FOM took part in the 2008 Formula One World Championship.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 8,
+  "entities_accepted": 8,
+  "entities_rejected": 0,
+  "relationship_candidates": 4,
+  "relationships_accepted": 3,
+  "relationships_rejected": 1,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "ACHIEVED does not allow Driver -> Season"
+    }
+  ],
+  "alignments": []
+}

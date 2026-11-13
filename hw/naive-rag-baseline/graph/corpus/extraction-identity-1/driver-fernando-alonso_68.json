@@ -1,0 +1,214 @@
+{
+  "chunk_id": "driver-fernando-alonso#68",
+  "doc_id": "driver-fernando-alonso",
+  "document_title": "Fernando Alonso",
+  "section": "Alpine (2021–2022)",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/Fernando_Alonso",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "788af088b776e801adb7b8e41072ac1a9fe6b4991fa6e74b9ef601d707315135",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "entity_candidates": 9,
+  "entities_accepted": 13,
+  "entities_rejected": 0,
+  "relationship_candidates": 6,
+  "relationships_accepted": 9,
+  "relationships_rejected": 1,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 9,
+      "reason": "AT_RACE does not allow GrandPrix -> GrandPrix"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 1,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e5; description kept"
+    },
+    {
+      "index": 2,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr2 -AT_RACE-> e6; description kept"
+    },
+    {
+      "index": 3,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr3 -AT_RACE-> e7; description kept"
+    },
+    {
+      "index": 4,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr4 -AT_RACE-> e8; description kept"
+    }
+  ],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Fernando Alonso",
+        "entity_type": "Driver",
+        "description": "A Formula One driver who scored points in multiple races."
+      },
+      {
+        "local_id": "e2",
+        "name": "Alpine",
+        "entity_type": "Team",
+        "description": "A Formula One team that Fernando Alonso drove for during 2021-2022."
+      },
+      {
+        "local_id": "e3",
+        "name": "2021",
+        "entity_type": "Season",
+        "description": "A Formula One championship season."
+      },
+      {
+        "local_id": "e4",
+        "name": "2022",
+        "entity_type": "Season",
+        "description": "A Formula One championship season."
+      },
+      {
+        "local_id": "e5",
+        "name": "Netherlands Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A race where Alonso finished sixth."
+      },
+      {
+        "local_id": "e6",
+        "name": "Italian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A race where Alonso finished eighth."
+      },
+      {
+        "local_id": "e7",
+        "name": "Russian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A race where Alonso finished sixth."
+      },
+      {
+        "local_id": "e8",
+        "name": "Qatar Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A race where Alonso finished third."
+      },
+      {
+        "local_id": "e9",
+        "name": "Hungarian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A race where Alonso last achieved a podium finish in 2014."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Fernando Alonso at Netherlands Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Fernando Alonso finished sixth in the Netherlands Grand Prix."
+      },
+      {
+        "local_id": "rr2",
+        "name": "Fernando Alonso at Italian Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Fernando Alonso finished eighth in the Italian Grand Prix."
+      },
+      {
+        "local_id": "rr3",
+        "name": "Fernando Alonso at Russian Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Fernando Alonso finished sixth in the Russian Grand Prix."
+      },
+      {
+        "local_id": "rr4",
+        "name": "Fernando Alonso at Qatar Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Fernando Alonso finished third in the Qatar Grand Prix."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Fernando Alonso drove for Alpine.",
+        "from_year": 2021,
+        "to_year": 2022,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Fernando Alonso finished sixth in the Netherlands Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e5",
+        "relationship_type": "AT_RACE",
+        "description": "Fernando Alonso finished sixth in the Netherlands Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr2",
+        "relationship_type": "ACHIEVED",
+        "description": "Fernando Alonso finished eighth in the Italian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr2",
+        "target_id": "e6",
+        "relationship_type": "AT_RACE",
+        "description": "Fernando Alonso finished eighth in the Italian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr3",
+        "relationship_type": "ACHIEVED",
+        "description": "Fernando Alonso finished sixth in the Russian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr3",
+        "target_id": "e7",
+        "relationship_type": "AT_RACE",
+        "description": "Fernando Alonso finished sixth in the Russian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr4",
+        "relationship_type": "ACHIEVED",
+        "description": "Fernando Alonso finished third in the Qatar Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr4",
+        "target_id": "e8",
+        "relationship_type": "AT_RACE",
+        "description": "Fernando Alonso finished third in the Qatar Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

@@ -1,0 +1,100 @@
+{
+  "chunk_id": "season-2016-formula-one-world-championship#5",
+  "doc_id": "season-2016-formula-one-world-championship",
+  "document_title": "2016 Formula One World Championship",
+  "section": "Team changes",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "719595bbd2b5c2f1cafb94c87e0780c3bb0132860b808d32a1abecf50cbdf7b3",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Haas F1 Team",
+        "entity_type": "Team",
+        "description": "A team formed by NASCAR Sprint Cup Series team owner Gene Haas, joined the Formula One grid."
+      },
+      {
+        "local_id": "e2",
+        "name": "Ferrari",
+        "entity_type": "PowerUnit",
+        "description": "Supplied power units to Haas F1 Team."
+      },
+      {
+        "local_id": "e3",
+        "name": "Dallara",
+        "entity_type": "Car",
+        "description": "Developed the chassis used by Haas F1 Team."
+      },
+      {
+        "local_id": "e4",
+        "name": "Renault",
+        "entity_type": "Team",
+        "description": "Returned to Formula One as a full factory-supported team after purchasing Lotus."
+      },
+      {
+        "local_id": "e5",
+        "name": "Lotus",
+        "entity_type": "Team",
+        "description": "Participated in the 2016 season, pending resolution of a High Court case."
+      },
+      {
+        "local_id": "e6",
+        "name": "2016",
+        "entity_type": "Season",
+        "description": "The championship year in which these team changes occurred."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e3",
+        "relationship_type": "FIELDED",
+        "description": "Haas F1 Team fielded a chassis developed by Dallara.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e6",
+        "relationship_type": "ENTERED",
+        "description": "Renault entered the 2016 season as a full factory-supported team.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e6",
+        "relationship_type": "ENTERED",
+        "description": "Lotus's participation in the 2016 season was in question.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 6,
+  "entities_accepted": 6,
+  "entities_rejected": 0,
+  "relationship_candidates": 5,
+  "relationships_accepted": 3,
+  "relationships_rejected": 2,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "POWERED_BY does not allow Team -> PowerUnit"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "DROVE_FOR does not allow Team -> Team"
+    }
+  ],
+  "alignments": []
+}

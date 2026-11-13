@@ -1,0 +1,139 @@
+{
+  "chunk_id": "season-2020-formula-one-world-championship#39",
+  "doc_id": "season-2020-formula-one-world-championship",
+  "document_title": "2020 Formula One World Championship",
+  "section": "2020 Formula One World Championship > Mid-season rounds",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "2442a1f3a20b8d64cdbaee5993791223924ddd0e839e87201b4ef6f7bd8c7e04",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Pierre Gasly",
+        "entity_type": "Driver",
+        "description": "Won the Italian Grand Prix."
+      },
+      {
+        "local_id": "e2",
+        "name": "AlphaTauri",
+        "entity_type": "Team",
+        "description": "Team that Pierre Gasly drove for."
+      },
+      {
+        "local_id": "e3",
+        "name": "Italian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "Race won by Pierre Gasly."
+      },
+      {
+        "local_id": "e4",
+        "name": "Carlos Sainz Jr.",
+        "entity_type": "Driver",
+        "description": "Finished second in the Italian Grand Prix."
+      },
+      {
+        "local_id": "e5",
+        "name": "Lance Stroll",
+        "entity_type": "Driver",
+        "description": "Finished third in the Italian Grand Prix."
+      },
+      {
+        "local_id": "e6",
+        "name": "2020",
+        "entity_type": "Season",
+        "description": "Season of the 2020 Formula One World Championship."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Carlos Sainz Jr. at Italian Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Carlos Sainz Jr. finished second in the Italian Grand Prix."
+      },
+      {
+        "local_id": "rr2",
+        "name": "Lance Stroll at Italian Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Lance Stroll finished third in the Italian Grand Prix."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Pierre Gasly drove for AlphaTauri.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e6",
+        "relationship_type": "ROUND_OF",
+        "description": "The Italian Grand Prix is a round of the 2020 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Carlos Sainz Jr. finished second in the Italian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e3",
+        "relationship_type": "AT_RACE",
+        "description": "Carlos Sainz Jr. finished second in the Italian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "rr2",
+        "relationship_type": "ACHIEVED",
+        "description": "Lance Stroll finished third in the Italian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr2",
+        "target_id": "e3",
+        "relationship_type": "AT_RACE",
+        "description": "Lance Stroll finished third in the Italian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 6,
+  "entities_accepted": 8,
+  "entities_rejected": 0,
+  "relationship_candidates": 4,
+  "relationships_accepted": 6,
+  "relationships_rejected": 0,
+  "rejections": [],
+  "alignments": [
+    {
+      "index": 2,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e3; description kept"
+    },
+    {
+      "index": 3,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr2 -AT_RACE-> e3; description kept"
+    }
+  ]
+}

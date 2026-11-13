@@ -1,0 +1,170 @@
+{
+  "chunk_id": "driver-valtteri-bottas#40",
+  "doc_id": "driver-valtteri-bottas",
+  "document_title": "Valtteri Bottas",
+  "section": "Formula One career > Williams (2010–2016) > 2016",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/Valtteri_Bottas",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "b1fd93d8d2384891d6b64f7bf39c7fdd3ee1c96596d2af45f913e5111e65c05e",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "entity_candidates": 7,
+  "entities_accepted": 8,
+  "entities_rejected": 1,
+  "relationship_candidates": 7,
+  "relationships_accepted": 8,
+  "relationships_rejected": 1,
+  "rejections": [
+    {
+      "element": "entity",
+      "index": 6,
+      "reason": "name 'null' is a placeholder, not an entity identity"
+    },
+    {
+      "element": "relationship",
+      "index": 8,
+      "reason": "FIELDED: source_id 'e7' rejected: name 'null' is a placeholder, not an entity identity"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 4,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e5; description kept"
+    },
+    {
+      "index": 5,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr2 -AT_RACE-> e6; description kept"
+    }
+  ],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Valtteri Bottas",
+        "entity_type": "Driver",
+        "description": "A Finnish racing driver who competed in Formula One."
+      },
+      {
+        "local_id": "e2",
+        "name": "Felipe Massa",
+        "entity_type": "Driver",
+        "description": "A Brazilian racing driver who competed in Formula One."
+      },
+      {
+        "local_id": "e3",
+        "name": "Williams",
+        "entity_type": "Team",
+        "description": "A Formula One team based in the United Kingdom."
+      },
+      {
+        "local_id": "e4",
+        "name": "2016",
+        "entity_type": "Season",
+        "description": "The Formula One season of 2016."
+      },
+      {
+        "local_id": "e5",
+        "name": "Australian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The season-opening race of the 2016 Formula One season."
+      },
+      {
+        "local_id": "e6",
+        "name": "Bahrain Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A race in the 2016 Formula One season."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Valtteri Bottas at Australian Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Bottas scored points in the Australian Grand Prix."
+      },
+      {
+        "local_id": "rr2",
+        "name": "Valtteri Bottas at Bahrain Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Bottas finished ninth in the Bahrain Grand Prix after a drive-through penalty."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Bottas and Massa were teammates at Williams for the 2016 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e3",
+        "relationship_type": "DROVE_FOR",
+        "description": "Bottas drove for Williams during the 2016 season.",
+        "from_year": 2010,
+        "to_year": 2016,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e4",
+        "relationship_type": "ROUND_OF",
+        "description": "The Australian Grand Prix is a round of the 2016 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e6",
+        "target_id": "e4",
+        "relationship_type": "ROUND_OF",
+        "description": "The Bahrain Grand Prix is a round of the 2016 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Bottas scored points in the Australian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e5",
+        "relationship_type": "AT_RACE",
+        "description": "Bottas scored points in the Australian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr2",
+        "relationship_type": "ACHIEVED",
+        "description": "Bottas finished ninth in the Bahrain Grand Prix after a drive-through penalty.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr2",
+        "target_id": "e6",
+        "relationship_type": "AT_RACE",
+        "description": "Bottas finished ninth in the Bahrain Grand Prix after a drive-through penalty.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

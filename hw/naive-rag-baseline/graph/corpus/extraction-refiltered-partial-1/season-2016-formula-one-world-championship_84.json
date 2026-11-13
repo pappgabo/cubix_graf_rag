@@ -1,0 +1,104 @@
+{
+  "chunk_id": "season-2016-formula-one-world-championship#84",
+  "doc_id": "season-2016-formula-one-world-championship",
+  "document_title": "2016 Formula One World Championship",
+  "section": "Return to Asia",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/2016_Formula_One_World_Championship",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "ea5ed46a706908c62af2e0475fb6c982f04a3e6b0deb5a152b9ab19db5d7ebac",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "WON does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "ACHIEVED does not allow Driver -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "FOR_TEAM does not allow Driver -> Team"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "FOR_TEAM does not allow Driver -> Team"
+    },
+    {
+      "element": "relationship",
+      "index": 5,
+      "reason": "HELD_AT does not allow GrandPrix -> Team"
+    }
+  ],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Rosberg",
+        "entity_type": "Driver",
+        "description": "A driver who reclaimed the championship lead in Singapore."
+      },
+      {
+        "local_id": "e2",
+        "name": "Hamilton",
+        "entity_type": "Driver",
+        "description": "A driver who qualified third in Singapore after struggling with mechanical issues and driving errors."
+      },
+      {
+        "local_id": "e3",
+        "name": "Kimi Räikkönen",
+        "entity_type": "Driver",
+        "description": "A driver who was passed by Hamilton during the race."
+      },
+      {
+        "local_id": "e4",
+        "name": "Daniel Ricciardo",
+        "entity_type": "Driver",
+        "description": "A driver who was pitted from second place by Red Bull Racing."
+      },
+      {
+        "local_id": "e5",
+        "name": "Singapore Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The race where Rosberg reclaimed the championship lead."
+      },
+      {
+        "local_id": "e6",
+        "name": "2016",
+        "entity_type": "Season",
+        "description": "The championship year of the 2016 Formula One World Championship."
+      },
+      {
+        "local_id": "e7",
+        "name": "Mercedes",
+        "entity_type": "Team",
+        "description": "The team that Hamilton drives for and made a late pit stop during the race."
+      },
+      {
+        "local_id": "e8",
+        "name": "Red Bull Racing",
+        "entity_type": "Team",
+        "description": "The team that decided to pit Daniel Ricciardo."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e5",
+        "target_id": "e6",
+        "relationship_type": "ROUND_OF",
+        "description": "The Singapore Grand Prix is a round of the 2016 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

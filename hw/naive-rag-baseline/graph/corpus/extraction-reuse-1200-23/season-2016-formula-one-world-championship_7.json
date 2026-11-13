@@ -1,0 +1,99 @@
+{
+  "chunk_id": "season-2016-formula-one-world-championship#7",
+  "doc_id": "season-2016-formula-one-world-championship",
+  "document_title": "2016 Formula One World Championship",
+  "section": "Team changes",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "c4fe5d4f0cc8d52c20042adce4fdff96db0697b65671dbbe347deb1ad82a4b72",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Marussia",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that applied for a name change."
+      },
+      {
+        "local_id": "e2",
+        "name": "Manor Racing",
+        "entity_type": "Team",
+        "description": "The new name adopted by Marussia in January 2016."
+      },
+      {
+        "local_id": "e3",
+        "name": "Mercedes",
+        "entity_type": "PowerUnit",
+        "description": "The power unit that Manor Racing switched to."
+      },
+      {
+        "local_id": "e4",
+        "name": "Ferrari",
+        "entity_type": "PowerUnit",
+        "description": "The power unit used by Manor Racing prior to the switch."
+      },
+      {
+        "local_id": "e5",
+        "name": "Sauber",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that underwent a change in ownership."
+      },
+      {
+        "local_id": "e6",
+        "name": "Hungarian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A specific race event mentioned in relation to Sauber's ownership change."
+      },
+      {
+        "local_id": "e7",
+        "name": "Longbow Finance",
+        "entity_type": "Team",
+        "description": "The entity that purchased Sauber."
+      },
+      {
+        "local_id": "e8",
+        "name": "Peter Sauber",
+        "entity_type": "Driver",
+        "description": "The founder of Sauber who retired."
+      }
+    ],
+    "relationships": []
+  },
+  "entity_candidates": 8,
+  "entities_accepted": 8,
+  "entities_rejected": 0,
+  "relationship_candidates": 5,
+  "relationships_accepted": 0,
+  "relationships_rejected": 5,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "DROVE_FOR does not allow Team -> Team"
+    },
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "POWERED_BY does not allow Team -> PowerUnit"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "POWERED_BY does not allow Team -> PowerUnit"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "DROVE_FOR does not allow Team -> Team"
+    },
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "ENTERED does not allow Team -> GrandPrix"
+    }
+  ],
+  "alignments": []
+}

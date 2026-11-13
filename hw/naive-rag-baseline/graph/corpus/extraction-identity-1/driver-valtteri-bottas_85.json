@@ -1,0 +1,77 @@
+{
+  "chunk_id": "driver-valtteri-bottas#85",
+  "doc_id": "driver-valtteri-bottas",
+  "document_title": "Valtteri Bottas",
+  "section": "Formula One career > Mercedes (2017–2021) > 2019–2020: Championship runner-up",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/Valtteri_Bottas",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "7f7333d6f7b8e6e335a857dd9054d18b96e05b00dae69f65fc6b8ed0b036a587",
+  "validation_version": "partial-1",
+  "source_status": "ok",
+  "status": "ok",
+  "entity_candidates": 5,
+  "entities_accepted": 4,
+  "entities_rejected": 1,
+  "relationship_candidates": 3,
+  "relationships_accepted": 1,
+  "relationships_rejected": 2,
+  "rejections": [
+    {
+      "element": "entity",
+      "index": 4,
+      "reason": "name 'null' is a placeholder, not an entity identity"
+    },
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "ROUND_OF: target_id 'e5' rejected: name 'null' is a placeholder, not an entity identity"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "ROUND_OF: target_id 'e5' rejected: name 'null' is a placeholder, not an entity identity"
+    }
+  ],
+  "alignments": [],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Valtteri Bottas",
+        "entity_type": "Driver",
+        "description": "A Finnish racing driver who competed in Formula One."
+      },
+      {
+        "local_id": "e2",
+        "name": "Mercedes-AMG Petronas Formula One Team",
+        "entity_type": "Team",
+        "description": "A Formula One team that entered cars."
+      },
+      {
+        "local_id": "e3",
+        "name": "Bahrain Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula One race held in Bahrain."
+      },
+      {
+        "local_id": "e4",
+        "name": "Sakhir Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula One race held in Sakhir."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Valtteri Bottas drove for Mercedes.",
+        "from_year": 2017,
+        "to_year": 2021,
+        "role": null
+      }
+    ]
+  }
+}

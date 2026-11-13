@@ -1,0 +1,114 @@
+{
+  "chunk_id": "season-2016-formula-one-world-championship#38",
+  "doc_id": "season-2016-formula-one-world-championship",
+  "document_title": "2016 Formula One World Championship",
+  "section": "Return to Asia",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "057e0eeee67423a7a07421382d4d975ebad5469bfd9d58f465dfeaab99524dc3",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Mercedes-AMG Petronas Formula One Team",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that entered cars."
+      },
+      {
+        "local_id": "e2",
+        "name": "Daniel Ricciardo",
+        "entity_type": "Driver",
+        "description": "A Formula 1 driver who won the race."
+      },
+      {
+        "local_id": "e3",
+        "name": "Nico Rosberg",
+        "entity_type": "Driver",
+        "description": "A Formula 1 driver who finished third in the race."
+      },
+      {
+        "local_id": "e4",
+        "name": "Max Verstappen",
+        "entity_type": "Driver",
+        "description": "A Formula 1 driver who raced for the lead."
+      },
+      {
+        "local_id": "e5",
+        "name": "Sebastian Vettel",
+        "entity_type": "Driver",
+        "description": "A Formula 1 driver involved in an accident."
+      },
+      {
+        "local_id": "e6",
+        "name": "Kimi Räikkönen",
+        "entity_type": "Driver",
+        "description": "A Formula 1 driver who was involved in contact with Rosberg."
+      },
+      {
+        "local_id": "e7",
+        "name": "2016 Formula One World Championship",
+        "entity_type": "Season",
+        "description": "The championship year for the Formula 1 season."
+      },
+      {
+        "local_id": "e8",
+        "name": "2014 Belgian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The race where Ricciardo last won before this race."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e7",
+        "relationship_type": "ENTERED",
+        "description": "Mercedes entered the 2016 Formula One World Championship.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 8,
+  "entities_accepted": 8,
+  "entities_rejected": 0,
+  "relationship_candidates": 7,
+  "relationships_accepted": 1,
+  "relationships_rejected": 6,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "WON does not allow Driver -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "ACHIEVED does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "ACHIEVED does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "ACHIEVED does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 5,
+      "reason": "ACHIEVED does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 6,
+      "reason": "ACHIEVED does not allow Driver -> Season"
+    }
+  ],
+  "alignments": []
+}

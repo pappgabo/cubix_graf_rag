@@ -1,0 +1,98 @@
+{
+  "chunk_id": "driver-michael-schumacher#33",
+  "doc_id": "driver-michael-schumacher",
+  "document_title": "Michael Schumacher",
+  "section": null,
+  "page": 7,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "2cf76940f2793cdbdc8cdc7d943a16148fba674bcc61fca6845a20f0620306ae",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Michael Schumacher",
+        "entity_type": "Driver",
+        "description": "Schumacher vowed to pay back Barrichello, and later that same year returned the favour in several races to help him finish second in the standings."
+      },
+      {
+        "local_id": "e2",
+        "name": "Rubens Barrichello",
+        "entity_type": "Driver",
+        "description": "Schumacher helped Barrichello finish second in the standings."
+      },
+      {
+        "local_id": "e3",
+        "name": "2003",
+        "entity_type": "Season",
+        "description": "Schumacher won the drivers' title for the sixth time in 2003."
+      },
+      {
+        "local_id": "e4",
+        "name": "United States Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "At the United States Grand Prix, Schumacher returned the favour, by giving Barrichello the win by 0.011 seconds."
+      },
+      {
+        "local_id": "e5",
+        "name": "FIA",
+        "entity_type": "Team",
+        "description": "The FIA banned 'team orders which interfere with the race result'."
+      },
+      {
+        "local_id": "e6",
+        "name": "Drivers' Championships",
+        "entity_type": "Title",
+        "description": "Schumacher broke Fangio's 46-year record of five Drivers' Championships by winning the drivers' title for the sixth time in 2003."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Schumacher helped Barrichello finish second in the standings.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e6",
+        "relationship_type": "WON",
+        "description": "Schumacher won the drivers' title for the sixth time in 2003.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e6",
+        "target_id": "e3",
+        "relationship_type": "AWARDED_IN",
+        "description": "The drivers' title belongs to the 2003 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e3",
+        "relationship_type": "ROUND_OF",
+        "description": "The United States Grand Prix is a round of the 2003 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 6,
+  "entities_accepted": 6,
+  "entities_rejected": 0,
+  "relationship_candidates": 4,
+  "relationships_accepted": 4,
+  "relationships_rejected": 0,
+  "rejections": [],
+  "alignments": []
+}

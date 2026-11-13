@@ -1,0 +1,249 @@
+{
+  "chunk_id": "season-2016-formula-one-world-championship#79",
+  "doc_id": "season-2016-formula-one-world-championship",
+  "document_title": "2016 Formula One World Championship",
+  "section": "European rounds",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/2016_Formula_One_World_Championship",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "d26d446e47d96b15d7980f50d27d886862883166a416f1311fa1dc60001c2a9b",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "rejections": [],
+  "alignments": [
+    {
+      "index": 2,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e3; description kept"
+    },
+    {
+      "index": 4,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr2 -AT_RACE-> e3; description kept"
+    },
+    {
+      "index": 5,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr3 -AT_RACE-> e3; description kept"
+    },
+    {
+      "index": 6,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr4 -AT_RACE-> e3; description kept"
+    },
+    {
+      "index": 7,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr5 -AT_RACE-> e3; description kept"
+    }
+  ],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Mercedes-AMG Petronas Formula One Team",
+        "entity_type": "Team",
+        "description": "Formula 1 team that entered cars."
+      },
+      {
+        "local_id": "e2",
+        "name": "Lewis Hamilton",
+        "entity_type": "Driver",
+        "description": "A driver who raced in Formula One."
+      },
+      {
+        "local_id": "e3",
+        "name": "Belgium",
+        "entity_type": "GrandPrix",
+        "description": "A specific Grand Prix."
+      },
+      {
+        "local_id": "e4",
+        "name": "Vettel",
+        "entity_type": "Driver",
+        "description": "A driver who raced in Formula One."
+      },
+      {
+        "local_id": "e5",
+        "name": "Räikkönen",
+        "entity_type": "Driver",
+        "description": "A driver who raced in Formula One."
+      },
+      {
+        "local_id": "e6",
+        "name": "Verstappen",
+        "entity_type": "Driver",
+        "description": "A driver who raced in Formula One."
+      },
+      {
+        "local_id": "e7",
+        "name": "Magnussen",
+        "entity_type": "Driver",
+        "description": "A driver who raced in Formula One."
+      },
+      {
+        "local_id": "e8",
+        "name": "Eau Rouge",
+        "entity_type": "Circuit",
+        "description": "A specific location on the circuit."
+      },
+      {
+        "local_id": "e9",
+        "name": "2016",
+        "entity_type": "Season",
+        "description": "The championship year."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Hamilton at Belgium",
+        "entity_type": "RaceResult",
+        "description": "Hamilton recorded a result in the Belgium Grand Prix."
+      },
+      {
+        "local_id": "rr2",
+        "name": "Vettel at Belgium",
+        "entity_type": "RaceResult",
+        "description": "Vettel recorded a result in the Belgium Grand Prix."
+      },
+      {
+        "local_id": "rr3",
+        "name": "Räikkönen at Belgium",
+        "entity_type": "RaceResult",
+        "description": "Räikkönen recorded a result in the Belgium Grand Prix."
+      },
+      {
+        "local_id": "rr4",
+        "name": "Verstappen at Belgium",
+        "entity_type": "RaceResult",
+        "description": "Verstappen recorded a result in the Belgium Grand Prix."
+      },
+      {
+        "local_id": "rr5",
+        "name": "Magnussen at Belgium",
+        "entity_type": "RaceResult",
+        "description": "Magnussen recorded a result in the Belgium Grand Prix."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e9",
+        "relationship_type": "ENTERED",
+        "description": "Mercedes took part in the 2016 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e1",
+        "relationship_type": "DROVE_FOR",
+        "description": "Hamilton raced for Mercedes.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Hamilton recorded a result in the Belgium Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e3",
+        "relationship_type": "AT_RACE",
+        "description": "Hamilton recorded a result in the Belgium Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e9",
+        "relationship_type": "ROUND_OF",
+        "description": "The Belgium Grand Prix is a round of the 2016 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "rr2",
+        "relationship_type": "ACHIEVED",
+        "description": "Vettel recorded a result in the Belgium Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr2",
+        "target_id": "e3",
+        "relationship_type": "AT_RACE",
+        "description": "Vettel recorded a result in the Belgium Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "rr3",
+        "relationship_type": "ACHIEVED",
+        "description": "Räikkönen recorded a result in the Belgium Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr3",
+        "target_id": "e3",
+        "relationship_type": "AT_RACE",
+        "description": "Räikkönen recorded a result in the Belgium Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e6",
+        "target_id": "rr4",
+        "relationship_type": "ACHIEVED",
+        "description": "Verstappen recorded a result in the Belgium Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr4",
+        "target_id": "e3",
+        "relationship_type": "AT_RACE",
+        "description": "Verstappen recorded a result in the Belgium Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e7",
+        "target_id": "rr5",
+        "relationship_type": "ACHIEVED",
+        "description": "Magnussen recorded a result in the Belgium Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr5",
+        "target_id": "e3",
+        "relationship_type": "AT_RACE",
+        "description": "Magnussen recorded a result in the Belgium Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

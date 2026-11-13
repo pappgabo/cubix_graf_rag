@@ -1,0 +1,97 @@
+{
+  "chunk_id": "reference-formula-one#41",
+  "doc_id": "reference-formula-one",
+  "document_title": "Formula One",
+  "section": "Formula One > Drivers",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "e1bee94a541b1e6b440ccefd2e65edb62d58d26ef9ec90ed9e05e17c67e862ce",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Divina Galica",
+        "entity_type": "Driver",
+        "description": "A driver who used the number 13."
+      },
+      {
+        "local_id": "e2",
+        "name": "Pastor Maldonado",
+        "entity_type": "Driver",
+        "description": "A driver who used the number 13."
+      },
+      {
+        "local_id": "e3",
+        "name": "Scuderia Ferrari",
+        "entity_type": "Team",
+        "description": "A Formula 1 team associated with car numbers 27 and 28."
+      },
+      {
+        "local_id": "e4",
+        "name": "1974",
+        "entity_type": "Season",
+        "description": "The season when permanent numbers were introduced."
+      },
+      {
+        "local_id": "e5",
+        "name": "1996",
+        "entity_type": "Season",
+        "description": "The start of a different numbering system used until 2013."
+      },
+      {
+        "local_id": "e6",
+        "name": "2013",
+        "entity_type": "Season",
+        "description": "The end of the different numbering system."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e3",
+        "target_id": "e4",
+        "relationship_type": "ENTERED",
+        "description": "Ferrari entered the 1974 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e6",
+        "relationship_type": "ENTERED",
+        "description": "Ferrari entered the 2013 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 6,
+  "entities_accepted": 6,
+  "entities_rejected": 0,
+  "relationship_candidates": 3,
+  "relationships_accepted": 2,
+  "relationships_rejected": 1,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "ENTERED is not temporal; from_year=1996, to_year=2013, role=None cannot be stored without dropping them"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 0,
+      "action": "clear_redundant_season_year",
+      "detail": "ENTERED year 1974 already named by Season 'e4'; from_year and to_year cleared"
+    },
+    {
+      "index": 2,
+      "action": "clear_redundant_season_year",
+      "detail": "ENTERED year 2013 already named by Season 'e6'; from_year and to_year cleared"
+    }
+  ]
+}

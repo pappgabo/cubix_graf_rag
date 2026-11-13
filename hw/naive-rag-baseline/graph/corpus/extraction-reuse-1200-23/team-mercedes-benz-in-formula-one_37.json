@@ -1,0 +1,100 @@
+{
+  "chunk_id": "team-mercedes-benz-in-formula-one#37",
+  "doc_id": "team-mercedes-benz-in-formula-one",
+  "document_title": "Mercedes-Benz in Formula One",
+  "section": "Mercedes-Benz in Formula One > FTX sponsorship and lawsuit filing",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "3aa9a52516a23a03b02232a61fc6eb3bc32ba4fe9c91ac4c42ff88cd063528b5",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Mercedes-AMG Petronas Formula One Team",
+        "entity_type": "Team",
+        "description": "The Mercedes F1 team had previously partnered with FTX."
+      },
+      {
+        "local_id": "e2",
+        "name": "FTX",
+        "entity_type": "Team",
+        "description": "A Bahamas-based cryptocurrency exchange company that partnered with Mercedes F1."
+      },
+      {
+        "local_id": "e3",
+        "name": "2022",
+        "entity_type": "Season",
+        "description": "The season during which Mercedes suspended its sponsorship deal with FTX."
+      },
+      {
+        "local_id": "e4",
+        "name": "2022 São Paulo Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The Grand Prix prior to which Mercedes removed FTX's logos from their cars."
+      },
+      {
+        "local_id": "e5",
+        "name": "November 2023",
+        "entity_type": "Season",
+        "description": "The month and year when a lawsuit against Mercedes F1 team was filed."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e3",
+        "relationship_type": "ENTERED",
+        "description": "Mercedes F1 team entered the 2022 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e3",
+        "relationship_type": "ROUND_OF",
+        "description": "2022 São Paulo Grand Prix is a round of the 2022 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e5",
+        "relationship_type": "ENTERED",
+        "description": "A lawsuit against Mercedes F1 team was filed in November 2023.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 5,
+  "entities_accepted": 5,
+  "entities_rejected": 0,
+  "relationship_candidates": 4,
+  "relationships_accepted": 3,
+  "relationships_rejected": 1,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "DROVE_FOR does not allow Team -> Team"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 1,
+      "action": "clear_redundant_season_year",
+      "detail": "ENTERED year 2022 already named by Season 'e3'; from_year and to_year cleared"
+    },
+    {
+      "index": 3,
+      "action": "clear_redundant_season_year",
+      "detail": "ENTERED year 2023 already named by Season 'e5'; from_year and to_year cleared"
+    }
+  ]
+}

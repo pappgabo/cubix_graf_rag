@@ -1,0 +1,85 @@
+{
+  "chunk_id": "driver-lewis-hamilton#42",
+  "doc_id": "driver-lewis-hamilton",
+  "document_title": "Lewis Hamilton",
+  "section": null,
+  "page": 4,
+  "source": "https://en.wikipedia.org/wiki/Lewis_Hamilton",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "116f157d42577926f11ad34677b41b31ef30b15db49716efd4785148dcb09d1e",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "AT_RACE does not allow GrandPrix -> Driver"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 1,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e3; description kept"
+    }
+  ],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Lewis Hamilton",
+        "entity_type": "Driver",
+        "description": "A Formula One driver known for his career-best 11 victories."
+      },
+      {
+        "local_id": "e2",
+        "name": "Nico Rosberg",
+        "entity_type": "Driver",
+        "description": "Teammate of Lewis Hamilton during the season-long duel for the title."
+      },
+      {
+        "local_id": "e3",
+        "name": "Belgian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A race where Hamilton retired due to a collision with Rosberg."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Lewis Hamilton at Belgian Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Hamilton retired from the Belgian Grand Prix due to a collision with Rosberg."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Hamilton and Rosberg were teammates during the season-long duel for the title.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Hamilton retired from the Belgian Grand Prix due to a collision with Rosberg.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e3",
+        "relationship_type": "AT_RACE",
+        "description": "Hamilton retired from the Belgian Grand Prix due to a collision with Rosberg.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

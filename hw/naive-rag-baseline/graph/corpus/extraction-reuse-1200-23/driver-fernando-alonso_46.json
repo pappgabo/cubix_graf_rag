@@ -1,0 +1,128 @@
+{
+  "chunk_id": "driver-fernando-alonso#46",
+  "doc_id": "driver-fernando-alonso",
+  "document_title": "Fernando Alonso",
+  "section": "Off-road racing",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "8f0777b2f4f76ba7dde44198c5d9d40f0a124479c3e9aae6ac7eacb660725200",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Fernando Alonso",
+        "entity_type": "Driver",
+        "description": "A Formula One driver who entered the Dakar Rally."
+      },
+      {
+        "local_id": "e2",
+        "name": "Toyota",
+        "entity_type": "Team",
+        "description": "The team with which Alonso entered the Dakar Rally."
+      },
+      {
+        "local_id": "e3",
+        "name": "2020",
+        "entity_type": "Season",
+        "description": "The season in which Alonso entered the Dakar Rally."
+      },
+      {
+        "local_id": "e4",
+        "name": "Dakar Rally",
+        "entity_type": "GrandPrix",
+        "description": "The rally event Alonso entered."
+      },
+      {
+        "local_id": "e5",
+        "name": "Al Ula–Neom Rally",
+        "entity_type": "GrandPrix",
+        "description": "One of the races Alonso participated in as preparation."
+      },
+      {
+        "local_id": "e6",
+        "name": "Lichtenburg 400",
+        "entity_type": "GrandPrix",
+        "description": "One of the races Alonso participated in as preparation."
+      },
+      {
+        "local_id": "e7",
+        "name": "Rally du Maroc",
+        "entity_type": "GrandPrix",
+        "description": "One of the races Alonso participated in as preparation."
+      },
+      {
+        "local_id": "e8",
+        "name": "Marc Coma",
+        "entity_type": "Driver",
+        "description": "Co-driver for Alonso during the Dakar Rally."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Alonso drove for Toyota in the Dakar Rally.",
+        "from_year": 2020,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e3",
+        "relationship_type": "ROUND_OF",
+        "description": "The Dakar Rally is a round of the 2020 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e3",
+        "relationship_type": "ROUND_OF",
+        "description": "The Al Ula–Neom Rally is a round of the 2020 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e6",
+        "target_id": "e3",
+        "relationship_type": "ROUND_OF",
+        "description": "The Lichtenburg 400 is a round of the 2020 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e7",
+        "target_id": "e3",
+        "relationship_type": "ROUND_OF",
+        "description": "The Rally du Maroc is a round of the 2020 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e8",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Alonso was teammates with Marc Coma during the Dakar Rally.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 8,
+  "entities_accepted": 8,
+  "entities_rejected": 0,
+  "relationship_candidates": 6,
+  "relationships_accepted": 6,
+  "relationships_rejected": 0,
+  "rejections": [],
+  "alignments": []
+}

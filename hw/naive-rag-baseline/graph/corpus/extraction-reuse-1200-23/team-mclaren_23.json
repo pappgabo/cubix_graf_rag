@@ -1,0 +1,210 @@
+{
+  "chunk_id": "team-mclaren#23",
+  "doc_id": "team-mclaren",
+  "document_title": "McLaren",
+  "section": "1988–1991: Domination with Honda",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "1544dc297ded491e4b5e9036687918e58b96c2de6c9f3710978bc68ba3bbe55b",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "McLaren",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that entered cars."
+      },
+      {
+        "local_id": "e2",
+        "name": "Prost",
+        "entity_type": "Driver",
+        "description": "A Formula 1 driver who raced for McLaren."
+      },
+      {
+        "local_id": "e3",
+        "name": "Senna",
+        "entity_type": "Driver",
+        "description": "A Formula 1 driver who raced for McLaren."
+      },
+      {
+        "local_id": "e4",
+        "name": "MP4/5",
+        "entity_type": "Car",
+        "description": "A car model fielded by McLaren."
+      },
+      {
+        "local_id": "e5",
+        "name": "Honda",
+        "entity_type": "PowerUnit",
+        "description": "An engine supplier for McLaren."
+      },
+      {
+        "local_id": "e6",
+        "name": "1989",
+        "entity_type": "Season",
+        "description": "A Formula 1 championship year."
+      },
+      {
+        "local_id": "e7",
+        "name": "Japanese Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A race event that was part of the 1989 season."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Prost at Japanese Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Prost recorded a result in the Japanese Grand Prix."
+      },
+      {
+        "local_id": "rr2",
+        "name": "Senna at Japanese Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Senna recorded a result in the Japanese Grand Prix."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e4",
+        "relationship_type": "FIELDED",
+        "description": "McLaren entered the MP4/5 car.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e5",
+        "relationship_type": "POWERED_BY",
+        "description": "The MP4/5 car used a Honda engine.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e6",
+        "relationship_type": "RACED_IN",
+        "description": "The MP4/5 car took part in the 1989 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e6",
+        "relationship_type": "ENTERED",
+        "description": "McLaren took part in the 1989 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e1",
+        "relationship_type": "DROVE_FOR",
+        "description": "Prost drove for McLaren.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e1",
+        "relationship_type": "DROVE_FOR",
+        "description": "Senna drove for McLaren.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Prost recorded a result in the Japanese Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e7",
+        "relationship_type": "AT_RACE",
+        "description": "Prost recorded a result in the Japanese Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e7",
+        "target_id": "e6",
+        "relationship_type": "ROUND_OF",
+        "description": "The Japanese Grand Prix is a round of the 1989 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "rr2",
+        "relationship_type": "ACHIEVED",
+        "description": "Senna recorded a result in the Japanese Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr2",
+        "target_id": "e7",
+        "relationship_type": "AT_RACE",
+        "description": "Senna recorded a result in the Japanese Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e3",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Prost and Senna were teammates at McLaren.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 7,
+  "entities_accepted": 9,
+  "entities_rejected": 0,
+  "relationship_candidates": 12,
+  "relationships_accepted": 12,
+  "relationships_rejected": 2,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 12,
+      "reason": "WON does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 13,
+      "reason": "WON does not allow Driver -> Season"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 6,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e7; description kept"
+    },
+    {
+      "index": 8,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr2 -AT_RACE-> e7; description kept"
+    }
+  ]
+}

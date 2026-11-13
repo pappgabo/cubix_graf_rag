@@ -1,0 +1,186 @@
+{
+  "chunk_id": "team-mclaren#43",
+  "doc_id": "team-mclaren",
+  "document_title": "McLaren",
+  "section": "2015–2017: Return to Honda engines",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "6da54eea0d3251de9b83a1e3d74e06c3d3f224ded26c6fbd0e434b1afb7c768c",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "McLaren",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that entered cars."
+      },
+      {
+        "local_id": "e2",
+        "name": "Fernando Alonso",
+        "entity_type": "Driver",
+        "description": "A Formula 1 driver."
+      },
+      {
+        "local_id": "e3",
+        "name": "Jenson Button",
+        "entity_type": "Driver",
+        "description": "A Formula 1 driver."
+      },
+      {
+        "local_id": "e4",
+        "name": "Kevin Magnussen",
+        "entity_type": "Driver",
+        "description": "A Formula 1 driver."
+      },
+      {
+        "local_id": "e5",
+        "name": "2015",
+        "entity_type": "Season",
+        "description": "A championship year."
+      },
+      {
+        "local_id": "e6",
+        "name": "Australian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula 1 race."
+      },
+      {
+        "local_id": "e7",
+        "name": "Monaco",
+        "entity_type": "GrandPrix",
+        "description": "A Formula 1 race."
+      },
+      {
+        "local_id": "e8",
+        "name": "Circuit de Barcelona-Catalunya",
+        "entity_type": "Circuit",
+        "description": "A racing venue."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Kevin Magnussen at Australian Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Kevin Magnussen replaced Alonso for the Australian Grand Prix."
+      },
+      {
+        "local_id": "rr2",
+        "name": "Jenson Button at Monaco",
+        "entity_type": "RaceResult",
+        "description": "Jenson Button finished 11th at the Monaco Grand Prix."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e5",
+        "relationship_type": "ENTERED",
+        "description": "McLaren took part in the 2015 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Kevin Magnussen replaced Alonso for the Australian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e6",
+        "relationship_type": "AT_RACE",
+        "description": "Kevin Magnussen replaced Alonso for the Australian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "rr2",
+        "relationship_type": "ACHIEVED",
+        "description": "Jenson Button finished 11th at the Monaco Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr2",
+        "target_id": "e7",
+        "relationship_type": "AT_RACE",
+        "description": "Jenson Button finished 11th at the Monaco Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e7",
+        "target_id": "e5",
+        "relationship_type": "ROUND_OF",
+        "description": "Monaco is a round of the 2015 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e6",
+        "target_id": "e5",
+        "relationship_type": "ROUND_OF",
+        "description": "Australian Grand Prix is a round of the 2015 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 8,
+  "entities_accepted": 10,
+  "entities_rejected": 0,
+  "relationship_candidates": 10,
+  "relationships_accepted": 7,
+  "relationships_rejected": 5,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "DROVE_FOR does not allow Team -> Driver"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "DROVE_FOR does not allow Team -> Driver"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "DROVE_FOR does not allow Team -> Driver"
+    },
+    {
+      "element": "relationship",
+      "index": 8,
+      "reason": "FOR_TEAM does not allow Driver -> Team"
+    },
+    {
+      "element": "relationship",
+      "index": 11,
+      "reason": "HELD_AT does not allow Team -> Circuit"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 4,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e6; description kept"
+    },
+    {
+      "index": 5,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr2 -AT_RACE-> e7; description kept"
+    }
+  ]
+}

@@ -1,0 +1,98 @@
+{
+  "chunk_id": "team-williams-racing#27",
+  "doc_id": "team-williams-racing",
+  "document_title": "Williams Racing",
+  "section": "Williams Racing > 1991 season",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "521536659958396055a105a599ea3806771cc758eb091feb2cabbe3924fcd87d",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Williams Racing",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that enters cars."
+      },
+      {
+        "local_id": "e2",
+        "name": "Nigel Mansell",
+        "entity_type": "Driver",
+        "description": "A Formula 1 driver who returned to Williams for the 1991 season."
+      },
+      {
+        "local_id": "e3",
+        "name": "Riccardo Patrese",
+        "entity_type": "Driver",
+        "description": "A Formula 1 driver who was retained to drive for Williams in the 1991 season."
+      },
+      {
+        "local_id": "e4",
+        "name": "Damon Hill",
+        "entity_type": "Driver",
+        "description": "A Formula 1 driver who joined Williams as its test driver in 1991."
+      },
+      {
+        "local_id": "e5",
+        "name": "1991",
+        "entity_type": "Season",
+        "description": "The Formula 1 season in which Williams Racing competed."
+      },
+      {
+        "local_id": "e6",
+        "name": "Williams-Renault",
+        "entity_type": "Car",
+        "description": "The car model fielded by Williams Racing in the 1991 season."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e5",
+        "relationship_type": "ENTERED",
+        "description": "Williams Racing took part in the 1991 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e6",
+        "relationship_type": "FIELDED",
+        "description": "Williams Racing entered the Williams-Renault car in the 1991 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e1",
+        "relationship_type": "DROVE_FOR",
+        "description": "Nigel Mansell drove for Williams Racing in the 1991 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e1",
+        "relationship_type": "DROVE_FOR",
+        "description": "Riccardo Patrese drove for Williams Racing in the 1991 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 6,
+  "entities_accepted": 6,
+  "entities_rejected": 0,
+  "relationship_candidates": 4,
+  "relationships_accepted": 4,
+  "relationships_rejected": 0,
+  "rejections": [],
+  "alignments": []
+}

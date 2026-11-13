@@ -1,0 +1,118 @@
+{
+  "chunk_id": "driver-michael-schumacher#6",
+  "doc_id": "driver-michael-schumacher",
+  "document_title": "Michael Schumacher",
+  "section": null,
+  "page": 2,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "c9c78dca52e93fd8213ee4f58632612243c0ac2e3f222302786a060c8e39b6c0",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Michael Schumacher",
+        "entity_type": "Driver",
+        "description": "A German racing driver who competed in Formula One."
+      },
+      {
+        "local_id": "e2",
+        "name": "Sauber–Mercedes C11",
+        "entity_type": "Car",
+        "description": "A car model used by Schumacher in the 1990 World Sportscar Championship."
+      },
+      {
+        "local_id": "e3",
+        "name": "Sauber–Mercedes-Benz C291",
+        "entity_type": "Car",
+        "description": "A car model used by Schumacher in the 1991 World Sportscar Championship."
+      },
+      {
+        "local_id": "e4",
+        "name": "1990",
+        "entity_type": "Season",
+        "description": "The season of the World Sportscar Championship where Schumacher won the finale."
+      },
+      {
+        "local_id": "e5",
+        "name": "1991",
+        "entity_type": "Season",
+        "description": "The season of the World Sportscar Championship where Schumacher won the finale."
+      },
+      {
+        "local_id": "e6",
+        "name": "Autódromo Hermanos Rodríguez",
+        "entity_type": "Circuit",
+        "description": "The circuit where Schumacher won the season finale in 1990."
+      },
+      {
+        "local_id": "e7",
+        "name": "Autopolis",
+        "entity_type": "Circuit",
+        "description": "The circuit where Schumacher won the season finale in 1991."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e2",
+        "target_id": "e4",
+        "relationship_type": "RACED_IN",
+        "description": "The Sauber–Mercedes C11 raced in the 1990 World Sportscar Championship.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e5",
+        "relationship_type": "RACED_IN",
+        "description": "The Sauber–Mercedes-Benz C291 raced in the 1991 World Sportscar Championship.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 7,
+  "entities_accepted": 7,
+  "entities_rejected": 0,
+  "relationship_candidates": 6,
+  "relationships_accepted": 2,
+  "relationships_rejected": 4,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "FIELDED does not allow Driver -> Car"
+    },
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "FIELDED does not allow Driver -> Car"
+    },
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "ROUND_OF does not allow Circuit -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 5,
+      "reason": "ROUND_OF does not allow Circuit -> Season"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 2,
+      "action": "clear_redundant_season_year",
+      "detail": "RACED_IN year 1990 already named by Season 'e4'; from_year and to_year cleared"
+    },
+    {
+      "index": 3,
+      "action": "clear_redundant_season_year",
+      "detail": "RACED_IN year 1991 already named by Season 'e5'; from_year and to_year cleared"
+    }
+  ]
+}

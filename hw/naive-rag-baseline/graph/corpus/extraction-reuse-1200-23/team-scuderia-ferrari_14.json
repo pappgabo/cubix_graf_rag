@@ -1,0 +1,96 @@
+{
+  "chunk_id": "team-scuderia-ferrari#14",
+  "doc_id": "team-scuderia-ferrari",
+  "document_title": "Scuderia Ferrari",
+  "section": null,
+  "page": 4,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "a8faa2fe946255fa7867856b5168312355f8161943bc3b8982cec41ecf1f4644",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Scuderia Ferrari",
+        "entity_type": "Team",
+        "description": "An Italian Formula One racing team."
+      },
+      {
+        "local_id": "e2",
+        "name": "2019",
+        "entity_type": "Season",
+        "description": "The Formula One season in which Scuderia Ferrari entered as Scuderia Ferrari Mission Winnow."
+      },
+      {
+        "local_id": "e3",
+        "name": "2011",
+        "entity_type": "Season",
+        "description": "The Formula One season in which Ferrari removed the Marlboro section of its official team name."
+      },
+      {
+        "local_id": "e4",
+        "name": "2007 Chinese Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The last Grand Prix where Ferrari ran explicit tobacco sponsorship."
+      },
+      {
+        "local_id": "e5",
+        "name": "2018 Japanese Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The Grand Prix where Ferrari added Mission Winnow project logos to the car."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "ENTERED",
+        "description": "Scuderia Ferrari entered the 2019 season as Scuderia Ferrari Mission Winnow.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e3",
+        "relationship_type": "ENTERED",
+        "description": "Scuderia Ferrari removed the Marlboro section of its official team name in the 2011 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 5,
+  "entities_accepted": 5,
+  "entities_rejected": 0,
+  "relationship_candidates": 4,
+  "relationships_accepted": 2,
+  "relationships_rejected": 2,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "HELD_AT does not allow Team -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "HELD_AT does not allow Team -> GrandPrix"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 0,
+      "action": "clear_redundant_season_year",
+      "detail": "ENTERED year 2019 already named by Season 'e2'; from_year and to_year cleared"
+    },
+    {
+      "index": 1,
+      "action": "clear_redundant_season_year",
+      "detail": "ENTERED year 2011 already named by Season 'e3'; from_year and to_year cleared"
+    }
+  ]
+}

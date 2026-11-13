@@ -1,0 +1,155 @@
+{
+  "chunk_id": "team-williams-racing#55",
+  "doc_id": "team-williams-racing",
+  "document_title": "Williams Racing",
+  "section": "Williams Racing > 1997 season",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "77d009eda122b8c6f21c21a6a6aff60c4a17a02298014302658d147f49d43e3f",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Williams-Renault",
+        "entity_type": "Team",
+        "description": "The team for which Jacques Villeneuve and Heinz-Harald Frentzen raced in the 1997 season."
+      },
+      {
+        "local_id": "e2",
+        "name": "Heinz-Harald Frentzen",
+        "entity_type": "Driver",
+        "description": "A German driver who raced for Williams-Renault in the 1997 season."
+      },
+      {
+        "local_id": "e3",
+        "name": "Jacques Villeneuve",
+        "entity_type": "Driver",
+        "description": "A Canadian driver who raced for Williams-Renault in the 1997 season and won the Drivers' Championship."
+      },
+      {
+        "local_id": "e4",
+        "name": "1997",
+        "entity_type": "Season",
+        "description": "The Formula One season in which Williams-Renault competed."
+      },
+      {
+        "local_id": "e5",
+        "name": "San Marino Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The race where Heinz-Harald Frentzen won his only race with Williams."
+      },
+      {
+        "local_id": "e6",
+        "name": "British Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The race where Williams achieved the 100-race-win milestone."
+      },
+      {
+        "local_id": "e7",
+        "name": "Constructors' Championship",
+        "entity_type": "Title",
+        "description": "The championship title won by Williams in the 1997 season."
+      },
+      {
+        "local_id": "e8",
+        "name": "Drivers' Championship",
+        "entity_type": "Title",
+        "description": "The championship title won by Jacques Villeneuve in the 1997 season."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e4",
+        "relationship_type": "ENTERED",
+        "description": "Williams-Renault took part in the 1997 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e1",
+        "relationship_type": "DROVE_FOR",
+        "description": "Heinz-Harald Frentzen drove for Williams-Renault in the 1997 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e1",
+        "relationship_type": "DROVE_FOR",
+        "description": "Jacques Villeneuve drove for Williams-Renault in the 1997 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e4",
+        "relationship_type": "ROUND_OF",
+        "description": "The San Marino Grand Prix was a round of the 1997 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e6",
+        "target_id": "e4",
+        "relationship_type": "ROUND_OF",
+        "description": "The British Grand Prix was a round of the 1997 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e8",
+        "relationship_type": "WON",
+        "description": "Jacques Villeneuve won the Drivers' Championship in 1997.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e7",
+        "relationship_type": "WON",
+        "description": "Williams won the Constructors' Championship in 1997.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e7",
+        "target_id": "e4",
+        "relationship_type": "AWARDED_IN",
+        "description": "The Constructors' Championship title belongs to the 1997 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e8",
+        "target_id": "e4",
+        "relationship_type": "AWARDED_IN",
+        "description": "The Drivers' Championship title belongs to the 1997 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 8,
+  "entities_accepted": 8,
+  "entities_rejected": 0,
+  "relationship_candidates": 9,
+  "relationships_accepted": 9,
+  "relationships_rejected": 0,
+  "rejections": [],
+  "alignments": []
+}

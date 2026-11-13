@@ -1,0 +1,134 @@
+{
+  "chunk_id": "driver-charles-leclerc#51",
+  "doc_id": "driver-charles-leclerc",
+  "document_title": "Charles Leclerc",
+  "section": "Charles Leclerc > 2025–2026: Partnership with Hamilton",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "4fd2e2c8a74c537525d915219f7c28e98ab87822ff282cebeb261d9cc0746311",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Charles Leclerc",
+        "entity_type": "Driver",
+        "description": "A Formula One driver who finished fifth overall in the 2026 season."
+      },
+      {
+        "local_id": "e2",
+        "name": "Lewis Hamilton",
+        "entity_type": "Driver",
+        "description": "A Formula One driver who finished sixth overall in the 2026 season."
+      },
+      {
+        "local_id": "e3",
+        "name": "Scuderia Ferrari",
+        "entity_type": "Team",
+        "description": "A Formula One team that Leclerc and Hamilton drove for in the 2026 season."
+      },
+      {
+        "local_id": "e4",
+        "name": "2026",
+        "entity_type": "Season",
+        "description": "The Formula One season in which Leclerc and Hamilton competed."
+      },
+      {
+        "local_id": "e5",
+        "name": "São Paulo Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Grand Prix where Leclerc finished fifth in the sprint."
+      },
+      {
+        "local_id": "e6",
+        "name": "Las Vegas Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Grand Prix where Leclerc finished fourth."
+      },
+      {
+        "local_id": "e7",
+        "name": "Qatar Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Grand Prix where Leclerc finished eighth."
+      },
+      {
+        "local_id": "e8",
+        "name": "Abu Dhabi Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Grand Prix where Leclerc finished fourth."
+      },
+      {
+        "local_id": "e9",
+        "name": "SF-25",
+        "entity_type": "Car",
+        "description": "The car model that Ferrari abandoned early in the 2026 season."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e3",
+        "relationship_type": "DROVE_FOR",
+        "description": "Leclerc drove for Ferrari in the 2026 season.",
+        "from_year": 2026,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e3",
+        "relationship_type": "DROVE_FOR",
+        "description": "Hamilton drove for Ferrari in the 2026 season.",
+        "from_year": 2026,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e4",
+        "relationship_type": "ROUND_OF",
+        "description": "The São Paulo Grand Prix is a round of the 2026 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e6",
+        "target_id": "e4",
+        "relationship_type": "ROUND_OF",
+        "description": "The Las Vegas Grand Prix is a round of the 2026 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e7",
+        "target_id": "e4",
+        "relationship_type": "ROUND_OF",
+        "description": "The Qatar Grand Prix is a round of the 2026 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e8",
+        "target_id": "e4",
+        "relationship_type": "ROUND_OF",
+        "description": "The Abu Dhabi Grand Prix is a round of the 2026 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 9,
+  "entities_accepted": 9,
+  "entities_rejected": 0,
+  "relationship_candidates": 6,
+  "relationships_accepted": 6,
+  "relationships_rejected": 0,
+  "rejections": [],
+  "alignments": []
+}

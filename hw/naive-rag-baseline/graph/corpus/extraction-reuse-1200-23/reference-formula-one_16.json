@@ -1,0 +1,98 @@
+{
+  "chunk_id": "reference-formula-one#16",
+  "doc_id": "reference-formula-one",
+  "document_title": "Formula One",
+  "section": "Formula One > Manufacturers' decline and return of the privateers",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "2f7734dcf524e1cc115ce9eef7fc0a00876aef644d65d7d6f267af4c83e5660a",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "McLaren",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that announced it was to reacquire shares from Mercedes-Benz."
+      },
+      {
+        "local_id": "e2",
+        "name": "Mercedes-Benz",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that re-entered the series after purchasing Brawn GP."
+      },
+      {
+        "local_id": "e3",
+        "name": "Brawn GP",
+        "entity_type": "Team",
+        "description": "A Formula 1 team purchased by Mercedes-Benz."
+      },
+      {
+        "local_id": "e4",
+        "name": "Williams",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that did not join the breakaway championship series."
+      },
+      {
+        "local_id": "e5",
+        "name": "Force India",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that did not join the breakaway championship series."
+      },
+      {
+        "local_id": "e6",
+        "name": "2009",
+        "entity_type": "Season",
+        "description": "The season during which the FIA–FOTA dispute occurred."
+      },
+      {
+        "local_id": "e7",
+        "name": "2010",
+        "entity_type": "Season",
+        "description": "The season during which Mercedes-Benz re-entered the series."
+      }
+    ],
+    "relationships": []
+  },
+  "entity_candidates": 7,
+  "entities_accepted": 7,
+  "entities_rejected": 0,
+  "relationship_candidates": 6,
+  "relationships_accepted": 0,
+  "relationships_rejected": 6,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "DROVE_FOR does not allow Team -> Team"
+    },
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "DROVE_FOR does not allow Team -> Team"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "ENTERED does not allow Season -> Team"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "ENTERED does not allow Season -> Team"
+    },
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "ENTERED does not allow Season -> Team"
+    },
+    {
+      "element": "relationship",
+      "index": 5,
+      "reason": "ENTERED does not allow Season -> Team"
+    }
+  ],
+  "alignments": []
+}

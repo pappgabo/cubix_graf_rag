@@ -1,0 +1,177 @@
+{
+  "chunk_id": "driver-max-verstappen#1",
+  "doc_id": "driver-max-verstappen",
+  "document_title": "Max Verstappen",
+  "section": null,
+  "page": 1,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "8a663c5bd9aff25bebc9853e42ba0bd5a6c2e597a63509737536aa4237761130",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Max Verstappen",
+        "entity_type": "Driver",
+        "description": "A Formula One driver from the Netherlands."
+      },
+      {
+        "local_id": "e2",
+        "name": "Red Bull Racing",
+        "entity_type": "Team",
+        "description": "A Formula One team that Verstappen drove for."
+      },
+      {
+        "local_id": "e3",
+        "name": "2021",
+        "entity_type": "Season",
+        "description": "The season in which Verstappen won his maiden title."
+      },
+      {
+        "local_id": "e4",
+        "name": "2022",
+        "entity_type": "Season",
+        "description": "The season in which Verstappen won his second championship."
+      },
+      {
+        "local_id": "e5",
+        "name": "2023",
+        "entity_type": "Season",
+        "description": "The season in which Verstappen won his third championship."
+      },
+      {
+        "local_id": "e6",
+        "name": "2024",
+        "entity_type": "Season",
+        "description": "The season in which Verstappen won his fourth consecutive title."
+      },
+      {
+        "local_id": "e7",
+        "name": "2025",
+        "entity_type": "Season",
+        "description": "The season in which Verstappen finished runner-up."
+      },
+      {
+        "local_id": "e8",
+        "name": "Spanish Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The Grand Prix where Verstappen won on debut for Red Bull."
+      },
+      {
+        "local_id": "e9",
+        "name": "Honda",
+        "entity_type": "PowerUnit",
+        "description": "The power unit used by Verstappen in the 2019 and 2020 seasons."
+      },
+      {
+        "local_id": "e10",
+        "name": "Lando Norris",
+        "entity_type": "Driver",
+        "description": "A driver who was in a title battle with Verstappen in 2025."
+      },
+      {
+        "local_id": "e11",
+        "name": "Oscar Piastri",
+        "entity_type": "Driver",
+        "description": "A driver who was in a title battle with Verstappen in 2025."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Max Verstappen at Spanish Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Verstappen won the Spanish Grand Prix on debut for Red Bull."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Verstappen drove for Red Bull Racing.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Verstappen won the Spanish Grand Prix on debut for Red Bull.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e8",
+        "relationship_type": "AT_RACE",
+        "description": "Verstappen won the Spanish Grand Prix on debut for Red Bull.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 11,
+  "entities_accepted": 12,
+  "entities_rejected": 0,
+  "relationship_candidates": 11,
+  "relationships_accepted": 3,
+  "relationships_rejected": 9,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "WON does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "AWARDED_IN does not allow Season -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "WON does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "WON does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 5,
+      "reason": "WON does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 6,
+      "reason": "ACHIEVED does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 9,
+      "reason": "POWERED_BY does not allow PowerUnit -> Driver"
+    },
+    {
+      "element": "relationship",
+      "index": 10,
+      "reason": "TEAMMATE_OF does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 11,
+      "reason": "TEAMMATE_OF does not allow Driver -> Season"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 7,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e8; description kept"
+    }
+  ]
+}

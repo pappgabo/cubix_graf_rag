@@ -1,0 +1,247 @@
+{
+  "chunk_id": "season-2012-formula-one-world-championship#51",
+  "doc_id": "season-2012-formula-one-world-championship",
+  "document_title": "2012 Formula One World Championship",
+  "section": "Race summaries > Round 5 – Spain Circuit de Barcelona-Catalunya",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "908cca45cfc738b408cdfcc038bd1b28244915002ba6c6de3781937d94bb9d74",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Pastor Maldonado",
+        "entity_type": "Driver",
+        "description": "First Venezuelan driver to win a Formula One Grand Prix."
+      },
+      {
+        "local_id": "e2",
+        "name": "Fernando Alonso",
+        "entity_type": "Driver",
+        "description": "Driver for Ferrari."
+      },
+      {
+        "local_id": "e3",
+        "name": "Kimi Räikkönen",
+        "entity_type": "Driver",
+        "description": "Driver who attempted an ambitious strategy."
+      },
+      {
+        "local_id": "e4",
+        "name": "Williams",
+        "entity_type": "Team",
+        "description": "Team that achieved their first win in one hundred and thirty Grand Prix starts."
+      },
+      {
+        "local_id": "e5",
+        "name": "2012",
+        "entity_type": "Season",
+        "description": "The season of the 2012 Formula One World Championship."
+      },
+      {
+        "local_id": "e6",
+        "name": "Circuit de Barcelona-Catalunya",
+        "entity_type": "Circuit",
+        "description": "The circuit where the race took place."
+      },
+      {
+        "local_id": "e7",
+        "name": "Grand Prix of Spain",
+        "entity_type": "GrandPrix",
+        "description": "The specific Grand Prix event."
+      },
+      {
+        "local_id": "e8",
+        "name": "Juan Pablo Montoya",
+        "entity_type": "Driver",
+        "description": "Previous winner for Williams at the 2004 Brazilian Grand Prix."
+      },
+      {
+        "local_id": "e9",
+        "name": "Lewis Hamilton",
+        "entity_type": "Driver",
+        "description": "Finished eighth after starting twenty-fourth."
+      },
+      {
+        "local_id": "e10",
+        "name": "Sebastian Vettel",
+        "entity_type": "Driver",
+        "description": "Maintained championship lead despite a drive-through penalty."
+      },
+      {
+        "local_id": "e11",
+        "name": "Nico Rosberg",
+        "entity_type": "Driver",
+        "description": "Finished behind Sebastian Vettel."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Pastor Maldonado at Grand Prix of Spain",
+        "entity_type": "RaceResult",
+        "description": "Maldonado won the race."
+      },
+      {
+        "local_id": "rr2",
+        "name": "Lewis Hamilton at Grand Prix of Spain",
+        "entity_type": "RaceResult",
+        "description": "Hamilton finished eighth in the Grand Prix of Spain."
+      },
+      {
+        "local_id": "rr3",
+        "name": "Sebastian Vettel at Grand Prix of Spain",
+        "entity_type": "RaceResult",
+        "description": "Vettel made a late move on Rosberg for sixth place in the Grand Prix of Spain."
+      },
+      {
+        "local_id": "rr4",
+        "name": "Nico Rosberg at Grand Prix of Spain",
+        "entity_type": "RaceResult",
+        "description": "Rosberg finished behind Vettel in the Grand Prix of Spain."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Maldonado won the race.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e7",
+        "relationship_type": "AT_RACE",
+        "description": "Maldonado won the race.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e7",
+        "target_id": "e5",
+        "relationship_type": "ROUND_OF",
+        "description": "The Grand Prix of Spain is a round of the 2012 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e7",
+        "target_id": "e6",
+        "relationship_type": "HELD_AT",
+        "description": "The Grand Prix of Spain was held at Circuit de Barcelona-Catalunya.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e5",
+        "relationship_type": "ENTERED",
+        "description": "Williams entered the 2012 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e9",
+        "target_id": "rr2",
+        "relationship_type": "ACHIEVED",
+        "description": "Hamilton finished eighth in the Grand Prix of Spain.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr2",
+        "target_id": "e7",
+        "relationship_type": "AT_RACE",
+        "description": "Hamilton finished eighth in the Grand Prix of Spain.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e10",
+        "target_id": "rr3",
+        "relationship_type": "ACHIEVED",
+        "description": "Vettel made a late move on Rosberg for sixth place in the Grand Prix of Spain.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr3",
+        "target_id": "e7",
+        "relationship_type": "AT_RACE",
+        "description": "Vettel made a late move on Rosberg for sixth place in the Grand Prix of Spain.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e11",
+        "target_id": "rr4",
+        "relationship_type": "ACHIEVED",
+        "description": "Rosberg finished behind Vettel in the Grand Prix of Spain.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr4",
+        "target_id": "e7",
+        "relationship_type": "AT_RACE",
+        "description": "Rosberg finished behind Vettel in the Grand Prix of Spain.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 11,
+  "entities_accepted": 15,
+  "entities_rejected": 0,
+  "relationship_candidates": 9,
+  "relationships_accepted": 11,
+  "relationships_rejected": 2,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "FOR_TEAM does not allow Driver -> Team"
+    },
+    {
+      "element": "relationship",
+      "index": 6,
+      "reason": "FIELDED does not allow Driver -> Team"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 0,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e7; description kept"
+    },
+    {
+      "index": 6,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr2 -AT_RACE-> e7; description kept"
+    },
+    {
+      "index": 7,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr3 -AT_RACE-> e7; description kept"
+    },
+    {
+      "index": 8,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr4 -AT_RACE-> e7; description kept"
+    }
+  ]
+}

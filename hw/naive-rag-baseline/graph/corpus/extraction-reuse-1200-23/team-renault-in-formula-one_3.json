@@ -1,0 +1,200 @@
+{
+  "chunk_id": "team-renault-in-formula-one#3",
+  "doc_id": "team-renault-in-formula-one",
+  "document_title": "Renault in Formula One",
+  "section": "Constructor > Équipe Renault (1977–1985) > 1977–1978: Laying a foundation for turbo revolution",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "75e87efef84a5dd158f48ec86b6dead57473437cadf6bb9e33d81324e0e46b26",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Équipe Renault Elf",
+        "entity_type": "Team",
+        "description": "The first name under which Renault entered Formula One."
+      },
+      {
+        "local_id": "e2",
+        "name": "Jabouille",
+        "entity_type": "Driver",
+        "description": "A driver for Équipe Renault Elf."
+      },
+      {
+        "local_id": "e3",
+        "name": "1977",
+        "entity_type": "Season",
+        "description": "The season in which Équipe Renault Elf entered Formula One."
+      },
+      {
+        "local_id": "e4",
+        "name": "French Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The first race the team entered."
+      },
+      {
+        "local_id": "e5",
+        "name": "British Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The race where the team's début occurred."
+      },
+      {
+        "local_id": "e6",
+        "name": "Dutch Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The race where Jabouille qualified tenth."
+      },
+      {
+        "local_id": "e7",
+        "name": "McLaren",
+        "entity_type": "Team",
+        "description": "The team of pole sitter James Hunt."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Jabouille at French Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Jabouille achieved a result in the French Grand Prix."
+      },
+      {
+        "local_id": "rr2",
+        "name": "Jabouille at British Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Jabouille achieved a result in the British Grand Prix."
+      },
+      {
+        "local_id": "rr3",
+        "name": "Jabouille at Dutch Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Jabouille achieved a result in the Dutch Grand Prix."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e3",
+        "relationship_type": "ENTERED",
+        "description": "Équipe Renault Elf entered the 1977 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e1",
+        "relationship_type": "DROVE_FOR",
+        "description": "Jabouille drove for Équipe Renault Elf.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Jabouille achieved a result in the French Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e4",
+        "relationship_type": "AT_RACE",
+        "description": "Jabouille achieved a result in the French Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "rr2",
+        "relationship_type": "ACHIEVED",
+        "description": "Jabouille achieved a result in the British Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr2",
+        "target_id": "e5",
+        "relationship_type": "AT_RACE",
+        "description": "Jabouille achieved a result in the British Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "rr3",
+        "relationship_type": "ACHIEVED",
+        "description": "Jabouille achieved a result in the Dutch Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr3",
+        "target_id": "e6",
+        "relationship_type": "AT_RACE",
+        "description": "Jabouille achieved a result in the Dutch Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 7,
+  "entities_accepted": 10,
+  "entities_rejected": 0,
+  "relationship_candidates": 9,
+  "relationships_accepted": 8,
+  "relationships_rejected": 4,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "ROUND_OF does not allow Team -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "ROUND_OF does not allow Team -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "ROUND_OF does not allow Team -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 11,
+      "reason": "FOR_TEAM does not allow Driver -> Team"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 0,
+      "action": "clear_redundant_season_year",
+      "detail": "ENTERED year 1977 already named by Season 'e3'; from_year and to_year cleared"
+    },
+    {
+      "index": 5,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e4; description kept"
+    },
+    {
+      "index": 6,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr2 -AT_RACE-> e5; description kept"
+    },
+    {
+      "index": 7,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr3 -AT_RACE-> e6; description kept"
+    }
+  ]
+}

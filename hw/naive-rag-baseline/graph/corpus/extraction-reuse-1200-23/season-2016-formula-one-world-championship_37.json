@@ -1,0 +1,182 @@
+{
+  "chunk_id": "season-2016-formula-one-world-championship#37",
+  "doc_id": "season-2016-formula-one-world-championship",
+  "document_title": "2016 Formula One World Championship",
+  "section": "Return to Asia",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "2e776116ef02fba744858ee07a678b115978b76663d7e8e55cc556e5a2f97635",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Nico Rosberg",
+        "entity_type": "Driver",
+        "description": "Rosberg reclaimed the championship lead in Singapore, qualifying on pole and winning the race."
+      },
+      {
+        "local_id": "e2",
+        "name": "Lewis Hamilton",
+        "entity_type": "Driver",
+        "description": "Hamilton was forced to settle for third after struggling with mechanical issues and driving errors."
+      },
+      {
+        "local_id": "e3",
+        "name": "Kimi Räikkönen",
+        "entity_type": "Driver",
+        "description": "Hamilton passed Räikkönen for third during the race."
+      },
+      {
+        "local_id": "e4",
+        "name": "Daniel Ricciardo",
+        "entity_type": "Driver",
+        "description": "Ricciardo finished second in the race, making late efforts to catch Rosberg."
+      },
+      {
+        "local_id": "e5",
+        "name": "Mercedes-AMG Petronas Formula One Team",
+        "entity_type": "Team",
+        "description": "Mercedes made a late pit stop during the race."
+      },
+      {
+        "local_id": "e6",
+        "name": "Red Bull Racing",
+        "entity_type": "Team",
+        "description": "Red Bull Racing decided to pit Daniel Ricciardo from second."
+      },
+      {
+        "local_id": "e7",
+        "name": "2016",
+        "entity_type": "Season",
+        "description": "The season in which the events took place."
+      },
+      {
+        "local_id": "e8",
+        "name": "Singapore Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The race where Rosberg reclaimed the championship lead."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Nico Rosberg at Singapore Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Rosberg won the Singapore Grand Prix."
+      },
+      {
+        "local_id": "rr2",
+        "name": "Lewis Hamilton at Singapore Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Hamilton finished third in the Singapore Grand Prix."
+      },
+      {
+        "local_id": "rr3",
+        "name": "Daniel Ricciardo at Singapore Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Ricciardo finished second in the Singapore Grand Prix."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Rosberg won the Singapore Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e8",
+        "relationship_type": "AT_RACE",
+        "description": "Rosberg won the Singapore Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "rr2",
+        "relationship_type": "ACHIEVED",
+        "description": "Hamilton finished third in the Singapore Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr2",
+        "target_id": "e8",
+        "relationship_type": "AT_RACE",
+        "description": "Hamilton finished third in the Singapore Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "rr3",
+        "relationship_type": "ACHIEVED",
+        "description": "Ricciardo finished second in the Singapore Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr3",
+        "target_id": "e8",
+        "relationship_type": "AT_RACE",
+        "description": "Ricciardo finished second in the Singapore Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e8",
+        "target_id": "e7",
+        "relationship_type": "ROUND_OF",
+        "description": "The Singapore Grand Prix is a round of the 2016 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 8,
+  "entities_accepted": 11,
+  "entities_rejected": 0,
+  "relationship_candidates": 6,
+  "relationships_accepted": 7,
+  "relationships_rejected": 2,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 6,
+      "reason": "FOR_TEAM does not allow Team -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 7,
+      "reason": "FOR_TEAM does not allow Team -> GrandPrix"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 0,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e8; description kept"
+    },
+    {
+      "index": 1,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr2 -AT_RACE-> e8; description kept"
+    },
+    {
+      "index": 2,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr3 -AT_RACE-> e8; description kept"
+    }
+  ]
+}

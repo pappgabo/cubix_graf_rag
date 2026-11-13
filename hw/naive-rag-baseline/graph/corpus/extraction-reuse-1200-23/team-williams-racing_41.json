@@ -1,0 +1,92 @@
+{
+  "chunk_id": "team-williams-racing#41",
+  "doc_id": "team-williams-racing",
+  "document_title": "Williams Racing",
+  "section": "Williams Racing > 1994 season",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "1dbadb10dc94691b7733737be51f93e8b18bf581ca3b3ad823c0ef061ecfa04a",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Ayrton Senna",
+        "entity_type": "Driver",
+        "description": "Senna was a natural and presumptive pre-season title favourite for the 1994 season."
+      },
+      {
+        "local_id": "e2",
+        "name": "Damon Hill",
+        "entity_type": "Driver",
+        "description": "Damon Hill was intended to play the supporting role for Senna in the 1994 season."
+      },
+      {
+        "local_id": "e3",
+        "name": "Williams",
+        "entity_type": "Team",
+        "description": "Williams Racing had won the previous two World Championships with vastly superior cars."
+      },
+      {
+        "local_id": "e4",
+        "name": "1994",
+        "entity_type": "Season",
+        "description": "The season in which Ayrton Senna was a presumptive title favourite."
+      },
+      {
+        "local_id": "e5",
+        "name": "Portuguese Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The Grand Prix during which a series of announcements were made regarding the team."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e3",
+        "relationship_type": "DROVE_FOR",
+        "description": "Senna took Prost's place as the lead driver for Williams.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e3",
+        "relationship_type": "DROVE_FOR",
+        "description": "Damon Hill was intended to play the supporting role for Williams.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e4",
+        "relationship_type": "ENTERED",
+        "description": "Williams Racing entered the 1994 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e4",
+        "relationship_type": "ROUND_OF",
+        "description": "The Portuguese Grand Prix is a round of the 1994 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 5,
+  "entities_accepted": 5,
+  "entities_rejected": 0,
+  "relationship_candidates": 4,
+  "relationships_accepted": 4,
+  "relationships_rejected": 0,
+  "rejections": [],
+  "alignments": []
+}

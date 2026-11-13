@@ -1,0 +1,117 @@
+{
+  "chunk_id": "driver-valtteri-bottas#5",
+  "doc_id": "driver-valtteri-bottas",
+  "document_title": "Valtteri Bottas",
+  "section": "Junior racing career > Formula Three",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "4768f1e7dc6ba0314692bfc871acc66d89067f20bb8767f0c50cfa49565ba02b",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Valtteri Bottas",
+        "entity_type": "Driver",
+        "description": "A Finnish racing driver who competed in Formula Three Euroseries and GP3 Series."
+      },
+      {
+        "local_id": "e2",
+        "name": "ART Grand Prix",
+        "entity_type": "Team",
+        "description": "A racing team that competed in the Formula Three Euroseries."
+      },
+      {
+        "local_id": "e3",
+        "name": "2009",
+        "entity_type": "Season",
+        "description": "The season in which Bottas competed in the Formula Three Euroseries."
+      },
+      {
+        "local_id": "e4",
+        "name": "2009 Masters of Formula 3",
+        "entity_type": "GrandPrix",
+        "description": "A prestigious race in which Bottas won in 2009."
+      },
+      {
+        "local_id": "e5",
+        "name": "2010 Masters of Formula 3",
+        "entity_type": "GrandPrix",
+        "description": "A prestigious race in which Bottas won in 2010."
+      },
+      {
+        "local_id": "e6",
+        "name": "GP3 Series",
+        "entity_type": "Season",
+        "description": "A racing series in which Bottas competed in 2011."
+      },
+      {
+        "local_id": "e7",
+        "name": "James Calado",
+        "entity_type": "Driver",
+        "description": "A British racing driver who was Bottas's teammate in the GP3 Series."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Bottas competed for ART Grand Prix in the Formula Three Euroseries.",
+        "from_year": 2009,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e3",
+        "relationship_type": "ENTERED",
+        "description": "ART Grand Prix took part in the 2009 Formula Three Euroseries season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e7",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Bottas was teammates with James Calado in the GP3 Series.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 7,
+  "entities_accepted": 7,
+  "entities_rejected": 0,
+  "relationship_candidates": 6,
+  "relationships_accepted": 3,
+  "relationships_rejected": 3,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "WON does not allow Driver -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "WON does not allow Driver -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "DROVE_FOR does not allow Driver -> Season"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 1,
+      "action": "clear_redundant_season_year",
+      "detail": "ENTERED year 2009 already named by Season 'e3'; from_year and to_year cleared"
+    }
+  ]
+}

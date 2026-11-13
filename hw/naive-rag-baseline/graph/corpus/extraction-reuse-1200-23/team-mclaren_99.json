@@ -1,0 +1,95 @@
+{
+  "chunk_id": "team-mclaren#99",
+  "doc_id": "team-mclaren",
+  "document_title": "McLaren",
+  "section": "Ownership and management",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "df7fe114cdb77db0109c83ae4fa4edecd211de144f26e55feaa2f3a1f9bb46f8",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "McLaren",
+        "entity_type": "Team",
+        "description": "A Formula 1 team."
+      },
+      {
+        "local_id": "e2",
+        "name": "Ron Dennis",
+        "entity_type": "Driver",
+        "description": "Former CEO and team principal of McLaren."
+      },
+      {
+        "local_id": "e3",
+        "name": "Martin Whitmarsh",
+        "entity_type": "Driver",
+        "description": "Former team principal of McLaren."
+      },
+      {
+        "local_id": "e4",
+        "name": "Mohammed bin Ojjeh",
+        "entity_type": "Driver",
+        "description": "Former shareholder of McLaren."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e2",
+        "target_id": "e1",
+        "relationship_type": "DROVE_FOR",
+        "description": "Ron Dennis was CEO and team principal of McLaren.",
+        "from_year": null,
+        "to_year": 2009,
+        "role": "CEO"
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e1",
+        "relationship_type": "DROVE_FOR",
+        "description": "Martin Whitmarsh became team principal of McLaren after Ron Dennis.",
+        "from_year": 2009,
+        "to_year": 2014,
+        "role": "team principal"
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e1",
+        "relationship_type": "DROVE_FOR",
+        "description": "Ron Dennis retook the role of team principal of McLaren after the 2013 season.",
+        "from_year": 2014,
+        "to_year": null,
+        "role": "team principal"
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e1",
+        "relationship_type": "DROVE_FOR",
+        "description": "Ron Dennis was forced out of his role as CEO of McLaren in 2016.",
+        "from_year": 2016,
+        "to_year": null,
+        "role": "CEO"
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e1",
+        "relationship_type": "DROVE_FOR",
+        "description": "Mohammed bin Ojjeh had a controlling interest in McLaren and had a deteriorating relationship with Ron Dennis.",
+        "from_year": null,
+        "to_year": 2016,
+        "role": "shareholder"
+      }
+    ]
+  },
+  "entity_candidates": 4,
+  "entities_accepted": 4,
+  "entities_rejected": 0,
+  "relationship_candidates": 5,
+  "relationships_accepted": 5,
+  "relationships_rejected": 0,
+  "rejections": [],
+  "alignments": []
+}

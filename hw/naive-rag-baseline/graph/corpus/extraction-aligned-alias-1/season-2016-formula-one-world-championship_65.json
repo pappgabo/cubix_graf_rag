@@ -1,0 +1,93 @@
+{
+  "chunk_id": "season-2016-formula-one-world-championship#65",
+  "doc_id": "season-2016-formula-one-world-championship",
+  "document_title": "2016 Formula One World Championship",
+  "section": "Opening rounds",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/2016_Formula_One_World_Championship",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "fc52cb831db370c8cc662d1013ece7ddf124528b752cde0705a576df6fef81ad",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "RACED_IN does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "RACED_IN does not allow Driver -> Season"
+    }
+  ],
+  "alignments": [],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Sebastian Vettel",
+        "entity_type": "Driver",
+        "description": "The Ferrari driver who retired before the race started due to engine failure."
+      },
+      {
+        "local_id": "e2",
+        "name": "Jolyon Palmer",
+        "entity_type": "Driver",
+        "description": "The Renault driver who retired before the race started due to hydraulics failure."
+      },
+      {
+        "local_id": "e3",
+        "name": "Valtteri Bottas",
+        "entity_type": "Driver",
+        "description": "The driver who was penalised after a first-lap collision with Hamilton."
+      },
+      {
+        "local_id": "e4",
+        "name": "Scuderia Ferrari",
+        "entity_type": "Team",
+        "description": "The team of Sebastian Vettel."
+      },
+      {
+        "local_id": "e5",
+        "name": "Renault",
+        "entity_type": "Team",
+        "description": "The team of Jolyon Palmer."
+      },
+      {
+        "local_id": "e6",
+        "name": "Lewis Hamilton",
+        "entity_type": "Driver",
+        "description": "The driver involved in a first-lap collision with Valtteri Bottas."
+      },
+      {
+        "local_id": "e7",
+        "name": "2016",
+        "entity_type": "Season",
+        "description": "The championship year of the events described."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e4",
+        "relationship_type": "DROVE_FOR",
+        "description": "Sebastian Vettel drove for Ferrari.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e5",
+        "relationship_type": "DROVE_FOR",
+        "description": "Jolyon Palmer drove for Renault.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

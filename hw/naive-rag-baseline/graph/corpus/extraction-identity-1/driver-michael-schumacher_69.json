@@ -1,0 +1,61 @@
+{
+  "chunk_id": "driver-michael-schumacher#69",
+  "doc_id": "driver-michael-schumacher",
+  "document_title": "Michael Schumacher",
+  "section": null,
+  "page": 6,
+  "source": "https://en.wikipedia.org/wiki/Michael_Schumacher",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "f757b3cece91ce586af69d3511f85879b93cbc0d10e7dd3ee016c3594bb5b77f",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "entity_candidates": 4,
+  "entities_accepted": 3,
+  "entities_rejected": 1,
+  "relationship_candidates": 2,
+  "relationships_accepted": 0,
+  "relationships_rejected": 2,
+  "rejections": [
+    {
+      "element": "entity",
+      "index": 3,
+      "reason": "name 'null' is a placeholder, not an entity identity"
+    },
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "WON: target_id 'e4' rejected: name 'null' is a placeholder, not an entity identity"
+    },
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "ROUND_OF: target_id 'e4' rejected: name 'null' is a placeholder, not an entity identity"
+    }
+  ],
+  "alignments": [],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Michael Schumacher",
+        "entity_type": "Driver",
+        "description": "Schumacher won the first three races of the season and five of the first eight."
+      },
+      {
+        "local_id": "e2",
+        "name": "Mika Häkkinen",
+        "entity_type": "Driver",
+        "description": "Häkkinen closed the gap in the standings."
+      },
+      {
+        "local_id": "e3",
+        "name": "German Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "Schumacher qualified second at the German Grand Prix."
+      }
+    ],
+    "relationships": []
+  }
+}

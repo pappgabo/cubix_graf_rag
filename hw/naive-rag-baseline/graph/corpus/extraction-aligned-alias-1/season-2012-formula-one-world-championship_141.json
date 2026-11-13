@@ -1,0 +1,114 @@
+{
+  "chunk_id": "season-2012-formula-one-world-championship#141",
+  "doc_id": "season-2012-formula-one-world-championship",
+  "document_title": "2012 Formula One World Championship",
+  "section": "Race summaries > Round 10 – Germany Hockenheimring",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/2012_Formula_One_World_Championship",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "d6ed632d2127076e95c9516c923e2da2a3977cb4393d79a04c351cb670564f9d",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "rejections": [],
+  "alignments": [
+    {
+      "index": 0,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e4; description kept"
+    },
+    {
+      "index": 1,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr2 -AT_RACE-> e4; description kept"
+    }
+  ],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Kimi Räikkönen",
+        "entity_type": "Driver",
+        "description": "."
+      },
+      {
+        "local_id": "e2",
+        "name": "Kamui Kobayashi",
+        "entity_type": "Driver",
+        "description": "classified a then season-best fourth."
+      },
+      {
+        "local_id": "e3",
+        "name": "2012",
+        "entity_type": "Season",
+        "description": "2012 Formula One World Championship."
+      },
+      {
+        "local_id": "e4",
+        "name": "Germany Hockenheimring",
+        "entity_type": "GrandPrix",
+        "description": "Round 10 of the 2012 Formula One World Championship."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Kimi Räikkönen at Germany Hockenheimring",
+        "entity_type": "RaceResult",
+        "description": "Kimi Räikkönen inherited third place in the race."
+      },
+      {
+        "local_id": "rr2",
+        "name": "Kamui Kobayashi at Germany Hockenheimring",
+        "entity_type": "RaceResult",
+        "description": "Kamui Kobayashi was classified a then season-best fourth in the race."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Kimi Räikkönen inherited third place in the race.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e4",
+        "relationship_type": "AT_RACE",
+        "description": "Kimi Räikkönen inherited third place in the race.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "rr2",
+        "relationship_type": "ACHIEVED",
+        "description": "Kamui Kobayashi was classified a then season-best fourth in the race.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr2",
+        "target_id": "e4",
+        "relationship_type": "AT_RACE",
+        "description": "Kamui Kobayashi was classified a then season-best fourth in the race.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e3",
+        "relationship_type": "ROUND_OF",
+        "description": "Germany Hockenheimring is a round of the 2012 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

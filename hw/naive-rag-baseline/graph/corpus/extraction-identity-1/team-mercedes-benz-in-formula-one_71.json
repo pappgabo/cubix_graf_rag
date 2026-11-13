@@ -1,0 +1,105 @@
+{
+  "chunk_id": "team-mercedes-benz-in-formula-one#71",
+  "doc_id": "team-mercedes-benz-in-formula-one",
+  "document_title": "Mercedes-Benz in Formula One",
+  "section": "Mercedes-Benz in Formula One > Returning to championship contention (2026–present)",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/Mercedes-Benz_in_Formula_One",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "974207cdb6f4430cd226c425f0ef76b5fd8ec404ee2111beffc2adce3a2f4285",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "entity_candidates": 3,
+  "entities_accepted": 5,
+  "entities_rejected": 0,
+  "relationship_candidates": 2,
+  "relationships_accepted": 4,
+  "relationships_rejected": 0,
+  "rejections": [],
+  "alignments": [
+    {
+      "index": 0,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e2; description kept"
+    },
+    {
+      "index": 1,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr2 -AT_RACE-> e3; description kept"
+    }
+  ],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Antonelli",
+        "entity_type": "Driver",
+        "description": "The youngest driver in F1 history to lead the World Championship after his victory in the Japanese Grand Prix."
+      },
+      {
+        "local_id": "e2",
+        "name": "Japanese Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A race where Antonelli became the youngest driver in F1 history to lead the World Championship."
+      },
+      {
+        "local_id": "e3",
+        "name": "Miami Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A race where Antonelli became the first driver in Formula One history to convert his first three consecutive pole positions into wins."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Antonelli at Japanese Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Antonelli recorded a result in the Japanese Grand Prix."
+      },
+      {
+        "local_id": "rr2",
+        "name": "Antonelli at Miami Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Antonelli recorded a result in the Miami Grand Prix."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Antonelli recorded a result in the Japanese Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e2",
+        "relationship_type": "AT_RACE",
+        "description": "Antonelli recorded a result in the Japanese Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr2",
+        "relationship_type": "ACHIEVED",
+        "description": "Antonelli recorded a result in the Miami Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr2",
+        "target_id": "e3",
+        "relationship_type": "AT_RACE",
+        "description": "Antonelli recorded a result in the Miami Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

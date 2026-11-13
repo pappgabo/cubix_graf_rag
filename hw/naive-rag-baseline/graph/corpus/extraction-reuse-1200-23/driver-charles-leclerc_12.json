@@ -1,0 +1,69 @@
+{
+  "chunk_id": "driver-charles-leclerc#12",
+  "doc_id": "driver-charles-leclerc",
+  "document_title": "Charles Leclerc",
+  "section": "Charles Leclerc > GP3 Series (2016)",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "05df601c6002ae5174ae846feef008ed9932068aa41bf5230f6c3b90586dfa60",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Charles Leclerc",
+        "entity_type": "Driver",
+        "description": "A driver who participated in the GP3 Series in 2016."
+      },
+      {
+        "local_id": "e2",
+        "name": "ART Grand Prix",
+        "entity_type": "Team",
+        "description": "The team Charles Leclerc signed with for the 2016 GP3 Series."
+      },
+      {
+        "local_id": "e3",
+        "name": "GP3 Series",
+        "entity_type": "Season",
+        "description": "The championship season in which Charles Leclerc competed in 2016."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Charles Leclerc drove for ART Grand Prix in the 2016 GP3 Series.",
+        "from_year": 2016,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 3,
+  "entities_accepted": 3,
+  "entities_rejected": 0,
+  "relationship_candidates": 4,
+  "relationships_accepted": 1,
+  "relationships_rejected": 3,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "ENTERED is not temporal; from_year=2016, to_year=None, role=None cannot be stored without dropping them"
+    },
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "FIELDED does not allow Team -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "RACED_IN does not allow Driver -> Season"
+    }
+  ],
+  "alignments": []
+}

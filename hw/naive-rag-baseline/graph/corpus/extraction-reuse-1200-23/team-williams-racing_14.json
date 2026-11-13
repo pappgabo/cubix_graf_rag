@@ -1,0 +1,139 @@
+{
+  "chunk_id": "team-williams-racing#14",
+  "doc_id": "team-williams-racing",
+  "document_title": "Williams Racing",
+  "section": "Williams Racing > 1984 season",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "45f6ea25f954dedf25e39f2707ad124d8acd75f298c75e5c22aebf7df4f607aa",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Williams Racing",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that entered cars."
+      },
+      {
+        "local_id": "e2",
+        "name": "Keke Rosberg",
+        "entity_type": "Driver",
+        "description": "A driver who raced in Formula One."
+      },
+      {
+        "local_id": "e3",
+        "name": "Dallas Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A named race event."
+      },
+      {
+        "local_id": "e4",
+        "name": "Brazil",
+        "entity_type": "GrandPrix",
+        "description": "A named race event."
+      },
+      {
+        "local_id": "e5",
+        "name": "FW09",
+        "entity_type": "Car",
+        "description": "A chassis or car model a team fields."
+      },
+      {
+        "local_id": "e6",
+        "name": "1984",
+        "entity_type": "Season",
+        "description": "A championship year."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Keke Rosberg at Dallas Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Keke Rosberg recorded a result in the Dallas Grand Prix."
+      },
+      {
+        "local_id": "rr2",
+        "name": "Keke Rosberg at Brazil",
+        "entity_type": "RaceResult",
+        "description": "Keke Rosberg recorded a result in the Brazil Grand Prix."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e5",
+        "relationship_type": "FIELDED",
+        "description": "Williams Racing entered the FW09 car.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Keke Rosberg recorded a result in the Dallas Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e3",
+        "relationship_type": "AT_RACE",
+        "description": "Keke Rosberg recorded a result in the Dallas Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "rr2",
+        "relationship_type": "ACHIEVED",
+        "description": "Keke Rosberg recorded a result in the Brazil Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr2",
+        "target_id": "e4",
+        "relationship_type": "AT_RACE",
+        "description": "Keke Rosberg recorded a result in the Brazil Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e6",
+        "relationship_type": "ENTERED",
+        "description": "Williams Racing took part in the 1984 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 6,
+  "entities_accepted": 8,
+  "entities_rejected": 0,
+  "relationship_candidates": 4,
+  "relationships_accepted": 6,
+  "relationships_rejected": 0,
+  "rejections": [],
+  "alignments": [
+    {
+      "index": 1,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e3; description kept"
+    },
+    {
+      "index": 2,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr2 -AT_RACE-> e4; description kept"
+    }
+  ]
+}

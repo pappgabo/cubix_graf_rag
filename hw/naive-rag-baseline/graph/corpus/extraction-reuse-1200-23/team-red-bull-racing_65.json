@@ -1,0 +1,318 @@
+{
+  "chunk_id": "team-red-bull-racing#65",
+  "doc_id": "team-red-bull-racing",
+  "document_title": "Red Bull Racing",
+  "section": "2023 season",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "d72ac2748b91350f14993de12db59f255954b6774417e4db56303146f8110d92",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Red Bull Racing",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that retained their 2022 line-up for the 2023 season."
+      },
+      {
+        "local_id": "e2",
+        "name": "Max Verstappen",
+        "entity_type": "Driver",
+        "description": "Defending World Champion and driver for Red Bull Racing in the 2023 season."
+      },
+      {
+        "local_id": "e3",
+        "name": "Sergio Pérez",
+        "entity_type": "Driver",
+        "description": "Teammate of Max Verstappen at Red Bull Racing for the 2023 season."
+      },
+      {
+        "local_id": "e4",
+        "name": "RB19",
+        "entity_type": "Car",
+        "description": "The car fielded by Red Bull Racing in the 2023 season."
+      },
+      {
+        "local_id": "e5",
+        "name": "Honda",
+        "entity_type": "PowerUnit",
+        "description": "The engine supplier for Red Bull Racing in the 2023 season."
+      },
+      {
+        "local_id": "e6",
+        "name": "2023",
+        "entity_type": "Season",
+        "description": "The Formula 1 season in which Red Bull Racing competed."
+      },
+      {
+        "local_id": "e7",
+        "name": "Bahrain Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The first race of the 2023 season where Verstappen won."
+      },
+      {
+        "local_id": "e8",
+        "name": "Saudi Arabian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "One of the races won by Sergio Pérez in the 2023 season."
+      },
+      {
+        "local_id": "e9",
+        "name": "Azerbaijan Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "Another race won by Sergio Pérez in the 2023 season."
+      },
+      {
+        "local_id": "e10",
+        "name": "Singapore Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The only race Red Bull Racing did not win in the 2023 season."
+      },
+      {
+        "local_id": "e11",
+        "name": "Carlos Sainz Jr.",
+        "entity_type": "Driver",
+        "description": "Former teammate of Verstappen at Toro Rosso, who won the Singapore Grand Prix driving for Ferrari."
+      },
+      {
+        "local_id": "e12",
+        "name": "Scuderia Ferrari",
+        "entity_type": "Team",
+        "description": "The team for which Carlos Sainz Jr. drove during the Singapore Grand Prix."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Max Verstappen at Bahrain Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Max Verstappen won the Bahrain Grand Prix in the 2023 season."
+      },
+      {
+        "local_id": "rr2",
+        "name": "Sergio Pérez at Saudi Arabian Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Sergio Pérez won the Saudi Arabian Grand Prix in the 2023 season."
+      },
+      {
+        "local_id": "rr3",
+        "name": "Sergio Pérez at Azerbaijan Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Sergio Pérez won the Azerbaijan Grand Prix in the 2023 season."
+      },
+      {
+        "local_id": "rr4",
+        "name": "Max Verstappen at Singapore Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Max Verstappen finished fifth in the Singapore Grand Prix in the 2023 season."
+      },
+      {
+        "local_id": "rr5",
+        "name": "Sergio Pérez at Singapore Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Sergio Pérez finished eighth in the Singapore Grand Prix in the 2023 season."
+      },
+      {
+        "local_id": "rr6",
+        "name": "Carlos Sainz Jr. at Singapore Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Carlos Sainz Jr. won the Singapore Grand Prix in the 2023 season."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e4",
+        "relationship_type": "FIELDED",
+        "description": "Red Bull Racing fielded the RB19 in the 2023 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e6",
+        "relationship_type": "ENTERED",
+        "description": "Red Bull Racing entered the 2023 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e1",
+        "relationship_type": "DROVE_FOR",
+        "description": "Max Verstappen drove for Red Bull Racing in the 2023 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e1",
+        "relationship_type": "DROVE_FOR",
+        "description": "Sergio Pérez drove for Red Bull Racing in the 2023 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Max Verstappen won the Bahrain Grand Prix in the 2023 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e7",
+        "relationship_type": "AT_RACE",
+        "description": "Max Verstappen won the Bahrain Grand Prix in the 2023 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "rr2",
+        "relationship_type": "ACHIEVED",
+        "description": "Sergio Pérez won the Saudi Arabian Grand Prix in the 2023 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr2",
+        "target_id": "e8",
+        "relationship_type": "AT_RACE",
+        "description": "Sergio Pérez won the Saudi Arabian Grand Prix in the 2023 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "rr3",
+        "relationship_type": "ACHIEVED",
+        "description": "Sergio Pérez won the Azerbaijan Grand Prix in the 2023 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr3",
+        "target_id": "e9",
+        "relationship_type": "AT_RACE",
+        "description": "Sergio Pérez won the Azerbaijan Grand Prix in the 2023 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "rr4",
+        "relationship_type": "ACHIEVED",
+        "description": "Max Verstappen finished fifth in the Singapore Grand Prix in the 2023 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr4",
+        "target_id": "e10",
+        "relationship_type": "AT_RACE",
+        "description": "Max Verstappen finished fifth in the Singapore Grand Prix in the 2023 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "rr5",
+        "relationship_type": "ACHIEVED",
+        "description": "Sergio Pérez finished eighth in the Singapore Grand Prix in the 2023 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr5",
+        "target_id": "e10",
+        "relationship_type": "AT_RACE",
+        "description": "Sergio Pérez finished eighth in the Singapore Grand Prix in the 2023 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e11",
+        "target_id": "rr6",
+        "relationship_type": "ACHIEVED",
+        "description": "Carlos Sainz Jr. won the Singapore Grand Prix in the 2023 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr6",
+        "target_id": "e10",
+        "relationship_type": "AT_RACE",
+        "description": "Carlos Sainz Jr. won the Singapore Grand Prix in the 2023 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e11",
+        "target_id": "e12",
+        "relationship_type": "DROVE_FOR",
+        "description": "Carlos Sainz Jr. drove for Ferrari during the Singapore Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 12,
+  "entities_accepted": 18,
+  "entities_rejected": 0,
+  "relationship_candidates": 11,
+  "relationships_accepted": 17,
+  "relationships_rejected": 0,
+  "rejections": [],
+  "alignments": [
+    {
+      "index": 4,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e7; description kept"
+    },
+    {
+      "index": 5,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr2 -AT_RACE-> e8; description kept"
+    },
+    {
+      "index": 6,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr3 -AT_RACE-> e9; description kept"
+    },
+    {
+      "index": 7,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr4 -AT_RACE-> e10; description kept"
+    },
+    {
+      "index": 8,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr5 -AT_RACE-> e10; description kept"
+    },
+    {
+      "index": 9,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr6 -AT_RACE-> e10; description kept"
+    }
+  ]
+}

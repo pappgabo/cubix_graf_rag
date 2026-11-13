@@ -1,0 +1,82 @@
+{
+  "chunk_id": "season-2012-formula-one-world-championship#33",
+  "doc_id": "season-2012-formula-one-world-championship",
+  "document_title": "2012 Formula One World Championship",
+  "section": "Changes > Other changes",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "ec311fae291b0d89673ce4f1827c8b6d707e1f916e741828778599127f4e429e",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Red Bull Racing",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that exited FOTA in December 2011."
+      },
+      {
+        "local_id": "e2",
+        "name": "Scuderia Ferrari",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that exited FOTA in December 2011."
+      },
+      {
+        "local_id": "e3",
+        "name": "FOTA",
+        "entity_type": "Team",
+        "description": "The Formula One Teams Association from which Red Bull Racing and Scuderia Ferrari exited."
+      },
+      {
+        "local_id": "e4",
+        "name": "Sauber",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that left FOTA in December 2011."
+      },
+      {
+        "local_id": "e5",
+        "name": "Scuderia Toro Rosso",
+        "entity_type": "Team",
+        "description": "Red Bull Racing's sister team that was reported to have left FOTA in February 2012."
+      },
+      {
+        "local_id": "e6",
+        "name": "2012 Formula One World Championship",
+        "entity_type": "Season",
+        "description": "The championship year mentioned in the document."
+      }
+    ],
+    "relationships": []
+  },
+  "entity_candidates": 6,
+  "entities_accepted": 6,
+  "entities_rejected": 0,
+  "relationship_candidates": 4,
+  "relationships_accepted": 0,
+  "relationships_rejected": 4,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "DROVE_FOR does not allow Team -> Team"
+    },
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "DROVE_FOR does not allow Team -> Team"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "DROVE_FOR does not allow Team -> Team"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "DROVE_FOR does not allow Team -> Team"
+    }
+  ],
+  "alignments": []
+}

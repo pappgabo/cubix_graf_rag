@@ -1,0 +1,143 @@
+{
+  "chunk_id": "driver-max-verstappen#0",
+  "doc_id": "driver-max-verstappen",
+  "document_title": "Max Verstappen",
+  "section": null,
+  "page": 1,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "7c70c7d5c195fc64ee4b34bf6b91ad300bd8f0a60546f206f6b7cf5d1fe50321",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Max Verstappen",
+        "entity_type": "Driver",
+        "description": "Max Emilian Verstappen is a Dutch and Belgian racing driver who competes under the Dutch flag in Formula One for Red Bull Racing."
+      },
+      {
+        "local_id": "e2",
+        "name": "Red Bull Racing",
+        "entity_type": "Team",
+        "description": "A Formula One team that Max Verstappen competes for."
+      },
+      {
+        "local_id": "e3",
+        "name": "2021",
+        "entity_type": "Season",
+        "description": "The first year Max Verstappen won the Formula One World Drivers' Championship title."
+      },
+      {
+        "local_id": "e4",
+        "name": "2022",
+        "entity_type": "Season",
+        "description": "The second year Max Verstappen won the Formula One World Drivers' Championship title."
+      },
+      {
+        "local_id": "e5",
+        "name": "2023",
+        "entity_type": "Season",
+        "description": "The third year Max Verstappen won the Formula One World Drivers' Championship title."
+      },
+      {
+        "local_id": "e6",
+        "name": "2024",
+        "entity_type": "Season",
+        "description": "The fourth year Max Verstappen won the Formula One World Drivers' Championship title."
+      },
+      {
+        "local_id": "e7",
+        "name": "Formula One World Drivers' Championship",
+        "entity_type": "Title",
+        "description": "A championship title won by Max Verstappen."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Max Verstappen competes for Red Bull Racing in Formula One.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e7",
+        "relationship_type": "WON",
+        "description": "Max Verstappen won the Formula One World Drivers' Championship title.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e7",
+        "target_id": "e3",
+        "relationship_type": "AWARDED_IN",
+        "description": "The Formula One World Drivers' Championship title was awarded in 2021.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e7",
+        "target_id": "e4",
+        "relationship_type": "AWARDED_IN",
+        "description": "The Formula One World Drivers' Championship title was awarded in 2022.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e7",
+        "target_id": "e5",
+        "relationship_type": "AWARDED_IN",
+        "description": "The Formula One World Drivers' Championship title was awarded in 2023.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e7",
+        "target_id": "e6",
+        "relationship_type": "AWARDED_IN",
+        "description": "The Formula One World Drivers' Championship title was awarded in 2024.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 7,
+  "entities_accepted": 7,
+  "entities_rejected": 0,
+  "relationship_candidates": 6,
+  "relationships_accepted": 6,
+  "relationships_rejected": 0,
+  "rejections": [],
+  "alignments": [
+    {
+      "index": 2,
+      "action": "clear_redundant_season_year",
+      "detail": "AWARDED_IN year 2021 already named by Season 'e3'; from_year and to_year cleared"
+    },
+    {
+      "index": 3,
+      "action": "clear_redundant_season_year",
+      "detail": "AWARDED_IN year 2022 already named by Season 'e4'; from_year and to_year cleared"
+    },
+    {
+      "index": 4,
+      "action": "clear_redundant_season_year",
+      "detail": "AWARDED_IN year 2023 already named by Season 'e5'; from_year and to_year cleared"
+    },
+    {
+      "index": 5,
+      "action": "clear_redundant_season_year",
+      "detail": "AWARDED_IN year 2024 already named by Season 'e6'; from_year and to_year cleared"
+    }
+  ]
+}

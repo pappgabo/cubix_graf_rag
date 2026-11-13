@@ -1,0 +1,51 @@
+{
+  "chunk_id": "driver-lewis-hamilton#111",
+  "doc_id": "driver-lewis-hamilton",
+  "document_title": "Lewis Hamilton",
+  "section": null,
+  "page": 10,
+  "source": "https://en.wikipedia.org/wiki/Lewis_Hamilton",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "e80fa627384c152c14756f643d62ae8d8d7c25d14c3ec46aa4ec4ae4429b3df5",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "entity_candidates": 3,
+  "entities_accepted": 3,
+  "entities_rejected": 0,
+  "relationship_candidates": 1,
+  "relationships_accepted": 0,
+  "relationships_rejected": 1,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "TEAMMATE_OF is not temporal; from_year=2007, to_year=2007, role=None cannot be stored without dropping them"
+    }
+  ],
+  "alignments": [],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Lewis Hamilton",
+        "entity_type": "Driver",
+        "description": "A British racing driver currently competing in Formula One."
+      },
+      {
+        "local_id": "e2",
+        "name": "Fernando Alonso",
+        "entity_type": "Driver",
+        "description": "A Spanish racing driver currently competing in Formula One."
+      },
+      {
+        "local_id": "e3",
+        "name": "2007",
+        "entity_type": "Season",
+        "description": "The Formula One season in which Hamilton and Alonso had a notable rivalry."
+      }
+    ],
+    "relationships": []
+  }
+}

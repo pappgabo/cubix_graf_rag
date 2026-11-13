@@ -13,54 +13,59 @@ változatlanul a feladat alapjai: a baseline válaszait nem javítottam.
 ## A 3. házifeladat eredménye
 
 Részletes kötés fájlokhoz: [`docs/extrakcio-es-lokalis-kereses.md`](docs/extrakcio-es-lokalis-kereses.md).
-Az összevetés: [`docs/osszehasonlitas.md`](docs/osszehasonlitas.md). A futási napló
-(prompt, nyers válasz, horgonypontszám, `model_called`): [`docs/osszehasonlitas-run.json`](docs/osszehasonlitas-run.json).
-A korábbi futások megmaradtak: `docs/osszehasonlitas-elso-futas.md`,
-`docs/osszehasonlitas-masodik-futas.md`, `docs/osszehasonlitas-harmadik-futas.md`.
+A jelenlegi minőségi riport: [`graph/corpus/quality-report-section-1200-23.md`](graph/corpus/quality-report-section-1200-23.md).
 
-A kör a `questions.md` Q01–Q08 kérdéseinek dokumentumai: 11 dokumentum, 1565 chunk.
-Modell: `gpt-4o-mini`, embedding: `text-embedding-3-small`, prompt: `f1-pilot-3`.
+A korpusz 23 dokumentum, benne a visszahelyezett `corpus/driver-charles-leclerc.html`.
+A GraphRAG-chunkok 1200 karakteresek, 100 karakteres átfedéssel: 544 section,
+1651 chunk.
+Az extrakció: `graph/corpus/extraction-reuse-1200-23`, 1651 sikeres rekord, 0 hibás,
+315 üres siker. Modell: `gpt-4o-mini`, embedding: `text-embedding-3-small`,
+prompt: `f1-pilot-3`.
 
 | Lépés | Eredmény |
 |---|---|
-| Extrakció | 1565 rekord: 880 strukturálisan sikeres, 685 hibás, 517 sikeres üres |
-| Összevont gráf | előtte 1442 csomópont / 726 él / legnagyobb komponens 13; utána 401 / 580 / 283 |
-| Neo4j | 401 `:Extracted` csomópont, 1441 `MENTIONS`, 580 `origin=extracted` él |
-| Entitásindex | 401 entitás, név és leírás együtt, `graph/corpus/entity-index.json` |
-| Lokális keresés | 13 kérdésből 9 elutasítás, 4 tartalmi válasz |
+| Extrakció | 1651 rekord, mind strukturálisan sikeres; 315 üres |
+| Összevont gráf | előtte 10782 csomópont / 6533 él / legnagyobb komponens 30; utána 2761 / 4326 / 1896 |
+| Neo4j | 2761 `:Extracted` csomópont, 10782 `MENTIONS`, 4326 szakterületi él, 29 `:Seed` |
+| Entitásindex | 2761 vektor, név és leírás együtt, `text-embedding-3-small`, 1536 dimenzió |
+| Lokális keresés | Q01–Q13 lefutott a jelenlegi gráfon: 13 kérdésembedding, 13 válaszhívás, üres horgonylista nem volt |
 
-A lezáró négy tartalmi válasz mind a mellékelt forrásszövegben szereplő neveket
-és számokat mond. A `questions.md` gold értékeihez képest:
+Az előtte az előfordulási gráf, az utána az ugyanazon 1651 rekordból készült
+összevont gráf. A részletek és a megnevezett hiba a minőségi riportban vannak.
+A hiba: `driver-sebastian-vettel#21` címsorából `Title` nevű Title entitás lett.
+A ritka chunk `driver-charles-leclerc#14`, üres címsor. A legnagyobb fokszám 194,
+`Team:mclaren`; a szám nem jelent fontosságot.
 
-- **Q01** helyes: Hamilton hét világbajnoki címe, Schumacherrel holtversenyben.
-- **Q09** helyes: Hamilton és Schumacher, egyaránt hét címmel.
-- **Q10** hiányos: öt Ferrari-pilótát mond, Schumacher és Hamilton kimarad, Massa nincs a gold listán.
-- **Q04** téves: a 2016-os bajnokot nevezi meg, nem a csapattársát.
+A jelenlegi Q01–Q13 összevetés: [`docs/osszehasonlitas-section-1200-23.md`](docs/osszehasonlitas-section-1200-23.md),
+naplója [`docs/osszehasonlitas-section-1200-23-run.json`](docs/osszehasonlitas-section-1200-23-run.json).
+Mind a 13 kérdés lefutott. Üres horgonylista nem volt, ezért 13 válaszhívás készült.
+A modell a Q04, Q05, Q09 és Q13 kérdésnél az elutasító mondatot adta. A Q04–Q08
+multi-hop kérdések külön szakaszban vannak. A régi összevetés történeti:
+[`docs/osszehasonlitas.md`](docs/osszehasonlitas.md) és
+[`docs/osszehasonlitas-run.json`](docs/osszehasonlitas-run.json), a 401 entitásos
+gráf válaszai. A korábbi futások szintén történetiek:
+`docs/osszehasonlitas-elso-futas.md`, `docs/osszehasonlitas-masodik-futas.md`,
+`docs/osszehasonlitas-harmadik-futas.md`. A régi minőségi riport:
+`graph/corpus/quality-report.md`.
 
-A Q04–Q08 multi-hop kérdések az összevetésben külön szakaszban vannak. Javulást
-a baseline-hoz képest nem állítunk. Az összevetés nem kontrollált: a baseline
-3832 chunkot és 23 dokumentumot rögzít, a mostani `load_and_chunk` 3639 chunk és
-22 dokumentum, mert a `driver-charles-leclerc.html` hiányzik. A gráf a 3639
-chunkból 363-at ér el; a Q08 bizonyítéka (Bottas váltja Rosberget) egyetlen
-elérhető chunkban sincs benne. Ez extrakciós hiány.
-
-Megnevezett extrakciós hiba: `driver-sebastian-vettel#58`, a „Triple World Champion”
-Title típusú entitás lett, pedig összesített győzelmi szám, nem bajnoki cím.
-A ritka chunk (`driver-fernando-alonso#101`) üres címsor, nem hibás extrakció.
-A legnagyobb fokszám 42, egyedül `Season:2012`, és ez a szám nem jelent fontosságot.
+A baseline `baseline/answers.json` az eredeti 2026-10-06-i futás, 13 kérdéssel.
+Újragenerálni nem kell. Az új gráfon a kérdések futtatása külön kimenetbe ír,
+és fizetős hívás: 13 kérdésembedding, valamint legfeljebb 13 válaszhívás.
+Üres horgonylista esetén az adott kérdésre nincs válaszhívás. Entitás-embedding
+nem készül.
 
 ```powershell
 $env:PYTHONPATH = "src"
-.\.venv\Scripts\python.exe -m unittest discover -s tests -q
 .\.venv\Scripts\python.exe -m naive_rag.local_search `
-  --index graph\corpus\entity-index.json `
-  --extraction-dir graph\corpus\extraction `
   --baseline baseline\answers.json `
-  --out docs\osszehasonlitas.md
+  --out docs\osszehasonlitas-section-1200-23.md `
+  --run
 ```
 
-A második parancs `--run` nélkül nem hív modellt. `--run` a 13 kérdést újra
-lefuttatja (13 kérdésembedding és 13 válasz), és felülírja az összevetést.
+`--run` nélkül a parancs csak a 13 kérdést számolja, modellt nem hív.
+A chatmodell `gpt-4o-mini`, a kérdésembedding `text-embedding-3-small`.
+A keresés a Neo4j-ben lévő jelenlegi gráfot olvassa.
+A `diagnostics/2026-11-05-local-search/04_salvage_impact.py` a 3. fázisban változott: a mentett jelölt önhurokját külön okkal ejti ki, a rekord többi éle megmarad.
 
 **Stack:** Python 3.11 · `uv` · LangChain · OpenAI (`gpt-4o-mini`,
 `text-embedding-3-small`) · Qdrant (helyi, lemezre perzisztáló) · Neo4j 5.26
@@ -445,8 +450,8 @@ naive-rag-baseline/
 │                   quality_report · entity_index · local_search · compare_baseline
 │                   valamint a korábbi ingest · rag · graph_* modulok
 ├─ scripts/         download_corpus.py · convert_formats.py
-├─ corpus/          a manifest 23 dokumentumot nevez; a Leclerc HTML hiányzik
-├─ docs/            extrakcio-es-lokalis-kereses.md · osszehasonlitas.md
+├─ corpus/          a manifest 23 dokumentuma, benne a driver-charles-leclerc.html
+├─ docs/            extrakcio-es-lokalis-kereses.md · osszehasonlitas-section-1200-23.md; az osszehasonlitas.md történeti
 │                   osszehasonlitas-run.json · a három korábbi futás · graph-schema.md
 ├─ graph/           pilot/ (10 chunk) · corpus/ (Q01–Q08 extrakció, riport, index)
 │                   seed/ · cypher/ · query-results.md

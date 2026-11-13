@@ -1,0 +1,107 @@
+{
+  "chunk_id": "driver-fernando-alonso#50",
+  "doc_id": "driver-fernando-alonso",
+  "document_title": "Fernando Alonso",
+  "section": "Helmet and career number",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "bf9a42cedd9194ef340c5a331142792c93c0c937f4942a1018c529079984f550",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Fernando Alonso",
+        "entity_type": "Driver",
+        "description": "A Formula One driver known for his time with various teams including Ferrari."
+      },
+      {
+        "local_id": "e2",
+        "name": "2014",
+        "entity_type": "Season",
+        "description": "The Formula One season in which Alonso had his final event for Ferrari."
+      },
+      {
+        "local_id": "e3",
+        "name": "2017",
+        "entity_type": "Season",
+        "description": "The Formula One season in which Alonso participated in the United States Grand Prix."
+      },
+      {
+        "local_id": "e4",
+        "name": "2018",
+        "entity_type": "Season",
+        "description": "The Formula One season in which Alonso had his helmet design for the Abu Dhabi Grand Prix."
+      },
+      {
+        "local_id": "e5",
+        "name": "Abu Dhabi Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula One race where Alonso had his final event for Ferrari."
+      },
+      {
+        "local_id": "e6",
+        "name": "Indianapolis 500",
+        "entity_type": "GrandPrix",
+        "description": "An event where Alonso sported a specific helmet design."
+      },
+      {
+        "local_id": "e7",
+        "name": "United States Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula One race where Alonso sported a specific helmet design."
+      },
+      {
+        "local_id": "e8",
+        "name": "24 Hours of Daytona",
+        "entity_type": "GrandPrix",
+        "description": "An endurance race where Alonso revised his helmet livery."
+      },
+      {
+        "local_id": "e9",
+        "name": "Daytona International Speedway",
+        "entity_type": "Circuit",
+        "description": "The circuit layout featured on Alonso's helmet for the 24 Hours of Daytona."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e5",
+        "target_id": "e2",
+        "relationship_type": "ROUND_OF",
+        "description": "The Abu Dhabi Grand Prix is a round of the 2014 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e7",
+        "target_id": "e3",
+        "relationship_type": "ROUND_OF",
+        "description": "The United States Grand Prix is a round of the 2017 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e8",
+        "target_id": "e4",
+        "relationship_type": "ROUND_OF",
+        "description": "The 24 Hours of Daytona is a round of the 2018 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 9,
+  "entities_accepted": 9,
+  "entities_rejected": 0,
+  "relationship_candidates": 3,
+  "relationships_accepted": 3,
+  "relationships_rejected": 0,
+  "rejections": [],
+  "alignments": []
+}

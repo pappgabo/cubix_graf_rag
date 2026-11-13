@@ -1,0 +1,146 @@
+{
+  "chunk_id": "driver-jenson-button#34",
+  "doc_id": "driver-jenson-button",
+  "document_title": "Jenson Button",
+  "section": "Formula One career > McLaren (2010–2017) > 2011",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "eb0696ce8a1b9ac025acd8bbc6be285bbbe8f935a70d922044be9ee9b7ed30c6",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Jenson Button",
+        "entity_type": "Driver",
+        "description": "A Formula One driver who raced for McLaren from 2010 to 2017."
+      },
+      {
+        "local_id": "e2",
+        "name": "McLaren",
+        "entity_type": "Team",
+        "description": "A Formula One team that Jenson Button raced for."
+      },
+      {
+        "local_id": "e3",
+        "name": "MP4-26",
+        "entity_type": "Car",
+        "description": "The car driven by Jenson Button in the 2011 Formula One season."
+      },
+      {
+        "local_id": "e4",
+        "name": "2011",
+        "entity_type": "Season",
+        "description": "The Formula One season in which Jenson Button competed."
+      },
+      {
+        "local_id": "e5",
+        "name": "Canadian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A race in which Jenson Button won during the 2011 season."
+      },
+      {
+        "local_id": "e6",
+        "name": "Hungarian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A race in which Jenson Button won during the 2011 season."
+      },
+      {
+        "local_id": "e7",
+        "name": "Japanese Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A race in which Jenson Button competed during the 2011 season."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e3",
+        "target_id": "e4",
+        "relationship_type": "RACED_IN",
+        "description": "The MP4-26 car took part in the 2011 Formula One season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e4",
+        "relationship_type": "ROUND_OF",
+        "description": "The Canadian Grand Prix is a round of the 2011 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e6",
+        "target_id": "e4",
+        "relationship_type": "ROUND_OF",
+        "description": "The Hungarian Grand Prix is a round of the 2011 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e7",
+        "target_id": "e4",
+        "relationship_type": "ROUND_OF",
+        "description": "The Japanese Grand Prix is a round of the 2011 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 7,
+  "entities_accepted": 7,
+  "entities_rejected": 0,
+  "relationship_candidates": 8,
+  "relationships_accepted": 4,
+  "relationships_rejected": 4,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "FIELDED is not temporal; from_year=2011, to_year=None, role=None cannot be stored without dropping them"
+    },
+    {
+      "element": "relationship",
+      "index": 5,
+      "reason": "ACHIEVED Driver -> GrandPrix has from_year=2011, to_year=None, role=None; the year or role cannot be stored on the reified result"
+    },
+    {
+      "element": "relationship",
+      "index": 6,
+      "reason": "ACHIEVED Driver -> GrandPrix has from_year=2011, to_year=None, role=None; the year or role cannot be stored on the reified result"
+    },
+    {
+      "element": "relationship",
+      "index": 7,
+      "reason": "ACHIEVED Driver -> GrandPrix has from_year=2011, to_year=None, role=None; the year or role cannot be stored on the reified result"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 1,
+      "action": "clear_redundant_season_year",
+      "detail": "RACED_IN year 2011 already named by Season 'e4'; from_year and to_year cleared"
+    },
+    {
+      "index": 2,
+      "action": "clear_redundant_season_year",
+      "detail": "ROUND_OF year 2011 already named by Season 'e4'; from_year and to_year cleared"
+    },
+    {
+      "index": 3,
+      "action": "clear_redundant_season_year",
+      "detail": "ROUND_OF year 2011 already named by Season 'e4'; from_year and to_year cleared"
+    },
+    {
+      "index": 4,
+      "action": "clear_redundant_season_year",
+      "detail": "ROUND_OF year 2011 already named by Season 'e4'; from_year and to_year cleared"
+    }
+  ]
+}

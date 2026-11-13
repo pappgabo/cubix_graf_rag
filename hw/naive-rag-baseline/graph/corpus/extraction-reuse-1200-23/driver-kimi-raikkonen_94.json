@@ -1,0 +1,76 @@
+{
+  "chunk_id": "driver-kimi-raikkonen#94",
+  "doc_id": "driver-kimi-raikkonen",
+  "document_title": "Kimi Räikkönen",
+  "section": "Other racing > Rallying",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "72edb76c172fd4e1942c7cb0914bf78e7a14ac27b8a959eb01ea435e3b9c0c8c",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Kimi Räikkönen",
+        "entity_type": "Driver",
+        "description": "A Finnish racing driver who competed in Formula One."
+      },
+      {
+        "local_id": "e2",
+        "name": "Acropolis Rally",
+        "entity_type": "GrandPrix",
+        "description": "A rally event in which Kimi Räikkönen participated."
+      },
+      {
+        "local_id": "e3",
+        "name": "Rally Finland",
+        "entity_type": "GrandPrix",
+        "description": "Kimi Räikkönen's home rally."
+      },
+      {
+        "local_id": "e4",
+        "name": "Rallye Deutschland",
+        "entity_type": "GrandPrix",
+        "description": "A rally event where Kimi Räikkönen equaled his best result of the season."
+      },
+      {
+        "local_id": "e5",
+        "name": "2011",
+        "entity_type": "Season",
+        "description": "The season in which Kimi Räikkönen scored points in various rallies."
+      }
+    ],
+    "relationships": []
+  },
+  "entity_candidates": 5,
+  "entities_accepted": 5,
+  "entities_rejected": 0,
+  "relationship_candidates": 4,
+  "relationships_accepted": 0,
+  "relationships_rejected": 4,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "ACHIEVED Driver -> GrandPrix has from_year=2011, to_year=None, role=None; the year or role cannot be stored on the reified result"
+    },
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "ACHIEVED Driver -> GrandPrix has from_year=2011, to_year=None, role=None; the year or role cannot be stored on the reified result"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "ACHIEVED Driver -> GrandPrix has from_year=2011, to_year=None, role=None; the year or role cannot be stored on the reified result"
+    },
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "RACED_IN does not allow Driver -> Season"
+    }
+  ],
+  "alignments": []
+}

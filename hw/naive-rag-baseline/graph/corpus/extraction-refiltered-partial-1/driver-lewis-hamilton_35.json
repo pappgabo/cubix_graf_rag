@@ -1,0 +1,69 @@
+{
+  "chunk_id": "driver-lewis-hamilton#35",
+  "doc_id": "driver-lewis-hamilton",
+  "document_title": "Lewis Hamilton",
+  "section": null,
+  "page": 4,
+  "source": "https://en.wikipedia.org/wiki/Lewis_Hamilton",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "a01de3b20a7495c271875d662a7308058498a965ec0c9946b18dd8f3e9c69c1e",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "AWARDED_IN does not allow Season -> Title"
+    }
+  ],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Lewis Hamilton",
+        "entity_type": "Driver",
+        "description": "A Formula One driver who competed in the season."
+      },
+      {
+        "local_id": "e2",
+        "name": "Sebastian Vettel",
+        "entity_type": "Driver",
+        "description": "A Formula One driver who won his maiden title."
+      },
+      {
+        "local_id": "e3",
+        "name": "null",
+        "entity_type": "Season",
+        "description": "A championship year mentioned in the text."
+      },
+      {
+        "local_id": "e4",
+        "name": "null",
+        "entity_type": "Title",
+        "description": "A championship title mentioned in the text."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e4",
+        "relationship_type": "WON",
+        "description": "Hamilton was in contention for the championship title but ultimately did not win it.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e4",
+        "relationship_type": "WON",
+        "description": "Sebastian Vettel won his maiden title in the season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

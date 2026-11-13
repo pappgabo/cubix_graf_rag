@@ -1,0 +1,103 @@
+{
+  "chunk_id": "driver-fernando-alonso#6",
+  "doc_id": "driver-fernando-alonso",
+  "document_title": "Fernando Alonso",
+  "section": "Early life and karting career",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "da37da6976cd8433e40cdc9092b36026a3e9dfafe960a47a78bed9d3e2c351fe",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Fernando Alonso",
+        "entity_type": "Driver",
+        "description": "Aged seven, Alonso won his first kart race in Pola de Laviana. He won the 1988 and 1989 children's junior Championship of the Asturias and Galicia, and progressed to the Cadet class in 1990."
+      },
+      {
+        "local_id": "e2",
+        "name": "Pola de Laviana",
+        "entity_type": "Circuit",
+        "description": "The location where Alonso won his first kart race."
+      },
+      {
+        "local_id": "e3",
+        "name": "Asturias",
+        "entity_type": "Season",
+        "description": "Alonso won the 1988 and 1989 children's junior Championship of the Asturias."
+      },
+      {
+        "local_id": "e4",
+        "name": "Galicia",
+        "entity_type": "Season",
+        "description": "Alonso won the 1988 and 1989 children's junior Championship of Galicia."
+      },
+      {
+        "local_id": "e5",
+        "name": "Cadet class",
+        "entity_type": "Car",
+        "description": "The class Alonso progressed to in 1990."
+      },
+      {
+        "local_id": "e6",
+        "name": "IAME",
+        "entity_type": "Team",
+        "description": "The works team Alonso joined in 1993."
+      },
+      {
+        "local_id": "e7",
+        "name": "Spanish Junior Championships",
+        "entity_type": "Season",
+        "description": "Alonso won three successive Spanish Junior Championships from 1993 to 1995."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e6",
+        "relationship_type": "DROVE_FOR",
+        "description": "Alonso joined the IAME works team in 1993.",
+        "from_year": 1993,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 7,
+  "entities_accepted": 7,
+  "entities_rejected": 0,
+  "relationship_candidates": 6,
+  "relationships_accepted": 1,
+  "relationships_rejected": 5,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "ACHIEVED does not allow Driver -> Circuit"
+    },
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "WON does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "WON does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "RACED_IN does not allow Driver -> Car"
+    },
+    {
+      "element": "relationship",
+      "index": 5,
+      "reason": "WON does not allow Driver -> Season"
+    }
+  ],
+  "alignments": []
+}

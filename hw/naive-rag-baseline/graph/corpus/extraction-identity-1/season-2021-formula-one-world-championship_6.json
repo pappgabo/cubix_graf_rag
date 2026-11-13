@@ -1,0 +1,83 @@
+{
+  "chunk_id": "season-2021-formula-one-world-championship#6",
+  "doc_id": "season-2021-formula-one-world-championship",
+  "document_title": "2021 Formula One World Championship",
+  "section": null,
+  "page": 1,
+  "source": "https://en.wikipedia.org/wiki/2021_Formula_One_World_Championship",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "a5419fad7a14f62f9301bce18b0835ec25affb3a834730807f07359a8c495e81",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "entity_candidates": 5,
+  "entities_accepted": 5,
+  "entities_rejected": 0,
+  "relationship_candidates": 4,
+  "relationships_accepted": 1,
+  "relationships_rejected": 3,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "DROVE_FOR does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "DROVE_FOR does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "DROVE_FOR does not allow Driver -> Season"
+    }
+  ],
+  "alignments": [],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Kimi Räikkönen",
+        "entity_type": "Driver",
+        "description": "2007 World Champion, final season in the sport in 2021."
+      },
+      {
+        "local_id": "e2",
+        "name": "2021",
+        "entity_type": "Season",
+        "description": "The season of the 2021 Formula One World Championship."
+      },
+      {
+        "local_id": "e3",
+        "name": "Pirelli",
+        "entity_type": "Team",
+        "description": "Tyre supplier for all teams in the 2021 season."
+      },
+      {
+        "local_id": "e4",
+        "name": "Callum Ilott",
+        "entity_type": "Driver",
+        "description": "Drove as a test or third driver in free practice sessions."
+      },
+      {
+        "local_id": "e5",
+        "name": "Robert Kubica",
+        "entity_type": "Driver",
+        "description": "Drove as a test or third driver in free practice sessions."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e3",
+        "target_id": "e2",
+        "relationship_type": "ENTERED",
+        "description": "All teams competed in the 2021 season with tyres supplied by Pirelli.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

@@ -1,0 +1,211 @@
+{
+  "chunk_id": "season-2012-formula-one-world-championship#128",
+  "doc_id": "season-2012-formula-one-world-championship",
+  "document_title": "2012 Formula One World Championship",
+  "section": "Race summaries > Round 8 – Europe Valencia Street Circuit",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/2012_Formula_One_World_Championship",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "9db14aabc5b3a809a134e0b7b63ce2ee49b313deae88f46c6e09ddf947644fc7",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "ACHIEVED does not allow Driver -> Driver"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 2,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e8; description kept"
+    },
+    {
+      "index": 4,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr2 -AT_RACE-> e8; description kept"
+    },
+    {
+      "index": 5,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr3 -AT_RACE-> e8; description kept"
+    },
+    {
+      "index": 6,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr4 -AT_RACE-> e8; description kept"
+    }
+  ],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Pastor Maldonado",
+        "entity_type": "Driver",
+        "description": "Finished tenth but classified twelfth due to a post-race penalty."
+      },
+      {
+        "local_id": "e2",
+        "name": "Michael Schumacher",
+        "entity_type": "Driver",
+        "description": "Finished third, marking his first podium since the 2006 Chinese Grand Prix."
+      },
+      {
+        "local_id": "e3",
+        "name": "Mark Webber",
+        "entity_type": "Driver",
+        "description": "Finished fourth."
+      },
+      {
+        "local_id": "e4",
+        "name": "Fernando Alonso",
+        "entity_type": "Driver",
+        "description": "Finished first."
+      },
+      {
+        "local_id": "e5",
+        "name": "Kimi Räikkönen",
+        "entity_type": "Driver",
+        "description": "Finished second."
+      },
+      {
+        "local_id": "e6",
+        "name": "2012 Formula One World Championship",
+        "entity_type": "Season",
+        "description": "The championship year for the race."
+      },
+      {
+        "local_id": "e7",
+        "name": "Valencia Street Circuit",
+        "entity_type": "Circuit",
+        "description": "The circuit where the race took place."
+      },
+      {
+        "local_id": "e8",
+        "name": "Grand Prix of Europe",
+        "entity_type": "GrandPrix",
+        "description": "The specific Grand Prix held at Valencia."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Michael Schumacher at Grand Prix of Europe",
+        "entity_type": "RaceResult",
+        "description": "Michael Schumacher recorded a result in the Grand Prix of Europe."
+      },
+      {
+        "local_id": "rr2",
+        "name": "Pastor Maldonado at Grand Prix of Europe",
+        "entity_type": "RaceResult",
+        "description": "Pastor Maldonado recorded a result in the Grand Prix of Europe."
+      },
+      {
+        "local_id": "rr3",
+        "name": "Fernando Alonso at Grand Prix of Europe",
+        "entity_type": "RaceResult",
+        "description": "Fernando Alonso recorded a result in the Grand Prix of Europe."
+      },
+      {
+        "local_id": "rr4",
+        "name": "Kimi Räikkönen at Grand Prix of Europe",
+        "entity_type": "RaceResult",
+        "description": "Kimi Räikkönen recorded a result in the Grand Prix of Europe."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e8",
+        "target_id": "e6",
+        "relationship_type": "ROUND_OF",
+        "description": "The Grand Prix of Europe is a round of the 2012 Formula One World Championship.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e8",
+        "target_id": "e7",
+        "relationship_type": "HELD_AT",
+        "description": "The Grand Prix of Europe is held at Valencia Street Circuit.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Michael Schumacher recorded a result in the Grand Prix of Europe.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e8",
+        "relationship_type": "AT_RACE",
+        "description": "Michael Schumacher recorded a result in the Grand Prix of Europe.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr2",
+        "relationship_type": "ACHIEVED",
+        "description": "Pastor Maldonado recorded a result in the Grand Prix of Europe.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr2",
+        "target_id": "e8",
+        "relationship_type": "AT_RACE",
+        "description": "Pastor Maldonado recorded a result in the Grand Prix of Europe.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "rr3",
+        "relationship_type": "ACHIEVED",
+        "description": "Fernando Alonso recorded a result in the Grand Prix of Europe.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr3",
+        "target_id": "e8",
+        "relationship_type": "AT_RACE",
+        "description": "Fernando Alonso recorded a result in the Grand Prix of Europe.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "rr4",
+        "relationship_type": "ACHIEVED",
+        "description": "Kimi Räikkönen recorded a result in the Grand Prix of Europe.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr4",
+        "target_id": "e8",
+        "relationship_type": "AT_RACE",
+        "description": "Kimi Räikkönen recorded a result in the Grand Prix of Europe.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

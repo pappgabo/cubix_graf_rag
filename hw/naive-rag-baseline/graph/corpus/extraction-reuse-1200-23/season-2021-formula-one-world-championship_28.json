@@ -1,0 +1,130 @@
+{
+  "chunk_id": "season-2021-formula-one-world-championship#28",
+  "doc_id": "season-2021-formula-one-world-championship",
+  "document_title": "2021 Formula One World Championship",
+  "section": null,
+  "page": 6,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "99513750da128e53a666511a5be9b5a41b2bac3d5814125b838a0d8d1fc92bb0",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Esteban Ocon",
+        "entity_type": "Driver",
+        "description": "Retired with broken suspension."
+      },
+      {
+        "local_id": "e2",
+        "name": "Lando Norris",
+        "entity_type": "Driver",
+        "description": "Received a penalty after being judged to have forced Sergio Pérez off track."
+      },
+      {
+        "local_id": "e3",
+        "name": "Sergio Pérez",
+        "entity_type": "Driver",
+        "description": "Received two penalties for forcing Charles Leclerc off track."
+      },
+      {
+        "local_id": "e4",
+        "name": "Charles Leclerc",
+        "entity_type": "Driver",
+        "description": "Was forced off track by Sergio Pérez."
+      },
+      {
+        "local_id": "e5",
+        "name": "Max Verstappen",
+        "entity_type": "Driver",
+        "description": "Won the race."
+      },
+      {
+        "local_id": "e6",
+        "name": "Valtteri Bottas",
+        "entity_type": "Driver",
+        "description": "Finished second in the race."
+      },
+      {
+        "local_id": "e7",
+        "name": "Lewis Hamilton",
+        "entity_type": "Driver",
+        "description": "Finished fourth after picking up damage to his car."
+      },
+      {
+        "local_id": "e8",
+        "name": "British Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The race where Verstappen won."
+      },
+      {
+        "local_id": "e9",
+        "name": "2021",
+        "entity_type": "Season",
+        "description": "The championship year."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Max Verstappen at British Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Verstappen won the race."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e5",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Verstappen won the race.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e8",
+        "relationship_type": "AT_RACE",
+        "description": "Verstappen won the race.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e8",
+        "target_id": "e9",
+        "relationship_type": "ROUND_OF",
+        "description": "The British Grand Prix is a round of the 2021 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 9,
+  "entities_accepted": 10,
+  "entities_rejected": 0,
+  "relationship_candidates": 4,
+  "relationships_accepted": 3,
+  "relationships_rejected": 2,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "FOR_TEAM does not allow Driver -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "FOR_TEAM does not allow Driver -> GrandPrix"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 0,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e8; description kept"
+    }
+  ]
+}

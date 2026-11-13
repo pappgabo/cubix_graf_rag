@@ -1,0 +1,165 @@
+{
+  "chunk_id": "driver-max-verstappen#23",
+  "doc_id": "driver-max-verstappen",
+  "document_title": "Max Verstappen",
+  "section": null,
+  "page": 5,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "0543cef9c8bd3c29677ae61f4c42af2488786d6ef01274a36ea5cb1ee58b43f2",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Max Verstappen",
+        "entity_type": "Driver",
+        "description": "A Formula One driver who achieved multiple race results."
+      },
+      {
+        "local_id": "e2",
+        "name": "Honda",
+        "entity_type": "PowerUnit",
+        "description": "The power unit used by Verstappen's car."
+      },
+      {
+        "local_id": "e3",
+        "name": "Austria",
+        "entity_type": "GrandPrix",
+        "description": "A Grand Prix where Verstappen controversially passed Leclerc for the lead."
+      },
+      {
+        "local_id": "e4",
+        "name": "Germany",
+        "entity_type": "GrandPrix",
+        "description": "A Grand Prix where Verstappen inherited the lead after a crash."
+      },
+      {
+        "local_id": "e5",
+        "name": "Hungary",
+        "entity_type": "GrandPrix",
+        "description": "A Grand Prix where Verstappen claimed his maiden pole position."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Max Verstappen at Austria",
+        "entity_type": "RaceResult",
+        "description": "Verstappen achieved a result in the Austria Grand Prix."
+      },
+      {
+        "local_id": "rr2",
+        "name": "Max Verstappen at Germany",
+        "entity_type": "RaceResult",
+        "description": "Verstappen achieved a result in the Germany Grand Prix."
+      },
+      {
+        "local_id": "rr3",
+        "name": "Max Verstappen at Hungary",
+        "entity_type": "RaceResult",
+        "description": "Verstappen achieved a result in the Hungary Grand Prix."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Verstappen achieved a result in the Austria Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e3",
+        "relationship_type": "AT_RACE",
+        "description": "Verstappen achieved a result in the Austria Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr2",
+        "relationship_type": "ACHIEVED",
+        "description": "Verstappen achieved a result in the Germany Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr2",
+        "target_id": "e4",
+        "relationship_type": "AT_RACE",
+        "description": "Verstappen achieved a result in the Germany Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr3",
+        "relationship_type": "ACHIEVED",
+        "description": "Verstappen achieved a result in the Hungary Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr3",
+        "target_id": "e5",
+        "relationship_type": "AT_RACE",
+        "description": "Verstappen achieved a result in the Hungary Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 5,
+  "entities_accepted": 8,
+  "entities_rejected": 0,
+  "relationship_candidates": 7,
+  "relationships_accepted": 6,
+  "relationships_rejected": 4,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "POWERED_BY does not allow Driver -> PowerUnit"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "HELD_AT does not allow GrandPrix -> PowerUnit"
+    },
+    {
+      "element": "relationship",
+      "index": 6,
+      "reason": "HELD_AT does not allow GrandPrix -> PowerUnit"
+    },
+    {
+      "element": "relationship",
+      "index": 9,
+      "reason": "HELD_AT does not allow GrandPrix -> PowerUnit"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 1,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e3; description kept"
+    },
+    {
+      "index": 3,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr2 -AT_RACE-> e4; description kept"
+    },
+    {
+      "index": 5,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr3 -AT_RACE-> e5; description kept"
+    }
+  ]
+}

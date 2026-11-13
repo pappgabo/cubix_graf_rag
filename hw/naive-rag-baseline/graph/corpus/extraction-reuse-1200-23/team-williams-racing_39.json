@@ -1,0 +1,82 @@
+{
+  "chunk_id": "team-williams-racing#39",
+  "doc_id": "team-williams-racing",
+  "document_title": "Williams Racing",
+  "section": "Williams Racing > 1993 season",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "a9c728ffde8a753e5a1143418a2290d50bdf720c28c8155c7a621e362d0f0688",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Williams Racing",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that entered cars."
+      },
+      {
+        "local_id": "e2",
+        "name": "Nigel Mansell",
+        "entity_type": "Driver",
+        "description": "A driver who won the 1992 World Championship."
+      },
+      {
+        "local_id": "e3",
+        "name": "Damon Hill",
+        "entity_type": "Driver",
+        "description": "A driver who raced for Williams in the 1993 season."
+      },
+      {
+        "local_id": "e4",
+        "name": "Alain Prost",
+        "entity_type": "Driver",
+        "description": "A driver who raced for Williams in the 1993 season."
+      },
+      {
+        "local_id": "e5",
+        "name": "1993",
+        "entity_type": "Season",
+        "description": "The Formula 1 championship season."
+      },
+      {
+        "local_id": "e6",
+        "name": "Canon",
+        "entity_type": "Team",
+        "description": "A primary backer of Williams Racing."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e5",
+        "relationship_type": "ENTERED",
+        "description": "Williams Racing took part in the 1993 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 6,
+  "entities_accepted": 6,
+  "entities_rejected": 0,
+  "relationship_candidates": 3,
+  "relationships_accepted": 1,
+  "relationships_rejected": 2,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "DROVE_FOR does not allow Team -> Driver"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "DROVE_FOR does not allow Team -> Driver"
+    }
+  ],
+  "alignments": []
+}

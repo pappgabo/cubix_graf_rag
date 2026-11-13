@@ -1,0 +1,100 @@
+{
+  "chunk_id": "team-mclaren#26",
+  "doc_id": "team-mclaren",
+  "document_title": "McLaren",
+  "section": "1993–1994: Ford, Lamborghini and Peugeot engines",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "da233c9700eca0c6e57ef1e8f1a36c79c25a1b119254b917fe6165adb8168c86",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "McLaren",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that entered cars."
+      },
+      {
+        "local_id": "e2",
+        "name": "MP4/9",
+        "entity_type": "Car",
+        "description": "A car model fielded by McLaren."
+      },
+      {
+        "local_id": "e3",
+        "name": "Peugeot",
+        "entity_type": "PowerUnit",
+        "description": "An engine used by McLaren."
+      },
+      {
+        "local_id": "e4",
+        "name": "Mika Häkkinen",
+        "entity_type": "Driver",
+        "description": "A driver who raced for McLaren."
+      },
+      {
+        "local_id": "e5",
+        "name": "Martin Brundle",
+        "entity_type": "Driver",
+        "description": "A driver who raced for McLaren."
+      },
+      {
+        "local_id": "e6",
+        "name": "1994",
+        "entity_type": "Season",
+        "description": "A championship year."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e6",
+        "relationship_type": "ENTERED",
+        "description": "McLaren took part in the 1994 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "FIELDED",
+        "description": "McLaren entered the MP4/9 car.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e3",
+        "relationship_type": "POWERED_BY",
+        "description": "The MP4/9 used Peugeot power.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 6,
+  "entities_accepted": 6,
+  "entities_rejected": 0,
+  "relationship_candidates": 5,
+  "relationships_accepted": 3,
+  "relationships_rejected": 2,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "DROVE_FOR does not allow Driver -> Car"
+    },
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "DROVE_FOR does not allow Driver -> Car"
+    }
+  ],
+  "alignments": []
+}

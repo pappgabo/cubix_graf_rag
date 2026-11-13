@@ -1,0 +1,91 @@
+{
+  "chunk_id": "driver-nico-rosberg#76",
+  "doc_id": "driver-nico-rosberg",
+  "document_title": "Nico Rosberg",
+  "section": "Nico Rosberg > 2015: Championship runner-up again",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/Nico_Rosberg",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "b65ae223efe6f302eb9f0ac0f8b340ed3a042bc918c08ae0cfdde2987d3aaf39",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "entity_candidates": 5,
+  "entities_accepted": 5,
+  "entities_rejected": 0,
+  "relationship_candidates": 4,
+  "relationships_accepted": 3,
+  "relationships_rejected": 1,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "WON does not allow Driver -> Season"
+    }
+  ],
+  "alignments": [],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Nico Rosberg",
+        "entity_type": "Driver",
+        "description": "A Formula One driver who was the runner-up in the 2015 championship with 322 points."
+      },
+      {
+        "local_id": "e2",
+        "name": "2015",
+        "entity_type": "Season",
+        "description": "The championship year in which Nico Rosberg was the runner-up."
+      },
+      {
+        "local_id": "e3",
+        "name": "Mexico",
+        "entity_type": "GrandPrix",
+        "description": "A Grand Prix where Nico Rosberg won in 2015."
+      },
+      {
+        "local_id": "e4",
+        "name": "Brazil",
+        "entity_type": "GrandPrix",
+        "description": "A Grand Prix where Nico Rosberg won in 2015."
+      },
+      {
+        "local_id": "e5",
+        "name": "Abu Dhabi",
+        "entity_type": "GrandPrix",
+        "description": "A Grand Prix where Nico Rosberg won in 2015."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e3",
+        "target_id": "e2",
+        "relationship_type": "ROUND_OF",
+        "description": "The Mexico Grand Prix is a round of the 2015 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e2",
+        "relationship_type": "ROUND_OF",
+        "description": "The Brazil Grand Prix is a round of the 2015 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e2",
+        "relationship_type": "ROUND_OF",
+        "description": "The Abu Dhabi Grand Prix is a round of the 2015 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

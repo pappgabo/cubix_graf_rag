@@ -1,0 +1,211 @@
+{
+  "chunk_id": "driver-fernando-alonso#34",
+  "doc_id": "driver-fernando-alonso",
+  "document_title": "Fernando Alonso",
+  "section": "Aston Martin (2023–present)",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "7193858a7c53e74f0ed13ac37173e4698e29096a6922a2391aa7b7029f8e3321",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Fernando Alonso",
+        "entity_type": "Driver",
+        "description": "A driver racing for Aston Martin."
+      },
+      {
+        "local_id": "e2",
+        "name": "Aston Martin",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that Alonso races for."
+      },
+      {
+        "local_id": "e3",
+        "name": "2025",
+        "entity_type": "Season",
+        "description": "The Formula 1 season in which Alonso is competing."
+      },
+      {
+        "local_id": "e4",
+        "name": "Australian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A race in the 2025 season where Alonso retired."
+      },
+      {
+        "local_id": "e5",
+        "name": "Emilia Romagna Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A race in the 2025 season where Alonso's season began to turn around."
+      },
+      {
+        "local_id": "e6",
+        "name": "Hungarian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A race in the 2025 season where Alonso finished in fifth place."
+      },
+      {
+        "local_id": "e7",
+        "name": "Zandvoort",
+        "entity_type": "Circuit",
+        "description": "A circuit where Alonso scored points in the second half of the 2025 season."
+      },
+      {
+        "local_id": "e8",
+        "name": "Abu Dhabi",
+        "entity_type": "Circuit",
+        "description": "A circuit where Alonso scored points in the second half of the 2025 season."
+      },
+      {
+        "local_id": "e9",
+        "name": "Singapore",
+        "entity_type": "GrandPrix",
+        "description": "A race in the 2025 season where Alonso finished in seventh."
+      },
+      {
+        "local_id": "e10",
+        "name": "Qatar",
+        "entity_type": "GrandPrix",
+        "description": "A race in the 2025 season where Alonso finished in seventh."
+      },
+      {
+        "local_id": "e11",
+        "name": "AMR25",
+        "entity_type": "Car",
+        "description": "The car model used by Aston Martin in the 2025 season."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Alonso races for Aston Martin.",
+        "from_year": 2023,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e11",
+        "target_id": "e3",
+        "relationship_type": "RACED_IN",
+        "description": "AMR25 participated in the 2025 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e3",
+        "relationship_type": "ENTERED",
+        "description": "Aston Martin entered the 2025 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e3",
+        "relationship_type": "ROUND_OF",
+        "description": "Australian Grand Prix is a round of the 2025 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e3",
+        "relationship_type": "ROUND_OF",
+        "description": "Emilia Romagna Grand Prix is a round of the 2025 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e6",
+        "target_id": "e3",
+        "relationship_type": "ROUND_OF",
+        "description": "Hungarian Grand Prix is a round of the 2025 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e9",
+        "target_id": "e3",
+        "relationship_type": "ROUND_OF",
+        "description": "Singapore Grand Prix is a round of the 2025 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e10",
+        "target_id": "e3",
+        "relationship_type": "ROUND_OF",
+        "description": "Qatar Grand Prix is a round of the 2025 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 11,
+  "entities_accepted": 11,
+  "entities_rejected": 0,
+  "relationship_candidates": 10,
+  "relationships_accepted": 8,
+  "relationships_rejected": 2,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 8,
+      "reason": "ROUND_OF does not allow Circuit -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 9,
+      "reason": "ROUND_OF does not allow Circuit -> Season"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 1,
+      "action": "clear_redundant_season_year",
+      "detail": "RACED_IN year 2025 already named by Season 'e3'; from_year and to_year cleared"
+    },
+    {
+      "index": 2,
+      "action": "clear_redundant_season_year",
+      "detail": "ENTERED year 2025 already named by Season 'e3'; from_year and to_year cleared"
+    },
+    {
+      "index": 3,
+      "action": "clear_redundant_season_year",
+      "detail": "ROUND_OF year 2025 already named by Season 'e3'; from_year and to_year cleared"
+    },
+    {
+      "index": 4,
+      "action": "clear_redundant_season_year",
+      "detail": "ROUND_OF year 2025 already named by Season 'e3'; from_year and to_year cleared"
+    },
+    {
+      "index": 5,
+      "action": "clear_redundant_season_year",
+      "detail": "ROUND_OF year 2025 already named by Season 'e3'; from_year and to_year cleared"
+    },
+    {
+      "index": 6,
+      "action": "clear_redundant_season_year",
+      "detail": "ROUND_OF year 2025 already named by Season 'e3'; from_year and to_year cleared"
+    },
+    {
+      "index": 7,
+      "action": "clear_redundant_season_year",
+      "detail": "ROUND_OF year 2025 already named by Season 'e3'; from_year and to_year cleared"
+    }
+  ]
+}

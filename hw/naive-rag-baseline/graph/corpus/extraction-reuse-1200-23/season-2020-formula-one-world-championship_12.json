@@ -1,0 +1,92 @@
+{
+  "chunk_id": "season-2020-formula-one-world-championship#12",
+  "doc_id": "season-2020-formula-one-world-championship",
+  "document_title": "2020 Formula One World Championship",
+  "section": "2020 Formula One World Championship > Changes from the 2019 calendar to the original 2020 calendar",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "7d62e2413490037e3770c452e545edee52d9fe38a1922045d7f47ac8c0e37325",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Vietnamese Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The first new race created under Liberty's management, planned for April 2020 in Hanoi but later cancelled."
+      },
+      {
+        "local_id": "e2",
+        "name": "Hanoi Circuit",
+        "entity_type": "Circuit",
+        "description": "The circuit where the Vietnamese Grand Prix was planned to take place."
+      },
+      {
+        "local_id": "e3",
+        "name": "Dutch Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A race scheduled to take place at Circuit Zandvoort in 2020, marking its revival since 1985, but later cancelled."
+      },
+      {
+        "local_id": "e4",
+        "name": "Circuit Zandvoort",
+        "entity_type": "Circuit",
+        "description": "The circuit where the Dutch Grand Prix was scheduled to take place."
+      },
+      {
+        "local_id": "e5",
+        "name": "2020 Formula One World Championship",
+        "entity_type": "Season",
+        "description": "The championship season during which the Vietnamese and Dutch Grands Prix were planned."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e5",
+        "relationship_type": "ROUND_OF",
+        "description": "The Vietnamese Grand Prix was a round of the 2020 Formula One World Championship.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e5",
+        "relationship_type": "ROUND_OF",
+        "description": "The Dutch Grand Prix was a round of the 2020 Formula One World Championship.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "HELD_AT",
+        "description": "The Vietnamese Grand Prix was held at the Hanoi Circuit.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e4",
+        "relationship_type": "HELD_AT",
+        "description": "The Dutch Grand Prix was held at Circuit Zandvoort.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 5,
+  "entities_accepted": 5,
+  "entities_rejected": 0,
+  "relationship_candidates": 4,
+  "relationships_accepted": 4,
+  "relationships_rejected": 0,
+  "rejections": [],
+  "alignments": []
+}

@@ -1,0 +1,202 @@
+{
+  "chunk_id": "team-williams-racing#99",
+  "doc_id": "team-williams-racing",
+  "document_title": "Williams Racing",
+  "section": "Williams Racing > 2020–2022: Team sale to Dorilton Capital and Capito era",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "a15dbd18a86c67e66324926b0b3d987c3e305ff1508c6bb2a21babe430bb70f4",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Williams Racing",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that entered cars."
+      },
+      {
+        "local_id": "e2",
+        "name": "2021",
+        "entity_type": "Season",
+        "description": "A championship year."
+      },
+      {
+        "local_id": "e3",
+        "name": "Monaco Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A specific race event."
+      },
+      {
+        "local_id": "e4",
+        "name": "Hungarian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A specific race event."
+      },
+      {
+        "local_id": "e5",
+        "name": "Belgian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A specific race event."
+      },
+      {
+        "local_id": "e6",
+        "name": "FW43B",
+        "entity_type": "Car",
+        "description": "A chassis model fielded by Williams."
+      },
+      {
+        "local_id": "e7",
+        "name": "Robert Kubica",
+        "entity_type": "Driver",
+        "description": "A driver who raced for Williams."
+      },
+      {
+        "local_id": "e8",
+        "name": "George Russell",
+        "entity_type": "Driver",
+        "description": "A driver who raced for Williams."
+      },
+      {
+        "local_id": "e9",
+        "name": "Nicholas Latifi",
+        "entity_type": "Driver",
+        "description": "A driver who raced for Williams."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Robert Kubica at Hungarian Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Robert Kubica scored points at the Hungarian Grand Prix."
+      },
+      {
+        "local_id": "rr2",
+        "name": "George Russell at Belgian Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "George Russell scored a podium at the Belgian Grand Prix."
+      },
+      {
+        "local_id": "rr3",
+        "name": "Nicholas Latifi at Belgian Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Nicholas Latifi finished 9th at the Belgian Grand Prix."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "ENTERED",
+        "description": "Williams participated in the 2021 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e6",
+        "relationship_type": "FIELDED",
+        "description": "Williams entered the FW43B car.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e7",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Robert Kubica scored points at the Hungarian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e4",
+        "relationship_type": "AT_RACE",
+        "description": "Robert Kubica scored points at the Hungarian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e8",
+        "target_id": "rr2",
+        "relationship_type": "ACHIEVED",
+        "description": "George Russell scored a podium at the Belgian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr2",
+        "target_id": "e5",
+        "relationship_type": "AT_RACE",
+        "description": "George Russell scored a podium at the Belgian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e9",
+        "target_id": "rr3",
+        "relationship_type": "ACHIEVED",
+        "description": "Nicholas Latifi finished 9th at the Belgian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr3",
+        "target_id": "e5",
+        "relationship_type": "AT_RACE",
+        "description": "Nicholas Latifi finished 9th at the Belgian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 9,
+  "entities_accepted": 12,
+  "entities_rejected": 0,
+  "relationship_candidates": 8,
+  "relationships_accepted": 8,
+  "relationships_rejected": 3,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "ROUND_OF does not allow Team -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "ROUND_OF does not allow Team -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "ROUND_OF does not allow Team -> GrandPrix"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 5,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e4; description kept"
+    },
+    {
+      "index": 6,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr2 -AT_RACE-> e5; description kept"
+    },
+    {
+      "index": 7,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr3 -AT_RACE-> e5; description kept"
+    }
+  ]
+}

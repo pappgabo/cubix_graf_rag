@@ -1,0 +1,88 @@
+{
+  "chunk_id": "team-williams-racing#128",
+  "doc_id": "team-williams-racing",
+  "document_title": "Williams Racing",
+  "section": "Williams Racing > Williams Hybrid Power",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "a31a5e0ffd42ae8bdcd65002d3451d616e798b5933a3dcff791ec7d521dd1f3c",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Williams F1 Team",
+        "entity_type": "Team",
+        "description": "The Formula 1 team that WHP developed technology for."
+      },
+      {
+        "local_id": "e2",
+        "name": "WHP",
+        "entity_type": "PowerUnit",
+        "description": "Williams Hybrid Power, established in 2008 to develop a flywheel energy-recovery system."
+      },
+      {
+        "local_id": "e3",
+        "name": "2009",
+        "entity_type": "Season",
+        "description": "The season when KERS was introduced into Formula One."
+      },
+      {
+        "local_id": "e4",
+        "name": "Audi R18",
+        "entity_type": "Car",
+        "description": "The hybrid car that used WHP flywheel technology and won the 2012 Le Mans 24 Hours."
+      },
+      {
+        "local_id": "e5",
+        "name": "2012",
+        "entity_type": "Season",
+        "description": "The year when the Audi R18 won the Le Mans 24 Hours."
+      },
+      {
+        "local_id": "e6",
+        "name": "Go-Ahead Group",
+        "entity_type": "Team",
+        "description": "One of the UK's biggest transport operators that introduced WHP technology into buses."
+      },
+      {
+        "local_id": "e7",
+        "name": "2014",
+        "entity_type": "Season",
+        "description": "The year when Williams Hybrid Power was sold to GKN."
+      }
+    ],
+    "relationships": []
+  },
+  "entity_candidates": 7,
+  "entities_accepted": 7,
+  "entities_rejected": 0,
+  "relationship_candidates": 4,
+  "relationships_accepted": 0,
+  "relationships_rejected": 4,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "POWERED_BY does not allow PowerUnit -> Team"
+    },
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "RACED_IN does not allow PowerUnit -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "WON does not allow Car -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "WON does not allow PowerUnit -> Season"
+    }
+  ],
+  "alignments": []
+}

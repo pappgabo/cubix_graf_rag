@@ -1,0 +1,182 @@
+{
+  "chunk_id": "team-renault-in-formula-one#61",
+  "doc_id": "team-renault-in-formula-one",
+  "document_title": "Renault in Formula One",
+  "section": "Engine supplier (1983–2025) > Return to naturally aspirated engines (1989–2013) > Return to supply with Red Bull Racing yields title success (2007–2013)",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "7d38e064ad56ff12b60b880ab5b04c9447bf671172d0da399d9061ebacff2480",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Sebastian Vettel",
+        "entity_type": "Driver",
+        "description": "A driver who raced for Red Bull Racing."
+      },
+      {
+        "local_id": "e2",
+        "name": "Red Bull Racing",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that entered cars."
+      },
+      {
+        "local_id": "e3",
+        "name": "RB8",
+        "entity_type": "Car",
+        "description": "A car model fielded by Red Bull Racing."
+      },
+      {
+        "local_id": "e4",
+        "name": "RS27",
+        "entity_type": "PowerUnit",
+        "description": "An engine used by Red Bull Racing."
+      },
+      {
+        "local_id": "e5",
+        "name": "2012",
+        "entity_type": "Season",
+        "description": "A championship year."
+      },
+      {
+        "local_id": "e6",
+        "name": "2013",
+        "entity_type": "Season",
+        "description": "A championship year."
+      },
+      {
+        "local_id": "e7",
+        "name": "2013 Indian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A race event where the title was secured."
+      },
+      {
+        "local_id": "e8",
+        "name": "Title",
+        "entity_type": "Title",
+        "description": "A championship title won by Red Bull Racing and Sebastian Vettel."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Sebastian Vettel at 2013 Indian Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Sebastian Vettel recorded a result in the 2013 Indian Grand Prix."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Sebastian Vettel raced for Red Bull Racing.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e3",
+        "relationship_type": "FIELDED",
+        "description": "Red Bull Racing entered the RB8 car.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e4",
+        "relationship_type": "POWERED_BY",
+        "description": "The RB8 car used the RS27 engine.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e5",
+        "relationship_type": "RACED_IN",
+        "description": "The RB8 car took part in the 2012 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e6",
+        "relationship_type": "ENTERED",
+        "description": "Red Bull Racing took part in the 2013 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e8",
+        "relationship_type": "WON",
+        "description": "Sebastian Vettel won the championship title.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e8",
+        "target_id": "e6",
+        "relationship_type": "AWARDED_IN",
+        "description": "The championship title was awarded in the 2013 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e7",
+        "target_id": "e6",
+        "relationship_type": "ROUND_OF",
+        "description": "The 2013 Indian Grand Prix was a round of the 2013 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Sebastian Vettel recorded a result in the 2013 Indian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e7",
+        "relationship_type": "AT_RACE",
+        "description": "Sebastian Vettel recorded a result in the 2013 Indian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 8,
+  "entities_accepted": 9,
+  "entities_rejected": 0,
+  "relationship_candidates": 10,
+  "relationships_accepted": 10,
+  "relationships_rejected": 1,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 10,
+      "reason": "FOR_TEAM does not allow Team -> GrandPrix"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 8,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e7; description kept"
+    }
+  ]
+}

@@ -1,0 +1,312 @@
+{
+  "chunk_id": "season-2008-formula-one-world-championship#16",
+  "doc_id": "season-2008-formula-one-world-championship",
+  "document_title": "2008 Formula One World Championship",
+  "section": null,
+  "page": 4,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "28f4a8dd8acba20e3924d6fa020c642b0e09c2569c052506ab288c9ac2c30223",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Massa",
+        "entity_type": "Driver",
+        "description": "Driver who took pole and won for the third successive Istanbul race."
+      },
+      {
+        "local_id": "e2",
+        "name": "Lewis Hamilton",
+        "entity_type": "Driver",
+        "description": "Driver who split the Ferraris on the podium and won at Monaco."
+      },
+      {
+        "local_id": "e3",
+        "name": "Räikkönen",
+        "entity_type": "Driver",
+        "description": "Driver who started the French Grand Prix on pole."
+      },
+      {
+        "local_id": "e4",
+        "name": "Kubica",
+        "entity_type": "Driver",
+        "description": "Driver who won at Montreal for the first time."
+      },
+      {
+        "local_id": "e5",
+        "name": "Kovalainen",
+        "entity_type": "Driver",
+        "description": "Driver who took his first career victory at Hungary."
+      },
+      {
+        "local_id": "e6",
+        "name": "Scuderia Ferrari",
+        "entity_type": "Team",
+        "description": "Team that locked out the front row at Monaco."
+      },
+      {
+        "local_id": "e7",
+        "name": "BMW Sauber",
+        "entity_type": "Team",
+        "description": "Team that had Kubica and Heidfeld as drivers."
+      },
+      {
+        "local_id": "e8",
+        "name": "2008 Formula One World Championship",
+        "entity_type": "Season",
+        "description": "The championship season referenced in the document."
+      },
+      {
+        "local_id": "e9",
+        "name": "Istanbul",
+        "entity_type": "GrandPrix",
+        "description": "Grand Prix where Massa won for the third successive time."
+      },
+      {
+        "local_id": "e10",
+        "name": "Monaco",
+        "entity_type": "GrandPrix",
+        "description": "Grand Prix where Hamilton won despite a mid-race barrier scrape."
+      },
+      {
+        "local_id": "e11",
+        "name": "Montreal",
+        "entity_type": "GrandPrix",
+        "description": "Grand Prix where Hamilton was on pole for the first time this season."
+      },
+      {
+        "local_id": "e12",
+        "name": "French Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "Grand Prix where Räikkönen started on pole."
+      },
+      {
+        "local_id": "e13",
+        "name": "Silverstone",
+        "entity_type": "GrandPrix",
+        "description": "Grand Prix where Hamilton won back-to-back."
+      },
+      {
+        "local_id": "e14",
+        "name": "Hockenheim",
+        "entity_type": "GrandPrix",
+        "description": "Grand Prix where Hamilton won back-to-back."
+      },
+      {
+        "local_id": "e15",
+        "name": "Hungary",
+        "entity_type": "GrandPrix",
+        "description": "Grand Prix where Kovalainen took his first career victory."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Massa at Istanbul",
+        "entity_type": "RaceResult",
+        "description": "Massa won the Istanbul Grand Prix."
+      },
+      {
+        "local_id": "rr2",
+        "name": "Hamilton at Monaco",
+        "entity_type": "RaceResult",
+        "description": "Hamilton won the Monaco Grand Prix."
+      },
+      {
+        "local_id": "rr3",
+        "name": "Kubica at Montreal",
+        "entity_type": "RaceResult",
+        "description": "Kubica won the Montreal Grand Prix."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Massa won the Istanbul Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e9",
+        "relationship_type": "AT_RACE",
+        "description": "Massa won the Istanbul Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "rr2",
+        "relationship_type": "ACHIEVED",
+        "description": "Hamilton won the Monaco Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr2",
+        "target_id": "e10",
+        "relationship_type": "AT_RACE",
+        "description": "Hamilton won the Monaco Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "rr3",
+        "relationship_type": "ACHIEVED",
+        "description": "Kubica won the Montreal Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr3",
+        "target_id": "e11",
+        "relationship_type": "AT_RACE",
+        "description": "Kubica won the Montreal Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e3",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Massa and Räikkönen were teammates at Ferrari.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e6",
+        "relationship_type": "DROVE_FOR",
+        "description": "Räikkönen drove for Ferrari.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e6",
+        "relationship_type": "DROVE_FOR",
+        "description": "Massa drove for Ferrari.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e7",
+        "relationship_type": "DROVE_FOR",
+        "description": "Kubica drove for BMW Sauber.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e7",
+        "relationship_type": "DROVE_FOR",
+        "description": "Kovalainen drove for BMW Sauber.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e9",
+        "target_id": "e8",
+        "relationship_type": "ROUND_OF",
+        "description": "Istanbul Grand Prix is a round of the 2008 Formula One World Championship.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e10",
+        "target_id": "e8",
+        "relationship_type": "ROUND_OF",
+        "description": "Monaco Grand Prix is a round of the 2008 Formula One World Championship.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e11",
+        "target_id": "e8",
+        "relationship_type": "ROUND_OF",
+        "description": "Montreal Grand Prix is a round of the 2008 Formula One World Championship.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e12",
+        "target_id": "e8",
+        "relationship_type": "ROUND_OF",
+        "description": "French Grand Prix is a round of the 2008 Formula One World Championship.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e13",
+        "target_id": "e8",
+        "relationship_type": "ROUND_OF",
+        "description": "Silverstone Grand Prix is a round of the 2008 Formula One World Championship.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e14",
+        "target_id": "e8",
+        "relationship_type": "ROUND_OF",
+        "description": "Hockenheim Grand Prix is a round of the 2008 Formula One World Championship.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e15",
+        "target_id": "e8",
+        "relationship_type": "ROUND_OF",
+        "description": "Hungary Grand Prix is a round of the 2008 Formula One World Championship.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 15,
+  "entities_accepted": 18,
+  "entities_rejected": 0,
+  "relationship_candidates": 15,
+  "relationships_accepted": 18,
+  "relationships_rejected": 0,
+  "rejections": [],
+  "alignments": [
+    {
+      "index": 0,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e9; description kept"
+    },
+    {
+      "index": 1,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr2 -AT_RACE-> e10; description kept"
+    },
+    {
+      "index": 2,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr3 -AT_RACE-> e11; description kept"
+    }
+  ]
+}

@@ -1,0 +1,210 @@
+{
+  "chunk_id": "team-red-bull-racing#16",
+  "doc_id": "team-red-bull-racing",
+  "document_title": "Red Bull Racing",
+  "section": "Renault engines (2007–2018) > Customer era (2007–2010) > 2007 season",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "2ac9d115fffd00169caf3f8baf824c6f2642092b529a18b027ba8b9f62ebc6d8",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Red Bull Racing",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that entered cars."
+      },
+      {
+        "local_id": "e2",
+        "name": "Mark Webber",
+        "entity_type": "Driver",
+        "description": "A Formula 1 driver who raced for Red Bull Racing."
+      },
+      {
+        "local_id": "e3",
+        "name": "David Coulthard",
+        "entity_type": "Driver",
+        "description": "A Formula 1 driver who raced for Red Bull Racing."
+      },
+      {
+        "local_id": "e4",
+        "name": "2007",
+        "entity_type": "Season",
+        "description": "The Formula 1 championship season."
+      },
+      {
+        "local_id": "e5",
+        "name": "2007 European Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula 1 race held in 2007."
+      },
+      {
+        "local_id": "e6",
+        "name": "Japanese Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula 1 race held in 2007."
+      },
+      {
+        "local_id": "e7",
+        "name": "Chinese Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula 1 race held in 2007."
+      },
+      {
+        "local_id": "e8",
+        "name": "3rd",
+        "entity_type": "RaceResult",
+        "description": "Mark Webber finished 3rd in the 2007 European Grand Prix."
+      },
+      {
+        "local_id": "e9",
+        "name": "5th",
+        "entity_type": "RaceResult",
+        "description": "David Coulthard finished 5th in the 2007 European Grand Prix.\nDavid Coulthard achieved 5th on the grid in the Chinese Grand Prix."
+      },
+      {
+        "local_id": "e10",
+        "name": "4th",
+        "entity_type": "RaceResult",
+        "description": "David Coulthard finished 4th in the Japanese Grand Prix."
+      },
+      {
+        "local_id": "e12",
+        "name": "9th",
+        "entity_type": "RaceResult",
+        "description": "Mark Webber achieved 9th on the grid in the Chinese Grand Prix."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Mark Webber at 2007 European Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Mark Webber recorded a result in the 2007 European Grand Prix."
+      },
+      {
+        "local_id": "rr2",
+        "name": "Mark Webber at Japanese Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Mark Webber recorded a result in the Japanese Grand Prix."
+      },
+      {
+        "local_id": "rr3",
+        "name": "David Coulthard at Chinese Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "David Coulthard recorded a result in the Chinese Grand Prix."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e2",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Mark Webber recorded a result in the 2007 European Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e5",
+        "relationship_type": "AT_RACE",
+        "description": "Mark Webber recorded a result in the 2007 European Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "rr2",
+        "relationship_type": "ACHIEVED",
+        "description": "Mark Webber recorded a result in the Japanese Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr2",
+        "target_id": "e6",
+        "relationship_type": "AT_RACE",
+        "description": "Mark Webber recorded a result in the Japanese Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "rr3",
+        "relationship_type": "ACHIEVED",
+        "description": "David Coulthard recorded a result in the Chinese Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr3",
+        "target_id": "e7",
+        "relationship_type": "AT_RACE",
+        "description": "David Coulthard recorded a result in the Chinese Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e4",
+        "relationship_type": "ENTERED",
+        "description": "Red Bull Racing took part in the 2007 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 12,
+  "entities_accepted": 14,
+  "entities_rejected": 0,
+  "relationship_candidates": 8,
+  "relationships_accepted": 7,
+  "relationships_rejected": 4,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "FOR_TEAM does not allow RaceResult -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 5,
+      "reason": "FOR_TEAM does not allow RaceResult -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 8,
+      "reason": "FOR_TEAM does not allow RaceResult -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 9,
+      "reason": "FOR_TEAM does not allow RaceResult -> GrandPrix"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 0,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e5; description kept"
+    },
+    {
+      "index": 2,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr2 -AT_RACE-> e6; description kept"
+    },
+    {
+      "index": 4,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr3 -AT_RACE-> e7; description kept"
+    }
+  ]
+}

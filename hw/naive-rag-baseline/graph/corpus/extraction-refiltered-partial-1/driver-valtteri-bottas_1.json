@@ -1,0 +1,107 @@
+{
+  "chunk_id": "driver-valtteri-bottas#1",
+  "doc_id": "driver-valtteri-bottas",
+  "document_title": "Valtteri Bottas",
+  "section": null,
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/Valtteri_Bottas",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "37ca7cd80468c63776fa08b23bb7ce0dd13d0e8638879416bd7f6c30a3530007",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "WON does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "WON does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "WON does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 5,
+      "reason": "WON does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 6,
+      "reason": "WON does not allow Driver -> Season"
+    }
+  ],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Valtteri Bottas",
+        "entity_type": "Driver",
+        "description": "Born and raised in Nastola, Bottas began kart racing aged six. After studying automotive engineering and completing mandatory military service, Bottas progressed to junior formulae in 2007."
+      },
+      {
+        "local_id": "e2",
+        "name": "Motopark",
+        "entity_type": "Team",
+        "description": "Team Bottas raced for in Formula Renault NEC and Formula Renault Eurocup."
+      },
+      {
+        "local_id": "e3",
+        "name": "ART",
+        "entity_type": "Team",
+        "description": "Team Bottas raced for in Masters of Formula 3."
+      },
+      {
+        "local_id": "e4",
+        "name": "Formula Renault NEC",
+        "entity_type": "Season",
+        "description": "Championship Bottas won in 2008."
+      },
+      {
+        "local_id": "e5",
+        "name": "Formula Renault Eurocup",
+        "entity_type": "Season",
+        "description": "Championship Bottas won in 2008."
+      },
+      {
+        "local_id": "e6",
+        "name": "Masters of Formula 3",
+        "entity_type": "Season",
+        "description": "Championship Bottas won back-to-back in 2009 and 2010."
+      },
+      {
+        "local_id": "e7",
+        "name": "GP3 Series",
+        "entity_type": "Season",
+        "description": "Championship Bottas won in 2011."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Bottas raced for Motopark in Formula Renault NEC and Eurocup.",
+        "from_year": 2008,
+        "to_year": 2008,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e3",
+        "relationship_type": "DROVE_FOR",
+        "description": "Bottas raced for ART in Masters of Formula 3.",
+        "from_year": 2009,
+        "to_year": 2010,
+        "role": null
+      }
+    ]
+  }
+}

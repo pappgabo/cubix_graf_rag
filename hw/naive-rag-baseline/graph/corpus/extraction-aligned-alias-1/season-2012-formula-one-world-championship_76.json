@@ -1,0 +1,225 @@
+{
+  "chunk_id": "season-2012-formula-one-world-championship#76",
+  "doc_id": "season-2012-formula-one-world-championship",
+  "document_title": "2012 Formula One World Championship",
+  "section": "Race summaries > Round 1 – Australia Albert Park Circuit",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/2012_Formula_One_World_Championship",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "fbd59b492646acf0c01b59365df35d6f71ff8423167e3b7b2db0005c6688b5c7",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "ENTERED does not allow Team -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 5,
+      "reason": "ENTERED does not allow Team -> GrandPrix"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 0,
+      "action": "move_won_year",
+      "detail": "WON year 2012 stored as e9 -AWARDED_IN-> e6; from_year and to_year cleared; description kept"
+    },
+    {
+      "index": 7,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e7; description kept"
+    },
+    {
+      "index": 8,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr2 -AT_RACE-> e7; description kept"
+    },
+    {
+      "index": 9,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr3 -AT_RACE-> e7; description kept"
+    }
+  ],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Jenson Button",
+        "entity_type": "Driver",
+        "description": "A driver who took victory in the Australian Grand Prix."
+      },
+      {
+        "local_id": "e2",
+        "name": "Lewis Hamilton",
+        "entity_type": "Driver",
+        "description": "A driver who started from pole position in the Australian Grand Prix."
+      },
+      {
+        "local_id": "e3",
+        "name": "Sebastian Vettel",
+        "entity_type": "Driver",
+        "description": "A driver who finished second in the Australian Grand Prix."
+      },
+      {
+        "local_id": "e4",
+        "name": "Red Bull Racing",
+        "entity_type": "Team",
+        "description": "A Formula 1 team whose cars were in the race."
+      },
+      {
+        "local_id": "e5",
+        "name": "Caterham",
+        "entity_type": "Team",
+        "description": "A Formula 1 team whose car was involved in a mid-race incident."
+      },
+      {
+        "local_id": "e6",
+        "name": "2012",
+        "entity_type": "Season",
+        "description": "The championship year of the race."
+      },
+      {
+        "local_id": "e7",
+        "name": "Australian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The first round of the 2012 Formula One season."
+      },
+      {
+        "local_id": "e8",
+        "name": "Albert Park Circuit",
+        "entity_type": "Circuit",
+        "description": "The circuit where the Australian Grand Prix was held."
+      },
+      {
+        "local_id": "e9",
+        "name": "Victory at Melbourne",
+        "entity_type": "Title",
+        "description": "Jenson Button's victory title at the Melbourne circuit."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Sebastian Vettel at Australian Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Sebastian Vettel recorded a result in the Australian Grand Prix."
+      },
+      {
+        "local_id": "rr2",
+        "name": "Jenson Button at Australian Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Jenson Button recorded a result in the Australian Grand Prix."
+      },
+      {
+        "local_id": "rr3",
+        "name": "Lewis Hamilton at Australian Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Lewis Hamilton recorded a result in the Australian Grand Prix."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e9",
+        "relationship_type": "WON",
+        "description": "Jenson Button won the Australian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e9",
+        "target_id": "e6",
+        "relationship_type": "AWARDED_IN",
+        "description": "The victory title belongs to the 2012 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e7",
+        "target_id": "e6",
+        "relationship_type": "ROUND_OF",
+        "description": "The Australian Grand Prix is a round of the 2012 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e7",
+        "target_id": "e8",
+        "relationship_type": "HELD_AT",
+        "description": "The Australian Grand Prix is held at Albert Park Circuit.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Jenson Button and Lewis Hamilton were teammates.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Sebastian Vettel recorded a result in the Australian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e7",
+        "relationship_type": "AT_RACE",
+        "description": "Sebastian Vettel recorded a result in the Australian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr2",
+        "relationship_type": "ACHIEVED",
+        "description": "Jenson Button recorded a result in the Australian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr2",
+        "target_id": "e7",
+        "relationship_type": "AT_RACE",
+        "description": "Jenson Button recorded a result in the Australian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "rr3",
+        "relationship_type": "ACHIEVED",
+        "description": "Lewis Hamilton recorded a result in the Australian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr3",
+        "target_id": "e7",
+        "relationship_type": "AT_RACE",
+        "description": "Lewis Hamilton recorded a result in the Australian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

@@ -1,0 +1,140 @@
+{
+  "chunk_id": "season-2021-formula-one-world-championship#76",
+  "doc_id": "season-2021-formula-one-world-championship",
+  "document_title": "2021 Formula One World Championship",
+  "section": null,
+  "page": 7,
+  "source": "https://en.wikipedia.org/wiki/2021_Formula_One_World_Championship",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "cd1340e934a6a0632144f817729c2178a5ad3953c152b633a44a857faec34abd",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 6,
+      "reason": "ROUND_OF does not allow GrandPrix -> Driver"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 0,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e4; description kept"
+    },
+    {
+      "index": 1,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr2 -AT_RACE-> e4; description kept"
+    },
+    {
+      "index": 2,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr3 -AT_RACE-> e4; description kept"
+    }
+  ],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Verstappen",
+        "entity_type": "Driver",
+        "description": "A driver who took pole position in the Belgian Grand Prix."
+      },
+      {
+        "local_id": "e2",
+        "name": "Russell",
+        "entity_type": "Driver",
+        "description": "A driver who qualified behind Verstappen in the Belgian Grand Prix."
+      },
+      {
+        "local_id": "e3",
+        "name": "Lewis Hamilton",
+        "entity_type": "Driver",
+        "description": "A driver who qualified behind Verstappen in the Belgian Grand Prix."
+      },
+      {
+        "local_id": "e4",
+        "name": "Belgian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A race that was heavily affected by rain."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Verstappen at Belgian Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Verstappen took pole position in the Belgian Grand Prix."
+      },
+      {
+        "local_id": "rr2",
+        "name": "Russell at Belgian Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Russell qualified in the Belgian Grand Prix."
+      },
+      {
+        "local_id": "rr3",
+        "name": "Hamilton at Belgian Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Hamilton qualified in the Belgian Grand Prix."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Verstappen took pole position in the Belgian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e4",
+        "relationship_type": "AT_RACE",
+        "description": "Verstappen took pole position in the Belgian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "rr2",
+        "relationship_type": "ACHIEVED",
+        "description": "Russell qualified in the Belgian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr2",
+        "target_id": "e4",
+        "relationship_type": "AT_RACE",
+        "description": "Russell qualified in the Belgian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "rr3",
+        "relationship_type": "ACHIEVED",
+        "description": "Hamilton qualified in the Belgian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr3",
+        "target_id": "e4",
+        "relationship_type": "AT_RACE",
+        "description": "Hamilton qualified in the Belgian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

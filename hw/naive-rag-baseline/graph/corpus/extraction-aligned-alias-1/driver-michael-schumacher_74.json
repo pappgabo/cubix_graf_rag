@@ -1,0 +1,109 @@
+{
+  "chunk_id": "driver-michael-schumacher#74",
+  "doc_id": "driver-michael-schumacher",
+  "document_title": "Michael Schumacher",
+  "section": null,
+  "page": 7,
+  "source": "https://en.wikipedia.org/wiki/Michael_Schumacher",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "2a783fea88cc7673058a3befaf1549e462eefc6608495735c6ed2f059129288d",
+  "validation_version": "partial-1",
+  "source_status": "ok",
+  "status": "ok",
+  "rejections": [],
+  "alignments": [],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Michael Schumacher",
+        "entity_type": "Driver",
+        "description": "A Formula One driver who achieved significant success, including multiple championships."
+      },
+      {
+        "local_id": "e2",
+        "name": "Ralf Schumacher",
+        "entity_type": "Driver",
+        "description": "A Formula One driver and brother of Michael Schumacher."
+      },
+      {
+        "local_id": "e3",
+        "name": "2002",
+        "entity_type": "Season",
+        "description": "The Formula One season in which Michael Schumacher retained his Drivers' Championship."
+      },
+      {
+        "local_id": "e4",
+        "name": "Canadian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula One race where Michael Schumacher finished second."
+      },
+      {
+        "local_id": "e5",
+        "name": "Belgian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula One race where Michael Schumacher scored his 52nd career win."
+      },
+      {
+        "local_id": "e6",
+        "name": "52nd career win",
+        "entity_type": "RaceResult",
+        "description": "The race result achieved by Michael Schumacher at the Belgian Grand Prix."
+      },
+      {
+        "local_id": "e7",
+        "name": "Drivers' Championship",
+        "entity_type": "Title",
+        "description": "The championship title retained by Michael Schumacher in 2002."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Michael Schumacher and Ralf Schumacher finished 1-2 in the Canadian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e6",
+        "relationship_type": "ACHIEVED",
+        "description": "Michael Schumacher scored his 52nd career win at the Belgian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e6",
+        "target_id": "e5",
+        "relationship_type": "AT_RACE",
+        "description": "The 52nd career win was achieved at the Belgian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e7",
+        "relationship_type": "WON",
+        "description": "Michael Schumacher retained the Drivers' Championship in 2002.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e7",
+        "target_id": "e3",
+        "relationship_type": "AWARDED_IN",
+        "description": "The Drivers' Championship was awarded in the 2002 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

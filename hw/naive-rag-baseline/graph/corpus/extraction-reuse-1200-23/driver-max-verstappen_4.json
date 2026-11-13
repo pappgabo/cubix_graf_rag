@@ -1,0 +1,147 @@
+{
+  "chunk_id": "driver-max-verstappen#4",
+  "doc_id": "driver-max-verstappen",
+  "document_title": "Max Verstappen",
+  "section": null,
+  "page": 2,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "1cf7daffa19b9f9ca63de7540dc3ea96558f4a0253380af6fc332ac025ef3d41",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Max Verstappen",
+        "entity_type": "Driver",
+        "description": "A racing driver who started in karting and has achieved success in various championships."
+      },
+      {
+        "local_id": "e2",
+        "name": "CRG",
+        "entity_type": "Team",
+        "description": "A karting team that Verstappen raced for."
+      },
+      {
+        "local_id": "e3",
+        "name": "Mini Junior Championship",
+        "entity_type": "Season",
+        "description": "A karting championship in which Verstappen competed."
+      },
+      {
+        "local_id": "e4",
+        "name": "VAS Championship",
+        "entity_type": "Season",
+        "description": "A karting championship won by Verstappen."
+      },
+      {
+        "local_id": "e5",
+        "name": "Rotax Max Challenge Belgium",
+        "entity_type": "Season",
+        "description": "A karting championship won by Verstappen."
+      },
+      {
+        "local_id": "e6",
+        "name": "Dutch Championship",
+        "entity_type": "Season",
+        "description": "A karting championship won by Verstappen."
+      },
+      {
+        "local_id": "e7",
+        "name": "Belgian Cadet Championship",
+        "entity_type": "Season",
+        "description": "A karting championship won by Verstappen."
+      },
+      {
+        "local_id": "e8",
+        "name": "Benelux Karting Series",
+        "entity_type": "Season",
+        "description": "A karting championship won by Verstappen."
+      },
+      {
+        "local_id": "e9",
+        "name": "Belgian KF5 Championship",
+        "entity_type": "Season",
+        "description": "A karting championship won by Verstappen."
+      },
+      {
+        "local_id": "e10",
+        "name": "KF3 World Cup",
+        "entity_type": "Season",
+        "description": "An international karting championship in which Verstappen competed."
+      },
+      {
+        "local_id": "e11",
+        "name": "Alexander Albon",
+        "entity_type": "Driver",
+        "description": "A racing driver who finished ahead of Verstappen in the KF3 World Cup."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Verstappen was signed by CRG to race in their factory team.",
+        "from_year": 2010,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 11,
+  "entities_accepted": 11,
+  "entities_rejected": 0,
+  "relationship_candidates": 10,
+  "relationships_accepted": 1,
+  "relationships_rejected": 9,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "ACHIEVED does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "ACHIEVED does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "ACHIEVED does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "ACHIEVED does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 5,
+      "reason": "ACHIEVED does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 6,
+      "reason": "ACHIEVED does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 7,
+      "reason": "ACHIEVED does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 8,
+      "reason": "RACED_IN does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 9,
+      "reason": "TEAMMATE_OF does not allow Driver -> Season"
+    }
+  ],
+  "alignments": []
+}

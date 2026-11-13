@@ -1,0 +1,180 @@
+{
+  "chunk_id": "driver-max-verstappen#12",
+  "doc_id": "driver-max-verstappen",
+  "document_title": "Max Verstappen",
+  "section": null,
+  "page": 3,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "d27973ca670e7db94f711956cc23971950e7d77ff74cf65e166e6dc4cee47e92",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Max Verstappen",
+        "entity_type": "Driver",
+        "description": "An outstanding young talent who achieved his first Formula One victory."
+      },
+      {
+        "local_id": "e2",
+        "name": "Red Bull Racing",
+        "entity_type": "Team",
+        "description": "The team Verstappen drove for."
+      },
+      {
+        "local_id": "e3",
+        "name": "Spanish Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The race where Verstappen took his first victory."
+      },
+      {
+        "local_id": "e4",
+        "name": "Toro Rosso",
+        "entity_type": "Team",
+        "description": "The team Verstappen drove for before Red Bull Racing."
+      },
+      {
+        "local_id": "e5",
+        "name": "Scuderia Ferrari",
+        "entity_type": "Team",
+        "description": "The team of Kimi Räikkönen, who Verstappen held off to win the race."
+      },
+      {
+        "local_id": "e6",
+        "name": "Kimi Räikkönen",
+        "entity_type": "Driver",
+        "description": "Ferrari driver who was held off by Verstappen during the Spanish Grand Prix."
+      },
+      {
+        "local_id": "e7",
+        "name": "Daniel Ricciardo",
+        "entity_type": "Driver",
+        "description": "Teammate of Verstappen at Red Bull Racing."
+      },
+      {
+        "local_id": "e8",
+        "name": "Lewis Hamilton",
+        "entity_type": "Driver",
+        "description": "Mercedes driver involved in a crash during the Spanish Grand Prix."
+      },
+      {
+        "local_id": "e9",
+        "name": "Nico Rosberg",
+        "entity_type": "Driver",
+        "description": "Mercedes driver involved in a crash during the Spanish Grand Prix."
+      },
+      {
+        "local_id": "e10",
+        "name": "Sebastian Vettel",
+        "entity_type": "Driver",
+        "description": "Former record holder for the youngest driver to win a Formula One Grand Prix."
+      },
+      {
+        "local_id": "e11",
+        "name": "Belgian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The race where Verstappen collided with Räikkönen."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Max Verstappen at Spanish Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Verstappen took his first victory at the Spanish Grand Prix."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Verstappen drove for Red Bull Racing.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e4",
+        "relationship_type": "DROVE_FOR",
+        "description": "Verstappen drove for Toro Rosso before Red Bull Racing.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Verstappen took his first victory at the Spanish Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e3",
+        "relationship_type": "AT_RACE",
+        "description": "Verstappen took his first victory at the Spanish Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e7",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Verstappen was teammates with Daniel Ricciardo at Red Bull Racing.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 11,
+  "entities_accepted": 12,
+  "entities_rejected": 0,
+  "relationship_candidates": 10,
+  "relationships_accepted": 5,
+  "relationships_rejected": 6,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "ROUND_OF does not allow GrandPrix -> Team"
+    },
+    {
+      "element": "relationship",
+      "index": 6,
+      "reason": "AT_RACE does not allow Driver -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 7,
+      "reason": "AT_RACE does not allow Driver -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 8,
+      "reason": "AT_RACE does not allow Driver -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 9,
+      "reason": "WON does not allow Driver -> Driver"
+    },
+    {
+      "element": "relationship",
+      "index": 10,
+      "reason": "AT_RACE does not allow GrandPrix -> Driver"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 2,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e3; description kept"
+    }
+  ]
+}

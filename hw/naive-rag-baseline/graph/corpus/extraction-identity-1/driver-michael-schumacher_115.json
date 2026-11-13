@@ -1,0 +1,61 @@
+{
+  "chunk_id": "driver-michael-schumacher#115",
+  "doc_id": "driver-michael-schumacher",
+  "document_title": "Michael Schumacher",
+  "section": null,
+  "page": 10,
+  "source": "https://en.wikipedia.org/wiki/Michael_Schumacher",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "42704eff2184aaa26e14e3b79d9db695d13a5595bae765eb26da4f7954a48ec3",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "entity_candidates": 3,
+  "entities_accepted": 3,
+  "entities_rejected": 0,
+  "relationship_candidates": 2,
+  "relationships_accepted": 1,
+  "relationships_rejected": 1,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "RACED_IN does not allow Driver -> Season"
+    }
+  ],
+  "alignments": [],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Michael Schumacher",
+        "entity_type": "Driver",
+        "description": "Schumacher finished the season in ninth place with 72 points. For the first time since 1991, Schumacher finished a year without a win, pole position, podium, or fastest lap."
+      },
+      {
+        "local_id": "e2",
+        "name": "2011",
+        "entity_type": "Season",
+        "description": "Schumacher started the 2011 season with a retirement."
+      },
+      {
+        "local_id": "e3",
+        "name": "Malaysian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "Schumacher's first points were scored at the Malaysian Grand Prix."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e3",
+        "target_id": "e2",
+        "relationship_type": "ROUND_OF",
+        "description": "The Malaysian Grand Prix is a round of the 2011 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

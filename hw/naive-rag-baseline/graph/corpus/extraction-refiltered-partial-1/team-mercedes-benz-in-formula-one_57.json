@@ -1,0 +1,121 @@
+{
+  "chunk_id": "team-mercedes-benz-in-formula-one#57",
+  "doc_id": "team-mercedes-benz-in-formula-one",
+  "document_title": "Mercedes-Benz in Formula One",
+  "section": "Mercedes-Benz in Formula One > Struggling with ground effect (2022–2025)",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/Mercedes-Benz_in_Formula_One",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "d6c3423edfe4387984a988ed320f0cfa22130257b8e2c9205da2ceb8d6944b87",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "HELD_AT does not allow Team -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "HELD_AT does not allow Team -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "HELD_AT does not allow Team -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "ACHIEVED does not allow Driver -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "ACHIEVED does not allow Driver -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 5,
+      "reason": "ACHIEVED does not allow Driver -> GrandPrix"
+    }
+  ],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Mercedes",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that enters cars."
+      },
+      {
+        "local_id": "e2",
+        "name": "George Russell",
+        "entity_type": "Driver",
+        "description": "A driver who races in Formula One."
+      },
+      {
+        "local_id": "e3",
+        "name": "Lewis Hamilton",
+        "entity_type": "Driver",
+        "description": "A driver who races in Formula One."
+      },
+      {
+        "local_id": "e4",
+        "name": "Zhou Guanyu",
+        "entity_type": "Driver",
+        "description": "A driver who races in Formula One."
+      },
+      {
+        "local_id": "e5",
+        "name": "Pierre Gasly",
+        "entity_type": "Driver",
+        "description": "A driver who races in Formula One."
+      },
+      {
+        "local_id": "e6",
+        "name": "Fernando Alonso",
+        "entity_type": "Driver",
+        "description": "A driver who races in Formula One."
+      },
+      {
+        "local_id": "e7",
+        "name": "British Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula 1 race event."
+      },
+      {
+        "local_id": "e8",
+        "name": "Belgian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula 1 race event."
+      },
+      {
+        "local_id": "e9",
+        "name": "Abu Dhabi Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula 1 race event."
+      },
+      {
+        "local_id": "e10",
+        "name": "2022",
+        "entity_type": "Season",
+        "description": "A championship year."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e10",
+        "relationship_type": "ENTERED",
+        "description": "Mercedes entered the 2022 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

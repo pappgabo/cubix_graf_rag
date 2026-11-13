@@ -1,0 +1,251 @@
+{
+  "chunk_id": "team-red-bull-racing#43",
+  "doc_id": "team-red-bull-racing",
+  "document_title": "Red Bull Racing",
+  "section": "2015 season",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "48e84ca6b6c6285300b0e50f19cde659cb0b6ccfc4a1b3b2a2ce7b480f4c3232",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Red Bull Racing",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that entered cars."
+      },
+      {
+        "local_id": "e2",
+        "name": "Daniel Ricciardo",
+        "entity_type": "Driver",
+        "description": "An Australian Formula 1 driver who raced for Red Bull Racing in 2015."
+      },
+      {
+        "local_id": "e3",
+        "name": "Daniil Kvyat",
+        "entity_type": "Driver",
+        "description": "A Russian Formula 1 driver who raced for Red Bull Racing in 2015."
+      },
+      {
+        "local_id": "e4",
+        "name": "2015",
+        "entity_type": "Season",
+        "description": "The Formula 1 championship season."
+      },
+      {
+        "local_id": "e5",
+        "name": "Australian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula 1 race held in Australia."
+      },
+      {
+        "local_id": "e6",
+        "name": "United States Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula 1 race held in the United States."
+      },
+      {
+        "local_id": "e7",
+        "name": "Hungarian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula 1 race held in Hungary."
+      },
+      {
+        "local_id": "e8",
+        "name": "Lewis Hamilton",
+        "entity_type": "Driver",
+        "description": "A British Formula 1 driver who won the 2015 championship."
+      },
+      {
+        "local_id": "e9",
+        "name": "TAG Heuer",
+        "entity_type": "PowerUnit",
+        "description": "The rebadged Renault engines used by Red Bull Racing starting in 2016."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Daniel Ricciardo at Australian Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Ricciardo finished sixth at the Australian Grand Prix."
+      },
+      {
+        "local_id": "rr2",
+        "name": "Daniil Kvyat at Australian Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Kvyat failed to start the Australian Grand Prix due to a gearbox failure."
+      },
+      {
+        "local_id": "rr3",
+        "name": "Daniel Ricciardo at United States Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Ricciardo and Kvyat had their only opportunity to win at the United States Grand Prix."
+      },
+      {
+        "local_id": "rr4",
+        "name": "Daniil Kvyat at United States Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Kvyat made mistakes at the United States Grand Prix allowing Mercedes cars to pass."
+      },
+      {
+        "local_id": "rr5",
+        "name": "Daniel Ricciardo at Hungarian Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Ricciardo and Kvyat finished 2nd and 3rd at the Hungarian Grand Prix."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e2",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Ricciardo finished sixth at the Australian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e5",
+        "relationship_type": "AT_RACE",
+        "description": "Ricciardo finished sixth at the Australian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "rr2",
+        "relationship_type": "ACHIEVED",
+        "description": "Kvyat failed to start the Australian Grand Prix due to a gearbox failure.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr2",
+        "target_id": "e5",
+        "relationship_type": "AT_RACE",
+        "description": "Kvyat failed to start the Australian Grand Prix due to a gearbox failure.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "rr3",
+        "relationship_type": "ACHIEVED",
+        "description": "Ricciardo and Kvyat had their only opportunity to win at the United States Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr3",
+        "target_id": "e6",
+        "relationship_type": "AT_RACE",
+        "description": "Ricciardo and Kvyat had their only opportunity to win at the United States Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "rr4",
+        "relationship_type": "ACHIEVED",
+        "description": "Kvyat made mistakes at the United States Grand Prix allowing Mercedes cars to pass.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr4",
+        "target_id": "e6",
+        "relationship_type": "AT_RACE",
+        "description": "Kvyat made mistakes at the United States Grand Prix allowing Mercedes cars to pass.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "rr5",
+        "relationship_type": "ACHIEVED",
+        "description": "Ricciardo and Kvyat finished 2nd and 3rd at the Hungarian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr5",
+        "target_id": "e7",
+        "relationship_type": "AT_RACE",
+        "description": "Ricciardo and Kvyat finished 2nd and 3rd at the Hungarian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e4",
+        "relationship_type": "ENTERED",
+        "description": "Red Bull Racing entered the 2015 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 9,
+  "entities_accepted": 14,
+  "entities_rejected": 0,
+  "relationship_candidates": 9,
+  "relationships_accepted": 11,
+  "relationships_rejected": 3,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 10,
+      "reason": "WON does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 11,
+      "reason": "WON does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 13,
+      "reason": "POWERED_BY does not allow Team -> PowerUnit"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 0,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e5; description kept"
+    },
+    {
+      "index": 1,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr2 -AT_RACE-> e5; description kept"
+    },
+    {
+      "index": 2,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr3 -AT_RACE-> e6; description kept"
+    },
+    {
+      "index": 3,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr4 -AT_RACE-> e6; description kept"
+    },
+    {
+      "index": 4,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr5 -AT_RACE-> e7; description kept"
+    }
+  ]
+}

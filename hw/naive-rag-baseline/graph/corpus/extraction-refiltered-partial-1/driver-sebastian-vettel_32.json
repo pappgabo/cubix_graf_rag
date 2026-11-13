@@ -1,0 +1,97 @@
+{
+  "chunk_id": "driver-sebastian-vettel#32",
+  "doc_id": "driver-sebastian-vettel",
+  "document_title": "Sebastian Vettel",
+  "section": "2007–2008: Maiden race win and rise to prominence",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/Sebastian_Vettel",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "0738fa1800d657b58376ce3655e122a09fe7a25a5242313c7a2130e6e66075a8",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "HELD_AT does not allow GrandPrix -> Car"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "ACHIEVED does not allow Driver -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "FOR_TEAM does not allow Driver -> Team"
+    }
+  ],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Sebastian Vettel",
+        "entity_type": "Driver",
+        "description": "Youngest driver in history to win a Formula One Grand Prix, aged 21 years and 74 days."
+      },
+      {
+        "local_id": "e2",
+        "name": "Toro Rosso",
+        "entity_type": "Team",
+        "description": "Formula One team that entered cars."
+      },
+      {
+        "local_id": "e3",
+        "name": "Italian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula One race held in Italy."
+      },
+      {
+        "local_id": "e4",
+        "name": "null",
+        "entity_type": "Season",
+        "description": "No specific season mentioned."
+      },
+      {
+        "local_id": "e5",
+        "name": "null",
+        "entity_type": "Car",
+        "description": "No specific car model mentioned."
+      },
+      {
+        "local_id": "e6",
+        "name": "null",
+        "entity_type": "PowerUnit",
+        "description": "No specific power unit mentioned."
+      },
+      {
+        "local_id": "e7",
+        "name": "null",
+        "entity_type": "Title",
+        "description": "No specific championship title mentioned."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Sebastian Vettel drove for Toro Rosso.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e4",
+        "relationship_type": "ROUND_OF",
+        "description": "Italian Grand Prix is a round of the season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

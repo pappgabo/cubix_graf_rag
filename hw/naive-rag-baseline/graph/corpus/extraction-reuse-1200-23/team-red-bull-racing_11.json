@@ -1,0 +1,222 @@
+{
+  "chunk_id": "team-red-bull-racing#11",
+  "doc_id": "team-red-bull-racing",
+  "document_title": "Red Bull Racing",
+  "section": "Ferrari engines (2006) > 2006 season",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "39f654d34d4e38a02d4917c78096c8e33f21489fff3de65e3077ced9279ec76d",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "David Coulthard",
+        "entity_type": "Driver",
+        "description": "Finished third at Monaco, scored points at Montreal, finished 13th in the drivers' standings with 14 points."
+      },
+      {
+        "local_id": "e2",
+        "name": "Christian Horner",
+        "entity_type": "Driver",
+        "description": "Team boss of Red Bull Racing."
+      },
+      {
+        "local_id": "e3",
+        "name": "Red Bull Racing",
+        "entity_type": "Team",
+        "description": "Finished 7th in the FIA Constructors' Championship with 16 points."
+      },
+      {
+        "local_id": "e4",
+        "name": "RB2",
+        "entity_type": "Car",
+        "description": "Car driven by Coulthard and Klien during the 2006 season."
+      },
+      {
+        "local_id": "e5",
+        "name": "2006",
+        "entity_type": "Season",
+        "description": "The season in which Red Bull Racing finished 7th in the FIA Constructors' Championship."
+      },
+      {
+        "local_id": "e6",
+        "name": "Monaco Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The race where Coulthard finished third, marking the team's first podium finish."
+      },
+      {
+        "local_id": "e7",
+        "name": "Montreal Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The race where Coulthard scored a point."
+      },
+      {
+        "local_id": "e8",
+        "name": "United States Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The race where Klien retired along with eight other cars."
+      },
+      {
+        "local_id": "rr1",
+        "name": "David Coulthard at Monaco Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "David Coulthard finished third at Monaco."
+      },
+      {
+        "local_id": "rr2",
+        "name": "David Coulthard at Montreal Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "David Coulthard scored a point at Montreal."
+      },
+      {
+        "local_id": "rr3",
+        "name": "David Coulthard at United States Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "David Coulthard finished 7th at the United States Grand Prix."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e3",
+        "target_id": "e5",
+        "relationship_type": "ENTERED",
+        "description": "Red Bull Racing took part in the 2006 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e5",
+        "relationship_type": "RACED_IN",
+        "description": "RB2 took part in the 2006 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e6",
+        "target_id": "e5",
+        "relationship_type": "ROUND_OF",
+        "description": "Monaco Grand Prix is a round of the 2006 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e7",
+        "target_id": "e5",
+        "relationship_type": "ROUND_OF",
+        "description": "Montreal Grand Prix is a round of the 2006 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e8",
+        "target_id": "e5",
+        "relationship_type": "ROUND_OF",
+        "description": "United States Grand Prix is a round of the 2006 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "David Coulthard finished third at Monaco.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e6",
+        "relationship_type": "AT_RACE",
+        "description": "David Coulthard finished third at Monaco.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr2",
+        "relationship_type": "ACHIEVED",
+        "description": "David Coulthard scored a point at Montreal.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr2",
+        "target_id": "e7",
+        "relationship_type": "AT_RACE",
+        "description": "David Coulthard scored a point at Montreal.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr3",
+        "relationship_type": "ACHIEVED",
+        "description": "David Coulthard finished 7th at the United States Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr3",
+        "target_id": "e8",
+        "relationship_type": "AT_RACE",
+        "description": "David Coulthard finished 7th at the United States Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e3",
+        "relationship_type": "DROVE_FOR",
+        "description": "David Coulthard drove for Red Bull Racing during the 2006 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 8,
+  "entities_accepted": 11,
+  "entities_rejected": 0,
+  "relationship_candidates": 10,
+  "relationships_accepted": 12,
+  "relationships_rejected": 1,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 11,
+      "reason": "FOR_TEAM does not allow Driver -> Team"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 5,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e6; description kept"
+    },
+    {
+      "index": 6,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr2 -AT_RACE-> e7; description kept"
+    },
+    {
+      "index": 7,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr3 -AT_RACE-> e8; description kept"
+    }
+  ]
+}

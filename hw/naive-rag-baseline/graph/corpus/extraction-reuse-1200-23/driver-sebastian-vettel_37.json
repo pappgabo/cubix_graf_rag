@@ -1,0 +1,139 @@
+{
+  "chunk_id": "driver-sebastian-vettel#37",
+  "doc_id": "driver-sebastian-vettel",
+  "document_title": "Sebastian Vettel",
+  "section": "2017–2018: Title battles versus Hamilton",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "f85b1da9db93e3db15e4d7c62de0c83f8179321d38b562ef050b555ae7f7c42f",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Sebastian Vettel",
+        "entity_type": "Driver",
+        "description": "A Formula One driver who won the Canadian Grand Prix for the third time in 2018 and for the 50th time in his career."
+      },
+      {
+        "local_id": "e2",
+        "name": "Canadian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula One race where Vettel won for the third time in 2018."
+      },
+      {
+        "local_id": "e3",
+        "name": "France",
+        "entity_type": "GrandPrix",
+        "description": "The Grand Prix where Vettel lost the championship lead following a collision with Bottas."
+      },
+      {
+        "local_id": "e4",
+        "name": "Great Britain",
+        "entity_type": "GrandPrix",
+        "description": "The Grand Prix where Vettel bounced back and took victory after passing Bottas."
+      },
+      {
+        "local_id": "e5",
+        "name": "Belgium",
+        "entity_type": "GrandPrix",
+        "description": "The Grand Prix where Vettel won after passing Hamilton for the race victory."
+      },
+      {
+        "local_id": "e6",
+        "name": "Italy",
+        "entity_type": "GrandPrix",
+        "description": "The Grand Prix where Vettel damaged his front wing after contact with Hamilton."
+      },
+      {
+        "local_id": "e7",
+        "name": "2018",
+        "entity_type": "Season",
+        "description": "The Formula One season in which Vettel achieved multiple race results."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e2",
+        "target_id": "e7",
+        "relationship_type": "ROUND_OF",
+        "description": "The Canadian Grand Prix is a round of the 2018 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e7",
+        "relationship_type": "ROUND_OF",
+        "description": "The French Grand Prix is a round of the 2018 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e7",
+        "relationship_type": "ROUND_OF",
+        "description": "The British Grand Prix is a round of the 2018 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e7",
+        "relationship_type": "ROUND_OF",
+        "description": "The Belgian Grand Prix is a round of the 2018 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e6",
+        "target_id": "e7",
+        "relationship_type": "ROUND_OF",
+        "description": "The Italian Grand Prix is a round of the 2018 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 7,
+  "entities_accepted": 7,
+  "entities_rejected": 0,
+  "relationship_candidates": 10,
+  "relationships_accepted": 5,
+  "relationships_rejected": 5,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "ACHIEVED Driver -> GrandPrix has from_year=2018, to_year=None, role=None; the year or role cannot be stored on the reified result"
+    },
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "ACHIEVED Driver -> GrandPrix has from_year=2018, to_year=None, role=None; the year or role cannot be stored on the reified result"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "ACHIEVED Driver -> GrandPrix has from_year=2018, to_year=None, role=None; the year or role cannot be stored on the reified result"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "ACHIEVED Driver -> GrandPrix has from_year=2018, to_year=None, role=None; the year or role cannot be stored on the reified result"
+    },
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "ACHIEVED Driver -> GrandPrix has from_year=2018, to_year=None, role=None; the year or role cannot be stored on the reified result"
+    }
+  ],
+  "alignments": []
+}

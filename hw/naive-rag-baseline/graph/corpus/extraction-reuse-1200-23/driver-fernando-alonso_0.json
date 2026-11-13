@@ -1,0 +1,87 @@
+{
+  "chunk_id": "driver-fernando-alonso#0",
+  "doc_id": "driver-fernando-alonso",
+  "document_title": "Fernando Alonso",
+  "section": null,
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "ec95913ec5dc1b08fdff2ff5e83f5d00063b8ad01088acf04f0b896c329fdec6",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Fernando Alonso",
+        "entity_type": "Driver",
+        "description": "Spanish racing driver who competes in Formula One for Aston Martin. Has won two Formula One World Drivers' Championship titles in 2005 and 2006 with Renault, and has won 32 Grands Prix across 23 seasons."
+      },
+      {
+        "local_id": "e2",
+        "name": "Aston Martin",
+        "entity_type": "Team",
+        "description": "Formula One team that Fernando Alonso competes for."
+      },
+      {
+        "local_id": "e3",
+        "name": "Renault",
+        "entity_type": "Team",
+        "description": "Formula One team that Fernando Alonso won his championships with."
+      },
+      {
+        "local_id": "e4",
+        "name": "2005",
+        "entity_type": "Season",
+        "description": "The season in which Fernando Alonso won his first Formula One World Drivers' Championship."
+      },
+      {
+        "local_id": "e5",
+        "name": "2006",
+        "entity_type": "Season",
+        "description": "The season in which Fernando Alonso won his second Formula One World Drivers' Championship."
+      },
+      {
+        "local_id": "e6",
+        "name": "32",
+        "entity_type": "RaceResult",
+        "description": "Count of Grands Prix won by Fernando Alonso."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Fernando Alonso competes for Aston Martin in Formula One.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 6,
+  "entities_accepted": 6,
+  "entities_rejected": 0,
+  "relationship_candidates": 4,
+  "relationships_accepted": 1,
+  "relationships_rejected": 3,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "WON does not allow Driver -> Team"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "AWARDED_IN does not allow Team -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "AWARDED_IN does not allow Team -> Season"
+    }
+  ],
+  "alignments": []
+}

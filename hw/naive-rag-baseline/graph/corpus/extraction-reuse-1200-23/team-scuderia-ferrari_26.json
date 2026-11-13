@@ -1,0 +1,216 @@
+{
+  "chunk_id": "team-scuderia-ferrari#26",
+  "doc_id": "team-scuderia-ferrari",
+  "document_title": "Scuderia Ferrari",
+  "section": null,
+  "page": 6,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "476b7c1649f89bf00c280f287fc62dee884d715029bf686ac9fdc54fc6b3c4c7",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Ferrari 458 GT2",
+        "entity_type": "Car",
+        "description": "A car model driven by Gianmaria Bruni, Giancarlo Fisichella, and Toni Vilander."
+      },
+      {
+        "local_id": "e2",
+        "name": "Ferrari 488 GTE",
+        "entity_type": "Car",
+        "description": "A car model driven by Alessandro Pier Guidi, James Calado, and Daniel Serra."
+      },
+      {
+        "local_id": "e3",
+        "name": "Ferrari 488 GT3",
+        "entity_type": "Car",
+        "description": "A car model that scored the overall win at the 2017 12 Hours of Bathurst."
+      },
+      {
+        "local_id": "e4",
+        "name": "Ferrari 499P",
+        "entity_type": "Car",
+        "description": "A Le Mans Hypercar prototype that Ferrari returned with in 2023."
+      },
+      {
+        "local_id": "e5",
+        "name": "Risi Competizione",
+        "entity_type": "Team",
+        "description": "A team that scored two GT2 class wins at the 24 Hours of Le Mans in 2008 and 2009."
+      },
+      {
+        "local_id": "e6",
+        "name": "AF Corse",
+        "entity_type": "Team",
+        "description": "A team that scored four GTE Pro class wins at the 24 Hours of Le Mans."
+      },
+      {
+        "local_id": "e7",
+        "name": "Gianmaria Bruni",
+        "entity_type": "Driver",
+        "description": "A driver who raced the Ferrari 458 GT2."
+      },
+      {
+        "local_id": "e8",
+        "name": "Giancarlo Fisichella",
+        "entity_type": "Driver",
+        "description": "A driver who raced the Ferrari 458 GT2."
+      },
+      {
+        "local_id": "e9",
+        "name": "Toni Vilander",
+        "entity_type": "Driver",
+        "description": "A driver who raced the Ferrari 458 GT2."
+      },
+      {
+        "local_id": "e10",
+        "name": "Alessandro Pier Guidi",
+        "entity_type": "Driver",
+        "description": "A driver who raced the Ferrari 488 GTE."
+      },
+      {
+        "local_id": "e11",
+        "name": "James Calado",
+        "entity_type": "Driver",
+        "description": "A driver who raced the Ferrari 488 GTE."
+      },
+      {
+        "local_id": "e12",
+        "name": "Daniel Serra",
+        "entity_type": "Driver",
+        "description": "A driver who raced the Ferrari 488 GTE."
+      },
+      {
+        "local_id": "e13",
+        "name": "Côme Ledogar",
+        "entity_type": "Driver",
+        "description": "A driver who raced the Ferrari 488 GTE."
+      },
+      {
+        "local_id": "e14",
+        "name": "24 Hours of Le Mans",
+        "entity_type": "GrandPrix",
+        "description": "A prestigious racing event where several victories were achieved."
+      },
+      {
+        "local_id": "e15",
+        "name": "12 Hours of Bathurst",
+        "entity_type": "GrandPrix",
+        "description": "A racing event where a Ferrari 488 GT3 scored the overall win."
+      },
+      {
+        "local_id": "e16",
+        "name": "24 Hours of Spa",
+        "entity_type": "GrandPrix",
+        "description": "A racing event where a Ferrari 488 GT3 scored a win."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e7",
+        "target_id": "e5",
+        "relationship_type": "DROVE_FOR",
+        "description": "Gianmaria Bruni drove for Risi Competizione.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e8",
+        "target_id": "e5",
+        "relationship_type": "DROVE_FOR",
+        "description": "Giancarlo Fisichella drove for Risi Competizione.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e9",
+        "target_id": "e5",
+        "relationship_type": "DROVE_FOR",
+        "description": "Toni Vilander drove for Risi Competizione.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e10",
+        "target_id": "e6",
+        "relationship_type": "DROVE_FOR",
+        "description": "Alessandro Pier Guidi drove for AF Corse.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e11",
+        "target_id": "e6",
+        "relationship_type": "DROVE_FOR",
+        "description": "James Calado drove for AF Corse.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e12",
+        "target_id": "e6",
+        "relationship_type": "DROVE_FOR",
+        "description": "Daniel Serra drove for AF Corse.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e13",
+        "target_id": "e6",
+        "relationship_type": "DROVE_FOR",
+        "description": "Côme Ledogar drove for AF Corse.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 16,
+  "entities_accepted": 16,
+  "entities_rejected": 0,
+  "relationship_candidates": 13,
+  "relationships_accepted": 7,
+  "relationships_rejected": 6,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "FIELDED does not allow Team -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "FIELDED does not allow Team -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "FIELDED does not allow Team -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "FIELDED does not allow Team -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 11,
+      "reason": "ROUND_OF does not allow GrandPrix -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 12,
+      "reason": "ROUND_OF does not allow GrandPrix -> GrandPrix"
+    }
+  ],
+  "alignments": []
+}

@@ -1,0 +1,169 @@
+{
+  "chunk_id": "driver-max-verstappen#47",
+  "doc_id": "driver-max-verstappen",
+  "document_title": "Max Verstappen",
+  "section": null,
+  "page": 9,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "406817a50face2e3c83b492209c835795871e044f76f0213feb73fed76a5e020",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Max Verstappen",
+        "entity_type": "Driver",
+        "description": "A Formula One driver."
+      },
+      {
+        "local_id": "e2",
+        "name": "United States Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula One race held in the United States."
+      },
+      {
+        "local_id": "e3",
+        "name": "Mexico City Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula One race held in Mexico City."
+      },
+      {
+        "local_id": "e4",
+        "name": "São Paulo Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula One race held in São Paulo."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Max Verstappen at United States Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Verstappen won the sprint at the United States Grand Prix."
+      },
+      {
+        "local_id": "rr2",
+        "name": "Max Verstappen at Mexico City Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Verstappen received penalties during the Mexico City Grand Prix."
+      },
+      {
+        "local_id": "rr3",
+        "name": "Max Verstappen at São Paulo Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Verstappen was classified fourth in the São Paulo Grand Prix sprint."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Verstappen won the sprint at the United States Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e2",
+        "relationship_type": "AT_RACE",
+        "description": "Verstappen won the sprint at the United States Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr2",
+        "relationship_type": "ACHIEVED",
+        "description": "Verstappen received penalties during the Mexico City Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr2",
+        "target_id": "e3",
+        "relationship_type": "AT_RACE",
+        "description": "Verstappen received penalties during the Mexico City Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr3",
+        "relationship_type": "ACHIEVED",
+        "description": "Verstappen was classified fourth in the São Paulo Grand Prix sprint.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr3",
+        "target_id": "e4",
+        "relationship_type": "AT_RACE",
+        "description": "Verstappen was classified fourth in the São Paulo Grand Prix sprint.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 4,
+  "entities_accepted": 7,
+  "entities_rejected": 0,
+  "relationship_candidates": 9,
+  "relationships_accepted": 6,
+  "relationships_rejected": 6,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "AT_RACE does not allow Driver -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "FOR_TEAM does not allow Driver -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 6,
+      "reason": "AT_RACE does not allow Driver -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 7,
+      "reason": "FOR_TEAM does not allow Driver -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 10,
+      "reason": "AT_RACE does not allow Driver -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 11,
+      "reason": "FOR_TEAM does not allow Driver -> GrandPrix"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 0,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e2; description kept"
+    },
+    {
+      "index": 3,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr2 -AT_RACE-> e3; description kept"
+    },
+    {
+      "index": 6,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr3 -AT_RACE-> e4; description kept"
+    }
+  ]
+}

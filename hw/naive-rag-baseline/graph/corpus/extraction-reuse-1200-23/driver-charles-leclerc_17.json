@@ -1,0 +1,154 @@
+{
+  "chunk_id": "driver-charles-leclerc#17",
+  "doc_id": "driver-charles-leclerc",
+  "document_title": "Charles Leclerc",
+  "section": "Charles Leclerc > FIA Formula 2 (2017)",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "5742b11498efc966239fb8ccb475945259871930a00f25a93f1390619f82808e",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Charles Leclerc",
+        "entity_type": "Driver",
+        "description": "A driver who achieved a record-equalling sixth consecutive pole at Silverstone and won the feature."
+      },
+      {
+        "local_id": "e2",
+        "name": "GP2/Formula 2",
+        "entity_type": "Title",
+        "description": "The championship title won by Charles Leclerc."
+      },
+      {
+        "local_id": "e3",
+        "name": "2017",
+        "entity_type": "Season",
+        "description": "The season in which Charles Leclerc won the GP2/Formula 2 championship."
+      },
+      {
+        "local_id": "e4",
+        "name": "Silverstone",
+        "entity_type": "Circuit",
+        "description": "The circuit where Leclerc achieved a record-equalling sixth consecutive pole."
+      },
+      {
+        "local_id": "e5",
+        "name": "Budapest",
+        "entity_type": "Circuit",
+        "description": "The circuit where Leclerc was disqualified from pole for a technical infringement."
+      },
+      {
+        "local_id": "e6",
+        "name": "Spa-Francorchamps",
+        "entity_type": "Circuit",
+        "description": "The circuit where Leclerc returned to pole but was disqualified from his winning margin."
+      },
+      {
+        "local_id": "e7",
+        "name": "Monza",
+        "entity_type": "Circuit",
+        "description": "The circuit where Leclerc collided with Nyck de Vries."
+      },
+      {
+        "local_id": "e8",
+        "name": "Jerez",
+        "entity_type": "Circuit",
+        "description": "The circuit where Leclerc needed to achieve pole position and victory to clinch the title."
+      },
+      {
+        "local_id": "e9",
+        "name": "Nyck de Vries",
+        "entity_type": "Driver",
+        "description": "A driver who collided with Leclerc at Monza."
+      },
+      {
+        "local_id": "e10",
+        "name": "Rowland",
+        "entity_type": "Driver",
+        "description": "Leclerc's title rival during the season."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "WON",
+        "description": "Charles Leclerc won the GP2/Formula 2 championship title.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e3",
+        "relationship_type": "AWARDED_IN",
+        "description": "The GP2/Formula 2 championship title was awarded in the 2017 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e9",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Leclerc was a teammate of Nyck de Vries during the season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e10",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Leclerc was a teammate of Rowland during the season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 10,
+  "entities_accepted": 10,
+  "entities_rejected": 0,
+  "relationship_candidates": 9,
+  "relationships_accepted": 4,
+  "relationships_rejected": 5,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "ROUND_OF does not allow Circuit -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "ROUND_OF does not allow Circuit -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "ROUND_OF does not allow Circuit -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 5,
+      "reason": "ROUND_OF does not allow Circuit -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 6,
+      "reason": "ROUND_OF does not allow Circuit -> Season"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 0,
+      "action": "move_won_year",
+      "detail": "WON year 2017 stored as e2 -AWARDED_IN-> e3; from_year and to_year cleared; description kept"
+    }
+  ]
+}

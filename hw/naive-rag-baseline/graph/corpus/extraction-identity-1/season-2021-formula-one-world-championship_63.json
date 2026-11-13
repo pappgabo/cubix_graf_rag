@@ -1,0 +1,91 @@
+{
+  "chunk_id": "season-2021-formula-one-world-championship#63",
+  "doc_id": "season-2021-formula-one-world-championship",
+  "document_title": "2021 Formula One World Championship",
+  "section": null,
+  "page": 6,
+  "source": "https://en.wikipedia.org/wiki/2021_Formula_One_World_Championship",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "9675e63dc99d4587051dc1bc96d6a2bbde0727c34d35f1b4fd197351c9d310a2",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "entity_candidates": 8,
+  "entities_accepted": 8,
+  "entities_rejected": 0,
+  "relationship_candidates": 2,
+  "relationships_accepted": 1,
+  "relationships_rejected": 1,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "HELD_AT does not allow GrandPrix -> Driver"
+    }
+  ],
+  "alignments": [],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Lando Norris",
+        "entity_type": "Driver",
+        "description": "Norris took his second podium of the season in third place."
+      },
+      {
+        "local_id": "e2",
+        "name": "Charles Leclerc",
+        "entity_type": "Driver",
+        "description": "Leclerc took pole again in Azerbaijan, this time he was able to start the race."
+      },
+      {
+        "local_id": "e3",
+        "name": "Lewis Hamilton",
+        "entity_type": "Driver",
+        "description": "Hamilton got past Leclerc on lap 2 at turn 1."
+      },
+      {
+        "local_id": "e4",
+        "name": "Pierre Gasly",
+        "entity_type": "Driver",
+        "description": "Gasly passed Hamilton in the pitlane."
+      },
+      {
+        "local_id": "e5",
+        "name": "Max Verstappen",
+        "entity_type": "Driver",
+        "description": "Verstappen took the net race lead after Hamilton's pitstop."
+      },
+      {
+        "local_id": "e6",
+        "name": "Lance Stroll",
+        "entity_type": "Driver",
+        "description": "Stroll crashed out due to a tyre failure on lap 30."
+      },
+      {
+        "local_id": "e7",
+        "name": "2021",
+        "entity_type": "Season",
+        "description": "The season of the 2021 Formula One World Championship."
+      },
+      {
+        "local_id": "e8",
+        "name": "Azerbaijan Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "Leclerc took pole again in Azerbaijan."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e8",
+        "target_id": "e7",
+        "relationship_type": "ROUND_OF",
+        "description": "The Azerbaijan Grand Prix is a round of the 2021 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

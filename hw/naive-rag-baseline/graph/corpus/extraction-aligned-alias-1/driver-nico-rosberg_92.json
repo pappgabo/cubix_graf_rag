@@ -1,0 +1,55 @@
+{
+  "chunk_id": "driver-nico-rosberg#92",
+  "doc_id": "driver-nico-rosberg",
+  "document_title": "Nico Rosberg",
+  "section": "Nico Rosberg > Retirement from racing and subsequent ventures (2016–present)",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/Nico_Rosberg",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "032bd3956297cabcf3b57109ad23e3967d8390ce02b5c23792bbdc8b1ef13ecd",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "DROVE_FOR does not allow Driver -> Driver"
+    }
+  ],
+  "alignments": [],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Nico Rosberg",
+        "entity_type": "Driver",
+        "description": "A former Formula One driver who retired in 2016."
+      },
+      {
+        "local_id": "e2",
+        "name": "Team Rosberg",
+        "entity_type": "Team",
+        "description": "A racing team that competes in various motorsport events."
+      },
+      {
+        "local_id": "e3",
+        "name": "Robert Kubica",
+        "entity_type": "Driver",
+        "description": "A racing driver who sought to return to Formula One after a severe accident."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Nico Rosberg joined Team Rosberg as an adviser.",
+        "from_year": 2018,
+        "to_year": null,
+        "role": "adviser"
+      }
+    ]
+  }
+}

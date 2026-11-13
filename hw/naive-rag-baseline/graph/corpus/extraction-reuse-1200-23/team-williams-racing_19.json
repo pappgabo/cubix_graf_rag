@@ -1,0 +1,144 @@
+{
+  "chunk_id": "team-williams-racing#19",
+  "doc_id": "team-williams-racing",
+  "document_title": "Williams Racing",
+  "section": "Williams Racing > 1987 season",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "1cc6ffaa7e427054cd630ab5ee7a64a539ffa0416457201577d34e709b005bb8",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Nelson Piquet",
+        "entity_type": "Driver",
+        "description": "Won the Drivers' Championship title in 1987, winning three races and scoring 73 points."
+      },
+      {
+        "local_id": "e2",
+        "name": "Nigel Mansell",
+        "entity_type": "Driver",
+        "description": "Piquet's teammate who came in second place with six victories."
+      },
+      {
+        "local_id": "e3",
+        "name": "Williams",
+        "entity_type": "Team",
+        "description": "Won the Constructors' Championship in 1987 for the second year in a row, scoring 137 points."
+      },
+      {
+        "local_id": "e4",
+        "name": "1987",
+        "entity_type": "Season",
+        "description": "The season in which Williams won the Constructors' Championship and Nelson Piquet won the Drivers' Championship."
+      },
+      {
+        "local_id": "e5",
+        "name": "Honda",
+        "entity_type": "PowerUnit",
+        "description": "Partnered with Williams during the 1987 season."
+      },
+      {
+        "local_id": "e6",
+        "name": "Drivers' Championship",
+        "entity_type": "Title",
+        "description": "The championship title won by Nelson Piquet in 1987."
+      },
+      {
+        "local_id": "e7",
+        "name": "Constructors' Championship",
+        "entity_type": "Title",
+        "description": "The championship title won by Williams in 1987."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e6",
+        "relationship_type": "WON",
+        "description": "Nelson Piquet won the Drivers' Championship title.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e6",
+        "target_id": "e4",
+        "relationship_type": "AWARDED_IN",
+        "description": "Nelson Piquet won the Drivers' Championship title.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e7",
+        "relationship_type": "WON",
+        "description": "Williams won the Constructors' Championship title.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e7",
+        "target_id": "e4",
+        "relationship_type": "AWARDED_IN",
+        "description": "Williams won the Constructors' Championship title.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Nelson Piquet and Nigel Mansell were teammates in 1987.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e4",
+        "relationship_type": "ENTERED",
+        "description": "Williams entered the 1987 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 7,
+  "entities_accepted": 7,
+  "entities_rejected": 0,
+  "relationship_candidates": 6,
+  "relationships_accepted": 6,
+  "relationships_rejected": 2,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 6,
+      "reason": "POWERED_BY does not allow PowerUnit -> Team"
+    },
+    {
+      "element": "relationship",
+      "index": 7,
+      "reason": "RACED_IN does not allow Season -> PowerUnit"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 0,
+      "action": "move_won_year",
+      "detail": "WON year 1987 stored as e6 -AWARDED_IN-> e4; from_year and to_year cleared; description kept"
+    },
+    {
+      "index": 1,
+      "action": "move_won_year",
+      "detail": "WON year 1987 stored as e7 -AWARDED_IN-> e4; from_year and to_year cleared; description kept"
+    }
+  ]
+}

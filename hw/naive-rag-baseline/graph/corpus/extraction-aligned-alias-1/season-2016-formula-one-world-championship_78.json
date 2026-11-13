@@ -1,0 +1,56 @@
+{
+  "chunk_id": "season-2016-formula-one-world-championship#78",
+  "doc_id": "season-2016-formula-one-world-championship",
+  "document_title": "2016 Formula One World Championship",
+  "section": "European rounds",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/2016_Formula_One_World_Championship",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "9517aea52b70ef08c2a8575a2907a07ea065d23b85750664af2a71dd18cb4a78",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "DROVE_FOR does not allow Driver -> Driver"
+    },
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "DROVE_FOR does not allow Driver -> Season"
+    }
+  ],
+  "alignments": [],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Rosberg",
+        "entity_type": "Driver",
+        "description": "A driver who faced a time penalty for an aggressive pass on Verstappen."
+      },
+      {
+        "local_id": "e2",
+        "name": "Verstappen",
+        "entity_type": "Driver",
+        "description": "A Red Bull driver who was forced wide due to Rosberg's aggressive pass."
+      },
+      {
+        "local_id": "e3",
+        "name": "Lewis Hamilton",
+        "entity_type": "Driver",
+        "description": "The championship leader who was pessimistic about his position."
+      },
+      {
+        "local_id": "e4",
+        "name": "2016",
+        "entity_type": "Season",
+        "description": "The season of the Formula One World Championship being discussed."
+      }
+    ],
+    "relationships": []
+  }
+}

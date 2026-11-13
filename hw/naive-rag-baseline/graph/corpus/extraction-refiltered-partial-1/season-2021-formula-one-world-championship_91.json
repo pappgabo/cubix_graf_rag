@@ -1,0 +1,65 @@
+{
+  "chunk_id": "season-2021-formula-one-world-championship#91",
+  "doc_id": "season-2021-formula-one-world-championship",
+  "document_title": "2021 Formula One World Championship",
+  "section": null,
+  "page": 8,
+  "source": "https://en.wikipedia.org/wiki/2021_Formula_One_World_Championship",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "9fddd7bafd07004e3aedf086763070cd8816dddccf7f4df0f38ef7231be434b8",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "DROVE_FOR does not allow Team -> Driver"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "DROVE_FOR does not allow Team -> Driver"
+    }
+  ],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Hamilton",
+        "entity_type": "Driver",
+        "description": "A driver who was leading the race."
+      },
+      {
+        "local_id": "e2",
+        "name": "Pérez",
+        "entity_type": "Driver",
+        "description": "Verstappen's teammate with Red Bull."
+      },
+      {
+        "local_id": "e3",
+        "name": "Verstappen",
+        "entity_type": "Driver",
+        "description": "A driver who was unable to capitalise on the situation."
+      },
+      {
+        "local_id": "e4",
+        "name": "Red Bull",
+        "entity_type": "Team",
+        "description": "The team Pérez and Verstappen race for."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e2",
+        "target_id": "e3",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Pérez is Verstappen's teammate.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

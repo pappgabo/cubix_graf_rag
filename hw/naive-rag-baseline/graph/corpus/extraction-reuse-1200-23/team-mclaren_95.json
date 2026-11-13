@@ -1,0 +1,176 @@
+{
+  "chunk_id": "team-mclaren#95",
+  "doc_id": "team-mclaren",
+  "document_title": "McLaren",
+  "section": "Customer racing",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "bc6e5944eb3afbea241e2f8776d42b66fb80b9daf9e5b73c58af2bf19c650013",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "McLaren",
+        "entity_type": "Team",
+        "description": "A Formula 1 team."
+      },
+      {
+        "local_id": "e2",
+        "name": "F1 GTR",
+        "entity_type": "Car",
+        "description": "A racing version of the McLaren F1 road car."
+      },
+      {
+        "local_id": "e3",
+        "name": "MP4-12C",
+        "entity_type": "Car",
+        "description": "A McLaren road car that had a GT3 version developed."
+      },
+      {
+        "local_id": "e4",
+        "name": "650S",
+        "entity_type": "Car",
+        "description": "A successor to the MP4-12C for GT3 racing."
+      },
+      {
+        "local_id": "e5",
+        "name": "720S",
+        "entity_type": "Car",
+        "description": "A successor to the 650S for GT3 racing."
+      },
+      {
+        "local_id": "e6",
+        "name": "570S",
+        "entity_type": "Car",
+        "description": "A McLaren car developed for GT4 racing."
+      },
+      {
+        "local_id": "e7",
+        "name": "Artura",
+        "entity_type": "Car",
+        "description": "A McLaren model based on which a new GT4 model was announced."
+      },
+      {
+        "local_id": "e8",
+        "name": "Artura Trophy",
+        "entity_type": "Car",
+        "description": "An unrestricted version of the Artura to be used in a one-make series."
+      },
+      {
+        "local_id": "e9",
+        "name": "24 Hours of Le Mans",
+        "entity_type": "GrandPrix",
+        "description": "A prestigious endurance race."
+      },
+      {
+        "local_id": "e10",
+        "name": "BPR Global GT Series",
+        "entity_type": "Season",
+        "description": "A racing series in which the F1 GTR won."
+      },
+      {
+        "local_id": "e11",
+        "name": "VLN",
+        "entity_type": "GrandPrix",
+        "description": "A racing series where the GT3 version of the MP4-12C made its debut."
+      },
+      {
+        "local_id": "e12",
+        "name": "ADAC GT Masters",
+        "entity_type": "Season",
+        "description": "A racing series where the GT3 version of the MP4-12C made its debut."
+      },
+      {
+        "local_id": "e13",
+        "name": "GT4",
+        "entity_type": "Season",
+        "description": "A racing category for which the McLaren 570S was developed."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "FIELDED",
+        "description": "McLaren Racing's sister company built the F1 GTR.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e4",
+        "relationship_type": "FIELDED",
+        "description": "The MP4-12C was succeeded by the McLaren 650S for GT3 racing.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e5",
+        "relationship_type": "FIELDED",
+        "description": "The McLaren 650S was succeeded by the McLaren 720S for GT3 racing.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e6",
+        "relationship_type": "FIELDED",
+        "description": "A GT4 version of the McLaren 570S was developed.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 13,
+  "entities_accepted": 13,
+  "entities_rejected": 0,
+  "relationship_candidates": 11,
+  "relationships_accepted": 4,
+  "relationships_rejected": 7,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "FIELDED is not temporal; from_year=2011, to_year=None, role=None cannot be stored without dropping them"
+    },
+    {
+      "element": "relationship",
+      "index": 5,
+      "reason": "RACED_IN is not temporal; from_year=2012, to_year=None, role=None cannot be stored without dropping them"
+    },
+    {
+      "element": "relationship",
+      "index": 9,
+      "reason": "FIELDED is not temporal; from_year=2022, to_year=None, role=None cannot be stored without dropping them"
+    },
+    {
+      "element": "relationship",
+      "index": 10,
+      "reason": "FIELDED is not temporal; from_year=2022, to_year=None, role=None cannot be stored without dropping them"
+    },
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "WON does not allow Car -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "WON does not allow Car -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "RACED_IN does not allow Car -> GrandPrix"
+    }
+  ],
+  "alignments": []
+}

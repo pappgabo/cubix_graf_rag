@@ -1,0 +1,146 @@
+{
+  "chunk_id": "team-mclaren#18",
+  "doc_id": "team-mclaren",
+  "document_title": "McLaren",
+  "section": "1973–1981: Hunt–Lauda era and transition",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "f5c1c4b2bcf68ac5b6382ac0e178d16b84fff2b3a81e81f7164be43d00adaa87",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "McLaren",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that entered cars."
+      },
+      {
+        "local_id": "e2",
+        "name": "Alain Prost",
+        "entity_type": "Driver",
+        "description": "A Formula One driver who drove for McLaren."
+      },
+      {
+        "local_id": "e3",
+        "name": "John Barnard",
+        "entity_type": "Driver",
+        "description": "A designer who worked on the McLaren MP4 chassis."
+      },
+      {
+        "local_id": "e4",
+        "name": "Watson",
+        "entity_type": "Driver",
+        "description": "A Formula One driver who drove the McLaren MP4."
+      },
+      {
+        "local_id": "e5",
+        "name": "Andrea de Cesaris",
+        "entity_type": "Driver",
+        "description": "A Formula One driver who drove the McLaren MP4."
+      },
+      {
+        "local_id": "e6",
+        "name": "MP4",
+        "entity_type": "Car",
+        "description": "A chassis model used by McLaren."
+      },
+      {
+        "local_id": "e7",
+        "name": "British Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula One race where Watson won."
+      },
+      {
+        "local_id": "e8",
+        "name": "1981",
+        "entity_type": "Season",
+        "description": "The championship year in which Watson won the British Grand Prix."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Watson at British Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Watson recorded a result in the British Grand Prix."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e6",
+        "target_id": "e8",
+        "relationship_type": "RACED_IN",
+        "description": "The MP4 took part in the 1981 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Watson recorded a result in the British Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e7",
+        "relationship_type": "AT_RACE",
+        "description": "Watson recorded a result in the British Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e1",
+        "relationship_type": "DROVE_FOR",
+        "description": "Watson drove for McLaren.",
+        "from_year": 1981,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e1",
+        "relationship_type": "DROVE_FOR",
+        "description": "Andrea de Cesaris drove for McLaren.",
+        "from_year": 1981,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e1",
+        "relationship_type": "DROVE_FOR",
+        "description": "Alain Prost drove for McLaren.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 8,
+  "entities_accepted": 9,
+  "entities_rejected": 0,
+  "relationship_candidates": 6,
+  "relationships_accepted": 6,
+  "relationships_rejected": 1,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "FIELDED is not temporal; from_year=1981, to_year=None, role=None cannot be stored without dropping them"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 2,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e7; description kept"
+    }
+  ]
+}

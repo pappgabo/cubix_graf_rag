@@ -1,0 +1,204 @@
+{
+  "chunk_id": "driver-michael-schumacher#77",
+  "doc_id": "driver-michael-schumacher",
+  "document_title": "Michael Schumacher",
+  "section": null,
+  "page": 16,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "aad8984f7a27cbbaf835abf04f40ba146f0e1d84c77190ac38d46bc84b1b8f7e",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Michael Schumacher",
+        "entity_type": "Driver",
+        "description": "A Formula One driver known for his significant achievements and records."
+      },
+      {
+        "local_id": "e2",
+        "name": "Scuderia Ferrari",
+        "entity_type": "Team",
+        "description": "A Formula One team that Michael Schumacher drove for."
+      },
+      {
+        "local_id": "e3",
+        "name": "1996",
+        "entity_type": "Season",
+        "description": "The year Michael Schumacher joined Ferrari."
+      },
+      {
+        "local_id": "e4",
+        "name": "1994",
+        "entity_type": "Season",
+        "description": "The year of reliability issues that affected Michael Schumacher's race results."
+      },
+      {
+        "local_id": "e5",
+        "name": "1999",
+        "entity_type": "Season",
+        "description": "The year Michael Schumacher gave a win to his teammate Irvine."
+      },
+      {
+        "local_id": "e6",
+        "name": "2002",
+        "entity_type": "Season",
+        "description": "The year Michael Schumacher gave a win to his teammate Barrichello."
+      },
+      {
+        "local_id": "e7",
+        "name": "2006",
+        "entity_type": "Season",
+        "description": "The year Michael Schumacher retired from Formula One."
+      },
+      {
+        "local_id": "e8",
+        "name": "1993 Monaco Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A race where Michael Schumacher retired."
+      },
+      {
+        "local_id": "e9",
+        "name": "2006 Japanese Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A race where Michael Schumacher retired."
+      },
+      {
+        "local_id": "e10",
+        "name": "2012 Monaco Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A race where Michael Schumacher retired."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Michael Schumacher at 1993 Monaco Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Michael Schumacher retired at the 1993 Monaco Grand Prix."
+      },
+      {
+        "local_id": "rr2",
+        "name": "Michael Schumacher at 2006 Japanese Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Michael Schumacher retired at the 2006 Japanese Grand Prix."
+      },
+      {
+        "local_id": "rr3",
+        "name": "Michael Schumacher at 2012 Monaco Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Michael Schumacher retired at the 2012 Monaco Grand Prix."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Michael Schumacher drove for Ferrari.",
+        "from_year": 1996,
+        "to_year": 2006,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Michael Schumacher retired at the 1993 Monaco Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e8",
+        "relationship_type": "AT_RACE",
+        "description": "Michael Schumacher retired at the 1993 Monaco Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr2",
+        "relationship_type": "ACHIEVED",
+        "description": "Michael Schumacher retired at the 2006 Japanese Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr2",
+        "target_id": "e9",
+        "relationship_type": "AT_RACE",
+        "description": "Michael Schumacher retired at the 2006 Japanese Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr3",
+        "relationship_type": "ACHIEVED",
+        "description": "Michael Schumacher retired at the 2012 Monaco Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr3",
+        "target_id": "e10",
+        "relationship_type": "AT_RACE",
+        "description": "Michael Schumacher retired at the 2012 Monaco Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 10,
+  "entities_accepted": 13,
+  "entities_rejected": 0,
+  "relationship_candidates": 8,
+  "relationships_accepted": 7,
+  "relationships_rejected": 4,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "ACHIEVED does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "ACHIEVED does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "ACHIEVED does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "ACHIEVED does not allow Driver -> Season"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 5,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e8; description kept"
+    },
+    {
+      "index": 6,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr2 -AT_RACE-> e9; description kept"
+    },
+    {
+      "index": 7,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr3 -AT_RACE-> e10; description kept"
+    }
+  ]
+}

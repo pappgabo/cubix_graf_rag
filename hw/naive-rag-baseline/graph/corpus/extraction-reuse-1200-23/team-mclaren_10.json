@@ -1,0 +1,172 @@
+{
+  "chunk_id": "team-mclaren#10",
+  "doc_id": "team-mclaren",
+  "document_title": "McLaren",
+  "section": "1966–1968: Early beginnings",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "5aba54063363c67a33554f964198c54756f2c170b45332c1b7c6da2beb6b0ff6",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Bruce McLaren",
+        "entity_type": "Driver",
+        "description": "Driver who made the team's Grand Prix debut."
+      },
+      {
+        "local_id": "e2",
+        "name": "McLaren",
+        "entity_type": "Team",
+        "description": "Formula One team founded by Bruce McLaren."
+      },
+      {
+        "local_id": "e3",
+        "name": "1966",
+        "entity_type": "Season",
+        "description": "Season in which McLaren made its Grand Prix debut."
+      },
+      {
+        "local_id": "e4",
+        "name": "1966 Monaco Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The Grand Prix where McLaren made its debut."
+      },
+      {
+        "local_id": "e5",
+        "name": "M2B",
+        "entity_type": "Car",
+        "description": "The car used by McLaren in its 1966 debut."
+      },
+      {
+        "local_id": "e6",
+        "name": "Ford's Indianapolis 500 engine",
+        "entity_type": "PowerUnit",
+        "description": "Engine used by McLaren in 1966."
+      },
+      {
+        "local_id": "e7",
+        "name": "Serenissima V8",
+        "entity_type": "PowerUnit",
+        "description": "Another engine used by McLaren in 1966."
+      },
+      {
+        "local_id": "e8",
+        "name": "British Racing Motors (BRM) V12",
+        "entity_type": "PowerUnit",
+        "description": "Engine decided to be used by Bruce McLaren for 1967."
+      },
+      {
+        "local_id": "e9",
+        "name": "M4B",
+        "entity_type": "Car",
+        "description": "Modified Formula Two car used by McLaren initially in 1967."
+      },
+      {
+        "local_id": "e10",
+        "name": "2.0-litre BRM V8",
+        "entity_type": "PowerUnit",
+        "description": "Engine used in the M4B car."
+      },
+      {
+        "local_id": "e11",
+        "name": "M5A",
+        "entity_type": "Car",
+        "description": "Car built by McLaren for the V12 engine."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e2",
+        "target_id": "e3",
+        "relationship_type": "ENTERED",
+        "description": "McLaren entered the 1966 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e5",
+        "relationship_type": "FIELDED",
+        "description": "McLaren fielded the M2B car in the 1966 Monaco Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e6",
+        "relationship_type": "POWERED_BY",
+        "description": "The M2B car was powered by Ford's Indianapolis 500 engine.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e7",
+        "relationship_type": "POWERED_BY",
+        "description": "The M2B car was also powered by the Serenissima V8 engine.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e9",
+        "relationship_type": "FIELDED",
+        "description": "McLaren fielded the M4B car in 1967.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e9",
+        "target_id": "e10",
+        "relationship_type": "POWERED_BY",
+        "description": "The M4B car was powered by a 2.0-litre BRM V8 engine.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e11",
+        "relationship_type": "FIELDED",
+        "description": "McLaren built the M5A car for the V12 engine.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 11,
+  "entities_accepted": 11,
+  "entities_rejected": 0,
+  "relationship_candidates": 9,
+  "relationships_accepted": 7,
+  "relationships_rejected": 2,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "ROUND_OF does not allow Team -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 5,
+      "reason": "POWERED_BY does not allow Team -> PowerUnit"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 0,
+      "action": "clear_redundant_season_year",
+      "detail": "ENTERED year 1966 already named by Season 'e3'; from_year and to_year cleared"
+    }
+  ]
+}

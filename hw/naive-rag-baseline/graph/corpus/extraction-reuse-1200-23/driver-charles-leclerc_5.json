@@ -1,0 +1,130 @@
+{
+  "chunk_id": "driver-charles-leclerc#5",
+  "doc_id": "driver-charles-leclerc",
+  "document_title": "Charles Leclerc",
+  "section": "Charles Leclerc > 2010–2011: Progression to international series",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "48d06619acdcba5d12ab1cd0e44dc5890f4d5e66ea9965128d1001cae53d27ec",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Charles Leclerc",
+        "entity_type": "Driver",
+        "description": "A driver who progressed to international competition in 2010."
+      },
+      {
+        "local_id": "e2",
+        "name": "CIK-FIA Monaco Kart Cup",
+        "entity_type": "GrandPrix",
+        "description": "A karting event where Leclerc became the youngest winner."
+      },
+      {
+        "local_id": "e3",
+        "name": "Circuit de Monaco",
+        "entity_type": "Circuit",
+        "description": "The circuit where the CIK-FIA Monaco Kart Cup is held."
+      },
+      {
+        "local_id": "e4",
+        "name": "Intrepid",
+        "entity_type": "Team",
+        "description": "The team Leclerc joined in 2011."
+      },
+      {
+        "local_id": "e5",
+        "name": "World Cup",
+        "entity_type": "Title",
+        "description": "A title won by Leclerc at Sarno."
+      },
+      {
+        "local_id": "e6",
+        "name": "2010",
+        "entity_type": "Season",
+        "description": "The season when Leclerc entered the junior KF3 class."
+      },
+      {
+        "local_id": "e7",
+        "name": "2011",
+        "entity_type": "Season",
+        "description": "The season when Leclerc was scouted by Nicolas Todt."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e2",
+        "target_id": "e3",
+        "relationship_type": "HELD_AT",
+        "description": "The CIK-FIA Monaco Kart Cup is held at the Circuit de Monaco.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e4",
+        "relationship_type": "DROVE_FOR",
+        "description": "Leclerc joined Intrepid in 2011.",
+        "from_year": 2011,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e5",
+        "relationship_type": "WON",
+        "description": "Leclerc won the World Cup at Sarno.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e6",
+        "relationship_type": "ENTERED",
+        "description": "Intrepid took part in the 2010 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e7",
+        "relationship_type": "ENTERED",
+        "description": "Intrepid took part in the 2011 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 7,
+  "entities_accepted": 7,
+  "entities_rejected": 0,
+  "relationship_candidates": 6,
+  "relationships_accepted": 5,
+  "relationships_rejected": 1,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "ACHIEVED Driver -> GrandPrix has from_year=2010, to_year=None, role=None; the year or role cannot be stored on the reified result"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 4,
+      "action": "clear_redundant_season_year",
+      "detail": "ENTERED year 2010 already named by Season 'e6'; from_year and to_year cleared"
+    },
+    {
+      "index": 5,
+      "action": "clear_redundant_season_year",
+      "detail": "ENTERED year 2011 already named by Season 'e7'; from_year and to_year cleared"
+    }
+  ]
+}

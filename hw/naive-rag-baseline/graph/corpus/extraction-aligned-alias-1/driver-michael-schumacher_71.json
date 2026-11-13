@@ -1,0 +1,70 @@
+{
+  "chunk_id": "driver-michael-schumacher#71",
+  "doc_id": "driver-michael-schumacher",
+  "document_title": "Michael Schumacher",
+  "section": null,
+  "page": 6,
+  "source": "https://en.wikipedia.org/wiki/Michael_Schumacher",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "dc2d33f0976a5763167acfb0ae2852cc72869624933ec2036e9f413a64f2f792",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "AWARDED_IN does not allow Team -> Title"
+    }
+  ],
+  "alignments": [],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Michael Schumacher",
+        "entity_type": "Driver",
+        "description": "A Formula One driver who won the Drivers' Championship."
+      },
+      {
+        "local_id": "e2",
+        "name": "Scuderia Ferrari",
+        "entity_type": "Team",
+        "description": "A Formula One team that Schumacher drove for."
+      },
+      {
+        "local_id": "e3",
+        "name": "1979",
+        "entity_type": "Season",
+        "description": "The last year Ferrari won the Drivers' Championship before Schumacher's win."
+      },
+      {
+        "local_id": "e4",
+        "name": "Drivers' Championship",
+        "entity_type": "Title",
+        "description": "The championship title won by Schumacher."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e4",
+        "relationship_type": "WON",
+        "description": "Schumacher won the Drivers' Championship.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e3",
+        "relationship_type": "ENTERED",
+        "description": "Ferrari entered the season in which Schumacher won the championship.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

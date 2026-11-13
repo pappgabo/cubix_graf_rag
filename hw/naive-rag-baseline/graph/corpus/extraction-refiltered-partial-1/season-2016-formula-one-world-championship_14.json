@@ -1,0 +1,71 @@
+{
+  "chunk_id": "season-2016-formula-one-world-championship#14",
+  "doc_id": "season-2016-formula-one-world-championship",
+  "document_title": "2016 Formula One World Championship",
+  "section": "Team changes",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/2016_Formula_One_World_Championship",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "3d4671624d7364ebc3fcb2b33d602e5bfde2d4592e003a678c2eb8116f3261a7",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "POWERED_BY does not allow Team -> PowerUnit"
+    },
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "POWERED_BY does not allow Team -> PowerUnit"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "POWERED_BY does not allow PowerUnit -> PowerUnit"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "ENTERED does not allow PowerUnit -> Season"
+    }
+  ],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Scuderia Toro Rosso",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that returned to using Ferrari power units."
+      },
+      {
+        "local_id": "e2",
+        "name": "Ferrari",
+        "entity_type": "PowerUnit",
+        "description": "The power unit supplier for Scuderia Toro Rosso in 2016."
+      },
+      {
+        "local_id": "e3",
+        "name": "Renault",
+        "entity_type": "PowerUnit",
+        "description": "The power unit supplier that announced they would no longer supply customer engines."
+      },
+      {
+        "local_id": "e4",
+        "name": "type 060",
+        "entity_type": "PowerUnit",
+        "description": "The type of power unit used by Ferrari teams in 2015."
+      },
+      {
+        "local_id": "e5",
+        "name": "2016",
+        "entity_type": "Season",
+        "description": "The championship year for the 2016 Formula One World Championship."
+      }
+    ],
+    "relationships": []
+  }
+}

@@ -1,0 +1,125 @@
+{
+  "chunk_id": "team-williams-racing#18",
+  "doc_id": "team-williams-racing",
+  "document_title": "Williams Racing",
+  "section": "Williams Racing > 1986 season",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "0439994cea49d75d4ee0e26d31140fb74c812f36c9e1c701771085e4f76b8d82",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Nigel Mansell",
+        "entity_type": "Driver",
+        "description": "A driver who suffered a tyre failure and retired from the race."
+      },
+      {
+        "local_id": "e2",
+        "name": "Nelson Piquet",
+        "entity_type": "Driver",
+        "description": "A driver who was leading the race and finished second."
+      },
+      {
+        "local_id": "e3",
+        "name": "Alain Prost",
+        "entity_type": "Driver",
+        "description": "A driver who won the race."
+      },
+      {
+        "local_id": "e4",
+        "name": "Williams Racing",
+        "entity_type": "Team",
+        "description": "The team that Mansell and Piquet drove for."
+      },
+      {
+        "local_id": "e5",
+        "name": "1986",
+        "entity_type": "Season",
+        "description": "The season during which the events took place."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e4",
+        "relationship_type": "DROVE_FOR",
+        "description": "Mansell drove for Williams Racing.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e4",
+        "relationship_type": "DROVE_FOR",
+        "description": "Piquet drove for Williams Racing.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e4",
+        "relationship_type": "DROVE_FOR",
+        "description": "Prost drove for Williams Racing.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e5",
+        "relationship_type": "ENTERED",
+        "description": "Williams Racing entered the 1986 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e3",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Mansell was teammates with Prost.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e1",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Piquet was teammates with Mansell.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e3",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Piquet was teammates with Prost.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 5,
+  "entities_accepted": 5,
+  "entities_rejected": 0,
+  "relationship_candidates": 8,
+  "relationships_accepted": 7,
+  "relationships_rejected": 1,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 7,
+      "reason": "WON does not allow Driver -> Season"
+    }
+  ],
+  "alignments": []
+}

@@ -1,0 +1,123 @@
+{
+  "chunk_id": "driver-kimi-raikkonen#91",
+  "doc_id": "driver-kimi-raikkonen",
+  "document_title": "Kimi Räikkönen",
+  "section": "Other racing > Rallying",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "921a89104b619726a7742b9a0b37cc98d35b8a6ed3efb3aa3030dfe85da6d2c6",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Kimi Räikkönen",
+        "entity_type": "Driver",
+        "description": "A Finnish racing driver who competed in Formula One and later in rallying."
+      },
+      {
+        "local_id": "e2",
+        "name": "Tommi Mäkinen Racing",
+        "entity_type": "Team",
+        "description": "A rally team that prepared the Abarth Grande Punto S2000 for Kimi Räikkönen's debut."
+      },
+      {
+        "local_id": "e3",
+        "name": "Abarth Grande Punto S2000",
+        "entity_type": "Car",
+        "description": "The car driven by Kimi Räikkönen during his initial rally debut."
+      },
+      {
+        "local_id": "e4",
+        "name": "2009",
+        "entity_type": "Season",
+        "description": "The year Kimi Räikkönen made his initial rally debut."
+      },
+      {
+        "local_id": "e5",
+        "name": "Rally Finland",
+        "entity_type": "GrandPrix",
+        "description": "The rally event where Kimi Räikkönen made his WRC debut."
+      },
+      {
+        "local_id": "e6",
+        "name": "Citroën Junior Team",
+        "entity_type": "Team",
+        "description": "The team Kimi Räikkönen joined to compete in the World Rally Championship."
+      },
+      {
+        "local_id": "e7",
+        "name": "Citroën C4 WRC",
+        "entity_type": "Car",
+        "description": "The car Kimi Räikkönen drove in the World Rally Championship."
+      },
+      {
+        "local_id": "e8",
+        "name": "2010",
+        "entity_type": "Season",
+        "description": "The year Kimi Räikkönen shifted to the World Rally Championship."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Kimi Räikkönen drove for Tommi Mäkinen Racing during his initial rally debut.",
+        "from_year": 2009,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e6",
+        "relationship_type": "DROVE_FOR",
+        "description": "Kimi Räikkönen drove for Citroën Junior Team in the World Rally Championship.",
+        "from_year": 2010,
+        "to_year": null,
+        "role": "full-time driver"
+      },
+      {
+        "source_id": "e6",
+        "target_id": "e8",
+        "relationship_type": "ENTERED",
+        "description": "Citroën Junior Team entered the 2010 World Rally Championship.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 8,
+  "entities_accepted": 8,
+  "entities_rejected": 0,
+  "relationship_candidates": 6,
+  "relationships_accepted": 3,
+  "relationships_rejected": 3,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "FIELDED does not allow Driver -> Car"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "RACED_IN does not allow Driver -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "FIELDED does not allow Driver -> Car"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 5,
+      "action": "clear_redundant_season_year",
+      "detail": "ENTERED year 2010 already named by Season 'e8'; from_year and to_year cleared"
+    }
+  ]
+}

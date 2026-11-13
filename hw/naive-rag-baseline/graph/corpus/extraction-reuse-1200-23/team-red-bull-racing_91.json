@@ -1,0 +1,103 @@
+{
+  "chunk_id": "team-red-bull-racing#91",
+  "doc_id": "team-red-bull-racing",
+  "document_title": "Red Bull Racing",
+  "section": "Esports Drivers' Champions",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "593c692530af0d80bc732d66ab2633afa701ee7b8cdfc9784a58dfa63165f415",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Frederik Rasmussen",
+        "entity_type": "Driver",
+        "description": "Won the Formula One Esports Drivers' Championship for Red Bull Racing Esports."
+      },
+      {
+        "local_id": "e2",
+        "name": "Jarno Opmeer",
+        "entity_type": "Driver",
+        "description": "Won the Formula One Esports Drivers' Championship for Red Bull Racing Esports."
+      },
+      {
+        "local_id": "e3",
+        "name": "Red Bull Racing Esports",
+        "entity_type": "Team",
+        "description": "Esports team that competes in Formula One Esports."
+      },
+      {
+        "local_id": "e4",
+        "name": "2023",
+        "entity_type": "Season",
+        "description": "Season of the Formula One Esports Drivers' Championship won by Frederik Rasmussen."
+      },
+      {
+        "local_id": "e5",
+        "name": "2025",
+        "entity_type": "Season",
+        "description": "Season of the Formula One Esports Drivers' Championship won by Jarno Opmeer."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e3",
+        "relationship_type": "DROVE_FOR",
+        "description": "Frederik Rasmussen drove for Red Bull Racing Esports.",
+        "from_year": 2023,
+        "to_year": 2024,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e3",
+        "relationship_type": "DROVE_FOR",
+        "description": "Jarno Opmeer drove for Red Bull Racing Esports.",
+        "from_year": 2025,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e4",
+        "relationship_type": "ENTERED",
+        "description": "Red Bull Racing Esports entered the 2023 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e5",
+        "relationship_type": "ENTERED",
+        "description": "Red Bull Racing Esports entered the 2025 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 5,
+  "entities_accepted": 5,
+  "entities_rejected": 0,
+  "relationship_candidates": 4,
+  "relationships_accepted": 4,
+  "relationships_rejected": 0,
+  "rejections": [],
+  "alignments": [
+    {
+      "index": 2,
+      "action": "clear_redundant_season_year",
+      "detail": "ENTERED year 2023 already named by Season 'e4'; from_year and to_year cleared"
+    },
+    {
+      "index": 3,
+      "action": "clear_redundant_season_year",
+      "detail": "ENTERED year 2025 already named by Season 'e5'; from_year and to_year cleared"
+    }
+  ]
+}

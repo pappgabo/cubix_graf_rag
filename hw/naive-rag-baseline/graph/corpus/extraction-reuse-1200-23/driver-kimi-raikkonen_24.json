@@ -1,0 +1,80 @@
+{
+  "chunk_id": "driver-kimi-raikkonen#24",
+  "doc_id": "driver-kimi-raikkonen",
+  "document_title": "Kimi Räikkönen",
+  "section": "Formula One career > Ferrari (2007–2009)",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "e7fbea3e82a56b1f3810510842981cb9bbbd457845613afaae71432959ad9146",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Kimi Räikkönen",
+        "entity_type": "Driver",
+        "description": "A Finnish racing driver who raced for Ferrari from 2007 to 2009."
+      },
+      {
+        "local_id": "e2",
+        "name": "Scuderia Ferrari",
+        "entity_type": "Team",
+        "description": "An Italian Formula One team that entered cars in the 2007-2009 seasons."
+      },
+      {
+        "local_id": "e3",
+        "name": "Felipe Massa",
+        "entity_type": "Driver",
+        "description": "A Brazilian racing driver who was Kimi Räikkönen's teammate at Ferrari."
+      },
+      {
+        "local_id": "e4",
+        "name": "2007",
+        "entity_type": "Season",
+        "description": "The Formula One season in which Kimi Räikkönen started racing for Ferrari."
+      },
+      {
+        "local_id": "e5",
+        "name": "2008",
+        "entity_type": "Season",
+        "description": "The Formula One season in which Kimi Räikkönen continued racing for Ferrari."
+      },
+      {
+        "local_id": "e6",
+        "name": "2009",
+        "entity_type": "Season",
+        "description": "The Formula One season in which Kimi Räikkönen finished racing for Ferrari."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Kimi Räikkönen drove for Scuderia Ferrari.",
+        "from_year": 2007,
+        "to_year": 2009,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e3",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Kimi Räikkönen was teammates with Felipe Massa at Ferrari.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 6,
+  "entities_accepted": 6,
+  "entities_rejected": 0,
+  "relationship_candidates": 2,
+  "relationships_accepted": 2,
+  "relationships_rejected": 0,
+  "rejections": [],
+  "alignments": []
+}

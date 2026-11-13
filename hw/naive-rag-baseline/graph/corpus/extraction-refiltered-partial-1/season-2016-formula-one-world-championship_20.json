@@ -1,0 +1,57 @@
+{
+  "chunk_id": "season-2016-formula-one-world-championship#20",
+  "doc_id": "season-2016-formula-one-world-championship",
+  "document_title": "2016 Formula One World Championship",
+  "section": "Driver changes",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/2016_Formula_One_World_Championship",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "e929f160d670762a05fa5cde7cb904bc08baee96873982d8e44e7018814e82f0",
+  "validation_version": "partial-1",
+  "source_status": "ok",
+  "status": "ok",
+  "rejections": [],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Kevin Magnussen",
+        "entity_type": "Driver",
+        "description": "He was replaced by Kevin Magnussen, who was released by McLaren when they chose not to renew his contract after he entered a single race for the team in 2015."
+      },
+      {
+        "local_id": "e2",
+        "name": "McLaren",
+        "entity_type": "Team",
+        "description": "McLaren chose not to renew Kevin Magnussen's contract."
+      },
+      {
+        "local_id": "e3",
+        "name": "2015",
+        "entity_type": "Season",
+        "description": "The year when Kevin Magnussen entered a single race for McLaren."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Kevin Magnussen was released by McLaren when they chose not to renew his contract after he entered a single race for the team in 2015.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e3",
+        "relationship_type": "ENTERED",
+        "description": "McLaren entered a single race in 2015 with Kevin Magnussen.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

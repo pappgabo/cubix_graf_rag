@@ -1,0 +1,87 @@
+{
+  "chunk_id": "driver-michael-schumacher#73",
+  "doc_id": "driver-michael-schumacher",
+  "document_title": "Michael Schumacher",
+  "section": null,
+  "page": 15,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "ac5473649d6f79b132f116a3135068f5b36d7c5c44df31647171aade15bcb0b2",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Michael Schumacher",
+        "entity_type": "Driver",
+        "description": "A prominent Formula One driver known for his multiple championship wins."
+      },
+      {
+        "local_id": "e2",
+        "name": "Nürburgring Circuit",
+        "entity_type": "Circuit",
+        "description": "A racing circuit in Germany, known for its challenging layout."
+      },
+      {
+        "local_id": "e3",
+        "name": "Bahrain International Circuit",
+        "entity_type": "Circuit",
+        "description": "A racing circuit located in Bahrain, known for hosting Formula One races."
+      },
+      {
+        "local_id": "e4",
+        "name": "Hungaroring",
+        "entity_type": "Circuit",
+        "description": "A racing circuit located in Hungary, known for its tight and twisty layout."
+      },
+      {
+        "local_id": "e5",
+        "name": "State Prize of North Rhine-Westphalia",
+        "entity_type": "Title",
+        "description": "An award given to individuals for their contributions, awarded to Schumacher in 2022."
+      },
+      {
+        "local_id": "e6",
+        "name": "2022",
+        "entity_type": "Season",
+        "description": "The year in which Schumacher was awarded the State Prize of North Rhine-Westphalia."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e5",
+        "target_id": "e6",
+        "relationship_type": "AWARDED_IN",
+        "description": "Schumacher was awarded the State Prize of North Rhine-Westphalia.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 6,
+  "entities_accepted": 6,
+  "entities_rejected": 0,
+  "relationship_candidates": 4,
+  "relationships_accepted": 1,
+  "relationships_rejected": 3,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "HELD_AT does not allow Circuit -> Driver"
+    },
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "HELD_AT does not allow Circuit -> Driver"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "HELD_AT does not allow Circuit -> Driver"
+    }
+  ],
+  "alignments": []
+}

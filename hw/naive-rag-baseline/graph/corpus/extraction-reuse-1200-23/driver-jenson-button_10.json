@@ -1,0 +1,74 @@
+{
+  "chunk_id": "driver-jenson-button#10",
+  "doc_id": "driver-jenson-button",
+  "document_title": "Jenson Button",
+  "section": "Junior car career",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "92ebfb7e19f6407b6b6764f1713be7ef4870383c1697a95723eb30b2ca96cfe5",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Jenson Button",
+        "entity_type": "Driver",
+        "description": "A British racing driver who competed in Formula One."
+      },
+      {
+        "local_id": "e2",
+        "name": "Promatecme",
+        "entity_type": "Team",
+        "description": "A Formula 3 team that Jenson Button drove for."
+      },
+      {
+        "local_id": "e3",
+        "name": "Circuit de Nevers Magny-Cours",
+        "entity_type": "Circuit",
+        "description": "A racing venue in France where Jenson Button had a test."
+      },
+      {
+        "local_id": "e4",
+        "name": "McLaren MP4/14",
+        "entity_type": "Car",
+        "description": "A Formula One car that Jenson Button tested as part of the Autosport BRDC Award."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Jenson Button drove for Promatecme in Formula 3.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e4",
+        "relationship_type": "FIELDED",
+        "description": "Promatecme entered the McLaren MP4/14 for testing.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 4,
+  "entities_accepted": 4,
+  "entities_rejected": 0,
+  "relationship_candidates": 3,
+  "relationships_accepted": 2,
+  "relationships_rejected": 1,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "HELD_AT does not allow Circuit -> Team"
+    }
+  ],
+  "alignments": []
+}

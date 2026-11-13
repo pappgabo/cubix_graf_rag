@@ -1,0 +1,92 @@
+{
+  "chunk_id": "driver-jenson-button#29",
+  "doc_id": "driver-jenson-button",
+  "document_title": "Jenson Button",
+  "section": "Formula One career > BAR/Honda/Brawn (2003–2009) > Brawn GP (2009)",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "9f07113ced675f7403b7e57797d98b82ab2b3d2f4b000cef710c5d91d7cdff7a",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Jenson Button",
+        "entity_type": "Driver",
+        "description": "A British racing driver who competed in Formula One."
+      },
+      {
+        "local_id": "e2",
+        "name": "Brawn GP",
+        "entity_type": "Team",
+        "description": "A Formula One team that was formed from the Honda team."
+      },
+      {
+        "local_id": "e3",
+        "name": "2009",
+        "entity_type": "Season",
+        "description": "The Formula One season in which Jenson Button drove for Brawn GP."
+      },
+      {
+        "local_id": "e4",
+        "name": "Brawn BGP 001",
+        "entity_type": "Car",
+        "description": "The car driven by Jenson Button for Brawn GP in 2009."
+      },
+      {
+        "local_id": "e5",
+        "name": "Mercedes-Benz V8",
+        "entity_type": "PowerUnit",
+        "description": "The engine used in the Brawn BGP 001 car."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Jenson Button drove for Brawn GP in 2009.",
+        "from_year": 2009,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e4",
+        "relationship_type": "FIELDED",
+        "description": "Brawn GP entered the Brawn BGP 001 car.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e3",
+        "relationship_type": "RACED_IN",
+        "description": "Brawn BGP 001 participated in the 2009 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e5",
+        "relationship_type": "POWERED_BY",
+        "description": "Brawn BGP 001 used a Mercedes-Benz V8 engine.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 5,
+  "entities_accepted": 5,
+  "entities_rejected": 0,
+  "relationship_candidates": 4,
+  "relationships_accepted": 4,
+  "relationships_rejected": 0,
+  "rejections": [],
+  "alignments": []
+}

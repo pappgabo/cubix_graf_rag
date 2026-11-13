@@ -1,5 +1,7 @@
 # Q01-Q08 kor
 
+Történeti riport. Ez a 11 dokumentumos, 1565 chunkos régi kör mérése. A jelenlegi gráf riportja: `graph/corpus/quality-report-section-1200-23.md`.
+
 status ok is structural validity, not semantic correctness. An empty chunk is an accepted extraction with no entities.
 
 A gráfmutatók az extrahált szakterületi gráfra vonatkoznak. A dokumentumgráf, a seed és a MENTIONS élek nincsenek benne.

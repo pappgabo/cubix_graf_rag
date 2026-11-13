@@ -1,0 +1,226 @@
+{
+  "chunk_id": "driver-kimi-raikkonen#2",
+  "doc_id": "driver-kimi-raikkonen",
+  "document_title": "Kimi Räikkönen",
+  "section": null,
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "ea6433f1ca8c077edad923e16c001a95ca2e338ff55744afb814d8e5c73e89ff",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Kimi Räikkönen",
+        "entity_type": "Driver",
+        "description": "A Finnish racing driver who competed in Formula One."
+      },
+      {
+        "local_id": "e2",
+        "name": "Lotus",
+        "entity_type": "Team",
+        "description": "A Formula One team that Kimi Räikkönen raced for."
+      },
+      {
+        "local_id": "e3",
+        "name": "Scuderia Ferrari",
+        "entity_type": "Team",
+        "description": "A Formula One team that Kimi Räikkönen raced for."
+      },
+      {
+        "local_id": "e4",
+        "name": "Alfa Romeo",
+        "entity_type": "Team",
+        "description": "A Formula One team that Kimi Räikkönen raced for."
+      },
+      {
+        "local_id": "e5",
+        "name": "2012",
+        "entity_type": "Season",
+        "description": "The Formula One season in which Kimi Räikkönen returned to the sport."
+      },
+      {
+        "local_id": "e6",
+        "name": "2013",
+        "entity_type": "Season",
+        "description": "The Formula One season in which Kimi Räikkönen scored victories."
+      },
+      {
+        "local_id": "e7",
+        "name": "2014",
+        "entity_type": "Season",
+        "description": "The Formula One season in which Kimi Räikkönen re-joined Ferrari."
+      },
+      {
+        "local_id": "e8",
+        "name": "2015",
+        "entity_type": "Season",
+        "description": "The Formula One season in which Kimi Räikkönen partnered with Sebastian Vettel."
+      },
+      {
+        "local_id": "e9",
+        "name": "2018",
+        "entity_type": "Season",
+        "description": "The last season Kimi Räikkönen raced with Ferrari."
+      },
+      {
+        "local_id": "e10",
+        "name": "2019",
+        "entity_type": "Season",
+        "description": "The Formula One season in which Kimi Räikkönen moved to Alfa Romeo."
+      },
+      {
+        "local_id": "e11",
+        "name": "2020",
+        "entity_type": "Season",
+        "description": "The Formula One season in which Kimi Räikkönen remained with Alfa Romeo."
+      },
+      {
+        "local_id": "e12",
+        "name": "2021",
+        "entity_type": "Season",
+        "description": "The last Formula One season Kimi Räikkönen competed before retiring."
+      },
+      {
+        "local_id": "e13",
+        "name": "2012 Abu Dhabi Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The Grand Prix where Kimi Räikkönen scored a victory."
+      },
+      {
+        "local_id": "e14",
+        "name": "2013 Australian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The Grand Prix where Kimi Räikkönen scored a victory."
+      },
+      {
+        "local_id": "e15",
+        "name": "2018 United States Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The Grand Prix where Kimi Räikkönen achieved his final career win."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Kimi Räikkönen raced for Lotus.",
+        "from_year": 2012,
+        "to_year": 2013,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e3",
+        "relationship_type": "DROVE_FOR",
+        "description": "Kimi Räikkönen raced for Ferrari.",
+        "from_year": 2014,
+        "to_year": 2018,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e4",
+        "relationship_type": "DROVE_FOR",
+        "description": "Kimi Räikkönen raced for Alfa Romeo.",
+        "from_year": 2019,
+        "to_year": 2021,
+        "role": null
+      },
+      {
+        "source_id": "e13",
+        "target_id": "e5",
+        "relationship_type": "ROUND_OF",
+        "description": "The 2012 Abu Dhabi Grand Prix was a round of the 2012 Formula One season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e14",
+        "target_id": "e6",
+        "relationship_type": "ROUND_OF",
+        "description": "The 2013 Australian Grand Prix was a round of the 2013 Formula One season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e15",
+        "target_id": "e9",
+        "relationship_type": "ROUND_OF",
+        "description": "The 2018 United States Grand Prix was a round of the 2018 Formula One season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 15,
+  "entities_accepted": 15,
+  "entities_rejected": 0,
+  "relationship_candidates": 17,
+  "relationships_accepted": 6,
+  "relationships_rejected": 11,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "FIELDED does not allow Team -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "FIELDED does not allow Team -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 5,
+      "reason": "FIELDED does not allow Team -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 6,
+      "reason": "RACED_IN does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 7,
+      "reason": "RACED_IN does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 8,
+      "reason": "RACED_IN does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 9,
+      "reason": "RACED_IN does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 10,
+      "reason": "RACED_IN does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 11,
+      "reason": "RACED_IN does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 12,
+      "reason": "RACED_IN does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 13,
+      "reason": "RACED_IN does not allow Driver -> Season"
+    }
+  ],
+  "alignments": []
+}

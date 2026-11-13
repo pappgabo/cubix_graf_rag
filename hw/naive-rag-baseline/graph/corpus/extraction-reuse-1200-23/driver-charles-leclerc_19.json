@@ -1,0 +1,230 @@
+{
+  "chunk_id": "driver-charles-leclerc#19",
+  "doc_id": "driver-charles-leclerc",
+  "document_title": "Charles Leclerc",
+  "section": "Charles Leclerc > Formula One career",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "5c4b16bc5a9700286ccaa18aebcace5ca21c60bf97922044b9355fdef3dbbc4d",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Charles Leclerc",
+        "entity_type": "Driver",
+        "description": "A driver who joined the Ferrari Driver Academy and signed as a development driver for Haas and Ferrari."
+      },
+      {
+        "local_id": "e2",
+        "name": "Ferrari Driver Academy",
+        "entity_type": "Team",
+        "description": "A driver development program associated with Ferrari."
+      },
+      {
+        "local_id": "e3",
+        "name": "Haas",
+        "entity_type": "Team",
+        "description": "A Formula One team that Leclerc signed as a development driver."
+      },
+      {
+        "local_id": "e4",
+        "name": "Scuderia Ferrari",
+        "entity_type": "Team",
+        "description": "A Formula One team that Leclerc signed as a development driver."
+      },
+      {
+        "local_id": "e5",
+        "name": "Fiorano",
+        "entity_type": "Circuit",
+        "description": "The circuit where Leclerc made his testing debut driving the Ferrari F14 T."
+      },
+      {
+        "local_id": "e6",
+        "name": "British Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Grand Prix where Leclerc participated in free practice sessions."
+      },
+      {
+        "local_id": "e7",
+        "name": "Hungarian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Grand Prix where Leclerc participated in free practice sessions."
+      },
+      {
+        "local_id": "e8",
+        "name": "German Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Grand Prix where Leclerc participated in free practice sessions."
+      },
+      {
+        "local_id": "e9",
+        "name": "Brazilian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Grand Prix where Leclerc participated in free practice sessions."
+      },
+      {
+        "local_id": "e10",
+        "name": "SF16-H",
+        "entity_type": "Car",
+        "description": "The car Leclerc drove during his first official test for Ferrari."
+      },
+      {
+        "local_id": "e11",
+        "name": "SF70H",
+        "entity_type": "Car",
+        "description": "The car Leclerc drove during the 2017 mid-season test at the Hungaroring."
+      },
+      {
+        "local_id": "e12",
+        "name": "GP3 Series",
+        "entity_type": "Season",
+        "description": "A racing series that Leclerc won in 2016."
+      },
+      {
+        "local_id": "e13",
+        "name": "Hungaroring",
+        "entity_type": "Circuit",
+        "description": "The circuit where Leclerc completed the 2017 mid-season test."
+      },
+      {
+        "local_id": "e14",
+        "name": "Malaysian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Grand Prix where Leclerc completed free practice sessions with Sauber."
+      },
+      {
+        "local_id": "e15",
+        "name": "United States Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Grand Prix where Leclerc completed free practice sessions with Sauber."
+      },
+      {
+        "local_id": "e16",
+        "name": "Mexican Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Grand Prix where Leclerc completed free practice sessions with Sauber."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Leclerc joined the Ferrari Driver Academy.",
+        "from_year": 2016,
+        "to_year": null,
+        "role": "development driver"
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e3",
+        "relationship_type": "DROVE_FOR",
+        "description": "Leclerc signed as a development driver for Haas.",
+        "from_year": 2016,
+        "to_year": null,
+        "role": "development driver"
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e4",
+        "relationship_type": "DROVE_FOR",
+        "description": "Leclerc signed as a development driver for Ferrari.",
+        "from_year": 2016,
+        "to_year": null,
+        "role": "development driver"
+      }
+    ]
+  },
+  "entity_candidates": 16,
+  "entities_accepted": 16,
+  "entities_rejected": 0,
+  "relationship_candidates": 19,
+  "relationships_accepted": 3,
+  "relationships_rejected": 16,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "FIELDED is not temporal; from_year=2016, to_year=None, role=None cannot be stored without dropping them"
+    },
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "FIELDED is not temporal; from_year=2016, to_year=None, role=None cannot be stored without dropping them"
+    },
+    {
+      "element": "relationship",
+      "index": 5,
+      "reason": "FIELDED is not temporal; from_year=2017, to_year=None, role=None cannot be stored without dropping them"
+    },
+    {
+      "element": "relationship",
+      "index": 6,
+      "reason": "RACED_IN is not temporal; from_year=2016, to_year=None, role=None cannot be stored without dropping them"
+    },
+    {
+      "element": "relationship",
+      "index": 7,
+      "reason": "RACED_IN is not temporal; from_year=2017, to_year=None, role=None cannot be stored without dropping them"
+    },
+    {
+      "element": "relationship",
+      "index": 8,
+      "reason": "ROUND_OF is not temporal; from_year=2016, to_year=None, role=None cannot be stored without dropping them"
+    },
+    {
+      "element": "relationship",
+      "index": 9,
+      "reason": "ROUND_OF is not temporal; from_year=2016, to_year=None, role=None cannot be stored without dropping them"
+    },
+    {
+      "element": "relationship",
+      "index": 10,
+      "reason": "ROUND_OF is not temporal; from_year=2016, to_year=None, role=None cannot be stored without dropping them"
+    },
+    {
+      "element": "relationship",
+      "index": 11,
+      "reason": "ROUND_OF is not temporal; from_year=2016, to_year=None, role=None cannot be stored without dropping them"
+    },
+    {
+      "element": "relationship",
+      "index": 12,
+      "reason": "ACHIEVED Driver -> GrandPrix has from_year=2016, to_year=None, role=None; the year or role cannot be stored on the reified result"
+    },
+    {
+      "element": "relationship",
+      "index": 13,
+      "reason": "ACHIEVED Driver -> GrandPrix has from_year=2016, to_year=None, role=None; the year or role cannot be stored on the reified result"
+    },
+    {
+      "element": "relationship",
+      "index": 14,
+      "reason": "ACHIEVED Driver -> GrandPrix has from_year=2016, to_year=None, role=None; the year or role cannot be stored on the reified result"
+    },
+    {
+      "element": "relationship",
+      "index": 15,
+      "reason": "ACHIEVED Driver -> GrandPrix has from_year=2016, to_year=None, role=None; the year or role cannot be stored on the reified result"
+    },
+    {
+      "element": "relationship",
+      "index": 16,
+      "reason": "ACHIEVED Driver -> GrandPrix has from_year=2016, to_year=None, role=None; the year or role cannot be stored on the reified result"
+    },
+    {
+      "element": "relationship",
+      "index": 17,
+      "reason": "ACHIEVED Driver -> GrandPrix has from_year=2016, to_year=None, role=None; the year or role cannot be stored on the reified result"
+    },
+    {
+      "element": "relationship",
+      "index": 18,
+      "reason": "ACHIEVED Driver -> GrandPrix has from_year=2016, to_year=None, role=None; the year or role cannot be stored on the reified result"
+    }
+  ],
+  "alignments": []
+}

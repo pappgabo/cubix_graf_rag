@@ -1,0 +1,87 @@
+{
+  "chunk_id": "driver-michael-schumacher#170",
+  "doc_id": "driver-michael-schumacher",
+  "document_title": "Michael Schumacher",
+  "section": null,
+  "page": 14,
+  "source": "https://en.wikipedia.org/wiki/Michael_Schumacher",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "1df386e856b449a85f9d91c79a6fcb0f0d7c1b0d45c1521d9cf2fdd1acba2b2d",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "WON does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "WON does not allow Driver -> Season"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 0,
+      "action": "move_won_year",
+      "detail": "WON year 1997 stored as e2 -AWARDED_IN-> season1997-1; from_year and to_year cleared; description kept"
+    }
+  ],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Michael Schumacher",
+        "entity_type": "Driver",
+        "description": "A German racing driver who is a seven-time Formula One World Champion."
+      },
+      {
+        "local_id": "e2",
+        "name": "Silbernes Lorbeerblatt",
+        "entity_type": "Title",
+        "description": "Germany's highest sporting accolade."
+      },
+      {
+        "local_id": "e3",
+        "name": "2002",
+        "entity_type": "Season",
+        "description": "A championship year."
+      },
+      {
+        "local_id": "e4",
+        "name": "2004",
+        "entity_type": "Season",
+        "description": "A championship year."
+      },
+      {
+        "local_id": "season1997-1",
+        "name": "1997",
+        "entity_type": "Season",
+        "description": "1997"
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "WON",
+        "description": "Schumacher was awarded Germany's highest sporting accolade for his sports achievements and commitment to road safety.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "season1997-1",
+        "relationship_type": "AWARDED_IN",
+        "description": "Schumacher was awarded Germany's highest sporting accolade for his sports achievements and commitment to road safety.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

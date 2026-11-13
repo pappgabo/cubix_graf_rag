@@ -1,0 +1,246 @@
+{
+  "chunk_id": "season-2020-formula-one-world-championship#9",
+  "doc_id": "season-2020-formula-one-world-championship",
+  "document_title": "2020 Formula One World Championship",
+  "section": "2020 Formula One World Championship > Mid-season changes",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "c3403337c10eb7bfac84db0cceadc52bbafece5355d79a1870d1b7258047a6ad",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Romain Grosjean",
+        "entity_type": "Driver",
+        "description": "Suffered burns to his hands following a crash at the Bahrain Grand Prix."
+      },
+      {
+        "local_id": "e2",
+        "name": "Pietro Fittipaldi",
+        "entity_type": "Driver",
+        "description": "Promoted to make his debut at the Sakhir Grand Prix."
+      },
+      {
+        "local_id": "e3",
+        "name": "Lewis Hamilton",
+        "entity_type": "Driver",
+        "description": "Tested positive for the coronavirus prior to the Sakhir Grand Prix."
+      },
+      {
+        "local_id": "e4",
+        "name": "George Russell",
+        "entity_type": "Driver",
+        "description": "Replaced Lewis Hamilton at Mercedes for the Sakhir Grand Prix."
+      },
+      {
+        "local_id": "e5",
+        "name": "Jack Aitken",
+        "entity_type": "Driver",
+        "description": "Replaced George Russell at Williams."
+      },
+      {
+        "local_id": "e6",
+        "name": "Mercedes-AMG Petronas Formula One Team",
+        "entity_type": "Team",
+        "description": "Team for which Lewis Hamilton races."
+      },
+      {
+        "local_id": "e7",
+        "name": "Williams",
+        "entity_type": "Team",
+        "description": "Team for which George Russell and Jack Aitken race."
+      },
+      {
+        "local_id": "e8",
+        "name": "Haas",
+        "entity_type": "Team",
+        "description": "Team for which Romain Grosjean and Pietro Fittipaldi race."
+      },
+      {
+        "local_id": "e9",
+        "name": "Bahrain Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "Race where Romain Grosjean suffered a crash."
+      },
+      {
+        "local_id": "e10",
+        "name": "Sakhir Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "Race where Pietro Fittipaldi made his debut."
+      },
+      {
+        "local_id": "e11",
+        "name": "Abu Dhabi Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "Race that Romain Grosjean missed due to recovery."
+      },
+      {
+        "local_id": "e12",
+        "name": "2020",
+        "entity_type": "Season",
+        "description": "The championship year for the events described."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Romain Grosjean at Bahrain Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Romain Grosjean suffered a crash at the Bahrain Grand Prix."
+      },
+      {
+        "local_id": "rr2",
+        "name": "Pietro Fittipaldi at Sakhir Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Pietro Fittipaldi made his debut at the Sakhir Grand Prix."
+      },
+      {
+        "local_id": "rr3",
+        "name": "Romain Grosjean at Abu Dhabi Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Romain Grosjean missed the Abu Dhabi Grand Prix due to recovery."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Romain Grosjean suffered a crash at the Bahrain Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e9",
+        "relationship_type": "AT_RACE",
+        "description": "Romain Grosjean suffered a crash at the Bahrain Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "rr2",
+        "relationship_type": "ACHIEVED",
+        "description": "Pietro Fittipaldi made his debut at the Sakhir Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr2",
+        "target_id": "e10",
+        "relationship_type": "AT_RACE",
+        "description": "Pietro Fittipaldi made his debut at the Sakhir Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr3",
+        "relationship_type": "ACHIEVED",
+        "description": "Romain Grosjean missed the Abu Dhabi Grand Prix due to recovery.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr3",
+        "target_id": "e11",
+        "relationship_type": "AT_RACE",
+        "description": "Romain Grosjean missed the Abu Dhabi Grand Prix due to recovery.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e6",
+        "relationship_type": "DROVE_FOR",
+        "description": "George Russell replaced Lewis Hamilton at Mercedes.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e5",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "George Russell and Jack Aitken were teammates at Williams.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e7",
+        "relationship_type": "DROVE_FOR",
+        "description": "Jack Aitken replaced George Russell at Williams.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e6",
+        "target_id": "e12",
+        "relationship_type": "ENTERED",
+        "description": "Mercedes took part in the 2020 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e7",
+        "target_id": "e12",
+        "relationship_type": "ENTERED",
+        "description": "Williams took part in the 2020 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e8",
+        "target_id": "e12",
+        "relationship_type": "ENTERED",
+        "description": "Haas took part in the 2020 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 12,
+  "entities_accepted": 15,
+  "entities_rejected": 0,
+  "relationship_candidates": 10,
+  "relationships_accepted": 12,
+  "relationships_rejected": 1,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 6,
+      "reason": "DROVE_FOR does not allow Driver -> GrandPrix"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 0,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e9; description kept"
+    },
+    {
+      "index": 1,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr2 -AT_RACE-> e10; description kept"
+    },
+    {
+      "index": 2,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr3 -AT_RACE-> e11; description kept"
+    }
+  ]
+}

@@ -1,0 +1,113 @@
+{
+  "chunk_id": "team-scuderia-ferrari#10",
+  "doc_id": "team-scuderia-ferrari",
+  "document_title": "Scuderia Ferrari",
+  "section": null,
+  "page": 3,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "4b7dba92c4a58071ba798ad5581367a2f331e44067cb0826b13ac7a879d7495b",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Scuderia Ferrari",
+        "entity_type": "Team",
+        "description": "A Formula 1 team known for its red cars and Italian heritage."
+      },
+      {
+        "local_id": "e2",
+        "name": "Alonso",
+        "entity_type": "Driver",
+        "description": "A driver who won a race while driving for Ferrari."
+      },
+      {
+        "local_id": "e3",
+        "name": "Massa",
+        "entity_type": "Driver",
+        "description": "A driver who finished second in a race."
+      },
+      {
+        "local_id": "e4",
+        "name": "Sebastian Vettel",
+        "entity_type": "Driver",
+        "description": "A driver who took the final place on the podium in a race."
+      },
+      {
+        "local_id": "e5",
+        "name": "2011",
+        "entity_type": "Season",
+        "description": "The season when the ban on team orders was lifted."
+      },
+      {
+        "local_id": "e6",
+        "name": "1964 United States Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A race in which Ferrari cars were entered by the NART team."
+      },
+      {
+        "local_id": "e7",
+        "name": "1964 Mexican Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "Another race in which Ferrari cars were entered by the NART team."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e2",
+        "target_id": "e1",
+        "relationship_type": "DROVE_FOR",
+        "description": "Alonso drove for Ferrari.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e1",
+        "relationship_type": "DROVE_FOR",
+        "description": "Massa drove for Ferrari.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e1",
+        "relationship_type": "DROVE_FOR",
+        "description": "Sebastian Vettel drove for Ferrari.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e6",
+        "target_id": "e5",
+        "relationship_type": "ROUND_OF",
+        "description": "The 1964 United States Grand Prix is a round of the 1964 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e7",
+        "target_id": "e5",
+        "relationship_type": "ROUND_OF",
+        "description": "The 1964 Mexican Grand Prix is a round of the 1964 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 7,
+  "entities_accepted": 7,
+  "entities_rejected": 0,
+  "relationship_candidates": 5,
+  "relationships_accepted": 5,
+  "relationships_rejected": 0,
+  "rejections": [],
+  "alignments": []
+}

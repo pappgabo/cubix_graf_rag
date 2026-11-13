@@ -2,6 +2,24 @@
 
 Ez a fájl a beadandó kötelező pontjait köti konkrét fájlhoz vagy futtatási eredményhez. Ami nem futott le, az nincs késznek jelölve.
 
+## Jelenlegi gráf
+
+A beadott gráf a 23 dokumentumos korpusz. A `corpus/driver-charles-leclerc.html` megvan. A chunkméret 1200 karakter, az átfedés 100 karakter. A betöltött réteg: 23 dokumentum, 544 section, 1651 chunk, 1628 `NEXT_CHUNK`. Az extrakció `graph/corpus/extraction-reuse-1200-23`: 1651 strukturálisan sikeres rekord, 0 hibás, 315 üres siker.
+
+A Neo4j-ben 2761 `:Extracted` csomópont, 4326 szakterületi él és 10782 `MENTIONS` él van. A 29 `:Seed` csomópont külön marad. Az entitásvektorok a név és a leírás együttesei, modell `text-embedding-3-small`, dimenzió 1536.
+
+A minőségi számok és a példák: `graph/corpus/quality-report-section-1200-23.md`. Sűrű chunk: `team-williams-racing#31`, 30 entitás és 37 kapcsolat. Ritka chunk: `driver-charles-leclerc#14`, a forrás a `## FIA Formula 2 (2017)` címsor, üres eredmény, nem hibás extrakció. Sémán kívüli típus nincs. Pontosan egy chunkban szereplő összevont entitás: 1967. A legnagyobb fokszám 194, egyedül `Team:mclaren`.
+
+Deduplikáció ugyanebből a 1651 rekordból, a meglévő összevonással. Előtte az előfordulási gráf: 10782 csomópont, 6533 él, legnagyobb gyengén összefüggő komponens 30. Utána az összevont gráf: 2761 csomópont, 4326 él, legnagyobb komponens 1896. Az éles gráf a méréshez nem változott.
+
+Megnevezett, validáción átment hiba: `driver-sebastian-vettel#21`. A forrás csak a `## 2012: Triple World Champion following Alonso title duel` címsor. A kimenet `Title` néven Title entitást gyárt, és `WON` valamint `AWARDED_IN` éllel köti a pilótához és a 2012-es szezonhoz. A hiba nincs javítva.
+
+A Q01–Q13 összevetés a jelenlegi gráfon lefutott: `docs/osszehasonlitas-section-1200-23.md`, naplója `docs/osszehasonlitas-section-1200-23-run.json`. Mind a 13 kérdés szerepel. Üres horgonylista nem volt; a napló mind a 13 kérdésnél `model_called: true`, tehát 13 válaszhívás készült a `gpt-4o-mini` modellel. A Q04, Q05, Q09 és Q13 válasza az elutasító mondat. A Q04–Q08 multi-hop kérdések külön szakaszban vannak, a meglévő értékelési szabállyal. A baseline `baseline/answers.json` változatlan. A `docs/osszehasonlitas.md` a régi 401 entitásos gráf történeti összevetése.
+
+## Történeti Q01–Q08 kör
+
+A következő szakaszok a korábbi, 11 dokumentumos kört írják. A Leclerc-fájl hiánya és a 401 entitásos Neo4j-számok ennek a körnek az akkori állapota, nem a jelenlegi gráf.
+
 ## Adatkör
 
 A feldolgozási kör a `questions.md` Q01–Q08 kérdéseinek Dokumentum mezőiben backtickben megnevezett dokumentumok összes chunkja. A kiválasztás `src/naive_rag/question_scope.py`. A wildcard, például a Q09 `driver-*` kifejezése, nincs kibontva, ezért Q09–Q13 nincs a körben.
@@ -96,15 +114,17 @@ Adatbázis nélküli tesztek: `python -m unittest discover -s tests -q` a `src` 
 
 | Pont | Hol látszik |
 |---|---|
-| Adatkör és kihagyás | ez a fájl, `question_scope.py` |
+| Jelenlegi korpusz és Leclerc-fájl | ennek a fájlnak a jelenlegi gráf szakasza |
 | Séma és provenance | `extraction_models.py`, `extraction_load.py` |
-| Chunkolás és modellek | `config.py`, `baseline/answers.json` |
-| Nyers extrakció | `graph/corpus/extraction`, pilot: `graph/pilot/extraction-v3` |
-| Hibás jelöltek és egy átment szemantikai hiba | `graph/corpus/quality-report.md`, ez a fájl |
-| Deduplikációs számok | `graph/corpus/quality-report.md` deduplikáció szakasza |
-| Keresési lánc | `local_search.py`, `graph/corpus/entity-index.json` |
-| Összevetés | `docs/osszehasonlitas.md` |
-| Neo4j, provenance-szal | 401 Extracted, 1441 MENTIONS, 580 extracted él |
+| Chunkolás és modellek | `config.py`; a jelenlegi chunk 1200/100 |
+| Nyers extrakció | `graph/corpus/extraction-reuse-1200-23` |
+| Minőségi számok és a megnevezett hiba | `graph/corpus/quality-report-section-1200-23.md` |
+| Deduplikációs számok | ugyanennek a riportnak a deduplikáció szakasza |
+| Keresési lánc | `local_search.py`; a Neo4j-index a jelenlegi 2761 entitás |
+| Q01–Q13 összevetés | `docs/osszehasonlitas-section-1200-23.md`, a jelenlegi gráfon; a `docs/osszehasonlitas.md` történeti |
+| Neo4j, provenance-szal | 2761 Extracted, 10782 MENTIONS, 4326 szakterületi él |
+
+A `graph/corpus/quality-report.md` és a 401 entitásos Neo4j-szám a történeti Q01–Q08 köré.
 
 ## Parancsok
 

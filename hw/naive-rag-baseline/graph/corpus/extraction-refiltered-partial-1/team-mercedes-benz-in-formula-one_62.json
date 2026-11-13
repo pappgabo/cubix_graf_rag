@@ -1,0 +1,71 @@
+{
+  "chunk_id": "team-mercedes-benz-in-formula-one#62",
+  "doc_id": "team-mercedes-benz-in-formula-one",
+  "document_title": "Mercedes-Benz in Formula One",
+  "section": "Mercedes-Benz in Formula One > Struggling with ground effect (2022–2025)",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/Mercedes-Benz_in_Formula_One",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "82dd23b4492dd2cc5c0c3d206462b244928d46ccc4befe289bf2e67bf6353d3a",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "WON does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "ACHIEVED does not allow Driver -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "AT_RACE does not allow Driver -> Circuit"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "WON does not allow Driver -> Season"
+    }
+  ],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Lewis Hamilton",
+        "entity_type": "Driver",
+        "description": "Finished 2023 third in the Drivers' Championship with 6 podiums, highlighted by breaking the record for the most pole positions at a single circuit with his 9th pole at the Hungaroring during the Hungarian Grand Prix."
+      },
+      {
+        "local_id": "e2",
+        "name": "George Russell",
+        "entity_type": "Driver",
+        "description": "Finished 2023 8th in the Drivers' Championship with 2 podiums."
+      },
+      {
+        "local_id": "e3",
+        "name": "2023",
+        "entity_type": "Season",
+        "description": "The championship year in which Hamilton finished third and Russell finished eighth."
+      },
+      {
+        "local_id": "e4",
+        "name": "Hungarian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The race where Hamilton took his 9th pole position at the Hungaroring."
+      },
+      {
+        "local_id": "e5",
+        "name": "Hungaroring",
+        "entity_type": "Circuit",
+        "description": "The circuit where Hamilton broke the record for the most pole positions."
+      }
+    ],
+    "relationships": []
+  }
+}

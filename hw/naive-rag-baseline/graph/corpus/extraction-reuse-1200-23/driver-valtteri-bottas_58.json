@@ -1,0 +1,114 @@
+{
+  "chunk_id": "driver-valtteri-bottas#58",
+  "doc_id": "driver-valtteri-bottas",
+  "document_title": "Valtteri Bottas",
+  "section": "Other racing > Rallying",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "e14ccd51c45ca04dd73f51510d7bcb57a85265c68564338fe1eb5f92e55c1e18",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Valtteri Bottas",
+        "entity_type": "Driver",
+        "description": "A Finnish racing driver who has competed in Formula One."
+      },
+      {
+        "local_id": "e2",
+        "name": "Arctic Rally",
+        "entity_type": "GrandPrix",
+        "description": "A rally event that Bottas participated in."
+      },
+      {
+        "local_id": "e3",
+        "name": "Paul Ricard-based Rallycircuit Côte d'Azur",
+        "entity_type": "GrandPrix",
+        "description": "A rally event that Bottas won."
+      },
+      {
+        "local_id": "e4",
+        "name": "Arctic Lapland Rally",
+        "entity_type": "GrandPrix",
+        "description": "A rally event that Bottas participated in multiple times."
+      },
+      {
+        "local_id": "e5",
+        "name": "Citroën DS3 WRC",
+        "entity_type": "Car",
+        "description": "A World Rally Car that Bottas drove during the Arctic Lapland Rally."
+      },
+      {
+        "local_id": "e6",
+        "name": "Extreme E",
+        "entity_type": "Car",
+        "description": "A racing series that Bottas tested in."
+      },
+      {
+        "local_id": "e7",
+        "name": "Jean-Éric Vergne",
+        "entity_type": "Driver",
+        "description": "A racing driver who participated in an Extreme E test with Bottas."
+      },
+      {
+        "local_id": "e8",
+        "name": "Sébastien Loeb",
+        "entity_type": "Driver",
+        "description": "A racing driver who participated in an Extreme E test with Bottas."
+      }
+    ],
+    "relationships": []
+  },
+  "entity_candidates": 8,
+  "entities_accepted": 8,
+  "entities_rejected": 0,
+  "relationship_candidates": 8,
+  "relationships_accepted": 0,
+  "relationships_rejected": 8,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "ACHIEVED Driver -> GrandPrix has from_year=2019, to_year=None, role=None; the year or role cannot be stored on the reified result"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "ACHIEVED Driver -> GrandPrix has from_year=2020, to_year=None, role=None; the year or role cannot be stored on the reified result"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "ACHIEVED Driver -> GrandPrix has from_year=2021, to_year=None, role=None; the year or role cannot be stored on the reified result"
+    },
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "WON does not allow Driver -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "POWERED_BY does not allow Car -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "RACED_IN does not allow Driver -> Car"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "TEAMMATE_OF does not allow Driver -> Car"
+    },
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "TEAMMATE_OF does not allow Driver -> Car"
+    }
+  ],
+  "alignments": []
+}

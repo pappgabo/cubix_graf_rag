@@ -1,0 +1,292 @@
+{
+  "chunk_id": "driver-michael-schumacher#1",
+  "doc_id": "driver-michael-schumacher",
+  "document_title": "Michael Schumacher",
+  "section": null,
+  "page": 1,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "c0999ee7b300daaf0400c94c1544347a76c180b49486d61ff492e85b8afbdfdb",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Michael Schumacher",
+        "entity_type": "Driver",
+        "description": "A German racing driver who achieved significant success in Formula One."
+      },
+      {
+        "local_id": "e2",
+        "name": "Scuderia Ferrari",
+        "entity_type": "Team",
+        "description": "A Formula One team that Michael Schumacher raced for."
+      },
+      {
+        "local_id": "e3",
+        "name": "1994",
+        "entity_type": "Season",
+        "description": "The season in which Michael Schumacher won his first World Drivers' Championship."
+      },
+      {
+        "local_id": "e4",
+        "name": "1995",
+        "entity_type": "Season",
+        "description": "The season in which Michael Schumacher defended his World Drivers' Championship title."
+      },
+      {
+        "local_id": "e5",
+        "name": "1996",
+        "entity_type": "Season",
+        "description": "The season in which Michael Schumacher moved to Ferrari."
+      },
+      {
+        "local_id": "e6",
+        "name": "1997",
+        "entity_type": "Season",
+        "description": "The season in which Michael Schumacher was disqualified from the championship."
+      },
+      {
+        "local_id": "e7",
+        "name": "1998",
+        "entity_type": "Season",
+        "description": "The season in which Michael Schumacher finished runner-up to Mika Häkkinen."
+      },
+      {
+        "local_id": "e8",
+        "name": "1999",
+        "entity_type": "Season",
+        "description": "The season in which Michael Schumacher broke his leg."
+      },
+      {
+        "local_id": "e9",
+        "name": "2000",
+        "entity_type": "Season",
+        "description": "The season in which Michael Schumacher won his first title with Ferrari."
+      },
+      {
+        "local_id": "e10",
+        "name": "2001",
+        "entity_type": "Season",
+        "description": "The season in which Michael Schumacher successfully defended his title."
+      },
+      {
+        "local_id": "e11",
+        "name": "2002",
+        "entity_type": "Season",
+        "description": "The season in which Michael Schumacher won a record 11 Grands Prix."
+      },
+      {
+        "local_id": "e12",
+        "name": "Belgium",
+        "entity_type": "GrandPrix",
+        "description": "The Grand Prix where Michael Schumacher achieved his maiden victory."
+      },
+      {
+        "local_id": "e13",
+        "name": "Portuguese Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The Grand Prix where Michael Schumacher repeated his maiden victory."
+      },
+      {
+        "local_id": "e14",
+        "name": "World Drivers' Championship",
+        "entity_type": "Title",
+        "description": "The championship title won by Michael Schumacher in 1994."
+      },
+      {
+        "local_id": "e15",
+        "name": "Mika Häkkinen",
+        "entity_type": "Driver",
+        "description": "A rival driver of Michael Schumacher."
+      },
+      {
+        "local_id": "e16",
+        "name": "Damon Hill",
+        "entity_type": "Driver",
+        "description": "A rival driver of Michael Schumacher."
+      },
+      {
+        "local_id": "e17",
+        "name": "Jacques Villeneuve",
+        "entity_type": "Driver",
+        "description": "A rival driver of Michael Schumacher."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Michael Schumacher at Belgium",
+        "entity_type": "RaceResult",
+        "description": "Michael Schumacher achieved his maiden victory in Belgium."
+      },
+      {
+        "local_id": "rr2",
+        "name": "Michael Schumacher at Portuguese Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Michael Schumacher repeated his maiden victory at the Portuguese Grand Prix."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Michael Schumacher drove for Ferrari.",
+        "from_year": 1996,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e14",
+        "relationship_type": "WON",
+        "description": "Michael Schumacher won the World Drivers' Championship.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e14",
+        "target_id": "e3",
+        "relationship_type": "AWARDED_IN",
+        "description": "The World Drivers' Championship title was awarded in 1994.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Michael Schumacher achieved his maiden victory in Belgium.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e12",
+        "relationship_type": "AT_RACE",
+        "description": "Michael Schumacher achieved his maiden victory in Belgium.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr2",
+        "relationship_type": "ACHIEVED",
+        "description": "Michael Schumacher repeated his maiden victory at the Portuguese Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr2",
+        "target_id": "e13",
+        "relationship_type": "AT_RACE",
+        "description": "Michael Schumacher repeated his maiden victory at the Portuguese Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e15",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Michael Schumacher had a rivalry with Mika Häkkinen.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e16",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Michael Schumacher had a rivalry with Damon Hill.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e17",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Michael Schumacher had a rivalry with Jacques Villeneuve.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 17,
+  "entities_accepted": 19,
+  "entities_rejected": 0,
+  "relationship_candidates": 17,
+  "relationships_accepted": 10,
+  "relationships_rejected": 9,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "WON does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "WON does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 5,
+      "reason": "DROVE_FOR does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 6,
+      "reason": "DROVE_FOR does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 7,
+      "reason": "DROVE_FOR does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 8,
+      "reason": "DROVE_FOR does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 9,
+      "reason": "WON does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 10,
+      "reason": "WON does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 11,
+      "reason": "WON does not allow Driver -> Season"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 1,
+      "action": "move_won_year",
+      "detail": "WON year 1994 stored as e14 -AWARDED_IN-> e3; from_year and to_year cleared; description kept"
+    },
+    {
+      "index": 12,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e12; description kept"
+    },
+    {
+      "index": 13,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr2 -AT_RACE-> e13; description kept"
+    }
+  ]
+}

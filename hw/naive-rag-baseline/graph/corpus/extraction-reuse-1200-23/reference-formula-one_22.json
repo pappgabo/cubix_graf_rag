@@ -1,0 +1,113 @@
+{
+  "chunk_id": "reference-formula-one#22",
+  "doc_id": "reference-formula-one",
+  "document_title": "Formula One",
+  "section": "Formula One > Hybrid era",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "63de8ee4a6bb8e508649ddc6beaa8ebea6a453b0d999cff35d808c263aac69b5",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Sauber",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that competed under the Alfa Romeo name for five seasons."
+      },
+      {
+        "local_id": "e2",
+        "name": "Stake F1 Team Kick Sauber",
+        "entity_type": "Team",
+        "description": "The new identity of Sauber after introducing a title partnership with Stake."
+      },
+      {
+        "local_id": "e3",
+        "name": "Scuderia AlphaTauri",
+        "entity_type": "Team",
+        "description": "Red Bull's junior team that dropped its name and took on new sponsors."
+      },
+      {
+        "local_id": "e4",
+        "name": "Visa Cash App RB",
+        "entity_type": "Team",
+        "description": "The new name of Scuderia AlphaTauri after taking on sponsors from Hugo Boss and Cash App."
+      },
+      {
+        "local_id": "e5",
+        "name": "Cadillac",
+        "entity_type": "Team",
+        "description": "A team that received final approval to join the Formula One grid as an 11th team for the 2026 season onward."
+      },
+      {
+        "local_id": "e6",
+        "name": "2024",
+        "entity_type": "Season",
+        "description": "The Formula One season in which significant changes in team sponsorships occurred."
+      },
+      {
+        "local_id": "e7",
+        "name": "2025",
+        "entity_type": "Season",
+        "description": "The Formula One season in which new partnerships with Mattel and Lego were announced."
+      },
+      {
+        "local_id": "e8",
+        "name": "2026",
+        "entity_type": "Season",
+        "description": "The Formula One season in which Sauber would become the Audi works team."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e2",
+        "target_id": "e8",
+        "relationship_type": "ENTERED",
+        "description": "Stake F1 Team Kick Sauber will become the Audi works team for the 2026 season onward.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e8",
+        "relationship_type": "ENTERED",
+        "description": "Cadillac received final approval to join the Formula One grid as an 11th team for the 2026 season onward.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 8,
+  "entities_accepted": 8,
+  "entities_rejected": 0,
+  "relationship_candidates": 6,
+  "relationships_accepted": 2,
+  "relationships_rejected": 4,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "DROVE_FOR does not allow Team -> Team"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "DROVE_FOR does not allow Team -> Team"
+    },
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "ROUND_OF does not allow Season -> Team"
+    },
+    {
+      "element": "relationship",
+      "index": 5,
+      "reason": "ROUND_OF does not allow Season -> Team"
+    }
+  ],
+  "alignments": []
+}

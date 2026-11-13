@@ -1,0 +1,209 @@
+{
+  "chunk_id": "team-mclaren#74",
+  "doc_id": "team-mclaren",
+  "document_title": "McLaren",
+  "section": "Can-Am",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "4c52d026312c1155ba8333ed36fb8538353789d9c43f2476c01659253b828b58",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Bruce McLaren",
+        "entity_type": "Driver",
+        "description": "Founder of the McLaren team, killed testing the 1970 season's M8D."
+      },
+      {
+        "local_id": "e2",
+        "name": "Dan Gurney",
+        "entity_type": "Driver",
+        "description": "Replaced Bruce McLaren after his death in 1970."
+      },
+      {
+        "local_id": "e3",
+        "name": "Peter Gethin",
+        "entity_type": "Driver",
+        "description": "Replaced Bruce McLaren after Dan Gurney."
+      },
+      {
+        "local_id": "e4",
+        "name": "Denny Hulme",
+        "entity_type": "Driver",
+        "description": "Won six races in the 1970 Can-Am series."
+      },
+      {
+        "local_id": "e5",
+        "name": "Peter Revson",
+        "entity_type": "Driver",
+        "description": "Took the title in the 1971 Can-Am series."
+      },
+      {
+        "local_id": "e6",
+        "name": "Jackie Stewart",
+        "entity_type": "Driver",
+        "description": "1969 world champion who competed against McLaren in 1971."
+      },
+      {
+        "local_id": "e7",
+        "name": "Mark Donohue",
+        "entity_type": "Driver",
+        "description": "Competed in the 1972 Can-Am season with Porsche."
+      },
+      {
+        "local_id": "e8",
+        "name": "George Follmer",
+        "entity_type": "Driver",
+        "description": "Competed in the 1972 Can-Am season with Porsche."
+      },
+      {
+        "local_id": "e9",
+        "name": "McLaren",
+        "entity_type": "Team",
+        "description": "Formula 1 team that also competed in Can-Am."
+      },
+      {
+        "local_id": "e10",
+        "name": "M8D",
+        "entity_type": "Car",
+        "description": "Car model driven by Bruce McLaren in 1970."
+      },
+      {
+        "local_id": "e11",
+        "name": "M3B",
+        "entity_type": "Car",
+        "description": "Older car model used by private teams in the 1970 Can-Am series."
+      },
+      {
+        "local_id": "e12",
+        "name": "M12",
+        "entity_type": "Car",
+        "description": "Customer version of the team's M8B."
+      },
+      {
+        "local_id": "e13",
+        "name": "Lola T260",
+        "entity_type": "Car",
+        "description": "Car driven by Jackie Stewart in 1971."
+      },
+      {
+        "local_id": "e14",
+        "name": "M20",
+        "entity_type": "Car",
+        "description": "Car model used by McLaren in the 1972 season."
+      },
+      {
+        "local_id": "e15",
+        "name": "Porsche 917/10",
+        "entity_type": "Car",
+        "description": "Car model that defeated McLaren in the 1972 season."
+      },
+      {
+        "local_id": "e16",
+        "name": "Can-Am",
+        "entity_type": "Season",
+        "description": "Racing series in which McLaren competed."
+      },
+      {
+        "local_id": "e17",
+        "name": "1970",
+        "entity_type": "Season",
+        "description": "Season in which Bruce McLaren was killed."
+      },
+      {
+        "local_id": "e18",
+        "name": "1971",
+        "entity_type": "Season",
+        "description": "Season in which Peter Revson took the title."
+      },
+      {
+        "local_id": "e19",
+        "name": "1972",
+        "entity_type": "Season",
+        "description": "Season in which Hulme won three races."
+      },
+      {
+        "local_id": "e20",
+        "name": "1974",
+        "entity_type": "Season",
+        "description": "Season when the original Can-Am series ceased."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e9",
+        "target_id": "e11",
+        "relationship_type": "FIELDED",
+        "description": "McLaren entered the M3B car in the 1970 Can-Am series.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e9",
+        "target_id": "e12",
+        "relationship_type": "FIELDED",
+        "description": "McLaren entered the M12 car in the 1970 Can-Am series.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e9",
+        "target_id": "e16",
+        "relationship_type": "ENTERED",
+        "description": "McLaren took part in the Can-Am series.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 20,
+  "entities_accepted": 20,
+  "entities_rejected": 0,
+  "relationship_candidates": 10,
+  "relationships_accepted": 3,
+  "relationships_rejected": 7,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "FIELDED is not temporal; from_year=1970, to_year=None, role=None cannot be stored without dropping them"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "FIELDED is not temporal; from_year=1971, to_year=None, role=None cannot be stored without dropping them"
+    },
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "FIELDED is not temporal; from_year=1972, to_year=None, role=None cannot be stored without dropping them"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "ACHIEVED does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "ACHIEVED does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 5,
+      "reason": "ACHIEVED does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 6,
+      "reason": "WON does not allow Team -> Season"
+    }
+  ],
+  "alignments": []
+}

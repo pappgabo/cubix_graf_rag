@@ -1,0 +1,83 @@
+{
+  "chunk_id": "driver-kimi-raikkonen#0",
+  "doc_id": "driver-kimi-raikkonen",
+  "document_title": "Kimi Räikkönen",
+  "section": null,
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "8b6a779d0ce7ed7d2005197a66dcacac0b52976057a5c075c86a2974de74887b",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Kimi Räikkönen",
+        "entity_type": "Driver",
+        "description": "Kimi-Matias Räikkönen is a Finnish racing and rally driver who competed in Formula One between 2001 and 2021. He won the Formula One World Drivers' Championship in 2007 with Ferrari and won 21 Grands Prix across 19 seasons."
+      },
+      {
+        "local_id": "e2",
+        "name": "Scuderia Ferrari",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that Kimi Räikkönen raced for."
+      },
+      {
+        "local_id": "e3",
+        "name": "2007",
+        "entity_type": "Season",
+        "description": "The season in which Kimi Räikkönen won the Formula One World Drivers' Championship."
+      },
+      {
+        "local_id": "e4",
+        "name": "World Drivers' Championship",
+        "entity_type": "Title",
+        "description": "The championship title won by Kimi Räikkönen in 2007."
+      },
+      {
+        "local_id": "e5",
+        "name": "21",
+        "entity_type": "RaceResult",
+        "description": "The number of Grands Prix won by Kimi Räikkönen across his career."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Kimi Räikkönen raced for Ferrari.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e4",
+        "relationship_type": "WON",
+        "description": "Kimi Räikkönen won the World Drivers' Championship.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e3",
+        "relationship_type": "AWARDED_IN",
+        "description": "The World Drivers' Championship title was awarded in 2007.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 5,
+  "entities_accepted": 5,
+  "entities_rejected": 0,
+  "relationship_candidates": 3,
+  "relationships_accepted": 3,
+  "relationships_rejected": 0,
+  "rejections": [],
+  "alignments": []
+}

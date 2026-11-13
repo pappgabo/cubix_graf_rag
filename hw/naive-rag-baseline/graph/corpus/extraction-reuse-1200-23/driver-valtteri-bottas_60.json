@@ -1,0 +1,92 @@
+{
+  "chunk_id": "driver-valtteri-bottas#60",
+  "doc_id": "driver-valtteri-bottas",
+  "document_title": "Valtteri Bottas",
+  "section": "Other ventures > Business",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "35a1898e6721ff92a970689f3eac693d2c39d412b9de64905fcc3f729816c4a9",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Valtteri Bottas",
+        "entity_type": "Driver",
+        "description": "A Finnish racing driver who has competed in Formula One."
+      },
+      {
+        "local_id": "e2",
+        "name": "Lahti Pelicans",
+        "entity_type": "Team",
+        "description": "An ice hockey team based in Lahti, Finland."
+      },
+      {
+        "local_id": "e3",
+        "name": "Kahiwa Coffee Roasters",
+        "entity_type": "Team",
+        "description": "A coffee roastery co-owned by Valtteri Bottas."
+      },
+      {
+        "local_id": "e4",
+        "name": "Oath",
+        "entity_type": "Team",
+        "description": "A premium gin brand launched by Valtteri Bottas."
+      },
+      {
+        "local_id": "e5",
+        "name": "ST. ALi",
+        "entity_type": "Team",
+        "description": "A Melbourne-based coffeehouse chain that collaborated with Valtteri Bottas."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Valtteri Bottas became a co-owner of Lahti Pelicans.",
+        "from_year": 2021,
+        "to_year": null,
+        "role": "co-owner"
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e3",
+        "relationship_type": "DROVE_FOR",
+        "description": "Valtteri Bottas co-owns Kahiwa Coffee Roasters.",
+        "from_year": null,
+        "to_year": null,
+        "role": "co-owner"
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e4",
+        "relationship_type": "DROVE_FOR",
+        "description": "Valtteri Bottas launched Oath, a premium gin.",
+        "from_year": 2022,
+        "to_year": null,
+        "role": "co-founder"
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e5",
+        "relationship_type": "DROVE_FOR",
+        "description": "Valtteri Bottas collaborated with ST. ALi.",
+        "from_year": 2023,
+        "to_year": null,
+        "role": "collaborator"
+      }
+    ]
+  },
+  "entity_candidates": 5,
+  "entities_accepted": 5,
+  "entities_rejected": 0,
+  "relationship_candidates": 4,
+  "relationships_accepted": 4,
+  "relationships_rejected": 0,
+  "rejections": [],
+  "alignments": []
+}

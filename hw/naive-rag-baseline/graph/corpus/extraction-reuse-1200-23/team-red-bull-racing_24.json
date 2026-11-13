@@ -1,0 +1,176 @@
+{
+  "chunk_id": "team-red-bull-racing#24",
+  "doc_id": "team-red-bull-racing",
+  "document_title": "Red Bull Racing",
+  "section": "2010 season",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "823fecea9ecb2ae5e25163de008b567bfd4b81f0d77ab6ffa1642a877aa6999b",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Mark Webber",
+        "entity_type": "Driver",
+        "description": "An Australian Formula One driver who raced for Red Bull Racing."
+      },
+      {
+        "local_id": "e2",
+        "name": "Sebastian Vettel",
+        "entity_type": "Driver",
+        "description": "A German Formula One driver who raced for Red Bull Racing."
+      },
+      {
+        "local_id": "e3",
+        "name": "Red Bull Racing",
+        "entity_type": "Team",
+        "description": "A Formula One team based in Milton Keynes, England."
+      },
+      {
+        "local_id": "e4",
+        "name": "2010",
+        "entity_type": "Season",
+        "description": "The Formula One season in which Red Bull Racing competed."
+      },
+      {
+        "local_id": "e5",
+        "name": "Turkish Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula One race held in Turkey."
+      },
+      {
+        "local_id": "e6",
+        "name": "European Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula One race held in Valencia, Spain."
+      },
+      {
+        "local_id": "e7",
+        "name": "Lotus",
+        "entity_type": "Team",
+        "description": "A Formula One team that Heikki Kovalainen raced for."
+      },
+      {
+        "local_id": "e8",
+        "name": "Heikki Kovalainen",
+        "entity_type": "Driver",
+        "description": "A Finnish Formula One driver who raced for Lotus."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Mark Webber at Turkish Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Mark Webber finished third at the Turkish Grand Prix."
+      },
+      {
+        "local_id": "rr2",
+        "name": "Sebastian Vettel at Turkish Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Sebastian Vettel was forced to retire at the Turkish Grand Prix."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e3",
+        "target_id": "e4",
+        "relationship_type": "ENTERED",
+        "description": "Red Bull Racing took part in the 2010 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Mark Webber finished third at the Turkish Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e5",
+        "relationship_type": "AT_RACE",
+        "description": "Mark Webber finished third at the Turkish Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "rr2",
+        "relationship_type": "ACHIEVED",
+        "description": "Sebastian Vettel was forced to retire at the Turkish Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr2",
+        "target_id": "e5",
+        "relationship_type": "AT_RACE",
+        "description": "Sebastian Vettel was forced to retire at the Turkish Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e8",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Mark Webber and Heikki Kovalainen were involved in a collision during the European Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e1",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Sebastian Vettel and Mark Webber were teammates during the 2010 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 8,
+  "entities_accepted": 10,
+  "entities_rejected": 0,
+  "relationship_candidates": 8,
+  "relationships_accepted": 7,
+  "relationships_rejected": 3,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "ROUND_OF does not allow Team -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "ROUND_OF does not allow Team -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 7,
+      "reason": "WON does not allow Driver -> GrandPrix"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 3,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e5; description kept"
+    },
+    {
+      "index": 4,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr2 -AT_RACE-> e5; description kept"
+    }
+  ]
+}

@@ -1,0 +1,87 @@
+{
+  "chunk_id": "team-williams-racing#126",
+  "doc_id": "team-williams-racing",
+  "document_title": "Williams Racing",
+  "section": "Williams Racing > Former subsidiaries > Williams Racing > WAE Technologies",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "b2c9cf75739fa277fcf4d4a900b9b3daf318c59b8f0baa8cf361fac99027accd",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Williams Advanced Engineering",
+        "entity_type": "Team",
+        "description": "A subsidiary of Williams Racing that supplies batteries for racing series."
+      },
+      {
+        "local_id": "e2",
+        "name": "Extreme E",
+        "entity_type": "Season",
+        "description": "An electric off-road racing series."
+      },
+      {
+        "local_id": "e3",
+        "name": "ETCR",
+        "entity_type": "Season",
+        "description": "A multi-make racing series."
+      },
+      {
+        "local_id": "e4",
+        "name": "Fortescue",
+        "entity_type": "Team",
+        "description": "An Australian mining firm that purchased Williams Advanced Engineering."
+      },
+      {
+        "local_id": "e5",
+        "name": "WAE Technologies",
+        "entity_type": "Team",
+        "description": "The renamed entity of Williams Advanced Engineering in January 2023."
+      },
+      {
+        "local_id": "e6",
+        "name": "Fortescue Zero",
+        "entity_type": "Team",
+        "description": "The renamed entity of WAE Technologies in June 2024."
+      }
+    ],
+    "relationships": []
+  },
+  "entity_candidates": 6,
+  "entities_accepted": 6,
+  "entities_rejected": 0,
+  "relationship_candidates": 5,
+  "relationships_accepted": 0,
+  "relationships_rejected": 5,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "FIELDED does not allow Team -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "FIELDED does not allow Team -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "DROVE_FOR does not allow Team -> Team"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "DROVE_FOR does not allow Team -> Team"
+    },
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "DROVE_FOR does not allow Team -> Team"
+    }
+  ],
+  "alignments": []
+}

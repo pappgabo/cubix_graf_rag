@@ -1,0 +1,47 @@
+{
+  "chunk_id": "season-2021-formula-one-world-championship#19",
+  "doc_id": "season-2021-formula-one-world-championship",
+  "document_title": "2021 Formula One World Championship",
+  "section": null,
+  "page": 5,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "22f7fdd027a3cc3171819ed3a30e4d325126cb7ca218791aa3a305e775e64edc",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "2021",
+        "entity_type": "Season",
+        "description": "The 2021 Formula One season."
+      },
+      {
+        "local_id": "e2",
+        "name": "United States Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula One race held in the United States."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e2",
+        "target_id": "e1",
+        "relationship_type": "ROUND_OF",
+        "description": "The United States Grand Prix is a round of the 2021 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 2,
+  "entities_accepted": 2,
+  "entities_rejected": 0,
+  "relationship_candidates": 1,
+  "relationships_accepted": 1,
+  "relationships_rejected": 0,
+  "rejections": [],
+  "alignments": []
+}

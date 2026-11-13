@@ -1,0 +1,105 @@
+{
+  "chunk_id": "season-2021-formula-one-world-championship#83",
+  "doc_id": "season-2021-formula-one-world-championship",
+  "document_title": "2021 Formula One World Championship",
+  "section": null,
+  "page": 7,
+  "source": "https://en.wikipedia.org/wiki/2021_Formula_One_World_Championship",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "cadf4ab4e21f745b80074f4c459c06e8a2749c50e19a31d4c3dbd0c39cb4b463",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "DROVE_FOR does not allow Driver -> Driver"
+    },
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "ACHIEVED does not allow Driver -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "ACHIEVED does not allow Driver -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "ACHIEVED does not allow Driver -> GrandPrix"
+    }
+  ],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Verstappen",
+        "entity_type": "Driver",
+        "description": "Increased his lead to 12 points."
+      },
+      {
+        "local_id": "e2",
+        "name": "Hamilton",
+        "entity_type": "Driver",
+        "description": "Collected an extra Championship point by setting the fastest lap."
+      },
+      {
+        "local_id": "e3",
+        "name": "Bottas",
+        "entity_type": "Driver",
+        "description": "Took pole in Mexico City."
+      },
+      {
+        "local_id": "e4",
+        "name": "Ricciardo",
+        "entity_type": "Driver",
+        "description": "Spun Bottas around at the first corner."
+      },
+      {
+        "local_id": "e5",
+        "name": "Tsunoda",
+        "entity_type": "Driver",
+        "description": "Involved in an incident that took him out of the race."
+      },
+      {
+        "local_id": "e6",
+        "name": "Schumacher",
+        "entity_type": "Driver",
+        "description": "Involved in an incident that took him out of the race."
+      },
+      {
+        "local_id": "e7",
+        "name": "Pérez",
+        "entity_type": "Driver",
+        "description": "Took the final spot on the podium in his home race."
+      },
+      {
+        "local_id": "e8",
+        "name": "Mexico City Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The race where Bottas took pole and Verstappen won."
+      },
+      {
+        "local_id": "e9",
+        "name": "2021",
+        "entity_type": "Season",
+        "description": "The championship year."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e8",
+        "target_id": "e9",
+        "relationship_type": "ROUND_OF",
+        "description": "The Mexico City Grand Prix is a round of the 2021 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

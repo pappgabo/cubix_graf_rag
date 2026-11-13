@@ -1,0 +1,152 @@
+{
+  "chunk_id": "driver-michael-schumacher#2",
+  "doc_id": "driver-michael-schumacher",
+  "document_title": "Michael Schumacher",
+  "section": null,
+  "page": 1,
+  "source": "https://en.wikipedia.org/wiki/Michael_Schumacher",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "4ca3055a21b1c45a7324ac7d29adb4f9966c71e488cdb149f26d1b7f1a8f0940",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "entity_candidates": 10,
+  "entities_accepted": 11,
+  "entities_rejected": 0,
+  "relationship_candidates": 6,
+  "relationships_accepted": 4,
+  "relationships_rejected": 3,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "ENTERED does not allow Team -> Team"
+    },
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "WON does not allow Driver -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 6,
+      "reason": "WON does not allow Driver -> GrandPrix"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 1,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e3; description kept"
+    }
+  ],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Michael Schumacher",
+        "entity_type": "Driver",
+        "description": "A German racing driver who made his debut in Formula One with Jordan."
+      },
+      {
+        "local_id": "e2",
+        "name": "Jordan",
+        "entity_type": "Team",
+        "description": "A Formula One team that Schumacher debuted with."
+      },
+      {
+        "local_id": "e3",
+        "name": "Belgian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The race where Schumacher made his Formula One debut."
+      },
+      {
+        "local_id": "e4",
+        "name": "Benetton",
+        "entity_type": "Team",
+        "description": "The Formula One team that signed Schumacher for the remainder of the 1991 season."
+      },
+      {
+        "local_id": "e5",
+        "name": "Belgium",
+        "entity_type": "GrandPrix",
+        "description": "The Grand Prix where Schumacher achieved his maiden victory."
+      },
+      {
+        "local_id": "e6",
+        "name": "Portuguese Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The Grand Prix where Schumacher repeated his victory."
+      },
+      {
+        "local_id": "e7",
+        "name": "World Drivers' Championship",
+        "entity_type": "Title",
+        "description": "The championship title won by Schumacher."
+      },
+      {
+        "local_id": "e8",
+        "name": "1991",
+        "entity_type": "Season",
+        "description": "The season when Schumacher made his Formula One debut."
+      },
+      {
+        "local_id": "e9",
+        "name": "1992",
+        "entity_type": "Season",
+        "description": "The season when Schumacher achieved his maiden victory."
+      },
+      {
+        "local_id": "e10",
+        "name": "1993",
+        "entity_type": "Season",
+        "description": "The season when Schumacher repeated his victory."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Michael Schumacher at Belgian Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Schumacher made his Formula One debut at the Belgian Grand Prix."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Schumacher drove for Jordan in 1991.",
+        "from_year": 1991,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Schumacher made his Formula One debut at the Belgian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e3",
+        "relationship_type": "AT_RACE",
+        "description": "Schumacher made his Formula One debut at the Belgian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e7",
+        "target_id": "e9",
+        "relationship_type": "AWARDED_IN",
+        "description": "The World Drivers' Championship was awarded in 1992.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

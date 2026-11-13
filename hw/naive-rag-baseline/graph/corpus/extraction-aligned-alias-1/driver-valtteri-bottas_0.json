@@ -1,0 +1,81 @@
+{
+  "chunk_id": "driver-valtteri-bottas#0",
+  "doc_id": "driver-valtteri-bottas",
+  "document_title": "Valtteri Bottas",
+  "section": null,
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/Valtteri_Bottas",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "9421dbd7e9a63b587adc77b6b6d7758eb1e2b6f94c133a2b2066a91bd3827155",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "WON does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "WON does not allow Driver -> Season"
+    }
+  ],
+  "alignments": [],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Valtteri Bottas",
+        "entity_type": "Driver",
+        "description": "A Finnish racing driver who competes in Formula One for Cadillac."
+      },
+      {
+        "local_id": "e2",
+        "name": "Cadillac",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that Valtteri Bottas competes for."
+      },
+      {
+        "local_id": "e3",
+        "name": "Mercedes-AMG Petronas Formula One Team",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that Valtteri Bottas has competed for."
+      },
+      {
+        "local_id": "e4",
+        "name": "2019",
+        "entity_type": "Season",
+        "description": "A season in which Valtteri Bottas finished runner-up in the World Drivers' Championship."
+      },
+      {
+        "local_id": "e5",
+        "name": "2020",
+        "entity_type": "Season",
+        "description": "A season in which Valtteri Bottas finished runner-up in the World Drivers' Championship."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Valtteri Bottas competes for Cadillac.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e3",
+        "relationship_type": "DROVE_FOR",
+        "description": "Valtteri Bottas competed for Mercedes.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

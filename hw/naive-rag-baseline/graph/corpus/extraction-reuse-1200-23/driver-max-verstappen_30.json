@@ -1,0 +1,146 @@
+{
+  "chunk_id": "driver-max-verstappen#30",
+  "doc_id": "driver-max-verstappen",
+  "document_title": "Max Verstappen",
+  "section": null,
+  "page": 6,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "b31ca2a280cbf4f5522942c5a3adc7de56b7ea1c01e9c1636a179c114f768898",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Max Verstappen",
+        "entity_type": "Driver",
+        "description": "A Dutch racing driver competing in Formula One."
+      },
+      {
+        "local_id": "e2",
+        "name": "Lewis Hamilton",
+        "entity_type": "Driver",
+        "description": "A British racing driver competing in Formula One."
+      },
+      {
+        "local_id": "e3",
+        "name": "Charles Leclerc",
+        "entity_type": "Driver",
+        "description": "A Monegasque racing driver competing in Formula One."
+      },
+      {
+        "local_id": "e4",
+        "name": "Monaco Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula One race held in Monaco."
+      },
+      {
+        "local_id": "e5",
+        "name": "Azerbaijan Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula One race held in Azerbaijan."
+      },
+      {
+        "local_id": "e6",
+        "name": "World Drivers' Championship",
+        "entity_type": "Title",
+        "description": "The championship title awarded to the best performing driver in Formula One."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Max Verstappen at Monaco Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Verstappen won the Monaco Grand Prix."
+      },
+      {
+        "local_id": "rr2",
+        "name": "Max Verstappen at Azerbaijan Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Verstappen retired from the Azerbaijan Grand Prix due to a tyre failure."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Verstappen won the Monaco Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e4",
+        "relationship_type": "AT_RACE",
+        "description": "Verstappen won the Monaco Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr2",
+        "relationship_type": "ACHIEVED",
+        "description": "Verstappen retired from the Azerbaijan Grand Prix due to a tyre failure.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr2",
+        "target_id": "e5",
+        "relationship_type": "AT_RACE",
+        "description": "Verstappen retired from the Azerbaijan Grand Prix due to a tyre failure.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e6",
+        "relationship_type": "WON",
+        "description": "Verstappen became the first Dutch driver to lead the World Drivers' Championship.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 6,
+  "entities_accepted": 8,
+  "entities_rejected": 0,
+  "relationship_candidates": 6,
+  "relationships_accepted": 5,
+  "relationships_rejected": 3,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 5,
+      "reason": "ACHIEVED does not allow Driver -> Title"
+    },
+    {
+      "element": "relationship",
+      "index": 6,
+      "reason": "HELD_AT does not allow Driver -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 7,
+      "reason": "HELD_AT does not allow Driver -> GrandPrix"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 0,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e4; description kept"
+    },
+    {
+      "index": 1,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr2 -AT_RACE-> e5; description kept"
+    }
+  ]
+}

@@ -1,0 +1,87 @@
+{
+  "chunk_id": "driver-fernando-alonso#29",
+  "doc_id": "driver-fernando-alonso",
+  "document_title": "Fernando Alonso",
+  "section": "Minardi and Renault (2001–2006)",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/Fernando_Alonso",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "d7e41fb2e0efaa81228ec4150ceb5c9ea997960f5f278e536ed2fdb98d3f0da4",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "entity_candidates": 5,
+  "entities_accepted": 5,
+  "entities_rejected": 0,
+  "relationship_candidates": 4,
+  "relationships_accepted": 2,
+  "relationships_rejected": 2,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "FIELDED does not allow Car -> Team"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "HELD_AT does not allow Circuit -> Season"
+    }
+  ],
+  "alignments": [],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Fernando Alonso",
+        "entity_type": "Driver",
+        "description": "A Formula One driver who signed as Renault's test driver for 2002."
+      },
+      {
+        "local_id": "e2",
+        "name": "Renault",
+        "entity_type": "Team",
+        "description": "A Formula One team that Alonso signed with as a test driver."
+      },
+      {
+        "local_id": "e3",
+        "name": "Silverstone Circuit",
+        "entity_type": "Circuit",
+        "description": "A racing venue where Alonso drove a Jaguar in an evaluation session."
+      },
+      {
+        "local_id": "e4",
+        "name": "2002",
+        "entity_type": "Season",
+        "description": "The championship year when Alonso signed as Renault's test driver."
+      },
+      {
+        "local_id": "e5",
+        "name": "Jaguar",
+        "entity_type": "Car",
+        "description": "The car Alonso drove in an evaluation session."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Alonso signed as Renault's test driver.",
+        "from_year": 2002,
+        "to_year": null,
+        "role": "test driver"
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e4",
+        "relationship_type": "RACED_IN",
+        "description": "Jaguar took part in the 2002 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

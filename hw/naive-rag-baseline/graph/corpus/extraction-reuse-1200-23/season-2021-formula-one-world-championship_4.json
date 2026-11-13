@@ -1,0 +1,216 @@
+{
+  "chunk_id": "season-2021-formula-one-world-championship#4",
+  "doc_id": "season-2021-formula-one-world-championship",
+  "document_title": "2021 Formula One World Championship",
+  "section": null,
+  "page": 2,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "7d0e71119666456cbdb0d9de1ebd25e401b3dc0252bfd4479928b7522714e41e",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Sebastian Vettel",
+        "entity_type": "Driver",
+        "description": "Four-time World Drivers' Champion who left Ferrari at the end of the 2020 season after racing with the team for six seasons."
+      },
+      {
+        "local_id": "e2",
+        "name": "Carlos Sainz Jr.",
+        "entity_type": "Driver",
+        "description": "Took Vettel's seat at Ferrari after leaving McLaren."
+      },
+      {
+        "local_id": "e3",
+        "name": "Daniel Ricciardo",
+        "entity_type": "Driver",
+        "description": "Moved from Renault to McLaren, replacing Sainz."
+      },
+      {
+        "local_id": "e4",
+        "name": "Fernando Alonso",
+        "entity_type": "Driver",
+        "description": "Replaced Ricciardo at McLaren, drove in Alpine's first season."
+      },
+      {
+        "local_id": "e5",
+        "name": "Aston Martin",
+        "entity_type": "Team",
+        "description": "Team Vettel moved to after leaving Ferrari."
+      },
+      {
+        "local_id": "e6",
+        "name": "Sergio Pérez",
+        "entity_type": "Driver",
+        "description": "Replaced by Vettel at Aston Martin."
+      },
+      {
+        "local_id": "e7",
+        "name": "Red Bull Racing",
+        "entity_type": "Team",
+        "description": "Team Pérez moved to after Aston Martin."
+      },
+      {
+        "local_id": "e8",
+        "name": "Alexander Albon",
+        "entity_type": "Driver",
+        "description": "Red Bull Racing's reserve and test driver for the 2021 season."
+      },
+      {
+        "local_id": "e9",
+        "name": "Romain Grosjean",
+        "entity_type": "Driver",
+        "description": "Left Haas at the end of 2020."
+      },
+      {
+        "local_id": "e10",
+        "name": "Kevin Magnussen",
+        "entity_type": "Driver",
+        "description": "Left Haas at the end of 2020."
+      },
+      {
+        "local_id": "e11",
+        "name": "Mick Schumacher",
+        "entity_type": "Driver",
+        "description": "2020 Formula 2 Champion, son of Michael Schumacher."
+      },
+      {
+        "local_id": "e12",
+        "name": "Haas",
+        "entity_type": "Team",
+        "description": "Team that Grosjean and Magnussen raced for since 2016 and 2017 respectively."
+      },
+      {
+        "local_id": "e13",
+        "name": "McLaren",
+        "entity_type": "Team",
+        "description": "Team that Sainz left and Alonso last raced for in 2018."
+      },
+      {
+        "local_id": "e14",
+        "name": "Renault",
+        "entity_type": "Team",
+        "description": "Team Ricciardo moved from."
+      },
+      {
+        "local_id": "e15",
+        "name": "Alpine",
+        "entity_type": "Team",
+        "description": "Team in which Alonso drove in its first season."
+      },
+      {
+        "local_id": "e16",
+        "name": "Racing Point",
+        "entity_type": "Team",
+        "description": "Aston Martin's predecessor."
+      },
+      {
+        "local_id": "e17",
+        "name": "2021",
+        "entity_type": "Season",
+        "description": "The season in which Pérez joined Red Bull Racing."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e12",
+        "relationship_type": "DROVE_FOR",
+        "description": "Vettel raced for Ferrari.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e5",
+        "relationship_type": "DROVE_FOR",
+        "description": "Vettel moved to Aston Martin.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e1",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Sainz took Vettel's seat at Ferrari.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e2",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Ricciardo replaced Sainz at McLaren.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e3",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Alonso replaced Ricciardo at McLaren.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e6",
+        "target_id": "e5",
+        "relationship_type": "DROVE_FOR",
+        "description": "Pérez replaced by Vettel at Aston Martin.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e9",
+        "target_id": "e12",
+        "relationship_type": "DROVE_FOR",
+        "description": "Grosjean raced for Haas.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e10",
+        "target_id": "e12",
+        "relationship_type": "DROVE_FOR",
+        "description": "Magnussen raced for Haas.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 17,
+  "entities_accepted": 17,
+  "entities_rejected": 0,
+  "relationship_candidates": 11,
+  "relationships_accepted": 8,
+  "relationships_rejected": 3,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 6,
+      "reason": "DROVE_FOR does not allow Team -> Driver"
+    },
+    {
+      "element": "relationship",
+      "index": 7,
+      "reason": "TEAMMATE_OF does not allow Driver -> Team"
+    },
+    {
+      "element": "relationship",
+      "index": 10,
+      "reason": "DROVE_FOR does not allow Driver -> Season"
+    }
+  ],
+  "alignments": []
+}

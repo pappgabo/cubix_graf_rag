@@ -1,0 +1,92 @@
+{
+  "chunk_id": "team-mclaren#0",
+  "doc_id": "team-mclaren",
+  "document_title": "McLaren",
+  "section": null,
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "345bf45944f2a09ce6c67fc7310c579bf187bb8e91d397f0593f6bffc00419eb",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "McLaren Mastercard F1 Team",
+        "entity_type": "Team",
+        "description": "A British motor racing team competing in Formula One."
+      },
+      {
+        "local_id": "e2",
+        "name": "Mercedes",
+        "entity_type": "PowerUnit",
+        "description": "The power unit currently used by McLaren."
+      },
+      {
+        "local_id": "e3",
+        "name": "Honda",
+        "entity_type": "PowerUnit",
+        "description": "The power unit used by McLaren from 1988 to 1991."
+      },
+      {
+        "local_id": "e4",
+        "name": "Chinese Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Grand Prix that marked McLaren's 1000th entry."
+      },
+      {
+        "local_id": "e5",
+        "name": "Scuderia Ferrari",
+        "entity_type": "Team",
+        "description": "The most successful Formula One team after McLaren."
+      },
+      {
+        "local_id": "e6",
+        "name": "2026",
+        "entity_type": "Season",
+        "description": "The season in which the 2026 Chinese Grand Prix took place."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e4",
+        "target_id": "e6",
+        "relationship_type": "ROUND_OF",
+        "description": "The 2026 Chinese Grand Prix is a round of the 2026 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 6,
+  "entities_accepted": 6,
+  "entities_rejected": 0,
+  "relationship_candidates": 5,
+  "relationships_accepted": 1,
+  "relationships_rejected": 4,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "POWERED_BY does not allow Team -> PowerUnit"
+    },
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "POWERED_BY does not allow Team -> PowerUnit"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "HELD_AT does not allow Team -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "TEAMMATE_OF does not allow Team -> Team"
+    }
+  ],
+  "alignments": []
+}

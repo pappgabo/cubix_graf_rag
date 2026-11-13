@@ -1,0 +1,169 @@
+{
+  "chunk_id": "season-2016-formula-one-world-championship#30",
+  "doc_id": "season-2016-formula-one-world-championship",
+  "document_title": "2016 Formula One World Championship",
+  "section": "European rounds",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "408b2dca6de34e47ffa090275811b08752c1c86d13f8f481620c2a788688d0d9",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Daniel Ricciardo",
+        "entity_type": "Driver",
+        "description": "Ricciardo took the first pole position of his career at the Monaco Grand Prix and finished second."
+      },
+      {
+        "local_id": "e2",
+        "name": "Lewis Hamilton",
+        "entity_type": "Driver",
+        "description": "Hamilton won the Monaco Grand Prix and the Canadian Grand Prix, his first win of the season."
+      },
+      {
+        "local_id": "e3",
+        "name": "Sergio Pérez",
+        "entity_type": "Driver",
+        "description": "Pérez finished third in the Monaco Grand Prix and second in the European Grand Prix."
+      },
+      {
+        "local_id": "e4",
+        "name": "Sebastian Vettel",
+        "entity_type": "Driver",
+        "description": "Vettel lost the lead to Hamilton at the Canadian Grand Prix but was involved in the race."
+      },
+      {
+        "local_id": "e5",
+        "name": "Valtteri Bottas",
+        "entity_type": "Driver",
+        "description": "Bottas finished third in the Canadian Grand Prix, his first podium of the season."
+      },
+      {
+        "local_id": "e6",
+        "name": "Nico Rosberg",
+        "entity_type": "Driver",
+        "description": "Rosberg won the European Grand Prix with his second grand slam of the season."
+      },
+      {
+        "local_id": "e7",
+        "name": "Monaco Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "Ricciardo took pole position and finished second."
+      },
+      {
+        "local_id": "e8",
+        "name": "Canadian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "Hamilton won the race after reclaiming the lead."
+      },
+      {
+        "local_id": "e9",
+        "name": "European Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "Rosberg won the race."
+      },
+      {
+        "local_id": "e10",
+        "name": "2016",
+        "entity_type": "Season",
+        "description": "The championship year in which these races took place."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Daniel Ricciardo at Monaco Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Ricciardo finished second in the Monaco Grand Prix."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Ricciardo finished second in the Monaco Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e7",
+        "relationship_type": "AT_RACE",
+        "description": "Ricciardo finished second in the Monaco Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e7",
+        "target_id": "e10",
+        "relationship_type": "ROUND_OF",
+        "description": "Monaco Grand Prix is a round of the 2016 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e8",
+        "target_id": "e10",
+        "relationship_type": "ROUND_OF",
+        "description": "Canadian Grand Prix is a round of the 2016 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e9",
+        "target_id": "e10",
+        "relationship_type": "ROUND_OF",
+        "description": "European Grand Prix is a round of the 2016 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 10,
+  "entities_accepted": 11,
+  "entities_rejected": 0,
+  "relationship_candidates": 9,
+  "relationships_accepted": 5,
+  "relationships_rejected": 5,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "WON does not allow Driver -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "FOR_TEAM does not allow Driver -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "WON does not allow Driver -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 5,
+      "reason": "FOR_TEAM does not allow Driver -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 6,
+      "reason": "WON does not allow Driver -> GrandPrix"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 0,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e7; description kept"
+    }
+  ]
+}

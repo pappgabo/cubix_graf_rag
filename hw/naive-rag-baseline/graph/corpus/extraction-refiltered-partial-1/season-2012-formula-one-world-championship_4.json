@@ -1,0 +1,125 @@
+{
+  "chunk_id": "season-2012-formula-one-world-championship#4",
+  "doc_id": "season-2012-formula-one-world-championship",
+  "document_title": "2012 Formula One World Championship",
+  "section": null,
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/2012_Formula_One_World_Championship",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "8500f1c8f9c9e60e878fe885c20ca62dc7147eb6714797dd91707346eb3356b9",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "ENTERED does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "ENTERED does not allow Driver -> Season"
+    }
+  ],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Vettel",
+        "entity_type": "Driver",
+        "description": "A driver who encountered difficulties throughout the 2012 season."
+      },
+      {
+        "local_id": "e2",
+        "name": "Alonso",
+        "entity_type": "Driver",
+        "description": "A driver who was competing against Vettel in the 2012 season."
+      },
+      {
+        "local_id": "e3",
+        "name": "2012",
+        "entity_type": "Season",
+        "description": "The season of the Formula One World Championship."
+      },
+      {
+        "local_id": "e4",
+        "name": "Malaysia",
+        "entity_type": "GrandPrix",
+        "description": "A Grand Prix where Vettel finished outside the points."
+      },
+      {
+        "local_id": "e5",
+        "name": "European",
+        "entity_type": "GrandPrix",
+        "description": "A Grand Prix where alternator failures cost Vettel valuable points."
+      },
+      {
+        "local_id": "e6",
+        "name": "Italian",
+        "entity_type": "GrandPrix",
+        "description": "A Grand Prix where alternator failures cost Vettel valuable points."
+      },
+      {
+        "local_id": "e7",
+        "name": "Abu Dhabi",
+        "entity_type": "GrandPrix",
+        "description": "A Grand Prix where Vettel was excluded from qualifying."
+      },
+      {
+        "local_id": "e8",
+        "name": "thirteen-point lead",
+        "entity_type": "RaceResult",
+        "description": "Vettel entered the final race of the season with a thirteen-point lead over Alonso."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e4",
+        "target_id": "e3",
+        "relationship_type": "ROUND_OF",
+        "description": "The Malaysia Grand Prix is a round of the 2012 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e3",
+        "relationship_type": "ROUND_OF",
+        "description": "The European Grand Prix is a round of the 2012 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e6",
+        "target_id": "e3",
+        "relationship_type": "ROUND_OF",
+        "description": "The Italian Grand Prix is a round of the 2012 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e7",
+        "target_id": "e3",
+        "relationship_type": "ROUND_OF",
+        "description": "The Abu Dhabi Grand Prix is a round of the 2012 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e8",
+        "relationship_type": "ACHIEVED",
+        "description": "Vettel achieved a thirteen-point lead over Alonso entering the final race.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

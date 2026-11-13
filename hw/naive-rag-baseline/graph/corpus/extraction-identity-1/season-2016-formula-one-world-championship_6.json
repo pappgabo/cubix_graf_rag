@@ -1,0 +1,77 @@
+{
+  "chunk_id": "season-2016-formula-one-world-championship#6",
+  "doc_id": "season-2016-formula-one-world-championship",
+  "document_title": "2016 Formula One World Championship",
+  "section": null,
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/2016_Formula_One_World_Championship",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "006f167f0c5aed3fa2e73a41e030a0582f5cbff7c17799cb39ff412883433872",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "entity_candidates": 4,
+  "entities_accepted": 4,
+  "entities_rejected": 0,
+  "relationship_candidates": 4,
+  "relationships_accepted": 1,
+  "relationships_rejected": 3,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "DROVE_FOR does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "ENTERED does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "ACHIEVED does not allow GrandPrix -> Driver"
+    }
+  ],
+  "alignments": [],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Jenson Button",
+        "entity_type": "Driver",
+        "description": "2009 World Champion, final full season in 2016."
+      },
+      {
+        "local_id": "e2",
+        "name": "2016 Formula One World Championship",
+        "entity_type": "Season",
+        "description": "The last championship for a German driver."
+      },
+      {
+        "local_id": "e3",
+        "name": "Bernie Ecclestone",
+        "entity_type": "Driver",
+        "description": "Chief Executive of the Formula One Group until January 2017."
+      },
+      {
+        "local_id": "e4",
+        "name": "2017 Monaco Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "Jenson Button's final Grand Prix appearance."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e4",
+        "target_id": "e2",
+        "relationship_type": "ROUND_OF",
+        "description": "2017 Monaco Grand Prix is a round of the 2016 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

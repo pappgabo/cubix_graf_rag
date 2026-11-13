@@ -1,0 +1,107 @@
+{
+  "chunk_id": "driver-michael-schumacher#4",
+  "doc_id": "driver-michael-schumacher",
+  "document_title": "Michael Schumacher",
+  "section": null,
+  "page": 2,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "6dea3e501f653f36e7de6d28b1f0424e0dc52b22bb04199a07ee0c50fbf09c39",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Michael Schumacher",
+        "entity_type": "Driver",
+        "description": "A German racing driver who won multiple championships."
+      },
+      {
+        "local_id": "e2",
+        "name": "German Formula Ford",
+        "entity_type": "Car",
+        "description": "A single-seat car racing series in Germany."
+      },
+      {
+        "local_id": "e3",
+        "name": "Formula König",
+        "entity_type": "Car",
+        "description": "A single-seat car racing series in Germany."
+      },
+      {
+        "local_id": "e4",
+        "name": "German Junior Kart Championship",
+        "entity_type": "Title",
+        "description": "A kart racing championship in Germany."
+      },
+      {
+        "local_id": "e5",
+        "name": "Karting European Championship (ICA)",
+        "entity_type": "Title",
+        "description": "A European kart racing championship."
+      },
+      {
+        "local_id": "e6",
+        "name": "Monaco Kart Cup",
+        "entity_type": "GrandPrix",
+        "description": "A kart racing event held in Monaco."
+      },
+      {
+        "local_id": "e7",
+        "name": "Masters of Paris-Bercy",
+        "entity_type": "GrandPrix",
+        "description": "A kart racing event held in Paris-Bercy."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e4",
+        "relationship_type": "WON",
+        "description": "Won the German Junior Kart Championship",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e5",
+        "relationship_type": "WON",
+        "description": "Won the direct-drive Karting European Championship (ICA)",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 7,
+  "entities_accepted": 7,
+  "entities_rejected": 0,
+  "relationship_candidates": 6,
+  "relationships_accepted": 2,
+  "relationships_rejected": 4,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "WON does not allow Driver -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "WON does not allow Driver -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "RACED_IN does not allow Driver -> Car"
+    },
+    {
+      "element": "relationship",
+      "index": 5,
+      "reason": "RACED_IN does not allow Driver -> Car"
+    }
+  ],
+  "alignments": []
+}

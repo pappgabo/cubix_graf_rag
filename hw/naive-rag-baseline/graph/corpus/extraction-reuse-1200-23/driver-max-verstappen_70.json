@@ -1,0 +1,128 @@
+{
+  "chunk_id": "driver-max-verstappen#70",
+  "doc_id": "driver-max-verstappen",
+  "document_title": "Max Verstappen",
+  "section": null,
+  "page": 14,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "a2bf3ab7eaa0841fce40a8bf86481f3e744a214bebf3c2e8f09fd17a26380df1",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Max Verstappen",
+        "entity_type": "Driver",
+        "description": "A Formula One driver who has competed in various racing events."
+      },
+      {
+        "local_id": "e2",
+        "name": "Acura ARX-06",
+        "entity_type": "Car",
+        "description": "A prototype car tested by Max Verstappen."
+      },
+      {
+        "local_id": "e3",
+        "name": "Honda Racing Corporation",
+        "entity_type": "Team",
+        "description": "The team associated with the Acura ARX-06 prototype."
+      },
+      {
+        "local_id": "e4",
+        "name": "Las Vegas Motor Speedway",
+        "entity_type": "Circuit",
+        "description": "The circuit where Verstappen tested the Acura ARX-06."
+      },
+      {
+        "local_id": "e5",
+        "name": "Las Vegas Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Grand Prix event associated with the Las Vegas Motor Speedway."
+      },
+      {
+        "local_id": "e6",
+        "name": "Nürburgring Langstrecken-Serie",
+        "entity_type": "Season",
+        "description": "A racing series in which Verstappen participated."
+      },
+      {
+        "local_id": "e7",
+        "name": "Porsche 718 Cayman GT4 CS",
+        "entity_type": "Car",
+        "description": "The car driven by Verstappen during his competitive debut on the Nordschleife."
+      },
+      {
+        "local_id": "e8",
+        "name": "Lionspeed GP",
+        "entity_type": "Team",
+        "description": "The team Verstappen raced for during his competitive debut on the Nordschleife."
+      },
+      {
+        "local_id": "e9",
+        "name": "Emil Frey Racing",
+        "entity_type": "Team",
+        "description": "The team Verstappen drove for in the Nürburgring Endurance Series."
+      },
+      {
+        "local_id": "e10",
+        "name": "Ferrari 296 GT3",
+        "entity_type": "Car",
+        "description": "The car driven by Verstappen in his GT3 race debut."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e3",
+        "target_id": "e2",
+        "relationship_type": "FIELDED",
+        "description": "Honda Racing Corporation entered the Acura ARX-06 prototype.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e4",
+        "relationship_type": "HELD_AT",
+        "description": "The Las Vegas Grand Prix is held at Las Vegas Motor Speedway.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e8",
+        "target_id": "e6",
+        "relationship_type": "ENTERED",
+        "description": "Lionspeed GP took part in the Nürburgring Langstrecken-Serie.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e9",
+        "target_id": "e6",
+        "relationship_type": "ENTERED",
+        "description": "Emil Frey Racing took part in the Nürburgring Endurance Series.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 10,
+  "entities_accepted": 10,
+  "entities_rejected": 0,
+  "relationship_candidates": 5,
+  "relationships_accepted": 4,
+  "relationships_rejected": 1,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "FIELDED does not allow Car -> Team"
+    }
+  ],
+  "alignments": []
+}

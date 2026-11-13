@@ -1,0 +1,111 @@
+{
+  "chunk_id": "driver-michael-schumacher#37",
+  "doc_id": "driver-michael-schumacher",
+  "document_title": "Michael Schumacher",
+  "section": null,
+  "page": 8,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "eeec375bd190fdec80a9ccedd100cce5caf5e2a2ac24455bbc09052d147f1eb2",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Michael Schumacher",
+        "entity_type": "Driver",
+        "description": "A German racing driver who competed in Formula One."
+      },
+      {
+        "local_id": "e2",
+        "name": "Scuderia Ferrari",
+        "entity_type": "Team",
+        "description": "A Formula One team that entered cars."
+      },
+      {
+        "local_id": "e3",
+        "name": "Renault R25",
+        "entity_type": "Car",
+        "description": "A car model used by the Renault team."
+      },
+      {
+        "local_id": "e4",
+        "name": "United States Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula One race held in the United States."
+      },
+      {
+        "local_id": "e5",
+        "name": "2005",
+        "entity_type": "Season",
+        "description": "The Formula One season of 2005."
+      },
+      {
+        "local_id": "e6",
+        "name": "Bridgestone",
+        "entity_type": "PowerUnit",
+        "description": "A tyre supplier used by Ferrari."
+      },
+      {
+        "local_id": "e7",
+        "name": "Michelin",
+        "entity_type": "PowerUnit",
+        "description": "A tyre supplier used by other teams."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Michael Schumacher drove for Ferrari.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e5",
+        "relationship_type": "RACED_IN",
+        "description": "Renault R25 raced in the 2005 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e5",
+        "relationship_type": "ROUND_OF",
+        "description": "The United States Grand Prix was a round of the 2005 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 7,
+  "entities_accepted": 7,
+  "entities_rejected": 0,
+  "relationship_candidates": 6,
+  "relationships_accepted": 3,
+  "relationships_rejected": 3,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "HELD_AT does not allow Team -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "POWERED_BY does not allow PowerUnit -> Car"
+    },
+    {
+      "element": "relationship",
+      "index": 5,
+      "reason": "FIELDED does not allow Team -> PowerUnit"
+    }
+  ],
+  "alignments": []
+}

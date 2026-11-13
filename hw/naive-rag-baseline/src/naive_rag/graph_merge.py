@@ -13,8 +13,8 @@ Sources are the union of the chunk ids, in first-seen order. Descriptions
 are the union of description lines. Different years or roles stay different
 edges because they are part of ``rel_key``.
 
-``ALIAS_MAP`` is the only alias list. It is empty: normalization already
-decides which names share a key. No extra names are merged.
+``ALIAS_MAP`` and ``CANONICAL_NAMES`` live in ``extraction_identity`` and
+are re-exported here. Normalization still decides every other name.
 
 Weak connectivity ignores edge direction. An isolated node is a component
 of one node. The reported size is the number of nodes in the largest such
@@ -26,15 +26,17 @@ from __future__ import annotations
 from dataclasses import dataclass
 
 from .extraction_identity import (
+    ALIAS_MAP,
+    CANONICAL_NAMES,
+    canonical_identity,
+    canonical_key,
+    identity_rejection,
     make_entity_key,
     make_rel_key,
     merge_descriptions,
     merge_source_ids,
 )
-from .extraction_models import ExtractionResult, validate_extraction
-
-# entity_key -> canonical entity_key. Empty until a reviewed pair is added.
-ALIAS_MAP: dict[str, str] = {}
+from .extraction_models import ExtractionResult, load_saved_extraction
 
 COMPONENT_MEANING = (
     "Az irányított szakterületi gráf legnagyobb gyengén összefüggő "
@@ -74,16 +76,6 @@ class DomainGraph:
     edges: tuple[DomainEdge, ...]
 
 
-def canonical_key(entity_key: str) -> str:
-    """Apply ``ALIAS_MAP``. The map is empty, so this returns the key."""
-    seen = set()
-    current = entity_key
-    while current in ALIAS_MAP and current not in seen:
-        seen.add(current)
-        current = ALIAS_MAP[current]
-    return current
-
-
 def occurrence_graph(records: list[dict]) -> DomainGraph:
     """One node and edge per accepted occurrence. No cross-chunk merge."""
     nodes: list[DomainNode] = []
@@ -95,6 +87,8 @@ def occurrence_graph(records: list[dict]) -> DomainGraph:
         chunk_id = str(record["chunk_id"])
         local_keys: dict[str, str] = {}
         for entity in result.entities:
+            if identity_rejection(entity.name) is not None:
+                continue
             node_id = f"{chunk_id}|{entity.local_id}"
             key = canonical_key(make_entity_key(entity.entity_type, entity.name))
             local_keys[entity.local_id] = node_id
@@ -107,6 +101,9 @@ def occurrence_graph(records: list[dict]) -> DomainGraph:
                 source_chunk_ids=(chunk_id,),
             ))
         for index, rel in enumerate(result.relationships):
+            if (rel.source_id not in local_keys
+                    or rel.target_id not in local_keys):
+                continue
             edges.append(DomainEdge(
                 edge_id=f"{chunk_id}|r{index}",
                 rel_key=make_rel_key(
@@ -146,7 +143,10 @@ def merged_graph(records: list[dict]) -> DomainGraph:
         chunk_id = str(record["chunk_id"])
         keys: dict[str, str] = {}
         for entity in result.entities:
-            key = canonical_key(make_entity_key(entity.entity_type, entity.name))
+            if identity_rejection(entity.name) is not None:
+                continue
+            key, display_name, _name_norm = canonical_identity(
+                entity.entity_type, entity.name)
             keys[entity.local_id] = key
             previous = nodes.get(key)
             sources = merge_source_ids(
@@ -157,15 +157,19 @@ def merged_graph(records: list[dict]) -> DomainGraph:
                 previous.description if previous else None,
                 entity.description or "",
             )
+            if previous is not None and key not in CANONICAL_NAMES:
+                display_name = previous.name
             nodes[key] = DomainNode(
                 node_id=key,
                 entity_key=key,
                 label=entity.entity_type.value,
-                name=previous.name if previous else entity.name,
+                name=display_name,
                 description=description,
                 source_chunk_ids=tuple(sources or []),
             )
         for rel in result.relationships:
+            if rel.source_id not in keys or rel.target_id not in keys:
+                continue
             source_key = keys[rel.source_id]
             target_key = keys[rel.target_id]
             rel_key = make_rel_key(
@@ -251,8 +255,8 @@ def _accepted_result(record: dict) -> ExtractionResult | None:
     if record.get("status") != "ok":
         return None
     result = ExtractionResult.model_validate(record["result"])
-    validate_extraction(result)
-    return result
+    accepted, _reasons = load_saved_extraction(result)
+    return accepted
 
 
 def _type_of(result: ExtractionResult, local_id: str):

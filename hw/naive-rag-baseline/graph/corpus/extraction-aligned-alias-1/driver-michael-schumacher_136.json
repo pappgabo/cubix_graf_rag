@@ -1,0 +1,58 @@
+{
+  "chunk_id": "driver-michael-schumacher#136",
+  "doc_id": "driver-michael-schumacher",
+  "document_title": "Michael Schumacher",
+  "section": null,
+  "page": 11,
+  "source": "https://en.wikipedia.org/wiki/Michael_Schumacher",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "bbf8226890a4c23f08b965c2c1fb51304e03451943cc54c5f4ec85c8e6cbf284",
+  "validation_version": "partial-1",
+  "source_status": "ok",
+  "status": "ok",
+  "rejections": [],
+  "alignments": [],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Michael Schumacher",
+        "entity_type": "Driver",
+        "description": "A successful Formula One driver who won the 2003 World Championship."
+      },
+      {
+        "local_id": "e2",
+        "name": "2003",
+        "entity_type": "Season",
+        "description": "The season in which Michael Schumacher won the World Championship."
+      },
+      {
+        "local_id": "e3",
+        "name": "World Championship",
+        "entity_type": "Title",
+        "description": "The championship title won by Michael Schumacher in 2003."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e3",
+        "relationship_type": "WON",
+        "description": "Michael Schumacher won the World Championship",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e2",
+        "relationship_type": "AWARDED_IN",
+        "description": "The World Championship title belongs to the 2003 season",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

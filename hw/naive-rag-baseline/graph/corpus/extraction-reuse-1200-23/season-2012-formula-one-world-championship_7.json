@@ -1,0 +1,119 @@
+{
+  "chunk_id": "season-2012-formula-one-world-championship#7",
+  "doc_id": "season-2012-formula-one-world-championship",
+  "document_title": "2012 Formula One World Championship",
+  "section": "Teams and drivers > Team changes",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "ae39afda1c1966b97e63d78edd29852818089cf99cdfee2b683af6cf811238f6",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Williams",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that announced they would be using Renault engines for the 2012 and 2013 seasons."
+      },
+      {
+        "local_id": "e2",
+        "name": "Renault",
+        "entity_type": "PowerUnit",
+        "description": "An engine supplier that provided engines to Williams from 1989 to 1997."
+      },
+      {
+        "local_id": "e3",
+        "name": "Marussia",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that underwent a restructuring and split with Wirth Research mid-season."
+      },
+      {
+        "local_id": "e4",
+        "name": "McLaren",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that had a technical partnership with Marussia."
+      },
+      {
+        "local_id": "e5",
+        "name": "2012",
+        "entity_type": "Season",
+        "description": "The Formula 1 season in which Williams announced they would be using Renault engines."
+      },
+      {
+        "local_id": "e6",
+        "name": "2013",
+        "entity_type": "Season",
+        "description": "The Formula 1 season in which Williams announced they would be using Renault engines."
+      },
+      {
+        "local_id": "e7",
+        "name": "1989",
+        "entity_type": "Season",
+        "description": "The season when Renault began supplying engines to Williams."
+      },
+      {
+        "local_id": "e8",
+        "name": "1997",
+        "entity_type": "Season",
+        "description": "The season when Renault stopped supplying engines to Williams."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e5",
+        "relationship_type": "ENTERED",
+        "description": "Williams entered the 2012 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e6",
+        "relationship_type": "ENTERED",
+        "description": "Williams entered the 2013 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 8,
+  "entities_accepted": 8,
+  "entities_rejected": 0,
+  "relationship_candidates": 5,
+  "relationships_accepted": 2,
+  "relationships_rejected": 3,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "POWERED_BY does not allow Team -> PowerUnit"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "FIELDED does not allow PowerUnit -> Team"
+    },
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "TEAMMATE_OF does not allow Team -> Team"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 1,
+      "action": "clear_redundant_season_year",
+      "detail": "ENTERED year 2012 already named by Season 'e5'; from_year and to_year cleared"
+    },
+    {
+      "index": 2,
+      "action": "clear_redundant_season_year",
+      "detail": "ENTERED year 2013 already named by Season 'e6'; from_year and to_year cleared"
+    }
+  ]
+}

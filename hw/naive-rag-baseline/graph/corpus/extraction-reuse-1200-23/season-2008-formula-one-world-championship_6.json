@@ -1,0 +1,101 @@
+{
+  "chunk_id": "season-2008-formula-one-world-championship#6",
+  "doc_id": "season-2008-formula-one-world-championship",
+  "document_title": "2008 Formula One World Championship",
+  "section": null,
+  "page": 2,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "fe1b164976ed2874c25d0c796e894a2ebf7a506499d4344efb1d1bda3c3ec0b0",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Super Aguri",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that withdrew from the championship in 2008."
+      },
+      {
+        "local_id": "e2",
+        "name": "Narain Karthikeyan",
+        "entity_type": "Driver",
+        "description": "An Indian driver associated with Super Aguri."
+      },
+      {
+        "local_id": "e3",
+        "name": "Fernando Alonso",
+        "entity_type": "Driver",
+        "description": "2005 and 2006 World Champion who left McLaren to rejoin Renault."
+      },
+      {
+        "local_id": "e4",
+        "name": "Heikki Kovalainen",
+        "entity_type": "Driver",
+        "description": "Replaced Fernando Alonso at McLaren after a single season."
+      },
+      {
+        "local_id": "e5",
+        "name": "Renault",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that Fernando Alonso rejoined."
+      },
+      {
+        "local_id": "e6",
+        "name": "2008",
+        "entity_type": "Season",
+        "description": "The Formula One season during which Super Aguri withdrew."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e6",
+        "relationship_type": "ENTERED",
+        "description": "Super Aguri took part in the 2008 Formula One World Championship.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e5",
+        "relationship_type": "DROVE_FOR",
+        "description": "Fernando Alonso rejoined Renault after leaving McLaren.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e1",
+        "relationship_type": "DROVE_FOR",
+        "description": "Heikki Kovalainen replaced Fernando Alonso at McLaren.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 6,
+  "entities_accepted": 6,
+  "entities_rejected": 0,
+  "relationship_candidates": 4,
+  "relationships_accepted": 3,
+  "relationships_rejected": 1,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "DROVE_FOR does not allow Team -> Driver"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 0,
+      "action": "clear_redundant_season_year",
+      "detail": "ENTERED year 2008 already named by Season 'e6'; from_year and to_year cleared"
+    }
+  ]
+}

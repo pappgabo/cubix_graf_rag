@@ -1,0 +1,53 @@
+{
+  "chunk_id": "team-mclaren#104",
+  "doc_id": "team-mclaren",
+  "document_title": "McLaren",
+  "section": "Facilities",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "d991fe4b671c5000090448427144b53b681c94f1dfb82517cc7a3ceace59c5e9",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "McLaren Racing",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that expanded its Indianapolis base."
+      },
+      {
+        "local_id": "e2",
+        "name": "2026",
+        "entity_type": "Season",
+        "description": "The year McLaren Racing expanded its Indianapolis base."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "ENTERED",
+        "description": "McLaren Racing took part in the 2026 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 2,
+  "entities_accepted": 2,
+  "entities_rejected": 0,
+  "relationship_candidates": 1,
+  "relationships_accepted": 1,
+  "relationships_rejected": 0,
+  "rejections": [],
+  "alignments": [
+    {
+      "index": 0,
+      "action": "clear_redundant_season_year",
+      "detail": "ENTERED year 2026 already named by Season 'e2'; from_year and to_year cleared"
+    }
+  ]
+}

@@ -1,0 +1,126 @@
+{
+  "chunk_id": "team-williams-racing#71",
+  "doc_id": "team-williams-racing",
+  "document_title": "Williams Racing",
+  "section": "Williams Racing > 2004 season",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "b8c3939d96cf8feb2cd86bea4e0f744988e009ef8417eb5360d3d479d732ca46",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Juan Pablo Montoya",
+        "entity_type": "Driver",
+        "description": "A driver for Williams Racing in the 2004 season."
+      },
+      {
+        "local_id": "e2",
+        "name": "Williams Racing",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that competed in the 2004 season."
+      },
+      {
+        "local_id": "e3",
+        "name": "2004",
+        "entity_type": "Season",
+        "description": "The Formula 1 season in which Williams Racing competed."
+      },
+      {
+        "local_id": "e4",
+        "name": "Brazilian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The final race of the 2004 season where Williams Racing achieved a win."
+      },
+      {
+        "local_id": "e5",
+        "name": "Kimi Räikkönen",
+        "entity_type": "Driver",
+        "description": "A driver for McLaren who finished behind Juan Pablo Montoya in the Brazilian Grand Prix."
+      },
+      {
+        "local_id": "e6",
+        "name": "Scuderia Ferrari",
+        "entity_type": "Team",
+        "description": "The team that dominated the 2004 season."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Juan Pablo Montoya at Brazilian Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Juan Pablo Montoya recorded a result in the Brazilian Grand Prix."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e2",
+        "target_id": "e3",
+        "relationship_type": "ENTERED",
+        "description": "Williams Racing took part in the 2004 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Juan Pablo Montoya drove for Williams Racing in the 2004 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Juan Pablo Montoya recorded a result in the Brazilian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e4",
+        "relationship_type": "AT_RACE",
+        "description": "Juan Pablo Montoya recorded a result in the Brazilian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 6,
+  "entities_accepted": 7,
+  "entities_rejected": 0,
+  "relationship_candidates": 6,
+  "relationships_accepted": 4,
+  "relationships_rejected": 3,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "ROUND_OF does not allow Team -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 5,
+      "reason": "AT_RACE does not allow GrandPrix -> Driver"
+    },
+    {
+      "element": "relationship",
+      "index": 6,
+      "reason": "RACED_IN does not allow Team -> Team"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 3,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e4; description kept"
+    }
+  ]
+}

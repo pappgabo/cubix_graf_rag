@@ -1,0 +1,92 @@
+{
+  "chunk_id": "driver-charles-leclerc#18",
+  "doc_id": "driver-charles-leclerc",
+  "document_title": "Charles Leclerc",
+  "section": "Charles Leclerc > FIA Formula 2 (2017)",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "869002a84e1de81203c9cea4439a9fb9df4cf783ab6dcfb105a46f6736ba1f09",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Charles Leclerc",
+        "entity_type": "Driver",
+        "description": "A driver who competed in FIA Formula 2 in 2017."
+      },
+      {
+        "local_id": "e2",
+        "name": "FIA Formula 2",
+        "entity_type": "Season",
+        "description": "The 2017 season of FIA Formula 2."
+      },
+      {
+        "local_id": "e3",
+        "name": "Yas Island",
+        "entity_type": "Circuit",
+        "description": "The circuit where the season-ending round took place."
+      },
+      {
+        "local_id": "e4",
+        "name": "Alexander Albon",
+        "entity_type": "Driver",
+        "description": "A driver who was overtaken by Charles Leclerc on the final lap."
+      },
+      {
+        "local_id": "e5",
+        "name": "Artem Markelov",
+        "entity_type": "Driver",
+        "description": "The eventual runner-up to Charles Leclerc in the 2017 FIA Formula 2 season."
+      },
+      {
+        "local_id": "e6",
+        "name": "Antonio Fuoco",
+        "entity_type": "Driver",
+        "description": "Teammate of Charles Leclerc in the 2017 FIA Formula 2 season."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e6",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Charles Leclerc was teammates with Antonio Fuoco in the 2017 FIA Formula 2 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 6,
+  "entities_accepted": 6,
+  "entities_rejected": 0,
+  "relationship_candidates": 5,
+  "relationships_accepted": 1,
+  "relationships_rejected": 4,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "RACED_IN does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "ACHIEVED does not allow Driver -> Circuit"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "ACHIEVED does not allow Driver -> Driver"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "ACHIEVED does not allow Driver -> Driver"
+    }
+  ],
+  "alignments": []
+}

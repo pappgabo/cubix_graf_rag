@@ -1,0 +1,76 @@
+{
+  "chunk_id": "reference-formula-one#56",
+  "doc_id": "reference-formula-one",
+  "document_title": "Formula One",
+  "section": "Formula One > Cars and technology",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "201b057cafd36567672cbaada10a9afd483807d13e7d8bae51e1758ef228a729",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "2022",
+        "entity_type": "Season",
+        "description": "The season when technical regulations were altered considerably."
+      },
+      {
+        "local_id": "e2",
+        "name": "2022 Technical Regulations",
+        "entity_type": "Car",
+        "description": "The technical regulations altered in 2022 to reduce turbulence produced by aerodynamics."
+      },
+      {
+        "local_id": "e3",
+        "name": "2014 Engine Change",
+        "entity_type": "PowerUnit",
+        "description": "The change from 2.4-litre naturally aspirated V8 to turbocharged 1.6-litre V6 power units in 2014."
+      },
+      {
+        "local_id": "e4",
+        "name": "2006 Engine Generation",
+        "entity_type": "PowerUnit",
+        "description": "The generation of engines that spun up to 20,000 rpm and produced over 580 kW (780 bhp)."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e2",
+        "target_id": "e1",
+        "relationship_type": "RACED_IN",
+        "description": "The 2022 technical regulations were implemented in the 2022 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 4,
+  "entities_accepted": 4,
+  "entities_rejected": 0,
+  "relationship_candidates": 3,
+  "relationships_accepted": 1,
+  "relationships_rejected": 2,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "RACED_IN does not allow PowerUnit -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "RACED_IN does not allow PowerUnit -> Season"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 0,
+      "action": "clear_redundant_season_year",
+      "detail": "RACED_IN year 2022 already named by Season 'e1'; from_year and to_year cleared"
+    }
+  ]
+}

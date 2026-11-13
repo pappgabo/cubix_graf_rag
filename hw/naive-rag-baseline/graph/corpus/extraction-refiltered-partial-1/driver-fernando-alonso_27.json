@@ -1,0 +1,60 @@
+{
+  "chunk_id": "driver-fernando-alonso#27",
+  "doc_id": "driver-fernando-alonso",
+  "document_title": "Fernando Alonso",
+  "section": "Minardi and Renault (2001–2006)",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/Fernando_Alonso",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "b1fa85b4114b586e9e40a123673ec1239eefda8222039f2b0b96f7a02f6f8d3a",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "ENTERED is not temporal; from_year, to_year and role must be null"
+    }
+  ],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Fernando Alonso",
+        "entity_type": "Driver",
+        "description": "A Formula One driver who raced for Minardi and Renault."
+      },
+      {
+        "local_id": "e2",
+        "name": "Minardi",
+        "entity_type": "Team",
+        "description": "A Formula One team that Alonso raced for."
+      },
+      {
+        "local_id": "e3",
+        "name": "Circuito de Jerez",
+        "entity_type": "Circuit",
+        "description": "A racing venue where Alonso tested a Formula One car."
+      },
+      {
+        "local_id": "e4",
+        "name": "2001",
+        "entity_type": "Season",
+        "description": "The season when Alonso joined Minardi's race team."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Alonso joined Minardi's race team in 2001.",
+        "from_year": 2001,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

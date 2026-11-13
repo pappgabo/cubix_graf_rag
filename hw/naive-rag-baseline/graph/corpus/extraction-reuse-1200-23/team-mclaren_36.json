@@ -1,0 +1,116 @@
+{
+  "chunk_id": "team-mclaren#36",
+  "doc_id": "team-mclaren",
+  "document_title": "McLaren",
+  "section": "1995–2014: First Mercedes partnership > 1995–2009: Factory Mercedes partnership",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "7a2215dd4755310d1709e6b4d7b170d559388b37eeec5f2d785f1575dd504a00",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Lewis Hamilton",
+        "entity_type": "Driver",
+        "description": "A driver who was leading the Drivers' Championship heading into the final race in Brazil."
+      },
+      {
+        "local_id": "e2",
+        "name": "Kimi Räikkönen",
+        "entity_type": "Driver",
+        "description": "A driver who won the race and the Drivers' Championship."
+      },
+      {
+        "local_id": "e3",
+        "name": "Fernando Alonso",
+        "entity_type": "Driver",
+        "description": "A driver who agreed to terminate his contract with McLaren."
+      },
+      {
+        "local_id": "e4",
+        "name": "Heikki Kovalainen",
+        "entity_type": "Driver",
+        "description": "A driver who filled the vacant seat alongside Hamilton."
+      },
+      {
+        "local_id": "e5",
+        "name": "McLaren",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that had drivers Hamilton and Alonso."
+      },
+      {
+        "local_id": "e6",
+        "name": "Scuderia Ferrari",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that Kimi Räikkönen drove for."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e5",
+        "relationship_type": "DROVE_FOR",
+        "description": "Lewis Hamilton drove for McLaren.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e5",
+        "relationship_type": "DROVE_FOR",
+        "description": "Fernando Alonso drove for McLaren.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e6",
+        "relationship_type": "DROVE_FOR",
+        "description": "Kimi Räikkönen drove for Ferrari.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e5",
+        "relationship_type": "DROVE_FOR",
+        "description": "Heikki Kovalainen drove for McLaren.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e1",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Kimi Räikkönen was a teammate of Lewis Hamilton.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e4",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Fernando Alonso was a teammate of Heikki Kovalainen.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 6,
+  "entities_accepted": 6,
+  "entities_rejected": 0,
+  "relationship_candidates": 6,
+  "relationships_accepted": 6,
+  "relationships_rejected": 0,
+  "rejections": [],
+  "alignments": []
+}

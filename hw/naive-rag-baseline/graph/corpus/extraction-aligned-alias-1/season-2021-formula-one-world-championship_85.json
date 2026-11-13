@@ -1,0 +1,175 @@
+{
+  "chunk_id": "season-2021-formula-one-world-championship#85",
+  "doc_id": "season-2021-formula-one-world-championship",
+  "document_title": "2021 Formula One World Championship",
+  "section": null,
+  "page": 8,
+  "source": "https://en.wikipedia.org/wiki/2021_Formula_One_World_Championship",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "e83640f5e388781ff456cfa899a0038c49ce6f5858ed6f3e5342baac2a86cd1b",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "ACHIEVED does not allow Driver -> Driver"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "ACHIEVED does not allow Driver -> Driver"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 0,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e9; description kept"
+    },
+    {
+      "index": 3,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr2 -AT_RACE-> e9; description kept"
+    },
+    {
+      "index": 4,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr3 -AT_RACE-> e9; description kept"
+    }
+  ],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Scuderia Ferrari",
+        "entity_type": "Team",
+        "description": "Ferrari's championship lead over McLaren."
+      },
+      {
+        "local_id": "e2",
+        "name": "McLaren",
+        "entity_type": "Team",
+        "description": "Ferrari's championship lead over McLaren."
+      },
+      {
+        "local_id": "e3",
+        "name": "Lewis Hamilton",
+        "entity_type": "Driver",
+        "description": "Hamilton finished fifth in the sprint from last on the grid."
+      },
+      {
+        "local_id": "e4",
+        "name": "Verstappen",
+        "entity_type": "Driver",
+        "description": "Verstappen was able to overtake Bottas on the first lap."
+      },
+      {
+        "local_id": "e5",
+        "name": "Pérez",
+        "entity_type": "Driver",
+        "description": "Pérez was able to overtake Bottas on the first lap."
+      },
+      {
+        "local_id": "e6",
+        "name": "Bottas",
+        "entity_type": "Driver",
+        "description": "Bottas was overtaken by Verstappen and Pérez on the first lap."
+      },
+      {
+        "local_id": "e7",
+        "name": "Lando Norris",
+        "entity_type": "Driver",
+        "description": "Norris was involved in a separate incident, getting a puncture."
+      },
+      {
+        "local_id": "e8",
+        "name": "Sainz",
+        "entity_type": "Driver",
+        "description": "Sainz was involved in a separate incident with Norris."
+      },
+      {
+        "local_id": "e9",
+        "name": "Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "Hamilton was relegated to tenth on the grid for the Grand Prix."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Hamilton at Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Hamilton finished fifth in the sprint from last on the grid for the Grand Prix."
+      },
+      {
+        "local_id": "rr2",
+        "name": "Lando Norris at Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Norris was involved in a separate incident during the Grand Prix."
+      },
+      {
+        "local_id": "rr3",
+        "name": "Sainz at Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Sainz was involved in a separate incident during the Grand Prix."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e3",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Hamilton finished fifth in the sprint from last on the grid for the Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e9",
+        "relationship_type": "AT_RACE",
+        "description": "Hamilton finished fifth in the sprint from last on the grid for the Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e7",
+        "target_id": "rr2",
+        "relationship_type": "ACHIEVED",
+        "description": "Norris was involved in a separate incident during the Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr2",
+        "target_id": "e9",
+        "relationship_type": "AT_RACE",
+        "description": "Norris was involved in a separate incident during the Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e8",
+        "target_id": "rr3",
+        "relationship_type": "ACHIEVED",
+        "description": "Sainz was involved in a separate incident during the Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr3",
+        "target_id": "e9",
+        "relationship_type": "AT_RACE",
+        "description": "Sainz was involved in a separate incident during the Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

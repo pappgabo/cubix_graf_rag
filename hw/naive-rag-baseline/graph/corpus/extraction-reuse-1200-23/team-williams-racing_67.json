@@ -1,0 +1,206 @@
+{
+  "chunk_id": "team-williams-racing#67",
+  "doc_id": "team-williams-racing",
+  "document_title": "Williams Racing",
+  "section": "Williams Racing > 2000 season",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "99db2a334ac2985b925ca29ae6479156e36731bbcf3794ce7f4950fd75061340",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Jenson Button",
+        "entity_type": "Driver",
+        "description": "Britain's driver who made his series debut in 2000."
+      },
+      {
+        "local_id": "e2",
+        "name": "Ralf Schumacher",
+        "entity_type": "Driver",
+        "description": "Driver who was responsible for all three podium finishes for Williams in the 2000 season."
+      },
+      {
+        "local_id": "e3",
+        "name": "Williams",
+        "entity_type": "Team",
+        "description": "Formula 1 team that partnered with BMW in the 2000 season."
+      },
+      {
+        "local_id": "e4",
+        "name": "BMW",
+        "entity_type": "PowerUnit",
+        "description": "Engine supplier for Williams in the 2000 season."
+      },
+      {
+        "local_id": "e5",
+        "name": "2000",
+        "entity_type": "Season",
+        "description": "The Formula 1 season in which Williams partnered with BMW."
+      },
+      {
+        "local_id": "e6",
+        "name": "Constructors' Championship",
+        "entity_type": "Title",
+        "description": "Championship in which Williams finished third in 2000."
+      },
+      {
+        "local_id": "e7",
+        "name": "Drivers' Championship",
+        "entity_type": "Title",
+        "description": "Championship in which Ralf Schumacher finished fifth in 2000."
+      },
+      {
+        "local_id": "e8",
+        "name": "Monaco Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "Race where Jenson Button made scrappy mistakes."
+      },
+      {
+        "local_id": "e9",
+        "name": "European Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "Race where Jenson Button made scrappy mistakes."
+      },
+      {
+        "local_id": "e10",
+        "name": "Australian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "Race where Jenson Button made an impressive debut."
+      },
+      {
+        "local_id": "e11",
+        "name": "British Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "Race where Jenson Button notably impressed."
+      },
+      {
+        "local_id": "e12",
+        "name": "Belgian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "Race where Jenson Button notably impressed."
+      },
+      {
+        "local_id": "e13",
+        "name": "Japanese Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "Race where Jenson Button notably impressed."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e3",
+        "relationship_type": "DROVE_FOR",
+        "description": "Jenson Button drove for Williams in the 2000 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e3",
+        "relationship_type": "DROVE_FOR",
+        "description": "Ralf Schumacher drove for Williams in the 2000 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e5",
+        "relationship_type": "ENTERED",
+        "description": "Williams entered the 2000 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e8",
+        "target_id": "e5",
+        "relationship_type": "ROUND_OF",
+        "description": "Monaco Grand Prix was a round of the 2000 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e9",
+        "target_id": "e5",
+        "relationship_type": "ROUND_OF",
+        "description": "European Grand Prix was a round of the 2000 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e10",
+        "target_id": "e5",
+        "relationship_type": "ROUND_OF",
+        "description": "Australian Grand Prix was a round of the 2000 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e11",
+        "target_id": "e5",
+        "relationship_type": "ROUND_OF",
+        "description": "British Grand Prix was a round of the 2000 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e12",
+        "target_id": "e5",
+        "relationship_type": "ROUND_OF",
+        "description": "Belgian Grand Prix was a round of the 2000 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e13",
+        "target_id": "e5",
+        "relationship_type": "ROUND_OF",
+        "description": "Japanese Grand Prix was a round of the 2000 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 13,
+  "entities_accepted": 13,
+  "entities_rejected": 0,
+  "relationship_candidates": 13,
+  "relationships_accepted": 9,
+  "relationships_rejected": 4,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "POWERED_BY does not allow Team -> PowerUnit"
+    },
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "ACHIEVED does not allow Driver -> Title"
+    },
+    {
+      "element": "relationship",
+      "index": 5,
+      "reason": "ACHIEVED does not allow Driver -> Title"
+    },
+    {
+      "element": "relationship",
+      "index": 6,
+      "reason": "ACHIEVED does not allow Team -> Title"
+    }
+  ],
+  "alignments": []
+}

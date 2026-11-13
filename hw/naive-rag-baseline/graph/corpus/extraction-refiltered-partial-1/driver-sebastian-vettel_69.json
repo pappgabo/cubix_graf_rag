@@ -1,0 +1,90 @@
+{
+  "chunk_id": "driver-sebastian-vettel#69",
+  "doc_id": "driver-sebastian-vettel",
+  "document_title": "Sebastian Vettel",
+  "section": "2014: Winless year and departure from Red Bull",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/Sebastian_Vettel",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "52a3274d861fb15907f59f0b5613ab46dd6f51e825d37d372879fc1dffc11b4b",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "HELD_AT does not allow Circuit -> Team"
+    }
+  ],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Sebastian Vettel",
+        "entity_type": "Driver",
+        "description": "A Formula One driver who raced for Red Bull."
+      },
+      {
+        "local_id": "e2",
+        "name": "Red Bull",
+        "entity_type": "Team",
+        "description": "A Formula One team that Vettel raced for."
+      },
+      {
+        "local_id": "e3",
+        "name": "Ferrari",
+        "entity_type": "Team",
+        "description": "A Formula One team that Vettel tested for."
+      },
+      {
+        "local_id": "e4",
+        "name": "2014",
+        "entity_type": "Season",
+        "description": "The Formula One season in which Vettel was winless."
+      },
+      {
+        "local_id": "e5",
+        "name": "Fiorano",
+        "entity_type": "Circuit",
+        "description": "A test track where Vettel completed laps."
+      },
+      {
+        "local_id": "e6",
+        "name": "2012",
+        "entity_type": "Car",
+        "description": "The car model Vettel drove during the test."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Vettel raced for Red Bull.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e4",
+        "relationship_type": "ENTERED",
+        "description": "Ferrari entered the 2014 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e6",
+        "target_id": "e4",
+        "relationship_type": "RACED_IN",
+        "description": "The 2012 car took part in the 2014 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

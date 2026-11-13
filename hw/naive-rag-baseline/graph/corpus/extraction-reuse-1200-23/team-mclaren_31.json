@@ -1,0 +1,233 @@
+{
+  "chunk_id": "team-mclaren#31",
+  "doc_id": "team-mclaren",
+  "document_title": "McLaren",
+  "section": "1995–2014: First Mercedes partnership > 1995–2009: Factory Mercedes partnership",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "13af7777378c6b600a2afb52d6a128599a24e4c3b687b842a154fe9026b49ac5",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "McLaren",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that entered cars."
+      },
+      {
+        "local_id": "e2",
+        "name": "Scuderia Ferrari",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that entered cars."
+      },
+      {
+        "local_id": "e3",
+        "name": "Schumacher",
+        "entity_type": "Driver",
+        "description": "A driver who raced in Formula One."
+      },
+      {
+        "local_id": "e4",
+        "name": "Häkkinen",
+        "entity_type": "Driver",
+        "description": "A driver who raced in Formula One."
+      },
+      {
+        "local_id": "e5",
+        "name": "Coulthard",
+        "entity_type": "Driver",
+        "description": "A driver who raced in Formula One."
+      },
+      {
+        "local_id": "e6",
+        "name": "Kimi Räikkönen",
+        "entity_type": "Driver",
+        "description": "A driver who raced in Formula One."
+      },
+      {
+        "local_id": "e7",
+        "name": "2000",
+        "entity_type": "Season",
+        "description": "A championship year."
+      },
+      {
+        "local_id": "e8",
+        "name": "2001",
+        "entity_type": "Season",
+        "description": "A championship year."
+      },
+      {
+        "local_id": "e9",
+        "name": "2002",
+        "entity_type": "Season",
+        "description": "A championship year."
+      },
+      {
+        "local_id": "e10",
+        "name": "Monaco",
+        "entity_type": "GrandPrix",
+        "description": "A Formula 1 race event."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Coulthard at Monaco",
+        "entity_type": "RaceResult",
+        "description": "Coulthard took their solitary win at Monaco."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e7",
+        "relationship_type": "ENTERED",
+        "description": "McLaren took part in the 2000 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e7",
+        "relationship_type": "ENTERED",
+        "description": "Ferrari took part in the 2000 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e8",
+        "relationship_type": "ENTERED",
+        "description": "McLaren took part in the 2001 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e8",
+        "relationship_type": "ENTERED",
+        "description": "Ferrari took part in the 2001 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e9",
+        "relationship_type": "ENTERED",
+        "description": "McLaren took part in the 2002 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e9",
+        "relationship_type": "ENTERED",
+        "description": "Ferrari took part in the 2002 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e5",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Häkkinen was teammates with Coulthard.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Coulthard took their solitary win at Monaco.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e10",
+        "relationship_type": "AT_RACE",
+        "description": "Coulthard took their solitary win at Monaco.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e1",
+        "relationship_type": "DROVE_FOR",
+        "description": "Coulthard drove for McLaren.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e6",
+        "target_id": "e1",
+        "relationship_type": "DROVE_FOR",
+        "description": "Kimi Räikkönen drove for McLaren.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 10,
+  "entities_accepted": 11,
+  "entities_rejected": 0,
+  "relationship_candidates": 11,
+  "relationships_accepted": 11,
+  "relationships_rejected": 1,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 9,
+      "reason": "DROVE_FOR does not allow Driver -> Driver"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 0,
+      "action": "clear_redundant_season_year",
+      "detail": "ENTERED year 2000 already named by Season 'e7'; from_year and to_year cleared"
+    },
+    {
+      "index": 1,
+      "action": "clear_redundant_season_year",
+      "detail": "ENTERED year 2000 already named by Season 'e7'; from_year and to_year cleared"
+    },
+    {
+      "index": 2,
+      "action": "clear_redundant_season_year",
+      "detail": "ENTERED year 2001 already named by Season 'e8'; from_year and to_year cleared"
+    },
+    {
+      "index": 3,
+      "action": "clear_redundant_season_year",
+      "detail": "ENTERED year 2001 already named by Season 'e8'; from_year and to_year cleared"
+    },
+    {
+      "index": 4,
+      "action": "clear_redundant_season_year",
+      "detail": "ENTERED year 2002 already named by Season 'e9'; from_year and to_year cleared"
+    },
+    {
+      "index": 5,
+      "action": "clear_redundant_season_year",
+      "detail": "ENTERED year 2002 already named by Season 'e9'; from_year and to_year cleared"
+    },
+    {
+      "index": 7,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e10; description kept"
+    }
+  ]
+}

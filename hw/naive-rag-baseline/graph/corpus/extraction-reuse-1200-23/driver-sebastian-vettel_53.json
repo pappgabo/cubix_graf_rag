@@ -1,0 +1,178 @@
+{
+  "chunk_id": "driver-sebastian-vettel#53",
+  "doc_id": "driver-sebastian-vettel",
+  "document_title": "Sebastian Vettel",
+  "section": "Car names",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "20249dd883618cefe4566818c25e97dab0b12a91dcb5c80421f5f55fb346f11a",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Sebastian Vettel",
+        "entity_type": "Driver",
+        "description": "A Formula One driver known for naming his cars."
+      },
+      {
+        "local_id": "e2",
+        "name": "Toro Rosso",
+        "entity_type": "Team",
+        "description": "The team Vettel drove for during his first full season."
+      },
+      {
+        "local_id": "e3",
+        "name": "STR3",
+        "entity_type": "Car",
+        "description": "The car Vettel drove in 2008."
+      },
+      {
+        "local_id": "e4",
+        "name": "Red Bull Racing",
+        "entity_type": "Team",
+        "description": "The team Vettel moved to in 2009."
+      },
+      {
+        "local_id": "e5",
+        "name": "RB5",
+        "entity_type": "Car",
+        "description": "The car Vettel drove in 2009."
+      },
+      {
+        "local_id": "e6",
+        "name": "RB6",
+        "entity_type": "Car",
+        "description": "The car Vettel drove in 2010."
+      },
+      {
+        "local_id": "e7",
+        "name": "RB10",
+        "entity_type": "Car",
+        "description": "The car Vettel drove in 2014."
+      },
+      {
+        "local_id": "e8",
+        "name": "Italian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The race where Vettel took his maiden victory."
+      },
+      {
+        "local_id": "e9",
+        "name": "Turkish Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The race where the RB6 was renamed."
+      },
+      {
+        "local_id": "e10",
+        "name": "Kinky Kylie",
+        "entity_type": "Car",
+        "description": "The car Vettel drove in 2011."
+      },
+      {
+        "local_id": "e11",
+        "name": "Abbey",
+        "entity_type": "Car",
+        "description": "The car Vettel drove in 2012."
+      },
+      {
+        "local_id": "e12",
+        "name": "Hungry Heidi",
+        "entity_type": "Car",
+        "description": "The car Vettel drove in 2013."
+      }
+    ],
+    "relationships": []
+  },
+  "entity_candidates": 12,
+  "entities_accepted": 12,
+  "entities_rejected": 0,
+  "relationship_candidates": 16,
+  "relationships_accepted": 0,
+  "relationships_rejected": 16,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "FIELDED is not temporal; from_year=2008, to_year=2008, role=None cannot be stored without dropping them"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "FIELDED is not temporal; from_year=2009, to_year=2009, role=None cannot be stored without dropping them"
+    },
+    {
+      "element": "relationship",
+      "index": 5,
+      "reason": "FIELDED is not temporal; from_year=2010, to_year=2010, role=None cannot be stored without dropping them"
+    },
+    {
+      "element": "relationship",
+      "index": 7,
+      "reason": "FIELDED is not temporal; from_year=2011, to_year=2011, role=None cannot be stored without dropping them"
+    },
+    {
+      "element": "relationship",
+      "index": 9,
+      "reason": "FIELDED is not temporal; from_year=2012, to_year=2012, role=None cannot be stored without dropping them"
+    },
+    {
+      "element": "relationship",
+      "index": 11,
+      "reason": "FIELDED is not temporal; from_year=2013, to_year=2013, role=None cannot be stored without dropping them"
+    },
+    {
+      "element": "relationship",
+      "index": 13,
+      "reason": "FIELDED is not temporal; from_year=2014, to_year=2014, role=None cannot be stored without dropping them"
+    },
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "FIELDED does not allow Driver -> Car"
+    },
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "DROVE_FOR does not allow Driver -> Car"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "FIELDED does not allow Driver -> Car"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "FIELDED does not allow Driver -> Car"
+    },
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "FIELDED does not allow Driver -> Car"
+    },
+    {
+      "element": "relationship",
+      "index": 5,
+      "reason": "FIELDED does not allow Driver -> Car"
+    },
+    {
+      "element": "relationship",
+      "index": 6,
+      "reason": "FIELDED does not allow Driver -> Car"
+    },
+    {
+      "element": "relationship",
+      "index": 7,
+      "reason": "ACHIEVED does not allow Car -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 8,
+      "reason": "ROUND_OF does not allow Car -> GrandPrix"
+    }
+  ],
+  "alignments": []
+}

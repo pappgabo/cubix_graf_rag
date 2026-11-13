@@ -1,0 +1,130 @@
+{
+  "chunk_id": "driver-fernando-alonso#27",
+  "doc_id": "driver-fernando-alonso",
+  "document_title": "Fernando Alonso",
+  "section": "Alpine (2021–2022)",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "253f4d08ca530c4518a025735483d025f9daafc157dcae30e8a858afacaae0a9",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Fernando Alonso",
+        "entity_type": "Driver",
+        "description": "A driver signed to drive for Alpine F1 Team."
+      },
+      {
+        "local_id": "e2",
+        "name": "Alpine F1 Team",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that Alonso drove for in 2021."
+      },
+      {
+        "local_id": "e3",
+        "name": "2021",
+        "entity_type": "Season",
+        "description": "The championship year in which Alonso drove for Alpine."
+      },
+      {
+        "local_id": "e4",
+        "name": "2021 Bahrain Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The first race Alonso participated in with Alpine."
+      },
+      {
+        "local_id": "e5",
+        "name": "2021 Emilia Romagna Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The race where Alonso finished eleventh."
+      },
+      {
+        "local_id": "e6",
+        "name": "Renault R.S.18",
+        "entity_type": "Car",
+        "description": "The car Alonso drove during testing for Alpine."
+      },
+      {
+        "local_id": "e7",
+        "name": "Renault R.S.20",
+        "entity_type": "Car",
+        "description": "The car Alonso drove during the post-2020 season young driver's test."
+      },
+      {
+        "local_id": "e8",
+        "name": "Esteban Ocon",
+        "entity_type": "Driver",
+        "description": "Alonso's teammate at Alpine."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Alonso drove for Alpine F1 Team.",
+        "from_year": 2021,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e8",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Alonso was teammates with Esteban Ocon at Alpine.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e3",
+        "relationship_type": "ENTERED",
+        "description": "Alpine F1 Team entered the 2021 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e3",
+        "relationship_type": "ROUND_OF",
+        "description": "The 2021 Bahrain Grand Prix was a round of the 2021 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e3",
+        "relationship_type": "ROUND_OF",
+        "description": "The 2021 Emilia Romagna Grand Prix was a round of the 2021 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 8,
+  "entities_accepted": 8,
+  "entities_rejected": 0,
+  "relationship_candidates": 7,
+  "relationships_accepted": 5,
+  "relationships_rejected": 2,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 5,
+      "reason": "FIELDED does not allow Car -> Team"
+    },
+    {
+      "element": "relationship",
+      "index": 6,
+      "reason": "FIELDED does not allow Car -> Team"
+    }
+  ],
+  "alignments": []
+}

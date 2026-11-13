@@ -1,0 +1,182 @@
+{
+  "chunk_id": "team-mclaren#64",
+  "doc_id": "team-mclaren",
+  "document_title": "McLaren",
+  "section": "2024–2025: World Championship years",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "bc221ca236c67f4931823c13efd59656162342de62de2b24392068a67d5b12f7",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Lando Norris",
+        "entity_type": "Driver",
+        "description": "A driver for McLaren who won his first Drivers' Championship."
+      },
+      {
+        "local_id": "e2",
+        "name": "Oscar Piastri",
+        "entity_type": "Driver",
+        "description": "A driver for McLaren who competed alongside Lando Norris."
+      },
+      {
+        "local_id": "e3",
+        "name": "McLaren",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that entered cars."
+      },
+      {
+        "local_id": "e4",
+        "name": "2024",
+        "entity_type": "Season",
+        "description": "The season in which Lando Norris won the Drivers' Championship."
+      },
+      {
+        "local_id": "e5",
+        "name": "Drivers' Championship",
+        "entity_type": "Title",
+        "description": "The championship title won by Lando Norris."
+      },
+      {
+        "local_id": "e6",
+        "name": "Abu Dhabi Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The final race of the season where Norris secured the championship."
+      },
+      {
+        "local_id": "e7",
+        "name": "Mexico City Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A race where Lando Norris won to retake the lead in the Drivers' Championship."
+      },
+      {
+        "local_id": "e8",
+        "name": "Las Vegas Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A race where both McLaren drivers were disqualified."
+      },
+      {
+        "local_id": "e9",
+        "name": "Qatar Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A race where Norris finished fourth."
+      },
+      {
+        "local_id": "e10",
+        "name": "Azerbaijan Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A race where Piastri experienced a crash."
+      },
+      {
+        "local_id": "e11",
+        "name": "São Paulo Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A race where Piastri experienced a crash."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e3",
+        "relationship_type": "DROVE_FOR",
+        "description": "Lando Norris drove for McLaren.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e3",
+        "relationship_type": "DROVE_FOR",
+        "description": "Oscar Piastri drove for McLaren.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e5",
+        "relationship_type": "WON",
+        "description": "Lando Norris won the Drivers' Championship.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e4",
+        "relationship_type": "AWARDED_IN",
+        "description": "The Drivers' Championship was awarded in the 2024 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e6",
+        "target_id": "e4",
+        "relationship_type": "ROUND_OF",
+        "description": "The Abu Dhabi Grand Prix was a round of the 2024 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e7",
+        "target_id": "e4",
+        "relationship_type": "ROUND_OF",
+        "description": "The Mexico City Grand Prix was a round of the 2024 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e8",
+        "target_id": "e4",
+        "relationship_type": "ROUND_OF",
+        "description": "The Las Vegas Grand Prix was a round of the 2024 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e9",
+        "target_id": "e4",
+        "relationship_type": "ROUND_OF",
+        "description": "The Qatar Grand Prix was a round of the 2024 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e10",
+        "target_id": "e4",
+        "relationship_type": "ROUND_OF",
+        "description": "The Azerbaijan Grand Prix was a round of the 2024 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e11",
+        "target_id": "e4",
+        "relationship_type": "ROUND_OF",
+        "description": "The São Paulo Grand Prix was a round of the 2024 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 11,
+  "entities_accepted": 11,
+  "entities_rejected": 0,
+  "relationship_candidates": 10,
+  "relationships_accepted": 10,
+  "relationships_rejected": 0,
+  "rejections": [],
+  "alignments": []
+}

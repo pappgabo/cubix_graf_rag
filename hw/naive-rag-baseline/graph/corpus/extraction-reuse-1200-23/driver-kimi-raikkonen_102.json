@@ -1,0 +1,81 @@
+{
+  "chunk_id": "driver-kimi-raikkonen#102",
+  "doc_id": "driver-kimi-raikkonen",
+  "document_title": "Kimi Räikkönen",
+  "section": "Public persona and reaction",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "52fc6cd10cc271eb41d71bb41ba075a756463de9fafe4cb8610b339e64fef636",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Kimi Räikkönen",
+        "entity_type": "Driver",
+        "description": "A Finnish racing driver known for his calm demeanor and outspoken nature."
+      },
+      {
+        "local_id": "e2",
+        "name": "Lotus",
+        "entity_type": "Team",
+        "description": "A Formula One team that Kimi Räikkönen drove for."
+      },
+      {
+        "local_id": "e3",
+        "name": "2009 Malaysian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula One race where Kimi Räikkönen was seen eating ice cream during a suspension."
+      },
+      {
+        "local_id": "e4",
+        "name": "2006 Monaco Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula One race where Kimi Räikkönen retired due to a breakdown."
+      },
+      {
+        "local_id": "e5",
+        "name": "McLaren MP4-21",
+        "entity_type": "Car",
+        "description": "The car driven by Kimi Räikkönen during the 2006 Monaco Grand Prix."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Kimi Räikkönen drove for Lotus.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 5,
+  "entities_accepted": 5,
+  "entities_rejected": 0,
+  "relationship_candidates": 4,
+  "relationships_accepted": 1,
+  "relationships_rejected": 3,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "FIELDED does not allow Car -> Team"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "RACED_IN does not allow Car -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "ROUND_OF does not allow GrandPrix -> Team"
+    }
+  ],
+  "alignments": []
+}

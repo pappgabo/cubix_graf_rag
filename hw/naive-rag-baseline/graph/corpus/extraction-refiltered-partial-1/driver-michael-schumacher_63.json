@@ -1,0 +1,54 @@
+{
+  "chunk_id": "driver-michael-schumacher#63",
+  "doc_id": "driver-michael-schumacher",
+  "document_title": "Michael Schumacher",
+  "section": null,
+  "page": 6,
+  "source": "https://en.wikipedia.org/wiki/Michael_Schumacher",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "f8c821221e71085892f7598e649f34c28627a1ae9ff3b112380f00c7f11a930a",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "DROVE_FOR does not allow Driver -> Driver"
+    },
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "AT_RACE does not allow GrandPrix -> Driver"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "AT_RACE does not allow GrandPrix -> Driver"
+    }
+  ],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Michael Schumacher",
+        "entity_type": "Driver",
+        "description": "A Formula One driver who was competing against Mika Häkkinen."
+      },
+      {
+        "local_id": "e2",
+        "name": "Mika Häkkinen",
+        "entity_type": "Driver",
+        "description": "A Formula One driver who was competing against Michael Schumacher."
+      },
+      {
+        "local_id": "e3",
+        "name": "Japanese Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The final race of the season where Schumacher and Häkkinen competed."
+      }
+    ],
+    "relationships": []
+  }
+}

@@ -1,0 +1,176 @@
+{
+  "chunk_id": "season-2021-formula-one-world-championship#31",
+  "doc_id": "season-2021-formula-one-world-championship",
+  "document_title": "2021 Formula One World Championship",
+  "section": null,
+  "page": 7,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "ccca6c97f6ac1a9bba5821f3f5fbcadf9639610cde06e64c5b8eb211a9e8a2ee",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Nikita Mazepin",
+        "entity_type": "Driver",
+        "description": "A Formula 1 driver."
+      },
+      {
+        "local_id": "e2",
+        "name": "Esteban Ocon",
+        "entity_type": "Driver",
+        "description": "A Formula 1 driver who took his first victory."
+      },
+      {
+        "local_id": "e3",
+        "name": "Sebastian Vettel",
+        "entity_type": "Driver",
+        "description": "A Formula 1 driver who was disqualified after the race."
+      },
+      {
+        "local_id": "e4",
+        "name": "Lewis Hamilton",
+        "entity_type": "Driver",
+        "description": "A Formula 1 driver who finished second after Vettel's disqualification."
+      },
+      {
+        "local_id": "e5",
+        "name": "Carlos Sainz Jr.",
+        "entity_type": "Driver",
+        "description": "A Formula 1 driver who finished third after Vettel's disqualification."
+      },
+      {
+        "local_id": "e6",
+        "name": "Max Verstappen",
+        "entity_type": "Driver",
+        "description": "A Formula 1 driver who was leading the championship."
+      },
+      {
+        "local_id": "e7",
+        "name": "Nicholas Latifi",
+        "entity_type": "Driver",
+        "description": "A Formula 1 driver classified seventh."
+      },
+      {
+        "local_id": "e8",
+        "name": "George Russell",
+        "entity_type": "Driver",
+        "description": "A Formula 1 driver classified eighth."
+      },
+      {
+        "local_id": "e9",
+        "name": "Mercedes-AMG Petronas Formula One Team",
+        "entity_type": "Team",
+        "description": "A Formula 1 team."
+      },
+      {
+        "local_id": "e10",
+        "name": "Red Bull Racing",
+        "entity_type": "Team",
+        "description": "A Formula 1 team."
+      },
+      {
+        "local_id": "e11",
+        "name": "Williams",
+        "entity_type": "Team",
+        "description": "A Formula 1 team."
+      },
+      {
+        "local_id": "e12",
+        "name": "2021 Formula One World Championship",
+        "entity_type": "Season",
+        "description": "The championship season for Formula 1 in 2021."
+      },
+      {
+        "local_id": "e13",
+        "name": "Belgian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula 1 race held in Belgium."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e9",
+        "target_id": "e12",
+        "relationship_type": "ENTERED",
+        "description": "Mercedes entered the 2021 Formula One World Championship.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e10",
+        "target_id": "e12",
+        "relationship_type": "ENTERED",
+        "description": "Red Bull entered the 2021 Formula One World Championship.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e11",
+        "target_id": "e12",
+        "relationship_type": "ENTERED",
+        "description": "Williams entered the 2021 Formula One World Championship.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e13",
+        "target_id": "e12",
+        "relationship_type": "ROUND_OF",
+        "description": "The Belgian Grand Prix was a round of the 2021 Formula One World Championship.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 13,
+  "entities_accepted": 13,
+  "entities_rejected": 0,
+  "relationship_candidates": 11,
+  "relationships_accepted": 4,
+  "relationships_rejected": 7,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "WON does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "ACHIEVED does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "ACHIEVED does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "ACHIEVED does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "ACHIEVED does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 5,
+      "reason": "ACHIEVED does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 6,
+      "reason": "DROVE_FOR does not allow Driver -> Driver"
+    }
+  ],
+  "alignments": []
+}

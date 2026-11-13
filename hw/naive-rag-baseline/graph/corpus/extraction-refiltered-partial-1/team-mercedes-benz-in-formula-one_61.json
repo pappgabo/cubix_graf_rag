@@ -1,0 +1,87 @@
+{
+  "chunk_id": "team-mercedes-benz-in-formula-one#61",
+  "doc_id": "team-mercedes-benz-in-formula-one",
+  "document_title": "Mercedes-Benz in Formula One",
+  "section": "Mercedes-Benz in Formula One > Struggling with ground effect (2022–2025)",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/Mercedes-Benz_in_Formula_One",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "0b68a6b9163188c7c8d137f117dd315e93b21f533eaba094100e83a841a43f7a",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "ENTERED is not temporal; from_year, to_year and role must be null"
+    },
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "ROUND_OF does not allow Team -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "FOR_TEAM does not allow Driver -> Team"
+    },
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "ACHIEVED does not allow Driver -> GrandPrix"
+    }
+  ],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Mercedes",
+        "entity_type": "Team",
+        "description": "Mercedes finished 2023 second in the Constructors' Championship."
+      },
+      {
+        "local_id": "e2",
+        "name": "Ferrari",
+        "entity_type": "Team",
+        "description": "Mercedes finished 3 points ahead of Ferrari in the 2023 Constructors' Championship."
+      },
+      {
+        "local_id": "e3",
+        "name": "2023",
+        "entity_type": "Season",
+        "description": "The season where Mercedes finished second in the Constructors' Championship."
+      },
+      {
+        "local_id": "e4",
+        "name": "United States Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The Grand Prix where Mercedes came closest to winning in 2023."
+      },
+      {
+        "local_id": "e5",
+        "name": "Lewis Hamilton",
+        "entity_type": "Driver",
+        "description": "Hamilton finished 0.3 seconds behind World Champion Max Verstappen at the United States Grand Prix."
+      },
+      {
+        "local_id": "e6",
+        "name": "Max Verstappen",
+        "entity_type": "Driver",
+        "description": "World Champion in 2023."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e5",
+        "target_id": "e6",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Hamilton was a teammate of Verstappen at the United States Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

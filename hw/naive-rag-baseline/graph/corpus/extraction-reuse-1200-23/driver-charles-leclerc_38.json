@@ -1,0 +1,270 @@
+{
+  "chunk_id": "driver-charles-leclerc#38",
+  "doc_id": "driver-charles-leclerc",
+  "document_title": "Charles Leclerc",
+  "section": "Charles Leclerc > 2022: Curtailed title battle vs. Verstappen",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "9f611a935791af27d0f726ec8731d9e70b6191cfe1caa3e5c4cc2d75279c1157",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Charles Leclerc",
+        "entity_type": "Driver",
+        "description": "A Formula One driver who finished second in the Miami Grand Prix and had multiple pole positions in 2022."
+      },
+      {
+        "local_id": "e2",
+        "name": "Max Verstappen",
+        "entity_type": "Driver",
+        "description": "A Formula One driver who won the Miami Grand Prix and took the championship lead after Leclerc's retirement in Spain."
+      },
+      {
+        "local_id": "e3",
+        "name": "Carlos Sainz Jr.",
+        "entity_type": "Driver",
+        "description": "Charles Leclerc's teammate who finished ahead of him at the British Grand Prix."
+      },
+      {
+        "local_id": "e4",
+        "name": "Miami Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula One race where Charles Leclerc finished second."
+      },
+      {
+        "local_id": "e5",
+        "name": "Spain",
+        "entity_type": "GrandPrix",
+        "description": "A Formula One race where Charles Leclerc retired due to a power unit failure."
+      },
+      {
+        "local_id": "e6",
+        "name": "Monaco Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula One race where Charles Leclerc took pole but finished fourth."
+      },
+      {
+        "local_id": "e7",
+        "name": "Azerbaijan Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula One race where Charles Leclerc took pole but retired from the lead."
+      },
+      {
+        "local_id": "e8",
+        "name": "Canadian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula One race where Charles Leclerc started nineteenth and finished fifth."
+      },
+      {
+        "local_id": "e9",
+        "name": "British Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula One race where Charles Leclerc finished fourth."
+      },
+      {
+        "local_id": "e10",
+        "name": "Power Unit",
+        "entity_type": "PowerUnit",
+        "description": "The engine component that failed for Charles Leclerc in Spain and Azerbaijan."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Charles Leclerc at Miami Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Charles Leclerc finished second at the Miami Grand Prix."
+      },
+      {
+        "local_id": "rr2",
+        "name": "Charles Leclerc at Spain",
+        "entity_type": "RaceResult",
+        "description": "Charles Leclerc retired in Spain due to a power unit failure."
+      },
+      {
+        "local_id": "rr3",
+        "name": "Charles Leclerc at Monaco Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Charles Leclerc took pole at the Monaco Grand Prix but finished fourth."
+      },
+      {
+        "local_id": "rr4",
+        "name": "Charles Leclerc at Azerbaijan Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Charles Leclerc took pole at the Azerbaijan Grand Prix but retired from the lead."
+      },
+      {
+        "local_id": "rr5",
+        "name": "Charles Leclerc at Canadian Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Charles Leclerc started nineteenth and finished fifth at the Canadian Grand Prix."
+      },
+      {
+        "local_id": "rr6",
+        "name": "Charles Leclerc at British Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Charles Leclerc finished fourth at the British Grand Prix."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Charles Leclerc finished second at the Miami Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e4",
+        "relationship_type": "AT_RACE",
+        "description": "Charles Leclerc finished second at the Miami Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr2",
+        "relationship_type": "ACHIEVED",
+        "description": "Charles Leclerc retired in Spain due to a power unit failure.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr2",
+        "target_id": "e5",
+        "relationship_type": "AT_RACE",
+        "description": "Charles Leclerc retired in Spain due to a power unit failure.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr3",
+        "relationship_type": "ACHIEVED",
+        "description": "Charles Leclerc took pole at the Monaco Grand Prix but finished fourth.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr3",
+        "target_id": "e6",
+        "relationship_type": "AT_RACE",
+        "description": "Charles Leclerc took pole at the Monaco Grand Prix but finished fourth.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr4",
+        "relationship_type": "ACHIEVED",
+        "description": "Charles Leclerc took pole at the Azerbaijan Grand Prix but retired from the lead.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr4",
+        "target_id": "e7",
+        "relationship_type": "AT_RACE",
+        "description": "Charles Leclerc took pole at the Azerbaijan Grand Prix but retired from the lead.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr5",
+        "relationship_type": "ACHIEVED",
+        "description": "Charles Leclerc started nineteenth and finished fifth at the Canadian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr5",
+        "target_id": "e8",
+        "relationship_type": "AT_RACE",
+        "description": "Charles Leclerc started nineteenth and finished fifth at the Canadian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr6",
+        "relationship_type": "ACHIEVED",
+        "description": "Charles Leclerc finished fourth at the British Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr6",
+        "target_id": "e9",
+        "relationship_type": "AT_RACE",
+        "description": "Charles Leclerc finished fourth at the British Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Charles Leclerc's teammate is Carlos Sainz Jr.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 10,
+  "entities_accepted": 16,
+  "entities_rejected": 0,
+  "relationship_candidates": 7,
+  "relationships_accepted": 13,
+  "relationships_rejected": 0,
+  "rejections": [],
+  "alignments": [
+    {
+      "index": 0,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e4; description kept"
+    },
+    {
+      "index": 1,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr2 -AT_RACE-> e5; description kept"
+    },
+    {
+      "index": 2,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr3 -AT_RACE-> e6; description kept"
+    },
+    {
+      "index": 3,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr4 -AT_RACE-> e7; description kept"
+    },
+    {
+      "index": 4,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr5 -AT_RACE-> e8; description kept"
+    },
+    {
+      "index": 5,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr6 -AT_RACE-> e9; description kept"
+    }
+  ]
+}

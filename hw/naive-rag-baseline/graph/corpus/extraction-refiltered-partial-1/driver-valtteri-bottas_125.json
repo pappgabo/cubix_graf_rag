@@ -1,0 +1,91 @@
+{
+  "chunk_id": "driver-valtteri-bottas#125",
+  "doc_id": "driver-valtteri-bottas",
+  "document_title": "Valtteri Bottas",
+  "section": "Formula One career > Alfa Romeo / Sauber (2022–2024) > 2024",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/Valtteri_Bottas",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "eb4a7a89ccb6301a5f8995a939a645d48e7a02d3fa4acccbcc1e9c252fe6a3d4",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "HELD_AT does not allow Team -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "HELD_AT does not allow Team -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "HELD_AT does not allow Team -> GrandPrix"
+    }
+  ],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Valtteri Bottas",
+        "entity_type": "Driver",
+        "description": "A driver who raced for Alfa Romeo / Sauber."
+      },
+      {
+        "local_id": "e2",
+        "name": "Zhou Guanyu",
+        "entity_type": "Driver",
+        "description": "Teammate of Valtteri Bottas at Alfa Romeo / Sauber."
+      },
+      {
+        "local_id": "e3",
+        "name": "Alfa Romeo / Sauber",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that Valtteri Bottas raced for."
+      },
+      {
+        "local_id": "e4",
+        "name": "São Paulo Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A race where Valtteri Bottas qualified 11th."
+      },
+      {
+        "local_id": "e5",
+        "name": "Qatar Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A race where Valtteri Bottas finished 11th."
+      },
+      {
+        "local_id": "e6",
+        "name": "Abu Dhabi Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A race where Valtteri Bottas reached Q3 but retired."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e3",
+        "relationship_type": "DROVE_FOR",
+        "description": "Valtteri Bottas drove for Alfa Romeo / Sauber.",
+        "from_year": 2022,
+        "to_year": 2024,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Valtteri Bottas was teammates with Zhou Guanyu.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

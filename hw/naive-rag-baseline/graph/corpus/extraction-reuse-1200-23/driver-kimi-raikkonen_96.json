@@ -1,0 +1,105 @@
+{
+  "chunk_id": "driver-kimi-raikkonen#96",
+  "doc_id": "driver-kimi-raikkonen",
+  "document_title": "Kimi Räikkönen",
+  "section": "Other racing > NASCAR",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "3137739ff822cebe17facac1309cab3ebff24deb4215ccf02b770a69d0fbf17a",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Kimi Räikkönen",
+        "entity_type": "Driver",
+        "description": "A Finnish racing driver who made his Cup Series debut in NASCAR."
+      },
+      {
+        "local_id": "e2",
+        "name": "Trackhouse Racing",
+        "entity_type": "Team",
+        "description": "A NASCAR team that Kimi Räikkönen raced for."
+      },
+      {
+        "local_id": "e3",
+        "name": "2022 Go Bowling at The Glen",
+        "entity_type": "GrandPrix",
+        "description": "A NASCAR race where Kimi Räikkönen made his Cup Series debut."
+      },
+      {
+        "local_id": "e4",
+        "name": "Watkins Glen International",
+        "entity_type": "Circuit",
+        "description": "The circuit where the 2022 Go Bowling at The Glen took place."
+      },
+      {
+        "local_id": "e5",
+        "name": "2023 Circuit of the Americas",
+        "entity_type": "GrandPrix",
+        "description": "A NASCAR race where Kimi Räikkönen returned to race."
+      },
+      {
+        "local_id": "e6",
+        "name": "Chevrolet",
+        "entity_type": "Car",
+        "description": "The car brand used by Trackhouse Racing for Kimi Räikkönen."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Kimi Räikkönen drove for Trackhouse Racing.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e6",
+        "relationship_type": "FIELDED",
+        "description": "Trackhouse Racing fielded a Chevrolet for Kimi Räikkönen.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e4",
+        "relationship_type": "HELD_AT",
+        "description": "The 2022 Go Bowling at The Glen was held at Watkins Glen International.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 6,
+  "entities_accepted": 6,
+  "entities_rejected": 0,
+  "relationship_candidates": 6,
+  "relationships_accepted": 3,
+  "relationships_rejected": 3,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "ENTERED does not allow Team -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "DROVE_FOR does not allow Driver -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 5,
+      "reason": "ENTERED does not allow Team -> GrandPrix"
+    }
+  ],
+  "alignments": []
+}

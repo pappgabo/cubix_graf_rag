@@ -1,0 +1,43 @@
+{
+  "chunk_id": "reference-formula-one#62",
+  "doc_id": "reference-formula-one",
+  "document_title": "Formula One",
+  "section": "Formula One > Cost cap",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "6a76cebcb6f54dc2f1d60350757e4b009acf5cebee6fef5f36bc11d0757afc04",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "2026",
+        "entity_type": "Season",
+        "description": "The 2026 season."
+      },
+      {
+        "local_id": "e2",
+        "name": "Power Unit Cost Cap",
+        "entity_type": "PowerUnit",
+        "description": "A cost cap regulating power unit manufacturers."
+      }
+    ],
+    "relationships": []
+  },
+  "entity_candidates": 2,
+  "entities_accepted": 2,
+  "entities_rejected": 0,
+  "relationship_candidates": 1,
+  "relationships_accepted": 0,
+  "relationships_rejected": 1,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "RACED_IN does not allow PowerUnit -> Season"
+    }
+  ],
+  "alignments": []
+}

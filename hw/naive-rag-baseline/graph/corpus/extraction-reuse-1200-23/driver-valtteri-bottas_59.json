@@ -1,0 +1,132 @@
+{
+  "chunk_id": "driver-valtteri-bottas#59",
+  "doc_id": "driver-valtteri-bottas",
+  "document_title": "Valtteri Bottas",
+  "section": "Other racing > Race of Champions",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "0b4fce96d70a2731b4b0f9cd509591ba27318325742f95f750ca05073329f6f1",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Valtteri Bottas",
+        "entity_type": "Driver",
+        "description": "A Finnish racing driver who competed in Formula One."
+      },
+      {
+        "local_id": "e2",
+        "name": "Mika Häkkinen",
+        "entity_type": "Driver",
+        "description": "A two-time Formula One champion from Finland."
+      },
+      {
+        "local_id": "e3",
+        "name": "2022",
+        "entity_type": "Season",
+        "description": "The year Bottas was set to make his Race of Champions debut."
+      },
+      {
+        "local_id": "e4",
+        "name": "2023",
+        "entity_type": "Season",
+        "description": "The year Bottas competed in the Race of Champions."
+      },
+      {
+        "local_id": "e5",
+        "name": "Team eROC",
+        "entity_type": "Team",
+        "description": "A team that participated in the Race of Champions."
+      },
+      {
+        "local_id": "e6",
+        "name": "Jarno Opmeer",
+        "entity_type": "Driver",
+        "description": "A driver who competed in the Race of Champions."
+      },
+      {
+        "local_id": "e7",
+        "name": "Lucas Blakeley",
+        "entity_type": "Driver",
+        "description": "A driver who competed in the Race of Champions."
+      },
+      {
+        "local_id": "e8",
+        "name": "Tom Kristensen",
+        "entity_type": "Driver",
+        "description": "A driver who competed in the Race of Champions."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Bottas partnered with Häkkinen in the Race of Champions.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e4",
+        "relationship_type": "ENTERED",
+        "description": "Team eROC participated in the Race of Champions in 2023.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e6",
+        "target_id": "e5",
+        "relationship_type": "DROVE_FOR",
+        "description": "Jarno Opmeer was part of Team eROC in the Race of Champions.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e7",
+        "target_id": "e5",
+        "relationship_type": "DROVE_FOR",
+        "description": "Lucas Blakeley was part of Team eROC in the Race of Champions.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 8,
+  "entities_accepted": 8,
+  "entities_rejected": 0,
+  "relationship_candidates": 7,
+  "relationships_accepted": 4,
+  "relationships_rejected": 3,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "RACED_IN does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "RACED_IN does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 6,
+      "reason": "ACHIEVED does not allow Driver -> Driver"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 3,
+      "action": "clear_redundant_season_year",
+      "detail": "ENTERED year 2023 already named by Season 'e4'; from_year and to_year cleared"
+    }
+  ]
+}

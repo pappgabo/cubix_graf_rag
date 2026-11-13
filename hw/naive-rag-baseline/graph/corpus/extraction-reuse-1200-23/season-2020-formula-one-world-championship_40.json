@@ -1,0 +1,173 @@
+{
+  "chunk_id": "season-2020-formula-one-world-championship#40",
+  "doc_id": "season-2020-formula-one-world-championship",
+  "document_title": "2020 Formula One World Championship",
+  "section": "2020 Formula One World Championship > Mid-season rounds",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "418c5d531e36bf6d146ace3b9f2addd8667cb197eeb4f314a7ed257fb196b29a",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Lewis Hamilton",
+        "entity_type": "Driver",
+        "description": "Hamilton's sixth race win of the season."
+      },
+      {
+        "local_id": "e2",
+        "name": "Valtteri Bottas",
+        "entity_type": "Driver",
+        "description": "Bottas overtook Hamilton into turn one."
+      },
+      {
+        "local_id": "e3",
+        "name": "Max Verstappen",
+        "entity_type": "Driver",
+        "description": "Verstappen retired due to a power issue."
+      },
+      {
+        "local_id": "e4",
+        "name": "Pierre Gasly",
+        "entity_type": "Driver",
+        "description": "Gasly retired during the race."
+      },
+      {
+        "local_id": "e5",
+        "name": "Nicholas Latifi",
+        "entity_type": "Driver",
+        "description": "Latifi retired during the race."
+      },
+      {
+        "local_id": "e6",
+        "name": "Kevin Magnussen",
+        "entity_type": "Driver",
+        "description": "Magnussen retired during the race."
+      },
+      {
+        "local_id": "e7",
+        "name": "Antonio Giovinazzi",
+        "entity_type": "Driver",
+        "description": "Giovinazzi retired during the race."
+      },
+      {
+        "local_id": "e8",
+        "name": "Carlos Sainz Jr.",
+        "entity_type": "Driver",
+        "description": "Sainz Jr. retired during the race."
+      },
+      {
+        "local_id": "e9",
+        "name": "Daniel Ricciardo",
+        "entity_type": "Driver",
+        "description": "Ricciardo looked poised for his first podium."
+      },
+      {
+        "local_id": "e10",
+        "name": "Lance Stroll",
+        "entity_type": "Driver",
+        "description": "Stroll's Racing Point spun off the track."
+      },
+      {
+        "local_id": "e11",
+        "name": "Mercedes-AMG Petronas Formula One Team",
+        "entity_type": "Team",
+        "description": "Mercedes's third 1–2 finish."
+      },
+      {
+        "local_id": "e12",
+        "name": "Tuscan Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The inaugural Tuscan Grand Prix."
+      },
+      {
+        "local_id": "e13",
+        "name": "2020 Formula One World Championship",
+        "entity_type": "Season",
+        "description": "The season in which the Tuscan Grand Prix took place."
+      },
+      {
+        "local_id": "e14",
+        "name": "Racing Point",
+        "entity_type": "Team",
+        "description": "Stroll's Racing Point spun off the track."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Lewis Hamilton at Tuscan Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Hamilton won the Tuscan Grand Prix."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Hamilton won the Tuscan Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e12",
+        "relationship_type": "AT_RACE",
+        "description": "Hamilton won the Tuscan Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e12",
+        "target_id": "e13",
+        "relationship_type": "ROUND_OF",
+        "description": "The Tuscan Grand Prix is a round of the 2020 Formula One World Championship.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e11",
+        "target_id": "e13",
+        "relationship_type": "ENTERED",
+        "description": "Mercedes took part in the 2020 Formula One World Championship.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e14",
+        "target_id": "e13",
+        "relationship_type": "ENTERED",
+        "description": "Racing Point took part in the 2020 Formula One World Championship.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 14,
+  "entities_accepted": 15,
+  "entities_rejected": 0,
+  "relationship_candidates": 5,
+  "relationships_accepted": 5,
+  "relationships_rejected": 1,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "FOR_TEAM does not allow Driver -> Team"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 0,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e12; description kept"
+    }
+  ]
+}

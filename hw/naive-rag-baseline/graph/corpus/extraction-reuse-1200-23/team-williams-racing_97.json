@@ -1,0 +1,220 @@
+{
+  "chunk_id": "team-williams-racing#97",
+  "doc_id": "team-williams-racing",
+  "document_title": "Williams Racing",
+  "section": "Williams Racing > 2020–2022: Team sale to Dorilton Capital and Capito era",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "ec5d38b9278399cc124424e131f61f5d41e3ed000e5a7bf6c3546124dde73091",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Williams Racing",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that entered cars."
+      },
+      {
+        "local_id": "e2",
+        "name": "Nicholas Latifi",
+        "entity_type": "Driver",
+        "description": "A Formula 1 driver who raced for Williams Racing."
+      },
+      {
+        "local_id": "e3",
+        "name": "George Russell",
+        "entity_type": "Driver",
+        "description": "A Formula 1 driver who raced for Williams Racing."
+      },
+      {
+        "local_id": "e4",
+        "name": "2020",
+        "entity_type": "Season",
+        "description": "A Formula 1 championship year."
+      },
+      {
+        "local_id": "e5",
+        "name": "2020 Austrian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula 1 race event."
+      },
+      {
+        "local_id": "e6",
+        "name": "2020 Styrian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula 1 race event."
+      },
+      {
+        "local_id": "e7",
+        "name": "2020 Hungarian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula 1 race event."
+      },
+      {
+        "local_id": "e8",
+        "name": "2018 Brazilian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula 1 race event."
+      },
+      {
+        "local_id": "e9",
+        "name": "2018 Italian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula 1 race event."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Nicholas Latifi at 2020 Austrian Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Latifi reached 11th place in the 2020 Austrian Grand Prix."
+      },
+      {
+        "local_id": "rr2",
+        "name": "George Russell at 2020 Austrian Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Russell retired in the 2020 Austrian Grand Prix with a fuel pressure issue."
+      },
+      {
+        "local_id": "rr3",
+        "name": "George Russell at 2020 Styrian Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Russell qualified in 12th in the 2020 Styrian Grand Prix."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e2",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Latifi reached 11th place in the 2020 Austrian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e5",
+        "relationship_type": "AT_RACE",
+        "description": "Latifi reached 11th place in the 2020 Austrian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "rr2",
+        "relationship_type": "ACHIEVED",
+        "description": "Russell retired in the 2020 Austrian Grand Prix with a fuel pressure issue.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr2",
+        "target_id": "e5",
+        "relationship_type": "AT_RACE",
+        "description": "Russell retired in the 2020 Austrian Grand Prix with a fuel pressure issue.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "rr3",
+        "relationship_type": "ACHIEVED",
+        "description": "Russell qualified in 12th in the 2020 Styrian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr3",
+        "target_id": "e6",
+        "relationship_type": "AT_RACE",
+        "description": "Russell qualified in 12th in the 2020 Styrian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e4",
+        "relationship_type": "ENTERED",
+        "description": "Williams Racing took part in the 2020 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e4",
+        "relationship_type": "ROUND_OF",
+        "description": "The 2020 Austrian Grand Prix is a round of the 2020 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e6",
+        "target_id": "e4",
+        "relationship_type": "ROUND_OF",
+        "description": "The 2020 Styrian Grand Prix is a round of the 2020 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e7",
+        "target_id": "e4",
+        "relationship_type": "ROUND_OF",
+        "description": "The 2020 Hungarian Grand Prix is a round of the 2020 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 9,
+  "entities_accepted": 12,
+  "entities_rejected": 0,
+  "relationship_candidates": 9,
+  "relationships_accepted": 10,
+  "relationships_rejected": 2,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 6,
+      "reason": "DROVE_FOR does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 7,
+      "reason": "DROVE_FOR does not allow Driver -> Season"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 0,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e5; description kept"
+    },
+    {
+      "index": 1,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr2 -AT_RACE-> e5; description kept"
+    },
+    {
+      "index": 2,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr3 -AT_RACE-> e6; description kept"
+    },
+    {
+      "index": 5,
+      "action": "clear_redundant_season_year",
+      "detail": "ENTERED year 2020 already named by Season 'e4'; from_year and to_year cleared"
+    }
+  ]
+}

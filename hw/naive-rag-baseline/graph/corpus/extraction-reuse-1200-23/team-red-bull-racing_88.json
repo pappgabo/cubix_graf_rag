@@ -1,0 +1,189 @@
+{
+  "chunk_id": "team-red-bull-racing#88",
+  "doc_id": "team-red-bull-racing",
+  "document_title": "Red Bull Racing",
+  "section": "Sister Formula One team",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "6b47bf788b021d202592d6bba1fd7429d8da9dc8f8e16995c7b3129e385efd98",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Scuderia AlphaTauri",
+        "entity_type": "Team",
+        "description": "A Formula One team rebranded from Red Bull Racing in 2020."
+      },
+      {
+        "local_id": "e2",
+        "name": "Pierre Gasly",
+        "entity_type": "Driver",
+        "description": "A French Formula One driver who achieved his first career race victory at the 2020 Italian Grand Prix."
+      },
+      {
+        "local_id": "e3",
+        "name": "2020",
+        "entity_type": "Season",
+        "description": "The Formula One season in which Scuderia AlphaTauri achieved their maiden Grand Prix win."
+      },
+      {
+        "local_id": "e4",
+        "name": "2024",
+        "entity_type": "Season",
+        "description": "The Formula One season in which the team was rebranded as RB Formula One Team."
+      },
+      {
+        "local_id": "e5",
+        "name": "RB Formula One Team",
+        "entity_type": "Team",
+        "description": "The rebranded name of Scuderia AlphaTauri for the 2024 season."
+      },
+      {
+        "local_id": "e6",
+        "name": "2025",
+        "entity_type": "Season",
+        "description": "The Formula One season in which the team was rebranded as Racing Bulls."
+      },
+      {
+        "local_id": "e7",
+        "name": "Racing Bulls",
+        "entity_type": "Team",
+        "description": "The rebranded name of the team for the 2025 season."
+      },
+      {
+        "local_id": "e8",
+        "name": "Yuki Tsunoda",
+        "entity_type": "Driver",
+        "description": "A Formula One driver retained by the team for the 2024 season."
+      },
+      {
+        "local_id": "e9",
+        "name": "Isack Hadjar",
+        "entity_type": "Driver",
+        "description": "A rookie driver signed by the team for the 2025 season."
+      },
+      {
+        "local_id": "e10",
+        "name": "Liam Lawson",
+        "entity_type": "Driver",
+        "description": "A driver who replaced Daniel Ricciardo during the final six rounds of the 2024 season."
+      },
+      {
+        "local_id": "e11",
+        "name": "2020 Italian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The Grand Prix where Scuderia AlphaTauri achieved their maiden win."
+      },
+      {
+        "local_id": "e12",
+        "name": "Monaco Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The Grand Prix won by Olivier Panis in 1996."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e3",
+        "relationship_type": "ENTERED",
+        "description": "Scuderia AlphaTauri entered the 2020 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e4",
+        "relationship_type": "ENTERED",
+        "description": "RB Formula One Team entered the 2024 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e7",
+        "target_id": "e6",
+        "relationship_type": "ENTERED",
+        "description": "Racing Bulls entered the 2025 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e8",
+        "target_id": "e5",
+        "relationship_type": "DROVE_FOR",
+        "description": "Yuki Tsunoda drove for RB Formula One Team in 2024.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e9",
+        "target_id": "e7",
+        "relationship_type": "DROVE_FOR",
+        "description": "Isack Hadjar drove for Racing Bulls in 2025.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e10",
+        "target_id": "e5",
+        "relationship_type": "DROVE_FOR",
+        "description": "Liam Lawson drove for RB Formula One Team in 2024.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 12,
+  "entities_accepted": 12,
+  "entities_rejected": 0,
+  "relationship_candidates": 10,
+  "relationships_accepted": 6,
+  "relationships_rejected": 4,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "ROUND_OF does not allow Team -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "WON does not allow Team -> Driver"
+    },
+    {
+      "element": "relationship",
+      "index": 8,
+      "reason": "TEAMMATE_OF does not allow Driver -> Team"
+    },
+    {
+      "element": "relationship",
+      "index": 9,
+      "reason": "TEAMMATE_OF does not allow Driver -> Team"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 0,
+      "action": "clear_redundant_season_year",
+      "detail": "ENTERED year 2020 already named by Season 'e3'; from_year and to_year cleared"
+    },
+    {
+      "index": 3,
+      "action": "clear_redundant_season_year",
+      "detail": "ENTERED year 2024 already named by Season 'e4'; from_year and to_year cleared"
+    },
+    {
+      "index": 4,
+      "action": "clear_redundant_season_year",
+      "detail": "ENTERED year 2025 already named by Season 'e6'; from_year and to_year cleared"
+    }
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "chunk_id": "season-2021-formula-one-world-championship#75",
+  "doc_id": "season-2021-formula-one-world-championship",
+  "document_title": "2021 Formula One World Championship",
+  "section": null,
+  "page": 7,
+  "source": "https://en.wikipedia.org/wiki/2021_Formula_One_World_Championship",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "84e15d2d150066c9130019f3a4d513d0f1e0a39635bc02426237af0735fdf5cb",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "DROVE_FOR does not allow Driver -> Driver"
+    },
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "ENTERED is not temporal; from_year, to_year and role must be null"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "ENTERED is not temporal; from_year, to_year and role must be null"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "ENTERED is not temporal; from_year, to_year and role must be null"
+    },
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "ACHIEVED does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 5,
+      "reason": "ACHIEVED does not allow Driver -> Season"
+    }
+  ],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Carlos Sainz Jr.",
+        "entity_type": "Driver",
+        "description": "/"
+      },
+      {
+        "local_id": "e2",
+        "name": "Lewis Hamilton",
+        "entity_type": "Driver",
+        "description": "/"
+      },
+      {
+        "local_id": "e3",
+        "name": "Max Verstappen",
+        "entity_type": "Driver",
+        "description": "/"
+      },
+      {
+        "local_id": "e4",
+        "name": "Nicholas Latifi",
+        "entity_type": "Driver",
+        "description": "/"
+      },
+      {
+        "local_id": "e5",
+        "name": "George Russell",
+        "entity_type": "Driver",
+        "description": "/"
+      },
+      {
+        "local_id": "e6",
+        "name": "Mercedes",
+        "entity_type": "Team",
+        "description": "/"
+      },
+      {
+        "local_id": "e7",
+        "name": "Red Bull",
+        "entity_type": "Team",
+        "description": "/"
+      },
+      {
+        "local_id": "e8",
+        "name": "Williams",
+        "entity_type": "Team",
+        "description": "/"
+      },
+      {
+        "local_id": "e9",
+        "name": "2021",
+        "entity_type": "Season",
+        "description": "/"
+      }
+    ],
+    "relationships": []
+  }
+}

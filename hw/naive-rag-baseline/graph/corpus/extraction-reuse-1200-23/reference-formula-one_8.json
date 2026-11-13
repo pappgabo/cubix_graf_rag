@@ -1,0 +1,62 @@
+{
+  "chunk_id": "reference-formula-one#8",
+  "doc_id": "reference-formula-one",
+  "document_title": "Formula One",
+  "section": "Formula One > Big business",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "50015f7d32000ad92bb7cc0e226ff8b80c316a8f8c7facf17dde93d8c2f42ba8",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Bernie Ecclestone",
+        "entity_type": "Driver",
+        "description": "Widely credited with transforming Formula One into a multi-billion dollar business."
+      },
+      {
+        "local_id": "e2",
+        "name": "Brabham",
+        "entity_type": "Team",
+        "description": "The team bought by Bernie Ecclestone in 1971."
+      },
+      {
+        "local_id": "e3",
+        "name": "Formula One Constructors' Association",
+        "entity_type": "Team",
+        "description": "An association that Bernie Ecclestone became president of in 1978."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Bernie Ecclestone bought the Brabham team.",
+        "from_year": 1971,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e3",
+        "relationship_type": "DROVE_FOR",
+        "description": "Bernie Ecclestone became president of the Formula One Constructors' Association.",
+        "from_year": 1978,
+        "to_year": null,
+        "role": "president"
+      }
+    ]
+  },
+  "entity_candidates": 3,
+  "entities_accepted": 3,
+  "entities_rejected": 0,
+  "relationship_candidates": 2,
+  "relationships_accepted": 2,
+  "relationships_rejected": 0,
+  "rejections": [],
+  "alignments": []
+}

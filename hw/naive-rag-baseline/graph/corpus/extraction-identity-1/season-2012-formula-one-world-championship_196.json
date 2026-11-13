@@ -1,0 +1,167 @@
+{
+  "chunk_id": "season-2012-formula-one-world-championship#196",
+  "doc_id": "season-2012-formula-one-world-championship",
+  "document_title": "2012 Formula One World Championship",
+  "section": "Race summaries > Round 19 – United States COTA",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/2012_Formula_One_World_Championship",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "635c69a3d5d58304d5a3be74938f4cd3c7e0af47d050fceb5389f93ecbab54df",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "entity_candidates": 6,
+  "entities_accepted": 9,
+  "entities_rejected": 0,
+  "relationship_candidates": 5,
+  "relationships_accepted": 7,
+  "relationships_rejected": 1,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "RACED_IN does not allow Circuit -> Season"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 2,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e6; description kept"
+    },
+    {
+      "index": 3,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr2 -AT_RACE-> e6; description kept"
+    },
+    {
+      "index": 4,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr3 -AT_RACE-> e6; description kept"
+    }
+  ],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Sebastian Vettel",
+        "entity_type": "Driver",
+        "description": "A driver who took his sixth pole position of the season."
+      },
+      {
+        "local_id": "e2",
+        "name": "Fernando Alonso",
+        "entity_type": "Driver",
+        "description": "A driver who struggled throughout qualifying to start the race ninth."
+      },
+      {
+        "local_id": "e3",
+        "name": "Romain Grosjean",
+        "entity_type": "Driver",
+        "description": "A driver who received a grid penalty for an unscheduled gearbox change."
+      },
+      {
+        "local_id": "e4",
+        "name": "Circuit of the Americas",
+        "entity_type": "Circuit",
+        "description": "A racing venue that passed its final FIA inspection on 25 September."
+      },
+      {
+        "local_id": "e5",
+        "name": "2012",
+        "entity_type": "Season",
+        "description": "The championship year for the 2012 Formula One World Championship."
+      },
+      {
+        "local_id": "e6",
+        "name": "United States Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The race held at the Circuit of the Americas."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Sebastian Vettel at United States Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Sebastian Vettel took pole position in the United States Grand Prix."
+      },
+      {
+        "local_id": "rr2",
+        "name": "Fernando Alonso at United States Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Fernando Alonso started the United States Grand Prix ninth."
+      },
+      {
+        "local_id": "rr3",
+        "name": "Romain Grosjean at United States Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Romain Grosjean received a grid penalty for the United States Grand Prix."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e6",
+        "target_id": "e5",
+        "relationship_type": "ROUND_OF",
+        "description": "The United States Grand Prix is a round of the 2012 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Sebastian Vettel took pole position in the United States Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e6",
+        "relationship_type": "AT_RACE",
+        "description": "Sebastian Vettel took pole position in the United States Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "rr2",
+        "relationship_type": "ACHIEVED",
+        "description": "Fernando Alonso started the United States Grand Prix ninth.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr2",
+        "target_id": "e6",
+        "relationship_type": "AT_RACE",
+        "description": "Fernando Alonso started the United States Grand Prix ninth.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "rr3",
+        "relationship_type": "ACHIEVED",
+        "description": "Romain Grosjean received a grid penalty for the United States Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr3",
+        "target_id": "e6",
+        "relationship_type": "AT_RACE",
+        "description": "Romain Grosjean received a grid penalty for the United States Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

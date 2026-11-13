@@ -1,0 +1,297 @@
+{
+  "chunk_id": "team-mercedes-benz-in-formula-one#29",
+  "doc_id": "team-mercedes-benz-in-formula-one",
+  "document_title": "Mercedes-Benz in Formula One",
+  "section": "Mercedes-Benz in Formula One > Struggling with ground effect (2022–2025)",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "4fc1ccddc7fde2c2ed011d378bd45611e54e4ce55ef4163bf08560de3abfa81b",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Lewis Hamilton",
+        "entity_type": "Driver",
+        "description": "Seven-time champion who drove for Mercedes for 12 years."
+      },
+      {
+        "local_id": "e2",
+        "name": "Kimi Antonelli",
+        "entity_type": "Driver",
+        "description": "Mercedes junior driver announced as Hamilton's replacement."
+      },
+      {
+        "local_id": "e3",
+        "name": "Valtteri Bottas",
+        "entity_type": "Driver",
+        "description": "Former Mercedes driver who rejoined the team as a reserve driver."
+      },
+      {
+        "local_id": "e4",
+        "name": "Mercedes-AMG Petronas Formula One Team",
+        "entity_type": "Team",
+        "description": "Formula One team that Hamilton drove for."
+      },
+      {
+        "local_id": "e5",
+        "name": "Scuderia Ferrari",
+        "entity_type": "Team",
+        "description": "Formula One team that Hamilton signed a contract with."
+      },
+      {
+        "local_id": "e6",
+        "name": "Cadillac",
+        "entity_type": "Team",
+        "description": "New Formula One team that Bottas joined."
+      },
+      {
+        "local_id": "e7",
+        "name": "2022",
+        "entity_type": "Season",
+        "description": "Season in which Russell finished fourth in the Drivers' Championship."
+      },
+      {
+        "local_id": "e8",
+        "name": "2024",
+        "entity_type": "Season",
+        "description": "Year when Hamilton confirmed leaving Mercedes."
+      },
+      {
+        "local_id": "e9",
+        "name": "2025",
+        "entity_type": "Season",
+        "description": "Year when Hamilton signed with Ferrari."
+      },
+      {
+        "local_id": "e10",
+        "name": "2026",
+        "entity_type": "Season",
+        "description": "Year when Bottas left Mercedes."
+      },
+      {
+        "local_id": "e11",
+        "name": "Canada",
+        "entity_type": "GrandPrix",
+        "description": "Race where Russell won."
+      },
+      {
+        "local_id": "e12",
+        "name": "Singapore",
+        "entity_type": "GrandPrix",
+        "description": "Race where Russell won."
+      },
+      {
+        "local_id": "e13",
+        "name": "Monaco",
+        "entity_type": "GrandPrix",
+        "description": "Location of an off weekend for Russell."
+      },
+      {
+        "local_id": "e14",
+        "name": "Constructors' Championship",
+        "entity_type": "Title",
+        "description": "Championship where Mercedes finished second."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Lewis Hamilton at Canada",
+        "entity_type": "RaceResult",
+        "description": "Russell won in Canada."
+      },
+      {
+        "local_id": "rr2",
+        "name": "Lewis Hamilton at Singapore",
+        "entity_type": "RaceResult",
+        "description": "Russell won in Singapore."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e4",
+        "relationship_type": "DROVE_FOR",
+        "description": "Hamilton drove for Mercedes.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e4",
+        "relationship_type": "DROVE_FOR",
+        "description": "Antonelli was announced as Hamilton's replacement at Mercedes.",
+        "from_year": 2024,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e4",
+        "relationship_type": "DROVE_FOR",
+        "description": "Bottas rejoined Mercedes as a reserve driver.",
+        "from_year": 2024,
+        "to_year": null,
+        "role": "reserve"
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e5",
+        "relationship_type": "DROVE_FOR",
+        "description": "Hamilton signed a contract to drive for Ferrari.",
+        "from_year": 2025,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e6",
+        "relationship_type": "DROVE_FOR",
+        "description": "Bottas left Mercedes to join Cadillac.",
+        "from_year": 2026,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e7",
+        "relationship_type": "ENTERED",
+        "description": "Mercedes entered the 2022 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e8",
+        "relationship_type": "ENTERED",
+        "description": "Mercedes entered the 2024 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e9",
+        "relationship_type": "ENTERED",
+        "description": "Mercedes entered the 2025 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e10",
+        "relationship_type": "ENTERED",
+        "description": "Mercedes entered the 2026 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e11",
+        "target_id": "e7",
+        "relationship_type": "ROUND_OF",
+        "description": "Canada is a round of the 2022 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e12",
+        "target_id": "e7",
+        "relationship_type": "ROUND_OF",
+        "description": "Singapore is a round of the 2022 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Russell won in Canada.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e11",
+        "relationship_type": "AT_RACE",
+        "description": "Russell won in Canada.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr2",
+        "relationship_type": "ACHIEVED",
+        "description": "Russell won in Singapore.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr2",
+        "target_id": "e12",
+        "relationship_type": "AT_RACE",
+        "description": "Russell won in Singapore.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e14",
+        "relationship_type": "WON",
+        "description": "Mercedes finished second in the Constructors' Championship.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 14,
+  "entities_accepted": 16,
+  "entities_rejected": 0,
+  "relationship_candidates": 14,
+  "relationships_accepted": 16,
+  "relationships_rejected": 0,
+  "rejections": [],
+  "alignments": [
+    {
+      "index": 5,
+      "action": "clear_redundant_season_year",
+      "detail": "ENTERED year 2022 already named by Season 'e7'; from_year and to_year cleared"
+    },
+    {
+      "index": 6,
+      "action": "clear_redundant_season_year",
+      "detail": "ENTERED year 2024 already named by Season 'e8'; from_year and to_year cleared"
+    },
+    {
+      "index": 7,
+      "action": "clear_redundant_season_year",
+      "detail": "ENTERED year 2025 already named by Season 'e9'; from_year and to_year cleared"
+    },
+    {
+      "index": 8,
+      "action": "clear_redundant_season_year",
+      "detail": "ENTERED year 2026 already named by Season 'e10'; from_year and to_year cleared"
+    },
+    {
+      "index": 11,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e11; description kept"
+    },
+    {
+      "index": 12,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr2 -AT_RACE-> e12; description kept"
+    }
+  ]
+}

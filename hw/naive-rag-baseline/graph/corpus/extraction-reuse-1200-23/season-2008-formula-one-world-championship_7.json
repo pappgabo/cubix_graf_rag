@@ -1,0 +1,158 @@
+{
+  "chunk_id": "season-2008-formula-one-world-championship#7",
+  "doc_id": "season-2008-formula-one-world-championship",
+  "document_title": "2008 Formula One World Championship",
+  "section": null,
+  "page": 2,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "81fc568fb760e0de4181168b8dd66617f6cba60ad41bba890dd164ab125a7861",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Renault",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that entered cars."
+      },
+      {
+        "local_id": "e2",
+        "name": "Force India",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that entered cars."
+      },
+      {
+        "local_id": "e3",
+        "name": "Sakon Yamamoto",
+        "entity_type": "Driver",
+        "description": "A driver who became Renault's test development driver."
+      },
+      {
+        "local_id": "e4",
+        "name": "Nelson Piquet Jr.",
+        "entity_type": "Driver",
+        "description": "The test driver who took Fisichella's place at Renault."
+      },
+      {
+        "local_id": "e5",
+        "name": "Ralf Schumacher",
+        "entity_type": "Driver",
+        "description": "A driver who left Toyota to drive for Mücke Motorsport."
+      },
+      {
+        "local_id": "e6",
+        "name": "Timo Glock",
+        "entity_type": "Driver",
+        "description": "The 2007 GP2 champion who returned to a Formula One race seat."
+      },
+      {
+        "local_id": "e7",
+        "name": "Christian Klien",
+        "entity_type": "Driver",
+        "description": "Previously the test driver for Honda."
+      },
+      {
+        "local_id": "e8",
+        "name": "Marko Asmer",
+        "entity_type": "Driver",
+        "description": "An Estonian driver who took up a test driver role at BMW Sauber."
+      },
+      {
+        "local_id": "e9",
+        "name": "Sébastien Bourdais",
+        "entity_type": "Driver",
+        "description": "A driver who joined Toro Rosso in 2008."
+      },
+      {
+        "local_id": "e10",
+        "name": "Vitantonio Liuzzi",
+        "entity_type": "Driver",
+        "description": "A driver who moved to Force India as their test driver."
+      },
+      {
+        "local_id": "e11",
+        "name": "Singapore Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The first Grand Prix held in Singapore."
+      },
+      {
+        "local_id": "e12",
+        "name": "Singapore",
+        "entity_type": "Circuit",
+        "description": "A street circuit that hosted its first Grand Prix in 2008."
+      },
+      {
+        "local_id": "e13",
+        "name": "2008",
+        "entity_type": "Season",
+        "description": "The Formula 1 season."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e11",
+        "target_id": "e13",
+        "relationship_type": "ROUND_OF",
+        "description": "The Singapore Grand Prix is a round of the 2008 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e11",
+        "target_id": "e12",
+        "relationship_type": "HELD_AT",
+        "description": "The Singapore Grand Prix was held at the Singapore circuit.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 13,
+  "entities_accepted": 13,
+  "entities_rejected": 0,
+  "relationship_candidates": 9,
+  "relationships_accepted": 2,
+  "relationships_rejected": 7,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "DROVE_FOR does not allow Team -> Driver"
+    },
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "DROVE_FOR does not allow Team -> Driver"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "DROVE_FOR does not allow Team -> Driver"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "DROVE_FOR does not allow Team -> Driver"
+    },
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "DROVE_FOR does not allow Team -> Driver"
+    },
+    {
+      "element": "relationship",
+      "index": 5,
+      "reason": "DROVE_FOR does not allow Team -> Driver"
+    },
+    {
+      "element": "relationship",
+      "index": 6,
+      "reason": "DROVE_FOR does not allow Driver -> Driver"
+    }
+  ],
+  "alignments": []
+}

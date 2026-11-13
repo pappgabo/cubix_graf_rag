@@ -1,0 +1,207 @@
+{
+  "chunk_id": "team-williams-racing#50",
+  "doc_id": "team-williams-racing",
+  "document_title": "Williams Racing",
+  "section": "Williams Racing > 1995 season",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "cc619d9631da7c329d0e1d06ad039a8a10010fb28502b629bf8670b547ef1219",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Nigel Mansell",
+        "entity_type": "Driver",
+        "description": "A driver who had a four-race stint with Williams in 1994."
+      },
+      {
+        "local_id": "e2",
+        "name": "McLaren",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that Nigel Mansell joined after leaving Williams."
+      },
+      {
+        "local_id": "e3",
+        "name": "Mika Hakkinen",
+        "entity_type": "Driver",
+        "description": "A driver who paired with Nigel Mansell at McLaren."
+      },
+      {
+        "local_id": "e4",
+        "name": "David Coulthard",
+        "entity_type": "Driver",
+        "description": "A driver who was given the full-time position at Williams after Ayrton Senna's crash."
+      },
+      {
+        "local_id": "e5",
+        "name": "Damon Hill",
+        "entity_type": "Driver",
+        "description": "A driver retained by Williams for the other car."
+      },
+      {
+        "local_id": "e6",
+        "name": "Ayrton Senna",
+        "entity_type": "Driver",
+        "description": "A driver whose fatal crash led to David Coulthard's full-time position at Williams."
+      },
+      {
+        "local_id": "e7",
+        "name": "Schumacher",
+        "entity_type": "Driver",
+        "description": "A driver who won the first round in Brazil."
+      },
+      {
+        "local_id": "e8",
+        "name": "Gerhard Berger",
+        "entity_type": "Driver",
+        "description": "A driver who was declared the winner of the first round in Brazil after Schumacher and Coulthard were disqualified."
+      },
+      {
+        "local_id": "e9",
+        "name": "Scuderia Ferrari",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that was declared the winner of the first round in Brazil."
+      },
+      {
+        "local_id": "e10",
+        "name": "Benetton",
+        "entity_type": "Team",
+        "description": "A Formula 1 team associated with Schumacher."
+      },
+      {
+        "local_id": "e11",
+        "name": "The Hungaroring",
+        "entity_type": "Circuit",
+        "description": "A circuit where Damon Hill won a race."
+      },
+      {
+        "local_id": "e12",
+        "name": "Adelaide",
+        "entity_type": "Circuit",
+        "description": "A circuit where Damon Hill won a race in a dominating victory."
+      },
+      {
+        "local_id": "e13",
+        "name": "Estoril",
+        "entity_type": "Circuit",
+        "description": "A circuit where David Coulthard recorded his only 1995 win."
+      },
+      {
+        "local_id": "e14",
+        "name": "1995",
+        "entity_type": "Season",
+        "description": "The Formula 1 season in which the events took place."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e9",
+        "target_id": "e14",
+        "relationship_type": "ENTERED",
+        "description": "Ferrari was involved in the 1995 season as a competing team.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e10",
+        "target_id": "e14",
+        "relationship_type": "ENTERED",
+        "description": "Benetton was involved in the 1995 season as a competing team.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Nigel Mansell departed Williams for McLaren.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e3",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "David Coulthard was a teammate of Damon Hill at Williams.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e4",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Damon Hill was a teammate of David Coulthard at Williams.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 14,
+  "entities_accepted": 14,
+  "entities_rejected": 0,
+  "relationship_candidates": 13,
+  "relationships_accepted": 5,
+  "relationships_rejected": 8,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "WON does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "WON does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "ACHIEVED does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "ACHIEVED does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 9,
+      "reason": "FOR_TEAM does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 10,
+      "reason": "FOR_TEAM does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 11,
+      "reason": "RACED_IN does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 12,
+      "reason": "RACED_IN does not allow Driver -> Season"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 4,
+      "action": "clear_redundant_season_year",
+      "detail": "ENTERED year 1995 already named by Season 'e14'; from_year and to_year cleared"
+    },
+    {
+      "index": 5,
+      "action": "clear_redundant_season_year",
+      "detail": "ENTERED year 1995 already named by Season 'e14'; from_year and to_year cleared"
+    }
+  ]
+}

@@ -1,0 +1,128 @@
+{
+  "chunk_id": "team-mercedes-benz-in-formula-one#17",
+  "doc_id": "team-mercedes-benz-in-formula-one",
+  "document_title": "Mercedes-Benz in Formula One",
+  "section": "Mercedes-Benz in Formula One > Eight consecutive Constructors' titles (2014–2021)",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "22a536e2ac5d85142e3f938daee7a09dbae71af7261bbce3cf78a7b7e0dcd49a",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Lewis Hamilton",
+        "entity_type": "Driver",
+        "description": "A driver who won his second consecutive Drivers' Championship in 2015."
+      },
+      {
+        "local_id": "e2",
+        "name": "Nico Rosberg",
+        "entity_type": "Driver",
+        "description": "A driver who won his only Drivers' Championship in 2016."
+      },
+      {
+        "local_id": "e3",
+        "name": "Mercedes-AMG Petronas Formula One Team",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that won multiple Constructors' Championships."
+      },
+      {
+        "local_id": "e4",
+        "name": "2015",
+        "entity_type": "Season",
+        "description": "The season in which Mercedes won their second Constructors' Championship and Hamilton won his second Drivers' Championship."
+      },
+      {
+        "local_id": "e5",
+        "name": "2016",
+        "entity_type": "Season",
+        "description": "The season in which Mercedes won their third consecutive Constructors' Championship and Rosberg won his only Drivers' Championship.\nThe season in which Mercedes won the Constructors' Championship for the third consecutive time."
+      },
+      {
+        "local_id": "e6",
+        "name": "2015 Russian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The Grand Prix where Mercedes won their second Constructors' Championship."
+      },
+      {
+        "local_id": "e7",
+        "name": "2015 United States Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The Grand Prix where Hamilton won his second consecutive Drivers' Championship."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e3",
+        "target_id": "e4",
+        "relationship_type": "ENTERED",
+        "description": "Mercedes entered the 2015 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e5",
+        "relationship_type": "ENTERED",
+        "description": "Mercedes entered the 2016 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 8,
+  "entities_accepted": 7,
+  "entities_rejected": 0,
+  "relationship_candidates": 8,
+  "relationships_accepted": 2,
+  "relationships_rejected": 6,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "ROUND_OF does not allow Team -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "ROUND_OF does not allow Team -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "WON does not allow Driver -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 5,
+      "reason": "WON does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 6,
+      "reason": "WON does not allow Team -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 7,
+      "reason": "WON does not allow Team -> Season"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 0,
+      "action": "clear_redundant_season_year",
+      "detail": "ENTERED year 2015 already named by Season 'e4'; from_year and to_year cleared"
+    },
+    {
+      "index": 1,
+      "action": "clear_redundant_season_year",
+      "detail": "ENTERED year 2016 already named by Season 'e5'; from_year and to_year cleared"
+    }
+  ]
+}

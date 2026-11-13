@@ -1,0 +1,50 @@
+{
+  "chunk_id": "driver-sebastian-vettel#51",
+  "doc_id": "driver-sebastian-vettel",
+  "document_title": "Sebastian Vettel",
+  "section": "2011: Dominant second title",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/Sebastian_Vettel",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "3904e179bc18792707b4d5929c85ab6fd7e0f70f29c101238510dad3406e6f93",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "entity_candidates": 2,
+  "entities_accepted": 2,
+  "entities_rejected": 0,
+  "relationship_candidates": 2,
+  "relationships_accepted": 0,
+  "relationships_rejected": 2,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "WON does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "AWARDED_IN does not allow Season -> Season"
+    }
+  ],
+  "alignments": [],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Sebastian Vettel",
+        "entity_type": "Driver",
+        "description": "A Formula One driver who broke the record for the most pole positions in a season."
+      },
+      {
+        "local_id": "e2",
+        "name": "2011",
+        "entity_type": "Season",
+        "description": "The championship year in which Vettel achieved a record total of 15 poles."
+      }
+    ],
+    "relationships": []
+  }
+}

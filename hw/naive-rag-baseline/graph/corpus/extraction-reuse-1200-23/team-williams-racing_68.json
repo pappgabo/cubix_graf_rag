@@ -1,0 +1,272 @@
+{
+  "chunk_id": "team-williams-racing#68",
+  "doc_id": "team-williams-racing",
+  "document_title": "Williams Racing",
+  "section": "Williams Racing > 2001 season",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "5d5cdc08daba0d72731d3f6686dbd9dd98f12ac9078bb6e61d274947b193a8c1",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Juan Pablo Montoya",
+        "entity_type": "Driver",
+        "description": "Returned to drive full-time for Williams in 2001 after two successful years in CART."
+      },
+      {
+        "local_id": "e2",
+        "name": "Jenson Button",
+        "entity_type": "Driver",
+        "description": "Moved to Benetton for the 2001 season after Montoya returned to Williams."
+      },
+      {
+        "local_id": "e3",
+        "name": "Williams",
+        "entity_type": "Team",
+        "description": "Formula 1 team that brought Juan Pablo Montoya back to drive full-time in 2001."
+      },
+      {
+        "local_id": "e4",
+        "name": "Benetton",
+        "entity_type": "Team",
+        "description": "Team that Jenson Button moved to for the 2001 season."
+      },
+      {
+        "local_id": "e5",
+        "name": "FW23",
+        "entity_type": "Car",
+        "description": "Car fielded by Williams in the 2001 season."
+      },
+      {
+        "local_id": "e6",
+        "name": "2001",
+        "entity_type": "Season",
+        "description": "The championship year in which Williams competed with the FW23."
+      },
+      {
+        "local_id": "e7",
+        "name": "Ralf Schumacher",
+        "entity_type": "Driver",
+        "description": "Teammate of Juan Pablo Montoya at Williams in the 2001 season."
+      },
+      {
+        "local_id": "e8",
+        "name": "Imola",
+        "entity_type": "GrandPrix",
+        "description": "Location of one of the races won by Ralf Schumacher in the 2001 season."
+      },
+      {
+        "local_id": "e9",
+        "name": "Montreal",
+        "entity_type": "GrandPrix",
+        "description": "Location of one of the races won by Ralf Schumacher in the 2001 season."
+      },
+      {
+        "local_id": "e10",
+        "name": "Germany",
+        "entity_type": "GrandPrix",
+        "description": "Location of Ralf Schumacher's home Grand Prix won in the 2001 season."
+      },
+      {
+        "local_id": "e11",
+        "name": "Monza",
+        "entity_type": "GrandPrix",
+        "description": "Location of the race won by Juan Pablo Montoya in the 2001 season."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Juan Pablo Montoya at Monza",
+        "entity_type": "RaceResult",
+        "description": "Juan Pablo Montoya achieved a victory at Monza in the 2001 season."
+      },
+      {
+        "local_id": "rr2",
+        "name": "Ralf Schumacher at Montreal",
+        "entity_type": "RaceResult",
+        "description": "Ralf Schumacher achieved a victory at Montreal in the 2001 season."
+      },
+      {
+        "local_id": "rr3",
+        "name": "Ralf Schumacher at Germany",
+        "entity_type": "RaceResult",
+        "description": "Ralf Schumacher achieved a victory at Germany in the 2001 season."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e3",
+        "relationship_type": "DROVE_FOR",
+        "description": "Juan Pablo Montoya drove for Williams in the 2001 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e4",
+        "relationship_type": "DROVE_FOR",
+        "description": "Jenson Button drove for Benetton in the 2001 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e5",
+        "relationship_type": "FIELDED",
+        "description": "Williams fielded the FW23 in the 2001 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e6",
+        "relationship_type": "RACED_IN",
+        "description": "The FW23 raced in the 2001 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e6",
+        "relationship_type": "ENTERED",
+        "description": "Williams entered the 2001 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e8",
+        "target_id": "e6",
+        "relationship_type": "ROUND_OF",
+        "description": "Imola was a round of the 2001 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e9",
+        "target_id": "e6",
+        "relationship_type": "ROUND_OF",
+        "description": "Montreal was a round of the 2001 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e10",
+        "target_id": "e6",
+        "relationship_type": "ROUND_OF",
+        "description": "Germany was a round of the 2001 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e11",
+        "target_id": "e6",
+        "relationship_type": "ROUND_OF",
+        "description": "Monza was a round of the 2001 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Juan Pablo Montoya achieved a victory at Monza in the 2001 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e11",
+        "relationship_type": "AT_RACE",
+        "description": "Juan Pablo Montoya achieved a victory at Monza in the 2001 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e7",
+        "target_id": "rr2",
+        "relationship_type": "ACHIEVED",
+        "description": "Ralf Schumacher achieved a victory at Montreal in the 2001 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr2",
+        "target_id": "e9",
+        "relationship_type": "AT_RACE",
+        "description": "Ralf Schumacher achieved a victory at Montreal in the 2001 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e7",
+        "target_id": "rr3",
+        "relationship_type": "ACHIEVED",
+        "description": "Ralf Schumacher achieved a victory at Germany in the 2001 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr3",
+        "target_id": "e10",
+        "relationship_type": "AT_RACE",
+        "description": "Ralf Schumacher achieved a victory at Germany in the 2001 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 11,
+  "entities_accepted": 14,
+  "entities_rejected": 0,
+  "relationship_candidates": 14,
+  "relationships_accepted": 15,
+  "relationships_rejected": 2,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 11,
+      "reason": "TEAMMATE_OF does not allow Driver -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 12,
+      "reason": "ACHIEVED does not allow Driver -> Season"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 9,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e11; description kept"
+    },
+    {
+      "index": 12,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr2 -AT_RACE-> e9; description kept"
+    },
+    {
+      "index": 13,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr3 -AT_RACE-> e10; description kept"
+    }
+  ]
+}

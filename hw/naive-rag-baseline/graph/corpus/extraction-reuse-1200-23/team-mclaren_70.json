@@ -1,0 +1,77 @@
+{
+  "chunk_id": "team-mclaren#70",
+  "doc_id": "team-mclaren",
+  "document_title": "McLaren",
+  "section": "Racing history: Other series",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "d3f7779ab002e6651ac967ebb7775c33e4810d3642314840ebe456590ad7316e",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "McLaren",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that has also participated in other racing series."
+      },
+      {
+        "local_id": "e2",
+        "name": "2022",
+        "entity_type": "Season",
+        "description": "The starting year for McLaren's entry into Extreme E."
+      },
+      {
+        "local_id": "e3",
+        "name": "2024",
+        "entity_type": "Season",
+        "description": "The ending year for McLaren's entry into Extreme E."
+      },
+      {
+        "local_id": "e4",
+        "name": "2022–23",
+        "entity_type": "Season",
+        "description": "The starting season for McLaren's entry into Formula E."
+      },
+      {
+        "local_id": "e5",
+        "name": "2024–25",
+        "entity_type": "Season",
+        "description": "The ending season for McLaren's entry into Formula E."
+      },
+      {
+        "local_id": "e6",
+        "name": "1995",
+        "entity_type": "Season",
+        "description": "The year McLaren's modified F1 road car won the 24 Hours of Le Mans."
+      }
+    ],
+    "relationships": []
+  },
+  "entity_candidates": 6,
+  "entities_accepted": 6,
+  "entities_rejected": 0,
+  "relationship_candidates": 3,
+  "relationships_accepted": 0,
+  "relationships_rejected": 3,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "ENTERED is not temporal; from_year=2022, to_year=2024, role=None cannot be stored without dropping them"
+    },
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "ENTERED is not temporal; from_year=2022, to_year=2024, role=None cannot be stored without dropping them"
+    },
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "FIELDED does not allow Team -> Season"
+    }
+  ],
+  "alignments": []
+}

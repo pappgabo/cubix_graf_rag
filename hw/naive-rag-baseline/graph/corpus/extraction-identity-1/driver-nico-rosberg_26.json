@@ -1,0 +1,105 @@
+{
+  "chunk_id": "driver-nico-rosberg#26",
+  "doc_id": "driver-nico-rosberg",
+  "document_title": "Nico Rosberg",
+  "section": "Nico Rosberg > Junior car career (2001–2005)",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/Nico_Rosberg",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "3b334aa3a9fbe62e80b649659e75c53a45002bcbc39bb6d53bfec8acdd80d7ab",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "entity_candidates": 3,
+  "entities_accepted": 5,
+  "entities_rejected": 0,
+  "relationship_candidates": 2,
+  "relationships_accepted": 4,
+  "relationships_rejected": 0,
+  "rejections": [],
+  "alignments": [
+    {
+      "index": 0,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e2; description kept"
+    },
+    {
+      "index": 1,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr2 -AT_RACE-> e3; description kept"
+    }
+  ],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Nico Rosberg",
+        "entity_type": "Driver",
+        "description": "A Formula One driver."
+      },
+      {
+        "local_id": "e2",
+        "name": "Macau Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A race event held in Macau."
+      },
+      {
+        "local_id": "e3",
+        "name": "Bahrain Superprix",
+        "entity_type": "GrandPrix",
+        "description": "A race event held in Bahrain."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Nico Rosberg at Macau Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Nico Rosberg crashed from the lead of the Macau Grand Prix."
+      },
+      {
+        "local_id": "rr2",
+        "name": "Nico Rosberg at Bahrain Superprix",
+        "entity_type": "RaceResult",
+        "description": "Nico Rosberg was second at the Bahrain Superprix."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Nico Rosberg crashed from the lead of the Macau Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e2",
+        "relationship_type": "AT_RACE",
+        "description": "Nico Rosberg crashed from the lead of the Macau Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr2",
+        "relationship_type": "ACHIEVED",
+        "description": "Nico Rosberg was second at the Bahrain Superprix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr2",
+        "target_id": "e3",
+        "relationship_type": "AT_RACE",
+        "description": "Nico Rosberg was second at the Bahrain Superprix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

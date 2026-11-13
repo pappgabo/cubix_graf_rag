@@ -1,0 +1,73 @@
+{
+  "chunk_id": "team-scuderia-ferrari#30",
+  "doc_id": "team-scuderia-ferrari",
+  "document_title": "Scuderia Ferrari",
+  "section": null,
+  "page": 7,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "1fa956e6ba98b7c989d6ca52f5b0d0042169adb99537f5fa8e380f6f9aed70ec",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Scuderia Ferrari Esports Team",
+        "entity_type": "Team",
+        "description": "The esports team of Scuderia Ferrari."
+      },
+      {
+        "local_id": "e2",
+        "name": "David Tonizza",
+        "entity_type": "Driver",
+        "description": "A driver who won the Formula One Esports Drivers' Championship for Scuderia Ferrari Esports Team in 2019."
+      },
+      {
+        "local_id": "e3",
+        "name": "2019",
+        "entity_type": "Season",
+        "description": "The season in which David Tonizza won the Formula One Esports Drivers' Championship."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e2",
+        "target_id": "e1",
+        "relationship_type": "DROVE_FOR",
+        "description": "David Tonizza drove for Scuderia Ferrari Esports Team.",
+        "from_year": 2019,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e3",
+        "relationship_type": "ENTERED",
+        "description": "Scuderia Ferrari Esports Team entered the 2019 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 3,
+  "entities_accepted": 3,
+  "entities_rejected": 0,
+  "relationship_candidates": 4,
+  "relationships_accepted": 2,
+  "relationships_rejected": 2,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "WON does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "AWARDED_IN does not allow Season -> Season"
+    }
+  ],
+  "alignments": []
+}

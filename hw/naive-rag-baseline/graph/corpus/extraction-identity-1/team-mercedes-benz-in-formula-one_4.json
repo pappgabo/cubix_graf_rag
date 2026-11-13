@@ -1,0 +1,121 @@
+{
+  "chunk_id": "team-mercedes-benz-in-formula-one#4",
+  "doc_id": "team-mercedes-benz-in-formula-one",
+  "document_title": "Mercedes-Benz in Formula One",
+  "section": "Mercedes-Benz in Formula One",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/Mercedes-Benz_in_Formula_One",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "f3e918942609a99a9730ff15b405dfd3fb9771a74d262d9c88a37485da1e151d",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "entity_candidates": 9,
+  "entities_accepted": 9,
+  "entities_rejected": 0,
+  "relationship_candidates": 6,
+  "relationships_accepted": 2,
+  "relationships_rejected": 4,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "DROVE_FOR does not allow Team -> Team"
+    },
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "FIELDED does not allow Team -> PowerUnit"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "DROVE_FOR does not allow Team -> Team"
+    },
+    {
+      "element": "relationship",
+      "index": 5,
+      "reason": "DROVE_FOR does not allow Team -> Team"
+    }
+  ],
+  "alignments": [],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Mercedes-AMG Petronas Formula One Team",
+        "entity_type": "Team",
+        "description": "Mercedes returned to Formula One in 1994 as an engine manufacturer."
+      },
+      {
+        "local_id": "e2",
+        "name": "Ilmor",
+        "entity_type": "Team",
+        "description": "A British independent high-performance autosport engineering company that developed Mercedes' engines."
+      },
+      {
+        "local_id": "e3",
+        "name": "McLaren",
+        "entity_type": "Team",
+        "description": "The team with which Mercedes had a works partnership that lasted until 2009."
+      },
+      {
+        "local_id": "e4",
+        "name": "Mercedes AMG High Performance Powertrains",
+        "entity_type": "PowerUnit",
+        "description": "The rebranded name of Ilmor in 2005."
+      },
+      {
+        "local_id": "e5",
+        "name": "Brawn GP",
+        "entity_type": "Team",
+        "description": "The team bought by Mercedes in 2010 and rebranded as Mercedes."
+      },
+      {
+        "local_id": "e6",
+        "name": "1994",
+        "entity_type": "Season",
+        "description": "The year Mercedes returned to Formula One."
+      },
+      {
+        "local_id": "e7",
+        "name": "2009",
+        "entity_type": "Season",
+        "description": "The year the partnership between Mercedes and McLaren ended."
+      },
+      {
+        "local_id": "e8",
+        "name": "one constructors' title",
+        "entity_type": "Title",
+        "description": "The constructors' title won by Mercedes in partnership with McLaren."
+      },
+      {
+        "local_id": "e9",
+        "name": "three drivers' titles",
+        "entity_type": "Title",
+        "description": "The drivers' titles won by Mercedes in partnership with McLaren."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e8",
+        "relationship_type": "WON",
+        "description": "Mercedes won one constructors' title in partnership with McLaren.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e9",
+        "relationship_type": "WON",
+        "description": "Mercedes won three drivers' titles in partnership with McLaren.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

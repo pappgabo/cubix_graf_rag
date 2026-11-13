@@ -1,0 +1,42 @@
+{
+  "chunk_id": "driver-lewis-hamilton#78",
+  "doc_id": "driver-lewis-hamilton",
+  "document_title": "Lewis Hamilton",
+  "section": null,
+  "page": 7,
+  "source": "https://en.wikipedia.org/wiki/Lewis_Hamilton",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "068711df86dc3150110add9ac68019d10ed7a7947cc126b27d2a8c0bac9dfb62",
+  "validation_version": "partial-1",
+  "source_status": "ok",
+  "status": "ok",
+  "rejections": [],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Lewis Hamilton",
+        "entity_type": "Driver",
+        "description": "Hamilton has been praised for his consistency, especially in his time at Mercedes."
+      },
+      {
+        "local_id": "e2",
+        "name": "Mercedes",
+        "entity_type": "Team",
+        "description": "Hamilton has been praised for his consistency, especially in his time at Mercedes."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Hamilton drove for Mercedes during his time praised for consistency.",
+        "from_year": 2017,
+        "to_year": 2018,
+        "role": null
+      }
+    ]
+  }
+}

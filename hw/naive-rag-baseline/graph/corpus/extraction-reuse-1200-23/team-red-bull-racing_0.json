@@ -1,0 +1,131 @@
+{
+  "chunk_id": "team-red-bull-racing#0",
+  "doc_id": "team-red-bull-racing",
+  "document_title": "Red Bull Racing",
+  "section": null,
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "1077791b35fc4fe7ed419e77b8810ff1b948e0d9ef10ffaf6f3c330973b4cc3f",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Red Bull Racing",
+        "entity_type": "Team",
+        "description": "A Formula One racing team, competing under an Austrian racing licence and based in England."
+      },
+      {
+        "local_id": "e2",
+        "name": "Sebastian Vettel",
+        "entity_type": "Driver",
+        "description": "A driver for Red Bull Racing who led the team to four successive championship titles."
+      },
+      {
+        "local_id": "e3",
+        "name": "2010",
+        "entity_type": "Season",
+        "description": "A championship year in which Red Bull Racing won the title."
+      },
+      {
+        "local_id": "e4",
+        "name": "2011",
+        "entity_type": "Season",
+        "description": "A championship year in which Red Bull Racing won the title."
+      },
+      {
+        "local_id": "e5",
+        "name": "2012",
+        "entity_type": "Season",
+        "description": "A championship year in which Red Bull Racing won the title."
+      },
+      {
+        "local_id": "e6",
+        "name": "2013",
+        "entity_type": "Season",
+        "description": "A championship year in which Red Bull Racing won the title."
+      },
+      {
+        "local_id": "e7",
+        "name": "Cosworth",
+        "entity_type": "PowerUnit",
+        "description": "An engine supplier for Red Bull Racing in 2005."
+      },
+      {
+        "local_id": "e8",
+        "name": "Ferrari",
+        "entity_type": "PowerUnit",
+        "description": "An engine supplier for Red Bull Racing in 2006."
+      },
+      {
+        "local_id": "e9",
+        "name": "Renault",
+        "entity_type": "PowerUnit",
+        "description": "An engine supplier for Red Bull Racing from 2007 to 2018."
+      },
+      {
+        "local_id": "e10",
+        "name": "TAG Heuer",
+        "entity_type": "PowerUnit",
+        "description": "The re-badged Renault engine used by Red Bull Racing from 2016 to 2018."
+      }
+    ],
+    "relationships": []
+  },
+  "entity_candidates": 10,
+  "entities_accepted": 10,
+  "entities_rejected": 0,
+  "relationship_candidates": 9,
+  "relationships_accepted": 0,
+  "relationships_rejected": 9,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "WON does not allow Team -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "WON does not allow Team -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "WON does not allow Team -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "WON does not allow Team -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "DROVE_FOR does not allow Team -> Driver"
+    },
+    {
+      "element": "relationship",
+      "index": 5,
+      "reason": "POWERED_BY does not allow Team -> PowerUnit"
+    },
+    {
+      "element": "relationship",
+      "index": 6,
+      "reason": "POWERED_BY does not allow Team -> PowerUnit"
+    },
+    {
+      "element": "relationship",
+      "index": 7,
+      "reason": "POWERED_BY does not allow Team -> PowerUnit"
+    },
+    {
+      "element": "relationship",
+      "index": 8,
+      "reason": "POWERED_BY does not allow Team -> PowerUnit"
+    }
+  ],
+  "alignments": []
+}

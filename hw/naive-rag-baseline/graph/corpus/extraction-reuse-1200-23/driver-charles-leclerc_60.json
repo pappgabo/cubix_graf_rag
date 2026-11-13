@@ -1,0 +1,131 @@
+{
+  "chunk_id": "driver-charles-leclerc#60",
+  "doc_id": "driver-charles-leclerc",
+  "document_title": "Charles Leclerc",
+  "section": "Charles Leclerc > Helmet",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "f7ff60942758fcbda1bea2a9253815c6a2014a23fccad174b3388308c961f87a",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Charles Leclerc",
+        "entity_type": "Driver",
+        "description": "A Formula One driver known for his helmet designs and tributes."
+      },
+      {
+        "local_id": "e2",
+        "name": "Hervé Leclerc",
+        "entity_type": "Driver",
+        "description": "Charles Leclerc's father."
+      },
+      {
+        "local_id": "e3",
+        "name": "Jules Bianchi",
+        "entity_type": "Driver",
+        "description": "Charles Leclerc's godfather."
+      },
+      {
+        "local_id": "e4",
+        "name": "Sebastian Vettel",
+        "entity_type": "Driver",
+        "description": "Former teammate of Charles Leclerc."
+      },
+      {
+        "local_id": "e5",
+        "name": "Carlos Sainz Jr.",
+        "entity_type": "Driver",
+        "description": "Former teammate of Charles Leclerc."
+      },
+      {
+        "local_id": "e6",
+        "name": "2019 Monaco Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A race where Leclerc wore a tribute helmet."
+      },
+      {
+        "local_id": "e7",
+        "name": "2024 Japanese Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A race where Leclerc wore a tribute helmet for Jules Bianchi."
+      },
+      {
+        "local_id": "e8",
+        "name": "2020 Abu Dhabi Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A race where Leclerc wore a tribute helmet for Sebastian Vettel."
+      },
+      {
+        "local_id": "e9",
+        "name": "2023 Canadian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A race where controversy arose over Leclerc's helmet design."
+      },
+      {
+        "local_id": "e10",
+        "name": "2024 Abu Dhabi Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A race where Leclerc wore a tribute helmet for Carlos Sainz Jr."
+      }
+    ],
+    "relationships": []
+  },
+  "entity_candidates": 10,
+  "entities_accepted": 10,
+  "entities_rejected": 0,
+  "relationship_candidates": 9,
+  "relationships_accepted": 0,
+  "relationships_rejected": 9,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "ACHIEVED Driver -> GrandPrix has from_year=2019, to_year=2019, role=None; the year or role cannot be stored on the reified result"
+    },
+    {
+      "element": "relationship",
+      "index": 5,
+      "reason": "ACHIEVED Driver -> GrandPrix has from_year=2024, to_year=2024, role=None; the year or role cannot be stored on the reified result"
+    },
+    {
+      "element": "relationship",
+      "index": 6,
+      "reason": "ACHIEVED Driver -> GrandPrix has from_year=2023, to_year=2023, role=None; the year or role cannot be stored on the reified result"
+    },
+    {
+      "element": "relationship",
+      "index": 7,
+      "reason": "ACHIEVED Driver -> GrandPrix has from_year=2020, to_year=2020, role=None; the year or role cannot be stored on the reified result"
+    },
+    {
+      "element": "relationship",
+      "index": 8,
+      "reason": "ACHIEVED Driver -> GrandPrix has from_year=2024, to_year=2024, role=None; the year or role cannot be stored on the reified result"
+    },
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "ACHIEVED does not allow Driver -> Driver"
+    },
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "ACHIEVED does not allow Driver -> Driver"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "ACHIEVED does not allow Driver -> Driver"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "ACHIEVED does not allow Driver -> Driver"
+    }
+  ],
+  "alignments": []
+}

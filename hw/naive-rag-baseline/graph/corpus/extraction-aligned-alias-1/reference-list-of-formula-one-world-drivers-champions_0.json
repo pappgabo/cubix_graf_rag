@@ -1,0 +1,191 @@
+{
+  "chunk_id": "reference-list-of-formula-one-world-drivers-champions#0",
+  "doc_id": "reference-list-of-formula-one-world-drivers-champions",
+  "document_title": "List of Formula One World Drivers' Champions",
+  "section": "sheet Champions by season",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/List_of_Formula_One_World_Drivers%27_Champions",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "56bd1161d04c448e5ad51971c3607587eea46213f9d1b092a7e0dddf4615b589",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "WON does not allow Driver -> Team"
+    },
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "WON does not allow Driver -> Team"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "WON does not allow Driver -> Team"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "WON does not allow Driver -> Team"
+    },
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "WON does not allow Driver -> Team"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 5,
+      "action": "clear_redundant_season_year",
+      "detail": "ENTERED year 2008 already named by Season 'e8'; from_year and to_year cleared"
+    },
+    {
+      "index": 6,
+      "action": "clear_redundant_season_year",
+      "detail": "ENTERED year 2012 already named by Season 'e9'; from_year and to_year cleared"
+    },
+    {
+      "index": 7,
+      "action": "clear_redundant_season_year",
+      "detail": "ENTERED year 2016 already named by Season 'e10'; from_year and to_year cleared"
+    },
+    {
+      "index": 8,
+      "action": "clear_redundant_season_year",
+      "detail": "ENTERED year 2020 already named by Season 'e11'; from_year and to_year cleared"
+    },
+    {
+      "index": 9,
+      "action": "clear_redundant_season_year",
+      "detail": "ENTERED year 2021 already named by Season 'e12'; from_year and to_year cleared"
+    }
+  ],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Lewis Hamilton",
+        "entity_type": "Driver",
+        "description": "A Formula One driver who won the World Championship in 2008 and 2020."
+      },
+      {
+        "local_id": "e2",
+        "name": "Sebastian Vettel",
+        "entity_type": "Driver",
+        "description": "A Formula One driver who won the World Championship in 2012."
+      },
+      {
+        "local_id": "e3",
+        "name": "Nico Rosberg",
+        "entity_type": "Driver",
+        "description": "A Formula One driver who won the World Championship in 2016."
+      },
+      {
+        "local_id": "e4",
+        "name": "Max Verstappen",
+        "entity_type": "Driver",
+        "description": "A Formula One driver who won the World Championship in 2021."
+      },
+      {
+        "local_id": "e5",
+        "name": "McLaren",
+        "entity_type": "Team",
+        "description": "A Formula One team that won the Constructors' Championship in 2008."
+      },
+      {
+        "local_id": "e6",
+        "name": "Red Bull Racing",
+        "entity_type": "Team",
+        "description": "A Formula One team that won the Constructors' Championship in 2012 and 2021."
+      },
+      {
+        "local_id": "e7",
+        "name": "Mercedes-AMG Petronas Formula One Team",
+        "entity_type": "Team",
+        "description": "A Formula One team that won the Constructors' Championship in 2016 and 2020."
+      },
+      {
+        "local_id": "e8",
+        "name": "2008",
+        "entity_type": "Season",
+        "description": "The Formula One season in which Lewis Hamilton won the World Championship."
+      },
+      {
+        "local_id": "e9",
+        "name": "2012",
+        "entity_type": "Season",
+        "description": "The Formula One season in which Sebastian Vettel won the World Championship."
+      },
+      {
+        "local_id": "e10",
+        "name": "2016",
+        "entity_type": "Season",
+        "description": "The Formula One season in which Nico Rosberg won the World Championship."
+      },
+      {
+        "local_id": "e11",
+        "name": "2020",
+        "entity_type": "Season",
+        "description": "The Formula One season in which Lewis Hamilton won the World Championship."
+      },
+      {
+        "local_id": "e12",
+        "name": "2021",
+        "entity_type": "Season",
+        "description": "The Formula One season in which Max Verstappen won the World Championship."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e5",
+        "target_id": "e8",
+        "relationship_type": "ENTERED",
+        "description": "McLaren entered the 2008 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e6",
+        "target_id": "e9",
+        "relationship_type": "ENTERED",
+        "description": "Red Bull Racing entered the 2012 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e7",
+        "target_id": "e10",
+        "relationship_type": "ENTERED",
+        "description": "Mercedes entered the 2016 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e7",
+        "target_id": "e11",
+        "relationship_type": "ENTERED",
+        "description": "Mercedes entered the 2020 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e6",
+        "target_id": "e12",
+        "relationship_type": "ENTERED",
+        "description": "Red Bull Racing entered the 2021 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

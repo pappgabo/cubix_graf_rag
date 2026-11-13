@@ -1,0 +1,92 @@
+{
+  "chunk_id": "season-2021-formula-one-world-championship#72",
+  "doc_id": "season-2021-formula-one-world-championship",
+  "document_title": "2021 Formula One World Championship",
+  "section": null,
+  "page": 7,
+  "source": "https://en.wikipedia.org/wiki/2021_Formula_One_World_Championship",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "49c43f90fdee44ce0e4baa7085ddfa21599a1f7b05444b545af742f140d18d29",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "ACHIEVED does not allow Driver -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "ACHIEVED does not allow Driver -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "ACHIEVED does not allow Driver -> Driver"
+    },
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "ACHIEVED does not allow Driver -> Driver"
+    },
+    {
+      "element": "relationship",
+      "index": 5,
+      "reason": "ACHIEVED does not allow Driver -> Driver"
+    }
+  ],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Hamilton",
+        "entity_type": "Driver",
+        "description": "A driver who won the race."
+      },
+      {
+        "local_id": "e2",
+        "name": "Leclerc",
+        "entity_type": "Driver",
+        "description": "A driver who finished second in the Grand Prix."
+      },
+      {
+        "local_id": "e3",
+        "name": "Norris",
+        "entity_type": "Driver",
+        "description": "A driver who was overtaken by Hamilton."
+      },
+      {
+        "local_id": "e4",
+        "name": "Bottas",
+        "entity_type": "Driver",
+        "description": "A driver who was overtaken by Hamilton."
+      },
+      {
+        "local_id": "e5",
+        "name": "Verstappen",
+        "entity_type": "Driver",
+        "description": "A driver whose gap to Hamilton was reduced."
+      },
+      {
+        "local_id": "e6",
+        "name": "Hungarian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Grand Prix where Hamilton took pole position."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Hamilton overtook Leclerc in the late stages of the race.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

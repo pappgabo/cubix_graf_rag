@@ -1,0 +1,135 @@
+{
+  "chunk_id": "driver-sebastian-vettel#28",
+  "doc_id": "driver-sebastian-vettel",
+  "document_title": "Sebastian Vettel",
+  "section": "2014: Winless year and departure from Red Bull",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "32ac5b49a4c04408e772045c7562af042f9b6ff6adc33fa0442119615b386a69",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Sebastian Vettel",
+        "entity_type": "Driver",
+        "description": "A German racing driver who raced for Red Bull Racing and later joined Scuderia Ferrari."
+      },
+      {
+        "local_id": "e2",
+        "name": "Red Bull Racing",
+        "entity_type": "Team",
+        "description": "A Formula One team that Sebastian Vettel raced for before joining Ferrari."
+      },
+      {
+        "local_id": "e3",
+        "name": "Scuderia Ferrari",
+        "entity_type": "Team",
+        "description": "A Formula One team that Sebastian Vettel joined after leaving Red Bull Racing."
+      },
+      {
+        "local_id": "e4",
+        "name": "2014",
+        "entity_type": "Season",
+        "description": "The Formula One season during which Sebastian Vettel left Red Bull Racing."
+      },
+      {
+        "local_id": "e5",
+        "name": "Kimi Räikkönen",
+        "entity_type": "Driver",
+        "description": "A Finnish racing driver who partnered Sebastian Vettel at Scuderia Ferrari."
+      },
+      {
+        "local_id": "e6",
+        "name": "Daniil Kvyat",
+        "entity_type": "Driver",
+        "description": "A Russian racing driver who replaced Sebastian Vettel at Red Bull Racing."
+      },
+      {
+        "local_id": "e7",
+        "name": "Fiorano",
+        "entity_type": "Circuit",
+        "description": "A test track where Sebastian Vettel completed laps in the 2012 Ferrari car."
+      },
+      {
+        "local_id": "e8",
+        "name": "2012",
+        "entity_type": "Season",
+        "description": "The Formula One season during which Sebastian Vettel was rumored to have a pre-contract with Ferrari."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Sebastian Vettel raced for Red Bull Racing before leaving for Ferrari.",
+        "from_year": null,
+        "to_year": 2014,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e3",
+        "relationship_type": "DROVE_FOR",
+        "description": "Sebastian Vettel joined Scuderia Ferrari after leaving Red Bull Racing.",
+        "from_year": 2014,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e5",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Sebastian Vettel partnered with Kimi Räikkönen at Scuderia Ferrari.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e4",
+        "relationship_type": "ENTERED",
+        "description": "Red Bull Racing participated in the 2014 Formula One season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e4",
+        "relationship_type": "ENTERED",
+        "description": "Scuderia Ferrari participated in the 2014 Formula One season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 8,
+  "entities_accepted": 8,
+  "entities_rejected": 0,
+  "relationship_candidates": 8,
+  "relationships_accepted": 5,
+  "relationships_rejected": 3,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 5,
+      "reason": "RACED_IN does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 6,
+      "reason": "TEAMMATE_OF does not allow Driver -> Team"
+    },
+    {
+      "element": "relationship",
+      "index": 7,
+      "reason": "RACED_IN does not allow Circuit -> Season"
+    }
+  ],
+  "alignments": []
+}

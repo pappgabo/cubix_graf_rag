@@ -1,0 +1,194 @@
+{
+  "chunk_id": "season-2012-formula-one-world-championship#74",
+  "doc_id": "season-2012-formula-one-world-championship",
+  "document_title": "2012 Formula One World Championship",
+  "section": "Race summaries > Round 13 – Italy Autodromo Nazionale Monza",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "8977863bcd2d99b3685e41652c20a479a543f9a7bc4d8ccd3cac6173ea9083d4",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Fernando Alonso",
+        "entity_type": "Driver",
+        "description": "A driver for Ferrari who faced a qualifying issue."
+      },
+      {
+        "local_id": "e2",
+        "name": "Felipe Massa",
+        "entity_type": "Driver",
+        "description": "A driver for Ferrari who attempted to help Alonso with a slipstream."
+      },
+      {
+        "local_id": "e3",
+        "name": "Lewis Hamilton",
+        "entity_type": "Driver",
+        "description": "A driver who took pole position and won the race."
+      },
+      {
+        "local_id": "e4",
+        "name": "Sergio Pérez",
+        "entity_type": "Driver",
+        "description": "A driver who finished second and challenged Hamilton."
+      },
+      {
+        "local_id": "e5",
+        "name": "Scuderia Ferrari",
+        "entity_type": "Team",
+        "description": "The team for which Alonso and Massa drive."
+      },
+      {
+        "local_id": "e6",
+        "name": "McLaren",
+        "entity_type": "Team",
+        "description": "The team for which Hamilton and Button drive."
+      },
+      {
+        "local_id": "e7",
+        "name": "2012",
+        "entity_type": "Season",
+        "description": "The championship year of the race."
+      },
+      {
+        "local_id": "e8",
+        "name": "Italian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The race held at Monza."
+      },
+      {
+        "local_id": "e9",
+        "name": "Autodromo Nazionale Monza",
+        "entity_type": "Circuit",
+        "description": "The circuit where the Italian Grand Prix took place."
+      },
+      {
+        "local_id": "e10",
+        "name": "Jenson Button",
+        "entity_type": "Driver",
+        "description": "A driver for McLaren who faced a fuel pressure problem."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Lewis Hamilton at Italian Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Hamilton won the Italian Grand Prix."
+      },
+      {
+        "local_id": "rr2",
+        "name": "Sergio Pérez at Italian Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Pérez finished second in the Italian Grand Prix."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e8",
+        "target_id": "e7",
+        "relationship_type": "ROUND_OF",
+        "description": "The Italian Grand Prix is a round of the 2012 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e8",
+        "target_id": "e9",
+        "relationship_type": "HELD_AT",
+        "description": "The Italian Grand Prix was held at Autodromo Nazionale Monza.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Hamilton won the Italian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e8",
+        "relationship_type": "AT_RACE",
+        "description": "Hamilton won the Italian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "rr2",
+        "relationship_type": "ACHIEVED",
+        "description": "Pérez finished second in the Italian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr2",
+        "target_id": "e8",
+        "relationship_type": "AT_RACE",
+        "description": "Pérez finished second in the Italian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 10,
+  "entities_accepted": 12,
+  "entities_rejected": 0,
+  "relationship_candidates": 10,
+  "relationships_accepted": 6,
+  "relationships_rejected": 6,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "DROVE_FOR does not allow Team -> Driver"
+    },
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "DROVE_FOR does not allow Team -> Driver"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "DROVE_FOR does not allow Team -> Driver"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "DROVE_FOR does not allow Team -> Driver"
+    },
+    {
+      "element": "relationship",
+      "index": 10,
+      "reason": "FOR_TEAM does not allow Driver -> Team"
+    },
+    {
+      "element": "relationship",
+      "index": 11,
+      "reason": "FOR_TEAM does not allow Driver -> Team"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 6,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e8; description kept"
+    },
+    {
+      "index": 7,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr2 -AT_RACE-> e8; description kept"
+    }
+  ]
+}

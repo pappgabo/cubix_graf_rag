@@ -1,0 +1,155 @@
+{
+  "chunk_id": "driver-max-verstappen#71",
+  "doc_id": "driver-max-verstappen",
+  "document_title": "Max Verstappen",
+  "section": null,
+  "page": 14,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "5bd110f5221844e642d7ef6f207f065b23fe99f508f892477d1aaa890cf0651d",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Max Verstappen",
+        "entity_type": "Driver",
+        "description": "the first defending Formula One World Champion to simultaneously compete in Formula One and another racing series"
+      },
+      {
+        "local_id": "e2",
+        "name": "Keke Rosberg",
+        "entity_type": "Driver",
+        "description": "made a one-off appearance in the 1983 World Sportscar Championship"
+      },
+      {
+        "local_id": "e3",
+        "name": "Nürburgring Nordschleife",
+        "entity_type": "Circuit",
+        "description": "a racing venue where Keke Rosberg made a one-off appearance"
+      },
+      {
+        "local_id": "e4",
+        "name": "Lulham",
+        "entity_type": "Driver",
+        "description": "teammate of Max Verstappen who crossed the line to win the race"
+      },
+      {
+        "local_id": "e5",
+        "name": "2026",
+        "entity_type": "Season",
+        "description": "the year of Verstappen's participation at the 24 Hours of Nürburgring"
+      },
+      {
+        "local_id": "e6",
+        "name": "Nürburgring Langstrecken-Serie",
+        "entity_type": "Season",
+        "description": "the series in which Verstappen participated in 2026"
+      },
+      {
+        "local_id": "e7",
+        "name": "Mercedes-AMG GT3 Evo",
+        "entity_type": "Car",
+        "description": "the car driven by Verstappen in the Nürburgring Langstrecken-Serie"
+      },
+      {
+        "local_id": "e8",
+        "name": "Winward Racing",
+        "entity_type": "Team",
+        "description": "the team running the Mercedes-AMG GT3 Evo driven by Verstappen"
+      },
+      {
+        "local_id": "e9",
+        "name": "Christopher Haase",
+        "entity_type": "Driver",
+        "description": "fought for the lead with Verstappen during the race"
+      },
+      {
+        "local_id": "e10",
+        "name": "Daniel Juncadella",
+        "entity_type": "Driver",
+        "description": "part of the winning team with Verstappen"
+      },
+      {
+        "local_id": "e11",
+        "name": "Jules Gounon",
+        "entity_type": "Driver",
+        "description": "part of the winning team with Verstappen"
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e4",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Verstappen and Lulham were teammates",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e8",
+        "target_id": "e7",
+        "relationship_type": "FIELDED",
+        "description": "Winward Racing entered the Mercedes-AMG GT3 Evo",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e7",
+        "target_id": "e5",
+        "relationship_type": "RACED_IN",
+        "description": "the Mercedes-AMG GT3 Evo took part in the 2026 season",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e7",
+        "target_id": "e6",
+        "relationship_type": "RACED_IN",
+        "description": "the Mercedes-AMG GT3 Evo took part in the Nürburgring Langstrecken-Serie",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e9",
+        "target_id": "e1",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Christopher Haase fought for the lead with Verstappen",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e10",
+        "target_id": "e1",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Daniel Juncadella was part of the winning team with Verstappen",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e11",
+        "target_id": "e1",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Jules Gounon was part of the winning team with Verstappen",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 11,
+  "entities_accepted": 11,
+  "entities_rejected": 0,
+  "relationship_candidates": 7,
+  "relationships_accepted": 7,
+  "relationships_rejected": 0,
+  "rejections": [],
+  "alignments": []
+}

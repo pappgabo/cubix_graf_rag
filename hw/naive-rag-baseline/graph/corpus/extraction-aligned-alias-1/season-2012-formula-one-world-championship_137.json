@@ -1,0 +1,79 @@
+{
+  "chunk_id": "season-2012-formula-one-world-championship#137",
+  "doc_id": "season-2012-formula-one-world-championship",
+  "document_title": "2012 Formula One World Championship",
+  "section": "Race summaries > Round 10 – Germany Hockenheimring",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/2012_Formula_One_World_Championship",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "e4fad93792ff26872b765b6b5fc50c86bb15fb6cdaa1247daa0d598aedca9ab7",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "rejections": [],
+  "alignments": [
+    {
+      "index": 1,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e2; description kept"
+    }
+  ],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Lewis Hamilton",
+        "entity_type": "Driver",
+        "description": "Lewis Hamilton's one hundredth Grand Prix started with a disaster when he picked up a puncture on the third lap and spent most of the race at the tail end of the field before retiring on lap 56 with a suspension problem."
+      },
+      {
+        "local_id": "e2",
+        "name": "Germany Hockenheimring",
+        "entity_type": "GrandPrix",
+        "description": "Round 10 of the 2012 Formula One World Championship."
+      },
+      {
+        "local_id": "e3",
+        "name": "2012",
+        "entity_type": "Season",
+        "description": "2012 Formula One World Championship."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Lewis Hamilton at Germany Hockenheimring",
+        "entity_type": "RaceResult",
+        "description": "Lewis Hamilton recorded a result in the Germany Hockenheimring Grand Prix."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e2",
+        "target_id": "e3",
+        "relationship_type": "ROUND_OF",
+        "description": "Germany Hockenheimring is a round of the 2012 Formula One World Championship.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Lewis Hamilton recorded a result in the Germany Hockenheimring Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e2",
+        "relationship_type": "AT_RACE",
+        "description": "Lewis Hamilton recorded a result in the Germany Hockenheimring Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

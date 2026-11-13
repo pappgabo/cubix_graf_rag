@@ -1,0 +1,119 @@
+{
+  "chunk_id": "team-williams-racing#76",
+  "doc_id": "team-williams-racing",
+  "document_title": "Williams Racing",
+  "section": "Williams Racing > Cosworth engines (2006) > Williams Racing > 2006 season",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "97db06b7531d238829be5fe730b600f8645f720dcf12346b576c9c5f3225f339",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Williams Racing",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that entered cars."
+      },
+      {
+        "local_id": "e2",
+        "name": "Cosworth V8",
+        "entity_type": "PowerUnit",
+        "description": "An engine used by Williams Racing in the 2006 season."
+      },
+      {
+        "local_id": "e3",
+        "name": "2006",
+        "entity_type": "Season",
+        "description": "The Formula 1 championship year."
+      },
+      {
+        "local_id": "e4",
+        "name": "Nico Rosberg",
+        "entity_type": "Driver",
+        "description": "A driver who raced for Williams Racing in 2006."
+      },
+      {
+        "local_id": "e5",
+        "name": "Mark Webber",
+        "entity_type": "Driver",
+        "description": "A driver who stayed with Williams Racing in 2006."
+      },
+      {
+        "local_id": "e6",
+        "name": "Jenson Button",
+        "entity_type": "Driver",
+        "description": "A driver who had a contract with Williams but stayed with BAR in 2006."
+      },
+      {
+        "local_id": "e7",
+        "name": "Nick Heidfeld",
+        "entity_type": "Driver",
+        "description": "A driver who departed from Williams Racing for BMW Sauber in 2006."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e3",
+        "relationship_type": "ENTERED",
+        "description": "Williams Racing took part in the 2006 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e1",
+        "relationship_type": "DROVE_FOR",
+        "description": "Nico Rosberg raced for Williams Racing in 2006.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e1",
+        "relationship_type": "DROVE_FOR",
+        "description": "Mark Webber stayed with Williams Racing in 2006.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e6",
+        "target_id": "e1",
+        "relationship_type": "DROVE_FOR",
+        "description": "Jenson Button had a contract with Williams Racing but did not race for them in 2006.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e7",
+        "target_id": "e1",
+        "relationship_type": "DROVE_FOR",
+        "description": "Nick Heidfeld departed from Williams Racing for BMW Sauber in 2006.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 7,
+  "entities_accepted": 7,
+  "entities_rejected": 0,
+  "relationship_candidates": 6,
+  "relationships_accepted": 5,
+  "relationships_rejected": 1,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "FIELDED does not allow Team -> PowerUnit"
+    }
+  ],
+  "alignments": []
+}

@@ -1,0 +1,108 @@
+{
+  "chunk_id": "season-2012-formula-one-world-championship#53",
+  "doc_id": "season-2012-formula-one-world-championship",
+  "document_title": "2012 Formula One World Championship",
+  "section": "Race summaries > Round 6 – Monaco Circuit de Monaco",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "016c1ee7bff331bbc78b6f56861b746d3b52cde1b4cd051a99fbf43925cccab9",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Michael Schumacher",
+        "entity_type": "Driver",
+        "description": "Set the fastest time in qualifying but started sixth due to a penalty."
+      },
+      {
+        "local_id": "e2",
+        "name": "Christian Horner",
+        "entity_type": "Driver",
+        "description": "Team principal of Red Bull Racing."
+      },
+      {
+        "local_id": "e3",
+        "name": "Mark Webber",
+        "entity_type": "Driver",
+        "description": "Started from pole position in the race."
+      },
+      {
+        "local_id": "e4",
+        "name": "Nico Rosberg",
+        "entity_type": "Driver",
+        "description": "Established an early lead over him."
+      },
+      {
+        "local_id": "e5",
+        "name": "Jean-Éric Vergne",
+        "entity_type": "Driver",
+        "description": "Observed using a set of intermediate tyres late in the race."
+      },
+      {
+        "local_id": "e6",
+        "name": "Red Bull RB8",
+        "entity_type": "Car",
+        "description": "Car involved in the protests regarding parts introduced onto the floor."
+      },
+      {
+        "local_id": "e7",
+        "name": "2012 Formula One World Championship",
+        "entity_type": "Season",
+        "description": "The championship season in which the race took place."
+      },
+      {
+        "local_id": "e8",
+        "name": "Monaco Circuit de Monaco",
+        "entity_type": "GrandPrix",
+        "description": "The location of Round 6 of the 2012 Formula One World Championship."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e6",
+        "target_id": "e7",
+        "relationship_type": "RACED_IN",
+        "description": "Red Bull RB8 raced in the 2012 Formula One World Championship.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e8",
+        "target_id": "e7",
+        "relationship_type": "ROUND_OF",
+        "description": "Monaco Grand Prix is a round of the 2012 Formula One World Championship.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 8,
+  "entities_accepted": 8,
+  "entities_rejected": 0,
+  "relationship_candidates": 5,
+  "relationships_accepted": 2,
+  "relationships_rejected": 3,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "RACED_IN does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "RACED_IN does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "RACED_IN does not allow Driver -> Season"
+    }
+  ],
+  "alignments": []
+}

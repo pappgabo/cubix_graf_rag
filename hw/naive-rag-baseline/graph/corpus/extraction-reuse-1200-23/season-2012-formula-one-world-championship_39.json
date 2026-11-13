@@ -1,0 +1,173 @@
+{
+  "chunk_id": "season-2012-formula-one-world-championship#39",
+  "doc_id": "season-2012-formula-one-world-championship",
+  "document_title": "2012 Formula One World Championship",
+  "section": "Race summaries > Round 2 – Malaysia Sepang International Circuit",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "3961d19a0f0f992ea6d0d139e9885224455773902f047c17203944e2aa1438d6",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Lewis Hamilton",
+        "entity_type": "Driver",
+        "description": "A driver for McLaren who started the race from pole position."
+      },
+      {
+        "local_id": "e2",
+        "name": "Jenson Button",
+        "entity_type": "Driver",
+        "description": "A driver for McLaren who was involved in contact during the race."
+      },
+      {
+        "local_id": "e3",
+        "name": "Narain Karthikeyan",
+        "entity_type": "Driver",
+        "description": "A driver who made contact with Jenson Button during the race."
+      },
+      {
+        "local_id": "e4",
+        "name": "Fernando Alonso",
+        "entity_type": "Driver",
+        "description": "A driver who inherited the lead during the race."
+      },
+      {
+        "local_id": "e5",
+        "name": "Sergio Pérez",
+        "entity_type": "Driver",
+        "description": "A driver for Sauber who finished second in the race."
+      },
+      {
+        "local_id": "e6",
+        "name": "Daniel Ricciardo",
+        "entity_type": "Driver",
+        "description": "The first driver to pit for dry-weather tyres during the race."
+      },
+      {
+        "local_id": "e7",
+        "name": "McLaren",
+        "entity_type": "Team",
+        "description": "The team for which Lewis Hamilton and Jenson Button raced."
+      },
+      {
+        "local_id": "e8",
+        "name": "Sauber",
+        "entity_type": "Team",
+        "description": "The team for which Sergio Pérez raced."
+      },
+      {
+        "local_id": "e9",
+        "name": "2012",
+        "entity_type": "Season",
+        "description": "The championship year of the race."
+      },
+      {
+        "local_id": "e10",
+        "name": "Malaysia",
+        "entity_type": "GrandPrix",
+        "description": "The Grand Prix held at Sepang International Circuit."
+      },
+      {
+        "local_id": "e11",
+        "name": "Sepang International Circuit",
+        "entity_type": "Circuit",
+        "description": "The circuit where the Malaysia Grand Prix took place."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e7",
+        "relationship_type": "DROVE_FOR",
+        "description": "Lewis Hamilton drove for McLaren.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e7",
+        "relationship_type": "DROVE_FOR",
+        "description": "Jenson Button drove for McLaren.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e8",
+        "relationship_type": "DROVE_FOR",
+        "description": "Sergio Pérez drove for Sauber.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e10",
+        "target_id": "e9",
+        "relationship_type": "ROUND_OF",
+        "description": "The Malaysia Grand Prix is a round of the 2012 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e10",
+        "target_id": "e11",
+        "relationship_type": "HELD_AT",
+        "description": "The Malaysia Grand Prix was held at Sepang International Circuit.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 11,
+  "entities_accepted": 11,
+  "entities_rejected": 0,
+  "relationship_candidates": 12,
+  "relationships_accepted": 5,
+  "relationships_rejected": 7,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 5,
+      "reason": "RACED_IN does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 6,
+      "reason": "RACED_IN does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 7,
+      "reason": "RACED_IN does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 8,
+      "reason": "RACED_IN does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 9,
+      "reason": "RACED_IN does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 10,
+      "reason": "RACED_IN does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 11,
+      "reason": "RACED_IN does not allow Driver -> Season"
+    }
+  ],
+  "alignments": []
+}

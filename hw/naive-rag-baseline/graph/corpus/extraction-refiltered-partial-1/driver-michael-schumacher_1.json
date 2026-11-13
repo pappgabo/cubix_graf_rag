@@ -1,0 +1,98 @@
+{
+  "chunk_id": "driver-michael-schumacher#1",
+  "doc_id": "driver-michael-schumacher",
+  "document_title": "Michael Schumacher",
+  "section": null,
+  "page": 1,
+  "source": "https://en.wikipedia.org/wiki/Michael_Schumacher",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "84eda29156dedc4c6bae987394077e4c9056b5a533c6919fb4923fd14deabf57",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "WON is not temporal; from_year, to_year and role must be null"
+    },
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "WON does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "ACHIEVED does not allow Driver -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "RACED_IN does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 5,
+      "reason": "AWARDED_IN does not allow Season -> Season"
+    }
+  ],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Michael Schumacher",
+        "entity_type": "Driver",
+        "description": "Born in Hürth to a working-class family, Schumacher began competitive kart racing at age four in a pedal kart built from discarded parts."
+      },
+      {
+        "local_id": "e2",
+        "name": "European Championship",
+        "entity_type": "Title",
+        "description": "Schumacher's victory at the European Championship in 1987."
+      },
+      {
+        "local_id": "e3",
+        "name": "German Formula Three",
+        "entity_type": "Season",
+        "description": "Schumacher graduated to German Formula Three in 1989, where he finished third."
+      },
+      {
+        "local_id": "e4",
+        "name": "Macau Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "Schumacher won the Macau Grand Prix."
+      },
+      {
+        "local_id": "e5",
+        "name": "Formula König",
+        "entity_type": "Season",
+        "description": "Schumacher dominated Formula König in his debut season."
+      },
+      {
+        "local_id": "e6",
+        "name": "1987",
+        "entity_type": "Season",
+        "description": "The year Schumacher won the European Championship."
+      },
+      {
+        "local_id": "e7",
+        "name": "1990",
+        "entity_type": "Season",
+        "description": "The year Schumacher won the title in German Formula Three."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e4",
+        "target_id": "e7",
+        "relationship_type": "ROUND_OF",
+        "description": "The Macau Grand Prix is a round of the season in which Schumacher won the title in 1990.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

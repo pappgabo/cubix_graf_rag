@@ -1,0 +1,65 @@
+{
+  "chunk_id": "season-2016-formula-one-world-championship#22",
+  "doc_id": "season-2016-formula-one-world-championship",
+  "document_title": "2016 Formula One World Championship",
+  "section": "Other",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "9f7487245f0d452dd242ff698fbad563634a38846029d8efd5a8a44ec88633bc",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "2016 Formula One World Championship",
+        "entity_type": "Season",
+        "description": "The 2016 Formula One World Championship."
+      },
+      {
+        "local_id": "e2",
+        "name": "British Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula One race held in Britain."
+      },
+      {
+        "local_id": "e3",
+        "name": "Hungarian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula One race held in Hungary."
+      },
+      {
+        "local_id": "e4",
+        "name": "German Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula One race held in Germany."
+      }
+    ],
+    "relationships": []
+  },
+  "entity_candidates": 4,
+  "entities_accepted": 4,
+  "entities_rejected": 0,
+  "relationship_candidates": 3,
+  "relationships_accepted": 0,
+  "relationships_rejected": 3,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "ROUND_OF does not allow Season -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "ROUND_OF does not allow Season -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "ROUND_OF does not allow Season -> GrandPrix"
+    }
+  ],
+  "alignments": []
+}

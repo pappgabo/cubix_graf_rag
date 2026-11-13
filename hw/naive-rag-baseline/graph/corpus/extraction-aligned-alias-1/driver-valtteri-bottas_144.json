@@ -1,0 +1,85 @@
+{
+  "chunk_id": "driver-valtteri-bottas#144",
+  "doc_id": "driver-valtteri-bottas",
+  "document_title": "Valtteri Bottas",
+  "section": "Other ventures > Gravel cycling",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/Valtteri_Bottas",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "0fbdcab60e13e9d36a7263608a809163e76d7d5eb05f93b0a00a4bc41068ee91",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "ACHIEVED Driver -> GrandPrix has from_year=2024, to_year=None, role=None; the year or role cannot be stored on the reified result"
+    }
+  ],
+  "alignments": [],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Valtteri Bottas",
+        "entity_type": "Driver",
+        "description": "A Finnish racing driver who competes in Formula One."
+      },
+      {
+        "local_id": "e2",
+        "name": "FNLD GRVL",
+        "entity_type": "Team",
+        "description": "A gravel cycling event co-founded by Valtteri Bottas."
+      },
+      {
+        "local_id": "e3",
+        "name": "UCI Gravel World Championships",
+        "entity_type": "GrandPrix",
+        "description": "A gravel cycling championship event."
+      },
+      {
+        "local_id": "e4",
+        "name": "Flemish Brabant",
+        "entity_type": "Circuit",
+        "description": "The location of the UCI Gravel World Championships."
+      },
+      {
+        "local_id": "e5",
+        "name": "2024",
+        "entity_type": "Season",
+        "description": "The year in which Bottas raced at the UCI Gravel World Championships."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Valtteri Bottas is a co-founder and partner of FNLD GRVL.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e5",
+        "relationship_type": "ROUND_OF",
+        "description": "The UCI Gravel World Championships took place in 2024.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e4",
+        "relationship_type": "HELD_AT",
+        "description": "The UCI Gravel World Championships were held at Flemish Brabant.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

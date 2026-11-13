@@ -1,0 +1,134 @@
+{
+  "chunk_id": "driver-michael-schumacher#19",
+  "doc_id": "driver-michael-schumacher",
+  "document_title": "Michael Schumacher",
+  "section": null,
+  "page": 5,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "7fa956cfdb3a92b691c710fe2fc2a87faf8f083c3033390facc43a87560bae79",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Michael Schumacher",
+        "entity_type": "Driver",
+        "description": "A German racing driver who won multiple World Championships."
+      },
+      {
+        "local_id": "e2",
+        "name": "Scuderia Ferrari",
+        "entity_type": "Team",
+        "description": "An Italian Formula One team."
+      },
+      {
+        "local_id": "e3",
+        "name": "Benetton",
+        "entity_type": "Team",
+        "description": "A former Formula One team."
+      },
+      {
+        "local_id": "e4",
+        "name": "1995",
+        "entity_type": "Season",
+        "description": "The Formula One season in which Schumacher won the World Championship."
+      },
+      {
+        "local_id": "e5",
+        "name": "Ferrari F310",
+        "entity_type": "Car",
+        "description": "A car model fielded by Ferrari."
+      },
+      {
+        "local_id": "e6",
+        "name": "Ferrari 412 T2",
+        "entity_type": "Car",
+        "description": "A car model fielded by Ferrari in 1995."
+      },
+      {
+        "local_id": "e7",
+        "name": "Benetton B195",
+        "entity_type": "Car",
+        "description": "A car model fielded by Benetton with which Schumacher won the World Championship in 1995."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e3",
+        "relationship_type": "DROVE_FOR",
+        "description": "Schumacher drove for Benetton during his championship win in 1995.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Schumacher drove for Ferrari after his time with Benetton.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e4",
+        "relationship_type": "ENTERED",
+        "description": "Benetton entered the 1995 Formula One season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e5",
+        "relationship_type": "FIELDED",
+        "description": "Ferrari fielded the F310 car.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e6",
+        "relationship_type": "FIELDED",
+        "description": "Ferrari fielded the 412 T2 car in 1995.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e7",
+        "relationship_type": "FIELDED",
+        "description": "Benetton fielded the B195 car.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 7,
+  "entities_accepted": 7,
+  "entities_rejected": 0,
+  "relationship_candidates": 7,
+  "relationships_accepted": 6,
+  "relationships_rejected": 1,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "ENTERED is not temporal; from_year=1996, to_year=None, role=None cannot be stored without dropping them"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 3,
+      "action": "clear_redundant_season_year",
+      "detail": "ENTERED year 1995 already named by Season 'e4'; from_year and to_year cleared"
+    }
+  ]
+}

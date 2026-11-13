@@ -1,0 +1,170 @@
+{
+  "chunk_id": "season-2021-formula-one-world-championship#88",
+  "doc_id": "season-2021-formula-one-world-championship",
+  "document_title": "2021 Formula One World Championship",
+  "section": null,
+  "page": 8,
+  "source": "https://en.wikipedia.org/wiki/2021_Formula_One_World_Championship",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "cf1987b2d5a75d80325e86a0776166acc115e8274174ba3719f4502a3efd34cf",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "RACED_IN does not allow Driver -> Season"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 2,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e6; description kept"
+    },
+    {
+      "index": 3,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr2 -AT_RACE-> e6; description kept"
+    },
+    {
+      "index": 4,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr3 -AT_RACE-> e6; description kept"
+    }
+  ],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Verstappen",
+        "entity_type": "Driver",
+        "description": "Reduced lead in the Driver's Championship to eight points.\nCrashed at the last corner of his final qualifying lap in the Saudi Arabian Grand Prix."
+      },
+      {
+        "local_id": "e2",
+        "name": "Mercedes-AMG Petronas Formula One Team",
+        "entity_type": "Team",
+        "description": "Lead in the Constructors' Championship reduced to five points."
+      },
+      {
+        "local_id": "e3",
+        "name": "Lewis Hamilton",
+        "entity_type": "Driver",
+        "description": "Took pole position in the inaugural Saudi Arabian Grand Prix."
+      },
+      {
+        "local_id": "e4",
+        "name": "Bottas",
+        "entity_type": "Driver",
+        "description": "Qualified ahead of Verstappen in the Saudi Arabian Grand Prix."
+      },
+      {
+        "local_id": "e6",
+        "name": "Saudi Arabian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "Inaugural race with several incidents and retirements."
+      },
+      {
+        "local_id": "e7",
+        "name": "2021",
+        "entity_type": "Season",
+        "description": "The season of the Formula One World Championship."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Hamilton at Saudi Arabian Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Hamilton achieved pole position in the Saudi Arabian Grand Prix."
+      },
+      {
+        "local_id": "rr2",
+        "name": "Bottas at Saudi Arabian Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Bottas achieved a qualifying position ahead of Verstappen in the Saudi Arabian Grand Prix."
+      },
+      {
+        "local_id": "rr3",
+        "name": "Verstappen at Saudi Arabian Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Verstappen crashed at the last corner of his final qualifying lap in the Saudi Arabian Grand Prix."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e2",
+        "target_id": "e7",
+        "relationship_type": "ENTERED",
+        "description": "Mercedes participated in the 2021 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Hamilton achieved pole position in the Saudi Arabian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e6",
+        "relationship_type": "AT_RACE",
+        "description": "Hamilton achieved pole position in the Saudi Arabian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "rr2",
+        "relationship_type": "ACHIEVED",
+        "description": "Bottas achieved a qualifying position ahead of Verstappen in the Saudi Arabian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr2",
+        "target_id": "e6",
+        "relationship_type": "AT_RACE",
+        "description": "Bottas achieved a qualifying position ahead of Verstappen in the Saudi Arabian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr3",
+        "relationship_type": "ACHIEVED",
+        "description": "Verstappen crashed at the last corner of his final qualifying lap in the Saudi Arabian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr3",
+        "target_id": "e6",
+        "relationship_type": "AT_RACE",
+        "description": "Verstappen crashed at the last corner of his final qualifying lap in the Saudi Arabian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e6",
+        "target_id": "e7",
+        "relationship_type": "ROUND_OF",
+        "description": "The Saudi Arabian Grand Prix is a round of the 2021 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

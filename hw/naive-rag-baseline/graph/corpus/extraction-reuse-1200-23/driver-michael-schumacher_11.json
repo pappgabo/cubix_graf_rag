@@ -1,0 +1,137 @@
+{
+  "chunk_id": "driver-michael-schumacher#11",
+  "doc_id": "driver-michael-schumacher",
+  "document_title": "Michael Schumacher",
+  "section": null,
+  "page": 3,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "b5251279260971b5acb7ad4598686acf8b289d1c95c6cb4502e440ff2c669bee",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Michael Schumacher",
+        "entity_type": "Driver",
+        "description": "A Formula One driver who raced for Benetton and achieved notable success."
+      },
+      {
+        "local_id": "e2",
+        "name": "Benetton",
+        "entity_type": "Team",
+        "description": "A Formula One team that Michael Schumacher raced for."
+      },
+      {
+        "local_id": "e3",
+        "name": "1992",
+        "entity_type": "Season",
+        "description": "A Formula One championship season."
+      },
+      {
+        "local_id": "e4",
+        "name": "Portuguese Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula One race where Schumacher won in 1993."
+      },
+      {
+        "local_id": "e5",
+        "name": "Williams FW15C",
+        "entity_type": "Car",
+        "description": "A car model used by the Williams team during the 1993 season."
+      },
+      {
+        "local_id": "e6",
+        "name": "Ayrton Senna",
+        "entity_type": "Driver",
+        "description": "A Brazilian Formula One driver considered a major competitor by Schumacher."
+      },
+      {
+        "local_id": "e7",
+        "name": "Patrese",
+        "entity_type": "Driver",
+        "description": "An Italian Formula One driver who was a runner-up in the 1992 championship."
+      },
+      {
+        "local_id": "e8",
+        "name": "Damon Hill",
+        "entity_type": "Driver",
+        "description": "A British Formula One driver who raced for Williams."
+      },
+      {
+        "local_id": "e9",
+        "name": "Alain Prost",
+        "entity_type": "Driver",
+        "description": "A French Formula One driver who raced for Williams."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Michael Schumacher raced for Benetton.",
+        "from_year": 1992,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e3",
+        "relationship_type": "ROUND_OF",
+        "description": "The Portuguese Grand Prix is a round of the 1992 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e6",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Michael Schumacher was teammates with Ayrton Senna.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e7",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Michael Schumacher was teammates with Patrese.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 9,
+  "entities_accepted": 9,
+  "entities_rejected": 0,
+  "relationship_candidates": 8,
+  "relationships_accepted": 4,
+  "relationships_rejected": 4,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "WON does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "FOR_TEAM does not allow GrandPrix -> Team"
+    },
+    {
+      "element": "relationship",
+      "index": 6,
+      "reason": "TEAMMATE_OF does not allow Driver -> Team"
+    },
+    {
+      "element": "relationship",
+      "index": 7,
+      "reason": "TEAMMATE_OF does not allow Driver -> Team"
+    }
+  ],
+  "alignments": []
+}

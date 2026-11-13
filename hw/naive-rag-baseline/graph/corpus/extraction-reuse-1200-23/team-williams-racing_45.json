@@ -1,0 +1,77 @@
+{
+  "chunk_id": "team-williams-racing#45",
+  "doc_id": "team-williams-racing",
+  "document_title": "Williams Racing",
+  "section": "Williams Racing > 1994 season",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "b144b1d971a75cb29d996619d14dc0e0d713f63c5c9e4235ea046e80996c1c08",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Nigel Mansell",
+        "entity_type": "Driver",
+        "description": "A driver who returned to F1 in 1994 after winning the CART championship in 1993."
+      },
+      {
+        "local_id": "e2",
+        "name": "Williams Racing",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that Mansell returned to for a three-race appearance deal."
+      },
+      {
+        "local_id": "e3",
+        "name": "1994",
+        "entity_type": "Season",
+        "description": "The Formula 1 season during which Mansell returned to Williams."
+      },
+      {
+        "local_id": "e4",
+        "name": "French Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A race that Mansell ran in a one-off appearance."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Mansell returned to Williams for a three-race appearance deal after the 1994 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e3",
+        "relationship_type": "ROUND_OF",
+        "description": "The French Grand Prix is a round of the 1994 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e3",
+        "relationship_type": "ENTERED",
+        "description": "Williams Racing took part in the 1994 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 4,
+  "entities_accepted": 4,
+  "entities_rejected": 0,
+  "relationship_candidates": 3,
+  "relationships_accepted": 3,
+  "relationships_rejected": 0,
+  "rejections": [],
+  "alignments": []
+}

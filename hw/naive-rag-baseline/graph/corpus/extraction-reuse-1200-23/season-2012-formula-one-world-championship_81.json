@@ -1,0 +1,127 @@
+{
+  "chunk_id": "season-2012-formula-one-world-championship#81",
+  "doc_id": "season-2012-formula-one-world-championship",
+  "document_title": "2012 Formula One World Championship",
+  "section": "Race summaries > Round 15 – Japan Suzuka International Racing Course",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "4efcf72cf2d10c9d81700ef0c461da84989bd31987de18bf0fc0c4d2e71f3ab9",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Fernando Alonso",
+        "entity_type": "Driver",
+        "description": "Victim of a dramatic first corner clash, spinning out when he made contact with Kimi Räikkönen."
+      },
+      {
+        "local_id": "e2",
+        "name": "Kimi Räikkönen",
+        "entity_type": "Driver",
+        "description": "Involved in a first corner clash with Fernando Alonso."
+      },
+      {
+        "local_id": "e3",
+        "name": "Mark Webber",
+        "entity_type": "Driver",
+        "description": "Caught up in the opening lap melee when hit by Romain Grosjean."
+      },
+      {
+        "local_id": "e4",
+        "name": "Romain Grosjean",
+        "entity_type": "Driver",
+        "description": "Hit Mark Webber in the opening lap and received a ten-second stop-go penalty."
+      },
+      {
+        "local_id": "e5",
+        "name": "Bruno Senna",
+        "entity_type": "Driver",
+        "description": "Hit Nico Rosberg while trying to avoid Grosjean and Webber, earning a drive-through penalty."
+      },
+      {
+        "local_id": "e6",
+        "name": "Nico Rosberg",
+        "entity_type": "Driver",
+        "description": "Retired from the race after being hit by Bruno Senna."
+      },
+      {
+        "local_id": "e7",
+        "name": "Sergio Pérez",
+        "entity_type": "Driver",
+        "description": "Retired early after sliding off at the hairpin."
+      },
+      {
+        "local_id": "e8",
+        "name": "Lewis Hamilton",
+        "entity_type": "Driver",
+        "description": "Struggling during the race when Sergio Pérez slid off trying to pass him."
+      },
+      {
+        "local_id": "e9",
+        "name": "Sebastian Vettel",
+        "entity_type": "Driver",
+        "description": "Won the race from pole position, leading every lap and setting the fastest lap time."
+      },
+      {
+        "local_id": "e10",
+        "name": "2012 Formula One World Championship",
+        "entity_type": "Season",
+        "description": "The championship season in which the race took place."
+      },
+      {
+        "local_id": "e11",
+        "name": "Japan Suzuka International Racing Course",
+        "entity_type": "Circuit",
+        "description": "The circuit where the race was held."
+      },
+      {
+        "local_id": "e12",
+        "name": "Grand Chelem",
+        "entity_type": "Title",
+        "description": "Achieved by Sebastian Vettel for winning the race from pole position, leading every lap, and setting the fastest lap."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e9",
+        "target_id": "e12",
+        "relationship_type": "WON",
+        "description": "Sebastian Vettel won the race achieving a Grand Chelem.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e12",
+        "target_id": "e10",
+        "relationship_type": "AWARDED_IN",
+        "description": "The Grand Chelem title belongs to the 2012 Formula One World Championship season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 12,
+  "entities_accepted": 12,
+  "entities_rejected": 0,
+  "relationship_candidates": 4,
+  "relationships_accepted": 2,
+  "relationships_rejected": 2,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "HELD_AT does not allow Title -> Circuit"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "ROUND_OF does not allow Season -> Title"
+    }
+  ],
+  "alignments": []
+}

@@ -1,0 +1,79 @@
+{
+  "chunk_id": "season-2021-formula-one-world-championship#87",
+  "doc_id": "season-2021-formula-one-world-championship",
+  "document_title": "2021 Formula One World Championship",
+  "section": null,
+  "page": 8,
+  "source": "https://en.wikipedia.org/wiki/2021_Formula_One_World_Championship",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "2aa55638f9af96278b57127b20fe925cd7a0356f0248fc3b79049b61f231f276",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "WON does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "AWARDED_IN does not allow GrandPrix -> Season"
+    }
+  ],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Hamilton",
+        "entity_type": "Driver",
+        "description": "Took the win, leading every lap of the race."
+      },
+      {
+        "local_id": "e2",
+        "name": "Verstappen",
+        "entity_type": "Driver",
+        "description": "Forced to start from seventh, recovered to second place but was unable to threaten Hamilton's race lead."
+      },
+      {
+        "local_id": "e3",
+        "name": "Alonso",
+        "entity_type": "Driver",
+        "description": "Finished third, using a one-stop strategy; it was his first podium since the 2014 Hungarian Grand Prix."
+      },
+      {
+        "local_id": "e4",
+        "name": "Peréz",
+        "entity_type": "Driver",
+        "description": "Finished fourth, less than three seconds behind Alonso."
+      },
+      {
+        "local_id": "e5",
+        "name": "Bottas",
+        "entity_type": "Driver",
+        "description": "Retired from the race."
+      },
+      {
+        "local_id": "e6",
+        "name": "Latifi",
+        "entity_type": "Driver",
+        "description": "Retired from the race."
+      },
+      {
+        "local_id": "e7",
+        "name": "2021",
+        "entity_type": "Season",
+        "description": "The championship year."
+      },
+      {
+        "local_id": "e8",
+        "name": "Hungarian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "Alonso's first podium since this race."
+      }
+    ],
+    "relationships": []
+  }
+}

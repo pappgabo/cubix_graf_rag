@@ -1,0 +1,92 @@
+{
+  "chunk_id": "team-scuderia-ferrari#22",
+  "doc_id": "team-scuderia-ferrari",
+  "document_title": "Scuderia Ferrari",
+  "section": null,
+  "page": 5,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "c4d5ab9862a3630a7ac4352640fc07a5c3b8baf6d8193183d7be5d316747316d",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Scuderia Ferrari",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that has competed in various seasons."
+      },
+      {
+        "local_id": "e2",
+        "name": "1964",
+        "entity_type": "Season",
+        "description": "A championship year in which Ferrari prevailed."
+      },
+      {
+        "local_id": "e3",
+        "name": "1965",
+        "entity_type": "Season",
+        "description": "A championship year in which Ferrari prevailed."
+      },
+      {
+        "local_id": "e4",
+        "name": "1966",
+        "entity_type": "Season",
+        "description": "A championship year in which Ferrari conceded victory to Ford."
+      },
+      {
+        "local_id": "e5",
+        "name": "1967",
+        "entity_type": "Season",
+        "description": "The last year in which Ford and Ferrari battled for the championship."
+      },
+      {
+        "local_id": "e6",
+        "name": "24 Hours of Le Mans",
+        "entity_type": "GrandPrix",
+        "description": "A prestigious endurance race."
+      }
+    ],
+    "relationships": []
+  },
+  "entity_candidates": 6,
+  "entities_accepted": 6,
+  "entities_rejected": 0,
+  "relationship_candidates": 6,
+  "relationships_accepted": 0,
+  "relationships_rejected": 6,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "WON does not allow Team -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "WON does not allow Team -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "WON does not allow Team -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "WON does not allow Team -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "ACHIEVED does not allow Team -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 5,
+      "reason": "AT_RACE does not allow GrandPrix -> Season"
+    }
+  ],
+  "alignments": []
+}

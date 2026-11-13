@@ -1,0 +1,211 @@
+{
+  "chunk_id": "driver-fernando-alonso#38",
+  "doc_id": "driver-fernando-alonso",
+  "document_title": "Fernando Alonso",
+  "section": "WeatherTech SportsCar Championship (2018–2019)",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "a73bb6b2cfca48a93ee59b607c16cdea14ea093f6f138d1b59dd7a71dd3e3db7",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Fernando Alonso",
+        "entity_type": "Driver",
+        "description": "A Formula One driver."
+      },
+      {
+        "local_id": "e2",
+        "name": "United Autosports",
+        "entity_type": "Team",
+        "description": "A racing team that entered cars."
+      },
+      {
+        "local_id": "e3",
+        "name": "Ligier JS P217",
+        "entity_type": "Car",
+        "description": "A chassis model entered by United Autosports."
+      },
+      {
+        "local_id": "e4",
+        "name": "Wayne Taylor Racing",
+        "entity_type": "Team",
+        "description": "A racing team that entered cars."
+      },
+      {
+        "local_id": "e5",
+        "name": "Cadillac DPi-V.R",
+        "entity_type": "Car",
+        "description": "A chassis model shared by Alonso."
+      },
+      {
+        "local_id": "e6",
+        "name": "2018",
+        "entity_type": "Season",
+        "description": "The season of the 2018 24 Hours of Daytona."
+      },
+      {
+        "local_id": "e7",
+        "name": "2019",
+        "entity_type": "Season",
+        "description": "The season of the 2019 24 Hours of Daytona."
+      },
+      {
+        "local_id": "e8",
+        "name": "24 Hours of Daytona",
+        "entity_type": "GrandPrix",
+        "description": "A race event."
+      },
+      {
+        "local_id": "e9",
+        "name": "24 Hours of Le Mans",
+        "entity_type": "GrandPrix",
+        "description": "A race event."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Fernando Alonso at 24 Hours of Daytona",
+        "entity_type": "RaceResult",
+        "description": "Alonso recorded a result in the 24 Hours of Daytona."
+      },
+      {
+        "local_id": "rr2",
+        "name": "Fernando Alonso at 24 Hours of Le Mans",
+        "entity_type": "RaceResult",
+        "description": "Alonso prepared for the 24 Hours of Le Mans."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Alonso drove for United Autosports.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e3",
+        "relationship_type": "FIELDED",
+        "description": "United Autosports entered the Ligier JS P217.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e4",
+        "relationship_type": "DROVE_FOR",
+        "description": "Alonso drove for Wayne Taylor Racing.",
+        "from_year": 2019,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e5",
+        "relationship_type": "FIELDED",
+        "description": "Wayne Taylor Racing entered the Cadillac DPi-V.R.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e6",
+        "relationship_type": "RACED_IN",
+        "description": "Ligier JS P217 raced in the 2018 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e7",
+        "relationship_type": "RACED_IN",
+        "description": "Cadillac DPi-V.R raced in the 2019 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e8",
+        "target_id": "e6",
+        "relationship_type": "ROUND_OF",
+        "description": "24 Hours of Daytona is a round of the 2018 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e8",
+        "target_id": "e7",
+        "relationship_type": "ROUND_OF",
+        "description": "24 Hours of Daytona is a round of the 2019 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Alonso recorded a result in the 24 Hours of Daytona.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e8",
+        "relationship_type": "AT_RACE",
+        "description": "Alonso recorded a result in the 24 Hours of Daytona.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr2",
+        "relationship_type": "ACHIEVED",
+        "description": "Alonso prepared for the 24 Hours of Le Mans.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr2",
+        "target_id": "e9",
+        "relationship_type": "AT_RACE",
+        "description": "Alonso prepared for the 24 Hours of Le Mans.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 9,
+  "entities_accepted": 11,
+  "entities_rejected": 0,
+  "relationship_candidates": 10,
+  "relationships_accepted": 12,
+  "relationships_rejected": 0,
+  "rejections": [],
+  "alignments": [
+    {
+      "index": 8,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e8; description kept"
+    },
+    {
+      "index": 9,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr2 -AT_RACE-> e9; description kept"
+    }
+  ]
+}

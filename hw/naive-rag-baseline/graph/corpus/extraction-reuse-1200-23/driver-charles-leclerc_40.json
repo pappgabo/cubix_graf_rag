@@ -1,0 +1,131 @@
+{
+  "chunk_id": "driver-charles-leclerc#40",
+  "doc_id": "driver-charles-leclerc",
+  "document_title": "Charles Leclerc",
+  "section": "Charles Leclerc > 2022: Curtailed title battle vs. Verstappen",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "7e3b7150983e96284ed9a7a0f77855eaddb5c6702db4fc54d9e1827e8eea64dc",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Charles Leclerc",
+        "entity_type": "Driver",
+        "description": "Finished sixth and fourth at the Mexico City and São Paulo Grands Prix, clinched second in the World Drivers' Championship with 308 points in 2022."
+      },
+      {
+        "local_id": "e2",
+        "name": "Scuderia Ferrari",
+        "entity_type": "Team",
+        "description": "Leclerc's team during the 2022 season."
+      },
+      {
+        "local_id": "e3",
+        "name": "2022",
+        "entity_type": "Season",
+        "description": "The championship year in which Leclerc finished second in the World Drivers' Championship."
+      },
+      {
+        "local_id": "e4",
+        "name": "Mexico City Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "One of the races where Leclerc finished sixth."
+      },
+      {
+        "local_id": "e5",
+        "name": "São Paulo Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "One of the races where Leclerc finished fourth."
+      },
+      {
+        "local_id": "e6",
+        "name": "Abu Dhabi Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The final round of the championship where Leclerc qualified third and finished second."
+      },
+      {
+        "local_id": "e7",
+        "name": "World Drivers' Championship",
+        "entity_type": "Title",
+        "description": "The championship title Leclerc finished second in during the 2022 season."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Leclerc drove for Ferrari in the 2022 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e3",
+        "relationship_type": "ENTERED",
+        "description": "Ferrari entered the 2022 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e3",
+        "relationship_type": "ROUND_OF",
+        "description": "The Mexico City Grand Prix was a round of the 2022 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e3",
+        "relationship_type": "ROUND_OF",
+        "description": "The São Paulo Grand Prix was a round of the 2022 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e6",
+        "target_id": "e3",
+        "relationship_type": "ROUND_OF",
+        "description": "The Abu Dhabi Grand Prix was a round of the 2022 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e7",
+        "relationship_type": "WON",
+        "description": "Leclerc finished second in the World Drivers' Championship title in 2022.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e7",
+        "target_id": "e3",
+        "relationship_type": "AWARDED_IN",
+        "description": "The World Drivers' Championship title was awarded in the 2022 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 7,
+  "entities_accepted": 7,
+  "entities_rejected": 0,
+  "relationship_candidates": 7,
+  "relationships_accepted": 7,
+  "relationships_rejected": 0,
+  "rejections": [],
+  "alignments": []
+}

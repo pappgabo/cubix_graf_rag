@@ -1,0 +1,65 @@
+{
+  "chunk_id": "driver-charles-leclerc#69",
+  "doc_id": "driver-charles-leclerc",
+  "document_title": "Charles Leclerc",
+  "section": "Charles Leclerc > Orders and special awards",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "a20ca6e223776eb5b14f6ca41ef6ffe6d13499bef2385eeb13e2e40d2317bf9c",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Charles Leclerc",
+        "entity_type": "Driver",
+        "description": "A Formula One driver from Monaco."
+      },
+      {
+        "local_id": "e2",
+        "name": "Monaco",
+        "entity_type": "Circuit",
+        "description": "The racing venue located in Monaco."
+      },
+      {
+        "local_id": "e3",
+        "name": "Medal of Honour",
+        "entity_type": "Title",
+        "description": "An award received by Charles Leclerc in 2020."
+      },
+      {
+        "local_id": "e4",
+        "name": "2020",
+        "entity_type": "Season",
+        "description": "The championship year in which Charles Leclerc received the Medal of Honour."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e3",
+        "target_id": "e4",
+        "relationship_type": "AWARDED_IN",
+        "description": "The Medal of Honour was awarded in the 2020 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 4,
+  "entities_accepted": 4,
+  "entities_rejected": 0,
+  "relationship_candidates": 1,
+  "relationships_accepted": 1,
+  "relationships_rejected": 0,
+  "rejections": [],
+  "alignments": [
+    {
+      "index": 0,
+      "action": "clear_redundant_season_year",
+      "detail": "AWARDED_IN year 2020 already named by Season 'e4'; from_year and to_year cleared"
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "chunk_id": "team-renault-in-formula-one#41",
+  "doc_id": "team-renault-in-formula-one",
+  "document_title": "Renault in Formula One",
+  "section": "Constructor > Renault F1 Team and Lotus Renault GP (2002–2011): The rise and fall of the first Enstone era > Lotus Renault GP: Renault steps back (2011)",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "bf0f6ce3c8c8198c8e1ef6b263b09bbe68a411457a9a9116c2dea626b7ca92d8",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Robert Kubica",
+        "entity_type": "Driver",
+        "description": "A driver who was severely injured in an accident during a rally in Italy."
+      },
+      {
+        "local_id": "e2",
+        "name": "Nick Heidfeld",
+        "entity_type": "Driver",
+        "description": "A driver signed as Robert Kubica's replacement."
+      },
+      {
+        "local_id": "e3",
+        "name": "Lotus Renault GP",
+        "entity_type": "Team",
+        "description": "The team that Robert Kubica and Nick Heidfeld drove for in 2011."
+      },
+      {
+        "local_id": "e4",
+        "name": "2011",
+        "entity_type": "Season",
+        "description": "The Formula One season during which Robert Kubica was injured."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e3",
+        "relationship_type": "DROVE_FOR",
+        "description": "Robert Kubica was signed with Lotus Renault GP for 2011.",
+        "from_year": 2011,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e3",
+        "relationship_type": "DROVE_FOR",
+        "description": "Nick Heidfeld was signed as a replacement driver for Lotus Renault GP.",
+        "from_year": 2011,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e4",
+        "relationship_type": "ENTERED",
+        "description": "Lotus Renault GP took part in the 2011 Formula One season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 4,
+  "entities_accepted": 4,
+  "entities_rejected": 0,
+  "relationship_candidates": 3,
+  "relationships_accepted": 3,
+  "relationships_rejected": 0,
+  "rejections": [],
+  "alignments": [
+    {
+      "index": 2,
+      "action": "clear_redundant_season_year",
+      "detail": "ENTERED year 2011 already named by Season 'e4'; from_year and to_year cleared"
+    }
+  ]
+}

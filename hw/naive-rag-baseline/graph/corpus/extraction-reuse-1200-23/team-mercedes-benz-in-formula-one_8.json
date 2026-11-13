@@ -1,0 +1,71 @@
+{
+  "chunk_id": "team-mercedes-benz-in-formula-one#8",
+  "doc_id": "team-mercedes-benz-in-formula-one",
+  "document_title": "Mercedes-Benz in Formula One",
+  "section": "Mercedes-Benz in Formula One > Mercedes-AMG Petronas Formula One Team (2010–present)",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "2ddce1f2a54227614335384a7f174a618a384e0f1ffa0197e309813e4b25a373",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Mercedes-AMG Petronas Formula One Team",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that competes in the championship."
+      },
+      {
+        "local_id": "e2",
+        "name": "Rubens Barrichello",
+        "entity_type": "Driver",
+        "description": "A former Formula 1 driver who raced for Ferrari."
+      },
+      {
+        "local_id": "e3",
+        "name": "2010",
+        "entity_type": "Season",
+        "description": "A Formula 1 championship season."
+      },
+      {
+        "local_id": "e4",
+        "name": "Constructors' Championship",
+        "entity_type": "Title",
+        "description": "The championship title awarded to the best performing team in a season."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e3",
+        "relationship_type": "ENTERED",
+        "description": "Mercedes-AMG Petronas Formula One Team took part in the 2010 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 4,
+  "entities_accepted": 4,
+  "entities_rejected": 0,
+  "relationship_candidates": 2,
+  "relationships_accepted": 1,
+  "relationships_rejected": 1,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "ACHIEVED does not allow Team -> Title"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 0,
+      "action": "clear_redundant_season_year",
+      "detail": "ENTERED year 2010 already named by Season 'e3'; from_year and to_year cleared"
+    }
+  ]
+}

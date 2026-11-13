@@ -1,0 +1,122 @@
+{
+  "chunk_id": "season-2012-formula-one-world-championship#13",
+  "doc_id": "season-2012-formula-one-world-championship",
+  "document_title": "2012 Formula One World Championship",
+  "section": "Teams and drivers > Team changes",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/2012_Formula_One_World_Championship",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "a996e29dbb76098c37903b0df5b1bad697d4e71505196d4ba4ab6a3ee8722bd7",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "POWERED_BY does not allow Team -> PowerUnit"
+    },
+    {
+      "element": "relationship",
+      "index": 5,
+      "reason": "FIELDED does not allow PowerUnit -> Season"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 1,
+      "action": "clear_redundant_season_year",
+      "detail": "ENTERED year 2012 already named by Season 'e3'; from_year and to_year cleared"
+    },
+    {
+      "index": 2,
+      "action": "clear_redundant_season_year",
+      "detail": "ENTERED year 2013 already named by Season 'e4'; from_year and to_year cleared"
+    }
+  ],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Williams",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that announced they would be using Renault engines for the 2012 and 2013 seasons."
+      },
+      {
+        "local_id": "e2",
+        "name": "Renault",
+        "entity_type": "PowerUnit",
+        "description": "An engine supplier that provided engines to Williams."
+      },
+      {
+        "local_id": "e3",
+        "name": "2012",
+        "entity_type": "Season",
+        "description": "A championship year in which Williams announced the use of Renault engines."
+      },
+      {
+        "local_id": "e4",
+        "name": "2013",
+        "entity_type": "Season",
+        "description": "A championship year in which Williams announced the use of Renault engines."
+      },
+      {
+        "local_id": "e5",
+        "name": "1989-1997",
+        "entity_type": "Season",
+        "description": "The period during which Renault supplied engines to Williams."
+      },
+      {
+        "local_id": "e6",
+        "name": "World Drivers' Championships",
+        "entity_type": "Title",
+        "description": "A championship title won by Williams during the period Renault supplied engines."
+      },
+      {
+        "local_id": "e7",
+        "name": "World Constructors' Championships",
+        "entity_type": "Title",
+        "description": "A championship title won by Williams during the period Renault supplied engines."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e3",
+        "relationship_type": "ENTERED",
+        "description": "Williams entered the 2012 season using Renault engines.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e4",
+        "relationship_type": "ENTERED",
+        "description": "Williams entered the 2013 season using Renault engines.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e6",
+        "relationship_type": "WON",
+        "description": "Williams won World Drivers' Championships during the period Renault supplied engines.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e7",
+        "relationship_type": "WON",
+        "description": "Williams won World Constructors' Championships during the period Renault supplied engines.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

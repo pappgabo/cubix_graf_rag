@@ -1,0 +1,70 @@
+{
+  "chunk_id": "driver-lewis-hamilton#34",
+  "doc_id": "driver-lewis-hamilton",
+  "document_title": "Lewis Hamilton",
+  "section": null,
+  "page": 7,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "9b31c372ac1138b37268a2c95eb9b9e89957b54aaf08439a5406fb7a27eb78e6",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Lewis Hamilton",
+        "entity_type": "Driver",
+        "description": "A prominent Formula One driver known for his performances and influence in the sport."
+      },
+      {
+        "local_id": "e2",
+        "name": "Valtteri Bottas",
+        "entity_type": "Driver",
+        "description": "Hamilton's team-mate who struggled in a race."
+      },
+      {
+        "local_id": "e3",
+        "name": "Ayrton Senna",
+        "entity_type": "Driver",
+        "description": "A major influence on Hamilton's driving style, regarded as one of the greatest drivers in Formula One history."
+      },
+      {
+        "local_id": "e4",
+        "name": "McLaren MP4/4",
+        "entity_type": "Car",
+        "description": "Senna's original title-winning car that Hamilton drove in a tribute documentary."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Hamilton was team-mates with Bottas.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 4,
+  "entities_accepted": 4,
+  "entities_rejected": 0,
+  "relationship_candidates": 3,
+  "relationships_accepted": 1,
+  "relationships_rejected": 2,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "DROVE_FOR does not allow Driver -> Driver"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "FIELDED does not allow Car -> Driver"
+    }
+  ],
+  "alignments": []
+}

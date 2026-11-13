@@ -1,5 +1,7 @@
 # Baseline és lokális keresés
 
+Történeti összevetés. A lenti Q01–Q13 lokális válaszok a régi, 401 entitásos gráfra készültek, nem a #9 utáni 2761 entitásos Neo4j-gráfra. A `driver-charles-leclerc.html` azóta a korpuszban van; a 22 dokumentumos mondat ennek a régi futásnak az állapota. Az újrafuttatás külön fájlba kerül, ez a fájl megmarad.
+
 A baseline eredeti futása változatlanul a `baseline/answers.json` fájlban van. Ez a fájl nem írja felül.
 
 - Baseline időpont: 2026-10-06T06:58:59.248509+00:00

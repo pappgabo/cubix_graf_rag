@@ -1,0 +1,152 @@
+{
+  "chunk_id": "driver-nico-rosberg#3",
+  "doc_id": "driver-nico-rosberg",
+  "document_title": "Nico Rosberg",
+  "section": "Nico Rosberg",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/Nico_Rosberg",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "175d4df531c5e2d278a2c6aee99e4fadb8e469da33ee0716e0546fe58f1e9b8e",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "TEAMMATE_OF is not temporal; from_year, to_year and role must be null"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "WON does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 5,
+      "reason": "ACHIEVED does not allow Driver -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 6,
+      "reason": "AT_RACE does not allow GrandPrix -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 7,
+      "reason": "FIELDED does not allow Team -> GrandPrix"
+    }
+  ],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Nico Rosberg",
+        "entity_type": "Driver",
+        "description": "A German driver who raced in Formula One."
+      },
+      {
+        "local_id": "e2",
+        "name": "Williams",
+        "entity_type": "Team",
+        "description": "A Formula One team that Rosberg drove for from 2006 to 2009."
+      },
+      {
+        "local_id": "e3",
+        "name": "Mercedes",
+        "entity_type": "Team",
+        "description": "A Formula One team that Rosberg drove for from 2010 to 2016."
+      },
+      {
+        "local_id": "e4",
+        "name": "2016",
+        "entity_type": "Season",
+        "description": "The season in which Rosberg won the championship title."
+      },
+      {
+        "local_id": "e5",
+        "name": "Chinese Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The race where Rosberg took his first career win in 2012."
+      },
+      {
+        "local_id": "e6",
+        "name": "2012",
+        "entity_type": "Season",
+        "description": "The season in which Rosberg won the Chinese Grand Prix."
+      },
+      {
+        "local_id": "e7",
+        "name": "Michael Schumacher",
+        "entity_type": "Driver",
+        "description": "A German driver and Rosberg's teammate at Mercedes from 2010."
+      },
+      {
+        "local_id": "e8",
+        "name": "Lewis Hamilton",
+        "entity_type": "Driver",
+        "description": "A British driver and Rosberg's teammate at Mercedes from 2013 to 2016."
+      },
+      {
+        "local_id": "e9",
+        "name": "2013",
+        "entity_type": "Season",
+        "description": "The season when Rosberg became teammates with Hamilton."
+      },
+      {
+        "local_id": "e10",
+        "name": "2016",
+        "entity_type": "Title",
+        "description": "The championship title won by Rosberg."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Rosberg drove for Williams.",
+        "from_year": 2006,
+        "to_year": 2009,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e3",
+        "relationship_type": "DROVE_FOR",
+        "description": "Rosberg drove for Mercedes.",
+        "from_year": 2010,
+        "to_year": 2016,
+        "role": null
+      },
+      {
+        "source_id": "e10",
+        "target_id": "e4",
+        "relationship_type": "AWARDED_IN",
+        "description": "The title won by Rosberg was awarded in 2016.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e4",
+        "relationship_type": "ENTERED",
+        "description": "Mercedes entered the 2016 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e4",
+        "relationship_type": "ENTERED",
+        "description": "Williams entered the 2008 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

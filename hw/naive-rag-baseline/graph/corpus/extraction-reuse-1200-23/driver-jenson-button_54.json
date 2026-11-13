@@ -1,0 +1,59 @@
+{
+  "chunk_id": "driver-jenson-button#54",
+  "doc_id": "driver-jenson-button",
+  "document_title": "Jenson Button",
+  "section": "Driving style > Driver number",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "7324374a78ddfa666938d1e4f6638ba73d56ac76d388f74c505abf87ca74ab5e",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Jenson Button",
+        "entity_type": "Driver",
+        "description": "A Formula One driver who chose the number 22 for his car."
+      },
+      {
+        "local_id": "e2",
+        "name": "2014",
+        "entity_type": "Season",
+        "description": "The season in which the FIA allowed drivers to select a unique car number."
+      },
+      {
+        "local_id": "e3",
+        "name": "2009",
+        "entity_type": "Season",
+        "description": "The championship season in which Jenson Button was assigned the number 22."
+      }
+    ],
+    "relationships": []
+  },
+  "entity_candidates": 3,
+  "entities_accepted": 3,
+  "entities_rejected": 0,
+  "relationship_candidates": 3,
+  "relationships_accepted": 0,
+  "relationships_rejected": 3,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "RACED_IN does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "WON does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "ROUND_OF does not allow Season -> Season"
+    }
+  ],
+  "alignments": []
+}

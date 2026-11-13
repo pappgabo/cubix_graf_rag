@@ -1,0 +1,127 @@
+{
+  "chunk_id": "reference-formula-one#13",
+  "doc_id": "reference-formula-one",
+  "document_title": "Formula One",
+  "section": "Formula One > Manufacturers' return",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "55a3526d7c14b282515dc96664a91534f9db5b9ff6055c5eba0bd3be30b8a160",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Michael Schumacher",
+        "entity_type": "Driver",
+        "description": "Won five consecutive Drivers' Championships."
+      },
+      {
+        "local_id": "e2",
+        "name": "Scuderia Ferrari",
+        "entity_type": "Team",
+        "description": "Team that Michael Schumacher raced for during his championship wins."
+      },
+      {
+        "local_id": "e3",
+        "name": "Fernando Alonso",
+        "entity_type": "Driver",
+        "description": "Renault driver who became Formula One's youngest champion in 2005."
+      },
+      {
+        "local_id": "e4",
+        "name": "Renault",
+        "entity_type": "Team",
+        "description": "Team that won both titles in 2006."
+      },
+      {
+        "local_id": "e5",
+        "name": "Lewis Hamilton",
+        "entity_type": "Driver",
+        "description": "Became Formula One's youngest champion in 2008."
+      },
+      {
+        "local_id": "e6",
+        "name": "Sebastian Vettel",
+        "entity_type": "Driver",
+        "description": "Became Formula One's youngest champion in 2010."
+      },
+      {
+        "local_id": "e7",
+        "name": "Mercedes-AMG Petronas Formula One Team",
+        "entity_type": "Team",
+        "description": "Team Michael Schumacher raced for after coming out of retirement."
+      },
+      {
+        "local_id": "e8",
+        "name": "Brawn GP",
+        "entity_type": "Team",
+        "description": "Team that was rebranded to form Mercedes."
+      },
+      {
+        "local_id": "e9",
+        "name": "2005",
+        "entity_type": "Season",
+        "description": "The year Fernando Alonso became Formula One's youngest champion."
+      },
+      {
+        "local_id": "e10",
+        "name": "2006",
+        "entity_type": "Season",
+        "description": "The year Renault and Alonso won both titles."
+      },
+      {
+        "local_id": "e11",
+        "name": "2010",
+        "entity_type": "Season",
+        "description": "The year Michael Schumacher came out of retirement."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e7",
+        "relationship_type": "DROVE_FOR",
+        "description": "Michael Schumacher raced for Mercedes after coming out of retirement.",
+        "from_year": 2010,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 11,
+  "entities_accepted": 11,
+  "entities_rejected": 0,
+  "relationship_candidates": 6,
+  "relationships_accepted": 1,
+  "relationships_rejected": 5,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "WON does not allow Driver -> Team"
+    },
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "WON does not allow Driver -> Team"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "WON does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "AWARDED_IN does not allow Team -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 5,
+      "reason": "DROVE_FOR does not allow Team -> Team"
+    }
+  ],
+  "alignments": []
+}

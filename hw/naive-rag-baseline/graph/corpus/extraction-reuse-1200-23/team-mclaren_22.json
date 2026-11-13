@@ -1,0 +1,152 @@
+{
+  "chunk_id": "team-mclaren#22",
+  "doc_id": "team-mclaren",
+  "document_title": "McLaren",
+  "section": "1988–1991: Domination with Honda",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "ae24eb54bdb939a73328b19eb45767066ef73f1f652ab17f405a0a8530ca5201",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Ayrton Senna",
+        "entity_type": "Driver",
+        "description": "A driver who raced for McLaren and won the championship in 1988."
+      },
+      {
+        "local_id": "e2",
+        "name": "Alain Prost",
+        "entity_type": "Driver",
+        "description": "A driver who raced for McLaren and was involved in a rivalry with Ayrton Senna."
+      },
+      {
+        "local_id": "e3",
+        "name": "McLaren",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that entered cars and had a partnership with Honda."
+      },
+      {
+        "local_id": "e4",
+        "name": "MP4/4",
+        "entity_type": "Car",
+        "description": "The car model fielded by McLaren during the 1988 season."
+      },
+      {
+        "local_id": "e5",
+        "name": "Honda",
+        "entity_type": "PowerUnit",
+        "description": "The engine supplier for McLaren starting in 1988."
+      },
+      {
+        "local_id": "e6",
+        "name": "1988",
+        "entity_type": "Season",
+        "description": "The Formula 1 season in which Ayrton Senna won the championship."
+      },
+      {
+        "local_id": "e7",
+        "name": "Portuguese Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A race in which Ayrton Senna and Alain Prost had a notable incident."
+      },
+      {
+        "local_id": "e8",
+        "name": "Title",
+        "entity_type": "Title",
+        "description": "The championship title won by Ayrton Senna in 1988."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e3",
+        "target_id": "e4",
+        "relationship_type": "FIELDED",
+        "description": "McLaren entered the MP4/4 car.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e6",
+        "relationship_type": "RACED_IN",
+        "description": "The MP4/4 car took part in the 1988 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e6",
+        "relationship_type": "ENTERED",
+        "description": "McLaren took part in the 1988 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e5",
+        "relationship_type": "POWERED_BY",
+        "description": "The MP4/4 car used a Honda power unit.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e8",
+        "relationship_type": "WON",
+        "description": "Ayrton Senna won the championship title.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e8",
+        "target_id": "e6",
+        "relationship_type": "AWARDED_IN",
+        "description": "The championship title belongs to the 1988 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Ayrton Senna and Alain Prost were teammates at McLaren.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e7",
+        "target_id": "e6",
+        "relationship_type": "ROUND_OF",
+        "description": "The Portuguese Grand Prix is a round of the 1988 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 8,
+  "entities_accepted": 8,
+  "entities_rejected": 0,
+  "relationship_candidates": 9,
+  "relationships_accepted": 8,
+  "relationships_rejected": 1,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 8,
+      "reason": "HELD_AT does not allow GrandPrix -> Team"
+    }
+  ],
+  "alignments": []
+}

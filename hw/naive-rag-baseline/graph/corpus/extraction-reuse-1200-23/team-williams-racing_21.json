@@ -1,0 +1,200 @@
+{
+  "chunk_id": "team-williams-racing#21",
+  "doc_id": "team-williams-racing",
+  "document_title": "Williams Racing",
+  "section": "Williams Racing > Judd engines (1988) > Williams Racing > 1988 season",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "6909e02d00a15893d498f96fcfd23b99f4375ad8dad546a725759fd23b99eaa7",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Williams",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that used Judd engines in the 1988 season."
+      },
+      {
+        "local_id": "e2",
+        "name": "Judd",
+        "entity_type": "PowerUnit",
+        "description": "An engine manufacturer whose naturally aspirated engines were used by Williams in the 1988 season."
+      },
+      {
+        "local_id": "e3",
+        "name": "1988",
+        "entity_type": "Season",
+        "description": "The Formula 1 season in which Williams used Judd engines."
+      },
+      {
+        "local_id": "e4",
+        "name": "Riccardo Patrese",
+        "entity_type": "Driver",
+        "description": "A driver who joined Williams in 1988 to replace Nelson Piquet."
+      },
+      {
+        "local_id": "e5",
+        "name": "Nelson Piquet",
+        "entity_type": "Driver",
+        "description": "A driver who left Williams to join Lotus in 1988."
+      },
+      {
+        "local_id": "e6",
+        "name": "Martin Brundle",
+        "entity_type": "Driver",
+        "description": "A driver who replaced Nigel Mansell for the Belgian Grand Prix in 1988."
+      },
+      {
+        "local_id": "e7",
+        "name": "Jean-Louis Schlesser",
+        "entity_type": "Driver",
+        "description": "A driver who replaced Nigel Mansell for the Italian Grand Prix in 1988."
+      },
+      {
+        "local_id": "e8",
+        "name": "Nigel Mansell",
+        "entity_type": "Driver",
+        "description": "A driver for Williams who achieved two second-place finishes in the 1988 season."
+      },
+      {
+        "local_id": "e9",
+        "name": "Lotus",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that Nelson Piquet joined in 1988."
+      },
+      {
+        "local_id": "e10",
+        "name": "McLaren",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that Ayrton Senna joined in 1988."
+      },
+      {
+        "local_id": "e11",
+        "name": "Alain Prost",
+        "entity_type": "Driver",
+        "description": "A driver for McLaren in the 1988 season."
+      },
+      {
+        "local_id": "e12",
+        "name": "Ayrton Senna",
+        "entity_type": "Driver",
+        "description": "A driver who joined McLaren in 1988."
+      },
+      {
+        "local_id": "e13",
+        "name": "Brabham",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that Riccardo Patrese left to join Williams."
+      },
+      {
+        "local_id": "e14",
+        "name": "Constructors' Championship",
+        "entity_type": "Title",
+        "description": "The championship in which Williams finished seventh in 1988."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e3",
+        "relationship_type": "ENTERED",
+        "description": "Williams took part in the 1988 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e1",
+        "relationship_type": "DROVE_FOR",
+        "description": "Riccardo Patrese drove for Williams in 1988.",
+        "from_year": 1988,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e1",
+        "relationship_type": "DROVE_FOR",
+        "description": "Nelson Piquet drove for Williams before leaving for Lotus in 1988.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e6",
+        "target_id": "e1",
+        "relationship_type": "DROVE_FOR",
+        "description": "Martin Brundle replaced Nigel Mansell for the Belgian Grand Prix in 1988.",
+        "from_year": 1988,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e7",
+        "target_id": "e1",
+        "relationship_type": "DROVE_FOR",
+        "description": "Jean-Louis Schlesser replaced Nigel Mansell for the Italian Grand Prix in 1988.",
+        "from_year": 1988,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e8",
+        "target_id": "e1",
+        "relationship_type": "DROVE_FOR",
+        "description": "Nigel Mansell drove for Williams in 1988 and achieved two second-place finishes.",
+        "from_year": 1988,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e11",
+        "target_id": "e10",
+        "relationship_type": "DROVE_FOR",
+        "description": "Alain Prost drove for McLaren in 1988.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 14,
+  "entities_accepted": 14,
+  "entities_rejected": 0,
+  "relationship_candidates": 11,
+  "relationships_accepted": 7,
+  "relationships_rejected": 4,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "POWERED_BY does not allow Team -> PowerUnit"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "ACHIEVED does not allow Team -> Title"
+    },
+    {
+      "element": "relationship",
+      "index": 8,
+      "reason": "TEAMMATE_OF does not allow Team -> Driver"
+    },
+    {
+      "element": "relationship",
+      "index": 9,
+      "reason": "TEAMMATE_OF does not allow Team -> Driver"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 1,
+      "action": "clear_redundant_season_year",
+      "detail": "ENTERED year 1988 already named by Season 'e3'; from_year and to_year cleared"
+    }
+  ]
+}

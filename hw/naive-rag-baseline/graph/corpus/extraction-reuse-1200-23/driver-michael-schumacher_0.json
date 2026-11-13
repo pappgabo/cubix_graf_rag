@@ -1,0 +1,64 @@
+{
+  "chunk_id": "driver-michael-schumacher#0",
+  "doc_id": "driver-michael-schumacher",
+  "document_title": "Michael Schumacher",
+  "section": null,
+  "page": 1,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "218bee8c2d6c302f52d3da84d87aa097f69ae675967ce6c892c544c403cc99c3",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Michael Schumacher",
+        "entity_type": "Driver",
+        "description": "A German former racing driver who competed in Formula One from 1991 to 2006 and from 2010 to 2012."
+      },
+      {
+        "local_id": "e2",
+        "name": "1991",
+        "entity_type": "Season",
+        "description": "A championship year in which Michael Schumacher made his Formula One debut."
+      },
+      {
+        "local_id": "e3",
+        "name": "Belgian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The race where Michael Schumacher made his debut Formula One appearance."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e3",
+        "target_id": "e2",
+        "relationship_type": "ROUND_OF",
+        "description": "The Belgian Grand Prix is a round of the 1991 Formula One season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 3,
+  "entities_accepted": 3,
+  "entities_rejected": 0,
+  "relationship_candidates": 3,
+  "relationships_accepted": 1,
+  "relationships_rejected": 2,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "RACED_IN does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "AT_RACE does not allow GrandPrix -> Driver"
+    }
+  ],
+  "alignments": []
+}

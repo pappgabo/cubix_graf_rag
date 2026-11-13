@@ -1,0 +1,148 @@
+{
+  "chunk_id": "season-2012-formula-one-world-championship#89",
+  "doc_id": "season-2012-formula-one-world-championship",
+  "document_title": "2012 Formula One World Championship",
+  "section": "Race summaries > Round 17 – India Buddh International Circuit",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "cfb0dc7170345662773e0d879413ff3a0e8c48ee3028cb9ee276ce8636299f78",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Mark Webber",
+        "entity_type": "Driver",
+        "description": "Finished on the podium."
+      },
+      {
+        "local_id": "e2",
+        "name": "Lewis Hamilton",
+        "entity_type": "Driver",
+        "description": "Challenged Mark Webber late in the race."
+      },
+      {
+        "local_id": "e3",
+        "name": "Kimi Räikkönen",
+        "entity_type": "Driver",
+        "description": "Finished seventh after being trapped behind Felipe Massa."
+      },
+      {
+        "local_id": "e4",
+        "name": "Felipe Massa",
+        "entity_type": "Driver",
+        "description": "Trapped Kimi Räikkönen behind him during the race."
+      },
+      {
+        "local_id": "e5",
+        "name": "Pedro de la Rosa",
+        "entity_type": "Driver",
+        "description": "Retired from the race due to a brake failure."
+      },
+      {
+        "local_id": "e6",
+        "name": "Michael Schumacher",
+        "entity_type": "Driver",
+        "description": "Suffered a tyre deflation after contact with Jean-Éric Vergne."
+      },
+      {
+        "local_id": "e7",
+        "name": "Jean-Éric Vergne",
+        "entity_type": "Driver",
+        "description": "Made contact with Michael Schumacher."
+      },
+      {
+        "local_id": "e8",
+        "name": "Sergio Pérez",
+        "entity_type": "Driver",
+        "description": "Retired after suffering a puncture."
+      },
+      {
+        "local_id": "e9",
+        "name": "Daniel Ricciardo",
+        "entity_type": "Driver",
+        "description": "Had a front wing that glanced Sergio Pérez's car."
+      },
+      {
+        "local_id": "e10",
+        "name": "Pastor Maldonado",
+        "entity_type": "Driver",
+        "description": "Suffered a tyre puncture after contact with Kamui Kobayashi."
+      },
+      {
+        "local_id": "e11",
+        "name": "Kamui Kobayashi",
+        "entity_type": "Driver",
+        "description": "Made contact with Pastor Maldonado."
+      },
+      {
+        "local_id": "e12",
+        "name": "2012 Formula One World Championship",
+        "entity_type": "Season",
+        "description": "The championship season for the race."
+      },
+      {
+        "local_id": "e13",
+        "name": "Buddh International Circuit",
+        "entity_type": "Circuit",
+        "description": "The circuit where the race took place."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Both drivers were on the podium.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e4",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Kimi Räikkönen was trapped behind Felipe Massa.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 13,
+  "entities_accepted": 13,
+  "entities_rejected": 0,
+  "relationship_candidates": 7,
+  "relationships_accepted": 2,
+  "relationships_rejected": 5,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "POWERED_BY does not allow Driver -> Driver"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "POWERED_BY does not allow Driver -> Driver"
+    },
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "POWERED_BY does not allow Driver -> Driver"
+    },
+    {
+      "element": "relationship",
+      "index": 5,
+      "reason": "ENTERED does not allow Season -> Circuit"
+    },
+    {
+      "element": "relationship",
+      "index": 6,
+      "reason": "ROUND_OF does not allow Circuit -> Season"
+    }
+  ],
+  "alignments": []
+}

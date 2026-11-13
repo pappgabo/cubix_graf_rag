@@ -1,0 +1,91 @@
+{
+  "chunk_id": "driver-charles-leclerc#55",
+  "doc_id": "driver-charles-leclerc",
+  "document_title": "Charles Leclerc",
+  "section": "Charles Leclerc > Driver profile > Charles Leclerc > Qualifying pace",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "988050391992fb1487f92095d1618bfca421bd22f1aef23063fed01070b8fec0",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Charles Leclerc",
+        "entity_type": "Driver",
+        "description": "Leclerc has a strong qualifying history in Formula One, where he holds the record for most pole positions without a World Drivers' Championship (27) and the eleventh-most in history."
+      },
+      {
+        "local_id": "e2",
+        "name": "2019",
+        "entity_type": "Season",
+        "description": "Leclerc became the youngest recipient of the FIA Pole Trophy in 2019 for achieving the most pole positions."
+      },
+      {
+        "local_id": "e3",
+        "name": "2022",
+        "entity_type": "Season",
+        "description": "Leclerc repeated the feat of achieving the most pole positions in 2022."
+      },
+      {
+        "local_id": "e4",
+        "name": "2019 Singapore Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "Critics have noted his ability to outperform his machinery in qualifying conditions, which has frequently led to his one-lap pace relatively surpassing his race pace."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Charles Leclerc at 2019 Singapore Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Andrew Benson of BBC Sport described his pole lap at the 2019 Singapore Grand Prix as 'one of the qualifying performances of the season'."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Andrew Benson of BBC Sport described his pole lap at the 2019 Singapore Grand Prix as 'one of the qualifying performances of the season'.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e4",
+        "relationship_type": "AT_RACE",
+        "description": "Andrew Benson of BBC Sport described his pole lap at the 2019 Singapore Grand Prix as 'one of the qualifying performances of the season'.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 4,
+  "entities_accepted": 5,
+  "entities_rejected": 0,
+  "relationship_candidates": 3,
+  "relationships_accepted": 2,
+  "relationships_rejected": 2,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "ACHIEVED does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "ACHIEVED does not allow Driver -> Season"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 2,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e4; description kept"
+    }
+  ]
+}

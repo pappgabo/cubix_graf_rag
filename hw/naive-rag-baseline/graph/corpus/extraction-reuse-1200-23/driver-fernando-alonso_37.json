@@ -1,0 +1,88 @@
+{
+  "chunk_id": "driver-fernando-alonso#37",
+  "doc_id": "driver-fernando-alonso",
+  "document_title": "Fernando Alonso",
+  "section": "Endurance racing",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "ac718a6b20fa7503a209a4c1dfd9fc197dfb25a5c74549c60570e8a91f03e829",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Fernando Alonso",
+        "entity_type": "Driver",
+        "description": "A Formula One driver who made his sports car endurance racing debut at the 1999 24 Hours of Barcelona."
+      },
+      {
+        "local_id": "e2",
+        "name": "Antonio García",
+        "entity_type": "Driver",
+        "description": "A driver who was paired with Fernando Alonso during the 1999 24 Hours of Barcelona."
+      },
+      {
+        "local_id": "e3",
+        "name": "Salvi Delmuns",
+        "entity_type": "Driver",
+        "description": "A driver who was paired with Fernando Alonso during the 1999 24 Hours of Barcelona."
+      },
+      {
+        "local_id": "e4",
+        "name": "Pedro Fermín Flores",
+        "entity_type": "Driver",
+        "description": "A journalist who was paired with Fernando Alonso during the 1999 24 Hours of Barcelona."
+      },
+      {
+        "local_id": "e5",
+        "name": "Hyundai Accent",
+        "entity_type": "Car",
+        "description": "The car driven by Fernando Alonso and his team during the 1999 24 Hours of Barcelona."
+      },
+      {
+        "local_id": "e6",
+        "name": "2015 24 Hours of Le Mans",
+        "entity_type": "GrandPrix",
+        "description": "An endurance race Alonso was due to enter with Porsche's Le Mans Prototype 1 team."
+      },
+      {
+        "local_id": "e7",
+        "name": "Porsche's Le Mans Prototype 1 team",
+        "entity_type": "Team",
+        "description": "The team Alonso was due to enter the 2015 24 Hours of Le Mans with."
+      }
+    ],
+    "relationships": []
+  },
+  "entity_candidates": 7,
+  "entities_accepted": 7,
+  "entities_rejected": 0,
+  "relationship_candidates": 4,
+  "relationships_accepted": 0,
+  "relationships_rejected": 4,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "DROVE_FOR does not allow Driver -> Car"
+    },
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "RACED_IN does not allow Driver -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "HELD_AT does not allow Team -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "DROVE_FOR does not allow Team -> Driver"
+    }
+  ],
+  "alignments": []
+}

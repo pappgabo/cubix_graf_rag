@@ -1,0 +1,100 @@
+{
+  "chunk_id": "driver-michael-schumacher#7",
+  "doc_id": "driver-michael-schumacher",
+  "document_title": "Michael Schumacher",
+  "section": null,
+  "page": 2,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "fab9845b318ed2b2f5f1f297653b60f0756ddea36e33bfa96baaa01ce59cc133",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Michael Schumacher",
+        "entity_type": "Driver",
+        "description": "A German racing driver who made his Formula One debut with the Jordan-Ford team."
+      },
+      {
+        "local_id": "e2",
+        "name": "Jordan",
+        "entity_type": "Team",
+        "description": "The Irish Formula One team that Schumacher debuted with."
+      },
+      {
+        "local_id": "e3",
+        "name": "Belgian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The race where Schumacher made his Formula One debut."
+      },
+      {
+        "local_id": "e4",
+        "name": "Spa-Francorchamps Circuit",
+        "entity_type": "Circuit",
+        "description": "The challenging circuit where Schumacher had only spectated before his debut."
+      },
+      {
+        "local_id": "e5",
+        "name": "Sauber",
+        "entity_type": "Team",
+        "description": "The team Schumacher was driving for when he encountered Warwick's Jaguar."
+      },
+      {
+        "local_id": "e6",
+        "name": "Jaguar XJR-14",
+        "entity_type": "Car",
+        "description": "The car driven by Warwick that Schumacher collided with."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Schumacher made his Formula One debut with the Jordan-Ford team.",
+        "from_year": 1991,
+        "to_year": null,
+        "role": "Driver"
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e4",
+        "relationship_type": "HELD_AT",
+        "description": "The Belgian Grand Prix was held at the Spa-Francorchamps Circuit.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e5",
+        "relationship_type": "DROVE_FOR",
+        "description": "Schumacher swerved his Sauber into the Jaguar during a race incident.",
+        "from_year": null,
+        "to_year": null,
+        "role": "Driver"
+      }
+    ]
+  },
+  "entity_candidates": 6,
+  "entities_accepted": 6,
+  "entities_rejected": 0,
+  "relationship_candidates": 5,
+  "relationships_accepted": 3,
+  "relationships_rejected": 2,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "ENTERED does not allow Team -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "POWERED_BY does not allow Team -> Car"
+    }
+  ],
+  "alignments": []
+}

@@ -1,0 +1,154 @@
+{
+  "chunk_id": "season-2021-formula-one-world-championship#9",
+  "doc_id": "season-2021-formula-one-world-championship",
+  "document_title": "2021 Formula One World Championship",
+  "section": null,
+  "page": 2,
+  "source": "https://en.wikipedia.org/wiki/2021_Formula_One_World_Championship",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "66c3fea6d3ebecfbe01ce76ce8538b64b58b9c428b4e819b055eb88b841d07c0",
+  "validation_version": "partial-1",
+  "source_status": "ok",
+  "status": "ok",
+  "entity_candidates": 9,
+  "entities_accepted": 9,
+  "entities_rejected": 0,
+  "relationship_candidates": 8,
+  "relationships_accepted": 8,
+  "relationships_rejected": 0,
+  "rejections": [],
+  "alignments": [],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Sebastian Vettel",
+        "entity_type": "Driver",
+        "description": "Four-time World Drivers' Champion who left Ferrari at the end of the 2020 season after racing with the team for six seasons."
+      },
+      {
+        "local_id": "e2",
+        "name": "Scuderia Ferrari",
+        "entity_type": "Team",
+        "description": "Formula 1 team that Sebastian Vettel raced for."
+      },
+      {
+        "local_id": "e3",
+        "name": "Carlos Sainz Jr.",
+        "entity_type": "Driver",
+        "description": "Took Sebastian Vettel's seat at Ferrari after leaving McLaren."
+      },
+      {
+        "local_id": "e4",
+        "name": "McLaren",
+        "entity_type": "Team",
+        "description": "Formula 1 team that Carlos Sainz Jr. left after two seasons."
+      },
+      {
+        "local_id": "e5",
+        "name": "Daniel Ricciardo",
+        "entity_type": "Driver",
+        "description": "Moved from Renault to McLaren, replacing Carlos Sainz Jr."
+      },
+      {
+        "local_id": "e6",
+        "name": "Renault",
+        "entity_type": "Team",
+        "description": "Formula 1 team that Daniel Ricciardo moved from."
+      },
+      {
+        "local_id": "e7",
+        "name": "Fernando Alonso",
+        "entity_type": "Driver",
+        "description": "Double World Champion who replaced Daniel Ricciardo at McLaren."
+      },
+      {
+        "local_id": "e8",
+        "name": "Alpine",
+        "entity_type": "Team",
+        "description": "Formula 1 team in its first season where Fernando Alonso drove."
+      },
+      {
+        "local_id": "e9",
+        "name": "2018",
+        "entity_type": "Season",
+        "description": "The last season Fernando Alonso raced for McLaren."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Sebastian Vettel raced for Ferrari.",
+        "from_year": null,
+        "to_year": 2020,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e4",
+        "relationship_type": "DROVE_FOR",
+        "description": "Carlos Sainz Jr. raced for McLaren.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e6",
+        "relationship_type": "DROVE_FOR",
+        "description": "Daniel Ricciardo raced for Renault.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e4",
+        "relationship_type": "DROVE_FOR",
+        "description": "Daniel Ricciardo raced for McLaren.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e7",
+        "target_id": "e8",
+        "relationship_type": "DROVE_FOR",
+        "description": "Fernando Alonso raced for Alpine.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e7",
+        "target_id": "e4",
+        "relationship_type": "DROVE_FOR",
+        "description": "Fernando Alonso last raced for McLaren in 2018.",
+        "from_year": 2018,
+        "to_year": 2018,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e3",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Sebastian Vettel was teammates with Carlos Sainz Jr. at Ferrari.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e7",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Daniel Ricciardo was teammates with Fernando Alonso at McLaren.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

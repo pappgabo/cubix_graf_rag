@@ -1,0 +1,119 @@
+{
+  "chunk_id": "driver-michael-schumacher#26",
+  "doc_id": "driver-michael-schumacher",
+  "document_title": "Michael Schumacher",
+  "section": null,
+  "page": 6,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "043285d1957a7b01ee34bea64777bcfed16dea27f20eaefab80f342ab7c85fc1",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Michael Schumacher",
+        "entity_type": "Driver",
+        "description": "A Formula One driver who raced for Ferrari."
+      },
+      {
+        "local_id": "e2",
+        "name": "Mika Häkkinen",
+        "entity_type": "Driver",
+        "description": "A Formula One driver who won the Drivers' Championship in 1999."
+      },
+      {
+        "local_id": "e3",
+        "name": "Scuderia Ferrari",
+        "entity_type": "Team",
+        "description": "A Formula One team that won the Constructors' Championship in 1999."
+      },
+      {
+        "local_id": "e4",
+        "name": "1999",
+        "entity_type": "Season",
+        "description": "The Formula One season in which Schumacher helped Ferrari win the Constructors' Championship."
+      },
+      {
+        "local_id": "e5",
+        "name": "British Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A race in which Schumacher lost his chance to win the Drivers' Championship due to a car failure."
+      },
+      {
+        "local_id": "e6",
+        "name": "Constructors' Championship",
+        "entity_type": "Title",
+        "description": "A championship title won by Ferrari in 1999."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Michael Schumacher at British Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Schumacher recorded a result in the British Grand Prix."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e3",
+        "target_id": "e4",
+        "relationship_type": "ENTERED",
+        "description": "Ferrari took part in the 1999 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e6",
+        "relationship_type": "WON",
+        "description": "Ferrari won the Constructors' Championship in 1999.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Schumacher recorded a result in the British Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e5",
+        "relationship_type": "AT_RACE",
+        "description": "Schumacher recorded a result in the British Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Schumacher was a teammate of Häkkinen during the 1999 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 6,
+  "entities_accepted": 7,
+  "entities_rejected": 0,
+  "relationship_candidates": 4,
+  "relationships_accepted": 5,
+  "relationships_rejected": 0,
+  "rejections": [],
+  "alignments": [
+    {
+      "index": 2,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e5; description kept"
+    }
+  ]
+}

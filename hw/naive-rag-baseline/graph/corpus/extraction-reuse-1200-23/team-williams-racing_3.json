@@ -1,0 +1,81 @@
+{
+  "chunk_id": "team-williams-racing#3",
+  "doc_id": "team-williams-racing",
+  "document_title": "Williams Racing",
+  "section": "Williams Racing > Origins",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "82d2e4c7c10d8d6008f615e617e75e194cc44dc59560c58421647dc575d6ae5d",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Williams Racing",
+        "entity_type": "Team",
+        "description": "A Formula 1 team founded by Frank Williams."
+      },
+      {
+        "local_id": "e2",
+        "name": "Frank Williams",
+        "entity_type": "Driver",
+        "description": "Founder of Williams Racing."
+      },
+      {
+        "local_id": "e3",
+        "name": "Walter Wolf Racing",
+        "entity_type": "Team",
+        "description": "A previous team that Frank Williams was associated with."
+      },
+      {
+        "local_id": "e4",
+        "name": "Williams Grand Prix Engineering",
+        "entity_type": "Team",
+        "description": "The rebranded team of Frank Williams after leaving Walter Wolf Racing."
+      },
+      {
+        "local_id": "e5",
+        "name": "Patrick Head",
+        "entity_type": "Driver",
+        "description": "Partner of Frank Williams in the Williams–Head partnership."
+      }
+    ],
+    "relationships": []
+  },
+  "entity_candidates": 5,
+  "entities_accepted": 5,
+  "entities_rejected": 0,
+  "relationship_candidates": 5,
+  "relationships_accepted": 0,
+  "relationships_rejected": 5,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "DROVE_FOR does not allow Team -> Team"
+    },
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "DROVE_FOR does not allow Team -> Driver"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "DROVE_FOR does not allow Team -> Team"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "DROVE_FOR does not allow Team -> Driver"
+    },
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "DROVE_FOR does not allow Team -> Driver"
+    }
+  ],
+  "alignments": []
+}

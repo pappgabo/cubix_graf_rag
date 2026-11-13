@@ -1,0 +1,179 @@
+{
+  "chunk_id": "season-2012-formula-one-world-championship#75",
+  "doc_id": "season-2012-formula-one-world-championship",
+  "document_title": "2012 Formula One World Championship",
+  "section": "Race summaries > Round 13 – Italy Autodromo Nazionale Monza",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "e7e2f23f2c9f68418816fdd41146f84e3f5a6f2822988588640fef6deb741d89",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Fernando Alonso",
+        "entity_type": "Driver",
+        "description": "Finished third in the race."
+      },
+      {
+        "local_id": "e2",
+        "name": "Jenson Button",
+        "entity_type": "Driver",
+        "description": "Retired from the race."
+      },
+      {
+        "local_id": "e3",
+        "name": "Sebastian Vettel",
+        "entity_type": "Driver",
+        "description": "Received a drive-through penalty."
+      },
+      {
+        "local_id": "e4",
+        "name": "Bruno Senna",
+        "entity_type": "Driver",
+        "description": "Criticised the race stewards."
+      },
+      {
+        "local_id": "e5",
+        "name": "Paul di Resta",
+        "entity_type": "Driver",
+        "description": "Involved in an altercation not penalised."
+      },
+      {
+        "local_id": "e6",
+        "name": "Romain Grosjean",
+        "entity_type": "Driver",
+        "description": "Served a suspension."
+      },
+      {
+        "local_id": "e7",
+        "name": "Jérôme d'Ambrosio",
+        "entity_type": "Driver",
+        "description": "Enlisted as a second driver for Lotus."
+      },
+      {
+        "local_id": "e8",
+        "name": "Lotus",
+        "entity_type": "Team",
+        "description": "Enlisted Jérôme d'Ambrosio as their second driver."
+      },
+      {
+        "local_id": "e9",
+        "name": "2012 Formula One World Championship",
+        "entity_type": "Season",
+        "description": "The championship season."
+      },
+      {
+        "local_id": "e10",
+        "name": "Autodromo Nazionale Monza",
+        "entity_type": "Circuit",
+        "description": "The circuit where the race took place."
+      },
+      {
+        "local_id": "e11",
+        "name": "Round 13 – Italy",
+        "entity_type": "GrandPrix",
+        "description": "The specific Grand Prix event."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Fernando Alonso at Round 13 – Italy",
+        "entity_type": "RaceResult",
+        "description": "Fernando Alonso finished third in the Italian Grand Prix."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e11",
+        "target_id": "e9",
+        "relationship_type": "ROUND_OF",
+        "description": "Round 13 is part of the 2012 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e11",
+        "target_id": "e10",
+        "relationship_type": "HELD_AT",
+        "description": "The Italian Grand Prix is held at Autodromo Nazionale Monza.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Fernando Alonso finished third in the Italian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e11",
+        "relationship_type": "AT_RACE",
+        "description": "Fernando Alonso finished third in the Italian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e7",
+        "target_id": "e8",
+        "relationship_type": "DROVE_FOR",
+        "description": "Jérôme d'Ambrosio drove for Lotus during the Italian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e8",
+        "target_id": "e9",
+        "relationship_type": "ENTERED",
+        "description": "Lotus entered the 2012 Formula One World Championship.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 11,
+  "entities_accepted": 12,
+  "entities_rejected": 0,
+  "relationship_candidates": 9,
+  "relationships_accepted": 6,
+  "relationships_rejected": 4,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "FOR_TEAM does not allow Driver -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 5,
+      "reason": "FOR_TEAM does not allow Driver -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 6,
+      "reason": "FOR_TEAM does not allow Driver -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 7,
+      "reason": "FOR_TEAM does not allow Driver -> GrandPrix"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 2,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e11; description kept"
+    }
+  ]
+}

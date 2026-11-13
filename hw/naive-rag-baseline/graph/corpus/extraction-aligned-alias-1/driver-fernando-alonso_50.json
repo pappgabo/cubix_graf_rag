@@ -1,0 +1,55 @@
+{
+  "chunk_id": "driver-fernando-alonso#50",
+  "doc_id": "driver-fernando-alonso",
+  "document_title": "Fernando Alonso",
+  "section": "Ferrari (2010–2014)",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/Fernando_Alonso",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "4b60cc0645ea8da95201596cc9c530db851b5afa2197963b2fb8a97a12f75e5c",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "ACHIEVED does not allow Driver -> Season"
+    }
+  ],
+  "alignments": [],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Fernando Alonso",
+        "entity_type": "Driver",
+        "description": "Alonso was fourth overall with 257 points; he was in contention to finish second to eventual champion Vettel following a series of strong finishes until Webber won the season-ending Brazilian Grand Prix."
+      },
+      {
+        "local_id": "e2",
+        "name": "2010",
+        "entity_type": "Season",
+        "description": "Season in which Alonso was fourth overall with 257 points."
+      },
+      {
+        "local_id": "e3",
+        "name": "Brazilian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The season-ending Grand Prix where Webber won."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e3",
+        "target_id": "e2",
+        "relationship_type": "ROUND_OF",
+        "description": "The Brazilian Grand Prix is a round of the 2010 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

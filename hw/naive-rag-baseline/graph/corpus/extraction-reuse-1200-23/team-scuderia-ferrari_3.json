@@ -1,0 +1,185 @@
+{
+  "chunk_id": "team-scuderia-ferrari#3",
+  "doc_id": "team-scuderia-ferrari",
+  "document_title": "Scuderia Ferrari",
+  "section": null,
+  "page": 1,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "60fd7fe86c0fbc2165f3f1b2f8e6257ec4ada36a3a5ffb0d533b9912f9e0093c",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Scuderia Ferrari",
+        "entity_type": "Team",
+        "description": "A Formula 1 team founded by Enzo Ferrari."
+      },
+      {
+        "local_id": "e2",
+        "name": "Enzo Ferrari",
+        "entity_type": "Driver",
+        "description": "Founder of Scuderia Ferrari and notable figure in motorsport."
+      },
+      {
+        "local_id": "e3",
+        "name": "Alfa Romeo Bimotore",
+        "entity_type": "Car",
+        "description": "The first car to wear a Ferrari badge on the radiator cowl."
+      },
+      {
+        "local_id": "e4",
+        "name": "Alfa Corse",
+        "entity_type": "Team",
+        "description": "The factory racing division of Alfa Romeo."
+      },
+      {
+        "local_id": "e5",
+        "name": "Tazio Nuvolari",
+        "entity_type": "Driver",
+        "description": "Notable driver managed by Enzo Ferrari."
+      },
+      {
+        "local_id": "e6",
+        "name": "Giuseppe Campari",
+        "entity_type": "Driver",
+        "description": "Notable driver managed by Enzo Ferrari."
+      },
+      {
+        "local_id": "e7",
+        "name": "Achille Varzi",
+        "entity_type": "Driver",
+        "description": "Notable driver managed by Enzo Ferrari."
+      },
+      {
+        "local_id": "e8",
+        "name": "Louis Chiron",
+        "entity_type": "Driver",
+        "description": "Notable driver managed by Enzo Ferrari."
+      },
+      {
+        "local_id": "e9",
+        "name": "Mario Tadini",
+        "entity_type": "Driver",
+        "description": "Talented rookie managed by Enzo Ferrari."
+      },
+      {
+        "local_id": "e10",
+        "name": "Guy Moll",
+        "entity_type": "Driver",
+        "description": "Talented rookie managed by Enzo Ferrari."
+      },
+      {
+        "local_id": "e11",
+        "name": "Carlo Maria Pintacuda",
+        "entity_type": "Driver",
+        "description": "Talented rookie managed by Enzo Ferrari."
+      },
+      {
+        "local_id": "e12",
+        "name": "Antonio Brivio",
+        "entity_type": "Driver",
+        "description": "Talented rookie managed by Enzo Ferrari."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e2",
+        "target_id": "e4",
+        "relationship_type": "DROVE_FOR",
+        "description": "Enzo Ferrari was the manager of Alfa Corse.",
+        "from_year": 1938,
+        "to_year": 1939,
+        "role": "null"
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e5",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Enzo Ferrari managed Tazio Nuvolari.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e6",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Enzo Ferrari managed Giuseppe Campari.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e7",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Enzo Ferrari managed Achille Varzi.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e8",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Enzo Ferrari managed Louis Chiron.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e9",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Enzo Ferrari managed Mario Tadini.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e10",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Enzo Ferrari managed Guy Moll.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e11",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Enzo Ferrari managed Carlo Maria Pintacuda.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e12",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Enzo Ferrari managed Antonio Brivio.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 12,
+  "entities_accepted": 12,
+  "entities_rejected": 0,
+  "relationship_candidates": 10,
+  "relationships_accepted": 9,
+  "relationships_rejected": 1,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "DROVE_FOR does not allow Team -> Team"
+    }
+  ],
+  "alignments": []
+}

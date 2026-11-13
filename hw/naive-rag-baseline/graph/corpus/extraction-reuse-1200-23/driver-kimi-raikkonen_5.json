@@ -1,0 +1,156 @@
+{
+  "chunk_id": "driver-kimi-raikkonen#5",
+  "doc_id": "driver-kimi-raikkonen",
+  "document_title": "Kimi Räikkönen",
+  "section": "Formula One career > Sauber (2001)",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "bf7f6a46145d58fa9cc1db0982dcb42c008ab45722f25f9a7e37bcaa8edc8187",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Kimi Räikkönen",
+        "entity_type": "Driver",
+        "description": "Finnish driver who raced for Sauber in 2001."
+      },
+      {
+        "local_id": "e2",
+        "name": "Sauber",
+        "entity_type": "Team",
+        "description": "Formula One team that Kimi Räikkönen raced for in 2001."
+      },
+      {
+        "local_id": "e3",
+        "name": "2001",
+        "entity_type": "Season",
+        "description": "The Formula One season in which Kimi Räikkönen raced for Sauber."
+      },
+      {
+        "local_id": "e4",
+        "name": "Australian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The race where Kimi Räikkönen scored a championship point in his debut."
+      },
+      {
+        "local_id": "e5",
+        "name": "Mugello Circuit",
+        "entity_type": "Circuit",
+        "description": "The circuit where Kimi Räikkönen had a test with Sauber."
+      },
+      {
+        "local_id": "e6",
+        "name": "Constructors' Championship",
+        "entity_type": "Title",
+        "description": "The championship where Sauber achieved its best result of fourth place."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Kimi Räikkönen at Australian Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Kimi Räikkönen scored a championship point in the Australian Grand Prix."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Kimi Räikkönen drove for Sauber in 2001.",
+        "from_year": 2001,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e3",
+        "relationship_type": "ENTERED",
+        "description": "Sauber entered the 2001 Formula One season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e3",
+        "relationship_type": "ROUND_OF",
+        "description": "The Australian Grand Prix is a round of the 2001 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e5",
+        "relationship_type": "HELD_AT",
+        "description": "The Australian Grand Prix is held at the Mugello Circuit.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Kimi Räikkönen scored a championship point in the Australian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e4",
+        "relationship_type": "AT_RACE",
+        "description": "Kimi Räikkönen scored a championship point in the Australian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e6",
+        "relationship_type": "WON",
+        "description": "Sauber achieved fourth place in the Constructors' Championship.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e6",
+        "target_id": "e3",
+        "relationship_type": "AWARDED_IN",
+        "description": "The fourth place in the Constructors' Championship belongs to the 2001 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 6,
+  "entities_accepted": 7,
+  "entities_rejected": 0,
+  "relationship_candidates": 7,
+  "relationships_accepted": 8,
+  "relationships_rejected": 0,
+  "rejections": [],
+  "alignments": [
+    {
+      "index": 1,
+      "action": "clear_redundant_season_year",
+      "detail": "ENTERED year 2001 already named by Season 'e3'; from_year and to_year cleared"
+    },
+    {
+      "index": 2,
+      "action": "clear_redundant_season_year",
+      "detail": "ROUND_OF year 2001 already named by Season 'e3'; from_year and to_year cleared"
+    },
+    {
+      "index": 4,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e4; description kept"
+    }
+  ]
+}

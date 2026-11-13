@@ -1,0 +1,156 @@
+{
+  "chunk_id": "driver-michael-schumacher#30",
+  "doc_id": "driver-michael-schumacher",
+  "document_title": "Michael Schumacher",
+  "section": null,
+  "page": 3,
+  "source": "https://en.wikipedia.org/wiki/Michael_Schumacher",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "e3aed1adaab11bc88a7a5250a22dc522e1641a5f052ef57ab96ca63e322fd09b",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "entity_candidates": 7,
+  "entities_accepted": 8,
+  "entities_rejected": 1,
+  "relationship_candidates": 5,
+  "relationships_accepted": 7,
+  "relationships_rejected": 0,
+  "rejections": [
+    {
+      "element": "entity",
+      "index": 3,
+      "reason": "name 'null' is a placeholder, not an entity identity"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 0,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e2; description kept"
+    },
+    {
+      "index": 1,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr2 -AT_RACE-> e3; description kept"
+    }
+  ],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Michael Schumacher",
+        "entity_type": "Driver",
+        "description": "A Formula One driver who won the first four races of the season and finished with eight wins."
+      },
+      {
+        "local_id": "e2",
+        "name": "Brazilian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A race where Schumacher won and lapped the entire field."
+      },
+      {
+        "local_id": "e3",
+        "name": "Spanish Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A race where Schumacher was leading before a gearbox failure."
+      },
+      {
+        "local_id": "e5",
+        "name": "JJ Lehto",
+        "entity_type": "Driver",
+        "description": "A teammate of Schumacher."
+      },
+      {
+        "local_id": "e6",
+        "name": "Jos Verstappen",
+        "entity_type": "Driver",
+        "description": "A teammate of Schumacher."
+      },
+      {
+        "local_id": "e7",
+        "name": "Johnny Herbert",
+        "entity_type": "Driver",
+        "description": "A teammate of Schumacher."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Michael Schumacher at Brazilian Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Schumacher won the Brazilian Grand Prix."
+      },
+      {
+        "local_id": "rr2",
+        "name": "Michael Schumacher at Spanish Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Schumacher was leading the Spanish Grand Prix before a gearbox failure."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Schumacher won the Brazilian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e2",
+        "relationship_type": "AT_RACE",
+        "description": "Schumacher won the Brazilian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr2",
+        "relationship_type": "ACHIEVED",
+        "description": "Schumacher was leading the Spanish Grand Prix before a gearbox failure.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr2",
+        "target_id": "e3",
+        "relationship_type": "AT_RACE",
+        "description": "Schumacher was leading the Spanish Grand Prix before a gearbox failure.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e5",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Schumacher was teammates with JJ Lehto.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e6",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Schumacher was teammates with Jos Verstappen.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e7",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Schumacher was teammates with Johnny Herbert.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

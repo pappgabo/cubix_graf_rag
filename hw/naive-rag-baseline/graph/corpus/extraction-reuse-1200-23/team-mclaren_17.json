@@ -1,0 +1,208 @@
+{
+  "chunk_id": "team-mclaren#17",
+  "doc_id": "team-mclaren",
+  "document_title": "McLaren",
+  "section": "1973–1981: Hunt–Lauda era and transition",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "865854cdd6f3450b7484e7083bc2aaa6f93d47106704dcfdbfd060840a8ed5ad",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "McLaren",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that entered cars."
+      },
+      {
+        "local_id": "e2",
+        "name": "Hunt",
+        "entity_type": "Driver",
+        "description": "A driver who raced for McLaren."
+      },
+      {
+        "local_id": "e3",
+        "name": "Lauda",
+        "entity_type": "Driver",
+        "description": "A driver who raced for Ferrari."
+      },
+      {
+        "local_id": "e4",
+        "name": "Gilles Villeneuve",
+        "entity_type": "Driver",
+        "description": "A driver who made his Formula One debut with McLaren."
+      },
+      {
+        "local_id": "e5",
+        "name": "British Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A race where Gilles Villeneuve made his debut."
+      },
+      {
+        "local_id": "e6",
+        "name": "M23",
+        "entity_type": "Car",
+        "description": "A car model used by McLaren."
+      },
+      {
+        "local_id": "e7",
+        "name": "M26",
+        "entity_type": "Car",
+        "description": "A car model that gradually replaced the M23."
+      },
+      {
+        "local_id": "e8",
+        "name": "Scuderia Ferrari",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that competed against McLaren."
+      },
+      {
+        "local_id": "e9",
+        "name": "Lotus",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that took the 1978 titles."
+      },
+      {
+        "local_id": "e10",
+        "name": "Mario Andretti",
+        "entity_type": "Driver",
+        "description": "A driver who raced for Lotus."
+      },
+      {
+        "local_id": "e11",
+        "name": "M28",
+        "entity_type": "Car",
+        "description": "A car model designed by Coppuck for McLaren."
+      },
+      {
+        "local_id": "e12",
+        "name": "M29",
+        "entity_type": "Car",
+        "description": "A car model used by McLaren."
+      },
+      {
+        "local_id": "e13",
+        "name": "Patrick Tambay",
+        "entity_type": "Driver",
+        "description": "A driver who replaced Mass at McLaren."
+      },
+      {
+        "local_id": "e14",
+        "name": "Ronnie Peterson",
+        "entity_type": "Driver",
+        "description": "A driver who was initially signed to replace Hunt."
+      },
+      {
+        "local_id": "e15",
+        "name": "John Watson",
+        "entity_type": "Driver",
+        "description": "A driver who was signed to McLaren after Peterson's death."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e6",
+        "relationship_type": "FIELDED",
+        "description": "McLaren entered the M23 car.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e7",
+        "relationship_type": "FIELDED",
+        "description": "McLaren entered the M26 car.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e1",
+        "relationship_type": "DROVE_FOR",
+        "description": "Hunt raced for McLaren.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e1",
+        "relationship_type": "DROVE_FOR",
+        "description": "Gilles Villeneuve made his debut with McLaren.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e3",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Hunt was a teammate of Lauda.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e10",
+        "target_id": "e9",
+        "relationship_type": "DROVE_FOR",
+        "description": "Mario Andretti raced for Lotus.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e13",
+        "target_id": "e1",
+        "relationship_type": "DROVE_FOR",
+        "description": "Patrick Tambay raced for McLaren.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e14",
+        "target_id": "e1",
+        "relationship_type": "DROVE_FOR",
+        "description": "Ronnie Peterson was signed to race for McLaren.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e15",
+        "target_id": "e1",
+        "relationship_type": "DROVE_FOR",
+        "description": "John Watson was signed to race for McLaren.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 15,
+  "entities_accepted": 15,
+  "entities_rejected": 0,
+  "relationship_candidates": 11,
+  "relationships_accepted": 9,
+  "relationships_rejected": 2,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "HELD_AT does not allow GrandPrix -> Team"
+    },
+    {
+      "element": "relationship",
+      "index": 6,
+      "reason": "WON does not allow Team -> Driver"
+    }
+  ],
+  "alignments": []
+}

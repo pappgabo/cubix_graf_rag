@@ -1,0 +1,92 @@
+{
+  "chunk_id": "driver-charles-leclerc#64",
+  "doc_id": "driver-charles-leclerc",
+  "document_title": "Charles Leclerc",
+  "section": "Charles Leclerc > Philanthropy",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "d32d6504dc7a7a9a28db3727df9d7378a41b4c20f5dfb87e264ab4a3e8a3f0bc",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Charles Leclerc",
+        "entity_type": "Driver",
+        "description": "Leclerc was named an ambassador of the Princess Charlene of Monaco Foundation in 2018, helping to promote the benefits of learning to swim."
+      },
+      {
+        "local_id": "e2",
+        "name": "Princess Charlene of Monaco Foundation",
+        "entity_type": "Team",
+        "description": "Foundation promoting the benefits of learning to swim."
+      },
+      {
+        "local_id": "e3",
+        "name": "COVID-19 Solidarity Response Fund",
+        "entity_type": "Team",
+        "description": "Fund raised over US$70,000 for."
+      },
+      {
+        "local_id": "e4",
+        "name": "Red Cross of Monaco",
+        "entity_type": "Team",
+        "description": "Assisted by Leclerc by delivering meals and transporting hospital equipment."
+      },
+      {
+        "local_id": "e5",
+        "name": "2023 Monaco Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "Leclerc auctioned the equipment he wore at this event."
+      },
+      {
+        "local_id": "e6",
+        "name": "Emilia-Romagna floods",
+        "entity_type": "Team",
+        "description": "Victims of this event benefited from Leclerc's auction."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Leclerc was named an ambassador of the Princess Charlene of Monaco Foundation.",
+        "from_year": 2018,
+        "to_year": null,
+        "role": "ambassador"
+      }
+    ]
+  },
+  "entity_candidates": 6,
+  "entities_accepted": 6,
+  "entities_rejected": 0,
+  "relationship_candidates": 5,
+  "relationships_accepted": 1,
+  "relationships_rejected": 4,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "ACHIEVED Driver -> GrandPrix has from_year=2023, to_year=None, role=None; the year or role cannot be stored on the reified result"
+    },
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "ACHIEVED does not allow Driver -> Team"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "ACHIEVED does not allow Driver -> Team"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "HELD_AT does not allow GrandPrix -> Team"
+    }
+  ],
+  "alignments": []
+}

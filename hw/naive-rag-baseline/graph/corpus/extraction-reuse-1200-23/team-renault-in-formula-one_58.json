@@ -1,0 +1,132 @@
+{
+  "chunk_id": "team-renault-in-formula-one#58",
+  "doc_id": "team-renault-in-formula-one",
+  "document_title": "Renault in Formula One",
+  "section": "Engine supplier (1983–2025) > Return to naturally aspirated engines (1989–2013) > Initial end of factory Renault engines, Mecachrome and Supertec (1998–2000)",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "8014cda5cc5dccf865d741c7c2b71426e38e9d685667b241cb04de006f86cf8e",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Renault",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that entered cars."
+      },
+      {
+        "local_id": "e2",
+        "name": "Mecachrome",
+        "entity_type": "Team",
+        "description": "A team that supplied engines to Williams."
+      },
+      {
+        "local_id": "e3",
+        "name": "Supertec",
+        "entity_type": "Team",
+        "description": "Flavio Briatore's company that distributed engines."
+      },
+      {
+        "local_id": "e4",
+        "name": "RS9",
+        "entity_type": "PowerUnit",
+        "description": "The last engine developed by Renault before their exit."
+      },
+      {
+        "local_id": "e5",
+        "name": "Playlife",
+        "entity_type": "PowerUnit",
+        "description": "The brand under which Benetton used Renault engines."
+      },
+      {
+        "local_id": "e6",
+        "name": "1998",
+        "entity_type": "Season",
+        "description": "A Formula 1 season."
+      },
+      {
+        "local_id": "e7",
+        "name": "1999",
+        "entity_type": "Season",
+        "description": "A Formula 1 season."
+      },
+      {
+        "local_id": "e8",
+        "name": "2000",
+        "entity_type": "Season",
+        "description": "A Formula 1 season."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e6",
+        "relationship_type": "ENTERED",
+        "description": "Renault entered the 1998 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e7",
+        "relationship_type": "ENTERED",
+        "description": "Renault entered the 1999 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e8",
+        "relationship_type": "ENTERED",
+        "description": "Renault entered the 2000 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 8,
+  "entities_accepted": 8,
+  "entities_rejected": 0,
+  "relationship_candidates": 9,
+  "relationships_accepted": 3,
+  "relationships_rejected": 6,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "FIELDED does not allow Team -> PowerUnit"
+    },
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "POWERED_BY does not allow Team -> PowerUnit"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "POWERED_BY does not allow Team -> PowerUnit"
+    },
+    {
+      "element": "relationship",
+      "index": 6,
+      "reason": "POWERED_BY does not allow Team -> PowerUnit"
+    },
+    {
+      "element": "relationship",
+      "index": 7,
+      "reason": "POWERED_BY does not allow Team -> PowerUnit"
+    },
+    {
+      "element": "relationship",
+      "index": 8,
+      "reason": "POWERED_BY does not allow Team -> PowerUnit"
+    }
+  ],
+  "alignments": []
+}

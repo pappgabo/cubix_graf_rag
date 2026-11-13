@@ -1,0 +1,246 @@
+{
+  "chunk_id": "team-mclaren#20",
+  "doc_id": "team-mclaren",
+  "document_title": "McLaren",
+  "section": "1983–1992: TAG-Porsche and Honda engines",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "0d6a58761b0e167148fc67729a75cd752951e64e1b212a8f8d29a2c1977cfd82",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Alain Prost",
+        "entity_type": "Driver",
+        "description": "A driver who returned to McLaren in 1984 and won the Drivers' Championship in 1985 and 1986."
+      },
+      {
+        "local_id": "e2",
+        "name": "Niki Lauda",
+        "entity_type": "Driver",
+        "description": "A driver who competed for McLaren and won the Drivers' Championship in 1984."
+      },
+      {
+        "local_id": "e3",
+        "name": "Keke Rosberg",
+        "entity_type": "Driver",
+        "description": "A driver who replaced Niki Lauda at McLaren."
+      },
+      {
+        "local_id": "e4",
+        "name": "McLaren",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that used TAG engines and won multiple championships in the 1980s."
+      },
+      {
+        "local_id": "e5",
+        "name": "TAG",
+        "entity_type": "PowerUnit",
+        "description": "An engine used by McLaren starting in 1984."
+      },
+      {
+        "local_id": "e6",
+        "name": "Honda",
+        "entity_type": "PowerUnit",
+        "description": "An engine used by the Williams team during the 1980s."
+      },
+      {
+        "local_id": "e7",
+        "name": "Scuderia Ferrari",
+        "entity_type": "Team",
+        "description": "A rival team to McLaren during the 1980s."
+      },
+      {
+        "local_id": "e8",
+        "name": "Williams",
+        "entity_type": "Team",
+        "description": "A team that won the Constructors' Championship in 1986."
+      },
+      {
+        "local_id": "e9",
+        "name": "1984",
+        "entity_type": "Season",
+        "description": "The season in which Niki Lauda won the Drivers' Championship."
+      },
+      {
+        "local_id": "e10",
+        "name": "1985",
+        "entity_type": "Season",
+        "description": "The season in which Alain Prost won the Drivers' Championship."
+      },
+      {
+        "local_id": "e11",
+        "name": "1986",
+        "entity_type": "Season",
+        "description": "The season in which Alain Prost won his second Drivers' Championship."
+      },
+      {
+        "local_id": "e12",
+        "name": "Australian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The race where Alain Prost secured his second title in 1986."
+      },
+      {
+        "local_id": "e13",
+        "name": "San Marino",
+        "entity_type": "GrandPrix",
+        "description": "One of the races where Alain Prost won in 1986."
+      },
+      {
+        "local_id": "e14",
+        "name": "Monaco",
+        "entity_type": "GrandPrix",
+        "description": "One of the races where Alain Prost won in 1986."
+      },
+      {
+        "local_id": "e15",
+        "name": "Austria",
+        "entity_type": "GrandPrix",
+        "description": "One of the races where Alain Prost won in 1986."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e4",
+        "target_id": "e9",
+        "relationship_type": "ENTERED",
+        "description": "McLaren entered the 1984 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e10",
+        "relationship_type": "ENTERED",
+        "description": "McLaren entered the 1985 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e11",
+        "relationship_type": "ENTERED",
+        "description": "McLaren entered the 1986 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e4",
+        "relationship_type": "DROVE_FOR",
+        "description": "Niki Lauda drove for McLaren.",
+        "from_year": 1984,
+        "to_year": 1985,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e4",
+        "relationship_type": "DROVE_FOR",
+        "description": "Alain Prost drove for McLaren.",
+        "from_year": 1984,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e4",
+        "relationship_type": "DROVE_FOR",
+        "description": "Keke Rosberg drove for McLaren.",
+        "from_year": 1986,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e1",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Niki Lauda was teammates with Alain Prost at McLaren.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 15,
+  "entities_accepted": 15,
+  "entities_rejected": 0,
+  "relationship_candidates": 17,
+  "relationships_accepted": 7,
+  "relationships_rejected": 10,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 7,
+      "reason": "ACHIEVED Driver -> GrandPrix has from_year=1986, to_year=None, role=None; the year or role cannot be stored on the reified result"
+    },
+    {
+      "element": "relationship",
+      "index": 8,
+      "reason": "ACHIEVED Driver -> GrandPrix has from_year=1986, to_year=None, role=None; the year or role cannot be stored on the reified result"
+    },
+    {
+      "element": "relationship",
+      "index": 9,
+      "reason": "ACHIEVED Driver -> GrandPrix has from_year=1986, to_year=None, role=None; the year or role cannot be stored on the reified result"
+    },
+    {
+      "element": "relationship",
+      "index": 10,
+      "reason": "ACHIEVED Driver -> GrandPrix has from_year=1986, to_year=None, role=None; the year or role cannot be stored on the reified result"
+    },
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "FIELDED does not allow Team -> PowerUnit"
+    },
+    {
+      "element": "relationship",
+      "index": 7,
+      "reason": "WON does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 8,
+      "reason": "TEAMMATE_OF does not allow Team -> Team"
+    },
+    {
+      "element": "relationship",
+      "index": 10,
+      "reason": "POWERED_BY does not allow Team -> PowerUnit"
+    },
+    {
+      "element": "relationship",
+      "index": 11,
+      "reason": "RACED_IN does not allow Team -> Team"
+    },
+    {
+      "element": "relationship",
+      "index": 12,
+      "reason": "WON does not allow Team -> Season"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 1,
+      "action": "clear_redundant_season_year",
+      "detail": "ENTERED year 1984 already named by Season 'e9'; from_year and to_year cleared"
+    },
+    {
+      "index": 2,
+      "action": "clear_redundant_season_year",
+      "detail": "ENTERED year 1985 already named by Season 'e10'; from_year and to_year cleared"
+    },
+    {
+      "index": 3,
+      "action": "clear_redundant_season_year",
+      "detail": "ENTERED year 1986 already named by Season 'e11'; from_year and to_year cleared"
+    }
+  ]
+}

@@ -1,0 +1,207 @@
+{
+  "chunk_id": "driver-kimi-raikkonen#114",
+  "doc_id": "driver-kimi-raikkonen",
+  "document_title": "Kimi Räikkönen",
+  "section": "Racing record > Formula One achievements",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "58d5a85f3785a42b9d183b759ce7cbb396a3371f42ffae993611dccae5b1c38f",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Kimi Räikkönen",
+        "entity_type": "Driver",
+        "description": "A Finnish racing driver who has won the World Championship."
+      },
+      {
+        "local_id": "e2",
+        "name": "Scuderia Ferrari",
+        "entity_type": "Team",
+        "description": "An Italian Formula One team."
+      },
+      {
+        "local_id": "e3",
+        "name": "2007",
+        "entity_type": "Season",
+        "description": "The season in which Räikkönen won the World Championship."
+      },
+      {
+        "local_id": "e4",
+        "name": "2008",
+        "entity_type": "Season",
+        "description": "The season in which Räikkönen achieved Ferrari's 200th pole position."
+      },
+      {
+        "local_id": "e5",
+        "name": "2016",
+        "entity_type": "Season",
+        "description": "The season in which Räikkönen contributed to Ferrari's 700th podium."
+      },
+      {
+        "local_id": "e6",
+        "name": "World Championship",
+        "entity_type": "Title",
+        "description": "The championship title won by Räikkönen in 2007."
+      },
+      {
+        "local_id": "e7",
+        "name": "Chinese Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A race where Räikkönen gave Ferrari their 200th win."
+      },
+      {
+        "local_id": "e8",
+        "name": "French Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A race where Räikkönen gave Ferrari their 200th pole position."
+      },
+      {
+        "local_id": "e9",
+        "name": "Russian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A race where Räikkönen gave Ferrari their 700th podium."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Kimi Räikkönen at Chinese Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Räikkönen achieved a win in the Chinese Grand Prix."
+      },
+      {
+        "local_id": "rr2",
+        "name": "Kimi Räikkönen at French Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Räikkönen achieved a pole position in the French Grand Prix."
+      },
+      {
+        "local_id": "rr3",
+        "name": "Kimi Räikkönen at Russian Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Räikkönen achieved a podium in the Russian Grand Prix."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e6",
+        "relationship_type": "WON",
+        "description": "Räikkönen won the World Championship.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e6",
+        "target_id": "e3",
+        "relationship_type": "AWARDED_IN",
+        "description": "The World Championship title was awarded in 2007.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Räikkönen achieved a win in the Chinese Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e7",
+        "relationship_type": "AT_RACE",
+        "description": "Räikkönen achieved a win in the Chinese Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr2",
+        "relationship_type": "ACHIEVED",
+        "description": "Räikkönen achieved a pole position in the French Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr2",
+        "target_id": "e8",
+        "relationship_type": "AT_RACE",
+        "description": "Räikkönen achieved a pole position in the French Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr3",
+        "relationship_type": "ACHIEVED",
+        "description": "Räikkönen achieved a podium in the Russian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr3",
+        "target_id": "e9",
+        "relationship_type": "AT_RACE",
+        "description": "Räikkönen achieved a podium in the Russian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 9,
+  "entities_accepted": 12,
+  "entities_rejected": 0,
+  "relationship_candidates": 8,
+  "relationships_accepted": 8,
+  "relationships_rejected": 3,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "FIELDED does not allow Team -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 5,
+      "reason": "FIELDED does not allow Team -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 8,
+      "reason": "FIELDED does not allow Team -> GrandPrix"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 0,
+      "action": "move_won_year",
+      "detail": "WON year 2007 stored as e6 -AWARDED_IN-> e3; from_year and to_year cleared; description kept"
+    },
+    {
+      "index": 3,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e7; description kept"
+    },
+    {
+      "index": 5,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr2 -AT_RACE-> e8; description kept"
+    },
+    {
+      "index": 7,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr3 -AT_RACE-> e9; description kept"
+    }
+  ]
+}

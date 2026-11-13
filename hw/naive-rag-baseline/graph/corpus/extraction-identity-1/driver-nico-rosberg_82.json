@@ -1,0 +1,106 @@
+{
+  "chunk_id": "driver-nico-rosberg#82",
+  "doc_id": "driver-nico-rosberg",
+  "document_title": "Nico Rosberg",
+  "section": "Nico Rosberg > 2016: Champion at last in final Formula One season",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/Nico_Rosberg",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "1526b35cff2d1ffaaee6339154f7d8259163515cc3a3dc488bef6ee6f538341a",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "entity_candidates": 6,
+  "entities_accepted": 6,
+  "entities_rejected": 0,
+  "relationship_candidates": 5,
+  "relationships_accepted": 4,
+  "relationships_rejected": 1,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "WON does not allow Driver -> Season"
+    }
+  ],
+  "alignments": [],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Nico Rosberg",
+        "entity_type": "Driver",
+        "description": "A Formula One driver who won the championship in 2016."
+      },
+      {
+        "local_id": "e2",
+        "name": "2016",
+        "entity_type": "Season",
+        "description": "The championship year in which Nico Rosberg won the title."
+      },
+      {
+        "local_id": "e3",
+        "name": "Belgium",
+        "entity_type": "GrandPrix",
+        "description": "A Grand Prix where Nico Rosberg won."
+      },
+      {
+        "local_id": "e4",
+        "name": "Singapore",
+        "entity_type": "GrandPrix",
+        "description": "A Grand Prix where Nico Rosberg won."
+      },
+      {
+        "local_id": "e5",
+        "name": "Japan",
+        "entity_type": "GrandPrix",
+        "description": "A Grand Prix where Nico Rosberg won."
+      },
+      {
+        "local_id": "e6",
+        "name": "Abu Dhabi",
+        "entity_type": "GrandPrix",
+        "description": "The season-ending Grand Prix where Nico Rosberg entered leading Hamilton by 12 points."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e3",
+        "target_id": "e2",
+        "relationship_type": "ROUND_OF",
+        "description": "The Belgium Grand Prix is a round of the 2016 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e2",
+        "relationship_type": "ROUND_OF",
+        "description": "The Singapore Grand Prix is a round of the 2016 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e2",
+        "relationship_type": "ROUND_OF",
+        "description": "The Japan Grand Prix is a round of the 2016 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e6",
+        "target_id": "e2",
+        "relationship_type": "ROUND_OF",
+        "description": "The Abu Dhabi Grand Prix is a round of the 2016 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

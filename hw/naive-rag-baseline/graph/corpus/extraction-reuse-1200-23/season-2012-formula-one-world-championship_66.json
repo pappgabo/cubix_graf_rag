@@ -1,0 +1,133 @@
+{
+  "chunk_id": "season-2012-formula-one-world-championship#66",
+  "doc_id": "season-2012-formula-one-world-championship",
+  "document_title": "2012 Formula One World Championship",
+  "section": "Race summaries > Round 10 – Germany Hockenheimring",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "4c7c96b3486fae141d7f4d40e962be68bf67a50918d96610ce809ea5ed403760",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Jenson Button",
+        "entity_type": "Driver",
+        "description": "A driver who briefly looked as if he had the pace to pass Alonso for the race lead."
+      },
+      {
+        "local_id": "e2",
+        "name": "Fernando Alonso",
+        "entity_type": "Driver",
+        "description": "The driver who was leading the race."
+      },
+      {
+        "local_id": "e3",
+        "name": "Sebastian Vettel",
+        "entity_type": "Driver",
+        "description": "A driver who received a penalty for running wide while trying to pass Button."
+      },
+      {
+        "local_id": "e4",
+        "name": "Kimi Räikkönen",
+        "entity_type": "Driver",
+        "description": "A driver who inherited third place after Button was promoted."
+      },
+      {
+        "local_id": "e5",
+        "name": "Kamui Kobayashi",
+        "entity_type": "Driver",
+        "description": "A driver classified fourth in the race."
+      },
+      {
+        "local_id": "e6",
+        "name": "Red Bull Racing",
+        "entity_type": "Team",
+        "description": "The team involved in a technical dispute regarding an illegal engine map."
+      },
+      {
+        "local_id": "e7",
+        "name": "Hockenheimring",
+        "entity_type": "Circuit",
+        "description": "The circuit where the race took place."
+      },
+      {
+        "local_id": "e8",
+        "name": "2012",
+        "entity_type": "Season",
+        "description": "The season of the Formula One World Championship."
+      },
+      {
+        "local_id": "e9",
+        "name": "Red Bull RB8",
+        "entity_type": "Car",
+        "description": "The car model used by Red Bull Racing."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e6",
+        "target_id": "e9",
+        "relationship_type": "FIELDED",
+        "description": "Red Bull Racing entered the Red Bull RB8 car.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e9",
+        "target_id": "e8",
+        "relationship_type": "RACED_IN",
+        "description": "The Red Bull RB8 took part in the 2012 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e1",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Kimi Räikkönen was a teammate of Jenson Button in this race.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 9,
+  "entities_accepted": 9,
+  "entities_rejected": 0,
+  "relationship_candidates": 8,
+  "relationships_accepted": 3,
+  "relationships_rejected": 5,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "ACHIEVED does not allow Driver -> Driver"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "ACHIEVED does not allow Driver -> Driver"
+    },
+    {
+      "element": "relationship",
+      "index": 5,
+      "reason": "ACHIEVED does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 6,
+      "reason": "ACHIEVED does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 7,
+      "reason": "ROUND_OF does not allow Circuit -> Season"
+    }
+  ],
+  "alignments": []
+}

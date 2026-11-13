@@ -1,0 +1,92 @@
+{
+  "chunk_id": "driver-michael-schumacher#89",
+  "doc_id": "driver-michael-schumacher",
+  "document_title": "Michael Schumacher",
+  "section": null,
+  "page": 8,
+  "source": "https://en.wikipedia.org/wiki/Michael_Schumacher",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "daf8b04bddfb62fbd81855e96fcc1db30dbef24e6de146bba70d8807d9411b7f",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "HELD_AT does not allow Car -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "WON does not allow Driver -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "AWARDED_IN does not allow GrandPrix -> Season"
+    }
+  ],
+  "alignments": [],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Michael Schumacher",
+        "entity_type": "Driver",
+        "description": "Schumacher was a Formula One driver known for his competitive spirit."
+      },
+      {
+        "local_id": "e2",
+        "name": "Fernando Alonso",
+        "entity_type": "Driver",
+        "description": "Alonso was a Formula One driver competing against Schumacher."
+      },
+      {
+        "local_id": "e3",
+        "name": "Renault R25",
+        "entity_type": "Car",
+        "description": "The car driven by Fernando Alonso."
+      },
+      {
+        "local_id": "e4",
+        "name": "San Marino Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula One race where Schumacher competed against Alonso."
+      },
+      {
+        "local_id": "e5",
+        "name": "United States Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The race where Schumacher achieved his sole win in 2005."
+      },
+      {
+        "local_id": "e6",
+        "name": "2005",
+        "entity_type": "Season",
+        "description": "The Formula One season in which Schumacher had his sole win."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Schumacher and Alonso were competitors in the same season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e6",
+        "relationship_type": "ROUND_OF",
+        "description": "The United States Grand Prix is a round of the 2005 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

@@ -1,0 +1,252 @@
+{
+  "chunk_id": "driver-michael-schumacher#42",
+  "doc_id": "driver-michael-schumacher",
+  "document_title": "Michael Schumacher",
+  "section": null,
+  "page": 9,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "387976d989a72d6dcca7a50be7aa864989e7c7109738c332873a04e36f4d3637",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Michael Schumacher",
+        "entity_type": "Driver",
+        "description": "A Formula One driver known for his achievements and records."
+      },
+      {
+        "local_id": "e2",
+        "name": "Scuderia Ferrari",
+        "entity_type": "Team",
+        "description": "A Formula One team that Michael Schumacher raced for."
+      },
+      {
+        "local_id": "e3",
+        "name": "2004",
+        "entity_type": "Season",
+        "description": "A Formula One championship season."
+      },
+      {
+        "local_id": "e4",
+        "name": "2006",
+        "entity_type": "Season",
+        "description": "A Formula One championship season."
+      },
+      {
+        "local_id": "e5",
+        "name": "2002",
+        "entity_type": "Season",
+        "description": "A Formula One championship season."
+      },
+      {
+        "local_id": "e6",
+        "name": "2008",
+        "entity_type": "Season",
+        "description": "A Formula One championship season."
+      },
+      {
+        "local_id": "e7",
+        "name": "2009",
+        "entity_type": "Season",
+        "description": "A Formula One championship season."
+      },
+      {
+        "local_id": "e8",
+        "name": "Jerez Circuit",
+        "entity_type": "Circuit",
+        "description": "A racing venue where Ferrari tested electronics and tyres."
+      },
+      {
+        "local_id": "e9",
+        "name": "Pannónia-Ring",
+        "entity_type": "Circuit",
+        "description": "A racing venue where Schumacher competed in motorcycle racing."
+      },
+      {
+        "local_id": "e10",
+        "name": "Honda CBR1000RR",
+        "entity_type": "Car",
+        "description": "A motorcycle that Schumacher rode in the IDM Superbike series."
+      },
+      {
+        "local_id": "e11",
+        "name": "Indianapolis",
+        "entity_type": "GrandPrix",
+        "description": "A Grand Prix where Schumacher achieved wins."
+      },
+      {
+        "local_id": "e12",
+        "name": "Monza",
+        "entity_type": "GrandPrix",
+        "description": "A Grand Prix where Schumacher achieved wins."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Michael Schumacher at Indianapolis",
+        "entity_type": "RaceResult",
+        "description": "Michael Schumacher recorded wins at the Indianapolis Grand Prix."
+      },
+      {
+        "local_id": "rr2",
+        "name": "Michael Schumacher at Monza",
+        "entity_type": "RaceResult",
+        "description": "Michael Schumacher recorded wins at the Monza Grand Prix."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Michael Schumacher raced for Ferrari.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e3",
+        "relationship_type": "ENTERED",
+        "description": "Ferrari took part in the 2004 Formula One season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e4",
+        "relationship_type": "ENTERED",
+        "description": "Ferrari took part in the 2006 Formula One season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e5",
+        "relationship_type": "ENTERED",
+        "description": "Ferrari took part in the 2002 Formula One season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e6",
+        "relationship_type": "ENTERED",
+        "description": "Ferrari took part in the 2008 Formula One season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e7",
+        "relationship_type": "ENTERED",
+        "description": "Ferrari took part in the 2009 Formula One season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Michael Schumacher recorded wins at the Indianapolis Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e11",
+        "relationship_type": "AT_RACE",
+        "description": "Michael Schumacher recorded wins at the Indianapolis Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr2",
+        "relationship_type": "ACHIEVED",
+        "description": "Michael Schumacher recorded wins at the Monza Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr2",
+        "target_id": "e12",
+        "relationship_type": "AT_RACE",
+        "description": "Michael Schumacher recorded wins at the Monza Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 12,
+  "entities_accepted": 14,
+  "entities_rejected": 0,
+  "relationship_candidates": 16,
+  "relationships_accepted": 10,
+  "relationships_rejected": 8,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 10,
+      "reason": "WON does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 11,
+      "reason": "WON does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 12,
+      "reason": "WON does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 13,
+      "reason": "WON does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 14,
+      "reason": "WON does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 15,
+      "reason": "HELD_AT does not allow Team -> Circuit"
+    },
+    {
+      "element": "relationship",
+      "index": 16,
+      "reason": "ACHIEVED does not allow Driver -> Car"
+    },
+    {
+      "element": "relationship",
+      "index": 17,
+      "reason": "HELD_AT does not allow Circuit -> Car"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 6,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e11; description kept"
+    },
+    {
+      "index": 7,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr2 -AT_RACE-> e12; description kept"
+    }
+  ]
+}

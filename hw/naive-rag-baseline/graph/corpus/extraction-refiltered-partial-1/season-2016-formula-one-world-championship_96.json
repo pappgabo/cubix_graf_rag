@@ -1,0 +1,49 @@
+{
+  "chunk_id": "season-2016-formula-one-world-championship#96",
+  "doc_id": "season-2016-formula-one-world-championship",
+  "document_title": "2016 Formula One World Championship",
+  "section": "Championship conclusion",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/2016_Formula_One_World_Championship",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "2d467734af7cfcdd7085d8c811798af5c15c39ca57db2edabd9d63a84c934886",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "WON does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "AWARDED_IN does not allow Season -> Driver"
+    }
+  ],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Nico Rosberg",
+        "entity_type": "Driver",
+        "description": "He won the 2016 Formula One World Championship title."
+      },
+      {
+        "local_id": "e2",
+        "name": "2016 Formula One World Championship",
+        "entity_type": "Season",
+        "description": "The championship season in which Nico Rosberg won the title."
+      },
+      {
+        "local_id": "e3",
+        "name": "Alain Prost",
+        "entity_type": "Driver",
+        "description": "He was the first reigning champion to retire from the sport in 1993."
+      }
+    ],
+    "relationships": []
+  }
+}

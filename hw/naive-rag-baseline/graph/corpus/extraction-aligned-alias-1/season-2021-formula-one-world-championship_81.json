@@ -1,0 +1,88 @@
+{
+  "chunk_id": "season-2021-formula-one-world-championship#81",
+  "doc_id": "season-2021-formula-one-world-championship",
+  "document_title": "2021 Formula One World Championship",
+  "section": null,
+  "page": 7,
+  "source": "https://en.wikipedia.org/wiki/2021_Formula_One_World_Championship",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "db15366b28f120a1db34a3a18266b0bfafa26f7c879af8c613c197d7349445db",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "WON does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "RACED_IN does not allow Season -> Driver"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "RACED_IN does not allow Season -> Driver"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "RACED_IN does not allow Season -> Driver"
+    },
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "RACED_IN does not allow Season -> Driver"
+    },
+    {
+      "element": "relationship",
+      "index": 5,
+      "reason": "RACED_IN does not allow Season -> Driver"
+    }
+  ],
+  "alignments": [],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Lewis Hamilton",
+        "entity_type": "Driver",
+        "description": "Hamilton took his 100th Formula One victory and the championship lead."
+      },
+      {
+        "local_id": "e2",
+        "name": "Lando Norris",
+        "entity_type": "Driver",
+        "description": "Norris took his first career pole position."
+      },
+      {
+        "local_id": "e3",
+        "name": "Carlos Sainz",
+        "entity_type": "Driver",
+        "description": "Sainz had his best qualifying result."
+      },
+      {
+        "local_id": "e4",
+        "name": "George Russell",
+        "entity_type": "Driver",
+        "description": "Russell was mentioned in the context of qualifying."
+      },
+      {
+        "local_id": "e5",
+        "name": "Max Verstappen",
+        "entity_type": "Driver",
+        "description": "Verstappen was mentioned as being behind Hamilton in the championship."
+      },
+      {
+        "local_id": "e6",
+        "name": "2021 Formula One World Championship",
+        "entity_type": "Season",
+        "description": "The championship year referenced in the text."
+      }
+    ],
+    "relationships": []
+  }
+}

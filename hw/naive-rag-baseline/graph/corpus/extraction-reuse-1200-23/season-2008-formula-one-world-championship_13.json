@@ -1,0 +1,135 @@
+{
+  "chunk_id": "season-2008-formula-one-world-championship#13",
+  "doc_id": "season-2008-formula-one-world-championship",
+  "document_title": "2008 Formula One World Championship",
+  "section": null,
+  "page": 3,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "7e8b73eb03b71604058928c605643560e2eab55c574efcd9c3d08688259102cc",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Kazuki Nakajima",
+        "entity_type": "Driver",
+        "description": "A driver who crashed his FW30 during testing."
+      },
+      {
+        "local_id": "e2",
+        "name": "Lewis Hamilton",
+        "entity_type": "Driver",
+        "description": "A driver who faced racist abuse during testing."
+      },
+      {
+        "local_id": "e3",
+        "name": "Williams",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that withdrew from testing."
+      },
+      {
+        "local_id": "e4",
+        "name": "Scuderia Ferrari",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that tested the F2008."
+      },
+      {
+        "local_id": "e5",
+        "name": "Toyota",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that tested the TF108."
+      },
+      {
+        "local_id": "e6",
+        "name": "Red Bull Racing",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that participated in testing."
+      },
+      {
+        "local_id": "e7",
+        "name": "FW30",
+        "entity_type": "Car",
+        "description": "The car driven by Kazuki Nakajima that crashed."
+      },
+      {
+        "local_id": "e8",
+        "name": "F2008",
+        "entity_type": "Car",
+        "description": "The car tested by Ferrari."
+      },
+      {
+        "local_id": "e9",
+        "name": "TF108",
+        "entity_type": "Car",
+        "description": "The car tested by Toyota."
+      },
+      {
+        "local_id": "e10",
+        "name": "Jerez",
+        "entity_type": "Circuit",
+        "description": "The circuit where testing returned on 12 February."
+      },
+      {
+        "local_id": "e11",
+        "name": "Bahrain",
+        "entity_type": "Circuit",
+        "description": "The circuit where Ferrari and Toyota moved to continue testing."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e3",
+        "target_id": "e7",
+        "relationship_type": "FIELDED",
+        "description": "Williams entered the FW30 car.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e8",
+        "relationship_type": "FIELDED",
+        "description": "Ferrari entered the F2008 car.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e9",
+        "relationship_type": "FIELDED",
+        "description": "Toyota entered the TF108 car.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 11,
+  "entities_accepted": 11,
+  "entities_rejected": 0,
+  "relationship_candidates": 6,
+  "relationships_accepted": 3,
+  "relationships_rejected": 3,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "ENTERED does not allow Team -> Circuit"
+    },
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "HELD_AT does not allow Team -> Circuit"
+    },
+    {
+      "element": "relationship",
+      "index": 5,
+      "reason": "HELD_AT does not allow Team -> Circuit"
+    }
+  ],
+  "alignments": []
+}

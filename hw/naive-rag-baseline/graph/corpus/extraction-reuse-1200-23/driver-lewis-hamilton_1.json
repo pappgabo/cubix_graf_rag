@@ -1,0 +1,239 @@
+{
+  "chunk_id": "driver-lewis-hamilton#1",
+  "doc_id": "driver-lewis-hamilton",
+  "document_title": "Lewis Hamilton",
+  "section": null,
+  "page": 1,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "c536078a7de380b5bbc08c9092b170b698fa7b01c49a83fdaacdca5977bf70d4",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Lewis Hamilton",
+        "entity_type": "Driver",
+        "description": "A British racing driver who has won multiple Formula One World Championships."
+      },
+      {
+        "local_id": "e2",
+        "name": "Fernando Alonso",
+        "entity_type": "Driver",
+        "description": "A Spanish racing driver and two-time Formula One World Champion."
+      },
+      {
+        "local_id": "e3",
+        "name": "McLaren",
+        "entity_type": "Team",
+        "description": "A British Formula One team."
+      },
+      {
+        "local_id": "e4",
+        "name": "Mercedes-AMG Petronas Formula One Team",
+        "entity_type": "Team",
+        "description": "A German Formula One team."
+      },
+      {
+        "local_id": "e5",
+        "name": "Nico Rosberg",
+        "entity_type": "Driver",
+        "description": "A German racing driver and 2016 Formula One World Champion."
+      },
+      {
+        "local_id": "e6",
+        "name": "Sebastian Vettel",
+        "entity_type": "Driver",
+        "description": "A German racing driver and four-time Formula One World Champion."
+      },
+      {
+        "local_id": "e7",
+        "name": "2008",
+        "entity_type": "Season",
+        "description": "The Formula One season in which Lewis Hamilton won his maiden title."
+      },
+      {
+        "local_id": "e8",
+        "name": "2014",
+        "entity_type": "Title",
+        "description": "The Formula One World Championship title won by Lewis Hamilton."
+      },
+      {
+        "local_id": "e9",
+        "name": "2015",
+        "entity_type": "Title",
+        "description": "The Formula One World Championship title won by Lewis Hamilton."
+      },
+      {
+        "local_id": "e10",
+        "name": "2017",
+        "entity_type": "Title",
+        "description": "The Formula One World Championship title won by Lewis Hamilton."
+      },
+      {
+        "local_id": "e11",
+        "name": "2018",
+        "entity_type": "Title",
+        "description": "The Formula One World Championship title won by Lewis Hamilton."
+      },
+      {
+        "local_id": "e12",
+        "name": "2019",
+        "entity_type": "Title",
+        "description": "The Formula One World Championship title won by Lewis Hamilton."
+      },
+      {
+        "local_id": "e13",
+        "name": "Hungarian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula One race held in Hungary."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Lewis Hamilton at Hungarian Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Lewis Hamilton achieved his maiden victory at the Hungarian Grand Prix."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e3",
+        "relationship_type": "DROVE_FOR",
+        "description": "Lewis Hamilton drove for McLaren.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e4",
+        "relationship_type": "DROVE_FOR",
+        "description": "Lewis Hamilton drove for Mercedes.",
+        "from_year": 2013,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e8",
+        "relationship_type": "WON",
+        "description": "Lewis Hamilton won the 2014 Formula One World Championship title.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e9",
+        "relationship_type": "WON",
+        "description": "Lewis Hamilton won the 2015 Formula One World Championship title.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e10",
+        "relationship_type": "WON",
+        "description": "Lewis Hamilton won the 2017 Formula One World Championship title.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e11",
+        "relationship_type": "WON",
+        "description": "Lewis Hamilton won the 2018 Formula One World Championship title.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e12",
+        "relationship_type": "WON",
+        "description": "Lewis Hamilton won the 2019 Formula One World Championship title.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e5",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Lewis Hamilton was teammates with Nico Rosberg at Mercedes.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Lewis Hamilton was teammates with Fernando Alonso at McLaren.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Lewis Hamilton achieved his maiden victory at the Hungarian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e13",
+        "relationship_type": "AT_RACE",
+        "description": "Lewis Hamilton achieved his maiden victory at the Hungarian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e13",
+        "target_id": "e7",
+        "relationship_type": "ROUND_OF",
+        "description": "The Hungarian Grand Prix is a round of the 2008 Formula One season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e7",
+        "relationship_type": "ENTERED",
+        "description": "Mercedes entered the 2014 Formula One season.\nMercedes entered the 2015 Formula One season.\nMercedes entered the 2017 Formula One season.\nMercedes entered the 2018 Formula One season.\nMercedes entered the 2019 Formula One season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 13,
+  "entities_accepted": 14,
+  "entities_rejected": 0,
+  "relationship_candidates": 17,
+  "relationships_accepted": 13,
+  "relationships_rejected": 1,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 7,
+      "reason": "WON does not allow Driver -> Season"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 10,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e13; description kept"
+    }
+  ]
+}

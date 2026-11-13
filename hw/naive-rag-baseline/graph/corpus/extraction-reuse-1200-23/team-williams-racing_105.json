@@ -1,0 +1,152 @@
+{
+  "chunk_id": "team-williams-racing#105",
+  "doc_id": "team-williams-racing",
+  "document_title": "Williams Racing",
+  "section": "Williams Racing > 2023–present: Improvements under James Vowles",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "33552e5f5d56eb457046845292b5b6a57a53da27a358140b8ba02e805e5518c0",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Alex Albon",
+        "entity_type": "Driver",
+        "description": "Retained for the 2024 season."
+      },
+      {
+        "local_id": "e2",
+        "name": "Logan Sargeant",
+        "entity_type": "Driver",
+        "description": "Retained for the 2024 season; released after the 2024 Dutch Grand Prix."
+      },
+      {
+        "local_id": "e3",
+        "name": "Carlos Sainz Jr.",
+        "entity_type": "Driver",
+        "description": "Due to replace Sargeant in the 2025 season."
+      },
+      {
+        "local_id": "e4",
+        "name": "Franco Colapinto",
+        "entity_type": "Driver",
+        "description": "Current Formula 2 driver and Williams Driver Academy member; replaced Sargeant from the 2024 Italian Grand Prix."
+      },
+      {
+        "local_id": "e5",
+        "name": "Williams Racing",
+        "entity_type": "Team",
+        "description": "Entered the 2025 season as Atlassian Williams Racing."
+      },
+      {
+        "local_id": "e6",
+        "name": "Azerbaijan Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "Venue where Sainz scored Williams' first podium since 2021."
+      },
+      {
+        "local_id": "e7",
+        "name": "United States Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "Venue where Williams scored their first sprint race podium."
+      },
+      {
+        "local_id": "e8",
+        "name": "2024",
+        "entity_type": "Season",
+        "description": "Season in which Albon and Sargeant were retained."
+      },
+      {
+        "local_id": "e9",
+        "name": "2025",
+        "entity_type": "Season",
+        "description": "Season in which Williams entered as Atlassian Williams Racing."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e5",
+        "relationship_type": "DROVE_FOR",
+        "description": "Albon drove for Williams Racing.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e5",
+        "relationship_type": "DROVE_FOR",
+        "description": "Sargeant drove for Williams Racing.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e5",
+        "relationship_type": "DROVE_FOR",
+        "description": "Sainz drove for Williams Racing starting in 2025.",
+        "from_year": 2025,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e5",
+        "relationship_type": "DROVE_FOR",
+        "description": "Colapinto drove for Williams Racing from the 2024 Italian Grand Prix to the end of the 2024 season.",
+        "from_year": 2024,
+        "to_year": 2024,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e8",
+        "relationship_type": "ENTERED",
+        "description": "Williams Racing entered the 2024 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e9",
+        "relationship_type": "ENTERED",
+        "description": "Williams Racing entered the 2025 season as Atlassian Williams Racing.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e6",
+        "target_id": "e9",
+        "relationship_type": "ROUND_OF",
+        "description": "Azerbaijan Grand Prix is a round of the 2025 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e7",
+        "target_id": "e9",
+        "relationship_type": "ROUND_OF",
+        "description": "United States Grand Prix is a round of the 2025 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 9,
+  "entities_accepted": 9,
+  "entities_rejected": 0,
+  "relationship_candidates": 8,
+  "relationships_accepted": 8,
+  "relationships_rejected": 0,
+  "rejections": [],
+  "alignments": []
+}

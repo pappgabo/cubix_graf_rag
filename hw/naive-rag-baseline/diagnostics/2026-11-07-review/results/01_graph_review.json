@@ -1,0 +1,858 @@
+{
+ "records": 1651,
+ "status": {
+  "ok": 1651
+ },
+ "empty_ok": 315,
+ "reused": 86,
+ "merged": {
+  "kind": "merged",
+  "nodes": 2761,
+  "edges": 4326,
+  "largest_weak_component_nodes": 1896,
+  "component_meaning": "Az irányított szakterületi gráf legnagyobb gyengén összefüggő komponense: az irány nem számít, a méret a csomópontok száma. A seed, a dokumentumgráf és a MENTIONS élek nincsenek benne."
+ },
+ "by_type": {
+  "Driver": 423,
+  "Team": 363,
+  "Season": 167,
+  "GrandPrix": 372,
+  "Title": 121,
+  "Car": 343,
+  "RaceResult": 735,
+  "Circuit": 162,
+  "PowerUnit": 75
+ },
+ "rejection_reasons_top": [
+  [
+   "relationship: WON does not allow Driver -> Season",
+   221
+  ],
+  [
+   "relationship: DROVE_FOR does not allow Team -> Driver",
+   171
+  ],
+  [
+   "relationship: ACHIEVED Driver -> GrandPrix has <time> the year or role cannot be stored on the reified result",
+   165
+  ],
+  [
+   "relationship: ACHIEVED does not allow Driver -> Season",
+   153
+  ],
+  [
+   "relationship: RACED_IN does not allow Driver -> Season",
+   119
+  ],
+  [
+   "relationship: DROVE_FOR does not allow Team -> Team",
+   109
+  ],
+  [
+   "relationship: POWERED_BY does not allow Team -> PowerUnit",
+   95
+  ],
+  [
+   "relationship: FIELDED is not temporal; <time> cannot be stored without dropping them",
+   79
+  ],
+  [
+   "relationship: ROUND_OF does not allow Team -> GrandPrix",
+   73
+  ],
+  [
+   "relationship: DROVE_FOR does not allow Driver -> Season",
+   71
+  ],
+  [
+   "relationship: WON does not allow Team -> Season",
+   60
+  ],
+  [
+   "relationship: ACHIEVED does not allow Driver -> Circuit",
+   52
+  ],
+  [
+   "relationship: FOR_TEAM does not allow Driver -> GrandPrix",
+   51
+  ],
+  [
+   "relationship: ROUND_OF does not allow Circuit -> Season",
+   48
+  ],
+  [
+   "relationship: FIELDED does not allow Team -> GrandPrix",
+   48
+  ],
+  [
+   "relationship: FOR_TEAM does not allow Driver -> Team",
+   44
+  ],
+  [
+   "relationship: ACHIEVED does not allow GrandPrix -> Driver",
+   42
+  ],
+  [
+   "relationship: WON does not allow Driver -> Team",
+   42
+  ],
+  [
+   "relationship: FIELDED does not allow Team -> Team",
+   42
+  ],
+  [
+   "relationship: ACHIEVED does not allow Driver -> Driver",
+   39
+  ],
+  [
+   "relationship: TEAMMATE_OF does not allow Driver -> Team",
+   37
+  ],
+  [
+   "relationship: RACED_IN does not allow Team -> Season",
+   36
+  ],
+  [
+   "relationship: WON does not allow Driver -> GrandPrix",
+   34
+  ],
+  [
+   "relationship: POWERED_BY does not allow Team -> Team",
+   29
+  ],
+  [
+   "relationship: FIELDED does not allow Team -> Season",
+   24
+  ]
+ ],
+ "rejections_total": 2834,
+ "alignments": {
+  "reify_race_result": 1083,
+  "clear_redundant_season_year": 597,
+  "move_won_year": 86
+ },
+ "season_non_year": [
+  "Season:130",
+  "Season:190",
+  "Season:1960s",
+  "Season:1970s",
+  "Season:adac gt masters",
+  "Season:amx global league",
+  "Season:asturias",
+  "Season:belgian cadet championship",
+  "Season:belgian kf5 championship",
+  "Season:benelux karting series",
+  "Season:bpr global gt series",
+  "Season:bridgestone cup",
+  "Season:british formula 3 international series",
+  "Season:can-am",
+  "Season:cik-fia european championship",
+  "Season:deutsche tourenwagen masters",
+  "Season:drivers' championship",
+  "Season:dutch championship",
+  "Season:etcr",
+  "Season:eurocup",
+  "Season:european championship",
+  "Season:european karting championships",
+  "Season:extreme e",
+  "Season:f1 academy",
+  "Season:fia formula 2",
+  "Season:florida winter series",
+  "Season:formula 2 championship",
+  "Season:formula 3 euro series",
+  "Season:formula one",
+  "Season:formula renault 2.0",
+  "Season:formula super a world championship",
+  "Season:galicia",
+  "Season:gp2",
+  "Season:gp3 series",
+  "Season:group b",
+  "Season:gt4",
+  "Season:imsa sportscar championship",
+  "Season:indycar series",
+  "Season:karting",
+  "Season:kf1",
+  "Season:kf2",
+  "Season:kf3 world cup",
+  "Season:kz2",
+  "Season:mini junior championship",
+  "Season:nitro rallycross",
+  "Season:nürburgring langstrecken-serie",
+  "Season:rotax max challenge belgium",
+  "Season:season",
+  "Season:south garda winter cup",
+  "Season:spanish junior championships",
+  "Season:v6 turbo-hybrid era",
+  "Season:vas championship",
+  "Season:vln endurance racing championship",
+  "Season:world cup",
+  "Season:world drivers' championship",
+  "Season:world endurance drivers' championship",
+  "Season:wsk euro series",
+  "Season:wsk master series",
+  "Season:wsk nations cup",
+  "Season:wsk world series"
+ ],
+ "title_without_year_count": 90,
+ "title_without_year_sample": [
+  "Title:#weraceasone",
+  "Title:10",
+  "Title:11 drivers' championships",
+  "Title:12 constructors' championships",
+  "Title:9",
+  "Title:accelerate 25",
+  "Title:akk-motorsport driver of the year",
+  "Title:autosport gregor grant award",
+  "Title:bambi award",
+  "Title:bbc overseas sports personality of the year",
+  "Title:bridgestone cup",
+  "Title:concorde agreement",
+  "Title:confartigianato motori award",
+  "Title:confartigianato motori driver of the year",
+  "Title:constructors' championship",
+  "Title:constructors' title",
+  "Title:constructors' world championship",
+  "Title:crashgate",
+  "Title:côte d'azur mini-kart regional championship",
+  "Title:côte d'azur regional championship",
+  "Title:d drivers' championship",
+  "Title:dhl fastest lap award",
+  "Title:driver's championship",
+  "Title:drivers' championship",
+  "Title:drivers' championships",
+  "Title:drivers' world championship",
+  "Title:esports drivers' championship",
+  "Title:european championship",
+  "Title:european drivers' championship",
+  "Title:european grand prix championship",
+  "Title:european sportsperson of the year",
+  "Title:european super a championship",
+  "Title:fia formula 2 championship",
+  "Title:fia gold medal for motor sport",
+  "Title:fia hall of fame",
+  "Title:fia pole trophy",
+  "Title:formula a world championship",
+  "Title:formula bmw adac",
+  "Title:formula one drivers' championship",
+  "Title:formula one world drivers' championship",
+  "Title:formula regional asian championship",
+  "Title:french championship",
+  "Title:french manufacturers' trophy",
+  "Title:german junior kart championship",
+  "Title:golden steering wheel",
+  "Title:gp2 series",
+  "Title:gp2/formula 2",
+  "Title:grand chelem",
+  "Title:gt500 title",
+  "Title:ica junior cik-fia european championship",
+  "Title:italian junior karting championship",
+  "Title:junior monaco kart cup",
+  "Title:karting european championship (ica)",
+  "Title:kz world championship",
+  "Title:laureus world sports awards",
+  "Title:laureus world sportsman of the year",
+  "Title:lmp1 drivers' championship",
+  "Title:lorenzo bandini trophy",
+  "Title:manufacturer championship",
+  "Title:medal of honour"
+ ],
+ "largest_descriptions": [
+  {
+   "key": "Driver:lewis hamilton",
+   "sources": 236,
+   "desc_chars": 14655,
+   "desc_lines": 212,
+   "degree": 121
+  },
+  {
+   "key": "Driver:sebastian vettel",
+   "sources": 157,
+   "desc_chars": 11035,
+   "desc_lines": 135,
+   "degree": 93
+  },
+  {
+   "key": "Driver:max verstappen",
+   "sources": 152,
+   "desc_chars": 10213,
+   "desc_lines": 133,
+   "degree": 98
+  },
+  {
+   "key": "Driver:fernando alonso",
+   "sources": 143,
+   "desc_chars": 9333,
+   "desc_lines": 127,
+   "degree": 126
+  },
+  {
+   "key": "Team:scuderia ferrari",
+   "sources": 229,
+   "desc_chars": 8283,
+   "desc_lines": 144,
+   "degree": 127
+  },
+  {
+   "key": "Driver:jenson button",
+   "sources": 99,
+   "desc_chars": 6939,
+   "desc_lines": 72,
+   "degree": 106
+  },
+  {
+   "key": "Team:red bull racing",
+   "sources": 178,
+   "desc_chars": 6783,
+   "desc_lines": 115,
+   "degree": 83
+  },
+  {
+   "key": "Team:mercedes-amg petronas formula one team",
+   "sources": 150,
+   "desc_chars": 6628,
+   "desc_lines": 108,
+   "degree": 76
+  },
+  {
+   "key": "Team:mclaren",
+   "sources": 200,
+   "desc_chars": 6540,
+   "desc_lines": 111,
+   "degree": 194
+  },
+  {
+   "key": "Driver:michael schumacher",
+   "sources": 116,
+   "desc_chars": 6312,
+   "desc_lines": 93,
+   "degree": 91
+  },
+  {
+   "key": "Driver:kimi räikkönen",
+   "sources": 160,
+   "desc_chars": 6186,
+   "desc_lines": 81,
+   "degree": 111
+  },
+  {
+   "key": "Driver:nico rosberg",
+   "sources": 93,
+   "desc_chars": 5962,
+   "desc_lines": 82,
+   "degree": 72
+  },
+  {
+   "key": "Driver:charles leclerc",
+   "sources": 71,
+   "desc_chars": 5776,
+   "desc_lines": 64,
+   "degree": 89
+  },
+  {
+   "key": "Driver:valtteri bottas",
+   "sources": 103,
+   "desc_chars": 5067,
+   "desc_lines": 64,
+   "degree": 85
+  },
+  {
+   "key": "Season:2021",
+   "sources": 96,
+   "desc_chars": 4737,
+   "desc_lines": 78,
+   "degree": 60
+  }
+ ],
+ "most_sources": [
+  {
+   "key": "Driver:lewis hamilton",
+   "sources": 236,
+   "desc_chars": 14655,
+   "desc_lines": 212,
+   "degree": 121
+  },
+  {
+   "key": "Team:scuderia ferrari",
+   "sources": 229,
+   "desc_chars": 8283,
+   "desc_lines": 144,
+   "degree": 127
+  },
+  {
+   "key": "Team:mclaren",
+   "sources": 200,
+   "desc_chars": 6540,
+   "desc_lines": 111,
+   "degree": 194
+  },
+  {
+   "key": "Team:red bull racing",
+   "sources": 178,
+   "desc_chars": 6783,
+   "desc_lines": 115,
+   "degree": 83
+  },
+  {
+   "key": "Driver:kimi räikkönen",
+   "sources": 160,
+   "desc_chars": 6186,
+   "desc_lines": 81,
+   "degree": 111
+  },
+  {
+   "key": "Driver:sebastian vettel",
+   "sources": 157,
+   "desc_chars": 11035,
+   "desc_lines": 135,
+   "degree": 93
+  },
+  {
+   "key": "Driver:max verstappen",
+   "sources": 152,
+   "desc_chars": 10213,
+   "desc_lines": 133,
+   "degree": 98
+  },
+  {
+   "key": "Team:mercedes-amg petronas formula one team",
+   "sources": 150,
+   "desc_chars": 6628,
+   "desc_lines": 108,
+   "degree": 76
+  },
+  {
+   "key": "Driver:fernando alonso",
+   "sources": 143,
+   "desc_chars": 9333,
+   "desc_lines": 127,
+   "degree": 126
+  },
+  {
+   "key": "Driver:michael schumacher",
+   "sources": 116,
+   "desc_chars": 6312,
+   "desc_lines": 93,
+   "degree": 91
+  },
+  {
+   "key": "Driver:valtteri bottas",
+   "sources": 103,
+   "desc_chars": 5067,
+   "desc_lines": 64,
+   "degree": 85
+  },
+  {
+   "key": "Driver:jenson button",
+   "sources": 99,
+   "desc_chars": 6939,
+   "desc_lines": 72,
+   "degree": 106
+  },
+  {
+   "key": "GrandPrix:australian grand prix",
+   "sources": 97,
+   "desc_chars": 4397,
+   "desc_lines": 84,
+   "degree": 57
+  },
+  {
+   "key": "Season:2021",
+   "sources": 96,
+   "desc_chars": 4737,
+   "desc_lines": 78,
+   "degree": 60
+  },
+  {
+   "key": "Driver:nico rosberg",
+   "sources": 93,
+   "desc_chars": 5962,
+   "desc_lines": 82,
+   "degree": 72
+  }
+ ],
+ "largest_edge_descriptions": [
+  [
+   "[\"Driver:max verstappen\",\"DROVE_FOR\",\"Team:red bull racing\",null,null,null]",
+   842
+  ],
+  [
+   "[\"Driver:max verstappen\",\"ACHIEVED\",\"RaceResult:max verstappen at spanish grand prix\",null,null,null]",
+   582
+  ],
+  [
+   "[\"RaceResult:max verstappen at spanish grand prix\",\"AT_RACE\",\"GrandPrix:spanish grand prix\",null,null,null]",
+   582
+  ],
+  [
+   "[\"Driver:sebastian vettel\",\"DROVE_FOR\",\"Team:red bull racing\",null,null,null]",
+   571
+  ],
+  [
+   "[\"Driver:lewis hamilton\",\"DROVE_FOR\",\"Team:mercedes-amg petronas formula one team\",null,null,null]",
+   546
+  ]
+ ],
+ "duplicate_probes": {
+  "hamilton": [
+   "Driver:anthony hamilton",
+   "Driver:lewis hamilton",
+   "Driver:nicolas hamilton",
+   "Team:the hamilton commission"
+  ],
+  "verstappen": [
+   "Driver:max verstappen",
+   "Driver:verstappen",
+   "Team:verstappen sim racing",
+   "Team:verstappen.com racing"
+  ],
+  "vettel": [
+   "Driver:fabian vettel",
+   "Driver:sebastian vettel",
+   "Driver:vettel"
+  ],
+  "rosberg": [
+   "Driver:keke rosberg",
+   "Driver:nico rosberg",
+   "Driver:rosberg",
+   "Team:rosberg x racing",
+   "Team:rosberg young drivers academy",
+   "Team:team rosberg"
+  ],
+  "schumacher": [
+   "Driver:david schumacher",
+   "Driver:gina-maria schumacher",
+   "Driver:michael schumacher",
+   "Driver:mick schumacher",
+   "Driver:mik schumacher",
+   "Driver:ralf schumacher",
+   "Driver:schumacher"
+  ],
+  "alonso": [
+   "Driver:alonso",
+   "Driver:fernando alonso",
+   "Team:fundación fernando alonso"
+  ],
+  "bottas": [
+   "Driver:bottas",
+   "Driver:rauno bottas",
+   "Driver:valtteri bottas"
+  ],
+  "leclerc": [
+   "Driver:charles leclerc",
+   "Driver:hervé leclerc",
+   "Driver:leclerc"
+  ],
+  "mercedes": [
+   "Team:mclaren-mercedes",
+   "Team:mercedes amg petronas f1 team",
+   "Team:mercedes junior team",
+   "Team:mercedes-amg petronas f1 team",
+   "Team:mercedes-amg petronas formula one team",
+   "Team:mercedes-benz",
+   "Team:mercedes-benz grand prix ltd",
+   "Team:mercedes-benz junior racing programme",
+   "Team:mercedes-benz mclaren",
+   "Team:team mclaren mercedes",
+   "Team:teammbm.com (mercedes-benz mclaren)",
+   "Team:vodafone mclaren mercedes",
+   "Team:west mclaren mercedes"
+  ],
+  "red bull": [
+   "Team:infiniti red bull",
+   "Team:infiniti red bull racing",
+   "Team:oracle red bull racing team",
+   "Team:red bull advanced technologies",
+   "Team:red bull gmbh",
+   "Team:red bull junior team",
+   "Team:red bull racing",
+   "Team:red bull racing esports",
+   "Team:red bull racing-honda",
+   "Team:red bull technology"
+  ],
+  "ferrari": [
+   "Driver:enzo ferrari",
+   "Team:ferrari driver academy",
+   "Team:scuderia ferrari",
+   "Team:scuderia ferrari esports team",
+   "Team:scuderia ferrari marlboro"
+  ],
+  "mclaren": [
+   "Driver:bruce mclaren",
+   "Team:arrow mclaren sp",
+   "Team:bruce mclaren motor racing limited",
+   "Team:mclaren",
+   "Team:mclaren automotive",
+   "Team:mclaren f1",
+   "Team:mclaren group",
+   "Team:mclaren honda andretti",
+   "Team:mclaren mastercard f1 team",
+   "Team:mclaren racing",
+   "Team:mclaren shadows",
+   "Team:mclaren xe",
+   "Team:mclaren-mercedes",
+   "Team:mercedes-benz mclaren",
+   "Team:neom mclaren electric racing",
+   "Team:team mclaren mercedes",
+   "Team:teammbm.com (mercedes-benz mclaren)",
+   "Team:vodafone mclaren mercedes",
+   "Team:west mclaren mercedes"
+  ],
+  "williams": [
+   "Driver:carl williams",
+   "Driver:claire williams",
+   "Driver:frank williams",
+   "Driver:jonathan williams",
+   "Driver:sir frank williams",
+   "Team:williams",
+   "Team:williams advanced engineering",
+   "Team:williams f1",
+   "Team:williams f1 team",
+   "Team:williams grand prix engineering",
+   "Team:williams grand prix holdings",
+   "Team:williams heritage",
+   "Team:williams hybrid power",
+   "Team:williams motorsport",
+   "Team:williams racing",
+   "Team:williams-bmw",
+   "Team:williams-honda",
+   "Team:williams-renault"
+  ],
+  "renault": [
+   "Team:lotus renault gp",
+   "Team:renault",
+   "Team:renault f1",
+   "Team:renault f1 team",
+   "Team:renault sport formula one team",
+   "Team:williams-renault",
+   "Team:équipe renault elf"
+  ]
+ },
+ "race_results": 735,
+ "race_results_most_sources": [
+  {
+   "key": "RaceResult:max verstappen at spanish grand prix",
+   "sources": 10,
+   "desc_chars": 582,
+   "desc_lines": 10,
+   "degree": 2,
+   "desc_head": "Max Verstappen finished in first place at the Spanish Grand Prix.\nVerstappen won the Spanish Grand Prix on debut for Red Bull.\nVerstappen took his first victory at the Spanish Grand Prix.\nMax Verstappen clinched second place at the Spanish Grand Prix.\nVerstappen finished second at the Spanish Grand "
+  },
+  {
+   "key": "RaceResult:kimi räikkönen at hungarian grand prix",
+   "sources": 8,
+   "desc_chars": 417,
+   "desc_lines": 7,
+   "degree": 2,
+   "desc_head": "Kimi Räikkönen retired in the Hungarian Grand Prix.\nKimi Räikkönen finished third at the Hungarian Grand Prix.\nKimi Räikkönen achieved second place at the Hungarian Grand Prix.\nKimi Räikkönen finished second in the Hungarian Grand Prix.\nKimi Räikkönen finished second at the Hungarian Grand Prix.\nKim"
+  },
+  {
+   "key": "RaceResult:kimi räikkönen at spanish grand prix",
+   "sources": 8,
+   "desc_chars": 453,
+   "desc_lines": 8,
+   "degree": 2,
+   "desc_head": "Räikkönen achieved a result in the Spanish Grand Prix.\nKimi Räikkönen finished in fifth place at the Spanish Grand Prix.\nKimi Räikkönen retired at the Spanish Grand Prix.\nKimi Räikkönen won the Spanish Grand Prix in 2008.\nKimi Räikkönen finished 3rd at the Spanish Grand Prix.\nKimi Räikkönen finished"
+  },
+  {
+   "key": "RaceResult:kimi räikkönen at monaco grand prix",
+   "sources": 7,
+   "desc_chars": 385,
+   "desc_lines": 7,
+   "degree": 2,
+   "desc_head": "Räikkönen achieved a result in the Monaco Grand Prix.\nKimi Räikkönen retired during the Monaco Grand Prix.\nKimi Räikkönen finished eighth at the Monaco Grand Prix.\nKimi Räikkönen finished ninth in the Monaco Grand Prix.\nKimi Räikkönen finished 9th at the Monaco Grand Prix.\nKimi Räikkönen finished 10"
+  },
+  {
+   "key": "RaceResult:kimi räikkönen at british grand prix",
+   "sources": 7,
+   "desc_chars": 341,
+   "desc_lines": 6,
+   "degree": 2,
+   "desc_head": "Kimi Räikkönen finished third at the British Grand Prix.\nKimi Räikkönen finished fourth in the British Grand Prix.\nKimi Räikkönen finished eighth at the British Grand Prix.\nKimi Räikkönen finished 5th at the British Grand Prix.\nKimi Räikkönen finished fifth in the British Grand Prix.\nKimi Räikkönen "
+  },
+  {
+   "key": "RaceResult:michael schumacher at belgian grand prix",
+   "sources": 7,
+   "desc_chars": 451,
+   "desc_lines": 7,
+   "degree": 2,
+   "desc_head": "Michael Schumacher won the Belgian Grand Prix.\nSchumacher achieved a win at the Belgian Grand Prix despite qualifying 16th.\nMichael Schumacher had a race result at the Belgian Grand Prix.\nMichael Schumacher scored his 52nd career win at the Belgian Grand Prix.\nSchumacher achieved a win at the Belgia"
+  },
+  {
+   "key": "RaceResult:charles leclerc at monaco grand prix",
+   "sources": 6,
+   "desc_chars": 344,
+   "desc_lines": 6,
+   "degree": 2,
+   "desc_head": "Leclerc won the Monaco Grand Prix in 2024.\nCharles Leclerc suffered a race-ending tyre puncture at the Monaco Grand Prix.\nCharles Leclerc secured pole position at the Monaco Grand Prix.\nCharles Leclerc took pole at the Monaco Grand Prix but finished fourth.\nLeclerc won the Monaco Grand Prix.\nLeclerc"
+  },
+  {
+   "key": "RaceResult:charles leclerc at united states grand prix",
+   "sources": 6,
+   "desc_chars": 436,
+   "desc_lines": 6,
+   "degree": 2,
+   "desc_head": "Charles Leclerc retired from the United States Grand Prix due to a collision.\nCharles Leclerc finished fourth at the United States Grand Prix.\nLeclerc took five consecutive podiums until the United States Grand Prix.\nCharles Leclerc returned to pole and finished second in the sprint at the United St"
+  }
+ ],
+ "q08_edges": [
+  [
+   "Driver:jenson button",
+   "TEAMMATE_OF",
+   "Driver:nico rosberg",
+   null,
+   null,
+   [
+    "driver-jenson-button#31"
+   ]
+  ],
+  [
+   "Driver:lewis hamilton",
+   "TEAMMATE_OF",
+   "Driver:nico rosberg",
+   null,
+   null,
+   [
+    "driver-lewis-hamilton#1",
+    "driver-lewis-hamilton#49",
+    "driver-lewis-hamilton#50",
+    "driver-lewis-hamilton#6"
+   ]
+  ],
+  [
+   "Driver:lewis hamilton",
+   "TEAMMATE_OF",
+   "Driver:valtteri bottas",
+   null,
+   null,
+   [
+    "driver-lewis-hamilton#34"
+   ]
+  ],
+  [
+   "Driver:nico rosberg",
+   "TEAMMATE_OF",
+   "Driver:nico rosberg",
+   null,
+   null,
+   [
+    "driver-nico-rosberg#1"
+   ]
+  ],
+  [
+   "Driver:nico rosberg",
+   "TEAMMATE_OF",
+   "Driver:kazuki nakajima",
+   null,
+   null,
+   [
+    "driver-nico-rosberg#19"
+   ]
+  ],
+  [
+   "Driver:nico rosberg",
+   "TEAMMATE_OF",
+   "Driver:michael schumacher",
+   null,
+   null,
+   [
+    "driver-nico-rosberg#40"
+   ]
+  ],
+  [
+   "Driver:nico rosberg",
+   "TEAMMATE_OF",
+   "Driver:lewis hamilton",
+   null,
+   null,
+   [
+    "driver-nico-rosberg#7",
+    "season-2016-formula-one-world-championship#1"
+   ]
+  ],
+  [
+   "Driver:valtteri bottas",
+   "TEAMMATE_OF",
+   "Driver:felipe massa",
+   null,
+   null,
+   [
+    "driver-valtteri-bottas#20"
+   ]
+  ],
+  [
+   "Driver:valtteri bottas",
+   "TEAMMATE_OF",
+   "Driver:lewis hamilton",
+   null,
+   null,
+   [
+    "driver-valtteri-bottas#25"
+   ]
+  ],
+  [
+   "Driver:valtteri bottas",
+   "TEAMMATE_OF",
+   "Driver:räikkönen",
+   null,
+   null,
+   [
+    "driver-valtteri-bottas#25"
+   ]
+  ],
+  [
+   "Driver:valtteri bottas",
+   "TEAMMATE_OF",
+   "Driver:james calado",
+   null,
+   null,
+   [
+    "driver-valtteri-bottas#5"
+   ]
+  ],
+  [
+   "Driver:valtteri bottas",
+   "TEAMMATE_OF",
+   "Driver:zhou guanyu",
+   null,
+   null,
+   [
+    "driver-valtteri-bottas#53",
+    "driver-valtteri-bottas#54"
+   ]
+  ],
+  [
+   "Driver:valtteri bottas",
+   "TEAMMATE_OF",
+   "Driver:sergio pérez",
+   null,
+   null,
+   [
+    "driver-valtteri-bottas#57"
+   ]
+  ],
+  [
+   "Driver:valtteri bottas",
+   "TEAMMATE_OF",
+   "Driver:mika häkkinen",
+   null,
+   null,
+   [
+    "driver-valtteri-bottas#59"
+   ]
+  ],
+  [
+   "Driver:george russell",
+   "TEAMMATE_OF",
+   "Driver:valtteri bottas",
+   null,
+   null,
+   [
+    "season-2020-formula-one-world-championship#45"
+   ]
+  ]
+ ],
+ "q08_keys": [
+  "Driver:valtteri bottas",
+  "Driver:nico rosberg"
+ ]
+}

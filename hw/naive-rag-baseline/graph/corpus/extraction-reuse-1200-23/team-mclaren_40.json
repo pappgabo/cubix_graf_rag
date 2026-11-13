@@ -1,0 +1,254 @@
+{
+  "chunk_id": "team-mclaren#40",
+  "doc_id": "team-mclaren",
+  "document_title": "McLaren",
+  "section": "2010–2014: Customer Mercedes engines",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "44378fe84d3c861232418f231c84452e81859fd89f423491685ad7cd110e6eea",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "McLaren",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that entered cars."
+      },
+      {
+        "local_id": "e2",
+        "name": "Button",
+        "entity_type": "Driver",
+        "description": "A driver who raced for McLaren."
+      },
+      {
+        "local_id": "e3",
+        "name": "Lewis Hamilton",
+        "entity_type": "Driver",
+        "description": "A driver who raced for McLaren."
+      },
+      {
+        "local_id": "e4",
+        "name": "2012",
+        "entity_type": "Season",
+        "description": "A championship year."
+      },
+      {
+        "local_id": "e5",
+        "name": "Australia",
+        "entity_type": "GrandPrix",
+        "description": "A Grand Prix where McLaren won the first race of the year."
+      },
+      {
+        "local_id": "e6",
+        "name": "Canada",
+        "entity_type": "GrandPrix",
+        "description": "A Grand Prix where Hamilton won."
+      },
+      {
+        "local_id": "e7",
+        "name": "Silverstone",
+        "entity_type": "Circuit",
+        "description": "The circuit where the team's home race took place."
+      },
+      {
+        "local_id": "e8",
+        "name": "British Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Grand Prix where the McLaren cars managed only eighth and tenth place."
+      },
+      {
+        "local_id": "e9",
+        "name": "Singapore",
+        "entity_type": "GrandPrix",
+        "description": "A Grand Prix where Hamilton was leading before reliability problems."
+      },
+      {
+        "local_id": "e10",
+        "name": "Abu Dhabi",
+        "entity_type": "GrandPrix",
+        "description": "A Grand Prix where Hamilton was leading before reliability problems."
+      },
+      {
+        "local_id": "e11",
+        "name": "Italy",
+        "entity_type": "GrandPrix",
+        "description": "A Grand Prix where the team lost a 1-2 finish due to Button's car failure."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Button at Australia",
+        "entity_type": "RaceResult",
+        "description": "Button recorded a result in the Australian Grand Prix."
+      },
+      {
+        "local_id": "rr2",
+        "name": "Hamilton at Australia",
+        "entity_type": "RaceResult",
+        "description": "Hamilton recorded a result in the Australian Grand Prix."
+      },
+      {
+        "local_id": "rr3",
+        "name": "Hamilton at Canada",
+        "entity_type": "RaceResult",
+        "description": "Hamilton recorded a result in the Canadian Grand Prix."
+      },
+      {
+        "local_id": "rr4",
+        "name": "Hamilton at British Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Hamilton recorded a result in the British Grand Prix."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e4",
+        "relationship_type": "ENTERED",
+        "description": "McLaren took part in the 2012 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Button recorded a result in the Australian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e5",
+        "relationship_type": "AT_RACE",
+        "description": "Button recorded a result in the Australian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "rr2",
+        "relationship_type": "ACHIEVED",
+        "description": "Hamilton recorded a result in the Australian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr2",
+        "target_id": "e5",
+        "relationship_type": "AT_RACE",
+        "description": "Hamilton recorded a result in the Australian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "rr3",
+        "relationship_type": "ACHIEVED",
+        "description": "Hamilton recorded a result in the Canadian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr3",
+        "target_id": "e6",
+        "relationship_type": "AT_RACE",
+        "description": "Hamilton recorded a result in the Canadian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "rr4",
+        "relationship_type": "ACHIEVED",
+        "description": "Hamilton recorded a result in the British Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr4",
+        "target_id": "e8",
+        "relationship_type": "AT_RACE",
+        "description": "Hamilton recorded a result in the British Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 11,
+  "entities_accepted": 15,
+  "entities_rejected": 0,
+  "relationship_candidates": 12,
+  "relationships_accepted": 9,
+  "relationships_rejected": 7,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "ROUND_OF does not allow Team -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "ROUND_OF does not allow Team -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "ROUND_OF does not allow Team -> Circuit"
+    },
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "ROUND_OF does not allow Team -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 5,
+      "reason": "ROUND_OF does not allow Team -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 6,
+      "reason": "ROUND_OF does not allow Team -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 15,
+      "reason": "FIELDED does not allow Team -> Season"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 7,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e5; description kept"
+    },
+    {
+      "index": 8,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr2 -AT_RACE-> e5; description kept"
+    },
+    {
+      "index": 9,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr3 -AT_RACE-> e6; description kept"
+    },
+    {
+      "index": 10,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr4 -AT_RACE-> e8; description kept"
+    }
+  ]
+}

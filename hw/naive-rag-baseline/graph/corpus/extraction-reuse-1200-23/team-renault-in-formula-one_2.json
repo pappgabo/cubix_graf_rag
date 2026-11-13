@@ -1,0 +1,115 @@
+{
+  "chunk_id": "team-renault-in-formula-one#2",
+  "doc_id": "team-renault-in-formula-one",
+  "document_title": "Renault in Formula One",
+  "section": "Constructor > Équipe Renault (1977–1985) > 1977–1978: Laying a foundation for turbo revolution",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "755c37b8b1d0db2207fe621d568a348c56d2d521e769acff0f175203afe44f90",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Renault",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that entered cars."
+      },
+      {
+        "local_id": "e2",
+        "name": "Jean-Pierre Jabouille",
+        "entity_type": "Driver",
+        "description": "A driver who raced for Renault."
+      },
+      {
+        "local_id": "e3",
+        "name": "Renault RS01",
+        "entity_type": "Car",
+        "description": "The only car fielded by Renault during its initial involvement."
+      },
+      {
+        "local_id": "e4",
+        "name": "Renault-Gordini V6 1.5 L turbocharged engine",
+        "entity_type": "PowerUnit",
+        "description": "The first regularly used turbo engine in Formula One history."
+      },
+      {
+        "local_id": "e5",
+        "name": "1977",
+        "entity_type": "Season",
+        "description": "The season during which Renault entered Formula One."
+      },
+      {
+        "local_id": "e6",
+        "name": "1978",
+        "entity_type": "Season",
+        "description": "The season during which Renault continued its involvement in Formula One."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e5",
+        "relationship_type": "ENTERED",
+        "description": "Renault took part in the 1977 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e6",
+        "relationship_type": "ENTERED",
+        "description": "Renault took part in the 1978 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e1",
+        "relationship_type": "DROVE_FOR",
+        "description": "Jean-Pierre Jabouille raced for Renault.",
+        "from_year": 1977,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e4",
+        "relationship_type": "POWERED_BY",
+        "description": "The Renault RS01 used the Renault-Gordini V6 1.5 L turbocharged engine.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 6,
+  "entities_accepted": 6,
+  "entities_rejected": 0,
+  "relationship_candidates": 5,
+  "relationships_accepted": 4,
+  "relationships_rejected": 1,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "FIELDED is not temporal; from_year=1977, to_year=None, role=None cannot be stored without dropping them"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 1,
+      "action": "clear_redundant_season_year",
+      "detail": "ENTERED year 1977 already named by Season 'e5'; from_year and to_year cleared"
+    },
+    {
+      "index": 2,
+      "action": "clear_redundant_season_year",
+      "detail": "ENTERED year 1978 already named by Season 'e6'; from_year and to_year cleared"
+    }
+  ]
+}

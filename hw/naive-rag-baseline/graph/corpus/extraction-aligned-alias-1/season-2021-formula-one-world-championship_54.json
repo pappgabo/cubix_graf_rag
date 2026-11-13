@@ -1,0 +1,55 @@
+{
+  "chunk_id": "season-2021-formula-one-world-championship#54",
+  "doc_id": "season-2021-formula-one-world-championship",
+  "document_title": "2021 Formula One World Championship",
+  "section": null,
+  "page": 5,
+  "source": "https://en.wikipedia.org/wiki/2021_Formula_One_World_Championship",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "80e1d091751d08ec235b86874708eb7b08fb33337f1c91dfabd28c9198f4fd82",
+  "validation_version": "partial-1",
+  "source_status": "ok",
+  "status": "ok",
+  "rejections": [],
+  "alignments": [],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Max Verstappen",
+        "entity_type": "Driver",
+        "description": "A driver who took pole position on the opening round in Bahrain."
+      },
+      {
+        "local_id": "e2",
+        "name": "Sergio Pérez",
+        "entity_type": "Driver",
+        "description": "A driver who stalled at the formation lap of the opening round in Bahrain."
+      },
+      {
+        "local_id": "e3",
+        "name": "Bahrain Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The opening round of the 2021 Formula One World Championship held in Bahrain."
+      },
+      {
+        "local_id": "e4",
+        "name": "2021",
+        "entity_type": "Season",
+        "description": "The season of the Formula One World Championship."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e3",
+        "target_id": "e4",
+        "relationship_type": "ROUND_OF",
+        "description": "The Bahrain Grand Prix is a round of the 2021 Formula One World Championship.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

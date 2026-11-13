@@ -1,0 +1,83 @@
+{
+  "chunk_id": "reference-formula-one#32",
+  "doc_id": "reference-formula-one",
+  "document_title": "Formula One",
+  "section": "Formula One > Safety car",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "e123254d6eda58798b76d58c39696bbabe95299c8141528206ef59656e7b1788",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Mercedes-Benz",
+        "entity_type": "Team",
+        "description": "Supplied a variety of its AMG models to Formula One to use as the safety car since 1996."
+      },
+      {
+        "local_id": "e2",
+        "name": "Aston Martin",
+        "entity_type": "Team",
+        "description": "Supplied the Vantage to share duties with Mercedes-AMGs from 2021 onwards."
+      },
+      {
+        "local_id": "e3",
+        "name": "Bernd Mayländer",
+        "entity_type": "Driver",
+        "description": "German ex-racing driver who has been the main safety car driver since 2000."
+      },
+      {
+        "local_id": "e4",
+        "name": "Richard Darker",
+        "entity_type": "Driver",
+        "description": "FIA technical assistant who relays information between the safety car and race control."
+      },
+      {
+        "local_id": "e5",
+        "name": "1996",
+        "entity_type": "Season",
+        "description": "Year when Mercedes-Benz started supplying safety cars."
+      },
+      {
+        "local_id": "e6",
+        "name": "2021",
+        "entity_type": "Season",
+        "description": "Year when Aston Martin started supplying the Vantage as a safety car."
+      },
+      {
+        "local_id": "e7",
+        "name": "2000",
+        "entity_type": "Season",
+        "description": "Year when Bernd Mayländer became the main safety car driver."
+      }
+    ],
+    "relationships": []
+  },
+  "entity_candidates": 7,
+  "entities_accepted": 7,
+  "entities_rejected": 0,
+  "relationship_candidates": 3,
+  "relationships_accepted": 0,
+  "relationships_rejected": 3,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "FIELDED does not allow Team -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "FIELDED does not allow Team -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "DROVE_FOR does not allow Driver -> Season"
+    }
+  ],
+  "alignments": []
+}

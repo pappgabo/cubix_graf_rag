@@ -1,0 +1,146 @@
+{
+  "chunk_id": "team-renault-in-formula-one#60",
+  "doc_id": "team-renault-in-formula-one",
+  "document_title": "Renault in Formula One",
+  "section": "Engine supplier (1983–2025) > Return to naturally aspirated engines (1989–2013) > Return to supply with Red Bull Racing yields title success (2007–2013)",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "4c8d7eac78026a7f6e31c43216ac79b895fcd7d7a1cdc10a170647a70e5730b1",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Renault",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that supplied engines."
+      },
+      {
+        "local_id": "e2",
+        "name": "Red Bull Racing",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that was promoted to Renault's works team."
+      },
+      {
+        "local_id": "e3",
+        "name": "Lotus Racing",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that began receiving engines from Renault."
+      },
+      {
+        "local_id": "e4",
+        "name": "Sebastian Vettel",
+        "entity_type": "Driver",
+        "description": "A driver who won titles with Red Bull Racing."
+      },
+      {
+        "local_id": "e5",
+        "name": "Mark Webber",
+        "entity_type": "Driver",
+        "description": "A driver who raced for Red Bull Racing."
+      },
+      {
+        "local_id": "e6",
+        "name": "2011",
+        "entity_type": "Season",
+        "description": "The season in which Red Bull Racing won both titles."
+      },
+      {
+        "local_id": "e7",
+        "name": "Red Bull RB7",
+        "entity_type": "Car",
+        "description": "The car used by Red Bull Racing in the 2011 season."
+      },
+      {
+        "local_id": "e8",
+        "name": "Infiniti",
+        "entity_type": "PowerUnit",
+        "description": "The sponsor that helped Red Bull Racing with free engines from Renault."
+      },
+      {
+        "local_id": "e9",
+        "name": "Australia",
+        "entity_type": "GrandPrix",
+        "description": "The location of the first race in the 2011 season."
+      },
+      {
+        "local_id": "e10",
+        "name": "Germany",
+        "entity_type": "GrandPrix",
+        "description": "The location of Vettel's home race in the 2011 season."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e9",
+        "target_id": "e6",
+        "relationship_type": "ROUND_OF",
+        "description": "The Australian Grand Prix was a round of the 2011 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e10",
+        "target_id": "e6",
+        "relationship_type": "ROUND_OF",
+        "description": "The German Grand Prix was a round of the 2011 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 10,
+  "entities_accepted": 10,
+  "entities_rejected": 0,
+  "relationship_candidates": 8,
+  "relationships_accepted": 2,
+  "relationships_rejected": 6,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 5,
+      "reason": "RACED_IN is not temporal; from_year=2011, to_year=None, role=car cannot be stored without dropping them"
+    },
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "DROVE_FOR does not allow Team -> Team"
+    },
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "DROVE_FOR does not allow Team -> Team"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "WON does not allow Team -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "WON does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "WON does not allow Driver -> Season"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 6,
+      "action": "clear_redundant_season_year",
+      "detail": "ROUND_OF year 2011 already named by Season 'e6'; from_year and to_year cleared"
+    },
+    {
+      "index": 7,
+      "action": "clear_redundant_season_year",
+      "detail": "ROUND_OF year 2011 already named by Season 'e6'; from_year and to_year cleared"
+    }
+  ]
+}

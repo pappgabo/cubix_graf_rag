@@ -1,0 +1,149 @@
+{
+  "chunk_id": "season-2012-formula-one-world-championship#86",
+  "doc_id": "season-2012-formula-one-world-championship",
+  "document_title": "2012 Formula One World Championship",
+  "section": "Race summaries > Round 16 – Korea International Circuit",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "33b5001d68c56d35143ff37c449df41f96f5019a8b6ebe3e70e4ca87155db606",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Jean-Éric Vergne",
+        "entity_type": "Driver",
+        "description": "A driver for Scuderia Toro Rosso who finished eighth."
+      },
+      {
+        "local_id": "e2",
+        "name": "Daniel Ricciardo",
+        "entity_type": "Driver",
+        "description": "A driver for Scuderia Toro Rosso who finished ninth."
+      },
+      {
+        "local_id": "e3",
+        "name": "Romain Grosjean",
+        "entity_type": "Driver",
+        "description": "A driver who finished seventh."
+      },
+      {
+        "local_id": "e4",
+        "name": "Lewis Hamilton",
+        "entity_type": "Driver",
+        "description": "A driver for McLaren who finished tenth."
+      },
+      {
+        "local_id": "e5",
+        "name": "Sergio Pérez",
+        "entity_type": "Driver",
+        "description": "A driver who narrowly missed taking the final World Championship point."
+      },
+      {
+        "local_id": "e6",
+        "name": "McLaren",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that lost second place in the World Constructors' Championship."
+      },
+      {
+        "local_id": "e7",
+        "name": "Scuderia Toro Rosso",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that had drivers finishing eighth and ninth."
+      },
+      {
+        "local_id": "e8",
+        "name": "2012",
+        "entity_type": "Season",
+        "description": "The championship year in which the race took place."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e7",
+        "target_id": "e8",
+        "relationship_type": "ENTERED",
+        "description": "Scuderia Toro Rosso took part in the 2012 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e6",
+        "target_id": "e8",
+        "relationship_type": "ENTERED",
+        "description": "McLaren took part in the 2012 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e7",
+        "relationship_type": "DROVE_FOR",
+        "description": "Jean-Éric Vergne drove for Scuderia Toro Rosso.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e7",
+        "relationship_type": "DROVE_FOR",
+        "description": "Daniel Ricciardo drove for Scuderia Toro Rosso.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e6",
+        "relationship_type": "DROVE_FOR",
+        "description": "Romain Grosjean drove for a team.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e6",
+        "relationship_type": "DROVE_FOR",
+        "description": "Lewis Hamilton drove for McLaren.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 8,
+  "entities_accepted": 8,
+  "entities_rejected": 0,
+  "relationship_candidates": 10,
+  "relationships_accepted": 6,
+  "relationships_rejected": 4,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 6,
+      "reason": "ACHIEVED does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 7,
+      "reason": "ACHIEVED does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 8,
+      "reason": "ACHIEVED does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 9,
+      "reason": "ACHIEVED does not allow Driver -> Season"
+    }
+  ],
+  "alignments": []
+}

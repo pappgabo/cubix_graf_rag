@@ -1,0 +1,65 @@
+{
+  "chunk_id": "driver-nico-rosberg#1",
+  "doc_id": "driver-nico-rosberg",
+  "document_title": "Nico Rosberg",
+  "section": "Nico Rosberg",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/Nico_Rosberg",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "d37eb6737023be58f8b2c5835629eb80fb7b34b937d8edd888a987435fcfb2ae",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "WON is not temporal; from_year, to_year and role must be null"
+    },
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "FIELDED does not allow Team -> Title"
+    }
+  ],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Nico Rosberg",
+        "entity_type": "Driver",
+        "description": "The only child of Finnish 1982 Formula One World Champion Keke Rosberg and his German wife."
+      },
+      {
+        "local_id": "e2",
+        "name": "Keke Rosberg",
+        "entity_type": "Driver",
+        "description": "Finnish 1982 Formula One World Champion."
+      },
+      {
+        "local_id": "e3",
+        "name": "2002 Formula BMW ADAC Championship",
+        "entity_type": "Title",
+        "description": "Championship won by Nico Rosberg."
+      },
+      {
+        "local_id": "e4",
+        "name": "VIVA Racing",
+        "entity_type": "Team",
+        "description": "Team for which Nico Rosberg raced in the 2002 Formula BMW ADAC Championship."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e4",
+        "relationship_type": "DROVE_FOR",
+        "description": "Nico Rosberg drove for VIVA Racing in the 2002 Formula BMW ADAC Championship.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

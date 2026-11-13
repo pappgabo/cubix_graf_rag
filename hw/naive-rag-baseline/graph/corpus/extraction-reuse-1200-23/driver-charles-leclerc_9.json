@@ -1,0 +1,87 @@
+{
+  "chunk_id": "driver-charles-leclerc#9",
+  "doc_id": "driver-charles-leclerc",
+  "document_title": "Charles Leclerc",
+  "section": "Charles Leclerc > Formula Renault 2.0 (2014)",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "a6af5c210497253ecdff97cc3067da4745b5a3772530dae19615a405eefb04e6",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Charles Leclerc",
+        "entity_type": "Driver",
+        "description": "A driver who competed in Formula Renault 2.0 in 2014."
+      },
+      {
+        "local_id": "e2",
+        "name": "Fortec",
+        "entity_type": "Team",
+        "description": "A team that entered Charles Leclerc into select rounds of the Eurocup."
+      },
+      {
+        "local_id": "e3",
+        "name": "Eurocup",
+        "entity_type": "Season",
+        "description": "A season in which Charles Leclerc competed as a guest driver."
+      },
+      {
+        "local_id": "e4",
+        "name": "Spa-Francorchamps",
+        "entity_type": "Circuit",
+        "description": "The circuit where Charles Leclerc finished outside of the points on debut."
+      },
+      {
+        "local_id": "e5",
+        "name": "Nürburgring",
+        "entity_type": "Circuit",
+        "description": "The circuit where Charles Leclerc took his maiden podium, finishing second."
+      },
+      {
+        "local_id": "e6",
+        "name": "Hungaroring",
+        "entity_type": "Circuit",
+        "description": "The circuit where Charles Leclerc took further second-placed finishes."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e2",
+        "target_id": "e3",
+        "relationship_type": "ENTERED",
+        "description": "Fortec entered Charles Leclerc into select rounds of the Eurocup.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 6,
+  "entities_accepted": 6,
+  "entities_rejected": 0,
+  "relationship_candidates": 4,
+  "relationships_accepted": 1,
+  "relationships_rejected": 3,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "ACHIEVED does not allow Driver -> Circuit"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "ACHIEVED does not allow Driver -> Circuit"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "ACHIEVED does not allow Driver -> Circuit"
+    }
+  ],
+  "alignments": []
+}

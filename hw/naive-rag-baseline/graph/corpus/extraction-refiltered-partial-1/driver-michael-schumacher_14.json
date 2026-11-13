@@ -1,0 +1,72 @@
+{
+  "chunk_id": "driver-michael-schumacher#14",
+  "doc_id": "driver-michael-schumacher",
+  "document_title": "Michael Schumacher",
+  "section": null,
+  "page": 2,
+  "source": "https://en.wikipedia.org/wiki/Michael_Schumacher",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "a9632ee404703fdfa4421ffd3474fb61a2d972d5e47ce83e55069378a84ec0e8",
+  "validation_version": "partial-1",
+  "source_status": "ok",
+  "status": "ok",
+  "rejections": [],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Michael Schumacher",
+        "entity_type": "Driver",
+        "description": "A successful Formula One driver known for his victories."
+      },
+      {
+        "local_id": "e2",
+        "name": "Heinz-Harald Frentzen",
+        "entity_type": "Driver",
+        "description": "A Formula Three rival of Michael Schumacher."
+      },
+      {
+        "local_id": "e3",
+        "name": "Karl Wendlinger",
+        "entity_type": "Driver",
+        "description": "A Formula Three rival of Michael Schumacher."
+      },
+      {
+        "local_id": "e4",
+        "name": "Mercedes-Benz",
+        "entity_type": "Team",
+        "description": "The team associated with the junior racing programme."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e4",
+        "relationship_type": "DROVE_FOR",
+        "description": "Michael Schumacher joined the Mercedes-Benz junior racing programme.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Michael Schumacher was a rival of Heinz-Harald Frentzen in Formula Three.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e3",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Michael Schumacher was a rival of Karl Wendlinger in Formula Three.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

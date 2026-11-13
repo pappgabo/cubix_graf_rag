@@ -1,0 +1,110 @@
+{
+  "chunk_id": "team-mclaren#21",
+  "doc_id": "team-mclaren",
+  "document_title": "McLaren",
+  "section": "1983–1992: TAG-Porsche and Honda engines",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "23094a225867ca1118f9466888b4353007f357e4c7d689f65372e45b4132e22b",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "McLaren",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that entered cars."
+      },
+      {
+        "local_id": "e2",
+        "name": "Alain Prost",
+        "entity_type": "Driver",
+        "description": "A Formula 1 driver who raced for McLaren."
+      },
+      {
+        "local_id": "e3",
+        "name": "Stefan Johansson",
+        "entity_type": "Driver",
+        "description": "A Formula 1 driver who raced for McLaren."
+      },
+      {
+        "local_id": "e4",
+        "name": "MP4/3",
+        "entity_type": "Car",
+        "description": "A car model fielded by McLaren."
+      },
+      {
+        "local_id": "e5",
+        "name": "TAG engine",
+        "entity_type": "PowerUnit",
+        "description": "An engine used by McLaren."
+      },
+      {
+        "local_id": "e6",
+        "name": "Williams-Honda",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that entered cars."
+      },
+      {
+        "local_id": "e7",
+        "name": "1987",
+        "entity_type": "Season",
+        "description": "A championship year."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e4",
+        "relationship_type": "FIELDED",
+        "description": "McLaren entered the MP4/3 car.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e1",
+        "relationship_type": "DROVE_FOR",
+        "description": "Alain Prost raced for McLaren.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e1",
+        "relationship_type": "DROVE_FOR",
+        "description": "Stefan Johansson raced for McLaren.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e6",
+        "target_id": "e7",
+        "relationship_type": "ENTERED",
+        "description": "Williams-Honda took part in the 1987 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 7,
+  "entities_accepted": 7,
+  "entities_rejected": 0,
+  "relationship_candidates": 5,
+  "relationships_accepted": 4,
+  "relationships_rejected": 1,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "POWERED_BY does not allow Team -> PowerUnit"
+    }
+  ],
+  "alignments": []
+}

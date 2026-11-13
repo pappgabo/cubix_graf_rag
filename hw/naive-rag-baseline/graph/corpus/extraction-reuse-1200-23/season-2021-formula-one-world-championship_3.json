@@ -1,0 +1,89 @@
+{
+  "chunk_id": "season-2021-formula-one-world-championship#3",
+  "doc_id": "season-2021-formula-one-world-championship",
+  "document_title": "2021 Formula One World Championship",
+  "section": null,
+  "page": 1,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "262ea2e11d254d75f5206e2eed90abba6cd21bea969ca4ab7a5b3614f3b9e479",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Williams",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that participated in the 2021 season."
+      },
+      {
+        "local_id": "e2",
+        "name": "Zhou Guanyu",
+        "entity_type": "Driver",
+        "description": "A driver who raced for Alpine at the Austrian Grand Prix."
+      },
+      {
+        "local_id": "e3",
+        "name": "Alpine",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that was formerly known as Renault."
+      },
+      {
+        "local_id": "e4",
+        "name": "McLaren",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that changed from Renault power units to Mercedes."
+      },
+      {
+        "local_id": "e5",
+        "name": "Mercedes",
+        "entity_type": "PowerUnit",
+        "description": "The power unit supplier for McLaren starting in 2021."
+      },
+      {
+        "local_id": "e6",
+        "name": "Racing Point",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that became known as Aston Martin."
+      },
+      {
+        "local_id": "e7",
+        "name": "Aston Martin",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that returned to the sport in 2021."
+      },
+      {
+        "local_id": "e8",
+        "name": "Lawrence Stroll",
+        "entity_type": "Driver",
+        "description": "Part owner of Racing Point, which became Aston Martin."
+      }
+    ],
+    "relationships": []
+  },
+  "entity_candidates": 8,
+  "entities_accepted": 8,
+  "entities_rejected": 0,
+  "relationship_candidates": 3,
+  "relationships_accepted": 0,
+  "relationships_rejected": 3,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "POWERED_BY does not allow Team -> PowerUnit"
+    },
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "DROVE_FOR does not allow Team -> Team"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "DROVE_FOR does not allow Team -> Driver"
+    }
+  ],
+  "alignments": []
+}

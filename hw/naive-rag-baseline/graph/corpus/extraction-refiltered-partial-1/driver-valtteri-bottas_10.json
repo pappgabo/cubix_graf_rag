@@ -1,0 +1,70 @@
+{
+  "chunk_id": "driver-valtteri-bottas#10",
+  "doc_id": "driver-valtteri-bottas",
+  "document_title": "Valtteri Bottas",
+  "section": "Junior racing career > Formula Three",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/Valtteri_Bottas",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "fbb6ab532db4c11e08fb294d9d1cca1c6fb00a50bbe598b2536cf4656cc69ba8",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "ENTERED is not temporal; from_year, to_year and role must be null"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "ROUND_OF is not temporal; from_year, to_year and role must be null"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "ACHIEVED does not allow Driver -> GrandPrix"
+    }
+  ],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Valtteri Bottas",
+        "entity_type": "Driver",
+        "description": "A Finnish racing driver who competed in Formula Three."
+      },
+      {
+        "local_id": "e2",
+        "name": "ART Grand Prix",
+        "entity_type": "Team",
+        "description": "A racing team that competed in the Formula Three Euroseries."
+      },
+      {
+        "local_id": "e3",
+        "name": "2009",
+        "entity_type": "Season",
+        "description": "The season in which Bottas competed in the Formula Three Euroseries."
+      },
+      {
+        "local_id": "e4",
+        "name": "Masters of Formula 3",
+        "entity_type": "GrandPrix",
+        "description": "A race event in which Bottas won in 2009."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Bottas competed for ART Grand Prix in the Formula Three Euroseries.",
+        "from_year": 2009,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

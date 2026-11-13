@@ -1,0 +1,77 @@
+{
+  "chunk_id": "driver-max-verstappen#60",
+  "doc_id": "driver-max-verstappen",
+  "document_title": "Max Verstappen",
+  "section": null,
+  "page": 12,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "efdd6dec84237d8713e21a62066abb30ee4237d76210fce2df039a4ca42bb498",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Max Verstappen",
+        "entity_type": "Driver",
+        "description": "A Dutch Formula 1 driver known for his intuitive driving style."
+      },
+      {
+        "local_id": "e2",
+        "name": "Daniel Ricciardo",
+        "entity_type": "Driver",
+        "description": "An Australian Formula 1 driver and former teammate of Max Verstappen."
+      },
+      {
+        "local_id": "e3",
+        "name": "Pierre Gasly",
+        "entity_type": "Driver",
+        "description": "A French Formula 1 driver and former teammate of Max Verstappen."
+      },
+      {
+        "local_id": "e4",
+        "name": "Alex Albon",
+        "entity_type": "Driver",
+        "description": "A Thai-British Formula 1 driver and former teammate of Max Verstappen."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Max Verstappen was teammates with Daniel Ricciardo.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e3",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Max Verstappen was teammates with Pierre Gasly.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e4",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Max Verstappen was teammates with Alex Albon.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 4,
+  "entities_accepted": 4,
+  "entities_rejected": 0,
+  "relationship_candidates": 3,
+  "relationships_accepted": 3,
+  "relationships_rejected": 0,
+  "rejections": [],
+  "alignments": []
+}

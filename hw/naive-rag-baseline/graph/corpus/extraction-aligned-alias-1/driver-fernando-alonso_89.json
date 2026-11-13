@@ -1,0 +1,107 @@
+{
+  "chunk_id": "driver-fernando-alonso#89",
+  "doc_id": "driver-fernando-alonso",
+  "document_title": "Fernando Alonso",
+  "section": "WeatherTech SportsCar Championship (2018–2019)",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/Fernando_Alonso",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "9e593d6492e272e17c5eaff9be24c42cf565417f286530e58994cb1b7ddf19b7",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "RACED_IN does not allow Driver -> Car"
+    },
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "FIELDED does not allow Car -> Team"
+    },
+    {
+      "element": "relationship",
+      "index": 5,
+      "reason": "RACED_IN does not allow Driver -> Car"
+    }
+  ],
+  "alignments": [],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Fernando Alonso",
+        "entity_type": "Driver",
+        "description": "A Formula One driver."
+      },
+      {
+        "local_id": "e2",
+        "name": "United Autosports",
+        "entity_type": "Team",
+        "description": "A racing team that entered cars."
+      },
+      {
+        "local_id": "e3",
+        "name": "Ligier JS P217",
+        "entity_type": "Car",
+        "description": "A chassis model entered by United Autosports."
+      },
+      {
+        "local_id": "e4",
+        "name": "Wayne Taylor Racing",
+        "entity_type": "Team",
+        "description": "A racing team that entered cars."
+      },
+      {
+        "local_id": "e5",
+        "name": "Cadillac DPi-V.R",
+        "entity_type": "Car",
+        "description": "A chassis model shared by Alonso."
+      },
+      {
+        "local_id": "e6",
+        "name": "2018",
+        "entity_type": "Season",
+        "description": "A championship year."
+      },
+      {
+        "local_id": "e7",
+        "name": "2019",
+        "entity_type": "Season",
+        "description": "A championship year."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e2",
+        "target_id": "e3",
+        "relationship_type": "FIELDED",
+        "description": "United Autosports entered the Ligier JS P217.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Fernando Alonso drove for United Autosports.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e4",
+        "relationship_type": "DROVE_FOR",
+        "description": "Fernando Alonso drove for Wayne Taylor Racing.",
+        "from_year": 2019,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

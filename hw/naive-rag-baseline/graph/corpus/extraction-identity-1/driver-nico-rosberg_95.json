@@ -1,0 +1,89 @@
+{
+  "chunk_id": "driver-nico-rosberg#95",
+  "doc_id": "driver-nico-rosberg",
+  "document_title": "Nico Rosberg",
+  "section": "Nico Rosberg > Retirement from racing and subsequent ventures (2016–present)",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/Nico_Rosberg",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "3a92e19529704e0dacfe90add9367174044982dcef1c45f0f362208cbce1fbd2",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "entity_candidates": 6,
+  "entities_accepted": 6,
+  "entities_rejected": 0,
+  "relationship_candidates": 4,
+  "relationships_accepted": 1,
+  "relationships_rejected": 3,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "ENTERED is not temporal; from_year=2021, to_year=None, role=None cannot be stored without dropping them"
+    },
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "TEAMMATE_OF does not allow Driver -> Team"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "TEAMMATE_OF does not allow Driver -> Team"
+    }
+  ],
+  "alignments": [],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Nico Rosberg",
+        "entity_type": "Driver",
+        "description": "A former Formula One driver who retired in 2016."
+      },
+      {
+        "local_id": "e2",
+        "name": "Rosberg X Racing",
+        "entity_type": "Team",
+        "description": "A racing team established by Nico Rosberg to compete in Extreme E."
+      },
+      {
+        "local_id": "e3",
+        "name": "Extreme E",
+        "entity_type": "Season",
+        "description": "An all-electric SUV off-road racing series."
+      },
+      {
+        "local_id": "e4",
+        "name": "Johan Kristoffersson",
+        "entity_type": "Driver",
+        "description": "A driver for Rosberg X Racing."
+      },
+      {
+        "local_id": "e5",
+        "name": "Molly Taylor",
+        "entity_type": "Driver",
+        "description": "A driver for Rosberg X Racing."
+      },
+      {
+        "local_id": "e6",
+        "name": "Extreme E constructors' title",
+        "entity_type": "Title",
+        "description": "A championship title in the Extreme E series."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e2",
+        "target_id": "e6",
+        "relationship_type": "WON",
+        "description": "Rosberg X Racing won the inaugural Extreme E constructors' title.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

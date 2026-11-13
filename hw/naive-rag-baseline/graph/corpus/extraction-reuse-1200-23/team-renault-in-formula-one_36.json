@@ -1,0 +1,117 @@
+{
+  "chunk_id": "team-renault-in-formula-one#36",
+  "doc_id": "team-renault-in-formula-one",
+  "document_title": "Renault in Formula One",
+  "section": "Constructor > Renault F1 Team and Lotus Renault GP (2002–2011): The rise and fall of the first Enstone era > Team sale amid Kubica promise (2010)",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "f7fdb02c11e1e72230a5b5e6a0e6991bef150ab61746fed425c6e35656d613bc",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Renault F1 Team",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that was sold to Genii Capital in 2010."
+      },
+      {
+        "local_id": "e2",
+        "name": "Genii Capital",
+        "entity_type": "Team",
+        "description": "An investment company that acquired a majority stake in the Renault F1 Team in 2010."
+      },
+      {
+        "local_id": "e3",
+        "name": "Robert Kubica",
+        "entity_type": "Driver",
+        "description": "A Formula 1 driver who was signed by Renault as Alonso's replacement."
+      },
+      {
+        "local_id": "e4",
+        "name": "Vitaly Petrov",
+        "entity_type": "Driver",
+        "description": "A Formula 1 driver who was signed to be Kubica's teammate, becoming Russia's first Formula One driver."
+      },
+      {
+        "local_id": "e5",
+        "name": "Bahrain Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The opening round of the 2010 Formula One season."
+      },
+      {
+        "local_id": "e6",
+        "name": "Australia Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A race in which Kubica achieved his first podium with a second-place finish."
+      },
+      {
+        "local_id": "e7",
+        "name": "2010",
+        "entity_type": "Season",
+        "description": "The Formula One season during which Renault sold a majority stake in the team."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e3",
+        "target_id": "e1",
+        "relationship_type": "DROVE_FOR",
+        "description": "Robert Kubica was signed by Renault as Alonso's replacement.",
+        "from_year": 2009,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e3",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Vitaly Petrov was signed to be Robert Kubica's teammate.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 7,
+  "entities_accepted": 7,
+  "entities_rejected": 0,
+  "relationship_candidates": 8,
+  "relationships_accepted": 2,
+  "relationships_rejected": 6,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "DROVE_FOR does not allow Team -> Team"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "ENTERED does not allow GrandPrix -> Team"
+    },
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "ACHIEVED does not allow GrandPrix -> Driver"
+    },
+    {
+      "element": "relationship",
+      "index": 5,
+      "reason": "AT_RACE does not allow Driver -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 6,
+      "reason": "FOR_TEAM does not allow Driver -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 7,
+      "reason": "FOR_TEAM does not allow Driver -> GrandPrix"
+    }
+  ],
+  "alignments": []
+}

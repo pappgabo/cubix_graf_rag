@@ -1,0 +1,144 @@
+{
+  "chunk_id": "season-2012-formula-one-world-championship#100",
+  "doc_id": "season-2012-formula-one-world-championship",
+  "document_title": "2012 Formula One World Championship",
+  "section": "Race summaries > Round 20 – Brazil Autódromo José Carlos Pace (Interlagos)",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "d2e5e5236b0799fbeb3c25148a47ecca1bf640e7b06bb3a7f3687a59040d9115",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Lewis Hamilton",
+        "entity_type": "Driver",
+        "description": "Retired from the race after contact with Hülkenberg."
+      },
+      {
+        "local_id": "e2",
+        "name": "Nico Hülkenberg",
+        "entity_type": "Driver",
+        "description": "Received a drive-through penalty for causing an avoidable accident."
+      },
+      {
+        "local_id": "e3",
+        "name": "Jenson Button",
+        "entity_type": "Driver",
+        "description": "Retook the lead and held on to win the race."
+      },
+      {
+        "local_id": "e4",
+        "name": "Fernando Alonso",
+        "entity_type": "Driver",
+        "description": "Promoted to the podium and finished in second place."
+      },
+      {
+        "local_id": "e5",
+        "name": "Felipe Massa",
+        "entity_type": "Driver",
+        "description": "Yielded his position to Alonso."
+      },
+      {
+        "local_id": "e6",
+        "name": "Sebastian Vettel",
+        "entity_type": "Driver",
+        "description": "Finished seventh, securing the title."
+      },
+      {
+        "local_id": "e7",
+        "name": "Michael Schumacher",
+        "entity_type": "Driver",
+        "description": "Moved aside to let Vettel through."
+      },
+      {
+        "local_id": "e8",
+        "name": "Paul di Resta",
+        "entity_type": "Driver",
+        "description": "Crashed heavily, forcing the deployment of the safety car."
+      },
+      {
+        "local_id": "e9",
+        "name": "2012 Formula One World Championship",
+        "entity_type": "Season",
+        "description": "The championship season in which the race took place."
+      },
+      {
+        "local_id": "e10",
+        "name": "Brazil Autódromo José Carlos Pace (Interlagos)",
+        "entity_type": "Circuit",
+        "description": "The circuit where the race was held."
+      },
+      {
+        "local_id": "e11",
+        "name": "Race Result",
+        "entity_type": "RaceResult",
+        "description": "Result of the race."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Hamilton and Hülkenberg made contact in the first corner.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e11",
+        "relationship_type": "ACHIEVED",
+        "description": "Alonso finished in second place.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e4",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Massa yielded his position to Alonso.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e6",
+        "target_id": "e11",
+        "relationship_type": "ACHIEVED",
+        "description": "Vettel finished seventh.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 11,
+  "entities_accepted": 11,
+  "entities_rejected": 0,
+  "relationship_candidates": 7,
+  "relationships_accepted": 4,
+  "relationships_rejected": 3,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "ACHIEVED does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 5,
+      "reason": "HELD_AT does not allow Circuit -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 6,
+      "reason": "RACED_IN does not allow Season -> RaceResult"
+    }
+  ],
+  "alignments": []
+}

@@ -1,0 +1,43 @@
+{
+  "chunk_id": "driver-michael-schumacher#64",
+  "doc_id": "driver-michael-schumacher",
+  "document_title": "Michael Schumacher",
+  "section": null,
+  "page": 13,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "79c2b401da4993838faac17cac0cfce0ad56ef9679426aaf34a2c9f0acefd6eb",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Michael Schumacher",
+        "entity_type": "Driver",
+        "description": "A German racing driver who won seven world titles."
+      },
+      {
+        "local_id": "e2",
+        "name": "Ferrari F2004",
+        "entity_type": "Car",
+        "description": "The car in which Schumacher won his seventh world title."
+      }
+    ],
+    "relationships": []
+  },
+  "entity_candidates": 2,
+  "entities_accepted": 2,
+  "entities_rejected": 0,
+  "relationship_candidates": 1,
+  "relationships_accepted": 0,
+  "relationships_rejected": 1,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "POWERED_BY does not allow Driver -> Car"
+    }
+  ],
+  "alignments": []
+}

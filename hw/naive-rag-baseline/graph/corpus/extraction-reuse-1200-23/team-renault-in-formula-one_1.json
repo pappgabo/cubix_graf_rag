@@ -1,0 +1,141 @@
+{
+  "chunk_id": "team-renault-in-formula-one#1",
+  "doc_id": "team-renault-in-formula-one",
+  "document_title": "Renault in Formula One",
+  "section": null,
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "860e175ead4e2d069db1d05164a4167295d3865a66f7e2b42bf5e038d2443162",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Renault",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that has been involved in the sport as both a team owner and engine manufacturer."
+      },
+      {
+        "local_id": "e2",
+        "name": "Red Bull Racing",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that won four drivers' and constructors' titles with Renault as the engine supplier."
+      },
+      {
+        "local_id": "e3",
+        "name": "2011",
+        "entity_type": "Season",
+        "description": "A championship year when Renault continued to use the Renault chassis name."
+      },
+      {
+        "local_id": "e4",
+        "name": "2010",
+        "entity_type": "Season",
+        "description": "A championship year when Renault won titles with Red Bull Racing."
+      },
+      {
+        "local_id": "e6",
+        "name": "2012",
+        "entity_type": "Season",
+        "description": "A championship year when Renault won titles with Red Bull Racing."
+      },
+      {
+        "local_id": "e7",
+        "name": "2013",
+        "entity_type": "Season",
+        "description": "A championship year when Renault won titles with Red Bull Racing."
+      },
+      {
+        "local_id": "e8",
+        "name": "2016",
+        "entity_type": "Season",
+        "description": "A championship year when Renault bought the Enstone-based team again."
+      },
+      {
+        "local_id": "e9",
+        "name": "2021",
+        "entity_type": "Season",
+        "description": "A championship year when the team was re-branded as Alpine."
+      },
+      {
+        "local_id": "e10",
+        "name": "2025",
+        "entity_type": "Season",
+        "description": "The year until Renault remained as engine manufacturer."
+      },
+      {
+        "local_id": "e11",
+        "name": "12 constructors' championships",
+        "entity_type": "Title",
+        "description": "The number of constructors' championships won by Renault as an engine manufacturer."
+      },
+      {
+        "local_id": "e12",
+        "name": "11 drivers' championships",
+        "entity_type": "Title",
+        "description": "The number of drivers' championships won by Renault as an engine manufacturer."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e3",
+        "relationship_type": "ENTERED",
+        "description": "Renault continued to use the Renault chassis name in the 2011 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e11",
+        "relationship_type": "WON",
+        "description": "Renault won 12 constructors' championships as an engine manufacturer.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e12",
+        "relationship_type": "WON",
+        "description": "Renault won 11 drivers' championships as an engine manufacturer.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 12,
+  "entities_accepted": 11,
+  "entities_rejected": 0,
+  "relationship_candidates": 6,
+  "relationships_accepted": 3,
+  "relationships_rejected": 3,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "DROVE_FOR does not allow Team -> Team"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "DROVE_FOR does not allow Team -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "DROVE_FOR does not allow Team -> Season"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 1,
+      "action": "clear_redundant_season_year",
+      "detail": "ENTERED year 2011 already named by Season 'e3'; from_year and to_year cleared"
+    }
+  ]
+}

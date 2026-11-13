@@ -1,0 +1,181 @@
+{
+  "chunk_id": "team-renault-in-formula-one#38",
+  "doc_id": "team-renault-in-formula-one",
+  "document_title": "Renault in Formula One",
+  "section": "Constructor > Renault F1 Team and Lotus Renault GP (2002–2011): The rise and fall of the first Enstone era > Team sale amid Kubica promise (2010)",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "0fb686b3b38ba71b8de4d6002d3c20646eb3a329f2246d411edd96dd4c10c937",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Vitaly Petrov",
+        "entity_type": "Driver",
+        "description": "A driver who raced for Renault F1 Team."
+      },
+      {
+        "local_id": "e2",
+        "name": "Robert Kubica",
+        "entity_type": "Driver",
+        "description": "A driver who raced for Renault F1 Team."
+      },
+      {
+        "local_id": "e3",
+        "name": "Kimi Räikkönen",
+        "entity_type": "Driver",
+        "description": "A driver rumored to replace Petrov for 2011."
+      },
+      {
+        "local_id": "e4",
+        "name": "Renault F1 Team",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that entered cars."
+      },
+      {
+        "local_id": "e5",
+        "name": "Hungarian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A race where Petrov out-qualified Kubica for the first time."
+      },
+      {
+        "local_id": "e6",
+        "name": "Belgian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A race where Petrov crashed during qualifying."
+      },
+      {
+        "local_id": "e7",
+        "name": "Singapore Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A race where Petrov was running seventh before being pushed off."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Vitaly Petrov at Hungarian Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Petrov finished 5th at the Hungarian Grand Prix."
+      },
+      {
+        "local_id": "rr2",
+        "name": "Vitaly Petrov at Belgian Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Petrov finished ninth at the Belgian Grand Prix after starting 23rd."
+      },
+      {
+        "local_id": "rr3",
+        "name": "Vitaly Petrov at Singapore Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Petrov was running seventh at the Singapore Grand Prix before being pushed off."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Petrov was out-qualified and out-raced by Kubica at almost every race.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Petrov finished 5th at the Hungarian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e5",
+        "relationship_type": "AT_RACE",
+        "description": "Petrov finished 5th at the Hungarian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr2",
+        "relationship_type": "ACHIEVED",
+        "description": "Petrov finished ninth at the Belgian Grand Prix after starting 23rd.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr2",
+        "target_id": "e6",
+        "relationship_type": "AT_RACE",
+        "description": "Petrov finished ninth at the Belgian Grand Prix after starting 23rd.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr3",
+        "relationship_type": "ACHIEVED",
+        "description": "Petrov was running seventh at the Singapore Grand Prix before being pushed off.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr3",
+        "target_id": "e7",
+        "relationship_type": "AT_RACE",
+        "description": "Petrov was running seventh at the Singapore Grand Prix before being pushed off.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 7,
+  "entities_accepted": 10,
+  "entities_rejected": 0,
+  "relationship_candidates": 7,
+  "relationships_accepted": 7,
+  "relationships_rejected": 3,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 7,
+      "reason": "DROVE_FOR does not allow Team -> Driver"
+    },
+    {
+      "element": "relationship",
+      "index": 8,
+      "reason": "DROVE_FOR does not allow Team -> Driver"
+    },
+    {
+      "element": "relationship",
+      "index": 9,
+      "reason": "TEAMMATE_OF does not allow Team -> Driver"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 1,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e5; description kept"
+    },
+    {
+      "index": 2,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr2 -AT_RACE-> e6; description kept"
+    },
+    {
+      "index": 3,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr3 -AT_RACE-> e7; description kept"
+    }
+  ]
+}

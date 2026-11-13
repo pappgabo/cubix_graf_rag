@@ -1,0 +1,155 @@
+{
+  "chunk_id": "team-renault-in-formula-one#66",
+  "doc_id": "team-renault-in-formula-one",
+  "document_title": "Renault in Formula One",
+  "section": "Engine supplier (1983–2025) > Struggles in the V6 turbo-hybrid era and the end of engine supply (2014–2025)",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "c207ec580f76e252c92d4498a3257f39847c747c2ae602fc401fbdfc475e5069",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Alpine",
+        "entity_type": "Team",
+        "description": "The Enstone-based team rebranded from Renault to Alpine from the 2021 season onwards."
+      },
+      {
+        "local_id": "e2",
+        "name": "Esteban Ocon",
+        "entity_type": "Driver",
+        "description": "Alpine driver who won the 2021 Hungarian Grand Prix."
+      },
+      {
+        "local_id": "e3",
+        "name": "2021",
+        "entity_type": "Season",
+        "description": "The championship year in which Alpine driver Esteban Ocon won the Hungarian Grand Prix."
+      },
+      {
+        "local_id": "e4",
+        "name": "Hungarian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The race where Esteban Ocon won in 2021."
+      },
+      {
+        "local_id": "e5",
+        "name": "A523",
+        "entity_type": "Car",
+        "description": "The car fielded by Alpine during the 2023 season."
+      },
+      {
+        "local_id": "e6",
+        "name": "Renault",
+        "entity_type": "PowerUnit",
+        "description": "The engine make supplied by Renault to the Alpine team."
+      },
+      {
+        "local_id": "e7",
+        "name": "Red Bull RB19",
+        "entity_type": "Car",
+        "description": "The car powered by Honda that was the pacesetter compared to Alpine's A523."
+      },
+      {
+        "local_id": "e8",
+        "name": "Mercedes W14",
+        "entity_type": "Car",
+        "description": "The car powered by Mercedes that Alpine claimed their A523 would be on par with."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Esteban Ocon at Hungarian Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Esteban Ocon won the Hungarian Grand Prix."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e2",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Esteban Ocon won the Hungarian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e4",
+        "relationship_type": "AT_RACE",
+        "description": "Esteban Ocon won the Hungarian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e1",
+        "relationship_type": "DROVE_FOR",
+        "description": "Esteban Ocon drove for Alpine.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e3",
+        "relationship_type": "RACED_IN",
+        "description": "The A523 car raced in the 2023 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e3",
+        "relationship_type": "ENTERED",
+        "description": "Alpine entered the 2021 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e7",
+        "target_id": "e3",
+        "relationship_type": "RACED_IN",
+        "description": "The Red Bull RB19 raced in the 2023 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e8",
+        "target_id": "e3",
+        "relationship_type": "RACED_IN",
+        "description": "The Mercedes W14 raced in the 2023 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 8,
+  "entities_accepted": 9,
+  "entities_rejected": 0,
+  "relationship_candidates": 7,
+  "relationships_accepted": 7,
+  "relationships_rejected": 1,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "POWERED_BY does not allow Team -> PowerUnit"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 1,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e4; description kept"
+    }
+  ]
+}

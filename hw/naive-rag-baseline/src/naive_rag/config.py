@@ -9,7 +9,7 @@ from __future__ import annotations
 from functools import lru_cache
 from pathlib import Path
 
-from pydantic import Field
+from pydantic import Field, model_validator
 from pydantic_settings import BaseSettings, SettingsConfigDict
 
 # src/naive_rag/config.py -> src/naive_rag -> src -> <project root>
@@ -51,22 +51,47 @@ class Settings(BaseSettings):
     # Root node that every real document hangs off (handy for global queries).
     corpus_name: str = "f1-wikipedia"
 
-    # --- Chunking (deliberately NOT default) ------------------------------
-    # Measured on this corpus: paragraphs are short (median 121 chars,
-    # p90 721, 83% <= 500 chars). 500 chars therefore keeps most paragraphs
-    # whole and merges a few short ones, giving focused embeddings. The
-    # 75-char overlap (~15%) keeps a sentence that straddles a boundary
-    # retrievable from either side. Trade-off (expected for a baseline):
-    # small chunks fragment context, which hurts multi-hop/global questions.
-    # These are starting values: compare other sizes with
-    #   uv run naive-rag ingest --chunk-size N --chunk-overlap M
-    chunk_size: int = 500
-    chunk_overlap: int = 75
+    # --- Chunking (characters, not tokens) --------------------------------
+    # Measured on the current local corpus after heading splits: a section
+    # median is 992 characters, while 500-character chunks stop at the cap
+    # (median chunk 387, p95 492, max 500) and cut sentences. 1200 keeps a
+    # typical section together and still splits the long tail (section p90
+    # is about 4700). Overlap is 100 characters, under 10 percent, and must
+    # stay strictly below chunk_size. There is no configured extraction
+    # input window; this size is not a claim about model capacity.
+    # Override with CHUNK_SIZE / CHUNK_OVERLAP or the ingest CLI.
+    chunk_size: int = 1200
+    chunk_overlap: int = 100
 
     # --- Retrieval --------------------------------------------------------
     # k=4: a typical naive-RAG setting; enough to cover a simple fact with
     # some redundancy, too few to gather evidence from many documents.
     top_k: int = 4
+
+    # --- Local-search context window --------------------------------------
+    # These are explicit application limits. They are not read from the
+    # chat model and are not a measured model capacity. The prompt estimate
+    # is ceil(characters / 3), an overestimate, not an exact token count.
+    # Input tokens plus the reserved answer must stay within the window.
+    # Graph statements and source excerpts split the variable body; unused
+    # room on either side can be used by the other.
+    context_model_window: int = 8192
+    context_answer_reserve: int = 1024
+    context_graph_share: float = 0.5
+    # Rendered description lines per node and per edge. The stored text is
+    # unchanged. Lines that best match the question come first; the rest are
+    # counted, not copied. A single line is never cut in half.
+    context_description_lines: int = 8
+    context_description_chars: int = 480
+
+    # Extraction call window for the configured gpt-4o-mini chat model.
+    # extraction_input_window is the whole context window. The allowed
+    # prompt estimate is this value minus extraction_output_reserve, and
+    # the reserve is passed as max_tokens. 128000 and 16384 are the
+    # published context window and max output, not a measured call.
+    # The answer-context window is separate. Both must be set together.
+    extraction_input_window: int | None = 128000
+    extraction_output_reserve: int | None = 16384
 
     # --- Paths (derived) --------------------------------------------------
     corpus_dir: Path = Field(default=PROJECT_ROOT / "corpus")
@@ -75,6 +100,39 @@ class Settings(BaseSettings):
     qdrant_path: Path = Field(default=PROJECT_ROOT / ".qdrant")
     index_info_file: Path = Field(default=PROJECT_ROOT / ".index_info.json")
     graph_dir: Path = Field(default=PROJECT_ROOT / "graph")
+
+    @model_validator(mode="after")
+    def _chunk_bounds(self) -> "Settings":
+        if (not isinstance(self.chunk_size, int) or isinstance(self.chunk_size, bool)
+                or self.chunk_size <= 0):
+            raise ValueError(
+                f"chunk_size must be a positive integer, got {self.chunk_size!r}")
+        if (not isinstance(self.chunk_overlap, int)
+                or isinstance(self.chunk_overlap, bool)
+                or self.chunk_overlap < 0
+                or self.chunk_overlap >= self.chunk_size):
+            raise ValueError(
+                "chunk_overlap must be an integer >= 0 and < chunk_size, "
+                f"got {self.chunk_overlap!r} for size {self.chunk_size!r}")
+        window = self.extraction_input_window
+        reserve = self.extraction_output_reserve
+        if (window is None) != (reserve is None):
+            raise ValueError(
+                "extraction_input_window and extraction_output_reserve "
+                "must be set together")
+        if window is not None and reserve is not None:
+            if (not isinstance(window, int) or isinstance(window, bool)
+                    or window <= 0):
+                raise ValueError(
+                    "extraction_input_window must be a positive integer, "
+                    f"got {window!r}")
+            if (not isinstance(reserve, int) or isinstance(reserve, bool)
+                    or reserve <= 0 or reserve >= window):
+                raise ValueError(
+                    "extraction_output_reserve must be a positive integer "
+                    f"below the input window, got {reserve!r} "
+                    f"for window {window!r}")
+        return self
 
 
 @lru_cache

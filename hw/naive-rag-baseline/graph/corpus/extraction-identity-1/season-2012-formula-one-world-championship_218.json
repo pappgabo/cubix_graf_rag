@@ -1,0 +1,78 @@
+{
+  "chunk_id": "season-2012-formula-one-world-championship#218",
+  "doc_id": "season-2012-formula-one-world-championship",
+  "document_title": "2012 Formula One World Championship",
+  "section": "Race summaries > Post-season controversy",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/2012_Formula_One_World_Championship",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "0d6dc9e3fc5d8c96528e0f2e48bfe953f72601cdf0036265c2509edfb1c9fa86",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "entity_candidates": 5,
+  "entities_accepted": 5,
+  "entities_rejected": 0,
+  "relationship_candidates": 3,
+  "relationships_accepted": 1,
+  "relationships_rejected": 2,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "HELD_AT does not allow Driver -> Circuit"
+    },
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "HELD_AT does not allow Circuit -> Circuit"
+    }
+  ],
+  "alignments": [],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Pastor Maldonado",
+        "entity_type": "Driver",
+        "description": "A driver who spun and retired during the race."
+      },
+      {
+        "local_id": "e2",
+        "name": "Curva do Sol",
+        "entity_type": "Circuit",
+        "description": "The third corner of the Interlagos circuit."
+      },
+      {
+        "local_id": "e3",
+        "name": "Interlagos",
+        "entity_type": "Circuit",
+        "description": "The racing circuit where the incident occurred."
+      },
+      {
+        "local_id": "e4",
+        "name": "Sebastian Vettel",
+        "entity_type": "Driver",
+        "description": "A driver who overtook Vergne during the race."
+      },
+      {
+        "local_id": "e5",
+        "name": "Jean-Eric Vergne",
+        "entity_type": "Driver",
+        "description": "A driver who was overtaken by Vettel."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e4",
+        "target_id": "e5",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Vettel overtook Vergne during the race.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

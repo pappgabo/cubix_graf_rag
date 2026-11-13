@@ -1,0 +1,141 @@
+{
+  "chunk_id": "season-2008-formula-one-world-championship#1",
+  "doc_id": "season-2008-formula-one-world-championship",
+  "document_title": "2008 Formula One World Championship",
+  "section": null,
+  "page": 1,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "e54bf6f2438db6d80d978e5b4f338361bc1cfec6bc26c50572f4dc7c5ebc994e",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Lewis Hamilton",
+        "entity_type": "Driver",
+        "description": "Won the Drivers' title, became the youngest driver ever to win the title and the first black driver to do so."
+      },
+      {
+        "local_id": "e2",
+        "name": "Scuderia Ferrari Marlboro",
+        "entity_type": "Team",
+        "description": "Won the Constructors' title."
+      },
+      {
+        "local_id": "e3",
+        "name": "2008",
+        "entity_type": "Season",
+        "description": "The championship year in which Hamilton won the Drivers' title."
+      },
+      {
+        "local_id": "e4",
+        "name": "Fernando Alonso",
+        "entity_type": "Driver",
+        "description": "Won the first World Championship race held in Singapore."
+      },
+      {
+        "local_id": "e5",
+        "name": "Nelson Piquet Jr.",
+        "entity_type": "Driver",
+        "description": "Teammate of Fernando Alonso who deliberately crashed to help Alonso's strategy."
+      },
+      {
+        "local_id": "e6",
+        "name": "Honda",
+        "entity_type": "Team",
+        "description": "Last season for the team before they withdrew from Formula One later in December."
+      },
+      {
+        "local_id": "e7",
+        "name": "Singapore Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The first World Championship race held in Singapore."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Fernando Alonso at Singapore Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Alonso won the first World Championship race held in Singapore."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e4",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Alonso won the first World Championship race held in Singapore.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e7",
+        "relationship_type": "AT_RACE",
+        "description": "Alonso won the first World Championship race held in Singapore.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e4",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Piquet was a teammate of Alonso.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e6",
+        "target_id": "e3",
+        "relationship_type": "ENTERED",
+        "description": "Honda participated in the 2008 season before withdrawing later in December.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e7",
+        "target_id": "e3",
+        "relationship_type": "ROUND_OF",
+        "description": "Singapore Grand Prix was a round of the 2008 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 7,
+  "entities_accepted": 8,
+  "entities_rejected": 0,
+  "relationship_candidates": 6,
+  "relationships_accepted": 5,
+  "relationships_rejected": 2,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "WON does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "WON does not allow Team -> Season"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 2,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e7; description kept"
+    },
+    {
+      "index": 4,
+      "action": "clear_redundant_season_year",
+      "detail": "ENTERED year 2008 already named by Season 'e3'; from_year and to_year cleared"
+    }
+  ]
+}

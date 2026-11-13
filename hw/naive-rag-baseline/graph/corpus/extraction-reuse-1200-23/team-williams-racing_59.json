@@ -1,0 +1,204 @@
+{
+  "chunk_id": "team-williams-racing#59",
+  "doc_id": "team-williams-racing",
+  "document_title": "Williams Racing",
+  "section": "Williams Racing > Mecachrome engines (1998) > Williams Racing > 1998 season",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "55c30a1d11ca6234c9750e97dbb846d052c8954bea93491f08845eb3430b8062",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Williams Racing",
+        "entity_type": "Team",
+        "description": "A Formula 1 team."
+      },
+      {
+        "local_id": "e2",
+        "name": "Jacques Villeneuve",
+        "entity_type": "Driver",
+        "description": "A Formula 1 driver who finished fifth in the Drivers' Championship with 21 points in 1998."
+      },
+      {
+        "local_id": "e3",
+        "name": "Heinz-Harald Frentzen",
+        "entity_type": "Driver",
+        "description": "A Formula 1 driver who finished seventh in the Drivers' Championship with 17 points in 1998."
+      },
+      {
+        "local_id": "e4",
+        "name": "1998",
+        "entity_type": "Season",
+        "description": "The Formula 1 season in which Williams Racing finished third in the Constructors' Championship."
+      },
+      {
+        "local_id": "e5",
+        "name": "Australian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The first round of the 1998 season where Frentzen finished third."
+      },
+      {
+        "local_id": "e6",
+        "name": "German Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A race in the 1998 season where Villeneuve finished third."
+      },
+      {
+        "local_id": "e7",
+        "name": "Hungarian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A race in the 1998 season where Villeneuve finished third."
+      },
+      {
+        "local_id": "e8",
+        "name": "Constructors' Championship",
+        "entity_type": "Title",
+        "description": "The championship title for teams in Formula 1."
+      },
+      {
+        "local_id": "e9",
+        "name": "Drivers' Championship",
+        "entity_type": "Title",
+        "description": "The championship title for drivers in Formula 1."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Heinz-Harald Frentzen at Australian Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Heinz-Harald Frentzen finished third at the Australian Grand Prix in 1998."
+      },
+      {
+        "local_id": "rr2",
+        "name": "Jacques Villeneuve at German Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Jacques Villeneuve finished third at the German Grand Prix in 1998."
+      },
+      {
+        "local_id": "rr3",
+        "name": "Jacques Villeneuve at Hungarian Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Jacques Villeneuve finished third at the Hungarian Grand Prix in 1998."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e4",
+        "relationship_type": "ENTERED",
+        "description": "Williams Racing took part in the 1998 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e8",
+        "relationship_type": "WON",
+        "description": "Williams Racing finished third in the Constructors' Championship in 1998.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e9",
+        "relationship_type": "WON",
+        "description": "Jacques Villeneuve finished fifth in the Drivers' Championship in 1998.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e9",
+        "relationship_type": "WON",
+        "description": "Heinz-Harald Frentzen finished seventh in the Drivers' Championship in 1998.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Heinz-Harald Frentzen finished third at the Australian Grand Prix in 1998.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e5",
+        "relationship_type": "AT_RACE",
+        "description": "Heinz-Harald Frentzen finished third at the Australian Grand Prix in 1998.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "rr2",
+        "relationship_type": "ACHIEVED",
+        "description": "Jacques Villeneuve finished third at the German Grand Prix in 1998.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr2",
+        "target_id": "e6",
+        "relationship_type": "AT_RACE",
+        "description": "Jacques Villeneuve finished third at the German Grand Prix in 1998.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "rr3",
+        "relationship_type": "ACHIEVED",
+        "description": "Jacques Villeneuve finished third at the Hungarian Grand Prix in 1998.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr3",
+        "target_id": "e7",
+        "relationship_type": "AT_RACE",
+        "description": "Jacques Villeneuve finished third at the Hungarian Grand Prix in 1998.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 9,
+  "entities_accepted": 12,
+  "entities_rejected": 0,
+  "relationship_candidates": 7,
+  "relationships_accepted": 10,
+  "relationships_rejected": 0,
+  "rejections": [],
+  "alignments": [
+    {
+      "index": 4,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e5; description kept"
+    },
+    {
+      "index": 5,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr2 -AT_RACE-> e6; description kept"
+    },
+    {
+      "index": 6,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr3 -AT_RACE-> e7; description kept"
+    }
+  ]
+}

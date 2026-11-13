@@ -1,0 +1,130 @@
+{
+  "chunk_id": "team-red-bull-racing#70",
+  "doc_id": "team-red-bull-racing",
+  "document_title": "Red Bull Racing",
+  "section": "2025 season",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "37cded0ae259e1c7b6c2a8685c62734b53a37096734051dea6d405c436144786",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Red Bull Racing",
+        "entity_type": "Team",
+        "description": "A Formula 1 team."
+      },
+      {
+        "local_id": "e2",
+        "name": "Adrian Newey",
+        "entity_type": "Driver",
+        "description": "Chief Technical Officer who left Red Bull Racing for Aston Martin."
+      },
+      {
+        "local_id": "e3",
+        "name": "Sergio Pérez",
+        "entity_type": "Driver",
+        "description": "Driver who left Red Bull Racing after four seasons."
+      },
+      {
+        "local_id": "e4",
+        "name": "Liam Lawson",
+        "entity_type": "Driver",
+        "description": "Driver who will race for Red Bull Racing in the 2025 season."
+      },
+      {
+        "local_id": "e5",
+        "name": "Max Verstappen",
+        "entity_type": "Driver",
+        "description": "Driver who will race alongside Liam Lawson for Red Bull Racing in the 2025 season."
+      },
+      {
+        "local_id": "e6",
+        "name": "2025",
+        "entity_type": "Season",
+        "description": "The Formula 1 season."
+      },
+      {
+        "local_id": "e7",
+        "name": "2024 Miami Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula 1 race event."
+      },
+      {
+        "local_id": "e8",
+        "name": "Scuderia AlphaTauri",
+        "entity_type": "Team",
+        "description": "Red Bull's sister team."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e6",
+        "relationship_type": "ENTERED",
+        "description": "Red Bull Racing took part in the 2025 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e1",
+        "relationship_type": "DROVE_FOR",
+        "description": "Sergio Pérez drove for Red Bull Racing before leaving the team.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e1",
+        "relationship_type": "DROVE_FOR",
+        "description": "Adrian Newey was with Red Bull Racing as Chief Technical Officer.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e8",
+        "relationship_type": "DROVE_FOR",
+        "description": "Liam Lawson drove for Scuderia AlphaTauri before joining Red Bull Racing.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e7",
+        "target_id": "e6",
+        "relationship_type": "ROUND_OF",
+        "description": "The 2024 Miami Grand Prix is a round of the 2025 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 8,
+  "entities_accepted": 8,
+  "entities_rejected": 0,
+  "relationship_candidates": 7,
+  "relationships_accepted": 5,
+  "relationships_rejected": 2,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "DROVE_FOR does not allow Team -> Driver"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "DROVE_FOR does not allow Team -> Driver"
+    }
+  ],
+  "alignments": []
+}

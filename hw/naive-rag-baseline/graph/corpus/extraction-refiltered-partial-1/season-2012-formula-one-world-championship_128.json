@@ -1,0 +1,113 @@
+{
+  "chunk_id": "season-2012-formula-one-world-championship#128",
+  "doc_id": "season-2012-formula-one-world-championship",
+  "document_title": "2012 Formula One World Championship",
+  "section": "Race summaries > Round 8 – Europe Valencia Street Circuit",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/2012_Formula_One_World_Championship",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "9db14aabc5b3a809a134e0b7b63ce2ee49b313deae88f46c6e09ddf947644fc7",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "ACHIEVED does not allow Driver -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "ACHIEVED does not allow Driver -> Driver"
+    },
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "ACHIEVED does not allow Driver -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 5,
+      "reason": "ACHIEVED does not allow Driver -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 6,
+      "reason": "ACHIEVED does not allow Driver -> GrandPrix"
+    }
+  ],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Pastor Maldonado",
+        "entity_type": "Driver",
+        "description": "Finished tenth but classified twelfth due to a post-race penalty."
+      },
+      {
+        "local_id": "e2",
+        "name": "Michael Schumacher",
+        "entity_type": "Driver",
+        "description": "Finished third, marking his first podium since the 2006 Chinese Grand Prix."
+      },
+      {
+        "local_id": "e3",
+        "name": "Mark Webber",
+        "entity_type": "Driver",
+        "description": "Finished fourth."
+      },
+      {
+        "local_id": "e4",
+        "name": "Fernando Alonso",
+        "entity_type": "Driver",
+        "description": "Finished first."
+      },
+      {
+        "local_id": "e5",
+        "name": "Kimi Räikkönen",
+        "entity_type": "Driver",
+        "description": "Finished second."
+      },
+      {
+        "local_id": "e6",
+        "name": "2012 Formula One World Championship",
+        "entity_type": "Season",
+        "description": "The championship year for the race."
+      },
+      {
+        "local_id": "e7",
+        "name": "Valencia Street Circuit",
+        "entity_type": "Circuit",
+        "description": "The circuit where the race took place."
+      },
+      {
+        "local_id": "e8",
+        "name": "Grand Prix of Europe",
+        "entity_type": "GrandPrix",
+        "description": "The specific Grand Prix held at Valencia."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e8",
+        "target_id": "e6",
+        "relationship_type": "ROUND_OF",
+        "description": "The Grand Prix of Europe is a round of the 2012 Formula One World Championship.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e8",
+        "target_id": "e7",
+        "relationship_type": "HELD_AT",
+        "description": "The Grand Prix of Europe is held at Valencia Street Circuit.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

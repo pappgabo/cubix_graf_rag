@@ -1,0 +1,70 @@
+{
+  "chunk_id": "reference-formula-one#55",
+  "doc_id": "reference-formula-one",
+  "document_title": "Formula One",
+  "section": "Formula One > Cars and technology",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "d579d372987e5a0d38368abfc00f0cbd3c7682286b6cbb4082de05d31eafce5a",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "RB5",
+        "entity_type": "Car",
+        "description": "The 2009 car used by Red Bull Racing that featured a pullrod suspension at the rear."
+      },
+      {
+        "local_id": "e2",
+        "name": "2012 car",
+        "entity_type": "Car",
+        "description": "Ferrari's car that used a pullrod suspension at both the front and rear."
+      },
+      {
+        "local_id": "e3",
+        "name": "MCL36",
+        "entity_type": "Car",
+        "description": "The 2022 car used by McLaren that switched to a pullrod front suspension and push rod rear suspension."
+      },
+      {
+        "local_id": "e4",
+        "name": "RB18",
+        "entity_type": "Car",
+        "description": "The 2022 car used by Red Bull Racing that switched to a pullrod front suspension and push rod rear suspension."
+      }
+    ],
+    "relationships": []
+  },
+  "entity_candidates": 4,
+  "entities_accepted": 4,
+  "entities_rejected": 0,
+  "relationship_candidates": 4,
+  "relationships_accepted": 0,
+  "relationships_rejected": 4,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "FIELDED does not allow Car -> Car"
+    },
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "FIELDED does not allow Car -> Car"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "FIELDED does not allow Car -> Car"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "FIELDED does not allow Car -> Car"
+    }
+  ],
+  "alignments": []
+}

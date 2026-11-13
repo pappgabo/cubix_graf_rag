@@ -1,0 +1,261 @@
+{
+  "chunk_id": "season-2021-formula-one-world-championship#24",
+  "doc_id": "season-2021-formula-one-world-championship",
+  "document_title": "2021 Formula One World Championship",
+  "section": null,
+  "page": 6,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "b816c973c11b8c118cd45c647561da9176c28afa04714a2d6ae656e702e7ea9c",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Lando Norris",
+        "entity_type": "Driver",
+        "description": "A driver who raced in the 2021 Formula One World Championship."
+      },
+      {
+        "local_id": "e2",
+        "name": "Valtteri Bottas",
+        "entity_type": "Driver",
+        "description": "A driver who raced in the 2021 Formula One World Championship."
+      },
+      {
+        "local_id": "e3",
+        "name": "George Russell",
+        "entity_type": "Driver",
+        "description": "A driver who raced in the 2021 Formula One World Championship."
+      },
+      {
+        "local_id": "e4",
+        "name": "Charles Leclerc",
+        "entity_type": "Driver",
+        "description": "A driver who raced in the 2021 Formula One World Championship."
+      },
+      {
+        "local_id": "e5",
+        "name": "Lewis Hamilton",
+        "entity_type": "Driver",
+        "description": "A driver who raced in the 2021 Formula One World Championship."
+      },
+      {
+        "local_id": "e6",
+        "name": "Max Verstappen",
+        "entity_type": "Driver",
+        "description": "A driver who raced in the 2021 Formula One World Championship."
+      },
+      {
+        "local_id": "e7",
+        "name": "Sergio Pérez",
+        "entity_type": "Driver",
+        "description": "A driver who raced in the 2021 Formula One World Championship."
+      },
+      {
+        "local_id": "e8",
+        "name": "Kimi Räikkönen",
+        "entity_type": "Driver",
+        "description": "A driver who raced in the 2021 Formula One World Championship."
+      },
+      {
+        "local_id": "e9",
+        "name": "Antonio Giovinazzi",
+        "entity_type": "Driver",
+        "description": "A driver who raced in the 2021 Formula One World Championship."
+      },
+      {
+        "local_id": "e10",
+        "name": "Yuki Tsunoda",
+        "entity_type": "Driver",
+        "description": "A driver who raced in the 2021 Formula One World Championship."
+      },
+      {
+        "local_id": "e11",
+        "name": "Portuguese Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Grand Prix that took place in the 2021 Formula One World Championship."
+      },
+      {
+        "local_id": "e12",
+        "name": "2021 Formula One World Championship",
+        "entity_type": "Season",
+        "description": "The championship season for Formula One in 2021."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Valtteri Bottas at Portuguese Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Bottas took pole position at the Portuguese Grand Prix."
+      },
+      {
+        "local_id": "rr2",
+        "name": "Lewis Hamilton at Portuguese Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Hamilton won the Portuguese Grand Prix."
+      },
+      {
+        "local_id": "rr3",
+        "name": "Max Verstappen at Portuguese Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Verstappen finished second at the Portuguese Grand Prix."
+      },
+      {
+        "local_id": "rr4",
+        "name": "Lando Norris at Portuguese Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Norris finished third at the Portuguese Grand Prix."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e2",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Bottas took pole position at the Portuguese Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e11",
+        "relationship_type": "AT_RACE",
+        "description": "Bottas took pole position at the Portuguese Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "rr2",
+        "relationship_type": "ACHIEVED",
+        "description": "Hamilton won the Portuguese Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr2",
+        "target_id": "e11",
+        "relationship_type": "AT_RACE",
+        "description": "Hamilton won the Portuguese Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e6",
+        "target_id": "rr3",
+        "relationship_type": "ACHIEVED",
+        "description": "Verstappen finished second at the Portuguese Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr3",
+        "target_id": "e11",
+        "relationship_type": "AT_RACE",
+        "description": "Verstappen finished second at the Portuguese Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr4",
+        "relationship_type": "ACHIEVED",
+        "description": "Norris finished third at the Portuguese Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr4",
+        "target_id": "e11",
+        "relationship_type": "AT_RACE",
+        "description": "Norris finished third at the Portuguese Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 12,
+  "entities_accepted": 16,
+  "entities_rejected": 0,
+  "relationship_candidates": 13,
+  "relationships_accepted": 8,
+  "relationships_rejected": 9,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 8,
+      "reason": "DROVE_FOR does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 9,
+      "reason": "DROVE_FOR does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 10,
+      "reason": "DROVE_FOR does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 11,
+      "reason": "DROVE_FOR does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 12,
+      "reason": "DROVE_FOR does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 13,
+      "reason": "DROVE_FOR does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 14,
+      "reason": "DROVE_FOR does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 15,
+      "reason": "DROVE_FOR does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 16,
+      "reason": "DROVE_FOR does not allow Driver -> Season"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 0,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e11; description kept"
+    },
+    {
+      "index": 1,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr2 -AT_RACE-> e11; description kept"
+    },
+    {
+      "index": 2,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr3 -AT_RACE-> e11; description kept"
+    },
+    {
+      "index": 3,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr4 -AT_RACE-> e11; description kept"
+    }
+  ]
+}

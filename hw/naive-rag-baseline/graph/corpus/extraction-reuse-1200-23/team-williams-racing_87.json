@@ -1,0 +1,130 @@
+{
+  "chunk_id": "team-williams-racing#87",
+  "doc_id": "team-williams-racing",
+  "document_title": "Williams Racing",
+  "section": "Williams Racing > Return to Renault engines (2012–2013) > Williams Racing > 2012–2013 seasons",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "fea8328ab0bde0078c8d07e7cc2f3ada6a0bcaca6a971b9b19a9bef1c5b6562a",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Williams Racing",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that entered cars."
+      },
+      {
+        "local_id": "e2",
+        "name": "Renault",
+        "entity_type": "PowerUnit",
+        "description": "An engine supplier for Williams Racing."
+      },
+      {
+        "local_id": "e3",
+        "name": "Pastor Maldonado",
+        "entity_type": "Driver",
+        "description": "A Formula 1 driver retained by Williams Racing for the 2012 season."
+      },
+      {
+        "local_id": "e4",
+        "name": "Valtteri Bottas",
+        "entity_type": "Driver",
+        "description": "A reserve driver for Williams Racing who took part in 15 Friday practice sessions."
+      },
+      {
+        "local_id": "e5",
+        "name": "Bruno Senna",
+        "entity_type": "Driver",
+        "description": "A Formula 1 driver who partnered Maldonado for the 2012 season."
+      },
+      {
+        "local_id": "e6",
+        "name": "2012",
+        "entity_type": "Season",
+        "description": "The Formula 1 season in which Williams Racing reunited with Renault engines."
+      },
+      {
+        "local_id": "e7",
+        "name": "2013",
+        "entity_type": "Season",
+        "description": "The Formula 1 season following 2012."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e3",
+        "target_id": "e1",
+        "relationship_type": "DROVE_FOR",
+        "description": "Pastor Maldonado was retained by Williams Racing for the 2012 season.",
+        "from_year": 2012,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e1",
+        "relationship_type": "DROVE_FOR",
+        "description": "Valtteri Bottas was a reserve driver for Williams Racing in 2012.",
+        "from_year": 2012,
+        "to_year": null,
+        "role": "reserve driver"
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e1",
+        "relationship_type": "DROVE_FOR",
+        "description": "Bruno Senna partnered Maldonado for the 2012 season at Williams Racing.",
+        "from_year": 2012,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e6",
+        "relationship_type": "ENTERED",
+        "description": "Williams Racing entered the 2012 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e7",
+        "relationship_type": "ENTERED",
+        "description": "Williams Racing entered the 2013 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 7,
+  "entities_accepted": 7,
+  "entities_rejected": 0,
+  "relationship_candidates": 6,
+  "relationships_accepted": 5,
+  "relationships_rejected": 1,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "POWERED_BY does not allow Team -> PowerUnit"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 4,
+      "action": "clear_redundant_season_year",
+      "detail": "ENTERED year 2012 already named by Season 'e6'; from_year and to_year cleared"
+    },
+    {
+      "index": 5,
+      "action": "clear_redundant_season_year",
+      "detail": "ENTERED year 2013 already named by Season 'e7'; from_year and to_year cleared"
+    }
+  ]
+}

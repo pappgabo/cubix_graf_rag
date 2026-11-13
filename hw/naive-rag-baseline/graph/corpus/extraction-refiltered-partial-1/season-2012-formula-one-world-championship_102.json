@@ -1,0 +1,54 @@
+{
+  "chunk_id": "season-2012-formula-one-world-championship#102",
+  "doc_id": "season-2012-formula-one-world-championship",
+  "document_title": "2012 Formula One World Championship",
+  "section": "Race summaries > Mid-season test – Mugello",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/2012_Formula_One_World_Championship",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "a98785d93299aa96f43779b34ca8772142d7b3b8cbadbeaa8626f1cd9ddc80ac",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "RACED_IN does not allow Circuit -> Season"
+    }
+  ],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Mugello Circuit",
+        "entity_type": "Circuit",
+        "description": "A racing venue in Italy where a mid-season test was conducted."
+      },
+      {
+        "local_id": "e2",
+        "name": "HRT",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that elected not to take part in the mid-season test."
+      },
+      {
+        "local_id": "e3",
+        "name": "2012",
+        "entity_type": "Season",
+        "description": "The championship year during which the mid-season test took place."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e2",
+        "target_id": "e3",
+        "relationship_type": "ENTERED",
+        "description": "HRT took part in the 2012 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

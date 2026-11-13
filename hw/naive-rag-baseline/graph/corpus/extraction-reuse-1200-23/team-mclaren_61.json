@@ -1,0 +1,194 @@
+{
+  "chunk_id": "team-mclaren#61",
+  "doc_id": "team-mclaren",
+  "document_title": "McLaren",
+  "section": "2024–2025: World Championship years",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "88767cdbc5ca7268a24cf45bad06eaff617fc5edc42aeb9e8996db9b3996c8a6",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "McLaren",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that finished the 2023 season in fourth."
+      },
+      {
+        "local_id": "e2",
+        "name": "Lando Norris",
+        "entity_type": "Driver",
+        "description": "A driver for McLaren who won his maiden Formula One career victory."
+      },
+      {
+        "local_id": "e3",
+        "name": "Oscar Piastri",
+        "entity_type": "Driver",
+        "description": "A driver for McLaren retained for the 2024 season."
+      },
+      {
+        "local_id": "e4",
+        "name": "MCL60",
+        "entity_type": "Car",
+        "description": "The car used by McLaren in the 2023 season."
+      },
+      {
+        "local_id": "e5",
+        "name": "MCL38",
+        "entity_type": "Car",
+        "description": "The car used by McLaren in the 2024 season."
+      },
+      {
+        "local_id": "e6",
+        "name": "Miami Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A race where Norris won his maiden Formula One career victory."
+      },
+      {
+        "local_id": "e7",
+        "name": "British Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A race where the MCL38 was established as the fastest car."
+      },
+      {
+        "local_id": "e8",
+        "name": "SF-24",
+        "entity_type": "Car",
+        "description": "Ferrari's car that was the second-fastest overall behind McLaren's MCL38."
+      },
+      {
+        "local_id": "e9",
+        "name": "2024",
+        "entity_type": "Season",
+        "description": "The Formula 1 season where McLaren aimed to capitalize on performance."
+      },
+      {
+        "local_id": "e10",
+        "name": "2023",
+        "entity_type": "Season",
+        "description": "The Formula 1 season where McLaren finished in fourth."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Lando Norris at Miami Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Lando Norris won the Miami Grand Prix."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e9",
+        "relationship_type": "ENTERED",
+        "description": "McLaren took part in the 2024 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e10",
+        "relationship_type": "ENTERED",
+        "description": "McLaren took part in the 2023 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e1",
+        "relationship_type": "DROVE_FOR",
+        "description": "Lando Norris drove for McLaren.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e1",
+        "relationship_type": "DROVE_FOR",
+        "description": "Oscar Piastri drove for McLaren.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e5",
+        "relationship_type": "FIELDED",
+        "description": "McLaren entered the MCL38 car.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e9",
+        "relationship_type": "RACED_IN",
+        "description": "The MCL38 took part in the 2024 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Lando Norris won the Miami Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e6",
+        "relationship_type": "AT_RACE",
+        "description": "Lando Norris won the Miami Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e6",
+        "target_id": "e9",
+        "relationship_type": "ROUND_OF",
+        "description": "The Miami Grand Prix is a round of the 2024 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e7",
+        "target_id": "e9",
+        "relationship_type": "ROUND_OF",
+        "description": "The British Grand Prix is a round of the 2024 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 10,
+  "entities_accepted": 11,
+  "entities_rejected": 0,
+  "relationship_candidates": 10,
+  "relationships_accepted": 10,
+  "relationships_rejected": 1,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 6,
+      "reason": "POWERED_BY does not allow Car -> GrandPrix"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 7,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e6; description kept"
+    }
+  ]
+}

@@ -1,0 +1,111 @@
+{
+  "chunk_id": "driver-fernando-alonso#93",
+  "doc_id": "driver-fernando-alonso",
+  "document_title": "Fernando Alonso",
+  "section": "FIA World Endurance Championship (2018–2019)",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/Fernando_Alonso",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "ddfd9d3c8c27f36d4c0453da7c5903ba83ed7dbc33a204215c21d8847f42ae28",
+  "validation_version": "partial-1",
+  "source_status": "ok",
+  "status": "ok",
+  "rejections": [],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Fernando Alonso",
+        "entity_type": "Driver",
+        "description": "A Formula One driver who entered the 2018–19 FIA World Endurance Championship."
+      },
+      {
+        "local_id": "e2",
+        "name": "Toyota",
+        "entity_type": "Team",
+        "description": "A Formula One team that entered cars in the FIA World Endurance Championship."
+      },
+      {
+        "local_id": "e3",
+        "name": "2018–19 FIA World Endurance Championship",
+        "entity_type": "Season",
+        "description": "A championship season in which Fernando Alonso participated."
+      },
+      {
+        "local_id": "e4",
+        "name": "TS050 Hybrid",
+        "entity_type": "Car",
+        "description": "The car model fielded by Toyota in the FIA World Endurance Championship."
+      },
+      {
+        "local_id": "e5",
+        "name": "Sébastien Buemi",
+        "entity_type": "Driver",
+        "description": "A driver who was Alonso's teammate in Toyota's No. 8 TS050 Hybrid."
+      },
+      {
+        "local_id": "e6",
+        "name": "Kazuki Nakajima",
+        "entity_type": "Driver",
+        "description": "A driver who was Alonso's teammate in Toyota's No. 8 TS050 Hybrid."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Fernando Alonso drove for Toyota in the FIA World Endurance Championship.",
+        "from_year": 2018,
+        "to_year": 2019,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e3",
+        "relationship_type": "ENTERED",
+        "description": "Toyota entered the 2018–19 FIA World Endurance Championship.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e4",
+        "relationship_type": "FIELDED",
+        "description": "Toyota fielded the TS050 Hybrid in the FIA World Endurance Championship.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e3",
+        "relationship_type": "RACED_IN",
+        "description": "The TS050 Hybrid raced in the 2018–19 FIA World Endurance Championship.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e5",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Fernando Alonso was teammates with Sébastien Buemi in Toyota's No. 8 TS050 Hybrid.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e6",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Fernando Alonso was teammates with Kazuki Nakajima in Toyota's No. 8 TS050 Hybrid.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

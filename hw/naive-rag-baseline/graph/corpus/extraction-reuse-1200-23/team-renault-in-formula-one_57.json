@@ -1,0 +1,172 @@
+{
+  "chunk_id": "team-renault-in-formula-one#57",
+  "doc_id": "team-renault-in-formula-one",
+  "document_title": "Renault in Formula One",
+  "section": "Engine supplier (1983–2025) > Return to naturally aspirated engines (1989–2013) > Success with Williams and Benetton (1989–1997)",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "27cbe5ad929bb48986d0962580e8e89e7c2a09a8f72ee753734e1c8a0dc9b9e0",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Michael Schumacher",
+        "entity_type": "Driver",
+        "description": "Driver for Benetton who defended his drivers' title in 1995."
+      },
+      {
+        "local_id": "e2",
+        "name": "Damon Hill",
+        "entity_type": "Driver",
+        "description": "Rival of Michael Schumacher and winner of the drivers' title in 1996."
+      },
+      {
+        "local_id": "e3",
+        "name": "Jacques Villeneuve",
+        "entity_type": "Driver",
+        "description": "Winner of the drivers' title in 1997."
+      },
+      {
+        "local_id": "e4",
+        "name": "Benetton",
+        "entity_type": "Team",
+        "description": "Formula One team that used Renault engines and won the constructors' title in 1995."
+      },
+      {
+        "local_id": "e5",
+        "name": "Williams",
+        "entity_type": "Team",
+        "description": "Formula One team that won both the drivers' and constructors' titles in 1996 and 1997."
+      },
+      {
+        "local_id": "e6",
+        "name": "RS7",
+        "entity_type": "Car",
+        "description": "Renault engine model adapted for 1995."
+      },
+      {
+        "local_id": "e7",
+        "name": "1995",
+        "entity_type": "Season",
+        "description": "Season in which Michael Schumacher defended his title and Benetton won the constructors' title."
+      },
+      {
+        "local_id": "e8",
+        "name": "1996",
+        "entity_type": "Season",
+        "description": "Season in which Damon Hill won the drivers' title."
+      },
+      {
+        "local_id": "e9",
+        "name": "1997",
+        "entity_type": "Season",
+        "description": "Season in which Jacques Villeneuve won the drivers' title."
+      },
+      {
+        "local_id": "e10",
+        "name": "German Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "Race where Gerhard Berger scored pole and victory in 1997."
+      },
+      {
+        "local_id": "e11",
+        "name": "Italian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "Race where Jean Alesi took pole in 1997."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e4",
+        "relationship_type": "DROVE_FOR",
+        "description": "Michael Schumacher drove for Benetton.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e5",
+        "relationship_type": "DROVE_FOR",
+        "description": "Damon Hill drove for Williams.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e5",
+        "relationship_type": "DROVE_FOR",
+        "description": "Jacques Villeneuve drove for Williams.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e7",
+        "relationship_type": "ENTERED",
+        "description": "Benetton entered the 1995 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e8",
+        "relationship_type": "ENTERED",
+        "description": "Williams entered the 1996 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e9",
+        "relationship_type": "ENTERED",
+        "description": "Williams entered the 1997 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 11,
+  "entities_accepted": 11,
+  "entities_rejected": 0,
+  "relationship_candidates": 11,
+  "relationships_accepted": 6,
+  "relationships_rejected": 5,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 6,
+      "reason": "WON does not allow Team -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 7,
+      "reason": "WON does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 8,
+      "reason": "WON does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 9,
+      "reason": "AT_RACE does not allow GrandPrix -> Driver"
+    },
+    {
+      "element": "relationship",
+      "index": 10,
+      "reason": "AT_RACE does not allow GrandPrix -> Driver"
+    }
+  ],
+  "alignments": []
+}

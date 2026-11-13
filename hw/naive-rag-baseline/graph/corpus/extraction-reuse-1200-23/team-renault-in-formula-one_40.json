@@ -1,0 +1,85 @@
+{
+  "chunk_id": "team-renault-in-formula-one#40",
+  "doc_id": "team-renault-in-formula-one",
+  "document_title": "Renault in Formula One",
+  "section": "Constructor > Renault F1 Team and Lotus Renault GP (2002–2011): The rise and fall of the first Enstone era > Lotus Renault GP: Renault steps back (2011)",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "48bf0898ee7cf2712a0202586648f190761ea189df2e4fbd93f375744cb6d531",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Lotus Renault GP",
+        "entity_type": "Team",
+        "description": "The team raced under a British licence in 2011."
+      },
+      {
+        "local_id": "e2",
+        "name": "Team Lotus",
+        "entity_type": "Team",
+        "description": "Rebranded from Lotus Racing for the 2011 season."
+      },
+      {
+        "local_id": "e3",
+        "name": "Jean Alesi",
+        "entity_type": "Driver",
+        "description": "Hired as an ambassador and test driver for the T125 single-seater project."
+      },
+      {
+        "local_id": "e4",
+        "name": "2011",
+        "entity_type": "Season",
+        "description": "The championship year in which the events took place."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e4",
+        "relationship_type": "ENTERED",
+        "description": "Lotus Renault GP participated in the 2011 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e4",
+        "relationship_type": "ENTERED",
+        "description": "Team Lotus participated in the 2011 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 4,
+  "entities_accepted": 4,
+  "entities_rejected": 0,
+  "relationship_candidates": 3,
+  "relationships_accepted": 2,
+  "relationships_rejected": 1,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "DROVE_FOR does not allow Team -> Driver"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 0,
+      "action": "clear_redundant_season_year",
+      "detail": "ENTERED year 2011 already named by Season 'e4'; from_year and to_year cleared"
+    },
+    {
+      "index": 1,
+      "action": "clear_redundant_season_year",
+      "detail": "ENTERED year 2011 already named by Season 'e4'; from_year and to_year cleared"
+    }
+  ]
+}

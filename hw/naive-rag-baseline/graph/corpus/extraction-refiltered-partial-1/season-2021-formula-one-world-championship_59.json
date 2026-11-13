@@ -1,0 +1,104 @@
+{
+  "chunk_id": "season-2021-formula-one-world-championship#59",
+  "doc_id": "season-2021-formula-one-world-championship",
+  "document_title": "2021 Formula One World Championship",
+  "section": null,
+  "page": 6,
+  "source": "https://en.wikipedia.org/wiki/2021_Formula_One_World_Championship",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "98fa1a4af4e5cccb51bd830b3d0755fbceeb02c1d0eecd8f64b9bba6a1a46ed6",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "ACHIEVED does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "ACHIEVED does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "ACHIEVED does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "ACHIEVED does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 5,
+      "reason": "ACHIEVED does not allow Driver -> Season"
+    }
+  ],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Kimi Räikkönen",
+        "entity_type": "Driver",
+        "description": "A driver who made contact with his teammate and was forced into retirement."
+      },
+      {
+        "local_id": "e2",
+        "name": "Antonio Giovinazzi",
+        "entity_type": "Driver",
+        "description": "A driver who continued after making contact with his teammate."
+      },
+      {
+        "local_id": "e3",
+        "name": "Lewis Hamilton",
+        "entity_type": "Driver",
+        "description": "A driver who won the race."
+      },
+      {
+        "local_id": "e4",
+        "name": "Valtteri Bottas",
+        "entity_type": "Driver",
+        "description": "A driver who finished third and was given the fastest lap point."
+      },
+      {
+        "local_id": "e5",
+        "name": "Max Verstappen",
+        "entity_type": "Driver",
+        "description": "A driver who finished second and took the fastest lap that was deleted."
+      },
+      {
+        "local_id": "e6",
+        "name": "Sergio Pérez",
+        "entity_type": "Driver",
+        "description": "A driver who finished fourth."
+      },
+      {
+        "local_id": "e7",
+        "name": "Lando Norris",
+        "entity_type": "Driver",
+        "description": "A driver who finished fifth."
+      },
+      {
+        "local_id": "e8",
+        "name": "2021 Formula One World Championship",
+        "entity_type": "Season",
+        "description": "The championship year in which the events took place."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Räikkönen made contact with his teammate Giovinazzi.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "chunk_id": "driver-michael-schumacher#171",
+  "doc_id": "driver-michael-schumacher",
+  "document_title": "Michael Schumacher",
+  "section": null,
+  "page": 14,
+  "source": "https://en.wikipedia.org/wiki/Michael_Schumacher",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "552febc0121def51aacdbbdf52ad81954e779b5f6c868026115508333e8b09df",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "entity_candidates": 5,
+  "entities_accepted": 5,
+  "entities_rejected": 0,
+  "relationship_candidates": 4,
+  "relationships_accepted": 0,
+  "relationships_rejected": 4,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "WON does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "WON does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "WON does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "AWARDED_IN does not allow Driver -> Season"
+    }
+  ],
+  "alignments": [],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Michael Schumacher",
+        "entity_type": "Driver",
+        "description": "Was named L'Équipe Champion of Champions three times (from 2001 to 2003), won the Gazzetta World Sports Award twice (2001 and 2002), and won the 2003 Lorenzo Bandini Trophy. Awarded an FIA Gold Medal for Motor Sport in 2006."
+      },
+      {
+        "local_id": "e2",
+        "name": "2001",
+        "entity_type": "Season",
+        "description": "A season in which Michael Schumacher was named L'Équipe Champion of Champions."
+      },
+      {
+        "local_id": "e3",
+        "name": "2002",
+        "entity_type": "Season",
+        "description": "A season in which Michael Schumacher won the Gazzetta World Sports Award."
+      },
+      {
+        "local_id": "e4",
+        "name": "2003",
+        "entity_type": "Season",
+        "description": "A season in which Michael Schumacher won the Lorenzo Bandini Trophy."
+      },
+      {
+        "local_id": "e5",
+        "name": "2006",
+        "entity_type": "Season",
+        "description": "The year Michael Schumacher was awarded an FIA Gold Medal for Motor Sport."
+      }
+    ],
+    "relationships": []
+  }
+}

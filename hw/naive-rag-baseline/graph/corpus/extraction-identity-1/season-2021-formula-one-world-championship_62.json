@@ -1,0 +1,100 @@
+{
+  "chunk_id": "season-2021-formula-one-world-championship#62",
+  "doc_id": "season-2021-formula-one-world-championship",
+  "document_title": "2021 Formula One World Championship",
+  "section": null,
+  "page": 6,
+  "source": "https://en.wikipedia.org/wiki/2021_Formula_One_World_Championship",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "fce5b4952d5f3cd6a5bc3b48e123beffa4e9f8e83281a2d849288f0fe4153797",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "entity_candidates": 6,
+  "entities_accepted": 6,
+  "entities_rejected": 0,
+  "relationship_candidates": 5,
+  "relationships_accepted": 1,
+  "relationships_rejected": 4,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "WON does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "ACHIEVED does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "ACHIEVED does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "ACHIEVED does not allow Driver -> Season"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 1,
+      "action": "clear_redundant_season_year",
+      "detail": "ENTERED year 2021 already named by Season 'e6'; from_year and to_year cleared"
+    }
+  ],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Bottas",
+        "entity_type": "Driver",
+        "description": "A driver who was forced into retirement after his front-right tyre would not come off during a routine pitstop."
+      },
+      {
+        "local_id": "e2",
+        "name": "Verstappen",
+        "entity_type": "Driver",
+        "description": "A driver who took the victory and the championship lead for the first time in his career."
+      },
+      {
+        "local_id": "e3",
+        "name": "Sainz",
+        "entity_type": "Driver",
+        "description": "A driver who took his first podium for Ferrari."
+      },
+      {
+        "local_id": "e4",
+        "name": "Norris",
+        "entity_type": "Driver",
+        "description": "A driver who took his second podium of the season."
+      },
+      {
+        "local_id": "e5",
+        "name": "Red Bull Racing",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that came away from this race with a one-point lead in the Constructors' Championship."
+      },
+      {
+        "local_id": "e6",
+        "name": "2021",
+        "entity_type": "Season",
+        "description": "The championship year in which these events took place."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e5",
+        "target_id": "e6",
+        "relationship_type": "ENTERED",
+        "description": "Red Bull entered the 2021 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

@@ -1,0 +1,122 @@
+{
+  "chunk_id": "driver-michael-schumacher#63",
+  "doc_id": "driver-michael-schumacher",
+  "document_title": "Michael Schumacher",
+  "section": null,
+  "page": 13,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "e7b28d4a15906e9e2e5953801bcea28b8393f65910932ea7064149016325bcfb",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Michael Schumacher",
+        "entity_type": "Driver",
+        "description": "A German racing driver who competed in Formula One."
+      },
+      {
+        "local_id": "e2",
+        "name": "Ralf Schumacher",
+        "entity_type": "Driver",
+        "description": "Michael Schumacher's younger brother who competed in Formula One from 1997 to 2007."
+      },
+      {
+        "local_id": "e3",
+        "name": "Mick Schumacher",
+        "entity_type": "Driver",
+        "description": "Michael Schumacher's son who made his Formula One debut with Haas in the 2021 season."
+      },
+      {
+        "local_id": "e4",
+        "name": "David Schumacher",
+        "entity_type": "Driver",
+        "description": "Michael Schumacher's nephew who is also a racing driver."
+      },
+      {
+        "local_id": "e5",
+        "name": "Sebastian Stahl",
+        "entity_type": "Driver",
+        "description": "Michael Schumacher's step-brother who is a racing driver."
+      },
+      {
+        "local_id": "e6",
+        "name": "Haas",
+        "entity_type": "Team",
+        "description": "A Formula One team that Mick Schumacher debuted with in the 2021 season."
+      },
+      {
+        "local_id": "e7",
+        "name": "2021",
+        "entity_type": "Season",
+        "description": "The Formula One season in which Mick Schumacher made his debut."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e2",
+        "target_id": "e1",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Ralf Schumacher is Michael Schumacher's younger brother and fellow racing driver.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e1",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Mick Schumacher is Michael Schumacher's son and fellow racing driver.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e1",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "David Schumacher is Michael Schumacher's nephew and fellow racing driver.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e1",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Sebastian Stahl is Michael Schumacher's step-brother and fellow racing driver.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e6",
+        "target_id": "e7",
+        "relationship_type": "ENTERED",
+        "description": "Haas entered the 2021 Formula One season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e6",
+        "relationship_type": "DROVE_FOR",
+        "description": "Mick Schumacher drove for Haas in the 2021 season.",
+        "from_year": 2021,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 7,
+  "entities_accepted": 7,
+  "entities_rejected": 0,
+  "relationship_candidates": 6,
+  "relationships_accepted": 6,
+  "relationships_rejected": 0,
+  "rejections": [],
+  "alignments": []
+}

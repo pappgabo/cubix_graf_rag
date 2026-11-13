@@ -1,0 +1,123 @@
+{
+  "chunk_id": "season-2012-formula-one-world-championship#158",
+  "doc_id": "season-2012-formula-one-world-championship",
+  "document_title": "2012 Formula One World Championship",
+  "section": "Race summaries > Round 13 – Italy Autodromo Nazionale Monza",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/2012_Formula_One_World_Championship",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "bb160977582f30e9b0e6935174a0080aea7a2f6f855f8f1acf41bea4447b5194",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "entity_candidates": 6,
+  "entities_accepted": 7,
+  "entities_rejected": 0,
+  "relationship_candidates": 5,
+  "relationships_accepted": 4,
+  "relationships_rejected": 2,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "DROVE_FOR does not allow Team -> Driver"
+    },
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "RACED_IN does not allow Driver -> Season"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 4,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e5; description kept"
+    }
+  ],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Romain Grosjean",
+        "entity_type": "Driver",
+        "description": "Served his suspension."
+      },
+      {
+        "local_id": "e2",
+        "name": "Jérôme d'Ambrosio",
+        "entity_type": "Driver",
+        "description": "Former Marussia F1 driver enlisted by Lotus as their second driver for the weekend."
+      },
+      {
+        "local_id": "e3",
+        "name": "Lotus",
+        "entity_type": "Team",
+        "description": "Team that enlisted Jérôme d'Ambrosio as their second driver."
+      },
+      {
+        "local_id": "e4",
+        "name": "2012",
+        "entity_type": "Season",
+        "description": "The season of the 2012 Formula One World Championship."
+      },
+      {
+        "local_id": "e5",
+        "name": "Italy",
+        "entity_type": "GrandPrix",
+        "description": "The Grand Prix held at Autodromo Nazionale Monza."
+      },
+      {
+        "local_id": "e6",
+        "name": "Autodromo Nazionale Monza",
+        "entity_type": "Circuit",
+        "description": "The circuit where the Italian Grand Prix took place."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Jérôme d'Ambrosio at Italy",
+        "entity_type": "RaceResult",
+        "description": "Jérôme d'Ambrosio finished thirteenth overall in the Italian Grand Prix."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e5",
+        "target_id": "e4",
+        "relationship_type": "ROUND_OF",
+        "description": "The Italian Grand Prix is a round of the 2012 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e6",
+        "relationship_type": "HELD_AT",
+        "description": "The Italian Grand Prix is held at Autodromo Nazionale Monza.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Jérôme d'Ambrosio finished thirteenth overall in the Italian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e5",
+        "relationship_type": "AT_RACE",
+        "description": "Jérôme d'Ambrosio finished thirteenth overall in the Italian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

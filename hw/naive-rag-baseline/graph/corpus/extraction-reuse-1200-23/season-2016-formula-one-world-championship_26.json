@@ -1,0 +1,149 @@
+{
+  "chunk_id": "season-2016-formula-one-world-championship#26",
+  "doc_id": "season-2016-formula-one-world-championship",
+  "document_title": "2016 Formula One World Championship",
+  "section": "Opening rounds",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "39ede27e5c8dd1a7ab881670748247aa844293f325e800cca9b6e75d2e6cdb13",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Nico Rosberg",
+        "entity_type": "Driver",
+        "description": "Finished first in the Australian Grand Prix."
+      },
+      {
+        "local_id": "e2",
+        "name": "Lewis Hamilton",
+        "entity_type": "Driver",
+        "description": "Finished second in the Australian Grand Prix."
+      },
+      {
+        "local_id": "e3",
+        "name": "Sebastian Vettel",
+        "entity_type": "Driver",
+        "description": "Finished third in the Australian Grand Prix."
+      },
+      {
+        "local_id": "e4",
+        "name": "Kimi Räikkönen",
+        "entity_type": "Driver",
+        "description": "Retired from the Australian Grand Prix due to a suspected turbo failure."
+      },
+      {
+        "local_id": "e5",
+        "name": "Fernando Alonso",
+        "entity_type": "Driver",
+        "description": "Crashed during the Australian Grand Prix."
+      },
+      {
+        "local_id": "e6",
+        "name": "Esteban Gutiérrez",
+        "entity_type": "Driver",
+        "description": "Involved in an incident with Fernando Alonso during the Australian Grand Prix."
+      },
+      {
+        "local_id": "e7",
+        "name": "Romain Grosjean",
+        "entity_type": "Driver",
+        "description": "Finished sixth in the Australian Grand Prix."
+      },
+      {
+        "local_id": "e8",
+        "name": "Mercedes-AMG Petronas Formula One Team",
+        "entity_type": "Team",
+        "description": "Team of Nico Rosberg and Lewis Hamilton."
+      },
+      {
+        "local_id": "e9",
+        "name": "Scuderia Ferrari",
+        "entity_type": "Team",
+        "description": "Team of Sebastian Vettel and Kimi Räikkönen."
+      },
+      {
+        "local_id": "e10",
+        "name": "Haas F1",
+        "entity_type": "Team",
+        "description": "Team of Esteban Gutiérrez and Romain Grosjean."
+      },
+      {
+        "local_id": "e11",
+        "name": "2016",
+        "entity_type": "Season",
+        "description": "The season of the 2016 Formula One World Championship."
+      },
+      {
+        "local_id": "e12",
+        "name": "Australian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The first race of the 2016 Formula One season."
+      },
+      {
+        "local_id": "e13",
+        "name": "Haas F1 car",
+        "entity_type": "Car",
+        "description": "Car driven by Esteban Gutiérrez."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e12",
+        "target_id": "e11",
+        "relationship_type": "ROUND_OF",
+        "description": "The Australian Grand Prix is a round of the 2016 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 13,
+  "entities_accepted": 13,
+  "entities_rejected": 0,
+  "relationship_candidates": 8,
+  "relationships_accepted": 1,
+  "relationships_rejected": 7,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "DROVE_FOR does not allow Team -> Driver"
+    },
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "DROVE_FOR does not allow Team -> Driver"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "DROVE_FOR does not allow Team -> Driver"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "DROVE_FOR does not allow Team -> Driver"
+    },
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "DROVE_FOR does not allow Team -> Driver"
+    },
+    {
+      "element": "relationship",
+      "index": 5,
+      "reason": "DROVE_FOR does not allow Team -> Driver"
+    },
+    {
+      "element": "relationship",
+      "index": 7,
+      "reason": "HELD_AT does not allow GrandPrix -> Car"
+    }
+  ],
+  "alignments": []
+}

@@ -1,0 +1,87 @@
+{
+  "chunk_id": "team-scuderia-ferrari#2",
+  "doc_id": "team-scuderia-ferrari",
+  "document_title": "Scuderia Ferrari",
+  "section": null,
+  "page": 1,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "187fdfefd9cad79b0c2cb9acd1a3088ce4a2aac4d6e007c1de30ae6577726c3f",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Scuderia Ferrari",
+        "entity_type": "Team",
+        "description": "A Formula 1 team founded by Enzo Ferrari in 1929."
+      },
+      {
+        "local_id": "e2",
+        "name": "Lewis Hamilton",
+        "entity_type": "Driver",
+        "description": "Formula One World Champion."
+      },
+      {
+        "local_id": "e3",
+        "name": "Alfa Romeo 8C",
+        "entity_type": "Car",
+        "description": "A car model raced by drivers in the early years of Scuderia Ferrari."
+      },
+      {
+        "local_id": "e4",
+        "name": "1932",
+        "entity_type": "Season",
+        "description": "A championship year mentioned in the context of Scuderia Ferrari's history."
+      },
+      {
+        "local_id": "e5",
+        "name": "1932 Spa 24 Hours",
+        "entity_type": "GrandPrix",
+        "description": "A race event where the prancing horse blazon first appeared."
+      },
+      {
+        "local_id": "e6",
+        "name": "Alfa Romeo 8C 2300 Spider",
+        "entity_type": "Car",
+        "description": "A specific model of Alfa Romeo raced at the 1932 Spa 24 Hours."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e3",
+        "relationship_type": "FIELDED",
+        "description": "Scuderia Ferrari entered Alfa Romeo 8C cars.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 6,
+  "entities_accepted": 6,
+  "entities_rejected": 0,
+  "relationship_candidates": 4,
+  "relationships_accepted": 1,
+  "relationships_rejected": 3,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "ROUND_OF does not allow Team -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "HELD_AT does not allow GrandPrix -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "HELD_AT does not allow Car -> GrandPrix"
+    }
+  ],
+  "alignments": []
+}

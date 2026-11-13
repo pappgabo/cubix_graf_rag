@@ -1,0 +1,45 @@
+{
+  "chunk_id": "driver-sebastian-vettel#150",
+  "doc_id": "driver-sebastian-vettel",
+  "document_title": "Sebastian Vettel",
+  "section": "Personal life",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/Sebastian_Vettel",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "f188d7fe8de79954927f257d911638c999342f34e940fcdd834d9c418d7863cc",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "entity_candidates": 2,
+  "entities_accepted": 2,
+  "entities_rejected": 0,
+  "relationship_candidates": 1,
+  "relationships_accepted": 0,
+  "relationships_rejected": 1,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "TEAMMATE_OF is not temporal; from_year=2015, to_year=2018, role=None cannot be stored without dropping them"
+    }
+  ],
+  "alignments": [],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Sebastian Vettel",
+        "entity_type": "Driver",
+        "description": "Vettel married childhood friend Hanna Prater at a private ceremony in early 2019; they have three children. In 2016, Forbes estimated that his annual income was $41 million. Besides his native German, Vettel speaks English, French, and Italian."
+      },
+      {
+        "local_id": "e2",
+        "name": "Kimi Räikkönen",
+        "entity_type": "Driver",
+        "description": "Vettel's teammate from 2015 to 2018, is a close friend."
+      }
+    ],
+    "relationships": []
+  }
+}

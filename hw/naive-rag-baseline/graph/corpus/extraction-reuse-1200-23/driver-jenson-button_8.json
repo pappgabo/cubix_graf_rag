@@ -1,0 +1,131 @@
+{
+  "chunk_id": "driver-jenson-button#8",
+  "doc_id": "driver-jenson-button",
+  "document_title": "Jenson Button",
+  "section": "Karting career",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "e3b82842ccb3be105f878b62d60d7f7aef65d460e402808e0a4875cdbcd8805f",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Jenson Button",
+        "entity_type": "Driver",
+        "description": "Button was fourth in the 1994 RAC British Junior Championship after losing the opportunity to claim the title through a series of accidents."
+      },
+      {
+        "local_id": "e2",
+        "name": "Birel",
+        "entity_type": "Team",
+        "description": "Button joined the Birel team for that year's Junior Intercontinental A European Championship."
+      },
+      {
+        "local_id": "e3",
+        "name": "Team GKS",
+        "entity_type": "Team",
+        "description": "Button was signed to drive Tecno-Rotax karts for Team GKS."
+      },
+      {
+        "local_id": "e4",
+        "name": "1994",
+        "entity_type": "Season",
+        "description": "Button was fourth in the 1994 RAC British Junior Championship."
+      },
+      {
+        "local_id": "e5",
+        "name": "1996",
+        "entity_type": "Season",
+        "description": "Button came fifth in the 1996 European Formula A Championship."
+      },
+      {
+        "local_id": "e6",
+        "name": "1997",
+        "entity_type": "Season",
+        "description": "Button won the Ayrton Senna Memorial Cup for finishing second in the 1997 Japanese World Cup."
+      },
+      {
+        "local_id": "e7",
+        "name": "Formula A World Championship",
+        "entity_type": "Title",
+        "description": "Button was the youngest runner-up of the Formula A World Championship at age 15."
+      },
+      {
+        "local_id": "e8",
+        "name": "European Super A Championship",
+        "entity_type": "Title",
+        "description": "Button became the youngest driver and first Briton to claim the European Super A Championship."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Button joined the Birel team for that year's Junior Intercontinental A European Championship.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e3",
+        "relationship_type": "DROVE_FOR",
+        "description": "Button was signed to drive Tecno-Rotax karts for Team GKS.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e8",
+        "relationship_type": "WON",
+        "description": "Button became the youngest driver and first Briton to claim the European Super A Championship.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e8",
+        "target_id": "e6",
+        "relationship_type": "AWARDED_IN",
+        "description": "European Super A Championship belongs to the 1997 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 8,
+  "entities_accepted": 8,
+  "entities_rejected": 0,
+  "relationship_candidates": 8,
+  "relationships_accepted": 4,
+  "relationships_rejected": 4,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "ACHIEVED does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "ACHIEVED does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "ACHIEVED does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 5,
+      "reason": "ACHIEVED does not allow Driver -> Title"
+    }
+  ],
+  "alignments": []
+}

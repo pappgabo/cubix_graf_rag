@@ -1,0 +1,85 @@
+{
+  "chunk_id": "reference-formula-one#71",
+  "doc_id": "reference-formula-one",
+  "document_title": "Formula One",
+  "section": "Formula One > Drivers",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "e18b88e989cec60ec5fe5702edb95188ff6eb3097342a2b2194e2dc92ea81c5d",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Marta García",
+        "entity_type": "Driver",
+        "description": "Won the inaugural championship of F1 Academy."
+      },
+      {
+        "local_id": "e2",
+        "name": "Prema Racing",
+        "entity_type": "Team",
+        "description": "Team that Marta García raced for in F1 Academy."
+      },
+      {
+        "local_id": "e3",
+        "name": "F1 Academy",
+        "entity_type": "Season",
+        "description": "The only female single-seater racing championship."
+      },
+      {
+        "local_id": "e4",
+        "name": "2022",
+        "entity_type": "Season",
+        "description": "The year F1 Academy was announced."
+      },
+      {
+        "local_id": "e5",
+        "name": "2025",
+        "entity_type": "Season",
+        "description": "The year Netflix premiered a docuseries about F1 Academy."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Marta García raced for Prema Racing in F1 Academy.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e3",
+        "relationship_type": "ENTERED",
+        "description": "Prema Racing took part in F1 Academy.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 5,
+  "entities_accepted": 5,
+  "entities_rejected": 0,
+  "relationship_candidates": 4,
+  "relationships_accepted": 2,
+  "relationships_rejected": 2,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "AWARDED_IN does not allow Season -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "AWARDED_IN does not allow Season -> Season"
+    }
+  ],
+  "alignments": []
+}

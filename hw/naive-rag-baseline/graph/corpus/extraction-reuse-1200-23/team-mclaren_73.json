@@ -1,0 +1,116 @@
+{
+  "chunk_id": "team-mclaren#73",
+  "doc_id": "team-mclaren",
+  "document_title": "McLaren",
+  "section": "Can-Am",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "168787c88ff4337b3e9766674ea94e1e3a4b7508a716a457e78ebff8777e3f86",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "McLaren",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that also competed in Can-Am."
+      },
+      {
+        "local_id": "e2",
+        "name": "M8",
+        "entity_type": "Car",
+        "description": "A car used by McLaren in the 1968 season."
+      },
+      {
+        "local_id": "e3",
+        "name": "M8B",
+        "entity_type": "Car",
+        "description": "A car used by McLaren in the 1969 season."
+      },
+      {
+        "local_id": "e4",
+        "name": "M12",
+        "entity_type": "Car",
+        "description": "The customer variant of the M8 used from 1969 onwards."
+      },
+      {
+        "local_id": "e5",
+        "name": "1968",
+        "entity_type": "Season",
+        "description": "The season in which McLaren won four races with the M8."
+      },
+      {
+        "local_id": "e6",
+        "name": "1969",
+        "entity_type": "Season",
+        "description": "The season in which McLaren won all 11 races with the M8B."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e5",
+        "relationship_type": "ENTERED",
+        "description": "McLaren entered the 1968 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e6",
+        "relationship_type": "ENTERED",
+        "description": "McLaren entered the 1969 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e6",
+        "relationship_type": "RACED_IN",
+        "description": "The M8B raced in the 1969 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 6,
+  "entities_accepted": 6,
+  "entities_rejected": 0,
+  "relationship_candidates": 5,
+  "relationships_accepted": 3,
+  "relationships_rejected": 2,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "FIELDED is not temporal; from_year=1968, to_year=None, role=None cannot be stored without dropping them"
+    },
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "FIELDED is not temporal; from_year=1969, to_year=None, role=None cannot be stored without dropping them"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 2,
+      "action": "clear_redundant_season_year",
+      "detail": "ENTERED year 1968 already named by Season 'e5'; from_year and to_year cleared"
+    },
+    {
+      "index": 3,
+      "action": "clear_redundant_season_year",
+      "detail": "ENTERED year 1969 already named by Season 'e6'; from_year and to_year cleared"
+    },
+    {
+      "index": 4,
+      "action": "clear_redundant_season_year",
+      "detail": "RACED_IN year 1969 already named by Season 'e6'; from_year and to_year cleared"
+    }
+  ]
+}

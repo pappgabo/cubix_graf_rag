@@ -1,0 +1,255 @@
+{
+  "chunk_id": "season-2008-formula-one-world-championship#17",
+  "doc_id": "season-2008-formula-one-world-championship",
+  "document_title": "2008 Formula One World Championship",
+  "section": null,
+  "page": 4,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "fac072e3723a458f6e19332b95beba2023d9b74c6c7eacb5753ad12d897c272b",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Felipe Massa",
+        "entity_type": "Driver",
+        "description": "A driver who raced in Formula One."
+      },
+      {
+        "local_id": "e2",
+        "name": "Lewis Hamilton",
+        "entity_type": "Driver",
+        "description": "A driver who raced in Formula One."
+      },
+      {
+        "local_id": "e3",
+        "name": "Sebastian Vettel",
+        "entity_type": "Driver",
+        "description": "A driver who raced in Formula One."
+      },
+      {
+        "local_id": "e4",
+        "name": "Fernando Alonso",
+        "entity_type": "Driver",
+        "description": "A driver who raced in Formula One."
+      },
+      {
+        "local_id": "e5",
+        "name": "Nelson Piquet Jr.",
+        "entity_type": "Driver",
+        "description": "A driver who raced in Formula One."
+      },
+      {
+        "local_id": "e6",
+        "name": "Toro Rosso",
+        "entity_type": "Team",
+        "description": "A Formula 1 team."
+      },
+      {
+        "local_id": "e7",
+        "name": "Scuderia Ferrari",
+        "entity_type": "Team",
+        "description": "A Formula 1 team."
+      },
+      {
+        "local_id": "e8",
+        "name": "European Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula 1 race held at the Valencia Street Circuit."
+      },
+      {
+        "local_id": "e9",
+        "name": "Belgium Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula 1 race held in Belgium."
+      },
+      {
+        "local_id": "e10",
+        "name": "Monza",
+        "entity_type": "Circuit",
+        "description": "A racing venue in Italy."
+      },
+      {
+        "local_id": "e11",
+        "name": "Marina Bay Street Circuit",
+        "entity_type": "Circuit",
+        "description": "A racing venue in Singapore."
+      },
+      {
+        "local_id": "e12",
+        "name": "Valencia Street Circuit",
+        "entity_type": "Circuit",
+        "description": "A racing venue in Valencia."
+      },
+      {
+        "local_id": "e13",
+        "name": "2008 Formula One World Championship",
+        "entity_type": "Season",
+        "description": "The championship year for Formula One."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Felipe Massa at European Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Felipe Massa achieved a result in the European Grand Prix."
+      },
+      {
+        "local_id": "rr2",
+        "name": "Lewis Hamilton at European Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Lewis Hamilton achieved a result in the European Grand Prix."
+      },
+      {
+        "local_id": "rr3",
+        "name": "Lewis Hamilton at Belgium Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Lewis Hamilton achieved a result in the Belgium Grand Prix."
+      },
+      {
+        "local_id": "rr4",
+        "name": "Felipe Massa at Belgium Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Felipe Massa achieved a result in the Belgium Grand Prix."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Felipe Massa achieved a result in the European Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e8",
+        "relationship_type": "AT_RACE",
+        "description": "Felipe Massa achieved a result in the European Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "rr2",
+        "relationship_type": "ACHIEVED",
+        "description": "Lewis Hamilton achieved a result in the European Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr2",
+        "target_id": "e8",
+        "relationship_type": "AT_RACE",
+        "description": "Lewis Hamilton achieved a result in the European Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "rr3",
+        "relationship_type": "ACHIEVED",
+        "description": "Lewis Hamilton achieved a result in the Belgium Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr3",
+        "target_id": "e9",
+        "relationship_type": "AT_RACE",
+        "description": "Lewis Hamilton achieved a result in the Belgium Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr4",
+        "relationship_type": "ACHIEVED",
+        "description": "Felipe Massa achieved a result in the Belgium Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr4",
+        "target_id": "e9",
+        "relationship_type": "AT_RACE",
+        "description": "Felipe Massa achieved a result in the Belgium Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e6",
+        "target_id": "e13",
+        "relationship_type": "ENTERED",
+        "description": "Toro Rosso entered the 2008 Formula One World Championship.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e7",
+        "target_id": "e13",
+        "relationship_type": "ENTERED",
+        "description": "Ferrari entered the 2008 Formula One World Championship.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 13,
+  "entities_accepted": 17,
+  "entities_rejected": 0,
+  "relationship_candidates": 9,
+  "relationships_accepted": 10,
+  "relationships_rejected": 3,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 8,
+      "reason": "ACHIEVED does not allow Driver -> Circuit"
+    },
+    {
+      "element": "relationship",
+      "index": 9,
+      "reason": "ACHIEVED does not allow Driver -> Circuit"
+    },
+    {
+      "element": "relationship",
+      "index": 10,
+      "reason": "ACHIEVED does not allow Driver -> Circuit"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 0,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e8; description kept"
+    },
+    {
+      "index": 1,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr2 -AT_RACE-> e8; description kept"
+    },
+    {
+      "index": 2,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr3 -AT_RACE-> e9; description kept"
+    },
+    {
+      "index": 3,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr4 -AT_RACE-> e9; description kept"
+    }
+  ]
+}

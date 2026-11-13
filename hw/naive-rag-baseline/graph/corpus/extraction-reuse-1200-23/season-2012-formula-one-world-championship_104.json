@@ -1,0 +1,183 @@
+{
+  "chunk_id": "season-2012-formula-one-world-championship#104",
+  "doc_id": "season-2012-formula-one-world-championship",
+  "document_title": "2012 Formula One World Championship",
+  "section": "Race summaries > Post-season controversy",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "feac7fe00b5d27e26933d03221dc22863f0525141c87ac818ad68fc8eb715679",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Sebastian Vettel",
+        "entity_type": "Driver",
+        "description": "A driver who was involved in a championship controversy after the Brazilian Grand Prix."
+      },
+      {
+        "local_id": "e2",
+        "name": "Jean-Éric Vergne",
+        "entity_type": "Driver",
+        "description": "A driver who was overtaken by Sebastian Vettel during the Brazilian Grand Prix."
+      },
+      {
+        "local_id": "e3",
+        "name": "Scuderia Ferrari",
+        "entity_type": "Team",
+        "description": "The team that filed a formal protest against the race results."
+      },
+      {
+        "local_id": "e4",
+        "name": "2012 Formula One World Championship",
+        "entity_type": "Season",
+        "description": "The championship season during which the controversy occurred."
+      },
+      {
+        "local_id": "e5",
+        "name": "Brazilian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The race where the controversy involving Sebastian Vettel took place."
+      },
+      {
+        "local_id": "e6",
+        "name": "Interlagos",
+        "entity_type": "Circuit",
+        "description": "The circuit where the Brazilian Grand Prix was held."
+      },
+      {
+        "local_id": "e7",
+        "name": "Pastor Maldonado",
+        "entity_type": "Driver",
+        "description": "A driver whose spin and retirement led to yellow flag conditions during the race."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Sebastian Vettel at Brazilian Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Sebastian Vettel recorded a result in the Brazilian Grand Prix."
+      },
+      {
+        "local_id": "rr2",
+        "name": "Jean-Éric Vergne at Brazilian Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Jean-Éric Vergne recorded a result in the Brazilian Grand Prix."
+      },
+      {
+        "local_id": "rr3",
+        "name": "Pastor Maldonado at Brazilian Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Pastor Maldonado recorded a result in the Brazilian Grand Prix before retiring."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e3",
+        "target_id": "e4",
+        "relationship_type": "ENTERED",
+        "description": "Ferrari entered the 2012 Formula One World Championship.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e4",
+        "relationship_type": "ROUND_OF",
+        "description": "The Brazilian Grand Prix is a round of the 2012 Formula One World Championship.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e6",
+        "relationship_type": "HELD_AT",
+        "description": "The Brazilian Grand Prix was held at the Interlagos circuit.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Sebastian Vettel recorded a result in the Brazilian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e5",
+        "relationship_type": "AT_RACE",
+        "description": "Sebastian Vettel recorded a result in the Brazilian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "rr2",
+        "relationship_type": "ACHIEVED",
+        "description": "Jean-Éric Vergne recorded a result in the Brazilian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr2",
+        "target_id": "e5",
+        "relationship_type": "AT_RACE",
+        "description": "Jean-Éric Vergne recorded a result in the Brazilian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e7",
+        "target_id": "rr3",
+        "relationship_type": "ACHIEVED",
+        "description": "Pastor Maldonado recorded a result in the Brazilian Grand Prix before retiring.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr3",
+        "target_id": "e5",
+        "relationship_type": "AT_RACE",
+        "description": "Pastor Maldonado recorded a result in the Brazilian Grand Prix before retiring.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 7,
+  "entities_accepted": 10,
+  "entities_rejected": 0,
+  "relationship_candidates": 6,
+  "relationships_accepted": 9,
+  "relationships_rejected": 0,
+  "rejections": [],
+  "alignments": [
+    {
+      "index": 3,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e5; description kept"
+    },
+    {
+      "index": 4,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr2 -AT_RACE-> e5; description kept"
+    },
+    {
+      "index": 5,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr3 -AT_RACE-> e5; description kept"
+    }
+  ]
+}

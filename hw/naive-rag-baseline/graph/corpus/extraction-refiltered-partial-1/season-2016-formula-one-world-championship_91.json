@@ -1,0 +1,156 @@
+{
+  "chunk_id": "season-2016-formula-one-world-championship#91",
+  "doc_id": "season-2016-formula-one-world-championship",
+  "document_title": "2016 Formula One World Championship",
+  "section": "Championship conclusion",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/2016_Formula_One_World_Championship",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "e2e839c3eb90b9d11555fd3499755592c9ae516a26b786bad6b3bbd24719262a",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 5,
+      "reason": "ACHIEVED does not allow Driver -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 6,
+      "reason": "ACHIEVED does not allow Driver -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 7,
+      "reason": "ACHIEVED does not allow Driver -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 8,
+      "reason": "ACHIEVED does not allow Driver -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 9,
+      "reason": "FOR_TEAM does not allow Driver -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 10,
+      "reason": "FOR_TEAM does not allow Driver -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 11,
+      "reason": "FOR_TEAM does not allow Driver -> GrandPrix"
+    }
+  ],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Lewis Hamilton",
+        "entity_type": "Driver",
+        "description": "A driver who raced for Mercedes in the 2016 Formula One World Championship."
+      },
+      {
+        "local_id": "e2",
+        "name": "Nico Rosberg",
+        "entity_type": "Driver",
+        "description": "A driver who raced for Mercedes in the 2016 Formula One World Championship."
+      },
+      {
+        "local_id": "e3",
+        "name": "Mercedes",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that entered cars in the 2016 Formula One World Championship."
+      },
+      {
+        "local_id": "e4",
+        "name": "2016",
+        "entity_type": "Season",
+        "description": "The championship year for the Formula One World Championship."
+      },
+      {
+        "local_id": "e5",
+        "name": "United States Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A race in the 2016 Formula One World Championship."
+      },
+      {
+        "local_id": "e6",
+        "name": "Mexico City Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A race in the 2016 Formula One World Championship."
+      },
+      {
+        "local_id": "e7",
+        "name": "Max Verstappen",
+        "entity_type": "Driver",
+        "description": "A driver who was involved in an incident during the 2016 Formula One World Championship."
+      },
+      {
+        "local_id": "e8",
+        "name": "Daniel Ricciardo",
+        "entity_type": "Driver",
+        "description": "A driver who was involved in the United States Grand Prix in the 2016 Formula One World Championship."
+      },
+      {
+        "local_id": "e9",
+        "name": "Sebastian Vettel",
+        "entity_type": "Driver",
+        "description": "A driver who reacted to an incident during the Mexico City Grand Prix in the 2016 Formula One World Championship."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e3",
+        "target_id": "e4",
+        "relationship_type": "ENTERED",
+        "description": "Mercedes took part in the 2016 Formula One World Championship.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e4",
+        "relationship_type": "ROUND_OF",
+        "description": "The United States Grand Prix is a round of the 2016 Formula One World Championship.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e6",
+        "target_id": "e4",
+        "relationship_type": "ROUND_OF",
+        "description": "The Mexico City Grand Prix is a round of the 2016 Formula One World Championship.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e3",
+        "relationship_type": "DROVE_FOR",
+        "description": "Lewis Hamilton raced for Mercedes.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e3",
+        "relationship_type": "DROVE_FOR",
+        "description": "Nico Rosberg raced for Mercedes.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

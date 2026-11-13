@@ -1,0 +1,137 @@
+{
+  "chunk_id": "driver-michael-schumacher#27",
+  "doc_id": "driver-michael-schumacher",
+  "document_title": "Michael Schumacher",
+  "section": null,
+  "page": 6,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "21a523306df4d90b600ab260d0dfad6d8b3742120f07fe5655b473f7075b5846",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Michael Schumacher",
+        "entity_type": "Driver",
+        "description": "A Formula One driver who returned after missing six races."
+      },
+      {
+        "local_id": "e2",
+        "name": "Mika Salo",
+        "entity_type": "Driver",
+        "description": "A Finnish driver who replaced Schumacher."
+      },
+      {
+        "local_id": "e3",
+        "name": "Eddie Irvine",
+        "entity_type": "Driver",
+        "description": "Schumacher's teammate at Ferrari."
+      },
+      {
+        "local_id": "e4",
+        "name": "Malaysian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The inaugural race where Schumacher made his return."
+      },
+      {
+        "local_id": "e5",
+        "name": "Mugello",
+        "entity_type": "Circuit",
+        "description": "A testing circuit where Schumacher tested after his return."
+      },
+      {
+        "local_id": "e6",
+        "name": "Scuderia Ferrari",
+        "entity_type": "Team",
+        "description": "The Formula One team for which Schumacher and Irvine raced."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Michael Schumacher at Malaysian Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Schumacher qualified in pole position at the Malaysian Grand Prix."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e6",
+        "relationship_type": "DROVE_FOR",
+        "description": "Schumacher drove for Ferrari.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e6",
+        "relationship_type": "DROVE_FOR",
+        "description": "Salo drove for Ferrari.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e6",
+        "relationship_type": "DROVE_FOR",
+        "description": "Irvine drove for Ferrari.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e5",
+        "relationship_type": "HELD_AT",
+        "description": "The Malaysian Grand Prix is held at the circuit Mugello.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Schumacher qualified in pole position at the Malaysian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e4",
+        "relationship_type": "AT_RACE",
+        "description": "Schumacher qualified in pole position at the Malaysian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e3",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Schumacher was teammates with Irvine.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 6,
+  "entities_accepted": 7,
+  "entities_rejected": 0,
+  "relationship_candidates": 6,
+  "relationships_accepted": 7,
+  "relationships_rejected": 0,
+  "rejections": [],
+  "alignments": [
+    {
+      "index": 4,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e4; description kept"
+    }
+  ]
+}

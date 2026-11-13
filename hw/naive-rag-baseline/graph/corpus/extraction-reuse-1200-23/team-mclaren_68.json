@@ -1,0 +1,209 @@
+{
+  "chunk_id": "team-mclaren#68",
+  "doc_id": "team-mclaren",
+  "document_title": "McLaren",
+  "section": "2026: New regulations and World Championship defence",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "7620de818484e8645e7ddabf7efa339e34a55d2dfd5efa1ba013b4b287ffcedb",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "McLaren",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that entered cars."
+      },
+      {
+        "local_id": "e2",
+        "name": "2026",
+        "entity_type": "Season",
+        "description": "A championship year."
+      },
+      {
+        "local_id": "e3",
+        "name": "2026 Monaco Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A specific race event."
+      },
+      {
+        "local_id": "e4",
+        "name": "Lando Norris",
+        "entity_type": "Driver",
+        "description": "A driver who races in Formula One."
+      },
+      {
+        "local_id": "e5",
+        "name": "Kimi Antonelli",
+        "entity_type": "Driver",
+        "description": "A driver who races in Formula One."
+      },
+      {
+        "local_id": "e6",
+        "name": "Max Verstappen",
+        "entity_type": "Driver",
+        "description": "A driver who races in Formula One."
+      },
+      {
+        "local_id": "e7",
+        "name": "Lance Stroll",
+        "entity_type": "Driver",
+        "description": "A driver who races in Formula One."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Lando Norris at 2026 Monaco Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Lando Norris finished third in the 2026 Monaco Grand Prix."
+      },
+      {
+        "local_id": "rr2",
+        "name": "Kimi Antonelli at 2026 Monaco Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Kimi Antonelli finished ahead of Lando Norris in the 2026 Monaco Grand Prix."
+      },
+      {
+        "local_id": "rr3",
+        "name": "Max Verstappen at 2026 Monaco Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Max Verstappen finished ahead of Lando Norris in the 2026 Monaco Grand Prix."
+      },
+      {
+        "local_id": "rr4",
+        "name": "Lance Stroll at 2026 Monaco Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Lance Stroll's incident affected the race outcome."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "ENTERED",
+        "description": "McLaren took part in the 2026 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e2",
+        "relationship_type": "ROUND_OF",
+        "description": "The 2026 Monaco Grand Prix is a round of the 2026 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Lando Norris finished third in the 2026 Monaco Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e3",
+        "relationship_type": "AT_RACE",
+        "description": "Lando Norris finished third in the 2026 Monaco Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "rr2",
+        "relationship_type": "ACHIEVED",
+        "description": "Kimi Antonelli finished ahead of Lando Norris in the 2026 Monaco Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr2",
+        "target_id": "e3",
+        "relationship_type": "AT_RACE",
+        "description": "Kimi Antonelli finished ahead of Lando Norris in the 2026 Monaco Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e6",
+        "target_id": "rr3",
+        "relationship_type": "ACHIEVED",
+        "description": "Max Verstappen finished ahead of Lando Norris in the 2026 Monaco Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr3",
+        "target_id": "e3",
+        "relationship_type": "AT_RACE",
+        "description": "Max Verstappen finished ahead of Lando Norris in the 2026 Monaco Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e7",
+        "target_id": "rr4",
+        "relationship_type": "ACHIEVED",
+        "description": "Lance Stroll's incident affected the race outcome.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr4",
+        "target_id": "e3",
+        "relationship_type": "AT_RACE",
+        "description": "Lance Stroll's incident affected the race outcome.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 7,
+  "entities_accepted": 11,
+  "entities_rejected": 0,
+  "relationship_candidates": 7,
+  "relationships_accepted": 10,
+  "relationships_rejected": 1,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "FOR_TEAM does not allow Driver -> Team"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 2,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e3; description kept"
+    },
+    {
+      "index": 4,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr2 -AT_RACE-> e3; description kept"
+    },
+    {
+      "index": 5,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr3 -AT_RACE-> e3; description kept"
+    },
+    {
+      "index": 6,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr4 -AT_RACE-> e3; description kept"
+    }
+  ]
+}

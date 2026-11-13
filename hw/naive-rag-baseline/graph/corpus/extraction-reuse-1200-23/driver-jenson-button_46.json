@@ -1,0 +1,167 @@
+{
+  "chunk_id": "driver-jenson-button#46",
+  "doc_id": "driver-jenson-button",
+  "document_title": "Jenson Button",
+  "section": "Sports car career",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "08a6794468b147c1e9b9909e8865d272a4e6160ce1b002749dbac927f1fce4ce",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Jenson Button",
+        "entity_type": "Driver",
+        "description": "A British racing driver who has competed in various motorsport disciplines, including Formula One."
+      },
+      {
+        "local_id": "e2",
+        "name": "BMW Team Raffanelli",
+        "entity_type": "Team",
+        "description": "A racing team that participated in endurance racing."
+      },
+      {
+        "local_id": "e3",
+        "name": "BR Engineering BR1",
+        "entity_type": "Car",
+        "description": "A Le Mans Prototype 1 (LMP1) car used in the FIA World Endurance Championship."
+      },
+      {
+        "local_id": "e4",
+        "name": "SMP Racing",
+        "entity_type": "Team",
+        "description": "A racing team that competes in endurance racing."
+      },
+      {
+        "local_id": "e5",
+        "name": "2018–19 FIA World Endurance Championship",
+        "entity_type": "Season",
+        "description": "A season of the FIA World Endurance Championship."
+      },
+      {
+        "local_id": "e6",
+        "name": "24 Hours of Spa",
+        "entity_type": "GrandPrix",
+        "description": "An endurance race held at Spa-Francorchamps."
+      },
+      {
+        "local_id": "e7",
+        "name": "24 Hours of Le Mans",
+        "entity_type": "GrandPrix",
+        "description": "An annual 24-hour automobile race held in Le Mans, France."
+      },
+      {
+        "local_id": "e8",
+        "name": "6 Hours of Fuji",
+        "entity_type": "GrandPrix",
+        "description": "A sports car race held at the Fuji Speedway."
+      },
+      {
+        "local_id": "e9",
+        "name": "6 Hours of Shanghai",
+        "entity_type": "GrandPrix",
+        "description": "A sports car race held at the Shanghai International Circuit."
+      },
+      {
+        "local_id": "e10",
+        "name": "1000 Miles of Sebring",
+        "entity_type": "GrandPrix",
+        "description": "An endurance race held at Sebring International Raceway."
+      },
+      {
+        "local_id": "e11",
+        "name": "6 Hours of Spa-Francorchamps",
+        "entity_type": "GrandPrix",
+        "description": "A sports car race held at Spa-Francorchamps."
+      },
+      {
+        "local_id": "e12",
+        "name": "2019 24 Hours of Le Mans",
+        "entity_type": "GrandPrix",
+        "description": "The 2019 edition of the 24 Hours of Le Mans."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Button drove for BMW Team Raffanelli in the 1999 24 Hours of Spa.",
+        "from_year": 1999,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e4",
+        "relationship_type": "DROVE_FOR",
+        "description": "Button drove for SMP Racing in the 2018–19 FIA World Endurance Championship.",
+        "from_year": 2018,
+        "to_year": 2019,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 12,
+  "entities_accepted": 12,
+  "entities_rejected": 0,
+  "relationship_candidates": 12,
+  "relationships_accepted": 2,
+  "relationships_rejected": 10,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "RACED_IN is not temporal; from_year=2018, to_year=2019, role=None cannot be stored without dropping them"
+    },
+    {
+      "element": "relationship",
+      "index": 5,
+      "reason": "ENTERED is not temporal; from_year=2018, to_year=2019, role=None cannot be stored without dropping them"
+    },
+    {
+      "element": "relationship",
+      "index": 7,
+      "reason": "ACHIEVED Driver -> GrandPrix has from_year=2018, to_year=None, role=None; the year or role cannot be stored on the reified result"
+    },
+    {
+      "element": "relationship",
+      "index": 8,
+      "reason": "ACHIEVED Driver -> GrandPrix has from_year=2018, to_year=None, role=None; the year or role cannot be stored on the reified result"
+    },
+    {
+      "element": "relationship",
+      "index": 9,
+      "reason": "ACHIEVED Driver -> GrandPrix has from_year=2019, to_year=None, role=None; the year or role cannot be stored on the reified result"
+    },
+    {
+      "element": "relationship",
+      "index": 10,
+      "reason": "ACHIEVED Driver -> GrandPrix has from_year=2019, to_year=None, role=None; the year or role cannot be stored on the reified result"
+    },
+    {
+      "element": "relationship",
+      "index": 11,
+      "reason": "ACHIEVED Driver -> GrandPrix has from_year=2019, to_year=None, role=None; the year or role cannot be stored on the reified result"
+    },
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "DROVE_FOR does not allow Driver -> Car"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "FIELDED does not allow Team -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "RACED_IN does not allow Car -> GrandPrix"
+    }
+  ],
+  "alignments": []
+}

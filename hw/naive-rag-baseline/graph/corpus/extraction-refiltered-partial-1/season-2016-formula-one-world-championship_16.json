@@ -1,0 +1,71 @@
+{
+  "chunk_id": "season-2016-formula-one-world-championship#16",
+  "doc_id": "season-2016-formula-one-world-championship",
+  "document_title": "2016 Formula One World Championship",
+  "section": "Team changes",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/2016_Formula_One_World_Championship",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "83137bd90ef95a2cd8afc3795499f528b99c506091df5a26a8982b6cf67a9cad",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "DROVE_FOR does not allow Team -> Team"
+    },
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "POWERED_BY does not allow Team -> PowerUnit"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "POWERED_BY does not allow Team -> PowerUnit"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "ENTERED is not temporal; from_year, to_year and role must be null"
+    }
+  ],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Marussia",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that applied for a name change."
+      },
+      {
+        "local_id": "e2",
+        "name": "Manor Racing",
+        "entity_type": "Team",
+        "description": "The new name adopted by Marussia in January 2016."
+      },
+      {
+        "local_id": "e3",
+        "name": "Mercedes",
+        "entity_type": "PowerUnit",
+        "description": "The power unit that Manor Racing switched to."
+      },
+      {
+        "local_id": "e4",
+        "name": "Ferrari",
+        "entity_type": "PowerUnit",
+        "description": "The power unit that Manor Racing used before switching to Mercedes."
+      },
+      {
+        "local_id": "e5",
+        "name": "2016 Formula One World Championship",
+        "entity_type": "Season",
+        "description": "The championship year in which the team name change occurred."
+      }
+    ],
+    "relationships": []
+  }
+}

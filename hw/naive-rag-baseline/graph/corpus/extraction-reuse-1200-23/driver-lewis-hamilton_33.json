@@ -1,0 +1,113 @@
+{
+  "chunk_id": "driver-lewis-hamilton#33",
+  "doc_id": "driver-lewis-hamilton",
+  "document_title": "Lewis Hamilton",
+  "section": null,
+  "page": 7,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "d9be177977bedf184218860725b20640813bc9710d9681ea2cd31ef165d70d8d",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Lewis Hamilton",
+        "entity_type": "Driver",
+        "description": "Regarded as one of the best wet-weather drivers in Formula One."
+      },
+      {
+        "local_id": "e2",
+        "name": "Mercedes-AMG Petronas Formula One Team",
+        "entity_type": "Team",
+        "description": "The team Hamilton drove for during his career."
+      },
+      {
+        "local_id": "e3",
+        "name": "2020",
+        "entity_type": "Season",
+        "description": "The season in which Hamilton clinched his seventh world title."
+      },
+      {
+        "local_id": "e4",
+        "name": "Turkish Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The race where Hamilton clinched his seventh world title."
+      },
+      {
+        "local_id": "e5",
+        "name": "Car",
+        "entity_type": "Car",
+        "description": "The car Hamilton drove during the 2020 Turkish Grand Prix."
+      },
+      {
+        "local_id": "e6",
+        "name": "Title",
+        "entity_type": "Title",
+        "description": "Hamilton's seventh world championship title."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Hamilton drove for Mercedes.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e6",
+        "relationship_type": "WON",
+        "description": "Hamilton won his seventh world title.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e6",
+        "target_id": "e3",
+        "relationship_type": "AWARDED_IN",
+        "description": "Hamilton's seventh world title was awarded in the 2020 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e3",
+        "relationship_type": "ROUND_OF",
+        "description": "The Turkish Grand Prix is a round of the 2020 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e3",
+        "relationship_type": "RACED_IN",
+        "description": "The car raced in the 2020 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 6,
+  "entities_accepted": 6,
+  "entities_rejected": 0,
+  "relationship_candidates": 6,
+  "relationships_accepted": 5,
+  "relationships_rejected": 1,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "FIELDED does not allow Car -> GrandPrix"
+    }
+  ],
+  "alignments": []
+}

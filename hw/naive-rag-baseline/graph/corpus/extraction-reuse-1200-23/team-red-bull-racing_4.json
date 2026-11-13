@@ -1,0 +1,54 @@
+{
+  "chunk_id": "team-red-bull-racing#4",
+  "doc_id": "team-red-bull-racing",
+  "document_title": "Red Bull Racing",
+  "section": "History > Origins",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "e3cfaf2ff5c4561a68d09cde67950b6f951a9e1b3b0b697defd64fbcc94d1576",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Red Bull Racing",
+        "entity_type": "Team",
+        "description": "A Formula 1 team owned by Red Bull."
+      },
+      {
+        "local_id": "e2",
+        "name": "Sauber",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that was sponsored by Red Bull from 1995 to 2004."
+      },
+      {
+        "local_id": "e3",
+        "name": "Gerhard Berger",
+        "entity_type": "Driver",
+        "description": "A driver who was sponsored by Red Bull starting in 1989."
+      }
+    ],
+    "relationships": []
+  },
+  "entity_candidates": 3,
+  "entities_accepted": 3,
+  "entities_rejected": 0,
+  "relationship_candidates": 2,
+  "relationships_accepted": 0,
+  "relationships_rejected": 2,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "DROVE_FOR does not allow Team -> Team"
+    },
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "DROVE_FOR does not allow Team -> Driver"
+    }
+  ],
+  "alignments": []
+}

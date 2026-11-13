@@ -1,0 +1,63 @@
+{
+  "chunk_id": "season-2016-formula-one-world-championship#18",
+  "doc_id": "season-2016-formula-one-world-championship",
+  "document_title": "2016 Formula One World Championship",
+  "section": "Driver changes",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/2016_Formula_One_World_Championship",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "3a993f8f507166fe3e0771e723709de99a3aa5138f40a7488aaefa887a871854",
+  "validation_version": "partial-1",
+  "source_status": "ok",
+  "status": "ok",
+  "rejections": [],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Romain Grosjean",
+        "entity_type": "Driver",
+        "description": "Left Lotus at the end of the 2015 season and signed with Haas F1 Team for 2016."
+      },
+      {
+        "local_id": "e2",
+        "name": "Haas F1 Team",
+        "entity_type": "Team",
+        "description": "Newly formed team for the 2016 season."
+      },
+      {
+        "local_id": "e3",
+        "name": "Esteban Gutiérrez",
+        "entity_type": "Driver",
+        "description": "Joined Haas F1 Team for the 2016 season after spending a season as Ferrari's test and reserve driver."
+      },
+      {
+        "local_id": "e4",
+        "name": "2016",
+        "entity_type": "Season",
+        "description": "The championship year."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Romain Grosjean drove for Haas F1 Team in 2016.",
+        "from_year": 2016,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Esteban Gutiérrez drove for Haas F1 Team in 2016.",
+        "from_year": 2016,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

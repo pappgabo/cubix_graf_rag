@@ -1,0 +1,92 @@
+{
+  "chunk_id": "driver-fernando-alonso#7",
+  "doc_id": "driver-fernando-alonso",
+  "document_title": "Fernando Alonso",
+  "section": null,
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/Fernando_Alonso",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "740db0d49dc8dd5c3ad0e57cbbfcc501f671328ad511b64d7db61a17f293e064",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "entity_candidates": 5,
+  "entities_accepted": 5,
+  "entities_rejected": 0,
+  "relationship_candidates": 5,
+  "relationships_accepted": 2,
+  "relationships_rejected": 3,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "ACHIEVED Driver -> GrandPrix has from_year=2023, to_year=None, role=None; the year or role cannot be stored on the reified result"
+    },
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "WON does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "RACED_IN does not allow Driver -> Season"
+    }
+  ],
+  "alignments": [],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Fernando Alonso",
+        "entity_type": "Driver",
+        "description": "Alonso moved to Aston Martin for his 2023 campaign, achieving several podiums as he finished fourth in the World Drivers' Championship; he scored his 100th career podium at the Saudi Arabian Grand Prix. In 2024, he became the first driver to contest 400 Grands Prix."
+      },
+      {
+        "local_id": "e2",
+        "name": "Aston Martin",
+        "entity_type": "Team",
+        "description": "Alonso moved to Aston Martin for his 2023 campaign."
+      },
+      {
+        "local_id": "e3",
+        "name": "2023",
+        "entity_type": "Season",
+        "description": "Alonso moved to Aston Martin for his 2023 campaign, achieving several podiums as he finished fourth in the World Drivers' Championship."
+      },
+      {
+        "local_id": "e4",
+        "name": "Saudi Arabian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "he scored his 100th career podium at the Saudi Arabian Grand Prix."
+      },
+      {
+        "local_id": "e5",
+        "name": "2024",
+        "entity_type": "Season",
+        "description": "In 2024, he became the first driver to contest 400 Grands Prix."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Alonso moved to Aston Martin for his 2023 campaign.",
+        "from_year": 2023,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e3",
+        "relationship_type": "ROUND_OF",
+        "description": "Saudi Arabian Grand Prix is a round of the 2023 season",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

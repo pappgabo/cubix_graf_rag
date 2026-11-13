@@ -1,0 +1,114 @@
+{
+  "chunk_id": "driver-michael-schumacher#2",
+  "doc_id": "driver-michael-schumacher",
+  "document_title": "Michael Schumacher",
+  "section": null,
+  "page": 1,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "e174acba6bc6111c2de450c1c47ad61da062e2746cf7e280bd6f0d296ae7bcd4",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Michael Schumacher",
+        "entity_type": "Driver",
+        "description": "A Formula One driver known for his unprecedented titles and records."
+      },
+      {
+        "local_id": "e2",
+        "name": "Scuderia Ferrari",
+        "entity_type": "Team",
+        "description": "The team for which Michael Schumacher won his sixth and seventh titles."
+      },
+      {
+        "local_id": "e3",
+        "name": "2003",
+        "entity_type": "Season",
+        "description": "The season in which Michael Schumacher claimed his sixth title."
+      },
+      {
+        "local_id": "e4",
+        "name": "2004",
+        "entity_type": "Season",
+        "description": "The season in which Michael Schumacher claimed his seventh title."
+      },
+      {
+        "local_id": "e5",
+        "name": "European Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The race where Michael Schumacher claimed his final podium."
+      },
+      {
+        "local_id": "e6",
+        "name": "Mercedes-AMG Petronas Formula One Team",
+        "entity_type": "Team",
+        "description": "The team with which Michael Schumacher returned to Formula One."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Michael Schumacher drove for Ferrari.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e4",
+        "relationship_type": "ENTERED",
+        "description": "Ferrari entered the 2004 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e3",
+        "relationship_type": "ENTERED",
+        "description": "Ferrari entered the 2003 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e6",
+        "relationship_type": "DROVE_FOR",
+        "description": "Michael Schumacher drove for Mercedes from 2010 to 2012.",
+        "from_year": 2010,
+        "to_year": 2012,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 6,
+  "entities_accepted": 6,
+  "entities_rejected": 0,
+  "relationship_candidates": 7,
+  "relationships_accepted": 4,
+  "relationships_rejected": 3,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "WON does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "WON does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "HELD_AT does not allow Team -> GrandPrix"
+    }
+  ],
+  "alignments": []
+}

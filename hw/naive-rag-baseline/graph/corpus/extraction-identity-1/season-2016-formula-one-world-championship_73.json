@@ -1,0 +1,155 @@
+{
+  "chunk_id": "season-2016-formula-one-world-championship#73",
+  "doc_id": "season-2016-formula-one-world-championship",
+  "document_title": "2016 Formula One World Championship",
+  "section": "European rounds",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/2016_Formula_One_World_Championship",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "cc32542b0c1be6c1bb9ecad53849cadb495540738516f380dc24d83b3d008b80",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "entity_candidates": 5,
+  "entities_accepted": 8,
+  "entities_rejected": 0,
+  "relationship_candidates": 4,
+  "relationships_accepted": 7,
+  "relationships_rejected": 0,
+  "rejections": [],
+  "alignments": [
+    {
+      "index": 1,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e4; description kept"
+    },
+    {
+      "index": 2,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr2 -AT_RACE-> e4; description kept"
+    },
+    {
+      "index": 3,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr3 -AT_RACE-> e4; description kept"
+    }
+  ],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Rosberg",
+        "entity_type": "Driver",
+        "description": "A driver who was involved in a stewards' inquiry for causing an avoidable collision."
+      },
+      {
+        "local_id": "e2",
+        "name": "Lewis Hamilton",
+        "entity_type": "Driver",
+        "description": "A driver who reduced the deficit to Rosberg to a single point at the Great Britain round."
+      },
+      {
+        "local_id": "e3",
+        "name": "Verstappen",
+        "entity_type": "Driver",
+        "description": "A driver who fought with Rosberg over second place at the Great Britain round."
+      },
+      {
+        "local_id": "e4",
+        "name": "Great Britain",
+        "entity_type": "GrandPrix",
+        "description": "A round of the 2016 Formula One World Championship where Hamilton reduced the deficit to Rosberg."
+      },
+      {
+        "local_id": "e5",
+        "name": "2016",
+        "entity_type": "Season",
+        "description": "The championship year for the events described."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Rosberg at Great Britain",
+        "entity_type": "RaceResult",
+        "description": "Rosberg was involved in a stewards' inquiry during the Great Britain round."
+      },
+      {
+        "local_id": "rr2",
+        "name": "Hamilton at Great Britain",
+        "entity_type": "RaceResult",
+        "description": "Hamilton reduced the deficit to Rosberg at the Great Britain round."
+      },
+      {
+        "local_id": "rr3",
+        "name": "Verstappen at Great Britain",
+        "entity_type": "RaceResult",
+        "description": "Verstappen fought with Rosberg over second place at the Great Britain round."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e4",
+        "target_id": "e5",
+        "relationship_type": "ROUND_OF",
+        "description": "The Great Britain Grand Prix is a round of the 2016 Formula One World Championship.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Rosberg was involved in a stewards' inquiry during the Great Britain round.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e4",
+        "relationship_type": "AT_RACE",
+        "description": "Rosberg was involved in a stewards' inquiry during the Great Britain round.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "rr2",
+        "relationship_type": "ACHIEVED",
+        "description": "Hamilton reduced the deficit to Rosberg at the Great Britain round.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr2",
+        "target_id": "e4",
+        "relationship_type": "AT_RACE",
+        "description": "Hamilton reduced the deficit to Rosberg at the Great Britain round.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "rr3",
+        "relationship_type": "ACHIEVED",
+        "description": "Verstappen fought with Rosberg over second place at the Great Britain round.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr3",
+        "target_id": "e4",
+        "relationship_type": "AT_RACE",
+        "description": "Verstappen fought with Rosberg over second place at the Great Britain round.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

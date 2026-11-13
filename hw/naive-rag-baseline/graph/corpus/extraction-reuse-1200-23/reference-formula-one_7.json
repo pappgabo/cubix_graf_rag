@@ -1,0 +1,111 @@
+{
+  "chunk_id": "reference-formula-one#7",
+  "doc_id": "reference-formula-one",
+  "document_title": "Formula One",
+  "section": "Formula One > Technological developments",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "474469b030645afdbdc10179487664ee3d8153fcd02b275cbc98ad4284e607db",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Lotus",
+        "entity_type": "Team",
+        "description": "A Formula 1 team known for its innovative designs."
+      },
+      {
+        "local_id": "e2",
+        "name": "Lotus 49B",
+        "entity_type": "Car",
+        "description": "A car model fielded by Lotus."
+      },
+      {
+        "local_id": "e3",
+        "name": "1968",
+        "entity_type": "Season",
+        "description": "The Formula One season in which aerodynamic downforce gained importance."
+      },
+      {
+        "local_id": "e4",
+        "name": "Colin Chapman",
+        "entity_type": "Driver",
+        "description": "Owner of Lotus who introduced wings to the car design."
+      },
+      {
+        "local_id": "e5",
+        "name": "Monaco Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A race where the Lotus 49B was equipped with wings."
+      },
+      {
+        "local_id": "e6",
+        "name": "Jim Hall",
+        "entity_type": "Driver",
+        "description": "Introduced ground-effect aerodynamics with the Chaparral 2J."
+      },
+      {
+        "local_id": "e7",
+        "name": "Chaparral 2J",
+        "entity_type": "Car",
+        "description": "A car model that used ground-effect aerodynamics."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "FIELDED",
+        "description": "Lotus entered the Lotus 49B car.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e3",
+        "relationship_type": "RACED_IN",
+        "description": "Lotus 49B participated in the 1968 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e3",
+        "relationship_type": "ENTERED",
+        "description": "Lotus took part in the 1968 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 7,
+  "entities_accepted": 7,
+  "entities_rejected": 0,
+  "relationship_candidates": 6,
+  "relationships_accepted": 3,
+  "relationships_rejected": 3,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 5,
+      "reason": "RACED_IN is not temporal; from_year=1970, to_year=None, role=None cannot be stored without dropping them"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "DROVE_FOR does not allow Driver -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "FIELDED does not allow Driver -> Car"
+    }
+  ],
+  "alignments": []
+}

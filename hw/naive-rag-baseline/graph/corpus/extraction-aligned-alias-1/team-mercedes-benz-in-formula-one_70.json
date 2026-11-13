@@ -1,0 +1,206 @@
+{
+  "chunk_id": "team-mercedes-benz-in-formula-one#70",
+  "doc_id": "team-mercedes-benz-in-formula-one",
+  "document_title": "Mercedes-Benz in Formula One",
+  "section": "Mercedes-Benz in Formula One > Returning to championship contention (2026–present)",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/Mercedes-Benz_in_Formula_One",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "53db42f2873f01fac9bede8effb1ebd90e6a580ddfa5b501202c2d4bdd953b62",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "FOR_TEAM does not allow Driver -> GrandPrix"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 1,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e7; description kept"
+    },
+    {
+      "index": 3,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr2 -AT_RACE-> e8; description kept"
+    },
+    {
+      "index": 4,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr3 -AT_RACE-> e9; description kept"
+    }
+  ],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Mercedes W17",
+        "entity_type": "Car",
+        "description": "A car model fielded by Mercedes-Benz."
+      },
+      {
+        "local_id": "e2",
+        "name": "Mercedes-Benz",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that enters cars."
+      },
+      {
+        "local_id": "e3",
+        "name": "Russell",
+        "entity_type": "Driver",
+        "description": "A driver who won races in the Mercedes W17."
+      },
+      {
+        "local_id": "e4",
+        "name": "Antonelli",
+        "entity_type": "Driver",
+        "description": "A driver who won races in the Mercedes W17."
+      },
+      {
+        "local_id": "e5",
+        "name": "Lewis Hamilton",
+        "entity_type": "Driver",
+        "description": "A driver who competed in the races with the Mercedes W17."
+      },
+      {
+        "local_id": "e6",
+        "name": "Charles Leclerc",
+        "entity_type": "Driver",
+        "description": "A driver who competed in the races against the Mercedes W17."
+      },
+      {
+        "local_id": "e7",
+        "name": "Australian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A race where Russell won ahead of Antonelli."
+      },
+      {
+        "local_id": "e8",
+        "name": "Chinese Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A race where Russell won ahead of both Ferraris."
+      },
+      {
+        "local_id": "e9",
+        "name": "Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A race where Antonelli claimed his maiden win."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Russell at Australian Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Russell won the Australian Grand Prix."
+      },
+      {
+        "local_id": "rr2",
+        "name": "Russell at Chinese Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Russell won the Chinese Grand Prix."
+      },
+      {
+        "local_id": "rr3",
+        "name": "Antonelli at Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Antonelli claimed his maiden win in the Grand Prix."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e2",
+        "target_id": "e1",
+        "relationship_type": "FIELDED",
+        "description": "Mercedes-Benz entered the Mercedes W17.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Russell won the Australian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e7",
+        "relationship_type": "AT_RACE",
+        "description": "Russell won the Australian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "rr2",
+        "relationship_type": "ACHIEVED",
+        "description": "Russell won the Chinese Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr2",
+        "target_id": "e8",
+        "relationship_type": "AT_RACE",
+        "description": "Russell won the Chinese Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "rr3",
+        "relationship_type": "ACHIEVED",
+        "description": "Antonelli claimed his maiden win in the Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr3",
+        "target_id": "e9",
+        "relationship_type": "AT_RACE",
+        "description": "Antonelli claimed his maiden win in the Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e3",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Russell and Antonelli were teammates.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e3",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Hamilton and Russell were teammates.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e6",
+        "target_id": "e3",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Charles Leclerc and Russell were teammates.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

@@ -1,0 +1,116 @@
+{
+  "chunk_id": "driver-jenson-button#49",
+  "doc_id": "driver-jenson-button",
+  "document_title": "Jenson Button",
+  "section": "Sports car career",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "715dd29e196dd289ff81dd6488927d29caf7fd9a5eab47054a9b5f19dc3c33e2",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Jenson Button",
+        "entity_type": "Driver",
+        "description": "A British racing driver who competed in Formula One and later in sports car racing."
+      },
+      {
+        "local_id": "e2",
+        "name": "Jota",
+        "entity_type": "Team",
+        "description": "A racing team that competes in endurance racing."
+      },
+      {
+        "local_id": "e3",
+        "name": "2025",
+        "entity_type": "Season",
+        "description": "The season of the FIA World Endurance Championship in which Jenson Button participated."
+      },
+      {
+        "local_id": "e4",
+        "name": "Cadillac V-Series.R",
+        "entity_type": "Car",
+        "description": "The car model used by Jota in the Hypercar category."
+      },
+      {
+        "local_id": "e5",
+        "name": "6 Hours of São Paulo",
+        "entity_type": "GrandPrix",
+        "description": "An endurance race where Jenson Button achieved a second-place result."
+      },
+      {
+        "local_id": "e6",
+        "name": "World Endurance Drivers' Championship",
+        "entity_type": "Season",
+        "description": "The championship in which Jenson Button competed."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Jenson Button drove for Jota in the 2025 FIA World Endurance Championship.",
+        "from_year": 2025,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e3",
+        "relationship_type": "RACED_IN",
+        "description": "The Cadillac V-Series.R raced in the 2025 FIA World Endurance Championship.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e3",
+        "relationship_type": "ROUND_OF",
+        "description": "The 6 Hours of São Paulo is a round of the 2025 FIA World Endurance Championship.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 6,
+  "entities_accepted": 6,
+  "entities_rejected": 0,
+  "relationship_candidates": 6,
+  "relationships_accepted": 3,
+  "relationships_rejected": 3,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "FIELDED is not temporal; from_year=2025, to_year=None, role=None cannot be stored without dropping them"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "ACHIEVED Driver -> GrandPrix has from_year=2025, to_year=None, role=None; the year or role cannot be stored on the reified result"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "ACHIEVED does not allow Driver -> Season"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 2,
+      "action": "clear_redundant_season_year",
+      "detail": "RACED_IN year 2025 already named by Season 'e3'; from_year and to_year cleared"
+    },
+    {
+      "index": 4,
+      "action": "clear_redundant_season_year",
+      "detail": "ROUND_OF year 2025 already named by Season 'e3'; from_year and to_year cleared"
+    }
+  ]
+}

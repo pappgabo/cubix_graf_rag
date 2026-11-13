@@ -1,0 +1,151 @@
+{
+  "chunk_id": "season-2012-formula-one-world-championship#79",
+  "doc_id": "season-2012-formula-one-world-championship",
+  "document_title": "2012 Formula One World Championship",
+  "section": "Race summaries > Round 1 – Australia Albert Park Circuit",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/2012_Formula_One_World_Championship",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "f7785346e8e1aa1999d869077cf40f2782828b4e57b0fb370a5852f17f788d60",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "ACHIEVED does not allow Driver -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "FOR_TEAM does not allow Driver -> Team"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "ACHIEVED does not allow Driver -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "FOR_TEAM does not allow Driver -> Team"
+    },
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "ACHIEVED does not allow Driver -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 5,
+      "reason": "FOR_TEAM does not allow Driver -> Team"
+    }
+  ],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Kimi Räikkönen",
+        "entity_type": "Driver",
+        "description": "Finished seventh after starting seventeenth due to a poor qualifying session."
+      },
+      {
+        "local_id": "e2",
+        "name": "Felipe Massa",
+        "entity_type": "Driver",
+        "description": "Retired after a collision with Bruno Senna."
+      },
+      {
+        "local_id": "e3",
+        "name": "Bruno Senna",
+        "entity_type": "Driver",
+        "description": "Retired after a collision with Felipe Massa."
+      },
+      {
+        "local_id": "e4",
+        "name": "HRT",
+        "entity_type": "Team",
+        "description": "Failed to qualify for the race for the second consecutive season."
+      },
+      {
+        "local_id": "e5",
+        "name": "Pedro de la Rosa",
+        "entity_type": "Driver",
+        "description": "Failed to set a lap time within 107% of the fastest qualifying time."
+      },
+      {
+        "local_id": "e6",
+        "name": "Narain Karthikeyan",
+        "entity_type": "Driver",
+        "description": "Failed to set a lap time within 107% of the fastest qualifying time."
+      },
+      {
+        "local_id": "e7",
+        "name": "2012",
+        "entity_type": "Season",
+        "description": "The championship year for the race."
+      },
+      {
+        "local_id": "e8",
+        "name": "Australian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The race held at Albert Park Circuit."
+      },
+      {
+        "local_id": "e9",
+        "name": "Albert Park Circuit",
+        "entity_type": "Circuit",
+        "description": "The venue for the Australian Grand Prix."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e4",
+        "target_id": "e7",
+        "relationship_type": "ENTERED",
+        "description": "HRT entered the 2012 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e4",
+        "relationship_type": "DROVE_FOR",
+        "description": "Pedro de la Rosa drove for HRT in the Australian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e6",
+        "target_id": "e4",
+        "relationship_type": "DROVE_FOR",
+        "description": "Narain Karthikeyan drove for HRT in the Australian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e8",
+        "target_id": "e7",
+        "relationship_type": "ROUND_OF",
+        "description": "The Australian Grand Prix is a round of the 2012 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e8",
+        "target_id": "e9",
+        "relationship_type": "HELD_AT",
+        "description": "The Australian Grand Prix is held at Albert Park Circuit.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

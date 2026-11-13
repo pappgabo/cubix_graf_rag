@@ -1,0 +1,103 @@
+{
+  "chunk_id": "driver-kimi-raikkonen#89",
+  "doc_id": "driver-kimi-raikkonen",
+  "document_title": "Kimi Räikkönen",
+  "section": "Formula One career > Alfa Romeo (2019–2021) > 2020",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "af5c93a6619b5503a3b780a80be02fd1dad23593bfa53598a1b707e32a426c51",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Kimi Räikkönen",
+        "entity_type": "Driver",
+        "description": "A Finnish racing driver who competed in Formula One."
+      },
+      {
+        "local_id": "e2",
+        "name": "Eifel Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula One race held at the Nürburgring."
+      },
+      {
+        "local_id": "e3",
+        "name": "Portuguese Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula One race held at the Algarve International Circuit."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Kimi Räikkönen at Eifel Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Räikkönen's 323rd Formula One race start at the Eifel Grand Prix."
+      },
+      {
+        "local_id": "rr2",
+        "name": "Kimi Räikkönen at Portuguese Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Räikkönen won the FIA Action of the Year award for his opening lap at the Portuguese Grand Prix."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Räikkönen's 323rd Formula One race start at the Eifel Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e2",
+        "relationship_type": "AT_RACE",
+        "description": "Räikkönen's 323rd Formula One race start at the Eifel Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr2",
+        "relationship_type": "ACHIEVED",
+        "description": "Räikkönen won the FIA Action of the Year award for his opening lap at the Portuguese Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr2",
+        "target_id": "e3",
+        "relationship_type": "AT_RACE",
+        "description": "Räikkönen won the FIA Action of the Year award for his opening lap at the Portuguese Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 3,
+  "entities_accepted": 5,
+  "entities_rejected": 0,
+  "relationship_candidates": 2,
+  "relationships_accepted": 4,
+  "relationships_rejected": 0,
+  "rejections": [],
+  "alignments": [
+    {
+      "index": 0,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e2; description kept"
+    },
+    {
+      "index": 1,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr2 -AT_RACE-> e3; description kept"
+    }
+  ]
+}

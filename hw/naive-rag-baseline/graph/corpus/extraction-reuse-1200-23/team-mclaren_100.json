@@ -1,0 +1,87 @@
+{
+  "chunk_id": "team-mclaren#100",
+  "doc_id": "team-mclaren",
+  "document_title": "McLaren",
+  "section": "Ownership and management",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "9ea9a75baff1c43e21e8825546d991dddcd76a45c251ce56a866f2937c95b6fb",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "McLaren",
+        "entity_type": "Team",
+        "description": "A Formula 1 team."
+      },
+      {
+        "local_id": "e2",
+        "name": "Éric Boullier",
+        "entity_type": "Driver",
+        "description": "Racing director of McLaren, responsible for the F1 team."
+      },
+      {
+        "local_id": "e3",
+        "name": "Zak Brown",
+        "entity_type": "Driver",
+        "description": "Group executive director of McLaren, focusing on the F1 team."
+      },
+      {
+        "local_id": "e4",
+        "name": "Gil de Ferran",
+        "entity_type": "Driver",
+        "description": "Sporting director at McLaren after Boullier's resignation."
+      },
+      {
+        "local_id": "e5",
+        "name": "Andrea Stella",
+        "entity_type": "Driver",
+        "description": "Performance director at McLaren after Boullier's resignation."
+      },
+      {
+        "local_id": "e6",
+        "name": "Andreas Seidl",
+        "entity_type": "Driver",
+        "description": "New team principal of McLaren appointed in May 2019."
+      }
+    ],
+    "relationships": []
+  },
+  "entity_candidates": 6,
+  "entities_accepted": 6,
+  "entities_rejected": 0,
+  "relationship_candidates": 5,
+  "relationships_accepted": 0,
+  "relationships_rejected": 5,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "DROVE_FOR does not allow Team -> Driver"
+    },
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "DROVE_FOR does not allow Team -> Driver"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "DROVE_FOR does not allow Team -> Driver"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "DROVE_FOR does not allow Team -> Driver"
+    },
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "DROVE_FOR does not allow Team -> Driver"
+    }
+  ],
+  "alignments": []
+}

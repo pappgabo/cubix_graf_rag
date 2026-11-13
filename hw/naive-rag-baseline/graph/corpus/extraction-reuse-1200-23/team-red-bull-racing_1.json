@@ -1,0 +1,273 @@
+{
+  "chunk_id": "team-red-bull-racing#1",
+  "doc_id": "team-red-bull-racing",
+  "document_title": "Red Bull Racing",
+  "section": null,
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "72230aff8899f282515744f06269d52a69fe5b6848db5f155071633009dda9f5",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Red Bull Racing",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that began using Honda engines in 2019."
+      },
+      {
+        "local_id": "e2",
+        "name": "Max Verstappen",
+        "entity_type": "Driver",
+        "description": "A Red Bull driver who won the World Drivers' Championship in 2021, 2022, 2023, and 2024."
+      },
+      {
+        "local_id": "e3",
+        "name": "Lando Norris",
+        "entity_type": "Driver",
+        "description": "A driver who won the World Drivers' Championship in 2025."
+      },
+      {
+        "local_id": "e4",
+        "name": "Mercedes-AMG Petronas Formula One Team",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that won the Constructors' Championship in 2021."
+      },
+      {
+        "local_id": "e5",
+        "name": "McLaren",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that won the Constructors' Championship in 2024 and 2025."
+      },
+      {
+        "local_id": "e6",
+        "name": "Honda",
+        "entity_type": "PowerUnit",
+        "description": "An engine supplier that partnered with Red Bull Racing until 2021."
+      },
+      {
+        "local_id": "e7",
+        "name": "Ford",
+        "entity_type": "PowerUnit",
+        "description": "An engine supplier that Red Bull Racing switched to in 2026."
+      },
+      {
+        "local_id": "e8",
+        "name": "World Drivers' Championship",
+        "entity_type": "Title",
+        "description": "A championship title won by Max Verstappen in 2021, 2022, 2023, and 2024."
+      },
+      {
+        "local_id": "e9",
+        "name": "Constructors' Championship",
+        "entity_type": "Title",
+        "description": "A championship title won by Red Bull Racing in 2022 and 2023."
+      },
+      {
+        "local_id": "e10",
+        "name": "2021",
+        "entity_type": "Season",
+        "description": "The season in which Max Verstappen won the World Drivers' Championship."
+      },
+      {
+        "local_id": "e11",
+        "name": "2022",
+        "entity_type": "Season",
+        "description": "The season in which Red Bull Racing won the Constructors' Championship."
+      },
+      {
+        "local_id": "e12",
+        "name": "2023",
+        "entity_type": "Season",
+        "description": "The season in which Max Verstappen won the World Drivers' Championship and Red Bull Racing won the Constructors' Championship."
+      },
+      {
+        "local_id": "e13",
+        "name": "2024",
+        "entity_type": "Season",
+        "description": "The season in which Max Verstappen won the World Drivers' Championship."
+      },
+      {
+        "local_id": "e14",
+        "name": "2025",
+        "entity_type": "Season",
+        "description": "The season in which Lando Norris won the World Drivers' Championship."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e10",
+        "relationship_type": "ENTERED",
+        "description": "Red Bull Racing entered the 2021 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e11",
+        "relationship_type": "ENTERED",
+        "description": "Red Bull Racing entered the 2022 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e12",
+        "relationship_type": "ENTERED",
+        "description": "Red Bull Racing entered the 2023 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e13",
+        "relationship_type": "ENTERED",
+        "description": "Red Bull Racing entered the 2024 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e14",
+        "relationship_type": "ENTERED",
+        "description": "Red Bull Racing entered the 2025 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e8",
+        "relationship_type": "WON",
+        "description": "Max Verstappen won the World Drivers' Championship in 2021.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e8",
+        "target_id": "e10",
+        "relationship_type": "AWARDED_IN",
+        "description": "Max Verstappen won the World Drivers' Championship in 2021.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e9",
+        "relationship_type": "WON",
+        "description": "Red Bull Racing won the Constructors' Championship in 2022.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e9",
+        "target_id": "e11",
+        "relationship_type": "AWARDED_IN",
+        "description": "Red Bull Racing won the Constructors' Championship in 2022.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 14,
+  "entities_accepted": 14,
+  "entities_rejected": 0,
+  "relationship_candidates": 16,
+  "relationships_accepted": 9,
+  "relationships_rejected": 9,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 7,
+      "reason": "WON is not temporal; from_year=2022, to_year=None, role=None cannot be stored without dropping them"
+    },
+    {
+      "element": "relationship",
+      "index": 8,
+      "reason": "WON is not temporal; from_year=2023, to_year=None, role=None cannot be stored without dropping them"
+    },
+    {
+      "element": "relationship",
+      "index": 9,
+      "reason": "WON is not temporal; from_year=2024, to_year=None, role=None cannot be stored without dropping them"
+    },
+    {
+      "element": "relationship",
+      "index": 11,
+      "reason": "WON is not temporal; from_year=2023, to_year=None, role=None cannot be stored without dropping them"
+    },
+    {
+      "element": "relationship",
+      "index": 12,
+      "reason": "WON is not temporal; from_year=2021, to_year=None, role=None cannot be stored without dropping them"
+    },
+    {
+      "element": "relationship",
+      "index": 13,
+      "reason": "WON is not temporal; from_year=2024, to_year=None, role=None cannot be stored without dropping them"
+    },
+    {
+      "element": "relationship",
+      "index": 14,
+      "reason": "WON is not temporal; from_year=2025, to_year=None, role=None cannot be stored without dropping them"
+    },
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "POWERED_BY does not allow Team -> PowerUnit"
+    },
+    {
+      "element": "relationship",
+      "index": 10,
+      "reason": "POWERED_BY does not allow Team -> PowerUnit"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 1,
+      "action": "clear_redundant_season_year",
+      "detail": "ENTERED year 2021 already named by Season 'e10'; from_year and to_year cleared"
+    },
+    {
+      "index": 2,
+      "action": "clear_redundant_season_year",
+      "detail": "ENTERED year 2022 already named by Season 'e11'; from_year and to_year cleared"
+    },
+    {
+      "index": 3,
+      "action": "clear_redundant_season_year",
+      "detail": "ENTERED year 2023 already named by Season 'e12'; from_year and to_year cleared"
+    },
+    {
+      "index": 4,
+      "action": "clear_redundant_season_year",
+      "detail": "ENTERED year 2024 already named by Season 'e13'; from_year and to_year cleared"
+    },
+    {
+      "index": 5,
+      "action": "clear_redundant_season_year",
+      "detail": "ENTERED year 2025 already named by Season 'e14'; from_year and to_year cleared"
+    },
+    {
+      "index": 6,
+      "action": "move_won_year",
+      "detail": "WON year 2021 stored as e8 -AWARDED_IN-> e10; from_year and to_year cleared; description kept"
+    },
+    {
+      "index": 10,
+      "action": "move_won_year",
+      "detail": "WON year 2022 stored as e9 -AWARDED_IN-> e11; from_year and to_year cleared; description kept"
+    }
+  ]
+}

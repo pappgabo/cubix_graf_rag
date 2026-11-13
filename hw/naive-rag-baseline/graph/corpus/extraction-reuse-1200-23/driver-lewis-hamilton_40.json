@@ -1,0 +1,62 @@
+{
+  "chunk_id": "driver-lewis-hamilton#40",
+  "doc_id": "driver-lewis-hamilton",
+  "document_title": "Lewis Hamilton",
+  "section": null,
+  "page": 8,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "105240eb3ae450e480b05f171c32c0419c948a3ffce3d52e988ad91840315092",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Lewis Hamilton",
+        "entity_type": "Driver",
+        "description": "Arguably the most complete Formula One driver ever. Won his seventh title in 2020."
+      },
+      {
+        "local_id": "e2",
+        "name": "2020",
+        "entity_type": "Season",
+        "description": "The season in which Lewis Hamilton won his seventh title."
+      },
+      {
+        "local_id": "e3",
+        "name": "Seventh title",
+        "entity_type": "Title",
+        "description": "Lewis Hamilton's seventh championship title."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e3",
+        "relationship_type": "WON",
+        "description": "Lewis Hamilton won his seventh title",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e2",
+        "relationship_type": "AWARDED_IN",
+        "description": "Seventh title awarded in the 2020 season",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 3,
+  "entities_accepted": 3,
+  "entities_rejected": 0,
+  "relationship_candidates": 2,
+  "relationships_accepted": 2,
+  "relationships_rejected": 0,
+  "rejections": [],
+  "alignments": []
+}

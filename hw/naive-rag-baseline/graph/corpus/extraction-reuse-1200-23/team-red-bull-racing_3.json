@@ -1,0 +1,98 @@
+{
+  "chunk_id": "team-red-bull-racing#3",
+  "doc_id": "team-red-bull-racing",
+  "document_title": "Red Bull Racing",
+  "section": "History > Origins",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "655b0b53cb3174f85424131d225adaa82559917585d7f7dc289977fad5ce3b63",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Red Bull Racing",
+        "entity_type": "Team",
+        "description": "The current Red Bull team traces its origins back to the Stewart Grand Prix outfit."
+      },
+      {
+        "local_id": "e2",
+        "name": "Stewart Grand Prix",
+        "entity_type": "Team",
+        "description": "The team that made its debut in 1997."
+      },
+      {
+        "local_id": "e3",
+        "name": "Jaguar Racing",
+        "entity_type": "Team",
+        "description": "The team rebranded from Stewart Grand Prix after being sold to Ford."
+      },
+      {
+        "local_id": "e4",
+        "name": "David Coulthard",
+        "entity_type": "Driver",
+        "description": "One of the drivers lined up for Red Bull Racing."
+      },
+      {
+        "local_id": "e5",
+        "name": "Christian Klien",
+        "entity_type": "Driver",
+        "description": "One of the drivers lined up for Red Bull Racing."
+      },
+      {
+        "local_id": "e6",
+        "name": "Cosworth",
+        "entity_type": "PowerUnit",
+        "description": "The engine developed for the 2005 chassis."
+      },
+      {
+        "local_id": "e7",
+        "name": "2005",
+        "entity_type": "Season",
+        "description": "The season when Red Bull Racing continued to have access to the Cosworth engine."
+      }
+    ],
+    "relationships": []
+  },
+  "entity_candidates": 7,
+  "entities_accepted": 7,
+  "entities_rejected": 0,
+  "relationship_candidates": 6,
+  "relationships_accepted": 0,
+  "relationships_rejected": 6,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "DROVE_FOR does not allow Team -> Team"
+    },
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "DROVE_FOR does not allow Team -> Team"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "DROVE_FOR does not allow Team -> Driver"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "DROVE_FOR does not allow Team -> Driver"
+    },
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "RACED_IN does not allow Team -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 5,
+      "reason": "POWERED_BY does not allow Team -> PowerUnit"
+    }
+  ],
+  "alignments": []
+}

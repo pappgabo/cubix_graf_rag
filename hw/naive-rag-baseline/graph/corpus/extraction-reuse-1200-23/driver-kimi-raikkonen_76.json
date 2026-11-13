@@ -1,0 +1,92 @@
+{
+  "chunk_id": "driver-kimi-raikkonen#76",
+  "doc_id": "driver-kimi-raikkonen",
+  "document_title": "Kimi Räikkönen",
+  "section": "Formula One career > Return to Ferrari (2014–2018) > 2015",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "cc1a1311092fc790502d9158134f0fab46fd85477248d342840dad2320dcae02",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Kimi Räikkönen",
+        "entity_type": "Driver",
+        "description": "A Finnish racing driver who competed in Formula One."
+      },
+      {
+        "local_id": "e2",
+        "name": "Scuderia Ferrari",
+        "entity_type": "Team",
+        "description": "An Italian Formula One team."
+      },
+      {
+        "local_id": "e3",
+        "name": "2016",
+        "entity_type": "Season",
+        "description": "The Formula One season in which Räikkönen extended his contract with Ferrari."
+      },
+      {
+        "local_id": "e4",
+        "name": "Spa",
+        "entity_type": "GrandPrix",
+        "description": "The Belgian Grand Prix where Räikkönen raced after his contract extension."
+      },
+      {
+        "local_id": "e5",
+        "name": "Seventh place",
+        "entity_type": "RaceResult",
+        "description": "Räikkönen's finishing position in the race at Spa."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Räikkönen extended his contract with Ferrari for the 2016 season.",
+        "from_year": null,
+        "to_year": 2016,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e4",
+        "relationship_type": "AT_RACE",
+        "description": "Räikkönen finished seventh at the Spa race.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e2",
+        "relationship_type": "FOR_TEAM",
+        "description": "Räikkönen's seventh place finish was for Ferrari.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e3",
+        "relationship_type": "ROUND_OF",
+        "description": "The Spa race was a round of the 2016 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 5,
+  "entities_accepted": 5,
+  "entities_rejected": 0,
+  "relationship_candidates": 4,
+  "relationships_accepted": 4,
+  "relationships_rejected": 0,
+  "rejections": [],
+  "alignments": []
+}

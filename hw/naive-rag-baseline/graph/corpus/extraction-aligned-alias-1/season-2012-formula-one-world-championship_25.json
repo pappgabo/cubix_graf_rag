@@ -1,0 +1,99 @@
+{
+  "chunk_id": "season-2012-formula-one-world-championship#25",
+  "doc_id": "season-2012-formula-one-world-championship",
+  "document_title": "2012 Formula One World Championship",
+  "section": "Teams and drivers > Driver changes",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/2012_Formula_One_World_Championship",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "c030a8e4b3248b8d8787871ae6da89c89c0ba4766a0959afe401d427bb76a0ec",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "DROVE_FOR does not allow Team -> Driver"
+    },
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "DROVE_FOR does not allow Team -> Driver"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "DROVE_FOR does not allow Team -> Driver"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "DROVE_FOR does not allow Team -> Driver"
+    },
+    {
+      "element": "relationship",
+      "index": 5,
+      "reason": "DROVE_FOR does not allow Driver -> Season"
+    }
+  ],
+  "alignments": [],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Scuderia Toro Rosso",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that entered cars."
+      },
+      {
+        "local_id": "e2",
+        "name": "Daniel Ricciardo",
+        "entity_type": "Driver",
+        "description": "A Formula 1 driver who replaced Jaime Alguersuari."
+      },
+      {
+        "local_id": "e3",
+        "name": "Jean-Éric Vergne",
+        "entity_type": "Driver",
+        "description": "A Formula 1 driver who replaced Sébastien Buemi."
+      },
+      {
+        "local_id": "e4",
+        "name": "Jaime Alguersuari",
+        "entity_type": "Driver",
+        "description": "A Formula 1 driver who was not retained by Scuderia Toro Rosso."
+      },
+      {
+        "local_id": "e5",
+        "name": "Sébastien Buemi",
+        "entity_type": "Driver",
+        "description": "A Formula 1 driver who was not retained by Scuderia Toro Rosso."
+      },
+      {
+        "local_id": "e6",
+        "name": "HRT",
+        "entity_type": "Team",
+        "description": "A Formula 1 team where Daniel Ricciardo served as a driver."
+      },
+      {
+        "local_id": "e7",
+        "name": "2011 Formula Renault 3.5 Series",
+        "entity_type": "Season",
+        "description": "A racing series where Jean-Éric Vergne was the runner-up."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e2",
+        "target_id": "e6",
+        "relationship_type": "DROVE_FOR",
+        "description": "Daniel Ricciardo served as a driver for HRT before joining Scuderia Toro Rosso.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

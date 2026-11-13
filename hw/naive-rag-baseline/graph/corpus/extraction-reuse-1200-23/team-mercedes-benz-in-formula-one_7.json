@@ -1,0 +1,109 @@
+{
+  "chunk_id": "team-mercedes-benz-in-formula-one#7",
+  "doc_id": "team-mercedes-benz-in-formula-one",
+  "document_title": "Mercedes-Benz in Formula One",
+  "section": "Mercedes-Benz in Formula One > Mercedes-AMG Petronas Formula One Team (2010–present)",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "254bbcdadbe1e4c2e4f8bff426e7783f845a03917cffa2066a81d6a5a1ba34ce",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Mercedes-AMG Petronas Formula One Team",
+        "entity_type": "Team",
+        "description": "Team Mercedes GP hired German drivers Nico Rosberg, and seven-time world champion Michael Schumacher, who returned to Formula One after a three-year absence, and Nick Heidfeld as the test and reserve driver."
+      },
+      {
+        "local_id": "e2",
+        "name": "Nico Rosberg",
+        "entity_type": "Driver",
+        "description": "Nico Rosberg finished on the podium three times, scoring third places at Sepang, Shanghai, and Silverstone."
+      },
+      {
+        "local_id": "e3",
+        "name": "Michael Schumacher",
+        "entity_type": "Driver",
+        "description": "Michael Schumacher had a disappointing return, being beaten by his teammate and finishing the season without a single race win, podium, pole position, or fastest lap for the first time since his début season in 1991."
+      },
+      {
+        "local_id": "e4",
+        "name": "Nick Heidfeld",
+        "entity_type": "Driver",
+        "description": "Nick Heidfeld was hired as the test and reserve driver."
+      },
+      {
+        "local_id": "e5",
+        "name": "2010",
+        "entity_type": "Season",
+        "description": "The team's performance during 2010 was not so competitive as under Brawn."
+      },
+      {
+        "local_id": "e6",
+        "name": "Sepang",
+        "entity_type": "GrandPrix",
+        "description": "Rosberg finished on the podium three times, scoring third places at Sepang."
+      },
+      {
+        "local_id": "e7",
+        "name": "Shanghai",
+        "entity_type": "GrandPrix",
+        "description": "Rosberg finished on the podium three times, scoring third places at Shanghai."
+      },
+      {
+        "local_id": "e8",
+        "name": "Silverstone",
+        "entity_type": "GrandPrix",
+        "description": "Rosberg finished on the podium three times, scoring third places at Silverstone."
+      }
+    ],
+    "relationships": []
+  },
+  "entity_candidates": 8,
+  "entities_accepted": 8,
+  "entities_rejected": 0,
+  "relationship_candidates": 7,
+  "relationships_accepted": 0,
+  "relationships_rejected": 7,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "DROVE_FOR does not allow Team -> Driver"
+    },
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "DROVE_FOR does not allow Team -> Driver"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "DROVE_FOR does not allow Team -> Driver"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "ACHIEVED does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "AT_RACE does not allow Driver -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 5,
+      "reason": "AT_RACE does not allow Driver -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 6,
+      "reason": "AT_RACE does not allow Driver -> GrandPrix"
+    }
+  ],
+  "alignments": []
+}

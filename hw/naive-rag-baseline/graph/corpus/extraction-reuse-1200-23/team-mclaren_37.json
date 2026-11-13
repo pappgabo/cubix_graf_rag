@@ -1,0 +1,225 @@
+{
+  "chunk_id": "team-mclaren#37",
+  "doc_id": "team-mclaren",
+  "document_title": "McLaren",
+  "section": "1995–2014: First Mercedes partnership > 1995–2009: Factory Mercedes partnership",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "56ee875ef77ebfd839f053453e6a0be37a84d84aadef2b985e036824c5905b25",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Lewis Hamilton",
+        "entity_type": "Driver",
+        "description": "Hamilton won five times in 2008 and clinched his first Drivers' Championship."
+      },
+      {
+        "local_id": "e2",
+        "name": "Felipe Massa",
+        "entity_type": "Driver",
+        "description": "Massa was a competitor in the 2008 season."
+      },
+      {
+        "local_id": "e3",
+        "name": "Kimi Räikkönen",
+        "entity_type": "Driver",
+        "description": "Räikkönen was a competitor in the 2008 season."
+      },
+      {
+        "local_id": "e4",
+        "name": "Heikki Kovalainen",
+        "entity_type": "Driver",
+        "description": "Kovalainen finished the 2008 season seventh in the overall standings."
+      },
+      {
+        "local_id": "e5",
+        "name": "McLaren",
+        "entity_type": "Team",
+        "description": "McLaren was the team for which Hamilton and Kovalainen raced."
+      },
+      {
+        "local_id": "e6",
+        "name": "2008",
+        "entity_type": "Season",
+        "description": "The season in which Hamilton won his first Drivers' Championship."
+      },
+      {
+        "local_id": "e7",
+        "name": "Belgian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "Hamilton crossed the finish line first but was demoted to third due to an illegal advantage."
+      },
+      {
+        "local_id": "e8",
+        "name": "Brazilian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The final race of the 2008 season where Hamilton clinched his championship."
+      },
+      {
+        "local_id": "e9",
+        "name": "MP4-24",
+        "entity_type": "Car",
+        "description": "The car used by McLaren in the 2009 season."
+      },
+      {
+        "local_id": "e10",
+        "name": "2009",
+        "entity_type": "Season",
+        "description": "The season that started badly for McLaren with the MP4-24 car."
+      },
+      {
+        "local_id": "e11",
+        "name": "Australian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "One of the races where McLaren was given a three-race suspended ban."
+      },
+      {
+        "local_id": "e12",
+        "name": "Malaysian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "Another race where McLaren was given a three-race suspended ban."
+      },
+      {
+        "local_id": "e13",
+        "name": "Hungarian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "Hamilton won this race in 2009."
+      },
+      {
+        "local_id": "e14",
+        "name": "Singapore Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "Hamilton won this race in 2009."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e5",
+        "relationship_type": "DROVE_FOR",
+        "description": "Hamilton raced for McLaren in 2008 and 2009.",
+        "from_year": 2008,
+        "to_year": 2009,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e5",
+        "relationship_type": "DROVE_FOR",
+        "description": "Kovalainen raced for McLaren in 2008.",
+        "from_year": 2008,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e6",
+        "relationship_type": "ENTERED",
+        "description": "McLaren took part in the 2008 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e10",
+        "relationship_type": "ENTERED",
+        "description": "McLaren took part in the 2009 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e7",
+        "target_id": "e6",
+        "relationship_type": "ROUND_OF",
+        "description": "The Belgian Grand Prix was a round of the 2008 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e8",
+        "target_id": "e6",
+        "relationship_type": "ROUND_OF",
+        "description": "The Brazilian Grand Prix was a round of the 2008 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e9",
+        "target_id": "e10",
+        "relationship_type": "RACED_IN",
+        "description": "The MP4-24 car took part in the 2009 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 14,
+  "entities_accepted": 14,
+  "entities_rejected": 0,
+  "relationship_candidates": 12,
+  "relationships_accepted": 7,
+  "relationships_rejected": 5,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 10,
+      "reason": "ACHIEVED Driver -> GrandPrix has from_year=2009, to_year=2009, role=None; the year or role cannot be stored on the reified result"
+    },
+    {
+      "element": "relationship",
+      "index": 11,
+      "reason": "ACHIEVED Driver -> GrandPrix has from_year=2009, to_year=2009, role=None; the year or role cannot be stored on the reified result"
+    },
+    {
+      "element": "relationship",
+      "index": 7,
+      "reason": "WON does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 8,
+      "reason": "FIELDED does not allow Season -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 9,
+      "reason": "FIELDED does not allow Season -> GrandPrix"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 2,
+      "action": "clear_redundant_season_year",
+      "detail": "ENTERED year 2008 already named by Season 'e6'; from_year and to_year cleared"
+    },
+    {
+      "index": 3,
+      "action": "clear_redundant_season_year",
+      "detail": "ENTERED year 2009 already named by Season 'e10'; from_year and to_year cleared"
+    },
+    {
+      "index": 4,
+      "action": "clear_redundant_season_year",
+      "detail": "ROUND_OF year 2008 already named by Season 'e6'; from_year and to_year cleared"
+    },
+    {
+      "index": 5,
+      "action": "clear_redundant_season_year",
+      "detail": "ROUND_OF year 2008 already named by Season 'e6'; from_year and to_year cleared"
+    },
+    {
+      "index": 6,
+      "action": "clear_redundant_season_year",
+      "detail": "RACED_IN year 2009 already named by Season 'e10'; from_year and to_year cleared"
+    }
+  ]
+}

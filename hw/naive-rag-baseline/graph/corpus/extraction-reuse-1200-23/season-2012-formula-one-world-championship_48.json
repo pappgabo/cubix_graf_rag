@@ -1,0 +1,131 @@
+{
+  "chunk_id": "season-2012-formula-one-world-championship#48",
+  "doc_id": "season-2012-formula-one-world-championship",
+  "document_title": "2012 Formula One World Championship",
+  "section": "Race summaries > Mid-season test – Mugello",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "6c3f1f585d21990bd76fcbbcf35b92cbb5d26569a9139bbbcc0714e4f2b68f6c",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Mugello Circuit",
+        "entity_type": "Circuit",
+        "description": "A racing venue in Italy where the mid-season test took place."
+      },
+      {
+        "local_id": "e2",
+        "name": "HRT",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that chose not to participate in the mid-season test."
+      },
+      {
+        "local_id": "e3",
+        "name": "Lotus",
+        "entity_type": "Team",
+        "description": "A Formula 1 team whose trackside operations director questioned the value of the test."
+      },
+      {
+        "local_id": "e4",
+        "name": "Red Bull Racing",
+        "entity_type": "Team",
+        "description": "A Formula 1 team whose driver and principal criticized the mid-season test."
+      },
+      {
+        "local_id": "e5",
+        "name": "Caterham",
+        "entity_type": "Team",
+        "description": "A Formula 1 team whose driver criticized the choice of Mugello as a testing venue."
+      },
+      {
+        "local_id": "e6",
+        "name": "Mark Webber",
+        "entity_type": "Driver",
+        "description": "A driver for Red Bull Racing who questioned the value of testing at Mugello."
+      },
+      {
+        "local_id": "e7",
+        "name": "Vitaly Petrov",
+        "entity_type": "Driver",
+        "description": "A driver for Caterham who criticized the safety of the Mugello circuit."
+      },
+      {
+        "local_id": "e8",
+        "name": "Fernando Alonso",
+        "entity_type": "Driver",
+        "description": "A driver who crashed on the final morning of the test."
+      },
+      {
+        "local_id": "e9",
+        "name": "Christian Horner",
+        "entity_type": "Driver",
+        "description": "The principal of Red Bull Racing who criticized the mid-season test."
+      },
+      {
+        "local_id": "e10",
+        "name": "Éric Boullier",
+        "entity_type": "Driver",
+        "description": "The principal of Lotus who criticized the mid-season test."
+      }
+    ],
+    "relationships": []
+  },
+  "entity_candidates": 10,
+  "entities_accepted": 10,
+  "entities_rejected": 0,
+  "relationship_candidates": 9,
+  "relationships_accepted": 0,
+  "relationships_rejected": 9,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "HELD_AT does not allow Team -> Circuit"
+    },
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "HELD_AT does not allow Team -> Circuit"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "HELD_AT does not allow Team -> Circuit"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "HELD_AT does not allow Team -> Circuit"
+    },
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "TEAMMATE_OF does not allow Driver -> Team"
+    },
+    {
+      "element": "relationship",
+      "index": 5,
+      "reason": "TEAMMATE_OF does not allow Driver -> Team"
+    },
+    {
+      "element": "relationship",
+      "index": 6,
+      "reason": "HELD_AT does not allow Driver -> Circuit"
+    },
+    {
+      "element": "relationship",
+      "index": 7,
+      "reason": "TEAMMATE_OF does not allow Driver -> Team"
+    },
+    {
+      "element": "relationship",
+      "index": 8,
+      "reason": "TEAMMATE_OF does not allow Driver -> Team"
+    }
+  ],
+  "alignments": []
+}

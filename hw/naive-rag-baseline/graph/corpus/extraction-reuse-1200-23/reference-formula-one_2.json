@@ -1,0 +1,71 @@
+{
+  "chunk_id": "reference-formula-one#2",
+  "doc_id": "reference-formula-one",
+  "document_title": "Formula One",
+  "section": "Formula One > History",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "8101fe678b926b880aa5a059c5b00f998d0ecc4f822d15084b46895392ff37c8",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Formula One",
+        "entity_type": "Season",
+        "description": "The World Championship that commenced in 1950."
+      },
+      {
+        "local_id": "e2",
+        "name": "1946 Turin Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The first Grand Prix in accordance with the new regulations."
+      },
+      {
+        "local_id": "e3",
+        "name": "1946",
+        "entity_type": "Season",
+        "description": "The year Formula One was agreed upon to officially become effective."
+      },
+      {
+        "local_id": "e4",
+        "name": "World Manufacturers' Championship",
+        "entity_type": "Title",
+        "description": "A championship from 1925 to 1927."
+      },
+      {
+        "local_id": "e5",
+        "name": "European Drivers' Championship",
+        "entity_type": "Title",
+        "description": "A championship from 1931 to 1939."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e2",
+        "target_id": "e1",
+        "relationship_type": "ROUND_OF",
+        "description": "The 1946 Turin Grand Prix is a round of the Formula One season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 5,
+  "entities_accepted": 5,
+  "entities_rejected": 0,
+  "relationship_candidates": 2,
+  "relationships_accepted": 1,
+  "relationships_rejected": 1,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "AWARDED_IN does not allow Season -> Season"
+    }
+  ],
+  "alignments": []
+}

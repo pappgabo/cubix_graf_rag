@@ -1,0 +1,272 @@
+{
+  "chunk_id": "season-2020-formula-one-world-championship#8",
+  "doc_id": "season-2020-formula-one-world-championship",
+  "document_title": "2020 Formula One World Championship",
+  "section": "2020 Formula One World Championship > Mid-season changes",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "bd5befa06f0c38a0a131e3d812ea46ad5b5a61f133ed393b1cea7caa602bfc18",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Sergio Pérez",
+        "entity_type": "Driver",
+        "description": "Racing Point driver who tested positive for COVID-19."
+      },
+      {
+        "local_id": "e2",
+        "name": "Nico Hülkenberg",
+        "entity_type": "Driver",
+        "description": "Replaced Sergio Pérez for the British Grand Prix and 70th Anniversary Grand Prix."
+      },
+      {
+        "local_id": "e3",
+        "name": "Lance Stroll",
+        "entity_type": "Driver",
+        "description": "Racing Point teammate of Sergio Pérez who tested positive for COVID-19."
+      },
+      {
+        "local_id": "e4",
+        "name": "Racing Point",
+        "entity_type": "Team",
+        "description": "Formula One team that Sergio Pérez and Lance Stroll drove for."
+      },
+      {
+        "local_id": "e5",
+        "name": "British Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "Race where Sergio Pérez tested positive for COVID-19."
+      },
+      {
+        "local_id": "e6",
+        "name": "70th Anniversary Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "Race where Nico Hülkenberg replaced Sergio Pérez."
+      },
+      {
+        "local_id": "e7",
+        "name": "Eifel Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "Race where Lance Stroll tested positive for COVID-19."
+      },
+      {
+        "local_id": "e8",
+        "name": "Spanish Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "Race where Sergio Pérez returned after testing negative for COVID-19."
+      },
+      {
+        "local_id": "e9",
+        "name": "Force India",
+        "entity_type": "Team",
+        "description": "Predecessor team of Racing Point where Nico Hülkenberg raced."
+      },
+      {
+        "local_id": "e10",
+        "name": "2012",
+        "entity_type": "Season",
+        "description": "Year when Nico Hülkenberg raced for Force India."
+      },
+      {
+        "local_id": "e11",
+        "name": "2014",
+        "entity_type": "Season",
+        "description": "Year when Nico Hülkenberg raced for Force India."
+      },
+      {
+        "local_id": "e12",
+        "name": "2016",
+        "entity_type": "Season",
+        "description": "Year when Nico Hülkenberg raced for Force India."
+      },
+      {
+        "local_id": "e13",
+        "name": "2019",
+        "entity_type": "Season",
+        "description": "Year when Nico Hülkenberg last raced in Formula One at the Abu Dhabi Grand Prix."
+      },
+      {
+        "local_id": "e14",
+        "name": "Abu Dhabi Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "Race where Nico Hülkenberg last raced in Formula One."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Nico Hülkenberg at British Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Nico Hülkenberg replaced Sergio Pérez at the British Grand Prix."
+      },
+      {
+        "local_id": "rr2",
+        "name": "Nico Hülkenberg at 70th Anniversary Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Nico Hülkenberg replaced Sergio Pérez at the 70th Anniversary Grand Prix."
+      },
+      {
+        "local_id": "rr3",
+        "name": "Lance Stroll at Eifel Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Lance Stroll tested positive for COVID-19 at the Eifel Grand Prix."
+      },
+      {
+        "local_id": "rr4",
+        "name": "Sergio Pérez at Spanish Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Sergio Pérez returned to compete in the Spanish Grand Prix after testing negative for COVID-19."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e2",
+        "target_id": "e4",
+        "relationship_type": "DROVE_FOR",
+        "description": "Nico Hülkenberg drove for Racing Point.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Nico Hülkenberg replaced Sergio Pérez at the British Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e5",
+        "relationship_type": "AT_RACE",
+        "description": "Nico Hülkenberg replaced Sergio Pérez at the British Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "rr2",
+        "relationship_type": "ACHIEVED",
+        "description": "Nico Hülkenberg replaced Sergio Pérez at the 70th Anniversary Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr2",
+        "target_id": "e6",
+        "relationship_type": "AT_RACE",
+        "description": "Nico Hülkenberg replaced Sergio Pérez at the 70th Anniversary Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "rr3",
+        "relationship_type": "ACHIEVED",
+        "description": "Lance Stroll tested positive for COVID-19 at the Eifel Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr3",
+        "target_id": "e7",
+        "relationship_type": "AT_RACE",
+        "description": "Lance Stroll tested positive for COVID-19 at the Eifel Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr4",
+        "relationship_type": "ACHIEVED",
+        "description": "Sergio Pérez returned to compete in the Spanish Grand Prix after testing negative for COVID-19.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr4",
+        "target_id": "e8",
+        "relationship_type": "AT_RACE",
+        "description": "Sergio Pérez returned to compete in the Spanish Grand Prix after testing negative for COVID-19.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 14,
+  "entities_accepted": 18,
+  "entities_rejected": 0,
+  "relationship_candidates": 12,
+  "relationships_accepted": 9,
+  "relationships_rejected": 7,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "DROVE_FOR does not allow Team -> Driver"
+    },
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "DROVE_FOR does not allow Team -> Driver"
+    },
+    {
+      "element": "relationship",
+      "index": 11,
+      "reason": "FIELDED does not allow Team -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 12,
+      "reason": "FIELDED does not allow Team -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 13,
+      "reason": "FIELDED does not allow Team -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 14,
+      "reason": "FIELDED does not allow Team -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 15,
+      "reason": "FIELDED does not allow Team -> GrandPrix"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 3,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e5; description kept"
+    },
+    {
+      "index": 4,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr2 -AT_RACE-> e6; description kept"
+    },
+    {
+      "index": 5,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr3 -AT_RACE-> e7; description kept"
+    },
+    {
+      "index": 6,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr4 -AT_RACE-> e8; description kept"
+    }
+  ]
+}

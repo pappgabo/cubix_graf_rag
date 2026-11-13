@@ -1,0 +1,118 @@
+{
+  "chunk_id": "driver-jenson-button#50",
+  "doc_id": "driver-jenson-button",
+  "document_title": "Jenson Button",
+  "section": "Other racing ventures",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "64c4f732ac24960734404137f9bfdad1e0603a22463cf5545a22a202ac2c9b43",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Jenson Button",
+        "entity_type": "Driver",
+        "description": "Button was invited to the Race of Champions six times and drove off-road races in a Rocket Motorsports-entered truck."
+      },
+      {
+        "local_id": "e2",
+        "name": "Race of Champions",
+        "entity_type": "GrandPrix",
+        "description": "An event where Button participated six times."
+      },
+      {
+        "local_id": "e3",
+        "name": "Team Autosport",
+        "entity_type": "Team",
+        "description": "Button reached the semi-finals of the Nations Cup with Andy Priaulx for this team."
+      },
+      {
+        "local_id": "e4",
+        "name": "Rocket Motorsports",
+        "entity_type": "Team",
+        "description": "The team that entered Button's off-road races."
+      },
+      {
+        "local_id": "e5",
+        "name": "Brenthel Industries Spec 6100 TT",
+        "entity_type": "Car",
+        "description": "The type of truck Button drove in off-road races."
+      },
+      {
+        "local_id": "e6",
+        "name": "Baja 1000",
+        "entity_type": "GrandPrix",
+        "description": "An off-road race that Button participated in."
+      },
+      {
+        "local_id": "e7",
+        "name": "Mint 400",
+        "entity_type": "GrandPrix",
+        "description": "An off-road race where Button finished no higher than the top-20."
+      },
+      {
+        "local_id": "e8",
+        "name": "Vegas to Reno",
+        "entity_type": "GrandPrix",
+        "description": "An off-road race where Button had a retirement."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e3",
+        "relationship_type": "DROVE_FOR",
+        "description": "Button drove for Team Autosport in the Race of Champions.",
+        "from_year": 2007,
+        "to_year": 2008,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e4",
+        "relationship_type": "DROVE_FOR",
+        "description": "Button drove for Rocket Motorsports in off-road races.",
+        "from_year": 2019,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 8,
+  "entities_accepted": 8,
+  "entities_rejected": 0,
+  "relationship_candidates": 7,
+  "relationships_accepted": 2,
+  "relationships_rejected": 5,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "RACED_IN does not allow Driver -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "FIELDED does not allow Car -> Team"
+    },
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "HELD_AT does not allow GrandPrix -> Team"
+    },
+    {
+      "element": "relationship",
+      "index": 5,
+      "reason": "HELD_AT does not allow GrandPrix -> Team"
+    },
+    {
+      "element": "relationship",
+      "index": 6,
+      "reason": "HELD_AT does not allow GrandPrix -> Team"
+    }
+  ],
+  "alignments": []
+}

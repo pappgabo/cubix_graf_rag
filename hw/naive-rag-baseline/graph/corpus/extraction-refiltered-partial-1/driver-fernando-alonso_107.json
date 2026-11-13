@@ -1,0 +1,114 @@
+{
+  "chunk_id": "driver-fernando-alonso#107",
+  "doc_id": "driver-fernando-alonso",
+  "document_title": "Fernando Alonso",
+  "section": "Off-road racing",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/Fernando_Alonso",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "f0cc846ea8111ad0d602ab5e6df8cdce06ca5a20e3a4c894921a44c78a5525fb",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "ACHIEVED does not allow Driver -> GrandPrix"
+    }
+  ],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Fernando Alonso",
+        "entity_type": "Driver",
+        "description": "A Formula One driver who entered the Dakar Rally with Toyota in 2020."
+      },
+      {
+        "local_id": "e2",
+        "name": "Toyota",
+        "entity_type": "Team",
+        "description": "The team with which Fernando Alonso entered the Dakar Rally in 2020."
+      },
+      {
+        "local_id": "e3",
+        "name": "2020",
+        "entity_type": "Season",
+        "description": "The season in which Fernando Alonso entered the Dakar Rally."
+      },
+      {
+        "local_id": "e4",
+        "name": "Al Ula–Neom Rally",
+        "entity_type": "GrandPrix",
+        "description": "A rally event in which Fernando Alonso participated."
+      },
+      {
+        "local_id": "e5",
+        "name": "Marc Coma",
+        "entity_type": "Driver",
+        "description": "Co-driver for Fernando Alonso during the Dakar Rally preparation."
+      },
+      {
+        "local_id": "e6",
+        "name": "Lichtenburg 400",
+        "entity_type": "GrandPrix",
+        "description": "A rally event in South Africa where Fernando Alonso raced."
+      },
+      {
+        "local_id": "e7",
+        "name": "Rally du Maroc",
+        "entity_type": "GrandPrix",
+        "description": "A rally event in Morocco where Fernando Alonso raced."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Fernando Alonso entered the Dakar Rally with Toyota.",
+        "from_year": 2020,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e3",
+        "relationship_type": "ROUND_OF",
+        "description": "The Al Ula–Neom Rally is a round of the 2020 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e6",
+        "target_id": "e3",
+        "relationship_type": "ROUND_OF",
+        "description": "The Lichtenburg 400 is a round of the 2020 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e7",
+        "target_id": "e3",
+        "relationship_type": "ROUND_OF",
+        "description": "The Rally du Maroc is a round of the 2020 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e5",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Marc Coma was co-driver for Fernando Alonso during the Dakar Rally preparation.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

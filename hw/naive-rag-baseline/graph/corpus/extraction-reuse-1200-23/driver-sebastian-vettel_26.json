@@ -1,0 +1,193 @@
+{
+  "chunk_id": "driver-sebastian-vettel#26",
+  "doc_id": "driver-sebastian-vettel",
+  "document_title": "Sebastian Vettel",
+  "section": "2013: Record-breaking season earns fourth world title",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "40f7e1fbc27b2605eb3fd7a4b3fb36cfd2d705c512540537c0ad81cf34b98dc3",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Sebastian Vettel",
+        "entity_type": "Driver",
+        "description": "A Formula One driver who won his fourth world title in 2013."
+      },
+      {
+        "local_id": "e2",
+        "name": "Red Bull Racing",
+        "entity_type": "Team",
+        "description": "The team for which Sebastian Vettel drove during his championship-winning season."
+      },
+      {
+        "local_id": "e3",
+        "name": "2013",
+        "entity_type": "Season",
+        "description": "The Formula One season in which Sebastian Vettel won his fourth world title."
+      },
+      {
+        "local_id": "e4",
+        "name": "Indian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The race where Sebastian Vettel sealed his fourth world title."
+      },
+      {
+        "local_id": "e5",
+        "name": "Bahrain",
+        "entity_type": "GrandPrix",
+        "description": "A race where Sebastian Vettel won during the 2013 season."
+      },
+      {
+        "local_id": "e6",
+        "name": "Canada",
+        "entity_type": "GrandPrix",
+        "description": "A race where Sebastian Vettel won during the 2013 season."
+      },
+      {
+        "local_id": "e7",
+        "name": "British Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A race where Sebastian Vettel faced a gearbox failure."
+      },
+      {
+        "local_id": "e8",
+        "name": "Germany",
+        "entity_type": "GrandPrix",
+        "description": "Sebastian Vettel's home race which he won for the first time in 2013."
+      },
+      {
+        "local_id": "e9",
+        "name": "Hungary",
+        "entity_type": "GrandPrix",
+        "description": "A race where Sebastian Vettel finished third."
+      },
+      {
+        "local_id": "e10",
+        "name": "Singapore",
+        "entity_type": "GrandPrix",
+        "description": "A race where Sebastian Vettel achieved a grand slam."
+      },
+      {
+        "local_id": "e11",
+        "name": "Korea",
+        "entity_type": "GrandPrix",
+        "description": "A race where Sebastian Vettel achieved a grand slam."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Sebastian Vettel drove for Red Bull Racing during the 2013 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e3",
+        "relationship_type": "ENTERED",
+        "description": "Red Bull Racing entered the 2013 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e3",
+        "relationship_type": "ROUND_OF",
+        "description": "The Indian Grand Prix is a round of the 2013 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e3",
+        "relationship_type": "ROUND_OF",
+        "description": "The Bahrain Grand Prix is a round of the 2013 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e6",
+        "target_id": "e3",
+        "relationship_type": "ROUND_OF",
+        "description": "The Canadian Grand Prix is a round of the 2013 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e7",
+        "target_id": "e3",
+        "relationship_type": "ROUND_OF",
+        "description": "The British Grand Prix is a round of the 2013 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e8",
+        "target_id": "e3",
+        "relationship_type": "ROUND_OF",
+        "description": "The German Grand Prix is a round of the 2013 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e9",
+        "target_id": "e3",
+        "relationship_type": "ROUND_OF",
+        "description": "The Hungarian Grand Prix is a round of the 2013 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e10",
+        "target_id": "e3",
+        "relationship_type": "ROUND_OF",
+        "description": "The Singapore Grand Prix is a round of the 2013 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e11",
+        "target_id": "e3",
+        "relationship_type": "ROUND_OF",
+        "description": "The Korean Grand Prix is a round of the 2013 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 11,
+  "entities_accepted": 11,
+  "entities_rejected": 0,
+  "relationship_candidates": 12,
+  "relationships_accepted": 10,
+  "relationships_rejected": 2,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 10,
+      "reason": "WON does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 11,
+      "reason": "AWARDED_IN does not allow Season -> Season"
+    }
+  ],
+  "alignments": []
+}

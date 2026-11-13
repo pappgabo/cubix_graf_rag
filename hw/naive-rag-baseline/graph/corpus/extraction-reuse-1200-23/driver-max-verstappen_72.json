@@ -1,0 +1,92 @@
+{
+  "chunk_id": "driver-max-verstappen#72",
+  "doc_id": "driver-max-verstappen",
+  "document_title": "Max Verstappen",
+  "section": null,
+  "page": 14,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "904cbd4ea6a06b20767c7ab4e9dd0fa8962556c2e5a01671f5ad2b2fbf4dedc0",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Max Verstappen",
+        "entity_type": "Driver",
+        "description": "A Formula One driver known for competing in sim racing."
+      },
+      {
+        "local_id": "e2",
+        "name": "Team Redline",
+        "entity_type": "Team",
+        "description": "A European professional sim racing team."
+      },
+      {
+        "local_id": "e3",
+        "name": "Verstappen Sim Racing",
+        "entity_type": "Team",
+        "description": "An esports organization rebranded from Team Redline, serving as a driver development pathway."
+      },
+      {
+        "local_id": "e4",
+        "name": "Red Bull Racing",
+        "entity_type": "Team",
+        "description": "A Formula One team for which Max Verstappen races."
+      },
+      {
+        "local_id": "e5",
+        "name": "2024",
+        "entity_type": "Season",
+        "description": "A Formula One season in which Verstappen participated."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Max Verstappen was a member of Team Redline.",
+        "from_year": 2015,
+        "to_year": 2026,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e3",
+        "relationship_type": "DROVE_FOR",
+        "description": "Max Verstappen absorbed Team Redline into his project, rebranding it to Verstappen Sim Racing.",
+        "from_year": 2026,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e4",
+        "relationship_type": "DROVE_FOR",
+        "description": "Max Verstappen races for Red Bull Racing.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e5",
+        "relationship_type": "ENTERED",
+        "description": "Verstappen Sim Racing participated in the 2024 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 5,
+  "entities_accepted": 5,
+  "entities_rejected": 0,
+  "relationship_candidates": 4,
+  "relationships_accepted": 4,
+  "relationships_rejected": 0,
+  "rejections": [],
+  "alignments": []
+}

@@ -1,0 +1,89 @@
+{
+  "chunk_id": "team-mclaren#4",
+  "doc_id": "team-mclaren",
+  "document_title": "McLaren",
+  "section": "Background",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "9aa0c20efeb9eeb54a1fc9e06c25f0010f1ce83d98aa081254ff5f3aa248b406",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "McLaren",
+        "entity_type": "Team",
+        "description": "A Formula 1 team based in Woking, England."
+      },
+      {
+        "local_id": "e2",
+        "name": "Bruce McLaren",
+        "entity_type": "Driver",
+        "description": "A driver who raced for his own team in sports car races and Grands Prix."
+      },
+      {
+        "local_id": "e3",
+        "name": "1966",
+        "entity_type": "Season",
+        "description": "A Formula 1 championship season."
+      },
+      {
+        "local_id": "e4",
+        "name": "Monaco Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula 1 race held in Monaco."
+      },
+      {
+        "local_id": "e5",
+        "name": "McLaren M2B",
+        "entity_type": "Car",
+        "description": "The first Formula One car raced by McLaren."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e2",
+        "target_id": "e1",
+        "relationship_type": "DROVE_FOR",
+        "description": "Bruce McLaren drove for his own team.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e3",
+        "relationship_type": "RACED_IN",
+        "description": "The McLaren M2B participated in the 1966 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e3",
+        "relationship_type": "ENTERED",
+        "description": "McLaren entered the 1966 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 5,
+  "entities_accepted": 5,
+  "entities_rejected": 0,
+  "relationship_candidates": 4,
+  "relationships_accepted": 3,
+  "relationships_rejected": 1,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "HELD_AT does not allow Car -> GrandPrix"
+    }
+  ],
+  "alignments": []
+}

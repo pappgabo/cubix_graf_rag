@@ -1,0 +1,85 @@
+{
+  "chunk_id": "driver-sebastian-vettel#12",
+  "doc_id": "driver-sebastian-vettel",
+  "document_title": "Sebastian Vettel",
+  "section": "Karting (1995–2002)",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/Sebastian_Vettel",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "1a75a07aeb5358882b7ba47e4e332bb83d230051a5a8fc4f2cd552043d466d76",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "RACED_IN does not allow Driver -> Season"
+    }
+  ],
+  "alignments": [],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Sebastian Vettel",
+        "entity_type": "Driver",
+        "description": "Vettel began karting at the age of three, and began racing in karts series in 1995 at the age of eight."
+      },
+      {
+        "local_id": "e2",
+        "name": "Red Bull Junior Team",
+        "entity_type": "Team",
+        "description": "Vettel was accepted into the Red Bull Junior Team in 1998."
+      },
+      {
+        "local_id": "e3",
+        "name": "Junior Monaco Kart Cup",
+        "entity_type": "Title",
+        "description": "Vettel won the Junior Monaco Kart Cup in 2001."
+      },
+      {
+        "local_id": "e4",
+        "name": "1995",
+        "entity_type": "Season",
+        "description": "Vettel began racing in karts series in 1995."
+      },
+      {
+        "local_id": "e5",
+        "name": "2001",
+        "entity_type": "Season",
+        "description": "Vettel won various titles, such as the Junior Monaco Kart Cup in 2001."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Vettel was accepted into the Red Bull Junior Team.",
+        "from_year": 1998,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e3",
+        "relationship_type": "WON",
+        "description": "Vettel won the Junior Monaco Kart Cup.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e5",
+        "relationship_type": "AWARDED_IN",
+        "description": "The Junior Monaco Kart Cup title was awarded in 2001.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

@@ -1,0 +1,212 @@
+{
+  "chunk_id": "team-red-bull-racing#74",
+  "doc_id": "team-red-bull-racing",
+  "document_title": "Red Bull Racing",
+  "section": "2025 season",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "91fc97aa45bfc42fe642159a476e0779a4e03d9a49afd4442fb1be311379c11d",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Red Bull Racing",
+        "entity_type": "Team",
+        "description": "A Formula 1 team."
+      },
+      {
+        "local_id": "e2",
+        "name": "Max Verstappen",
+        "entity_type": "Driver",
+        "description": "A Formula 1 driver who was in title contention in the 2025 season."
+      },
+      {
+        "local_id": "e3",
+        "name": "Lando Norris",
+        "entity_type": "Driver",
+        "description": "The title victor in the 2025 season."
+      },
+      {
+        "local_id": "e4",
+        "name": "Yuki Tsunoda",
+        "entity_type": "Driver",
+        "description": "A Formula 1 driver who was demoted to a reserve driver role after the 2025 season."
+      },
+      {
+        "local_id": "e5",
+        "name": "2025",
+        "entity_type": "Season",
+        "description": "The Formula 1 championship season."
+      },
+      {
+        "local_id": "e6",
+        "name": "British Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula 1 race that took place in the 2025 season."
+      },
+      {
+        "local_id": "e7",
+        "name": "Qatar Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula 1 race that took place in the 2025 season."
+      },
+      {
+        "local_id": "e8",
+        "name": "Abu Dhabi Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula 1 race that took place in the 2025 season."
+      },
+      {
+        "local_id": "e9",
+        "name": "Italy",
+        "entity_type": "GrandPrix",
+        "description": "A Formula 1 race that took place in the 2025 season."
+      },
+      {
+        "local_id": "e10",
+        "name": "Azerbaijan",
+        "entity_type": "GrandPrix",
+        "description": "A Formula 1 race that took place in the 2025 season."
+      },
+      {
+        "local_id": "e11",
+        "name": "Austin",
+        "entity_type": "GrandPrix",
+        "description": "A Formula 1 race that took place in the 2025 season."
+      },
+      {
+        "local_id": "e12",
+        "name": "Las Vegas",
+        "entity_type": "GrandPrix",
+        "description": "A Formula 1 race that took place in the 2025 season."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Max Verstappen at Qatar Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Max Verstappen achieved a result in the Qatar Grand Prix."
+      },
+      {
+        "local_id": "rr2",
+        "name": "Max Verstappen at Abu Dhabi Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Max Verstappen achieved a result in the Abu Dhabi Grand Prix."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e5",
+        "relationship_type": "ENTERED",
+        "description": "Red Bull Racing took part in the 2025 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Max Verstappen achieved a result in the Qatar Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e7",
+        "relationship_type": "AT_RACE",
+        "description": "Max Verstappen achieved a result in the Qatar Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "rr2",
+        "relationship_type": "ACHIEVED",
+        "description": "Max Verstappen achieved a result in the Abu Dhabi Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr2",
+        "target_id": "e8",
+        "relationship_type": "AT_RACE",
+        "description": "Max Verstappen achieved a result in the Abu Dhabi Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 12,
+  "entities_accepted": 14,
+  "entities_rejected": 0,
+  "relationship_candidates": 12,
+  "relationships_accepted": 5,
+  "relationships_rejected": 9,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "ROUND_OF does not allow Team -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "ROUND_OF does not allow Team -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "ROUND_OF does not allow Team -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "ROUND_OF does not allow Team -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 5,
+      "reason": "ROUND_OF does not allow Team -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 6,
+      "reason": "ROUND_OF does not allow Team -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 7,
+      "reason": "ROUND_OF does not allow Team -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 8,
+      "reason": "WON does not allow Driver -> Driver"
+    },
+    {
+      "element": "relationship",
+      "index": 13,
+      "reason": "DROVE_FOR does not allow Driver -> Season"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 9,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e7; description kept"
+    },
+    {
+      "index": 10,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr2 -AT_RACE-> e8; description kept"
+    }
+  ]
+}

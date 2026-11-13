@@ -1,0 +1,109 @@
+{
+  "chunk_id": "driver-sebastian-vettel#59",
+  "doc_id": "driver-sebastian-vettel",
+  "document_title": "Sebastian Vettel",
+  "section": "Race of Champions",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "4720ee638f32d3cbc646afefc68676e6c708e605079b12bb5c5cb814685fb837",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Sebastian Vettel",
+        "entity_type": "Driver",
+        "description": "A German racing driver who competed in Formula One."
+      },
+      {
+        "local_id": "e2",
+        "name": "Michael Schumacher",
+        "entity_type": "Driver",
+        "description": "A German racing driver who competed in Formula One."
+      },
+      {
+        "local_id": "e3",
+        "name": "Nico Hülkenberg",
+        "entity_type": "Driver",
+        "description": "A German racing driver who competed in Formula One."
+      },
+      {
+        "local_id": "e4",
+        "name": "Tom Kristensen",
+        "entity_type": "Driver",
+        "description": "A Danish racing driver known for his endurance racing."
+      },
+      {
+        "local_id": "e5",
+        "name": "Pascal Wehrlein",
+        "entity_type": "Driver",
+        "description": "A German racing driver who competed in Formula One."
+      },
+      {
+        "local_id": "e6",
+        "name": "Mick Schumacher",
+        "entity_type": "Driver",
+        "description": "A German racing driver and son of Michael Schumacher."
+      },
+      {
+        "local_id": "e7",
+        "name": "Sébastien Loeb",
+        "entity_type": "Driver",
+        "description": "A French rally driver and multiple World Rally Champion."
+      },
+      {
+        "local_id": "e8",
+        "name": "Race of Champions",
+        "entity_type": "GrandPrix",
+        "description": "An annual motorsport event featuring various racing drivers."
+      }
+    ],
+    "relationships": []
+  },
+  "entity_candidates": 8,
+  "entities_accepted": 8,
+  "entities_rejected": 0,
+  "relationship_candidates": 7,
+  "relationships_accepted": 0,
+  "relationships_rejected": 7,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "TEAMMATE_OF is not temporal; from_year=2008, to_year=2012, role=None cannot be stored without dropping them"
+    },
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "ACHIEVED Driver -> GrandPrix has from_year=2015, to_year=None, role=None; the year or role cannot be stored on the reified result"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "ACHIEVED Driver -> GrandPrix has from_year=2017, to_year=None, role=None; the year or role cannot be stored on the reified result"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "ACHIEVED Driver -> GrandPrix has from_year=2019, to_year=None, role=None; the year or role cannot be stored on the reified result"
+    },
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "ACHIEVED Driver -> GrandPrix has from_year=2022, to_year=None, role=None; the year or role cannot be stored on the reified result"
+    },
+    {
+      "element": "relationship",
+      "index": 5,
+      "reason": "ACHIEVED Driver -> GrandPrix has from_year=2023, to_year=None, role=None; the year or role cannot be stored on the reified result"
+    },
+    {
+      "element": "relationship",
+      "index": 6,
+      "reason": "ACHIEVED Driver -> GrandPrix has from_year=2025, to_year=None, role=None; the year or role cannot be stored on the reified result"
+    }
+  ],
+  "alignments": []
+}

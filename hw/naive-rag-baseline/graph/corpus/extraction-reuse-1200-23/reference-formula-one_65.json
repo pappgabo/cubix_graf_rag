@@ -1,0 +1,109 @@
+{
+  "chunk_id": "reference-formula-one#65",
+  "doc_id": "reference-formula-one",
+  "document_title": "Formula One",
+  "section": "Formula One > Environmental impact",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "dde36b5d2a4ec93075af21bc96459190f6b2239111a0a3bc3eb21461e884ef36",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Formula One",
+        "entity_type": "Team",
+        "description": "Formula One is a motorsport series."
+      },
+      {
+        "local_id": "e2",
+        "name": "FIA",
+        "entity_type": "Team",
+        "description": "The FIA is the governing body for motorsport."
+      },
+      {
+        "local_id": "e3",
+        "name": "2021",
+        "entity_type": "Season",
+        "description": "The 2021 Formula One season."
+      },
+      {
+        "local_id": "e4",
+        "name": "2025",
+        "entity_type": "Season",
+        "description": "The 2025 Formula One season."
+      },
+      {
+        "local_id": "e5",
+        "name": "2026",
+        "entity_type": "Season",
+        "description": "The 2026 Formula One season."
+      },
+      {
+        "local_id": "e6",
+        "name": "E10 fuel",
+        "entity_type": "PowerUnit",
+        "description": "A type of fuel used in Formula One cars starting from the 2021 season."
+      },
+      {
+        "local_id": "e7",
+        "name": "100% sustainable fuel",
+        "entity_type": "PowerUnit",
+        "description": "A fuel developed by the FIA for use in Formula One from 2025 or 2026."
+      },
+      {
+        "local_id": "e8",
+        "name": "2019",
+        "entity_type": "Season",
+        "description": "The 2019 Formula One season."
+      }
+    ],
+    "relationships": []
+  },
+  "entity_candidates": 8,
+  "entities_accepted": 8,
+  "entities_rejected": 0,
+  "relationship_candidates": 7,
+  "relationships_accepted": 0,
+  "relationships_rejected": 7,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "RACED_IN does not allow Team -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "RACED_IN does not allow Team -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "RACED_IN does not allow Team -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "RACED_IN does not allow Team -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "POWERED_BY does not allow Team -> PowerUnit"
+    },
+    {
+      "element": "relationship",
+      "index": 5,
+      "reason": "DROVE_FOR does not allow Team -> Team"
+    },
+    {
+      "element": "relationship",
+      "index": 6,
+      "reason": "POWERED_BY does not allow Team -> PowerUnit"
+    }
+  ],
+  "alignments": []
+}

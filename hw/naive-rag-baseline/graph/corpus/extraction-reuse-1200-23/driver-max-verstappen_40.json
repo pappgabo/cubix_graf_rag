@@ -1,0 +1,305 @@
+{
+  "chunk_id": "driver-max-verstappen#40",
+  "doc_id": "driver-max-verstappen",
+  "document_title": "Max Verstappen",
+  "section": null,
+  "page": 8,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "58cb09eff39ad6bab81fc01fca91cd52ca3617bd81b5e68234cf3a7cff89ccb9",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Max Verstappen",
+        "entity_type": "Driver",
+        "description": "A Formula One driver who won the championship with 454 points."
+      },
+      {
+        "local_id": "e2",
+        "name": "Red Bull Racing",
+        "entity_type": "Team",
+        "description": "A Formula One team that Verstappen drives for."
+      },
+      {
+        "local_id": "e3",
+        "name": "2023",
+        "entity_type": "Season",
+        "description": "The championship year in which Verstappen won his third title."
+      },
+      {
+        "local_id": "e4",
+        "name": "São Paulo Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Grand Prix where Verstappen finished sixth."
+      },
+      {
+        "local_id": "e5",
+        "name": "Abu Dhabi Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The season-ending Grand Prix where Verstappen won."
+      },
+      {
+        "local_id": "e6",
+        "name": "Bahrain Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The Grand Prix where Verstappen won from pole at the start of the 2023 season."
+      },
+      {
+        "local_id": "e7",
+        "name": "Saudi Arabian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The Grand Prix where Verstappen had a driveshaft failure in qualifying."
+      },
+      {
+        "local_id": "e8",
+        "name": "Australian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The Grand Prix where Verstappen won from pole."
+      },
+      {
+        "local_id": "e9",
+        "name": "Azerbaijan Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The Grand Prix where Verstappen finished second to his teammate Pérez."
+      },
+      {
+        "local_id": "e10",
+        "name": "Sergio Pérez",
+        "entity_type": "Driver",
+        "description": "Verstappen's teammate at Red Bull."
+      },
+      {
+        "local_id": "e11",
+        "name": "Lewis Hamilton",
+        "entity_type": "Driver",
+        "description": "A rival driver who Verstappen collided with at the São Paulo Grand Prix."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Max Verstappen at São Paulo Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Verstappen finished sixth at the São Paulo Grand Prix."
+      },
+      {
+        "local_id": "rr2",
+        "name": "Max Verstappen at Abu Dhabi Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Verstappen won the Abu Dhabi Grand Prix."
+      },
+      {
+        "local_id": "rr3",
+        "name": "Max Verstappen at Bahrain Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Verstappen won the Bahrain Grand Prix from pole."
+      },
+      {
+        "local_id": "rr4",
+        "name": "Max Verstappen at Saudi Arabian Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Verstappen finished second at the Saudi Arabian Grand Prix."
+      },
+      {
+        "local_id": "rr5",
+        "name": "Max Verstappen at Australian Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Verstappen won the Australian Grand Prix from pole."
+      },
+      {
+        "local_id": "rr6",
+        "name": "Max Verstappen at Azerbaijan Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Verstappen finished second at the Azerbaijan Grand Prix."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Verstappen drives for Red Bull.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Verstappen finished sixth at the São Paulo Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e4",
+        "relationship_type": "AT_RACE",
+        "description": "Verstappen finished sixth at the São Paulo Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr2",
+        "relationship_type": "ACHIEVED",
+        "description": "Verstappen won the Abu Dhabi Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr2",
+        "target_id": "e5",
+        "relationship_type": "AT_RACE",
+        "description": "Verstappen won the Abu Dhabi Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr3",
+        "relationship_type": "ACHIEVED",
+        "description": "Verstappen won the Bahrain Grand Prix from pole.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr3",
+        "target_id": "e6",
+        "relationship_type": "AT_RACE",
+        "description": "Verstappen won the Bahrain Grand Prix from pole.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr4",
+        "relationship_type": "ACHIEVED",
+        "description": "Verstappen finished second at the Saudi Arabian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr4",
+        "target_id": "e7",
+        "relationship_type": "AT_RACE",
+        "description": "Verstappen finished second at the Saudi Arabian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr5",
+        "relationship_type": "ACHIEVED",
+        "description": "Verstappen won the Australian Grand Prix from pole.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr5",
+        "target_id": "e8",
+        "relationship_type": "AT_RACE",
+        "description": "Verstappen won the Australian Grand Prix from pole.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr6",
+        "relationship_type": "ACHIEVED",
+        "description": "Verstappen finished second at the Azerbaijan Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr6",
+        "target_id": "e9",
+        "relationship_type": "AT_RACE",
+        "description": "Verstappen finished second at the Azerbaijan Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e10",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Verstappen is teammates with Sergio Pérez at Red Bull.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e11",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Verstappen collided with Lewis Hamilton at the São Paulo Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 11,
+  "entities_accepted": 17,
+  "entities_rejected": 0,
+  "relationship_candidates": 11,
+  "relationships_accepted": 15,
+  "relationships_rejected": 2,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "WON does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "AWARDED_IN does not allow Season -> Season"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 3,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e4; description kept"
+    },
+    {
+      "index": 4,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr2 -AT_RACE-> e5; description kept"
+    },
+    {
+      "index": 5,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr3 -AT_RACE-> e6; description kept"
+    },
+    {
+      "index": 6,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr4 -AT_RACE-> e7; description kept"
+    },
+    {
+      "index": 7,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr5 -AT_RACE-> e8; description kept"
+    },
+    {
+      "index": 8,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr6 -AT_RACE-> e9; description kept"
+    }
+  ]
+}

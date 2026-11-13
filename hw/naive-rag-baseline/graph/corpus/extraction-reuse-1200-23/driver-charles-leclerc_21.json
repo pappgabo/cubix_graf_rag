@@ -1,0 +1,162 @@
+{
+  "chunk_id": "driver-charles-leclerc#21",
+  "doc_id": "driver-charles-leclerc",
+  "document_title": "Charles Leclerc",
+  "section": "Charles Leclerc > Sauber (2018)",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "7be58fc537ca8dd570812f3e4d978b6c055b984958e6758f4ece4585c6e7862f",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Charles Leclerc",
+        "entity_type": "Driver",
+        "description": "A full-time driver for Sauber in 2018."
+      },
+      {
+        "local_id": "e2",
+        "name": "Sauber",
+        "entity_type": "Team",
+        "description": "Formula One team that Charles Leclerc signed for in 2018."
+      },
+      {
+        "local_id": "e3",
+        "name": "2018",
+        "entity_type": "Season",
+        "description": "The season in which Charles Leclerc competed for Sauber."
+      },
+      {
+        "local_id": "e4",
+        "name": "Australian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "Leclerc's debut race in Formula One."
+      },
+      {
+        "local_id": "e5",
+        "name": "Azerbaijan Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The race where Leclerc scored his first points."
+      },
+      {
+        "local_id": "e6",
+        "name": "Spanish Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The race where Leclerc scored another point."
+      },
+      {
+        "local_id": "e7",
+        "name": "Monaco Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "Leclerc's first home Grand Prix."
+      },
+      {
+        "local_id": "e8",
+        "name": "Brendon Hartley",
+        "entity_type": "Driver",
+        "description": "Driver involved in the collision with Leclerc at the Monaco Grand Prix."
+      },
+      {
+        "local_id": "e9",
+        "name": "Esteban Ocon",
+        "entity_type": "Driver",
+        "description": "Driver involved in the collision with Leclerc in Hungary."
+      },
+      {
+        "local_id": "e10",
+        "name": "Sergio Pérez",
+        "entity_type": "Driver",
+        "description": "Driver involved in the collision with Leclerc in Hungary."
+      },
+      {
+        "local_id": "e11",
+        "name": "Louis Chiron",
+        "entity_type": "Driver",
+        "description": "The last Monégasque driver to score points in Formula One before Leclerc."
+      },
+      {
+        "local_id": "e12",
+        "name": "Olivier Beretta",
+        "entity_type": "Driver",
+        "description": "The last Monégasque driver to compete in Formula One before Leclerc."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Leclerc signed for Sauber as a full-time driver.",
+        "from_year": 2018,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e3",
+        "relationship_type": "ENTERED",
+        "description": "Sauber took part in the 2018 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 12,
+  "entities_accepted": 12,
+  "entities_rejected": 0,
+  "relationship_candidates": 11,
+  "relationships_accepted": 2,
+  "relationships_rejected": 9,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "ACHIEVED does not allow GrandPrix -> Driver"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "ACHIEVED does not allow GrandPrix -> Driver"
+    },
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "ACHIEVED does not allow GrandPrix -> Driver"
+    },
+    {
+      "element": "relationship",
+      "index": 5,
+      "reason": "ACHIEVED does not allow GrandPrix -> Driver"
+    },
+    {
+      "element": "relationship",
+      "index": 6,
+      "reason": "ACHIEVED does not allow Driver -> Driver"
+    },
+    {
+      "element": "relationship",
+      "index": 7,
+      "reason": "ACHIEVED does not allow Driver -> Driver"
+    },
+    {
+      "element": "relationship",
+      "index": 8,
+      "reason": "ACHIEVED does not allow Driver -> Driver"
+    },
+    {
+      "element": "relationship",
+      "index": 9,
+      "reason": "ACHIEVED does not allow Driver -> Driver"
+    },
+    {
+      "element": "relationship",
+      "index": 10,
+      "reason": "ACHIEVED does not allow Driver -> Driver"
+    }
+  ],
+  "alignments": []
+}

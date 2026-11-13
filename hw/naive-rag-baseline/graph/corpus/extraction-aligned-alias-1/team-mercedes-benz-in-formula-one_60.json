@@ -1,0 +1,79 @@
+{
+  "chunk_id": "team-mercedes-benz-in-formula-one#60",
+  "doc_id": "team-mercedes-benz-in-formula-one",
+  "document_title": "Mercedes-Benz in Formula One",
+  "section": "Mercedes-Benz in Formula One > Struggling with ground effect (2022–2025)",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/Mercedes-Benz_in_Formula_One",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "0928f4d4485826b86d1166cf7b509bacfa6758a966614bb1d28347382f73658f",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "rejections": [],
+  "alignments": [
+    {
+      "index": 0,
+      "action": "clear_redundant_season_year",
+      "detail": "ENTERED year 2023 already named by Season 'e4'; from_year and to_year cleared"
+    }
+  ],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Mercedes-AMG Petronas Formula One Team",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that enters cars."
+      },
+      {
+        "local_id": "e2",
+        "name": "Mike Elliott",
+        "entity_type": "Driver",
+        "description": "Technical Director who was replaced."
+      },
+      {
+        "local_id": "e3",
+        "name": "James Allison",
+        "entity_type": "Driver",
+        "description": "Technical Director who replaced Mike Elliott."
+      },
+      {
+        "local_id": "e4",
+        "name": "2023",
+        "entity_type": "Season",
+        "description": "A championship year."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e4",
+        "relationship_type": "ENTERED",
+        "description": "Mercedes entered the 2023 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e1",
+        "relationship_type": "DROVE_FOR",
+        "description": "Mike Elliott was the Technical Director for Mercedes.",
+        "from_year": null,
+        "to_year": null,
+        "role": "Technical Director"
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e1",
+        "relationship_type": "DROVE_FOR",
+        "description": "James Allison became the Technical Director for Mercedes after replacing Mike Elliott.",
+        "from_year": 2023,
+        "to_year": null,
+        "role": "Technical Director"
+      }
+    ]
+  }
+}

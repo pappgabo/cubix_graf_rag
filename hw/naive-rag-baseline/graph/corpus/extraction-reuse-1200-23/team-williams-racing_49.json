@@ -1,0 +1,101 @@
+{
+  "chunk_id": "team-williams-racing#49",
+  "doc_id": "team-williams-racing",
+  "document_title": "Williams Racing",
+  "section": "Williams Racing > 1995 season",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "e4993a2c3e2438afc730642d4ab0e65259d8117d48615a98f0321ed760686113",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Williams",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that entered cars."
+      },
+      {
+        "local_id": "e2",
+        "name": "Renault",
+        "entity_type": "PowerUnit",
+        "description": "An engine supplier for Williams."
+      },
+      {
+        "local_id": "e3",
+        "name": "1995",
+        "entity_type": "Season",
+        "description": "The Formula 1 championship season."
+      },
+      {
+        "local_id": "e4",
+        "name": "Michael Schumacher",
+        "entity_type": "Driver",
+        "description": "Defending world champion in 1995."
+      },
+      {
+        "local_id": "e5",
+        "name": "Ligier",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that previously ran Renault engines."
+      },
+      {
+        "local_id": "e6",
+        "name": "Benetton",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that received factory support from Renault."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e6",
+        "target_id": "e3",
+        "relationship_type": "ENTERED",
+        "description": "Benetton took part in the 1995 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e3",
+        "relationship_type": "ENTERED",
+        "description": "Ligier took part in the 1995 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 6,
+  "entities_accepted": 6,
+  "entities_rejected": 0,
+  "relationship_candidates": 6,
+  "relationships_accepted": 2,
+  "relationships_rejected": 4,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "POWERED_BY does not allow Team -> PowerUnit"
+    },
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "POWERED_BY does not allow Team -> PowerUnit"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "POWERED_BY does not allow Team -> PowerUnit"
+    },
+    {
+      "element": "relationship",
+      "index": 5,
+      "reason": "WON does not allow Driver -> Season"
+    }
+  ],
+  "alignments": []
+}

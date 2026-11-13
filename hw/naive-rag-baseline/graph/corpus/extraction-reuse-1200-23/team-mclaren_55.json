@@ -1,0 +1,180 @@
+{
+  "chunk_id": "team-mclaren#55",
+  "doc_id": "team-mclaren",
+  "document_title": "McLaren",
+  "section": "2021–present: Return to Mercedes engines > 2021–2023: Continued spells in the midfield",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "83f1827ec61ce442aaa6d23487dd5a8702a7799a558a143f97c904df6c08f49c",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Daniel Ricciardo",
+        "entity_type": "Driver",
+        "description": "At the 2021 Italian Grand Prix, Ricciardo scored his first win since the 2018 Monaco Grand Prix."
+      },
+      {
+        "local_id": "e2",
+        "name": "Lando Norris",
+        "entity_type": "Driver",
+        "description": "A second-place finish for Norris at the 2021 Italian Grand Prix."
+      },
+      {
+        "local_id": "e3",
+        "name": "McLaren",
+        "entity_type": "Team",
+        "description": "Achieved their first one-two finish since the 2010 Canadian Grand Prix at the 2021 Italian Grand Prix."
+      },
+      {
+        "local_id": "e4",
+        "name": "2021",
+        "entity_type": "Season",
+        "description": "The season in which McLaren achieved their first one-two finish."
+      },
+      {
+        "local_id": "e5",
+        "name": "2021 Italian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "Ricciardo scored his first win and McLaren's first win since 2012."
+      },
+      {
+        "local_id": "e6",
+        "name": "2021 Russian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "Norris secured the team's first pole position in the hybrid era."
+      },
+      {
+        "local_id": "e7",
+        "name": "2021 Constructors' Championship",
+        "entity_type": "Season",
+        "description": "McLaren ended up fourth in the constructors' championship behind Ferrari."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Daniel Ricciardo at 2021 Italian Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Ricciardo scored his first win at the 2021 Italian Grand Prix."
+      },
+      {
+        "local_id": "rr2",
+        "name": "Lando Norris at 2021 Italian Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Norris finished second at the 2021 Italian Grand Prix."
+      },
+      {
+        "local_id": "rr3",
+        "name": "Lando Norris at 2021 Russian Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Norris secured the team's first pole position at the 2021 Russian Grand Prix."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Ricciardo scored his first win at the 2021 Italian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e5",
+        "relationship_type": "AT_RACE",
+        "description": "Ricciardo scored his first win at the 2021 Italian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "rr2",
+        "relationship_type": "ACHIEVED",
+        "description": "Norris finished second at the 2021 Italian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr2",
+        "target_id": "e5",
+        "relationship_type": "AT_RACE",
+        "description": "Norris finished second at the 2021 Italian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e4",
+        "relationship_type": "ENTERED",
+        "description": "McLaren ended up fourth in the constructors' championship in the 2021 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "rr3",
+        "relationship_type": "ACHIEVED",
+        "description": "Norris secured the team's first pole position at the 2021 Russian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr3",
+        "target_id": "e6",
+        "relationship_type": "AT_RACE",
+        "description": "Norris secured the team's first pole position at the 2021 Russian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e7",
+        "relationship_type": "ENTERED",
+        "description": "McLaren ended up fourth in the constructors' championship behind Ferrari.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 7,
+  "entities_accepted": 10,
+  "entities_rejected": 0,
+  "relationship_candidates": 6,
+  "relationships_accepted": 8,
+  "relationships_rejected": 1,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "FOR_TEAM does not allow Team -> GrandPrix"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 0,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e5; description kept"
+    },
+    {
+      "index": 1,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr2 -AT_RACE-> e5; description kept"
+    },
+    {
+      "index": 4,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr3 -AT_RACE-> e6; description kept"
+    }
+  ]
+}

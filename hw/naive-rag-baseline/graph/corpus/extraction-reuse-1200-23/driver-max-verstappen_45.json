@@ -1,0 +1,250 @@
+{
+  "chunk_id": "driver-max-verstappen#45",
+  "doc_id": "driver-max-verstappen",
+  "document_title": "Max Verstappen",
+  "section": null,
+  "page": 9,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "bd67db502c1e724e3f063eb5df1d1992cd80251e98dad2bd69a1afeb5df9a426",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Max Verstappen",
+        "entity_type": "Driver",
+        "description": "A Formula One driver known for his competitive racing."
+      },
+      {
+        "local_id": "e2",
+        "name": "George Russell",
+        "entity_type": "Driver",
+        "description": "A Formula One driver who competed against Verstappen."
+      },
+      {
+        "local_id": "e3",
+        "name": "Lando Norris",
+        "entity_type": "Driver",
+        "description": "A Formula One driver who competed against Verstappen."
+      },
+      {
+        "local_id": "e4",
+        "name": "RB20",
+        "entity_type": "Car",
+        "description": "The car model driven by Max Verstappen."
+      },
+      {
+        "local_id": "e5",
+        "name": "2024",
+        "entity_type": "Season",
+        "description": "The Formula One season in which Verstappen achieved multiple wins."
+      },
+      {
+        "local_id": "e6",
+        "name": "Monaco Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula One race where Verstappen finished sixth."
+      },
+      {
+        "local_id": "e7",
+        "name": "Canadian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula One race where Verstappen claimed his 60th race win."
+      },
+      {
+        "local_id": "e8",
+        "name": "Spanish Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula One race where Verstappen won for the seventh time in 2024."
+      },
+      {
+        "local_id": "e9",
+        "name": "Austrian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula One race where Verstappen finished fifth after a collision."
+      },
+      {
+        "local_id": "e10",
+        "name": "British Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula One race where Verstappen finished after passing Norris."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Max Verstappen at Canadian Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Verstappen claimed his 60th race win at the Canadian Grand Prix."
+      },
+      {
+        "local_id": "rr2",
+        "name": "Max Verstappen at Spanish Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Verstappen won the Spanish Grand Prix for the seventh time in 2024."
+      },
+      {
+        "local_id": "rr3",
+        "name": "Max Verstappen at Austrian Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Verstappen finished fifth at the Austrian Grand Prix."
+      },
+      {
+        "local_id": "rr4",
+        "name": "Max Verstappen at British Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Verstappen finished at the British Grand Prix after passing Norris."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Verstappen claimed his 60th race win at the Canadian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e7",
+        "relationship_type": "AT_RACE",
+        "description": "Verstappen claimed his 60th race win at the Canadian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e7",
+        "target_id": "e5",
+        "relationship_type": "ROUND_OF",
+        "description": "The Canadian Grand Prix is a round of the 2024 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr2",
+        "relationship_type": "ACHIEVED",
+        "description": "Verstappen won the Spanish Grand Prix for the seventh time in 2024.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr2",
+        "target_id": "e8",
+        "relationship_type": "AT_RACE",
+        "description": "Verstappen won the Spanish Grand Prix for the seventh time in 2024.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e8",
+        "target_id": "e5",
+        "relationship_type": "ROUND_OF",
+        "description": "The Spanish Grand Prix is a round of the 2024 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr3",
+        "relationship_type": "ACHIEVED",
+        "description": "Verstappen finished fifth at the Austrian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr3",
+        "target_id": "e9",
+        "relationship_type": "AT_RACE",
+        "description": "Verstappen finished fifth at the Austrian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e9",
+        "target_id": "e5",
+        "relationship_type": "ROUND_OF",
+        "description": "The Austrian Grand Prix is a round of the 2024 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr4",
+        "relationship_type": "ACHIEVED",
+        "description": "Verstappen finished at the British Grand Prix after passing Norris.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr4",
+        "target_id": "e10",
+        "relationship_type": "AT_RACE",
+        "description": "Verstappen finished at the British Grand Prix after passing Norris.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e10",
+        "target_id": "e5",
+        "relationship_type": "ROUND_OF",
+        "description": "The British Grand Prix is a round of the 2024 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 10,
+  "entities_accepted": 14,
+  "entities_rejected": 0,
+  "relationship_candidates": 10,
+  "relationships_accepted": 12,
+  "relationships_rejected": 2,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "DROVE_FOR does not allow Driver -> Car"
+    },
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "RACED_IN does not allow Driver -> Season"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 2,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e7; description kept"
+    },
+    {
+      "index": 4,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr2 -AT_RACE-> e8; description kept"
+    },
+    {
+      "index": 6,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr3 -AT_RACE-> e9; description kept"
+    },
+    {
+      "index": 8,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr4 -AT_RACE-> e10; description kept"
+    }
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "chunk_id": "team-renault-in-formula-one#53",
+  "doc_id": "team-renault-in-formula-one",
+  "document_title": "Renault in Formula One",
+  "section": "Engine supplier (1983–2025) > Original turbo era (1983–1986)",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "46c3e19052aada2cc8f7561a4abbb8b2ea5874e3c2814a6b325918087c8953e1",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Renault",
+        "entity_type": "Team",
+        "description": "Renault works team ended participation in Formula One but continued as an engine supplier."
+      },
+      {
+        "local_id": "e2",
+        "name": "Ligier",
+        "entity_type": "Team",
+        "description": "Customer team supplied with Renault engines."
+      },
+      {
+        "local_id": "e3",
+        "name": "Tyrrell",
+        "entity_type": "Team",
+        "description": "Customer team supplied with Renault engines."
+      },
+      {
+        "local_id": "e4",
+        "name": "Lotus",
+        "entity_type": "Team",
+        "description": "Customer team supplied with Renault engines."
+      },
+      {
+        "local_id": "e5",
+        "name": "EF15B",
+        "entity_type": "PowerUnit",
+        "description": "Engine introduced by Renault in 1986."
+      },
+      {
+        "local_id": "e6",
+        "name": "1986",
+        "entity_type": "Season",
+        "description": "Season in which Renault stopped its engine program."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e6",
+        "relationship_type": "ENTERED",
+        "description": "Renault ended its engine program at the end of the 1986 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 6,
+  "entities_accepted": 6,
+  "entities_rejected": 0,
+  "relationship_candidates": 5,
+  "relationships_accepted": 1,
+  "relationships_rejected": 4,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "POWERED_BY does not allow Team -> Team"
+    },
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "POWERED_BY does not allow Team -> Team"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "POWERED_BY does not allow Team -> Team"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "RACED_IN does not allow PowerUnit -> Season"
+    }
+  ],
+  "alignments": []
+}

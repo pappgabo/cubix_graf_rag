@@ -1,0 +1,233 @@
+{
+  "chunk_id": "season-2016-formula-one-world-championship#27",
+  "doc_id": "season-2016-formula-one-world-championship",
+  "document_title": "2016 Formula One World Championship",
+  "section": "Opening rounds",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "36824ef1bad4443cdc51162a997f4e8b947ae109fe7fad8b0b3938469e7e2db2",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Fernando Alonso",
+        "entity_type": "Driver",
+        "description": "Ruled out of taking part in the Bahrain race on medical grounds due to broken ribs and a pneumothorax."
+      },
+      {
+        "local_id": "e2",
+        "name": "Stoffel Vandoorne",
+        "entity_type": "Driver",
+        "description": "Replaced Fernando Alonso in the Bahrain race."
+      },
+      {
+        "local_id": "e3",
+        "name": "Lewis Hamilton",
+        "entity_type": "Driver",
+        "description": "Secured pole position in Bahrain."
+      },
+      {
+        "local_id": "e4",
+        "name": "Nico Rosberg",
+        "entity_type": "Driver",
+        "description": "Took his second consecutive victory in Bahrain."
+      },
+      {
+        "local_id": "e5",
+        "name": "Kimi Räikkönen",
+        "entity_type": "Driver",
+        "description": "Finished second in the Bahrain race."
+      },
+      {
+        "local_id": "e6",
+        "name": "Sebastian Vettel",
+        "entity_type": "Driver",
+        "description": "Retired before the Bahrain race started due to engine failure."
+      },
+      {
+        "local_id": "e7",
+        "name": "Jolyon Palmer",
+        "entity_type": "Driver",
+        "description": "Retired before the Bahrain race started due to hydraulics failure."
+      },
+      {
+        "local_id": "e8",
+        "name": "Valtteri Bottas",
+        "entity_type": "Driver",
+        "description": "Was penalised after a first-lap collision with Hamilton."
+      },
+      {
+        "local_id": "e9",
+        "name": "2016 Formula One World Championship",
+        "entity_type": "Season",
+        "description": "The championship season in which the Bahrain race took place."
+      },
+      {
+        "local_id": "e10",
+        "name": "Bahrain Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The race where Rosberg took his second consecutive victory."
+      },
+      {
+        "local_id": "e11",
+        "name": "Bahrain International Circuit",
+        "entity_type": "Circuit",
+        "description": "The circuit where the Bahrain Grand Prix is held."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Nico Rosberg at Bahrain Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Rosberg recorded a result in the Bahrain Grand Prix."
+      },
+      {
+        "local_id": "rr2",
+        "name": "Sebastian Vettel at Bahrain Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Sebastian Vettel recorded a result in the Bahrain Grand Prix."
+      },
+      {
+        "local_id": "rr3",
+        "name": "Jolyon Palmer at Bahrain Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Jolyon Palmer recorded a result in the Bahrain Grand Prix."
+      },
+      {
+        "local_id": "rr4",
+        "name": "Valtteri Bottas at Bahrain Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Valtteri Bottas recorded a result in the Bahrain Grand Prix."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e10",
+        "target_id": "e9",
+        "relationship_type": "ROUND_OF",
+        "description": "The Bahrain Grand Prix is a round of the 2016 Formula One World Championship.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e10",
+        "target_id": "e11",
+        "relationship_type": "HELD_AT",
+        "description": "The Bahrain Grand Prix is held at the Bahrain International Circuit.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Rosberg recorded a result in the Bahrain Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e10",
+        "relationship_type": "AT_RACE",
+        "description": "Rosberg recorded a result in the Bahrain Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e6",
+        "target_id": "rr2",
+        "relationship_type": "ACHIEVED",
+        "description": "Sebastian Vettel recorded a result in the Bahrain Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr2",
+        "target_id": "e10",
+        "relationship_type": "AT_RACE",
+        "description": "Sebastian Vettel recorded a result in the Bahrain Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e7",
+        "target_id": "rr3",
+        "relationship_type": "ACHIEVED",
+        "description": "Jolyon Palmer recorded a result in the Bahrain Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr3",
+        "target_id": "e10",
+        "relationship_type": "AT_RACE",
+        "description": "Jolyon Palmer recorded a result in the Bahrain Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e8",
+        "target_id": "rr4",
+        "relationship_type": "ACHIEVED",
+        "description": "Valtteri Bottas recorded a result in the Bahrain Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr4",
+        "target_id": "e10",
+        "relationship_type": "AT_RACE",
+        "description": "Valtteri Bottas recorded a result in the Bahrain Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 11,
+  "entities_accepted": 15,
+  "entities_rejected": 0,
+  "relationship_candidates": 7,
+  "relationships_accepted": 10,
+  "relationships_rejected": 1,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "WON does not allow Driver -> Season"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 2,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e10; description kept"
+    },
+    {
+      "index": 4,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr2 -AT_RACE-> e10; description kept"
+    },
+    {
+      "index": 5,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr3 -AT_RACE-> e10; description kept"
+    },
+    {
+      "index": 6,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr4 -AT_RACE-> e10; description kept"
+    }
+  ]
+}

@@ -1,0 +1,213 @@
+{
+  "chunk_id": "season-2012-formula-one-world-championship#37",
+  "doc_id": "season-2012-formula-one-world-championship",
+  "document_title": "2012 Formula One World Championship",
+  "section": "Race summaries > Round 1 – Australia Albert Park Circuit",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "c89a2421cc5e6470b3b1a941461edf937c5bced2e682c775a27a33ab9e3dd9ff",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Kimi Räikkönen",
+        "entity_type": "Driver",
+        "description": "Finished seventh after starting seventeenth due to a poor qualifying session."
+      },
+      {
+        "local_id": "e2",
+        "name": "Felipe Massa",
+        "entity_type": "Driver",
+        "description": "Retired after a collision with Bruno Senna."
+      },
+      {
+        "local_id": "e3",
+        "name": "Bruno Senna",
+        "entity_type": "Driver",
+        "description": "Retired after a collision with Felipe Massa."
+      },
+      {
+        "local_id": "e4",
+        "name": "Pedro de la Rosa",
+        "entity_type": "Driver",
+        "description": "Failed to qualify for the race."
+      },
+      {
+        "local_id": "e5",
+        "name": "Narain Karthikeyan",
+        "entity_type": "Driver",
+        "description": "Failed to qualify for the race."
+      },
+      {
+        "local_id": "e6",
+        "name": "HRT",
+        "entity_type": "Team",
+        "description": "Failed to qualify for the race for the second consecutive season."
+      },
+      {
+        "local_id": "e7",
+        "name": "Australia",
+        "entity_type": "GrandPrix",
+        "description": "Round 1 of the 2012 Formula One World Championship held at Albert Park Circuit."
+      },
+      {
+        "local_id": "e8",
+        "name": "Albert Park Circuit",
+        "entity_type": "Circuit",
+        "description": "The circuit where the Australian Grand Prix took place."
+      },
+      {
+        "local_id": "e9",
+        "name": "2012",
+        "entity_type": "Season",
+        "description": "The season of the Formula One World Championship."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Kimi Räikkönen at Australia",
+        "entity_type": "RaceResult",
+        "description": "Kimi Räikkönen finished seventh in the Australian Grand Prix."
+      },
+      {
+        "local_id": "rr2",
+        "name": "Felipe Massa at Australia",
+        "entity_type": "RaceResult",
+        "description": "Felipe Massa retired in the Australian Grand Prix."
+      },
+      {
+        "local_id": "rr3",
+        "name": "Bruno Senna at Australia",
+        "entity_type": "RaceResult",
+        "description": "Bruno Senna retired in the Australian Grand Prix."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Kimi Räikkönen finished seventh in the Australian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e7",
+        "relationship_type": "AT_RACE",
+        "description": "Kimi Räikkönen finished seventh in the Australian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "rr2",
+        "relationship_type": "ACHIEVED",
+        "description": "Felipe Massa retired in the Australian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr2",
+        "target_id": "e7",
+        "relationship_type": "AT_RACE",
+        "description": "Felipe Massa retired in the Australian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "rr3",
+        "relationship_type": "ACHIEVED",
+        "description": "Bruno Senna retired in the Australian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr3",
+        "target_id": "e7",
+        "relationship_type": "AT_RACE",
+        "description": "Bruno Senna retired in the Australian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e6",
+        "relationship_type": "DROVE_FOR",
+        "description": "Pedro de la Rosa drove for HRT.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e6",
+        "relationship_type": "DROVE_FOR",
+        "description": "Narain Karthikeyan drove for HRT.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e6",
+        "target_id": "e9",
+        "relationship_type": "ENTERED",
+        "description": "HRT entered the 2012 Formula One World Championship.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e7",
+        "target_id": "e9",
+        "relationship_type": "ROUND_OF",
+        "description": "The Australian Grand Prix is a round of the 2012 Formula One World Championship.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e7",
+        "target_id": "e8",
+        "relationship_type": "HELD_AT",
+        "description": "The Australian Grand Prix was held at Albert Park Circuit.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 9,
+  "entities_accepted": 12,
+  "entities_rejected": 0,
+  "relationship_candidates": 8,
+  "relationships_accepted": 11,
+  "relationships_rejected": 0,
+  "rejections": [],
+  "alignments": [
+    {
+      "index": 0,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e7; description kept"
+    },
+    {
+      "index": 1,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr2 -AT_RACE-> e7; description kept"
+    },
+    {
+      "index": 2,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr3 -AT_RACE-> e7; description kept"
+    }
+  ]
+}

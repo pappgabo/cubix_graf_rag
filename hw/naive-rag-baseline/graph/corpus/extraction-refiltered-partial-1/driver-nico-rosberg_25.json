@@ -1,0 +1,92 @@
+{
+  "chunk_id": "driver-nico-rosberg#25",
+  "doc_id": "driver-nico-rosberg",
+  "document_title": "Nico Rosberg",
+  "section": "Nico Rosberg > Junior car career (2001–2005)",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/Nico_Rosberg",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "5c4fc206c876705bf085d2c0ac69870c6c158ecdb8c9b9050869ef0107043a4d",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "ENTERED is not temporal; from_year, to_year and role must be null"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "ACHIEVED does not allow Circuit -> Driver"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "ACHIEVED does not allow Circuit -> Driver"
+    },
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "ACHIEVED does not allow Circuit -> Driver"
+    },
+    {
+      "element": "relationship",
+      "index": 5,
+      "reason": "RACED_IN does not allow Driver -> Season"
+    }
+  ],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Nico Rosberg",
+        "entity_type": "Driver",
+        "description": "A driver who competed in the Formula 3 Euro Series."
+      },
+      {
+        "local_id": "e2",
+        "name": "Team Rosberg",
+        "entity_type": "Team",
+        "description": "The team Nico Rosberg raced for in the 2004 Formula 3 Euro Series."
+      },
+      {
+        "local_id": "e3",
+        "name": "2004",
+        "entity_type": "Season",
+        "description": "The season in which Nico Rosberg competed in the Formula 3 Euro Series."
+      },
+      {
+        "local_id": "e4",
+        "name": "Circuito de Albacete",
+        "entity_type": "Circuit",
+        "description": "The circuit where Nico Rosberg won two rounds of the Spanish Formula 3 Winter Series."
+      },
+      {
+        "local_id": "e5",
+        "name": "Hockenheimring",
+        "entity_type": "Circuit",
+        "description": "The circuit where Nico Rosberg won the first two races of the 2004 Formula 3 Euro Series."
+      },
+      {
+        "local_id": "e6",
+        "name": "Nürburgring",
+        "entity_type": "Circuit",
+        "description": "The circuit where Nico Rosberg took one victory during the 2004 Formula 3 Euro Series."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Nico Rosberg drove for Team Rosberg in the 2004 Formula 3 Euro Series.",
+        "from_year": 2004,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

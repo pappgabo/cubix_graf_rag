@@ -1,0 +1,160 @@
+{
+  "chunk_id": "team-red-bull-racing#41",
+  "doc_id": "team-red-bull-racing",
+  "document_title": "Red Bull Racing",
+  "section": "2014 season",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "6d6cede7e878971d830d28d30622c337dd90a6bc3aa0b995253eb0664f353da4",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Daniel Ricciardo",
+        "entity_type": "Driver",
+        "description": "Ricciardo would go on to obtain the first podium finish in his career as a Formula One driver at the Spanish Grand Prix."
+      },
+      {
+        "local_id": "e2",
+        "name": "Sebastian Vettel",
+        "entity_type": "Driver",
+        "description": "Vettel did not participate in Q3 due to problems with his gearbox, which ultimately needed to be replaced."
+      },
+      {
+        "local_id": "e3",
+        "name": "Red Bull Racing",
+        "entity_type": "Team",
+        "description": "The team finished second in the championship on 405 points."
+      },
+      {
+        "local_id": "e4",
+        "name": "2014",
+        "entity_type": "Season",
+        "description": "The team finished second in the championship on 405 points, with the team only winning three races throughout the season."
+      },
+      {
+        "local_id": "e5",
+        "name": "Spanish Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "Ricciardo obtained the first podium finish in his career at the Spanish Grand Prix."
+      },
+      {
+        "local_id": "e6",
+        "name": "Canada",
+        "entity_type": "GrandPrix",
+        "description": "In Canada, Ricciardo won the race, achieving his first career victory in Formula One."
+      },
+      {
+        "local_id": "e7",
+        "name": "Renault",
+        "entity_type": "PowerUnit",
+        "description": "Christian Horner described the performance of the Renault engine as 'unacceptable.'"
+      },
+      {
+        "local_id": "rr1",
+        "name": "Daniel Ricciardo at Spanish Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Ricciardo obtained the first podium finish in his career at the Spanish Grand Prix."
+      },
+      {
+        "local_id": "rr2",
+        "name": "Daniel Ricciardo at Canada",
+        "entity_type": "RaceResult",
+        "description": "Ricciardo won the race in Canada, achieving his first career victory in Formula One."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Ricciardo obtained the first podium finish in his career at the Spanish Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e5",
+        "relationship_type": "AT_RACE",
+        "description": "Ricciardo obtained the first podium finish in his career at the Spanish Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr2",
+        "relationship_type": "ACHIEVED",
+        "description": "Ricciardo won the race in Canada, achieving his first career victory in Formula One.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr2",
+        "target_id": "e6",
+        "relationship_type": "AT_RACE",
+        "description": "Ricciardo won the race in Canada, achieving his first career victory in Formula One.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e3",
+        "relationship_type": "DROVE_FOR",
+        "description": "Vettel was a driver for Red Bull Racing during the 2014 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e3",
+        "relationship_type": "DROVE_FOR",
+        "description": "Ricciardo was a driver for Red Bull Racing during the 2014 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e4",
+        "relationship_type": "ENTERED",
+        "description": "Red Bull Racing took part in the 2014 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 7,
+  "entities_accepted": 9,
+  "entities_rejected": 0,
+  "relationship_candidates": 6,
+  "relationships_accepted": 7,
+  "relationships_rejected": 1,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 7,
+      "reason": "WON does not allow Team -> Season"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 0,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e5; description kept"
+    },
+    {
+      "index": 1,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr2 -AT_RACE-> e6; description kept"
+    }
+  ]
+}

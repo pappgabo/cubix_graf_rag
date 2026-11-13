@@ -1,0 +1,145 @@
+{
+  "chunk_id": "season-2021-formula-one-world-championship#73",
+  "doc_id": "season-2021-formula-one-world-championship",
+  "document_title": "2021 Formula One World Championship",
+  "section": null,
+  "page": 7,
+  "source": "https://en.wikipedia.org/wiki/2021_Formula_One_World_Championship",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "efc4713b8ce3873a67e36bad1e1ad5bd9241ebee5a37cb21a06dc5f012d2c797",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "entity_candidates": 10,
+  "entities_accepted": 10,
+  "entities_rejected": 0,
+  "relationship_candidates": 8,
+  "relationships_accepted": 4,
+  "relationships_rejected": 4,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "ACHIEVED does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 5,
+      "reason": "ACHIEVED does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 6,
+      "reason": "ACHIEVED does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 7,
+      "reason": "ACHIEVED does not allow Driver -> Season"
+    }
+  ],
+  "alignments": [],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Bottas",
+        "entity_type": "Driver",
+        "description": "A driver involved in a collision during the race."
+      },
+      {
+        "local_id": "e2",
+        "name": "Norris",
+        "entity_type": "Driver",
+        "description": "A driver who retired on lap 3 due to a collision."
+      },
+      {
+        "local_id": "e3",
+        "name": "Pérez",
+        "entity_type": "Driver",
+        "description": "A driver eliminated in the race."
+      },
+      {
+        "local_id": "e4",
+        "name": "Lance Stroll",
+        "entity_type": "Driver",
+        "description": "A driver eliminated in the race."
+      },
+      {
+        "local_id": "e5",
+        "name": "Leclerc",
+        "entity_type": "Driver",
+        "description": "A driver eliminated in the race."
+      },
+      {
+        "local_id": "e6",
+        "name": "Lewis Hamilton",
+        "entity_type": "Driver",
+        "description": "A driver who led the race."
+      },
+      {
+        "local_id": "e7",
+        "name": "Ocon",
+        "entity_type": "Driver",
+        "description": "A driver who was in second place during the race."
+      },
+      {
+        "local_id": "e8",
+        "name": "Sebastian Vettel",
+        "entity_type": "Driver",
+        "description": "A driver who was in third place during the race."
+      },
+      {
+        "local_id": "e9",
+        "name": "Verstappen",
+        "entity_type": "Driver",
+        "description": "The championship leader who was in 13th place after acquiring damage."
+      },
+      {
+        "local_id": "e10",
+        "name": "2021",
+        "entity_type": "Season",
+        "description": "The championship year of the race."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Bottas and Norris were involved in a collision.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e3",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Bottas and Pérez were involved in the race.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e4",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Bottas and Lance Stroll were involved in the race.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e5",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Bottas and Leclerc were involved in the race.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

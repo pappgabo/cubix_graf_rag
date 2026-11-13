@@ -1,0 +1,124 @@
+{
+  "chunk_id": "driver-sebastian-vettel#112",
+  "doc_id": "driver-sebastian-vettel",
+  "document_title": "Sebastian Vettel",
+  "section": "2021: Final podium",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/Sebastian_Vettel",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "1de7709466fc6af6fda137499dd9952eb31da161fbb4edc91995b9d6b1241c25",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 6,
+      "reason": "HELD_AT does not allow GrandPrix -> Team"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 4,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e4; description kept"
+    }
+  ],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Sebastian Vettel",
+        "entity_type": "Driver",
+        "description": "A Formula One driver who finished second in Hungary but was disqualified."
+      },
+      {
+        "local_id": "e2",
+        "name": "Lance Stroll",
+        "entity_type": "Driver",
+        "description": "Teammate of Sebastian Vettel during the 2021 season."
+      },
+      {
+        "local_id": "e3",
+        "name": "2021",
+        "entity_type": "Season",
+        "description": "The Formula One season in which Sebastian Vettel finished 12th in the Drivers' standings."
+      },
+      {
+        "local_id": "e4",
+        "name": "Hungary",
+        "entity_type": "GrandPrix",
+        "description": "The Grand Prix where Sebastian Vettel finished second but was disqualified."
+      },
+      {
+        "local_id": "e5",
+        "name": "Aston Martin",
+        "entity_type": "Team",
+        "description": "The team for which Sebastian Vettel raced during the 2021 season."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Sebastian Vettel at Hungary",
+        "entity_type": "RaceResult",
+        "description": "Sebastian Vettel achieved a second place finish in the Hungary Grand Prix."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e5",
+        "relationship_type": "DROVE_FOR",
+        "description": "Sebastian Vettel drove for Aston Martin in the 2021 season.",
+        "from_year": 2021,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Sebastian Vettel was teammates with Lance Stroll during the 2021 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e3",
+        "relationship_type": "ROUND_OF",
+        "description": "The Hungary Grand Prix was a round of the 2021 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e3",
+        "relationship_type": "ENTERED",
+        "description": "Aston Martin entered the 2021 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Sebastian Vettel achieved a second place finish in the Hungary Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e4",
+        "relationship_type": "AT_RACE",
+        "description": "Sebastian Vettel achieved a second place finish in the Hungary Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

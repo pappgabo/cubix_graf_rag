@@ -1,0 +1,136 @@
+{
+  "chunk_id": "team-scuderia-ferrari#1",
+  "doc_id": "team-scuderia-ferrari",
+  "document_title": "Scuderia Ferrari",
+  "section": null,
+  "page": 1,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "eba959e67a3294295d89e67788cf6d2d0844002469a2214b2d6f128bbd81ec55",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Scuderia Ferrari",
+        "entity_type": "Team",
+        "description": "An Italian Formula One team with a record 16 Constructors' Championships."
+      },
+      {
+        "local_id": "e2",
+        "name": "2008",
+        "entity_type": "Season",
+        "description": "The season in which Ferrari won their most recent Constructors' Championship."
+      },
+      {
+        "local_id": "e3",
+        "name": "2007",
+        "entity_type": "Title",
+        "description": "The year Kimi Räikkönen won the Drivers' Championship for Ferrari."
+      },
+      {
+        "local_id": "e4",
+        "name": "Tuscan Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The Grand Prix that marked Ferrari's 1000th race in Formula One."
+      },
+      {
+        "local_id": "e5",
+        "name": "Michael Schumacher",
+        "entity_type": "Driver",
+        "description": "Ferrari's most successful driver, who won five consecutive drivers' titles for the team."
+      },
+      {
+        "local_id": "e6",
+        "name": "Charles Leclerc",
+        "entity_type": "Driver",
+        "description": "One of Ferrari's drivers for the 2026 season."
+      },
+      {
+        "local_id": "e7",
+        "name": "Lewis Hamilton",
+        "entity_type": "Driver",
+        "description": "One of Ferrari's drivers for the 2026 season."
+      },
+      {
+        "local_id": "season2007-1",
+        "name": "2007",
+        "entity_type": "Season",
+        "description": "2007"
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e5",
+        "target_id": "e3",
+        "relationship_type": "WON",
+        "description": "Michael Schumacher won the Drivers' Championship for Ferrari in 2007.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "season2007-1",
+        "relationship_type": "AWARDED_IN",
+        "description": "Michael Schumacher won the Drivers' Championship for Ferrari in 2007.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e1",
+        "relationship_type": "DROVE_FOR",
+        "description": "Michael Schumacher drove for Ferrari from 1996 to 2006.",
+        "from_year": 1996,
+        "to_year": 2006,
+        "role": null
+      },
+      {
+        "source_id": "e6",
+        "target_id": "e1",
+        "relationship_type": "DROVE_FOR",
+        "description": "Charles Leclerc is a driver for Ferrari in the 2026 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e7",
+        "target_id": "e1",
+        "relationship_type": "DROVE_FOR",
+        "description": "Lewis Hamilton is a driver for Ferrari in the 2026 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 7,
+  "entities_accepted": 8,
+  "entities_rejected": 0,
+  "relationship_candidates": 6,
+  "relationships_accepted": 5,
+  "relationships_rejected": 2,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "WON does not allow Team -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "HELD_AT does not allow Team -> GrandPrix"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 1,
+      "action": "move_won_year",
+      "detail": "WON year 2007 stored as e3 -AWARDED_IN-> season2007-1; from_year and to_year cleared; description kept"
+    }
+  ]
+}

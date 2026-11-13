@@ -1,0 +1,103 @@
+{
+  "chunk_id": "season-2008-formula-one-world-championship#20",
+  "doc_id": "season-2008-formula-one-world-championship",
+  "document_title": "2008 Formula One World Championship",
+  "section": null,
+  "page": 5,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "e16184f1c88451ac3e1e07270063214e245c8a3d78b6319355fb433f05e7df68",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Felipe Massa",
+        "entity_type": "Driver",
+        "description": "A driver who finished second in the 2008 Formula One World Championship."
+      },
+      {
+        "local_id": "e2",
+        "name": "2008 Formula One World Championship",
+        "entity_type": "Season",
+        "description": "The championship season in which Felipe Massa finished second."
+      },
+      {
+        "local_id": "e3",
+        "name": "Singapore Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A race in the 2008 Formula One season where allegations of race-fixing occurred."
+      },
+      {
+        "local_id": "e4",
+        "name": "Renault",
+        "entity_type": "Team",
+        "description": "The Formula One team involved in the race-fixing controversy."
+      },
+      {
+        "local_id": "e5",
+        "name": "Crashgate",
+        "entity_type": "Title",
+        "description": "The name given to the race-fixing scandal involving Renault."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e5",
+        "relationship_type": "WON",
+        "description": "Felipe Massa was affected by the race-fixing scandal that impacted the championship standings.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e2",
+        "relationship_type": "AWARDED_IN",
+        "description": "The title 'Crashgate' relates to the events of the 2008 Formula One World Championship.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e2",
+        "relationship_type": "ENTERED",
+        "description": "Renault participated in the 2008 Formula One World Championship.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e2",
+        "relationship_type": "ROUND_OF",
+        "description": "The Singapore Grand Prix was a round of the 2008 Formula One World Championship.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 5,
+  "entities_accepted": 5,
+  "entities_rejected": 0,
+  "relationship_candidates": 4,
+  "relationships_accepted": 4,
+  "relationships_rejected": 0,
+  "rejections": [],
+  "alignments": [
+    {
+      "index": 0,
+      "action": "move_won_year",
+      "detail": "WON year 2008 stored as e5 -AWARDED_IN-> e2; from_year and to_year cleared; description kept"
+    },
+    {
+      "index": 1,
+      "action": "clear_redundant_season_year",
+      "detail": "AWARDED_IN year 2008 already named by Season 'e2'; from_year and to_year cleared"
+    }
+  ]
+}

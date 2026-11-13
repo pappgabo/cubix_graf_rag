@@ -1,0 +1,71 @@
+{
+  "chunk_id": "season-2008-formula-one-world-championship#4",
+  "doc_id": "season-2008-formula-one-world-championship",
+  "document_title": "2008 Formula One World Championship",
+  "section": null,
+  "page": 2,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "17fd95672b6dc823721edc21de0deb7ca1dcb018ac6f41547620cada66eb58d8",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Prodrive",
+        "entity_type": "Team",
+        "description": "A new team fronted by David Richards that applied for the 2008 season but later announced it would not race."
+      },
+      {
+        "local_id": "e2",
+        "name": "Spyker",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that was sold to Vijay Mallya in 2007."
+      },
+      {
+        "local_id": "e3",
+        "name": "Force India",
+        "entity_type": "Team",
+        "description": "The new name for the Spyker team after being purchased by Vijay Mallya."
+      },
+      {
+        "local_id": "e4",
+        "name": "2008",
+        "entity_type": "Season",
+        "description": "The Formula One season discussed in the text."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e3",
+        "target_id": "e4",
+        "relationship_type": "ENTERED",
+        "description": "Force India entered the 2008 Formula One season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 4,
+  "entities_accepted": 4,
+  "entities_rejected": 0,
+  "relationship_candidates": 2,
+  "relationships_accepted": 1,
+  "relationships_rejected": 1,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "DROVE_FOR does not allow Team -> Team"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 1,
+      "action": "clear_redundant_season_year",
+      "detail": "ENTERED year 2008 already named by Season 'e4'; from_year and to_year cleared"
+    }
+  ]
+}

@@ -1,0 +1,168 @@
+{
+  "chunk_id": "driver-nico-rosberg#17",
+  "doc_id": "driver-nico-rosberg",
+  "document_title": "Nico Rosberg",
+  "section": "Nico Rosberg > Karting (1991–2001)",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/Nico_Rosberg",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "55bc170b20a49b3c674aa51b14cf9ddb649426b6dbc55023e3f16b83b504247c",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "ACHIEVED Driver -> GrandPrix has from_year=1999, to_year=None, role=None; the year or role cannot be stored on the reified result"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "ACHIEVED Driver -> GrandPrix has from_year=1999, to_year=None, role=None; the year or role cannot be stored on the reified result"
+    },
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "FIELDED does not allow Driver -> Car"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 1,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e3; description kept"
+    },
+    {
+      "index": 4,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr2 -AT_RACE-> e6; description kept"
+    },
+    {
+      "index": 5,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr3 -AT_RACE-> e7; description kept"
+    }
+  ],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Nico Rosberg",
+        "entity_type": "Driver",
+        "description": "A driver who competed in karting from 1991 to 2001."
+      },
+      {
+        "local_id": "e2",
+        "name": "CRG",
+        "entity_type": "Car",
+        "description": "A kart brand that Nico Rosberg drove during his karting career."
+      },
+      {
+        "local_id": "e3",
+        "name": "1998 CIK-FIA Green Helmet Trophy",
+        "entity_type": "GrandPrix",
+        "description": "A karting event where Nico Rosberg crashed out."
+      },
+      {
+        "local_id": "e4",
+        "name": "Italian Junior Karting Championship",
+        "entity_type": "GrandPrix",
+        "description": "A karting championship where Nico Rosberg was runner-up in 1999."
+      },
+      {
+        "local_id": "e5",
+        "name": "ICA Junior CIK-FIA European Championship",
+        "entity_type": "GrandPrix",
+        "description": "A karting championship where Nico Rosberg finished fourth in 1999."
+      },
+      {
+        "local_id": "e6",
+        "name": "28° Torneo Industrie",
+        "entity_type": "GrandPrix",
+        "description": "A karting event where Nico Rosberg finished fifth."
+      },
+      {
+        "local_id": "e7",
+        "name": "Andrea Margutti Trophy",
+        "entity_type": "GrandPrix",
+        "description": "A karting event where Nico Rosberg finished seventh."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Nico Rosberg at 1998 CIK-FIA Green Helmet Trophy",
+        "entity_type": "RaceResult",
+        "description": "Nico Rosberg crashed out in the 1998 CIK-FIA Green Helmet Trophy."
+      },
+      {
+        "local_id": "rr2",
+        "name": "Nico Rosberg at 28° Torneo Industrie",
+        "entity_type": "RaceResult",
+        "description": "Nico Rosberg finished fifth at the 28° Torneo Industrie."
+      },
+      {
+        "local_id": "rr3",
+        "name": "Nico Rosberg at Andrea Margutti Trophy",
+        "entity_type": "RaceResult",
+        "description": "Nico Rosberg finished seventh in the Andrea Margutti Trophy."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Nico Rosberg crashed out in the 1998 CIK-FIA Green Helmet Trophy.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e3",
+        "relationship_type": "AT_RACE",
+        "description": "Nico Rosberg crashed out in the 1998 CIK-FIA Green Helmet Trophy.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr2",
+        "relationship_type": "ACHIEVED",
+        "description": "Nico Rosberg finished fifth at the 28° Torneo Industrie.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr2",
+        "target_id": "e6",
+        "relationship_type": "AT_RACE",
+        "description": "Nico Rosberg finished fifth at the 28° Torneo Industrie.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr3",
+        "relationship_type": "ACHIEVED",
+        "description": "Nico Rosberg finished seventh in the Andrea Margutti Trophy.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr3",
+        "target_id": "e7",
+        "relationship_type": "AT_RACE",
+        "description": "Nico Rosberg finished seventh in the Andrea Margutti Trophy.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

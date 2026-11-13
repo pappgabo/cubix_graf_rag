@@ -1,0 +1,157 @@
+{
+  "chunk_id": "team-mclaren#112",
+  "doc_id": "team-mclaren",
+  "document_title": "McLaren",
+  "section": "Liveries",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "0b495cca3f4a652b0ed7c0329924b16ffb69a7b61467e5f81cadb6a2a2691579",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "McLaren",
+        "entity_type": "Team",
+        "description": "A Formula 1 team celebrating its 60th anniversary during the 2023 season."
+      },
+      {
+        "local_id": "e2",
+        "name": "MCL60",
+        "entity_type": "Car",
+        "description": "The car raced by McLaren during the 2023 season featuring the Triple Crown livery."
+      },
+      {
+        "local_id": "e3",
+        "name": "M16C/D",
+        "entity_type": "Car",
+        "description": "The McLaren car that won the 1974 Indianapolis 500."
+      },
+      {
+        "local_id": "e4",
+        "name": "MP4/2",
+        "entity_type": "Car",
+        "description": "The McLaren car that won the 1984 Monaco Grand Prix."
+      },
+      {
+        "local_id": "e5",
+        "name": "F1 GTR",
+        "entity_type": "Car",
+        "description": "The McLaren car that won the 1995 24 Hours of Le Mans."
+      },
+      {
+        "local_id": "e6",
+        "name": "MCL40",
+        "entity_type": "Car",
+        "description": "The car raced by McLaren at the 2026 Monaco and Barcelona-Catalunya Grands Prix."
+      },
+      {
+        "local_id": "e7",
+        "name": "Monaco Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Grand Prix where McLaren raced the special Triple Crown livery."
+      },
+      {
+        "local_id": "e8",
+        "name": "Spanish Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Grand Prix where McLaren raced the special Triple Crown livery."
+      },
+      {
+        "local_id": "e9",
+        "name": "Indianapolis 500",
+        "entity_type": "GrandPrix",
+        "description": "A race where McLaren's IndyCar Series sister team raced their version of the Triple Crown livery."
+      },
+      {
+        "local_id": "e10",
+        "name": "Monaco",
+        "entity_type": "Circuit",
+        "description": "The circuit where the Monaco Grand Prix is held."
+      },
+      {
+        "local_id": "e11",
+        "name": "Barcelona-Catalunya Circuit",
+        "entity_type": "Circuit",
+        "description": "The circuit where the Spanish Grand Prix is held."
+      },
+      {
+        "local_id": "e12",
+        "name": "Triple Crown",
+        "entity_type": "Title",
+        "description": "An achievement celebrated by McLaren with a special livery."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e7",
+        "target_id": "e10",
+        "relationship_type": "HELD_AT",
+        "description": "The Monaco Grand Prix is held at the Monaco circuit.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e8",
+        "target_id": "e11",
+        "relationship_type": "HELD_AT",
+        "description": "The Spanish Grand Prix is held at the Barcelona-Catalunya circuit.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 12,
+  "entities_accepted": 12,
+  "entities_rejected": 0,
+  "relationship_candidates": 10,
+  "relationships_accepted": 2,
+  "relationships_rejected": 8,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "FIELDED is not temporal; from_year=2023, to_year=None, role=None cannot be stored without dropping them"
+    },
+    {
+      "element": "relationship",
+      "index": 6,
+      "reason": "FIELDED is not temporal; from_year=2026, to_year=None, role=None cannot be stored without dropping them"
+    },
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "ROUND_OF does not allow Team -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "ROUND_OF does not allow Team -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "WON does not allow Car -> Title"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "WON does not allow Car -> Title"
+    },
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "WON does not allow Car -> Title"
+    },
+    {
+      "element": "relationship",
+      "index": 5,
+      "reason": "FIELDED does not allow Team -> GrandPrix"
+    }
+  ],
+  "alignments": []
+}

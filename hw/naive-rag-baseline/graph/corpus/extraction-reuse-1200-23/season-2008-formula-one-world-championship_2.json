@@ -1,0 +1,82 @@
+{
+  "chunk_id": "season-2008-formula-one-world-championship#2",
+  "doc_id": "season-2008-formula-one-world-championship",
+  "document_title": "2008 Formula One World Championship",
+  "section": null,
+  "page": 1,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "9a7a60662a1598127d16cbb69e7c89f1447ad0218cdd8eae0056c3e2b52f9337",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "David Coulthard",
+        "entity_type": "Driver",
+        "description": "2001 runner up who retired from racing in F1 after 14 years and 246 race starts."
+      },
+      {
+        "local_id": "e2",
+        "name": "Kimi Räikkönen",
+        "entity_type": "Driver",
+        "description": "Finnish driver who won races in Malaysia and Spain during the 2008 season."
+      },
+      {
+        "local_id": "e3",
+        "name": "Heikki Kovalainen",
+        "entity_type": "Driver",
+        "description": "Finnish driver who won a race in Hungary during the 2008 season."
+      },
+      {
+        "local_id": "e4",
+        "name": "McLaren",
+        "entity_type": "Team",
+        "description": "Team that had the most recent World Drivers' Championship win in 2008 until Lando Norris in 2025."
+      },
+      {
+        "local_id": "e5",
+        "name": "Scuderia Ferrari",
+        "entity_type": "Team",
+        "description": "Team that won the World Constructors' Championship title in 2008."
+      },
+      {
+        "local_id": "e6",
+        "name": "2008 Formula One World Championship",
+        "entity_type": "Season",
+        "description": "The championship year in which all teams used the same two drivers throughout the season."
+      }
+    ],
+    "relationships": []
+  },
+  "entity_candidates": 6,
+  "entities_accepted": 6,
+  "entities_rejected": 0,
+  "relationship_candidates": 4,
+  "relationships_accepted": 0,
+  "relationships_rejected": 4,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "WON does not allow Team -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "WON does not allow Team -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "ACHIEVED does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "ACHIEVED does not allow Driver -> Season"
+    }
+  ],
+  "alignments": []
+}

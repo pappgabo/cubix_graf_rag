@@ -1,0 +1,110 @@
+{
+  "chunk_id": "season-2020-formula-one-world-championship#7",
+  "doc_id": "season-2020-formula-one-world-championship",
+  "document_title": "2020 Formula One World Championship",
+  "section": "2020 Formula One World Championship > Driver changes",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "5e5244b28092665aa13312103caa737aadf42e38d0be0e7512e6fc41846093ee",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Esteban Ocon",
+        "entity_type": "Driver",
+        "description": "Returned to racing in Formula One after signing a contract with Renault."
+      },
+      {
+        "local_id": "e2",
+        "name": "Renault",
+        "entity_type": "Team",
+        "description": "Team that Esteban Ocon signed a contract with."
+      },
+      {
+        "local_id": "e3",
+        "name": "Nico Hülkenberg",
+        "entity_type": "Driver",
+        "description": "Driver replaced by Esteban Ocon at Renault."
+      },
+      {
+        "local_id": "e4",
+        "name": "Robert Kubica",
+        "entity_type": "Driver",
+        "description": "Left Williams at the end of the 2019 championship and joined Alfa Romeo Racing as a reserve driver."
+      },
+      {
+        "local_id": "e5",
+        "name": "Williams",
+        "entity_type": "Team",
+        "description": "Team that Robert Kubica left."
+      },
+      {
+        "local_id": "e6",
+        "name": "Alfa Romeo Racing",
+        "entity_type": "Team",
+        "description": "Team that Robert Kubica joined as a reserve driver."
+      },
+      {
+        "local_id": "e7",
+        "name": "Nicholas Latifi",
+        "entity_type": "Driver",
+        "description": "Replaced Robert Kubica at Williams."
+      },
+      {
+        "local_id": "e8",
+        "name": "2019 Formula 2 Championship",
+        "entity_type": "Season",
+        "description": "Nicholas Latifi was the runner-up."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Esteban Ocon returned to racing for Renault.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e5",
+        "relationship_type": "DROVE_FOR",
+        "description": "Robert Kubica drove for Williams.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e6",
+        "relationship_type": "DROVE_FOR",
+        "description": "Robert Kubica joined Alfa Romeo Racing as a reserve driver.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e7",
+        "target_id": "e5",
+        "relationship_type": "DROVE_FOR",
+        "description": "Nicholas Latifi replaced Robert Kubica at Williams.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 8,
+  "entities_accepted": 8,
+  "entities_rejected": 0,
+  "relationship_candidates": 4,
+  "relationships_accepted": 4,
+  "relationships_rejected": 0,
+  "rejections": [],
+  "alignments": []
+}

@@ -1,0 +1,106 @@
+{
+  "chunk_id": "team-williams-racing#33",
+  "doc_id": "team-williams-racing",
+  "document_title": "Williams Racing",
+  "section": "Williams Racing > 1992 off-season",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "4c134efb54efeebbf4c58c5aa7dbf12e492e915382e377435d88c3511ed33592",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Alain Prost",
+        "entity_type": "Driver",
+        "description": "Former world champion looking to return to F1 after a sabbatical."
+      },
+      {
+        "local_id": "e2",
+        "name": "Williams",
+        "entity_type": "Team",
+        "description": "Formula 1 team looking to bring in Alain Prost to drive one of its cars."
+      },
+      {
+        "local_id": "e3",
+        "name": "Riccardo Patrese",
+        "entity_type": "Driver",
+        "description": "Driver who had been with Williams since 1987 and preemptively joined Benetton."
+      },
+      {
+        "local_id": "e4",
+        "name": "Benetton",
+        "entity_type": "Team",
+        "description": "Formula 1 team that Riccardo Patrese joined."
+      },
+      {
+        "local_id": "e5",
+        "name": "Michael Schumacher",
+        "entity_type": "Driver",
+        "description": "Driver who raced alongside Riccardo Patrese at Benetton."
+      },
+      {
+        "local_id": "e6",
+        "name": "Renault",
+        "entity_type": "PowerUnit",
+        "description": "Power unit used by Williams."
+      },
+      {
+        "local_id": "e7",
+        "name": "Ford",
+        "entity_type": "PowerUnit",
+        "description": "Power unit used by Benetton."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e3",
+        "target_id": "e4",
+        "relationship_type": "DROVE_FOR",
+        "description": "Riccardo Patrese joined Benetton after leaving Williams.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Alain Prost was looking to drive for Williams.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e5",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Riccardo Patrese was teammates with Michael Schumacher at Benetton.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 7,
+  "entities_accepted": 7,
+  "entities_rejected": 0,
+  "relationship_candidates": 5,
+  "relationships_accepted": 3,
+  "relationships_rejected": 2,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "POWERED_BY does not allow Team -> PowerUnit"
+    },
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "POWERED_BY does not allow Team -> PowerUnit"
+    }
+  ],
+  "alignments": []
+}

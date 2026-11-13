@@ -1,0 +1,137 @@
+{
+  "chunk_id": "team-mclaren#16",
+  "doc_id": "team-mclaren",
+  "document_title": "McLaren",
+  "section": "1973–1981: Hunt–Lauda era and transition",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "0467ac27439dd9443dde59c50dead353cbb64e4da6264a5608ebe9a5ef6e023f",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "James Hunt",
+        "entity_type": "Driver",
+        "description": "A driver who raced for McLaren during the 1976 season."
+      },
+      {
+        "local_id": "e2",
+        "name": "Scuderia Ferrari",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that competed against McLaren in the 1976 season."
+      },
+      {
+        "local_id": "e3",
+        "name": "McLaren",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that James Hunt drove for during the 1976 season."
+      },
+      {
+        "local_id": "e4",
+        "name": "1976",
+        "entity_type": "Season",
+        "description": "The Formula 1 season in which James Hunt won the Drivers' Championship."
+      },
+      {
+        "local_id": "e5",
+        "name": "Drivers' Championship",
+        "entity_type": "Title",
+        "description": "The championship title won by James Hunt in 1976."
+      },
+      {
+        "local_id": "e6",
+        "name": "Constructors' Championship",
+        "entity_type": "Title",
+        "description": "The championship title that McLaren lost to Ferrari in 1976."
+      },
+      {
+        "local_id": "e7",
+        "name": "German Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A race in which Lauda crashed heavily during the 1976 season."
+      },
+      {
+        "local_id": "e8",
+        "name": "Japan",
+        "entity_type": "GrandPrix",
+        "description": "The final race of the 1976 season where Hunt sealed the Drivers' Championship."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e3",
+        "relationship_type": "DROVE_FOR",
+        "description": "James Hunt drove for McLaren during the 1976 season.",
+        "from_year": 1976,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e5",
+        "relationship_type": "WON",
+        "description": "James Hunt won the Drivers' Championship in 1976.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e4",
+        "relationship_type": "AWARDED_IN",
+        "description": "The Drivers' Championship title belongs to the 1976 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e6",
+        "relationship_type": "WON",
+        "description": "McLaren lost the Constructors' Championship to Ferrari in 1976.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e6",
+        "relationship_type": "WON",
+        "description": "Ferrari won the Constructors' Championship in 1976.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e7",
+        "target_id": "e4",
+        "relationship_type": "ROUND_OF",
+        "description": "The German Grand Prix is a round of the 1976 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e8",
+        "target_id": "e4",
+        "relationship_type": "ROUND_OF",
+        "description": "The Japan Grand Prix is a round of the 1976 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 8,
+  "entities_accepted": 8,
+  "entities_rejected": 0,
+  "relationship_candidates": 7,
+  "relationships_accepted": 7,
+  "relationships_rejected": 0,
+  "rejections": [],
+  "alignments": []
+}

@@ -1,0 +1,103 @@
+{
+  "chunk_id": "reference-formula-one#10",
+  "doc_id": "reference-formula-one",
+  "document_title": "Formula One",
+  "section": "Formula One > Big business",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "3c4ada4c94e6848a2e74341ce74921c91a89b1aae431058ecf435a266c3cf328",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Renault",
+        "entity_type": "PowerUnit",
+        "description": "Pioneered turbocharged engines in 1977."
+      },
+      {
+        "local_id": "e2",
+        "name": "BMW",
+        "entity_type": "PowerUnit",
+        "description": "Achieved a turbocharged engine reading of 5.5 bar in 1986."
+      },
+      {
+        "local_id": "e3",
+        "name": "Italian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A race where a BMW turbocharged engine achieved a flash reading of 5.5 bar in qualifying."
+      },
+      {
+        "local_id": "e4",
+        "name": "1983",
+        "entity_type": "Season",
+        "description": "The year FISA imposed a ban on ground-effect aerodynamics."
+      },
+      {
+        "local_id": "e5",
+        "name": "1984",
+        "entity_type": "Season",
+        "description": "The year FIA limited fuel tank capacity."
+      },
+      {
+        "local_id": "e6",
+        "name": "1988",
+        "entity_type": "Season",
+        "description": "The year FIA limited boost pressures."
+      },
+      {
+        "local_id": "e7",
+        "name": "1989",
+        "entity_type": "Season",
+        "description": "The year turbocharged engines were banned completely."
+      }
+    ],
+    "relationships": []
+  },
+  "entity_candidates": 7,
+  "entities_accepted": 7,
+  "entities_rejected": 0,
+  "relationship_candidates": 7,
+  "relationships_accepted": 0,
+  "relationships_rejected": 7,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "POWERED_BY does not allow PowerUnit -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "POWERED_BY does not allow PowerUnit -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "POWERED_BY does not allow PowerUnit -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "POWERED_BY does not allow PowerUnit -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "ROUND_OF does not allow Season -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 5,
+      "reason": "ROUND_OF does not allow Season -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 6,
+      "reason": "ROUND_OF does not allow Season -> Season"
+    }
+  ],
+  "alignments": []
+}

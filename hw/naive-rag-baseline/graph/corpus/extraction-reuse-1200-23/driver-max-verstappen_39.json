@@ -1,0 +1,393 @@
+{
+  "chunk_id": "driver-max-verstappen#39",
+  "doc_id": "driver-max-verstappen",
+  "document_title": "Max Verstappen",
+  "section": null,
+  "page": 8,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "9f3276f29de4fb933aa4b8886109f50ee9852c2a4ede2386b450f73d4106f122",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Max Verstappen",
+        "entity_type": "Driver",
+        "description": "A Formula One driver known for winning multiple races."
+      },
+      {
+        "local_id": "e2",
+        "name": "Red Bull Racing",
+        "entity_type": "Team",
+        "description": "A Formula One team that Verstappen drives for."
+      },
+      {
+        "local_id": "e3",
+        "name": "2022",
+        "entity_type": "Season",
+        "description": "The Formula One season in which Verstappen won his second World Drivers' Championship."
+      },
+      {
+        "local_id": "e4",
+        "name": "French Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula One race where Verstappen won after Leclerc crashed."
+      },
+      {
+        "local_id": "e5",
+        "name": "Hungarian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula One race where Verstappen won despite qualifying tenth."
+      },
+      {
+        "local_id": "e6",
+        "name": "Belgian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula One race where Verstappen set the fastest qualifying time and won."
+      },
+      {
+        "local_id": "e7",
+        "name": "Dutch Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "Verstappen's home race where he took pole position and won."
+      },
+      {
+        "local_id": "e8",
+        "name": "Italian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula One race where Verstappen won from seventh on the grid."
+      },
+      {
+        "local_id": "e9",
+        "name": "Singapore Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula One race where Verstappen's winning streak ended."
+      },
+      {
+        "local_id": "e10",
+        "name": "Japanese Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula One race where Verstappen won from pole position."
+      },
+      {
+        "local_id": "e11",
+        "name": "United States Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula One race that Verstappen won."
+      },
+      {
+        "local_id": "e12",
+        "name": "Mexico City Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula One race that Verstappen won."
+      },
+      {
+        "local_id": "e13",
+        "name": "World Drivers' Championship",
+        "entity_type": "Title",
+        "description": "The championship title Verstappen secured for the second time."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Max Verstappen at French Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Verstappen won the French Grand Prix."
+      },
+      {
+        "local_id": "rr2",
+        "name": "Max Verstappen at Hungarian Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Verstappen won the Hungarian Grand Prix."
+      },
+      {
+        "local_id": "rr3",
+        "name": "Max Verstappen at Belgian Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Verstappen won the Belgian Grand Prix."
+      },
+      {
+        "local_id": "rr4",
+        "name": "Max Verstappen at Dutch Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Verstappen won the Dutch Grand Prix."
+      },
+      {
+        "local_id": "rr5",
+        "name": "Max Verstappen at Italian Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Verstappen won the Italian Grand Prix."
+      },
+      {
+        "local_id": "rr6",
+        "name": "Max Verstappen at Singapore Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Verstappen finished seventh at the Singapore Grand Prix."
+      },
+      {
+        "local_id": "rr7",
+        "name": "Max Verstappen at Japanese Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Verstappen won the Japanese Grand Prix."
+      },
+      {
+        "local_id": "rr8",
+        "name": "Max Verstappen at United States Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Verstappen won the United States Grand Prix."
+      },
+      {
+        "local_id": "rr9",
+        "name": "Max Verstappen at Mexico City Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Verstappen won the Mexico City Grand Prix."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Verstappen drives for Red Bull Racing.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e13",
+        "relationship_type": "WON",
+        "description": "Verstappen won the World Drivers' Championship.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e13",
+        "target_id": "e3",
+        "relationship_type": "AWARDED_IN",
+        "description": "The World Drivers' Championship was awarded in 2022.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Verstappen won the French Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e4",
+        "relationship_type": "AT_RACE",
+        "description": "Verstappen won the French Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr2",
+        "relationship_type": "ACHIEVED",
+        "description": "Verstappen won the Hungarian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr2",
+        "target_id": "e5",
+        "relationship_type": "AT_RACE",
+        "description": "Verstappen won the Hungarian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr3",
+        "relationship_type": "ACHIEVED",
+        "description": "Verstappen won the Belgian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr3",
+        "target_id": "e6",
+        "relationship_type": "AT_RACE",
+        "description": "Verstappen won the Belgian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr4",
+        "relationship_type": "ACHIEVED",
+        "description": "Verstappen won the Dutch Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr4",
+        "target_id": "e7",
+        "relationship_type": "AT_RACE",
+        "description": "Verstappen won the Dutch Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr5",
+        "relationship_type": "ACHIEVED",
+        "description": "Verstappen won the Italian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr5",
+        "target_id": "e8",
+        "relationship_type": "AT_RACE",
+        "description": "Verstappen won the Italian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr6",
+        "relationship_type": "ACHIEVED",
+        "description": "Verstappen finished seventh at the Singapore Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr6",
+        "target_id": "e9",
+        "relationship_type": "AT_RACE",
+        "description": "Verstappen finished seventh at the Singapore Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr7",
+        "relationship_type": "ACHIEVED",
+        "description": "Verstappen won the Japanese Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr7",
+        "target_id": "e10",
+        "relationship_type": "AT_RACE",
+        "description": "Verstappen won the Japanese Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr8",
+        "relationship_type": "ACHIEVED",
+        "description": "Verstappen won the United States Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr8",
+        "target_id": "e11",
+        "relationship_type": "AT_RACE",
+        "description": "Verstappen won the United States Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr9",
+        "relationship_type": "ACHIEVED",
+        "description": "Verstappen won the Mexico City Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr9",
+        "target_id": "e12",
+        "relationship_type": "AT_RACE",
+        "description": "Verstappen won the Mexico City Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 13,
+  "entities_accepted": 22,
+  "entities_rejected": 0,
+  "relationship_candidates": 12,
+  "relationships_accepted": 21,
+  "relationships_rejected": 0,
+  "rejections": [],
+  "alignments": [
+    {
+      "index": 3,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e4; description kept"
+    },
+    {
+      "index": 4,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr2 -AT_RACE-> e5; description kept"
+    },
+    {
+      "index": 5,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr3 -AT_RACE-> e6; description kept"
+    },
+    {
+      "index": 6,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr4 -AT_RACE-> e7; description kept"
+    },
+    {
+      "index": 7,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr5 -AT_RACE-> e8; description kept"
+    },
+    {
+      "index": 8,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr6 -AT_RACE-> e9; description kept"
+    },
+    {
+      "index": 9,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr7 -AT_RACE-> e10; description kept"
+    },
+    {
+      "index": 10,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr8 -AT_RACE-> e11; description kept"
+    },
+    {
+      "index": 11,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr9 -AT_RACE-> e12; description kept"
+    }
+  ]
+}

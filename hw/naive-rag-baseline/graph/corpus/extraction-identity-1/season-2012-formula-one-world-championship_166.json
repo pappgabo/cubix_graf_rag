@@ -1,0 +1,137 @@
+{
+  "chunk_id": "season-2012-formula-one-world-championship#166",
+  "doc_id": "season-2012-formula-one-world-championship",
+  "document_title": "2012 Formula One World Championship",
+  "section": "Race summaries > Round 14 – Singapore Marina Bay Street Circuit",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/2012_Formula_One_World_Championship",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "a363faa4565393d016bba5f7b82fc9505bdf19b53d107baca02a8cf98045f331",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "entity_candidates": 10,
+  "entities_accepted": 10,
+  "entities_rejected": 0,
+  "relationship_candidates": 8,
+  "relationships_accepted": 2,
+  "relationships_rejected": 6,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "ACHIEVED does not allow Driver -> Circuit"
+    },
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "ACHIEVED does not allow Driver -> Circuit"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "ACHIEVED does not allow Driver -> Circuit"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "ACHIEVED does not allow Driver -> Circuit"
+    },
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "ACHIEVED does not allow Driver -> Circuit"
+    },
+    {
+      "element": "relationship",
+      "index": 5,
+      "reason": "ACHIEVED does not allow Driver -> Circuit"
+    }
+  ],
+  "alignments": [],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Bruno Senna",
+        "entity_type": "Driver",
+        "description": "A Brazilian driver who experienced a late engine problem during the race."
+      },
+      {
+        "local_id": "e2",
+        "name": "Mark Webber",
+        "entity_type": "Driver",
+        "description": "An Australian driver involved in altercations during the race."
+      },
+      {
+        "local_id": "e3",
+        "name": "Nico Hülkenberg",
+        "entity_type": "Driver",
+        "description": "A German driver involved in altercations during the race."
+      },
+      {
+        "local_id": "e4",
+        "name": "Kamui Kobayashi",
+        "entity_type": "Driver",
+        "description": "A Japanese driver involved in altercations during the race."
+      },
+      {
+        "local_id": "e5",
+        "name": "Sergio Pérez",
+        "entity_type": "Driver",
+        "description": "A Mexican driver involved in altercations during the race."
+      },
+      {
+        "local_id": "e6",
+        "name": "Timo Glock",
+        "entity_type": "Driver",
+        "description": "A German driver who finished twelfth in the race."
+      },
+      {
+        "local_id": "e7",
+        "name": "Marussia",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that retook tenth position in the World Constructors' Championship."
+      },
+      {
+        "local_id": "e8",
+        "name": "Caterham",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that lost tenth position in the World Constructors' Championship."
+      },
+      {
+        "local_id": "e9",
+        "name": "2012",
+        "entity_type": "Season",
+        "description": "The championship year of the race."
+      },
+      {
+        "local_id": "e10",
+        "name": "Singapore Marina Bay Street Circuit",
+        "entity_type": "Circuit",
+        "description": "The circuit where the race took place."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e7",
+        "target_id": "e9",
+        "relationship_type": "ENTERED",
+        "description": "Marussia retook tenth position in the World Constructors' Championship in the 2012 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e8",
+        "target_id": "e9",
+        "relationship_type": "ENTERED",
+        "description": "Caterham lost tenth position in the World Constructors' Championship in the 2012 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

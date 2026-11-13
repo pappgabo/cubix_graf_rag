@@ -1,0 +1,124 @@
+{
+  "chunk_id": "season-2021-formula-one-world-championship#26",
+  "doc_id": "season-2021-formula-one-world-championship",
+  "document_title": "2021 Formula One World Championship",
+  "section": null,
+  "page": 6,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "23b99f635763c1ed42bf009340dfebff41c14ae0b7945194860c81cce6eefaa2",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Lance Stroll",
+        "entity_type": "Driver",
+        "description": "A driver who crashed out due to a tyre failure."
+      },
+      {
+        "local_id": "e2",
+        "name": "Max Verstappen",
+        "entity_type": "Driver",
+        "description": "A driver who suffered a tyre failure and crashed."
+      },
+      {
+        "local_id": "e3",
+        "name": "Lewis Hamilton",
+        "entity_type": "Driver",
+        "description": "A driver who missed the corner at the restart."
+      },
+      {
+        "local_id": "e4",
+        "name": "Sergio Pérez",
+        "entity_type": "Driver",
+        "description": "A driver who won the race for the second time in his career."
+      },
+      {
+        "local_id": "e5",
+        "name": "Sebastian Vettel",
+        "entity_type": "Driver",
+        "description": "A driver who took Aston Martin's first podium in Formula One."
+      },
+      {
+        "local_id": "e6",
+        "name": "Pierre Gasly",
+        "entity_type": "Driver",
+        "description": "A driver who took his third career podium."
+      },
+      {
+        "local_id": "e7",
+        "name": "Red Bull Racing",
+        "entity_type": "Team",
+        "description": "The team for which Sergio Pérez won."
+      },
+      {
+        "local_id": "e8",
+        "name": "Aston Martin",
+        "entity_type": "Team",
+        "description": "The team for which Sebastian Vettel raced."
+      },
+      {
+        "local_id": "e9",
+        "name": "2021",
+        "entity_type": "Season",
+        "description": "The championship year in which these events occurred."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e4",
+        "target_id": "e7",
+        "relationship_type": "DROVE_FOR",
+        "description": "Sergio Pérez raced for Red Bull.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e8",
+        "relationship_type": "DROVE_FOR",
+        "description": "Sebastian Vettel raced for Aston Martin.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 9,
+  "entities_accepted": 9,
+  "entities_rejected": 0,
+  "relationship_candidates": 7,
+  "relationships_accepted": 2,
+  "relationships_rejected": 5,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "RACED_IN does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "RACED_IN does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "RACED_IN does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 5,
+      "reason": "RACED_IN does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 6,
+      "reason": "RACED_IN does not allow Driver -> Season"
+    }
+  ],
+  "alignments": []
+}

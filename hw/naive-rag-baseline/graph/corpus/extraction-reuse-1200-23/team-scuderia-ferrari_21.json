@@ -1,0 +1,150 @@
+{
+  "chunk_id": "team-scuderia-ferrari#21",
+  "doc_id": "team-scuderia-ferrari",
+  "document_title": "Scuderia Ferrari",
+  "section": null,
+  "page": 5,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "9735d31332bb7156fd7b776da35218beaaf80d0ec95e48257e9f38331612ee23",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Scuderia Ferrari",
+        "entity_type": "Team",
+        "description": "An Italian Formula 1 team."
+      },
+      {
+        "local_id": "e2",
+        "name": "Ferrari P series",
+        "entity_type": "Car",
+        "description": "A series of cars developed by Ferrari for the Sports Prototypes class."
+      },
+      {
+        "local_id": "e3",
+        "name": "Porsche",
+        "entity_type": "Team",
+        "description": "A manufacturer that competed in the series with smaller engined cars."
+      },
+      {
+        "local_id": "e4",
+        "name": "Ford",
+        "entity_type": "Team",
+        "description": "An American car manufacturer that entered endurance racing and later Formula One."
+      },
+      {
+        "local_id": "e5",
+        "name": "Ford GT40",
+        "entity_type": "Car",
+        "description": "A car developed by Ford to compete against Ferrari in endurance racing."
+      },
+      {
+        "local_id": "e6",
+        "name": "1964",
+        "entity_type": "Season",
+        "description": "A season in which Ferrari faced little competition from major manufacturers."
+      },
+      {
+        "local_id": "e7",
+        "name": "Targa Florio",
+        "entity_type": "GrandPrix",
+        "description": "A race where lighter cars could be competitive."
+      },
+      {
+        "local_id": "e8",
+        "name": "Nurburgring",
+        "entity_type": "Circuit",
+        "description": "A racing venue where lighter cars could be competitive."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e6",
+        "relationship_type": "ENTERED",
+        "description": "Scuderia Ferrari participated in the 1964 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e6",
+        "relationship_type": "RACED_IN",
+        "description": "Ferrari P series cars raced in the 1964 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e6",
+        "relationship_type": "ENTERED",
+        "description": "Porsche competed in the 1964 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e6",
+        "relationship_type": "ENTERED",
+        "description": "Ford entered the Formula One championship after competing in endurance racing.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e5",
+        "relationship_type": "FIELDED",
+        "description": "Ford developed the Ford GT40 to compete against Ferrari.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e7",
+        "target_id": "e8",
+        "relationship_type": "HELD_AT",
+        "description": "The Targa Florio is held at the Nurburgring.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 8,
+  "entities_accepted": 8,
+  "entities_rejected": 0,
+  "relationship_candidates": 7,
+  "relationships_accepted": 6,
+  "relationships_rejected": 1,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "FIELDED is not temporal; from_year=1960, to_year=1965, role=None cannot be stored without dropping them"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 1,
+      "action": "clear_redundant_season_year",
+      "detail": "ENTERED year 1964 already named by Season 'e6'; from_year and to_year cleared"
+    },
+    {
+      "index": 2,
+      "action": "clear_redundant_season_year",
+      "detail": "RACED_IN year 1964 already named by Season 'e6'; from_year and to_year cleared"
+    },
+    {
+      "index": 3,
+      "action": "clear_redundant_season_year",
+      "detail": "ENTERED year 1964 already named by Season 'e6'; from_year and to_year cleared"
+    }
+  ]
+}

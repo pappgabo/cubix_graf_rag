@@ -1,0 +1,87 @@
+{
+  "chunk_id": "driver-valtteri-bottas#62",
+  "doc_id": "driver-valtteri-bottas",
+  "document_title": "Valtteri Bottas",
+  "section": "Other ventures > Philanthropy",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "e1e4fe64186a794bdebac55c768ccb2e40197fbdf8f9b10f900ec30db2fc4458",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Valtteri Bottas",
+        "entity_type": "Driver",
+        "description": "A Finnish racing driver."
+      },
+      {
+        "local_id": "e2",
+        "name": "Valtteri Bottas Duathlon",
+        "entity_type": "GrandPrix",
+        "description": "An annual sporting event held in Finland, launched by Bottas in 2017 to raise money for charity."
+      },
+      {
+        "local_id": "e3",
+        "name": "BOTTASS 2024",
+        "entity_type": "GrandPrix",
+        "description": "A nude calendar created by Bottas and Ripke in 2023 to raise funds for men's health."
+      },
+      {
+        "local_id": "e4",
+        "name": "Care for Wild Rhino sanctuary",
+        "entity_type": "Team",
+        "description": "A charity organization that Bottas supported through a postcard sale."
+      },
+      {
+        "local_id": "e5",
+        "name": "Movember",
+        "entity_type": "Team",
+        "description": "A men's health organization that benefited from the BOTTASS 2024 calendar."
+      },
+      {
+        "local_id": "e6",
+        "name": "2026 Azerbaijan Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Grand Prix where Bottas wore a custom special edition rhino-themed helmet."
+      }
+    ],
+    "relationships": []
+  },
+  "entity_candidates": 6,
+  "entities_accepted": 6,
+  "entities_rejected": 0,
+  "relationship_candidates": 5,
+  "relationships_accepted": 0,
+  "relationships_rejected": 5,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "ROUND_OF does not allow Driver -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "ROUND_OF does not allow Driver -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "ROUND_OF does not allow Driver -> Team"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "ROUND_OF does not allow Driver -> Team"
+    },
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "ROUND_OF does not allow Driver -> GrandPrix"
+    }
+  ],
+  "alignments": []
+}

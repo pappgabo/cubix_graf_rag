@@ -1,0 +1,92 @@
+{
+  "chunk_id": "team-williams-racing#72",
+  "doc_id": "team-williams-racing",
+  "document_title": "Williams Racing",
+  "section": "Williams Racing > 2005 season",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "b87cb4cac9dc40b6e451e7af28b67063ae1c6a5f2826a82ce3cdc86ffe88e914",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Williams",
+        "entity_type": "Team",
+        "description": "Williams Racing team"
+      },
+      {
+        "local_id": "e2",
+        "name": "Mark Webber",
+        "entity_type": "Driver",
+        "description": "Australian driver who joined Williams for the 2005 season."
+      },
+      {
+        "local_id": "e3",
+        "name": "Nick Heidfeld",
+        "entity_type": "Driver",
+        "description": "German driver who joined Williams for the 2005 season."
+      },
+      {
+        "local_id": "e4",
+        "name": "Antônio Pizzonia",
+        "entity_type": "Driver",
+        "description": "Test driver for Williams during the 2005 season."
+      },
+      {
+        "local_id": "e5",
+        "name": "2005",
+        "entity_type": "Season",
+        "description": "The 2005 Formula One season."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e5",
+        "relationship_type": "ENTERED",
+        "description": "Williams Racing participated in the 2005 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e1",
+        "relationship_type": "DROVE_FOR",
+        "description": "Mark Webber drove for Williams in the 2005 season.",
+        "from_year": 2005,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e1",
+        "relationship_type": "DROVE_FOR",
+        "description": "Nick Heidfeld drove for Williams in the 2005 season.",
+        "from_year": 2005,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e1",
+        "relationship_type": "DROVE_FOR",
+        "description": "Antônio Pizzonia served as the test driver for Williams in the 2005 season.",
+        "from_year": 2005,
+        "to_year": null,
+        "role": "test driver"
+      }
+    ]
+  },
+  "entity_candidates": 5,
+  "entities_accepted": 5,
+  "entities_rejected": 0,
+  "relationship_candidates": 4,
+  "relationships_accepted": 4,
+  "relationships_rejected": 0,
+  "rejections": [],
+  "alignments": []
+}

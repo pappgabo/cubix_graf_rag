@@ -1,0 +1,71 @@
+{
+  "chunk_id": "driver-sebastian-vettel#77",
+  "doc_id": "driver-sebastian-vettel",
+  "document_title": "Sebastian Vettel",
+  "section": "2016: Second winless year",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/Sebastian_Vettel",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "8bc45874e2fa6f225c0e5b97c77eb150e8bec786791ffbc41176e7ee153215af",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "ACHIEVED does not allow Driver -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "ACHIEVED does not allow Driver -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "TEAMMATE_OF does not allow Driver -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "TEAMMATE_OF does not allow Driver -> GrandPrix"
+    }
+  ],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Sebastian Vettel",
+        "entity_type": "Driver",
+        "description": "A Formula One driver who had a winless year in 2016."
+      },
+      {
+        "local_id": "e2",
+        "name": "Russian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula One race where Vettel retired on the first lap."
+      },
+      {
+        "local_id": "e3",
+        "name": "Mexican Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula One race where Vettel attempted to overtake Verstappen."
+      },
+      {
+        "local_id": "e4",
+        "name": "Max Verstappen",
+        "entity_type": "Driver",
+        "description": "A Red Bull driver involved in an incident with Vettel at the Mexican Grand Prix."
+      },
+      {
+        "local_id": "e5",
+        "name": "Daniel Ricciardo",
+        "entity_type": "Driver",
+        "description": "A Red Bull driver who was blocked by Vettel during the Mexican Grand Prix."
+      }
+    ],
+    "relationships": []
+  }
+}

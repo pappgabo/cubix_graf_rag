@@ -1,0 +1,111 @@
+{
+  "chunk_id": "driver-michael-schumacher#5",
+  "doc_id": "driver-michael-schumacher",
+  "document_title": "Michael Schumacher",
+  "section": null,
+  "page": 1,
+  "source": "https://en.wikipedia.org/wiki/Michael_Schumacher",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "413ee17ae9233777124fece8ac418e5af53ad0bcc29ed9849663447c2b2cf2dc",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "WON does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "WON does not allow Driver -> Season"
+    }
+  ],
+  "alignments": [],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Michael Schumacher",
+        "entity_type": "Driver",
+        "description": "Claimed his unprecedented sixth and seventh titles in 2003 and 2004."
+      },
+      {
+        "local_id": "e2",
+        "name": "Kimi Räikkönen",
+        "entity_type": "Driver",
+        "description": "Held off by Michael Schumacher in 2003."
+      },
+      {
+        "local_id": "e3",
+        "name": "Juan Pablo Montoya",
+        "entity_type": "Driver",
+        "description": "Held off by Michael Schumacher in 2003."
+      },
+      {
+        "local_id": "e4",
+        "name": "Fernando Alonso",
+        "entity_type": "Driver",
+        "description": "Narrowly finished ahead of Michael Schumacher in 2006."
+      },
+      {
+        "local_id": "e5",
+        "name": "2003",
+        "entity_type": "Season",
+        "description": "Season in which Michael Schumacher claimed his sixth title."
+      },
+      {
+        "local_id": "e6",
+        "name": "2004",
+        "entity_type": "Season",
+        "description": "Season in which Michael Schumacher claimed his seventh title."
+      },
+      {
+        "local_id": "e7",
+        "name": "Mercedes-AMG Petronas Formula One Team",
+        "entity_type": "Team",
+        "description": "The team with which Michael Schumacher returned to Formula One."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e7",
+        "relationship_type": "DROVE_FOR",
+        "description": "Michael Schumacher returned to Formula One with Mercedes.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e1",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Kimi Räikkönen was held off by Michael Schumacher in 2003.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e1",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Juan Pablo Montoya was held off by Michael Schumacher in 2003.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e1",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Fernando Alonso narrowly finished ahead of Michael Schumacher in 2006.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

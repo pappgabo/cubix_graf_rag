@@ -1,0 +1,917 @@
+{
+ "budget": {
+  "model_window": 8192,
+  "answer_reserve": 1024,
+  "graph_share": 0.5
+ },
+ "baseline": {
+  "records": 1651,
+  "status": {
+   "ok": 1651
+  },
+  "empty_ok": 315,
+  "nodes": 2761,
+  "edges": 4326,
+  "candidate_result_records": 86,
+  "records_with_rejected_relationship": 837,
+  "rejection_buckets": [
+   [
+    "WON Driver->Season",
+    221
+   ],
+   [
+    "DROVE_FOR Team->Driver",
+    171
+   ],
+   [
+    "ACHIEVED Driver->GrandPrix with year or role",
+    165
+   ],
+   [
+    "ACHIEVED Driver->Season",
+    153
+   ],
+   [
+    "RACED_IN Driver->Season",
+    119
+   ],
+   [
+    "DROVE_FOR Team->Team",
+    109
+   ],
+   [
+    "POWERED_BY Team->PowerUnit",
+    95
+   ],
+   [
+    "ROUND_OF Team->GrandPrix",
+    73
+   ],
+   [
+    "DROVE_FOR Driver->Season",
+    71
+   ],
+   [
+    "WON Team->Season",
+    60
+   ],
+   [
+    "ACHIEVED Driver->Circuit",
+    52
+   ],
+   [
+    "FOR_TEAM Driver->GrandPrix",
+    51
+   ],
+   [
+    "ROUND_OF Circuit->Season",
+    48
+   ],
+   [
+    "FIELDED Team->GrandPrix",
+    48
+   ],
+   [
+    "FOR_TEAM Driver->Team",
+    44
+   ],
+   [
+    "ACHIEVED GrandPrix->Driver",
+    42
+   ],
+   [
+    "WON Driver->Team",
+    42
+   ],
+   [
+    "FIELDED Team->Team",
+    42
+   ],
+   [
+    "ACHIEVED Driver->Driver",
+    39
+   ],
+   [
+    "TEAMMATE_OF Driver->Team",
+    37
+   ]
+  ],
+  "hamilton": {
+   "description_chars": 14655,
+   "description_lines": 212,
+   "source_chunks": 236
+  },
+  "self_loops": [
+   {
+    "rel_type": "TEAMMATE_OF",
+    "key": "Driver:nico rosberg",
+    "description": "Nico Rosberg was teammates with Lewis Hamilton from 2013 to 2016."
+   }
+  ],
+  "won_to_title": 152,
+  "won_to_title_with_placement_language": 15,
+  "won_placement_examples": [
+   {
+    "source": "Driver:charles leclerc",
+    "target": "Title:world drivers' championship",
+    "description": "Leclerc finished second in the World Drivers' Championship title in 2022."
+   },
+   {
+    "source": "Driver:fernando alonso",
+    "target": "Title:world drivers' championship",
+    "description": "Alonso finished fourth in the World Drivers' Championship.\nAlonso placed third in the World Drivers' Championship."
+   },
+   {
+    "source": "Driver:kimi räikkönen",
+    "target": "Title:drivers' championship",
+    "description": "Kimi Räikkönen finished third in the Drivers' Championship in 2018."
+   },
+   {
+    "source": "Driver:lewis hamilton",
+    "target": "Title:world drivers' championship",
+    "description": "Lewis Hamilton won the World Drivers' Championship title.\nHamilton placed second in the World Drivers' Championship.\nLewis Hamilton won the World Drivers' Championship in 2020."
+   },
+   {
+    "source": "Team:red bull racing",
+    "target": "Title:constructors' championship",
+    "description": "Red Bull Racing won the Constructors' Championship title.\nRed Bull Racing won the Constructors' Championship in 2022.\nRed Bull Racing finished second in the Constructors' Championship.\nRed Bull Racing won the Constructors' Championship."
+   },
+   {
+    "source": "Driver:valtteri bottas",
+    "target": "Title:world drivers' championship",
+    "description": "Valtteri Bottas was promoted to fourth place in the World Drivers' Championship.\nBottas finished second in the World Drivers' Championship in 2019.\nBottas finished second in the World Drivers' Championship."
+   },
+   {
+    "source": "Driver:valtteri bottas",
+    "target": "Title:2019 drivers' championship",
+    "description": "Valtteri Bottas was the runner-up in the 2019 Drivers' Championship."
+   },
+   {
+    "source": "Team:mercedes-amg petronas formula one team",
+    "target": "Title:constructors' championship",
+    "description": "Mercedes-AMG Petronas Formula One Team finished second in the Constructors' Championship in 2013.\nMercedes won the Constructors' Championship for the fourth consecutive time.\nMercedes won the Constructors' Championship."
+   }
+  ],
+  "race_results": 735,
+  "race_results_multi_chunk": 166,
+  "race_results_multi_chunk_distinct_lines": 165,
+  "seasons_without_year": [
+   "Season:130",
+   "Season:190",
+   "Season:1960s",
+   "Season:1970s",
+   "Season:adac gt masters",
+   "Season:amx global league",
+   "Season:asturias",
+   "Season:belgian cadet championship",
+   "Season:belgian kf5 championship",
+   "Season:benelux karting series",
+   "Season:bpr global gt series",
+   "Season:bridgestone cup",
+   "Season:british formula 3 international series",
+   "Season:can-am",
+   "Season:cik-fia european championship",
+   "Season:deutsche tourenwagen masters",
+   "Season:drivers' championship",
+   "Season:dutch championship",
+   "Season:etcr",
+   "Season:eurocup",
+   "Season:european championship",
+   "Season:european karting championships",
+   "Season:extreme e",
+   "Season:f1 academy",
+   "Season:fia formula 2",
+   "Season:florida winter series",
+   "Season:formula 2 championship",
+   "Season:formula 3 euro series",
+   "Season:formula one",
+   "Season:formula renault 2.0",
+   "Season:formula super a world championship",
+   "Season:galicia",
+   "Season:gp2",
+   "Season:gp3 series",
+   "Season:group b",
+   "Season:gt4",
+   "Season:imsa sportscar championship",
+   "Season:indycar series",
+   "Season:karting",
+   "Season:kf1",
+   "Season:kf2",
+   "Season:kf3 world cup",
+   "Season:kz2",
+   "Season:mini junior championship",
+   "Season:nitro rallycross",
+   "Season:nürburgring langstrecken-serie",
+   "Season:rotax max challenge belgium",
+   "Season:season",
+   "Season:south garda winter cup",
+   "Season:spanish junior championships",
+   "Season:v6 turbo-hybrid era",
+   "Season:vas championship",
+   "Season:vln endurance racing championship",
+   "Season:world cup",
+   "Season:world drivers' championship",
+   "Season:world endurance drivers' championship",
+   "Season:wsk euro series",
+   "Season:wsk master series",
+   "Season:wsk nations cup",
+   "Season:wsk world series"
+  ],
+  "titles_without_year": 90,
+  "by_label": {
+   "Driver": 423,
+   "Team": 363,
+   "Season": 167,
+   "GrandPrix": 372,
+   "Title": 121,
+   "Car": 343,
+   "RaceResult": 735,
+   "Circuit": 162,
+   "PowerUnit": 75
+  },
+  "named_keys_present": {
+   "RaceResult:142 points": true,
+   "Season:season": true,
+   "Season:formula one": true,
+   "Season:drivers' championship": true,
+   "Season:130": true,
+   "Season:190": true,
+   "Title:9": true,
+   "Title:seventh title": true,
+   "Title:world drivers' championship": true,
+   "Team:mercedes-amg petronas f1 team": true,
+   "Team:mercedes-benz": true,
+   "Team:oracle red bull racing": false,
+   "Driver:verstappen": true,
+   "Driver:vettel": true,
+   "Driver:alonso": true,
+   "Driver:bottas": true,
+   "Driver:leclerc": true,
+   "Driver:räikkönen": true,
+   "Driver:rosberg": true,
+   "Driver:schumacher": true
+  },
+  "alias_map": {
+   "Driver:hamilton": "Driver:lewis hamilton",
+   "Team:ferrari": "Team:scuderia ferrari",
+   "Team:red bull": "Team:red bull racing",
+   "Team:mercedes": "Team:mercedes-amg petronas formula one team",
+   "Team:mercedes gp": "Team:mercedes-amg petronas formula one team",
+   "Team:mercedes amg": "Team:mercedes-amg petronas formula one team",
+   "Team:mercedes gp petronas formula one team": "Team:mercedes-amg petronas formula one team",
+   "Team:mercedes f1": "Team:mercedes-amg petronas formula one team",
+   "Team:mercedes f1 team": "Team:mercedes-amg petronas formula one team"
+  }
+ },
+ "replay": [
+  {
+   "id": "Q01",
+   "anchors": [
+    "Driver:lewis hamilton",
+    "Title:formula one world drivers' championship",
+    "Title:seventh title"
+   ],
+   "missing_anchors": [
+    "Driver:lewis hamilton"
+   ],
+   "named_anchor": "Driver:lewis hamilton",
+   "named_anchor_in_saved_anchors": true,
+   "named_anchor_in_replay_prompt": false,
+   "named_anchor_in_saved_prompt": false,
+   "selected_before_fit": [
+    "[\"Driver:lewis hamilton\",\"WON\",\"Title:formula one world drivers' championship\",null,null,null]",
+    "[\"Driver:lewis hamilton\",\"WON\",\"Title:2008 world drivers' championship\",null,null,null]",
+    "[\"Driver:lewis hamilton\",\"WON\",\"Title:2020 world drivers' championship\",null,null,null]",
+    "[\"Driver:lewis hamilton\",\"WON\",\"Title:world drivers' championship\",null,null,null]",
+    "[\"Driver:lewis hamilton\",\"WON\",\"Title:2014\",null,null,null]",
+    "[\"Driver:lewis hamilton\",\"WON\",\"Title:2015\",null,null,null]",
+    "[\"Driver:lewis hamilton\",\"WON\",\"Title:seventh title\",null,null,null]"
+   ],
+   "selected_after_fit": [
+    "[\"Driver:lewis hamilton\",\"WON\",\"Title:formula one world drivers' championship\",null,null,null]",
+    "[\"Driver:lewis hamilton\",\"WON\",\"Title:2008 world drivers' championship\",null,null,null]",
+    "[\"Driver:lewis hamilton\",\"WON\",\"Title:2020 world drivers' championship\",null,null,null]",
+    "[\"Driver:lewis hamilton\",\"WON\",\"Title:world drivers' championship\",null,null,null]",
+    "[\"Driver:lewis hamilton\",\"WON\",\"Title:2014\",null,null,null]",
+    "[\"Driver:lewis hamilton\",\"WON\",\"Title:2015\",null,null,null]",
+    "[\"Driver:lewis hamilton\",\"WON\",\"Title:seventh title\",null,null,null]"
+   ],
+   "omitted_oversized": 1,
+   "omitted_for_budget": 252,
+   "prompt_estimate": 7155,
+   "prompt_chars": 21465,
+   "saved_prompt_estimate": 7139,
+   "saved_prompt_chars": 21416,
+   "saved_model_window": 8192,
+   "saved_omitted_oversized": 1,
+   "saved_selected_nodes": 7,
+   "replay_selected_nodes": 7,
+   "node_keys_match": true,
+   "edge_lines_match": true,
+   "prompt_equal": false,
+   "only_in_replay_nodes": [],
+   "only_in_saved_nodes": []
+  },
+  {
+   "id": "Q02",
+   "anchors": [
+    "Title:2008 world drivers' championship",
+    "Driver:sebastian vettel",
+    "RaceResult:sebastian vettel at united states grand prix"
+   ],
+   "missing_anchors": [
+    "Driver:sebastian vettel"
+   ],
+   "named_anchor": "Driver:sebastian vettel",
+   "named_anchor_in_saved_anchors": true,
+   "named_anchor_in_replay_prompt": false,
+   "named_anchor_in_saved_prompt": false,
+   "selected_before_fit": [
+    "[\"Driver:sebastian vettel\",\"ACHIEVED\",\"RaceResult:sebastian vettel at united states grand prix\",null,null,null]",
+    "[\"RaceResult:sebastian vettel at united states grand prix\",\"AT_RACE\",\"GrandPrix:united states grand prix\",null,null,null]",
+    "[\"Driver:sebastian vettel\",\"DROVE_FOR\",\"Team:bmw sauber\",2006,null,\"driver\"]",
+    "[\"Driver:sebastian vettel\",\"WON\",\"Title:formula one drivers' championship\",null,null,null]",
+    "[\"Driver:sebastian vettel\",\"DROVE_FOR\",\"Team:asl mücke motorsport\",2005,null,null]",
+    "[\"Driver:sebastian vettel\",\"DROVE_FOR\",\"Team:bmw sauber\",2006,2007,\"reserve driver\"]",
+    "[\"Driver:sebastian vettel\",\"WON\",\"Title:formula bmw adac\",null,null,null]"
+   ],
+   "selected_after_fit": [
+    "[\"Driver:sebastian vettel\",\"ACHIEVED\",\"RaceResult:sebastian vettel at united states grand prix\",null,null,null]",
+    "[\"RaceResult:sebastian vettel at united states grand prix\",\"AT_RACE\",\"GrandPrix:united states grand prix\",null,null,null]",
+    "[\"Driver:sebastian vettel\",\"DROVE_FOR\",\"Team:bmw sauber\",2006,null,\"driver\"]",
+    "[\"Driver:sebastian vettel\",\"WON\",\"Title:formula one drivers' championship\",null,null,null]",
+    "[\"Driver:sebastian vettel\",\"DROVE_FOR\",\"Team:asl mücke motorsport\",2005,null,null]",
+    "[\"Driver:sebastian vettel\",\"DROVE_FOR\",\"Team:bmw sauber\",2006,2007,\"reserve driver\"]",
+    "[\"Driver:sebastian vettel\",\"WON\",\"Title:formula bmw adac\",null,null,null]"
+   ],
+   "omitted_oversized": 0,
+   "omitted_for_budget": 214,
+   "prompt_estimate": 7153,
+   "prompt_chars": 21458,
+   "saved_prompt_estimate": 7144,
+   "saved_prompt_chars": 21432,
+   "saved_model_window": 8192,
+   "saved_omitted_oversized": 0,
+   "saved_selected_nodes": 7,
+   "replay_selected_nodes": 7,
+   "node_keys_match": true,
+   "edge_lines_match": true,
+   "prompt_equal": false,
+   "only_in_replay_nodes": [],
+   "only_in_saved_nodes": []
+  },
+  {
+   "id": "Q03",
+   "anchors": [
+    "Title:2019 drivers' championship",
+    "Title:2021 drivers' championship",
+    "Title:world drivers' title"
+   ],
+   "missing_anchors": [],
+   "named_anchor": null,
+   "named_anchor_in_saved_anchors": null,
+   "named_anchor_in_replay_prompt": null,
+   "named_anchor_in_saved_prompt": null,
+   "selected_before_fit": [
+    "[\"Driver:lewis hamilton\",\"WON\",\"Title:formula one world drivers' championship\",null,null,null]",
+    "[\"Driver:lewis hamilton\",\"DROVE_FOR\",\"Team:mercedes-amg petronas formula one team\",2013,2024,null]",
+    "[\"Driver:valtteri bottas\",\"DROVE_FOR\",\"Team:mercedes-amg petronas formula one team\",2017,2021,null]",
+    "[\"Driver:valtteri bottas\",\"DROVE_FOR\",\"Team:mercedes-amg petronas formula one team\",2019,2021,null]",
+    "[\"Driver:valtteri bottas\",\"DROVE_FOR\",\"Team:mercedes-amg petronas formula one team\",2021,null,null]",
+    "[\"Driver:valtteri bottas\",\"DROVE_FOR\",\"Team:lahti pelicans\",2021,null,\"co-owner\"]",
+    "[\"Driver:lewis hamilton\",\"WON\",\"Title:world drivers' title\",null,null,null]",
+    "[\"Driver:valtteri bottas\",\"WON\",\"Title:2019 drivers' championship\",null,null,null]"
+   ],
+   "selected_after_fit": [
+    "[\"Driver:lewis hamilton\",\"WON\",\"Title:formula one world drivers' championship\",null,null,null]",
+    "[\"Driver:lewis hamilton\",\"DROVE_FOR\",\"Team:mercedes-amg petronas formula one team\",2013,2024,null]"
+   ],
+   "omitted_oversized": 1,
+   "omitted_for_budget": 355,
+   "prompt_estimate": 7161,
+   "prompt_chars": 21482,
+   "saved_prompt_estimate": 7161,
+   "saved_prompt_chars": 21482,
+   "saved_model_window": 8192,
+   "saved_omitted_oversized": 1,
+   "saved_selected_nodes": 6,
+   "replay_selected_nodes": 6,
+   "node_keys_match": true,
+   "edge_lines_match": true,
+   "prompt_equal": true,
+   "only_in_replay_nodes": [],
+   "only_in_saved_nodes": []
+  },
+  {
+   "id": "Q04",
+   "anchors": [
+    "Driver:sebastian vettel",
+    "Driver:nico rosberg",
+    "Title:2021 drivers' championship"
+   ],
+   "missing_anchors": [
+    "Driver:sebastian vettel"
+   ],
+   "named_anchor": "Driver:sebastian vettel",
+   "named_anchor_in_saved_anchors": true,
+   "named_anchor_in_replay_prompt": false,
+   "named_anchor_in_saved_prompt": false,
+   "selected_before_fit": [
+    "[\"Driver:kimi räikkönen\",\"TEAMMATE_OF\",\"Driver:sebastian vettel\",null,null,null]",
+    "[\"RaceResult:142 points\",\"FOR_TEAM\",\"Team:mercedes-amg petronas formula one team\",null,null,null]",
+    "[\"Team:mercedes-amg petronas formula one team\",\"ENTERED\",\"Season:2016\",null,null,null]",
+    "[\"Title:world champion\",\"AWARDED_IN\",\"Season:2016\",null,null,null]",
+    "[\"Driver:nico rosberg\",\"DROVE_FOR\",\"Team:mercedes-amg petronas formula one team\",2006,2016,null]",
+    "[\"Driver:nico rosberg\",\"DROVE_FOR\",\"Team:mercedes-amg petronas formula one team\",2010,2016,null]",
+    "[\"Driver:nico rosberg\",\"DROVE_FOR\",\"Team:mercedes-amg petronas formula one team\",null,2016,null]",
+    "[\"Driver:nico rosberg\",\"DROVE_FOR\",\"Team:mercedes-amg petronas formula one team\",null,null,\"driver\"]",
+    "[\"Driver:nico rosberg\",\"DROVE_FOR\",\"Team:mercedes-amg petronas formula one team\",null,null,null]",
+    "[\"Driver:nico rosberg\",\"TEAMMATE_OF\",\"Driver:nico rosberg\",null,null,null]",
+    "[\"Driver:nico rosberg\",\"WON\",\"Title:world champion\",null,null,null]",
+    "[\"Driver:nico rosberg\",\"ACHIEVED\",\"RaceResult:142 points\",null,null,null]"
+   ],
+   "selected_after_fit": [
+    "[\"Driver:kimi räikkönen\",\"TEAMMATE_OF\",\"Driver:sebastian vettel\",null,null,null]"
+   ],
+   "omitted_oversized": 0,
+   "omitted_for_budget": 494,
+   "prompt_estimate": 7161,
+   "prompt_chars": 21482,
+   "saved_prompt_estimate": 7141,
+   "saved_prompt_chars": 21421,
+   "saved_model_window": 8192,
+   "saved_omitted_oversized": 1,
+   "saved_selected_nodes": 3,
+   "replay_selected_nodes": 4,
+   "node_keys_match": false,
+   "edge_lines_match": true,
+   "prompt_equal": false,
+   "only_in_replay_nodes": [
+    "Title:world champion"
+   ],
+   "only_in_saved_nodes": []
+  },
+  {
+   "id": "Q05",
+   "anchors": [
+    "Driver:sebastian vettel",
+    "Season:2012",
+    "Season:2013"
+   ],
+   "missing_anchors": [
+    "Driver:sebastian vettel",
+    "Season:2013"
+   ],
+   "named_anchor": "Driver:sebastian vettel",
+   "named_anchor_in_saved_anchors": true,
+   "named_anchor_in_replay_prompt": false,
+   "named_anchor_in_saved_prompt": false,
+   "selected_before_fit": [
+    "[\"RaceResult:142 points\",\"FOR_TEAM\",\"Team:mercedes-amg petronas formula one team\",null,null,null]",
+    "[\"Team:mercedes-amg petronas formula one team\",\"ENTERED\",\"Season:2012\",null,null,null]",
+    "[\"Driver:michael schumacher\",\"DROVE_FOR\",\"Team:mercedes-amg petronas formula one team\",2010,2012,null]",
+    "[\"Driver:nico rosberg\",\"DROVE_FOR\",\"Team:mercedes-amg petronas formula one team\",2006,2016,null]",
+    "[\"Driver:nico rosberg\",\"DROVE_FOR\",\"Team:mercedes-amg petronas formula one team\",2010,2016,null]",
+    "[\"Driver:michael schumacher\",\"ACHIEVED\",\"RaceResult:michael schumacher at 2012 chinese grand prix\",null,null,null]",
+    "[\"Team:mercedes-amg petronas formula one team\",\"ENTERED\",\"Season:2013\",null,null,null]",
+    "[\"Driver:michael schumacher\",\"DROVE_FOR\",\"Team:mercedes-amg petronas formula one team\",2010,null,null]",
+    "[\"Driver:michael schumacher\",\"DROVE_FOR\",\"Team:mercedes-amg petronas formula one team\",null,2013,null]",
+    "[\"Driver:michael schumacher\",\"DROVE_FOR\",\"Team:mercedes-amg petronas formula one team\",null,null,null]"
+   ],
+   "selected_after_fit": [
+    "[\"RaceResult:142 points\",\"FOR_TEAM\",\"Team:mercedes-amg petronas formula one team\",null,null,null]",
+    "[\"Team:mercedes-amg petronas formula one team\",\"ENTERED\",\"Season:2012\",null,null,null]",
+    "[\"Driver:michael schumacher\",\"DROVE_FOR\",\"Team:mercedes-amg petronas formula one team\",2010,2012,null]",
+    "[\"Driver:nico rosberg\",\"DROVE_FOR\",\"Team:mercedes-amg petronas formula one team\",2006,2016,null]",
+    "[\"Driver:nico rosberg\",\"DROVE_FOR\",\"Team:mercedes-amg petronas formula one team\",2010,2016,null]",
+    "[\"Driver:michael schumacher\",\"ACHIEVED\",\"RaceResult:michael schumacher at 2012 chinese grand prix\",null,null,null]",
+    "[\"Driver:michael schumacher\",\"DROVE_FOR\",\"Team:mercedes-amg petronas formula one team\",null,2013,null]"
+   ],
+   "omitted_oversized": 0,
+   "omitted_for_budget": 482,
+   "prompt_estimate": 7162,
+   "prompt_chars": 21484,
+   "saved_prompt_estimate": 7162,
+   "saved_prompt_chars": 21485,
+   "saved_model_window": 8192,
+   "saved_omitted_oversized": 0,
+   "saved_selected_nodes": 3,
+   "replay_selected_nodes": 3,
+   "node_keys_match": true,
+   "edge_lines_match": true,
+   "prompt_equal": false,
+   "only_in_replay_nodes": [],
+   "only_in_saved_nodes": []
+  },
+  {
+   "id": "Q06",
+   "anchors": [
+    "Title:drivers' championships",
+    "Title:drivers' championship",
+    "Driver:michael schumacher"
+   ],
+   "missing_anchors": [
+    "Driver:michael schumacher"
+   ],
+   "named_anchor": "Driver:michael schumacher",
+   "named_anchor_in_saved_anchors": true,
+   "named_anchor_in_replay_prompt": false,
+   "named_anchor_in_saved_prompt": false,
+   "selected_before_fit": [
+    "[\"RaceResult:142 points\",\"FOR_TEAM\",\"Team:mercedes-amg petronas formula one team\",null,null,null]",
+    "[\"Driver:kimi räikkönen\",\"WON\",\"Title:world drivers' championship\",null,null,null]",
+    "[\"Driver:lewis hamilton\",\"WON\",\"Title:world drivers' championship\",null,null,null]",
+    "[\"Team:mercedes-amg petronas formula one team\",\"WON\",\"Title:world drivers' championship\",null,null,null]",
+    "[\"Driver:michael schumacher\",\"WON\",\"Title:drivers' championship\",null,null,null]",
+    "[\"Driver:michael schumacher\",\"WON\",\"Title:drivers' championships\",null,null,null]",
+    "[\"Driver:michael schumacher\",\"WON\",\"Title:world drivers' championship\",null,null,null]",
+    "[\"Driver:kimi räikkönen\",\"WON\",\"Title:drivers' championship\",null,null,null]",
+    "[\"Driver:lewis hamilton\",\"WON\",\"Title:drivers' championship\",null,null,null]",
+    "[\"Driver:lewis hamilton\",\"DROVE_FOR\",\"Team:mercedes-amg petronas formula one team\",2013,null,\"driver\"]",
+    "[\"Driver:lewis hamilton\",\"DROVE_FOR\",\"Team:mercedes-amg petronas formula one team\",2017,null,\"driver\"]",
+    "[\"Driver:lewis hamilton\",\"DROVE_FOR\",\"Team:mercedes-amg petronas formula one team\",2018,null,null]"
+   ],
+   "selected_after_fit": [
+    "[\"RaceResult:142 points\",\"FOR_TEAM\",\"Team:mercedes-amg petronas formula one team\",null,null,null]",
+    "[\"Driver:kimi räikkönen\",\"WON\",\"Title:world drivers' championship\",null,null,null]",
+    "[\"Driver:lewis hamilton\",\"WON\",\"Title:world drivers' championship\",null,null,null]",
+    "[\"Team:mercedes-amg petronas formula one team\",\"WON\",\"Title:world drivers' championship\",null,null,null]",
+    "[\"Driver:michael schumacher\",\"WON\",\"Title:drivers' championship\",null,null,null]",
+    "[\"Driver:michael schumacher\",\"WON\",\"Title:drivers' championships\",null,null,null]",
+    "[\"Driver:michael schumacher\",\"WON\",\"Title:world drivers' championship\",null,null,null]",
+    "[\"Driver:kimi räikkönen\",\"WON\",\"Title:drivers' championship\",null,null,null]",
+    "[\"Driver:lewis hamilton\",\"WON\",\"Title:drivers' championship\",null,null,null]",
+    "[\"Driver:lewis hamilton\",\"DROVE_FOR\",\"Team:mercedes-amg petronas formula one team\",2013,null,\"driver\"]",
+    "[\"Driver:lewis hamilton\",\"DROVE_FOR\",\"Team:mercedes-amg petronas formula one team\",2017,null,\"driver\"]",
+    "[\"Driver:lewis hamilton\",\"DROVE_FOR\",\"Team:mercedes-amg petronas formula one team\",2018,null,null]"
+   ],
+   "omitted_oversized": 1,
+   "omitted_for_budget": 536,
+   "prompt_estimate": 7154,
+   "prompt_chars": 21460,
+   "saved_prompt_estimate": 7121,
+   "saved_prompt_chars": 21363,
+   "saved_model_window": 8192,
+   "saved_omitted_oversized": 1,
+   "saved_selected_nodes": 5,
+   "replay_selected_nodes": 4,
+   "node_keys_match": false,
+   "edge_lines_match": true,
+   "prompt_equal": false,
+   "only_in_replay_nodes": [],
+   "only_in_saved_nodes": [
+    "Season:1994"
+   ]
+  },
+  {
+   "id": "Q07",
+   "anchors": [
+    "Title:1997 european championship",
+    "Title:2005 f1 world championship",
+    "Title:1997 spanish championship"
+   ],
+   "missing_anchors": [],
+   "named_anchor": null,
+   "named_anchor_in_saved_anchors": null,
+   "named_anchor_in_replay_prompt": null,
+   "named_anchor_in_saved_prompt": null,
+   "selected_before_fit": [
+    "[\"Driver:lewis hamilton\",\"TEAMMATE_OF\",\"Driver:fernando alonso\",null,null,null]",
+    "[\"Driver:fernando alonso\",\"TEAMMATE_OF\",\"Driver:lewis hamilton\",null,null,null]",
+    "[\"Driver:heikki kovalainen\",\"TEAMMATE_OF\",\"Driver:fernando alonso\",null,null,null]",
+    "[\"Driver:fernando alonso\",\"TEAMMATE_OF\",\"Driver:mark webber\",null,null,null]",
+    "[\"Driver:jarno trulli\",\"TEAMMATE_OF\",\"Driver:fernando alonso\",null,null,null]",
+    "[\"Driver:fernando alonso\",\"WON\",\"Title:1997 spanish championship\",null,null,null]",
+    "[\"Driver:fernando alonso\",\"WON\",\"Title:2005 f1 world championship\",null,null,null]",
+    "[\"Driver:fernando alonso\",\"TEAMMATE_OF\",\"Driver:heikki kovalainen\",null,null,null]"
+   ],
+   "selected_after_fit": [
+    "[\"Driver:lewis hamilton\",\"TEAMMATE_OF\",\"Driver:fernando alonso\",null,null,null]",
+    "[\"Driver:fernando alonso\",\"TEAMMATE_OF\",\"Driver:lewis hamilton\",null,null,null]",
+    "[\"Driver:heikki kovalainen\",\"TEAMMATE_OF\",\"Driver:fernando alonso\",null,null,null]",
+    "[\"Driver:fernando alonso\",\"TEAMMATE_OF\",\"Driver:mark webber\",null,null,null]",
+    "[\"Driver:jarno trulli\",\"TEAMMATE_OF\",\"Driver:fernando alonso\",null,null,null]",
+    "[\"Driver:fernando alonso\",\"WON\",\"Title:1997 spanish championship\",null,null,null]",
+    "[\"Driver:fernando alonso\",\"WON\",\"Title:2005 f1 world championship\",null,null,null]",
+    "[\"Driver:fernando alonso\",\"TEAMMATE_OF\",\"Driver:heikki kovalainen\",null,null,null]"
+   ],
+   "omitted_oversized": 1,
+   "omitted_for_budget": 358,
+   "prompt_estimate": 7163,
+   "prompt_chars": 21488,
+   "saved_prompt_estimate": 7161,
+   "saved_prompt_chars": 21481,
+   "saved_model_window": 8192,
+   "saved_omitted_oversized": 1,
+   "saved_selected_nodes": 6,
+   "replay_selected_nodes": 6,
+   "node_keys_match": true,
+   "edge_lines_match": true,
+   "prompt_equal": false,
+   "only_in_replay_nodes": [],
+   "only_in_saved_nodes": []
+  },
+  {
+   "id": "Q08",
+   "anchors": [
+    "Driver:nico rosberg",
+    "Team:mercedes-amg petronas formula one team",
+    "Team:mercedes-benz"
+   ],
+   "missing_anchors": [
+    "Team:mercedes-amg petronas formula one team",
+    "Team:mercedes-benz"
+   ],
+   "named_anchor": "Team:mercedes-amg petronas formula one team",
+   "named_anchor_in_saved_anchors": true,
+   "named_anchor_in_replay_prompt": false,
+   "named_anchor_in_saved_prompt": false,
+   "selected_before_fit": [
+    "[\"RaceResult:142 points\",\"FOR_TEAM\",\"Team:mercedes-amg petronas formula one team\",null,null,null]",
+    "[\"Driver:nico rosberg\",\"DROVE_FOR\",\"Team:mercedes-amg petronas formula one team\",null,null,\"driver\"]",
+    "[\"Driver:nico rosberg\",\"DROVE_FOR\",\"Team:mercedes-amg petronas formula one team\",2006,2016,null]",
+    "[\"Driver:nico rosberg\",\"DROVE_FOR\",\"Team:mercedes-amg petronas formula one team\",2010,2016,null]",
+    "[\"Driver:nico rosberg\",\"DROVE_FOR\",\"Team:mercedes-amg petronas formula one team\",2014,null,null]",
+    "[\"Driver:nico rosberg\",\"DROVE_FOR\",\"Team:mercedes-amg petronas formula one team\",null,2016,null]",
+    "[\"Driver:nico rosberg\",\"DROVE_FOR\",\"Team:mercedes-amg petronas formula one team\",null,null,null]",
+    "[\"Driver:michael schumacher\",\"DROVE_FOR\",\"Team:mercedes-amg petronas formula one team\",2010,null,null]",
+    "[\"Driver:valtteri bottas\",\"DROVE_FOR\",\"Team:mercedes-amg petronas formula one team\",2017,null,null]",
+    "[\"Driver:valtteri bottas\",\"DROVE_FOR\",\"Team:mercedes-amg petronas formula one team\",null,null,null]",
+    "[\"Team:mercedes-amg petronas formula one team\",\"ENTERED\",\"Season:2017\",null,null,null]",
+    "[\"Driver:nico rosberg\",\"DROVE_FOR\",\"Team:mercedes-benz\",2014,null,null]"
+   ],
+   "selected_after_fit": [
+    "[\"RaceResult:142 points\",\"FOR_TEAM\",\"Team:mercedes-amg petronas formula one team\",null,null,null]",
+    "[\"Driver:nico rosberg\",\"DROVE_FOR\",\"Team:mercedes-amg petronas formula one team\",null,null,\"driver\"]",
+    "[\"Driver:nico rosberg\",\"DROVE_FOR\",\"Team:mercedes-amg petronas formula one team\",2006,2016,null]",
+    "[\"Driver:nico rosberg\",\"DROVE_FOR\",\"Team:mercedes-amg petronas formula one team\",2014,null,null]"
+   ],
+   "omitted_oversized": 0,
+   "omitted_for_budget": 400,
+   "prompt_estimate": 7143,
+   "prompt_chars": 21428,
+   "saved_prompt_estimate": 7156,
+   "saved_prompt_chars": 21466,
+   "saved_model_window": 8192,
+   "saved_omitted_oversized": 1,
+   "saved_selected_nodes": 2,
+   "replay_selected_nodes": 2,
+   "node_keys_match": true,
+   "edge_lines_match": true,
+   "prompt_equal": false,
+   "only_in_replay_nodes": [],
+   "only_in_saved_nodes": []
+  },
+  {
+   "id": "Q09",
+   "anchors": [
+    "Title:drivers' championship",
+    "Title:12 constructors' championships",
+    "Title:drivers' championships"
+   ],
+   "missing_anchors": [],
+   "named_anchor": null,
+   "named_anchor_in_saved_anchors": null,
+   "named_anchor_in_replay_prompt": null,
+   "named_anchor_in_saved_prompt": null,
+   "selected_before_fit": [
+    "[\"Driver:fernando alonso\",\"WON\",\"Title:world drivers' championship\",null,null,null]",
+    "[\"Driver:kimi räikkönen\",\"WON\",\"Title:world drivers' championship\",null,null,null]",
+    "[\"Driver:lewis hamilton\",\"WON\",\"Title:2008 world drivers' championship\",null,null,null]",
+    "[\"Driver:lewis hamilton\",\"WON\",\"Title:world drivers' championship\",null,null,null]",
+    "[\"Driver:fernando alonso\",\"WON\",\"Title:drivers' championship\",null,null,null]",
+    "[\"Driver:kimi räikkönen\",\"WON\",\"Title:drivers' championship\",null,null,null]",
+    "[\"Driver:lewis hamilton\",\"WON\",\"Title:drivers' championship\",null,null,null]"
+   ],
+   "selected_after_fit": [
+    "[\"Driver:fernando alonso\",\"WON\",\"Title:world drivers' championship\",null,null,null]",
+    "[\"Driver:kimi räikkönen\",\"WON\",\"Title:world drivers' championship\",null,null,null]",
+    "[\"Driver:lewis hamilton\",\"WON\",\"Title:2008 world drivers' championship\",null,null,null]",
+    "[\"Driver:lewis hamilton\",\"WON\",\"Title:world drivers' championship\",null,null,null]",
+    "[\"Driver:fernando alonso\",\"WON\",\"Title:drivers' championship\",null,null,null]",
+    "[\"Driver:kimi räikkönen\",\"WON\",\"Title:drivers' championship\",null,null,null]",
+    "[\"Driver:lewis hamilton\",\"WON\",\"Title:drivers' championship\",null,null,null]"
+   ],
+   "omitted_oversized": 1,
+   "omitted_for_budget": 489,
+   "prompt_estimate": 7167,
+   "prompt_chars": 21500,
+   "saved_prompt_estimate": 7160,
+   "saved_prompt_chars": 21480,
+   "saved_model_window": 8192,
+   "saved_omitted_oversized": 1,
+   "saved_selected_nodes": 5,
+   "replay_selected_nodes": 5,
+   "node_keys_match": true,
+   "edge_lines_match": true,
+   "prompt_equal": false,
+   "only_in_replay_nodes": [],
+   "only_in_saved_nodes": []
+  },
+  {
+   "id": "Q10",
+   "anchors": [
+    "Team:scuderia ferrari",
+    "Team:scuderia ferrari esports team",
+    "Team:scuderia italia"
+   ],
+   "missing_anchors": [
+    "Team:scuderia ferrari"
+   ],
+   "named_anchor": "Team:scuderia ferrari",
+   "named_anchor_in_saved_anchors": true,
+   "named_anchor_in_replay_prompt": false,
+   "named_anchor_in_saved_prompt": false,
+   "selected_before_fit": [
+    "[\"Driver:carlos sainz\",\"DROVE_FOR\",\"Team:scuderia ferrari\",null,null,\"driver\"]",
+    "[\"Driver:charles leclerc\",\"DROVE_FOR\",\"Team:scuderia ferrari\",2016,null,\"development driver\"]",
+    "[\"Driver:charles leclerc\",\"DROVE_FOR\",\"Team:scuderia ferrari\",null,2028,\"Driver\"]",
+    "[\"Driver:charles leclerc\",\"DROVE_FOR\",\"Team:scuderia ferrari\",null,null,null]",
+    "[\"Driver:kimi räikkönen\",\"DROVE_FOR\",\"Team:scuderia ferrari\",2007,2009,null]",
+    "[\"Driver:lewis hamilton\",\"DROVE_FOR\",\"Team:scuderia ferrari\",null,null,null]",
+    "[\"Team:scuderia ferrari\",\"ENTERED\",\"Season:2013\",null,null,null]",
+    "[\"Driver:charles leclerc\",\"DROVE_FOR\",\"Team:scuderia ferrari\",2019,2022,null]",
+    "[\"Driver:charles leclerc\",\"DROVE_FOR\",\"Team:scuderia ferrari\",2019,null,null]",
+    "[\"Driver:charles leclerc\",\"DROVE_FOR\",\"Team:scuderia ferrari\",2020,null,null]",
+    "[\"Driver:charles leclerc\",\"DROVE_FOR\",\"Team:scuderia ferrari\",2021,null,null]",
+    "[\"Driver:charles leclerc\",\"DROVE_FOR\",\"Team:scuderia ferrari\",2022,null,null]"
+   ],
+   "selected_after_fit": [
+    "[\"Driver:carlos sainz\",\"DROVE_FOR\",\"Team:scuderia ferrari\",null,null,\"driver\"]",
+    "[\"Driver:charles leclerc\",\"DROVE_FOR\",\"Team:scuderia ferrari\",2016,null,\"development driver\"]",
+    "[\"Driver:charles leclerc\",\"DROVE_FOR\",\"Team:scuderia ferrari\",null,2028,\"Driver\"]",
+    "[\"Driver:charles leclerc\",\"DROVE_FOR\",\"Team:scuderia ferrari\",null,null,null]"
+   ],
+   "omitted_oversized": 1,
+   "omitted_for_budget": 546,
+   "prompt_estimate": 7167,
+   "prompt_chars": 21499,
+   "saved_prompt_estimate": 7167,
+   "saved_prompt_chars": 21500,
+   "saved_model_window": 8192,
+   "saved_omitted_oversized": 0,
+   "saved_selected_nodes": 6,
+   "replay_selected_nodes": 4,
+   "node_keys_match": false,
+   "edge_lines_match": true,
+   "prompt_equal": false,
+   "only_in_replay_nodes": [],
+   "only_in_saved_nodes": [
+    "Driver:alonso",
+    "Season:2022 world drivers' championship"
+   ]
+  },
+  {
+   "id": "Q11",
+   "anchors": [
+    "Title:12 constructors' championships",
+    "Title:9",
+    "Title:constructors' title"
+   ],
+   "missing_anchors": [],
+   "named_anchor": null,
+   "named_anchor_in_saved_anchors": null,
+   "named_anchor_in_replay_prompt": null,
+   "named_anchor_in_saved_prompt": null,
+   "selected_before_fit": [
+    "[\"Team:renault\",\"WON\",\"Title:11 drivers' championships\",null,null,null]",
+    "[\"Team:renault\",\"WON\",\"Title:manufacturer championship\",null,null,null]",
+    "[\"Team:williams racing\",\"WON\",\"Title:constructors' championship\",null,null,null]",
+    "[\"Team:renault\",\"WON\",\"Title:12 constructors' championships\",null,null,null]",
+    "[\"Team:williams racing\",\"WON\",\"Title:9\",null,null,null]",
+    "[\"Team:renault\",\"WON\",\"Title:constructors' championship\",null,null,null]"
+   ],
+   "selected_after_fit": [
+    "[\"Team:renault\",\"WON\",\"Title:11 drivers' championships\",null,null,null]",
+    "[\"Team:renault\",\"WON\",\"Title:manufacturer championship\",null,null,null]"
+   ],
+   "omitted_oversized": 0,
+   "omitted_for_budget": 161,
+   "prompt_estimate": 7165,
+   "prompt_chars": 21493,
+   "saved_prompt_estimate": 7143,
+   "saved_prompt_chars": 21428,
+   "saved_model_window": 8192,
+   "saved_omitted_oversized": 0,
+   "saved_selected_nodes": 7,
+   "replay_selected_nodes": 7,
+   "node_keys_match": true,
+   "edge_lines_match": true,
+   "prompt_equal": false,
+   "only_in_replay_nodes": [],
+   "only_in_saved_nodes": []
+  },
+  {
+   "id": "Q12",
+   "anchors": [
+    "Title:2021 drivers' championship",
+    "Season:2010",
+    "Title:world drivers' title"
+   ],
+   "missing_anchors": [],
+   "named_anchor": null,
+   "named_anchor_in_saved_anchors": null,
+   "named_anchor_in_replay_prompt": null,
+   "named_anchor_in_saved_prompt": null,
+   "selected_before_fit": [
+    "[\"Title:world drivers' championship\",\"AWARDED_IN\",\"Season:2010\",null,null,null]",
+    "[\"Driver:kimi räikkönen\",\"DROVE_FOR\",\"Team:citroën junior team\",2010,null,\"full-time driver\"]",
+    "[\"Driver:lewis hamilton\",\"WON\",\"Title:2020 world drivers' championship\",null,null,null]",
+    "[\"Driver:lewis hamilton\",\"WON\",\"Title:world drivers' championship\",null,null,null]",
+    "[\"Team:citroën junior team\",\"ENTERED\",\"Season:2010\",null,null,null]",
+    "[\"Driver:lewis hamilton\",\"WON\",\"Title:world drivers' title\",null,null,null]"
+   ],
+   "selected_after_fit": [
+    "[\"Title:world drivers' championship\",\"AWARDED_IN\",\"Season:2010\",null,null,null]",
+    "[\"Driver:kimi räikkönen\",\"DROVE_FOR\",\"Team:citroën junior team\",2010,null,\"full-time driver\"]",
+    "[\"Driver:lewis hamilton\",\"WON\",\"Title:2020 world drivers' championship\",null,null,null]",
+    "[\"Driver:lewis hamilton\",\"WON\",\"Title:world drivers' championship\",null,null,null]",
+    "[\"Team:citroën junior team\",\"ENTERED\",\"Season:2010\",null,null,null]",
+    "[\"Driver:lewis hamilton\",\"WON\",\"Title:world drivers' title\",null,null,null]"
+   ],
+   "omitted_oversized": 1,
+   "omitted_for_budget": 417,
+   "prompt_estimate": 7139,
+   "prompt_chars": 21416,
+   "saved_prompt_estimate": 7141,
+   "saved_prompt_chars": 21422,
+   "saved_model_window": 8192,
+   "saved_omitted_oversized": 1,
+   "saved_selected_nodes": 6,
+   "replay_selected_nodes": 6,
+   "node_keys_match": true,
+   "edge_lines_match": true,
+   "prompt_equal": false,
+   "only_in_replay_nodes": [],
+   "only_in_saved_nodes": []
+  },
+  {
+   "id": "Q13",
+   "anchors": [
+    "Team:scuderia ferrari",
+    "Team:red bull racing",
+    "Team:red bull technology"
+   ],
+   "missing_anchors": [
+    "Team:scuderia ferrari",
+    "Team:red bull racing"
+   ],
+   "named_anchor": "Team:scuderia ferrari",
+   "named_anchor_in_saved_anchors": true,
+   "named_anchor_in_replay_prompt": false,
+   "named_anchor_in_saved_prompt": false,
+   "selected_before_fit": [
+    "[\"RaceResult:race result\",\"FOR_TEAM\",\"Team:red bull racing\",null,null,null]",
+    "[\"Driver:max verstappen\",\"DROVE_FOR\",\"Team:red bull racing\",null,null,null]",
+    "[\"Team:red bull racing\",\"ENTERED\",\"Season:2012 formula one world championship\",null,null,null]",
+    "[\"Team:red bull racing\",\"ENTERED\",\"Season:2013\",null,null,null]",
+    "[\"Team:red bull racing\",\"ENTERED\",\"Season:2014\",null,null,null]",
+    "[\"Team:scuderia ferrari\",\"ENTERED\",\"Season:2012 formula one world championship\",null,null,null]",
+    "[\"Team:scuderia ferrari\",\"ENTERED\",\"Season:2014\",null,null,null]",
+    "[\"Driver:max verstappen\",\"DROVE_FOR\",\"Team:red bull racing\",2016,null,null]",
+    "[\"Driver:max verstappen\",\"DROVE_FOR\",\"Team:red bull racing\",2017,null,null]",
+    "[\"Driver:max verstappen\",\"DROVE_FOR\",\"Team:red bull racing\",2018,null,null]",
+    "[\"Driver:max verstappen\",\"DROVE_FOR\",\"Team:red bull racing\",2023,2028,null]",
+    "[\"Driver:max verstappen\",\"DROVE_FOR\",\"Team:red bull racing\",null,2030,null]"
+   ],
+   "selected_after_fit": [
+    "[\"RaceResult:race result\",\"FOR_TEAM\",\"Team:red bull racing\",null,null,null]",
+    "[\"Driver:max verstappen\",\"DROVE_FOR\",\"Team:red bull racing\",null,null,null]",
+    "[\"Team:red bull racing\",\"ENTERED\",\"Season:2012 formula one world championship\",null,null,null]",
+    "[\"Team:red bull racing\",\"ENTERED\",\"Season:2013\",null,null,null]",
+    "[\"Team:red bull racing\",\"ENTERED\",\"Season:2014\",null,null,null]",
+    "[\"Team:scuderia ferrari\",\"ENTERED\",\"Season:2012 formula one world championship\",null,null,null]"
+   ],
+   "omitted_oversized": 0,
+   "omitted_for_budget": 539,
+   "prompt_estimate": 7156,
+   "prompt_chars": 21467,
+   "saved_prompt_estimate": 7166,
+   "saved_prompt_chars": 21496,
+   "saved_model_window": 8192,
+   "saved_omitted_oversized": 0,
+   "saved_selected_nodes": 6,
+   "replay_selected_nodes": 4,
+   "node_keys_match": false,
+   "edge_lines_match": true,
+   "prompt_equal": false,
+   "only_in_replay_nodes": [],
+   "only_in_saved_nodes": [
+    "Season:2020 formula one world championship",
+    "Season:2021 formula one world championship"
+   ]
+  }
+ ],
+ "named_anchors_missing_from_replay_prompt": [
+  "Q01",
+  "Q02",
+  "Q04",
+  "Q05",
+  "Q06",
+  "Q08",
+  "Q10",
+  "Q13"
+ ],
+ "prompts_equal": 1,
+ "node_sets_equal": 9
+}

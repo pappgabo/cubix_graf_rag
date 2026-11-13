@@ -1,0 +1,87 @@
+{
+  "chunk_id": "reference-formula-one#54",
+  "doc_id": "reference-formula-one",
+  "document_title": "Formula One",
+  "section": "Formula One > Cars and technology",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "fd962a40f9cc11161502ce6b3053a29321f73ba6c7b51d25efc1595d22551239",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Pirelli",
+        "entity_type": "Team",
+        "description": "Tyre supplier for Formula One since the reintroduction of slick tyres in 2009."
+      },
+      {
+        "local_id": "e2",
+        "name": "Formula One",
+        "entity_type": "Season",
+        "description": "The racing series that features cars with specific tyre and wheel regulations."
+      },
+      {
+        "local_id": "e3",
+        "name": "2022",
+        "entity_type": "Season",
+        "description": "Year when standardised wheel covers were introduced and wheel diameter increased."
+      },
+      {
+        "local_id": "e4",
+        "name": "2009",
+        "entity_type": "Season",
+        "description": "Year when slick tyres were reintroduced in Formula One."
+      },
+      {
+        "local_id": "e5",
+        "name": "1998-2008",
+        "entity_type": "Season",
+        "description": "Period when Formula One did not use slick tyres."
+      },
+      {
+        "local_id": "e6",
+        "name": "FIA",
+        "entity_type": "Team",
+        "description": "Governing body that specifies regulations for Formula One cars."
+      }
+    ],
+    "relationships": []
+  },
+  "entity_candidates": 6,
+  "entities_accepted": 6,
+  "entities_rejected": 0,
+  "relationship_candidates": 5,
+  "relationships_accepted": 0,
+  "relationships_rejected": 5,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "FIELDED does not allow Team -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "RACED_IN does not allow Season -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "RACED_IN does not allow Season -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "RACED_IN does not allow Season -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "FIELDED does not allow Team -> Season"
+    }
+  ],
+  "alignments": []
+}

@@ -1,0 +1,258 @@
+{
+  "chunk_id": "season-2021-formula-one-world-championship#23",
+  "doc_id": "season-2021-formula-one-world-championship",
+  "document_title": "2021 Formula One World Championship",
+  "section": null,
+  "page": 5,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "c03f7f269ae92cfa37234140babbb58eeee03076d63df32146343ff69452e496",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Lewis Hamilton",
+        "entity_type": "Driver",
+        "description": "A driver who took pole position at the Emilia Romagna Grand Prix."
+      },
+      {
+        "local_id": "e2",
+        "name": "Pérez",
+        "entity_type": "Driver",
+        "description": "A driver who qualified behind Hamilton at the Emilia Romagna Grand Prix."
+      },
+      {
+        "local_id": "e3",
+        "name": "Verstappen",
+        "entity_type": "Driver",
+        "description": "A driver who qualified behind Hamilton at the Emilia Romagna Grand Prix."
+      },
+      {
+        "local_id": "e4",
+        "name": "Mazepin",
+        "entity_type": "Driver",
+        "description": "A driver involved in a crash at the Emilia Romagna Grand Prix."
+      },
+      {
+        "local_id": "e5",
+        "name": "Nicholas Latifi",
+        "entity_type": "Driver",
+        "description": "A driver involved in a crash at the Emilia Romagna Grand Prix."
+      },
+      {
+        "local_id": "e6",
+        "name": "Schumacher",
+        "entity_type": "Driver",
+        "description": "A driver who lost control of his car during the Emilia Romagna Grand Prix."
+      },
+      {
+        "local_id": "e7",
+        "name": "Emilia Romagna Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A race event where various incidents occurred."
+      },
+      {
+        "local_id": "e8",
+        "name": "2021",
+        "entity_type": "Season",
+        "description": "The championship year of the Emilia Romagna Grand Prix."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Hamilton at Emilia Romagna Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Hamilton took pole position at the Emilia Romagna Grand Prix."
+      },
+      {
+        "local_id": "rr2",
+        "name": "Pérez at Emilia Romagna Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Pérez qualified at the Emilia Romagna Grand Prix."
+      },
+      {
+        "local_id": "rr3",
+        "name": "Verstappen at Emilia Romagna Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Verstappen qualified at the Emilia Romagna Grand Prix."
+      },
+      {
+        "local_id": "rr4",
+        "name": "Mazepin at Emilia Romagna Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Mazepin was involved in a crash at the Emilia Romagna Grand Prix."
+      },
+      {
+        "local_id": "rr5",
+        "name": "Nicholas Latifi at Emilia Romagna Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Nicholas Latifi was involved in a crash at the Emilia Romagna Grand Prix."
+      },
+      {
+        "local_id": "rr6",
+        "name": "Schumacher at Emilia Romagna Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Schumacher lost control of his car during the Emilia Romagna Grand Prix."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e7",
+        "target_id": "e8",
+        "relationship_type": "ROUND_OF",
+        "description": "The Emilia Romagna Grand Prix is a round of the 2021 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Hamilton took pole position at the Emilia Romagna Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e7",
+        "relationship_type": "AT_RACE",
+        "description": "Hamilton took pole position at the Emilia Romagna Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "rr2",
+        "relationship_type": "ACHIEVED",
+        "description": "Pérez qualified at the Emilia Romagna Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr2",
+        "target_id": "e7",
+        "relationship_type": "AT_RACE",
+        "description": "Pérez qualified at the Emilia Romagna Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "rr3",
+        "relationship_type": "ACHIEVED",
+        "description": "Verstappen qualified at the Emilia Romagna Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr3",
+        "target_id": "e7",
+        "relationship_type": "AT_RACE",
+        "description": "Verstappen qualified at the Emilia Romagna Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "rr4",
+        "relationship_type": "ACHIEVED",
+        "description": "Mazepin was involved in a crash at the Emilia Romagna Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr4",
+        "target_id": "e7",
+        "relationship_type": "AT_RACE",
+        "description": "Mazepin was involved in a crash at the Emilia Romagna Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "rr5",
+        "relationship_type": "ACHIEVED",
+        "description": "Nicholas Latifi was involved in a crash at the Emilia Romagna Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr5",
+        "target_id": "e7",
+        "relationship_type": "AT_RACE",
+        "description": "Nicholas Latifi was involved in a crash at the Emilia Romagna Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e6",
+        "target_id": "rr6",
+        "relationship_type": "ACHIEVED",
+        "description": "Schumacher lost control of his car during the Emilia Romagna Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr6",
+        "target_id": "e7",
+        "relationship_type": "AT_RACE",
+        "description": "Schumacher lost control of his car during the Emilia Romagna Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 8,
+  "entities_accepted": 14,
+  "entities_rejected": 0,
+  "relationship_candidates": 7,
+  "relationships_accepted": 13,
+  "relationships_rejected": 0,
+  "rejections": [],
+  "alignments": [
+    {
+      "index": 1,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e7; description kept"
+    },
+    {
+      "index": 2,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr2 -AT_RACE-> e7; description kept"
+    },
+    {
+      "index": 3,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr3 -AT_RACE-> e7; description kept"
+    },
+    {
+      "index": 4,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr4 -AT_RACE-> e7; description kept"
+    },
+    {
+      "index": 5,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr5 -AT_RACE-> e7; description kept"
+    },
+    {
+      "index": 6,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr6 -AT_RACE-> e7; description kept"
+    }
+  ]
+}

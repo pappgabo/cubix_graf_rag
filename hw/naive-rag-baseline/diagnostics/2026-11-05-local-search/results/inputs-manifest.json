@@ -1,0 +1,54 @@
+{
+  "project": "D:\\PET\\CUBIX\\cubix_GraphRAG\\4.hét\\HW\\naive-rag-baseline",
+  "python": "3.11.15",
+  "pandoc": "pandoc 3.12",
+  "packages": {
+    "langchain-text-splitters": "1.1.3",
+    "langchain-community": "0.4.2",
+    "pypdf": "6.19.0",
+    "markdownify": "1.2.3",
+    "beautifulsoup4": "4.15.0",
+    "openpyxl": "3.1.5",
+    "pydantic": "2.13.5"
+  },
+  "settings_used": {
+    "env_file": null,
+    "chunk_size": 500,
+    "chunk_overlap": 75
+  },
+  "inputs": {
+    "corpus_dir": {
+      "sha256_tree": "8d0e629db0839f88313c1fd2983a048818c1fe46a48e52c226379ef6a2f0c612",
+      "files": 23
+    },
+    "extraction_dir": {
+      "sha256_tree": "841f82d056f2a3bdbe5e0a506f69ff1708e01cba561ceaae9c8ef486d561b9c7",
+      "files": 1565
+    },
+    "entity_index": {
+      "path": "graph\\corpus\\entity-index.json",
+      "sha256": "8148bb07dfcb587102b98c4cf28fb55e1c9d58a1c57b09ef432f16383250db5c"
+    },
+    "saved_run": {
+      "path": "docs\\osszehasonlitas-run.json",
+      "sha256": "0669921aed697d376af6ec14a5aa6c6f4d6ff54efde17d85470d1538f3215645"
+    },
+    "questions": {
+      "path": "questions.md",
+      "sha256": "a02bd8a78b3e5ffe61bcff22b4e4e06ab83c8248190bc85656f9eb9ae5432239"
+    },
+    "source": {
+      "config.py": "d9c65b2351fb3a35a74be48b9ce2b0d2b8cde8c34199cf6d35aacf28ece8f27f",
+      "ingest.py": "8ed079f0c534a67978c25c4c26e7e8d1720fb6cf3ea53a24727fd431c82a0c61",
+      "loaders.py": "998a08f5e91a81568992ae1c1c4272a4876d88d7fd5d5c053ab53ec6a25ed1fe",
+      "dependencies.py": "b010ed2601e2d3e896119a1353903143184cfe7da9ece243205ab4fe6ade292f",
+      "extract_pilot.py": "5a70707ef6b625b4831b44891671c76715aeb1e44313796fca93ca5810cd153d",
+      "extraction_models.py": "0aacbb96a2206271d0e924a15bc1bab4d58056a823a6992cb01c91cc29435cb6",
+      "extraction_identity.py": "e80d0978c8d3e5d8951bf8c2b04ecfc61e603d28e6c014f817f921d6dd267b56",
+      "graph_merge.py": "856114faa445ee7b837b8e3b266f784f1a5b9b287e8f4719373b56174250969b",
+      "quality_report.py": "37c361a1a9a116c6fc2bcd590e1052e98bc02badeff5c53f1ecdc210f1d7a63e",
+      "entity_index.py": "9fef2fef218a6deed5e6993aedaab787785d462281f3e08071684846bc376f98",
+      "local_search.py": "f1bccf99dc04432e4453da1263292495f2c3bbb5bcfefb36979b308463bff267"
+    }
+  }
+}

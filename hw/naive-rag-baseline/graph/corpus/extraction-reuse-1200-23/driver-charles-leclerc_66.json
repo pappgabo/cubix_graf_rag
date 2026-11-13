@@ -1,0 +1,129 @@
+{
+  "chunk_id": "driver-charles-leclerc#66",
+  "doc_id": "driver-charles-leclerc",
+  "document_title": "Charles Leclerc",
+  "section": "Charles Leclerc > Personal life",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "030b5f1d565b0c5bdfdaff244c8f7d1a4ddce43d216726294779baf07c0edce9",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Charles Leclerc",
+        "entity_type": "Driver",
+        "description": "Leclerc has been widely described as a national hero of Monaco, particularly following his victory at his home Grand Prix in 2024."
+      },
+      {
+        "local_id": "e2",
+        "name": "Ferrari 312B3",
+        "entity_type": "Car",
+        "description": "A car driven by Niki Lauda in 1974."
+      },
+      {
+        "local_id": "e3",
+        "name": "Historic Grand Prix of Monaco",
+        "entity_type": "GrandPrix",
+        "description": "Leclerc entered this Grand Prix in 2022."
+      },
+      {
+        "local_id": "e4",
+        "name": "2024",
+        "entity_type": "Season",
+        "description": "The year Leclerc was leading the World Drivers' Championship and won his home Grand Prix."
+      },
+      {
+        "local_id": "e5",
+        "name": "2022",
+        "entity_type": "Season",
+        "description": "The year Leclerc entered the Historic Grand Prix of Monaco."
+      },
+      {
+        "local_id": "e6",
+        "name": "2020",
+        "entity_type": "Season",
+        "description": "The year Leclerc was awarded the Medal of Honour by the National Council of Monaco."
+      },
+      {
+        "local_id": "e7",
+        "name": "2026",
+        "entity_type": "Season",
+        "description": "The year Leclerc took delivery of a yacht."
+      },
+      {
+        "local_id": "e8",
+        "name": "Monaco",
+        "entity_type": "Circuit",
+        "description": "Leclerc's home Grand Prix."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Charles Leclerc at Historic Grand Prix of Monaco",
+        "entity_type": "RaceResult",
+        "description": "Leclerc entered the Historic Grand Prix of Monaco in 2022."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Leclerc entered the Historic Grand Prix of Monaco in 2022.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e3",
+        "relationship_type": "AT_RACE",
+        "description": "Leclerc entered the Historic Grand Prix of Monaco in 2022.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e5",
+        "relationship_type": "ROUND_OF",
+        "description": "The Historic Grand Prix of Monaco is a round of the 2022 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 8,
+  "entities_accepted": 9,
+  "entities_rejected": 0,
+  "relationship_candidates": 5,
+  "relationships_accepted": 3,
+  "relationships_rejected": 3,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "WON does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "ACHIEVED does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 5,
+      "reason": "FOR_TEAM does not allow Driver -> Circuit"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 1,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e3; description kept"
+    }
+  ]
+}

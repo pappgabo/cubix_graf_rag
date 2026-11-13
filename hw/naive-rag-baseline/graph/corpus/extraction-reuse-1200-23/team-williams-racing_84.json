@@ -1,0 +1,110 @@
+{
+  "chunk_id": "team-williams-racing#84",
+  "doc_id": "team-williams-racing",
+  "document_title": "Williams Racing",
+  "section": "Williams Racing > Return to Cosworth engines (2010–2011) > Williams Racing > 2010–2011 seasons",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "3263a8aaf6d7f1787048ac5ab31f718605f40978d67cd102a20fb7d4fb902731",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Williams Racing",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that entered cars."
+      },
+      {
+        "local_id": "e2",
+        "name": "Rubens Barrichello",
+        "entity_type": "Driver",
+        "description": "A driver who joined Williams Racing from Brawn GP for the 2010 season."
+      },
+      {
+        "local_id": "e3",
+        "name": "Nico Hülkenberg",
+        "entity_type": "Driver",
+        "description": "A driver who graduated from the test driver seat to race for Williams Racing in the 2010 season."
+      },
+      {
+        "local_id": "e4",
+        "name": "Valtteri Bottas",
+        "entity_type": "Driver",
+        "description": "A driver who replaced Hülkenberg in the test seat for Williams Racing."
+      },
+      {
+        "local_id": "e5",
+        "name": "Cosworth CA V8",
+        "entity_type": "PowerUnit",
+        "description": "An updated version of the engine used by Williams Racing."
+      },
+      {
+        "local_id": "e6",
+        "name": "2010",
+        "entity_type": "Season",
+        "description": "The Formula 1 season in which Williams Racing entered a partnership with Cosworth."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e6",
+        "relationship_type": "ENTERED",
+        "description": "Williams Racing entered the 2010 Formula 1 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e1",
+        "relationship_type": "DROVE_FOR",
+        "description": "Rubens Barrichello drove for Williams Racing starting in the 2010 season.",
+        "from_year": 2010,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e1",
+        "relationship_type": "DROVE_FOR",
+        "description": "Nico Hülkenberg drove for Williams Racing starting in the 2010 season.",
+        "from_year": 2010,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e1",
+        "relationship_type": "DROVE_FOR",
+        "description": "Valtteri Bottas was the test driver for Williams Racing starting in the 2010 season.",
+        "from_year": 2010,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 6,
+  "entities_accepted": 6,
+  "entities_rejected": 0,
+  "relationship_candidates": 5,
+  "relationships_accepted": 4,
+  "relationships_rejected": 1,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "POWERED_BY does not allow Team -> PowerUnit"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 1,
+      "action": "clear_redundant_season_year",
+      "detail": "ENTERED year 2010 already named by Season 'e6'; from_year and to_year cleared"
+    }
+  ]
+}

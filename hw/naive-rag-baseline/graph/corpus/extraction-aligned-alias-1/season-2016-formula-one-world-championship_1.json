@@ -1,0 +1,64 @@
+{
+  "chunk_id": "season-2016-formula-one-world-championship#1",
+  "doc_id": "season-2016-formula-one-world-championship",
+  "document_title": "2016 Formula One World Championship",
+  "section": null,
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/2016_Formula_One_World_Championship",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "a42621e33186d0931f38067942c63ef59e820dc580ee20c15469b0144c45e66d",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "ENTERED does not allow Season -> Season"
+    }
+  ],
+  "alignments": [],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "2016 Formula One World Championship",
+        "entity_type": "Season",
+        "description": "The 2016 Formula One World Championship."
+      },
+      {
+        "local_id": "e2",
+        "name": "Australia",
+        "entity_type": "GrandPrix",
+        "description": "The first Grand Prix of the 2016 season."
+      },
+      {
+        "local_id": "e3",
+        "name": "Abu Dhabi",
+        "entity_type": "GrandPrix",
+        "description": "The last Grand Prix of the 2016 season."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e2",
+        "target_id": "e1",
+        "relationship_type": "ROUND_OF",
+        "description": "Australia is a round of the 2016 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e1",
+        "relationship_type": "ROUND_OF",
+        "description": "Abu Dhabi is a round of the 2016 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

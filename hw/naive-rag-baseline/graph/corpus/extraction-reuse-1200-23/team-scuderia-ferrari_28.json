@@ -1,0 +1,94 @@
+{
+  "chunk_id": "team-scuderia-ferrari#28",
+  "doc_id": "team-scuderia-ferrari",
+  "document_title": "Scuderia Ferrari",
+  "section": null,
+  "page": 6,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "c955b8cbaec4e66eaacf380e28fbedc8ed837ceb8079dcafc2e2ac3c0db3f526",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Scuderia Ferrari",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that has achieved significant success in the sport."
+      },
+      {
+        "local_id": "e2",
+        "name": "Drivers' Championship",
+        "entity_type": "Title",
+        "description": "A championship title awarded to drivers in Formula One."
+      },
+      {
+        "local_id": "e3",
+        "name": "2008 Italian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula One race where Scuderia Toro Rosso achieved a non-Ferrari victory."
+      },
+      {
+        "local_id": "e4",
+        "name": "1961 French Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula One race where Ferrari achieved a privateer win."
+      },
+      {
+        "local_id": "e5",
+        "name": "1950",
+        "entity_type": "Season",
+        "description": "A Formula One season."
+      },
+      {
+        "local_id": "e6",
+        "name": "1951",
+        "entity_type": "Season",
+        "description": "A Formula One season."
+      },
+      {
+        "local_id": "e7",
+        "name": "1952",
+        "entity_type": "Season",
+        "description": "A Formula One season."
+      },
+      {
+        "local_id": "e8",
+        "name": "1955",
+        "entity_type": "Season",
+        "description": "A Formula One season."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "WON",
+        "description": "Ferrari has had drivers win the Drivers' Championship.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 8,
+  "entities_accepted": 8,
+  "entities_rejected": 0,
+  "relationship_candidates": 3,
+  "relationships_accepted": 1,
+  "relationships_rejected": 2,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "DROVE_FOR does not allow Team -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "DROVE_FOR does not allow Team -> Season"
+    }
+  ],
+  "alignments": []
+}

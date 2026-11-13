@@ -1,0 +1,43 @@
+{
+  "chunk_id": "reference-formula-one#67",
+  "doc_id": "reference-formula-one",
+  "document_title": "Formula One",
+  "section": "Formula One > Social inequities",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "d3c8cfd3634611334aebe4a4a4f9fc9409a89da8aafccbdd4370f355cae80e89",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Lewis Hamilton",
+        "entity_type": "Driver",
+        "description": "A driver who remained vocal through his race weekend attire in the fight against racism."
+      },
+      {
+        "local_id": "e2",
+        "name": "2020",
+        "entity_type": "Season",
+        "description": "The season during which all twenty drivers wore 'End Racism' shirts and took part in an organised anti-racism protest."
+      }
+    ],
+    "relationships": []
+  },
+  "entity_candidates": 2,
+  "entities_accepted": 2,
+  "entities_rejected": 0,
+  "relationship_candidates": 1,
+  "relationships_accepted": 0,
+  "relationships_rejected": 1,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "DROVE_FOR does not allow Driver -> Season"
+    }
+  ],
+  "alignments": []
+}

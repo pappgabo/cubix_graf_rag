@@ -1,0 +1,68 @@
+{
+  "chunk_id": "team-mclaren#44",
+  "doc_id": "team-mclaren",
+  "document_title": "McLaren",
+  "section": "2015–2017: Return to Honda engines",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "301744cd442e3388723cdaafe1d572a0f86784a9cfbb6ad7c3898a627a047b78",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Fernando Alonso",
+        "entity_type": "Driver",
+        "description": "Alonso scored his first point three races later at the British Grand Prix."
+      },
+      {
+        "local_id": "e2",
+        "name": "British Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A race where Alonso scored his first point."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Fernando Alonso at British Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Alonso scored his first point at the British Grand Prix."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Alonso scored his first point at the British Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e2",
+        "relationship_type": "AT_RACE",
+        "description": "Alonso scored his first point at the British Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 2,
+  "entities_accepted": 3,
+  "entities_rejected": 0,
+  "relationship_candidates": 1,
+  "relationships_accepted": 2,
+  "relationships_rejected": 0,
+  "rejections": [],
+  "alignments": [
+    {
+      "index": 0,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e2; description kept"
+    }
+  ]
+}

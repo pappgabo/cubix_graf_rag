@@ -1,0 +1,49 @@
+{
+  "chunk_id": "driver-michael-schumacher#51",
+  "doc_id": "driver-michael-schumacher",
+  "document_title": "Michael Schumacher",
+  "section": null,
+  "page": 5,
+  "source": "https://en.wikipedia.org/wiki/Michael_Schumacher",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "eb65dde86c1e27be381bf16f17a7c2d9982a57a1dbe0c9996792d30026337d5d",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "ACHIEVED does not allow Driver -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "POWERED_BY does not allow Car -> Driver"
+    }
+  ],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Michael Schumacher",
+        "entity_type": "Driver",
+        "description": "A Formula One driver known for his competitive spirit and multiple championships."
+      },
+      {
+        "local_id": "e2",
+        "name": "Williams FW19",
+        "entity_type": "Car",
+        "description": "A car model used by the Williams team."
+      },
+      {
+        "local_id": "e3",
+        "name": "Monaco Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A prestigious Formula One race held in Monaco."
+      }
+    ],
+    "relationships": []
+  }
+}

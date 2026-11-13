@@ -1,0 +1,68 @@
+{
+  "chunk_id": "team-mclaren#93",
+  "doc_id": "team-mclaren",
+  "document_title": "McLaren",
+  "section": "Endurance racing",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "d4012db57fbb27cd9dca598ec4b594ebb9d45c0a69c5bfbc6d879cf0427cd15a",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "McLaren",
+        "entity_type": "Team",
+        "description": "A Formula 1 team."
+      },
+      {
+        "local_id": "e2",
+        "name": "2027",
+        "entity_type": "Season",
+        "description": "A championship year."
+      },
+      {
+        "local_id": "e3",
+        "name": "MCL-HY",
+        "entity_type": "Car",
+        "description": "The new car named by McLaren for the Hypercar class."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "ENTERED",
+        "description": "McLaren will enter the WEC in the Hypercar class starting from the 2027 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e3",
+        "relationship_type": "FIELDED",
+        "description": "McLaren will field the MCL-HY car in the Hypercar class.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 3,
+  "entities_accepted": 3,
+  "entities_rejected": 0,
+  "relationship_candidates": 2,
+  "relationships_accepted": 2,
+  "relationships_rejected": 0,
+  "rejections": [],
+  "alignments": [
+    {
+      "index": 0,
+      "action": "clear_redundant_season_year",
+      "detail": "ENTERED year 2027 already named by Season 'e2'; from_year and to_year cleared"
+    }
+  ]
+}

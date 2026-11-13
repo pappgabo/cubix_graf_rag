@@ -1,0 +1,153 @@
+{
+  "chunk_id": "driver-jenson-button#11",
+  "doc_id": "driver-jenson-button",
+  "document_title": "Jenson Button",
+  "section": "Junior car career",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "490af4ad2f08fd9ecff2798c27dfed80c2a0c89332ae3b5fac537725fc72d8aa",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Jenson Button",
+        "entity_type": "Driver",
+        "description": "A British racing driver who competed in Formula One."
+      },
+      {
+        "local_id": "e2",
+        "name": "British Formula 3 International Series",
+        "entity_type": "Season",
+        "description": "A junior racing series in which Jenson Button competed."
+      },
+      {
+        "local_id": "e3",
+        "name": "Renault-Dallara F399",
+        "entity_type": "Car",
+        "description": "The car model driven by Jenson Button in the British Formula 3 International Series."
+      },
+      {
+        "local_id": "e4",
+        "name": "Thruxton",
+        "entity_type": "Circuit",
+        "description": "A racing circuit where Jenson Button won a race."
+      },
+      {
+        "local_id": "e5",
+        "name": "Pembrey",
+        "entity_type": "Circuit",
+        "description": "A racing circuit where Jenson Button won a race."
+      },
+      {
+        "local_id": "e6",
+        "name": "Silverstone",
+        "entity_type": "Circuit",
+        "description": "A racing circuit where Jenson Button won a race."
+      },
+      {
+        "local_id": "e7",
+        "name": "Marlboro Masters",
+        "entity_type": "GrandPrix",
+        "description": "A race event where Jenson Button finished fifth."
+      },
+      {
+        "local_id": "e8",
+        "name": "Macau Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A race event where Jenson Button finished second."
+      },
+      {
+        "local_id": "e9",
+        "name": "Darren Manning",
+        "entity_type": "Driver",
+        "description": "A racer who finished ahead of Jenson Button in the Macau Grand Prix."
+      },
+      {
+        "local_id": "e10",
+        "name": "Super Nova Racing",
+        "entity_type": "Team",
+        "description": "A team for which Jenson Button tested a Formula 3000 car."
+      },
+      {
+        "local_id": "e11",
+        "name": "Fortec Motorsport",
+        "entity_type": "Team",
+        "description": "A team for which Jenson Button tested a Formula 3000 car."
+      },
+      {
+        "local_id": "e12",
+        "name": "Jerez",
+        "entity_type": "Circuit",
+        "description": "A racing circuit in Spain where Jenson Button tested a Formula 3000 car."
+      }
+    ],
+    "relationships": []
+  },
+  "entity_candidates": 12,
+  "entities_accepted": 12,
+  "entities_rejected": 0,
+  "relationship_candidates": 11,
+  "relationships_accepted": 0,
+  "relationships_rejected": 11,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 5,
+      "reason": "ACHIEVED Driver -> GrandPrix has from_year=1999, to_year=None, role=None; the year or role cannot be stored on the reified result"
+    },
+    {
+      "element": "relationship",
+      "index": 6,
+      "reason": "ACHIEVED Driver -> GrandPrix has from_year=1999, to_year=None, role=None; the year or role cannot be stored on the reified result"
+    },
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "RACED_IN does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "DROVE_FOR does not allow Driver -> Car"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "ACHIEVED does not allow Driver -> Circuit"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "ACHIEVED does not allow Driver -> Circuit"
+    },
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "ACHIEVED does not allow Driver -> Circuit"
+    },
+    {
+      "element": "relationship",
+      "index": 5,
+      "reason": "FOR_TEAM does not allow GrandPrix -> Driver"
+    },
+    {
+      "element": "relationship",
+      "index": 6,
+      "reason": "DROVE_FOR does not allow Team -> Driver"
+    },
+    {
+      "element": "relationship",
+      "index": 7,
+      "reason": "DROVE_FOR does not allow Team -> Driver"
+    },
+    {
+      "element": "relationship",
+      "index": 8,
+      "reason": "RACED_IN does not allow Circuit -> Driver"
+    }
+  ],
+  "alignments": []
+}

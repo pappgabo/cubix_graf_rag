@@ -1,0 +1,255 @@
+{
+  "chunk_id": "team-red-bull-racing#55",
+  "doc_id": "team-red-bull-racing",
+  "document_title": "Red Bull Racing",
+  "section": "2020 season",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "7f44b34fde68b48f78da789637bda3eae8469bc461ae3aef2909ea0b206b3b25",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Max Verstappen",
+        "entity_type": "Driver",
+        "description": "A driver for Red Bull Racing who finished on the podium multiple times in the 2020 season."
+      },
+      {
+        "local_id": "e2",
+        "name": "Alex Albon",
+        "entity_type": "Driver",
+        "description": "A driver for Red Bull Racing who scored points but did not finish on the podium in the 2020 season."
+      },
+      {
+        "local_id": "e3",
+        "name": "Red Bull Racing",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that entered cars in the 2020 season."
+      },
+      {
+        "local_id": "e4",
+        "name": "2020",
+        "entity_type": "Season",
+        "description": "The Formula 1 season in which Red Bull Racing competed."
+      },
+      {
+        "local_id": "e5",
+        "name": "Austrian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The first race of the 2020 season held on 5 July 2020."
+      },
+      {
+        "local_id": "e6",
+        "name": "70th Anniversary Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A race in the 2020 season where Max Verstappen won."
+      },
+      {
+        "local_id": "e7",
+        "name": "Italian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A race in the 2020 season where Alex Albon had an incident."
+      },
+      {
+        "local_id": "e8",
+        "name": "Tuscan Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A race in the 2020 season where Alex Albon scored his first podium."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Alex Albon at Tuscan Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Alex Albon scored his first podium at the Tuscan Grand Prix."
+      },
+      {
+        "local_id": "rr2",
+        "name": "Max Verstappen at Austrian Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Max Verstappen retired during the Austrian Grand Prix."
+      },
+      {
+        "local_id": "rr3",
+        "name": "Alex Albon at Austrian Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Alex Albon finished thirteenth in the Austrian Grand Prix."
+      },
+      {
+        "local_id": "rr4",
+        "name": "Alex Albon at Italian Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Alex Albon finished fifteenth in the Italian Grand Prix."
+      },
+      {
+        "local_id": "rr5",
+        "name": "Max Verstappen at Italian Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Max Verstappen retired during the Italian Grand Prix."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e3",
+        "target_id": "e4",
+        "relationship_type": "ENTERED",
+        "description": "Red Bull Racing took part in the 2020 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Alex Albon scored his first podium at the Tuscan Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e8",
+        "relationship_type": "AT_RACE",
+        "description": "Alex Albon scored his first podium at the Tuscan Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr2",
+        "relationship_type": "ACHIEVED",
+        "description": "Max Verstappen retired during the Austrian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr2",
+        "target_id": "e5",
+        "relationship_type": "AT_RACE",
+        "description": "Max Verstappen retired during the Austrian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "rr3",
+        "relationship_type": "ACHIEVED",
+        "description": "Alex Albon finished thirteenth in the Austrian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr3",
+        "target_id": "e5",
+        "relationship_type": "AT_RACE",
+        "description": "Alex Albon finished thirteenth in the Austrian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "rr4",
+        "relationship_type": "ACHIEVED",
+        "description": "Alex Albon finished fifteenth in the Italian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr4",
+        "target_id": "e7",
+        "relationship_type": "AT_RACE",
+        "description": "Alex Albon finished fifteenth in the Italian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr5",
+        "relationship_type": "ACHIEVED",
+        "description": "Max Verstappen retired during the Italian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr5",
+        "target_id": "e7",
+        "relationship_type": "AT_RACE",
+        "description": "Max Verstappen retired during the Italian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 8,
+  "entities_accepted": 13,
+  "entities_rejected": 0,
+  "relationship_candidates": 11,
+  "relationships_accepted": 11,
+  "relationships_rejected": 5,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "ROUND_OF does not allow Team -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "FIELDED does not allow Team -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "FIELDED does not allow Team -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "FIELDED does not allow Team -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 5,
+      "reason": "WON does not allow Driver -> GrandPrix"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 6,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e8; description kept"
+    },
+    {
+      "index": 7,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr2 -AT_RACE-> e5; description kept"
+    },
+    {
+      "index": 8,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr3 -AT_RACE-> e5; description kept"
+    },
+    {
+      "index": 9,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr4 -AT_RACE-> e7; description kept"
+    },
+    {
+      "index": 10,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr5 -AT_RACE-> e7; description kept"
+    }
+  ]
+}

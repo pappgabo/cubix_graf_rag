@@ -1,0 +1,80 @@
+{
+  "chunk_id": "team-williams-racing#107",
+  "doc_id": "team-williams-racing",
+  "document_title": "Williams Racing",
+  "section": "Williams Racing > Williams Group",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "abc7a71895a12c36449a40742f194fa34b210fbdba5ed02f887160c786b780b1",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Williams Grand Prix Holdings",
+        "entity_type": "Team",
+        "description": "The public company of Williams Group, which includes the Formula One Team."
+      },
+      {
+        "local_id": "e2",
+        "name": "Dorilton Capital",
+        "entity_type": "Team",
+        "description": "The current owner of Williams Grand Prix Holdings."
+      },
+      {
+        "local_id": "e3",
+        "name": "2020",
+        "entity_type": "Season",
+        "description": "The championship year when Dorilton Capital purchased the team."
+      },
+      {
+        "local_id": "e4",
+        "name": "2020 Italian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The last race where the Williams family led the team."
+      },
+      {
+        "local_id": "e5",
+        "name": "Monza",
+        "entity_type": "Circuit",
+        "description": "The circuit where the 2020 Italian Grand Prix was held."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e4",
+        "target_id": "e3",
+        "relationship_type": "ROUND_OF",
+        "description": "The 2020 Italian Grand Prix is a round of the 2020 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e5",
+        "relationship_type": "HELD_AT",
+        "description": "The 2020 Italian Grand Prix is held at Monza.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 5,
+  "entities_accepted": 5,
+  "entities_rejected": 0,
+  "relationship_candidates": 3,
+  "relationships_accepted": 2,
+  "relationships_rejected": 1,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "DROVE_FOR does not allow Team -> Team"
+    }
+  ],
+  "alignments": []
+}

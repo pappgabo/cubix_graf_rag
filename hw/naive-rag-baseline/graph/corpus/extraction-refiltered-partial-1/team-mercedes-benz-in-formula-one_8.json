@@ -1,0 +1,72 @@
+{
+  "chunk_id": "team-mercedes-benz-in-formula-one#8",
+  "doc_id": "team-mercedes-benz-in-formula-one",
+  "document_title": "Mercedes-Benz in Formula One",
+  "section": "Mercedes-Benz in Formula One > Grand Prix racing before Formula One (1930s)",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/Mercedes-Benz_in_Formula_One",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "1d5ef1529e586e12ca5ecf711061f0526e75152cc455231a4663da0634dcad92",
+  "validation_version": "partial-1",
+  "source_status": "ok",
+  "status": "ok",
+  "rejections": [],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Mercedes-Benz",
+        "entity_type": "Team",
+        "description": "Mercedes-Benz formerly competed in Grand Prix motor racing in the 1930s."
+      },
+      {
+        "local_id": "e2",
+        "name": "Rudolf Caracciola",
+        "entity_type": "Driver",
+        "description": "Rudolf Caracciola won three European Grand Prix Championships for Mercedes-Benz."
+      },
+      {
+        "local_id": "e3",
+        "name": "European Grand Prix Championship",
+        "entity_type": "Title",
+        "description": "Championship won by Mercedes-Benz in the 1930s."
+      },
+      {
+        "local_id": "e4",
+        "name": "1934",
+        "entity_type": "Season",
+        "description": "Year when Mercedes-Benz began winning European Grand Prix Championships."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e2",
+        "target_id": "e3",
+        "relationship_type": "WON",
+        "description": "Rudolf Caracciola won the European Grand Prix Championship for Mercedes-Benz.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e4",
+        "relationship_type": "AWARDED_IN",
+        "description": "The European Grand Prix Championship was awarded in the 1934 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e4",
+        "relationship_type": "ENTERED",
+        "description": "Mercedes-Benz entered the European Grand Prix Championship in the 1934 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

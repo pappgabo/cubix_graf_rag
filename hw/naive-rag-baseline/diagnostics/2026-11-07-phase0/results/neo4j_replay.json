@@ -1,0 +1,113 @@
+{
+ "identical": 13,
+ "questions": 13,
+ "replay": [
+  {
+   "id": "Q01",
+   "byte_identical": true
+  },
+  {
+   "id": "Q02",
+   "byte_identical": true
+  },
+  {
+   "id": "Q03",
+   "byte_identical": true
+  },
+  {
+   "id": "Q04",
+   "byte_identical": true
+  },
+  {
+   "id": "Q05",
+   "byte_identical": true
+  },
+  {
+   "id": "Q06",
+   "byte_identical": true
+  },
+  {
+   "id": "Q07",
+   "byte_identical": true
+  },
+  {
+   "id": "Q08",
+   "byte_identical": true
+  },
+  {
+   "id": "Q09",
+   "byte_identical": true
+  },
+  {
+   "id": "Q10",
+   "byte_identical": true
+  },
+  {
+   "id": "Q11",
+   "byte_identical": true
+  },
+  {
+   "id": "Q12",
+   "byte_identical": true
+  },
+  {
+   "id": "Q13",
+   "byte_identical": true
+  }
+ ],
+ "edge_descriptions": {
+  "neo4j_edges": 4326,
+  "merged_edges": 4326,
+  "equal": 3488,
+  "differ": 838,
+  "neo4j_keeps_first_line_only": 838,
+  "differ_other": 0,
+  "lost_description_lines": 1531,
+  "only_neo4j": 0,
+  "only_merged": 0,
+  "examples": [
+   {
+    "rel_key": "[\"Car:lotus e20\",\"RACED_IN\",\"Season:2012\",null,null,null]",
+    "neo4j_lines": 1,
+    "merged_lines": 3,
+    "lost_line": "Lotus E20 raced in the 2012 season."
+   },
+   {
+    "rel_key": "[\"Car:mcl38\",\"RACED_IN\",\"Season:2024\",null,null,null]",
+    "neo4j_lines": 1,
+    "merged_lines": 2,
+    "lost_line": "The MCL38 raced in the 2024 season."
+   },
+   {
+    "rel_key": "[\"Car:mcl38\",\"RACED_IN\",\"Season:2025\",null,null,null]",
+    "neo4j_lines": 1,
+    "merged_lines": 2,
+    "lost_line": "The MCL38 raced in the 2025 season."
+   },
+   {
+    "rel_key": "[\"Car:mercedes f1 w03\",\"RACED_IN\",\"Season:2012\",null,null,null]",
+    "neo4j_lines": 1,
+    "merged_lines": 2,
+    "lost_line": "The Mercedes F1 W03 took part in the 2012 season."
+   },
+   {
+    "rel_key": "[\"Car:mp4-28\",\"RACED_IN\",\"Season:2013\",null,null,null]",
+    "neo4j_lines": 1,
+    "merged_lines": 2,
+    "lost_line": "MP4-28 took part in the 2013 season."
+   }
+  ]
+ },
+ "red_bull_keys": [
+  {
+   "entity_key": "Team:oracle red bull racing team",
+   "name": "Oracle Red Bull Racing Team",
+   "description_line": "The Formula One team associated with Red Bull Racing."
+  },
+  {
+   "entity_key": "Team:red bull racing",
+   "name": "Red Bull Racing",
+   "description_line": "A Formula One team that entered cars."
+  }
+ ]
+}

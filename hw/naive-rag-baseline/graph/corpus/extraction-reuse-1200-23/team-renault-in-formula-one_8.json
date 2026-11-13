@@ -1,0 +1,220 @@
+{
+  "chunk_id": "team-renault-in-formula-one#8",
+  "doc_id": "team-renault-in-formula-one",
+  "document_title": "Renault in Formula One",
+  "section": "Constructor > Équipe Renault (1977–1985) > 1980–1983 seasons: Becoming an established frontrunner",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "5b22747180ca9ec5a4e7885d2f7aa74063e5f45007056c346bd88b37f4826d9e",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Renault",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that entered cars."
+      },
+      {
+        "local_id": "e2",
+        "name": "Renault RS01",
+        "entity_type": "Car",
+        "description": "A car model fielded by Renault."
+      },
+      {
+        "local_id": "e3",
+        "name": "Alain Prost",
+        "entity_type": "Driver",
+        "description": "A Formula One driver who raced for Renault."
+      },
+      {
+        "local_id": "e4",
+        "name": "René Arnoux",
+        "entity_type": "Driver",
+        "description": "A Formula One driver who raced for Renault."
+      },
+      {
+        "local_id": "e5",
+        "name": "Jacques Jabouille",
+        "entity_type": "Driver",
+        "description": "A Formula One driver who raced for Renault."
+      },
+      {
+        "local_id": "e6",
+        "name": "Eddie Cheever",
+        "entity_type": "Driver",
+        "description": "A Formula One driver who raced for Renault."
+      },
+      {
+        "local_id": "e7",
+        "name": "1980",
+        "entity_type": "Season",
+        "description": "A Formula One championship year."
+      },
+      {
+        "local_id": "e8",
+        "name": "1981",
+        "entity_type": "Season",
+        "description": "A Formula One championship year."
+      },
+      {
+        "local_id": "e9",
+        "name": "1982",
+        "entity_type": "Season",
+        "description": "A Formula One championship year."
+      },
+      {
+        "local_id": "e10",
+        "name": "1983",
+        "entity_type": "Season",
+        "description": "A Formula One championship year."
+      },
+      {
+        "local_id": "e11",
+        "name": "Canadian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula One race held in Canada."
+      },
+      {
+        "local_id": "e12",
+        "name": "South African Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula One race held in South Africa."
+      },
+      {
+        "local_id": "e13",
+        "name": "Austrian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula One race held in Austria."
+      },
+      {
+        "local_id": "e14",
+        "name": "Constructors' Championship",
+        "entity_type": "Title",
+        "description": "A championship title for Formula One constructors."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e3",
+        "target_id": "e1",
+        "relationship_type": "DROVE_FOR",
+        "description": "Alain Prost raced for Renault.",
+        "from_year": 1981,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e1",
+        "relationship_type": "DROVE_FOR",
+        "description": "René Arnoux raced for Renault.",
+        "from_year": null,
+        "to_year": 1982,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e1",
+        "relationship_type": "DROVE_FOR",
+        "description": "Jacques Jabouille raced for Renault.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e6",
+        "target_id": "e1",
+        "relationship_type": "DROVE_FOR",
+        "description": "Eddie Cheever raced for Renault.",
+        "from_year": 1983,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e11",
+        "target_id": "e10",
+        "relationship_type": "ROUND_OF",
+        "description": "Canadian Grand Prix is a round of the 1983 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e12",
+        "target_id": "e10",
+        "relationship_type": "ROUND_OF",
+        "description": "South African Grand Prix is a round of the 1983 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e13",
+        "target_id": "e10",
+        "relationship_type": "ROUND_OF",
+        "description": "Austrian Grand Prix is a round of the 1983 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 14,
+  "entities_accepted": 14,
+  "entities_rejected": 0,
+  "relationship_candidates": 13,
+  "relationships_accepted": 7,
+  "relationships_rejected": 6,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "ACHIEVED does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 5,
+      "reason": "ACHIEVED does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 6,
+      "reason": "ACHIEVED does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 7,
+      "reason": "ACHIEVED does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 8,
+      "reason": "WON does not allow Team -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 9,
+      "reason": "AWARDED_IN does not allow Team -> Title"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 10,
+      "action": "clear_redundant_season_year",
+      "detail": "ROUND_OF year 1983 already named by Season 'e10'; from_year and to_year cleared"
+    },
+    {
+      "index": 11,
+      "action": "clear_redundant_season_year",
+      "detail": "ROUND_OF year 1983 already named by Season 'e10'; from_year and to_year cleared"
+    },
+    {
+      "index": 12,
+      "action": "clear_redundant_season_year",
+      "detail": "ROUND_OF year 1983 already named by Season 'e10'; from_year and to_year cleared"
+    }
+  ]
+}

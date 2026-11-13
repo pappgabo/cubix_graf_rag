@@ -1,0 +1,78 @@
+{
+  "chunk_id": "season-2016-formula-one-world-championship#31",
+  "doc_id": "season-2016-formula-one-world-championship",
+  "document_title": "2016 Formula One World Championship",
+  "section": "Calendar changes",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/2016_Formula_One_World_Championship",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "f6ccc7cc1e08183500736de23955b616717c22419f19d2caa98d652505c757e2",
+  "validation_version": "partial-1",
+  "source_status": "ok",
+  "status": "ok",
+  "rejections": [],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Grand Prix of America",
+        "entity_type": "GrandPrix",
+        "description": "A race set to be held for the first time at the Port Imperial Street Circuit in New Jersey."
+      },
+      {
+        "local_id": "e2",
+        "name": "Port Imperial Street Circuit",
+        "entity_type": "Circuit",
+        "description": "The circuit where the Grand Prix of America was set to be held."
+      },
+      {
+        "local_id": "e3",
+        "name": "Indian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A race that was removed from the calendar after the 2013 race."
+      },
+      {
+        "local_id": "e4",
+        "name": "2016",
+        "entity_type": "Season",
+        "description": "The season of the Formula One World Championship."
+      },
+      {
+        "local_id": "e5",
+        "name": "2013",
+        "entity_type": "Season",
+        "description": "The season after which the Indian Grand Prix was removed from the calendar."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "HELD_AT",
+        "description": "The Grand Prix of America was set to be held at the Port Imperial Street Circuit.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e5",
+        "relationship_type": "ROUND_OF",
+        "description": "The Indian Grand Prix was a round of the 2013 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e4",
+        "relationship_type": "ROUND_OF",
+        "description": "The Indian Grand Prix was removed from the calendar after the 2013 race, which was a round of the 2016 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

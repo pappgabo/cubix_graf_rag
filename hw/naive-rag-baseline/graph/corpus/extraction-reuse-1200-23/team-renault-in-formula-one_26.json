@@ -1,0 +1,146 @@
+{
+  "chunk_id": "team-renault-in-formula-one#26",
+  "doc_id": "team-renault-in-formula-one",
+  "document_title": "Renault in Formula One",
+  "section": "Constructor > Renault F1 Team and Lotus Renault GP (2002–2011): The rise and fall of the first Enstone era > Decline in fortunes and race-fixing scandal (2007–2009)",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "4917a31207b7b2a05b6ee1c75d61530e6b99702324bb00d00c591214d1d32788",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Renault F1 Team",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that entered cars."
+      },
+      {
+        "local_id": "e2",
+        "name": "Giancarlo Fisichella",
+        "entity_type": "Driver",
+        "description": "An Italian Formula 1 driver."
+      },
+      {
+        "local_id": "e3",
+        "name": "Heikki Kovalainen",
+        "entity_type": "Driver",
+        "description": "A Finnish Formula 1 driver."
+      },
+      {
+        "local_id": "e4",
+        "name": "2007",
+        "entity_type": "Season",
+        "description": "A Formula 1 championship season."
+      },
+      {
+        "local_id": "e5",
+        "name": "Malaysia",
+        "entity_type": "GrandPrix",
+        "description": "A Formula 1 race held in Malaysia."
+      },
+      {
+        "local_id": "e6",
+        "name": "Bahrain",
+        "entity_type": "GrandPrix",
+        "description": "A Formula 1 race held in Bahrain."
+      },
+      {
+        "local_id": "e7",
+        "name": "Barcelona",
+        "entity_type": "GrandPrix",
+        "description": "A Formula 1 race held in Barcelona."
+      },
+      {
+        "local_id": "e8",
+        "name": "Scuderia Ferrari",
+        "entity_type": "Team",
+        "description": "A Formula 1 team."
+      },
+      {
+        "local_id": "e9",
+        "name": "McLaren",
+        "entity_type": "Team",
+        "description": "A Formula 1 team."
+      },
+      {
+        "local_id": "e10",
+        "name": "BMW Sauber",
+        "entity_type": "Team",
+        "description": "A Formula 1 team."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e4",
+        "relationship_type": "ENTERED",
+        "description": "Renault F1 Team took part in the 2007 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 10,
+  "entities_accepted": 10,
+  "entities_rejected": 0,
+  "relationship_candidates": 11,
+  "relationships_accepted": 1,
+  "relationships_rejected": 10,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "ACHIEVED does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "ACHIEVED does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "ACHIEVED does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "ACHIEVED does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 5,
+      "reason": "ROUND_OF does not allow Team -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 6,
+      "reason": "ROUND_OF does not allow Team -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 7,
+      "reason": "ROUND_OF does not allow Team -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 8,
+      "reason": "RACED_IN does not allow Team -> Team"
+    },
+    {
+      "element": "relationship",
+      "index": 9,
+      "reason": "RACED_IN does not allow Team -> Team"
+    },
+    {
+      "element": "relationship",
+      "index": 10,
+      "reason": "RACED_IN does not allow Team -> Team"
+    }
+  ],
+  "alignments": []
+}

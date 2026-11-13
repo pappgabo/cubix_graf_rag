@@ -1,0 +1,218 @@
+{
+  "chunk_id": "driver-fernando-alonso#2",
+  "doc_id": "driver-fernando-alonso",
+  "document_title": "Fernando Alonso",
+  "section": null,
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "7eb00fa0e53d530feebc8a08734cdff822e9ade2ab0d82c16ff42ae15a86dc2b",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Fernando Alonso",
+        "entity_type": "Driver",
+        "description": "A Spanish racing driver who has competed in Formula One."
+      },
+      {
+        "local_id": "e2",
+        "name": "Scuderia Ferrari",
+        "entity_type": "Team",
+        "description": "An Italian Formula One team."
+      },
+      {
+        "local_id": "e3",
+        "name": "Red Bull Racing",
+        "entity_type": "Team",
+        "description": "A Formula One team known for its competitive performance."
+      },
+      {
+        "local_id": "e4",
+        "name": "McLaren",
+        "entity_type": "Team",
+        "description": "A British Formula One team."
+      },
+      {
+        "local_id": "e5",
+        "name": "Honda",
+        "entity_type": "PowerUnit",
+        "description": "An engine manufacturer that supplied engines to McLaren."
+      },
+      {
+        "local_id": "e6",
+        "name": "Alpine",
+        "entity_type": "Team",
+        "description": "A French Formula One team."
+      },
+      {
+        "local_id": "e7",
+        "name": "Aston Martin",
+        "entity_type": "Team",
+        "description": "A British Formula One team."
+      },
+      {
+        "local_id": "e8",
+        "name": "World Drivers' Championship",
+        "entity_type": "Title",
+        "description": "The championship title awarded to the best driver in Formula One."
+      },
+      {
+        "local_id": "e9",
+        "name": "Saudi Arabian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula One race held in Saudi Arabia."
+      },
+      {
+        "local_id": "e10",
+        "name": "Qatar Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula One race held in Qatar."
+      },
+      {
+        "local_id": "e11",
+        "name": "F10",
+        "entity_type": "Car",
+        "description": "A Ferrari car model used in the 2010 season."
+      },
+      {
+        "local_id": "e12",
+        "name": "F138",
+        "entity_type": "Car",
+        "description": "A Ferrari car model used in the 2013 season."
+      },
+      {
+        "local_id": "e13",
+        "name": "2021",
+        "entity_type": "Season",
+        "description": "The Formula One season in which Alonso returned to the sport."
+      },
+      {
+        "local_id": "e14",
+        "name": "2022",
+        "entity_type": "Season",
+        "description": "The Formula One season in which Alonso broke the record for most career starts."
+      },
+      {
+        "local_id": "e15",
+        "name": "2023",
+        "entity_type": "Season",
+        "description": "The Formula One season in which Alonso moved to Aston Martin."
+      },
+      {
+        "local_id": "e16",
+        "name": "2024",
+        "entity_type": "Season",
+        "description": "The Formula One season in which Alonso contested 400 Grands Prix."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Alonso drove for Ferrari.",
+        "from_year": 2010,
+        "to_year": 2014,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e4",
+        "relationship_type": "DROVE_FOR",
+        "description": "Alonso drove for McLaren.",
+        "from_year": 2015,
+        "to_year": 2018,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e6",
+        "relationship_type": "DROVE_FOR",
+        "description": "Alonso drove for Alpine.",
+        "from_year": 2021,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e7",
+        "relationship_type": "DROVE_FOR",
+        "description": "Alonso drove for Aston Martin.",
+        "from_year": 2023,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e8",
+        "relationship_type": "WON",
+        "description": "Alonso finished fourth in the World Drivers' Championship.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e8",
+        "target_id": "e15",
+        "relationship_type": "AWARDED_IN",
+        "description": "Alonso finished fourth in the World Drivers' Championship.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e11",
+        "target_id": "e13",
+        "relationship_type": "RACED_IN",
+        "description": "The F10 raced in the 2010 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e12",
+        "target_id": "e14",
+        "relationship_type": "RACED_IN",
+        "description": "The F138 raced in the 2013 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e9",
+        "target_id": "e15",
+        "relationship_type": "ROUND_OF",
+        "description": "The Saudi Arabian Grand Prix was a round of the 2023 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e10",
+        "target_id": "e13",
+        "relationship_type": "ROUND_OF",
+        "description": "The Qatar Grand Prix was a round of the 2021 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 16,
+  "entities_accepted": 16,
+  "entities_rejected": 0,
+  "relationship_candidates": 9,
+  "relationships_accepted": 10,
+  "relationships_rejected": 0,
+  "rejections": [],
+  "alignments": [
+    {
+      "index": 4,
+      "action": "move_won_year",
+      "detail": "WON year 2023 stored as e8 -AWARDED_IN-> e15; from_year and to_year cleared; description kept"
+    }
+  ]
+}

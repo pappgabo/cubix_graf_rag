@@ -1,0 +1,82 @@
+{
+  "chunk_id": "driver-kimi-raikkonen#6",
+  "doc_id": "driver-kimi-raikkonen",
+  "document_title": "Kimi Räikkönen",
+  "section": "Formula One career > McLaren (2002–2006)",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "4284dc1f40796f23d2b298c0ee05113e17d44a62d76f0163c96aa3d3a056c2ed",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Kimi Räikkönen",
+        "entity_type": "Driver",
+        "description": "A Finnish racing driver who raced for McLaren from 2002 to 2006."
+      },
+      {
+        "local_id": "e2",
+        "name": "McLaren",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that Kimi Räikkönen drove for from 2002 to 2006."
+      },
+      {
+        "local_id": "e3",
+        "name": "2002",
+        "entity_type": "Season",
+        "description": "The season when Kimi Räikkönen started racing for McLaren."
+      },
+      {
+        "local_id": "e4",
+        "name": "2006",
+        "entity_type": "Season",
+        "description": "The season when Kimi Räikkönen ended his time with McLaren."
+      },
+      {
+        "local_id": "e5",
+        "name": "Mika Häkkinen",
+        "entity_type": "Driver",
+        "description": "A double-world champion and mentor to Kimi Räikkönen."
+      },
+      {
+        "local_id": "e6",
+        "name": "Sauber",
+        "entity_type": "Team",
+        "description": "The team where Kimi Räikkönen raced before joining McLaren."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Kimi Räikkönen drove for McLaren.",
+        "from_year": 2002,
+        "to_year": 2006,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 6,
+  "entities_accepted": 6,
+  "entities_rejected": 0,
+  "relationship_candidates": 3,
+  "relationships_accepted": 1,
+  "relationships_rejected": 2,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "TEAMMATE_OF does not allow Driver -> Team"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "TEAMMATE_OF does not allow Team -> Driver"
+    }
+  ],
+  "alignments": []
+}

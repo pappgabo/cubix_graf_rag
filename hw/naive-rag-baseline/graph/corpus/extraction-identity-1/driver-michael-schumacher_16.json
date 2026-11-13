@@ -1,0 +1,82 @@
+{
+  "chunk_id": "driver-michael-schumacher#16",
+  "doc_id": "driver-michael-schumacher",
+  "document_title": "Michael Schumacher",
+  "section": null,
+  "page": 2,
+  "source": "https://en.wikipedia.org/wiki/Michael_Schumacher",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "fbbb023c9480f06ce07f91480819d4b9a0c280bef0ab4f543ca4442ad77ad72a",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "entity_candidates": 5,
+  "entities_accepted": 5,
+  "entities_rejected": 0,
+  "relationship_candidates": 3,
+  "relationships_accepted": 2,
+  "relationships_rejected": 1,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "HELD_AT does not allow Car -> Circuit"
+    }
+  ],
+  "alignments": [],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Michael Schumacher",
+        "entity_type": "Driver",
+        "description": "A driver who competed in various racing championships."
+      },
+      {
+        "local_id": "e2",
+        "name": "Sauber–Mercedes-Benz C291",
+        "entity_type": "Car",
+        "description": "A car model used by Michael Schumacher in the 1991 World Sportscar Championship."
+      },
+      {
+        "local_id": "e3",
+        "name": "1991",
+        "entity_type": "Season",
+        "description": "The championship year in which Michael Schumacher competed."
+      },
+      {
+        "local_id": "e4",
+        "name": "Autopolis",
+        "entity_type": "Circuit",
+        "description": "The circuit where Michael Schumacher won the final race of the 1991 World Sportscar Championship."
+      },
+      {
+        "local_id": "e5",
+        "name": "1991 24 Hours of Le Mans",
+        "entity_type": "GrandPrix",
+        "description": "A race in which Michael Schumacher competed in 1991."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e2",
+        "target_id": "e3",
+        "relationship_type": "RACED_IN",
+        "description": "The Sauber–Mercedes-Benz C291 took part in the 1991 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e3",
+        "relationship_type": "ROUND_OF",
+        "description": "The 1991 24 Hours of Le Mans is a round of the 1991 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

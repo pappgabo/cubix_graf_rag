@@ -1,0 +1,89 @@
+{
+  "chunk_id": "driver-max-verstappen#76",
+  "doc_id": "driver-max-verstappen",
+  "document_title": "Max Verstappen",
+  "section": null,
+  "page": 15,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "465f9e1641c51f3c14917ad0c5278d9eaec9d65e070fb9fca8c4a6e6269da294",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Max Verstappen",
+        "entity_type": "Driver",
+        "description": "Dutch racing driver competing in Formula One."
+      },
+      {
+        "local_id": "e2",
+        "name": "Red Bull Racing",
+        "entity_type": "Team",
+        "description": "Formula One team that Verstappen drives for."
+      },
+      {
+        "local_id": "e3",
+        "name": "Mercedes-AMG GT3 Evo",
+        "entity_type": "Car",
+        "description": "Car driven by Verstappen in the 24 Hours of Nürburgring."
+      },
+      {
+        "local_id": "e4",
+        "name": "24 Hours of Nürburgring",
+        "entity_type": "GrandPrix",
+        "description": "Endurance race where Verstappen made his debut."
+      },
+      {
+        "local_id": "e5",
+        "name": "Nürburgring",
+        "entity_type": "Circuit",
+        "description": "Circuit where the 24 Hours of Nürburgring is held."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Max Verstappen drives for Red Bull Racing.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e3",
+        "relationship_type": "FIELDED",
+        "description": "Red Bull Racing entered the Mercedes-AMG GT3 Evo.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e5",
+        "relationship_type": "HELD_AT",
+        "description": "24 Hours of Nürburgring is held at Nürburgring.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 5,
+  "entities_accepted": 5,
+  "entities_rejected": 0,
+  "relationship_candidates": 4,
+  "relationships_accepted": 3,
+  "relationships_rejected": 1,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "RACED_IN does not allow Car -> GrandPrix"
+    }
+  ],
+  "alignments": []
+}

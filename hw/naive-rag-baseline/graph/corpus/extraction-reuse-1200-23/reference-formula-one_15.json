@@ -1,0 +1,120 @@
+{
+  "chunk_id": "reference-formula-one#15",
+  "doc_id": "reference-formula-one",
+  "document_title": "Formula One",
+  "section": "Formula One > Manufacturers' decline and return of the privateers",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "a23a2a0e581a86996ace1d7e0d1dfaa12e883d9bd8e1605c30eaa36f965608a8",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Honda",
+        "entity_type": "Team",
+        "description": "Honda F1 team that withdrew from Formula One in 2008."
+      },
+      {
+        "local_id": "e2",
+        "name": "BMW",
+        "entity_type": "Team",
+        "description": "BMW F1 team that withdrew from Formula One in 2009."
+      },
+      {
+        "local_id": "e3",
+        "name": "Toyota",
+        "entity_type": "Team",
+        "description": "Toyota team that withdrew from Formula One in 2009."
+      },
+      {
+        "local_id": "e4",
+        "name": "Brawn GP",
+        "entity_type": "Team",
+        "description": "Team formed from the management buyout of Honda F1, won the world championships in 2009."
+      },
+      {
+        "local_id": "e5",
+        "name": "Lotus F1 Team",
+        "entity_type": "Team",
+        "description": "Formerly manufacturer-owned team that reverted to privateer ownership."
+      },
+      {
+        "local_id": "e6",
+        "name": "Renault",
+        "entity_type": "Team",
+        "description": "Team that was bought out by Genii Capital investors."
+      },
+      {
+        "local_id": "e7",
+        "name": "Mercedes",
+        "entity_type": "PowerUnit",
+        "description": "Engine used by Lotus in 2015."
+      },
+      {
+        "local_id": "e8",
+        "name": "Renault",
+        "entity_type": "PowerUnit",
+        "description": "Engine used by Lotus until 2018, except for 2015."
+      },
+      {
+        "local_id": "e9",
+        "name": "2009",
+        "entity_type": "Season",
+        "description": "Season in which Brawn GP won the world championships."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e5",
+        "target_id": "e9",
+        "relationship_type": "ENTERED",
+        "description": "Lotus F1 Team entered the 2009 season as a privateer.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 9,
+  "entities_accepted": 9,
+  "entities_rejected": 0,
+  "relationship_candidates": 7,
+  "relationships_accepted": 1,
+  "relationships_rejected": 6,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "DROVE_FOR does not allow Team -> Team"
+    },
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "DROVE_FOR does not allow Team -> Team"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "WON does not allow Team -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "POWERED_BY does not allow Team -> PowerUnit"
+    },
+    {
+      "element": "relationship",
+      "index": 5,
+      "reason": "POWERED_BY does not allow Team -> PowerUnit"
+    },
+    {
+      "element": "relationship",
+      "index": 6,
+      "reason": "POWERED_BY does not allow Team -> PowerUnit"
+    }
+  ],
+  "alignments": []
+}

@@ -1,0 +1,125 @@
+{
+  "chunk_id": "team-mercedes-benz-in-formula-one#14",
+  "doc_id": "team-mercedes-benz-in-formula-one",
+  "document_title": "Mercedes-Benz in Formula One",
+  "section": "Mercedes-Benz in Formula One > Daimler-Benz AG (1954–1955)",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/Mercedes-Benz_in_Formula_One",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "ef103cfd70257d60b46c9152fbb89359f086aecbfd859c52e757a04b93ad56d4",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "ENTERED is not temporal; from_year, to_year and role must be null"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "ENTERED is not temporal; from_year, to_year and role must be null"
+    },
+    {
+      "element": "relationship",
+      "index": 6,
+      "reason": "ACHIEVED does not allow Team -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 7,
+      "reason": "ACHIEVED does not allow Team -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 8,
+      "reason": "ACHIEVED does not allow Team -> GrandPrix"
+    }
+  ],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Mercedes",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that participated in the 1954-1955 seasons."
+      },
+      {
+        "local_id": "e2",
+        "name": "Type Monza",
+        "entity_type": "Car",
+        "description": "A car model fielded by Mercedes that won races in 1954 and 1955."
+      },
+      {
+        "local_id": "e3",
+        "name": "1954",
+        "entity_type": "Season",
+        "description": "A Formula One championship season."
+      },
+      {
+        "local_id": "e4",
+        "name": "1955",
+        "entity_type": "Season",
+        "description": "A Formula One championship season."
+      },
+      {
+        "local_id": "e5",
+        "name": "1954 French Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Grand Prix race won by Mercedes in 1954."
+      },
+      {
+        "local_id": "e6",
+        "name": "1954 Italian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Grand Prix race won by Mercedes in 1954."
+      },
+      {
+        "local_id": "e7",
+        "name": "1955 Italian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Grand Prix race won by Mercedes in 1955."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "FIELDED",
+        "description": "Mercedes fielded the Type Monza car.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e3",
+        "relationship_type": "ROUND_OF",
+        "description": "The 1954 French Grand Prix was a round of the 1954 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e6",
+        "target_id": "e3",
+        "relationship_type": "ROUND_OF",
+        "description": "The 1954 Italian Grand Prix was a round of the 1954 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e7",
+        "target_id": "e4",
+        "relationship_type": "ROUND_OF",
+        "description": "The 1955 Italian Grand Prix was a round of the 1955 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

@@ -1,0 +1,214 @@
+{
+  "chunk_id": "driver-max-verstappen#54",
+  "doc_id": "driver-max-verstappen",
+  "document_title": "Max Verstappen",
+  "section": null,
+  "page": 10,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "7a4bc916f64fc649cbd0bb665c4e06b908f75f2ce45241439dfa1b2b9218a351",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Max Verstappen",
+        "entity_type": "Driver",
+        "description": "A Formula One driver who started the season with a crash in qualifying at the Australian Grand Prix."
+      },
+      {
+        "local_id": "e2",
+        "name": "Lando Norris",
+        "entity_type": "Driver",
+        "description": "Defending champion who battled with Verstappen at the Australian Grand Prix."
+      },
+      {
+        "local_id": "e3",
+        "name": "Australian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A race where Verstappen started the season with a crash in qualifying."
+      },
+      {
+        "local_id": "e4",
+        "name": "Chinese Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A race where Verstappen qualified in eighth and suffered an engine-related retirement."
+      },
+      {
+        "local_id": "e5",
+        "name": "Japanese Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A race where Verstappen finished eighth."
+      },
+      {
+        "local_id": "e6",
+        "name": "Miami Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A race where Verstappen finished fifth in both the sprint and the main race."
+      },
+      {
+        "local_id": "e7",
+        "name": "Canadian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A race where Verstappen placed seventh in the sprint and finished third in the main race."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Max Verstappen at Australian Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Verstappen recovered to sixth after battling Lando Norris at the Australian Grand Prix."
+      },
+      {
+        "local_id": "rr2",
+        "name": "Max Verstappen at Chinese Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Verstappen recorded no points in both races at the Chinese Grand Prix, suffering an engine-related retirement during the Grand Prix."
+      },
+      {
+        "local_id": "rr3",
+        "name": "Max Verstappen at Japanese Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Verstappen finished eighth in the Japanese Grand Prix."
+      },
+      {
+        "local_id": "rr4",
+        "name": "Max Verstappen at Miami Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Verstappen finished fifth in both the sprint and the main race at the Miami Grand Prix."
+      },
+      {
+        "local_id": "rr5",
+        "name": "Max Verstappen at Canadian Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Verstappen placed seventh in the Canadian Grand Prix sprint and finished third in the main race."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Verstappen recovered to sixth after battling Lando Norris at the Australian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e3",
+        "relationship_type": "AT_RACE",
+        "description": "Verstappen recovered to sixth after battling Lando Norris at the Australian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr2",
+        "relationship_type": "ACHIEVED",
+        "description": "Verstappen recorded no points in both races at the Chinese Grand Prix, suffering an engine-related retirement during the Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr2",
+        "target_id": "e4",
+        "relationship_type": "AT_RACE",
+        "description": "Verstappen recorded no points in both races at the Chinese Grand Prix, suffering an engine-related retirement during the Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr3",
+        "relationship_type": "ACHIEVED",
+        "description": "Verstappen finished eighth in the Japanese Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr3",
+        "target_id": "e5",
+        "relationship_type": "AT_RACE",
+        "description": "Verstappen finished eighth in the Japanese Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr4",
+        "relationship_type": "ACHIEVED",
+        "description": "Verstappen finished fifth in both the sprint and the main race at the Miami Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr4",
+        "target_id": "e6",
+        "relationship_type": "AT_RACE",
+        "description": "Verstappen finished fifth in both the sprint and the main race at the Miami Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr5",
+        "relationship_type": "ACHIEVED",
+        "description": "Verstappen placed seventh in the Canadian Grand Prix sprint and finished third in the main race.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr5",
+        "target_id": "e7",
+        "relationship_type": "AT_RACE",
+        "description": "Verstappen placed seventh in the Canadian Grand Prix sprint and finished third in the main race.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 7,
+  "entities_accepted": 12,
+  "entities_rejected": 0,
+  "relationship_candidates": 5,
+  "relationships_accepted": 10,
+  "relationships_rejected": 0,
+  "rejections": [],
+  "alignments": [
+    {
+      "index": 0,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e3; description kept"
+    },
+    {
+      "index": 1,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr2 -AT_RACE-> e4; description kept"
+    },
+    {
+      "index": 2,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr3 -AT_RACE-> e5; description kept"
+    },
+    {
+      "index": 3,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr4 -AT_RACE-> e6; description kept"
+    },
+    {
+      "index": 4,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr5 -AT_RACE-> e7; description kept"
+    }
+  ]
+}

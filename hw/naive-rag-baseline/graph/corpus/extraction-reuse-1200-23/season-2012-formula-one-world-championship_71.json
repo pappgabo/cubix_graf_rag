@@ -1,0 +1,158 @@
+{
+  "chunk_id": "season-2012-formula-one-world-championship#71",
+  "doc_id": "season-2012-formula-one-world-championship",
+  "document_title": "2012 Formula One World Championship",
+  "section": "Race summaries > Round 12 – Belgium Circuit de Spa-Francorchamps",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "13401111ceb511e4f050e931763e6f49b050c729c710a1caea98dbc9e87e3f72",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Jenson Button",
+        "entity_type": "Driver",
+        "description": "Qualified on pole and controlled the race from the front."
+      },
+      {
+        "local_id": "e2",
+        "name": "Romain Grosjean",
+        "entity_type": "Driver",
+        "description": "Made contact with Lewis Hamilton, causing a four-car pile-up."
+      },
+      {
+        "local_id": "e3",
+        "name": "Lewis Hamilton",
+        "entity_type": "Driver",
+        "description": "Involved in a collision with Romain Grosjean."
+      },
+      {
+        "local_id": "e4",
+        "name": "Fernando Alonso",
+        "entity_type": "Driver",
+        "description": "Eliminated in the collision caused by Romain Grosjean."
+      },
+      {
+        "local_id": "e5",
+        "name": "Sergio Pérez",
+        "entity_type": "Driver",
+        "description": "Eliminated in the collision caused by Romain Grosjean."
+      },
+      {
+        "local_id": "e6",
+        "name": "Kamui Kobayashi",
+        "entity_type": "Driver",
+        "description": "Had his car damaged in the collision."
+      },
+      {
+        "local_id": "e7",
+        "name": "Pastor Maldonado",
+        "entity_type": "Driver",
+        "description": "Spun around amidst the chaos and later retired with a broken front wing."
+      },
+      {
+        "local_id": "e8",
+        "name": "Timo Glock",
+        "entity_type": "Driver",
+        "description": "Made contact with Pastor Maldonado."
+      },
+      {
+        "local_id": "e9",
+        "name": "Narain Karthikeyan",
+        "entity_type": "Driver",
+        "description": "Spun off at Stavelot mid-way through the race."
+      },
+      {
+        "local_id": "e10",
+        "name": "Sebastian Vettel",
+        "entity_type": "Driver",
+        "description": "Clawed his way up to second from tenth on the grid."
+      },
+      {
+        "local_id": "e11",
+        "name": "Belgium",
+        "entity_type": "Circuit",
+        "description": "Location of the race."
+      },
+      {
+        "local_id": "e12",
+        "name": "2012",
+        "entity_type": "Season",
+        "description": "The championship year."
+      },
+      {
+        "local_id": "e13",
+        "name": "Belgium Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The specific race event."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Jenson Button at Belgium Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Jenson Button achieved a result in the Belgium Grand Prix."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Jenson Button achieved a result in the Belgium Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e13",
+        "relationship_type": "AT_RACE",
+        "description": "Jenson Button achieved a result in the Belgium Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e13",
+        "target_id": "e12",
+        "relationship_type": "ROUND_OF",
+        "description": "The Belgium Grand Prix is a round of the 2012 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e13",
+        "target_id": "e11",
+        "relationship_type": "HELD_AT",
+        "description": "The Belgium Grand Prix is held at the Belgium circuit.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 13,
+  "entities_accepted": 14,
+  "entities_rejected": 0,
+  "relationship_candidates": 4,
+  "relationships_accepted": 4,
+  "relationships_rejected": 1,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "RACED_IN does not allow Driver -> Season"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 0,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e13; description kept"
+    }
+  ]
+}

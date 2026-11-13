@@ -1,0 +1,167 @@
+{
+  "chunk_id": "team-mclaren#33",
+  "doc_id": "team-mclaren",
+  "document_title": "McLaren",
+  "section": "1995–2014: First Mercedes partnership > 1995–2009: Factory Mercedes partnership",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "cad363fd50e0a64401dbbd8a913df9b9410efe8cc2cebd7046e41876e5277ade",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "David Coulthard",
+        "entity_type": "Driver",
+        "description": "Coulthard left for Red Bull Racing in 2005."
+      },
+      {
+        "local_id": "e2",
+        "name": "Juan Pablo Montoya",
+        "entity_type": "Driver",
+        "description": "Former CART champion who replaced Coulthard at McLaren."
+      },
+      {
+        "local_id": "e3",
+        "name": "Kimi Räikkönen",
+        "entity_type": "Driver",
+        "description": "Raced for McLaren and won races in 2005."
+      },
+      {
+        "local_id": "e4",
+        "name": "McLaren",
+        "entity_type": "Team",
+        "description": "Formula 1 team that had a partnership with Mercedes."
+      },
+      {
+        "local_id": "e5",
+        "name": "MP4-20",
+        "entity_type": "Car",
+        "description": "Car model used by McLaren in the 2005 season."
+      },
+      {
+        "local_id": "e6",
+        "name": "Renault",
+        "entity_type": "Team",
+        "description": "Competitor team that won both titles in 2005."
+      },
+      {
+        "local_id": "e7",
+        "name": "Fernando Alonso",
+        "entity_type": "Driver",
+        "description": "Driver for Renault who won both titles in 2005."
+      },
+      {
+        "local_id": "e8",
+        "name": "Scuderia Ferrari",
+        "entity_type": "Team",
+        "description": "Competitor team that had superior reliability and speed in 2006."
+      },
+      {
+        "local_id": "e9",
+        "name": "Pedro de la Rosa",
+        "entity_type": "Driver",
+        "description": "Test driver who deputised for Montoya for the remainder of the 2006 season."
+      },
+      {
+        "local_id": "e10",
+        "name": "2005",
+        "entity_type": "Season",
+        "description": "Season in which McLaren had its most successful year."
+      },
+      {
+        "local_id": "e11",
+        "name": "2006",
+        "entity_type": "Season",
+        "description": "Season in which McLaren did not gain any victories."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e4",
+        "relationship_type": "DROVE_FOR",
+        "description": "Coulthard raced for McLaren.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e4",
+        "relationship_type": "DROVE_FOR",
+        "description": "Montoya raced for McLaren.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e4",
+        "relationship_type": "DROVE_FOR",
+        "description": "Räikkönen raced for McLaren.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e10",
+        "relationship_type": "ENTERED",
+        "description": "McLaren took part in the 2005 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e11",
+        "relationship_type": "ENTERED",
+        "description": "McLaren took part in the 2006 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e5",
+        "relationship_type": "FIELDED",
+        "description": "McLaren entered the MP4-20 car.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 11,
+  "entities_accepted": 11,
+  "entities_rejected": 0,
+  "relationship_candidates": 10,
+  "relationships_accepted": 6,
+  "relationships_rejected": 4,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 6,
+      "reason": "POWERED_BY does not allow Car -> Team"
+    },
+    {
+      "element": "relationship",
+      "index": 7,
+      "reason": "POWERED_BY does not allow Car -> Team"
+    },
+    {
+      "element": "relationship",
+      "index": 8,
+      "reason": "ACHIEVED does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 9,
+      "reason": "ACHIEVED does not allow Driver -> Season"
+    }
+  ],
+  "alignments": []
+}

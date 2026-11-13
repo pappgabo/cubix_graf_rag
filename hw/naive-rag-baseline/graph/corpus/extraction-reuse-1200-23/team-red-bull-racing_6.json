@@ -1,0 +1,124 @@
+{
+  "chunk_id": "team-red-bull-racing#6",
+  "doc_id": "team-red-bull-racing",
+  "document_title": "Red Bull Racing",
+  "section": "Cosworth engines (2005) > 2005 season",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "1ac472a9d82cd405e8787072cdb0ca702570dffe5612c6324b9daa9b244a0105",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Red Bull Racing",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that entered cars."
+      },
+      {
+        "local_id": "e2",
+        "name": "RB1",
+        "entity_type": "Car",
+        "description": "The chassis used by Red Bull Racing in 2005."
+      },
+      {
+        "local_id": "e3",
+        "name": "Cosworth",
+        "entity_type": "PowerUnit",
+        "description": "The engine used by Red Bull Racing in its maiden year."
+      },
+      {
+        "local_id": "e4",
+        "name": "2005",
+        "entity_type": "Season",
+        "description": "The championship year for Red Bull Racing's debut."
+      },
+      {
+        "local_id": "e5",
+        "name": "David Coulthard",
+        "entity_type": "Driver",
+        "description": "Former McLaren driver who led Red Bull Racing in 2005."
+      },
+      {
+        "local_id": "e6",
+        "name": "Christian Klien",
+        "entity_type": "Driver",
+        "description": "Young sponsored driver who shared the second car for Red Bull Racing."
+      },
+      {
+        "local_id": "e7",
+        "name": "Vitantonio Liuzzi",
+        "entity_type": "Driver",
+        "description": "2004 F3000 champion who shared the second car for Red Bull Racing."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e2",
+        "target_id": "e4",
+        "relationship_type": "RACED_IN",
+        "description": "The RB1 took part in the 2005 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e4",
+        "relationship_type": "ENTERED",
+        "description": "Red Bull Racing took part in the 2005 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e1",
+        "relationship_type": "DROVE_FOR",
+        "description": "David Coulthard led Red Bull Racing in 2005.",
+        "from_year": 2005,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e6",
+        "target_id": "e1",
+        "relationship_type": "DROVE_FOR",
+        "description": "Christian Klien shared the second car for Red Bull Racing in 2005.",
+        "from_year": 2005,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e7",
+        "target_id": "e1",
+        "relationship_type": "DROVE_FOR",
+        "description": "Vitantonio Liuzzi shared the second car for Red Bull Racing in 2005.",
+        "from_year": 2005,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 7,
+  "entities_accepted": 7,
+  "entities_rejected": 0,
+  "relationship_candidates": 7,
+  "relationships_accepted": 5,
+  "relationships_rejected": 2,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "FIELDED is not temporal; from_year=2005, to_year=None, role=None cannot be stored without dropping them"
+    },
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "POWERED_BY does not allow Team -> PowerUnit"
+    }
+  ],
+  "alignments": []
+}

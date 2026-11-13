@@ -1,0 +1,222 @@
+{
+  "chunk_id": "team-mclaren#103",
+  "doc_id": "team-mclaren",
+  "document_title": "McLaren",
+  "section": "Politics",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "184527f8fb618ac0539cd4d135d27e995f482f7102d9afc0e50153424aab3fea",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "McLaren",
+        "entity_type": "Team",
+        "description": "A Formula 1 team involved in various Concorde Agreements and controversies."
+      },
+      {
+        "local_id": "e2",
+        "name": "Scuderia Ferrari",
+        "entity_type": "Team",
+        "description": "A Formula 1 team from which McLaren obtained confidential technical information."
+      },
+      {
+        "local_id": "e3",
+        "name": "Red Bull GmbH",
+        "entity_type": "Team",
+        "description": "A Formula 1 team criticized by McLaren for its ownership of two teams."
+      },
+      {
+        "local_id": "e4",
+        "name": "Concorde Agreement",
+        "entity_type": "Title",
+        "description": "A series of agreements governing the terms of participation in Formula 1."
+      },
+      {
+        "local_id": "e5",
+        "name": "2007 Constructors' Championship",
+        "entity_type": "Season",
+        "description": "The championship from which McLaren was excluded due to an espionage controversy."
+      },
+      {
+        "local_id": "e6",
+        "name": "1998 Concorde Agreement",
+        "entity_type": "Title",
+        "description": "A 10-year agreement signed after disputes involving McLaren."
+      },
+      {
+        "local_id": "e7",
+        "name": "2009 Concorde Agreement",
+        "entity_type": "Title",
+        "description": "A Concorde Agreement signed after disputes in the mid-2000s."
+      },
+      {
+        "local_id": "e8",
+        "name": "2013 Concorde Agreement",
+        "entity_type": "Title",
+        "description": "A recent Concorde Agreement extensively negotiated."
+      },
+      {
+        "local_id": "e9",
+        "name": "2021 Concorde Agreement",
+        "entity_type": "Title",
+        "description": "The most recent Concorde Agreement extensively negotiated."
+      },
+      {
+        "local_id": "season1998-1",
+        "name": "1998",
+        "entity_type": "Season",
+        "description": "1998"
+      },
+      {
+        "local_id": "season2009-1",
+        "name": "2009",
+        "entity_type": "Season",
+        "description": "2009"
+      },
+      {
+        "local_id": "season2013-1",
+        "name": "2013",
+        "entity_type": "Season",
+        "description": "2013"
+      },
+      {
+        "local_id": "season2021-1",
+        "name": "2021",
+        "entity_type": "Season",
+        "description": "2021"
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e4",
+        "relationship_type": "WON",
+        "description": "McLaren was involved in the Concorde Agreements.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e6",
+        "relationship_type": "WON",
+        "description": "McLaren was involved in the 1998 Concorde Agreement.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e6",
+        "target_id": "season1998-1",
+        "relationship_type": "AWARDED_IN",
+        "description": "McLaren was involved in the 1998 Concorde Agreement.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e7",
+        "relationship_type": "WON",
+        "description": "McLaren was involved in the 2009 Concorde Agreement.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e7",
+        "target_id": "season2009-1",
+        "relationship_type": "AWARDED_IN",
+        "description": "McLaren was involved in the 2009 Concorde Agreement.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e8",
+        "relationship_type": "WON",
+        "description": "McLaren was involved in the 2013 Concorde Agreement.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e8",
+        "target_id": "season2013-1",
+        "relationship_type": "AWARDED_IN",
+        "description": "McLaren was involved in the 2013 Concorde Agreement.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e9",
+        "relationship_type": "WON",
+        "description": "McLaren was involved in the 2021 Concorde Agreement.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e9",
+        "target_id": "season2021-1",
+        "relationship_type": "AWARDED_IN",
+        "description": "McLaren was involved in the 2021 Concorde Agreement.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 9,
+  "entities_accepted": 13,
+  "entities_rejected": 0,
+  "relationship_candidates": 8,
+  "relationships_accepted": 9,
+  "relationships_rejected": 3,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "WON does not allow Team -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 10,
+      "reason": "ACHIEVED does not allow Team -> Team"
+    },
+    {
+      "element": "relationship",
+      "index": 11,
+      "reason": "ACHIEVED does not allow Team -> Team"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 2,
+      "action": "move_won_year",
+      "detail": "WON year 1998 stored as e6 -AWARDED_IN-> season1998-1; from_year and to_year cleared; description kept"
+    },
+    {
+      "index": 3,
+      "action": "move_won_year",
+      "detail": "WON year 2009 stored as e7 -AWARDED_IN-> season2009-1; from_year and to_year cleared; description kept"
+    },
+    {
+      "index": 4,
+      "action": "move_won_year",
+      "detail": "WON year 2013 stored as e8 -AWARDED_IN-> season2013-1; from_year and to_year cleared; description kept"
+    },
+    {
+      "index": 5,
+      "action": "move_won_year",
+      "detail": "WON year 2021 stored as e9 -AWARDED_IN-> season2021-1; from_year and to_year cleared; description kept"
+    }
+  ]
+}

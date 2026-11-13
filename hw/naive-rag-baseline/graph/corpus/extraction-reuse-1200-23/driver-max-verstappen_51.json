@@ -1,0 +1,180 @@
+{
+  "chunk_id": "driver-max-verstappen#51",
+  "doc_id": "driver-max-verstappen",
+  "document_title": "Max Verstappen",
+  "section": null,
+  "page": 10,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "ec34d2726af842b9cf396d2159bef9a59533219f9d04264ba12db33f277de287",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Max Verstappen",
+        "entity_type": "Driver",
+        "description": "A Formula One driver who has competed in various races."
+      },
+      {
+        "local_id": "e2",
+        "name": "Emilia Romagna Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula One race held in Emilia Romagna."
+      },
+      {
+        "local_id": "e3",
+        "name": "Miami",
+        "entity_type": "Circuit",
+        "description": "The circuit where the Miami Grand Prix is held."
+      },
+      {
+        "local_id": "e4",
+        "name": "Monaco",
+        "entity_type": "Circuit",
+        "description": "The circuit where the Monaco Grand Prix is held."
+      },
+      {
+        "local_id": "e5",
+        "name": "Spain",
+        "entity_type": "Circuit",
+        "description": "The circuit where the Spanish Grand Prix is held."
+      },
+      {
+        "local_id": "e6",
+        "name": "Canada",
+        "entity_type": "Circuit",
+        "description": "The circuit where the Canadian Grand Prix is held."
+      },
+      {
+        "local_id": "e7",
+        "name": "Austria",
+        "entity_type": "Circuit",
+        "description": "The circuit where the Austrian Grand Prix is held."
+      },
+      {
+        "local_id": "e8",
+        "name": "British Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula One race held in Britain."
+      },
+      {
+        "local_id": "e9",
+        "name": "Piastri",
+        "entity_type": "Driver",
+        "description": "A Formula One driver who competed against Verstappen."
+      },
+      {
+        "local_id": "e10",
+        "name": "George Russell",
+        "entity_type": "Driver",
+        "description": "A Formula One driver who competed against Verstappen."
+      },
+      {
+        "local_id": "e11",
+        "name": "Kimi Antonelli",
+        "entity_type": "Driver",
+        "description": "A Formula One driver who collided with Verstappen."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Max Verstappen at British Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Verstappen finished fifth in the British Grand Prix."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Verstappen finished fifth in the British Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e8",
+        "relationship_type": "AT_RACE",
+        "description": "Verstappen finished fifth in the British Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e9",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Verstappen was involved in incidents with Piastri.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e10",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Verstappen had an intentional collision with George Russell.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e11",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Verstappen was hit by Kimi Antonelli in the Austrian Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 11,
+  "entities_accepted": 12,
+  "entities_rejected": 0,
+  "relationship_candidates": 10,
+  "relationships_accepted": 5,
+  "relationships_rejected": 6,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "WON does not allow Driver -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "ACHIEVED does not allow Driver -> Circuit"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "ACHIEVED does not allow Driver -> Circuit"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "ACHIEVED does not allow Driver -> Circuit"
+    },
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "ACHIEVED does not allow Driver -> Circuit"
+    },
+    {
+      "element": "relationship",
+      "index": 5,
+      "reason": "ACHIEVED does not allow Driver -> Circuit"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 6,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e8; description kept"
+    }
+  ]
+}

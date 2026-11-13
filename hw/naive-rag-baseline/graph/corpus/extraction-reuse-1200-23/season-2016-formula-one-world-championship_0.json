@@ -1,0 +1,137 @@
+{
+  "chunk_id": "season-2016-formula-one-world-championship#0",
+  "doc_id": "season-2016-formula-one-world-championship",
+  "document_title": "2016 Formula One World Championship",
+  "section": null,
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "8e642aa43b146c1bbbf362a6f9c5e2d181ef0a6a6d0fed954864ffae0298b3de",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "2016 FIA Formula One World Championship",
+        "entity_type": "Season",
+        "description": "The 70th season of the FIA's Formula One motor racing."
+      },
+      {
+        "local_id": "e2",
+        "name": "Haas F1 Team",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that entered cars in the 2016 season."
+      },
+      {
+        "local_id": "e3",
+        "name": "Renault",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that returned to the sport as a constructor in 2016."
+      },
+      {
+        "local_id": "e4",
+        "name": "Australian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The first Grand Prix of the 2016 season, held on 20 March."
+      },
+      {
+        "local_id": "e5",
+        "name": "Abu Dhabi Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The last Grand Prix of the 2016 season, held on 27 November."
+      },
+      {
+        "local_id": "e6",
+        "name": "German Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Grand Prix that returned to the calendar in the 2016 season."
+      },
+      {
+        "local_id": "e7",
+        "name": "European Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A revived Grand Prix in the 2016 season, held in Baku."
+      },
+      {
+        "local_id": "e8",
+        "name": "Baku City Circuit",
+        "entity_type": "Circuit",
+        "description": "The circuit where the European Grand Prix was held in 2016."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e2",
+        "target_id": "e1",
+        "relationship_type": "ENTERED",
+        "description": "Haas F1 Team entered the 2016 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e1",
+        "relationship_type": "ENTERED",
+        "description": "Renault returned to the sport as a constructor in the 2016 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e1",
+        "relationship_type": "ROUND_OF",
+        "description": "Australian Grand Prix is a round of the 2016 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e1",
+        "relationship_type": "ROUND_OF",
+        "description": "Abu Dhabi Grand Prix is a round of the 2016 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e6",
+        "target_id": "e1",
+        "relationship_type": "ROUND_OF",
+        "description": "German Grand Prix is a round of the 2016 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e7",
+        "target_id": "e1",
+        "relationship_type": "ROUND_OF",
+        "description": "European Grand Prix is a round of the 2016 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e7",
+        "target_id": "e8",
+        "relationship_type": "HELD_AT",
+        "description": "European Grand Prix was held at Baku City Circuit.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 8,
+  "entities_accepted": 8,
+  "entities_rejected": 0,
+  "relationship_candidates": 7,
+  "relationships_accepted": 7,
+  "relationships_rejected": 0,
+  "rejections": [],
+  "alignments": []
+}

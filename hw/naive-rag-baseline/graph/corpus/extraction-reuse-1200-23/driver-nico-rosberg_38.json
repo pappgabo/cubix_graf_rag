@@ -1,0 +1,152 @@
+{
+  "chunk_id": "driver-nico-rosberg#38",
+  "doc_id": "driver-nico-rosberg",
+  "document_title": "Nico Rosberg",
+  "section": "Nico Rosberg > Retirement from racing and subsequent ventures (2016–present)",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "f079189028efcafe1ef826dbca82d3420afc6c3551127b52acd2be10585c4c2c",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Nico Rosberg",
+        "entity_type": "Driver",
+        "description": "A former Formula One driver who won the 2016 World Championship."
+      },
+      {
+        "local_id": "e2",
+        "name": "Rosberg X Racing",
+        "entity_type": "Team",
+        "description": "A racing team established by Nico Rosberg to compete in Extreme E."
+      },
+      {
+        "local_id": "e3",
+        "name": "Extreme E",
+        "entity_type": "Season",
+        "description": "An all-electric SUV off-road racing series."
+      },
+      {
+        "local_id": "e4",
+        "name": "2021",
+        "entity_type": "Season",
+        "description": "The season in which Rosberg X Racing began competing in Extreme E."
+      },
+      {
+        "local_id": "e5",
+        "name": "2022",
+        "entity_type": "Season",
+        "description": "The season in which Rosberg X Racing narrowly missed retaining the constructors' title."
+      },
+      {
+        "local_id": "e6",
+        "name": "2024",
+        "entity_type": "Season",
+        "description": "The year in which Rosberg announced RXR would cease operations in Extreme E."
+      },
+      {
+        "local_id": "e7",
+        "name": "2025",
+        "entity_type": "Season",
+        "description": "The year when Extreme E will be replaced by Extreme H."
+      },
+      {
+        "local_id": "e8",
+        "name": "Johan Kristoffersson",
+        "entity_type": "Driver",
+        "description": "One of the drivers for Rosberg X Racing."
+      },
+      {
+        "local_id": "e9",
+        "name": "Molly Taylor",
+        "entity_type": "Driver",
+        "description": "One of the drivers for Rosberg X Racing."
+      },
+      {
+        "local_id": "e10",
+        "name": "Lewis Hamilton",
+        "entity_type": "Driver",
+        "description": "A driver whose team, Team X44, won the constructors' title in 2022."
+      },
+      {
+        "local_id": "e11",
+        "name": "Team X44",
+        "entity_type": "Team",
+        "description": "A racing team that competed in Extreme E."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e2",
+        "target_id": "e6",
+        "relationship_type": "ENTERED",
+        "description": "Rosberg X Racing ceased operations in Extreme E in 2024.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e7",
+        "relationship_type": "ENTERED",
+        "description": "Extreme E will be replaced by Extreme H in 2025.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 11,
+  "entities_accepted": 11,
+  "entities_rejected": 0,
+  "relationship_candidates": 8,
+  "relationships_accepted": 2,
+  "relationships_rejected": 6,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "ENTERED is not temporal; from_year=2021, to_year=None, role=None cannot be stored without dropping them"
+    },
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "RACED_IN does not allow Team -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "RACED_IN does not allow Team -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "TEAMMATE_OF does not allow Team -> Driver"
+    },
+    {
+      "element": "relationship",
+      "index": 5,
+      "reason": "TEAMMATE_OF does not allow Team -> Driver"
+    },
+    {
+      "element": "relationship",
+      "index": 6,
+      "reason": "TEAMMATE_OF does not allow Driver -> Team"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 3,
+      "action": "clear_redundant_season_year",
+      "detail": "ENTERED year 2024 already named by Season 'e6'; from_year and to_year cleared"
+    },
+    {
+      "index": 4,
+      "action": "clear_redundant_season_year",
+      "detail": "ENTERED year 2025 already named by Season 'e7'; from_year and to_year cleared"
+    }
+  ]
+}

@@ -1,0 +1,212 @@
+{
+  "chunk_id": "team-mclaren#24",
+  "doc_id": "team-mclaren",
+  "document_title": "McLaren",
+  "section": "1988–1991: Domination with Honda",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "0c882e3ea7c17277275112f3bd545d7aa3c622b58336f397d153322ec307bc0d",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "McLaren",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that entered cars."
+      },
+      {
+        "local_id": "e2",
+        "name": "Prost",
+        "entity_type": "Driver",
+        "description": "A driver who raced for McLaren."
+      },
+      {
+        "local_id": "e3",
+        "name": "Senna",
+        "entity_type": "Driver",
+        "description": "A driver who raced for McLaren."
+      },
+      {
+        "local_id": "e4",
+        "name": "Scuderia Ferrari",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that entered cars."
+      },
+      {
+        "local_id": "e5",
+        "name": "Gerhard Berger",
+        "entity_type": "Driver",
+        "description": "A driver who raced for McLaren."
+      },
+      {
+        "local_id": "e6",
+        "name": "Williams",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that entered cars."
+      },
+      {
+        "local_id": "e7",
+        "name": "Renault",
+        "entity_type": "PowerUnit",
+        "description": "An engine supplier for Williams."
+      },
+      {
+        "local_id": "e8",
+        "name": "Japan",
+        "entity_type": "GrandPrix",
+        "description": "A Grand Prix where the championship was settled."
+      },
+      {
+        "local_id": "e9",
+        "name": "1990",
+        "entity_type": "Season",
+        "description": "A championship year."
+      },
+      {
+        "local_id": "e10",
+        "name": "1991",
+        "entity_type": "Season",
+        "description": "A championship year."
+      },
+      {
+        "local_id": "e11",
+        "name": "Constructors' Championship",
+        "entity_type": "Title",
+        "description": "A championship title won by McLaren."
+      },
+      {
+        "local_id": "e12",
+        "name": "Drivers' Championship",
+        "entity_type": "Title",
+        "description": "A championship title won by Senna."
+      },
+      {
+        "local_id": "e13",
+        "name": "FW14B",
+        "entity_type": "Car",
+        "description": "A car model used by Williams."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Senna at Japan",
+        "entity_type": "RaceResult",
+        "description": "Senna recorded a result in the Japan Grand Prix."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e9",
+        "relationship_type": "ENTERED",
+        "description": "McLaren took part in the 1990 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e10",
+        "relationship_type": "ENTERED",
+        "description": "McLaren took part in the 1991 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e12",
+        "relationship_type": "WON",
+        "description": "Senna won the Drivers' Championship in 1990.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e11",
+        "relationship_type": "WON",
+        "description": "McLaren won the Constructors' Championship in 1990.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Senna recorded a result in the Japan Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e8",
+        "relationship_type": "AT_RACE",
+        "description": "Senna recorded a result in the Japan Grand Prix.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e1",
+        "relationship_type": "DROVE_FOR",
+        "description": "Senna drove for McLaren.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e1",
+        "relationship_type": "DROVE_FOR",
+        "description": "Prost drove for McLaren.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e1",
+        "relationship_type": "DROVE_FOR",
+        "description": "Gerhard Berger drove for McLaren.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e6",
+        "target_id": "e10",
+        "relationship_type": "ENTERED",
+        "description": "Williams took part in the 1991 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 13,
+  "entities_accepted": 14,
+  "entities_rejected": 0,
+  "relationship_candidates": 10,
+  "relationships_accepted": 10,
+  "relationships_rejected": 1,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 10,
+      "reason": "POWERED_BY does not allow Team -> PowerUnit"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 4,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e8; description kept"
+    }
+  ]
+}

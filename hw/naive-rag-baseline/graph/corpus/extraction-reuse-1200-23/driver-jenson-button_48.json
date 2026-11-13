@@ -1,0 +1,137 @@
+{
+  "chunk_id": "driver-jenson-button#48",
+  "doc_id": "driver-jenson-button",
+  "document_title": "Jenson Button",
+  "section": "Sports car career",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "885d70b9437ffd47baa1c6801e9634641fe3e8b8f90a05a8d0ac56148cef3779",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Jenson Button",
+        "entity_type": "Driver",
+        "description": "A driver who participated in the 2024 24 Hours of Daytona and the World Endurance Championship."
+      },
+      {
+        "local_id": "e2",
+        "name": "Wayne Taylor Racing",
+        "entity_type": "Team",
+        "description": "A racing team that Jenson Button joined for the 2024 24 Hours of Daytona."
+      },
+      {
+        "local_id": "e3",
+        "name": "Acura ARX-06 GTP",
+        "entity_type": "Car",
+        "description": "The car used by Wayne Taylor Racing in the 2024 24 Hours of Daytona."
+      },
+      {
+        "local_id": "e4",
+        "name": "Team Jota",
+        "entity_type": "Team",
+        "description": "A racing team that Jenson Button returned to in the World Endurance Championship in 2024."
+      },
+      {
+        "local_id": "e5",
+        "name": "Porsche 963",
+        "entity_type": "Car",
+        "description": "The car used by Team Jota in the World Endurance Championship."
+      },
+      {
+        "local_id": "e6",
+        "name": "World Endurance Drivers' Championship",
+        "entity_type": "Season",
+        "description": "The championship in which Jenson Button participated in 2024."
+      },
+      {
+        "local_id": "e7",
+        "name": "6 Hours of Fuji",
+        "entity_type": "GrandPrix",
+        "description": "A race in which Jenson Button achieved a season-best result of sixth."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Jenson Button at 6 Hours of Fuji",
+        "entity_type": "RaceResult",
+        "description": "Jenson Button achieved a sixth place result at the 6 Hours of Fuji."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Jenson Button drove for Wayne Taylor Racing in the 2024 24 Hours of Daytona.",
+        "from_year": 2024,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e4",
+        "relationship_type": "DROVE_FOR",
+        "description": "Jenson Button drove for Team Jota in the World Endurance Championship in 2024.",
+        "from_year": 2024,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Jenson Button achieved a sixth place result at the 6 Hours of Fuji.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e7",
+        "relationship_type": "AT_RACE",
+        "description": "Jenson Button achieved a sixth place result at the 6 Hours of Fuji.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 7,
+  "entities_accepted": 8,
+  "entities_rejected": 0,
+  "relationship_candidates": 7,
+  "relationships_accepted": 4,
+  "relationships_rejected": 4,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "FIELDED is not temporal; from_year=2024, to_year=None, role=None cannot be stored without dropping them"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "FIELDED is not temporal; from_year=2024, to_year=None, role=None cannot be stored without dropping them"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "RACED_IN does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 5,
+      "reason": "AT_RACE does not allow GrandPrix -> Season"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 5,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e7; description kept"
+    }
+  ]
+}

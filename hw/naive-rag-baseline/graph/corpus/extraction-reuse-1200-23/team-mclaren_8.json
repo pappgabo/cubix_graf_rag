@@ -1,0 +1,244 @@
+{
+  "chunk_id": "team-mclaren#8",
+  "doc_id": "team-mclaren",
+  "document_title": "McLaren",
+  "section": "Racing history: Formula One > Overview",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "318dd94cd96691d39cecba6df42e3f31cb09a10205aa5d58ea4407d949eb5ac9",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "McLaren",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that has had various partnerships and engine suppliers over the years."
+      },
+      {
+        "local_id": "e2",
+        "name": "Honda",
+        "entity_type": "PowerUnit",
+        "description": "An engine supplier that partnered with McLaren."
+      },
+      {
+        "local_id": "e3",
+        "name": "Renault",
+        "entity_type": "PowerUnit",
+        "description": "An engine supplier that partnered with McLaren."
+      },
+      {
+        "local_id": "e4",
+        "name": "Mercedes-Benz",
+        "entity_type": "PowerUnit",
+        "description": "An engine supplier that partnered with McLaren."
+      },
+      {
+        "local_id": "e5",
+        "name": "2023",
+        "entity_type": "Season",
+        "description": "A Formula 1 championship year."
+      },
+      {
+        "local_id": "e6",
+        "name": "2024",
+        "entity_type": "Season",
+        "description": "A Formula 1 championship year."
+      },
+      {
+        "local_id": "e7",
+        "name": "2008",
+        "entity_type": "Season",
+        "description": "A Formula 1 championship year."
+      },
+      {
+        "local_id": "e8",
+        "name": "1998",
+        "entity_type": "Season",
+        "description": "A Formula 1 championship year."
+      },
+      {
+        "local_id": "e9",
+        "name": "1991",
+        "entity_type": "Season",
+        "description": "A Formula 1 championship year."
+      },
+      {
+        "local_id": "e10",
+        "name": "2015",
+        "entity_type": "Season",
+        "description": "A Formula 1 championship year."
+      },
+      {
+        "local_id": "e11",
+        "name": "2017",
+        "entity_type": "Season",
+        "description": "A Formula 1 championship year."
+      },
+      {
+        "local_id": "e12",
+        "name": "2021",
+        "entity_type": "Season",
+        "description": "A Formula 1 championship year."
+      },
+      {
+        "local_id": "e13",
+        "name": "2013",
+        "entity_type": "Season",
+        "description": "A Formula 1 championship year."
+      },
+      {
+        "local_id": "e14",
+        "name": "2009",
+        "entity_type": "Season",
+        "description": "A Formula 1 championship year."
+      },
+      {
+        "local_id": "e15",
+        "name": "2018",
+        "entity_type": "Season",
+        "description": "A Formula 1 championship year."
+      },
+      {
+        "local_id": "e16",
+        "name": "2019",
+        "entity_type": "Season",
+        "description": "A Formula 1 championship year."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e5",
+        "relationship_type": "ENTERED",
+        "description": "McLaren surged to fourth in the Constructors' Championship in 2023.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e11",
+        "relationship_type": "ENTERED",
+        "description": "McLaren announced they had agreed on an engine supply with Renault in September 2017.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e12",
+        "relationship_type": "ENTERED",
+        "description": "McLaren returned to using Mercedes-Benz engines from the 2021 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e13",
+        "relationship_type": "ENTERED",
+        "description": "McLaren had their worst season since 2004 in 2013.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e14",
+        "relationship_type": "ENTERED",
+        "description": "Ron Dennis retired as McLaren team principal in 2009.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 16,
+  "entities_accepted": 16,
+  "entities_rejected": 0,
+  "relationship_candidates": 15,
+  "relationships_accepted": 5,
+  "relationships_rejected": 10,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 13,
+      "reason": "ENTERED is not temporal; from_year=2013, to_year=None, role=None cannot be stored without dropping them"
+    },
+    {
+      "element": "relationship",
+      "index": 14,
+      "reason": "ENTERED is not temporal; from_year=2013, to_year=None, role=None cannot be stored without dropping them"
+    },
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "POWERED_BY does not allow Team -> PowerUnit"
+    },
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "POWERED_BY does not allow Team -> PowerUnit"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "POWERED_BY does not allow Team -> PowerUnit"
+    },
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "WON does not allow Team -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 5,
+      "reason": "WON does not allow Team -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 6,
+      "reason": "AWARDED_IN does not allow Team -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 7,
+      "reason": "AWARDED_IN does not allow Team -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 8,
+      "reason": "RACED_IN does not allow Team -> Season"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 3,
+      "action": "clear_redundant_season_year",
+      "detail": "ENTERED year 2023 already named by Season 'e5'; from_year and to_year cleared"
+    },
+    {
+      "index": 9,
+      "action": "clear_redundant_season_year",
+      "detail": "ENTERED year 2017 already named by Season 'e11'; from_year and to_year cleared"
+    },
+    {
+      "index": 10,
+      "action": "clear_redundant_season_year",
+      "detail": "ENTERED year 2021 already named by Season 'e12'; from_year and to_year cleared"
+    },
+    {
+      "index": 11,
+      "action": "clear_redundant_season_year",
+      "detail": "ENTERED year 2013 already named by Season 'e13'; from_year and to_year cleared"
+    },
+    {
+      "index": 12,
+      "action": "clear_redundant_season_year",
+      "detail": "ENTERED year 2009 already named by Season 'e14'; from_year and to_year cleared"
+    }
+  ]
+}

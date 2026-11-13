@@ -1,0 +1,99 @@
+{
+  "chunk_id": "team-mercedes-benz-in-formula-one#32",
+  "doc_id": "team-mercedes-benz-in-formula-one",
+  "document_title": "Mercedes-Benz in Formula One",
+  "section": "Mercedes-Benz in Formula One > Mercedes-AMG Petronas Formula One Team (2010–present)",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/Mercedes-Benz_in_Formula_One",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "2f82af053f95c342ed235aa98b49b297d94e67b025901aab86627d7e2483fbf7",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "ENTERED is not temporal; from_year, to_year and role must be null"
+    }
+  ],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Lewis Hamilton",
+        "entity_type": "Driver",
+        "description": "McLaren driver who joined the Mercedes team from the 2013 season onwards."
+      },
+      {
+        "local_id": "e2",
+        "name": "Nico Rosberg",
+        "entity_type": "Driver",
+        "description": "Partnered with Lewis Hamilton in the Mercedes team."
+      },
+      {
+        "local_id": "e3",
+        "name": "Mercedes-AMG Petronas Formula One Team",
+        "entity_type": "Team",
+        "description": "Formula One team that Lewis Hamilton joined in 2013."
+      },
+      {
+        "local_id": "e4",
+        "name": "2013",
+        "entity_type": "Season",
+        "description": "The season Lewis Hamilton joined the Mercedes team."
+      },
+      {
+        "local_id": "e5",
+        "name": "Toto Wolff",
+        "entity_type": "Driver",
+        "description": "Became an executive director of the Mercedes AMG Petronas Formula One Team in January 2013."
+      },
+      {
+        "local_id": "e6",
+        "name": "Rene Berger",
+        "entity_type": "Driver",
+        "description": "Became non-executive director of the Mercedes AMG Petronas Formula One Team."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e3",
+        "relationship_type": "DROVE_FOR",
+        "description": "Lewis Hamilton joined the Mercedes team from the 2013 season onwards.",
+        "from_year": 2013,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e3",
+        "relationship_type": "DROVE_FOR",
+        "description": "Nico Rosberg partnered with Lewis Hamilton in the Mercedes team.",
+        "from_year": 2013,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e3",
+        "relationship_type": "DROVE_FOR",
+        "description": "Toto Wolff became an executive director of the Mercedes AMG Petronas Formula One Team.",
+        "from_year": 2013,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e6",
+        "target_id": "e3",
+        "relationship_type": "DROVE_FOR",
+        "description": "Rene Berger became non-executive director of the Mercedes AMG Petronas Formula One Team.",
+        "from_year": 2013,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

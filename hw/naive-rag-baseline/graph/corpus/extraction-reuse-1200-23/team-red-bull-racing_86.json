@@ -1,0 +1,115 @@
+{
+  "chunk_id": "team-red-bull-racing#86",
+  "doc_id": "team-red-bull-racing",
+  "document_title": "Red Bull Racing",
+  "section": "Sister Formula One team",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "d7c022f8f0eb86fa754b121b91118a08955bde3f4992454f8324008d0b2af42f",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Red Bull Racing",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that entered cars."
+      },
+      {
+        "local_id": "e2",
+        "name": "Scuderia Toro Rosso",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that was purchased by Red Bull and operates as a separate team."
+      },
+      {
+        "local_id": "e3",
+        "name": "2006",
+        "entity_type": "Season",
+        "description": "A championship year."
+      },
+      {
+        "local_id": "e4",
+        "name": "Red Bull RB1",
+        "entity_type": "Car",
+        "description": "A chassis used by Red Bull Racing."
+      },
+      {
+        "local_id": "e5",
+        "name": "V10 Cosworth",
+        "entity_type": "PowerUnit",
+        "description": "An engine supplied to Minardi."
+      },
+      {
+        "local_id": "e6",
+        "name": "Vitantonio Liuzzi",
+        "entity_type": "Driver",
+        "description": "A driver who raced for Red Bull Racing and was given a full-time seat with STR."
+      },
+      {
+        "local_id": "e7",
+        "name": "Scott Speed",
+        "entity_type": "Driver",
+        "description": "A Red Bull sponsored driver who raced alongside Vitantonio Liuzzi at STR."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e2",
+        "target_id": "e3",
+        "relationship_type": "ENTERED",
+        "description": "Scuderia Toro Rosso took part in the 2006 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e4",
+        "relationship_type": "FIELDED",
+        "description": "Red Bull Racing entered the Red Bull RB1 chassis.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e6",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Vitantonio Liuzzi was given a full-time seat with STR.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e7",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Scott Speed raced alongside Vitantonio Liuzzi at STR.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 7,
+  "entities_accepted": 7,
+  "entities_rejected": 0,
+  "relationship_candidates": 6,
+  "relationships_accepted": 4,
+  "relationships_rejected": 2,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "DROVE_FOR does not allow Team -> Team"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "POWERED_BY does not allow Team -> PowerUnit"
+    }
+  ],
+  "alignments": []
+}

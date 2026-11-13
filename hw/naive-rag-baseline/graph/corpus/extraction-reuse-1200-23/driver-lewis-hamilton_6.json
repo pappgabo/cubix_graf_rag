@@ -1,0 +1,85 @@
+{
+  "chunk_id": "driver-lewis-hamilton#6",
+  "doc_id": "driver-lewis-hamilton",
+  "document_title": "Lewis Hamilton",
+  "section": null,
+  "page": 2,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "fdacd0904f0002a008894f33d546e99715bbb53e588cced08d117fd02cb82d2e",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Lewis Hamilton",
+        "entity_type": "Driver",
+        "description": "A British racing driver who has won multiple championships."
+      },
+      {
+        "local_id": "e2",
+        "name": "McLaren-Mercedes",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that Hamilton was associated with in his early career."
+      },
+      {
+        "local_id": "e3",
+        "name": "TeamMBM.com",
+        "entity_type": "Team",
+        "description": "A team Hamilton raced for in Formula A and Formula Super A."
+      },
+      {
+        "local_id": "e4",
+        "name": "Nico Rosberg",
+        "entity_type": "Driver",
+        "description": "A German racing driver and Hamilton's teammate in Formula A and Formula Super A."
+      },
+      {
+        "local_id": "e5",
+        "name": "2000",
+        "entity_type": "Season",
+        "description": "The year Hamilton became European Champion with maximum points."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Hamilton was offered a role in the McLaren-Mercedes Young Driver Programme.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e4",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Hamilton was teammates with Nico Rosberg in Formula A and Formula Super A.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 5,
+  "entities_accepted": 5,
+  "entities_rejected": 0,
+  "relationship_candidates": 4,
+  "relationships_accepted": 2,
+  "relationships_rejected": 2,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "DROVE_FOR does not allow Team -> Driver"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "RACED_IN does not allow Team -> Season"
+    }
+  ],
+  "alignments": []
+}

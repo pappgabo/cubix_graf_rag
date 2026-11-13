@@ -1,0 +1,76 @@
+{
+  "chunk_id": "team-williams-racing#65",
+  "doc_id": "team-williams-racing",
+  "document_title": "Williams Racing",
+  "section": "Williams Racing > BMW engines (2000–2005)",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "2bce3538a470b46892f3bb579b088ae2d2a7167c15c155b6de83518d86366700",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Williams Racing",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that entered cars."
+      },
+      {
+        "local_id": "e2",
+        "name": "BMW",
+        "entity_type": "PowerUnit",
+        "description": "An engine manufacturer that supplied engines to Williams Racing."
+      },
+      {
+        "local_id": "e3",
+        "name": "Ralf Schumacher",
+        "entity_type": "Driver",
+        "description": "A German driver signed by Williams Racing."
+      },
+      {
+        "local_id": "e4",
+        "name": "2000",
+        "entity_type": "Season",
+        "description": "The Formula 1 season in which Williams Racing debuted their BMW engine."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e4",
+        "relationship_type": "ENTERED",
+        "description": "Williams Racing took part in the 2000 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 4,
+  "entities_accepted": 4,
+  "entities_rejected": 0,
+  "relationship_candidates": 3,
+  "relationships_accepted": 1,
+  "relationships_rejected": 2,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "POWERED_BY does not allow Team -> PowerUnit"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "DROVE_FOR does not allow Team -> Driver"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 1,
+      "action": "clear_redundant_season_year",
+      "detail": "ENTERED year 2000 already named by Season 'e4'; from_year and to_year cleared"
+    }
+  ]
+}

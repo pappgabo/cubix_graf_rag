@@ -1,0 +1,59 @@
+{
+  "chunk_id": "driver-michael-schumacher#60",
+  "doc_id": "driver-michael-schumacher",
+  "document_title": "Michael Schumacher",
+  "section": null,
+  "page": 12,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "7d152eabf8c1dcba1e8844f4957df35eb069cf60b31fd65476f00eab52d49f19",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Michael Schumacher",
+        "entity_type": "Driver",
+        "description": "A driver with seven Drivers' titles and a significant influence on Formula One."
+      },
+      {
+        "local_id": "e2",
+        "name": "2012 Belgian Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The Grand Prix where Michael Schumacher made his 300th appearance."
+      },
+      {
+        "local_id": "e3",
+        "name": "Season",
+        "entity_type": "Season",
+        "description": "A championship year related to Michael Schumacher's career."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e2",
+        "target_id": "e3",
+        "relationship_type": "ROUND_OF",
+        "description": "The 2012 Belgian Grand Prix is a round of the season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 3,
+  "entities_accepted": 3,
+  "entities_rejected": 0,
+  "relationship_candidates": 2,
+  "relationships_accepted": 1,
+  "relationships_rejected": 1,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "ACHIEVED Driver -> GrandPrix has from_year=2012, to_year=None, role=None; the year or role cannot be stored on the reified result"
+    }
+  ],
+  "alignments": []
+}

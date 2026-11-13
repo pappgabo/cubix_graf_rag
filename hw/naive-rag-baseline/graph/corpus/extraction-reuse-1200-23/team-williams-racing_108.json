@@ -1,0 +1,93 @@
+{
+  "chunk_id": "team-williams-racing#108",
+  "doc_id": "team-williams-racing",
+  "document_title": "Williams Racing",
+  "section": "Williams Racing > Williams Group",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "5dfd26cdfc3a9a5691b216a0ecfeaacbcaaad5e5336c3bd1e42936b97e13444d",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Williams Racing",
+        "entity_type": "Team",
+        "description": "A Formula 1 team that has undergone ownership changes and financial difficulties."
+      },
+      {
+        "local_id": "e2",
+        "name": "Sir Frank Williams",
+        "entity_type": "Driver",
+        "description": "Founder and majority shareholder of Williams Racing."
+      },
+      {
+        "local_id": "e3",
+        "name": "Patrick Head",
+        "entity_type": "Driver",
+        "description": "Co-founder of Williams Racing."
+      },
+      {
+        "local_id": "e4",
+        "name": "Toto Wolff",
+        "entity_type": "Driver",
+        "description": "Led an investment company that purchased a minority stake in Williams Racing."
+      },
+      {
+        "local_id": "e5",
+        "name": "Brad Hollinger",
+        "entity_type": "Driver",
+        "description": "Owner of a minority stake in Williams Racing."
+      },
+      {
+        "local_id": "e6",
+        "name": "Frankfurt Stock Exchange",
+        "entity_type": "Circuit",
+        "description": "Location where Williams F1 planned to raise capital through an IPO."
+      },
+      {
+        "local_id": "e7",
+        "name": "employee trust fund",
+        "entity_type": "Driver",
+        "description": "Holds a minority stake in Williams Racing."
+      }
+    ],
+    "relationships": []
+  },
+  "entity_candidates": 7,
+  "entities_accepted": 7,
+  "entities_rejected": 0,
+  "relationship_candidates": 5,
+  "relationships_accepted": 0,
+  "relationships_rejected": 5,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "DROVE_FOR does not allow Team -> Driver"
+    },
+    {
+      "element": "relationship",
+      "index": 1,
+      "reason": "DROVE_FOR does not allow Team -> Driver"
+    },
+    {
+      "element": "relationship",
+      "index": 2,
+      "reason": "DROVE_FOR does not allow Team -> Driver"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "DROVE_FOR does not allow Team -> Driver"
+    },
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "DROVE_FOR does not allow Team -> Driver"
+    }
+  ],
+  "alignments": []
+}

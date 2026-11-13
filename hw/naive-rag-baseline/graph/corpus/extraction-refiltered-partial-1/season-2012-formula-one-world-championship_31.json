@@ -1,0 +1,87 @@
+{
+  "chunk_id": "season-2012-formula-one-world-championship#31",
+  "doc_id": "season-2012-formula-one-world-championship",
+  "document_title": "2012 Formula One World Championship",
+  "section": "Calendar > Calendar changes > New and returning races",
+  "page": null,
+  "source": "https://en.wikipedia.org/wiki/2012_Formula_One_World_Championship",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "133e518fb3da5cbfbd15ee55f7d6463db898300c213bab8220c18a934f04def7",
+  "validation_version": "partial-1",
+  "source_status": "ok",
+  "status": "ok",
+  "rejections": [],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Bahrain Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula One race that was reinstated for the 2012 season."
+      },
+      {
+        "local_id": "e2",
+        "name": "Hockenheim",
+        "entity_type": "Circuit",
+        "description": "The circuit where the German Grand Prix returned in 2012."
+      },
+      {
+        "local_id": "e3",
+        "name": "Nürburgring",
+        "entity_type": "Circuit",
+        "description": "The circuit where the 2011 German Grand Prix was held."
+      },
+      {
+        "local_id": "e4",
+        "name": "2012",
+        "entity_type": "Season",
+        "description": "The Formula One season in which the Bahrain Grand Prix was reinstated."
+      },
+      {
+        "local_id": "e5",
+        "name": "German Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula One race that returned to Hockenheim in 2012."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e4",
+        "relationship_type": "ROUND_OF",
+        "description": "The Bahrain Grand Prix is a round of the 2012 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e4",
+        "relationship_type": "ROUND_OF",
+        "description": "The German Grand Prix is a round of the 2012 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e2",
+        "relationship_type": "HELD_AT",
+        "description": "The German Grand Prix is held at Hockenheim.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e3",
+        "relationship_type": "HELD_AT",
+        "description": "The Bahrain Grand Prix was previously held at the Nürburgring in 2011.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

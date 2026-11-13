@@ -1,0 +1,124 @@
+{
+  "chunk_id": "season-2020-formula-one-world-championship#3",
+  "doc_id": "season-2020-formula-one-world-championship",
+  "document_title": "2020 Formula One World Championship",
+  "section": "2020 Formula One World Championship",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "e095bb547d305d1b76c435c6568f6019d0ae606c00b09f826c36580c3fa39618",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Sebastian Vettel",
+        "entity_type": "Driver",
+        "description": "Endured a difficult season with Ferrari, finishing thirteenth in the standings and amassing only 33 points with one podium finish (third in Turkey). This would also be his final season with Ferrari."
+      },
+      {
+        "local_id": "e2",
+        "name": "Scuderia Ferrari",
+        "entity_type": "Team",
+        "description": "Finished outside of the top five in the Constructors' standings for the first time since 1980."
+      },
+      {
+        "local_id": "e3",
+        "name": "Aston Martin",
+        "entity_type": "Team",
+        "description": "The rebrand of Racing Point, where Sebastian Vettel would go on to join for the 2021 season."
+      },
+      {
+        "local_id": "e4",
+        "name": "2020",
+        "entity_type": "Season",
+        "description": "The season in which Sebastian Vettel endured a difficult season with Ferrari."
+      },
+      {
+        "local_id": "e5",
+        "name": "Turkey",
+        "entity_type": "GrandPrix",
+        "description": "Sebastian Vettel finished third in this Grand Prix."
+      },
+      {
+        "local_id": "e6",
+        "name": "World Drivers' Championship",
+        "entity_type": "Title",
+        "description": "The championship title won by a full-factory team driver."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "DROVE_FOR",
+        "description": "Sebastian Vettel drove for Ferrari during the 2020 season.",
+        "from_year": 2020,
+        "to_year": 2020,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e4",
+        "relationship_type": "ENTERED",
+        "description": "Ferrari took part in the 2020 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e4",
+        "relationship_type": "ROUND_OF",
+        "description": "The Turkey Grand Prix is a round of the 2020 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e6",
+        "relationship_type": "WON",
+        "description": "Sebastian Vettel is associated with the World Drivers' Championship title.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e6",
+        "target_id": "e4",
+        "relationship_type": "AWARDED_IN",
+        "description": "The World Drivers' Championship title is associated with the 2020 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 6,
+  "entities_accepted": 6,
+  "entities_rejected": 0,
+  "relationship_candidates": 6,
+  "relationships_accepted": 5,
+  "relationships_rejected": 1,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "ACHIEVED Driver -> GrandPrix has from_year=2020, to_year=2020, role=None; the year or role cannot be stored on the reified result"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 1,
+      "action": "clear_redundant_season_year",
+      "detail": "ENTERED year 2020 already named by Season 'e4'; from_year and to_year cleared"
+    },
+    {
+      "index": 2,
+      "action": "clear_redundant_season_year",
+      "detail": "ROUND_OF year 2020 already named by Season 'e4'; from_year and to_year cleared"
+    }
+  ]
+}

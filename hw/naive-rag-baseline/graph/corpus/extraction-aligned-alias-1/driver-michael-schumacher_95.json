@@ -1,0 +1,103 @@
+{
+  "chunk_id": "driver-michael-schumacher#95",
+  "doc_id": "driver-michael-schumacher",
+  "document_title": "Michael Schumacher",
+  "section": null,
+  "page": 8,
+  "source": "https://en.wikipedia.org/wiki/Michael_Schumacher",
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "297b9d32e2f94ade23a19c343f9dd87a9888f18994948cc5e635cdb25d33eec6",
+  "validation_version": "partial-1",
+  "source_status": "error",
+  "status": "ok",
+  "rejections": [],
+  "alignments": [
+    {
+      "index": 0,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e2; description kept"
+    }
+  ],
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Michael Schumacher",
+        "entity_type": "Driver",
+        "description": "A Formula One driver known for his competitive nature and multiple championships."
+      },
+      {
+        "local_id": "e2",
+        "name": "Japanese Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "A Formula One race held in Japan."
+      },
+      {
+        "local_id": "e3",
+        "name": "null",
+        "entity_type": "Season",
+        "description": "No specific season mentioned."
+      },
+      {
+        "local_id": "e4",
+        "name": "null",
+        "entity_type": "Car",
+        "description": "No specific car mentioned."
+      },
+      {
+        "local_id": "e5",
+        "name": "null",
+        "entity_type": "PowerUnit",
+        "description": "No specific power unit mentioned."
+      },
+      {
+        "local_id": "e6",
+        "name": "null",
+        "entity_type": "Title",
+        "description": "No specific title mentioned."
+      },
+      {
+        "local_id": "e7",
+        "name": "null",
+        "entity_type": "RaceResult",
+        "description": "No specific race result mentioned."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Michael Schumacher at Japanese Grand Prix",
+        "entity_type": "RaceResult",
+        "description": "Schumacher led the Japanese Grand Prix before retiring due to engine failure."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Schumacher led the Japanese Grand Prix before retiring due to engine failure.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e2",
+        "relationship_type": "AT_RACE",
+        "description": "Schumacher led the Japanese Grand Prix before retiring due to engine failure.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e3",
+        "relationship_type": "ROUND_OF",
+        "description": "The Japanese Grand Prix is a round of the season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  }
+}

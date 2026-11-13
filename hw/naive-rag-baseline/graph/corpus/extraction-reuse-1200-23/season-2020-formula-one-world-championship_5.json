@@ -1,0 +1,142 @@
+{
+  "chunk_id": "season-2020-formula-one-world-championship#5",
+  "doc_id": "season-2020-formula-one-world-championship",
+  "document_title": "2020 Formula One World Championship",
+  "section": "2020 Formula One World Championship > Free practice drivers",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "807e28f2fef65e5e9efd68b7dcdf2afea9f673927aa0cad6a6f6878488fd62d0",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Jack Aitken",
+        "entity_type": "Driver",
+        "description": "Drove as a test or third driver in free practice sessions for Williams."
+      },
+      {
+        "local_id": "e2",
+        "name": "Roy Nissany",
+        "entity_type": "Driver",
+        "description": "Drove as a test or third driver in free practice sessions for Williams."
+      },
+      {
+        "local_id": "e3",
+        "name": "Robert Kubica",
+        "entity_type": "Driver",
+        "description": "Drove as a test or third driver in free practice sessions for Alfa Romeo Racing."
+      },
+      {
+        "local_id": "e4",
+        "name": "Mick Schumacher",
+        "entity_type": "Driver",
+        "description": "Drove as a test or third driver in free practice sessions for Haas."
+      },
+      {
+        "local_id": "e5",
+        "name": "Callum Ilott",
+        "entity_type": "Driver",
+        "description": "Entered to appear in the first practice session for the Eifel Grand Prix for Alfa Romeo Racing."
+      },
+      {
+        "local_id": "e6",
+        "name": "Alfa Romeo Racing",
+        "entity_type": "Team",
+        "description": "Team that Robert Kubica drove for in free practice sessions."
+      },
+      {
+        "local_id": "e7",
+        "name": "Haas",
+        "entity_type": "Team",
+        "description": "Team that Mick Schumacher drove for in free practice sessions."
+      },
+      {
+        "local_id": "e8",
+        "name": "Williams",
+        "entity_type": "Team",
+        "description": "Team that Jack Aitken and Roy Nissany drove for in free practice sessions."
+      },
+      {
+        "local_id": "e9",
+        "name": "Eifel Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "Grand Prix where Callum Ilott was entered to appear in the first practice session."
+      },
+      {
+        "local_id": "e10",
+        "name": "2020",
+        "entity_type": "Season",
+        "description": "The season during which the free practice sessions took place."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e8",
+        "relationship_type": "DROVE_FOR",
+        "description": "Jack Aitken drove for Williams.",
+        "from_year": null,
+        "to_year": null,
+        "role": "test or third driver"
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e8",
+        "relationship_type": "DROVE_FOR",
+        "description": "Roy Nissany drove for Williams.",
+        "from_year": null,
+        "to_year": null,
+        "role": "test or third driver"
+      },
+      {
+        "source_id": "e3",
+        "target_id": "e6",
+        "relationship_type": "DROVE_FOR",
+        "description": "Robert Kubica drove for Alfa Romeo Racing.",
+        "from_year": null,
+        "to_year": null,
+        "role": "test or third driver"
+      },
+      {
+        "source_id": "e4",
+        "target_id": "e7",
+        "relationship_type": "DROVE_FOR",
+        "description": "Mick Schumacher drove for Haas.",
+        "from_year": null,
+        "to_year": null,
+        "role": "test or third driver"
+      },
+      {
+        "source_id": "e9",
+        "target_id": "e10",
+        "relationship_type": "ROUND_OF",
+        "description": "Eifel Grand Prix is a round of the 2020 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 10,
+  "entities_accepted": 10,
+  "entities_rejected": 0,
+  "relationship_candidates": 7,
+  "relationships_accepted": 5,
+  "relationships_rejected": 2,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "TEAMMATE_OF does not allow Driver -> Team"
+    },
+    {
+      "element": "relationship",
+      "index": 5,
+      "reason": "TEAMMATE_OF does not allow Driver -> Team"
+    }
+  ],
+  "alignments": []
+}

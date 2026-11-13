@@ -1,0 +1,185 @@
+{
+  "chunk_id": "reference-formula-one#3",
+  "doc_id": "reference-formula-one",
+  "document_title": "Formula One",
+  "section": "Formula One > History",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "0b9f8f7a0eb0fd8f5d93dfc3459076aa9caa5965cabf7f8debfe96bead39a1f7",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Giuseppe Farina",
+        "entity_type": "Driver",
+        "description": "Won the first Drivers' World Championship in 1950."
+      },
+      {
+        "local_id": "e2",
+        "name": "Juan Manuel Fangio",
+        "entity_type": "Driver",
+        "description": "Teammate of Giuseppe Farina; won the championship in 1951, 1954, 1955, 1956, and 1957."
+      },
+      {
+        "local_id": "e3",
+        "name": "Alfa Romeo",
+        "entity_type": "Team",
+        "description": "Team for which Giuseppe Farina competed."
+      },
+      {
+        "local_id": "e4",
+        "name": "1950",
+        "entity_type": "Season",
+        "description": "The year of the first world championship race."
+      },
+      {
+        "local_id": "e5",
+        "name": "1951",
+        "entity_type": "Season",
+        "description": "The year Juan Manuel Fangio won the championship."
+      },
+      {
+        "local_id": "e6",
+        "name": "1954",
+        "entity_type": "Season",
+        "description": "The year Juan Manuel Fangio won the championship."
+      },
+      {
+        "local_id": "e7",
+        "name": "1955",
+        "entity_type": "Season",
+        "description": "The year Juan Manuel Fangio won the championship."
+      },
+      {
+        "local_id": "e8",
+        "name": "1956",
+        "entity_type": "Season",
+        "description": "The year Juan Manuel Fangio won the championship."
+      },
+      {
+        "local_id": "e9",
+        "name": "1957",
+        "entity_type": "Season",
+        "description": "The year Juan Manuel Fangio won the championship."
+      },
+      {
+        "local_id": "e10",
+        "name": "Michael Schumacher",
+        "entity_type": "Driver",
+        "description": "Won his sixth championship in 2003."
+      },
+      {
+        "local_id": "e11",
+        "name": "1958",
+        "entity_type": "Season",
+        "description": "The season when a Constructors' Championship was added."
+      },
+      {
+        "local_id": "e12",
+        "name": "Silverstone Circuit",
+        "entity_type": "Circuit",
+        "description": "The venue for the 1950 British Grand Prix."
+      },
+      {
+        "local_id": "e13",
+        "name": "British Grand Prix",
+        "entity_type": "GrandPrix",
+        "description": "The first world championship race."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "e3",
+        "relationship_type": "DROVE_FOR",
+        "description": "Giuseppe Farina competed for Alfa Romeo.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e1",
+        "target_id": "e2",
+        "relationship_type": "TEAMMATE_OF",
+        "description": "Giuseppe Farina was a teammate of Juan Manuel Fangio.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e2",
+        "target_id": "e3",
+        "relationship_type": "DROVE_FOR",
+        "description": "Juan Manuel Fangio competed for Alfa Romeo.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e13",
+        "target_id": "e4",
+        "relationship_type": "ROUND_OF",
+        "description": "The British Grand Prix is a round of the 1950 season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e13",
+        "target_id": "e12",
+        "relationship_type": "HELD_AT",
+        "description": "The British Grand Prix was held at Silverstone Circuit.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 13,
+  "entities_accepted": 13,
+  "entities_rejected": 0,
+  "relationship_candidates": 12,
+  "relationships_accepted": 5,
+  "relationships_rejected": 7,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "WON does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "WON does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 5,
+      "reason": "WON does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 6,
+      "reason": "WON does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 7,
+      "reason": "WON does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 8,
+      "reason": "WON does not allow Driver -> Season"
+    },
+    {
+      "element": "relationship",
+      "index": 9,
+      "reason": "ENTERED does not allow Season -> Team"
+    }
+  ],
+  "alignments": []
+}

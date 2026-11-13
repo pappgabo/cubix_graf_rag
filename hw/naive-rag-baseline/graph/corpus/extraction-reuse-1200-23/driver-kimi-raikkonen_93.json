@@ -1,0 +1,169 @@
+{
+  "chunk_id": "driver-kimi-raikkonen#93",
+  "doc_id": "driver-kimi-raikkonen",
+  "document_title": "Kimi Räikkönen",
+  "section": "Other racing > Rallying",
+  "page": null,
+  "source": null,
+  "model": "gpt-4o-mini",
+  "prompt_version": "f1-pilot-3",
+  "input_hash": "9b053769f12e21fa2a386744332b169d527ca29bb2d4585527d26ebae8f5c26f",
+  "status": "ok",
+  "result": {
+    "entities": [
+      {
+        "local_id": "e1",
+        "name": "Kimi Räikkönen",
+        "entity_type": "Driver",
+        "description": "A Finnish racing driver who has competed in various motorsport disciplines, including Formula One and rallying."
+      },
+      {
+        "local_id": "e2",
+        "name": "Rallye Vosgien 2010",
+        "entity_type": "GrandPrix",
+        "description": "A rally event held in France where Kimi Räikkönen achieved his first rally win."
+      },
+      {
+        "local_id": "e3",
+        "name": "Wales Rally GB",
+        "entity_type": "GrandPrix",
+        "description": "The final rally of the season where Kimi Räikkönen finished eighth."
+      },
+      {
+        "local_id": "e4",
+        "name": "2011 World Rally Championship",
+        "entity_type": "Season",
+        "description": "The season in which Kimi Räikkönen entered under his own team, ICE 1 Racing."
+      },
+      {
+        "local_id": "e5",
+        "name": "ICE 1 Racing",
+        "entity_type": "Team",
+        "description": "Kimi Räikkönen's own team in the 2011 World Rally Championship."
+      },
+      {
+        "local_id": "e6",
+        "name": "Citroën DS3 WRC",
+        "entity_type": "Car",
+        "description": "The car driven by Kimi Räikkönen in the 2011 World Rally Championship."
+      },
+      {
+        "local_id": "e7",
+        "name": "Rally Sweden",
+        "entity_type": "GrandPrix",
+        "description": "The opening round of the 2011 World Rally Championship where Kimi Räikkönen finished eighth."
+      },
+      {
+        "local_id": "e8",
+        "name": "Rally Portugal",
+        "entity_type": "GrandPrix",
+        "description": "The rally event where Kimi Räikkönen finished seventh in the 2011 season."
+      },
+      {
+        "local_id": "e9",
+        "name": "Jordan Rally",
+        "entity_type": "GrandPrix",
+        "description": "The rally event where Kimi Räikkönen finished sixth in the 2011 season."
+      },
+      {
+        "local_id": "rr1",
+        "name": "Kimi Räikkönen at Wales Rally GB",
+        "entity_type": "RaceResult",
+        "description": "Kimi Räikkönen finished eighth in the Wales Rally GB."
+      }
+    ],
+    "relationships": [
+      {
+        "source_id": "e1",
+        "target_id": "rr1",
+        "relationship_type": "ACHIEVED",
+        "description": "Kimi Räikkönen finished eighth in the Wales Rally GB.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "rr1",
+        "target_id": "e3",
+        "relationship_type": "AT_RACE",
+        "description": "Kimi Räikkönen finished eighth in the Wales Rally GB.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e5",
+        "target_id": "e4",
+        "relationship_type": "ENTERED",
+        "description": "ICE 1 Racing took part in the 2011 World Rally Championship season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      },
+      {
+        "source_id": "e6",
+        "target_id": "e4",
+        "relationship_type": "RACED_IN",
+        "description": "The Citroën DS3 WRC took part in the 2011 World Rally Championship season.",
+        "from_year": null,
+        "to_year": null,
+        "role": null
+      }
+    ]
+  },
+  "entity_candidates": 9,
+  "entities_accepted": 10,
+  "entities_rejected": 0,
+  "relationship_candidates": 9,
+  "relationships_accepted": 4,
+  "relationships_rejected": 6,
+  "rejections": [
+    {
+      "element": "relationship",
+      "index": 4,
+      "reason": "FIELDED is not temporal; from_year=2011, to_year=None, role=None cannot be stored without dropping them"
+    },
+    {
+      "element": "relationship",
+      "index": 6,
+      "reason": "ACHIEVED Driver -> GrandPrix has from_year=2011, to_year=None, role=None; the year or role cannot be stored on the reified result"
+    },
+    {
+      "element": "relationship",
+      "index": 7,
+      "reason": "ACHIEVED Driver -> GrandPrix has from_year=2011, to_year=None, role=None; the year or role cannot be stored on the reified result"
+    },
+    {
+      "element": "relationship",
+      "index": 8,
+      "reason": "ACHIEVED Driver -> GrandPrix has from_year=2011, to_year=None, role=None; the year or role cannot be stored on the reified result"
+    },
+    {
+      "element": "relationship",
+      "index": 0,
+      "reason": "WON does not allow Driver -> GrandPrix"
+    },
+    {
+      "element": "relationship",
+      "index": 3,
+      "reason": "ENTERED does not allow Driver -> Season"
+    }
+  ],
+  "alignments": [
+    {
+      "index": 1,
+      "action": "reify_race_result",
+      "detail": "ACHIEVED Driver -> GrandPrix stored as RaceResult rr1 -AT_RACE-> e3; description kept"
+    },
+    {
+      "index": 3,
+      "action": "clear_redundant_season_year",
+      "detail": "ENTERED year 2011 already named by Season 'e4'; from_year and to_year cleared"
+    },
+    {
+      "index": 5,
+      "action": "clear_redundant_season_year",
+      "detail": "RACED_IN year 2011 already named by Season 'e4'; from_year and to_year cleared"
+    }
+  ]
+}
