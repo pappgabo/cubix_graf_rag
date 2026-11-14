@@ -1,0 +1,123 @@
+{
+ "question_id": "Q01",
+ "mode": "globalis",
+ "run_phase": "smoke",
+ "question_type": "simple",
+ "question_status": "frozen_w4",
+ "question_text": "How many World Drivers' Championships has Lewis Hamilton won?",
+ "expected_answer": "7 (hét), Michael Schumacherrel holtversenyben rekord.",
+ "golden_set_version": "v1-approval-draft",
+ "answer": "Lewis Hamilton has won seven World Drivers' Championships.",
+ "refused": false,
+ "model_called": true,
+ "actual_context": "{\n \"question\": \"How many World Drivers' Championships has Lewis Hamilton won?\",\n \"partial_answers\": [\n  {\n   \"id\": \"111\",\n   \"usefulness_score\": 100,\n   \"text\": \"Lewis Hamilton won the 2020 World Drivers' Championship, marking his seventh title.\"\n  }\n ]\n}\n",
+ "actual_chunk_ids": [
+  "driver-lewis-hamilton#79"
+ ],
+ "chunk_ids_traceable": true,
+ "is_proxy_retrieval": true,
+ "proxy_note": "candidate_source_chunk_ids from the reduce step's actual basis (basis_paths), not the final answer's citation_chain -- a retrieval proxy, not verified per-chunk coverage",
+ "error": null,
+ "duration_seconds": 40.328,
+ "raw": {
+  "basis_paths": [
+   "111"
+  ],
+  "map_result_count": 37,
+  "reduce_a": {
+   "question_id": "Q01",
+   "variant": "A",
+   "requested_model": "gpt-4o-mini",
+   "basis_paths": [
+    "111"
+   ],
+   "returned_model": "gpt-4o-mini-2024-07-18",
+   "usage_prompt_tokens": 296,
+   "usage_completion_tokens": 28,
+   "finish_reason": "stop",
+   "duration_seconds": 1.016,
+   "measured_cost_usd": 6.1e-05,
+   "valid_json": true,
+   "validation": {
+    "valid_structure": true,
+    "problems": [],
+    "unknown_partial_answer_ids": []
+   },
+   "answer": "Lewis Hamilton has won seven World Drivers' Championships.",
+   "cited_partial_answer_ids": [
+    "111"
+   ],
+   "citation_chain": [
+    {
+     "community_path": "111",
+     "partial_answer": "Lewis Hamilton won the 2020 World Drivers' Championship, marking his seventh title.",
+     "usefulness_score": 100,
+     "statements": [
+      {
+       "statement_id": "111#2",
+       "statement": "Lewis Hamilton won the 2020 World Drivers' Championship, marking his seventh title.",
+       "evidence_ids": [
+        "N106",
+        "E111"
+       ],
+       "candidate_source_chunk_ids": [
+        "driver-lewis-hamilton#79"
+       ]
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "retrieval": {
+  "question_id": "Q01",
+  "status": "scored",
+  "is_proxy": true,
+  "proxy_note": "candidate_source_chunk_ids from the reduce step's actual basis (basis_paths), not the final answer's citation_chain -- a retrieval proxy, not verified per-chunk coverage",
+  "untraceable_reason": null,
+  "hit_count": 1,
+  "group_count": 1,
+  "ratio": 1.0,
+  "strict_all_hit": true,
+  "groups": [
+   {
+    "group_id": "Q01-e1",
+    "criterion": "Q01-c1",
+    "role": null,
+    "hit": true,
+    "any_of_chunk_ids": [
+     "driver-lewis-hamilton#0",
+     "driver-lewis-hamilton#79"
+    ],
+    "matched_chunk_ids": [
+     "driver-lewis-hamilton#79"
+    ]
+   }
+  ]
+ },
+ "correctness": {
+  "status": "scored",
+  "label": "helyes",
+  "parsed": {
+   "criteria": [
+    {
+     "criterion_id": "Q01-c1",
+     "verdict": "met",
+     "explanation": "The answer correctly states that Lewis Hamilton has won seven World Drivers' Championships."
+    }
+   ],
+   "refused": false,
+   "rubric_conflicts": [],
+   "reasoning": "The answer fully meets the criterion by providing the correct name and the number of championships won."
+  },
+  "usage_prompt_tokens": 610,
+  "usage_completion_tokens": 92
+ },
+ "faithfulness": {
+  "status": "scored",
+  "score": 1.0,
+  "supported_count": 1,
+  "unsupported_count": 0,
+  "unclear_count": 0
+ }
+}

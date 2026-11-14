@@ -1,0 +1,697 @@
+{
+ "question_id": "Q12",
+ "mode": "globalis",
+ "run_phase": "full",
+ "question_type": "global",
+ "question_status": "frozen_w4",
+ "question_text": "Group the World Champions among the corpus drivers by decade (2000s, 2010s, 2020s).",
+ "expected_answer": "2000s: Michael Schumacher, Fernando Alonso, Kimi Räikkönen, Lewis Hamilton, Jenson Button. 2010s: Sebastian Vettel, Lewis Hamilton, Nico Rosberg. 2020s: Lewis Hamilton, Max Verstappen. Exact years optional; Verstappen titles explicitly supported for 2021–2024.",
+ "golden_set_version": "v1-approval-draft",
+ "answer": "2000s: Michael Schumacher (1996-2006), Kimi Räikkönen (2007), Jenson Button (2009); 2010s: Sebastian Vettel (2009-2014), Nico Rosberg (2016); 2020s: Lewis Hamilton (2020), Max Verstappen (since 2016).",
+ "refused": false,
+ "model_called": true,
+ "actual_context": "{\n \"question\": \"Group the World Champions among the corpus drivers by decade (2000s, 2010s, 2020s).\",\n \"partial_answers\": [\n  {\n   \"id\": \"4\",\n   \"usefulness_score\": 70,\n   \"text\": \"Michael Schumacher won the World Championship in the 2000s, specifically from 1996 to 2006. Kimi Räikkönen won the World Championship in 2007, also in the 2000s. Charles Leclerc joined Ferrari in 2019, which is in the 2010s.\"\n  },\n  {\n   \"id\": \"15\",\n   \"usefulness_score\": 70,\n   \"text\": \"In the 2010s, Sebastian Vettel drove for Red Bull Racing from 2009 to 2014 and won multiple championships. Max Verstappen has been driving for Red Bull since 2016, which places him in the 2020s.\"\n  },\n  {\n   \"id\": \"24\",\n   \"usefulness_score\": 50,\n   \"text\": \"Jenson Button won the 2009 Drivers' Championship.\"\n  },\n  {\n   \"id\": \"33\",\n   \"usefulness_score\": 50,\n   \"text\": \"Nico Rosberg won the World Drivers' Championship in 2016, which falls in the 2010s decade. Lewis Hamilton is also a prominent driver in this period, but specific championship years are not mentioned in the report.\"\n  },\n  {\n   \"id\": \"37\",\n   \"usefulness_score\": 50,\n   \"text\": \"Jenson Button won the Formula One World Drivers' Championship in 2009.\"\n  },\n  {\n   \"id\": \"60\",\n   \"usefulness_score\": 50,\n   \"text\": \"Fernando Alonso won the 2005 F1 World Championship while driving for Renault.\"\n  },\n  {\n   \"id\": \"111\",\n   \"usefulness_score\": 50,\n   \"text\": \"Lewis Hamilton won the 2020 World Drivers' Championship, marking his seventh title.\"\n  },\n  {\n   \"id\": \"168\",\n   \"usefulness_score\": 20,\n   \"text\": \"Fernando Alonso won the Spanish Grand Prix in 2006.\"\n  }\n ]\n}\n",
+ "actual_chunk_ids": [
+  "driver-michael-schumacher#1",
+  "driver-michael-schumacher#18",
+  "driver-michael-schumacher#19",
+  "driver-michael-schumacher#2",
+  "driver-michael-schumacher#20",
+  "driver-michael-schumacher#21",
+  "driver-michael-schumacher#23",
+  "driver-michael-schumacher#25",
+  "driver-michael-schumacher#27",
+  "driver-michael-schumacher#28",
+  "driver-michael-schumacher#29",
+  "driver-michael-schumacher#31",
+  "driver-michael-schumacher#32",
+  "driver-michael-schumacher#35",
+  "driver-michael-schumacher#37",
+  "driver-michael-schumacher#38",
+  "driver-michael-schumacher#39",
+  "driver-michael-schumacher#40",
+  "driver-michael-schumacher#41",
+  "driver-michael-schumacher#42",
+  "driver-michael-schumacher#43",
+  "driver-michael-schumacher#54",
+  "driver-michael-schumacher#58",
+  "driver-michael-schumacher#74",
+  "driver-michael-schumacher#77",
+  "reference-list-of-formula-one-world-drivers-champions#1",
+  "team-scuderia-ferrari#1",
+  "team-williams-racing#69",
+  "driver-kimi-raikkonen#2",
+  "driver-kimi-raikkonen#24",
+  "driver-kimi-raikkonen#25",
+  "driver-kimi-raikkonen#26",
+  "driver-kimi-raikkonen#27",
+  "driver-kimi-raikkonen#28",
+  "driver-kimi-raikkonen#29",
+  "driver-kimi-raikkonen#30",
+  "driver-kimi-raikkonen#32",
+  "driver-kimi-raikkonen#33",
+  "driver-kimi-raikkonen#34",
+  "driver-kimi-raikkonen#35",
+  "driver-kimi-raikkonen#36",
+  "driver-kimi-raikkonen#37",
+  "driver-kimi-raikkonen#38",
+  "driver-kimi-raikkonen#39",
+  "driver-kimi-raikkonen#40",
+  "driver-kimi-raikkonen#41",
+  "driver-kimi-raikkonen#43",
+  "driver-kimi-raikkonen#44",
+  "driver-kimi-raikkonen#46",
+  "driver-kimi-raikkonen#47",
+  "driver-kimi-raikkonen#48",
+  "driver-kimi-raikkonen#74",
+  "driver-kimi-raikkonen#75",
+  "driver-kimi-raikkonen#77",
+  "driver-kimi-raikkonen#78",
+  "driver-kimi-raikkonen#79",
+  "driver-kimi-raikkonen#80",
+  "driver-kimi-raikkonen#81",
+  "driver-kimi-raikkonen#84",
+  "driver-charles-leclerc#1",
+  "driver-charles-leclerc#2",
+  "driver-charles-leclerc#25",
+  "driver-charles-leclerc#26",
+  "driver-charles-leclerc#27",
+  "driver-charles-leclerc#28",
+  "driver-max-verstappen#11",
+  "driver-max-verstappen#2",
+  "driver-max-verstappen#37",
+  "driver-sebastian-vettel#0",
+  "driver-sebastian-vettel#13",
+  "driver-sebastian-vettel#14",
+  "driver-sebastian-vettel#2",
+  "driver-sebastian-vettel#20",
+  "driver-sebastian-vettel#21",
+  "team-red-bull-racing#19",
+  "team-renault-in-formula-one#61",
+  "driver-jenson-button#1",
+  "driver-lewis-hamilton#1",
+  "driver-lewis-hamilton#49",
+  "driver-lewis-hamilton#50",
+  "driver-lewis-hamilton#6",
+  "driver-nico-rosberg#0",
+  "driver-nico-rosberg#1",
+  "driver-nico-rosberg#2",
+  "driver-nico-rosberg#34",
+  "season-2016-formula-one-world-championship#1",
+  "driver-charles-leclerc#4",
+  "driver-fernando-alonso#18",
+  "driver-jenson-button#0",
+  "driver-jenson-button#29",
+  "driver-jenson-button#30",
+  "driver-jenson-button#54",
+  "driver-jenson-button#59",
+  "driver-jenson-button#60",
+  "driver-kimi-raikkonen#1",
+  "driver-kimi-raikkonen#42",
+  "driver-kimi-raikkonen#45",
+  "driver-kimi-raikkonen#91",
+  "driver-nico-rosberg#17",
+  "driver-nico-rosberg#19",
+  "driver-sebastian-vettel#1",
+  "driver-sebastian-vettel#56",
+  "driver-valtteri-bottas#5",
+  "reference-formula-one#15",
+  "reference-formula-one#16",
+  "reference-formula-one#48",
+  "reference-formula-one#54",
+  "team-mclaren#103",
+  "team-mclaren#37",
+  "team-mclaren#8",
+  "team-mercedes-benz-in-formula-one#6",
+  "team-red-bull-racing#20",
+  "team-renault-in-formula-one#33",
+  "team-renault-in-formula-one#59",
+  "team-williams-racing#113",
+  "team-williams-racing#128",
+  "team-williams-racing#79",
+  "team-williams-racing#80",
+  "team-williams-racing#81",
+  "team-williams-racing#82",
+  "driver-fernando-alonso#0",
+  "driver-fernando-alonso#1",
+  "driver-fernando-alonso#12",
+  "driver-fernando-alonso#58",
+  "driver-jenson-button#21",
+  "driver-jenson-button#23",
+  "driver-jenson-button#24",
+  "driver-kimi-raikkonen#14",
+  "driver-kimi-raikkonen#15",
+  "driver-kimi-raikkonen#16",
+  "driver-kimi-raikkonen#17",
+  "driver-kimi-raikkonen#18",
+  "driver-lewis-hamilton#9",
+  "driver-nico-rosberg#11",
+  "driver-nico-rosberg#12",
+  "driver-nico-rosberg#13",
+  "driver-sebastian-vettel#7",
+  "driver-valtteri-bottas#3",
+  "reference-formula-one#13",
+  "reference-formula-one#57",
+  "team-mclaren#107",
+  "team-mclaren#33",
+  "team-red-bull-racing#3",
+  "team-red-bull-racing#6",
+  "team-red-bull-racing#7",
+  "team-renault-in-formula-one#0",
+  "team-renault-in-formula-one#18",
+  "team-renault-in-formula-one#19",
+  "team-scuderia-ferrari#13",
+  "team-williams-racing#72",
+  "team-williams-racing#73",
+  "team-williams-racing#74",
+  "driver-lewis-hamilton#79",
+  "team-renault-in-formula-one#20"
+ ],
+ "chunk_ids_traceable": true,
+ "is_proxy_retrieval": true,
+ "proxy_note": "candidate_source_chunk_ids from the reduce step's actual basis (basis_paths), not the final answer's citation_chain -- a retrieval proxy, not verified per-chunk coverage",
+ "error": null,
+ "duration_seconds": 44.859,
+ "raw": {
+  "basis_paths": [
+   "4",
+   "15",
+   "24",
+   "33",
+   "37",
+   "60",
+   "111",
+   "168"
+  ],
+  "map_result_count": 37,
+  "reduce_a": {
+   "question_id": "Q12",
+   "variant": "A",
+   "requested_model": "gpt-4o-mini",
+   "basis_paths": [
+    "4",
+    "15",
+    "24",
+    "33",
+    "37",
+    "60",
+    "111",
+    "168"
+   ],
+   "returned_model": "gpt-4o-mini-2024-07-18",
+   "usage_prompt_tokens": 704,
+   "usage_completion_tokens": 104,
+   "finish_reason": "stop",
+   "duration_seconds": 2.203,
+   "measured_cost_usd": 0.000168,
+   "valid_json": true,
+   "validation": {
+    "valid_structure": true,
+    "problems": [],
+    "unknown_partial_answer_ids": []
+   },
+   "answer": "2000s: Michael Schumacher (1996-2006), Kimi Räikkönen (2007), Jenson Button (2009); 2010s: Sebastian Vettel (2009-2014), Nico Rosberg (2016); 2020s: Lewis Hamilton (2020), Max Verstappen (since 2016).",
+   "cited_partial_answer_ids": [
+    "4",
+    "15",
+    "24",
+    "33",
+    "37",
+    "111"
+   ],
+   "citation_chain": [
+    {
+     "community_path": "4",
+     "partial_answer": "Michael Schumacher won the World Championship in the 2000s, specifically from 1996 to 2006. Kimi Räikkönen won the World Championship in 2007, also in the 2000s. Charles Leclerc joined Ferrari in 2019, which is in the 2010s.",
+     "usefulness_score": 70,
+     "statements": [
+      {
+       "statement_id": "4#1",
+       "statement": "Michael Schumacher drove for Scuderia Ferrari from 1996 to 2006, achieving significant success during this period.",
+       "evidence_ids": [
+        "E012",
+        "E013",
+        "E014"
+       ],
+       "candidate_source_chunk_ids": [
+        "driver-michael-schumacher#1",
+        "driver-michael-schumacher#18",
+        "driver-michael-schumacher#19",
+        "driver-michael-schumacher#2",
+        "driver-michael-schumacher#20",
+        "driver-michael-schumacher#21",
+        "driver-michael-schumacher#23",
+        "driver-michael-schumacher#25",
+        "driver-michael-schumacher#27",
+        "driver-michael-schumacher#28",
+        "driver-michael-schumacher#29",
+        "driver-michael-schumacher#31",
+        "driver-michael-schumacher#32",
+        "driver-michael-schumacher#35",
+        "driver-michael-schumacher#37",
+        "driver-michael-schumacher#38",
+        "driver-michael-schumacher#39",
+        "driver-michael-schumacher#40",
+        "driver-michael-schumacher#41",
+        "driver-michael-schumacher#42",
+        "driver-michael-schumacher#43",
+        "driver-michael-schumacher#54",
+        "driver-michael-schumacher#58",
+        "driver-michael-schumacher#74",
+        "driver-michael-schumacher#77",
+        "reference-list-of-formula-one-world-drivers-champions#1",
+        "team-scuderia-ferrari#1",
+        "team-williams-racing#69"
+       ]
+      },
+      {
+       "statement_id": "4#2",
+       "statement": "Kimi Räikkönen drove for Scuderia Ferrari during multiple seasons, including winning the World Championship in 2007.",
+       "evidence_ids": [
+        "E001",
+        "E002",
+        "E006"
+       ],
+       "candidate_source_chunk_ids": [
+        "driver-kimi-raikkonen#2",
+        "driver-kimi-raikkonen#24",
+        "driver-kimi-raikkonen#25",
+        "driver-kimi-raikkonen#26",
+        "driver-kimi-raikkonen#27",
+        "driver-kimi-raikkonen#28",
+        "driver-kimi-raikkonen#29",
+        "driver-kimi-raikkonen#30",
+        "driver-kimi-raikkonen#32",
+        "driver-kimi-raikkonen#33",
+        "driver-kimi-raikkonen#34",
+        "driver-kimi-raikkonen#35",
+        "driver-kimi-raikkonen#36",
+        "driver-kimi-raikkonen#37",
+        "driver-kimi-raikkonen#38",
+        "driver-kimi-raikkonen#39",
+        "driver-kimi-raikkonen#40",
+        "driver-kimi-raikkonen#41",
+        "driver-kimi-raikkonen#43",
+        "driver-kimi-raikkonen#44",
+        "driver-kimi-raikkonen#46",
+        "driver-kimi-raikkonen#47",
+        "driver-kimi-raikkonen#48",
+        "driver-kimi-raikkonen#74",
+        "driver-kimi-raikkonen#75",
+        "driver-kimi-raikkonen#77",
+        "driver-kimi-raikkonen#78",
+        "driver-kimi-raikkonen#79",
+        "driver-kimi-raikkonen#80",
+        "driver-kimi-raikkonen#81",
+        "driver-kimi-raikkonen#84"
+       ]
+      },
+      {
+       "statement_id": "4#3",
+       "statement": "Charles Leclerc joined Scuderia Ferrari in 2019 and is contracted until at least the end of the 2028 season.",
+       "evidence_ids": [
+        "E016",
+        "E017",
+        "E024"
+       ],
+       "candidate_source_chunk_ids": [
+        "driver-charles-leclerc#1",
+        "driver-charles-leclerc#2",
+        "driver-charles-leclerc#25",
+        "driver-charles-leclerc#26",
+        "driver-charles-leclerc#27",
+        "driver-charles-leclerc#28"
+       ]
+      }
+     ]
+    },
+    {
+     "community_path": "15",
+     "partial_answer": "In the 2010s, Sebastian Vettel drove for Red Bull Racing from 2009 to 2014 and won multiple championships. Max Verstappen has been driving for Red Bull since 2016, which places him in the 2020s.",
+     "usefulness_score": 70,
+     "statements": [
+      {
+       "statement_id": "15#1",
+       "statement": "Max Verstappen has been driving for Red Bull Racing since 2016 and is contracted to remain with the team until at least 2030.",
+       "evidence_ids": [
+        "E001",
+        "E004",
+        "E005"
+       ],
+       "candidate_source_chunk_ids": [
+        "driver-max-verstappen#11",
+        "driver-max-verstappen#2",
+        "driver-max-verstappen#37"
+       ]
+      },
+      {
+       "statement_id": "15#2",
+       "statement": "Sebastian Vettel drove for Red Bull Racing from 2009 to 2014 and won multiple championships during his tenure.",
+       "evidence_ids": [
+        "E007",
+        "E010",
+        "E033"
+       ],
+       "candidate_source_chunk_ids": [
+        "driver-sebastian-vettel#0",
+        "driver-sebastian-vettel#13",
+        "driver-sebastian-vettel#14",
+        "driver-sebastian-vettel#2",
+        "driver-sebastian-vettel#20",
+        "driver-sebastian-vettel#21",
+        "team-red-bull-racing#19",
+        "team-renault-in-formula-one#61"
+       ]
+      }
+     ]
+    },
+    {
+     "community_path": "24",
+     "partial_answer": "Jenson Button won the 2009 Drivers' Championship.",
+     "usefulness_score": 50,
+     "statements": [
+      {
+       "statement_id": "24#1",
+       "statement": "Jenson Button won the 2009 Drivers' Championship while driving for Brawn GP.",
+       "evidence_ids": [
+        "E079",
+        "E004"
+       ],
+       "candidate_source_chunk_ids": [
+        "driver-jenson-button#1"
+       ]
+      }
+     ]
+    },
+    {
+     "community_path": "33",
+     "partial_answer": "Nico Rosberg won the World Drivers' Championship in 2016, which falls in the 2010s decade. Lewis Hamilton is also a prominent driver in this period, but specific championship years are not mentioned in the report.",
+     "usefulness_score": 50,
+     "statements": [
+      {
+       "statement_id": "33#1",
+       "statement": "Lewis Hamilton and Nico Rosberg were teammates at Mercedes from 2013 to 2016, during which Rosberg won the World Drivers' Championship in 2016.",
+       "evidence_ids": [
+        "E034",
+        "E041",
+        "E022"
+       ],
+       "candidate_source_chunk_ids": [
+        "driver-lewis-hamilton#1",
+        "driver-lewis-hamilton#49",
+        "driver-lewis-hamilton#50",
+        "driver-lewis-hamilton#6",
+        "driver-nico-rosberg#0",
+        "driver-nico-rosberg#1",
+        "driver-nico-rosberg#2",
+        "driver-nico-rosberg#34",
+        "season-2016-formula-one-world-championship#1"
+       ]
+      }
+     ]
+    },
+    {
+     "community_path": "37",
+     "partial_answer": "Jenson Button won the Formula One World Drivers' Championship in 2009.",
+     "usefulness_score": 50,
+     "statements": [
+      {
+       "statement_id": "37#1",
+       "statement": "Jenson Button won the Formula One World Drivers' Championship in 2009.",
+       "evidence_ids": [
+        "N006"
+       ],
+       "candidate_source_chunk_ids": [
+        "driver-charles-leclerc#4",
+        "driver-fernando-alonso#18",
+        "driver-jenson-button#0",
+        "driver-jenson-button#1",
+        "driver-jenson-button#29",
+        "driver-jenson-button#30",
+        "driver-jenson-button#54",
+        "driver-jenson-button#59",
+        "driver-jenson-button#60",
+        "driver-kimi-raikkonen#1",
+        "driver-kimi-raikkonen#24",
+        "driver-kimi-raikkonen#42",
+        "driver-kimi-raikkonen#43",
+        "driver-kimi-raikkonen#44",
+        "driver-kimi-raikkonen#45",
+        "driver-kimi-raikkonen#46",
+        "driver-kimi-raikkonen#47",
+        "driver-kimi-raikkonen#48",
+        "driver-kimi-raikkonen#91",
+        "driver-michael-schumacher#42",
+        "driver-nico-rosberg#17",
+        "driver-nico-rosberg#19",
+        "driver-sebastian-vettel#1",
+        "driver-sebastian-vettel#14",
+        "driver-sebastian-vettel#56",
+        "driver-valtteri-bottas#5",
+        "reference-formula-one#15",
+        "reference-formula-one#16",
+        "reference-formula-one#48",
+        "reference-formula-one#54",
+        "team-mclaren#103",
+        "team-mclaren#37",
+        "team-mclaren#8",
+        "team-mercedes-benz-in-formula-one#6",
+        "team-red-bull-racing#19",
+        "team-red-bull-racing#20",
+        "team-renault-in-formula-one#33",
+        "team-renault-in-formula-one#59",
+        "team-williams-racing#113",
+        "team-williams-racing#128",
+        "team-williams-racing#79",
+        "team-williams-racing#80",
+        "team-williams-racing#81",
+        "team-williams-racing#82"
+       ]
+      }
+     ]
+    },
+    {
+     "community_path": "111",
+     "partial_answer": "Lewis Hamilton won the 2020 World Drivers' Championship, marking his seventh title.",
+     "usefulness_score": 50,
+     "statements": [
+      {
+       "statement_id": "111#2",
+       "statement": "Lewis Hamilton won the 2020 World Drivers' Championship, marking his seventh title.",
+       "evidence_ids": [
+        "N106",
+        "E111"
+       ],
+       "candidate_source_chunk_ids": [
+        "driver-lewis-hamilton#79"
+       ]
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "duration_seconds_generation": 44.859,
+ "cost_usd_generation": 0.003816,
+ "retrieval": {
+  "question_id": "Q12",
+  "status": "scored",
+  "is_proxy": true,
+  "proxy_note": "candidate_source_chunk_ids from the reduce step's actual basis (basis_paths), not the final answer's citation_chain -- a retrieval proxy, not verified per-chunk coverage",
+  "untraceable_reason": null,
+  "hit_count": 6,
+  "group_count": 10,
+  "ratio": 0.6,
+  "strict_all_hit": false,
+  "groups": [
+   {
+    "group_id": "Q12-e1",
+    "criterion": "Q12-c1",
+    "role": null,
+    "hit": true,
+    "any_of_chunk_ids": [
+     "team-scuderia-ferrari#1"
+    ],
+    "matched_chunk_ids": [
+     "team-scuderia-ferrari#1"
+    ]
+   },
+   {
+    "group_id": "Q12-e2",
+    "criterion": "Q12-c2",
+    "role": null,
+    "hit": true,
+    "any_of_chunk_ids": [
+     "driver-fernando-alonso#0"
+    ],
+    "matched_chunk_ids": [
+     "driver-fernando-alonso#0"
+    ]
+   },
+   {
+    "group_id": "Q12-e3",
+    "criterion": "Q12-c3",
+    "role": null,
+    "hit": false,
+    "any_of_chunk_ids": [
+     "driver-kimi-raikkonen#0"
+    ],
+    "matched_chunk_ids": []
+   },
+   {
+    "group_id": "Q12-e4",
+    "criterion": "Q12-c4",
+    "role": null,
+    "hit": false,
+    "any_of_chunk_ids": [
+     "reference-list-of-formula-one-world-drivers-champions#0"
+    ],
+    "matched_chunk_ids": []
+   },
+   {
+    "group_id": "Q12-e5",
+    "criterion": "Q12-c5",
+    "role": null,
+    "hit": true,
+    "any_of_chunk_ids": [
+     "driver-jenson-button#0"
+    ],
+    "matched_chunk_ids": [
+     "driver-jenson-button#0"
+    ]
+   },
+   {
+    "group_id": "Q12-e6",
+    "criterion": "Q12-c6",
+    "role": null,
+    "hit": true,
+    "any_of_chunk_ids": [
+     "driver-sebastian-vettel#0"
+    ],
+    "matched_chunk_ids": [
+     "driver-sebastian-vettel#0"
+    ]
+   },
+   {
+    "group_id": "Q12-e7",
+    "criterion": "Q12-c7",
+    "role": null,
+    "hit": true,
+    "any_of_chunk_ids": [
+     "driver-lewis-hamilton#1"
+    ],
+    "matched_chunk_ids": [
+     "driver-lewis-hamilton#1"
+    ]
+   },
+   {
+    "group_id": "Q12-e8",
+    "criterion": "Q12-c8",
+    "role": null,
+    "hit": true,
+    "any_of_chunk_ids": [
+     "driver-nico-rosberg#0"
+    ],
+    "matched_chunk_ids": [
+     "driver-nico-rosberg#0"
+    ]
+   },
+   {
+    "group_id": "Q12-e9",
+    "criterion": "Q12-c9",
+    "role": null,
+    "hit": false,
+    "any_of_chunk_ids": [
+     "reference-list-of-formula-one-world-drivers-champions#0"
+    ],
+    "matched_chunk_ids": []
+   },
+   {
+    "group_id": "Q12-e10",
+    "criterion": "Q12-c10",
+    "role": null,
+    "hit": false,
+    "any_of_chunk_ids": [
+     "driver-max-verstappen#0"
+    ],
+    "matched_chunk_ids": []
+   }
+  ]
+ },
+ "duration_seconds_correctness_judge": 6.125,
+ "cost_usd_correctness_judge": 0.000455,
+ "correctness": {
+  "status": "scored",
+  "label": "hiányos",
+  "parsed": {
+   "criteria": [
+    {
+     "criterion_id": "Q12-c1",
+     "verdict": "met",
+     "explanation": "Michael Schumacher is correctly placed in the 2000s."
+    },
+    {
+     "criterion_id": "Q12-c2",
+     "verdict": "not_met",
+     "explanation": "Fernando Alonso is not mentioned in the 2000s group."
+    },
+    {
+     "criterion_id": "Q12-c3",
+     "verdict": "met",
+     "explanation": "Kimi Räikkönen is correctly placed in the 2000s."
+    },
+    {
+     "criterion_id": "Q12-c4",
+     "verdict": "not_met",
+     "explanation": "Lewis Hamilton is not mentioned in the 2000s group."
+    },
+    {
+     "criterion_id": "Q12-c5",
+     "verdict": "met",
+     "explanation": "Jenson Button is correctly placed in the 2000s."
+    },
+    {
+     "criterion_id": "Q12-c6",
+     "verdict": "met",
+     "explanation": "Sebastian Vettel is correctly placed in the 2010s."
+    },
+    {
+     "criterion_id": "Q12-c7",
+     "verdict": "met",
+     "explanation": "Lewis Hamilton is correctly placed in the 2010s."
+    },
+    {
+     "criterion_id": "Q12-c8",
+     "verdict": "met",
+     "explanation": "Nico Rosberg is correctly placed in the 2010s."
+    },
+    {
+     "criterion_id": "Q12-c9",
+     "verdict": "met",
+     "explanation": "Lewis Hamilton is correctly placed in the 2020s."
+    },
+    {
+     "criterion_id": "Q12-c10",
+     "verdict": "met",
+     "explanation": "Max Verstappen is correctly placed in the 2020s."
+    }
+   ],
+   "refused": false,
+   "rubric_conflicts": [],
+   "reasoning": "The answer correctly identifies most drivers in their respective decades, but fails to include Fernando Alonso and Lewis Hamilton in the 2000s, which are required criteria."
+  },
+  "usage_prompt_tokens": 1294,
+  "usage_completion_tokens": 435
+ },
+ "duration_seconds_faithfulness_judge": 4.781,
+ "cost_usd_faithfulness_judge": 0.000284,
+ "faithfulness": {
+  "status": "scored",
+  "score": 1.0,
+  "supported_count": 7,
+  "unsupported_count": 0,
+  "unclear_count": 0
+ },
+ "cost_usd": 0.004555,
+ "cost_source": "ledger_delta"
+}

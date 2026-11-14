@@ -1,0 +1,114 @@
+[
+ {
+  "run_id": "week5-b-smoke-1794404338",
+  "timestamp": 1794404348.1507196,
+  "step": "embedding",
+  "label": "naiv-query-Q07",
+  "ids": [
+   "naiv-query-Q07"
+  ],
+  "model": "text-embedding-3-small",
+  "estimated_tokens": 37,
+  "actual_tokens": 30,
+  "cost_usd": 6.000000000000001e-07,
+  "duration_seconds": 4.953,
+  "error": null,
+  "status": "success"
+ },
+ {
+  "run_id": "week5-b-smoke-1794404338",
+  "timestamp": 1794404351.1782386,
+  "step": "answer",
+  "mode": "naiv",
+  "question_id": "Q07",
+  "log_file": "D:\\PET\\CUBIX\\cubix_GraphRAG\\6.hét\\HW\\naive-rag-baseline\\diagnostics\\2026-11-11-week5-b\\logs\\naive-log-naiv-Q07.json",
+  "request_hash": "4bc4bb6fe5f3b2b96e3b2e48e9d5592c8d74b96ac14f6b75ee0d7a38f87d1733",
+  "usage_prompt_tokens": 1171,
+  "usage_completion_tokens": 61,
+  "cost_usd": 0.00021224999999999998,
+  "duration_seconds": 2.203,
+  "status": "success",
+  "error": null
+ },
+ {
+  "run_id": "week5-b-smoke-1794404338",
+  "timestamp": 1794404359.5250459,
+  "step": "embedding",
+  "label": "lokalis-query-Q07",
+  "ids": [
+   "lokalis-query-Q07"
+  ],
+  "model": "text-embedding-3-small",
+  "estimated_tokens": 37,
+  "actual_tokens": 30,
+  "cost_usd": 6.000000000000001e-07,
+  "duration_seconds": 0.781,
+  "error": null,
+  "status": "success"
+ },
+ {
+  "run_id": "week5-b-smoke-1794404338",
+  "timestamp": 1794404444.6669285,
+  "step": "globalis-rerun",
+  "question_id": "Q07",
+  "halted_reason": null,
+  "map_calls": 37,
+  "status": "success"
+ },
+ {
+  "run_id": "week5-b-smoke-1794404338",
+  "timestamp": 1794404449.5402586,
+  "step": "embedding",
+  "label": "naiv-query-Q11",
+  "ids": [
+   "naiv-query-Q11"
+  ],
+  "model": "text-embedding-3-small",
+  "estimated_tokens": 29,
+  "actual_tokens": 21,
+  "cost_usd": 4.2e-07,
+  "duration_seconds": 0.484,
+  "error": null,
+  "status": "success"
+ },
+ {
+  "run_id": "week5-b-smoke-1794404338",
+  "timestamp": 1794404450.956007,
+  "step": "answer",
+  "mode": "naiv",
+  "question_id": "Q11",
+  "log_file": "D:\\PET\\CUBIX\\cubix_GraphRAG\\6.hét\\HW\\naive-rag-baseline\\diagnostics\\2026-11-11-week5-b\\logs\\naive-log-naiv-Q11.json",
+  "request_hash": "8539f186ec029a1aa0da761b37636b7188346649a0dc92fadb9e1d67204e2f14",
+  "usage_prompt_tokens": 714,
+  "usage_completion_tokens": 25,
+  "cost_usd": 0.0001221,
+  "duration_seconds": 1.359,
+  "status": "success",
+  "error": null
+ },
+ {
+  "run_id": "week5-b-smoke-1794404338",
+  "timestamp": 1794404457.1401508,
+  "step": "embedding",
+  "label": "lokalis-query-Q11",
+  "ids": [
+   "lokalis-query-Q11"
+  ],
+  "model": "text-embedding-3-small",
+  "estimated_tokens": 29,
+  "actual_tokens": 21,
+  "cost_usd": 4.2e-07,
+  "duration_seconds": 0.453,
+  "error": null,
+  "status": "success"
+ },
+ {
+  "run_id": "week5-b-smoke-1794404338",
+  "timestamp": 1794404514.0470579,
+  "step": "globalis-rerun",
+  "question_id": "Q11",
+  "halted_reason": null,
+  "map_calls": 37,
+  "status": "success"
+ }
+]

@@ -1,0 +1,423 @@
+{
+ "question_id": "Q13",
+ "mode": "globalis",
+ "run_phase": "full",
+ "question_type": "global",
+ "question_status": "frozen_w4",
+ "question_text": "What common factors explain why specific teams such as Ferrari, Mercedes and Red Bull dominated particular eras of Formula One?",
+ "expected_answer": "A synthesis linking technical competitiveness and effective driver/technical-team cooperation to dominance, illustrated across Ferrari, Mercedes and Red Bull. Examples: Schumacher-era Ferrari and recruitment of Byrne/Brawn; Mercedes after the 2014 hybrid rules; Newey-designed Red Bull RB19. Regulation adaptation is acceptable but optional; no single reference wording is required.",
+ "golden_set_version": "v1-approval-draft",
+ "answer": "The partial answers highlight the historical significance of Ferrari and its notable drivers, such as Michael Schumacher and Kimi Räikkönen, as factors contributing to its dominance. For Red Bull, the key drivers mentioned are Max Verstappen and Sebastian Vettel, who played crucial roles during their respective eras. However, there is insufficient information regarding Mercedes and other common factors that might explain the dominance of these teams across different eras.",
+ "refused": false,
+ "model_called": true,
+ "actual_context": "{\n \"question\": \"What common factors explain why specific teams such as Ferrari, Mercedes and Red Bull dominated particular eras of Formula One?\",\n \"partial_answers\": [\n  {\n   \"id\": \"4\",\n   \"usefulness_score\": 60,\n   \"text\": \"Ferrari's historical significance and the achievements of its notable drivers, such as Michael Schumacher and Kimi Räikkönen, contribute to its dominance in Formula One.\"\n  },\n  {\n   \"id\": \"15\",\n   \"usefulness_score\": 60,\n   \"text\": \"Max Verstappen has been a key driver for Red Bull since 2016, and Sebastian Vettel won multiple championships while driving for Red Bull from 2009 to 2014.\"\n  },\n  {\n   \"id\": \"263\",\n   \"usefulness_score\": 30,\n   \"text\": \"Enzo Ferrari was the founder of Scuderia Ferrari and managed several notable drivers.\"\n  }\n ]\n}\n",
+ "actual_chunk_ids": [
+  "driver-michael-schumacher#1",
+  "driver-michael-schumacher#18",
+  "driver-michael-schumacher#19",
+  "driver-michael-schumacher#2",
+  "driver-michael-schumacher#20",
+  "driver-michael-schumacher#21",
+  "driver-michael-schumacher#23",
+  "driver-michael-schumacher#25",
+  "driver-michael-schumacher#27",
+  "driver-michael-schumacher#28",
+  "driver-michael-schumacher#29",
+  "driver-michael-schumacher#31",
+  "driver-michael-schumacher#32",
+  "driver-michael-schumacher#35",
+  "driver-michael-schumacher#37",
+  "driver-michael-schumacher#38",
+  "driver-michael-schumacher#39",
+  "driver-michael-schumacher#40",
+  "driver-michael-schumacher#41",
+  "driver-michael-schumacher#42",
+  "driver-michael-schumacher#43",
+  "driver-michael-schumacher#54",
+  "driver-michael-schumacher#58",
+  "driver-michael-schumacher#74",
+  "driver-michael-schumacher#77",
+  "reference-list-of-formula-one-world-drivers-champions#1",
+  "team-scuderia-ferrari#1",
+  "team-williams-racing#69",
+  "driver-kimi-raikkonen#2",
+  "driver-kimi-raikkonen#24",
+  "driver-kimi-raikkonen#25",
+  "driver-kimi-raikkonen#26",
+  "driver-kimi-raikkonen#27",
+  "driver-kimi-raikkonen#28",
+  "driver-kimi-raikkonen#29",
+  "driver-kimi-raikkonen#30",
+  "driver-kimi-raikkonen#32",
+  "driver-kimi-raikkonen#33",
+  "driver-kimi-raikkonen#34",
+  "driver-kimi-raikkonen#35",
+  "driver-kimi-raikkonen#36",
+  "driver-kimi-raikkonen#37",
+  "driver-kimi-raikkonen#38",
+  "driver-kimi-raikkonen#39",
+  "driver-kimi-raikkonen#40",
+  "driver-kimi-raikkonen#41",
+  "driver-kimi-raikkonen#43",
+  "driver-kimi-raikkonen#44",
+  "driver-kimi-raikkonen#46",
+  "driver-kimi-raikkonen#47",
+  "driver-kimi-raikkonen#48",
+  "driver-kimi-raikkonen#74",
+  "driver-kimi-raikkonen#75",
+  "driver-kimi-raikkonen#77",
+  "driver-kimi-raikkonen#78",
+  "driver-kimi-raikkonen#79",
+  "driver-kimi-raikkonen#80",
+  "driver-kimi-raikkonen#81",
+  "driver-kimi-raikkonen#84",
+  "team-scuderia-ferrari#0",
+  "team-scuderia-ferrari#6",
+  "driver-max-verstappen#11",
+  "driver-max-verstappen#2",
+  "driver-max-verstappen#37",
+  "driver-sebastian-vettel#0",
+  "driver-sebastian-vettel#13",
+  "driver-sebastian-vettel#14",
+  "driver-sebastian-vettel#2",
+  "driver-sebastian-vettel#20",
+  "driver-sebastian-vettel#21",
+  "team-red-bull-racing#19",
+  "team-renault-in-formula-one#61",
+  "team-scuderia-ferrari#3"
+ ],
+ "chunk_ids_traceable": true,
+ "is_proxy_retrieval": true,
+ "proxy_note": "candidate_source_chunk_ids from the reduce step's actual basis (basis_paths), not the final answer's citation_chain -- a retrieval proxy, not verified per-chunk coverage",
+ "error": null,
+ "duration_seconds": 42.563,
+ "raw": {
+  "basis_paths": [
+   "4",
+   "15",
+   "263"
+  ],
+  "map_result_count": 37,
+  "reduce_a": {
+   "question_id": "Q13",
+   "variant": "A",
+   "requested_model": "gpt-4o-mini",
+   "basis_paths": [
+    "4",
+    "15",
+    "263"
+   ],
+   "returned_model": "gpt-4o-mini-2024-07-18",
+   "usage_prompt_tokens": 425,
+   "usage_completion_tokens": 105,
+   "finish_reason": "stop",
+   "duration_seconds": 2.531,
+   "measured_cost_usd": 0.000127,
+   "valid_json": true,
+   "validation": {
+    "valid_structure": true,
+    "problems": [],
+    "unknown_partial_answer_ids": []
+   },
+   "answer": "The partial answers highlight the historical significance of Ferrari and its notable drivers, such as Michael Schumacher and Kimi Räikkönen, as factors contributing to its dominance. For Red Bull, the key drivers mentioned are Max Verstappen and Sebastian Vettel, who played crucial roles during their respective eras. However, there is insufficient information regarding Mercedes and other common factors that might explain the dominance of these teams across different eras.",
+   "cited_partial_answer_ids": [
+    "4",
+    "15",
+    "263"
+   ],
+   "citation_chain": [
+    {
+     "community_path": "4",
+     "partial_answer": "Ferrari's historical significance and the achievements of its notable drivers, such as Michael Schumacher and Kimi Räikkönen, contribute to its dominance in Formula One.",
+     "usefulness_score": 60,
+     "statements": [
+      {
+       "statement_id": "4#1",
+       "statement": "Michael Schumacher drove for Scuderia Ferrari from 1996 to 2006, achieving significant success during this period.",
+       "evidence_ids": [
+        "E012",
+        "E013",
+        "E014"
+       ],
+       "candidate_source_chunk_ids": [
+        "driver-michael-schumacher#1",
+        "driver-michael-schumacher#18",
+        "driver-michael-schumacher#19",
+        "driver-michael-schumacher#2",
+        "driver-michael-schumacher#20",
+        "driver-michael-schumacher#21",
+        "driver-michael-schumacher#23",
+        "driver-michael-schumacher#25",
+        "driver-michael-schumacher#27",
+        "driver-michael-schumacher#28",
+        "driver-michael-schumacher#29",
+        "driver-michael-schumacher#31",
+        "driver-michael-schumacher#32",
+        "driver-michael-schumacher#35",
+        "driver-michael-schumacher#37",
+        "driver-michael-schumacher#38",
+        "driver-michael-schumacher#39",
+        "driver-michael-schumacher#40",
+        "driver-michael-schumacher#41",
+        "driver-michael-schumacher#42",
+        "driver-michael-schumacher#43",
+        "driver-michael-schumacher#54",
+        "driver-michael-schumacher#58",
+        "driver-michael-schumacher#74",
+        "driver-michael-schumacher#77",
+        "reference-list-of-formula-one-world-drivers-champions#1",
+        "team-scuderia-ferrari#1",
+        "team-williams-racing#69"
+       ]
+      },
+      {
+       "statement_id": "4#2",
+       "statement": "Kimi Räikkönen drove for Scuderia Ferrari during multiple seasons, including winning the World Championship in 2007.",
+       "evidence_ids": [
+        "E001",
+        "E002",
+        "E006"
+       ],
+       "candidate_source_chunk_ids": [
+        "driver-kimi-raikkonen#2",
+        "driver-kimi-raikkonen#24",
+        "driver-kimi-raikkonen#25",
+        "driver-kimi-raikkonen#26",
+        "driver-kimi-raikkonen#27",
+        "driver-kimi-raikkonen#28",
+        "driver-kimi-raikkonen#29",
+        "driver-kimi-raikkonen#30",
+        "driver-kimi-raikkonen#32",
+        "driver-kimi-raikkonen#33",
+        "driver-kimi-raikkonen#34",
+        "driver-kimi-raikkonen#35",
+        "driver-kimi-raikkonen#36",
+        "driver-kimi-raikkonen#37",
+        "driver-kimi-raikkonen#38",
+        "driver-kimi-raikkonen#39",
+        "driver-kimi-raikkonen#40",
+        "driver-kimi-raikkonen#41",
+        "driver-kimi-raikkonen#43",
+        "driver-kimi-raikkonen#44",
+        "driver-kimi-raikkonen#46",
+        "driver-kimi-raikkonen#47",
+        "driver-kimi-raikkonen#48",
+        "driver-kimi-raikkonen#74",
+        "driver-kimi-raikkonen#75",
+        "driver-kimi-raikkonen#77",
+        "driver-kimi-raikkonen#78",
+        "driver-kimi-raikkonen#79",
+        "driver-kimi-raikkonen#80",
+        "driver-kimi-raikkonen#81",
+        "driver-kimi-raikkonen#84"
+       ]
+      },
+      {
+       "statement_id": "4#4",
+       "statement": "Ferrari has been a consistent participant in Formula One since its inception in 1950.",
+       "evidence_ids": [
+        "E061"
+       ],
+       "candidate_source_chunk_ids": [
+        "team-scuderia-ferrari#0",
+        "team-scuderia-ferrari#6"
+       ]
+      }
+     ]
+    },
+    {
+     "community_path": "15",
+     "partial_answer": "Max Verstappen has been a key driver for Red Bull since 2016, and Sebastian Vettel won multiple championships while driving for Red Bull from 2009 to 2014.",
+     "usefulness_score": 60,
+     "statements": [
+      {
+       "statement_id": "15#1",
+       "statement": "Max Verstappen has been driving for Red Bull Racing since 2016 and is contracted to remain with the team until at least 2030.",
+       "evidence_ids": [
+        "E001",
+        "E004",
+        "E005"
+       ],
+       "candidate_source_chunk_ids": [
+        "driver-max-verstappen#11",
+        "driver-max-verstappen#2",
+        "driver-max-verstappen#37"
+       ]
+      },
+      {
+       "statement_id": "15#2",
+       "statement": "Sebastian Vettel drove for Red Bull Racing from 2009 to 2014 and won multiple championships during his tenure.",
+       "evidence_ids": [
+        "E007",
+        "E010",
+        "E033"
+       ],
+       "candidate_source_chunk_ids": [
+        "driver-sebastian-vettel#0",
+        "driver-sebastian-vettel#13",
+        "driver-sebastian-vettel#14",
+        "driver-sebastian-vettel#2",
+        "driver-sebastian-vettel#20",
+        "driver-sebastian-vettel#21",
+        "team-red-bull-racing#19",
+        "team-renault-in-formula-one#61"
+       ]
+      }
+     ]
+    },
+    {
+     "community_path": "263",
+     "partial_answer": "Enzo Ferrari was the founder of Scuderia Ferrari and managed several notable drivers.",
+     "usefulness_score": 30,
+     "statements": [
+      {
+       "statement_id": "263#1",
+       "statement": "Enzo Ferrari was the founder of Scuderia Ferrari and managed several notable drivers.",
+       "evidence_ids": [
+        "N001",
+        "E002",
+        "E005",
+        "E009"
+       ],
+       "candidate_source_chunk_ids": [
+        "team-scuderia-ferrari#3",
+        "team-scuderia-ferrari#6"
+       ]
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "duration_seconds_generation": 42.563,
+ "cost_usd_generation": 0.003651,
+ "retrieval": {
+  "question_id": "Q13",
+  "status": "scored",
+  "is_proxy": true,
+  "proxy_note": "candidate_source_chunk_ids from the reduce step's actual basis (basis_paths), not the final answer's citation_chain -- a retrieval proxy, not verified per-chunk coverage",
+  "untraceable_reason": null,
+  "hit_count": 2,
+  "group_count": 5,
+  "ratio": 0.4,
+  "strict_all_hit": false,
+  "groups": [
+   {
+    "group_id": "Q13-e1",
+    "criterion": "Q13-c1",
+    "role": null,
+    "hit": false,
+    "any_of_chunk_ids": [
+     "team-mercedes-benz-in-formula-one#1",
+     "team-red-bull-racing#66"
+    ],
+    "matched_chunk_ids": []
+   },
+   {
+    "group_id": "Q13-e2",
+    "criterion": "Q13-c2",
+    "role": null,
+    "hit": true,
+    "any_of_chunk_ids": [
+     "driver-michael-schumacher#18",
+     "driver-michael-schumacher#23"
+    ],
+    "matched_chunk_ids": [
+     "driver-michael-schumacher#18",
+     "driver-michael-schumacher#23"
+    ]
+   },
+   {
+    "group_id": "Q13-e3",
+    "criterion": "Q13-c3",
+    "role": null,
+    "hit": true,
+    "any_of_chunk_ids": [
+     "team-scuderia-ferrari#1",
+     "driver-michael-schumacher#18"
+    ],
+    "matched_chunk_ids": [
+     "team-scuderia-ferrari#1",
+     "driver-michael-schumacher#18"
+    ]
+   },
+   {
+    "group_id": "Q13-e4",
+    "criterion": "Q13-c4",
+    "role": null,
+    "hit": false,
+    "any_of_chunk_ids": [
+     "team-mercedes-benz-in-formula-one#1"
+    ],
+    "matched_chunk_ids": []
+   },
+   {
+    "group_id": "Q13-e5",
+    "criterion": "Q13-c5",
+    "role": null,
+    "hit": false,
+    "any_of_chunk_ids": [
+     "team-red-bull-racing#66",
+     "team-red-bull-racing#0"
+    ],
+    "matched_chunk_ids": []
+   }
+  ]
+ },
+ "duration_seconds_correctness_judge": 7.985,
+ "cost_usd_correctness_judge": 0.000341,
+ "correctness": {
+  "status": "scored",
+  "label": "hiányos",
+  "parsed": {
+   "criteria": [
+    {
+     "criterion_id": "Q13-c1",
+     "verdict": "not_met",
+     "explanation": "The answer does not explain technical or power-unit competitiveness as a factor in sustained success."
+    },
+    {
+     "criterion_id": "Q13-c2",
+     "verdict": "not_met",
+     "explanation": "The answer fails to explain driver-team or technical-personnel cooperation with a concrete example."
+    },
+    {
+     "criterion_id": "Q13-c3",
+     "verdict": "met",
+     "explanation": "The answer includes a concrete example of Ferrari's dominance through notable drivers."
+    },
+    {
+     "criterion_id": "Q13-c4",
+     "verdict": "not_met",
+     "explanation": "The answer does not include a concrete example linked to the Mercedes era."
+    },
+    {
+     "criterion_id": "Q13-c5",
+     "verdict": "met",
+     "explanation": "The answer includes a concrete example of Red Bull's dominance through key drivers."
+    },
+    {
+     "criterion_id": "Q13-c6",
+     "verdict": "not_met",
+     "explanation": "The answer does not address adaptation to rule changes."
+    }
+   ],
+   "refused": false,
+   "rubric_conflicts": [],
+   "reasoning": "The answer provides some relevant examples for Ferrari and Red Bull but lacks sufficient detail on technical competitiveness, driver-team cooperation, and the Mercedes era, failing to meet multiple criteria."
+  },
+  "usage_prompt_tokens": 1073,
+  "usage_completion_tokens": 300
+ },
+ "duration_seconds_faithfulness_judge": 4.641,
+ "cost_usd_faithfulness_judge": 0.000238,
+ "faithfulness": {
+  "status": "scored",
+  "score": 1.0,
+  "supported_count": 5,
+  "unsupported_count": 0,
+  "unclear_count": 0
+ },
+ "cost_usd": 0.00423,
+ "cost_source": "ledger_delta"
+}

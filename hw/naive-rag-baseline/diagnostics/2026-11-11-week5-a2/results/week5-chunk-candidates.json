@@ -1,0 +1,649 @@
+{
+  "corpus_file": "D:\\PET\\CUBIX\\cubix_GraphRAG\\6.hét\\HW\\naive-rag-baseline\\graph\\corpus\\chunks-section-1200-23\\chunks.jsonl",
+  "corpus_sha256": "79d46d6291bc07924ddc13703f9b4804f8cf9c86de9de3ebaf435248f04e012e",
+  "chunk_count": 1651,
+  "golden_file": "D:\\PET\\CUBIX\\cubix_GraphRAG\\6.hét\\HW\\week5-golden-set-v1-draft.jsonl",
+  "question_count": 13,
+  "candidates_per_question": 5,
+  "method": "keyword substring match on question criteria terms; no embeddings, no search system, no LLM",
+  "questions": [
+    {
+      "question_id": "Q01",
+      "question": "How many World Drivers' Championships has Lewis Hamilton won?",
+      "term_source": "criteria.expected_content",
+      "terms": [
+        "lewis",
+        "hamilton",
+        "7"
+      ],
+      "candidate_count_found": 396,
+      "candidates_returned": 5,
+      "candidates": [
+        {
+          "doc_id": "driver-lewis-hamilton",
+          "chunk_id": "driver-lewis-hamilton#0",
+          "score": 3,
+          "snippet": "Lewis Hamilton\nSir Lewis Carl Davidson Hamilton (born 7 January 1985) is a British racing driver who competes in Formula One for\nFerrari.  Hamilton  has  won  a [...]"
+        },
+        {
+          "doc_id": "driver-lewis-hamilton",
+          "chunk_id": "driver-lewis-hamilton#3",
+          "score": 3,
+          "snippet": "Early life and education\nLewis Carl Davidson Hamilton was born on 7 January 1985 in Stevenage, Hertfordshire. His father, Anthony Hamilton, is\nof  Afro-Grenadian  descent,  while  his   [...]"
+        },
+        {
+          "doc_id": "driver-lewis-hamilton",
+          "chunk_id": "driver-lewis-hamilton#79",
+          "score": 3,
+          "snippet": "[...] d  301  days.  Hamilton  won  his  seventh  title  in  2020,  tying  the\nall-time record set by Michael Schumacher.\nNotes\nReferences\nFurther reading\nHamilton,  Lewis  (2007).  Lewis  Hamilton:  My  Story  (hardback  ed.).  London:  HarperSport.  p.  320.  ISBN\n978-0-00-727005-7. (Also in paperback Lewis Hamilton: my st [...]"
+        },
+        {
+          "doc_id": "driver-lewis-hamilton",
+          "chunk_id": "driver-lewis-hamilton#80",
+          "score": 3,
+          "snippet": "Hughes,  Mark  (2007).  Lewis  Hamilton:  The  Full  Story  (hardback  ed.).  Thriplow:  Icon  Books  Ltd.  p.  224.  ISBN\n978-0-00-727006-4. (Also in paperback as Mark Hughes (2008).  [...]"
+        },
+        {
+          "doc_id": "reference-list-of-formula-one-world-drivers-champions",
+          "chunk_id": "reference-list-of-formula-one-world-drivers-champions#1",
+          "score": 3,
+          "snippet": "Sheet: Drivers in corpus\nDriver | Nationality | World titles (as of 2024) | Main constructors\nLewis Hamilton | British | 7 | McLaren; Mercedes\nMax Verstappen | Dutch | 4 | Red Bull Racing\nSebastian Vettel | German | 4 | Red Bull Racing; Ferrari\nFernando  [...]"
+        }
+      ],
+      "note": "keyword candidates only, not gold chunk ids"
+    },
+    {
+      "question_id": "Q02",
+      "question": "How old was Sebastian Vettel when he became the youngest Formula One World Champion?",
+      "term_source": "criteria.expected_content",
+      "terms": [
+        "23",
+        "ves"
+      ],
+      "candidate_count_found": 30,
+      "candidates_returned": 5,
+      "candidates": [
+        {
+          "doc_id": "driver-charles-leclerc",
+          "chunk_id": "driver-charles-leclerc#42",
+          "score": 1,
+          "snippet": "the early stages of 2023, as Red Bull consolidated their advantage from the previous year. Leclerc qualified third for the Bahrain Grand Prix, where he remained for the majority of t [...]"
+        },
+        {
+          "doc_id": "driver-fernando-alonso",
+          "chunk_id": "driver-fernando-alonso#0",
+          "score": 1,
+          "snippet": "[...]  Aston Martin. Alonso has won two Formula One World Drivers' Championship titles, which he won in 2005 and 2006 with Renault, and has won 32 Grands Prix across 23 seasons. In endurance racing, Alonso won the 2018–19 FIA World Endurance Championship and is a two-time winner of the 24 Hours of Le Mans with Toyota as well [...]"
+        },
+        {
+          "doc_id": "driver-jenson-button",
+          "chunk_id": "driver-jenson-button#51",
+          "score": 1,
+          "snippet": "[...]  Royal Automobile Club TT Celebration races. He was set to drive an FC1-X car for the Xite Energy Racing team in the all-electric Group E category for the 2022–23 season of the off-road Nitro Rallycross series. However, he withdrew from the rest of the season after one round.  \nButton ran three NASCAR Cup Series races  [...]"
+        },
+        {
+          "doc_id": "driver-kimi-raikkonen",
+          "chunk_id": "driver-kimi-raikkonen#4",
+          "score": 1,
+          "snippet": "[...]  the year. In 2000, he won seven out of ten events in the Formula Renault UK Championship. Combined, over these two series of Formula Renault, he won 13 out of 23 events – a 57% win rate."
+        },
+        {
+          "doc_id": "driver-kimi-raikkonen",
+          "chunk_id": "driver-kimi-raikkonen#60",
+          "score": 1,
+          "snippet": "[...] ttempt on the final lap where he overtook Esteban Gutiérrez, Valtteri Bottas and Nico Hülkenberg to gain 10th place. In the process, it continued his streak of 23 consecutive points finishes, one shy of the record of 24 set by Michael Schumacher across three seasons between 2001 and 2003."
+        }
+      ],
+      "note": "keyword candidates only, not gold chunk ids"
+    },
+    {
+      "question_id": "Q03",
+      "question": "Who won the 2021 Formula One World Drivers' Championship?",
+      "term_source": "criteria.expected_content",
+      "terms": [
+        "max",
+        "verstappen"
+      ],
+      "candidate_count_found": 214,
+      "candidates_returned": 5,
+      "candidates": [
+        {
+          "doc_id": "driver-charles-leclerc",
+          "chunk_id": "driver-charles-leclerc#1",
+          "score": 2,
+          "snippet": "[...]  him nicknamed \"il Predestinato\" in Italian media. After winless seasons for Ferrari in 2020 and 2021, Leclerc took several victories and finished runner-up to Max Verstappen in the 2022 World Drivers' Championship. Following five pole positions and six podiums in his 2023 campaign, Leclerc won the Monaco Grand Prix in [...]"
+        },
+        {
+          "doc_id": "driver-charles-leclerc",
+          "chunk_id": "driver-charles-leclerc#6",
+          "score": 2,
+          "snippet": "[...] lerc graduated to the senior KF2 category in 2012 with the factory-backed ART Grand Prix team, winning the WSK Euro Series; he was involved in an incident with Max Verstappen at the second round, which resulted in both drivers' disqualifications. He finished runner-up on his European Championship debut amidst a title b [...]"
+        },
+        {
+          "doc_id": "driver-charles-leclerc",
+          "chunk_id": "driver-charles-leclerc#26",
+          "score": 2,
+          "snippet": ". Leclerc qualified and finished third at both the Canadian and French Grands Prix. He took pole at the Austrian Grand Prix, finishing second to Max Verstappen after his overtake on the third-to-last lap, during which they made contact—the stewards' investigation deemed it a racing incident. The pair eng [...]"
+        },
+        {
+          "doc_id": "driver-charles-leclerc",
+          "chunk_id": "driver-charles-leclerc#33",
+          "score": 2,
+          "snippet": "[...] pectively. At the British Grand Prix, Leclerc qualified fourth before inheriting the lead on the first lap: he overtook Bottas off-the-line before passing both Max Verstappen and Hamilton after their collision"
+        },
+        {
+          "doc_id": "driver-charles-leclerc",
+          "chunk_id": "driver-charles-leclerc#37",
+          "score": 2,
+          "snippet": "[...] Bull in the first half of 2022. Leclerc qualified on pole position for the season-opening Bahrain Grand Prix before winning the race amidst a close battle with Max Verstappen, marking his and Ferrari's first victory since 2019. The result saw him become the first Monégasque driver to lead the World Drivers' Championshi [...]"
+        }
+      ],
+      "note": "keyword candidates only, not gold chunk ids"
+    },
+    {
+      "question_id": "Q04",
+      "question": "Who was the teammate of the 2016 World Drivers' Champion at his team that season?",
+      "term_source": "criteria.expected_content",
+      "terms": [
+        "lewis",
+        "hamilton"
+      ],
+      "candidate_count_found": 364,
+      "candidates_returned": 5,
+      "candidates": [
+        {
+          "doc_id": "driver-charles-leclerc",
+          "chunk_id": "driver-charles-leclerc#1",
+          "score": 2,
+          "snippet": "[...] égasque driver to win the race in 93 years; he achieved further victories in Italy and the United States as he finished third in the championship. Partnered by Lewis Hamilton from 2025 onwards, he returned to victory in Britain following new regulations in 2026."
+        },
+        {
+          "doc_id": "driver-charles-leclerc",
+          "chunk_id": "driver-charles-leclerc#17",
+          "score": 2,
+          "snippet": "[...] son, he held off a late charge by Rowland to become the then-youngest GP2/Formula 2 champion—aged 19 years, 356 days—as well as the third rookie champion after Lewis Hamilton, Nico Rosberg, and Nico Hülkenberg"
+        },
+        {
+          "doc_id": "driver-charles-leclerc",
+          "chunk_id": "driver-charles-leclerc#27",
+          "score": 2,
+          "snippet": "Leclerc took pole for the Belgian Grand Prix, fending off Lewis Hamilton to become the third-youngest Formula One Grand Prix winner—aged 21—as well as the first Monégasque. He dedicated his victory to Anthoine Hubert,  [...]"
+        },
+        {
+          "doc_id": "driver-charles-leclerc",
+          "chunk_id": "driver-charles-leclerc#30",
+          "score": 2,
+          "snippet": "[...] ening Austrian Grand Prix; he recovered to third-place in the race via several overtakes following the final safety car, promoted to second after a penalty for Lewis Hamilton. In the build-up to the Styrian Grand Prix, Leclerc was investigated by the FIA for allegedly breaching COVID-19 safety protocols whilst returnin [...]"
+        },
+        {
+          "doc_id": "driver-charles-leclerc",
+          "chunk_id": "driver-charles-leclerc#43",
+          "score": 2,
+          "snippet": "[...] hed fifth in Qatar. He returned to pole at the United States Grand Prix and finished second in the sprint. He fell to sixth in the main race before both he and Lewis Hamilton were disqualified for excessive skid block wear. Leclerc again qualified on pole in Mexico City, finishing third after a first-corner collision w [...]"
+        }
+      ],
+      "note": "keyword candidates only, not gold chunk ids"
+    },
+    {
+      "question_id": "Q05",
+      "question": "Which team did the 2012 World Drivers' Champion leave his team for, and in which year did the move take effect?",
+      "term_source": "criteria.expected_content",
+      "terms": [
+        "ferrari",
+        "2015"
+      ],
+      "candidate_count_found": 412,
+      "candidates_returned": 5,
+      "candidates": [
+        {
+          "doc_id": "driver-charles-leclerc",
+          "chunk_id": "driver-charles-leclerc#0",
+          "score": 2,
+          "snippet": "[...] harles Marc Hervé Perceval Leclerc (French pronunciation: [ʃaʁl(ə) ləklɛʁ]; born 16 October 1997) is a Monégasque racing driver who competes in Formula One for Ferrari. Leclerc was runner-up in the Formula One World Drivers' Championship in 2022 with Ferrari, and has won nine Grands Prix across nine seasons.  \nBorn and [...]"
+        },
+        {
+          "doc_id": "driver-charles-leclerc",
+          "chunk_id": "driver-charles-leclerc#12",
+          "score": 2,
+          "snippet": "[...] ber 2015, Leclerc partook in post-season GP3 testing with ART and Arden, ultimately signing with the former for the 2016 GP3 Series. He additionally joined the Ferrari Driver Academy prior to the season. Leclerc qualified third at Catalunya before winning his debut race by over six seconds; in the reverse-grid second r [...]"
+        },
+        {
+          "doc_id": "driver-fernando-alonso",
+          "chunk_id": "driver-fernando-alonso#2",
+          "score": 2,
+          "snippet": "Alonso signed for Ferrari in 2010, finishing runner-up to Sebastian Vettel by four points in the third-placed F10. He took a single victory in 2011 as Red Bull consolidated their [...]"
+        },
+        {
+          "doc_id": "driver-fernando-alonso",
+          "chunk_id": "driver-fernando-alonso#23",
+          "score": 2,
+          "snippet": "## Return to McLaren (2015–2019)  \nAlonso had severe disagreements with team principal Marco Mattiacci in 2014 and left Ferrari after contract negotiations to remain at the team fell through. He rejoined McLaren on a three-year contract from 2015 to 2017 with no opt-out clauses.  [...]"
+        },
+        {
+          "doc_id": "driver-fernando-alonso",
+          "chunk_id": "driver-fernando-alonso#59",
+          "score": 2,
+          "snippet": "[...] 1 cm (5 ft 7 in) tall. In addition to his native Spanish, Alonso speaks English, French, and Italian. His personal garage includes such cars as the McLaren P1, Ferrari 458 Italia, Nissan GT-R, and Honda NSX.  \nAlonso has been trained by Fabrizio Borra and Edoardo Bendinelli during his career."
+        }
+      ],
+      "note": "keyword candidates only, not gold chunk ids"
+    },
+    {
+      "question_id": "Q06",
+      "question": "Which two drivers in the corpus hold the record of seven World Championships, and with which teams did each of them win their titles?",
+      "term_source": "criteria.expected_content",
+      "terms": [
+        "michael",
+        "schumacher",
+        "7",
+        "benetton",
+        "ferrari",
+        "lewis",
+        "hamilton",
+        "mclaren",
+        "mercedes"
+      ],
+      "candidate_count_found": 921,
+      "candidates_returned": 5,
+      "candidates": [
+        {
+          "doc_id": "reference-list-of-formula-one-world-drivers-champions",
+          "chunk_id": "reference-list-of-formula-one-world-drivers-champions#1",
+          "score": 9,
+          "snippet": "[...] Mercedes\nMax Verstappen | Dutch | 4 | Red Bull Racing\nSebastian Vettel | German | 4 | Red Bull Racing; Ferrari\nFernando Alonso | Spanish | 2 | Renault; McLaren\nMichael Schumacher | German | 7 | Benetton; Ferrari\nKimi Räikkönen | Finnish | 1 | McLaren; Ferrari\nNico Rosberg | German | 1 | Williams; Mercedes\nJenson Button [...]"
+        },
+        {
+          "doc_id": "driver-lewis-hamilton",
+          "chunk_id": "driver-lewis-hamilton#0",
+          "score": 8,
+          "snippet": "[...] ng driver who competes in Formula One for\nFerrari.  Hamilton  has  won  a  joint-record  seven  Formula  One  World  Drivers'  Championship  titles—tied  with  Michael\nSchumacher—and  holds  the  records  for  most  wins  (106),  pole  positions  (104),  and  podium  finishes  (208),  among\nothers.\nBorn  and  raised  i [...]"
+        },
+        {
+          "doc_id": "driver-kimi-raikkonen",
+          "chunk_id": "driver-kimi-raikkonen#49",
+          "score": 7,
+          "snippet": "[...] ed to return to McLaren alongside Lewis Hamilton but negotiations with the team failed. Räikkönen was then linked to Mercedes GP but the team eventually signed Michael Schumacher and Nico Rosberg. Toyota F1, before it pulled out of Formula One, offered Räikkönen a driving contract to replace Timo Glock in 2010. The BBC [...]"
+        },
+        {
+          "doc_id": "driver-kimi-raikkonen",
+          "chunk_id": "driver-kimi-raikkonen#1",
+          "score": 6,
+          "snippet": "[...] e joined McLaren in 2002, achieving his maiden podium on debut. He achieved his maiden victory at the Malaysian Grand Prix in 2003, as he finished runner-up to Michael Schumacher. Reliability issues with the MP4-19 saw him drop to seventh the following year, taking a sole victory in Belgium. He won seven Grands Prix as [...]"
+        },
+        {
+          "doc_id": "driver-michael-schumacher",
+          "chunk_id": "driver-michael-schumacher#0",
+          "score": 6,
+          "snippet": "Michael Schumacher\nMichael Schumacher (born 3 January 1969) is a German former racing driver who competed in Formula One from 1991\nto 2006 and from 2010 to 2012 [...]"
+        }
+      ],
+      "note": "keyword candidates only, not gold chunk ids"
+    },
+    {
+      "question_id": "Q07",
+      "question": "Fernando Alonso and Lewis Hamilton were teammates once. At which team and in which season, and what was the outcome of that season's championship?",
+      "term_source": "criteria.expected_content",
+      "terms": [
+        "mclaren",
+        "2007",
+        "kimi",
+        "ikk",
+        "nen",
+        "azonos",
+        "pontsz",
+        "egy",
+        "pont"
+      ],
+      "candidate_count_found": 537,
+      "candidates_returned": 5,
+      "candidates": [
+        {
+          "doc_id": "driver-fernando-alonso",
+          "chunk_id": "driver-fernando-alonso#1",
+          "score": 5,
+          "snippet": "[...]  Champion from Spain and the then-youngest in Formula One history, aged 24. He successfully defended his title from Michael Schumacher in 2006. Alonso moved to McLaren for 2007, finishing one point behind champion Kimi Räikkönen and returning to Renault amidst inter-team tensions. He won multiple races in 2008—includin [...]"
+        },
+        {
+          "doc_id": "driver-lewis-hamilton",
+          "chunk_id": "driver-lewis-hamilton#0",
+          "score": 5,
+          "snippet": "[...] egan  his  career  in  karting  at  age  six,  winning  several  national  titles  and\nattracting  the  attention  of  Ron  Dennis,  who  signed  him  to  the  McLaren-Mercedes  Young  Driver  Programme  in  1998.\nAfter  winning  the  Karting  World  Cup  and  European  Championship  in  2000,  Hamilton  progressed  to [...]"
+        },
+        {
+          "doc_id": "driver-lewis-hamilton",
+          "chunk_id": "driver-lewis-hamilton#10",
+          "score": 5,
+          "snippet": "[...]  in unusual circumstances, inheriting the final point he needed after Giorgio\nPantano was stripped of fastest lap in the Monza feature race.\nFormula One career\nMcLaren (2007–2012)\nHamilton's success in the GP2 championship coincided with a vacancy at McLaren-Mercedes following the departure of\nJuan Pablo Montoya to NAS [...]"
+        },
+        {
+          "doc_id": "driver-fernando-alonso",
+          "chunk_id": "driver-fernando-alonso#12",
+          "score": 4,
+          "snippet": "[...] nd Prix but achieved no race victories en route to fourth in the World Drivers' Championship with 59 points. Alonso stayed at Renault for 2005. He duelled with McLaren driver Kimi Räikkönen for the World Championship in 2005 due to regulation changes prohibiting teams from changing tyres during a race and requiring eng [...]"
+        },
+        {
+          "doc_id": "driver-fernando-alonso",
+          "chunk_id": "driver-fernando-alonso#15",
+          "score": 4,
+          "snippet": "Alonso and McLaren team owner Ron Dennis met secretly in Japan after Dennis talked to Alonso about driving for the team in the future and Alonso expressed interest in the  [...]"
+        }
+      ],
+      "note": "keyword candidates only, not gold chunk ids"
+    },
+    {
+      "question_id": "Q08",
+      "question": "Which driver replaced Nico Rosberg at Mercedes after his retirement, and which team did that driver come from?",
+      "term_source": "criteria.expected_content",
+      "terms": [
+        "valtteri",
+        "bottas",
+        "williams"
+      ],
+      "candidate_count_found": 321,
+      "candidates_returned": 5,
+      "candidates": [
+        {
+          "doc_id": "driver-max-verstappen",
+          "chunk_id": "driver-max-verstappen#33",
+          "score": 3,
+          "snippet": "[...] pionship to eight points. At the next race, the Hungarian Grand Prix, Verstappen's car suffered damage in a\nmulti-car collision on lap 1, where Mercedes driver Valtteri Bottas was deemed at fault. He ended the race in tenth which\nwas promoted to ninth after Sebastian Vettel was disqualified. The outcome of the race all [...]"
+        },
+        {
+          "doc_id": "driver-nico-rosberg",
+          "chunk_id": "driver-nico-rosberg#35",
+          "score": 3,
+          "snippet": "[...] , and wished to spend more time with his young family. He was the first reigning champion to retire from Formula One since Alain Prost in 1993. Williams driver Valtteri Bottas replaced Rosberg at Mercedes."
+        },
+        {
+          "doc_id": "driver-valtteri-bottas",
+          "chunk_id": "driver-valtteri-bottas#0",
+          "score": 3,
+          "snippet": "Valtteri Viktor Bottas (Finnish pronunciation: [ˈʋɑltːeri ˈbotːɑs]; born 28 August 1989) is a Finnish racing driver who competes in Formula One for Cadillac. Bo [...]"
+        },
+        {
+          "doc_id": "reference-list-of-formula-one-world-drivers-champions",
+          "chunk_id": "reference-list-of-formula-one-world-drivers-champions#1",
+          "score": 3,
+          "snippet": "[...] rrari\nNico Rosberg | German | 1 | Williams; Mercedes\nJenson Button | British | 1 | BAR/Honda; Brawn; McLaren\nCharles Leclerc | Monégasque | 0 | Sauber; Ferrari\nValtteri Bottas | Finnish | 0 | Williams; Mercedes"
+        },
+        {
+          "doc_id": "team-williams-racing",
+          "chunk_id": "team-williams-racing#1",
+          "score": 3,
+          "snippet": "[...] , Ayrton Senna, David Coulthard, Jacques Villeneuve, Heinz-Harald Frentzen, Ralf Schumacher, Jenson Button, Juan Pablo Montoya, Nico Rosberg, Pastor Maldonado, Valtteri Bottas, George Russell, Carlos Sainz Jr., Alex Albon and Felipe Massa.  \nOf these drivers, Jones, Keke Rosberg, Mansell, Hill, Piquet, Prost, and Ville [...]"
+        }
+      ],
+      "note": "keyword candidates only, not gold chunk ids"
+    },
+    {
+      "question_id": "Q09",
+      "question": "Across all the drivers covered in this corpus, who has won the most World Drivers' Championships, and how many?",
+      "term_source": "criteria.expected_content",
+      "terms": [
+        "lewis",
+        "hamilton",
+        "7",
+        "michael",
+        "schumacher"
+      ],
+      "candidate_count_found": 537,
+      "candidates_returned": 5,
+      "candidates": [
+        {
+          "doc_id": "driver-lewis-hamilton",
+          "chunk_id": "driver-lewis-hamilton#0",
+          "score": 5,
+          "snippet": "Lewis Hamilton\nSir Lewis Carl Davidson Hamilton (born 7 January 1985) is a British racing driver who competes in Formula One for\nFerrari.  Hamilton  has  won  a [...]"
+        },
+        {
+          "doc_id": "driver-lewis-hamilton",
+          "chunk_id": "driver-lewis-hamilton#79",
+          "score": 5,
+          "snippet": "[...] d  301  days.  Hamilton  won  his  seventh  title  in  2020,  tying  the\nall-time record set by Michael Schumacher.\nNotes\nReferences\nFurther reading\nHamilton,  Lewis  (2007).  Lewis  Hamilton:  My  Story  (hardback  ed.).  London:  HarperSport.  p.  320.  ISBN\n978-0-00-727005-7. (Also in paperback Lewis Hamilton: my st [...]"
+        },
+        {
+          "doc_id": "reference-list-of-formula-one-world-drivers-champions",
+          "chunk_id": "reference-list-of-formula-one-world-drivers-champions#1",
+          "score": 5,
+          "snippet": "Sheet: Drivers in corpus\nDriver | Nationality | World titles (as of 2024) | Main constructors\nLewis Hamilton | British | 7 | McLaren; Mercedes\nMax Verstappen | Dutch | 4 | Red Bull Racing\nSebastian Vettel | German | 4 | Red Bull Racing; Ferrari\nFernando  [...]"
+        },
+        {
+          "doc_id": "season-2012-formula-one-world-championship",
+          "chunk_id": "season-2012-formula-one-world-championship#3",
+          "score": 5,
+          "snippet": "[...] he previous record of nineteen, which was first set in 2005. Six current or former World Drivers' Champions – Sebastian Vettel, Fernando Alonso, Jenson Button, Lewis Hamilton, Kimi Räikkönen, and Michael Schumacher – started the season, breaking the record of five established in 1970.\nThis was the last season for 7-tim [...]"
+        },
+        {
+          "doc_id": "driver-kimi-raikkonen",
+          "chunk_id": "driver-kimi-raikkonen#1",
+          "score": 4,
+          "snippet": "[...] rix as he finished runner-up to Fernando Alonso in 2005. After a winless 2006 campaign, Räikkönen moved to Ferrari; he took six victories as he beat Alonso and Lewis Hamilton to the 2007 World Drivers' Championship by a single point. He finished third in 2008, with victories in Malaysia and Spain. Replaced by Alonso fo [...]"
+        }
+      ],
+      "note": "keyword candidates only, not gold chunk ids"
+    },
+    {
+      "question_id": "Q10",
+      "question": "Which drivers in this corpus have driven for Scuderia Ferrari at some point in their career?",
+      "term_source": "criteria.expected_content",
+      "terms": [
+        "michael",
+        "schumacher",
+        "kimi",
+        "ikk",
+        "nen",
+        "fernando",
+        "alonso",
+        "sebastian",
+        "vettel",
+        "charles",
+        "leclerc",
+        "lewis",
+        "hamilton"
+      ],
+      "candidate_count_found": 832,
+      "candidates_returned": 5,
+      "candidates": [
+        {
+          "doc_id": "reference-list-of-formula-one-world-drivers-champions",
+          "chunk_id": "reference-list-of-formula-one-world-drivers-champions#1",
+          "score": 13,
+          "snippet": "[...] Mercedes\nMax Verstappen | Dutch | 4 | Red Bull Racing\nSebastian Vettel | German | 4 | Red Bull Racing; Ferrari\nFernando Alonso | Spanish | 2 | Renault; McLaren\nMichael Schumacher | German | 7 | Benetton; Ferrari\nKimi Räikkönen | Finnish | 1 | McLaren; Ferrari\nNico Rosberg | German | 1 | Williams; Mercedes\nJenson Button [...]"
+        },
+        {
+          "doc_id": "season-2012-formula-one-world-championship",
+          "chunk_id": "season-2012-formula-one-world-championship#3",
+          "score": 11,
+          "snippet": "[...] h was first set in 2005. Six current or former World Drivers' Champions – Sebastian Vettel, Fernando Alonso, Jenson Button, Lewis Hamilton, Kimi Räikkönen, and Michael Schumacher – started the season, breaking the record of five established in 1970.\nThis was the last season for 7-time world champion, Michael Schumacher [...]"
+        },
+        {
+          "doc_id": "season-2012-formula-one-world-championship",
+          "chunk_id": "season-2012-formula-one-world-championship#68",
+          "score": 11,
+          "snippet": "[...] ontinued McLaren's mid-season resurgence, returning to pole position for the first time since the Malaysian Grand Prix. Following an aborted start triggered by Michael Schumacher lining up in the wrong grid position and then shutting his engine off in the confusion, Hamilton and Grosjean lead the field away. After prem [...]"
+        },
+        {
+          "doc_id": "driver-sebastian-vettel",
+          "chunk_id": "driver-sebastian-vettel#2",
+          "score": 10,
+          "snippet": "[...] onsecutive victories—to claim his fourth consecutive title with Red Bull. After a winless 2014 campaign, Vettel signed for Ferrari, replacing Alonso to partner Kimi Räikkönen; he took several wins in his debut season, finishing third in the standings. Following another winless season in 2016, Vettel emerged as the clos [...]"
+        },
+        {
+          "doc_id": "season-2012-formula-one-world-championship",
+          "chunk_id": "season-2012-formula-one-world-championship#59",
+          "score": 9,
+          "snippet": "[...] llenge Alonso, but was forced out of the race with an alternator problem seven laps later, leaving Alonso in the lead, four seconds clear of Lewis Hamilton and Kimi Räikkönen"
+        }
+      ],
+      "note": "keyword candidates only, not gold chunk ids"
+    },
+    {
+      "question_id": "Q11",
+      "question": "Which constructor has won the most Drivers' Championships according to the documents, and how many titles is that?",
+      "term_source": "criteria.expected_content",
+      "terms": [
+        "scuderia",
+        "ferrari",
+        "15",
+        "pil",
+        "vil",
+        "gbajnoki"
+      ],
+      "candidate_count_found": 401,
+      "candidates_returned": 5,
+      "candidates": [
+        {
+          "doc_id": "driver-kimi-raikkonen",
+          "chunk_id": "driver-kimi-raikkonen#24",
+          "score": 2,
+          "snippet": "### Ferrari (2007–2009)\nAfter the 2006 Italian Grand Prix, Ferrari announced that Räikkönen had signed a three-year contract with Scuderia Ferrari for the 2007–2009 seasons. Räikkönen said after the move that he was very happy with this change of events but wished McLaren the best of luck  [...]"
+        },
+        {
+          "doc_id": "driver-kimi-raikkonen",
+          "chunk_id": "driver-kimi-raikkonen#32",
+          "score": 2,
+          "snippet": "[...] nen as the champion. As of the end of the 2025 Formula One season, Räikkönen's 2007 title triumph remains the most recent World Drivers' Championship win for a Scuderia Ferrari driver.\nIn January 2008, Räikkönen was beaten by Tero Pitkämäki in the race for the annually chosen Finnish Sports Personality of the Year awar [...]"
+        },
+        {
+          "doc_id": "driver-kimi-raikkonen",
+          "chunk_id": "driver-kimi-raikkonen#35",
+          "score": 2,
+          "snippet": "[...]  light and hit the rear of Räikkönen's Ferrari, eliminating both cars.\nRäikkönen went on to take his 16th pole position in France, which was the 200th pole for Scuderia Ferrari. Räikkönen dominated the race as he set the fastest lap and had a six-second lead until a bank exhaust failure some halfway through the race re [...]"
+        },
+        {
+          "doc_id": "driver-kimi-raikkonen",
+          "chunk_id": "driver-kimi-raikkonen#70",
+          "score": 2,
+          "snippet": "Räikkönen remained with Ferrari for the 2015 season, partnering former world champion Sebastian Vettel after Alonso announced his departure from the Scuderia."
+        },
+        {
+          "doc_id": "driver-kimi-raikkonen",
+          "chunk_id": "driver-kimi-raikkonen#90",
+          "score": 2,
+          "snippet": "[...] mber he visited the Alfa Romeo factory in Switzerland for the last time as a team member and was given a farewell, and was subsequently given a farewell by the Scuderia Ferrari team prior to the race in Abu Dhabi. For his final race in Abu Dhabi the team inscribed \"Dear Kimi, we will leave you alone now\" on his C41. Rä [...]"
+        }
+      ],
+      "note": "keyword candidates only, not gold chunk ids"
+    },
+    {
+      "question_id": "Q12",
+      "question": "Group the World Champions among the corpus drivers by decade (2000s, 2010s, 2020s).",
+      "term_source": "criteria.expected_content",
+      "terms": [
+        "2000s",
+        "michael",
+        "schumacher",
+        "fernando",
+        "alonso",
+        "kimi",
+        "ikk",
+        "nen",
+        "lewis",
+        "hamilton",
+        "jenson",
+        "button",
+        "2010s",
+        "sebastian",
+        "vettel",
+        "nico",
+        "rosberg",
+        "2020s",
+        "max",
+        "verstappen"
+      ],
+      "candidate_count_found": 986,
+      "candidates_returned": 5,
+      "candidates": [
+        {
+          "doc_id": "reference-list-of-formula-one-world-drivers-champions",
+          "chunk_id": "reference-list-of-formula-one-world-drivers-champions#1",
+          "score": 17,
+          "snippet": "[...] Mercedes\nMax Verstappen | Dutch | 4 | Red Bull Racing\nSebastian Vettel | German | 4 | Red Bull Racing; Ferrari\nFernando Alonso | Spanish | 2 | Renault; McLaren\nMichael Schumacher | German | 7 | Benetton; Ferrari\nKimi Räikkönen | Finnish | 1 | McLaren; Ferrari\nNico Rosberg | German | 1 | Williams; Mercedes\nJenson Button [...]"
+        },
+        {
+          "doc_id": "season-2012-formula-one-world-championship",
+          "chunk_id": "season-2012-formula-one-world-championship#3",
+          "score": 13,
+          "snippet": "[...] h was first set in 2005. Six current or former World Drivers' Champions – Sebastian Vettel, Fernando Alonso, Jenson Button, Lewis Hamilton, Kimi Räikkönen, and Michael Schumacher – started the season, breaking the record of five established in 1970.\nThis was the last season for 7-time world champion, Michael Schumacher [...]"
+        },
+        {
+          "doc_id": "season-2012-formula-one-world-championship",
+          "chunk_id": "season-2012-formula-one-world-championship#68",
+          "score": 13,
+          "snippet": "[...] ontinued McLaren's mid-season resurgence, returning to pole position for the first time since the Malaysian Grand Prix. Following an aborted start triggered by Michael Schumacher lining up in the wrong grid position and then shutting his engine off in the confusion, Hamilton and Grosjean lead the field away. After prem [...]"
+        },
+        {
+          "doc_id": "driver-max-verstappen",
+          "chunk_id": "driver-max-verstappen#12",
+          "score": 11,
+          "snippet": "[...] erstappen took the race lead as\nhe  was  placed  on  a  two-stop  rather  than  the  same  three-stop  strategy  as  Ricciardo,  and  he  held  off  Ferrari's  Kimi\nRäikkönen in the later stages of the race to take his first Formula One victory. By doing so he displaced Sebastian Vettel\nas the youngest driver ever to w [...]"
+        },
+        {
+          "doc_id": "season-2012-formula-one-world-championship",
+          "chunk_id": "season-2012-formula-one-world-championship#42",
+          "score": 11,
+          "snippet": "[...] berg took his – and the team's – first pole position since their return to Formula One in 2010, while a penalty to Lewis Hamilton for a gearbox change promoted Michael Schumacher to second on the grid. Schumacher would ultimately retire from the race after the first round of stops when it was discovered that one of his [...]"
+        }
+      ],
+      "note": "keyword candidates only, not gold chunk ids"
+    },
+    {
+      "question_id": "Q13",
+      "question": "What common factors explain why specific teams such as Ferrari, Mercedes and Red Bull dominated particular eras of Formula One?",
+      "term_source": "question_text_fallback (criteria empty in v1-draft)",
+      "terms": [
+        "common",
+        "factors",
+        "explain",
+        "why",
+        "specific",
+        "teams",
+        "such",
+        "ferrari",
+        "mercedes",
+        "red",
+        "bull",
+        "dominated",
+        "particular",
+        "eras",
+        "formula",
+        "one"
+      ],
+      "candidate_count_found": 1179,
+      "candidates_returned": 5,
+      "candidates": [
+        {
+          "doc_id": "season-2021-formula-one-world-championship",
+          "chunk_id": "season-2021-formula-one-world-championship#15",
+          "score": 7,
+          "snippet": "[...]  This prompted the FIA to introduce a token system\nwhereby  teams  were  given  a  series  of  tokens  which  could  be  exchanged  for  the  introduction  of  specific  component\nupgrades.\nSome  aerodynamic  rule  changes  were  enacted  by  the  FIA.  The  floor  of  the  cars  were  'clipped'  in  order  to  reduce\n [...]"
+        },
+        {
+          "doc_id": "team-mclaren",
+          "chunk_id": "team-mclaren#103",
+          "score": 7,
+          "snippet": "Subsequent Concorde Agreements were signed in 1987 and 1992, but in 1996, McLaren was again one of the teams which disputed the terms of a new agreement, this time with former FOCA president Bernie Ecclestone's Formula One Promotions and Administration organisati [...]"
+        },
+        {
+          "doc_id": "team-mercedes-benz-in-formula-one",
+          "chunk_id": "team-mercedes-benz-in-formula-one#7",
+          "score": 7,
+          "snippet": "[...] hile continuing to supply engines to the team. The team's performance during 2010 was not so competitive as under Brawn, with the team behind the leading three teams of Ferrari, McLaren, and Red Bull. Their best results came from Rosberg finishing on the podium three times, scoring third places at Sepang, Shanghai, and [...]"
+        },
+        {
+          "doc_id": "team-williams-racing",
+          "chunk_id": "team-williams-racing#0",
+          "score": 7,
+          "snippet": "[...]  race at the 1979 British Grand Prix. At the 1997 British Grand Prix, Jacques Villeneuve scored the team's 100th race victory, making Williams one of only five teams in Formula One, alongside Ferrari, McLaren, Mercedes, and Red Bull Racing to win 100 races. Williams won nine Constructors' Championships between 1980 and [...]"
+        },
+        {
+          "doc_id": "driver-lewis-hamilton",
+          "chunk_id": "driver-lewis-hamilton#1",
+          "score": 6,
+          "snippet": "[...] titles in 2014 and\n2015, and Rosberg winning the latter. After Rosberg's retirement, Hamilton twice overturned mid-season point deficits to\nSebastian Vettel of Ferrari to claim his fourth and fifth titles in 2017 and 2018. Hamilton won his sixth title in 2019, before"
+        }
+      ],
+      "note": "keyword candidates only, not gold chunk ids"
+    }
+  ]
+}

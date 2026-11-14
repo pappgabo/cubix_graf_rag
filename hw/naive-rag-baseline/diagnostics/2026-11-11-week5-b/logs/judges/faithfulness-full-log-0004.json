@@ -1,0 +1,34 @@
+{
+ "messages": [
+  {
+   "role": "system",
+   "content": "You check whether an answer's factual claims are supported by the exact\ncontext that was actually given to the system that produced the answer.\nYou do not use any outside knowledge of Formula One. Treat the context\nas the only source of truth for this check, even if you believe it is\nincomplete or wrong.\n\nYou receive a JSON object with:\n- \"question\": the original question text\n- \"answer\": the answer to check\n- \"context\": the literal text that was actually sent to the model that\n  produced the answer (for the global mode, this is the reduce step's\n  actual input -- the partial answers it was given -- not the original\n  corpus and not the final answer's citation_chain).\n\nStep 1: break the answer into its individual factual claims (names,\nnumbers, dates, stated relationships). Ignore hedges, meta-commentary,\nand refusal sentences -- a refusal has zero claims.\n\nStep 2: for each claim, decide:\n- \"supported\": the context directly states or clearly entails this claim.\n- \"unsupported\": the context does not contain this claim and does not\n  entail it.\n- \"unclear\": the context is ambiguous or only loosely related -- do not\n  use \"unclear\" as a way to avoid choosing; use it only when a careful\n  reading still leaves genuine doubt.\n\nReturn only this JSON, nothing else:\n\n{\n  \"claims\": [\n    {\"claim\": \"<short paraphrase of the claim>\",\n     \"verdict\": \"supported\" | \"unsupported\" | \"unclear\"}\n  ],\n  \"reasoning\": \"<one or two sentences>\"\n}\n\nIf the answer has no factual claims (e.g. it is a refusal), return an\nempty \"claims\" list."
+  },
+  {
+   "role": "user",
+   "content": "{\n \"question\": \"How old was Sebastian Vettel when he became the youngest Formula One World Champion?\",\n \"answer\": \"Sebastian Vettel was 23 years old when he became the youngest-ever Formula One World Drivers' Champion in 2010 [S3].\",\n \"context\": \"[S1] (None, section: Toro Rosso (2007–2008) > 2007–2008: Maiden race win and rise to prominence)\\nAt the wet Italian Grand Prix, Vettel became the youngest driver in history to win a Formula One Grand Prix, aged 21 years and 74 days. He led for the majority of the Grand Prix and crossed the finish line 12.5 seconds ahead of McLaren's Heikki Kovalainen. It would also be Toro Rosso's only win. Earlier in the weekend, he had already become the youngest pole-sitter. Toro Rosso team boss Gerhard Berger said: \\\"As he proved today, he can win races, but he's going to win World Championships. He's a cool guy\\\". His victory led the German media to dub him \\\"Baby Schumi\\\".  \\nVettel was named 2008 Rookie of the Year at the Autosport Awards.\\n\\n[S2] (None, n/a)\\nSebastian Vettel (German pronunciation: \\\\[zeˈbasti̯a(ː)n ˈfɛtl̩\\\\] ; born 3 July 1987) is a German former racing driver who competed in Formula One from 2007 to 2022. Vettel won four Formula One World Drivers' Championship titles, which he won consecutively from 2010 to 2013 with Red Bull, and remains the youngest-ever World Drivers' Champion; he won 53 Grands Prix across 16 seasons.\\n\\n[S3] (None, n/a)\\nAfter winning the title-deciding Abu Dhabi Grand Prix in 2010, Vettel became the youngest-ever Formula One World Drivers' Champion, aged 23. He won his second and third championships in 2011 and 2012, dominating the former and winning the latter amidst a close title battle with Fernando Alonso. Vettel set several records in 2013, winning 13 Grands Prix—including a then-record nine consecutive victories—to claim his fourth consecutive title with Red Bull. After a winless 2014 campaign, Vettel signed for Ferrari, replacing Alonso to partner Kimi Räikkönen; he took several wins in his debut season, finishing third in the standings. Following another winless season in 2016, Vettel emerged as the closest challenger to Mercedes and Lewis Hamilton, finishing runner-up in 2017 and 2018 after achieving several victories across both campaigns. Partnered by Charles Leclerc for 2019, Vettel took the final win of his career at the Singapore Grand Prix before leaving Ferrari at the end of the 2020 season. Vettel joined the recently established Aston Martin in 2021, where he scored his final podium finish at the Azerbaijan Grand Prix.\\n\\n[S4] (None, section: 2010: Youngest World Champion)\\n## 2010: Youngest World Champion  \\nVettel took the first pole position of the 2010 season at the Bahrain Grand Prix. He led most of the race but as a result of a spark plug failure, Vettel finished in fourth place. At the Australian Grand Prix, Vettel was appointed as a director of the Grand Prix Drivers' Association. He took his first win of the season in Malaysia.  \\nIn Monaco, Vettel made it a Red Bull 1–2 with him second and Webber first. Both were equal on points in the standings, with Webber first based on total wins. At the Turkish Grand Prix, Vettel was running second behind Webber when he made a passing move on his teammate. The two collided, putting Vettel out of the race, with neither driver accepting responsibility for the collision.\"\n}\n"
+  }
+ ],
+ "messages_sha256": "48b66ebc589486402c5e16d48ebb1de587d23100999670a602c8c3b8ae397344",
+ "hash_algorithm": "sha256",
+ "hash_encoding": "utf-8",
+ "params": {
+  "model": "gpt-4o-mini",
+  "temperature": 0,
+  "max_tokens": 900,
+  "response_format": {
+   "type": "json_object"
+  },
+  "max_retries": 0
+ },
+ "raw_response": "{\n  \"claims\": [\n    {\n      \"claim\": \"Sebastian Vettel was 23 years old when he became the youngest-ever Formula One World Drivers' Champion in 2010\",\n      \"verdict\": \"supported\"\n    }\n  ],\n  \"reasoning\": \"The context explicitly states that after winning the title-deciding Abu Dhabi Grand Prix in 2010, Vettel became the youngest-ever Formula One World Drivers' Champion, aged 23.\"\n}",
+ "returned_model": "gpt-4o-mini-2024-07-18",
+ "usage_prompt_tokens": 1177,
+ "usage_completion_tokens": 93,
+ "finish_reason": "stop",
+ "duration_seconds": 2.235,
+ "error": null,
+ "local_metadata": {
+  "call_index": 4
+ }
+}

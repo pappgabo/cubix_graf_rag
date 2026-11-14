@@ -1,0 +1,95 @@
+{
+ "question_id": "Q14",
+ "mode": "globalis",
+ "run_phase": "full",
+ "question_type": "simple",
+ "question_status": "held_out",
+ "question_text": "What name did Sebastian Vettel give his Ferrari SF15-T in 2015?",
+ "expected_answer": "Eva.",
+ "golden_set_version": "v1-approval-draft",
+ "answer": "The community reports do not support an answer to this question.",
+ "refused": true,
+ "model_called": false,
+ "actual_context": "",
+ "actual_chunk_ids": [],
+ "chunk_ids_traceable": true,
+ "is_proxy_retrieval": true,
+ "proxy_note": "candidate_source_chunk_ids from the reduce step's actual basis (basis_paths), not the final answer's citation_chain -- a retrieval proxy, not verified per-chunk coverage",
+ "error": null,
+ "duration_seconds": 41.25,
+ "raw": {
+  "basis_paths": [],
+  "map_result_count": 37,
+  "reduce_a": {
+   "question_id": "Q14",
+   "variant": "A",
+   "requested_model": "gpt-4o-mini",
+   "basis_paths": [],
+   "no_model_call": true,
+   "answer": "The community reports do not support an answer to this question.",
+   "cited_partial_answer_ids": [],
+   "validation": {
+    "valid_structure": true,
+    "problems": [],
+    "unknown_partial_answer_ids": []
+   },
+   "citation_chain": []
+  }
+ },
+ "duration_seconds_generation": 41.25,
+ "cost_usd_generation": 0.003423,
+ "retrieval": {
+  "question_id": "Q14",
+  "status": "scored",
+  "is_proxy": true,
+  "proxy_note": "candidate_source_chunk_ids from the reduce step's actual basis (basis_paths), not the final answer's citation_chain -- a retrieval proxy, not verified per-chunk coverage",
+  "untraceable_reason": null,
+  "hit_count": 0,
+  "group_count": 1,
+  "ratio": 0.0,
+  "strict_all_hit": false,
+  "groups": [
+   {
+    "group_id": "Q14-e1",
+    "criterion": "Q14-c1",
+    "role": null,
+    "hit": false,
+    "any_of_chunk_ids": [
+     "driver-sebastian-vettel#54"
+    ],
+    "matched_chunk_ids": []
+   }
+  ]
+ },
+ "duration_seconds_correctness_judge": 1.969,
+ "cost_usd_correctness_judge": 0.000154,
+ "correctness": {
+  "status": "scored",
+  "label": "elutasított",
+  "parsed": {
+   "criteria": [
+    {
+     "criterion_id": "Q14-c1",
+     "verdict": "not_met",
+     "explanation": "The answer does not provide the name 'Eva' as required."
+    }
+   ],
+   "refused": true,
+   "rubric_conflicts": [],
+   "reasoning": "The answer explicitly states that it cannot provide an answer, which constitutes a refusal, and it fails to mention the required name 'Eva'."
+  },
+  "usage_prompt_tokens": 620,
+  "usage_completion_tokens": 101
+ },
+ "duration_seconds_faithfulness_judge": 1.266,
+ "cost_usd_faithfulness_judge": 8.2e-05,
+ "faithfulness": {
+  "status": "scored",
+  "score": "n/a",
+  "supported_count": 0,
+  "unsupported_count": 0,
+  "unclear_count": 0
+ },
+ "cost_usd": 0.003659,
+ "cost_source": "ledger_delta"
+}

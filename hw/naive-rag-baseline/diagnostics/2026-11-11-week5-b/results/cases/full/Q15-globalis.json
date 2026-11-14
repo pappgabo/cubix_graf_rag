@@ -1,0 +1,95 @@
+{
+ "question_id": "Q15",
+ "mode": "globalis",
+ "run_phase": "full",
+ "question_type": "simple",
+ "question_status": "held_out",
+ "question_text": "In which year was Renault's young driver academy rebranded as the Alpine Academy?",
+ "expected_answer": "2021.",
+ "golden_set_version": "v1-approval-draft",
+ "answer": "The community reports do not support an answer to this question.",
+ "refused": true,
+ "model_called": false,
+ "actual_context": "",
+ "actual_chunk_ids": [],
+ "chunk_ids_traceable": true,
+ "is_proxy_retrieval": true,
+ "proxy_note": "candidate_source_chunk_ids from the reduce step's actual basis (basis_paths), not the final answer's citation_chain -- a retrieval proxy, not verified per-chunk coverage",
+ "error": null,
+ "duration_seconds": 43.188,
+ "raw": {
+  "basis_paths": [],
+  "map_result_count": 37,
+  "reduce_a": {
+   "question_id": "Q15",
+   "variant": "A",
+   "requested_model": "gpt-4o-mini",
+   "basis_paths": [],
+   "no_model_call": true,
+   "answer": "The community reports do not support an answer to this question.",
+   "cited_partial_answer_ids": [],
+   "validation": {
+    "valid_structure": true,
+    "problems": [],
+    "unknown_partial_answer_ids": []
+   },
+   "citation_chain": []
+  }
+ },
+ "duration_seconds_generation": 43.188,
+ "cost_usd_generation": 0.003429,
+ "retrieval": {
+  "question_id": "Q15",
+  "status": "scored",
+  "is_proxy": true,
+  "proxy_note": "candidate_source_chunk_ids from the reduce step's actual basis (basis_paths), not the final answer's citation_chain -- a retrieval proxy, not verified per-chunk coverage",
+  "untraceable_reason": null,
+  "hit_count": 0,
+  "group_count": 1,
+  "ratio": 0.0,
+  "strict_all_hit": false,
+  "groups": [
+   {
+    "group_id": "Q15-e1",
+    "criterion": "Q15-c1",
+    "role": null,
+    "hit": false,
+    "any_of_chunk_ids": [
+     "team-renault-in-formula-one#69"
+    ],
+    "matched_chunk_ids": []
+   }
+  ]
+ },
+ "duration_seconds_correctness_judge": 2.672,
+ "cost_usd_correctness_judge": 0.000151,
+ "correctness": {
+  "status": "scored",
+  "label": "elutasított",
+  "parsed": {
+   "criteria": [
+    {
+     "criterion_id": "Q15-c1",
+     "verdict": "not_met",
+     "explanation": "The answer does not provide the required information about the year 2021."
+    }
+   ],
+   "refused": true,
+   "rubric_conflicts": [],
+   "reasoning": "The answer explicitly states that it cannot provide an answer, which constitutes a refusal to answer the question."
+  },
+  "usage_prompt_tokens": 623,
+  "usage_completion_tokens": 96
+ },
+ "duration_seconds_faithfulness_judge": 1.485,
+ "cost_usd_faithfulness_judge": 8.1e-05,
+ "faithfulness": {
+  "status": "scored",
+  "score": "n/a",
+  "supported_count": 0,
+  "unsupported_count": 0,
+  "unclear_count": 0
+ },
+ "cost_usd": 0.003661,
+ "cost_source": "ledger_delta"
+}

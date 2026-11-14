@@ -1,0 +1,180 @@
+{
+ "question_id": "Q08",
+ "mode": "globalis",
+ "run_phase": "full",
+ "question_type": "multi-hop",
+ "question_status": "frozen_w4",
+ "question_text": "Which driver replaced Nico Rosberg at Mercedes after his retirement, and which team did that driver come from?",
+ "expected_answer": "Valtteri Bottas, aki a Williamstől érkezett.",
+ "golden_set_version": "v1-approval-draft",
+ "answer": "Valtteri Bottas replaced Nico Rosberg at Mercedes after his retirement, coming from the Williams team.",
+ "refused": false,
+ "model_called": true,
+ "actual_context": "{\n \"question\": \"Which driver replaced Nico Rosberg at Mercedes after his retirement, and which team did that driver come from?\",\n \"partial_answers\": [\n  {\n   \"id\": \"33\",\n   \"usefulness_score\": 80,\n   \"text\": \"Valtteri Bottas replaced Nico Rosberg at Mercedes after his retirement, coming from the Williams team.\"\n  }\n ]\n}\n",
+ "actual_chunk_ids": [
+  "driver-valtteri-bottas#22",
+  "driver-valtteri-bottas#23",
+  "driver-valtteri-bottas#24",
+  "driver-valtteri-bottas#25",
+  "driver-valtteri-bottas#26",
+  "driver-valtteri-bottas#28",
+  "driver-valtteri-bottas#29",
+  "driver-valtteri-bottas#31",
+  "driver-valtteri-bottas#32",
+  "driver-valtteri-bottas#33",
+  "driver-valtteri-bottas#35",
+  "driver-valtteri-bottas#36",
+  "driver-valtteri-bottas#37",
+  "driver-valtteri-bottas#38",
+  "driver-valtteri-bottas#41",
+  "driver-valtteri-bottas#43",
+  "driver-valtteri-bottas#44",
+  "driver-valtteri-bottas#56",
+  "team-mercedes-benz-in-formula-one#29"
+ ],
+ "chunk_ids_traceable": true,
+ "is_proxy_retrieval": true,
+ "proxy_note": "candidate_source_chunk_ids from the reduce step's actual basis (basis_paths), not the final answer's citation_chain -- a retrieval proxy, not verified per-chunk coverage",
+ "error": null,
+ "duration_seconds": 41.531,
+ "raw": {
+  "basis_paths": [
+   "33"
+  ],
+  "map_result_count": 37,
+  "reduce_a": {
+   "question_id": "Q08",
+   "variant": "A",
+   "requested_model": "gpt-4o-mini",
+   "basis_paths": [
+    "33"
+   ],
+   "returned_model": "gpt-4o-mini-2024-07-18",
+   "usage_prompt_tokens": 310,
+   "usage_completion_tokens": 39,
+   "finish_reason": "stop",
+   "duration_seconds": 1.203,
+   "measured_cost_usd": 7e-05,
+   "valid_json": true,
+   "validation": {
+    "valid_structure": true,
+    "problems": [],
+    "unknown_partial_answer_ids": []
+   },
+   "answer": "Valtteri Bottas replaced Nico Rosberg at Mercedes after his retirement, coming from the Williams team.",
+   "cited_partial_answer_ids": [
+    "33"
+   ],
+   "citation_chain": [
+    {
+     "community_path": "33",
+     "partial_answer": "Valtteri Bottas replaced Nico Rosberg at Mercedes after his retirement, coming from the Williams team.",
+     "usefulness_score": 80,
+     "statements": [
+      {
+       "statement_id": "33#2",
+       "statement": "Valtteri Bottas drove for Mercedes from 2017 to 2021 and later rejoined as a reserve driver in 2024 and 2025.",
+       "evidence_ids": [
+        "E012",
+        "E019",
+        "E020"
+       ],
+       "candidate_source_chunk_ids": [
+        "driver-valtteri-bottas#22",
+        "driver-valtteri-bottas#23",
+        "driver-valtteri-bottas#24",
+        "driver-valtteri-bottas#25",
+        "driver-valtteri-bottas#26",
+        "driver-valtteri-bottas#28",
+        "driver-valtteri-bottas#29",
+        "driver-valtteri-bottas#31",
+        "driver-valtteri-bottas#32",
+        "driver-valtteri-bottas#33",
+        "driver-valtteri-bottas#35",
+        "driver-valtteri-bottas#36",
+        "driver-valtteri-bottas#37",
+        "driver-valtteri-bottas#38",
+        "driver-valtteri-bottas#41",
+        "driver-valtteri-bottas#43",
+        "driver-valtteri-bottas#44",
+        "driver-valtteri-bottas#56",
+        "team-mercedes-benz-in-formula-one#29"
+       ]
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "duration_seconds_generation": 41.531,
+ "cost_usd_generation": 0.003536,
+ "retrieval": {
+  "question_id": "Q08",
+  "status": "scored",
+  "is_proxy": true,
+  "proxy_note": "candidate_source_chunk_ids from the reduce step's actual basis (basis_paths), not the final answer's citation_chain -- a retrieval proxy, not verified per-chunk coverage",
+  "untraceable_reason": null,
+  "hit_count": 0,
+  "group_count": 2,
+  "ratio": 0.0,
+  "strict_all_hit": false,
+  "groups": [
+   {
+    "group_id": "Q08-e1",
+    "criterion": "Q08-c1",
+    "role": null,
+    "hit": false,
+    "any_of_chunk_ids": [
+     "driver-nico-rosberg#35"
+    ],
+    "matched_chunk_ids": []
+   },
+   {
+    "group_id": "Q08-e2",
+    "criterion": "Q08-c2",
+    "role": null,
+    "hit": false,
+    "any_of_chunk_ids": [
+     "driver-nico-rosberg#35"
+    ],
+    "matched_chunk_ids": []
+   }
+  ]
+ },
+ "duration_seconds_correctness_judge": 2.516,
+ "cost_usd_correctness_judge": 0.000177,
+ "correctness": {
+  "status": "scored",
+  "label": "helyes",
+  "parsed": {
+   "criteria": [
+    {
+     "criterion_id": "Q08-c1",
+     "verdict": "met",
+     "explanation": "The answer correctly states that Valtteri Bottas replaced Rosberg at Mercedes."
+    },
+    {
+     "criterion_id": "Q08-c2",
+     "verdict": "met",
+     "explanation": "The answer correctly indicates that Bottas came from the Williams team."
+    }
+   ],
+   "refused": false,
+   "rubric_conflicts": [],
+   "reasoning": "The answer fully meets both criteria by providing the correct driver and the team he came from."
+  },
+  "usage_prompt_tokens": 675,
+  "usage_completion_tokens": 126
+ },
+ "duration_seconds_faithfulness_judge": 3.359,
+ "cost_usd_faithfulness_judge": 0.000141,
+ "faithfulness": {
+  "status": "scored",
+  "score": 1.0,
+  "supported_count": 2,
+  "unsupported_count": 0,
+  "unclear_count": 0
+ },
+ "cost_usd": 0.003854,
+ "cost_source": "ledger_delta"
+}

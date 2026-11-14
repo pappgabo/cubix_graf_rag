@@ -1,0 +1,123 @@
+{
+ "question_id": "Q03",
+ "mode": "globalis",
+ "run_phase": "full",
+ "question_type": "simple",
+ "question_status": "frozen_w4",
+ "question_text": "Who won the 2021 Formula One World Drivers' Championship?",
+ "expected_answer": "Max Verstappen (Red Bull Racing).",
+ "golden_set_version": "v1-approval-draft",
+ "answer": "The provided partial answers do not contain information about the winner of the 2021 Formula One World Drivers' Championship.",
+ "refused": false,
+ "model_called": true,
+ "actual_context": "{\n \"question\": \"Who won the 2021 Formula One World Drivers' Championship?\",\n \"partial_answers\": [\n  {\n   \"id\": \"111\",\n   \"usefulness_score\": 50,\n   \"text\": \"Lewis Hamilton won the 2020 World Drivers' Championship, marking his seventh title.\"\n  },\n  {\n   \"id\": \"15\",\n   \"usefulness_score\": 20,\n   \"text\": \"Max Verstappen is a key driver for Red Bull Racing.\"\n  }\n ]\n}\n",
+ "actual_chunk_ids": [
+  "driver-lewis-hamilton#79",
+  "driver-max-verstappen#11",
+  "driver-max-verstappen#2",
+  "driver-max-verstappen#37",
+  "driver-max-verstappen#29",
+  "driver-max-verstappen#38",
+  "driver-max-verstappen#40",
+  "season-2021-formula-one-world-championship#26",
+  "season-2021-formula-one-world-championship#38",
+  "team-red-bull-racing#58",
+  "team-red-bull-racing#59",
+  "team-red-bull-racing#65",
+  "team-red-bull-racing#70"
+ ],
+ "chunk_ids_traceable": true,
+ "is_proxy_retrieval": true,
+ "proxy_note": "candidate_source_chunk_ids from the reduce step's actual basis (basis_paths), not the final answer's citation_chain -- a retrieval proxy, not verified per-chunk coverage",
+ "error": null,
+ "duration_seconds": 39.532,
+ "raw": {
+  "basis_paths": [
+   "111",
+   "15"
+  ],
+  "map_result_count": 37,
+  "reduce_a": {
+   "question_id": "Q03",
+   "variant": "A",
+   "requested_model": "gpt-4o-mini",
+   "basis_paths": [
+    "111",
+    "15"
+   ],
+   "returned_model": "gpt-4o-mini-2024-07-18",
+   "usage_prompt_tokens": 335,
+   "usage_completion_tokens": 39,
+   "finish_reason": "stop",
+   "duration_seconds": 1.187,
+   "measured_cost_usd": 7.4e-05,
+   "valid_json": true,
+   "validation": {
+    "valid_structure": true,
+    "problems": [],
+    "unknown_partial_answer_ids": []
+   },
+   "answer": "The provided partial answers do not contain information about the winner of the 2021 Formula One World Drivers' Championship.",
+   "cited_partial_answer_ids": [],
+   "citation_chain": []
+  }
+ },
+ "duration_seconds_generation": 39.532,
+ "cost_usd_generation": 0.003506,
+ "retrieval": {
+  "question_id": "Q03",
+  "status": "scored",
+  "is_proxy": true,
+  "proxy_note": "candidate_source_chunk_ids from the reduce step's actual basis (basis_paths), not the final answer's citation_chain -- a retrieval proxy, not verified per-chunk coverage",
+  "untraceable_reason": null,
+  "hit_count": 0,
+  "group_count": 1,
+  "ratio": 0.0,
+  "strict_all_hit": false,
+  "groups": [
+   {
+    "group_id": "Q03-e1",
+    "criterion": "Q03-c1",
+    "role": null,
+    "hit": false,
+    "any_of_chunk_ids": [
+     "driver-max-verstappen#0",
+     "driver-max-verstappen#1",
+     "reference-list-of-formula-one-world-drivers-champions#0"
+    ],
+    "matched_chunk_ids": []
+   }
+  ]
+ },
+ "duration_seconds_correctness_judge": 1.984,
+ "cost_usd_correctness_judge": 0.000153,
+ "correctness": {
+  "status": "scored",
+  "label": "hiányos",
+  "parsed": {
+   "criteria": [
+    {
+     "criterion_id": "Q03-c1",
+     "verdict": "not_met",
+     "explanation": "The answer does not provide the name of the winner or the year."
+    }
+   ],
+   "refused": false,
+   "rubric_conflicts": [],
+   "reasoning": "The answer fails to mention Max Verstappen or the year 2021, which are both required elements according to the criteria."
+  },
+  "usage_prompt_tokens": 623,
+  "usage_completion_tokens": 99
+ },
+ "duration_seconds_faithfulness_judge": 1.406,
+ "cost_usd_faithfulness_judge": 0.000111,
+ "faithfulness": {
+  "status": "scored",
+  "score": "n/a",
+  "supported_count": 0,
+  "unsupported_count": 0,
+  "unclear_count": 0
+ },
+ "cost_usd": 0.00377,
+ "cost_source": "ledger_delta"
+}

@@ -1,0 +1,157 @@
+{
+ "question_id": "Q05",
+ "mode": "globalis",
+ "run_phase": "full",
+ "question_type": "multi-hop",
+ "question_status": "frozen_w4",
+ "question_text": "Which team did the 2012 World Drivers' Champion leave his team for, and in which year did the move take effect?",
+ "expected_answer": "Sebastian Vettel a Red Bulltól a Ferrarihoz igazolt, a váltás a 2015-ös szezonra lépett életbe.",
+ "golden_set_version": "v1-approval-draft",
+ "answer": "The provided partial answers do not contain information about the 2012 World Drivers' Champion or their team move.",
+ "refused": false,
+ "model_called": true,
+ "actual_context": "{\n \"question\": \"Which team did the 2012 World Drivers' Champion leave his team for, and in which year did the move take effect?\",\n \"partial_answers\": [\n  {\n   \"id\": \"331\",\n   \"usefulness_score\": 100,\n   \"text\": \"Hughes left McLaren to join Maserati MSG Racing in 2024.\"\n  },\n  {\n   \"id\": \"5\",\n   \"usefulness_score\": 50,\n   \"text\": \"Oscar Piastri joined McLaren in 2023, replacing Daniel Ricciardo.\"\n  },\n  {\n   \"id\": \"33\",\n   \"usefulness_score\": 50,\n   \"text\": \"Nico Rosberg won the World Drivers' Championship in 2016 while driving for Mercedes.\"\n  }\n ]\n}\n",
+ "actual_chunk_ids": [
+  "team-mclaren#91",
+  "driver-charles-leclerc#50",
+  "driver-charles-leclerc#53",
+  "driver-max-verstappen#1",
+  "team-mclaren#57",
+  "team-mclaren#58",
+  "team-mclaren#59",
+  "team-mclaren#61",
+  "team-mclaren#64",
+  "team-mclaren#67",
+  "driver-lewis-hamilton#1",
+  "driver-lewis-hamilton#49",
+  "driver-lewis-hamilton#50",
+  "driver-lewis-hamilton#6",
+  "driver-nico-rosberg#0",
+  "driver-nico-rosberg#1",
+  "driver-nico-rosberg#2",
+  "driver-nico-rosberg#34",
+  "season-2016-formula-one-world-championship#1"
+ ],
+ "chunk_ids_traceable": true,
+ "is_proxy_retrieval": true,
+ "proxy_note": "candidate_source_chunk_ids from the reduce step's actual basis (basis_paths), not the final answer's citation_chain -- a retrieval proxy, not verified per-chunk coverage",
+ "error": null,
+ "duration_seconds": 39.281,
+ "raw": {
+  "basis_paths": [
+   "331",
+   "5",
+   "33"
+  ],
+  "map_result_count": 37,
+  "reduce_a": {
+   "question_id": "Q05",
+   "variant": "A",
+   "requested_model": "gpt-4o-mini",
+   "basis_paths": [
+    "331",
+    "5",
+    "33"
+   ],
+   "returned_model": "gpt-4o-mini-2024-07-18",
+   "usage_prompt_tokens": 398,
+   "usage_completion_tokens": 38,
+   "finish_reason": "stop",
+   "duration_seconds": 1.156,
+   "measured_cost_usd": 8.2e-05,
+   "valid_json": true,
+   "validation": {
+    "valid_structure": true,
+    "problems": [],
+    "unknown_partial_answer_ids": []
+   },
+   "answer": "The provided partial answers do not contain information about the 2012 World Drivers' Champion or their team move.",
+   "cited_partial_answer_ids": [],
+   "citation_chain": []
+  }
+ },
+ "duration_seconds_generation": 39.281,
+ "cost_usd_generation": 0.003601,
+ "retrieval": {
+  "question_id": "Q05",
+  "status": "scored",
+  "is_proxy": true,
+  "proxy_note": "candidate_source_chunk_ids from the reduce step's actual basis (basis_paths), not the final answer's citation_chain -- a retrieval proxy, not verified per-chunk coverage",
+  "untraceable_reason": null,
+  "hit_count": 0,
+  "group_count": 3,
+  "ratio": 0.0,
+  "strict_all_hit": false,
+  "groups": [
+   {
+    "group_id": "Q05-e1",
+    "criterion": "Q05-c1",
+    "role": null,
+    "hit": false,
+    "any_of_chunk_ids": [
+     "driver-sebastian-vettel#2"
+    ],
+    "matched_chunk_ids": []
+   },
+   {
+    "group_id": "Q05-e2",
+    "criterion": "Q05-c2",
+    "role": null,
+    "hit": false,
+    "any_of_chunk_ids": [
+     "driver-sebastian-vettel#29",
+     "driver-sebastian-vettel#30"
+    ],
+    "matched_chunk_ids": []
+   },
+   {
+    "group_id": "Q05-bridge",
+    "criterion": null,
+    "role": "retrieval_bridge",
+    "hit": false,
+    "any_of_chunk_ids": [
+     "reference-list-of-formula-one-world-drivers-champions#0",
+     "driver-sebastian-vettel#0",
+     "driver-sebastian-vettel#2"
+    ],
+    "matched_chunk_ids": []
+   }
+  ]
+ },
+ "duration_seconds_correctness_judge": 2.313,
+ "cost_usd_correctness_judge": 0.000193,
+ "correctness": {
+  "status": "scored",
+  "label": "hiányos",
+  "parsed": {
+   "criteria": [
+    {
+     "criterion_id": "Q05-c1",
+     "verdict": "not_met",
+     "explanation": "The answer does not mention Sebastian Vettel or Ferrari."
+    },
+    {
+     "criterion_id": "Q05-c2",
+     "verdict": "not_met",
+     "explanation": "The answer does not provide the year 2015."
+    }
+   ],
+   "refused": false,
+   "rubric_conflicts": [],
+   "reasoning": "The answer fails to provide any relevant information about the 2012 World Drivers' Champion or the details of their team move, thus not meeting the criteria."
+  },
+  "usage_prompt_tokens": 718,
+  "usage_completion_tokens": 143
+ },
+ "duration_seconds_faithfulness_judge": 1.61,
+ "cost_usd_faithfulness_judge": 0.000123,
+ "faithfulness": {
+  "status": "scored",
+  "score": "n/a",
+  "supported_count": 0,
+  "unsupported_count": 0,
+  "unclear_count": 0
+ },
+ "cost_usd": 0.003917,
+ "cost_source": "ledger_delta"
+}

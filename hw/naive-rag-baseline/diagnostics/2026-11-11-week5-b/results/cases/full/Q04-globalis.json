@@ -1,0 +1,160 @@
+{
+ "question_id": "Q04",
+ "mode": "globalis",
+ "run_phase": "full",
+ "question_type": "multi-hop",
+ "question_status": "frozen_w4",
+ "question_text": "Who was the teammate of the 2016 World Drivers' Champion at his team that season?",
+ "expected_answer": "A bajnok Nico Rosberg; csapattársa a Mercedesnél Lewis Hamilton.",
+ "golden_set_version": "v1-approval-draft",
+ "answer": "Nico Rosberg was the teammate of the 2016 World Drivers' Champion, Lewis Hamilton, at Mercedes.",
+ "refused": false,
+ "model_called": true,
+ "actual_context": "{\n \"question\": \"Who was the teammate of the 2016 World Drivers' Champion at his team that season?\",\n \"partial_answers\": [\n  {\n   \"id\": \"15\",\n   \"usefulness_score\": 80,\n   \"text\": \"Max Verstappen's teammate at Red Bull Racing is Sergio Pérez.\"\n  },\n  {\n   \"id\": \"33\",\n   \"usefulness_score\": 80,\n   \"text\": \"Nico Rosberg was the teammate of the 2016 World Drivers' Champion, Lewis Hamilton, at Mercedes.\"\n  }\n ]\n}\n",
+ "actual_chunk_ids": [
+  "driver-max-verstappen#29",
+  "driver-max-verstappen#38",
+  "driver-max-verstappen#40",
+  "season-2021-formula-one-world-championship#26",
+  "season-2021-formula-one-world-championship#38",
+  "team-red-bull-racing#58",
+  "team-red-bull-racing#59",
+  "team-red-bull-racing#65",
+  "team-red-bull-racing#70",
+  "driver-lewis-hamilton#1",
+  "driver-lewis-hamilton#49",
+  "driver-lewis-hamilton#50",
+  "driver-lewis-hamilton#6",
+  "driver-nico-rosberg#0",
+  "driver-nico-rosberg#1",
+  "driver-nico-rosberg#2",
+  "driver-nico-rosberg#34",
+  "season-2016-formula-one-world-championship#1"
+ ],
+ "chunk_ids_traceable": true,
+ "is_proxy_retrieval": true,
+ "proxy_note": "candidate_source_chunk_ids from the reduce step's actual basis (basis_paths), not the final answer's citation_chain -- a retrieval proxy, not verified per-chunk coverage",
+ "error": null,
+ "duration_seconds": 42.954,
+ "raw": {
+  "basis_paths": [
+   "15",
+   "33"
+  ],
+  "map_result_count": 37,
+  "reduce_a": {
+   "question_id": "Q04",
+   "variant": "A",
+   "requested_model": "gpt-4o-mini",
+   "basis_paths": [
+    "15",
+    "33"
+   ],
+   "returned_model": "gpt-4o-mini-2024-07-18",
+   "usage_prompt_tokens": 348,
+   "usage_completion_tokens": 41,
+   "finish_reason": "stop",
+   "duration_seconds": 1.375,
+   "measured_cost_usd": 7.7e-05,
+   "valid_json": true,
+   "validation": {
+    "valid_structure": true,
+    "problems": [],
+    "unknown_partial_answer_ids": []
+   },
+   "answer": "Nico Rosberg was the teammate of the 2016 World Drivers' Champion, Lewis Hamilton, at Mercedes.",
+   "cited_partial_answer_ids": [
+    "33"
+   ],
+   "citation_chain": [
+    {
+     "community_path": "33",
+     "partial_answer": "Nico Rosberg was the teammate of the 2016 World Drivers' Champion, Lewis Hamilton, at Mercedes.",
+     "usefulness_score": 80,
+     "statements": [
+      {
+       "statement_id": "33#1",
+       "statement": "Lewis Hamilton and Nico Rosberg were teammates at Mercedes from 2013 to 2016, during which Rosberg won the World Drivers' Championship in 2016.",
+       "evidence_ids": [
+        "E034",
+        "E041",
+        "E022"
+       ],
+       "candidate_source_chunk_ids": [
+        "driver-lewis-hamilton#1",
+        "driver-lewis-hamilton#49",
+        "driver-lewis-hamilton#50",
+        "driver-lewis-hamilton#6",
+        "driver-nico-rosberg#0",
+        "driver-nico-rosberg#1",
+        "driver-nico-rosberg#2",
+        "driver-nico-rosberg#34",
+        "season-2016-formula-one-world-championship#1"
+       ]
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "duration_seconds_generation": 42.954,
+ "cost_usd_generation": 0.003543,
+ "retrieval": {
+  "question_id": "Q04",
+  "status": "scored",
+  "is_proxy": true,
+  "proxy_note": "candidate_source_chunk_ids from the reduce step's actual basis (basis_paths), not the final answer's citation_chain -- a retrieval proxy, not verified per-chunk coverage",
+  "untraceable_reason": null,
+  "hit_count": 1,
+  "group_count": 1,
+  "ratio": 1.0,
+  "strict_all_hit": true,
+  "groups": [
+   {
+    "group_id": "Q04-e1",
+    "criterion": "Q04-c1",
+    "role": null,
+    "hit": true,
+    "any_of_chunk_ids": [
+     "season-2016-formula-one-world-championship#1",
+     "driver-nico-rosberg#1"
+    ],
+    "matched_chunk_ids": [
+     "season-2016-formula-one-world-championship#1",
+     "driver-nico-rosberg#1"
+    ]
+   }
+  ]
+ },
+ "duration_seconds_correctness_judge": 1.844,
+ "cost_usd_correctness_judge": 0.000159,
+ "correctness": {
+  "status": "scored",
+  "label": "hiányos",
+  "parsed": {
+   "criteria": [
+    {
+     "criterion_id": "Q04-c1",
+     "verdict": "not_met",
+     "explanation": "The answer incorrectly identifies Nico Rosberg as the teammate instead of Lewis Hamilton."
+    }
+   ],
+   "refused": false,
+   "rubric_conflicts": [],
+   "reasoning": "The answer fails to meet the criterion as it names the wrong individual as the teammate, which is a direct contradiction to the requirement."
+  },
+  "usage_prompt_tokens": 658,
+  "usage_completion_tokens": 101
+ },
+ "duration_seconds_faithfulness_judge": 2.765,
+ "cost_usd_faithfulness_judge": 0.00013,
+ "faithfulness": {
+  "status": "scored",
+  "score": 1.0,
+  "supported_count": 1,
+  "unsupported_count": 0,
+  "unclear_count": 0
+ },
+ "cost_usd": 0.003832,
+ "cost_source": "ledger_delta"
+}

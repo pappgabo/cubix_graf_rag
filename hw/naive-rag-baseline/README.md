@@ -1,3 +1,241 @@
+# 5. házifeladat — Mérés
+
+**Állapot (5. hét):** a teljes mérés (`--full`, 45 eset) lefutott és mentve
+van. A 4. heti "Állapot"/eredmény-sorok lent **4. heti, történeti**
+jelölésűek — azokat ez a szakasz nem írja felül.
+
+## 5.1 Mit mértünk és hogyan
+
+A jóváhagyott golden set 15 kérdésből áll: 5 simple, 5 multi-hop, 5 global;
+ebből 13 `frozen_w4` (a 4. heti, fejlesztési készletből átvett kérdés) és 2
+`held_out` (Q14, Q15). Verzió: `v1-approval-draft`
+([`golden/week5-golden-set-v1-approval-draft.jsonl`](golden/week5-golden-set-v1-approval-draft.jsonl)).
+A korpusz hash-e és chunkszáma a golden set saját
+metaadat-mezőjéből (nem újraszámolva): `chunks_sha256
+79d46d6291bc07924ddc13703f9b4804f8cf9c86de9de3ebaf435248f04e012e`, `chunk_count
+1651`.
+
+Három mód, a 4. heti Phase 5 konfigurációjával: naiv, lokális, globális. A
+keresők (`src/naive_rag/*`) változatlanok; a naiv mód a mérésben a Phase 5
+futtató kódútját használja (`diagnostics/2026-11-10-phase5-run/run_phase5.py`
+`run_naiv`), **nem** a `NaiveRAG.ask`-ot
+([`docs/week5-felmeres.md`](docs/week5-felmeres.md) 1. táblázat, Naiv sor).
+
+Három metrika:
+1. **Retrieval** — azonosított bizonyíték-lefedettség (arány és szigorú
+   találat) az előre rögzített bizonyítékcsoportokhoz mérve.
+2. **Generálás, helyesség** — saját kritérium-bíró (helyes / hiányos / téves /
+   elutasított, a golden set rubrikájához mérve).
+3. **Generálás, megalapozottság** — saját, claim-szintű faithfulness-bíró.
+
+Ez **nem Ragas**. A Ragas kimaradt, mert a telepítése visszahúzná az `openai`
+csomagot ([`docs/week5-felmeres.md`](docs/week5-felmeres.md) 2. szakasz).
+
+Egy CLI-belépési pont, két futásmérettel:
+
+```powershell
+uv run python diagnostics/2026-11-11-week5-b/measure.py run --smoke
+uv run python diagnostics/2026-11-11-week5-b/measure.py run --full
+```
+
+A futás folytatható, szakaszonként mentett állapottal. Langfuse Cloud EU,
+módonként egy run a teljes golden seten; a feltöltés utólagos, a mentett
+eredményekből épül, nem élő generálási trace. A helyi `results.jsonl` az
+elsődleges archívum.
+
+## 5.2 Eredmények
+
+Forrás a táblákhoz:
+[`diagnostics/2026-11-11-week5-b/results/week5-b-report-full.md`](diagnostics/2026-11-11-week5-b/results/week5-b-report-full.md)
+(kizárólag a teljes, 45 esetes futás — a füstpróba nincs beleszámítva).
+
+**Három mód × kérdéstípus** (típusonként és módonként 5-5 kérdés; a
+kategóriaösszegek egyeznek a cella elemszámával):
+
+| Kérdéstípus | naiv | lokalis | globalis |
+|---|---|---|---|
+| simple | n=5, helyes=5 | n=5, elutasított=1, helyes=4 | n=5, elutasított=3, helyes=1, hiányos=1 |
+| multi-hop | n=5, elutasított=1, helyes=2, hiányos=2 | n=5, elutasított=1, helyes=2, hiányos=2 | n=5, elutasított=1, helyes=1, hiányos=3 |
+| global | n=5, elutasított=1, helyes=2, hiányos=2 | n=5, elutasított=2, helyes=1, hiányos=2 | n=5, hiányos=5 |
+
+**frozen_w4 / held_out bontás** (ugyanabból a riportból):
+
+| | naiv | lokalis | globalis |
+|---|---|---|---|
+| frozen_w4 (n=13) | elutasított=2, helyes=7, hiányos=4 | elutasított=3, helyes=6, hiányos=4 | elutasított=2, helyes=2, hiányos=9 |
+| held_out (n=2) | helyes=2 | elutasított=1, helyes=1 | elutasított=2 |
+
+**Retrieval módonként** (átlagos lefedettségi arány a riportból; a szigorú
+találat darabszáma a riport nem tartalmazza, ezért a `results.jsonl` teljes
+futásra szűrt sorain számolva). „Szigorú találat” a metrikát számító kód
+tényleges feltétele szerint: a kérdés **összes kötelező** bizonyítékcsoportjára
+van legalább egy egyező chunk-azonosító (`hit_count == group_count`,
+[`diagnostics/2026-11-11-week5-b/retrieval_eval.py`](diagnostics/2026-11-11-week5-b/retrieval_eval.py)
+90. sor) — nem azonos a részleges (nem minden csoportra meglévő) találattal.
+
+| Mód | n | átlagos lefedettségi arány | szigorú találat |
+|---|---|---|---|
+| naiv (valódi lefedettség) | 15 | 0,38 | 5 / 15 |
+| lokalis (valódi lefedettség) | 15 | 0,38 | 5 / 15 |
+| globalis — **proxy, nem valódi lefedettség** | 15 | 0,25 | 2 / 15 |
+
+A globalis sor értékei **proxyk**: a reduce-nak ténylegesen átadott
+részválaszok forráskapcsolataiból képzett arány, nem valódi,
+soronként ellenőrzött bizonyíték-lefedettség. A fenti táblázat három sora
+emiatt **nem** egy közös átlag három bontása — a globalis proxy-értéket sem a
+naiv, sem a lokalis valódi lefedettségi mutatójával nem szabad összeátlagolni
+vagy azonos jelentésűként kezelni. Hiányzó visszavezetés (amit a mérés nem
+nullaként, hanem külön "untraceable" állapotként kezel) egy esetben sem
+fordult elő
+(`diagnostics/2026-11-11-week5-b/results/week5-b-report-full.md`: "retrieval
+nem visszavezethető: 0").
+
+**Faithfulness módonként** (`results.jsonl`, teljes futás):
+
+| Mód | számítható eset | átlag | n/a |
+|---|---|---|---|
+| naiv | 13 | 1,00 | 2 |
+| lokalis | 11 | 0,93 | 4 |
+| globalis | 8 | 1,00 | 7 |
+
+Az n/a (nincs tényszerű állítás, pl. elutasítás) nem nulla pontszám.
+
+**Költség és idő**
+(`diagnostics/2026-11-11-week5-b/results/week5-b-report-full.md` és
+`diagnostics/2026-11-11-week5-b/results/week5-b-cost-ledger.json`):
+
+- A teljes futás 45 esetéből **39-nél mindhárom szakasz (generálás, két bíró)
+  költsége ismert**; ezekre az ismert, teljes költség összege **0,079069
+  USD**. A maradék 6 eset nem egyforma: **5 teljesen ismeretlen** költségű
+  (`cost_usd_generation`/`_correctness_judge`/`_faithfulness_judge` mind
+  `null`, nem nulla fogyasztás) — Q01 mindhárom módban (naiv, lokalis,
+  globalis) és Q02 naiv, lokalis módban —, plusz **1 részleges**: Q02
+  globalis, ahol a két bírói lépés költsége ismert
+  (`cost_usd_correctness_judge`/`_faithfulness_judge`), csak a generálásé
+  (`cost_usd_generation`) `null`
+  (`diagnostics/2026-11-11-week5-b/results/cases/full/Q02-globalis.json`,
+  illetve a `results.jsonl` megfelelő sora). Ez összesen 5+1=6, egyezik a
+  riport "hiányzó költségű esetek: 6" sorával.
+- Ez **nem azonos** a megosztott `week5-b-cost-ledger.json` kumulatív
+  összegével: az a füstpróbát és a korábbi próbálkozások rögzített
+  fogyasztását is tartalmazza. A ledger mind a 747 bejegyzése ténylegesen mért
+  (`usage_known: true`) usage-adat, összesen **0,107356 USD** a közös 0,50
+  USD-s heti keretből — ez a teljes, kumulatív fogyasztás, nem kizárólag a
+  teljes futásé.
+- Az átlagos futásidő a riport szerint **23,948 s** — ez a `duration_seconds`
+  mező átlaga, azaz a generálási lépés ideje; a két bíró ideje külön,
+  esetenként (`duration_seconds_correctness_judge`,
+  `duration_seconds_faithfulness_judge`) van mentve, a riport ezt nem adja
+  össze a generálási idővel.
+
+Csak a teljes futás sorai szerepelnek fent (a `run_phase == "full"` sorok,
+`results.jsonl`); a 4. heti 39 választ és a füstpróba eseteit nem emeltük be
+— kivétel a fent külön jelölt, kumulatív költségkeret.
+
+## 5.3 Mit mondanak a számok
+
+Típusonként 5 kérdés van, ezért egy kérdés 20 százalékpont — az alábbiak
+irányt mutatnak, nem statisztikailag szignifikáns vagy általános
+algoritmus-rangsor:
+
+- **Simple** kérdéseken a naiv mód adott minden esetben helyes választ (5/5);
+  a lokalis 4/5, a globalis csak 1/5 (3 elutasítás) — egy globalis elutasítás
+  már 20 százalékpontot jelent.
+- **Multi-hop**-on a naiv és a lokalis azonos elosztást mutat (2 helyes, 2
+  hiányos, 1 elutasított); a globalis itt is gyengébb (1 helyes, 3 hiányos).
+- **Global** típuson egyik mód sem domináns; a globalis mind az 5 esetben
+  "hiányos"-at kapott.
+- **Konkrét szakadék-példa (teljes futásból):** Q08/lokalis esetében a
+  retrieval szigorú találatot adott (arány 1,0, minden kötelező
+  bizonyítékcsoport lefedve), a válasz a bíró szerint "helyes" (Bottas váltotta
+  Rosberget, Williamstől érkezett), **mégis faithfulness=0,5** (1
+  alátámasztott, 1 alá nem támasztott tényszerű állítás,
+  `results.jsonl`, Q08/lokalis sor). Ez azt mutatja, hogy a teljes,
+  előre azonosított bizonyíték megléte sem garantálja, hogy a válasz minden
+  állítása a kontextusból vezethető le.
+- A füstpróbában korábban megfigyelt, hasonló (alacsony retrieval + alacsony
+  faithfulness) Q07/lokalis-mintázat a teljes futásban **nem reprodukálódott**
+  — az újonnan generált Q07/lokalis válasz faithfulness-értéke a teljes
+  futásban 1,00 (`results.jsonl`); a korábbi megfigyelést nem vettük át
+  ellenőrzés nélkül.
+- Több "helyes" besorolású esetnél a retrieval-arány 0,0 (pl. Q09/naiv,
+  Q11/naiv), miközben a faithfulness 1,00 — ez nem feltétlenül keresési hiba:
+  azt jelenti, hogy "az előre azonosított bizonyíték nem szerepelt a
+  kontextusban", miközben más, a kontextusban ténylegesen jelen lévő forrás
+  alátámasztotta a választ.
+- A magas faithfulness-érték önmagában nem jelent teljesen helyes vagy teljes
+  választ — pl. Q09/globalis faithfulness=1,00, miközben a besorolása
+  "hiányos".
+
+## 5.4 Mit nem mér ez a mérés
+
+- A retrieval-lefedettség előre azonosított bizonyítékcsoportokra mér; az
+  alternatív forrásokat nem soroltuk fel teljes körűen. Nem mutatja, hogy a
+  modell ténylegesen felhasználta-e a chunkot. A sokcsoportos kérdéseken
+  (pl. Q10, Q12, Q13) a szigorú találat strukturálisan alacsony lehet.
+- A globális retrieval proxy a reduce-ba jutó részválaszok
+  forráskapcsolataiból készül, nem szövegmegmaradást igazol; a valódi
+  bizonyíték-lefedettség n/a.
+- A faithfulness-bíró és a helyesség-bíró ugyanaz a modell (`gpt-4o-mini`),
+  mint a generáló — saját-modell torzítás lehetséges
+  ([`docs/week5-b-megvalositas.md`](docs/week5-b-megvalositas.md), "Azonos
+  generáló/bíró modell torzítása"). A helyesség-bíró a rubrikához mér; a
+  rubrikán kívüli téves állítást nem feltétlenül veszi észre. A bírók
+  megbízhatóságát nem validáltuk emberi címkékkel.
+- Kérdéstípusonként egy kérdés 20 százalékpont; a golden set kicsi. A 13
+  `frozen_w4` kérdés fejlesztési készlet volt; a 2 `held_out` kérdés könnyű,
+  egy-chunkos tétel
+  ([`golden/week5-golden-set-jovahagyas.md`](golden/week5-golden-set-jovahagyas.md)). A
+  teljes 15 kérdéses eredmény nem tekinthető független tesztkészleten mért
+  eredménynek.
+- A rubrika a kézzel rögzített szabályokat követi
+  ([`golden/week5-golden-set-jovahagyas.md`](golden/week5-golden-set-jovahagyas.md)). A
+  "helyes" a rubrika szerinti helyességet jelenti, nem teljes
+  tényellenőrzést.
+- Három konkrét konfigurációt hasonlítottunk össze, eltérő kontextusmérettel
+  és reprezentációval, nem izolált algoritmusokat. A kontextusméret
+  karakteralapú becslés, nincs külön tokenmérés.
+- A globális mód a 4. heti közösségi riportokból dolgozik; ezek tömörítése
+  információt veszíthet, az izolált csúcsok nem kerültek riportba — ezt a
+  mérés nem javítja.
+- A Langfuse-feltöltés utólagos; a Hobby csomag 30 napos történeti
+  hozzáférést ad (forrás: https://langfuse.com/pricing), ezért a helyi
+  `results.jsonl` az elsődleges archívum.
+- A generálás és a két bíró költsége a közös nyilvántartásban szerepel, de
+  esetenként teljes költségadat csak a javítás után megfelelően rögzített
+  szakaszokból áll rendelkezésre — lásd fent, 39/45 teljes, 6 részleges vagy
+  ismeretlen. A hiányzó esetenkénti adatot ne tekintsd nulla költségnek.
+
+## 5.5 Újrafuttatás és fájlok
+
+```powershell
+uv run python diagnostics/2026-11-11-week5-b/measure.py run --smoke
+uv run python diagnostics/2026-11-11-week5-b/measure.py run --full
+```
+
+A megfelelő parancs ismételt kiadása a mentett állapotból folytatja az adott
+futást; a kész szakaszokat nem futtatja újra. A smoke és a full külön
+állapotot és esetfájlokat használ, ezért a full nem használja újra
+automatikusan a smoke válaszait.
+
+A futás **fizetős OpenAI-hívásokat indít, és Langfuse-ba is feltölt**. A közös
+0,50 USD heti keret a
+[`results/week5-b-cost-ledger.json`](diagnostics/2026-11-11-week5-b/results/week5-b-cost-ledger.json)-ból
+követhető; a korábbi fogyasztás új futás indításakor nem nullázódik.
+
+Fő fájlok:
+- [`diagnostics/2026-11-11-week5-b/`](diagnostics/2026-11-11-week5-b/) — mérési
+  kód és bírópromptok (`judges/`);
+- a ténylegesen használt golden set:
+  [`golden/week5-golden-set-v1-approval-draft.jsonl`](golden/week5-golden-set-v1-approval-draft.jsonl);
+- [`diagnostics/2026-11-11-week5-b/results/`](diagnostics/2026-11-11-week5-b/results/)
+  — `results.jsonl`, riportok, `week5-b-cost-ledger.json`;
+- `diagnostics/2026-11-11-week5-b/state/` — folytatási állapot;
+- [`docs/week5-b-megvalositas.md`](docs/week5-b-megvalositas.md) —
+  megvalósítási jegyzetek és korlátok.
+
+---
+
 # 4. házifeladat — Közösségek és globális keresés
 
 Ez a repó a GraphRAG kurzus 4. heti projektfeladatának megvalósítását

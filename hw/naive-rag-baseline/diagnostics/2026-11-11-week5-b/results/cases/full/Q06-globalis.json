@@ -1,0 +1,367 @@
+{
+ "question_id": "Q06",
+ "mode": "globalis",
+ "run_phase": "full",
+ "question_type": "multi-hop",
+ "question_status": "frozen_w4",
+ "question_text": "Which two drivers in the corpus hold the record of seven World Championships, and with which teams did each of them win their titles?",
+ "expected_answer": "Schumacher: Benetton (1994, 1995) és Ferrari (2000–2004); Hamilton: McLaren (2008) és Mercedes (2014–15, 2017–20).",
+ "golden_set_version": "v1-approval-draft",
+ "answer": "The two drivers who hold the record of seven World Championships are Michael Schumacher and Lewis Hamilton. Michael Schumacher won his titles with Scuderia Ferrari, while Lewis Hamilton's seventh title was won in 2020, but the team he drove for during his championship wins is not specified in the provided answers.",
+ "refused": false,
+ "model_called": true,
+ "actual_context": "{\n \"question\": \"Which two drivers in the corpus hold the record of seven World Championships, and with which teams did each of them win their titles?\",\n \"partial_answers\": [\n  {\n   \"id\": \"4\",\n   \"usefulness_score\": 50,\n   \"text\": \"Michael Schumacher drove for Scuderia Ferrari from 1996 to 2006, achieving significant success during this period. Kimi Räikkönen drove for Scuderia Ferrari during multiple seasons, including winning the World Championship in 2007.\"\n  },\n  {\n   \"id\": \"111\",\n   \"usefulness_score\": 50,\n   \"text\": \"Lewis Hamilton won the 2020 World Drivers' Championship, marking his seventh title.\"\n  },\n  {\n   \"id\": \"15\",\n   \"usefulness_score\": 30,\n   \"text\": \"Sebastian Vettel drove for Red Bull Racing and won multiple championships during his tenure.\"\n  },\n  {\n   \"id\": \"205\",\n   \"usefulness_score\": 20,\n   \"text\": \"Lewis Hamilton and Michael Schumacher are among the winners of the Belgian Grand Prix.\"\n  }\n ]\n}\n",
+ "actual_chunk_ids": [
+  "driver-michael-schumacher#1",
+  "driver-michael-schumacher#18",
+  "driver-michael-schumacher#19",
+  "driver-michael-schumacher#2",
+  "driver-michael-schumacher#20",
+  "driver-michael-schumacher#21",
+  "driver-michael-schumacher#23",
+  "driver-michael-schumacher#25",
+  "driver-michael-schumacher#27",
+  "driver-michael-schumacher#28",
+  "driver-michael-schumacher#29",
+  "driver-michael-schumacher#31",
+  "driver-michael-schumacher#32",
+  "driver-michael-schumacher#35",
+  "driver-michael-schumacher#37",
+  "driver-michael-schumacher#38",
+  "driver-michael-schumacher#39",
+  "driver-michael-schumacher#40",
+  "driver-michael-schumacher#41",
+  "driver-michael-schumacher#42",
+  "driver-michael-schumacher#43",
+  "driver-michael-schumacher#54",
+  "driver-michael-schumacher#58",
+  "driver-michael-schumacher#74",
+  "driver-michael-schumacher#77",
+  "reference-list-of-formula-one-world-drivers-champions#1",
+  "team-scuderia-ferrari#1",
+  "team-williams-racing#69",
+  "driver-kimi-raikkonen#2",
+  "driver-kimi-raikkonen#24",
+  "driver-kimi-raikkonen#25",
+  "driver-kimi-raikkonen#26",
+  "driver-kimi-raikkonen#27",
+  "driver-kimi-raikkonen#28",
+  "driver-kimi-raikkonen#29",
+  "driver-kimi-raikkonen#30",
+  "driver-kimi-raikkonen#32",
+  "driver-kimi-raikkonen#33",
+  "driver-kimi-raikkonen#34",
+  "driver-kimi-raikkonen#35",
+  "driver-kimi-raikkonen#36",
+  "driver-kimi-raikkonen#37",
+  "driver-kimi-raikkonen#38",
+  "driver-kimi-raikkonen#39",
+  "driver-kimi-raikkonen#40",
+  "driver-kimi-raikkonen#41",
+  "driver-kimi-raikkonen#43",
+  "driver-kimi-raikkonen#44",
+  "driver-kimi-raikkonen#46",
+  "driver-kimi-raikkonen#47",
+  "driver-kimi-raikkonen#48",
+  "driver-kimi-raikkonen#74",
+  "driver-kimi-raikkonen#75",
+  "driver-kimi-raikkonen#77",
+  "driver-kimi-raikkonen#78",
+  "driver-kimi-raikkonen#79",
+  "driver-kimi-raikkonen#80",
+  "driver-kimi-raikkonen#81",
+  "driver-kimi-raikkonen#84",
+  "driver-lewis-hamilton#79",
+  "driver-sebastian-vettel#0",
+  "driver-sebastian-vettel#13",
+  "driver-sebastian-vettel#14",
+  "driver-sebastian-vettel#2",
+  "driver-sebastian-vettel#20",
+  "driver-sebastian-vettel#21",
+  "team-red-bull-racing#19",
+  "team-renault-in-formula-one#61",
+  "driver-lewis-hamilton#28",
+  "driver-michael-schumacher#10",
+  "driver-michael-schumacher#17",
+  "driver-michael-schumacher#47",
+  "driver-michael-schumacher#49",
+  "driver-michael-schumacher#7",
+  "season-2020-formula-one-world-championship#38",
+  "team-mercedes-benz-in-formula-one#28",
+  "team-red-bull-racing#27",
+  "team-williams-racing#9"
+ ],
+ "chunk_ids_traceable": true,
+ "is_proxy_retrieval": true,
+ "proxy_note": "candidate_source_chunk_ids from the reduce step's actual basis (basis_paths), not the final answer's citation_chain -- a retrieval proxy, not verified per-chunk coverage",
+ "error": null,
+ "duration_seconds": 44.063,
+ "raw": {
+  "basis_paths": [
+   "4",
+   "111",
+   "15",
+   "205"
+  ],
+  "map_result_count": 37,
+  "reduce_a": {
+   "question_id": "Q06",
+   "variant": "A",
+   "requested_model": "gpt-4o-mini",
+   "basis_paths": [
+    "4",
+    "111",
+    "15",
+    "205"
+   ],
+   "returned_model": "gpt-4o-mini-2024-07-18",
+   "usage_prompt_tokens": 466,
+   "usage_completion_tokens": 81,
+   "finish_reason": "stop",
+   "duration_seconds": 1.781,
+   "measured_cost_usd": 0.000118,
+   "valid_json": true,
+   "validation": {
+    "valid_structure": true,
+    "problems": [],
+    "unknown_partial_answer_ids": []
+   },
+   "answer": "The two drivers who hold the record of seven World Championships are Michael Schumacher and Lewis Hamilton. Michael Schumacher won his titles with Scuderia Ferrari, while Lewis Hamilton's seventh title was won in 2020, but the team he drove for during his championship wins is not specified in the provided answers.",
+   "cited_partial_answer_ids": [
+    "4",
+    "111"
+   ],
+   "citation_chain": [
+    {
+     "community_path": "4",
+     "partial_answer": "Michael Schumacher drove for Scuderia Ferrari from 1996 to 2006, achieving significant success during this period. Kimi Räikkönen drove for Scuderia Ferrari during multiple seasons, including winning the World Championship in 2007.",
+     "usefulness_score": 50,
+     "statements": [
+      {
+       "statement_id": "4#1",
+       "statement": "Michael Schumacher drove for Scuderia Ferrari from 1996 to 2006, achieving significant success during this period.",
+       "evidence_ids": [
+        "E012",
+        "E013",
+        "E014"
+       ],
+       "candidate_source_chunk_ids": [
+        "driver-michael-schumacher#1",
+        "driver-michael-schumacher#18",
+        "driver-michael-schumacher#19",
+        "driver-michael-schumacher#2",
+        "driver-michael-schumacher#20",
+        "driver-michael-schumacher#21",
+        "driver-michael-schumacher#23",
+        "driver-michael-schumacher#25",
+        "driver-michael-schumacher#27",
+        "driver-michael-schumacher#28",
+        "driver-michael-schumacher#29",
+        "driver-michael-schumacher#31",
+        "driver-michael-schumacher#32",
+        "driver-michael-schumacher#35",
+        "driver-michael-schumacher#37",
+        "driver-michael-schumacher#38",
+        "driver-michael-schumacher#39",
+        "driver-michael-schumacher#40",
+        "driver-michael-schumacher#41",
+        "driver-michael-schumacher#42",
+        "driver-michael-schumacher#43",
+        "driver-michael-schumacher#54",
+        "driver-michael-schumacher#58",
+        "driver-michael-schumacher#74",
+        "driver-michael-schumacher#77",
+        "reference-list-of-formula-one-world-drivers-champions#1",
+        "team-scuderia-ferrari#1",
+        "team-williams-racing#69"
+       ]
+      },
+      {
+       "statement_id": "4#2",
+       "statement": "Kimi Räikkönen drove for Scuderia Ferrari during multiple seasons, including winning the World Championship in 2007.",
+       "evidence_ids": [
+        "E001",
+        "E002",
+        "E006"
+       ],
+       "candidate_source_chunk_ids": [
+        "driver-kimi-raikkonen#2",
+        "driver-kimi-raikkonen#24",
+        "driver-kimi-raikkonen#25",
+        "driver-kimi-raikkonen#26",
+        "driver-kimi-raikkonen#27",
+        "driver-kimi-raikkonen#28",
+        "driver-kimi-raikkonen#29",
+        "driver-kimi-raikkonen#30",
+        "driver-kimi-raikkonen#32",
+        "driver-kimi-raikkonen#33",
+        "driver-kimi-raikkonen#34",
+        "driver-kimi-raikkonen#35",
+        "driver-kimi-raikkonen#36",
+        "driver-kimi-raikkonen#37",
+        "driver-kimi-raikkonen#38",
+        "driver-kimi-raikkonen#39",
+        "driver-kimi-raikkonen#40",
+        "driver-kimi-raikkonen#41",
+        "driver-kimi-raikkonen#43",
+        "driver-kimi-raikkonen#44",
+        "driver-kimi-raikkonen#46",
+        "driver-kimi-raikkonen#47",
+        "driver-kimi-raikkonen#48",
+        "driver-kimi-raikkonen#74",
+        "driver-kimi-raikkonen#75",
+        "driver-kimi-raikkonen#77",
+        "driver-kimi-raikkonen#78",
+        "driver-kimi-raikkonen#79",
+        "driver-kimi-raikkonen#80",
+        "driver-kimi-raikkonen#81",
+        "driver-kimi-raikkonen#84"
+       ]
+      }
+     ]
+    },
+    {
+     "community_path": "111",
+     "partial_answer": "Lewis Hamilton won the 2020 World Drivers' Championship, marking his seventh title.",
+     "usefulness_score": 50,
+     "statements": [
+      {
+       "statement_id": "111#2",
+       "statement": "Lewis Hamilton won the 2020 World Drivers' Championship, marking his seventh title.",
+       "evidence_ids": [
+        "N106",
+        "E111"
+       ],
+       "candidate_source_chunk_ids": [
+        "driver-lewis-hamilton#79"
+       ]
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "duration_seconds_generation": 44.063,
+ "cost_usd_generation": 0.003668,
+ "retrieval": {
+  "question_id": "Q06",
+  "status": "scored",
+  "is_proxy": true,
+  "proxy_note": "candidate_source_chunk_ids from the reduce step's actual basis (basis_paths), not the final answer's citation_chain -- a retrieval proxy, not verified per-chunk coverage",
+  "untraceable_reason": null,
+  "hit_count": 1,
+  "group_count": 5,
+  "ratio": 0.2,
+  "strict_all_hit": false,
+  "groups": [
+   {
+    "group_id": "Q06-e1",
+    "criterion": "Q06-c1",
+    "role": null,
+    "hit": false,
+    "any_of_chunk_ids": [
+     "driver-lewis-hamilton#0",
+     "driver-michael-schumacher#0"
+    ],
+    "matched_chunk_ids": []
+   },
+   {
+    "group_id": "Q06-e2",
+    "criterion": "Q06-c2",
+    "role": null,
+    "hit": false,
+    "any_of_chunk_ids": [
+     "driver-michael-schumacher#12",
+     "driver-michael-schumacher#16"
+    ],
+    "matched_chunk_ids": []
+   },
+   {
+    "group_id": "Q06-e3",
+    "criterion": "Q06-c3",
+    "role": null,
+    "hit": true,
+    "any_of_chunk_ids": [
+     "driver-michael-schumacher#1",
+     "team-scuderia-ferrari#1"
+    ],
+    "matched_chunk_ids": [
+     "driver-michael-schumacher#1",
+     "team-scuderia-ferrari#1"
+    ]
+   },
+   {
+    "group_id": "Q06-e4",
+    "criterion": "Q06-c4",
+    "role": null,
+    "hit": false,
+    "any_of_chunk_ids": [
+     "reference-list-of-formula-one-world-drivers-champions#0"
+    ],
+    "matched_chunk_ids": []
+   },
+   {
+    "group_id": "Q06-e5",
+    "criterion": "Q06-c5",
+    "role": null,
+    "hit": false,
+    "any_of_chunk_ids": [
+     "driver-lewis-hamilton#1",
+     "reference-list-of-formula-one-world-drivers-champions#0"
+    ],
+    "matched_chunk_ids": []
+   }
+  ]
+ },
+ "duration_seconds_correctness_judge": 4.047,
+ "cost_usd_correctness_judge": 0.000303,
+ "correctness": {
+  "status": "scored",
+  "label": "hiányos",
+  "parsed": {
+   "criteria": [
+    {
+     "criterion_id": "Q06-c1",
+     "verdict": "met",
+     "explanation": "The answer correctly identifies Michael Schumacher and Lewis Hamilton as the two joint seven-title record holders."
+    },
+    {
+     "criterion_id": "Q06-c2",
+     "verdict": "not_met",
+     "explanation": "The answer does not mention that Schumacher won titles with Benetton."
+    },
+    {
+     "criterion_id": "Q06-c3",
+     "verdict": "not_met",
+     "explanation": "The answer does not mention that Schumacher won titles with Ferrari."
+    },
+    {
+     "criterion_id": "Q06-c4",
+     "verdict": "not_met",
+     "explanation": "The answer does not mention that Hamilton won a title with McLaren."
+    },
+    {
+     "criterion_id": "Q06-c5",
+     "verdict": "not_met",
+     "explanation": "The answer does not mention that Hamilton won titles with Mercedes."
+    }
+   ],
+   "refused": false,
+   "rubric_conflicts": [],
+   "reasoning": "While the answer correctly identifies the two drivers, it fails to provide the required information about the teams with which they won their titles, resulting in multiple unmet criteria."
+  },
+  "usage_prompt_tokens": 897,
+  "usage_completion_tokens": 281
+ },
+ "duration_seconds_faithfulness_judge": 11.453,
+ "cost_usd_faithfulness_judge": 0.000208,
+ "faithfulness": {
+  "status": "scored",
+  "score": 1.0,
+  "supported_count": 3,
+  "unsupported_count": 0,
+  "unclear_count": 0
+ },
+ "cost_usd": 0.004179,
+ "cost_source": "ledger_delta"
+}
