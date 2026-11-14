@@ -1,0 +1,29 @@
+{
+ "prompt_version": "riportprompt-v3",
+ "community_id": "62",
+ "reporting_level": 0,
+ "nodes": [
+  {
+   "entity_key": "Car:fw21b",
+   "text": "Car:fw21b (FW21B): A car model fielded by Williams.",
+   "record_id": "N001"
+  },
+  {
+   "entity_key": "PowerUnit:bmw",
+   "text": "PowerUnit:bmw (BMW): Engine supplier for the Williams FW21B.\nAchieved a turbocharged engine reading of 5.5 bar in 1986.\nAn engine manufacturer that supplied engines to Williams Racing.\nAn engine supplier for Williams Racing.\nEngine supplier for Williams in the 2000 season.",
+   "record_id": "N002"
+  }
+ ],
+ "domain_relationships": [
+  {
+   "source": "Car:fw21b",
+   "rel_type": "POWERED_BY",
+   "target": "PowerUnit:bmw",
+   "from_year": null,
+   "to_year": null,
+   "role": null,
+   "text": "Car:fw21b -[POWERED_BY]-> PowerUnit:bmw: The FW21B car used a BMW engine.",
+   "record_id": "E001"
+  }
+ ]
+}

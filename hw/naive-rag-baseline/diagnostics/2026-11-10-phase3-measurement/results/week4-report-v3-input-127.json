@@ -1,0 +1,29 @@
+{
+ "prompt_version": "riportprompt-v3",
+ "community_id": "127",
+ "reporting_level": 0,
+ "nodes": [
+  {
+   "entity_key": "Car:porsche 963",
+   "text": "Car:porsche 963 (Porsche 963): A car model fielded by JDC–Miller MotorSports in the Petit Le Mans.\nThe car used by Team Jota in the World Endurance Championship.",
+   "record_id": "N001"
+  },
+  {
+   "entity_key": "Team:jdc–miller motorsports",
+   "text": "Team:jdc–miller motorsports (JDC–Miller MotorSports): A racing team that entered the Porsche 963 in the Petit Le Mans.",
+   "record_id": "N002"
+  }
+ ],
+ "domain_relationships": [
+  {
+   "source": "Team:jdc–miller motorsports",
+   "rel_type": "FIELDED",
+   "target": "Car:porsche 963",
+   "from_year": null,
+   "to_year": null,
+   "role": null,
+   "text": "Team:jdc–miller motorsports -[FIELDED]-> Car:porsche 963: JDC–Miller MotorSports entered the Porsche 963 in the Petit Le Mans.",
+   "record_id": "E001"
+  }
+ ]
+}

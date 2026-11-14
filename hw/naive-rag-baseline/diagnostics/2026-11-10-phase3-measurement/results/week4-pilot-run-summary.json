@@ -1,0 +1,57 @@
+{
+ "run_id": "week4-leiden-elokeszitett-6f05327d7d88ebf0",
+ "prompt_version": "riportprompt-v1",
+ "requested_model": "gpt-4o-mini",
+ "planned_calls": 3,
+ "completed_calls": 3,
+ "halted_reason": "invalid report structure or out-of-input citation on largest: {'valid_structure': False, 'problems': [], 'out_of_input_ids': ['season-2022-formula-one-world-championship#0', 'season-2022-formula-one-world-championship#1', 'season-2023-formula-one-world-championship#0', 'season-2023-formula-one-world-championship#1', 'season-2024-formula-one-world-championship#0', 'season-2024-formula-one-world-championship#1'], 'note': \"formal validation only -- not a judgement of the report's factual correctness\"}",
+ "not_run": [],
+ "results": [
+  {
+   "label": "smallest",
+   "community_id": "8",
+   "estimated_input_tokens": 211,
+   "usage_prompt_tokens": 659,
+   "usage_completion_tokens": 98,
+   "finish_reason": "stop",
+   "duration_seconds": 3.437,
+   "valid_json": true,
+   "valid_structure": true,
+   "out_of_input_ids": [],
+   "error": null
+  },
+  {
+   "label": "median",
+   "community_id": "205",
+   "estimated_input_tokens": 4605,
+   "usage_prompt_tokens": 6205,
+   "usage_completion_tokens": 320,
+   "finish_reason": "stop",
+   "duration_seconds": 6.187,
+   "valid_json": true,
+   "valid_structure": true,
+   "out_of_input_ids": [],
+   "error": null
+  },
+  {
+   "label": "largest",
+   "community_id": "3",
+   "estimated_input_tokens": 23975,
+   "usage_prompt_tokens": 32773,
+   "usage_completion_tokens": 392,
+   "finish_reason": "stop",
+   "duration_seconds": 9.656,
+   "valid_json": true,
+   "valid_structure": false,
+   "out_of_input_ids": [
+    "season-2022-formula-one-world-championship#0",
+    "season-2022-formula-one-world-championship#1",
+    "season-2023-formula-one-world-championship#0",
+    "season-2023-formula-one-world-championship#1",
+    "season-2024-formula-one-world-championship#0",
+    "season-2024-formula-one-world-championship#1"
+   ],
+   "error": null
+  }
+ ]
+}

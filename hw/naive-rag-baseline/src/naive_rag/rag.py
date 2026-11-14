@@ -8,6 +8,7 @@ from __future__ import annotations
 
 from collections.abc import Iterator
 from functools import lru_cache
+from typing import Callable
 
 from langchain_core.documents import Document
 from langchain_core.prompts import ChatPromptTemplate
@@ -57,9 +58,14 @@ def format_context(sources: list[dict]) -> str:
 
 
 class NaiveRAG:
-    def __init__(self) -> None:
+    def __init__(self, *, chat_call: Callable[[list], str] | None = None) -> None:
         self.settings = get_settings()
         self.store = get_vector_store()
+        # Optional injection point for a logging (or otherwise wrapped)
+        # chat call. None preserves the exact previous behaviour
+        # (`get_chat_model().invoke(messages).content`, called fresh each
+        # time) -- existing callers of NaiveRAG()/get_rag() are unaffected.
+        self._chat_call = chat_call
 
     def retrieve(self, question: str, k: int | None = None) -> list[dict]:
         k = k or self.settings.top_k
@@ -70,7 +76,10 @@ class NaiveRAG:
         sources = self.retrieve(question, k)
         messages = PROMPT.format_messages(
             context=format_context(sources), question=question)
-        answer = get_chat_model().invoke(messages).content
+        if self._chat_call is not None:
+            answer = self._chat_call(messages)
+        else:
+            answer = get_chat_model().invoke(messages).content
         return {"question": question, "answer": answer, "sources": sources}
 
     def stream(self, question: str, k: int | None = None

@@ -1,0 +1,149 @@
+{
+ "prompt_version": "riportprompt-v3",
+ "community_id": "331",
+ "reporting_level": 0,
+ "nodes": [
+  {
+   "entity_key": "GrandPrix:monaco eprix",
+   "text": "GrandPrix:monaco eprix (Monaco ePrix): Hughes qualified in second at the Monaco ePrix.\nAn electric race where Bird suffered a hand injury.",
+   "record_id": "N001"
+  },
+  {
+   "entity_key": "Driver:hughes",
+   "text": "Driver:hughes (Hughes): Hughes qualified in second at the Monaco ePrix and finished the race in fifth place.\nA driver who raced for McLaren.",
+   "record_id": "N002"
+  },
+  {
+   "entity_key": "Driver:taylor barnard",
+   "text": "Driver:taylor barnard (Taylor Barnard): A reserve and development driver for McLaren.",
+   "record_id": "N003"
+  },
+  {
+   "entity_key": "RaceResult:hughes at monaco eprix",
+   "text": "RaceResult:hughes at monaco eprix (Hughes at Monaco ePrix): Hughes qualified in second at the Monaco ePrix.",
+   "record_id": "N004"
+  },
+  {
+   "entity_key": "RaceResult:rast at monaco eprix",
+   "text": "RaceResult:rast at monaco eprix (Rast at Monaco ePrix): Rast finished in seventeenth at the Monaco ePrix.",
+   "record_id": "N005"
+  },
+  {
+   "entity_key": "RaceResult:taylor barnard at berlin eprix",
+   "text": "RaceResult:taylor barnard at berlin eprix (Taylor Barnard at Berlin ePrix): Barnard finished Race 1 in tenth at the Berlin ePrix.",
+   "record_id": "N006"
+  },
+  {
+   "entity_key": "RaceResult:taylor barnard at monaco eprix",
+   "text": "RaceResult:taylor barnard at monaco eprix (Taylor Barnard at Monaco ePrix): Barnard finished his debut race at the Monaco ePrix.",
+   "record_id": "N007"
+  },
+  {
+   "entity_key": "Driver:rast",
+   "text": "Driver:rast (Rast): Rast finished in seventeenth after suffering from multiple collisions.\nA driver who left McLaren.",
+   "record_id": "N008"
+  },
+  {
+   "entity_key": "GrandPrix:berlin eprix",
+   "text": "GrandPrix:berlin eprix (Berlin ePrix): An electric race where Barnard finished Race 1 in tenth.",
+   "record_id": "N009"
+  },
+  {
+   "entity_key": "Team:maserati msg racing",
+   "text": "Team:maserati msg racing (Maserati MSG Racing): A Formula E team that Hughes joined.",
+   "record_id": "N010"
+  }
+ ],
+ "domain_relationships": [
+  {
+   "source": "Driver:hughes",
+   "rel_type": "ACHIEVED",
+   "target": "RaceResult:hughes at monaco eprix",
+   "from_year": null,
+   "to_year": null,
+   "role": null,
+   "text": "Driver:hughes -[ACHIEVED]-> RaceResult:hughes at monaco eprix: Hughes qualified in second at the Monaco ePrix.",
+   "record_id": "E001"
+  },
+  {
+   "source": "Driver:hughes",
+   "rel_type": "DROVE_FOR",
+   "target": "Team:maserati msg racing",
+   "from_year": 2024,
+   "to_year": null,
+   "role": null,
+   "text": "Driver:hughes -[DROVE_FOR]-> Team:maserati msg racing (from_year=2024): Hughes left McLaren to join Maserati MSG Racing.",
+   "record_id": "E002"
+  },
+  {
+   "source": "Driver:rast",
+   "rel_type": "ACHIEVED",
+   "target": "RaceResult:rast at monaco eprix",
+   "from_year": null,
+   "to_year": null,
+   "role": null,
+   "text": "Driver:rast -[ACHIEVED]-> RaceResult:rast at monaco eprix: Rast finished in seventeenth at the Monaco ePrix.",
+   "record_id": "E003"
+  },
+  {
+   "source": "Driver:taylor barnard",
+   "rel_type": "ACHIEVED",
+   "target": "RaceResult:taylor barnard at berlin eprix",
+   "from_year": null,
+   "to_year": null,
+   "role": null,
+   "text": "Driver:taylor barnard -[ACHIEVED]-> RaceResult:taylor barnard at berlin eprix: Barnard finished Race 1 in tenth at the Berlin ePrix.",
+   "record_id": "E004"
+  },
+  {
+   "source": "Driver:taylor barnard",
+   "rel_type": "ACHIEVED",
+   "target": "RaceResult:taylor barnard at monaco eprix",
+   "from_year": null,
+   "to_year": null,
+   "role": null,
+   "text": "Driver:taylor barnard -[ACHIEVED]-> RaceResult:taylor barnard at monaco eprix: Barnard finished his debut race at the Monaco ePrix.",
+   "record_id": "E005"
+  },
+  {
+   "source": "RaceResult:hughes at monaco eprix",
+   "rel_type": "AT_RACE",
+   "target": "GrandPrix:monaco eprix",
+   "from_year": null,
+   "to_year": null,
+   "role": null,
+   "text": "RaceResult:hughes at monaco eprix -[AT_RACE]-> GrandPrix:monaco eprix: Hughes qualified in second at the Monaco ePrix.",
+   "record_id": "E006"
+  },
+  {
+   "source": "RaceResult:rast at monaco eprix",
+   "rel_type": "AT_RACE",
+   "target": "GrandPrix:monaco eprix",
+   "from_year": null,
+   "to_year": null,
+   "role": null,
+   "text": "RaceResult:rast at monaco eprix -[AT_RACE]-> GrandPrix:monaco eprix: Rast finished in seventeenth at the Monaco ePrix.",
+   "record_id": "E007"
+  },
+  {
+   "source": "RaceResult:taylor barnard at berlin eprix",
+   "rel_type": "AT_RACE",
+   "target": "GrandPrix:berlin eprix",
+   "from_year": null,
+   "to_year": null,
+   "role": null,
+   "text": "RaceResult:taylor barnard at berlin eprix -[AT_RACE]-> GrandPrix:berlin eprix: Barnard finished Race 1 in tenth at the Berlin ePrix.",
+   "record_id": "E008"
+  },
+  {
+   "source": "RaceResult:taylor barnard at monaco eprix",
+   "rel_type": "AT_RACE",
+   "target": "GrandPrix:monaco eprix",
+   "from_year": null,
+   "to_year": null,
+   "role": null,
+   "text": "RaceResult:taylor barnard at monaco eprix -[AT_RACE]-> GrandPrix:monaco eprix: Barnard finished his debut race at the Monaco ePrix.",
+   "record_id": "E009"
+  }
+ ]
+}

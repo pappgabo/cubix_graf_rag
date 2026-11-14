@@ -1,0 +1,29 @@
+{
+ "prompt_version": "riportprompt-v3",
+ "community_id": "259",
+ "reporting_level": 0,
+ "nodes": [
+  {
+   "entity_key": "Circuit:watkins glen international",
+   "text": "Circuit:watkins glen international (Watkins Glen International): The circuit where the 2022 Go Bowling at The Glen took place.",
+   "record_id": "N001"
+  },
+  {
+   "entity_key": "GrandPrix:2022 go bowling at the glen",
+   "text": "GrandPrix:2022 go bowling at the glen (2022 Go Bowling at The Glen): A NASCAR race where Kimi Räikkönen made his Cup Series debut.",
+   "record_id": "N002"
+  }
+ ],
+ "domain_relationships": [
+  {
+   "source": "GrandPrix:2022 go bowling at the glen",
+   "rel_type": "HELD_AT",
+   "target": "Circuit:watkins glen international",
+   "from_year": null,
+   "to_year": null,
+   "role": null,
+   "text": "GrandPrix:2022 go bowling at the glen -[HELD_AT]-> Circuit:watkins glen international: The 2022 Go Bowling at The Glen was held at Watkins Glen International.",
+   "record_id": "E001"
+  }
+ ]
+}

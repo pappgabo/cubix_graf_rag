@@ -1,0 +1,32 @@
+{
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are a question answering assistant. Answer the question using ONLY the context below. Each context passage starts with a tag like [S1]. Cite the passages you used in the answer, e.g. [S1][S3]. If the context does not contain the answer, say that you cannot answer from the provided documents."
+  },
+  {
+   "role": "user",
+   "content": "Context:\n[S1] (None, page 6)\nManufacturers' and Drivers' Championships.\nPersonnel and statistics\nFormula One results\nAs a constructor, Ferrari has achieved the following statistics:\nConstructors' Championship winning percentage: 23.5%\nDrivers' Championship winning percentage: 19.7%\nWinning percentage: 21.9%\nFormula One records\nFerrari has achieved unparalleled success in Formula One and holds many significant records as both a constructor and\nan engine manufacturer (all numbers are based on World Championship events only). Ferrari is the most successful\nFormula One engine manufacturer with 251 wins, having achieved a single non-Ferrari victory with Scuderia Toro Rosso\nat the 2008 Italian Grand Prix, as well as one Ferrari privateer win at the 1961 French Grand Prix.\nDrivers' Champions\nNine  drivers  have  won  the  Drivers'  Championship  while  driving  for  Ferrari,  winning  a  total  of  fifteen  Drivers'\nChampionships.\nTeam principals / sporting directors\n Federico Giberti (1950–1951)\n Nello Ugolini (1952–1955)\n\n[S2] (None, section: Formula One > Drivers)\nAs of 2025, a total of 35 separate drivers have won the World Drivers' Championship, with Michael Schumacher and Lewis Hamilton holding the record for most championships, each with seven. Jochen Rindt is the only posthumous World Champion, after his points total was not surpassed despite his fatal accident at the 1970 Italian Grand Prix, with 4 races remaining in the season. Drivers from the United Kingdom have been the most successful in the sport, with 21 championships among 11 drivers and 331 wins as of 2026.\n\n[S3] (None, section: Formula One results > As a chassis constructor)\n## Formula One results  \n### As a chassis constructor\nAs a constructor, Renault have achieved the following statistics:  \nConstructors' Championships winning percentage: 8%\nDrivers' Championships winning percentage: 8%\nWinning percentage: 8.7%\n\n[S4] (None, section: sheet Drivers in corpus)\nSheet: Drivers in corpus\nDriver | Nationality | World titles (as of 2024) | Main constructors\nLewis Hamilton | British | 7 | McLaren; Mercedes\nMax Verstappen | Dutch | 4 | Red Bull Racing\nSebastian Vettel | German | 4 | Red Bull Racing; Ferrari\nFernando Alonso | Spanish | 2 | Renault; McLaren\nMichael Schumacher | German | 7 | Benetton; Ferrari\nKimi Räikkönen | Finnish | 1 | McLaren; Ferrari\nNico Rosberg | German | 1 | Williams; Mercedes\nJenson Button | British | 1 | BAR/Honda; Brawn; McLaren\nCharles Leclerc | Monégasque | 0 | Sauber; Ferrari\nValtteri Bottas | Finnish | 0 | Williams; Mercedes\n\nQuestion: Which constructor has won the most Drivers' Championships according to the documents, and how many titles is that?"
+  }
+ ],
+ "messages_sha256": "8539f186ec029a1aa0da761b37636b7188346649a0dc92fadb9e1d67204e2f14",
+ "hash_algorithm": "sha256",
+ "hash_encoding": "utf-8",
+ "params": {
+  "model": "gpt-4o-mini",
+  "temperature": 0.0,
+  "max_tokens": 900,
+  "response_format": null,
+  "max_retries": 0
+ },
+ "raw_response": "According to the documents, Ferrari has had nine drivers win the Drivers' Championship, totaling fifteen Drivers' Championships [S1].",
+ "returned_model": "gpt-4o-mini-2024-07-18",
+ "usage_prompt_tokens": 714,
+ "usage_completion_tokens": 25,
+ "finish_reason": "stop",
+ "duration_seconds": 1.531,
+ "error": null,
+ "local_metadata": {
+  "question_id": "naiv-Q11"
+ }
+}

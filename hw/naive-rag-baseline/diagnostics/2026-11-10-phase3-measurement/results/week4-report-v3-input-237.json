@@ -1,0 +1,29 @@
+{
+ "prompt_version": "riportprompt-v3",
+ "community_id": "237",
+ "reporting_level": 0,
+ "nodes": [
+  {
+   "entity_key": "Circuit:port imperial street circuit",
+   "text": "Circuit:port imperial street circuit (Port Imperial Street Circuit): The circuit where the Grand Prix of America was set to be held.",
+   "record_id": "N001"
+  },
+  {
+   "entity_key": "GrandPrix:grand prix of america",
+   "text": "GrandPrix:grand prix of america (Grand Prix of America): A race set to be held for the first time at the Port Imperial Street Circuit in New Jersey.",
+   "record_id": "N002"
+  }
+ ],
+ "domain_relationships": [
+  {
+   "source": "GrandPrix:grand prix of america",
+   "rel_type": "HELD_AT",
+   "target": "Circuit:port imperial street circuit",
+   "from_year": null,
+   "to_year": null,
+   "role": null,
+   "text": "GrandPrix:grand prix of america -[HELD_AT]-> Circuit:port imperial street circuit: The Grand Prix of America was set to be held at the Port Imperial Street Circuit.",
+   "record_id": "E001"
+  }
+ ]
+}

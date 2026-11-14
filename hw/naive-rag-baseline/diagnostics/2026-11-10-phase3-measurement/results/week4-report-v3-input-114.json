@@ -1,0 +1,29 @@
+{
+ "prompt_version": "riportprompt-v3",
+ "community_id": "114",
+ "reporting_level": 0,
+ "nodes": [
+  {
+   "entity_key": "Car:mg metro 6r4",
+   "text": "Car:mg metro 6r4 (MG Metro 6R4): A rally car developed by Williams.",
+   "record_id": "N001"
+  },
+  {
+   "entity_key": "PowerUnit:v6 engine",
+   "text": "PowerUnit:v6 engine (V6 engine): A completely new engine developed for the MG Metro 6R4.",
+   "record_id": "N002"
+  }
+ ],
+ "domain_relationships": [
+  {
+   "source": "Car:mg metro 6r4",
+   "rel_type": "POWERED_BY",
+   "target": "PowerUnit:v6 engine",
+   "from_year": null,
+   "to_year": null,
+   "role": null,
+   "text": "Car:mg metro 6r4 -[POWERED_BY]-> PowerUnit:v6 engine: The MG Metro 6R4 is powered by a V6 engine.",
+   "record_id": "E001"
+  }
+ ]
+}

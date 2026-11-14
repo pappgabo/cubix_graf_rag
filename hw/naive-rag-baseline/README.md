@@ -1,16 +1,193 @@
-# 3. házifeladat — Extrakció és lokális keresés
+# 4. házifeladat — Közösségek és globális keresés
 
-Ez a repó a GraphRAG kurzus **3. projektfeladata**. A feladat a 2. heti sémával
-tripleteket nyerni a chunkokból, provenance-szal Neo4j-be tölteni, a gráfot
-megnézni, a nyilvánvaló azonosságokat összevonni, majd lokális kereséssel
-megválaszolni az 1. heti kérdéseket és összevetni a naiv RAG baseline-nal.
-A szorgalmi pontok (séma nélküli extrakció, gleaning, modell-összevetés,
-kontextusbudget) nincsenek megcsinálva.
+Ez a repó a GraphRAG kurzus 4. heti projektfeladatának megvalósítását
+tartalmazza, az előző három hét eredményeire építve. A feladat
+Leiden-közösségdetekciót, közösségi riportgenerálást, globális map–reduce
+keresést, útválasztást és a naiv, lokális, globális keresés összehasonlítását
+foglalja magában.
 
-A lenti szakaszok az 1. heti baseline-t és a 2. heti gráfréteget írják le. Azok
-változatlanul a feladat alapjai: a baseline válaszait nem javítottam.
+A 4. heti megvalósítást és mérést **lezárt munkaként** mutatjuk be. Ez nem
+jelenti a rendszer hibamentességét, és nem jelenti azt, hogy a saját,
+szigorúbb Phase 5-specifikáció minden eleme (pl. a teljes körű
+alátámasztottság/hibaforrás-szétválasztás) teljesült — lásd a Korlátok
+szakaszt.
 
-## A 3. házifeladat eredménye
+## A 4. házifeladat eredménye
+
+### Rövid teljesítési áttekintés
+
+| Feladatrész | Bizonyíték (repó-relatív) |
+|---|---|
+| Közösségek a gráfban, hierarchiaszintekkel, rögzített seeddel (42) | [`docs/week4-neo4j-mentes.md`](docs/week4-neo4j-mentes.md) — 520 `:Community`, szintenként 37/176/253/54, `:CommunityRun` provenance-szal |
+| Közösségstatisztika | [`docs/week4-kozosseg-statisztika.md`](docs/week4-kozosseg-statisztika.md) |
+| Generált közösségi riportok + előállítás mért ráfordítása | [`docs/week4-kozossegi-riportok-v3.md`](docs/week4-kozossegi-riportok-v3.md) (37/37 riport, $0,0537, 161,6 s); offline bemenetmérés: [`docs/week4-reportbemenet-meres.md`](docs/week4-reportbemenet-meres.md) |
+| Működő globális keresés | [`src/naive_rag/global_search.py`](src/naive_rag/global_search.py); első futás: [`docs/week4-globalis-kereses-phase4.md`](docs/week4-globalis-kereses-phase4.md) |
+| Phase 4 A/B vizsgálat (nulla pontos részválaszok bevonása, Q09–Q13) | [`docs/week4-globalis-kereses-phase4.md`](docs/week4-globalis-kereses-phase4.md) |
+| Útválasztó + hibás döntés(ek) listája | [`src/naive_rag/search_router.py`](src/naive_rag/search_router.py), [`src/naive_rag/router_eval.py`](src/naive_rag/router_eval.py); eredmény lent, az Útválasztó szakaszban |
+| Háromoldalú, kérdéstípusonkénti összehasonlítás | [`docs/week4-osszehasonlitas-es-ertekeles.md`](docs/week4-osszehasonlitas-es-ertekeles.md) *(hivatkozott dokumentum; a jelen lezáráskor nem található a repóban — lásd a Záró jelentést)*; nyers futási eredmények: [`diagnostics/2026-11-10-phase5-run/results/`](diagnostics/2026-11-10-phase5-run/results/) |
+
+**A Phase 4 A/B vizsgálat** (csak Q09–Q13-on, két reduce-ág összevetése:
+csak pozitív pontszámú vs. nulla pontszámúakat is beengedő részválaszok) **nem
+azonos** a **Phase 5 háromoldalú összehasonlító futásával** (mind a 13
+kérdés, mindhárom mód, kizárólag a normál szűrésű A ággal — B ág Phase 5-ben
+nem készült).
+
+### Hierarchiaszint és riportkészlet
+
+A [`docs/week4-kozosseg-statisztika.md`](docs/week4-kozosseg-statisztika.md)
+„Jelentési szint és a riportkészlet kiválasztása" szakaszának összefoglalása:
+
+- A riportok az előkészített vetület **0. szintjére** épültek.
+- A 0. szinten **37** nem izolált közösség volt; az 1. szinten **191**.
+- A legnagyobb 0. szintű közösség **168** csúcsot tartalmazott, a vetület
+  **6,4%-át**.
+- Ebben a közösségben a legnagyobb belső fokú csúcs a többi tag
+  **20,4%-ához** kapcsolódott.
+- Az eredeti statisztikai javaslat a 10 főnél nagyobb **19** közösség
+  összefoglalása volt; ténylegesen **mind a 37** nem izolált 0. szintű
+  közösséghez készült riport. Ez a bevonási kör **bővítése**, nem
+  hierarchiaszint-váltás.
+- A kevesebb riport/map-hívás költségelőnye **utólagos értelmezés**, nem
+  korábban bizonyított szintoptimalizálás.
+- Más hierarchiaszintek riportjain végzett összehasonlító válaszminőségi
+  mérés **nem történt**.
+
+Részletes indoklás: [`docs/week4-kozosseg-statisztika.md`](docs/week4-kozosseg-statisztika.md#jelentési-szint-és-a-riportkészlet-kiválasztása).
+
+### A lezárt összehasonlítás eredménye
+
+A Phase 5-ben elkészült és mentve: **13 naiv**, **13 lokális**, **13
+globális** válasz, **13 útválasztási döntés** — fájlhivatkozások:
+[`diagnostics/2026-11-10-phase5-run/results/`](diagnostics/2026-11-10-phase5-run/results/).
+A szabályos elutasítás (pl. "a rendelkezésre álló rész nem támasztja alá a
+választ") **mentett eredménynek** számít, nem hiányzó adatnak.
+
+A projektgazda által elfogadott besorolások összesítése:
+
+| Mód | Helyes | Hiányos | Téves | Elutasított |
+|---|---:|---:|---:|---:|
+| Naiv | 7 | 2 | 2 | 2 |
+| Lokális | 6 | 3 | 1 | 3 |
+| Globális | 1 | 5 | 2 | 5 |
+
+Két megjegyzés a besoroláshoz: a **Q07 naiv** válasza azért hiányos, mert a
+bajnokot nem nevezi meg (az egypontos különbség kimaradása önmagában nem
+lenne levonási ok); a **Q13 globális** válaszát gyenge, részleges
+szintézisként hiányosnak értékeltük.
+
+Rövid következtetések:
+- A **naiv** mód a *simple* és a *global* címkéjű kérdéscsoportban adott
+  több teljesen helyes választ.
+- A **lokális** mód a *multi-hop* csoportban szerepelt legerősebben,
+  különösen Q04 és Q07 esetében.
+- A **globális** mód nagyobb feldolgozási ráfordítása ebben a
+  megvalósításban **nem** járt következetesen jobb válaszminőséggel.
+- Ez **három konkrét konfiguráció** összevetése egy kis kérdéskészleten, nem
+  általános algoritmusrangsor.
+
+Részletes dokumentum: [Összehasonlítás és értékelés](docs/week4-osszehasonlitas-es-ertekeles.md).
+Az előzetes, kódból generált munkalap
+([`docs/week4-ertekelesi-lap-kitoltott.json`](docs/week4-ertekelesi-lap-kitoltott.json))
+**nem** az elfogadott végső besorolások elsődleges forrása.
+
+### Útválasztó
+
+Előre rögzített feladattípus szerinti megfeleltetés (nem a legjobb választ
+jósolja, csak egy kiindulási elvárást):
+
+| Típuscímke | Elvárt mód |
+|---|---|
+| simple | naiv |
+| multi-hop | lokális |
+| global | globális |
+
+Eredmény: **12/13** egyező döntés, **1/13** eltérés — a hibás döntés **Q06**
+(lokális helyett globálisat választott).
+
+A routerrel kiválasztott (azaz a feladattípus-megfeleltetés szerint ténylegesen
+használt) mentett válaszok besorolása: **6 helyes, 4 hiányos, 1 téves, 2
+elutasított**.
+
+A típus szerinti egyezés **nem azonos** a helyes végső válasszal: a router
+ebben a mérésben **nem** adott több teljesen helyes választ, mint a minden
+kérdésen egységesen alkalmazott naiv mód. A router döntése miatt **nem**
+történt külön, újabb válaszgenerálás — az összevetés a már mentett keresési
+eredményekből készült.
+
+### Aktuális és történeti adatok
+
+| | Régi naiv baseline (1–3. hét) | Jelenlegi Phase 5 összehasonlítás |
+|---|---|---|
+| Chunkolás | 500/75 | 1200/100 |
+| Chunkszám | 3832 | 1651 |
+| Qdrant-gyűjtemény | `f1_naive_rag` (érintetlen, történeti referencia) | `week4_naive_baseline_1200_23` (új) |
+| Embeddingmodell | `text-embedding-3-small` | `text-embedding-3-small`, 1536 dimenzió |
+| top_k | 4 | 4 |
+
+Az eredeti `chunk_id`-k megmaradtak, **nem történt újrachunkolás** az új
+gyűjteményhez. A `baseline/answers.json` és az `f1_naive_rag` gyűjtemény
+**történeti referencia** marad, nem módosult.
+
+### Költség és végrehajtási eltérések
+
+A Phase 5 **jelentett** teljes OpenAI API-költsége a lezáró futtatási
+jelentés szerint: **0,066515 USD** a 0,15 USD keretből
+([`diagnostics/2026-11-10-phase5-run/results/week4-phase5-run-summary.json`](diagnostics/2026-11-10-phase5-run/results/week4-phase5-run-summary.json)).
+Ez a futtatási jelentés szerinti adat, nem egy utólag mindenre kiterjedően
+újraauditált könyvelés. Nem tartalmazza a fejlesztői (Claude) munkamenet
+fogyasztását. A közösségi riportgenerálás (Phase 3) költségmérése ettől
+külön dokumentum: [`docs/week4-kozossegi-riportok-v3.md`](docs/week4-kozossegi-riportok-v3.md).
+
+Végrehajtási eltérések:
+- A **naiv Q01** a technikai helyreállítás (resume) közben **kétszer**
+  kapott sikeres generatív hívást a futtatási utasítás ellenére — ez
+  **végrehajtási eltérés**, nem pusztán adminisztratív korlát. A jelentett
+  teljes költség **mindkét hívás díját tartalmazza**. Az értékelés a
+  kitöltött munkalapban a futtatási beszámoló szerint **később mentett**
+  választ használta.
+- Egyes ledger-mezők hiányosak, és a belső hívásszámlálók folytatáskor
+  (resume) nullázódtak — ez **nem teljes körű ledger-audit**, a dollár
+  összeg maga a megbízható forrás.
+- A globális mód map-hívásainak száma (**13 × 37 = 481**) a futtatási
+  beszámolóban közölt, számított darabszám; külön dokumentummal nem
+  tétel-szintűen újraauditált ledger-szám.
+
+### Korlátok és tanulságok
+
+- Az audit **Q09 és Q10** egyes elemeinél igazolt információvesztést talált
+  a riportgenerálás során (a Phase 3 bemenetben megvolt, a generált
+  riportból kimaradt).
+- **Q11-nél** az összesítő információ hiányzott a riportokból, de a korábbi
+  (extrakciós) kiesési pont **nem tisztázott**.
+- A **736 izolált csúcs** egyike sem került riportba — ez a globális
+  keresés lefedettségi korlátja.
+- A legnagyobb közösség **168** tagjából **89** csomópont szerepelt a
+  riportgeneráló modell bemenetében (a 24 000 tokenes keret miatt).
+- A Phase 4 **teljes kérésnaplói hiányoztak**; az akkori ellenőrzés
+  rekonstruált bemenetekre és kódellenőrzésre épült.
+- A Phase 5 új generatív hívásaihoz **kérés- és válasznaplózás** készült,
+  a futtatási beszámoló szerint.
+- A három alátámasztottsági kategória és a keresési/generálási hibák
+  **teljes, bizonyítékalapú szétválasztása nem készült el** — ez a saját,
+  szigorúbb Phase 5-specifikáció **részleges** teljesítése, nem a házi
+  feladat Definition of Done-jának külön pontja.
+- A fejlesztés és a mérés **ugyanazon a 13 kérdésen** történt: az eredmény
+  **nem független teszt**.
+- A hibás válaszokat **eredményként dokumentáltuk**, nem javítottuk
+  utólag új modellhívásokkal.
+- A `gpt-4o-mini` esetleges deprecated státuszát **nem ellenőriztük**
+  hivatalos forrásból; ezt nem állítjuk sem úgy, sem úgy.
+
+---
+
+## Korábbi hetek (1–3. hét) — történeti háttér
+
+A lenti szakaszok a GraphRAG kurzus 1–3. heti feladatait írják le (naiv RAG
+baseline, gráfréteg, extrakció és lokális keresés). Ezek a 4. heti munka
+alapjai, és változatlanul megmaradnak — a baseline válaszait és a korábbi
+méréseket utólag nem javítottuk.
+
+### A 3. házifeladat eredménye
 
 Részletes kötés fájlokhoz: [`docs/extrakcio-es-lokalis-kereses.md`](docs/extrakcio-es-lokalis-kereses.md).
 A jelenlegi minőségi riport: [`graph/corpus/quality-report-section-1200-23.md`](graph/corpus/quality-report-section-1200-23.md).

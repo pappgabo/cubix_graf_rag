@@ -1,0 +1,29 @@
+{
+ "prompt_version": "riportprompt-v3",
+ "community_id": "334",
+ "reporting_level": 0,
+ "nodes": [
+  {
+   "entity_key": "Driver:jaime alguersuari",
+   "text": "Driver:jaime alguersuari (Jaime Alguersuari): A Spanish racing driver who competed in Formula One.\nA driver who was not retained by Scuderia Toro Rosso.",
+   "record_id": "N001"
+  },
+  {
+   "entity_key": "Team:pirelli",
+   "text": "Team:pirelli (Pirelli): Tyre supplier for Formula One since the reintroduction of slick tyres in 2009.\nThe tyre supplier where Jaime Alguersuari joined as a test driver.\nTyre supplier for the 2012 Formula One season.\nThe tyre supplier for the Grand Prix.",
+   "record_id": "N002"
+  }
+ ],
+ "domain_relationships": [
+  {
+   "source": "Driver:jaime alguersuari",
+   "rel_type": "DROVE_FOR",
+   "target": "Team:pirelli",
+   "from_year": null,
+   "to_year": null,
+   "role": null,
+   "text": "Driver:jaime alguersuari -[DROVE_FOR]-> Team:pirelli: Jaime Alguersuari joined Pirelli as their test driver.",
+   "record_id": "E001"
+  }
+ ]
+}

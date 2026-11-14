@@ -1,0 +1,44 @@
+{
+ "prompt_version": "riportprompt-v3",
+ "community_id": "320",
+ "reporting_level": 0,
+ "nodes": [
+  {
+   "entity_key": "RaceResult:giancarlo baghetti at 1961 italian grand prix",
+   "text": "RaceResult:giancarlo baghetti at 1961 italian grand prix (Giancarlo Baghetti at 1961 Italian Grand Prix): Giancarlo Baghetti achieved the fastest lap at the 1961 Italian Grand Prix.",
+   "record_id": "N001"
+  },
+  {
+   "entity_key": "Driver:giancarlo baghetti",
+   "text": "Driver:giancarlo baghetti (Giancarlo Baghetti): Achieved a win at the 1961 French Grand Prix.",
+   "record_id": "N002"
+  },
+  {
+   "entity_key": "GrandPrix:1961 italian grand prix",
+   "text": "GrandPrix:1961 italian grand prix (1961 Italian Grand Prix): Race where Giancarlo Baghetti achieved the fastest lap.",
+   "record_id": "N003"
+  }
+ ],
+ "domain_relationships": [
+  {
+   "source": "Driver:giancarlo baghetti",
+   "rel_type": "ACHIEVED",
+   "target": "RaceResult:giancarlo baghetti at 1961 italian grand prix",
+   "from_year": null,
+   "to_year": null,
+   "role": null,
+   "text": "Driver:giancarlo baghetti -[ACHIEVED]-> RaceResult:giancarlo baghetti at 1961 italian grand prix: Giancarlo Baghetti achieved the fastest lap at the 1961 Italian Grand Prix.",
+   "record_id": "E001"
+  },
+  {
+   "source": "RaceResult:giancarlo baghetti at 1961 italian grand prix",
+   "rel_type": "AT_RACE",
+   "target": "GrandPrix:1961 italian grand prix",
+   "from_year": null,
+   "to_year": null,
+   "role": null,
+   "text": "RaceResult:giancarlo baghetti at 1961 italian grand prix -[AT_RACE]-> GrandPrix:1961 italian grand prix: Giancarlo Baghetti achieved the fastest lap at the 1961 Italian Grand Prix.",
+   "record_id": "E002"
+  }
+ ]
+}

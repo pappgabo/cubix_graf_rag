@@ -1,0 +1,29 @@
+{
+ "prompt_version": "riportprompt-v3",
+ "community_id": "8",
+ "reporting_level": 0,
+ "nodes": [
+  {
+   "entity_key": "Car:acura arx-06",
+   "text": "Car:acura arx-06 (Acura ARX-06): A prototype car tested by Max Verstappen.",
+   "record_id": "N001"
+  },
+  {
+   "entity_key": "Team:honda racing corporation",
+   "text": "Team:honda racing corporation (Honda Racing Corporation): The team associated with the Acura ARX-06 prototype.",
+   "record_id": "N002"
+  }
+ ],
+ "domain_relationships": [
+  {
+   "source": "Team:honda racing corporation",
+   "rel_type": "FIELDED",
+   "target": "Car:acura arx-06",
+   "from_year": null,
+   "to_year": null,
+   "role": null,
+   "text": "Team:honda racing corporation -[FIELDED]-> Car:acura arx-06: Honda Racing Corporation entered the Acura ARX-06 prototype.",
+   "record_id": "E001"
+  }
+ ]
+}

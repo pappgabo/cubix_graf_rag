@@ -1,0 +1,104 @@
+{
+ "prompt_version": "riportprompt-v3",
+ "community_id": "275",
+ "reporting_level": 0,
+ "nodes": [
+  {
+   "entity_key": "Driver:barnard",
+   "text": "Driver:barnard (Barnard): A driver who achieved podium finishes in Formula E.",
+   "record_id": "N001"
+  },
+  {
+   "entity_key": "GrandPrix:são paulo eprix",
+   "text": "GrandPrix:são paulo eprix (São Paulo ePrix): An electric race where Bird won McLaren's maiden victory.\nThe season opening race where Barnard finished third.",
+   "record_id": "N002"
+  },
+  {
+   "entity_key": "RaceResult:barnard at jeddah eprix",
+   "text": "RaceResult:barnard at jeddah eprix (Barnard at Jeddah ePrix): Barnard finished third at Race 1 of the Jeddah ePrix.\nBarnard finished second at Race 2 of the Jeddah ePrix.",
+   "record_id": "N003"
+  },
+  {
+   "entity_key": "RaceResult:barnard at são paulo eprix",
+   "text": "RaceResult:barnard at são paulo eprix (Barnard at São Paulo ePrix): Barnard finished third at the São Paulo ePrix.",
+   "record_id": "N004"
+  },
+  {
+   "entity_key": "RaceResult:sam bird at são paulo eprix",
+   "text": "RaceResult:sam bird at são paulo eprix (Sam Bird at São Paulo ePrix): Bird won McLaren's maiden electric race victory at the São Paulo ePrix.",
+   "record_id": "N005"
+  },
+  {
+   "entity_key": "Driver:sam bird",
+   "text": "Driver:sam bird (Sam Bird): A driver who replaced Rast at McLaren.",
+   "record_id": "N006"
+  },
+  {
+   "entity_key": "GrandPrix:jeddah eprix",
+   "text": "GrandPrix:jeddah eprix (Jeddah ePrix): The race where Barnard achieved another podium finish.",
+   "record_id": "N007"
+  }
+ ],
+ "domain_relationships": [
+  {
+   "source": "Driver:barnard",
+   "rel_type": "ACHIEVED",
+   "target": "RaceResult:barnard at jeddah eprix",
+   "from_year": null,
+   "to_year": null,
+   "role": null,
+   "text": "Driver:barnard -[ACHIEVED]-> RaceResult:barnard at jeddah eprix: Barnard finished third at Race 1 of the Jeddah ePrix.\nBarnard finished second at Race 2 of the Jeddah ePrix.",
+   "record_id": "E001"
+  },
+  {
+   "source": "Driver:barnard",
+   "rel_type": "ACHIEVED",
+   "target": "RaceResult:barnard at são paulo eprix",
+   "from_year": null,
+   "to_year": null,
+   "role": null,
+   "text": "Driver:barnard -[ACHIEVED]-> RaceResult:barnard at são paulo eprix: Barnard finished third at the São Paulo ePrix.",
+   "record_id": "E002"
+  },
+  {
+   "source": "Driver:sam bird",
+   "rel_type": "ACHIEVED",
+   "target": "RaceResult:sam bird at são paulo eprix",
+   "from_year": null,
+   "to_year": null,
+   "role": null,
+   "text": "Driver:sam bird -[ACHIEVED]-> RaceResult:sam bird at são paulo eprix: Bird won McLaren's maiden electric race victory at the São Paulo ePrix.",
+   "record_id": "E003"
+  },
+  {
+   "source": "RaceResult:barnard at jeddah eprix",
+   "rel_type": "AT_RACE",
+   "target": "GrandPrix:jeddah eprix",
+   "from_year": null,
+   "to_year": null,
+   "role": null,
+   "text": "RaceResult:barnard at jeddah eprix -[AT_RACE]-> GrandPrix:jeddah eprix: Barnard finished third at Race 1 of the Jeddah ePrix.\nBarnard finished second at Race 2 of the Jeddah ePrix.",
+   "record_id": "E004"
+  },
+  {
+   "source": "RaceResult:barnard at são paulo eprix",
+   "rel_type": "AT_RACE",
+   "target": "GrandPrix:são paulo eprix",
+   "from_year": null,
+   "to_year": null,
+   "role": null,
+   "text": "RaceResult:barnard at são paulo eprix -[AT_RACE]-> GrandPrix:são paulo eprix: Barnard finished third at the São Paulo ePrix.",
+   "record_id": "E005"
+  },
+  {
+   "source": "RaceResult:sam bird at são paulo eprix",
+   "rel_type": "AT_RACE",
+   "target": "GrandPrix:são paulo eprix",
+   "from_year": null,
+   "to_year": null,
+   "role": null,
+   "text": "RaceResult:sam bird at são paulo eprix -[AT_RACE]-> GrandPrix:são paulo eprix: Bird won McLaren's maiden electric race victory at the São Paulo ePrix.",
+   "record_id": "E006"
+  }
+ ]
+}

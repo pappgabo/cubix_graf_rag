@@ -1,0 +1,29 @@
+{
+ "prompt_version": "riportprompt-v3",
+ "community_id": "135",
+ "reporting_level": 0,
+ "nodes": [
+  {
+   "entity_key": "Car:renault rs01",
+   "text": "Car:renault rs01 (Renault RS01): The only car fielded by Renault during its initial involvement.\nA car model fielded by Renault.",
+   "record_id": "N001"
+  },
+  {
+   "entity_key": "PowerUnit:renault-gordini v6 1.5 l turbocharged engine",
+   "text": "PowerUnit:renault-gordini v6 1.5 l turbocharged engine (Renault-Gordini V6 1.5 L turbocharged engine): The first regularly used turbo engine in Formula One history.",
+   "record_id": "N002"
+  }
+ ],
+ "domain_relationships": [
+  {
+   "source": "Car:renault rs01",
+   "rel_type": "POWERED_BY",
+   "target": "PowerUnit:renault-gordini v6 1.5 l turbocharged engine",
+   "from_year": null,
+   "to_year": null,
+   "role": null,
+   "text": "Car:renault rs01 -[POWERED_BY]-> PowerUnit:renault-gordini v6 1.5 l turbocharged engine: The Renault RS01 used the Renault-Gordini V6 1.5 L turbocharged engine.",
+   "record_id": "E001"
+  }
+ ]
+}

@@ -1,0 +1,59 @@
+{
+ "prompt_version": "riportprompt-v3",
+ "community_id": "377",
+ "reporting_level": 0,
+ "nodes": [
+  {
+   "entity_key": "Driver:monisha kaltenborn",
+   "text": "Driver:monisha kaltenborn (Monisha Kaltenborn): Austrian Monisha Kaltenborn became the sport's first-ever female team principal when she took over the role at Sauber Formula One Team in 2010.\nCEO of Sauber F1 and first female team principal in Formula One.",
+   "record_id": "N001"
+  },
+  {
+   "entity_key": "Team:sauber f1",
+   "text": "Team:sauber f1 (Sauber F1): Formula 1 team.",
+   "record_id": "N002"
+  },
+  {
+   "entity_key": "Driver:peter sauber",
+   "text": "Driver:peter sauber (Peter Sauber): Former team principal of Sauber F1.\nThe founder of Sauber who retired.",
+   "record_id": "N003"
+  },
+  {
+   "entity_key": "Team:sauber formula one team",
+   "text": "Team:sauber formula one team (Sauber Formula One Team): Formula One team where Monisha Kaltenborn became the first female team principal.",
+   "record_id": "N004"
+  }
+ ],
+ "domain_relationships": [
+  {
+   "source": "Driver:monisha kaltenborn",
+   "rel_type": "DROVE_FOR",
+   "target": "Team:sauber f1",
+   "from_year": null,
+   "to_year": null,
+   "role": "team principal",
+   "text": "Driver:monisha kaltenborn -[DROVE_FOR]-> Team:sauber f1 (role=team principal): Monisha Kaltenborn appointed as team principal of Sauber F1.",
+   "record_id": "E001"
+  },
+  {
+   "source": "Driver:monisha kaltenborn",
+   "rel_type": "DROVE_FOR",
+   "target": "Team:sauber formula one team",
+   "from_year": 2010,
+   "to_year": null,
+   "role": "team principal",
+   "text": "Driver:monisha kaltenborn -[DROVE_FOR]-> Team:sauber formula one team (from_year=2010, role=team principal): Monisha Kaltenborn became team principal at Sauber Formula One Team.",
+   "record_id": "E002"
+  },
+  {
+   "source": "Driver:peter sauber",
+   "rel_type": "DROVE_FOR",
+   "target": "Team:sauber f1",
+   "from_year": null,
+   "to_year": null,
+   "role": "team principal",
+   "text": "Driver:peter sauber -[DROVE_FOR]-> Team:sauber f1 (role=team principal): Peter Sauber stepped down as team principal of Sauber F1.",
+   "record_id": "E003"
+  }
+ ]
+}

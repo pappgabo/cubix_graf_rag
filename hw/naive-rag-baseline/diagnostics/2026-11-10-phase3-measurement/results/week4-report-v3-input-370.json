@@ -1,0 +1,74 @@
+{
+ "prompt_version": "riportprompt-v3",
+ "community_id": "370",
+ "reporting_level": 0,
+ "nodes": [
+  {
+   "entity_key": "GrandPrix:bathurst 1000",
+   "text": "GrandPrix:bathurst 1000 (Bathurst 1000): A named race event.",
+   "record_id": "N001"
+  },
+  {
+   "entity_key": "RaceResult:menu at bathurst 1000",
+   "text": "RaceResult:menu at bathurst 1000 (Menu at Bathurst 1000): Menu recorded a result in the Bathurst 1000.",
+   "record_id": "N002"
+  },
+  {
+   "entity_key": "RaceResult:plato at bathurst 1000",
+   "text": "RaceResult:plato at bathurst 1000 (Plato at Bathurst 1000): Plato recorded a result in the Bathurst 1000.",
+   "record_id": "N003"
+  },
+  {
+   "entity_key": "Driver:menu",
+   "text": "Driver:menu (Menu): A driver who participated in the race.\nA driver who raced for Williams.",
+   "record_id": "N004"
+  },
+  {
+   "entity_key": "Driver:plato",
+   "text": "Driver:plato (Plato): A driver who participated in the race.\nA driver who raced for Williams.",
+   "record_id": "N005"
+  }
+ ],
+ "domain_relationships": [
+  {
+   "source": "Driver:menu",
+   "rel_type": "ACHIEVED",
+   "target": "RaceResult:menu at bathurst 1000",
+   "from_year": null,
+   "to_year": null,
+   "role": null,
+   "text": "Driver:menu -[ACHIEVED]-> RaceResult:menu at bathurst 1000: Menu recorded a result in the Bathurst 1000.",
+   "record_id": "E001"
+  },
+  {
+   "source": "Driver:plato",
+   "rel_type": "ACHIEVED",
+   "target": "RaceResult:plato at bathurst 1000",
+   "from_year": null,
+   "to_year": null,
+   "role": null,
+   "text": "Driver:plato -[ACHIEVED]-> RaceResult:plato at bathurst 1000: Plato recorded a result in the Bathurst 1000.",
+   "record_id": "E002"
+  },
+  {
+   "source": "RaceResult:menu at bathurst 1000",
+   "rel_type": "AT_RACE",
+   "target": "GrandPrix:bathurst 1000",
+   "from_year": null,
+   "to_year": null,
+   "role": null,
+   "text": "RaceResult:menu at bathurst 1000 -[AT_RACE]-> GrandPrix:bathurst 1000: Menu recorded a result in the Bathurst 1000.",
+   "record_id": "E003"
+  },
+  {
+   "source": "RaceResult:plato at bathurst 1000",
+   "rel_type": "AT_RACE",
+   "target": "GrandPrix:bathurst 1000",
+   "from_year": null,
+   "to_year": null,
+   "role": null,
+   "text": "RaceResult:plato at bathurst 1000 -[AT_RACE]-> GrandPrix:bathurst 1000: Plato recorded a result in the Bathurst 1000.",
+   "record_id": "E004"
+  }
+ ]
+}

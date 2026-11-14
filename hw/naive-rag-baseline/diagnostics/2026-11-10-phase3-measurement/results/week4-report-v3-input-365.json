@@ -1,0 +1,29 @@
+{
+ "prompt_version": "riportprompt-v3",
+ "community_id": "365",
+ "reporting_level": 0,
+ "nodes": [
+  {
+   "entity_key": "Driver:marta garcía",
+   "text": "Driver:marta garcía (Marta García): Won the inaugural championship of F1 Academy.",
+   "record_id": "N001"
+  },
+  {
+   "entity_key": "Team:prema racing",
+   "text": "Team:prema racing (Prema Racing): Team that Marta García raced for in F1 Academy.",
+   "record_id": "N002"
+  }
+ ],
+ "domain_relationships": [
+  {
+   "source": "Driver:marta garcía",
+   "rel_type": "DROVE_FOR",
+   "target": "Team:prema racing",
+   "from_year": null,
+   "to_year": null,
+   "role": null,
+   "text": "Driver:marta garcía -[DROVE_FOR]-> Team:prema racing: Marta García raced for Prema Racing in F1 Academy.",
+   "record_id": "E001"
+  }
+ ]
+}
