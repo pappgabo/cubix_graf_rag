@@ -24,6 +24,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import re
 import sys
 import time
 from pathlib import Path
@@ -84,6 +85,7 @@ GLOBAL_REPORTING_LEVEL = 0
 REPORT_INDEX_CACHE_PATH = RESULTS_DIR / "report-index-cache.json"
 INDEX_COST_SUMMARY_PATH = RESULTS_DIR / "week6-index-cost.json"
 LEDGER_PATH = RESULTS_DIR / "week6-cost-ledger.json"
+M3_QUESTION_IDS = ("Q01", "Q07", "Q09", "Q10", "Q11")
 
 
 class ReportIndexNotReady(RuntimeError):
@@ -164,6 +166,62 @@ def build_run_signature(run_kind: str, golden_path: Path, *, global_run_id: str,
     )
 
 
+def ablation_config(*, global_run_id: str, reports_hash: str, run_id: str,
+                    local_followup: bool) -> dict[str, Any]:
+    config = effective_config(global_run_id=global_run_id, reports_hash=reports_hash)
+    config["local_search_followup"] = local_followup
+    config["question_ids"] = list(M3_QUESTION_IDS)
+    config["run_id"] = run_id
+    return config
+
+
+def ablation_signature(golden_path: Path, *, global_run_id: str, reports_hash: str,
+                       run_id: str, local_followup: bool) -> state_store.RunSignature:
+    return state_store.RunSignature(
+        run_kind=run_id,
+        config_sha256=state_store.config_hash(ablation_config(
+            global_run_id=global_run_id, reports_hash=reports_hash,
+            run_id=run_id, local_followup=local_followup,
+        )),
+        golden_set_sha256=golden_set_sha256(golden_path),
+    )
+
+
+def ablation_paths(run_id: str) -> dict[str, Path]:
+    root = RESULTS_DIR / run_id
+    logs = HERE / "logs" / run_id
+    return {
+        "results": root,
+        "cases": root / "cases",
+        "state": STATE_DIR / f"{run_id}.json",
+        "logs": logs,
+        "judge_logs": logs / "judges",
+        "results_jsonl": root / "results.jsonl",
+        "report": root / "report.md",
+        "cost_ledger": LEDGER_PATH,
+    }
+
+
+def refuse_existing_run(paths: dict[str, Path]) -> None:
+    occupied = [key for key in ("results", "state", "logs") if paths[key].exists()]
+    if occupied:
+        listed = ", ".join(f"{key}={paths[key]}" for key in occupied)
+        raise MeasurementHalted(f"run target already exists; not overwriting or resuming: {listed}")
+
+
+def ensure_ablation_dirs(paths: dict[str, Path]) -> None:
+    for key in ("cases", "logs", "judge_logs"):
+        paths[key].mkdir(parents=True, exist_ok=True)
+
+
+def select_m3_questions(all_questions: tuple[GoldenQuestion, ...]) -> list[GoldenQuestion]:
+    by_id = {question.id: question for question in all_questions}
+    missing = [qid for qid in M3_QUESTION_IDS if qid not in by_id]
+    if missing:
+        raise MeasurementHalted(f"M3 question(s) missing from the golden set: {missing}")
+    return [by_id[qid] for qid in M3_QUESTION_IDS]
+
+
 def select_questions(all_questions: tuple[GoldenQuestion, ...], run_kind: str) -> list[GoldenQuestion]:
     if run_kind == "smoke":
         chosen = [q for q in all_questions if q.id in SMOKE_QUESTION_IDS]
@@ -238,7 +296,14 @@ def build_real_langfuse_sync_fn(
 
 
 def run_measurement(run_kind: str, *, golden_path: Path = DEFAULT_GOLDEN_PATH,
-                    sync_langfuse: bool = True) -> dict[str, Any]:
+                    sync_langfuse: bool = True, run_id: str | None = None,
+                    local_followup: bool = True) -> dict[str, Any]:
+    paths = None
+    if run_id is not None:
+        if not re.fullmatch(r"[A-Za-z0-9][A-Za-z0-9._-]{0,80}", run_id):
+            raise MeasurementHalted(f"invalid run id {run_id!r}")
+        paths = ablation_paths(run_id)
+        refuse_existing_run(paths)
     if sync_langfuse:
         load_project_env()
         ensure_langfuse_configured()
@@ -248,7 +313,8 @@ def run_measurement(run_kind: str, *, golden_path: Path = DEFAULT_GOLDEN_PATH,
     chunks_path = PROJECT_ROOT / all_questions[0].corpus_chunks_file
     verify_corpus_matches_disk(corpus_sha256, chunks_path)
 
-    questions = select_questions(all_questions, run_kind)
+    questions = select_m3_questions(all_questions) if run_id is not None else select_questions(all_questions, run_kind)
+    phase = run_id if run_id is not None else run_kind
 
     collection_path = PROJECT_ROOT / GLOBAL_REPORT_COLLECTION
     global_run_id = detect_report_run_id(collection_path)
@@ -260,8 +326,32 @@ def run_measurement(run_kind: str, *, golden_path: Path = DEFAULT_GOLDEN_PATH,
     # paid call are built -- no automatic rebuild (see ReportIndexNotReady).
     report_index = require_report_index(reports, REPORT_INDEX_CACHE_PATH)
 
-    signature = build_run_signature(run_kind, golden_path, global_run_id=global_run_id, reports_hash=reports_hash)
-    state_path = STATE_DIR / f"week6-drift-state-{run_kind}-{CODE_VERSION}.json"
+    if run_id is None:
+        signature = build_run_signature(
+            run_kind, golden_path, global_run_id=global_run_id, reports_hash=reports_hash)
+        state_path = STATE_DIR / f"week6-drift-state-{run_kind}-{CODE_VERSION}.json"
+        case_store_dir = CASES_DIR / CODE_VERSION / run_kind
+        judge_log_dir = RESULTS_DIR.parent / "logs" / "judges"
+        results_path = RESULTS_DIR / f"results-{CODE_VERSION}.jsonl"
+        report_path = RESULTS_DIR / f"week6-drift-report-{CODE_VERSION}-{run_kind}.md"
+        log_dir = None
+        config_metadata = effective_config(global_run_id=global_run_id, reports_hash=reports_hash)
+    else:
+        ensure_ablation_dirs(paths)
+        signature = ablation_signature(
+            golden_path, global_run_id=global_run_id, reports_hash=reports_hash,
+            run_id=run_id, local_followup=local_followup,
+        )
+        state_path = paths["state"]
+        case_store_dir = paths["cases"]
+        judge_log_dir = paths["judge_logs"]
+        results_path = paths["results_jsonl"]
+        report_path = paths["report"]
+        log_dir = paths["logs"]
+        config_metadata = ablation_config(
+            global_run_id=global_run_id, reports_hash=reports_hash,
+            run_id=run_id, local_followup=local_followup,
+        )
     store = state_store.StateStore.load_or_create(state_path, signature)
 
     import cost_guard
@@ -269,27 +359,26 @@ def run_measurement(run_kind: str, *, golden_path: Path = DEFAULT_GOLDEN_PATH,
 
     graph, local_index, chunk_texts = drift_runner.build_local_search_fixtures()
 
-    judge_log_dir = RESULTS_DIR.parent / "logs" / "judges"
     correctness_call_fn_factory = week5measure.build_real_judge_call_fn_factory(
-        ledger, None, f"correctness-drift-{run_kind}", judge_log_dir)
+        ledger, None, f"correctness-drift-{phase}", judge_log_dir)
     faithfulness_call_fn_factory = week5measure.build_real_judge_call_fn_factory(
-        ledger, None, f"faithfulness-drift-{run_kind}", judge_log_dir)
-    case_store_dir = CASES_DIR / CODE_VERSION / run_kind
-    config_metadata = effective_config(global_run_id=global_run_id, reports_hash=reports_hash)
+        ledger, None, f"faithfulness-drift-{phase}", judge_log_dir)
     langfuse_sync_fn = (
-        build_real_langfuse_sync_fn(run_kind, tuple(q.id for q in questions), case_store_dir, config_metadata)
+        build_real_langfuse_sync_fn(phase, tuple(q.id for q in questions), case_store_dir, config_metadata)
         if sync_langfuse else None
     )
 
     def drift_fn(question: GoldenQuestion) -> dict:
         return drift_runner.run_drift_capture(
-            question.id, question.question, ledger, run_phase=run_kind,
+            question.id, question.question, ledger, run_phase=phase,
             reports=reports, report_index=report_index, graph=graph,
             local_index=local_index, chunk_texts=chunk_texts,
+            local_search_followup=local_followup if run_id is not None else True,
+            log_dir=log_dir,
         )
 
     ctx = week5measure.CaseContext(
-        run_phase=run_kind, budget=ledger, ledger=None, gen_fns={MODE: drift_fn},
+        run_phase=phase, budget=ledger, ledger=None, gen_fns={MODE: drift_fn},
         correctness_call_fn_factory=correctness_call_fn_factory,
         faithfulness_call_fn_factory=faithfulness_call_fn_factory,
         langfuse_sync_fn=langfuse_sync_fn, case_store_dir=case_store_dir,
@@ -297,8 +386,8 @@ def run_measurement(run_kind: str, *, golden_path: Path = DEFAULT_GOLDEN_PATH,
 
     rows = run_drift_cases(questions, store, ctx)
 
-    results_path = RESULTS_DIR / f"results-{CODE_VERSION}.jsonl"
-    all_rows = report_mod.load_results(results_path)
+    results_path_rows = report_mod.load_results(results_path)
+    all_rows = results_path_rows
     by_key = {(r["question_id"], r["mode"], r["run_phase"]): r for r in all_rows}
     for row in rows:
         by_key[(row["question_id"], row["mode"], row["run_phase"])] = row
@@ -309,10 +398,10 @@ def run_measurement(run_kind: str, *, golden_path: Path = DEFAULT_GOLDEN_PATH,
         if INDEX_COST_SUMMARY_PATH.exists() else None
     )
     report_md = report_week6.build_drift_report_markdown(
-        list(by_key.values()), run_phase=run_kind, index_cost_summary=index_cost_summary,
+        list(by_key.values()), run_phase=phase, index_cost_summary=index_cost_summary,
         ledger_cumulative_spent_usd=ledger.spent_usd, ledger_cumulative_remaining_usd=ledger.remaining_usd(),
     )
-    (RESULTS_DIR / f"week6-drift-report-{CODE_VERSION}-{run_kind}.md").write_text(report_md, encoding="utf-8")
+    report_path.write_text(report_md, encoding="utf-8")
 
     return {
         "run_kind": run_kind, "case_count": len(rows), "state_summary": store.summary(),
@@ -325,16 +414,32 @@ def main(argv: list[str] | None = None) -> int:
     sub = parser.add_subparsers(dest="command", required=True)
 
     run_p = sub.add_parser("run", help="run (or resume) the drift smoke or full measurement")
-    group = run_p.add_mutually_exclusive_group(required=True)
+    group = run_p.add_mutually_exclusive_group(required=False)
     group.add_argument("--smoke", action="store_const", dest="run_kind", const="smoke")
     group.add_argument("--full", action="store_const", dest="run_kind", const="full")
     run_p.add_argument("--golden", type=Path, default=DEFAULT_GOLDEN_PATH)
     run_p.add_argument("--no-langfuse", action="store_true")
+    run_p.add_argument("--run-id", default=None)
+    run_p.add_argument("--local-followup", choices=("on", "off"), default="on")
 
     args = parser.parse_args(argv)
     if args.command == "run":
         try:
-            outcome = run_measurement(args.run_kind, golden_path=args.golden, sync_langfuse=not args.no_langfuse)
+            if args.run_id:
+                if args.run_kind is not None:
+                    raise MeasurementHalted("--run-id cannot be combined with --smoke or --full")
+                outcome = run_measurement(
+                    "ablation", golden_path=args.golden, sync_langfuse=not args.no_langfuse,
+                    run_id=args.run_id, local_followup=args.local_followup == "on",
+                )
+            else:
+                if args.local_followup != "on":
+                    raise MeasurementHalted("--local-followup requires --run-id")
+                if args.run_kind is None:
+                    parser.error("one of --smoke and --full is required")
+                outcome = run_measurement(
+                    args.run_kind, golden_path=args.golden, sync_langfuse=not args.no_langfuse,
+                )
         except LangfuseConfigError as exc:
             print(f"LANGFUSE CONFIG ERROR (no paid call was made): {exc}", file=sys.stderr)
             return 2

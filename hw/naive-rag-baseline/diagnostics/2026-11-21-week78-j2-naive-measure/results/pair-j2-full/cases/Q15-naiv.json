@@ -1,0 +1,190 @@
+{
+ "question_id": "Q15",
+ "mode": "naiv",
+ "run_phase": "pair-j2-full",
+ "question_type": "simple",
+ "question_status": "held_out",
+ "question_text": "In which year was Renault's young driver academy rebranded as the Alpine Academy?",
+ "expected_answer": "2021.",
+ "golden_set_version": "v1-approval-draft",
+ "answer": "Renault's young driver academy was rebranded as the Alpine Academy in 2021 [S1].",
+ "refused": null,
+ "model_called": true,
+ "actual_context": "[S1] (None, section: Renault/Alpine Academy)\n## Renault/Alpine Academy\nAs part of the company's return to Formula One, it set up a young driver academy, tasked with finding future Formula 1 World Champions. The academy was rebranded as Alpine Academy following the rebranding of Renault F1 Team to Alpine F1 Team in 2021.\n\n[S2] (None, n/a)\nBy 2011, Renault had sold its shares in the Enstone-based team, though it continued to use the Renault chassis name in 2011. Renault remained in the sport as an engine manufacturer, winning four drivers' and constructors' titles with Red Bull Racing between 2010 and 2013. The company bought the Enstone-based team again in 2016 and re-branded it as Renault. The team did not win in the following five seasons and was re-branded as Alpine in 2021 with the Renault marque remaining as engine manufacturer until 2025. As a team owner, Renault won two constructors' and drivers' championships, while as an engine manufacturer it had 12 constructors' and 11 drivers' championships. It collected over 160 wins as engine supplier, ranking fourth in Formula One history.\n\n[S3] (None, section: Constructor > Renault F1 Team and Lotus Renault GP (2002–2011): The rise and fall of the first Enstone era > First seasons under a new name (2002–2004))\n#### First seasons under a new name (2002–2004)\nIn 2002, Benetton was rebranded as Renault F1 and contested the season with drivers Jarno Trulli and Jenson Button who scored 23 points during the season. As a result of rebranding, Renault received a French nationality license instead of Italian.  \nDespite outscoring his teammate during 2002, Button was dropped by Renault in 2003. His replacement was Spain's Fernando Alonso, who had been considered impressive as a test driver the previous year. Alonso won the 2003 Hungarian Grand Prix, the first time Renault had won a Grand Prix since the 1983 Austrian Grand Prix. Renault was innovative during this period producing non-standard designs such as the 111° 10-cylinder engine for the 2003 RS23 which was designed to effectively lower the centre of gravity of the engine and thus improve the car's handling. This eventually proved too unreliable and heavy, so Renault returned to a more conventional development route.\n\n[S4] (None, section: Alpine (2021–2022))\n## Alpine (2021–2022)  \nAlonso was signed to drive for Alpine F1 Team for the 2021 season, alongside Esteban Ocon, with Renault having rebranded the team under its new name. In preparation for his F1 return, Alonso performed four testing days driving the Renault R.S.18 and was quickest in the post-2020 season young driver's test driving the Renault R.S.20 for Renault. In his first race with Alpine at the 2021 Bahrain Grand Prix, Alonso was forced to retire after plastic debris entered his brake duct. At the 2021 Emilia Romagna Grand Prix he finished in eleventh after qualifying fifteenth, with teammate Ocon finishing ahead in tenth, but both were upgraded one position after Kimi Räikkönen was penalised, giving Alonso his first points of the season.",
+ "actual_chunk_ids": [
+  "team-renault-in-formula-one#69",
+  "team-renault-in-formula-one#1",
+  "team-renault-in-formula-one#14",
+  "driver-fernando-alonso#27"
+ ],
+ "chunk_ids_traceable": true,
+ "is_proxy_retrieval": false,
+ "error": null,
+ "duration_seconds": 1.532,
+ "ledger_entry": {
+  "run_id": "pair-j2-full",
+  "timestamp": 1795269807.9307008,
+  "step": "answer",
+  "mode": "naiv",
+  "question_id": "Q15",
+  "log_file": "D:\\PET\\CUBIX\\cubix_GraphRAG\\7.8.záró\\HW\\naive-rag-baseline\\diagnostics\\2026-11-21-week78-j2-naive-measure\\logs\\pair-j2-full\\naive-log-naiv-Q15.json",
+  "request_hash": "3d0550a346bf125f73959763c118b96fd1b08eb8cc6ce775eaa761cbf435de52",
+  "usage_prompt_tokens": 795,
+  "usage_completion_tokens": 22,
+  "cost_usd": 0.00013245,
+  "duration_seconds": 0.859,
+  "status": "success",
+  "error": null
+ },
+ "raw": {
+  "sources": [
+   {
+    "tag": "S1",
+    "chunk_id": "team-renault-in-formula-one#69",
+    "doc_id": "team-renault-in-formula-one",
+    "file": null,
+    "format": null,
+    "location": "section: Renault/Alpine Academy",
+    "url": null,
+    "score": 0.8431,
+    "text": "## Renault/Alpine Academy\nAs part of the company's return to Formula One, it set up a young driver academy, tasked with finding future Formula 1 World Champions. The academy was rebranded as Alpine Academy following the rebranding of Renault F1 Team to Alpine F1 Team in 2021."
+   },
+   {
+    "tag": "S2",
+    "chunk_id": "team-renault-in-formula-one#1",
+    "doc_id": "team-renault-in-formula-one",
+    "file": null,
+    "format": null,
+    "location": "n/a",
+    "url": null,
+    "score": 0.6427,
+    "text": "By 2011, Renault had sold its shares in the Enstone-based team, though it continued to use the Renault chassis name in 2011. Renault remained in the sport as an engine manufacturer, winning four drivers' and constructors' titles with Red Bull Racing between 2010 and 2013. The company bought the Enstone-based team again in 2016 and re-branded it as Renault. The team did not win in the following five seasons and was re-branded as Alpine in 2021 with the Renault marque remaining as engine manufacturer until 2025. As a team owner, Renault won two constructors' and drivers' championships, while as an engine manufacturer it had 12 constructors' and 11 drivers' championships. It collected over 160 wins as engine supplier, ranking fourth in Formula One history."
+   },
+   {
+    "tag": "S3",
+    "chunk_id": "team-renault-in-formula-one#14",
+    "doc_id": "team-renault-in-formula-one",
+    "file": null,
+    "format": null,
+    "location": "section: Constructor > Renault F1 Team and Lotus Renault GP (2002–2011): The rise and fall of the first Enstone era > First seasons under a new name (2002–2004)",
+    "url": null,
+    "score": 0.6146,
+    "text": "#### First seasons under a new name (2002–2004)\nIn 2002, Benetton was rebranded as Renault F1 and contested the season with drivers Jarno Trulli and Jenson Button who scored 23 points during the season. As a result of rebranding, Renault received a French nationality license instead of Italian.  \nDespite outscoring his teammate during 2002, Button was dropped by Renault in 2003. His replacement was Spain's Fernando Alonso, who had been considered impressive as a test driver the previous year. Alonso won the 2003 Hungarian Grand Prix, the first time Renault had won a Grand Prix since the 1983 Austrian Grand Prix. Renault was innovative during this period producing non-standard designs such as the 111° 10-cylinder engine for the 2003 RS23 which was designed to effectively lower the centre of gravity of the engine and thus improve the car's handling. This eventually proved too unreliable and heavy, so Renault returned to a more conventional development route."
+   },
+   {
+    "tag": "S4",
+    "chunk_id": "driver-fernando-alonso#27",
+    "doc_id": "driver-fernando-alonso",
+    "file": null,
+    "format": null,
+    "location": "section: Alpine (2021–2022)",
+    "url": null,
+    "score": 0.6126,
+    "text": "## Alpine (2021–2022)  \nAlonso was signed to drive for Alpine F1 Team for the 2021 season, alongside Esteban Ocon, with Renault having rebranded the team under its new name. In preparation for his F1 return, Alonso performed four testing days driving the Renault R.S.18 and was quickest in the post-2020 season young driver's test driving the Renault R.S.20 for Renault. In his first race with Alpine at the 2021 Bahrain Grand Prix, Alonso was forced to retire after plastic debris entered his brake duct. At the 2021 Emilia Romagna Grand Prix he finished in eleventh after qualifying fifteenth, with teammate Ocon finishing ahead in tenth, but both were upgraded one position after Kimi Räikkönen was penalised, giving Alonso his first points of the season."
+   }
+  ]
+ },
+ "j2_retrieval": {
+  "j2_enabled": true,
+  "candidates": [
+   {
+    "chunk_id": "team-renault-in-formula-one#69",
+    "text": "## Renault/Alpine Academy\nAs part of the company's return to Formula One, it set up a young driver academy, tasked with finding future Formula 1 World Champions. The academy was rebranded as Alpine Academy following the rebranding of Renault F1 Team to Alpine F1 Team in 2021.",
+    "score": 0.8431317869596904,
+    "rank": 1,
+    "year_match": false
+   },
+   {
+    "chunk_id": "team-renault-in-formula-one#1",
+    "text": "By 2011, Renault had sold its shares in the Enstone-based team, though it continued to use the Renault chassis name in 2011. Renault remained in the sport as an engine manufacturer, winning four drivers' and constructors' titles with Red Bull Racing between 2010 and 2013. The company bought the Enstone-based team again in 2016 and re-branded it as Renault. The team did not win in the following five seasons and was re-branded as Alpine in 2021 with the Renault marque remaining as engine manufacturer until 2025. As a team owner, Renault won two constructors' and drivers' championships, while as an engine manufacturer it had 12 constructors' and 11 drivers' championships. It collected over 160 wins as engine supplier, ranking fourth in Formula One history.",
+    "score": 0.6427392292749141,
+    "rank": 2,
+    "year_match": false
+   },
+   {
+    "chunk_id": "team-renault-in-formula-one#14",
+    "text": "#### First seasons under a new name (2002–2004)\nIn 2002, Benetton was rebranded as Renault F1 and contested the season with drivers Jarno Trulli and Jenson Button who scored 23 points during the season. As a result of rebranding, Renault received a French nationality license instead of Italian.  \nDespite outscoring his teammate during 2002, Button was dropped by Renault in 2003. His replacement was Spain's Fernando Alonso, who had been considered impressive as a test driver the previous year. Alonso won the 2003 Hungarian Grand Prix, the first time Renault had won a Grand Prix since the 1983 Austrian Grand Prix. Renault was innovative during this period producing non-standard designs such as the 111° 10-cylinder engine for the 2003 RS23 which was designed to effectively lower the centre of gravity of the engine and thus improve the car's handling. This eventually proved too unreliable and heavy, so Renault returned to a more conventional development route.",
+    "score": 0.6145977914194181,
+    "rank": 3,
+    "year_match": false
+   },
+   {
+    "chunk_id": "driver-fernando-alonso#27",
+    "text": "## Alpine (2021–2022)  \nAlonso was signed to drive for Alpine F1 Team for the 2021 season, alongside Esteban Ocon, with Renault having rebranded the team under its new name. In preparation for his F1 return, Alonso performed four testing days driving the Renault R.S.18 and was quickest in the post-2020 season young driver's test driving the Renault R.S.20 for Renault. In his first race with Alpine at the 2021 Bahrain Grand Prix, Alonso was forced to retire after plastic debris entered his brake duct. At the 2021 Emilia Romagna Grand Prix he finished in eleventh after qualifying fifteenth, with teammate Ocon finishing ahead in tenth, but both were upgraded one position after Kimi Räikkönen was penalised, giving Alonso his first points of the season.",
+    "score": 0.612639715308902,
+    "rank": 4,
+    "year_match": false
+   }
+  ],
+  "final_order": [
+   "team-renault-in-formula-one#69",
+   "team-renault-in-formula-one#1",
+   "team-renault-in-formula-one#14",
+   "driver-fernando-alonso#27"
+  ],
+  "actual_chunk_ids": [
+   "team-renault-in-formula-one#69",
+   "team-renault-in-formula-one#1",
+   "team-renault-in-formula-one#14",
+   "driver-fernando-alonso#27"
+  ]
+ },
+ "duration_seconds_generation": 1.547,
+ "cost_usd_generation": 0.000133,
+ "retrieval": {
+  "question_id": "Q15",
+  "status": "scored",
+  "is_proxy": false,
+  "proxy_note": null,
+  "untraceable_reason": null,
+  "hit_count": 1,
+  "group_count": 1,
+  "ratio": 1.0,
+  "strict_all_hit": true,
+  "groups": [
+   {
+    "group_id": "Q15-e1",
+    "criterion": "Q15-c1",
+    "role": null,
+    "hit": true,
+    "any_of_chunk_ids": [
+     "team-renault-in-formula-one#69"
+    ],
+    "matched_chunk_ids": [
+     "team-renault-in-formula-one#69"
+    ]
+   }
+  ]
+ },
+ "duration_seconds_correctness_judge": 1.813,
+ "cost_usd_correctness_judge": 0.000151,
+ "correctness": {
+  "status": "scored",
+  "label": "helyes",
+  "parsed": {
+   "criteria": [
+    {
+     "criterion_id": "Q15-c1",
+     "verdict": "met",
+     "explanation": "The answer correctly states that the academy was rebranded as the Alpine Academy in 2021."
+    }
+   ],
+   "refused": false,
+   "rubric_conflicts": [],
+   "reasoning": "The answer provides the correct year of rebranding as specified in the criteria."
+  },
+  "usage_prompt_tokens": 634,
+  "usage_completion_tokens": 94
+ },
+ "duration_seconds_faithfulness_judge": 1.907,
+ "cost_usd_faithfulness_judge": 0.000221,
+ "faithfulness": {
+  "status": "scored",
+  "score": 1.0,
+  "supported_count": 1,
+  "unsupported_count": 0,
+  "unclear_count": 0
+ },
+ "cost_usd": 0.000505,
+ "cost_source": "ledger_delta"
+}

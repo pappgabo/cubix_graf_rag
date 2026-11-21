@@ -242,3 +242,63 @@ valós router → drift mérési futásra. A valós `route_demo.py` demó
 (5. szakasz) ezt nem igazolta (a demóban a router `globalis`-t
 választott, és csak a `drift` ág volt bekötve) — ez a demó szándékosan
 szűk bekötési korlátja, nem cáfolja a fenti "Igen" minősítést.
+
+## M3 — local followup abláció (lezárva)
+
+**Állapot: lezárva.** Az ON az alapértelmezett. Nincs új DRIFT-verzió
+és nincs további tuning. A 2. szakasz jóváhagyott jóslata és a
+v2 FULL összevetés változatlan; ez a szakasz csak az öt célkérdés
+ablációja.
+
+Célkérdések: Q01, Q07, Q09, Q10, Q11. Q03 nem része a célkészletnek.
+Az egyetlen kísérleti eltérés a részkérdéses `local_search` ciklus.
+A primer, a validáció, a szintézis, az index, a gráf, a modellek, a
+bírók, a golden set és a többi beállítás azonos.
+
+A `m3-followup-on` futás technikai előzmény: az embedding-usage nem
+jutott el a könyvelésig, ezért nem része ennek az összevetésnek. A
+javítás ugyanazon `client.create` válasz `usage.total_tokens` értékét
+továbbítja, extra hívás nélkül.
+
+Összevetett pár:
+
+- ON: `m3-followup-usagefix-on` —
+  [`results/m3-followup-usagefix-on/`](../diagnostics/2026-11-14-week6-drift/results/m3-followup-usagefix-on/),
+  [`state/m3-followup-usagefix-on.json`](../diagnostics/2026-11-14-week6-drift/state/m3-followup-usagefix-on.json).
+- OFF: `m3-followup-usagefix-off` —
+  [`results/m3-followup-usagefix-off/`](../diagnostics/2026-11-14-week6-drift/results/m3-followup-usagefix-off/),
+  [`state/m3-followup-usagefix-off.json`](../diagnostics/2026-11-14-week6-drift/state/m3-followup-usagefix-off.json).
+
+Mindkét ág 5/5: válasz, correctness és faithfulness kész, futási hiba
+nincs. Minden új fizetős hívás usage-e ismert.
+
+| Kérdés | ON címke | OFF címke | Kritérium | Faithfulness | Lokális retrieval |
+|---|---|---|---|---|---|
+| Q01 | helyes | elutasított | elveszett: Q01-c1 | 1,0 → 1,0 | 1,0 → `not_applicable`, ratio null |
+| Q07 | hiányos | hiányos | nincs változás | 1,0 → 1,0 | 0,0 → `not_applicable`, ratio null |
+| Q09 | hiányos | elutasított | nincs változás (`not_met` maradt) | 1,0 → 1,0 | 1,0 → `not_applicable`, ratio null |
+| Q10 | hiányos | elutasított | elveszett: Q10-c1, Q10-c2, Q10-c5 | 1,0 → n/a | 0,1667 → `not_applicable`, ratio null |
+| Q11 | hiányos | elutasított | nincs változás | 1,0 → n/a | 0,0 → `not_applicable`, ratio null |
+
+Nyert kritérium nincs. A Q09 és Q11 címkeromlása kritériumvesztés
+nélkül történt. A Q10 és Q11 faithfulness n/a nem 0, és az eltérő
+elemszámú faithfulness-értékekből nincs komponenshatás levezetve.
+Az OFF retrieval mind az öt kérdésen `not_applicable`, ratio null,
+és nincs a számszerű retrieval-átlag nevezőjében.
+
+Előzetes jóslat: Q01 nem teljesült; Q07 teljesült; Q09 teljesült;
+Q11 nem teljesült. Q10-re nincs előzetesen dokumentált jóslat.
+
+Költség: ON **0,018511 USD**, OFF **0,002659 USD**. Hívások
+kérdésenként: ON 3 embedding + 4 generálás, OFF 1 embedding + 2
+generálás, plusz mindkét ágon 2 bíró. Átlagos futásidő: ON 15,669 s,
+OFF 3,272 s. Közös ledger:
+[`week6-cost-ledger.json`](../diagnostics/2026-11-14-week6-drift/results/week6-cost-ledger.json).
+A pár után a teljes fogyasztás **0,115482 USD**, plafon **0,50 USD**,
+maradék **0,384518 USD**.
+
+**Következtetés:** ezen az öt kérdésen a local followup kikapcsolása
+alacsonyabb költséggel és futásidővel, de rosszabb correctness-
+címkékkel járt. Egyetlen futáspárból nincs általánosítás, és nincs
+olyan állítás, hogy a lokális retrieval minden kérdésen javított.
+Az ON marad alapértelmezett.

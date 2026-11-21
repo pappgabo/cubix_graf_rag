@@ -77,6 +77,7 @@ class SharedCostLedger:
         )
 
     def _check(self, upper: float, label: str) -> float:
+        self._last_label = label
         if self.spent_usd + upper > self.cap_usd:
             raise BudgetExceeded(
                 f"{label}: spent={self.spent_usd:.6f} + upper_bound={upper:.6f} "
@@ -130,6 +131,7 @@ class SharedCostLedger:
                       actual_prompt_tokens: Any, actual_completion_tokens: Any) -> dict:
         entry = {
             "timestamp": time.time(), "step": step, "cost_usd": round(cost, 6),
+            "label": getattr(self, "_last_label", None),
             "usage_known": usage_known,
             "note": None if usage_known else
                    "usage unknown from provider response; booked the pre-call upper-bound estimate, not zero",

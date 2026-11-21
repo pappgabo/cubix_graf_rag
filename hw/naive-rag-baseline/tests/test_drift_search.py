@@ -201,6 +201,25 @@ class DriftSearchOrchestrationTests(unittest.TestCase):
         self.assertEqual(result.generative_call_count, 4)  # primer + 2 local + synthesis
         self.assertEqual(result.embedding_call_count, 3)  # report + 2 subquestion
 
+    def test_followup_off_skips_local_search_and_still_synthesizes(self):
+        result, caller, _guard = self._run(
+            chat_by_label={
+                "drift-primer": _primer_response("primer answer", ["about a", "about b"]),
+                "drift-synthesis": "synthesis only",
+            },
+            embed_by_label={"drift-report-embed": (1.0, 0.0, 0.0, 0.0)},
+            local_search_followup=False,
+        )
+        self.assertEqual(result.status, "ok")
+        self.assertEqual(result.subquestions, ("about a", "about b"))
+        self.assertEqual(result.subquestion_results, ())
+        self.assertEqual(result.answer, "synthesis only")
+        self.assertEqual([label for kind, label in caller.call_log], [
+            "drift-report-embed", "drift-primer", "drift-synthesis",
+        ])
+        self.assertEqual(result.generative_call_count, 2)
+        self.assertEqual(result.embedding_call_count, 1)
+
     def test_empty_subquestion_list_is_now_a_clear_invalid_status(self):
         """PRIMER_PROMPT_VERSION v2 (tightened after the first real smoke
         run, see docs/week6-atadas.md's C-phase diagnosis): an empty

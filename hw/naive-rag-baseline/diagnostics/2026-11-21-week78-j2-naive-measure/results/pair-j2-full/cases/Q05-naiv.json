@@ -1,0 +1,272 @@
+{
+ "question_id": "Q05",
+ "mode": "naiv",
+ "run_phase": "pair-j2-full",
+ "question_type": "multi-hop",
+ "question_status": "frozen_w4",
+ "question_text": "Which team did the 2012 World Drivers' Champion leave his team for, and in which year did the move take effect?",
+ "expected_answer": "Sebastian Vettel a Red Bulltól a Ferrarihoz igazolt, a váltás a 2015-ös szezonra lépett életbe.",
+ "golden_set_version": "v1-approval-draft",
+ "answer": "The 2012 World Drivers' Champion, Sebastian Vettel, left Red Bull to join Scuderia Ferrari, and the move took effect at the end of the 2014 season [S2].",
+ "refused": null,
+ "model_called": true,
+ "actual_context": "[S1] (None, section: Teams and drivers > Driver changes)\n### Driver changes\nThe 2012 season saw several driver changes. Lotus chose not to take up an option on Vitaly Petrov's contract, and did not offer Bruno Senna a new contract. Petrov and Senna were replaced by 2007 World Drivers' Champion Kimi Räikkönen – returning to the sport after two seasons competing in the World Rally Championship – and reigning GP2 Series champion Romain Grosjean, who also returned to the sport after a two-year absence. Petrov later replaced Jarno Trulli at Caterham; Trulli's replacement meant that the opening race of the season would be the first race since the 1973 German Grand Prix to take place without an Italian driver on the grid. Senna joined Williams, the team having previously attempted to secure Räikkönen for the season. Senna replaced Rubens Barrichello, who left Formula One after a record-breaking nineteen seasons. He later moved to IndyCar for the 2012 season, joining KV Racing Technology.\n\n[S2] (None, section: 2014: Winless year and departure from Red Bull)\nIn October, Red Bull had announced that Vettel would be leaving the team at the end of the season to join Scuderia Ferrari, one year before his contract was due to expire. Daniil Kvyat was later selected as his replacement. Vettel replaced Alonso and partnered his friend Kimi Räikkönen. Vettel mentioned he would like to drive for Ferrari at some point in his career and was already rumoured in 2012 to have a non-binding pre-contract, with options, to join them in 2014. He was denied an early release from his Red Bull contract to test the 2014 Ferrari car in Abu Dhabi. In spite of this, Vettel was present at the Ferrari test – although not driving the car – but Red Bull did not enforce any sanctions. Vettel instead made his first appearance in November, completing nearly 100 laps in the 2012 car around the test track of Fiorano.\n\n[S3] (None, section: Teams and drivers > Driver changes)\nPedro de la Rosa and Narain Karthikeyan returned to Formula One with HRT. De la Rosa had been without a full-time drive since the 2010 Italian Grand Prix, having spent the majority of the 2011 season as a test driver for McLaren and making one appearance racing for Sauber; Karthikeyan was dropped by the team before the 2011 British Grand Prix in favour of Ricciardo. He, too, made a one-race appearance at the Indian Grand Prix, before leaving the team until the 2012 season began. Vitantonio Liuzzi, who drove for HRT in 2011, joined the Indian i1 Super Series. The series was later postponed until 2013, but Liuzzi was unable to retain his seat with the team. At the launch of the HRT F112 in March, Liuzzi was confirmed as one of the team's testing and reserve drivers alongside both former GP2 Series driver Dani Clos and Ma Qinghua, the first ever Chinese driver to step into a Formula 1 car.\nJérôme d'Ambrosio left Marussia (then known as Virgin Racing) after the 2011 Brazilian Grand Prix. He later joined Lotus F1 as their third driver. Charles Pic – who placed fourth in the 2011 GP2 Series driving for Addax – joined Marussia, replacing d'Ambrosio.\n\n[S4] (None, section: Nico Rosberg > Mercedes (2010–2016) > Nico Rosberg > 2010–2012)\n## 2010–2012  \nIn mid-to-late 2009, Mercedes-Benz vice-president of motorsport Norbert Haug discussed with Rosberg the possibility of driving for the manufacturer in 2010 pending its acquisition of Brawn GP. Rosberg also talked to McLaren and Williams about potential employment; he was sceptical because Williams was mulling over whether Renault or Cosworth should be the team's engine supplier. On 29 October, he confirmed his departure from Williams at the conclusion of the season and was officially released from his contract with the team on 1 January 2010. One week later Mercedes purchased 75 percent of Brawn GP and entered Formula One under its own name, employing Rosberg to drive for the team. He was partnered with the seven-time world champion Michael Schumacher and was assigned car No. 4 after Schumacher requested No. 3 for superstitious reasons.",
+ "actual_chunk_ids": [
+  "season-2012-formula-one-world-championship#10",
+  "driver-sebastian-vettel#28",
+  "season-2012-formula-one-world-championship#13",
+  "driver-nico-rosberg#21"
+ ],
+ "chunk_ids_traceable": true,
+ "is_proxy_retrieval": false,
+ "error": null,
+ "duration_seconds": 1.625,
+ "ledger_entry": {
+  "run_id": "pair-j2-full",
+  "timestamp": 1795269725.394293,
+  "step": "answer",
+  "mode": "naiv",
+  "question_id": "Q05",
+  "log_file": "D:\\PET\\CUBIX\\cubix_GraphRAG\\7.8.záró\\HW\\naive-rag-baseline\\diagnostics\\2026-11-21-week78-j2-naive-measure\\logs\\pair-j2-full\\naive-log-naiv-Q05.json",
+  "request_hash": "d2811cfbe505f00d32da06a6d86547697874b0337127e5f65ede6973abd077f7",
+  "usage_prompt_tokens": 1046,
+  "usage_completion_tokens": 40,
+  "cost_usd": 0.0001809,
+  "duration_seconds": 1.187,
+  "status": "success",
+  "error": null
+ },
+ "raw": {
+  "sources": [
+   {
+    "tag": "S1",
+    "chunk_id": "season-2012-formula-one-world-championship#10",
+    "doc_id": "season-2012-formula-one-world-championship",
+    "file": null,
+    "format": null,
+    "location": "section: Teams and drivers > Driver changes",
+    "url": null,
+    "score": 0.6149,
+    "text": "### Driver changes\nThe 2012 season saw several driver changes. Lotus chose not to take up an option on Vitaly Petrov's contract, and did not offer Bruno Senna a new contract. Petrov and Senna were replaced by 2007 World Drivers' Champion Kimi Räikkönen – returning to the sport after two seasons competing in the World Rally Championship – and reigning GP2 Series champion Romain Grosjean, who also returned to the sport after a two-year absence. Petrov later replaced Jarno Trulli at Caterham; Trulli's replacement meant that the opening race of the season would be the first race since the 1973 German Grand Prix to take place without an Italian driver on the grid. Senna joined Williams, the team having previously attempted to secure Räikkönen for the season. Senna replaced Rubens Barrichello, who left Formula One after a record-breaking nineteen seasons. He later moved to IndyCar for the 2012 season, joining KV Racing Technology."
+   },
+   {
+    "tag": "S2",
+    "chunk_id": "driver-sebastian-vettel#28",
+    "doc_id": "driver-sebastian-vettel",
+    "file": null,
+    "format": null,
+    "location": "section: 2014: Winless year and departure from Red Bull",
+    "url": null,
+    "score": 0.5548,
+    "text": "In October, Red Bull had announced that Vettel would be leaving the team at the end of the season to join Scuderia Ferrari, one year before his contract was due to expire. Daniil Kvyat was later selected as his replacement. Vettel replaced Alonso and partnered his friend Kimi Räikkönen. Vettel mentioned he would like to drive for Ferrari at some point in his career and was already rumoured in 2012 to have a non-binding pre-contract, with options, to join them in 2014. He was denied an early release from his Red Bull contract to test the 2014 Ferrari car in Abu Dhabi. In spite of this, Vettel was present at the Ferrari test – although not driving the car – but Red Bull did not enforce any sanctions. Vettel instead made his first appearance in November, completing nearly 100 laps in the 2012 car around the test track of Fiorano."
+   },
+   {
+    "tag": "S3",
+    "chunk_id": "season-2012-formula-one-world-championship#13",
+    "doc_id": "season-2012-formula-one-world-championship",
+    "file": null,
+    "format": null,
+    "location": "section: Teams and drivers > Driver changes",
+    "url": null,
+    "score": 0.5543,
+    "text": "Pedro de la Rosa and Narain Karthikeyan returned to Formula One with HRT. De la Rosa had been without a full-time drive since the 2010 Italian Grand Prix, having spent the majority of the 2011 season as a test driver for McLaren and making one appearance racing for Sauber; Karthikeyan was dropped by the team before the 2011 British Grand Prix in favour of Ricciardo. He, too, made a one-race appearance at the Indian Grand Prix, before leaving the team until the 2012 season began. Vitantonio Liuzzi, who drove for HRT in 2011, joined the Indian i1 Super Series. The series was later postponed until 2013, but Liuzzi was unable to retain his seat with the team. At the launch of the HRT F112 in March, Liuzzi was confirmed as one of the team's testing and reserve drivers alongside both former GP2 Series driver Dani Clos and Ma Qinghua, the first ever Chinese driver to step into a Formula 1 car.\nJérôme d'Ambrosio left Marussia (then known as Virgin Racing) after the 2011 Brazilian Grand Prix. He later joined Lotus F1 as their third driver. Charles Pic – who placed fourth in the 2011 GP2 Series driving for Addax – joined Marussia, replacing d'Ambrosio."
+   },
+   {
+    "tag": "S4",
+    "chunk_id": "driver-nico-rosberg#21",
+    "doc_id": "driver-nico-rosberg",
+    "file": null,
+    "format": null,
+    "location": "section: Nico Rosberg > Mercedes (2010–2016) > Nico Rosberg > 2010–2012",
+    "url": null,
+    "score": 0.5494,
+    "text": "## 2010–2012  \nIn mid-to-late 2009, Mercedes-Benz vice-president of motorsport Norbert Haug discussed with Rosberg the possibility of driving for the manufacturer in 2010 pending its acquisition of Brawn GP. Rosberg also talked to McLaren and Williams about potential employment; he was sceptical because Williams was mulling over whether Renault or Cosworth should be the team's engine supplier. On 29 October, he confirmed his departure from Williams at the conclusion of the season and was officially released from his contract with the team on 1 January 2010. One week later Mercedes purchased 75 percent of Brawn GP and entered Formula One under its own name, employing Rosberg to drive for the team. He was partnered with the seven-time world champion Michael Schumacher and was assigned car No. 4 after Schumacher requested No. 3 for superstitious reasons."
+   }
+  ]
+ },
+ "j2_retrieval": {
+  "j2_enabled": true,
+  "candidates": [
+   {
+    "chunk_id": "season-2021-formula-one-world-championship#4",
+    "text": "Four-time World Drivers' Champion Sebastian Vettel left Ferrari at the end of the 2020 season after racing with the team\nfor six seasons. Vettel's seat was taken by Carlos Sainz Jr., who had left McLaren after two seasons. Daniel Ricciardo\nmoved  from  Renault  to  McLaren,  where  he  replaced  Sainz.  Ricciardo  was  replaced  by  double  World  Champion\nFernando Alonso, who drove in Alpine's first season, having last raced in 2018 for McLaren.\nVettel moved to Aston Martin, where he replaced Sergio Pérez. Pérez, who had previously signed a contract to drive for\nAston Martin's predecessor, Racing Point, until 2022, moved to Red Bull Racing where he replaced Alexander Albon,\nwho  was  Red  Bull  Racing's  reserve  and  test  driver  for  the  2021  season.  Pérez  became  the  first  driver  since  Mark\nWebber in 2007 to join the team without being previously a Red Bull Junior Team member.\nRomain Grosjean and Kevin Magnussen, who had raced for Haas since 2016 and 2017 respectively, left the team at the\nend  of  2020.  2020  Formula  2  Champion  Mick  Schumacher,  the  son  of  seven-time  World  Champion  Michael",
+    "score": 0.6625686905820662,
+    "rank": 1,
+    "year_match": false
+   },
+   {
+    "chunk_id": "season-2012-formula-one-world-championship#10",
+    "text": "### Driver changes\nThe 2012 season saw several driver changes. Lotus chose not to take up an option on Vitaly Petrov's contract, and did not offer Bruno Senna a new contract. Petrov and Senna were replaced by 2007 World Drivers' Champion Kimi Räikkönen – returning to the sport after two seasons competing in the World Rally Championship – and reigning GP2 Series champion Romain Grosjean, who also returned to the sport after a two-year absence. Petrov later replaced Jarno Trulli at Caterham; Trulli's replacement meant that the opening race of the season would be the first race since the 1973 German Grand Prix to take place without an Italian driver on the grid. Senna joined Williams, the team having previously attempted to secure Räikkönen for the season. Senna replaced Rubens Barrichello, who left Formula One after a record-breaking nineteen seasons. He later moved to IndyCar for the 2012 season, joining KV Racing Technology.",
+    "score": 0.6148820565877765,
+    "rank": 2,
+    "year_match": true
+   },
+   {
+    "chunk_id": "driver-kimi-raikkonen#49",
+    "text": "### First departure (2010–2011)\nNear the end of the 2009 season, Ferrari announced that Räikkönen would be leaving the team, despite having a contract to race for them in 2010. He would be replaced by Fernando Alonso. He was expected to return to McLaren alongside Lewis Hamilton but negotiations with the team failed. Räikkönen was then linked to Mercedes GP but the team eventually signed Michael Schumacher and Nico Rosberg. Toyota F1, before it pulled out of Formula One, offered Räikkönen a driving contract to replace Timo Glock in 2010. The BBC reported that he refused the contract owing to wanting to drive a race-winning car, not to mention Toyota not offering a large enough salary.",
+    "score": 0.5792305286770215,
+    "rank": 3,
+    "year_match": false
+   },
+   {
+    "chunk_id": "driver-valtteri-bottas#55",
+    "text": "Bottas ended the season 22nd in the World Drivers' Championship, last of the full-time drivers, and failed to score points over a season for the first time in his career. Reflecting on his three-year tenure at the team, he described his move there in 2022 as a \"mistake\" and that it was \"downhill\" after the first year. He also revealed that his decision to join the team was influenced by the presence of team principal Frédéric Vasseur and that he considered exercising an option to leave the team when Vasseur moved to Ferrari, but was convinced to stay after being told he would be a \"pillar\" of the Audi project.",
+    "score": 0.57084512094589,
+    "rank": 4,
+    "year_match": false
+   },
+   {
+    "chunk_id": "team-red-bull-racing#70",
+    "text": "## 2025 season  \nDuring the 2024 Miami Grand Prix race weekend, Red Bull Racing announced the departure of its Chief Technical Officer, Adrian Newey after 19 years with the team. He left for Aston Martin in March 2025. Despite initially having signed a contract until 2026, it was announced on 18 December 2024 that Sergio Pérez had mutually terminated his contract with Red Bull and would leave the team after four seasons. On 19 December, it was announced that Liam Lawson, who had already driven for Red Bull's sister team Scuderia AlphaTauri / RB for parts of 2023 and 2024, would be lining up alongside Verstappen for the 2025 season.",
+    "score": 0.5649222734604483,
+    "rank": 5,
+    "year_match": false
+   },
+   {
+    "chunk_id": "driver-sebastian-vettel#28",
+    "text": "In October, Red Bull had announced that Vettel would be leaving the team at the end of the season to join Scuderia Ferrari, one year before his contract was due to expire. Daniil Kvyat was later selected as his replacement. Vettel replaced Alonso and partnered his friend Kimi Räikkönen. Vettel mentioned he would like to drive for Ferrari at some point in his career and was already rumoured in 2012 to have a non-binding pre-contract, with options, to join them in 2014. He was denied an early release from his Red Bull contract to test the 2014 Ferrari car in Abu Dhabi. In spite of this, Vettel was present at the Ferrari test – although not driving the car – but Red Bull did not enforce any sanctions. Vettel instead made his first appearance in November, completing nearly 100 laps in the 2012 car around the test track of Fiorano.",
+    "score": 0.5548010383698577,
+    "rank": 6,
+    "year_match": true
+   },
+   {
+    "chunk_id": "driver-fernando-alonso#19",
+    "text": "## Ferrari (2010–2014)  \nAlonso agreed with Ferrari president Luca Cordero di Montezemolo to drive for Ferrari in 2009, but team principal Jean Todt extended the contracts of both Felipe Massa and Räikkönen to 2010. Alonso obtained a mid-2009 agreement to drive for Ferrari from 2011 on but it was moved to 2010 after Renault were investigated for race fixing in Singapore and Räikkönen was released from the team. McLaren's Hamilton and Button and Red Bull's of Sebastian Vettel and Mark Webber were Alonso's main championship competition. He won five races that season and entered the season-ending Abu Dhabi Grand Prix leading by eight points after being 47 behind mid-season following errors. Alonso finished runner-up to Vettel after finishing seventh thereby losing nineteen points to Vettel who won the race.",
+    "score": 0.5547336507995702,
+    "rank": 7,
+    "year_match": false
+   },
+   {
+    "chunk_id": "driver-sebastian-vettel#27",
+    "text": "## 2014: Winless year and departure from Red Bull  \nFor the 2014 season and beyond, drivers picked a unique car number to use for the remainder of their Formula One career; Vettel chose the number five. However, as reigning World Drivers' Champion, he carried number one throughout the season. Webber left the sport and was replaced by Daniel Ricciardo, who was promoted from Toro Rosso.  \nVettel struggled with reliability issues throughout winter testing, which forced him to retire at the opening Australian Grand Prix. Reliability problems also forced Vettel to retire at the Monaco and Austrian Grands Prix. Vettel qualified on the front-row for the races in Malaysia, Great Britain and Hungary, and finished on the podium in Malaysia, Canada, Singapore and Japan. After the Russian Grand Prix, he had been outqualified by a teammate over a season for the first time in his Formula One career. In addition to suffering reliability problems, throughout 2014 Vettel struggled to get to grips with the Red Bull RB10, and the Pirelli tyres. He signed off the year by becoming the first defending champion to fail to win a race during a season since Jacques Villeneuve in 1998.",
+    "score": 0.5546461052535486,
+    "rank": 8,
+    "year_match": false
+   },
+   {
+    "chunk_id": "season-2012-formula-one-world-championship#13",
+    "text": "Pedro de la Rosa and Narain Karthikeyan returned to Formula One with HRT. De la Rosa had been without a full-time drive since the 2010 Italian Grand Prix, having spent the majority of the 2011 season as a test driver for McLaren and making one appearance racing for Sauber; Karthikeyan was dropped by the team before the 2011 British Grand Prix in favour of Ricciardo. He, too, made a one-race appearance at the Indian Grand Prix, before leaving the team until the 2012 season began. Vitantonio Liuzzi, who drove for HRT in 2011, joined the Indian i1 Super Series. The series was later postponed until 2013, but Liuzzi was unable to retain his seat with the team. At the launch of the HRT F112 in March, Liuzzi was confirmed as one of the team's testing and reserve drivers alongside both former GP2 Series driver Dani Clos and Ma Qinghua, the first ever Chinese driver to step into a Formula 1 car.\nJérôme d'Ambrosio left Marussia (then known as Virgin Racing) after the 2011 Brazilian Grand Prix. He later joined Lotus F1 as their third driver. Charles Pic – who placed fourth in the 2011 GP2 Series driving for Addax – joined Marussia, replacing d'Ambrosio.",
+    "score": 0.5542833882447163,
+    "rank": 9,
+    "year_match": true
+   },
+   {
+    "chunk_id": "team-renault-in-formula-one#33",
+    "text": "Renault had been suspended for one race (the 2009 European Grand Prix) due to the incident involving Fernando Alonso's wheel not being fitted properly in the 2009 Hungarian Grand Prix, however, this has been overturned on appeal following a decision from the FIA on 17 August 2009.\nOn 4 August, Nelson Piquet Jr. was told by Renault he would not continue driving for them for the rest of the season. \"I have received notice from Renault of its intention to stop me from driving for them in the current F1 season\", read a statement on Piquet's website. Piquet had described the 2009 season as \"the worst period of my career\" and had criticised team boss Flavio Briatore. He was replaced by test driver Romain Grosjean as of the European Grand Prix.\nAfter his first podium of the year in Singapore, Fernando Alonso confirmed that he would be leaving Renault, moving to Ferrari in 2010.  \nRace rigging allegations",
+    "score": 0.5520893350739627,
+    "rank": 10,
+    "year_match": false
+   },
+   {
+    "chunk_id": "driver-nico-rosberg#21",
+    "text": "## 2010–2012  \nIn mid-to-late 2009, Mercedes-Benz vice-president of motorsport Norbert Haug discussed with Rosberg the possibility of driving for the manufacturer in 2010 pending its acquisition of Brawn GP. Rosberg also talked to McLaren and Williams about potential employment; he was sceptical because Williams was mulling over whether Renault or Cosworth should be the team's engine supplier. On 29 October, he confirmed his departure from Williams at the conclusion of the season and was officially released from his contract with the team on 1 January 2010. One week later Mercedes purchased 75 percent of Brawn GP and entered Formula One under its own name, employing Rosberg to drive for the team. He was partnered with the seven-time world champion Michael Schumacher and was assigned car No. 4 after Schumacher requested No. 3 for superstitious reasons.",
+    "score": 0.5493760841963748,
+    "rank": 11,
+    "year_match": true
+   },
+   {
+    "chunk_id": "driver-jenson-button#23",
+    "text": "In August, Button became embroiled in a contract dispute. On 5 August, Button chose to leave BAR and signed a two-year contract to return to Williams. He did so because BAR were not a works manufacturer team but Williams were in a partnership with BMW and felt they could help him win the Drivers' Championship. This was surprising, as Button was enjoying his best season to date, while Williams had been struggling. BAR insisted they had the right to exercise their option to retain Button. His management argued that the BAR option was not valid because it contained a clause allowing him to leave if BAR risked losing their Honda engines. They felt the new contract signed mid-year for Honda to supply engines to BAR was not definitive, and thus Button was free to move. The dispute went to F1's Contract Recognition Board, who ruled in favour of BAR on 20 October, forcing Button to stay with the team. Button separated from his manager John Byfield as a result, saying he had been badly advised. He asked his friend Richard Goodard to manage him, and employed a personal assistant in restructuring his organisation.  \n##### 2005",
+    "score": 0.5462615125990693,
+    "rank": 12,
+    "year_match": false
+   }
+  ],
+  "final_order": [
+   "season-2012-formula-one-world-championship#10",
+   "driver-sebastian-vettel#28",
+   "season-2012-formula-one-world-championship#13",
+   "driver-nico-rosberg#21"
+  ],
+  "actual_chunk_ids": [
+   "season-2012-formula-one-world-championship#10",
+   "driver-sebastian-vettel#28",
+   "season-2012-formula-one-world-championship#13",
+   "driver-nico-rosberg#21"
+  ]
+ },
+ "duration_seconds_generation": 1.625,
+ "cost_usd_generation": 0.000181,
+ "retrieval": {
+  "question_id": "Q05",
+  "status": "scored",
+  "is_proxy": false,
+  "proxy_note": null,
+  "untraceable_reason": null,
+  "hit_count": 0,
+  "group_count": 3,
+  "ratio": 0.0,
+  "strict_all_hit": false,
+  "groups": [
+   {
+    "group_id": "Q05-e1",
+    "criterion": "Q05-c1",
+    "role": null,
+    "hit": false,
+    "any_of_chunk_ids": [
+     "driver-sebastian-vettel#2"
+    ],
+    "matched_chunk_ids": []
+   },
+   {
+    "group_id": "Q05-e2",
+    "criterion": "Q05-c2",
+    "role": null,
+    "hit": false,
+    "any_of_chunk_ids": [
+     "driver-sebastian-vettel#29",
+     "driver-sebastian-vettel#30"
+    ],
+    "matched_chunk_ids": []
+   },
+   {
+    "group_id": "Q05-bridge",
+    "criterion": null,
+    "role": "retrieval_bridge",
+    "hit": false,
+    "any_of_chunk_ids": [
+     "reference-list-of-formula-one-world-drivers-champions#0",
+     "driver-sebastian-vettel#0",
+     "driver-sebastian-vettel#2"
+    ],
+    "matched_chunk_ids": []
+   }
+  ]
+ },
+ "duration_seconds_correctness_judge": 2.891,
+ "cost_usd_correctness_judge": 0.000207,
+ "correctness": {
+  "status": "scored",
+  "label": "hiányos",
+  "parsed": {
+   "criteria": [
+    {
+     "criterion_id": "Q05-c1",
+     "verdict": "met",
+     "explanation": "The answer correctly identifies Sebastian Vettel as the champion and Ferrari as the destination team."
+    },
+    {
+     "criterion_id": "Q05-c2",
+     "verdict": "not_met",
+     "explanation": "The answer states the move took effect at the end of the 2014 season instead of the required 2015 season."
+    }
+   ],
+   "refused": false,
+   "rubric_conflicts": [],
+   "reasoning": "The answer meets the first criterion by correctly naming Vettel and Ferrari, but it fails the second criterion by providing an incorrect year for when the move took effect."
+  },
+  "usage_prompt_tokens": 737,
+  "usage_completion_tokens": 161
+ },
+ "duration_seconds_faithfulness_judge": 2.297,
+ "cost_usd_faithfulness_judge": 0.000275,
+ "faithfulness": {
+  "status": "scored",
+  "score": 1.0,
+  "supported_count": 2,
+  "unsupported_count": 0,
+  "unclear_count": 0
+ },
+ "cost_usd": 0.000663,
+ "cost_source": "ledger_delta"
+}

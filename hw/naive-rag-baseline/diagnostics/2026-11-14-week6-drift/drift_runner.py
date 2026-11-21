@@ -107,18 +107,43 @@ def build_real_call_chat(*, log_dir: Path, label_prefix: str):
     return call_chat
 
 
+def _provider_total_tokens(response: Any) -> int | None:
+    """Read ``usage.total_tokens`` from the same embedding response. Never estimates."""
+    usage = response.get("usage") if isinstance(response, dict) else getattr(response, "usage", None)
+    if usage is None:
+        return None
+    total = usage.get("total_tokens") if isinstance(usage, dict) else getattr(usage, "total_tokens", None)
+    if isinstance(total, bool) or not isinstance(total, int):
+        return None
+    return total
+
+
 def build_real_call_embed():
-    """`call_embed(texts, label) -> (vectors, total_tokens)`. The installed
-    langchain embeddings client does not expose token usage, so
-    `total_tokens` is `"unknown"` -- `drift_search`'s cost-guard wrapper
-    already books the pre-call upper bound for that case, never zero."""
+    """`call_embed(texts, label) -> (vectors, total_tokens)`.
+
+    ``embed_documents`` returns only vectors. The same ``client.create``
+    response carries provider ``usage.total_tokens``; read that and pass
+    the response through unchanged. Missing usage stays ``"unknown"``.
+    """
     from naive_rag.models import get_embeddings
 
     embeddings = get_embeddings()
+    original_create = embeddings.client.create
+    captured: list[int | None] = []
+
+    def create(*args: Any, **kwargs: Any) -> Any:
+        response = original_create(*args, **kwargs)
+        captured.append(_provider_total_tokens(response))
+        return response
+
+    embeddings.client.create = create
 
     def call_embed(texts: list[str], label: str) -> tuple[list[list[float]], Any]:
+        captured.clear()
         vectors = embeddings.embed_documents(texts)
-        return vectors, "unknown"
+        if not captured or any(total is None for total in captured):
+            return vectors, "unknown"
+        return vectors, sum(captured)
 
     return call_embed
 
@@ -140,6 +165,8 @@ def run_drift_capture(
     run_phase: str, reports: tuple[CommunityReport, ...], report_index,
     graph: DomainGraph, local_index: EntityIndex, chunk_texts: dict[str, str],
     local_budget: dict | None = None,
+    local_search_followup: bool = True,
+    log_dir: Path | None = None,
 ) -> dict[str, Any]:
     """One real drift-search call for one question. Mirrors
     `generation_runner.run_lokalis_capture`'s shape: a flat dict with the
@@ -167,7 +194,10 @@ def run_drift_capture(
     primer's selected reports' `candidate_source_chunk_ids`) is a fourth,
     separate axis -- riport-level, not local-search-level -- and is never
     merged into any of the three above either."""
-    call_chat = build_real_call_chat(log_dir=LOG_DIR, label_prefix=f"drift-{run_phase}-{question_id}")
+    call_chat = build_real_call_chat(
+        log_dir=LOG_DIR if log_dir is None else log_dir,
+        label_prefix=f"drift-{run_phase}-{question_id}",
+    )
     call_embed = build_real_call_embed()
 
     started = time.monotonic()
@@ -176,6 +206,7 @@ def run_drift_capture(
         graph=graph, local_index=local_index,
         call_chat=call_chat, call_embed=call_embed, cost_guard=cost_guard,
         chunk_texts=chunk_texts, local_budget=local_budget,
+        local_search_followup=local_search_followup,
     )
     elapsed = time.monotonic() - started
 
@@ -210,8 +241,12 @@ def run_drift_capture(
         "refused": (result.answer == REFUSAL) if result.status == "ok" else None,
         "model_called": result.generative_call_count > 0,
         "actual_context": result.synthesis_context,
-        "actual_chunk_ids": local_context_chunk_ids, "chunk_ids_traceable": True,
+        "actual_chunk_ids": local_context_chunk_ids,
+        "chunk_ids_traceable": local_search_followup,
+        "retrieval_not_applicable": not local_search_followup,
+        "retrieval_untraceable_reason": None,
         "is_proxy_retrieval": False,
+        "local_search_followup": local_search_followup,
         "local_candidate_chunk_ids": local_candidate_chunk_ids,
         "report_ids": list(result.report_ids),
         "report_candidate_chunk_ids": report_candidate_chunk_ids,

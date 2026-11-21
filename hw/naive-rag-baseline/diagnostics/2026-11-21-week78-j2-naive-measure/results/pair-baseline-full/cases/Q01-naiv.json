@@ -1,0 +1,191 @@
+{
+ "question_id": "Q01",
+ "mode": "naiv",
+ "run_phase": "pair-baseline-full",
+ "question_type": "simple",
+ "question_status": "frozen_w4",
+ "question_text": "How many World Drivers' Championships has Lewis Hamilton won?",
+ "expected_answer": "7 (hét), Michael Schumacherrel holtversenyben rekord.",
+ "golden_set_version": "v1-approval-draft",
+ "duration_seconds_generation": 7.109,
+ "cost_usd_generation": 0.000169,
+ "answer": "Lewis Hamilton has won seven World Drivers' Championships, which ties him with Michael Schumacher for the most championships in Formula One history [S2].",
+ "refused": null,
+ "model_called": true,
+ "actual_context": "[S1] (None, page 1)\nLewis Hamilton\nSir Lewis Carl Davidson Hamilton (born 7 January 1985) is a British racing driver who competes in Formula One for\nFerrari.  Hamilton  has  won  a  joint-record  seven  Formula  One  World  Drivers'  Championship  titles—tied  with  Michael\nSchumacher—and  holds  the  records  for  most  wins  (106),  pole  positions  (104),  and  podium  finishes  (208),  among\nothers.\nBorn  and  raised  in  Stevenage,  Hamilton  began  his  career  in  karting  at  age  six,  winning  several  national  titles  and\nattracting  the  attention  of  Ron  Dennis,  who  signed  him  to  the  McLaren-Mercedes  Young  Driver  Programme  in  1998.\nAfter  winning  the  Karting  World  Cup  and  European  Championship  in  2000,  Hamilton  progressed  to  junior  formulae,\nwhere  his  successes  included  winning  the  Formula  3  Euro  Series  and  the  GP2  Series.  He  subsequently  signed  for\nMcLaren in 2007, becoming the first black driver to compete in Formula One at the Australian Grand Prix. In his rookie\nseason, Hamilton won four Grands Prix and set several records as he finished runner-up to Kimi Räikkönen by one point\n\n[S2] (None, section: Formula One > Drivers)\nAs of 2025, a total of 35 separate drivers have won the World Drivers' Championship, with Michael Schumacher and Lewis Hamilton holding the record for most championships, each with seven. Jochen Rindt is the only posthumous World Champion, after his points total was not surpassed despite his fatal accident at the 1970 Italian Grand Prix, with 4 races remaining in the season. Drivers from the United Kingdom have been the most successful in the sport, with 21 championships among 11 drivers and 331 wins as of 2026.\n\n[S3] (None, section: 2020 Formula One World Championship)\nLewis Hamilton and Mercedes entered the season as the reigning World Drivers' and World Constructors' champions, respectively, after they both won their sixth championship in 2019. At the Emilia Romagna Grand Prix, Mercedes secured their seventh consecutive Constructors' Championship making them the only team to win seven consecutive championships, breaking Ferrari's record from 1999 to 2004. Mercedes also maintained the distinction of being the only team to win the championship since the 2014 turbo-hybrid engine regulation changes were enacted. Hamilton equalled Michael Schumacher's record of seven World Drivers' Championships at the Turkish Grand Prix and broke Schumacher's previous record of 91 career wins at the Portuguese Grand Prix.\n\n[S4] (None, page 3)\nBrazilian  Grand  Prix,  overtaking  Timo  Glock  for  fifth-place  at  the  final  corners  of  the  last  lap  to  become  the\nthen-youngest World Drivers' Champion, and deny race-winner Massa the title by one point. Hamilton also became the\nfirst British driver to win the World Drivers' Championship since Damon Hill in 1996.\n2009–2012: Unsuccessful title bids and departure from McLaren\nDuring  his  veering  final  years  with  McLaren—a  period  largely  dominated  by  Red  Bull—Hamilton  continued  to  score\npodium  finishes  and  race  victories,  and  challenged  for  titles.  Major  technical  regulation  changes  in  2009  led  to  a\nchallenging  start  for  McLaren.  Often  qualifying  outside  of  the  top  ten,  and  struggling  to  finish  consistently  on  points,\nHamilton's chances of defending his title became unfeasible. Major upgrades at the German Grand Prix saw a dramatic\nimprovement in performance of the MP4-24 car. From that point onward, Hamilton advanced from eleventh to fifth in the\nstandings and outscored the rest of the field, securing two race victories and three additional podium finishes across the\nremaining nine rounds.",
+ "actual_chunk_ids": [
+  "driver-lewis-hamilton#0",
+  "reference-formula-one#42",
+  "season-2020-formula-one-world-championship#2",
+  "driver-lewis-hamilton#13"
+ ],
+ "chunk_ids_traceable": true,
+ "is_proxy_retrieval": false,
+ "error": null,
+ "duration_seconds": 7.109,
+ "ledger_entry": {
+  "run_id": "pair-baseline-full",
+  "timestamp": 1795269559.4038663,
+  "step": "answer",
+  "mode": "naiv",
+  "question_id": "Q01",
+  "log_file": "D:\\PET\\CUBIX\\cubix_GraphRAG\\7.8.záró\\HW\\naive-rag-baseline\\diagnostics\\2026-11-21-week78-j2-naive-measure\\logs\\pair-baseline-full\\naive-log-naiv-Q01.json",
+  "request_hash": "4ce2d4ae0caee33e7e4c2741f5af0e35fcefcecb26d65e32d1467b8f461fbb67",
+  "usage_prompt_tokens": 1012,
+  "usage_completion_tokens": 28,
+  "cost_usd": 0.0001686,
+  "duration_seconds": 1.703,
+  "status": "success",
+  "error": null
+ },
+ "raw": {
+  "sources": [
+   {
+    "tag": "S1",
+    "chunk_id": "driver-lewis-hamilton#0",
+    "doc_id": "driver-lewis-hamilton",
+    "file": null,
+    "format": null,
+    "location": "page 1",
+    "url": null,
+    "score": 0.6669,
+    "text": "Lewis Hamilton\nSir Lewis Carl Davidson Hamilton (born 7 January 1985) is a British racing driver who competes in Formula One for\nFerrari.  Hamilton  has  won  a  joint-record  seven  Formula  One  World  Drivers'  Championship  titles—tied  with  Michael\nSchumacher—and  holds  the  records  for  most  wins  (106),  pole  positions  (104),  and  podium  finishes  (208),  among\nothers.\nBorn  and  raised  in  Stevenage,  Hamilton  began  his  career  in  karting  at  age  six,  winning  several  national  titles  and\nattracting  the  attention  of  Ron  Dennis,  who  signed  him  to  the  McLaren-Mercedes  Young  Driver  Programme  in  1998.\nAfter  winning  the  Karting  World  Cup  and  European  Championship  in  2000,  Hamilton  progressed  to  junior  formulae,\nwhere  his  successes  included  winning  the  Formula  3  Euro  Series  and  the  GP2  Series.  He  subsequently  signed  for\nMcLaren in 2007, becoming the first black driver to compete in Formula One at the Australian Grand Prix. In his rookie\nseason, Hamilton won four Grands Prix and set several records as he finished runner-up to Kimi Räikkönen by one point"
+   },
+   {
+    "tag": "S2",
+    "chunk_id": "reference-formula-one#42",
+    "doc_id": "reference-formula-one",
+    "file": null,
+    "format": null,
+    "location": "section: Formula One > Drivers",
+    "url": null,
+    "score": 0.6651,
+    "text": "As of 2025, a total of 35 separate drivers have won the World Drivers' Championship, with Michael Schumacher and Lewis Hamilton holding the record for most championships, each with seven. Jochen Rindt is the only posthumous World Champion, after his points total was not surpassed despite his fatal accident at the 1970 Italian Grand Prix, with 4 races remaining in the season. Drivers from the United Kingdom have been the most successful in the sport, with 21 championships among 11 drivers and 331 wins as of 2026."
+   },
+   {
+    "tag": "S3",
+    "chunk_id": "season-2020-formula-one-world-championship#2",
+    "doc_id": "season-2020-formula-one-world-championship",
+    "file": null,
+    "format": null,
+    "location": "section: 2020 Formula One World Championship",
+    "url": null,
+    "score": 0.6522,
+    "text": "Lewis Hamilton and Mercedes entered the season as the reigning World Drivers' and World Constructors' champions, respectively, after they both won their sixth championship in 2019. At the Emilia Romagna Grand Prix, Mercedes secured their seventh consecutive Constructors' Championship making them the only team to win seven consecutive championships, breaking Ferrari's record from 1999 to 2004. Mercedes also maintained the distinction of being the only team to win the championship since the 2014 turbo-hybrid engine regulation changes were enacted. Hamilton equalled Michael Schumacher's record of seven World Drivers' Championships at the Turkish Grand Prix and broke Schumacher's previous record of 91 career wins at the Portuguese Grand Prix."
+   },
+   {
+    "tag": "S4",
+    "chunk_id": "driver-lewis-hamilton#13",
+    "doc_id": "driver-lewis-hamilton",
+    "file": null,
+    "format": null,
+    "location": "page 3",
+    "url": null,
+    "score": 0.6095,
+    "text": "Brazilian  Grand  Prix,  overtaking  Timo  Glock  for  fifth-place  at  the  final  corners  of  the  last  lap  to  become  the\nthen-youngest World Drivers' Champion, and deny race-winner Massa the title by one point. Hamilton also became the\nfirst British driver to win the World Drivers' Championship since Damon Hill in 1996.\n2009–2012: Unsuccessful title bids and departure from McLaren\nDuring  his  veering  final  years  with  McLaren—a  period  largely  dominated  by  Red  Bull—Hamilton  continued  to  score\npodium  finishes  and  race  victories,  and  challenged  for  titles.  Major  technical  regulation  changes  in  2009  led  to  a\nchallenging  start  for  McLaren.  Often  qualifying  outside  of  the  top  ten,  and  struggling  to  finish  consistently  on  points,\nHamilton's chances of defending his title became unfeasible. Major upgrades at the German Grand Prix saw a dramatic\nimprovement in performance of the MP4-24 car. From that point onward, Hamilton advanced from eleventh to fifth in the\nstandings and outscored the rest of the field, securing two race victories and three additional podium finishes across the\nremaining nine rounds."
+   }
+  ]
+ },
+ "j2_retrieval": {
+  "j2_enabled": false,
+  "candidates": [
+   {
+    "chunk_id": "driver-lewis-hamilton#0",
+    "text": "Lewis Hamilton\nSir Lewis Carl Davidson Hamilton (born 7 January 1985) is a British racing driver who competes in Formula One for\nFerrari.  Hamilton  has  won  a  joint-record  seven  Formula  One  World  Drivers'  Championship  titles—tied  with  Michael\nSchumacher—and  holds  the  records  for  most  wins  (106),  pole  positions  (104),  and  podium  finishes  (208),  among\nothers.\nBorn  and  raised  in  Stevenage,  Hamilton  began  his  career  in  karting  at  age  six,  winning  several  national  titles  and\nattracting  the  attention  of  Ron  Dennis,  who  signed  him  to  the  McLaren-Mercedes  Young  Driver  Programme  in  1998.\nAfter  winning  the  Karting  World  Cup  and  European  Championship  in  2000,  Hamilton  progressed  to  junior  formulae,\nwhere  his  successes  included  winning  the  Formula  3  Euro  Series  and  the  GP2  Series.  He  subsequently  signed  for\nMcLaren in 2007, becoming the first black driver to compete in Formula One at the Australian Grand Prix. In his rookie\nseason, Hamilton won four Grands Prix and set several records as he finished runner-up to Kimi Räikkönen by one point",
+    "score": 0.6669010287203279,
+    "rank": 1,
+    "year_match": false
+   },
+   {
+    "chunk_id": "reference-formula-one#42",
+    "text": "As of 2025, a total of 35 separate drivers have won the World Drivers' Championship, with Michael Schumacher and Lewis Hamilton holding the record for most championships, each with seven. Jochen Rindt is the only posthumous World Champion, after his points total was not surpassed despite his fatal accident at the 1970 Italian Grand Prix, with 4 races remaining in the season. Drivers from the United Kingdom have been the most successful in the sport, with 21 championships among 11 drivers and 331 wins as of 2026.",
+    "score": 0.6650570460194459,
+    "rank": 2,
+    "year_match": false
+   },
+   {
+    "chunk_id": "season-2020-formula-one-world-championship#2",
+    "text": "Lewis Hamilton and Mercedes entered the season as the reigning World Drivers' and World Constructors' champions, respectively, after they both won their sixth championship in 2019. At the Emilia Romagna Grand Prix, Mercedes secured their seventh consecutive Constructors' Championship making them the only team to win seven consecutive championships, breaking Ferrari's record from 1999 to 2004. Mercedes also maintained the distinction of being the only team to win the championship since the 2014 turbo-hybrid engine regulation changes were enacted. Hamilton equalled Michael Schumacher's record of seven World Drivers' Championships at the Turkish Grand Prix and broke Schumacher's previous record of 91 career wins at the Portuguese Grand Prix.",
+    "score": 0.6522429133221718,
+    "rank": 3,
+    "year_match": false
+   },
+   {
+    "chunk_id": "driver-lewis-hamilton#13",
+    "text": "Brazilian  Grand  Prix,  overtaking  Timo  Glock  for  fifth-place  at  the  final  corners  of  the  last  lap  to  become  the\nthen-youngest World Drivers' Champion, and deny race-winner Massa the title by one point. Hamilton also became the\nfirst British driver to win the World Drivers' Championship since Damon Hill in 1996.\n2009–2012: Unsuccessful title bids and departure from McLaren\nDuring  his  veering  final  years  with  McLaren—a  period  largely  dominated  by  Red  Bull—Hamilton  continued  to  score\npodium  finishes  and  race  victories,  and  challenged  for  titles.  Major  technical  regulation  changes  in  2009  led  to  a\nchallenging  start  for  McLaren.  Often  qualifying  outside  of  the  top  ten,  and  struggling  to  finish  consistently  on  points,\nHamilton's chances of defending his title became unfeasible. Major upgrades at the German Grand Prix saw a dramatic\nimprovement in performance of the MP4-24 car. From that point onward, Hamilton advanced from eleventh to fifth in the\nstandings and outscored the rest of the field, securing two race victories and three additional podium finishes across the\nremaining nine rounds.",
+    "score": 0.6094954244024644,
+    "rank": 4,
+    "year_match": false
+   }
+  ],
+  "final_order": [
+   "driver-lewis-hamilton#0",
+   "reference-formula-one#42",
+   "season-2020-formula-one-world-championship#2",
+   "driver-lewis-hamilton#13"
+  ],
+  "actual_chunk_ids": [
+   "driver-lewis-hamilton#0",
+   "reference-formula-one#42",
+   "season-2020-formula-one-world-championship#2",
+   "driver-lewis-hamilton#13"
+  ]
+ },
+ "retrieval": {
+  "question_id": "Q01",
+  "status": "scored",
+  "is_proxy": false,
+  "proxy_note": null,
+  "untraceable_reason": null,
+  "hit_count": 1,
+  "group_count": 1,
+  "ratio": 1.0,
+  "strict_all_hit": true,
+  "groups": [
+   {
+    "group_id": "Q01-e1",
+    "criterion": "Q01-c1",
+    "role": null,
+    "hit": true,
+    "any_of_chunk_ids": [
+     "driver-lewis-hamilton#0",
+     "driver-lewis-hamilton#79"
+    ],
+    "matched_chunk_ids": [
+     "driver-lewis-hamilton#0"
+    ]
+   }
+  ]
+ },
+ "duration_seconds_correctness_judge": 2.688,
+ "cost_usd_correctness_judge": 0.000152,
+ "correctness": {
+  "status": "scored",
+  "label": "helyes",
+  "parsed": {
+   "criteria": [
+    {
+     "criterion_id": "Q01-c1",
+     "verdict": "met",
+     "explanation": "The answer correctly states that Lewis Hamilton has won seven World Drivers' Championships."
+    }
+   ],
+   "refused": false,
+   "rubric_conflicts": [],
+   "reasoning": "The answer meets the required criterion by providing the correct number of championships won by Lewis Hamilton without any contradictions."
+  },
+  "usage_prompt_tokens": 629,
+  "usage_completion_tokens": 96
+ },
+ "duration_seconds_faithfulness_judge": 2.094,
+ "cost_usd_faithfulness_judge": 0.000269,
+ "faithfulness": {
+  "status": "scored",
+  "score": 1.0,
+  "supported_count": 2,
+  "unsupported_count": 0,
+  "unclear_count": 0
+ },
+ "cost_usd": 0.00059,
+ "cost_source": "ledger_delta"
+}

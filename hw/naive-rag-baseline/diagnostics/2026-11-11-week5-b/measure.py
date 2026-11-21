@@ -247,6 +247,8 @@ def process_case(
             frozenset(generation["actual_chunk_ids"]) if generation.get("chunk_ids_traceable") else None,
             is_proxy=generation.get("is_proxy_retrieval", False),
             proxy_note=generation.get("proxy_note"),
+            untraceable_reason=generation.get("retrieval_untraceable_reason"),
+            not_applicable=bool(generation.get("retrieval_not_applicable")),
         )
         row["retrieval"] = retrieval_eval.result_to_dict(retrieval)
         _recompute_total_cost(row)

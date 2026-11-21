@@ -1,0 +1,246 @@
+{
+ "question_id": "Q14",
+ "mode": "naiv",
+ "run_phase": "pair-j2-full",
+ "question_type": "simple",
+ "question_status": "held_out",
+ "question_text": "What name did Sebastian Vettel give his Ferrari SF15-T in 2015?",
+ "expected_answer": "Eva.",
+ "golden_set_version": "v1-approval-draft",
+ "answer": "Sebastian Vettel named his Ferrari SF15-T \"Eva\" in 2015 [S1].",
+ "refused": null,
+ "model_called": true,
+ "actual_context": "[S1] (None, section: Car names)\nVettel continued this tradition with Ferrari, naming the SF15-T Eva in 2015. His subsequent Ferrari challengers were named Margherita (2016), Gina (2017), Loria (2018), Lina (2019) and Lucilla (2020). In 2021, Vettel named his Aston Martin AMR21 after Honey Ryder, the love interest from the James Bond film Dr. No (1962), in a nod to Aston Martin's longstanding relationship with the franchise. Amidst struggles with car performance in 2022, Vettel said he would wait for upgrades to the AMR22 before naming it; no name for the AMR22 was ever publicised, ending Vettel's 14-year tradition.\n\n[S2] (None, section: Ferrari (2015–2020) > 2015: Returning to the top step)\n## 2015: Returning to the top step  \nVettel made his Ferrari debut by finishing third in the Australian Grand Prix. He followed that up with winning the Malaysian Grand Prix, his first race victory for over a year and the first win for Ferrari for almost two years. After the race, an emotional Vettel paid tribute to Schumacher, saying that his hero's achievements with Ferrari made the first win all the more special.  \nHe won the Hungarian Grand Prix to remain a championship contender after he started from third on the grid. He dedicated his victory to the driver Jules Bianchi, who died the week prior from injuries sustained in 2014. At the halfway point of the season, Vettel was 42 points behind championship leader and Mercedes driver Hamilton. Vettel was in third place in Belgium when his right rear blew at high speed on the penultimate lap, likely ending any title chances given Hamilton's win. After the race, he ranted about the 'unacceptable' and 'unsafe' Pirelli tyres that could have caused him serious injury.\n\n[S3] (None, section: Ferrari (2015–2020) > 2015: Returning to the top step)\n## Ferrari (2015–2020)\n\n[S4] (None, section: Formula One career > Return to Ferrari (2014–2018) > 2014)\nRäikkönen remained with Ferrari for the 2015 season, partnering former world champion Sebastian Vettel after Alonso announced his departure from the Scuderia.",
+ "actual_chunk_ids": [
+  "driver-sebastian-vettel#54",
+  "driver-sebastian-vettel#30",
+  "driver-sebastian-vettel#29",
+  "driver-kimi-raikkonen#70"
+ ],
+ "chunk_ids_traceable": true,
+ "is_proxy_retrieval": false,
+ "error": null,
+ "duration_seconds": 1.328,
+ "ledger_entry": {
+  "run_id": "pair-j2-full",
+  "timestamp": 1795269802.6297562,
+  "step": "answer",
+  "mode": "naiv",
+  "question_id": "Q14",
+  "log_file": "D:\\PET\\CUBIX\\cubix_GraphRAG\\7.8.záró\\HW\\naive-rag-baseline\\diagnostics\\2026-11-21-week78-j2-naive-measure\\logs\\pair-j2-full\\naive-log-naiv-Q14.json",
+  "request_hash": "57de2cbbb63c5445f46309f272a927d7dab07e9037db63e84b70032e7db09c70",
+  "usage_prompt_tokens": 588,
+  "usage_completion_tokens": 20,
+  "cost_usd": 0.0001002,
+  "duration_seconds": 0.672,
+  "status": "success",
+  "error": null
+ },
+ "raw": {
+  "sources": [
+   {
+    "tag": "S1",
+    "chunk_id": "driver-sebastian-vettel#54",
+    "doc_id": "driver-sebastian-vettel",
+    "file": null,
+    "format": null,
+    "location": "section: Car names",
+    "url": null,
+    "score": 0.6677,
+    "text": "Vettel continued this tradition with Ferrari, naming the SF15-T Eva in 2015. His subsequent Ferrari challengers were named Margherita (2016), Gina (2017), Loria (2018), Lina (2019) and Lucilla (2020). In 2021, Vettel named his Aston Martin AMR21 after Honey Ryder, the love interest from the James Bond film Dr. No (1962), in a nod to Aston Martin's longstanding relationship with the franchise. Amidst struggles with car performance in 2022, Vettel said he would wait for upgrades to the AMR22 before naming it; no name for the AMR22 was ever publicised, ending Vettel's 14-year tradition."
+   },
+   {
+    "tag": "S2",
+    "chunk_id": "driver-sebastian-vettel#30",
+    "doc_id": "driver-sebastian-vettel",
+    "file": null,
+    "format": null,
+    "location": "section: Ferrari (2015–2020) > 2015: Returning to the top step",
+    "url": null,
+    "score": 0.5791,
+    "text": "## 2015: Returning to the top step  \nVettel made his Ferrari debut by finishing third in the Australian Grand Prix. He followed that up with winning the Malaysian Grand Prix, his first race victory for over a year and the first win for Ferrari for almost two years. After the race, an emotional Vettel paid tribute to Schumacher, saying that his hero's achievements with Ferrari made the first win all the more special.  \nHe won the Hungarian Grand Prix to remain a championship contender after he started from third on the grid. He dedicated his victory to the driver Jules Bianchi, who died the week prior from injuries sustained in 2014. At the halfway point of the season, Vettel was 42 points behind championship leader and Mercedes driver Hamilton. Vettel was in third place in Belgium when his right rear blew at high speed on the penultimate lap, likely ending any title chances given Hamilton's win. After the race, he ranted about the 'unacceptable' and 'unsafe' Pirelli tyres that could have caused him serious injury."
+   },
+   {
+    "tag": "S3",
+    "chunk_id": "driver-sebastian-vettel#29",
+    "doc_id": "driver-sebastian-vettel",
+    "file": null,
+    "format": null,
+    "location": "section: Ferrari (2015–2020) > 2015: Returning to the top step",
+    "url": null,
+    "score": 0.5661,
+    "text": "## Ferrari (2015–2020)"
+   },
+   {
+    "tag": "S4",
+    "chunk_id": "driver-kimi-raikkonen#70",
+    "doc_id": "driver-kimi-raikkonen",
+    "file": null,
+    "format": null,
+    "location": "section: Formula One career > Return to Ferrari (2014–2018) > 2014",
+    "url": null,
+    "score": 0.5448,
+    "text": "Räikkönen remained with Ferrari for the 2015 season, partnering former world champion Sebastian Vettel after Alonso announced his departure from the Scuderia."
+   }
+  ]
+ },
+ "j2_retrieval": {
+  "j2_enabled": true,
+  "candidates": [
+   {
+    "chunk_id": "driver-sebastian-vettel#54",
+    "text": "Vettel continued this tradition with Ferrari, naming the SF15-T Eva in 2015. His subsequent Ferrari challengers were named Margherita (2016), Gina (2017), Loria (2018), Lina (2019) and Lucilla (2020). In 2021, Vettel named his Aston Martin AMR21 after Honey Ryder, the love interest from the James Bond film Dr. No (1962), in a nod to Aston Martin's longstanding relationship with the franchise. Amidst struggles with car performance in 2022, Vettel said he would wait for upgrades to the AMR22 before naming it; no name for the AMR22 was ever publicised, ending Vettel's 14-year tradition.",
+    "score": 0.6677042445551398,
+    "rank": 1,
+    "year_match": true
+   },
+   {
+    "chunk_id": "driver-sebastian-vettel#53",
+    "text": "## Car names  \nInspired by American bomber pilots during World War II, Vettel made it a tradition to name each of his cars in Formula One from 2008 to 2021, stating \"it's important to have a close relationship with a car. Like a ship, a car should be named after a girl as it's sexy\".  \nThe car Vettel drove during his first full season in 2008—the Toro Rosso STR3—was named Julie, with which he took his maiden victory at the Italian Grand Prix. Upon moving to Red Bull in 2009, he initially named the RB5 Kate, but renamed it to Kate's Dirty Sister following his collision with Robert Kubica at the season-opening Australian Grand Prix. The RB6 in 2010 was Vettel's first championship-winning car, at first called Luscious Liz before a chassis change saw its renaming to Randy Mandy from the Turkish Grand Prix onwards. Vettel's further three consecutive championship-winning machines were named Kinky Kylie (2011), Abbey (2012) and Hungry Heidi (2013), the latter of which saw Vettel equal Michael Schumacher's single-season win record from 2004, and win a then-record nine consecutive races. 2014's RB10 was named Suzie, the only car he did not win with at Red Bull.",
+    "score": 0.6064557040742293,
+    "rank": 2,
+    "year_match": false
+   },
+   {
+    "chunk_id": "season-2020-formula-one-world-championship#3",
+    "text": "Sebastian Vettel endured a difficult season with Ferrari, finishing thirteenth in the standings and amassing only 33 points with one podium finish (third in Turkey). This would also be his final season with Ferrari, as he would go on to join Aston Martin—the rebrand of Racing Point—for the 2021 season, where he would spend two seasons before retiring from F1 at the end of 2022 season. Ferrari finished outside of the top five in the Constructors' standings for the first time since 1980.  \nAs of October 2026, the 2020 season remains the last time the World Drivers' Championship title won by a full-factory team driver.",
+    "score": 0.5855086516277331,
+    "rank": 3,
+    "year_match": false
+   },
+   {
+    "chunk_id": "driver-sebastian-vettel#0",
+    "text": "Sebastian Vettel (German pronunciation: \\[zeˈbasti̯a(ː)n ˈfɛtl̩\\] ; born 3 July 1987) is a German former racing driver who competed in Formula One from 2007 to 2022. Vettel won four Formula One World Drivers' Championship titles, which he won consecutively from 2010 to 2013 with Red Bull, and remains the youngest-ever World Drivers' Champion; he won 53 Grands Prix across 16 seasons.",
+    "score": 0.5824063232534227,
+    "rank": 4,
+    "year_match": false
+   },
+   {
+    "chunk_id": "driver-sebastian-vettel#30",
+    "text": "## 2015: Returning to the top step  \nVettel made his Ferrari debut by finishing third in the Australian Grand Prix. He followed that up with winning the Malaysian Grand Prix, his first race victory for over a year and the first win for Ferrari for almost two years. After the race, an emotional Vettel paid tribute to Schumacher, saying that his hero's achievements with Ferrari made the first win all the more special.  \nHe won the Hungarian Grand Prix to remain a championship contender after he started from third on the grid. He dedicated his victory to the driver Jules Bianchi, who died the week prior from injuries sustained in 2014. At the halfway point of the season, Vettel was 42 points behind championship leader and Mercedes driver Hamilton. Vettel was in third place in Belgium when his right rear blew at high speed on the penultimate lap, likely ending any title chances given Hamilton's win. After the race, he ranted about the 'unacceptable' and 'unsafe' Pirelli tyres that could have caused him serious injury.",
+    "score": 0.5790592075506896,
+    "rank": 5,
+    "year_match": true
+   },
+   {
+    "chunk_id": "driver-sebastian-vettel#29",
+    "text": "## Ferrari (2015–2020)",
+    "score": 0.5660617984431497,
+    "rank": 6,
+    "year_match": true
+   },
+   {
+    "chunk_id": "driver-sebastian-vettel#2",
+    "text": "After winning the title-deciding Abu Dhabi Grand Prix in 2010, Vettel became the youngest-ever Formula One World Drivers' Champion, aged 23. He won his second and third championships in 2011 and 2012, dominating the former and winning the latter amidst a close title battle with Fernando Alonso. Vettel set several records in 2013, winning 13 Grands Prix—including a then-record nine consecutive victories—to claim his fourth consecutive title with Red Bull. After a winless 2014 campaign, Vettel signed for Ferrari, replacing Alonso to partner Kimi Räikkönen; he took several wins in his debut season, finishing third in the standings. Following another winless season in 2016, Vettel emerged as the closest challenger to Mercedes and Lewis Hamilton, finishing runner-up in 2017 and 2018 after achieving several victories across both campaigns. Partnered by Charles Leclerc for 2019, Vettel took the final win of his career at the Singapore Grand Prix before leaving Ferrari at the end of the 2020 season. Vettel joined the recently established Aston Martin in 2021, where he scored his final podium finish at the Azerbaijan Grand Prix.",
+    "score": 0.5591594143381744,
+    "rank": 7,
+    "year_match": false
+   },
+   {
+    "chunk_id": "driver-kimi-raikkonen#70",
+    "text": "Räikkönen remained with Ferrari for the 2015 season, partnering former world champion Sebastian Vettel after Alonso announced his departure from the Scuderia.",
+    "score": 0.5447501618631629,
+    "rank": 8,
+    "year_match": true
+   },
+   {
+    "chunk_id": "team-red-bull-racing#19",
+    "text": "## 2009 season  \nFor 2009, Sebastian Vettel joined the team, taking Coulthard's seat. Red Bull Racing launched their new RB5 chassis virtually on 8 February utilising a 3D computer-generated video narrated by Vettel. The physical launch of the car was held the next day. The team secured their first pole position at the Chinese Grand Prix with Sebastian Vettel, posting the fastest time with just a single qualifying lap in Q3. Mark Webber qualified in third on the grid. The next day, Vettel won, with Webber second. Vettel's victory, in rain-soaked conditions, marked Red Bull Racing's first-ever win (although the team's predecessor, Stewart GP, had won the 1999 European Grand Prix courtesy of Johnny Herbert).",
+    "score": 0.543890413938429,
+    "rank": 9,
+    "year_match": false
+   },
+   {
+    "chunk_id": "season-2021-formula-one-world-championship#4",
+    "text": "Four-time World Drivers' Champion Sebastian Vettel left Ferrari at the end of the 2020 season after racing with the team\nfor six seasons. Vettel's seat was taken by Carlos Sainz Jr., who had left McLaren after two seasons. Daniel Ricciardo\nmoved  from  Renault  to  McLaren,  where  he  replaced  Sainz.  Ricciardo  was  replaced  by  double  World  Champion\nFernando Alonso, who drove in Alpine's first season, having last raced in 2018 for McLaren.\nVettel moved to Aston Martin, where he replaced Sergio Pérez. Pérez, who had previously signed a contract to drive for\nAston Martin's predecessor, Racing Point, until 2022, moved to Red Bull Racing where he replaced Alexander Albon,\nwho  was  Red  Bull  Racing's  reserve  and  test  driver  for  the  2021  season.  Pérez  became  the  first  driver  since  Mark\nWebber in 2007 to join the team without being previously a Red Bull Junior Team member.\nRomain Grosjean and Kevin Magnussen, who had raced for Haas since 2016 and 2017 respectively, left the team at the\nend  of  2020.  2020  Formula  2  Champion  Mick  Schumacher,  the  son  of  seven-time  World  Champion  Michael",
+    "score": 0.5415877876660926,
+    "rank": 10,
+    "year_match": false
+   },
+   {
+    "chunk_id": "driver-sebastian-vettel#64",
+    "text": "## Personal life  \nVettel lives in Thurgovia, Switzerland, amongst other racing drivers. Vettel has described himself as competitive, private and impatient. He also appeared in advertisements for Head & Shoulders, and provided the voice of character Sebastian Schnell in the German dub of the 2011 film Cars 2, and a voice command assistant in the German and Italian dubs of the 2017 film Cars 3. Vettel is a fan of German football team Eintracht Frankfurt.  \nVettel married childhood friend Hanna Prater at a private ceremony in early 2019; they have three children. In 2016, Forbes estimated that his annual income was \\$41 million. Kimi Räikkönen, his teammate from 2015 to 2018, is a close friend. Besides his native German, Vettel speaks English, French, and Italian. In July 2022, he created his Instagram account, having long eschewed social media. Vettel's first Instagram post was to announce his retirement from Formula One at the end of the 2022 season.",
+    "score": 0.5390728079459888,
+    "rank": 11,
+    "year_match": true
+   },
+   {
+    "chunk_id": "driver-sebastian-vettel#52",
+    "text": "For the 2017 Italian Grand Prix he changed the German flag stripe on his helmet to an Italian flag stripe in celebration of Ferrari's home race. Following the death of Niki Lauda, Vettel wore a special helmet based on Lauda's final Ferrari helmet at the 2019 Monaco Grand Prix. Vettel carried the German flag stripe design over to his helmet designs during his time at Aston Martin, with his final design for the 2022 Abu Dhabi Grand Prix nicknamed \"The Final Lap\".",
+    "score": 0.5340302374905657,
+    "rank": 12,
+    "year_match": false
+   }
+  ],
+  "final_order": [
+   "driver-sebastian-vettel#54",
+   "driver-sebastian-vettel#30",
+   "driver-sebastian-vettel#29",
+   "driver-kimi-raikkonen#70"
+  ],
+  "actual_chunk_ids": [
+   "driver-sebastian-vettel#54",
+   "driver-sebastian-vettel#30",
+   "driver-sebastian-vettel#29",
+   "driver-kimi-raikkonen#70"
+  ]
+ },
+ "duration_seconds_generation": 1.328,
+ "cost_usd_generation": 0.000101,
+ "retrieval": {
+  "question_id": "Q14",
+  "status": "scored",
+  "is_proxy": false,
+  "proxy_note": null,
+  "untraceable_reason": null,
+  "hit_count": 1,
+  "group_count": 1,
+  "ratio": 1.0,
+  "strict_all_hit": true,
+  "groups": [
+   {
+    "group_id": "Q14-e1",
+    "criterion": "Q14-c1",
+    "role": null,
+    "hit": true,
+    "any_of_chunk_ids": [
+     "driver-sebastian-vettel#54"
+    ],
+    "matched_chunk_ids": [
+     "driver-sebastian-vettel#54"
+    ]
+   }
+  ]
+ },
+ "duration_seconds_correctness_judge": 2.094,
+ "cost_usd_correctness_judge": 0.000151,
+ "correctness": {
+  "status": "scored",
+  "label": "helyes",
+  "parsed": {
+   "criteria": [
+    {
+     "criterion_id": "Q14-c1",
+     "verdict": "met",
+     "explanation": "The answer correctly states that Vettel named his Ferrari SF15-T 'Eva'."
+    }
+   ],
+   "refused": false,
+   "rubric_conflicts": [],
+   "reasoning": "The answer provides the correct name given by Vettel for his Ferrari SF15-T, fulfilling the criterion."
+  },
+  "usage_prompt_tokens": 629,
+  "usage_completion_tokens": 95
+ },
+ "duration_seconds_faithfulness_judge": 1.578,
+ "cost_usd_faithfulness_judge": 0.000185,
+ "faithfulness": {
+  "status": "scored",
+  "score": 1.0,
+  "supported_count": 1,
+  "unsupported_count": 0,
+  "unclear_count": 0
+ },
+ "cost_usd": 0.000437,
+ "cost_source": "ledger_delta"
+}

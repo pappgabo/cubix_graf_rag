@@ -1,0 +1,252 @@
+{
+ "question_id": "Q06",
+ "mode": "naiv",
+ "run_phase": "j3cmp-j3",
+ "question_type": "multi-hop",
+ "question_status": "frozen_w4",
+ "question_text": "Which two drivers in the corpus hold the record of seven World Championships, and with which teams did each of them win their titles?",
+ "expected_answer": "Schumacher: Benetton (1994, 1995) és Ferrari (2000–2004); Hamilton: McLaren (2008) és Mercedes (2014–15, 2017–20).",
+ "golden_set_version": "v1-approval-draft",
+ "answer": "The two drivers who hold the record of seven World Championships are Lewis Hamilton and Michael Schumacher. Lewis Hamilton won his titles with McLaren and Mercedes, while Michael Schumacher won his titles with Benetton and Ferrari [S2].",
+ "refused": null,
+ "model_called": true,
+ "actual_context": "[S1] (None, section: Formula One > Drivers)\nAs of 2025, a total of 35 separate drivers have won the World Drivers' Championship, with Michael Schumacher and Lewis Hamilton holding the record for most championships, each with seven. Jochen Rindt is the only posthumous World Champion, after his points total was not surpassed despite his fatal accident at the 1970 Italian Grand Prix, with 4 races remaining in the season. Drivers from the United Kingdom have been the most successful in the sport, with 21 championships among 11 drivers and 331 wins as of 2026.\n\n[S2] (None, section: sheet Drivers in corpus)\nSheet: Drivers in corpus\nDriver | Nationality | World titles (as of 2024) | Main constructors\nLewis Hamilton | British | 7 | McLaren; Mercedes\nMax Verstappen | Dutch | 4 | Red Bull Racing\nSebastian Vettel | German | 4 | Red Bull Racing; Ferrari\nFernando Alonso | Spanish | 2 | Renault; McLaren\nMichael Schumacher | German | 7 | Benetton; Ferrari\nKimi Räikkönen | Finnish | 1 | McLaren; Ferrari\nNico Rosberg | German | 1 | Williams; Mercedes\nJenson Button | British | 1 | BAR/Honda; Brawn; McLaren\nCharles Leclerc | Monégasque | 0 | Sauber; Ferrari\nValtteri Bottas | Finnish | 0 | Williams; Mercedes\n\n[S3] (None, section: 2020 Formula One World Championship)\nLewis Hamilton and Mercedes entered the season as the reigning World Drivers' and World Constructors' champions, respectively, after they both won their sixth championship in 2019. At the Emilia Romagna Grand Prix, Mercedes secured their seventh consecutive Constructors' Championship making them the only team to win seven consecutive championships, breaking Ferrari's record from 1999 to 2004. Mercedes also maintained the distinction of being the only team to win the championship since the 2014 turbo-hybrid engine regulation changes were enacted. Hamilton equalled Michael Schumacher's record of seven World Drivers' Championships at the Turkish Grand Prix and broke Schumacher's previous record of 91 career wins at the Portuguese Grand Prix.\n\n[S4] (None, n/a)\nIn addition to seeing seven different drivers win the first seven races, the 2012 season broke several records. The calendar for the season included twenty races, breaking the previous record of nineteen, which was first set in 2005. Six current or former World Drivers' Champions – Sebastian Vettel, Fernando Alonso, Jenson Button, Lewis Hamilton, Kimi Räikkönen, and Michael Schumacher – started the season, breaking the record of five established in 1970.\nThis was the last season for 7-time world champion, Michael Schumacher as he announced his retirement from Formula One for the second time, after the 2012 Brazilian Grand Prix.",
+ "actual_chunk_ids": [
+  "reference-formula-one#42",
+  "reference-list-of-formula-one-world-drivers-champions#1",
+  "season-2020-formula-one-world-championship#2",
+  "season-2012-formula-one-world-championship#3"
+ ],
+ "chunk_ids_traceable": true,
+ "is_proxy_retrieval": false,
+ "error": null,
+ "duration_seconds": 2.015,
+ "ledger_entry": {
+  "run_id": "j3cmp-j3",
+  "timestamp": 1795273305.4405687,
+  "step": "answer",
+  "mode": "naiv",
+  "question_id": "Q06",
+  "log_file": "D:\\PET\\CUBIX\\cubix_GraphRAG\\7.8.záró\\HW\\naive-rag-baseline\\diagnostics\\2026-11-21-week78-j2-naive-measure\\logs\\j3cmp-j3\\naive-log-naiv-Q06.json",
+  "request_hash": "74f6a2d72324924470142634787e93dcad0a0e4c1d7f299cb8953598bed3ed68",
+  "usage_prompt_tokens": 756,
+  "usage_completion_tokens": 45,
+  "cost_usd": 0.0001404,
+  "duration_seconds": 1.484,
+  "status": "success",
+  "error": null
+ },
+ "raw": {
+  "sources": [
+   {
+    "tag": "S1",
+    "chunk_id": "reference-formula-one#42",
+    "doc_id": "reference-formula-one",
+    "file": null,
+    "format": null,
+    "location": "section: Formula One > Drivers",
+    "url": null,
+    "score": 0.6506,
+    "text": "As of 2025, a total of 35 separate drivers have won the World Drivers' Championship, with Michael Schumacher and Lewis Hamilton holding the record for most championships, each with seven. Jochen Rindt is the only posthumous World Champion, after his points total was not surpassed despite his fatal accident at the 1970 Italian Grand Prix, with 4 races remaining in the season. Drivers from the United Kingdom have been the most successful in the sport, with 21 championships among 11 drivers and 331 wins as of 2026."
+   },
+   {
+    "tag": "S2",
+    "chunk_id": "reference-list-of-formula-one-world-drivers-champions#1",
+    "doc_id": "reference-list-of-formula-one-world-drivers-champions",
+    "file": null,
+    "format": null,
+    "location": "section: sheet Drivers in corpus",
+    "url": null,
+    "score": 0.6203,
+    "text": "Sheet: Drivers in corpus\nDriver | Nationality | World titles (as of 2024) | Main constructors\nLewis Hamilton | British | 7 | McLaren; Mercedes\nMax Verstappen | Dutch | 4 | Red Bull Racing\nSebastian Vettel | German | 4 | Red Bull Racing; Ferrari\nFernando Alonso | Spanish | 2 | Renault; McLaren\nMichael Schumacher | German | 7 | Benetton; Ferrari\nKimi Räikkönen | Finnish | 1 | McLaren; Ferrari\nNico Rosberg | German | 1 | Williams; Mercedes\nJenson Button | British | 1 | BAR/Honda; Brawn; McLaren\nCharles Leclerc | Monégasque | 0 | Sauber; Ferrari\nValtteri Bottas | Finnish | 0 | Williams; Mercedes"
+   },
+   {
+    "tag": "S3",
+    "chunk_id": "season-2020-formula-one-world-championship#2",
+    "doc_id": "season-2020-formula-one-world-championship",
+    "file": null,
+    "format": null,
+    "location": "section: 2020 Formula One World Championship",
+    "url": null,
+    "score": 0.6153,
+    "text": "Lewis Hamilton and Mercedes entered the season as the reigning World Drivers' and World Constructors' champions, respectively, after they both won their sixth championship in 2019. At the Emilia Romagna Grand Prix, Mercedes secured their seventh consecutive Constructors' Championship making them the only team to win seven consecutive championships, breaking Ferrari's record from 1999 to 2004. Mercedes also maintained the distinction of being the only team to win the championship since the 2014 turbo-hybrid engine regulation changes were enacted. Hamilton equalled Michael Schumacher's record of seven World Drivers' Championships at the Turkish Grand Prix and broke Schumacher's previous record of 91 career wins at the Portuguese Grand Prix."
+   },
+   {
+    "tag": "S4",
+    "chunk_id": "season-2012-formula-one-world-championship#3",
+    "doc_id": "season-2012-formula-one-world-championship",
+    "file": null,
+    "format": null,
+    "location": "n/a",
+    "url": null,
+    "score": 0.5732,
+    "text": "In addition to seeing seven different drivers win the first seven races, the 2012 season broke several records. The calendar for the season included twenty races, breaking the previous record of nineteen, which was first set in 2005. Six current or former World Drivers' Champions – Sebastian Vettel, Fernando Alonso, Jenson Button, Lewis Hamilton, Kimi Räikkönen, and Michael Schumacher – started the season, breaking the record of five established in 1970.\nThis was the last season for 7-time world champion, Michael Schumacher as he announced his retirement from Formula One for the second time, after the 2012 Brazilian Grand Prix."
+   }
+  ]
+ },
+ "j2_retrieval": {
+  "j2_enabled": false,
+  "candidates": [
+   {
+    "chunk_id": "reference-formula-one#42",
+    "text": "As of 2025, a total of 35 separate drivers have won the World Drivers' Championship, with Michael Schumacher and Lewis Hamilton holding the record for most championships, each with seven. Jochen Rindt is the only posthumous World Champion, after his points total was not surpassed despite his fatal accident at the 1970 Italian Grand Prix, with 4 races remaining in the season. Drivers from the United Kingdom have been the most successful in the sport, with 21 championships among 11 drivers and 331 wins as of 2026.",
+    "score": 0.6505544908461088,
+    "rank": 1,
+    "year_match": false
+   },
+   {
+    "chunk_id": "reference-list-of-formula-one-world-drivers-champions#1",
+    "text": "Sheet: Drivers in corpus\nDriver | Nationality | World titles (as of 2024) | Main constructors\nLewis Hamilton | British | 7 | McLaren; Mercedes\nMax Verstappen | Dutch | 4 | Red Bull Racing\nSebastian Vettel | German | 4 | Red Bull Racing; Ferrari\nFernando Alonso | Spanish | 2 | Renault; McLaren\nMichael Schumacher | German | 7 | Benetton; Ferrari\nKimi Räikkönen | Finnish | 1 | McLaren; Ferrari\nNico Rosberg | German | 1 | Williams; Mercedes\nJenson Button | British | 1 | BAR/Honda; Brawn; McLaren\nCharles Leclerc | Monégasque | 0 | Sauber; Ferrari\nValtteri Bottas | Finnish | 0 | Williams; Mercedes",
+    "score": 0.6202664895652397,
+    "rank": 2,
+    "year_match": false
+   },
+   {
+    "chunk_id": "season-2020-formula-one-world-championship#2",
+    "text": "Lewis Hamilton and Mercedes entered the season as the reigning World Drivers' and World Constructors' champions, respectively, after they both won their sixth championship in 2019. At the Emilia Romagna Grand Prix, Mercedes secured their seventh consecutive Constructors' Championship making them the only team to win seven consecutive championships, breaking Ferrari's record from 1999 to 2004. Mercedes also maintained the distinction of being the only team to win the championship since the 2014 turbo-hybrid engine regulation changes were enacted. Hamilton equalled Michael Schumacher's record of seven World Drivers' Championships at the Turkish Grand Prix and broke Schumacher's previous record of 91 career wins at the Portuguese Grand Prix.",
+    "score": 0.6153460930768199,
+    "rank": 3,
+    "year_match": false
+   },
+   {
+    "chunk_id": "season-2012-formula-one-world-championship#3",
+    "text": "In addition to seeing seven different drivers win the first seven races, the 2012 season broke several records. The calendar for the season included twenty races, breaking the previous record of nineteen, which was first set in 2005. Six current or former World Drivers' Champions – Sebastian Vettel, Fernando Alonso, Jenson Button, Lewis Hamilton, Kimi Räikkönen, and Michael Schumacher – started the season, breaking the record of five established in 1970.\nThis was the last season for 7-time world champion, Michael Schumacher as he announced his retirement from Formula One for the second time, after the 2012 Brazilian Grand Prix.",
+    "score": 0.5731769785592036,
+    "rank": 4,
+    "year_match": false
+   }
+  ],
+  "final_order": [
+   "reference-formula-one#42",
+   "reference-list-of-formula-one-world-drivers-champions#1",
+   "season-2020-formula-one-world-championship#2",
+   "season-2012-formula-one-world-championship#3"
+  ],
+  "actual_chunk_ids": [
+   "reference-formula-one#42",
+   "reference-list-of-formula-one-world-drivers-champions#1",
+   "season-2020-formula-one-world-championship#2",
+   "season-2012-formula-one-world-championship#3"
+  ]
+ },
+ "duration_seconds_generation": 2.015,
+ "cost_usd_generation": 0.000141,
+ "retrieval": {
+  "question_id": "Q06",
+  "status": "scored",
+  "is_proxy": false,
+  "proxy_note": null,
+  "untraceable_reason": null,
+  "hit_count": 0,
+  "group_count": 5,
+  "ratio": 0.0,
+  "strict_all_hit": false,
+  "groups": [
+   {
+    "group_id": "Q06-e1",
+    "criterion": "Q06-c1",
+    "role": null,
+    "hit": false,
+    "any_of_chunk_ids": [
+     "driver-lewis-hamilton#0",
+     "driver-michael-schumacher#0"
+    ],
+    "matched_chunk_ids": []
+   },
+   {
+    "group_id": "Q06-e2",
+    "criterion": "Q06-c2",
+    "role": null,
+    "hit": false,
+    "any_of_chunk_ids": [
+     "driver-michael-schumacher#12",
+     "driver-michael-schumacher#16"
+    ],
+    "matched_chunk_ids": []
+   },
+   {
+    "group_id": "Q06-e3",
+    "criterion": "Q06-c3",
+    "role": null,
+    "hit": false,
+    "any_of_chunk_ids": [
+     "driver-michael-schumacher#1",
+     "team-scuderia-ferrari#1"
+    ],
+    "matched_chunk_ids": []
+   },
+   {
+    "group_id": "Q06-e4",
+    "criterion": "Q06-c4",
+    "role": null,
+    "hit": false,
+    "any_of_chunk_ids": [
+     "reference-list-of-formula-one-world-drivers-champions#0"
+    ],
+    "matched_chunk_ids": []
+   },
+   {
+    "group_id": "Q06-e5",
+    "criterion": "Q06-c5",
+    "role": null,
+    "hit": false,
+    "any_of_chunk_ids": [
+     "driver-lewis-hamilton#1",
+     "reference-list-of-formula-one-world-drivers-champions#0"
+    ],
+    "matched_chunk_ids": []
+   }
+  ]
+ },
+ "duration_seconds_correctness_judge": 5.984,
+ "cost_usd_correctness_judge": 0.000275,
+ "correctness": {
+  "status": "scored",
+  "label": "helyes",
+  "parsed": {
+   "criteria": [
+    {
+     "criterion_id": "Q06-c1",
+     "verdict": "met",
+     "explanation": "The answer correctly identifies Michael Schumacher and Lewis Hamilton as the two joint seven-title record holders."
+    },
+    {
+     "criterion_id": "Q06-c2",
+     "verdict": "met",
+     "explanation": "The answer states that Michael Schumacher won titles with Benetton."
+    },
+    {
+     "criterion_id": "Q06-c3",
+     "verdict": "met",
+     "explanation": "The answer states that Michael Schumacher won titles with Ferrari."
+    },
+    {
+     "criterion_id": "Q06-c4",
+     "verdict": "met",
+     "explanation": "The answer states that Lewis Hamilton won a title with McLaren."
+    },
+    {
+     "criterion_id": "Q06-c5",
+     "verdict": "met",
+     "explanation": "The answer states that Lewis Hamilton won titles with Mercedes."
+    }
+   ],
+   "refused": false,
+   "rubric_conflicts": [],
+   "reasoning": "The answer fully meets all the criteria by correctly identifying the drivers and their respective teams for each championship."
+  },
+  "usage_prompt_tokens": 883,
+  "usage_completion_tokens": 237
+ },
+ "duration_seconds_faithfulness_judge": 3.687,
+ "cost_usd_faithfulness_judge": 0.000255,
+ "faithfulness": {
+  "status": "scored",
+  "score": 1.0,
+  "supported_count": 4,
+  "unsupported_count": 0,
+  "unclear_count": 0
+ },
+ "cost_usd": 0.000671,
+ "cost_source": "ledger_delta"
+}

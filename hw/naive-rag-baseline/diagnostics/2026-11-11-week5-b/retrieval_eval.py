@@ -15,7 +15,8 @@ from typing import Literal
 
 from golden_set import EvidenceGroup, GoldenQuestion
 
-RetrievalStatus = Literal["scored", "untraceable"]
+RetrievalStatus = Literal["scored", "untraceable", "not_applicable"]
+NOT_APPLICABLE_REASON = "nem alkalmazható: a local followup szándékosan kikapcsolva"
 
 
 @dataclass(frozen=True)
@@ -40,6 +41,7 @@ class RetrievalResult:
     ratio: float | None
     strict_all_hit: bool | None
     untraceable_reason: str | None = None
+    not_applicable_reason: str | None = None
 
 
 def _group_hit(group: EvidenceGroup, actual_chunk_ids: frozenset[str]) -> tuple[bool, tuple[str, ...]]:
@@ -54,6 +56,7 @@ def evaluate_retrieval(
     is_proxy: bool = False,
     proxy_note: str | None = None,
     untraceable_reason: str | None = None,
+    not_applicable: bool = False,
 ) -> RetrievalResult:
     """Score the required evidence groups' coverage.
 
@@ -69,6 +72,14 @@ def evaluate_retrieval(
     """
     required_groups = question.required_evidence_groups()
     group_count = len(required_groups)
+
+    if not_applicable:
+        return RetrievalResult(
+            question_id=question.id, status="not_applicable", is_proxy=is_proxy,
+            proxy_note=proxy_note, groups=None, hit_count=None,
+            group_count=group_count, ratio=None, strict_all_hit=None,
+            untraceable_reason=None, not_applicable_reason=NOT_APPLICABLE_REASON,
+        )
 
     if actual_chunk_ids is None:
         return RetrievalResult(
@@ -102,6 +113,7 @@ def result_to_dict(result: RetrievalResult) -> dict:
         "is_proxy": result.is_proxy,
         "proxy_note": result.proxy_note,
         "untraceable_reason": result.untraceable_reason,
+        "not_applicable_reason": result.not_applicable_reason,
         "hit_count": result.hit_count,
         "group_count": result.group_count,
         "ratio": result.ratio,

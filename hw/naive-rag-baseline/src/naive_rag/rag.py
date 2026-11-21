@@ -17,15 +17,37 @@ from .config import get_settings
 from .models import get_chat_model
 from .vectorstore import get_vector_store
 
+BASELINE_SYSTEM = (
+    "You are a question answering assistant. Answer the question using ONLY "
+    "the context below. Each context passage starts with a tag like [S1]. "
+    "Cite the passages you used in the answer, e.g. [S1][S3]. "
+    "If the context does not contain the answer, say that you cannot "
+    "answer from the provided documents."
+)
+HUMAN_TEMPLATE = "Context:\n{context}\n\nQuestion: {question}"
+J3_RULE = (
+    "Do not automatically ignore a sentence that begins as a fragment at a "
+    "chunk boundary in the given context if its meaning and relations can be "
+    "unambiguously recovered from the given context alone. Do not invent a "
+    "missing subject, relation, or fact."
+)
+
 PROMPT = ChatPromptTemplate.from_messages([
-    ("system",
-     "You are a question answering assistant. Answer the question using ONLY "
-     "the context below. Each context passage starts with a tag like [S1]. "
-     "Cite the passages you used in the answer, e.g. [S1][S3]. "
-     "If the context does not contain the answer, say that you cannot "
-     "answer from the provided documents."),
-    ("human", "Context:\n{context}\n\nQuestion: {question}"),
+    ("system", BASELINE_SYSTEM),
+    ("human", HUMAN_TEMPLATE),
 ])
+
+
+def prompt_for(variant: str = "baseline") -> ChatPromptTemplate:
+    """Baseline is the default. ``j3`` appends one rule. Anything else errors."""
+    if variant == "baseline":
+        return PROMPT
+    if variant == "j3":
+        return ChatPromptTemplate.from_messages([
+            ("system", BASELINE_SYSTEM + " " + J3_RULE),
+            ("human", HUMAN_TEMPLATE),
+        ])
+    raise ValueError(f"unknown naive prompt variant: {variant!r}")
 
 
 def _location(meta: dict) -> str:

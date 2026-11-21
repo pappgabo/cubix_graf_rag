@@ -1,0 +1,190 @@
+{
+ "question_id": "Q02",
+ "mode": "naiv",
+ "run_phase": "j3cmp-baseline",
+ "question_type": "simple",
+ "question_status": "frozen_w4",
+ "question_text": "How old was Sebastian Vettel when he became the youngest Formula One World Champion?",
+ "expected_answer": "23 éves (23 év 134 nap), 2010-ben.",
+ "golden_set_version": "v1-approval-draft",
+ "answer": "Sebastian Vettel was 23 years old when he became the youngest-ever Formula One World Drivers' Champion [S3].",
+ "refused": null,
+ "model_called": true,
+ "actual_context": "[S1] (None, section: Toro Rosso (2007–2008) > 2007–2008: Maiden race win and rise to prominence)\nAt the wet Italian Grand Prix, Vettel became the youngest driver in history to win a Formula One Grand Prix, aged 21 years and 74 days. He led for the majority of the Grand Prix and crossed the finish line 12.5 seconds ahead of McLaren's Heikki Kovalainen. It would also be Toro Rosso's only win. Earlier in the weekend, he had already become the youngest pole-sitter. Toro Rosso team boss Gerhard Berger said: \"As he proved today, he can win races, but he's going to win World Championships. He's a cool guy\". His victory led the German media to dub him \"Baby Schumi\".  \nVettel was named 2008 Rookie of the Year at the Autosport Awards.\n\n[S2] (None, n/a)\nSebastian Vettel (German pronunciation: \\[zeˈbasti̯a(ː)n ˈfɛtl̩\\] ; born 3 July 1987) is a German former racing driver who competed in Formula One from 2007 to 2022. Vettel won four Formula One World Drivers' Championship titles, which he won consecutively from 2010 to 2013 with Red Bull, and remains the youngest-ever World Drivers' Champion; he won 53 Grands Prix across 16 seasons.\n\n[S3] (None, n/a)\nAfter winning the title-deciding Abu Dhabi Grand Prix in 2010, Vettel became the youngest-ever Formula One World Drivers' Champion, aged 23. He won his second and third championships in 2011 and 2012, dominating the former and winning the latter amidst a close title battle with Fernando Alonso. Vettel set several records in 2013, winning 13 Grands Prix—including a then-record nine consecutive victories—to claim his fourth consecutive title with Red Bull. After a winless 2014 campaign, Vettel signed for Ferrari, replacing Alonso to partner Kimi Räikkönen; he took several wins in his debut season, finishing third in the standings. Following another winless season in 2016, Vettel emerged as the closest challenger to Mercedes and Lewis Hamilton, finishing runner-up in 2017 and 2018 after achieving several victories across both campaigns. Partnered by Charles Leclerc for 2019, Vettel took the final win of his career at the Singapore Grand Prix before leaving Ferrari at the end of the 2020 season. Vettel joined the recently established Aston Martin in 2021, where he scored his final podium finish at the Azerbaijan Grand Prix.\n\n[S4] (None, section: 2010: Youngest World Champion)\n## 2010: Youngest World Champion  \nVettel took the first pole position of the 2010 season at the Bahrain Grand Prix. He led most of the race but as a result of a spark plug failure, Vettel finished in fourth place. At the Australian Grand Prix, Vettel was appointed as a director of the Grand Prix Drivers' Association. He took his first win of the season in Malaysia.  \nIn Monaco, Vettel made it a Red Bull 1–2 with him second and Webber first. Both were equal on points in the standings, with Webber first based on total wins. At the Turkish Grand Prix, Vettel was running second behind Webber when he made a passing move on his teammate. The two collided, putting Vettel out of the race, with neither driver accepting responsibility for the collision.",
+ "actual_chunk_ids": [
+  "driver-sebastian-vettel#13",
+  "driver-sebastian-vettel#0",
+  "driver-sebastian-vettel#2",
+  "driver-sebastian-vettel#15"
+ ],
+ "chunk_ids_traceable": true,
+ "is_proxy_retrieval": false,
+ "error": null,
+ "duration_seconds": 1.656,
+ "ledger_entry": {
+  "run_id": "j3cmp-baseline",
+  "timestamp": 1795273097.064437,
+  "step": "answer",
+  "mode": "naiv",
+  "question_id": "Q02",
+  "log_file": "D:\\PET\\CUBIX\\cubix_GraphRAG\\7.8.záró\\HW\\naive-rag-baseline\\diagnostics\\2026-11-21-week78-j2-naive-measure\\logs\\j3cmp-baseline\\naive-log-naiv-Q02.json",
+  "request_hash": "96a47a44ee5c302a1ece3d2497e9476d78573be5da4c0f401d5aaacb06feb3e0",
+  "usage_prompt_tokens": 829,
+  "usage_completion_tokens": 24,
+  "cost_usd": 0.00013874999999999998,
+  "duration_seconds": 1.282,
+  "status": "success",
+  "error": null
+ },
+ "raw": {
+  "sources": [
+   {
+    "tag": "S1",
+    "chunk_id": "driver-sebastian-vettel#13",
+    "doc_id": "driver-sebastian-vettel",
+    "file": null,
+    "format": null,
+    "location": "section: Toro Rosso (2007–2008) > 2007–2008: Maiden race win and rise to prominence",
+    "url": null,
+    "score": 0.7737,
+    "text": "At the wet Italian Grand Prix, Vettel became the youngest driver in history to win a Formula One Grand Prix, aged 21 years and 74 days. He led for the majority of the Grand Prix and crossed the finish line 12.5 seconds ahead of McLaren's Heikki Kovalainen. It would also be Toro Rosso's only win. Earlier in the weekend, he had already become the youngest pole-sitter. Toro Rosso team boss Gerhard Berger said: \"As he proved today, he can win races, but he's going to win World Championships. He's a cool guy\". His victory led the German media to dub him \"Baby Schumi\".  \nVettel was named 2008 Rookie of the Year at the Autosport Awards."
+   },
+   {
+    "tag": "S2",
+    "chunk_id": "driver-sebastian-vettel#0",
+    "doc_id": "driver-sebastian-vettel",
+    "file": null,
+    "format": null,
+    "location": "n/a",
+    "url": null,
+    "score": 0.724,
+    "text": "Sebastian Vettel (German pronunciation: \\[zeˈbasti̯a(ː)n ˈfɛtl̩\\] ; born 3 July 1987) is a German former racing driver who competed in Formula One from 2007 to 2022. Vettel won four Formula One World Drivers' Championship titles, which he won consecutively from 2010 to 2013 with Red Bull, and remains the youngest-ever World Drivers' Champion; he won 53 Grands Prix across 16 seasons."
+   },
+   {
+    "tag": "S3",
+    "chunk_id": "driver-sebastian-vettel#2",
+    "doc_id": "driver-sebastian-vettel",
+    "file": null,
+    "format": null,
+    "location": "n/a",
+    "url": null,
+    "score": 0.7175,
+    "text": "After winning the title-deciding Abu Dhabi Grand Prix in 2010, Vettel became the youngest-ever Formula One World Drivers' Champion, aged 23. He won his second and third championships in 2011 and 2012, dominating the former and winning the latter amidst a close title battle with Fernando Alonso. Vettel set several records in 2013, winning 13 Grands Prix—including a then-record nine consecutive victories—to claim his fourth consecutive title with Red Bull. After a winless 2014 campaign, Vettel signed for Ferrari, replacing Alonso to partner Kimi Räikkönen; he took several wins in his debut season, finishing third in the standings. Following another winless season in 2016, Vettel emerged as the closest challenger to Mercedes and Lewis Hamilton, finishing runner-up in 2017 and 2018 after achieving several victories across both campaigns. Partnered by Charles Leclerc for 2019, Vettel took the final win of his career at the Singapore Grand Prix before leaving Ferrari at the end of the 2020 season. Vettel joined the recently established Aston Martin in 2021, where he scored his final podium finish at the Azerbaijan Grand Prix."
+   },
+   {
+    "tag": "S4",
+    "chunk_id": "driver-sebastian-vettel#15",
+    "doc_id": "driver-sebastian-vettel",
+    "file": null,
+    "format": null,
+    "location": "section: 2010: Youngest World Champion",
+    "url": null,
+    "score": 0.698,
+    "text": "## 2010: Youngest World Champion  \nVettel took the first pole position of the 2010 season at the Bahrain Grand Prix. He led most of the race but as a result of a spark plug failure, Vettel finished in fourth place. At the Australian Grand Prix, Vettel was appointed as a director of the Grand Prix Drivers' Association. He took his first win of the season in Malaysia.  \nIn Monaco, Vettel made it a Red Bull 1–2 with him second and Webber first. Both were equal on points in the standings, with Webber first based on total wins. At the Turkish Grand Prix, Vettel was running second behind Webber when he made a passing move on his teammate. The two collided, putting Vettel out of the race, with neither driver accepting responsibility for the collision."
+   }
+  ]
+ },
+ "j2_retrieval": {
+  "j2_enabled": false,
+  "candidates": [
+   {
+    "chunk_id": "driver-sebastian-vettel#13",
+    "text": "At the wet Italian Grand Prix, Vettel became the youngest driver in history to win a Formula One Grand Prix, aged 21 years and 74 days. He led for the majority of the Grand Prix and crossed the finish line 12.5 seconds ahead of McLaren's Heikki Kovalainen. It would also be Toro Rosso's only win. Earlier in the weekend, he had already become the youngest pole-sitter. Toro Rosso team boss Gerhard Berger said: \"As he proved today, he can win races, but he's going to win World Championships. He's a cool guy\". His victory led the German media to dub him \"Baby Schumi\".  \nVettel was named 2008 Rookie of the Year at the Autosport Awards.",
+    "score": 0.7737442393421174,
+    "rank": 1,
+    "year_match": false
+   },
+   {
+    "chunk_id": "driver-sebastian-vettel#0",
+    "text": "Sebastian Vettel (German pronunciation: \\[zeˈbasti̯a(ː)n ˈfɛtl̩\\] ; born 3 July 1987) is a German former racing driver who competed in Formula One from 2007 to 2022. Vettel won four Formula One World Drivers' Championship titles, which he won consecutively from 2010 to 2013 with Red Bull, and remains the youngest-ever World Drivers' Champion; he won 53 Grands Prix across 16 seasons.",
+    "score": 0.7239809833816497,
+    "rank": 2,
+    "year_match": false
+   },
+   {
+    "chunk_id": "driver-sebastian-vettel#2",
+    "text": "After winning the title-deciding Abu Dhabi Grand Prix in 2010, Vettel became the youngest-ever Formula One World Drivers' Champion, aged 23. He won his second and third championships in 2011 and 2012, dominating the former and winning the latter amidst a close title battle with Fernando Alonso. Vettel set several records in 2013, winning 13 Grands Prix—including a then-record nine consecutive victories—to claim his fourth consecutive title with Red Bull. After a winless 2014 campaign, Vettel signed for Ferrari, replacing Alonso to partner Kimi Räikkönen; he took several wins in his debut season, finishing third in the standings. Following another winless season in 2016, Vettel emerged as the closest challenger to Mercedes and Lewis Hamilton, finishing runner-up in 2017 and 2018 after achieving several victories across both campaigns. Partnered by Charles Leclerc for 2019, Vettel took the final win of his career at the Singapore Grand Prix before leaving Ferrari at the end of the 2020 season. Vettel joined the recently established Aston Martin in 2021, where he scored his final podium finish at the Azerbaijan Grand Prix.",
+    "score": 0.7175312505997383,
+    "rank": 3,
+    "year_match": false
+   },
+   {
+    "chunk_id": "driver-sebastian-vettel#15",
+    "text": "## 2010: Youngest World Champion  \nVettel took the first pole position of the 2010 season at the Bahrain Grand Prix. He led most of the race but as a result of a spark plug failure, Vettel finished in fourth place. At the Australian Grand Prix, Vettel was appointed as a director of the Grand Prix Drivers' Association. He took his first win of the season in Malaysia.  \nIn Monaco, Vettel made it a Red Bull 1–2 with him second and Webber first. Both were equal on points in the standings, with Webber first based on total wins. At the Turkish Grand Prix, Vettel was running second behind Webber when he made a passing move on his teammate. The two collided, putting Vettel out of the race, with neither driver accepting responsibility for the collision.",
+    "score": 0.6980244599062917,
+    "rank": 4,
+    "year_match": false
+   }
+  ],
+  "final_order": [
+   "driver-sebastian-vettel#13",
+   "driver-sebastian-vettel#0",
+   "driver-sebastian-vettel#2",
+   "driver-sebastian-vettel#15"
+  ],
+  "actual_chunk_ids": [
+   "driver-sebastian-vettel#13",
+   "driver-sebastian-vettel#0",
+   "driver-sebastian-vettel#2",
+   "driver-sebastian-vettel#15"
+  ]
+ },
+ "duration_seconds_generation": 1.656,
+ "cost_usd_generation": 0.000139,
+ "retrieval": {
+  "question_id": "Q02",
+  "status": "scored",
+  "is_proxy": false,
+  "proxy_note": null,
+  "untraceable_reason": null,
+  "hit_count": 1,
+  "group_count": 1,
+  "ratio": 1.0,
+  "strict_all_hit": true,
+  "groups": [
+   {
+    "group_id": "Q02-e1",
+    "criterion": "Q02-c1",
+    "role": null,
+    "hit": true,
+    "any_of_chunk_ids": [
+     "driver-sebastian-vettel#2"
+    ],
+    "matched_chunk_ids": [
+     "driver-sebastian-vettel#2"
+    ]
+   }
+  ]
+ },
+ "duration_seconds_correctness_judge": 2.047,
+ "cost_usd_correctness_judge": 0.000158,
+ "correctness": {
+  "status": "scored",
+  "label": "helyes",
+  "parsed": {
+   "criteria": [
+    {
+     "criterion_id": "Q02-c1",
+     "verdict": "met",
+     "explanation": "The answer correctly states that Sebastian Vettel was 23 years old when he became the youngest World Champion."
+    }
+   ],
+   "refused": false,
+   "rubric_conflicts": [],
+   "reasoning": "The answer meets all the required content specified in the criteria, confirming Vettel's age and identity as the youngest World Champion."
+  },
+  "usage_prompt_tokens": 636,
+  "usage_completion_tokens": 104
+ },
+ "duration_seconds_faithfulness_judge": 2.375,
+ "cost_usd_faithfulness_judge": 0.00023,
+ "faithfulness": {
+  "status": "scored",
+  "score": 1.0,
+  "supported_count": 1,
+  "unsupported_count": 0,
+  "unclear_count": 0
+ },
+ "cost_usd": 0.000527,
+ "cost_source": "ledger_delta"
+}

@@ -1,0 +1,323 @@
+{
+ "question_id": "Q12",
+ "mode": "naiv",
+ "run_phase": "j3cmp-j3",
+ "question_type": "global",
+ "question_status": "frozen_w4",
+ "question_text": "Group the World Champions among the corpus drivers by decade (2000s, 2010s, 2020s).",
+ "expected_answer": "2000s: Michael Schumacher, Fernando Alonso, Kimi Räikkönen, Lewis Hamilton, Jenson Button. 2010s: Sebastian Vettel, Lewis Hamilton, Nico Rosberg. 2020s: Lewis Hamilton, Max Verstappen. Exact years optional; Verstappen titles explicitly supported for 2021–2024.",
+ "golden_set_version": "v1-approval-draft",
+ "answer": "Based on the provided context, the World Champions among the drivers can be grouped by decade as follows:\n\n**2000s:**\n- Michael Schumacher (7 titles)\n- Fernando Alonso (2 titles)\n\n**2010s:**\n- Lewis Hamilton (7 titles)\n- Nico Rosberg (1 title)\n- Sebastian Vettel (4 titles)\n\n**2020s:**\n- Max Verstappen (4 titles)\n\nThis grouping is derived from the world titles listed in the context [S1].",
+ "refused": null,
+ "model_called": true,
+ "actual_context": "[S1] (None, section: sheet Drivers in corpus)\nSheet: Drivers in corpus\nDriver | Nationality | World titles (as of 2024) | Main constructors\nLewis Hamilton | British | 7 | McLaren; Mercedes\nMax Verstappen | Dutch | 4 | Red Bull Racing\nSebastian Vettel | German | 4 | Red Bull Racing; Ferrari\nFernando Alonso | Spanish | 2 | Renault; McLaren\nMichael Schumacher | German | 7 | Benetton; Ferrari\nKimi Räikkönen | Finnish | 1 | McLaren; Ferrari\nNico Rosberg | German | 1 | Williams; Mercedes\nJenson Button | British | 1 | BAR/Honda; Brawn; McLaren\nCharles Leclerc | Monégasque | 0 | Sauber; Ferrari\nValtteri Bottas | Finnish | 0 | Williams; Mercedes\n\n[S2] (None, section: 2020 Formula One World Championship > World Constructors' Championship standings)\n## World Constructors' Championship standings  \nNotes:  \n† – Driver did not finish the Grand Prix, but was classified as he completed more than 90% of the race distance.  \nThe standings are sorted by best result, rows are not related to the drivers. In case of tie on points, the best positions achieved determined the outcome.\n\n[S3] (None, section: World Constructors' Championship standings)\n## World Constructors' Championship standings  \nIn the event of a tie, a count-back system was used as a tie-breaker, with a constructor's best result used to decide the standings.  \nNotes:  \n† – Drivers did not finish the Grand Prix, but were classified as they completed more than 90% of the race distance.  \nThe standings are sorted by best result, rows are not related to the drivers. In case of tie on points, a certain position is achieved determines the outcome.\n\n[S4] (None, section: Formula One > Points system)\n## Points system  \nVarious systems for awarding championship points have been used since 1950. The current system, in place since 2010, awards the top ten cars points in the Drivers' and Constructors' Championships, with the winner receiving 25 points. Points won at each race are added up, and the driver and constructor with the most points at the end of the season are crowned World Champions.  \nA driver must be classified to receive points. They must complete at least 90% of the race distance to receive points. Therefore, it is possible for a driver to receive points even if they retired before the end of the race.  \nFrom some time between the 1977 and 1980 seasons to the end of the 2021 season, if less than 75% of the race laps were completed by the winner, then only half of the points listed in the table were awarded to drivers and constructors. The half-points rule was replaced by a distance-dependent, gradual-scale system for 2022.",
+ "actual_chunk_ids": [
+  "reference-list-of-formula-one-world-drivers-champions#1",
+  "season-2020-formula-one-world-championship#49",
+  "season-2016-formula-one-world-championship#44",
+  "reference-formula-one#35"
+ ],
+ "chunk_ids_traceable": true,
+ "is_proxy_retrieval": false,
+ "error": null,
+ "duration_seconds": 2.938,
+ "ledger_entry": {
+  "run_id": "j3cmp-j3",
+  "timestamp": 1795273362.9257867,
+  "step": "answer",
+  "mode": "naiv",
+  "question_id": "Q12",
+  "log_file": "D:\\PET\\CUBIX\\cubix_GraphRAG\\7.8.záró\\HW\\naive-rag-baseline\\diagnostics\\2026-11-21-week78-j2-naive-measure\\logs\\j3cmp-j3\\naive-log-naiv-Q12.json",
+  "request_hash": "c7af61a57211bb74e27a7c316fcaade6001ba17be28fb11d064f0337b2290055",
+  "usage_prompt_tokens": 764,
+  "usage_completion_tokens": 98,
+  "cost_usd": 0.00017339999999999999,
+  "duration_seconds": 2.531,
+  "status": "success",
+  "error": null
+ },
+ "raw": {
+  "sources": [
+   {
+    "tag": "S1",
+    "chunk_id": "reference-list-of-formula-one-world-drivers-champions#1",
+    "doc_id": "reference-list-of-formula-one-world-drivers-champions",
+    "file": null,
+    "format": null,
+    "location": "section: sheet Drivers in corpus",
+    "url": null,
+    "score": 0.5349,
+    "text": "Sheet: Drivers in corpus\nDriver | Nationality | World titles (as of 2024) | Main constructors\nLewis Hamilton | British | 7 | McLaren; Mercedes\nMax Verstappen | Dutch | 4 | Red Bull Racing\nSebastian Vettel | German | 4 | Red Bull Racing; Ferrari\nFernando Alonso | Spanish | 2 | Renault; McLaren\nMichael Schumacher | German | 7 | Benetton; Ferrari\nKimi Räikkönen | Finnish | 1 | McLaren; Ferrari\nNico Rosberg | German | 1 | Williams; Mercedes\nJenson Button | British | 1 | BAR/Honda; Brawn; McLaren\nCharles Leclerc | Monégasque | 0 | Sauber; Ferrari\nValtteri Bottas | Finnish | 0 | Williams; Mercedes"
+   },
+   {
+    "tag": "S2",
+    "chunk_id": "season-2020-formula-one-world-championship#49",
+    "doc_id": "season-2020-formula-one-world-championship",
+    "file": null,
+    "format": null,
+    "location": "section: 2020 Formula One World Championship > World Constructors' Championship standings",
+    "url": null,
+    "score": 0.5223,
+    "text": "## World Constructors' Championship standings  \nNotes:  \n† – Driver did not finish the Grand Prix, but was classified as he completed more than 90% of the race distance.  \nThe standings are sorted by best result, rows are not related to the drivers. In case of tie on points, the best positions achieved determined the outcome."
+   },
+   {
+    "tag": "S3",
+    "chunk_id": "season-2016-formula-one-world-championship#44",
+    "doc_id": "season-2016-formula-one-world-championship",
+    "file": null,
+    "format": null,
+    "location": "section: World Constructors' Championship standings",
+    "url": null,
+    "score": 0.5203,
+    "text": "## World Constructors' Championship standings  \nIn the event of a tie, a count-back system was used as a tie-breaker, with a constructor's best result used to decide the standings.  \nNotes:  \n† – Drivers did not finish the Grand Prix, but were classified as they completed more than 90% of the race distance.  \nThe standings are sorted by best result, rows are not related to the drivers. In case of tie on points, a certain position is achieved determines the outcome."
+   },
+   {
+    "tag": "S4",
+    "chunk_id": "reference-formula-one#35",
+    "doc_id": "reference-formula-one",
+    "file": null,
+    "format": null,
+    "location": "section: Formula One > Points system",
+    "url": null,
+    "score": 0.5046,
+    "text": "## Points system  \nVarious systems for awarding championship points have been used since 1950. The current system, in place since 2010, awards the top ten cars points in the Drivers' and Constructors' Championships, with the winner receiving 25 points. Points won at each race are added up, and the driver and constructor with the most points at the end of the season are crowned World Champions.  \nA driver must be classified to receive points. They must complete at least 90% of the race distance to receive points. Therefore, it is possible for a driver to receive points even if they retired before the end of the race.  \nFrom some time between the 1977 and 1980 seasons to the end of the 2021 season, if less than 75% of the race laps were completed by the winner, then only half of the points listed in the table were awarded to drivers and constructors. The half-points rule was replaced by a distance-dependent, gradual-scale system for 2022."
+   }
+  ]
+ },
+ "j2_retrieval": {
+  "j2_enabled": false,
+  "candidates": [
+   {
+    "chunk_id": "reference-list-of-formula-one-world-drivers-champions#1",
+    "text": "Sheet: Drivers in corpus\nDriver | Nationality | World titles (as of 2024) | Main constructors\nLewis Hamilton | British | 7 | McLaren; Mercedes\nMax Verstappen | Dutch | 4 | Red Bull Racing\nSebastian Vettel | German | 4 | Red Bull Racing; Ferrari\nFernando Alonso | Spanish | 2 | Renault; McLaren\nMichael Schumacher | German | 7 | Benetton; Ferrari\nKimi Räikkönen | Finnish | 1 | McLaren; Ferrari\nNico Rosberg | German | 1 | Williams; Mercedes\nJenson Button | British | 1 | BAR/Honda; Brawn; McLaren\nCharles Leclerc | Monégasque | 0 | Sauber; Ferrari\nValtteri Bottas | Finnish | 0 | Williams; Mercedes",
+    "score": 0.5348735447910795,
+    "rank": 1,
+    "year_match": false
+   },
+   {
+    "chunk_id": "season-2020-formula-one-world-championship#49",
+    "text": "## World Constructors' Championship standings  \nNotes:  \n† – Driver did not finish the Grand Prix, but was classified as he completed more than 90% of the race distance.  \nThe standings are sorted by best result, rows are not related to the drivers. In case of tie on points, the best positions achieved determined the outcome.",
+    "score": 0.5222806654050199,
+    "rank": 2,
+    "year_match": false
+   },
+   {
+    "chunk_id": "season-2016-formula-one-world-championship#44",
+    "text": "## World Constructors' Championship standings  \nIn the event of a tie, a count-back system was used as a tie-breaker, with a constructor's best result used to decide the standings.  \nNotes:  \n† – Drivers did not finish the Grand Prix, but were classified as they completed more than 90% of the race distance.  \nThe standings are sorted by best result, rows are not related to the drivers. In case of tie on points, a certain position is achieved determines the outcome.",
+    "score": 0.5202658161583675,
+    "rank": 3,
+    "year_match": false
+   },
+   {
+    "chunk_id": "reference-formula-one#35",
+    "text": "## Points system  \nVarious systems for awarding championship points have been used since 1950. The current system, in place since 2010, awards the top ten cars points in the Drivers' and Constructors' Championships, with the winner receiving 25 points. Points won at each race are added up, and the driver and constructor with the most points at the end of the season are crowned World Champions.  \nA driver must be classified to receive points. They must complete at least 90% of the race distance to receive points. Therefore, it is possible for a driver to receive points even if they retired before the end of the race.  \nFrom some time between the 1977 and 1980 seasons to the end of the 2021 season, if less than 75% of the race laps were completed by the winner, then only half of the points listed in the table were awarded to drivers and constructors. The half-points rule was replaced by a distance-dependent, gradual-scale system for 2022.",
+    "score": 0.5045948660969791,
+    "rank": 4,
+    "year_match": false
+   }
+  ],
+  "final_order": [
+   "reference-list-of-formula-one-world-drivers-champions#1",
+   "season-2020-formula-one-world-championship#49",
+   "season-2016-formula-one-world-championship#44",
+   "reference-formula-one#35"
+  ],
+  "actual_chunk_ids": [
+   "reference-list-of-formula-one-world-drivers-champions#1",
+   "season-2020-formula-one-world-championship#49",
+   "season-2016-formula-one-world-championship#44",
+   "reference-formula-one#35"
+  ]
+ },
+ "duration_seconds_generation": 2.938,
+ "cost_usd_generation": 0.000174,
+ "retrieval": {
+  "question_id": "Q12",
+  "status": "scored",
+  "is_proxy": false,
+  "proxy_note": null,
+  "untraceable_reason": null,
+  "hit_count": 0,
+  "group_count": 10,
+  "ratio": 0.0,
+  "strict_all_hit": false,
+  "groups": [
+   {
+    "group_id": "Q12-e1",
+    "criterion": "Q12-c1",
+    "role": null,
+    "hit": false,
+    "any_of_chunk_ids": [
+     "team-scuderia-ferrari#1"
+    ],
+    "matched_chunk_ids": []
+   },
+   {
+    "group_id": "Q12-e2",
+    "criterion": "Q12-c2",
+    "role": null,
+    "hit": false,
+    "any_of_chunk_ids": [
+     "driver-fernando-alonso#0"
+    ],
+    "matched_chunk_ids": []
+   },
+   {
+    "group_id": "Q12-e3",
+    "criterion": "Q12-c3",
+    "role": null,
+    "hit": false,
+    "any_of_chunk_ids": [
+     "driver-kimi-raikkonen#0"
+    ],
+    "matched_chunk_ids": []
+   },
+   {
+    "group_id": "Q12-e4",
+    "criterion": "Q12-c4",
+    "role": null,
+    "hit": false,
+    "any_of_chunk_ids": [
+     "reference-list-of-formula-one-world-drivers-champions#0"
+    ],
+    "matched_chunk_ids": []
+   },
+   {
+    "group_id": "Q12-e5",
+    "criterion": "Q12-c5",
+    "role": null,
+    "hit": false,
+    "any_of_chunk_ids": [
+     "driver-jenson-button#0"
+    ],
+    "matched_chunk_ids": []
+   },
+   {
+    "group_id": "Q12-e6",
+    "criterion": "Q12-c6",
+    "role": null,
+    "hit": false,
+    "any_of_chunk_ids": [
+     "driver-sebastian-vettel#0"
+    ],
+    "matched_chunk_ids": []
+   },
+   {
+    "group_id": "Q12-e7",
+    "criterion": "Q12-c7",
+    "role": null,
+    "hit": false,
+    "any_of_chunk_ids": [
+     "driver-lewis-hamilton#1"
+    ],
+    "matched_chunk_ids": []
+   },
+   {
+    "group_id": "Q12-e8",
+    "criterion": "Q12-c8",
+    "role": null,
+    "hit": false,
+    "any_of_chunk_ids": [
+     "driver-nico-rosberg#0"
+    ],
+    "matched_chunk_ids": []
+   },
+   {
+    "group_id": "Q12-e9",
+    "criterion": "Q12-c9",
+    "role": null,
+    "hit": false,
+    "any_of_chunk_ids": [
+     "reference-list-of-formula-one-world-drivers-champions#0"
+    ],
+    "matched_chunk_ids": []
+   },
+   {
+    "group_id": "Q12-e10",
+    "criterion": "Q12-c10",
+    "role": null,
+    "hit": false,
+    "any_of_chunk_ids": [
+     "driver-max-verstappen#0"
+    ],
+    "matched_chunk_ids": []
+   }
+  ]
+ },
+ "duration_seconds_correctness_judge": 10.453,
+ "cost_usd_correctness_judge": 0.000463,
+ "correctness": {
+  "status": "scored",
+  "label": "hiányos",
+  "parsed": {
+   "criteria": [
+    {
+     "criterion_id": "Q12-c1",
+     "verdict": "met",
+     "explanation": "Michael Schumacher is correctly listed in the 2000s group."
+    },
+    {
+     "criterion_id": "Q12-c2",
+     "verdict": "met",
+     "explanation": "Fernando Alonso is correctly listed in the 2000s group."
+    },
+    {
+     "criterion_id": "Q12-c3",
+     "verdict": "not_met",
+     "explanation": "Kimi Räikkönen is not mentioned in the 2000s group."
+    },
+    {
+     "criterion_id": "Q12-c4",
+     "verdict": "not_met",
+     "explanation": "Lewis Hamilton is not listed in the 2000s group."
+    },
+    {
+     "criterion_id": "Q12-c5",
+     "verdict": "not_met",
+     "explanation": "Jenson Button is not mentioned in the 2000s group."
+    },
+    {
+     "criterion_id": "Q12-c6",
+     "verdict": "met",
+     "explanation": "Sebastian Vettel is correctly listed in the 2010s group."
+    },
+    {
+     "criterion_id": "Q12-c7",
+     "verdict": "met",
+     "explanation": "Lewis Hamilton is correctly listed in the 2010s group."
+    },
+    {
+     "criterion_id": "Q12-c8",
+     "verdict": "met",
+     "explanation": "Nico Rosberg is correctly listed in the 2010s group."
+    },
+    {
+     "criterion_id": "Q12-c9",
+     "verdict": "not_met",
+     "explanation": "Lewis Hamilton is not listed in the 2020s group."
+    },
+    {
+     "criterion_id": "Q12-c10",
+     "verdict": "met",
+     "explanation": "Max Verstappen is correctly listed in the 2020s group."
+    }
+   ],
+   "refused": false,
+   "rubric_conflicts": [],
+   "reasoning": "The answer correctly identifies some champions but fails to include several required drivers in their respective decades, leading to multiple unmet criteria."
+  },
+  "usage_prompt_tokens": 1336,
+  "usage_completion_tokens": 437
+ },
+ "duration_seconds_faithfulness_judge": 5.141,
+ "cost_usd_faithfulness_judge": 0.000314,
+ "faithfulness": {
+  "status": "scored",
+  "score": 1.0,
+  "supported_count": 6,
+  "unsupported_count": 0,
+  "unclear_count": 0
+ },
+ "cost_usd": 0.000951,
+ "cost_source": "ledger_delta"
+}

@@ -1,3 +1,77 @@
+# Záróprojekt (7–8. hét) — közös kérdezési CLI
+
+Egységes, parancssoros belépési pont a négy meglévő keresési módhoz
+(naiv/lokalis/globalis/drift) és az automatikus routerhez, a meglévő
+[`src/naive_rag/answer_question.py`](src/naive_rag/answer_question.py)
+`answer_question` felületére építve:
+[`diagnostics/2026-11-21-week78-qa-cli/ask_cli.py`](diagnostics/2026-11-21-week78-qa-cli/ask_cli.py).
+Nem másolja a keresők, a router vagy a bírók logikáját — a már meglévő
+valós kliensépítőket hívja újra: `generation_runner.run_naiv_capture` /
+`run_lokalis_capture` / `run_global_capture` (`diagnostics/2026-11-11-week5-b/`,
+változatlan) és `drift_runner.run_drift_capture`
+(`diagnostics/2026-11-14-week6-drift/`, változatlan). A `route_demo.py`
+szándékosan szűk, csak-drift bekötése itt **nem** minta — ez a CLI mind a
+négy módot ténylegesen bedrótozza.
+
+**Előfeltételek móduként** (a CLI ellenőrzi, de nem építi fel őket):
+- **naiv:** a `week4_naive_baseline_1200_23` Qdrant-gyűjtemény már létezik.
+  Ez nem a `naive-rag ingest` alapértelmezett `f1_naive_rag` gyűjteménye.
+- **lokalis:** Neo4j-beállítások megvannak és a konfigurált vektorindex
+  (`extracted_entity_embedding`) online. A `graph load` dokumentumgráfja
+  ezt nem helyettesíti.
+- **globalis / drift:** a `diagnostics/2026-11-10-phase3-measurement/results/
+  week4-report-v3-collection.jsonl` riportgyűjtemény létezik és a várt
+  `run_id`/szinttel egyezik; **drift**-nél ezen felül a riportindex-
+  embedding cache (`diagnostics/2026-11-14-week6-drift/results/
+  report-index-cache.json`) is naprakész kell legyen.
+
+Hiányzó előfeltételnél a CLI **nem épít indexet és nem indít adatbázis-
+feltöltést** — világos hibát ad, és az adott mód egyszerűen nem kerül be
+a `mode_fns`-be (auto módban a többi, kész mód továbbra is elérhető).
+
+**Költség:** minden fizetős hívás — a routerhívást is beleértve — a
+projekt saját `cost_guard.SharedCostLedger` osztályán (`diagnostics/
+2026-11-11-week5-b/cost_guard.py`, változatlan) megy át, ennek a CLI-nek
+**saját, különálló** ledger-fájljával:
+`diagnostics/2026-11-21-week78-qa-cli/results/week78-qa-cli-cost-ledger.json`
+(a heti 0,50 USD sapka ugyanúgy érvényes, de egyetlen korábbi week5-b/
+week6 ledger-rekord sem módosul vagy nullázódik). A naiv/lokalis/globalis
+hívások kérés-naplói a meglévő `generation_runner.py`-konvenció szerint a
+week5-b `logs/` mappájába írnak (kérdésazonosító `cli`); a drift hívás
+naplója a week6-drift `logs/` mappájába, ugyanígy a `route_demo.py`
+mintájára.
+
+**Pontos parancsok:**
+
+```powershell
+# automatikus router — a router dönt, a kimenet külön mutatja a döntést/indoklást
+uv run python diagnostics\2026-11-21-week78-qa-cli\ask_cli.py --mode auto --question "Who won the 2021 Formula One World Drivers' Championship?"
+
+# explicit módválasztás — nincs routerhívás
+uv run python diagnostics\2026-11-21-week78-qa-cli\ask_cli.py --mode drift --question "..."
+uv run python diagnostics\2026-11-21-week78-qa-cli\ask_cli.py --mode naiv --question "..."
+uv run python diagnostics\2026-11-21-week78-qa-cli\ask_cli.py --mode lokalis --question "..."
+uv run python diagnostics\2026-11-21-week78-qa-cli\ask_cli.py --mode globalis --question "..."
+```
+
+**Offline tesztek** (`diagnostics/2026-11-21-week78-qa-cli/tests/test_ask_cli.py`,
+fake mode_fn-ekkel/raw_callerrel, valós hívás nélkül) — **5/5 ok**:
+a router mind a négy döntése a megfelelő ágat hívja (és csak azt); mind a
+négy explicit mód routerhívás nélkül fut; hiányzó előfeltételnél nincs
+fizetős hívás sem explicit, sem auto módban; a költségőr elutasítása
+(valós `SharedCostLedger`, mesterségesen alacsony sapkával) megakadályozza
+a hívást, 0 rögzített ledger-bejegyzéssel. A meglévő `tests/`
+(gyökér, 352/352) és a week5-b/week6-drift szuitok futtatva, érintetlenek.
+
+**Ebben a körben nem történt valós API-/DB-hívás** — sem a négy mód
+egyikén, sem a routeren keresztül; a fenti parancsok eddig nincsenek
+kipróbálva éles hívással. Az egyetlen automatikus kérdés formájú próba
+(ha majd lefut) nem igazolná mind a négy ágat egyszerre — ehhez a négy
+explicit módot és az autót is külön ki kell próbálni; ez a valós
+integrációs próba egy később, külön jóváhagyandó kör feladata.
+
+---
+
 # 6. házifeladat — Modern irány
 
 Korlátozott, **saját** DRIFT-adaptáció — nem a Microsoft DRIFT teljes
@@ -597,6 +671,77 @@ Ha a klón útvonala ékezetes karaktert tartalmaz (pl. Windows-on `...\1_hét\.
 és `uv run naive-rag ...` `ModuleNotFoundError: No module named 'naive_rag'`-ot
 dob, használd helyette `uv run python run.py ...`-t (lásd lent, *Hibaelhárítás*).
 
+## Telepítés, gyors indulás és mért utak
+
+A három lépés nem ugyanazt az adatréteget használja. Egy gépen meglévő
+`.qdrant` vagy Neo4j-állapot nem idegen környezetes bizonyíték. A
+`uv sync` tiszta, hálózat nélküli próbáján a `numpy==2.4.6` wheel
+hiányzott a cache-ből, ezért a telepítés nincs sikeresnek jelölve.
+
+### 1. Python-projekt
+
+A `pyproject.toml` `requires-python` értéke `>=3.11`. A `.python-version`
+fájl `3.11`. A lockfájl az `uv.lock`. Telepítés a repó gyökeréből:
+
+```bash
+uv sync
+```
+
+A parancs a lockfájl csomagjait tölti. Ehhez hálózat kell, ha a wheel
+nincs helyben. Az `OPENAI_API_KEY` a telepítéshez nem kell.
+
+### 2. Alapértelmezett gyors indulás
+
+A fenti parancsok ehhez tartoznak. A környezeti változók neve a
+`.env.example` és a `src/naive_rag/config.py` szerint, érték nélkül:
+`OPENAI_API_KEY` a naiv ingesthez, kérdéshez és baseline-hoz;
+`QDRANT_URL` és `QDRANT_API_KEY` csak szerveres Qdrantnál;
+`NEO4J_URI`, `NEO4J_USER`, `NEO4J_PASSWORD`, `NEO4J_DATABASE` a
+`graph` parancsokhoz. A jelszó értéke nincs itt leírva.
+
+A `naive-rag ingest` a `collection_name` alapértékét használja:
+`f1_naive_rag`, helyi `.qdrant` könyvtárba (`config.py`). A `.qdrant`
+gitignore-olt helyi állapot, a klón nem tartalmazza. Az ingest embeddinget
+hív, tehát fizetős API. A `graph load` a `load_document_graph` útvonal:
+`Document` / `Section` / `Chunk`. Dockeres Neo4j kell hozzá, OpenAI-kulcs
+nem. Ez nem az extrahált entitásgráf.
+
+### 3. Mért naiv, lokális, globális és DRIFT utak
+
+Ezek a záró CLI és a week5 `measure.py` előfeltételei. A CLI és a
+`measure.py run --full` fizetős hívást indít; egyik sincs ebben a
+dokumentumban újrafuttatottként jelölve.
+
+| Út | Kell hozzá | Hol van leírva | Szolgáltatás |
+|---|---|---|---|
+| Naiv mérés | Qdrant-gyűjtemény `week4_naive_baseline_1200_23`, nem az `f1_naive_rag` | README, „Aktuális és történeti adatok”; a CLI nem építi | helyi Qdrant, majd OpenAI a kérdéshez |
+| Lokális | futó Neo4j és az `extracted_entity_embedding` vektorindex | `ask_cli.py` `probe_lokalis`; `local_search.require_vector_index` | Neo4j. A dokumentumgráf `graph load` nem elég |
+| Globális | `diagnostics/2026-11-10-phase3-measurement/results/week4-report-v3-collection.jsonl`, `run_id` `week4-leiden-elokeszitett-6f05327d7d88ebf0` | `docs/week4-kozossegi-riportok-v3.md` | a riportok újraírása OpenAI-hívás; a meglévő fájl olvasása nem |
+| DRIFT | ugyanez a riportgyűjtemény, plusz `diagnostics/2026-11-14-week6-drift/results/report-index-cache.json` | a cache építője lent | érvényes cache mellett nincs új embedding |
+
+A riportindex-cache építője, a drift README-ből, csak ha a cache hiányzik
+vagy nem érvényes. Érvényes cache esetén a parancs nem hív embeddinget:
+
+```powershell
+uv run python diagnostics\2026-11-14-week6-drift\build_index.py --build `
+  --collection-path diagnostics\2026-11-10-phase3-measurement\results\week4-report-v3-collection.jsonl `
+  --expected-run-id week4-leiden-elokeszitett-6f05327d7d88ebf0 `
+  --out diagnostics\2026-11-14-week6-drift\results\report-index-cache.json `
+  --ledger-path diagnostics\2026-11-14-week6-drift\results\week6-cost-ledger.json
+```
+
+A week5 értékelés parancsa változatlanul a `measure.py run --smoke` és
+`run --full`. Előfeltétel a fenti naiv gyűjtemény, a lokális Neo4j-index,
+a riportgyűjtemény, az `OPENAI_API_KEY` és a
+`golden/week5-golden-set-v1-approval-draft.jsonl`. A futás fizetős.
+
+Korlát: a 23 dokumentumos, 1651 rekordos entitásgráf
+(`graph/corpus/extraction-reuse-1200-23`) Neo4j-be töltésének és az
+`extracted_entity_embedding` index felépítésének teljes parancssora nincs
+dokumentálva. A `week4_naive_baseline_1200_23` gyűjtemény újraépítése
+sincs a `naive-rag ingest` parancsban. Ezeket ne tekintsd a gyors
+indulásból visszaállíthatónak.
+
 ## 1. A korpusz
 
 - **Téma:** Formula 1 — pilóták, csapatok, szezonok, alapfogalmak.
@@ -968,10 +1113,13 @@ naive-rag-baseline/
 - A helyi Qdrant egyszerre egy folyamatot enged; a `serve` és az `ingest`
   ne fusson egyszerre (szerver módhoz állítsd be a `QDRANT_URL`-t).
 - A kitalált `:Seed` réteg és az extrahált `:Extracted` réteg külön marad.
-  `MENTIONS` csak a 880 sikeres rekord chunkjait köti az extrahált entitásokhoz.
-- A `graph load` 3832 chunkot ír Neo4j-be, teljes szöveggel; a `graph query`
-  ennek megfelelően pár másodperc. Nagyobb korpusznál a `Chunk.text`
-  tárolását újra kellene gondolni.
+  Ebben a mondatban a 880 a korábbi kör sikeres extrakciós rekordja, nem
+  a mért 23 dokumentumos réteg. A mért utat lásd „Telepítés, gyors indulás
+  és mért utak”.
+- A `graph load` a dokumentumgráfot írja a `load_and_chunk()` aktuális
+  chunkolásával, nem az extrahált entitásgráfot. A 3832 chunk a régi,
+  500/75-ös futás száma. Nagyobb korpusznál a `Chunk.text` tárolását
+  újra kellene gondolni.
 - A `graph query` a riportot mindig felülírja; nincs `--tag`-elt verziózás,
   mint a `baseline`-nál.
 - A gráf adatai Docker named volume-ban élnek (`docker compose down -v`

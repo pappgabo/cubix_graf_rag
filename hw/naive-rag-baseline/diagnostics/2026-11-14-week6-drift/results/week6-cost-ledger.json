@@ -1710,6 +1710,1156 @@
    "note": null,
    "actual_prompt_tokens": 5128,
    "actual_completion_tokens": 29
+  },
+  {
+   "timestamp": 1795275151.6238806,
+   "step": "embedding",
+   "cost_usd": 0.0,
+   "label": "drift-report-embed",
+   "usage_known": false,
+   "note": "usage unknown from provider response; booked the pre-call upper-bound estimate, not zero",
+   "actual_prompt_tokens": "unknown",
+   "actual_completion_tokens": null
+  },
+  {
+   "timestamp": 1795275154.1974158,
+   "step": "generative",
+   "cost_usd": 0.000159,
+   "label": "drift-primer",
+   "usage_known": true,
+   "note": null,
+   "actual_prompt_tokens": 861,
+   "actual_completion_tokens": 50
+  },
+  {
+   "timestamp": 1795275154.8178864,
+   "step": "embedding",
+   "cost_usd": 0.0,
+   "label": "drift-subq-embed-1",
+   "usage_known": false,
+   "note": "usage unknown from provider response; booked the pre-call upper-bound estimate, not zero",
+   "actual_prompt_tokens": "unknown",
+   "actual_completion_tokens": null
+  },
+  {
+   "timestamp": 1795275159.6800525,
+   "step": "generative",
+   "cost_usd": 0.00083,
+   "label": "drift-subq-gen-1",
+   "usage_known": true,
+   "note": null,
+   "actual_prompt_tokens": 5381,
+   "actual_completion_tokens": 38
+  },
+  {
+   "timestamp": 1795275159.9140556,
+   "step": "embedding",
+   "cost_usd": 1e-06,
+   "label": "drift-subq-embed-2",
+   "usage_known": false,
+   "note": "usage unknown from provider response; booked the pre-call upper-bound estimate, not zero",
+   "actual_prompt_tokens": "unknown",
+   "actual_completion_tokens": null
+  },
+  {
+   "timestamp": 1795275168.5649936,
+   "step": "generative",
+   "cost_usd": 0.00081,
+   "label": "drift-subq-gen-2",
+   "usage_known": true,
+   "note": null,
+   "actual_prompt_tokens": 5339,
+   "actual_completion_tokens": 16
+  },
+  {
+   "timestamp": 1795275170.0038373,
+   "step": "generative",
+   "cost_usd": 0.000824,
+   "label": "drift-synthesis",
+   "usage_known": true,
+   "note": null,
+   "actual_prompt_tokens": 5337,
+   "actual_completion_tokens": 39
+  },
+  {
+   "timestamp": 1795275172.6005306,
+   "step": "generative",
+   "cost_usd": 0.000151,
+   "label": "correctness-drift-m3-followup-on-Q01-drift-criteria_scored-1795275170022966600",
+   "usage_known": true,
+   "note": null,
+   "actual_prompt_tokens": 639,
+   "actual_completion_tokens": 92
+  },
+  {
+   "timestamp": 1795275175.7955766,
+   "step": "generative",
+   "cost_usd": 0.000932,
+   "label": "faithfulness-drift-m3-followup-on-Q01-drift-faithfulness_scored-1795275172624200700",
+   "usage_known": true,
+   "note": null,
+   "actual_prompt_tokens": 5734,
+   "actual_completion_tokens": 120
+  },
+  {
+   "timestamp": 1795275176.3835726,
+   "step": "embedding",
+   "cost_usd": 1e-06,
+   "label": "drift-report-embed",
+   "usage_known": false,
+   "note": "usage unknown from provider response; booked the pre-call upper-bound estimate, not zero",
+   "actual_prompt_tokens": "unknown",
+   "actual_completion_tokens": null
+  },
+  {
+   "timestamp": 1795275178.4454715,
+   "step": "generative",
+   "cost_usd": 0.00018,
+   "label": "drift-primer",
+   "usage_known": true,
+   "note": null,
+   "actual_prompt_tokens": 908,
+   "actual_completion_tokens": 73
+  },
+  {
+   "timestamp": 1795275178.6493342,
+   "step": "embedding",
+   "cost_usd": 0.0,
+   "label": "drift-subq-embed-1",
+   "usage_known": false,
+   "note": "usage unknown from provider response; booked the pre-call upper-bound estimate, not zero",
+   "actual_prompt_tokens": "unknown",
+   "actual_completion_tokens": null
+  },
+  {
+   "timestamp": 1795275180.935306,
+   "step": "generative",
+   "cost_usd": 0.000796,
+   "label": "drift-subq-gen-1",
+   "usage_known": true,
+   "note": null,
+   "actual_prompt_tokens": 5224,
+   "actual_completion_tokens": 20
+  },
+  {
+   "timestamp": 1795275181.2762387,
+   "step": "embedding",
+   "cost_usd": 1e-06,
+   "label": "drift-subq-embed-2",
+   "usage_known": false,
+   "note": "usage unknown from provider response; booked the pre-call upper-bound estimate, not zero",
+   "actual_prompt_tokens": "unknown",
+   "actual_completion_tokens": null
+  },
+  {
+   "timestamp": 1795275185.504976,
+   "step": "generative",
+   "cost_usd": 0.000806,
+   "label": "drift-subq-gen-2",
+   "usage_known": true,
+   "note": null,
+   "actual_prompt_tokens": 5293,
+   "actual_completion_tokens": 20
+  },
+  {
+   "timestamp": 1795275186.8265886,
+   "step": "generative",
+   "cost_usd": 0.000811,
+   "label": "drift-synthesis",
+   "usage_known": true,
+   "note": null,
+   "actual_prompt_tokens": 5200,
+   "actual_completion_tokens": 52
+  },
+  {
+   "timestamp": 1795275190.547682,
+   "step": "generative",
+   "cost_usd": 0.000248,
+   "label": "correctness-drift-m3-followup-on-Q07-drift-criteria_scored-1795275186869077100",
+   "usage_known": true,
+   "note": null,
+   "actual_prompt_tokens": 840,
+   "actual_completion_tokens": 204
+  },
+  {
+   "timestamp": 1795275193.6539166,
+   "step": "generative",
+   "cost_usd": 0.000935,
+   "label": "faithfulness-drift-m3-followup-on-Q07-drift-faithfulness_scored-1795275190579361700",
+   "usage_known": true,
+   "note": null,
+   "actual_prompt_tokens": 5590,
+   "actual_completion_tokens": 161
+  },
+  {
+   "timestamp": 1795275194.0825984,
+   "step": "embedding",
+   "cost_usd": 1e-06,
+   "label": "drift-report-embed",
+   "usage_known": false,
+   "note": "usage unknown from provider response; booked the pre-call upper-bound estimate, not zero",
+   "actual_prompt_tokens": "unknown",
+   "actual_completion_tokens": null
+  },
+  {
+   "timestamp": 1795275195.8355722,
+   "step": "generative",
+   "cost_usd": 0.000163,
+   "label": "drift-primer",
+   "usage_known": true,
+   "note": null,
+   "actual_prompt_tokens": 872,
+   "actual_completion_tokens": 54
+  },
+  {
+   "timestamp": 1795275196.0658944,
+   "step": "embedding",
+   "cost_usd": 0.0,
+   "label": "drift-subq-embed-1",
+   "usage_known": false,
+   "note": "usage unknown from provider response; booked the pre-call upper-bound estimate, not zero",
+   "actual_prompt_tokens": "unknown",
+   "actual_completion_tokens": null
+  },
+  {
+   "timestamp": 1795275197.8450997,
+   "step": "generative",
+   "cost_usd": 0.000783,
+   "label": "drift-subq-gen-1",
+   "usage_known": true,
+   "note": null,
+   "actual_prompt_tokens": 5179,
+   "actual_completion_tokens": 11
+  },
+  {
+   "timestamp": 1795275198.0582533,
+   "step": "embedding",
+   "cost_usd": 0.0,
+   "label": "drift-subq-embed-2",
+   "usage_known": false,
+   "note": "usage unknown from provider response; booked the pre-call upper-bound estimate, not zero",
+   "actual_prompt_tokens": "unknown",
+   "actual_completion_tokens": null
+  },
+  {
+   "timestamp": 1795275201.699209,
+   "step": "generative",
+   "cost_usd": 0.00082,
+   "label": "drift-subq-gen-2",
+   "usage_known": true,
+   "note": null,
+   "actual_prompt_tokens": 5384,
+   "actual_completion_tokens": 20
+  },
+  {
+   "timestamp": 1795275202.788991,
+   "step": "generative",
+   "cost_usd": 0.000787,
+   "label": "drift-synthesis",
+   "usage_known": true,
+   "note": null,
+   "actual_prompt_tokens": 5128,
+   "actual_completion_tokens": 29
+  },
+  {
+   "timestamp": 1795275205.3260972,
+   "step": "generative",
+   "cost_usd": 0.000159,
+   "label": "correctness-drift-m3-followup-on-Q09-drift-criteria_scored-1795275202820949200",
+   "usage_known": true,
+   "note": null,
+   "actual_prompt_tokens": 665,
+   "actual_completion_tokens": 98
+  },
+  {
+   "timestamp": 1795275207.9592903,
+   "step": "generative",
+   "cost_usd": 0.000889,
+   "label": "faithfulness-drift-m3-followup-on-Q09-drift-faithfulness_scored-1795275205362169800",
+   "usage_known": true,
+   "note": null,
+   "actual_prompt_tokens": 5483,
+   "actual_completion_tokens": 111
+  },
+  {
+   "timestamp": 1795275208.4596965,
+   "step": "embedding",
+   "cost_usd": 1e-06,
+   "label": "drift-report-embed",
+   "usage_known": false,
+   "note": "usage unknown from provider response; booked the pre-call upper-bound estimate, not zero",
+   "actual_prompt_tokens": "unknown",
+   "actual_completion_tokens": null
+  },
+  {
+   "timestamp": 1795275210.437998,
+   "step": "generative",
+   "cost_usd": 0.000157,
+   "label": "drift-primer",
+   "usage_known": true,
+   "note": null,
+   "actual_prompt_tokens": 756,
+   "actual_completion_tokens": 73
+  },
+  {
+   "timestamp": 1795275210.6785345,
+   "step": "embedding",
+   "cost_usd": 0.0,
+   "label": "drift-subq-embed-1",
+   "usage_known": false,
+   "note": "usage unknown from provider response; booked the pre-call upper-bound estimate, not zero",
+   "actual_prompt_tokens": "unknown",
+   "actual_completion_tokens": null
+  },
+  {
+   "timestamp": 1795275213.3905013,
+   "step": "generative",
+   "cost_usd": 0.000844,
+   "label": "drift-subq-gen-1",
+   "usage_known": true,
+   "note": null,
+   "actual_prompt_tokens": 5548,
+   "actual_completion_tokens": 20
+  },
+  {
+   "timestamp": 1795275213.613483,
+   "step": "embedding",
+   "cost_usd": 1e-06,
+   "label": "drift-subq-embed-2",
+   "usage_known": false,
+   "note": "usage unknown from provider response; booked the pre-call upper-bound estimate, not zero",
+   "actual_prompt_tokens": "unknown",
+   "actual_completion_tokens": null
+  },
+  {
+   "timestamp": 1795275221.4273133,
+   "step": "generative",
+   "cost_usd": 0.000996,
+   "label": "drift-subq-gen-2",
+   "usage_known": true,
+   "note": null,
+   "actual_prompt_tokens": 5550,
+   "actual_completion_tokens": 273
+  },
+  {
+   "timestamp": 1795275222.8603933,
+   "step": "generative",
+   "cost_usd": 0.000863,
+   "label": "drift-synthesis",
+   "usage_known": true,
+   "note": null,
+   "actual_prompt_tokens": 5515,
+   "actual_completion_tokens": 59
+  },
+  {
+   "timestamp": 1795275227.5443258,
+   "step": "generative",
+   "cost_usd": 0.000318,
+   "label": "correctness-drift-m3-followup-on-Q10-drift-criteria_scored-1795275222876472500",
+   "usage_known": true,
+   "note": null,
+   "actual_prompt_tokens": 986,
+   "actual_completion_tokens": 283
+  },
+  {
+   "timestamp": 1795275231.4228444,
+   "step": "generative",
+   "cost_usd": 0.001001,
+   "label": "faithfulness-drift-m3-followup-on-Q10-drift-faithfulness_scored-1795275227603135600",
+   "usage_known": true,
+   "note": null,
+   "actual_prompt_tokens": 5930,
+   "actual_completion_tokens": 186
+  },
+  {
+   "timestamp": 1795275231.9952407,
+   "step": "embedding",
+   "cost_usd": 1e-06,
+   "label": "drift-report-embed",
+   "usage_known": false,
+   "note": "usage unknown from provider response; booked the pre-call upper-bound estimate, not zero",
+   "actual_prompt_tokens": "unknown",
+   "actual_completion_tokens": null
+  },
+  {
+   "timestamp": 1795275233.95787,
+   "step": "generative",
+   "cost_usd": 0.000174,
+   "label": "drift-primer",
+   "usage_known": true,
+   "note": null,
+   "actual_prompt_tokens": 854,
+   "actual_completion_tokens": 76
+  },
+  {
+   "timestamp": 1795275234.14473,
+   "step": "embedding",
+   "cost_usd": 0.0,
+   "label": "drift-subq-embed-1",
+   "usage_known": false,
+   "note": "usage unknown from provider response; booked the pre-call upper-bound estimate, not zero",
+   "actual_prompt_tokens": "unknown",
+   "actual_completion_tokens": null
+  },
+  {
+   "timestamp": 1795275236.4627907,
+   "step": "generative",
+   "cost_usd": 0.000796,
+   "label": "drift-subq-gen-1",
+   "usage_known": true,
+   "note": null,
+   "actual_prompt_tokens": 5226,
+   "actual_completion_tokens": 20
+  },
+  {
+   "timestamp": 1795275236.7102606,
+   "step": "embedding",
+   "cost_usd": 1e-06,
+   "label": "drift-subq-embed-2",
+   "usage_known": false,
+   "note": "usage unknown from provider response; booked the pre-call upper-bound estimate, not zero",
+   "actual_prompt_tokens": "unknown",
+   "actual_completion_tokens": null
+  },
+  {
+   "timestamp": 1795275238.2575927,
+   "step": "generative",
+   "cost_usd": 0.000301,
+   "label": "drift-subq-gen-2",
+   "usage_known": true,
+   "note": null,
+   "actual_prompt_tokens": 1927,
+   "actual_completion_tokens": 20
+  },
+  {
+   "timestamp": 1795275240.1474724,
+   "step": "generative",
+   "cost_usd": 0.000815,
+   "label": "drift-synthesis",
+   "usage_known": true,
+   "note": null,
+   "actual_prompt_tokens": 5202,
+   "actual_completion_tokens": 58
+  },
+  {
+   "timestamp": 1795275243.1935115,
+   "step": "generative",
+   "cost_usd": 0.000196,
+   "label": "correctness-drift-m3-followup-on-Q11-drift-criteria_scored-1795275240164281200",
+   "usage_known": true,
+   "note": null,
+   "actual_prompt_tokens": 728,
+   "actual_completion_tokens": 144
+  },
+  {
+   "timestamp": 1795275246.3208609,
+   "step": "generative",
+   "cost_usd": 0.000925,
+   "label": "faithfulness-drift-m3-followup-on-Q11-drift-faithfulness_scored-1795275243227652400",
+   "usage_known": true,
+   "note": null,
+   "actual_prompt_tokens": 5629,
+   "actual_completion_tokens": 135
+  },
+  {
+   "timestamp": 1795276581.4813745,
+   "step": "embedding",
+   "cost_usd": 0.0,
+   "label": "drift-report-embed",
+   "usage_known": true,
+   "note": null,
+   "actual_prompt_tokens": 11,
+   "actual_completion_tokens": null
+  },
+  {
+   "timestamp": 1795276583.7572043,
+   "step": "generative",
+   "cost_usd": 0.000159,
+   "label": "drift-primer",
+   "usage_known": true,
+   "note": null,
+   "actual_prompt_tokens": 861,
+   "actual_completion_tokens": 49
+  },
+  {
+   "timestamp": 1795276584.135355,
+   "step": "embedding",
+   "cost_usd": 0.0,
+   "label": "drift-subq-embed-1",
+   "usage_known": true,
+   "note": null,
+   "actual_prompt_tokens": 12,
+   "actual_completion_tokens": null
+  },
+  {
+   "timestamp": 1795276591.2604833,
+   "step": "generative",
+   "cost_usd": 0.000829,
+   "label": "drift-subq-gen-1",
+   "usage_known": true,
+   "note": null,
+   "actual_prompt_tokens": 5381,
+   "actual_completion_tokens": 36
+  },
+  {
+   "timestamp": 1795276592.2124128,
+   "step": "embedding",
+   "cost_usd": 0.0,
+   "label": "drift-subq-embed-2",
+   "usage_known": true,
+   "note": null,
+   "actual_prompt_tokens": 14,
+   "actual_completion_tokens": null
+  },
+  {
+   "timestamp": 1795276603.034563,
+   "step": "generative",
+   "cost_usd": 0.000833,
+   "label": "drift-subq-gen-2",
+   "usage_known": true,
+   "note": null,
+   "actual_prompt_tokens": 5447,
+   "actual_completion_tokens": 26
+  },
+  {
+   "timestamp": 1795276604.4761224,
+   "step": "generative",
+   "cost_usd": 0.000824,
+   "label": "drift-synthesis",
+   "usage_known": true,
+   "note": null,
+   "actual_prompt_tokens": 5335,
+   "actual_completion_tokens": 39
+  },
+  {
+   "timestamp": 1795276606.5398116,
+   "step": "generative",
+   "cost_usd": 0.000153,
+   "label": "correctness-drift-m3-followup-usagefix-on-Q01-drift-criteria_scored-1795276604516824600",
+   "usage_known": true,
+   "note": null,
+   "actual_prompt_tokens": 639,
+   "actual_completion_tokens": 95
+  },
+  {
+   "timestamp": 1795276609.3748806,
+   "step": "generative",
+   "cost_usd": 0.000932,
+   "label": "faithfulness-drift-m3-followup-usagefix-on-Q01-drift-faithfulness_scored-1795276606572991100",
+   "usage_known": true,
+   "note": null,
+   "actual_prompt_tokens": 5732,
+   "actual_completion_tokens": 120
+  },
+  {
+   "timestamp": 1795276609.9991658,
+   "step": "embedding",
+   "cost_usd": 1e-06,
+   "label": "drift-report-embed",
+   "usage_known": true,
+   "note": null,
+   "actual_prompt_tokens": 30,
+   "actual_completion_tokens": null
+  },
+  {
+   "timestamp": 1795276611.577996,
+   "step": "generative",
+   "cost_usd": 0.000181,
+   "label": "drift-primer",
+   "usage_known": true,
+   "note": null,
+   "actual_prompt_tokens": 908,
+   "actual_completion_tokens": 74
+  },
+  {
+   "timestamp": 1795276611.8516185,
+   "step": "embedding",
+   "cost_usd": 0.0,
+   "label": "drift-subq-embed-1",
+   "usage_known": true,
+   "note": null,
+   "actual_prompt_tokens": 15,
+   "actual_completion_tokens": null
+  },
+  {
+   "timestamp": 1795276614.4969609,
+   "step": "generative",
+   "cost_usd": 0.000796,
+   "label": "drift-subq-gen-1",
+   "usage_known": true,
+   "note": null,
+   "actual_prompt_tokens": 5224,
+   "actual_completion_tokens": 20
+  },
+  {
+   "timestamp": 1795276614.7204523,
+   "step": "embedding",
+   "cost_usd": 0.0,
+   "label": "drift-subq-embed-2",
+   "usage_known": true,
+   "note": null,
+   "actual_prompt_tokens": 15,
+   "actual_completion_tokens": null
+  },
+  {
+   "timestamp": 1795276622.4489965,
+   "step": "generative",
+   "cost_usd": 0.000826,
+   "label": "drift-subq-gen-2",
+   "usage_known": true,
+   "note": null,
+   "actual_prompt_tokens": 5425,
+   "actual_completion_tokens": 20
+  },
+  {
+   "timestamp": 1795276624.0314772,
+   "step": "generative",
+   "cost_usd": 0.000811,
+   "label": "drift-synthesis",
+   "usage_known": true,
+   "note": null,
+   "actual_prompt_tokens": 5200,
+   "actual_completion_tokens": 51
+  },
+  {
+   "timestamp": 1795276627.5105557,
+   "step": "generative",
+   "cost_usd": 0.000239,
+   "label": "correctness-drift-m3-followup-usagefix-on-Q07-drift-criteria_scored-1795276624084294900",
+   "usage_known": true,
+   "note": null,
+   "actual_prompt_tokens": 839,
+   "actual_completion_tokens": 189
+  },
+  {
+   "timestamp": 1795276630.7096512,
+   "step": "generative",
+   "cost_usd": 0.000919,
+   "label": "faithfulness-drift-m3-followup-usagefix-on-Q07-drift-faithfulness_scored-1795276627558252900",
+   "usage_known": true,
+   "note": null,
+   "actual_prompt_tokens": 5589,
+   "actual_completion_tokens": 134
+  },
+  {
+   "timestamp": 1795276631.157084,
+   "step": "embedding",
+   "cost_usd": 0.0,
+   "label": "drift-report-embed",
+   "usage_known": true,
+   "note": null,
+   "actual_prompt_tokens": 23,
+   "actual_completion_tokens": null
+  },
+  {
+   "timestamp": 1795276632.4451742,
+   "step": "generative",
+   "cost_usd": 0.000163,
+   "label": "drift-primer",
+   "usage_known": true,
+   "note": null,
+   "actual_prompt_tokens": 872,
+   "actual_completion_tokens": 54
+  },
+  {
+   "timestamp": 1795276632.6731386,
+   "step": "embedding",
+   "cost_usd": 0.0,
+   "label": "drift-subq-embed-1",
+   "usage_known": true,
+   "note": null,
+   "actual_prompt_tokens": 11,
+   "actual_completion_tokens": null
+  },
+  {
+   "timestamp": 1795276634.8950953,
+   "step": "generative",
+   "cost_usd": 0.000783,
+   "label": "drift-subq-gen-1",
+   "usage_known": true,
+   "note": null,
+   "actual_prompt_tokens": 5179,
+   "actual_completion_tokens": 11
+  },
+  {
+   "timestamp": 1795276635.2796235,
+   "step": "embedding",
+   "cost_usd": 0.0,
+   "label": "drift-subq-embed-2",
+   "usage_known": true,
+   "note": null,
+   "actual_prompt_tokens": 12,
+   "actual_completion_tokens": null
+  },
+  {
+   "timestamp": 1795276640.5931795,
+   "step": "generative",
+   "cost_usd": 0.00082,
+   "label": "drift-subq-gen-2",
+   "usage_known": true,
+   "note": null,
+   "actual_prompt_tokens": 5384,
+   "actual_completion_tokens": 20
+  },
+  {
+   "timestamp": 1795276641.5954692,
+   "step": "generative",
+   "cost_usd": 0.000787,
+   "label": "drift-synthesis",
+   "usage_known": true,
+   "note": null,
+   "actual_prompt_tokens": 5128,
+   "actual_completion_tokens": 29
+  },
+  {
+   "timestamp": 1795276643.9868934,
+   "step": "generative",
+   "cost_usd": 0.000159,
+   "label": "correctness-drift-m3-followup-usagefix-on-Q09-drift-criteria_scored-1795276641636379000",
+   "usage_known": true,
+   "note": null,
+   "actual_prompt_tokens": 665,
+   "actual_completion_tokens": 98
+  },
+  {
+   "timestamp": 1795276646.7967641,
+   "step": "generative",
+   "cost_usd": 0.000905,
+   "label": "faithfulness-drift-m3-followup-usagefix-on-Q09-drift-faithfulness_scored-1795276644033154500",
+   "usage_known": true,
+   "note": null,
+   "actual_prompt_tokens": 5483,
+   "actual_completion_tokens": 137
+  },
+  {
+   "timestamp": 1795276647.3746595,
+   "step": "embedding",
+   "cost_usd": 0.0,
+   "label": "drift-report-embed",
+   "usage_known": true,
+   "note": null,
+   "actual_prompt_tokens": 19,
+   "actual_completion_tokens": null
+  },
+  {
+   "timestamp": 1795276649.162974,
+   "step": "generative",
+   "cost_usd": 0.000157,
+   "label": "drift-primer",
+   "usage_known": true,
+   "note": null,
+   "actual_prompt_tokens": 756,
+   "actual_completion_tokens": 73
+  },
+  {
+   "timestamp": 1795276649.4116387,
+   "step": "embedding",
+   "cost_usd": 0.0,
+   "label": "drift-subq-embed-1",
+   "usage_known": true,
+   "note": null,
+   "actual_prompt_tokens": 17,
+   "actual_completion_tokens": null
+  },
+  {
+   "timestamp": 1795276653.2648795,
+   "step": "generative",
+   "cost_usd": 0.000844,
+   "label": "drift-subq-gen-1",
+   "usage_known": true,
+   "note": null,
+   "actual_prompt_tokens": 5548,
+   "actual_completion_tokens": 20
+  },
+  {
+   "timestamp": 1795276653.486663,
+   "step": "embedding",
+   "cost_usd": 0.0,
+   "label": "drift-subq-embed-2",
+   "usage_known": true,
+   "note": null,
+   "actual_prompt_tokens": 16,
+   "actual_completion_tokens": null
+  },
+  {
+   "timestamp": 1795276664.3169172,
+   "step": "generative",
+   "cost_usd": 0.000998,
+   "label": "drift-subq-gen-2",
+   "usage_known": true,
+   "note": null,
+   "actual_prompt_tokens": 5550,
+   "actual_completion_tokens": 275
+  },
+  {
+   "timestamp": 1795276665.9425383,
+   "step": "generative",
+   "cost_usd": 0.000863,
+   "label": "drift-synthesis",
+   "usage_known": true,
+   "note": null,
+   "actual_prompt_tokens": 5515,
+   "actual_completion_tokens": 59
+  },
+  {
+   "timestamp": 1795276670.3100743,
+   "step": "generative",
+   "cost_usd": 0.000318,
+   "label": "correctness-drift-m3-followup-usagefix-on-Q10-drift-criteria_scored-1795276665975700100",
+   "usage_known": true,
+   "note": null,
+   "actual_prompt_tokens": 986,
+   "actual_completion_tokens": 283
+  },
+  {
+   "timestamp": 1795276674.2476435,
+   "step": "generative",
+   "cost_usd": 0.001001,
+   "label": "faithfulness-drift-m3-followup-usagefix-on-Q10-drift-faithfulness_scored-1795276670353120300",
+   "usage_known": true,
+   "note": null,
+   "actual_prompt_tokens": 5930,
+   "actual_completion_tokens": 185
+  },
+  {
+   "timestamp": 1795276674.818033,
+   "step": "embedding",
+   "cost_usd": 0.0,
+   "label": "drift-report-embed",
+   "usage_known": true,
+   "note": null,
+   "actual_prompt_tokens": 21,
+   "actual_completion_tokens": null
+  },
+  {
+   "timestamp": 1795276676.4303963,
+   "step": "generative",
+   "cost_usd": 0.000174,
+   "label": "drift-primer",
+   "usage_known": true,
+   "note": null,
+   "actual_prompt_tokens": 854,
+   "actual_completion_tokens": 76
+  },
+  {
+   "timestamp": 1795276676.647883,
+   "step": "embedding",
+   "cost_usd": 0.0,
+   "label": "drift-subq-embed-1",
+   "usage_known": true,
+   "note": null,
+   "actual_prompt_tokens": 10,
+   "actual_completion_tokens": null
+  },
+  {
+   "timestamp": 1795276679.9189825,
+   "step": "generative",
+   "cost_usd": 0.000796,
+   "label": "drift-subq-gen-1",
+   "usage_known": true,
+   "note": null,
+   "actual_prompt_tokens": 5226,
+   "actual_completion_tokens": 20
+  },
+  {
+   "timestamp": 1795276680.3378072,
+   "step": "embedding",
+   "cost_usd": 0.0,
+   "label": "drift-subq-embed-2",
+   "usage_known": true,
+   "note": null,
+   "actual_prompt_tokens": 15,
+   "actual_completion_tokens": null
+  },
+  {
+   "timestamp": 1795276681.6697295,
+   "step": "generative",
+   "cost_usd": 0.000301,
+   "label": "drift-subq-gen-2",
+   "usage_known": true,
+   "note": null,
+   "actual_prompt_tokens": 1927,
+   "actual_completion_tokens": 20
+  },
+  {
+   "timestamp": 1795276683.3181896,
+   "step": "generative",
+   "cost_usd": 0.000815,
+   "label": "drift-synthesis",
+   "usage_known": true,
+   "note": null,
+   "actual_prompt_tokens": 5202,
+   "actual_completion_tokens": 58
+  },
+  {
+   "timestamp": 1795276686.2538226,
+   "step": "generative",
+   "cost_usd": 0.000197,
+   "label": "correctness-drift-m3-followup-usagefix-on-Q11-drift-criteria_scored-1795276683368101500",
+   "usage_known": true,
+   "note": null,
+   "actual_prompt_tokens": 728,
+   "actual_completion_tokens": 146
+  },
+  {
+   "timestamp": 1795276689.3605177,
+   "step": "generative",
+   "cost_usd": 0.000927,
+   "label": "faithfulness-drift-m3-followup-usagefix-on-Q11-drift-faithfulness_scored-1795276686299262400",
+   "usage_known": true,
+   "note": null,
+   "actual_prompt_tokens": 5629,
+   "actual_completion_tokens": 138
+  },
+  {
+   "timestamp": 1795276747.3028777,
+   "step": "embedding",
+   "cost_usd": 0.0,
+   "label": "drift-report-embed",
+   "usage_known": true,
+   "note": null,
+   "actual_prompt_tokens": 11,
+   "actual_completion_tokens": null
+  },
+  {
+   "timestamp": 1795276749.325416,
+   "step": "generative",
+   "cost_usd": 0.000159,
+   "label": "drift-primer",
+   "usage_known": true,
+   "note": null,
+   "actual_prompt_tokens": 861,
+   "actual_completion_tokens": 49
+  },
+  {
+   "timestamp": 1795276750.2172494,
+   "step": "generative",
+   "cost_usd": 4.1e-05,
+   "label": "drift-synthesis",
+   "usage_known": true,
+   "note": null,
+   "actual_prompt_tokens": 195,
+   "actual_completion_tokens": 20
+  },
+  {
+   "timestamp": 1795276752.26799,
+   "step": "generative",
+   "cost_usd": 0.00015,
+   "label": "correctness-drift-m3-followup-usagefix-off-Q01-drift-criteria_scored-1795276750260640600",
+   "usage_known": true,
+   "note": null,
+   "actual_prompt_tokens": 620,
+   "actual_completion_tokens": 95
+  },
+  {
+   "timestamp": 1795276754.009655,
+   "step": "generative",
+   "cost_usd": 0.000105,
+   "label": "faithfulness-drift-m3-followup-usagefix-off-Q01-drift-faithfulness_scored-1795276752309078200",
+   "usage_known": true,
+   "note": null,
+   "actual_prompt_tokens": 451,
+   "actual_completion_tokens": 62
+  },
+  {
+   "timestamp": 1795276754.5464594,
+   "step": "embedding",
+   "cost_usd": 1e-06,
+   "label": "drift-report-embed",
+   "usage_known": true,
+   "note": null,
+   "actual_prompt_tokens": 30,
+   "actual_completion_tokens": null
+  },
+  {
+   "timestamp": 1795276756.3435671,
+   "step": "generative",
+   "cost_usd": 0.000181,
+   "label": "drift-primer",
+   "usage_known": true,
+   "note": null,
+   "actual_prompt_tokens": 908,
+   "actual_completion_tokens": 74
+  },
+  {
+   "timestamp": 1795276757.2474573,
+   "step": "generative",
+   "cost_usd": 5.4e-05,
+   "label": "drift-synthesis",
+   "usage_known": true,
+   "note": null,
+   "actual_prompt_tokens": 233,
+   "actual_completion_tokens": 31
+  },
+  {
+   "timestamp": 1795276760.3418345,
+   "step": "generative",
+   "cost_usd": 0.000244,
+   "label": "correctness-drift-m3-followup-usagefix-off-Q07-drift-criteria_scored-1795276757277669400",
+   "usage_known": true,
+   "note": null,
+   "actual_prompt_tokens": 819,
+   "actual_completion_tokens": 202
+  },
+  {
+   "timestamp": 1795276762.6021671,
+   "step": "generative",
+   "cost_usd": 0.000148,
+   "label": "faithfulness-drift-m3-followup-usagefix-off-Q07-drift-faithfulness_scored-1795276760377232700",
+   "usage_known": true,
+   "note": null,
+   "actual_prompt_tokens": 500,
+   "actual_completion_tokens": 122
+  },
+  {
+   "timestamp": 1795276763.1324606,
+   "step": "embedding",
+   "cost_usd": 0.0,
+   "label": "drift-report-embed",
+   "usage_known": true,
+   "note": null,
+   "actual_prompt_tokens": 23,
+   "actual_completion_tokens": null
+  },
+  {
+   "timestamp": 1795276764.5943284,
+   "step": "generative",
+   "cost_usd": 0.000163,
+   "label": "drift-primer",
+   "usage_known": true,
+   "note": null,
+   "actual_prompt_tokens": 872,
+   "actual_completion_tokens": 54
+  },
+  {
+   "timestamp": 1795276765.5194635,
+   "step": "generative",
+   "cost_usd": 4.4e-05,
+   "label": "drift-synthesis",
+   "usage_known": true,
+   "note": null,
+   "actual_prompt_tokens": 215,
+   "actual_completion_tokens": 20
+  },
+  {
+   "timestamp": 1795276767.4027038,
+   "step": "generative",
+   "cost_usd": 0.000156,
+   "label": "correctness-drift-m3-followup-usagefix-off-Q09-drift-criteria_scored-1795276765552331400",
+   "usage_known": true,
+   "note": null,
+   "actual_prompt_tokens": 656,
+   "actual_completion_tokens": 96
+  },
+  {
+   "timestamp": 1795276769.43023,
+   "step": "generative",
+   "cost_usd": 0.000123,
+   "label": "faithfulness-drift-m3-followup-usagefix-off-Q09-drift-faithfulness_scored-1795276767444192300",
+   "usage_known": true,
+   "note": null,
+   "actual_prompt_tokens": 471,
+   "actual_completion_tokens": 87
+  },
+  {
+   "timestamp": 1795276770.2431707,
+   "step": "embedding",
+   "cost_usd": 0.0,
+   "label": "drift-report-embed",
+   "usage_known": true,
+   "note": null,
+   "actual_prompt_tokens": 19,
+   "actual_completion_tokens": null
+  },
+  {
+   "timestamp": 1795276771.9898374,
+   "step": "generative",
+   "cost_usd": 0.000157,
+   "label": "drift-primer",
+   "usage_known": true,
+   "note": null,
+   "actual_prompt_tokens": 756,
+   "actual_completion_tokens": 73
+  },
+  {
+   "timestamp": 1795276773.0174477,
+   "step": "generative",
+   "cost_usd": 4.6e-05,
+   "label": "drift-synthesis",
+   "usage_known": true,
+   "note": null,
+   "actual_prompt_tokens": 224,
+   "actual_completion_tokens": 20
+  },
+  {
+   "timestamp": 1795276777.199868,
+   "step": "generative",
+   "cost_usd": 0.000297,
+   "label": "correctness-drift-m3-followup-usagefix-off-Q10-drift-criteria_scored-1795276773082378700",
+   "usage_known": true,
+   "note": null,
+   "actual_prompt_tokens": 947,
+   "actual_completion_tokens": 259
+  },
+  {
+   "timestamp": 1795276778.3782961,
+   "step": "generative",
+   "cost_usd": 9.4e-05,
+   "label": "faithfulness-drift-m3-followup-usagefix-off-Q10-drift-faithfulness_scored-1795276777240072600",
+   "usage_known": true,
+   "note": null,
+   "actual_prompt_tokens": 480,
+   "actual_completion_tokens": 37
+  },
+  {
+   "timestamp": 1795276778.939851,
+   "step": "embedding",
+   "cost_usd": 0.0,
+   "label": "drift-report-embed",
+   "usage_known": true,
+   "note": null,
+   "actual_prompt_tokens": 21,
+   "actual_completion_tokens": null
+  },
+  {
+   "timestamp": 1795276780.42358,
+   "step": "generative",
+   "cost_usd": 0.000174,
+   "label": "drift-primer",
+   "usage_known": true,
+   "note": null,
+   "actual_prompt_tokens": 854,
+   "actual_completion_tokens": 76
+  },
+  {
+   "timestamp": 1795276781.4181492,
+   "step": "generative",
+   "cost_usd": 4.7e-05,
+   "label": "drift-synthesis",
+   "usage_known": true,
+   "note": null,
+   "actual_prompt_tokens": 233,
+   "actual_completion_tokens": 20
+  },
+  {
+   "timestamp": 1795276783.8680797,
+   "step": "generative",
+   "cost_usd": 0.000179,
+   "label": "correctness-drift-m3-followup-usagefix-off-Q11-drift-criteria_scored-1795276781459759300",
+   "usage_known": true,
+   "note": null,
+   "actual_prompt_tokens": 690,
+   "actual_completion_tokens": 125
+  },
+  {
+   "timestamp": 1795276785.0803792,
+   "step": "generative",
+   "cost_usd": 9.6e-05,
+   "label": "faithfulness-drift-m3-followup-usagefix-off-Q11-drift-faithfulness_scored-1795276783902454200",
+   "usage_known": true,
+   "note": null,
+   "actual_prompt_tokens": 489,
+   "actual_completion_tokens": 37
   }
  ]
 }

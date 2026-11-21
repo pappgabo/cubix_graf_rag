@@ -40,6 +40,10 @@ from .global_search import CommunityReport
 from .graph_merge import DomainGraph
 from .local_search import REFUSAL, LocalAnswer, context_text, estimate_tokens, local_search
 
+
+class EmbeddingUsageUnknown(RuntimeError):
+    """The embedding response did not include provider token usage."""
+
 # Reused, not redefined: diagnostics/2026-11-10-phase5-run/run_phase5.py's
 # actual week5 configuration (CHAT_MODEL, GENERATIVE_MAX_TOKENS,
 # EMBEDDING_MODEL). Every drift step uses the same model/settings.
@@ -308,9 +312,13 @@ def _run_embed_step(call_embed, cost_guard, *, texts: list[str],
         step=label, kind="embedding",
         input_tokens_estimate=input_tokens, max_output_tokens=None,
         upper_bound_cost_usd=upper, actual_cost_usd=actual_cost,
-        usage_known=isinstance(actual_tokens, int),
+        usage_known=isinstance(actual_tokens, int) and not isinstance(actual_tokens, bool),
         prompt_tokens=actual_tokens, completion_tokens=None,
     )
+    if not step.usage_known:
+        raise EmbeddingUsageUnknown(
+            f"{label}: provider embedding usage is missing; booked the upper bound, not an actual usage"
+        )
     return vectors, step
 
 
@@ -486,6 +494,7 @@ def drift_search(
     local_budget: dict | None = None,
     synthesis_char_budget: int = DEFAULT_SYNTHESIS_CHAR_BUDGET,
     generative_max_output_tokens: int = GENERATIVE_MAX_TOKENS,
+    local_search_followup: bool = True,
 ) -> DriftAnswer:
     """Run the full limited-DRIFT chain for one question.
 
@@ -551,15 +560,16 @@ def drift_search(
     subquestions = tuple(parsed_primer["subquestions"])
 
     subquestion_results: list[SubQuestionResult] = []
-    for index, subquestion in enumerate(subquestions, start=1):
-        embed_query, answer_fn = _local_search_adapters(
-            index, call_chat, call_embed, cost_guard, steps, generative_max_output_tokens)
-        local_answer = local_search(
-            subquestion, graph, local_index,
-            embed_query=embed_query, answer_fn=answer_fn,
-            chunk_texts=chunk_texts, budget=local_budget,
-        )
-        subquestion_results.append(SubQuestionResult(question=subquestion, local_answer=local_answer))
+    if local_search_followup:
+        for index, subquestion in enumerate(subquestions, start=1):
+            embed_query, answer_fn = _local_search_adapters(
+                index, call_chat, call_embed, cost_guard, steps, generative_max_output_tokens)
+            local_answer = local_search(
+                subquestion, graph, local_index,
+                embed_query=embed_query, answer_fn=answer_fn,
+                chunk_texts=chunk_texts, budget=local_budget,
+            )
+            subquestion_results.append(SubQuestionResult(question=subquestion, local_answer=local_answer))
 
     context, truncation = build_synthesis_context(
         primer_initial_answer, report_ids, tuple(subquestion_results), synthesis_char_budget)

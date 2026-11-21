@@ -376,3 +376,11 @@ DoD-hiány. Jelenlegi kumulatív week6 ledger-fogyasztás (a demót is
 beleértve): 0,075836 USD. A korábbi, időponthoz kötött történeti
 összegek (v2 smoke/full utáni konzolértékek) és a már dokumentált
 faithfulness-/költségeltérés-levezetés nem változott.
+
+## M3 lezárás
+
+Az M3 local-followup abláció lezárva. A célkérdések, a
+`m3-followup-usagefix-on` / `m3-followup-usagefix-off` pár, a jóslatok
+ellenőrzése és a ledgerállapot a `docs/week6-eredmenyek.md` M3
+szakaszában vannak. A fenti, 2026-11-14-i jóváhagyott jóslat szövege
+nem változott. Az ON az alapértelmezett; nincs új DRIFT-verzió.

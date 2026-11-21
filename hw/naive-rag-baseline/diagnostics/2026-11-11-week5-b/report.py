@@ -60,12 +60,14 @@ def _cell(rows: list[dict[str, Any]]) -> str:
         label_counts[label] += 1
     retrieval_ratios = [
         row["retrieval"]["ratio"] for row in rows
-        if row.get("retrieval") and row["retrieval"].get("ratio") is not None
+        if row.get("retrieval") and row["retrieval"].get("status") != "not_applicable"
+        and row["retrieval"].get("ratio") is not None
         and not row["retrieval"].get("is_proxy")
     ]
     proxy_ratios = [
         row["retrieval"]["ratio"] for row in rows
-        if row.get("retrieval") and row["retrieval"].get("ratio") is not None
+        if row.get("retrieval") and row["retrieval"].get("status") != "not_applicable"
+        and row["retrieval"].get("ratio") is not None
         and row["retrieval"].get("is_proxy")
     ]
     faithfulness_scores = [

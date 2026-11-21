@@ -147,3 +147,88 @@ Az utolsó parancs `--run` nélkül 6 entitást számol, és nem hív embeddinge
 ```
 
 A Neo4j-betöltés nincs parancssori kapcsolóra kötve. A kapu `plan_validated_raw(..., accept_validated_raw=True)` volt, csak a `status=ok` rekordokra, 880 tranzakcióval. A JSON-fájlokra nem került `approved` mező.
+
+## M4 — bizonyítéklánc
+
+A dokumentációs kör itt lezárul. A követelmények hiánytalan teljesülése
+nincs állítva. Az M5-nek átadott hiányok a szakasz végén vannak.
+
+### 1. Futás és riport
+
+A `1200/100` a chunk mérete és átfedése: 1200 karakter, 100 karakter
+átfedés. Nem csomópontszám. A mentett chunkfájl
+`graph/corpus/chunks-section-1200-23/chunks.jsonl`; az első rekord
+`chunk_size` mezője 1200, `chunk_overlap` mezője 100. A fájlnévben a
+`23` a dokumentumszám. A `config.py` 63–64. sora ugyanezt a két számot
+tartalmazza; ez kódbeli alapérték, nem önálló futási napló.
+
+Az összetartozás mentett mondata a
+`graph/corpus/quality-report-section-1200-23.md` 3. sora: a riport
+bemenete `graph/corpus/extraction-reuse-1200-23`, 1651 sikeres rekord,
+a chunkszöveg a fenti `chunks.jsonl`. A páros JSON ugyanezeket a
+darabszámokat őrzi (`processed` 1651, `ok` 1651, `empty_ok` 315), de
+nincs benne bemeneti útvonal vagy hash. A kötés tehát a markdown
+mondata, nem külön futási metaadat.
+
+### 2. Deduplikálás
+
+Csak a `quality-report-section-1200-23.json` `before` és `after`
+mezői. Előtte `kind=occurrence`: 10782 csomópont, 6533 él, legnagyobb
+komponens 30. Utána `kind=merged`: 2761 csomópont, 4326 él, legnagyobb
+komponens 1896. A komponens jelentése ugyanebben a két objektumban van:
+szakterületi gráf, irány nélkül, seed, dokumentumgráf és MENTIONS nélkül.
+
+Külön szám, nem ez a pár: a markdown 2469. sora a fázis-3
+önhurok-szűrés utáni memóriagráfot 2761 csomópontnak és 4325 élnek
+írja, és a Neo4j-ben megmaradt 4326 élt ettől elválasztja.
+
+A szabály kód, nem a riport futási naplója: `occurrence_graph` és
+`merged_graph` a `graph_merge.py`-ban; `entity_key` az
+`extraction_identity.make_entity_key` (177. sor), `rel_key` a
+`make_rel_key` (189. sor), alias az `ALIAS_MAP` (68. sor).
+
+### 3. Él → forrásrekord → dokumentum
+
+Egy mentett él, a
+`diagnostics/2026-11-07-review/results/01_graph_review.json`
+`q08_edges` első eleme: `Driver:jenson button`, `TEAMMATE_OF`,
+`Driver:nico rosberg`, `from_year` null, `to_year` null, forráslista
+`driver-jenson-button#31`. A lista egy elemű. A fájlt író szkript
+(`01_graph_review.py` 21. és 95. sora) az
+`extraction-reuse-1200-23` könyvtár `merged_graph` eredményét írja, és
+az él forráslistáját legfeljebb négy elemre vágja. A JSON saját
+mezőben nem őrzi a bemenet útvonalát.
+
+A forrásrekord:
+`graph/corpus/extraction-reuse-1200-23/driver-jenson-button_31.json`.
+Mezők: `chunk_id` = `driver-jenson-button#31`, `doc_id` =
+`driver-jenson-button`, `status` = `ok`. A `result.relationships`
+második eleme `source_id` `e1`, `target_id` `e3`, `relationship_type`
+`TEAMMATE_OF`. A nyers kapcsolaton nincs `source_chunk_ids`; a chunk a
+rekord mezője.
+
+A dokumentum: `chunks.jsonl` 180. sora, `chunk_id`
+`driver-jenson-button#31`, `doc_id` `driver-jenson-button`,
+`chunk_size` 1200, `chunk_overlap` 100.
+
+### 4. Lefedettség és parancs
+
+Teljes körű mentett él-provenance ellenőrzés nincs. A lefedettség
+**nem igazolt**. A review csak kiválasztott élek legfeljebb négy
+forrásazonosítóját menti. Az `extraction_load.py` `origin` és
+`source_chunk_ids` írása kódképesség, nem ennek a rétegnek mentett
+teljes ellenőrzése.
+
+A 23 dokumentumos extrakció vagy Neo4j-betöltés mentett parancsa,
+futási metaadata és naplója nincs meg. A `quality_report.py`
+argumentumaiból összerakható parancs rekonstruált parancs: nem
+bizonyíték arra, hogy történetileg lefutott. A README 626–632. sorának
+`local_search --out docs\osszehasonlitas-section-1200-23.md --run`
+parancsa a Q01–Q13 keresésé, nem a gráf betöltéséé. A fájl végén lévő
+`extract_pilot` parancs a régi `graph/corpus/extraction` köré.
+
+**M4 dokumentációs köre lezárva. A követelmények nem teljesek.**
+M5-nek átadott hiány: nincs történeti betöltőparancs vagy betöltési
+napló; a riport JSON-ja nem tartalmaz bemeneti hash-t; minden
+szakterületi él forrás-lefedettsége nem igazolt.
+

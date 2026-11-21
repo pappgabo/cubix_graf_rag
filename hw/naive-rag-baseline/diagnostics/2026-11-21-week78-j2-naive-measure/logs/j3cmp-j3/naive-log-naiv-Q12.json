@@ -1,0 +1,32 @@
+{
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are a question answering assistant. Answer the question using ONLY the context below. Each context passage starts with a tag like [S1]. Cite the passages you used in the answer, e.g. [S1][S3]. If the context does not contain the answer, say that you cannot answer from the provided documents. Do not automatically ignore a sentence that begins as a fragment at a chunk boundary in the given context if its meaning and relations can be unambiguously recovered from the given context alone. Do not invent a missing subject, relation, or fact."
+  },
+  {
+   "role": "user",
+   "content": "Context:\n[S1] (None, section: sheet Drivers in corpus)\nSheet: Drivers in corpus\nDriver | Nationality | World titles (as of 2024) | Main constructors\nLewis Hamilton | British | 7 | McLaren; Mercedes\nMax Verstappen | Dutch | 4 | Red Bull Racing\nSebastian Vettel | German | 4 | Red Bull Racing; Ferrari\nFernando Alonso | Spanish | 2 | Renault; McLaren\nMichael Schumacher | German | 7 | Benetton; Ferrari\nKimi Räikkönen | Finnish | 1 | McLaren; Ferrari\nNico Rosberg | German | 1 | Williams; Mercedes\nJenson Button | British | 1 | BAR/Honda; Brawn; McLaren\nCharles Leclerc | Monégasque | 0 | Sauber; Ferrari\nValtteri Bottas | Finnish | 0 | Williams; Mercedes\n\n[S2] (None, section: 2020 Formula One World Championship > World Constructors' Championship standings)\n## World Constructors' Championship standings  \nNotes:  \n† – Driver did not finish the Grand Prix, but was classified as he completed more than 90% of the race distance.  \nThe standings are sorted by best result, rows are not related to the drivers. In case of tie on points, the best positions achieved determined the outcome.\n\n[S3] (None, section: World Constructors' Championship standings)\n## World Constructors' Championship standings  \nIn the event of a tie, a count-back system was used as a tie-breaker, with a constructor's best result used to decide the standings.  \nNotes:  \n† – Drivers did not finish the Grand Prix, but were classified as they completed more than 90% of the race distance.  \nThe standings are sorted by best result, rows are not related to the drivers. In case of tie on points, a certain position is achieved determines the outcome.\n\n[S4] (None, section: Formula One > Points system)\n## Points system  \nVarious systems for awarding championship points have been used since 1950. The current system, in place since 2010, awards the top ten cars points in the Drivers' and Constructors' Championships, with the winner receiving 25 points. Points won at each race are added up, and the driver and constructor with the most points at the end of the season are crowned World Champions.  \nA driver must be classified to receive points. They must complete at least 90% of the race distance to receive points. Therefore, it is possible for a driver to receive points even if they retired before the end of the race.  \nFrom some time between the 1977 and 1980 seasons to the end of the 2021 season, if less than 75% of the race laps were completed by the winner, then only half of the points listed in the table were awarded to drivers and constructors. The half-points rule was replaced by a distance-dependent, gradual-scale system for 2022.\n\nQuestion: Group the World Champions among the corpus drivers by decade (2000s, 2010s, 2020s)."
+  }
+ ],
+ "messages_sha256": "c7af61a57211bb74e27a7c316fcaade6001ba17be28fb11d064f0337b2290055",
+ "hash_algorithm": "sha256",
+ "hash_encoding": "utf-8",
+ "params": {
+  "model": "gpt-4o-mini",
+  "temperature": 0.0,
+  "max_tokens": 900,
+  "response_format": null,
+  "max_retries": 0
+ },
+ "raw_response": "Based on the provided context, the World Champions among the drivers can be grouped by decade as follows:\n\n**2000s:**\n- Michael Schumacher (7 titles)\n- Fernando Alonso (2 titles)\n\n**2010s:**\n- Lewis Hamilton (7 titles)\n- Nico Rosberg (1 title)\n- Sebastian Vettel (4 titles)\n\n**2020s:**\n- Max Verstappen (4 titles)\n\nThis grouping is derived from the world titles listed in the context [S1].",
+ "returned_model": "gpt-4o-mini-2024-07-18",
+ "usage_prompt_tokens": 764,
+ "usage_completion_tokens": 98,
+ "finish_reason": "stop",
+ "duration_seconds": 2.515,
+ "error": null,
+ "local_metadata": {
+  "question_id": "naiv-Q12"
+ }
+}

@@ -1,0 +1,32 @@
+{
+ "messages": [
+  {
+   "role": "system",
+   "content": "You are a question answering assistant. Answer the question using ONLY the context below. Each context passage starts with a tag like [S1]. Cite the passages you used in the answer, e.g. [S1][S3]. If the context does not contain the answer, say that you cannot answer from the provided documents. Do not automatically ignore a sentence that begins as a fragment at a chunk boundary in the given context if its meaning and relations can be unambiguously recovered from the given context alone. Do not invent a missing subject, relation, or fact."
+  },
+  {
+   "role": "user",
+   "content": "Context:\n[S1] (None, page 1)\n2021 Formula One World Championship\nThe 2021 FIA Formula One World Championship was a motor racing championship for Formula One cars which was the\n72nd running of the Formula One World Championship. It is recognised by the Fédération Internationale de l'Automobile\n(FIA), the governing body of international motorsport, as the highest class of competition for open-wheel racing cars.\nThe championship was contested over twenty-two Grands Prix, and held around the world. Drivers and teams competed\nfor the titles of World Drivers' Champion and World Constructors' Champion, respectively.\nMax  Verstappen  of  Red  Bull  Racing-Honda  won  the  Drivers'  Championship  for  the  first  time  in  his  career,  having\nclaimed  10  race  wins  across  the  season.  Verstappen  became  the  first-ever  driver  from  the  Netherlands,  the  first\nHonda-powered driver since Ayrton Senna in 1991, the first Red Bull driver since Sebastian Vettel in 2013 and the first\nnon-Mercedes driver in the turbo-hybrid era to win the World Championship. This season saw the return of Aston Martin\nsince 1960 after Lawrence Stroll invested into the British marque.\n\n[S2] (None, page 7)\nresumption of the race for one single lap caused significant controversy; race director Michael Masi allowed all lapped\ncars between Hamilton and Verstappen to unlap themselves, but no other. He also restarted the race for the next lap in\nsupposed  contravention  to  the  rulebook.  Verstappen  passed  Hamilton  at  turn  five  of  the  final  lap  of  the  final  race  to\nbecome the first World Drivers' Champion from the Netherlands and the 34th overall. Mercedes' protests were dismissed\nby the stewards and Verstappen was provisionally confirmed as world champion, pending any appeal. Having initially\nlodged their intention, Mercedes later decided not to submit an appeal of the race results. Verstappen was named the\nbest driver of the season by Autosport and The Race, whilst also topping polls of fellow drivers and team principals.\nMark Hughes of Motor Sport also ranked Verstappen first, describing his season as a \"stunning combination of speed\nand racecraft, totally fearless, incredible tenacity and ability to comeback from adversity\".\n2022: Defending the championship\n\n[S3] (None, page 1)\nproduced a last lap overtake on Hamilton after a late safety car restart on the final lap of season to win his maiden World\nDrivers' Championship. Mercedes initially protested the results, and later decided not to appeal after their protest was\ndenied. A review of the incident led to key structural changes to race control, including the removal of Michael Masi from\nhis role as race director and the implementation of a virtual race control room, which assists the race director.\nThis was the first season since 2008 where the champion driver was not from the team that took the constructors' title.\nThe season was also the final season in the sport for 2007 World Champion Kimi Räikkönen.\nEntries\nAll teams competed with tyres supplied by Pirelli.  Each team was required to enter at least two drivers, one for each of\nthe two mandatory cars.\nFree practice drivers\nAcross the season, five drivers drove as a test or third driver in free practice sessions. Callum Ilott and Robert Kubica\ndrove for Alfa Romeo Racing at two and three Grands Prix respectively, while Roy Nissany and Jack Aitken drove for\n\n[S4] (None, section: 2020 Formula One World Championship)\n# 2020 Formula One World Championship  \nThe 2020 FIA Formula One World Championship was the motor racing championship for Formula One cars which was the 71st running of the Formula One World Championship. It marked the 70th anniversary of the first Formula One World Drivers' Championship. The championship was recognised by the governing body of international motorsport, the Fédération Internationale de l'Automobile (FIA), as the highest class of competition for open-wheel racing cars. Drivers and teams competed for the titles of World Drivers' Champion and World Constructors' Champion, respectively.\n\nQuestion: Who won the 2021 Formula One World Drivers' Championship?"
+  }
+ ],
+ "messages_sha256": "10de6abbad74816425bf03b115351e7eac0a0318eec2da7ffe8e5b2b1ebe696e",
+ "hash_algorithm": "sha256",
+ "hash_encoding": "utf-8",
+ "params": {
+  "model": "gpt-4o-mini",
+  "temperature": 0.0,
+  "max_tokens": 900,
+  "response_format": null,
+  "max_retries": 0
+ },
+ "raw_response": "Max Verstappen of Red Bull Racing-Honda won the 2021 Formula One World Drivers' Championship [S1][S2].",
+ "returned_model": "gpt-4o-mini-2024-07-18",
+ "usage_prompt_tokens": 1037,
+ "usage_completion_tokens": 27,
+ "finish_reason": "stop",
+ "duration_seconds": 1.078,
+ "error": null,
+ "local_metadata": {
+  "question_id": "naiv-Q03"
+ }
+}

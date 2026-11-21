@@ -340,6 +340,8 @@ def index_naive_baseline(budget: Budget, ledger: Ledger) -> dict:
 def run_naiv(
     question_id: str, question_text: str, budget: Budget, ledger: Ledger, *,
     qdrant_client=None, chat_client=None, openai_client=None, search_fn=None,
+    prompt_variant: str = "baseline",
+    actual_context_override: str | None = None,
 ) -> dict:
     """``qdrant_client``/``chat_client``/``openai_client``/``search_fn`` are
     injection points for offline testing (fakes); None builds the real
@@ -353,26 +355,33 @@ def run_naiv(
     from types import SimpleNamespace
 
     from naive_rag.models import get_chat_model
-    from naive_rag.rag import PROMPT, format_context, source_of
+    from naive_rag.rag import format_context, prompt_for, source_of
     from naive_rag.naive_search_logging import make_logged_chat_call
 
-    vector = embed_texts([question_text], [f"naiv-query-{question_id}"], budget, ledger,
-                        label=f"naiv-query-{question_id}", openai_client=openai_client)[0]
+    prompt = prompt_for(prompt_variant)
 
-    if search_fn is None:
-        from naive_rag.vectorstore import _client as qdrant_client_factory
+    if actual_context_override is None:
+        vector = embed_texts([question_text], [f"naiv-query-{question_id}"], budget, ledger,
+                            label=f"naiv-query-{question_id}", openai_client=openai_client)[0]
 
-        client = qdrant_client or qdrant_client_factory()
+        if search_fn is None:
+            from naive_rag.vectorstore import _client as qdrant_client_factory
 
-        def search_fn(v):
-            response = client.query_points(NEW_COLLECTION, query=v, limit=TOP_K, with_payload=True)
-            return [
-                (SimpleNamespace(page_content=point.payload.get("text", ""), metadata=point.payload), point.score)
-                for point in response.points
-            ]
-    hits = search_fn(vector)
-    sources = [source_of(d, i, sc) for i, (d, sc) in enumerate(hits, 1)]
-    messages = PROMPT.format_messages(context=format_context(sources), question=question_text)
+            client = qdrant_client or qdrant_client_factory()
+
+            def search_fn(v):
+                response = client.query_points(NEW_COLLECTION, query=v, limit=TOP_K, with_payload=True)
+                return [
+                    (SimpleNamespace(page_content=point.payload.get("text", ""), metadata=point.payload), point.score)
+                    for point in response.points
+                ]
+        hits = search_fn(vector)
+        sources = [source_of(d, i, sc) for i, (d, sc) in enumerate(hits, 1)]
+        context = format_context(sources)
+    else:
+        sources = []
+        context = actual_context_override
+    messages = prompt.format_messages(context=context, question=question_text)
 
     input_text = "".join(m.content for m in messages)
     upper = budget.check_generative(estimate_tokens(input_text), GENERATIVE_MAX_TOKENS, f"naiv-{question_id}")
@@ -399,7 +408,11 @@ def run_naiv(
         usage_completion_tokens=saved.get("usage_completion_tokens"), cost_usd=cost,
         duration_seconds=round(elapsed, 3), status="error" if error else "success", error=error,
     )
-    return {"question_id": question_id, "answer": answer, "sources": sources, "error": error, "ledger_entry": entry}
+    result = {"question_id": question_id, "answer": answer, "sources": sources, "error": error, "ledger_entry": entry}
+    if actual_context_override is not None:
+        result["context_source"] = "saved_context_replay"
+        result["actual_context"] = actual_context_override
+    return result
 
 
 # --------------------------------------------------------------------------

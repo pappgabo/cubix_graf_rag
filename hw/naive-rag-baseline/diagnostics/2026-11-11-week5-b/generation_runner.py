@@ -46,8 +46,11 @@ def run_naiv_capture(
     elapsed = time.monotonic() - started
     sources = result.get("sources") or []
     chunk_ids = [s["chunk_id"] for s in sources if s.get("chunk_id")]
-    actual_context = format_context(sources) if sources else ""
-    return {
+    if result.get("context_source") == "saved_context_replay":
+        actual_context = result.get("actual_context")
+    else:
+        actual_context = format_context(sources) if sources else ""
+    record = {
         "question_id": question_id, "mode": "naiv", "run_phase": run_phase,
         "answer": result.get("answer"), "refused": None, "model_called": result.get("error") is None,
         "actual_context": actual_context, "actual_chunk_ids": chunk_ids, "chunk_ids_traceable": True,
@@ -56,6 +59,9 @@ def run_naiv_capture(
         "ledger_entry": result.get("ledger_entry"),
         "raw": {"sources": sources},
     }
+    if result.get("context_source") == "saved_context_replay":
+        record["context_source"] = "saved_context_replay"
+    return record
 
 
 def run_lokalis_capture(

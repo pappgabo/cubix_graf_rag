@@ -1,0 +1,216 @@
+{
+ "question_id": "Q05",
+ "mode": "naiv",
+ "run_phase": "pair-baseline-full",
+ "question_type": "multi-hop",
+ "question_status": "frozen_w4",
+ "question_text": "Which team did the 2012 World Drivers' Champion leave his team for, and in which year did the move take effect?",
+ "expected_answer": "Sebastian Vettel a Red Bulltól a Ferrarihoz igazolt, a váltás a 2015-ös szezonra lépett életbe.",
+ "golden_set_version": "v1-approval-draft",
+ "answer": "The 2012 World Drivers' Champion, Kimi Räikkönen, left his team (Lotus) to return to the sport in 2012. However, the context does not specify which team he joined after leaving Lotus. Therefore, I cannot answer from the provided documents.",
+ "refused": null,
+ "model_called": true,
+ "actual_context": "[S1] (None, page 2)\nFour-time World Drivers' Champion Sebastian Vettel left Ferrari at the end of the 2020 season after racing with the team\nfor six seasons. Vettel's seat was taken by Carlos Sainz Jr., who had left McLaren after two seasons. Daniel Ricciardo\nmoved  from  Renault  to  McLaren,  where  he  replaced  Sainz.  Ricciardo  was  replaced  by  double  World  Champion\nFernando Alonso, who drove in Alpine's first season, having last raced in 2018 for McLaren.\nVettel moved to Aston Martin, where he replaced Sergio Pérez. Pérez, who had previously signed a contract to drive for\nAston Martin's predecessor, Racing Point, until 2022, moved to Red Bull Racing where he replaced Alexander Albon,\nwho  was  Red  Bull  Racing's  reserve  and  test  driver  for  the  2021  season.  Pérez  became  the  first  driver  since  Mark\nWebber in 2007 to join the team without being previously a Red Bull Junior Team member.\nRomain Grosjean and Kevin Magnussen, who had raced for Haas since 2016 and 2017 respectively, left the team at the\nend  of  2020.  2020  Formula  2  Champion  Mick  Schumacher,  the  son  of  seven-time  World  Champion  Michael\n\n[S2] (None, section: Teams and drivers > Driver changes)\n### Driver changes\nThe 2012 season saw several driver changes. Lotus chose not to take up an option on Vitaly Petrov's contract, and did not offer Bruno Senna a new contract. Petrov and Senna were replaced by 2007 World Drivers' Champion Kimi Räikkönen – returning to the sport after two seasons competing in the World Rally Championship – and reigning GP2 Series champion Romain Grosjean, who also returned to the sport after a two-year absence. Petrov later replaced Jarno Trulli at Caterham; Trulli's replacement meant that the opening race of the season would be the first race since the 1973 German Grand Prix to take place without an Italian driver on the grid. Senna joined Williams, the team having previously attempted to secure Räikkönen for the season. Senna replaced Rubens Barrichello, who left Formula One after a record-breaking nineteen seasons. He later moved to IndyCar for the 2012 season, joining KV Racing Technology.\n\n[S3] (None, section: Formula One career > First departure (2010–2011))\n### First departure (2010–2011)\nNear the end of the 2009 season, Ferrari announced that Räikkönen would be leaving the team, despite having a contract to race for them in 2010. He would be replaced by Fernando Alonso. He was expected to return to McLaren alongside Lewis Hamilton but negotiations with the team failed. Räikkönen was then linked to Mercedes GP but the team eventually signed Michael Schumacher and Nico Rosberg. Toyota F1, before it pulled out of Formula One, offered Räikkönen a driving contract to replace Timo Glock in 2010. The BBC reported that he refused the contract owing to wanting to drive a race-winning car, not to mention Toyota not offering a large enough salary.\n\n[S4] (None, section: Formula One career > Alfa Romeo / Sauber (2022–2024) > 2024)\nBottas ended the season 22nd in the World Drivers' Championship, last of the full-time drivers, and failed to score points over a season for the first time in his career. Reflecting on his three-year tenure at the team, he described his move there in 2022 as a \"mistake\" and that it was \"downhill\" after the first year. He also revealed that his decision to join the team was influenced by the presence of team principal Frédéric Vasseur and that he considered exercising an option to leave the team when Vasseur moved to Ferrari, but was convinced to stay after being told he would be a \"pillar\" of the Audi project.",
+ "actual_chunk_ids": [
+  "season-2021-formula-one-world-championship#4",
+  "season-2012-formula-one-world-championship#10",
+  "driver-kimi-raikkonen#49",
+  "driver-valtteri-bottas#55"
+ ],
+ "chunk_ids_traceable": true,
+ "is_proxy_retrieval": false,
+ "error": null,
+ "duration_seconds": 1.609,
+ "ledger_entry": {
+  "run_id": "pair-baseline-full",
+  "timestamp": 1795269580.7895808,
+  "step": "answer",
+  "mode": "naiv",
+  "question_id": "Q05",
+  "log_file": "D:\\PET\\CUBIX\\cubix_GraphRAG\\7.8.záró\\HW\\naive-rag-baseline\\diagnostics\\2026-11-21-week78-j2-naive-measure\\logs\\pair-baseline-full\\naive-log-naiv-Q05.json",
+  "request_hash": "3f14ad4b8e9ede6b9ce649e5eb917fa60aa29cf898c3f92525117a422a6d1969",
+  "usage_prompt_tokens": 979,
+  "usage_completion_tokens": 57,
+  "cost_usd": 0.00018104999999999998,
+  "duration_seconds": 1.171,
+  "status": "success",
+  "error": null
+ },
+ "raw": {
+  "sources": [
+   {
+    "tag": "S1",
+    "chunk_id": "season-2021-formula-one-world-championship#4",
+    "doc_id": "season-2021-formula-one-world-championship",
+    "file": null,
+    "format": null,
+    "location": "page 2",
+    "url": null,
+    "score": 0.6626,
+    "text": "Four-time World Drivers' Champion Sebastian Vettel left Ferrari at the end of the 2020 season after racing with the team\nfor six seasons. Vettel's seat was taken by Carlos Sainz Jr., who had left McLaren after two seasons. Daniel Ricciardo\nmoved  from  Renault  to  McLaren,  where  he  replaced  Sainz.  Ricciardo  was  replaced  by  double  World  Champion\nFernando Alonso, who drove in Alpine's first season, having last raced in 2018 for McLaren.\nVettel moved to Aston Martin, where he replaced Sergio Pérez. Pérez, who had previously signed a contract to drive for\nAston Martin's predecessor, Racing Point, until 2022, moved to Red Bull Racing where he replaced Alexander Albon,\nwho  was  Red  Bull  Racing's  reserve  and  test  driver  for  the  2021  season.  Pérez  became  the  first  driver  since  Mark\nWebber in 2007 to join the team without being previously a Red Bull Junior Team member.\nRomain Grosjean and Kevin Magnussen, who had raced for Haas since 2016 and 2017 respectively, left the team at the\nend  of  2020.  2020  Formula  2  Champion  Mick  Schumacher,  the  son  of  seven-time  World  Champion  Michael"
+   },
+   {
+    "tag": "S2",
+    "chunk_id": "season-2012-formula-one-world-championship#10",
+    "doc_id": "season-2012-formula-one-world-championship",
+    "file": null,
+    "format": null,
+    "location": "section: Teams and drivers > Driver changes",
+    "url": null,
+    "score": 0.6149,
+    "text": "### Driver changes\nThe 2012 season saw several driver changes. Lotus chose not to take up an option on Vitaly Petrov's contract, and did not offer Bruno Senna a new contract. Petrov and Senna were replaced by 2007 World Drivers' Champion Kimi Räikkönen – returning to the sport after two seasons competing in the World Rally Championship – and reigning GP2 Series champion Romain Grosjean, who also returned to the sport after a two-year absence. Petrov later replaced Jarno Trulli at Caterham; Trulli's replacement meant that the opening race of the season would be the first race since the 1973 German Grand Prix to take place without an Italian driver on the grid. Senna joined Williams, the team having previously attempted to secure Räikkönen for the season. Senna replaced Rubens Barrichello, who left Formula One after a record-breaking nineteen seasons. He later moved to IndyCar for the 2012 season, joining KV Racing Technology."
+   },
+   {
+    "tag": "S3",
+    "chunk_id": "driver-kimi-raikkonen#49",
+    "doc_id": "driver-kimi-raikkonen",
+    "file": null,
+    "format": null,
+    "location": "section: Formula One career > First departure (2010–2011)",
+    "url": null,
+    "score": 0.5792,
+    "text": "### First departure (2010–2011)\nNear the end of the 2009 season, Ferrari announced that Räikkönen would be leaving the team, despite having a contract to race for them in 2010. He would be replaced by Fernando Alonso. He was expected to return to McLaren alongside Lewis Hamilton but negotiations with the team failed. Räikkönen was then linked to Mercedes GP but the team eventually signed Michael Schumacher and Nico Rosberg. Toyota F1, before it pulled out of Formula One, offered Räikkönen a driving contract to replace Timo Glock in 2010. The BBC reported that he refused the contract owing to wanting to drive a race-winning car, not to mention Toyota not offering a large enough salary."
+   },
+   {
+    "tag": "S4",
+    "chunk_id": "driver-valtteri-bottas#55",
+    "doc_id": "driver-valtteri-bottas",
+    "file": null,
+    "format": null,
+    "location": "section: Formula One career > Alfa Romeo / Sauber (2022–2024) > 2024",
+    "url": null,
+    "score": 0.5708,
+    "text": "Bottas ended the season 22nd in the World Drivers' Championship, last of the full-time drivers, and failed to score points over a season for the first time in his career. Reflecting on his three-year tenure at the team, he described his move there in 2022 as a \"mistake\" and that it was \"downhill\" after the first year. He also revealed that his decision to join the team was influenced by the presence of team principal Frédéric Vasseur and that he considered exercising an option to leave the team when Vasseur moved to Ferrari, but was convinced to stay after being told he would be a \"pillar\" of the Audi project."
+   }
+  ]
+ },
+ "j2_retrieval": {
+  "j2_enabled": false,
+  "candidates": [
+   {
+    "chunk_id": "season-2021-formula-one-world-championship#4",
+    "text": "Four-time World Drivers' Champion Sebastian Vettel left Ferrari at the end of the 2020 season after racing with the team\nfor six seasons. Vettel's seat was taken by Carlos Sainz Jr., who had left McLaren after two seasons. Daniel Ricciardo\nmoved  from  Renault  to  McLaren,  where  he  replaced  Sainz.  Ricciardo  was  replaced  by  double  World  Champion\nFernando Alonso, who drove in Alpine's first season, having last raced in 2018 for McLaren.\nVettel moved to Aston Martin, where he replaced Sergio Pérez. Pérez, who had previously signed a contract to drive for\nAston Martin's predecessor, Racing Point, until 2022, moved to Red Bull Racing where he replaced Alexander Albon,\nwho  was  Red  Bull  Racing's  reserve  and  test  driver  for  the  2021  season.  Pérez  became  the  first  driver  since  Mark\nWebber in 2007 to join the team without being previously a Red Bull Junior Team member.\nRomain Grosjean and Kevin Magnussen, who had raced for Haas since 2016 and 2017 respectively, left the team at the\nend  of  2020.  2020  Formula  2  Champion  Mick  Schumacher,  the  son  of  seven-time  World  Champion  Michael",
+    "score": 0.6625686905820662,
+    "rank": 1,
+    "year_match": false
+   },
+   {
+    "chunk_id": "season-2012-formula-one-world-championship#10",
+    "text": "### Driver changes\nThe 2012 season saw several driver changes. Lotus chose not to take up an option on Vitaly Petrov's contract, and did not offer Bruno Senna a new contract. Petrov and Senna were replaced by 2007 World Drivers' Champion Kimi Räikkönen – returning to the sport after two seasons competing in the World Rally Championship – and reigning GP2 Series champion Romain Grosjean, who also returned to the sport after a two-year absence. Petrov later replaced Jarno Trulli at Caterham; Trulli's replacement meant that the opening race of the season would be the first race since the 1973 German Grand Prix to take place without an Italian driver on the grid. Senna joined Williams, the team having previously attempted to secure Räikkönen for the season. Senna replaced Rubens Barrichello, who left Formula One after a record-breaking nineteen seasons. He later moved to IndyCar for the 2012 season, joining KV Racing Technology.",
+    "score": 0.6148820565877765,
+    "rank": 2,
+    "year_match": true
+   },
+   {
+    "chunk_id": "driver-kimi-raikkonen#49",
+    "text": "### First departure (2010–2011)\nNear the end of the 2009 season, Ferrari announced that Räikkönen would be leaving the team, despite having a contract to race for them in 2010. He would be replaced by Fernando Alonso. He was expected to return to McLaren alongside Lewis Hamilton but negotiations with the team failed. Räikkönen was then linked to Mercedes GP but the team eventually signed Michael Schumacher and Nico Rosberg. Toyota F1, before it pulled out of Formula One, offered Räikkönen a driving contract to replace Timo Glock in 2010. The BBC reported that he refused the contract owing to wanting to drive a race-winning car, not to mention Toyota not offering a large enough salary.",
+    "score": 0.5792305286770215,
+    "rank": 3,
+    "year_match": false
+   },
+   {
+    "chunk_id": "driver-valtteri-bottas#55",
+    "text": "Bottas ended the season 22nd in the World Drivers' Championship, last of the full-time drivers, and failed to score points over a season for the first time in his career. Reflecting on his three-year tenure at the team, he described his move there in 2022 as a \"mistake\" and that it was \"downhill\" after the first year. He also revealed that his decision to join the team was influenced by the presence of team principal Frédéric Vasseur and that he considered exercising an option to leave the team when Vasseur moved to Ferrari, but was convinced to stay after being told he would be a \"pillar\" of the Audi project.",
+    "score": 0.57084512094589,
+    "rank": 4,
+    "year_match": false
+   }
+  ],
+  "final_order": [
+   "season-2021-formula-one-world-championship#4",
+   "season-2012-formula-one-world-championship#10",
+   "driver-kimi-raikkonen#49",
+   "driver-valtteri-bottas#55"
+  ],
+  "actual_chunk_ids": [
+   "season-2021-formula-one-world-championship#4",
+   "season-2012-formula-one-world-championship#10",
+   "driver-kimi-raikkonen#49",
+   "driver-valtteri-bottas#55"
+  ]
+ },
+ "duration_seconds_generation": 1.609,
+ "cost_usd_generation": 0.000182,
+ "retrieval": {
+  "question_id": "Q05",
+  "status": "scored",
+  "is_proxy": false,
+  "proxy_note": null,
+  "untraceable_reason": null,
+  "hit_count": 0,
+  "group_count": 3,
+  "ratio": 0.0,
+  "strict_all_hit": false,
+  "groups": [
+   {
+    "group_id": "Q05-e1",
+    "criterion": "Q05-c1",
+    "role": null,
+    "hit": false,
+    "any_of_chunk_ids": [
+     "driver-sebastian-vettel#2"
+    ],
+    "matched_chunk_ids": []
+   },
+   {
+    "group_id": "Q05-e2",
+    "criterion": "Q05-c2",
+    "role": null,
+    "hit": false,
+    "any_of_chunk_ids": [
+     "driver-sebastian-vettel#29",
+     "driver-sebastian-vettel#30"
+    ],
+    "matched_chunk_ids": []
+   },
+   {
+    "group_id": "Q05-bridge",
+    "criterion": null,
+    "role": "retrieval_bridge",
+    "hit": false,
+    "any_of_chunk_ids": [
+     "reference-list-of-formula-one-world-drivers-champions#0",
+     "driver-sebastian-vettel#0",
+     "driver-sebastian-vettel#2"
+    ],
+    "matched_chunk_ids": []
+   }
+  ]
+ },
+ "duration_seconds_correctness_judge": 2.672,
+ "cost_usd_correctness_judge": 0.000204,
+ "correctness": {
+  "status": "scored",
+  "label": "hiányos",
+  "parsed": {
+   "criteria": [
+    {
+     "criterion_id": "Q05-c1",
+     "verdict": "not_met",
+     "explanation": "The answer incorrectly identifies Kimi Räikkönen as the 2012 World Drivers' Champion instead of Sebastian Vettel."
+    },
+    {
+     "criterion_id": "Q05-c2",
+     "verdict": "not_met",
+     "explanation": "The answer does not mention the year 2015, which is required."
+    }
+   ],
+   "refused": false,
+   "rubric_conflicts": [],
+   "reasoning": "The answer fails to correctly identify the champion and the destination team, leading to a failure to meet both criteria."
+  },
+  "usage_prompt_tokens": 753,
+  "usage_completion_tokens": 151
+ },
+ "duration_seconds_faithfulness_judge": 1.875,
+ "cost_usd_faithfulness_judge": 0.000273,
+ "faithfulness": {
+  "status": "scored",
+  "score": 1.0,
+  "supported_count": 2,
+  "unsupported_count": 0,
+  "unclear_count": 0
+ },
+ "cost_usd": 0.000659,
+ "cost_source": "ledger_delta"
+}
