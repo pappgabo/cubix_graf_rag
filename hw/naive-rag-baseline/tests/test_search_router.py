@@ -57,6 +57,10 @@ class ValidationTests(unittest.TestCase):
         v = sr.validate_router_response({"mode": "naiv", "reasoning": ""})
         self.assertFalse(v.valid_structure)
 
+    def test_drift_mode_is_valid(self):
+        v = sr.validate_router_response({"mode": "drift", "reasoning": "global summary plus one local hop"})
+        self.assertTrue(v.valid_structure)
+
 
 class RouteOneTests(unittest.TestCase):
     def test_successful_route_records_mode_and_logs_exact_messages(self):

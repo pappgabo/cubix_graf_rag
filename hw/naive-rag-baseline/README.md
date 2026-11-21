@@ -1,3 +1,85 @@
+# 6. házifeladat — Modern irány
+
+Korlátozott, **saját** DRIFT-adaptáció — nem a Microsoft DRIFT teljes
+implementációja. Részletes eredmények, táblázatok és a jóslat kiértékelése:
+[`docs/week6-eredmenyek.md`](docs/week6-eredmenyek.md); a tervezés/jóváhagyás
+és a fázislezárások (A–E) előzménye: [`docs/week6-atadas.md`](docs/week6-atadas.md);
+a futtatási parancsok és a mért/becsült mentett adatok:
+[`diagnostics/2026-11-14-week6-drift/README.md`](diagnostics/2026-11-14-week6-drift/README.md).
+Az 5. heti szakasz (lent) és számai **változatlanok** — ez a rész nem
+írja felül azokat.
+
+## 6.1 Módszer
+
+Kérdésembedding → top-3 meglévő közösségi riport (`graph_merge`/
+`global_search`-ből, saját riportindex-cache) → egy primer generálás
+(kezdeti válasz + **1–2** célzott részkérdés) → a meglévő
+`naive_rag.local_search.local_search` hívása részkérdésenként a saját
+összevont gráfon és entitásindexen → egy végső szintézis. Egy kör,
+nincs HyDE, nincs rekurzív/többkörös kérdésfa, nincs második modern
+módszer. Implementáció: [`src/naive_rag/drift_search.py`](src/naive_rag/drift_search.py).
+
+## 6.2 Eredmény röviden
+
+A v2 FULL mérés (15/15 kérdés) lefutott: 4-módos összehasonlító tábla,
+célkérdés-szintű jóslatértékelés és faithfulness-ellenőrzés
+[`docs/week6-eredmenyek.md`](docs/week6-eredmenyek.md)-ben. Helyes
+válaszok száma (kis minta, 15 kérdés; a régi módokat nem futtattuk
+újra, az 5. heti mentett FULL eredményből átvéve): **drift v2 FULL:
+3/15; naiv: 9/15; lokális: 7/15; globális: 2/15.** Q09-nél a drift
+lokális kontextusa tartalmazott előre azonosított bizonyítékot; ez a
+globális mód eltérő jelentésű riportforrás-proxyjával **nem vethető
+össze közvetlenül**. A mentett célkérdés-összehasonlítás szerint
+helyességi kategóriában **egyik célkérdésen sem igazolódott javulás**.
+Költség: a v2 full mérés 0,056394 USD-t fogyasztott; a jelenlegi
+kumulatív week6 fogyasztás (index + próbák + full + a route_demo
+demó együtt, a mentett ledger szerint) **0,075836 USD** a 0,50 USD
+keretből.
+
+## 6.3 Spektrum-elhelyezés
+
+A gráf és a közösségi riportok a korábbi heti munkából származnak: a
+korpusz azonos chunkolt szövegbázisából (`graph/corpus/chunks-section-1200-23/`,
+helyileg ellenőrizve: 1651/1651 chunk egyezik) kinyert, összevont
+entitás-gráfból és a rá épített Leiden-közösségi riportokból (4. hét) —
+a drift nem épít új gráfot vagy riportot. A közösségi szint a kérdés
+globális, korpuszszintű kontextusát adja (melyik 1-3 riport releváns),
+a lokális keresés pedig ezen belül 1-2 konkrét entitásra élesít, a
+riport-összegzés által esetleg elvesztett részletet próbálva pótolni.
+Indexeléskor csak egyszeri, olcsó riportindex-embedding történik (a
+gráf/entitásindex/chunkok újrahasznosítottak, nincs újraépítés);
+kérdezéskor kérdésenként legfeljebb 4 generálás és 3 embedding fut. A
+mért helyes-válasz arány (3/15) a 15 kérdésből álló, kis mintán
+elmarad a naiv (9/15) és a lokális (7/15) módtól, és csak a globálist
+(2/15) előzi meg — ez dokumentált mérési eredmény, nem javítási
+feladat ebben a körben. A jóváhagyott jóslat iránya (riport-szintű
+proxy helyett valódi lokális kontextus egy célkérdésen, Q09) megfigyelhető,
+de helyességi kategóriában egyik célkérdésen sem igazolódott javulás;
+nem bizonyított hibaforrást (pl. a primer entitás-horgonyzása) nem
+állítok tényként. Ezt az adaptációt akkor választanám, ha a kérdés
+jellemzően korpuszszintű, de a válasz egy-két konkrét entitás
+részletén is múlik, és a többlet késleltetés/költség elfogadható; a
+mért eredmények alapján **nem** választanám olyan kérdéshalmazra, ahol
+a lokális vagy naiv mód már önmagában is jobban teljesít.
+
+## 6.4 DoD
+
+| # | Követelmény | Teljesült? | Hivatkozás |
+|---|---|---|---|
+| 1 | A választott irány saját rendszerben, saját adaton fut | **Igen** | `src/naive_rag/drift_search.py`; v2 full: `diagnostics/2026-11-14-week6-drift/results/cases/v2/full/` (15/15) |
+| 2 | Negyedik módként elérhető az útválasztón keresztül | **Igen** | a drift negyedik módként elérhető a közös kérdés–útválasztó–kereső végrehajtási felületen (`src/naive_rag/search_router.py`, `src/naive_rag/answer_question.py`); a router → drift végrehajtást offline teszt igazolja (`tests/test_answer_question.py::RouterDispatchTests::test_router_decision_actually_invokes_the_chosen_branch`) |
+| 3 | Új eredmény a mérési táblázatban, költséggel | **Igen** | [`docs/week6-eredmenyek.md`](docs/week6-eredmenyek.md) 1., 3. szakasz |
+| 4 | Spektrum-elhelyezés és jóslatértékelés leírva | **Igen** | fenti 6.3 szakasz; [`docs/week6-eredmenyek.md`](docs/week6-eredmenyek.md) 2. szakasz |
+
+**A valós route_demo eredménye ettől külön** (`diagnostics/2026-11-14-week6-drift/results/week6-route-demo.json`):
+az automatikus router érvényes `globalis` döntést adott; a demó
+automatikus hívásánál csak a `drift` végrehajtó volt regisztrálva, ezért
+a `globalis` ág nem futott le — ez a szándékosan szűk demó bekötési
+korlátja, nem router-hiba. Az explicit `drift` valós hívása sikeresen
+lefutott. **Valós automatikus router → drift futást ez a demó nem
+igazolt** — a 2. DoD-pont "Igen" minősítése az offline tesztre épül, nem
+erre a demóra.
+
 # 5. házifeladat — Mérés
 
 **Állapot (5. hét):** a teljes mérés (`--full`, 45 eset) lefutott és mentve

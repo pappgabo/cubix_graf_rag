@@ -25,10 +25,10 @@ TEMPERATURE = 0
 MAX_TOKENS = 200
 MAX_RETRIES = 0
 
-VALID_MODES = ("naiv", "lokalis", "globalis")
+VALID_MODES = ("naiv", "lokalis", "globalis", "drift")
 
 ROUTER_SYSTEM_PROMPT = """
-You choose which of three search modes should answer a question, based
+You choose which of four search modes should answer a question, based
 only on the question's own wording. Do not rely on knowledge of any
 specific test set or example questions -- judge only the general shape of
 this one question.
@@ -49,10 +49,17 @@ Modes:
   cover the whole graph. Good for a corpus-wide, aggregating, or
   "across all X" question. Weak for a question about one narrow, specific
   local fact, where a broad summary may dilute or miss a sharp detail.
+- "drift": starts from the most relevant community-level summaries, like
+  "globalis", but then follows up with at most two targeted local graph
+  lookups on the entities those summaries point to, and combines both
+  into one answer. Good for a corpus-wide question whose full answer
+  still depends on one or two specific entity-level details a community
+  summary alone tends to lose. Weak for a single, already-localized fact,
+  where the extra community-level step adds cost without adding value.
 
 Return only the following JSON, nothing else:
 
-{"mode": "naiv" | "lokalis" | "globalis", "reasoning": "<one sentence>"}
+{"mode": "naiv" | "lokalis" | "globalis" | "drift", "reasoning": "<one sentence>"}
 """.strip()
 
 
