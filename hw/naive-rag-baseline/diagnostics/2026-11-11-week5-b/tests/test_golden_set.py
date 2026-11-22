@@ -1,3 +1,4 @@
+import hashlib
 import json
 import sys
 import tempfile
@@ -70,6 +71,26 @@ class GoldenSetTests(unittest.TestCase):
             qs = gs.load_golden_set(path)
             with self.assertRaises(gs.GoldenSetError):
                 gs.verify_single_corpus_snapshot(qs)
+
+    def test_newline_form_does_not_change_corpus_identity(self) -> None:
+        source = Path(__file__).resolve().parents[3] / "graph" / "corpus" / "chunks-section-1200-23" / "chunks.jsonl"
+        lf = gs.normalized_chunk_bytes(source.read_bytes())
+        self.assertEqual(
+            hashlib.sha256(lf).hexdigest(), gs.LF_NORMALIZED_CORPUS_SHA256)
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            lf_path = root / "lf.jsonl"
+            crlf_path = root / "crlf.jsonl"
+            changed_path = root / "changed.jsonl"
+            lf_path.write_bytes(lf)
+            crlf_path.write_bytes(lf.replace(b"\n", b"\r\n"))
+            changed = bytearray(lf)
+            changed[200] = (changed[200] + 1) % 256
+            changed_path.write_bytes(changed)
+            gs.verify_corpus_matches_disk(gs.HISTORICAL_CRLF_CORPUS_SHA256, lf_path)
+            gs.verify_corpus_matches_disk(gs.HISTORICAL_CRLF_CORPUS_SHA256, crlf_path)
+            with self.assertRaises(gs.GoldenSetError):
+                gs.verify_corpus_matches_disk(gs.HISTORICAL_CRLF_CORPUS_SHA256, changed_path)
 
     def test_corpus_hash_mismatch_detected(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:

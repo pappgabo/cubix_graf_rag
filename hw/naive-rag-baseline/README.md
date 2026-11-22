@@ -712,7 +712,7 @@ nem. Ez nem az extrahált entitásgráf.
 ### 3. A mért rendszer visszaállítása
 
 Ez nem a gyors indulás. A helyi fájl megléte nem idegen gépes bizonyíték.
-A visszaállítás ebben a körben nem futott. Sorrend:
+A visszaállítás sorrendje:
 
 1. A fagyasztott chunkfájl már a projektfában van:
    `graph/corpus/chunks-section-1200-23/chunks.jsonl`, 1651 sor.
@@ -796,14 +796,39 @@ backup, nem az idegen gépi bemenet és nem egy élő Neo4j-lekérdezés.
 
 | Út | Kell hozzá | Kódút | Szolgáltatás | Státusz |
 |---|---|---|---|---|
-| Naiv mérés | `week4_naive_baseline_1200_23` | `build_week4_collection.py` | Qdrant + OpenAI | parancs megvan, most nem futott |
-| Lokális | `extraction-reuse-1200-23` + vektorindex | `graph load`, `extraction_load --write`, `neo4j_entity_index --run` | Neo4j; az indexhez OpenAI | parancs megvan, most nem futott |
-| Globális | a 37 riportos jsonl | `generate_reports_v3.main` | OpenAI, ha újra kell | a fájl megvan, újragenerálás nem futott |
-| DRIFT | a 37 riport, a `graph/corpus/extraction/` könyvtár, a `graph/corpus/entity-index.json`, a `load_and_chunk()` korpusza, és a cache | `build_index.py --build` | OpenAI, ha a cache érvénytelen | parancs dokumentált, most nem futott |
+| Naiv mérés | `week4_naive_baseline_1200_23` | `build_week4_collection.py` | Qdrant + OpenAI | second-machine ellenőrzés: PASS |
+| Lokális | `extraction-reuse-1200-23` + vektorindex | `graph load`, `extraction_load --write`, `neo4j_entity_index --run` | Neo4j; az indexhez OpenAI | second-machine ellenőrzés: PASS |
+| Globális | a 37 riportos jsonl | `generate_reports_v3.main` | OpenAI, ha újra kell | a fájl megvan; a smoke PASS |
+| DRIFT | a 37 riport, a `graph/corpus/extraction/` könyvtár, a `graph/corpus/entity-index.json`, a `load_and_chunk()` korpusza, és a cache | `build_index.py --build` | OpenAI, ha a cache érvénytelen | second-machine smoke: PASS |
 
-### Másik gépes smoke, később
+### Second-machine reproducibility verification
 
-Most nem futott. A visszaállítás sorrendje:
+A fenti sorrend lezárt ellenőrzése PASS. Külön Windows gépen, friss
+GitHub ZIP-ből, új virtual environmentben, Python 3.11-gyel futott.
+A függőségek telepítése PASS. A szükséges secretek a helyi `.env`-ből
+jöttek; a repository nem tartalmaz titkot.
+
+Ellenőrzött eredmények: clean setup, platformfüggetlen corpus
+hash-kapu, Qdrant-újraépítés, naiv smoke, izolált Neo4j, extracted
+réteg újraépítése, lokális smoke, globális smoke, DRIFT smoke és
+evaluation smoke. Mind PASS. A négy mód (`naiv`, `lokalis`,
+`globalis`, `drift`) végigfutott és választ adott.
+
+A Qdrant-gyűjtemény `week4_naive_baseline_1200_23`, 1651 pont. A
+normalizált corpus hash
+`7ea361e60c2a9c06e2628f7d008d25c35ebb58ebcbebc31902ab2380dbebee27`.
+A dokumentumréteg: 23 dokumentum, 544 section, 1651 chunk. Az
+extracted réteg a `graph/corpus/extraction-reuse-1200-23` forrásból
+állt elő: `planned: 1651`, `failed: 0`, `entity_keys: 2761`,
+`rel_keys: 4325`. Az `extracted_entity_embedding` index létrejött.
+A 134 MB-os történeti backup nem kell ehhez a reprodukcióhoz.
+
+A gépen már volt `naive-rag-baseline_neo4j_data` volume. Az ellenőrzés
+ezt nem használta: `COMPOSE_PROJECT_NAME=smt2-naive-rag` mellett külön
+volume készült, a korábbi adatbázis érintetlen maradt. Az evaluation
+smoke a platformfüggetlen corpus hash ellenőrzéssel fejeződött be.
+
+A visszaállítás sorrendje:
 
 1. Python 3.11, majd `uv sync` az `uv.lock` alapján.
 2. `.env` a `.env.example` másolata. Kitöltendő: `OPENAI_API_KEY`, `NEO4J_PASSWORD`. Az értékeléshez: `LANGFUSE_PUBLIC_KEY`, `LANGFUSE_SECRET_KEY`. Érték nincs a repóban.
@@ -817,8 +842,6 @@ Most nem futott. A visszaállítás sorrendje:
 10. A DRIFT `build_index.py --build` parancs, ha a cache hiányzik.
 11. Egy kérdés mind a négy móddal, a fenti `ask_cli.py --mode naiv|lokalis|globalis|drift` parancsokkal.
 12. `python diagnostics\2026-11-11-week5-b\measure.py run --smoke`
-
-A tiszta telepítés a korábbi hálózati korlát miatt nincs sikeresnek jelölve.
 
 ### Ismert korlát
 

@@ -158,13 +158,28 @@ def verify_single_corpus_snapshot(questions: tuple[GoldenQuestion, ...]) -> str:
     return next(iter(snapshots))[1]
 
 
+# Same corpus snapshot. The golden set stores the historical Windows CRLF
+# raw hash; the measurement gate compares LF-normalized bytes.
+HISTORICAL_CRLF_CORPUS_SHA256 = "79d46d6291bc07924ddc13703f9b4804f8cf9c86de9de3ebaf435248f04e012e"
+LF_NORMALIZED_CORPUS_SHA256 = "7ea361e60c2a9c06e2628f7d008d25c35ebb58ebcbebc31902ab2380dbebee27"
+
+
+def normalized_chunk_bytes(raw: bytes) -> bytes:
+    """LF bytes. CRLF and CR-only newlines compare as the same corpus."""
+    return raw.replace(b"\r\n", b"\n").replace(b"\r", b"\n")
+
+
 def verify_corpus_matches_disk(expected_sha256: str, chunks_path: Path) -> None:
-    actual = hashlib.sha256(chunks_path.read_bytes()).hexdigest()
-    if actual != expected_sha256:
-        raise GoldenSetError(
-            f"corpus on disk ({chunks_path}) has sha256 {actual}, "
-            f"golden set expects {expected_sha256} -- refusing to measure "
-            "against a different corpus snapshot")
+    normalized = hashlib.sha256(normalized_chunk_bytes(chunks_path.read_bytes())).hexdigest()
+    if normalized == expected_sha256:
+        return
+    if (expected_sha256 == HISTORICAL_CRLF_CORPUS_SHA256
+            and normalized == LF_NORMALIZED_CORPUS_SHA256):
+        return
+    raise GoldenSetError(
+        f"corpus on disk ({chunks_path}) has lf-normalized sha256 {normalized}, "
+        f"golden set expects {expected_sha256} -- refusing to measure "
+        "against a different corpus snapshot")
 
 
 def by_status(questions: tuple[GoldenQuestion, ...], status: str) -> tuple[GoldenQuestion, ...]:
