@@ -21,9 +21,12 @@ négy módot ténylegesen bedrótozza.
   ezt nem helyettesíti.
 - **globalis / drift:** a `diagnostics/2026-11-10-phase3-measurement/results/
   week4-report-v3-collection.jsonl` riportgyűjtemény létezik és a várt
-  `run_id`/szinttel egyezik; **drift**-nél ezen felül a riportindex-
-  embedding cache (`diagnostics/2026-11-14-week6-drift/results/
-  report-index-cache.json`) is naprakész kell legyen.
+  `run_id`/szinttel egyezik. **drift**-nél ezen felül kell a
+  `graph/corpus/extraction/` könyvtár, a `graph/corpus/entity-index.json`,
+  a `load_and_chunk()` korpusza, és a riportindex-cache
+  (`diagnostics/2026-11-14-week6-drift/results/report-index-cache.json`).
+  A cache újragenerálható. A DRIFT kód nem az `extraction-reuse-1200-23`
+  könyvtárat olvassa.
 
 Hiányzó előfeltételnél a CLI **nem épít indexet és nem indít adatbázis-
 feltöltést** — világos hibát ad, és az adott mód egyszerűen nem kerül be
@@ -706,21 +709,57 @@ hív, tehát fizetős API. A `graph load` a `load_document_graph` útvonal:
 `Document` / `Section` / `Chunk`. Dockeres Neo4j kell hozzá, OpenAI-kulcs
 nem. Ez nem az extrahált entitásgráf.
 
-### 3. Mért naiv, lokális, globális és DRIFT utak
+### 3. A mért rendszer visszaállítása
 
-Ezek a záró CLI és a week5 `measure.py` előfeltételei. A CLI és a
-`measure.py run --full` fizetős hívást indít; egyik sincs ebben a
-dokumentumban újrafuttatottként jelölve.
+Ez nem a gyors indulás. A helyi fájl megléte nem idegen gépes bizonyíték.
+A visszaállítás ebben a körben nem futott. Sorrend:
 
-| Út | Kell hozzá | Hol van leírva | Szolgáltatás |
-|---|---|---|---|
-| Naiv mérés | Qdrant-gyűjtemény `week4_naive_baseline_1200_23`, nem az `f1_naive_rag` | README, „Aktuális és történeti adatok”; a CLI nem építi | helyi Qdrant, majd OpenAI a kérdéshez |
-| Lokális | futó Neo4j és az `extracted_entity_embedding` vektorindex | `ask_cli.py` `probe_lokalis`; `local_search.require_vector_index` | Neo4j. A dokumentumgráf `graph load` nem elég |
-| Globális | `diagnostics/2026-11-10-phase3-measurement/results/week4-report-v3-collection.jsonl`, `run_id` `week4-leiden-elokeszitett-6f05327d7d88ebf0` | `docs/week4-kozossegi-riportok-v3.md` | a riportok újraírása OpenAI-hívás; a meglévő fájl olvasása nem |
-| DRIFT | ugyanez a riportgyűjtemény, plusz `diagnostics/2026-11-14-week6-drift/results/report-index-cache.json` | a cache építője lent | érvényes cache mellett nincs új embedding |
+1. A fagyasztott chunkfájl már a projektfában van:
+   `graph/corpus/chunks-section-1200-23/chunks.jsonl`, 1651 sor.
+   A dokumentált `chunks_sha256` a `golden/CHANGELOG.md` és az
+   `index-fingerprint.json` szerint
+   `79d46d6291bc07924ddc13703f9b4804f8cf9c86de9de3ebaf435248f04e012e`.
+   Ez a naiv mérés fagyasztott chunkfájlja. Újrahash most nem készült.
+2. Naiv Qdrant: a mért gyűjtemény neve `week4_naive_baseline_1200_23`.
+   A `.qdrant` gitignore-olt. A `naive-rag ingest` az `f1_naive_rag`
+   gyűjteményt írja, ezt nem. Az építő a meglévő `index_naive_baseline`
+   logikát hívja, a fagyasztott jsonl-t olvassa, modell
+   `text-embedding-3-small`. Meglévő gyűjteményt `--overwrite` nélkül
+   nem ír felül. Most nem futott. Fizetős lenne.
 
-A riportindex-cache építője, a drift README-ből, csak ha a cache hiányzik
-vagy nem érvényes. Érvényes cache esetén a parancs nem hív embeddinget:
+```powershell
+.\.venv\Scripts\python.exe diagnostics\2026-11-10-phase5-run\build_week4_collection.py --help
+.\.venv\Scripts\python.exe diagnostics\2026-11-10-phase5-run\build_week4_collection.py
+```
+
+3. Lokális Neo4j: a mentett extracted réteg a
+   `graph/corpus/extracted-layer-backup-week4-community-preflight-20261110.json`.
+   A `docs/week4-neo4j-mentes.md` ezt a közösségírás előtti backupnak
+   nevezi. Száraz ellenőrzés, Neo4j nélkül:
+   `python -m naive_rag.extraction_load --input-dir graph\corpus\extraction-reuse-1200-23 --backup <backup> --restore`
+   `--write` nélkül csak számol. `--write` Neo4j-t ír, most nem futott.
+   Az eredeti, első betöltés történeti shellparancsa továbbra sincs meg.
+4. `extracted_entity_embedding`: a lokális keresés Neo4j vektorindexe
+   (`local_search.require_vector_index`). Belépő:
+   `python -m naive_rag.neo4j_entity_index` szárazon, `--run` mellett
+   embeddinget hív és Neo4j-be ír. Most nem futott. OpenAI és futó Neo4j kell.
+5. Globális riportok: `diagnostics/2026-11-10-phase3-measurement/results/week4-report-v3-collection.jsonl`,
+   `run_id` `week4-leiden-elokeszitett-6f05327d7d88ebf0`. A fájl a
+   visszaállítható artifact. Újragenerálása a `generate_reports_v3.py`
+   `main()` fizetős futása. A dokumentált v3 költség 0,0537 USD
+   (`docs/week4-kozossegi-riportok-v3.md`). Most nem futott.
+6. DRIFT. A futás ezeket a fájlokat olvassa, nem az
+   `extraction-reuse-1200-23` könyvtárat:
+   - riportgyűjtemény: `diagnostics/2026-11-10-phase3-measurement/results/week4-report-v3-collection.jsonl`
+   - extraction bemenet: `graph/corpus/extraction/`
+   - entitásindex: `graph/corpus/entity-index.json`
+   - chunkszöveg: a `drift_runner.build_local_search_fixtures` a
+     `load_and_chunk()` kimenetét használja, a projekt aktuális
+     1200/100-as korpuszbeállításával, nem közvetlenül a fagyasztott jsonl-t
+   - riportindex-cache: `diagnostics/2026-11-14-week6-drift/results/report-index-cache.json`
+   A cache újragenerálható. Érvényes cache mellett nincs új embedding.
+   A riportok helyettesítője nem. A build parancs, csak ha a cache
+   hiányzik vagy nem érvényes:
 
 ```powershell
 uv run python diagnostics\2026-11-14-week6-drift\build_index.py --build `
@@ -730,17 +769,43 @@ uv run python diagnostics\2026-11-14-week6-drift\build_index.py --build `
   --ledger-path diagnostics\2026-11-14-week6-drift\results\week6-cost-ledger.json
 ```
 
-A week5 értékelés parancsa változatlanul a `measure.py run --smoke` és
-`run --full`. Előfeltétel a fenti naiv gyűjtemény, a lokális Neo4j-index,
-a riportgyűjtemény, az `OPENAI_API_KEY` és a
-`golden/week5-golden-set-v1-approval-draft.jsonl`. A futás fizetős.
+Él-provenance: `scripts/check_extracted_provenance.py` a fenti backupot
+és a fagyasztott `chunks.jsonl`-t olvassa, Neo4j nélkül. A lefutott
+ellenőrzés: 2761 csomópont, 15108 él, 0 hiányzó provenance, 17315
+forrás-chunk hivatkozás, mind feloldva. Ez a backup fájl, nem egy élő
+Neo4j-lekérdezés. Az egyedi `driver-jenson-button#31` példa ettől
+függetlenül megmarad.
 
-Korlát: a 23 dokumentumos, 1651 rekordos entitásgráf
-(`graph/corpus/extraction-reuse-1200-23`) Neo4j-be töltésének és az
-`extracted_entity_embedding` index felépítésének teljes parancssora nincs
-dokumentálva. A `week4_naive_baseline_1200_23` gyűjtemény újraépítése
-sincs a `naive-rag ingest` parancsban. Ezeket ne tekintsd a gyors
-indulásból visszaállíthatónak.
+| Út | Kell hozzá | Kódút | Szolgáltatás | Státusz |
+|---|---|---|---|---|
+| Naiv mérés | `week4_naive_baseline_1200_23` | `build_week4_collection.py` | Qdrant + OpenAI | parancs megvan, most nem futott |
+| Lokális | extracted backup + vektorindex | `extraction_load --restore`, `neo4j_entity_index --run` | Neo4j; az indexhez OpenAI | parancs megvan, most nem futott |
+| Globális | a 37 riportos jsonl | `generate_reports_v3.main` | OpenAI, ha újra kell | a fájl megvan, újragenerálás nem futott |
+| DRIFT | a 37 riport, a `graph/corpus/extraction/` könyvtár, a `graph/corpus/entity-index.json`, a `load_and_chunk()` korpusza, és a cache | `build_index.py --build` | OpenAI, ha a cache érvénytelen | parancs dokumentált, most nem futott |
+
+### Másik gépes smoke, később
+
+Most nem futott. A visszaállítás sorrendje:
+
+1. Python 3.11, majd `uv sync` az `uv.lock` alapján.
+2. `.env` a `.env.example` másolata, kitöltött `OPENAI_API_KEY` és `NEO4J_PASSWORD` változókkal.
+3. A fagyasztott chunkfájl és a fenti artifactok ellenőrzése.
+4. `.\.venv\Scripts\python.exe diagnostics\2026-11-10-phase5-run\build_week4_collection.py`
+5. Neo4j a `compose.yaml` szerint.
+6. `python -m naive_rag.extraction_load --input-dir graph\corpus\extraction-reuse-1200-23 --backup graph\corpus\extracted-layer-backup-week4-community-preflight-20261110.json --restore --write`
+7. `python -m naive_rag.neo4j_entity_index --run`
+8. A `week4-report-v3-collection.jsonl` meglétének ellenőrzése.
+9. A DRIFT `build_index.py --build` parancs, ha a cache hiányzik.
+10. Egy kérdés: `python diagnostics\2026-11-21-week78-qa-cli\ask_cli.py --mode naiv`.
+11. `python diagnostics\2026-11-11-week5-b\measure.py run --smoke`, ami a `LANGFUSE_PUBLIC_KEY` és `LANGFUSE_SECRET_KEY` változókat is használja.
+
+A tiszta telepítés a korábbi hálózati korlát miatt nincs sikeresnek jelölve.
+
+### Ismert korlát
+
+Az első entitásbetöltés történeti shellje nincs meg. A mérési
+Qdrant-gyűjtemény építője a `build_week4_collection.py`, és most nem futott.
+Az M2, M3 és a J-ágak lezárt eredményei nem változtak.
 
 ## 1. A korpusz
 

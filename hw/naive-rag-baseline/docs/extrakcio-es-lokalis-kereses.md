@@ -213,22 +213,23 @@ A dokumentum: `chunks.jsonl` 180. sora, `chunk_id`
 
 ### 4. Lefedettség és parancs
 
-Teljes körű mentett él-provenance ellenőrzés nincs. A lefedettség
-**nem igazolt**. A review csak kiválasztott élek legfeljebb négy
-forrásazonosítóját menti. Az `extraction_load.py` `origin` és
-`source_chunk_ids` írása kódképesség, nem ennek a rétegnek mentett
-teljes ellenőrzése.
+A `graph/corpus/extracted-layer-backup-week4-community-preflight-20261110.json`
+fájl offline ellenőrzése lefutott a
+`scripts/check_extracted_provenance.py` szkripttel, a fagyasztott
+`chunks-section-1200-23/chunks.jsonl` ellen. Eredmény: 2761 csomópont,
+15108 él, 0 él provenance nélkül, 17315 forrás-chunk hivatkozás, 0
+feloldatlan. A domain él `properties.source_chunk_ids`, a `MENTIONS`
+él a chunk végpont `chunk_id` mezője. Ez a backup fájl, nem élő
+Neo4j-lekérdezés. Az egyedi `driver-jenson-button#31` példa érvényes
+marad, és nem helyettesíti ezt a számlálást.
 
-A 23 dokumentumos extrakció vagy Neo4j-betöltés mentett parancsa,
-futási metaadata és naplója nincs meg. A `quality_report.py`
+A 23 dokumentumos extrakció első betöltésének történeti shellparancsa
+nincs meg. A mostani visszaállító belépő az `extraction_load --restore`,
+és ebben a körben nem futott Neo4j ellen. A `quality_report.py`
 argumentumaiból összerakható parancs rekonstruált parancs: nem
-bizonyíték arra, hogy történetileg lefutott. A README 626–632. sorának
-`local_search --out docs\osszehasonlitas-section-1200-23.md --run`
-parancsa a Q01–Q13 keresésé, nem a gráf betöltéséé. A fájl végén lévő
-`extract_pilot` parancs a régi `graph/corpus/extraction` köré.
+bizonyíték arra, hogy történetileg lefutott.
 
-**M4 dokumentációs köre lezárva. A követelmények nem teljesek.**
-M5-nek átadott hiány: nincs történeti betöltőparancs vagy betöltési
-napló; a riport JSON-ja nem tartalmaz bemeneti hash-t; minden
-szakterületi él forrás-lefedettsége nem igazolt.
+**M4 dokumentációs köre lezárva volt hiányokkal. A backup fájl
+él-lefedettsége utólag, offline, igazolódott.** A történeti betöltő
+shell továbbra is hiányzik.
 

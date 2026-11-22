@@ -30,6 +30,9 @@ class GraphUnavailable(RuntimeError):
 @lru_cache
 def get_driver() -> Driver:
     s = get_settings()
+    if not str(s.neo4j_password or "").strip():
+        raise GraphUnavailable(
+            "Neo4j configuration is missing: neo4j_password")
     driver = GraphDatabase.driver(s.neo4j_uri, auth=(s.neo4j_user,
                                                      s.neo4j_password))
     try:

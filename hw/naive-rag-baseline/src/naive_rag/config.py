@@ -42,11 +42,12 @@ class Settings(BaseSettings):
     collection_name: str = "f1_naive_rag"
 
     # --- Graph store (Neo4j, week 2) --------------------------------------
-    # Same variables are consumed by compose.yaml, so the container and the
-    # driver cannot drift apart. Default matches the compose defaults.
+    # Same variable names are consumed by compose.yaml. There is no usable
+    # password default: a blank NEO4J_PASSWORD is a configuration error
+    # when a graph command runs.
     neo4j_uri: str = "bolt://localhost:7687"
     neo4j_user: str = "neo4j"
-    neo4j_password: str = "graphrag123"
+    neo4j_password: str | None = None
     neo4j_database: str = "neo4j"
     # Root node that every real document hangs off (handy for global queries).
     corpus_name: str = "f1-wikipedia"

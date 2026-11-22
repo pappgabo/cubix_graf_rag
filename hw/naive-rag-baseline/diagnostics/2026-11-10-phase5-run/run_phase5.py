@@ -285,19 +285,31 @@ def embed_texts(
 # --------------------------------------------------------------------------
 
 
-def index_naive_baseline(budget: Budget, ledger: Ledger) -> dict:
+def index_naive_baseline(
+    budget: Budget, ledger: Ledger, *,
+    chunks_path: Path | None = None, collection: str | None = None, client=None,
+) -> dict:
+    """Index the frozen chunks into ``collection``.
+
+    Defaults keep the original measured target. The caller decides whether
+    an existing collection may be replaced; this function does not delete.
+    """
     from qdrant_client.models import Distance, PointStruct, VectorParams
 
     from naive_rag.vectorstore import _client
 
-    chunks_path = ROOT / "graph" / "corpus" / "chunks-section-1200-23" / "chunks.jsonl"
+    chunks_path = chunks_path or (
+        ROOT / "graph" / "corpus" / "chunks-section-1200-23" / "chunks.jsonl")
+    collection = collection or NEW_COLLECTION
     rows = [json.loads(line) for line in chunks_path.read_text(encoding="utf-8").splitlines() if line.strip()]
     texts = [row["text"] for row in rows]
     chunk_ids = [row["chunk_id"] for row in rows]
 
-    client = _client()
+    own_client = client is None
+    if client is None:
+        client = _client()
     client.create_collection(
-        NEW_COLLECTION,
+        collection,
         vectors_config=VectorParams(size=EMBEDDING_DIMENSIONS, distance=Distance.COSINE),
     )
 
@@ -313,15 +325,16 @@ def index_naive_baseline(budget: Budget, ledger: Ledger) -> dict:
             )
             for i, vector in enumerate(vectors)
         ]
-        client.upsert(NEW_COLLECTION, points=points)
+        client.upsert(collection, points=points)
         total_points += len(points)
 
-    count = client.count(NEW_COLLECTION, exact=True).count
-    client.close()
+    count = client.count(collection, exact=True).count
+    if own_client:
+        client.close()
 
     unique_ids = len(set(chunk_ids))
     result = {
-        "collection": NEW_COLLECTION,
+        "collection": collection,
         "chunks_in_source": len(rows),
         "points_indexed": total_points,
         "qdrant_reported_count": count,
