@@ -716,10 +716,12 @@ A visszaállítás ebben a körben nem futott. Sorrend:
 
 1. A fagyasztott chunkfájl már a projektfában van:
    `graph/corpus/chunks-section-1200-23/chunks.jsonl`, 1651 sor.
-   A dokumentált `chunks_sha256` a `golden/CHANGELOG.md` és az
-   `index-fingerprint.json` szerint
-   `79d46d6291bc07924ddc13703f9b4804f8cf9c86de9de3ebaf435248f04e012e`.
-   Ez a naiv mérés fagyasztott chunkfájlja. Újrahash most nem készült.
+   A build a tartalmat LF sortörésre normalizálva ellenőrzi. Ennek a
+   SHA-256 értéke
+   `7ea361e60c2a9c06e2628f7d008d25c35ebb58ebcbebc31902ab2380dbebee27`.
+   A `golden/CHANGELOG.md` és az `index-fingerprint.json` értéke,
+   `79d46d6291bc07924ddc13703f9b4804f8cf9c86de9de3ebaf435248f04e012e`,
+   ugyanennek a fájlnak a történeti Windows CRLF nyers hash-e.
 2. Naiv Qdrant: a mért gyűjtemény neve `week4_naive_baseline_1200_23`.
    A `.qdrant` gitignore-olt. A `naive-rag ingest` az `f1_naive_rag`
    gyűjteményt írja, ezt nem. Az építő a meglévő `index_naive_baseline`
@@ -732,13 +734,30 @@ A visszaállítás ebben a körben nem futott. Sorrend:
 .\.venv\Scripts\python.exe diagnostics\2026-11-10-phase5-run\build_week4_collection.py
 ```
 
-3. Lokális Neo4j: a mentett extracted réteg a
-   `graph/corpus/extracted-layer-backup-week4-community-preflight-20261110.json`.
-   A `docs/week4-neo4j-mentes.md` ezt a közösségírás előtti backupnak
-   nevezi. Száraz ellenőrzés, Neo4j nélkül:
-   `python -m naive_rag.extraction_load --input-dir graph\corpus\extraction-reuse-1200-23 --backup <backup> --restore`
-   `--write` nélkül csak számol. `--write` Neo4j-t ír, most nem futott.
-   Az eredeti, első betöltés történeti shellparancsa továbbra sincs meg.
+3. Lokális Neo4j. A dokumentumréteg a meglévő gráfparancs:
+   `uv run naive-rag graph up`, majd `uv run naive-rag graph init`,
+   majd `uv run naive-rag graph load`. A chunkbeállítás az alapértelmezett
+   1200/100 marad. Az extracted réteg forrása a repóban lévő
+   `graph/corpus/extraction-reuse-1200-23` könyvtár, nem a 134 MB-os
+   preflight backup. Száraz ellenőrzés, Neo4j-írás nélkül:
+
+```powershell
+uv run python -m naive_rag.extraction_load --input-dir graph\corpus\extraction-reuse-1200-23
+```
+
+   A várt sorok: `planned: 1651`, `failed: 0`, `entity_keys: 2761`,
+   `rel_keys: 4325`, `failures: none`. Ezután, amikor a Chunk csomópontok
+   már bent vannak:
+
+```powershell
+uv run python -m naive_rag.extraction_load --input-dir graph\corpus\extraction-reuse-1200-23 --write
+```
+
+   A történeti
+   `extracted-layer-backup-week4-community-preflight-20261110.json`
+   2761 csomópontot és 15108 élet őriz. Nincs a közzétett fában:
+   a `*backup*.json` szabály és a GitHub 100 MB-os blobkorlátja miatt.
+   Az idegen gépi út a fenti betöltő.
 4. `extracted_entity_embedding`: a lokális keresés Neo4j vektorindexe
    (`local_search.require_vector_index`). Belépő:
    `python -m naive_rag.neo4j_entity_index` szárazon, `--run` mellett
@@ -769,17 +788,16 @@ uv run python diagnostics\2026-11-14-week6-drift\build_index.py --build `
   --ledger-path diagnostics\2026-11-14-week6-drift\results\week6-cost-ledger.json
 ```
 
-Él-provenance: `scripts/check_extracted_provenance.py` a fenti backupot
-és a fagyasztott `chunks.jsonl`-t olvassa, Neo4j nélkül. A lefutott
-ellenőrzés: 2761 csomópont, 15108 él, 0 hiányzó provenance, 17315
-forrás-chunk hivatkozás, mind feloldva. Ez a backup fájl, nem egy élő
-Neo4j-lekérdezés. Az egyedi `driver-jenson-button#31` példa ettől
-függetlenül megmarad.
+Él-provenance: a helyi történeti preflight backupon már lefutott a
+`scripts/check_extracted_provenance.py`, a fagyasztott `chunks.jsonl`
+ellen, Neo4j nélkül. Eredmény: 2761 csomópont, 15108 él, 0 hiányzó
+provenance, 17315 forrás-chunk hivatkozás, mind feloldva. Ez a helyi
+backup, nem az idegen gépi bemenet és nem egy élő Neo4j-lekérdezés.
 
 | Út | Kell hozzá | Kódút | Szolgáltatás | Státusz |
 |---|---|---|---|---|
 | Naiv mérés | `week4_naive_baseline_1200_23` | `build_week4_collection.py` | Qdrant + OpenAI | parancs megvan, most nem futott |
-| Lokális | extracted backup + vektorindex | `extraction_load --restore`, `neo4j_entity_index --run` | Neo4j; az indexhez OpenAI | parancs megvan, most nem futott |
+| Lokális | `extraction-reuse-1200-23` + vektorindex | `graph load`, `extraction_load --write`, `neo4j_entity_index --run` | Neo4j; az indexhez OpenAI | parancs megvan, most nem futott |
 | Globális | a 37 riportos jsonl | `generate_reports_v3.main` | OpenAI, ha újra kell | a fájl megvan, újragenerálás nem futott |
 | DRIFT | a 37 riport, a `graph/corpus/extraction/` könyvtár, a `graph/corpus/entity-index.json`, a `load_and_chunk()` korpusza, és a cache | `build_index.py --build` | OpenAI, ha a cache érvénytelen | parancs dokumentált, most nem futott |
 
@@ -788,23 +806,25 @@ függetlenül megmarad.
 Most nem futott. A visszaállítás sorrendje:
 
 1. Python 3.11, majd `uv sync` az `uv.lock` alapján.
-2. `.env` a `.env.example` másolata, kitöltött `OPENAI_API_KEY` és `NEO4J_PASSWORD` változókkal.
+2. `.env` a `.env.example` másolata. Kitöltendő: `OPENAI_API_KEY`, `NEO4J_PASSWORD`. Az értékeléshez: `LANGFUSE_PUBLIC_KEY`, `LANGFUSE_SECRET_KEY`. Érték nincs a repóban.
 3. A fagyasztott chunkfájl és a fenti artifactok ellenőrzése.
 4. `.\.venv\Scripts\python.exe diagnostics\2026-11-10-phase5-run\build_week4_collection.py`
-5. Neo4j a `compose.yaml` szerint.
-6. `python -m naive_rag.extraction_load --input-dir graph\corpus\extraction-reuse-1200-23 --backup graph\corpus\extracted-layer-backup-week4-community-preflight-20261110.json --restore --write`
-7. `python -m naive_rag.neo4j_entity_index --run`
-8. A `week4-report-v3-collection.jsonl` meglétének ellenőrzése.
-9. A DRIFT `build_index.py --build` parancs, ha a cache hiányzik.
-10. Egy kérdés: `python diagnostics\2026-11-21-week78-qa-cli\ask_cli.py --mode naiv`.
-11. `python diagnostics\2026-11-11-week5-b\measure.py run --smoke`, ami a `LANGFUSE_PUBLIC_KEY` és `LANGFUSE_SECRET_KEY` változókat is használja.
+5. `uv run naive-rag graph up`
+6. `uv run naive-rag graph init`, majd `uv run naive-rag graph load`
+7. Az extracted száraz ellenőrzés, majd `extraction_load --input-dir graph\corpus\extraction-reuse-1200-23 --write`
+8. `python -m naive_rag.neo4j_entity_index --run`
+9. A `week4-report-v3-collection.jsonl` meglétének ellenőrzése.
+10. A DRIFT `build_index.py --build` parancs, ha a cache hiányzik.
+11. Egy kérdés mind a négy móddal, a fenti `ask_cli.py --mode naiv|lokalis|globalis|drift` parancsokkal.
+12. `python diagnostics\2026-11-11-week5-b\measure.py run --smoke`
 
 A tiszta telepítés a korábbi hálózati korlát miatt nincs sikeresnek jelölve.
 
 ### Ismert korlát
 
-Az első entitásbetöltés történeti shellje nincs meg. A mérési
-Qdrant-gyűjtemény építője a `build_week4_collection.py`, és most nem futott.
+Az idegen gépi extracted réteg a `extraction-reuse-1200-23` betöltője.
+A történeti preflight backup nincs a közzétett fában. A mérési
+Qdrant-gyűjtemény építője a `build_week4_collection.py`.
 Az M2, M3 és a J-ágak lezárt eredményei nem változtak.
 
 ## 1. A korpusz

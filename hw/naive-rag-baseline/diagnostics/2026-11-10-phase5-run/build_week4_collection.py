@@ -22,7 +22,10 @@ import run_phase5  # noqa: E402
 DEFAULT_CHUNKS = ROOT / "graph" / "corpus" / "chunks-section-1200-23" / "chunks.jsonl"
 DEFAULT_COLLECTION = "week4_naive_baseline_1200_23"
 FROZEN_CHUNK_COUNT = 1651
-FROZEN_CHUNKS_SHA256 = "79d46d6291bc07924ddc13703f9b4804f8cf9c86de9de3ebaf435248f04e012e"
+# SHA-256 of the file after newlines are normalized to LF.
+# The historical Windows CRLF raw hash is
+# 79d46d6291bc07924ddc13703f9b4804f8cf9c86de9de3ebaf435248f04e012e.
+FROZEN_CHUNKS_SHA256 = "7ea361e60c2a9c06e2628f7d008d25c35ebb58ebcbebc31902ab2380dbebee27"
 EXPECTED_MODEL = "text-embedding-3-small"
 
 
@@ -30,12 +33,17 @@ class BuildStop(RuntimeError):
     """The build did not start. No embedding call was made."""
 
 
+def normalized_chunk_bytes(raw: bytes) -> bytes:
+    """LF bytes. CRLF and CR-only newlines compare as the same corpus."""
+    return raw.replace(b"\r\n", b"\n").replace(b"\r", b"\n")
+
+
 def check_chunks(path: Path) -> None:
     if not path.is_file():
         raise BuildStop(f"chunks file not found: {path}")
-    raw = path.read_bytes()
-    rows = [line for line in raw.decode("utf-8").splitlines() if line.strip()]
-    digest = hashlib.sha256(raw).hexdigest()
+    normalized = normalized_chunk_bytes(path.read_bytes())
+    rows = [line for line in normalized.decode("utf-8").splitlines() if line.strip()]
+    digest = hashlib.sha256(normalized).hexdigest()
     if len(rows) != FROZEN_CHUNK_COUNT or digest != FROZEN_CHUNKS_SHA256:
         raise BuildStop(
             f"chunks are not the frozen 1651-line file "

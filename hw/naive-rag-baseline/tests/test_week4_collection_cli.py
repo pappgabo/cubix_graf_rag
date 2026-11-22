@@ -141,6 +141,25 @@ class Week4CollectionCliTest(unittest.TestCase):
         self.assertEqual(result["points_indexed"], 1)
         self.assertNotIn("openai", created)
 
+    def test_crlf_and_lf_pass_modified_content_fails(self) -> None:
+        raw = build_cli.DEFAULT_CHUNKS.read_bytes()
+        lf = build_cli.normalized_chunk_bytes(raw)
+        self.assertEqual(hashlib.sha256(lf).hexdigest(), build_cli.FROZEN_CHUNKS_SHA256)
+        with tempfile.TemporaryDirectory() as folder:
+            root = Path(folder)
+            crlf_path = root / "crlf.jsonl"
+            lf_path = root / "lf.jsonl"
+            changed_path = root / "changed.jsonl"
+            crlf_path.write_bytes(lf.replace(b"\n", b"\r\n"))
+            lf_path.write_bytes(lf)
+            changed = bytearray(lf)
+            changed[200] = (changed[200] + 1) % 256
+            changed_path.write_bytes(changed)
+            build_cli.check_chunks(crlf_path)
+            build_cli.check_chunks(lf_path)
+            with self.assertRaises(build_cli.BuildStop):
+                build_cli.check_chunks(changed_path)
+
 
 if __name__ == "__main__":
     unittest.main()
